@@ -65,13 +65,13 @@ Hugo also has one nice advantage. Changes to the website can be previewed easily
 Clone the repository of the website:
 
 ```
-git clone https://github.com/pine64/website/
+git clone https://github.com/pine64/website.git
 ```
 
 Then change the directory into the folder:
 
 ```
-cd website
+cd website-main
 ```
 
 And then preview the website using:
@@ -89,7 +89,7 @@ The complete process is explained in details under https://github.com/pine64/web
 The project is structured the following:
 
 ```
-website/
+website-main/
 ├── archetypes/
 │   └── default.md
 ├── assets/
@@ -120,7 +120,6 @@ website/
 ```
 
 For an explanation of the folder structure see https://gohugo.io/getting-started/directory-structure/.
-
 
 ## Outlook
 

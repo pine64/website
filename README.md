@@ -8,8 +8,8 @@
 Install `git` and check out the website repository using the following command:
 
 ```sh
-git clone https://github.com/pine64/website/
-cd website
+git clone https://github.com/pine64/website.git
+cd website-main
 ```
 
 ### Get Hugo
@@ -52,7 +52,7 @@ hugo
 ## Site structure
 
 ```
-website/
+website-main/
 ├── archetypes/
 │   └── default.md
 ├── assets/
