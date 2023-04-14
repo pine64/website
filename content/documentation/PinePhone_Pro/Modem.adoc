@@ -9,7 +9,7 @@ menu:
     weight: 6
 ---
 
-=== AT commands
+== AT commands
 
 A list of documented AT commands can be found for example in this https://wiki.pine64.org/wiki/File:Quectel_EC2x&EG9x&EG2x-G&EM05_Series_AT_Commands_Manual_V2.0.pdf[AT commands documentation] from Quectel. Further undocumented AT commands found by the developer megi, who reverse-engineered parts of the modem and its firmware, can be found on megi's website http://xnux.eu/devices/feature/modem-pp-reveng.html#toc-un-der-documented-at-commands[here].
 
@@ -23,7 +23,7 @@ _minicom_ example:
 
  minicom -D /dev/ttyUSB2
 
-=== VoLTE
+== VoLTE
 
 The PinePhone and PinePhone Pro modem supports VoLTE and comes with a few VoLTE profiles preloaded. Most operating systems try to set the correct profile automatically.
 
@@ -71,23 +71,23 @@ AT+CLCC
 
 In the fourth item of the list, "0" means voice and and "1" means data. If both rows have "1" then the voice call is being carried over VoLTE.
 
-=== APN settings
+== APN settings
 
 The APN setting is only required for a public Internet connection ("data") on the phone. For tested APN settings and how to apply them see link:/documentation/PinePhone APN Settings[APN settings].
 
-=== Carrier support
+== Carrier support
 
 The page link:/documentation/PinePhone Carrier Support[Carrier support] contains information about the frequency support of different carriers and hints on setting up cellular network connectivity.
 
-=== Documents
+== Documents
 
 Detailed information about the modem can be found on the https://xnux.eu/devices/feature/modem-pp.html#toc-modem-on-pinephone[page of the developer megi], including reverse-engineered parts of the firmware and its functions. There is also a document about using the modem from January 18th 2020 by megi https://megous.com/dl/tmp/modem.txt[here]. A script at the end of the document showcases a way to power off the modem before powering off the phone, which is integrated into most of the available operating systems.
 
-=== Firmware update
+== Firmware update
 
 There is a (nearly) free custom firmware and the stock firmware available for the PinePhone Pro. Both can be updated to a newer version with new features and bug fixes.
 
-==== Custom firmware
+=== Custom firmware
 
 There is a (nearly) free custom firmware for the PinePhone and PinePhone Pro modem by the developer _biktorgj_, which can be found https://github.com/the-modem-distro/pinephone_modem_sdk[here].
 
@@ -100,7 +100,7 @@ The custom firmware has various advantages (and zero disadvantages) over the sto
 
 The custom firmware can be flashed using https://wiki.postmarketos.org/wiki/Fwupd#Upgrading_Modem_Firmware_on_the_PinePhone_.28Pro.29[fwupd] or a https://github.com/the-modem-distro/pinephone_modem_sdk/blob/kirkstone/docs/FLASHING.md[flashing script].
 
-==== Stock firmware
+=== Stock firmware
 
 TIP: The following instructions are directed towards professional users. It is highly recommend to make sure the update process is not interrupted to prevent the modem from bricking.
 
@@ -132,11 +132,11 @@ Then run qfirehose, which starts the flashing process:
 
 The modem will automatically reboot after the update process is done. The boot process takes around 30 to 60 seconds. After that it is highly recommended to reboot the device.
 
-=== Firmware modifications
+== Firmware modifications
 
 See link:/documentation/PineModems[PineModems] for more information regarding modem bootloader unlocking, building a custom modem firmware and modem recovery.
 
-=== GPS / GNSS
+== GPS / GNSS
 
 The GPS engine in the modem supports mutli-GNSS reception from GPS, GLONASS, BeiDou, Galileo and QZSS independent of a cellular connection. The operation of the GNSS subsystem can be controlled via a separate set of AT commands, or via qmi. The A-GPS data upload uses the file management AT commands, which also have their own manual. These are linked in the documentation section.
 
@@ -156,8 +156,8 @@ this should display a stream of NMEA sentences
  $GPGSA,A,1,,,,,,,,,,,,,,,,*32
  $GPGGA,,,,,,0,,,,,,,,*66
 
-Further details can be found under link:/documentation/PinePhone Sensors and Navigation[Sensors and navigation].
+Further details can be found under link:/documentation/PinePhone/Further_information/Sensors_and_navigation[Sensors and navigation].
 
-=== Voice mail
+== Voice mail
 
 The operating systems of the PinePhone Pro may not have support for accessing your voicemail by holding down the 1-key. Carriers might support accessing the voice mail via an external number however.

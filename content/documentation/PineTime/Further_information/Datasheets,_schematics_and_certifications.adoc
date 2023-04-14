@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 == Schematics
 
 * https://files.pine64.org/doc/PineTime/PineTime%20Schematic-V1.0a-20191103.pdf[PineTime Schematic ver1.0a]

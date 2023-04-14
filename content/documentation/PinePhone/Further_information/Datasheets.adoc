@@ -25,6 +25,7 @@ LPDDR3 (178 Balls) SDRAM:
 * https://files.pine64.org/doc/datasheet/pinephone/ATL3A1632H12A_mobile_lpddr3_11x11.5_v1.0_1600.pdf[Artmem LPDDR3 datasheet]
 
 eMMC information:
+
 * https://files.pine64.org/doc/datasheet/pinephone/Kimtigo_fbga153_16_32_64_eMMC_datasheet_v1.3.pdf[Kimtigo eMMC datasheet]
 
 CMOS camera module information:

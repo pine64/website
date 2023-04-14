@@ -12,33 +12,3 @@ menu:
 image:/documentation/images/PINEA64_sideimg.jpg[The PINE A64,title="The PINE A64",width=400]
 
 The *PINE A64* and the *PINE A64+* is _PINE64's_ first Single Board Computer powered by Allwinner’s A64 quad-core ARM Cortex A53 64-Bit SoC. There are many Operating Systems available for the PINE A64 created by the open source community and various partner projects. Currently the majority of Linux distributions for the PINE A64 are using mainline Linux but there are a number of BSP-based distribution and / or legacy systems that can be downloaded too.
-
-== Software releases
-
-Under link:/documentation/Pine_A64/Software[Software] you will find a complete list of currently supported operating system images, which work with the PINE A64, as well as other related software.
-<|--
-
-=== Quick Links to OS Images Build Sources
-
-*Some of the provided OS images are still in beta or nightly build</span> and only fit for testing purposes. These images ought to be avoided for normal usage - use them at <span >your own risk*
-
-* https://www.stdin.xyz/downloads/people/longsleep/pine64-images/[longsleep BSP Linux]
-* https://github.com/ayufan-pine64/linux-build/releases/latest/[ayufan Linux]
-* https://github.com/ayufan-pine64/android-7.1/releases/latest/[ayufan Android 7.1] | https://github.com/ayufan-pine64/android-6.0/releases/latest/[ayufan Android 6.0] | https://github.com/ayufan-pine64/android-5.1/releases/latest/[ayufan Android 5.1]
-* https://pine64suse.weebly.com/download.html[openSUSE]
-* https://dl.armbian.com/pine64/archive/[Armbian]
-* https://github.com/anarsoul/linux-build/releases/latest[Arch Linux XFCE by anarsoul]
-* https://pine64fedora.weebly.com/download.html[Fedora]
-* https://forum.pine64.org/showthread.php?tid=1937[Gentoo]
-* https://sourceforge.net/projects/q4os/files/stable/[Q4OS]
-* https://downloads.lede-project.org/snapshots/targets/sunxi/cortexa53/[OpenWRT]
-* https://dietpi.com/downloads/images/[DietPi]
-* https://github.com/openhab/openhabian/releases/latest/[openHAB 2]
-* https://volumio.org/get-started/[Volumio Digital Audio Player] | https://forum.pine64.org/showthread.php?tid=88&action=lastpost[ External DAC Forum Thread]
-* https://github.com/A3sal0n/FalconGate/wiki/Downloads[FalconGate]
-* https://github.com/ccrisan/motioneyeos/releases[motionEyeOS]
-* https://downloads.blissroms.com/Bliss/Official/pine-a64+/[Bliss OS]
-* https://sourceforge.net/projects/openmediavault/files/Other%20armhf%20images/[OpenMediaVault]
-* https://www.riscosopen.org/content/downloads/pinea64[RISC OS]
--->
-

@@ -9,13 +9,11 @@ menu:
     weight: 
 ---
 
-
 The following releases are for the PINE H64 Model B
 
-=== Linux
+== Linux
 
-
-==== Armbian
+=== Armbian
 
 image:/documentation/images/armbian.png[width=100]
 
@@ -25,7 +23,7 @@ Download:
 
 * https://www.armbian.com/pine-h64-b/
 
-==== Manjaro ARM
+=== Manjaro ARM
 
 image:/documentation/images/Manjaro-logo.svg[width=100]
 
@@ -34,7 +32,7 @@ Download:
 
 * https://github.com/manjaro-arm/pine-h64-images/releases[Manjaro ARM PINE H64 GitHub]
 
-==== DietPi
+=== DietPi
 
 image:/documentation/images/dietpi.png[width=100]
 
@@ -52,7 +50,7 @@ Download:
 | `root/dietpi`
 |===
 
-==== LibreELEC
+=== LibreELEC
 
 image:/documentation/images/libreelec.jpg[width=100]
 
@@ -66,10 +64,10 @@ Notes:
 
 * Supports microSD card and eMMC boot
 
-=== BSD
+== BSD
 
 
-==== FreeBSD
+=== FreeBSD
 
 image:/documentation/images/FreeBSD.jpeg[width=100]
 
@@ -83,7 +81,7 @@ Notes:
 
 * FreeBSD supports booting from the microSD card
 
-==== NetBSD
+=== NetBSD
 
 image:/documentation/images/netbsd.png[width=100]
 

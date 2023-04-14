@@ -88,7 +88,10 @@ NOTE: For normal operation of the iron, omission of the copper ring in step #2 d
 
 === Common Questions
 
-. *Temperature is flickering wildly*: Most likely just need to clean whole cartridge/tip with IPA, see link:#Poor_Contact_Fix[Poor Contact Fix here]. If it's jumping wildly after reaching set temperature, this is also caused by using a low amp/volt charger that is below the 3amp minimum recommended for pinecil, upgrading to a 3.25amp/20V charger often fixes this. Also might need to update firmware; there are ADC adjustments coming in 2.21 Release IronOS.
+. *Temperature is flickering wildly*: 
+* Most likely just need to clean whole cartridge/tip with IPA (https://github.com/Ralim/IronOS/issues/1601[reference issue]). See link:#poor_contact_fix[Poor Contact Fix here]].  
+* If it's jumping wildly after reaching set temperature, this is also caused by using a low amp/volt charger that is below the 3amp minimum required for pinecil (per manufacturer rating), upgrading to a 3.25amp/20V USB-C charger often fixes this (https://github.com/Ralim/IronOS/issues/1644[reference issue]).
+* Some people might see a random spike while idle. Solution: update firmware, there are some ADC timing adjustments in IronOS 2.21+; it's a good idea to keep your firmware updated to newest stable release (https://github.com/Ralim/IronOS/issues/1485[reference issue]). This fix is included in 2.21+ release.
 . *I see No Tip connected symbol randomly on new Pinecil*: tip is installed and it heats up, but randomly I get no tip symbol. See #1 above, it is most likely the same reason, dirty contacts on the back of the cartridge/tip. follow the same instructions for link:#Poor_Contact_Fix[Poor Contact Fix here]. https://github.com/Ralim/IronOS/issues/1601[Reference ticket on Github].
 . *How do I install the optional Hall Effect Sensor?* See the Hall Effect Sensor article for installation; location is U14 on the PCB & in the Schematics. Reference schematics section also.
 . *Help, I think I bricked Pinecil doing an update*: no worries, it's very hard to brick a Pinecil because of the way the firmware is loaded in ROM. Usually just flashing again with a newer or different version brings it back to life (link:/documentation/Pinecil/_index#Firmware_&_Updates[see Firmware]). This can be done even if you can't see your screen anymore.
@@ -99,32 +102,18 @@ NOTE: For normal operation of the iron, omission of the copper ring in step #2 d
 . *I see `Thermal Runaway` or `Undervoltage` messages on the screen*. This is often caused by using a weak power supply that does not have a minimum of 12V-3amps and is not rated to work with Pinecil. Pinecil will stop heat to the tip and display `Thermal Runaway`.
 #* TL;DR get a USB-C charger 20V 3.25 amps, PD 65W (best bang for the buck for good Pinecil performance) many available between $15-$25.
 #* Detailed information on chargers can be found under link:/documentation/Pinecil/Power_supplies/Power_supplies[Power supplies].
-. *I plugged in the wrong kind of DC barrel charger, it was a not Center-positive pin and now the Pinecil won't turn on*: see [[#Reverse_polarity_damage|Reverse polarity damage]]. Usually requires replacing the MOSFET (U13) and Buck Converter/Step-down (U8). See the datasheets for links to parts.
-. *I hear a sizzling/crackle sound from my new Pinecil*: this is usually fine and may disappear after a few days of use, see [[#Hissing_Crackle_Sound|Hissing Crackle Sound]].
-. *Screen is black*: first try to update firmware. Check out the IronOS troubleshooting https://ralim.github.io/IronOS/Troubleshooting/#no-display-or-dots-on-the-display[guide here] for possible issues. See the link:#Datasheets_for_Components[datasheets here] at the bottom of this article for links to replacement parts. Repair method would be similar to ts100 screens of which there are many guides like https://www.youtube.com/watch?v=HlWAY0oYPFI[this video]. If the tip heats up, but screen is black, the OLED may have failed/burned out. If tip does not heat up, it may be something else. Sometimes just reflow/reheat the solder for the OLED screen fixes issues. Using OLED screen at lower brightness extends the life.
+. *I plugged in the wrong kind of DC barrel charger, it was a not Center-positive pin and now the Pinecil won't turn on*: see link:#reverse_polarity_damage[Reverse polarity damage]. Usually requires replacing the MOSFET (U13) and Buck Converter/Step-down (U8). See the datasheets for links to parts.
+. *I hear a sizzling/crackle sound from my new Pinecil*: this is usually fine and may disappear after a few days of use, see link:#hissing_crackle_sound[Hissing Crackle Sound].
+. *Screen is black*: first try to update firmware. Check out the IronOS troubleshooting https://ralim.github.io/IronOS/Troubleshooting/#no-display-or-dots-on-the-display[guide here] for possible issues. See the link:#datasheets_for_components[datasheets here] at the bottom of this article for links to replacement parts. Repair method would be similar to ts100 screens of which there are many guides like https://www.youtube.com/watch?v=HlWAY0oYPFI[this video]. If the tip heats up, but screen is black, the OLED may have failed/burned out. If tip does not heat up, it may be something else. Sometimes just reflow/reheat the solder for the OLED screen fixes issues. Using OLED screen at lower brightness extends the life.
 
 == Solutions
 
-
 === Hissing Crackle Sound
-
 
 . The sizzle sound will usually go away after a few days of use and heating up the iron. After wiping the tip contacts with IPA, heat it up a few times to 350 °C.
 . Ralim said, "there is usually a bit of noise when you first use it, and a slight hiss/pop noise from the handle and that is normal. depends a bit on exactly what batch of caps are in your unit. The Tip drive signal is AC coupled through a capacitor for safety, downside is that it means the firmware is hitting that cap with a square wave the whole time the tip is on. Once you have heated up the duty cycle, it drops off so it's not as noticeable."
 . Some members reported that after they opened their new Pinecil, wiped the PCB and tips gently with IPA, let it dry, all the sizzling noise went away. They also did a break-in of the new tips, bringing the temperature to 350 C a few times.
 . Video of similar https://www.reddit.com/r/soldering/comments/qv66a6/weird_crackling_noise_from_ts100_not_from_the_hot/[crackle sound] on the ts100 iron (don't have example of Pinecil, but it's similar sound).
-
-=== Reverse Polarity Damage
-
-Pinecil requires a center-positive DC power supply which most are, but some are reverse polarity and will destroy the electronics if used. If you plugged in a "center-negative" DC power supply, most likely the MOSFET and the buck converter are broken. This usually requires replacing the MOSFET (U13) and buck converter / step-down (U8). See the datasheets for links to replacement parts which is at the bottom of this article [[#Datasheets_for_Components| here]].
-
-IMPORTANT: *Check the polarity* of the DC barrel plug before plugging in a random charger. Incorrect polarity will break the Pinecil. The https://www.youtube.com/watch?v=5DBTNplNTfA[video here] shows how to check.
-
-image:/documentation/images/AC_adaptor_polarity.png[width=400]
-
-image:/documentation/images/Nintendo-center-negative.png[width=300]
-
-Reference the article on [[Pinecil_Power_Supplies#DC_Barrel_Power| DC barrel chargers here]], (i.e., laptop bricks) for appropriate USB-C and DC chargers that will work with the Pinecil.
 
 === Cartridge/Tip Problems
 
@@ -143,6 +132,19 @@ Reference the article on [[Pinecil_Power_Supplies#DC_Barrel_Power| DC barrel cha
 . Always unplug Pinecil before swapping tips. Hot swapping is not a good idea, and for the V2 this could cause strange behavior as the V2 auto-detects tip resistance only on power-up or reboot.
 . Sometimes just disassembling and reassembling all parts back correctly and installing the 2 internal contacts with screws correctly also helps.
 . Poor contact could happen if the tips are not clean or brand new with factory residue or not making good contact with the internal clips inside the Pinecil. The two contacts inside might need to also be removed, wiped and reinstalled with the two screws (ensure the small metal tab on the clip sits into the small hole in the PCB).
+. See link:/documentation/Pinecil/Tips#how_to_check_new_tips?[Pinecil Tips]''' article for more details on testing.
+
+=== Reverse Polarity Damage
+
+Pinecil requires a center-positive DC power supply which most are, but some are reverse polarity and will destroy the electronics if used. If you plugged in a "center-negative" DC power supply, most likely the MOSFET and the buck converter are broken. This usually requires replacing the MOSFET (U13) and buck converter / step-down (U8). See the datasheets for links to replacement parts which is at the bottom of this article [[#Datasheets_for_Components| here]].
+
+IMPORTANT: *Check the polarity* of the DC barrel plug before plugging in a random charger. Incorrect polarity will break the Pinecil. The https://www.youtube.com/watch?v=5DBTNplNTfA[video here] shows how to check.
+
+image:/documentation/images/AC_adaptor_polarity.png[width=400]
+
+image:/documentation/images/Nintendo-center-negative.png[width=300]
+
+Reference the article on [[Pinecil_Power_Supplies#DC_Barrel_Power| DC barrel chargers here]], (i.e., laptop bricks) for appropriate USB-C and DC chargers that will work with the Pinecil.
 
 == Images
 
@@ -239,7 +241,9 @@ Breakout Board Datasheet: https://files.pine64.org/doc/datasheet/pinecil/LP6498B
 
 WARNING: Do this at your own risk, read everything in this section and related/linked articles, and go to the Pinecil community chat if you desire advice. An incorrect cut of the trace could render the Pinecil non-working.
 
-. This modification is not for the V2 as the newer V2 already has 24V DC capability.
+image:/documentation/images/Pinecil-V1andV2.png[Pinecil V1 has blue rubber. Newer Pinecil V2 has green rubber & Bluetooth LE chip]
+
+. This modification is '''Not''' for the V2 (sold after Aug 1, 2022 with green thumb grip) as the V2 '''already''' has 24V DC barrel charger capability.
 . If you have an older V1 model, then first upgrade to the newest link:/documentation/Pinecil/_index#Firmware_&_Updates[firmware here] before starting this modification. The PD debug menu was added to the firmware in 2.17 and other important fixes came later. Access to the hidden PD debug menu is necessary to assist with this mod.
 . See Ralim's IronOS for how to use the hidden https://ralim.github.io/IronOS/DebugMenu/#pd-debug-menu[PD Debug here] and check if your version of Pinecil V1 could benefit from the modification.
 . If PD-Debug menu says "No VBUS", then stop here, you do not need the modification or any cut of the trace line, it will not benefit you because there is no connection to the VBUS already. If it says "w. Vbus" then continue. If you don't have a PD-Debug menu, then upgrade to the newest firmware first, see instructions above.

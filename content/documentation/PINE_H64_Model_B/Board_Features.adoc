@@ -11,33 +11,33 @@ menu:
 
 
 
-=== Video
+== Video
 
 * Digital Video 4KP60 (Type A - full)
 
-=== Audio
+== Audio
 
 * 3.5mm stereo earphone/microphone plug
 
-=== Network
+== Network
 
 * 10/100/1000Mbps Ethernet
 * WiFi 802.11 b/g/n/ac with Bluetooth 4.0/4.1
 * MHF1 RF coaxial connector for external BT/wifi antenna
 
-=== Storage
+== Storage
 
 * microSD - bootable, support SDHC and SDXC, storage up to 256GB
 * USB -	1 USB3.0 Host port and 2 USB2.0 Host port
 
-=== Expansion Ports
+== Expansion Ports
 
 * RTC - Real Time Clock Battery Connector
 * Wifi/BT Module Header - SDIO 3.0 and UART
 * 2x20 pins "Pi2" GPIO Header
 * 3x3 pins "EXT" Header giving console, power switch and reset switch access
 
-=== Console
+== Console
 
 * The console UART is available on the 6-pin header connector between the HDMI and headphone jacks. The pins are on the front row, closer to the board's edge: TX, RX, GND, from left (HDMI) to right (headphone).
 * The default standard is 8,n,1 at 115200bps.

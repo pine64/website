@@ -11,8 +11,6 @@ menu:
 
 This article is about updating/flashing the link:/documentation/Pinecil/_index[Pinecil] firmware.
 
-
-
 == Overview
 
 TIP: Pinecil is designed to use *only 1 power port* at any time. Only the USB-C cable should be plugged in during firmware updates. Never attempt to use both rear ports at the same time or the PC and Pinecil will be damaged.
@@ -164,4 +162,25 @@ IMPORTANT: Do not use the DC barrel jack while updating firmware or you may dest
 * One advantage of Pinecil (V1/V2) over other irons (i.e., Miniware) is you can not really brick them since Pinecil's bootloader is in ROM. If there is a problem, just flash the firmware again or a different version. This empowers people to experiment and do forks of the main IronOS firmware without as much risk.
 * Problems with IronOS firmware? - read https://ralim.github.io/IronOS/[documents here]. If the answer is not found, open a https://github.com/Ralim/IronOS/issues[ticket here] or join the link:/documentation/#_community_and_support[live Pinecil community chat].
 
+== Boot Logo Art ==
 
+image:/documentation/images/Boot-logo-dogbone.jpg[Dog bone by River M.]
+
+=== Get Art ===
+
+* Boot logo art is art that you custom make or download from IronOS Meta. It displays when you initially power on the Pinecil (boot up).
+* Currently '''only''' older Pinecil V1 models which use DFU files can flash boot logo art. 
+* Download and extract all the premade Boot logo art from this https://github.com/Ralim/IronOS-Meta/releases pinecil.zip[file here].
+* Note that for Pinecil V1, only the images with filename "dfu" will work, you can delete all other formats from the extracted zip.
+* Sample images of https://github.com/Ralim/IronOS-Meta/tree/main/Bootup%20Logos#logos-preview[premade free art].
+* To make custom art, https://github.com/Ralim/IronOS-Meta[follow instructions here].
+* Some art is animated: the very small file size limit for boot logos prevents too many frames from being possible.
+
+image:/documentation/images/IronOS.gif[]
+
+=== Install ===
+	
+* If you have Windows or Mac, you can use this GUI [https://github.com/pine64/pine64_updater/releases/ Pine64 flasher].
+* If you have Linux  or Mac, use this GUI [https://github.com/Spagett1/PineFlash/releases/ Pineflash].
+	
+Info: For Pinecil V2 model, Ralim has started work on this (link:https://github.com/Ralim/IronOS/issues/1373#issuecomment-1414925011[reference]). Please watch this ticket, give Ralim support and encouragement. This is all volunteer work.

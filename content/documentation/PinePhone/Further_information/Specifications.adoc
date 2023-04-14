@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 * *Dimensions:* 160.5 x 76.6 x 9.2mm
 * *Weight:* Between 180 ~ 200 grams
 * *SIM Card:* Micro-SIM

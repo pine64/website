@@ -1,5 +1,5 @@
 ---
-title: "Pinecil Power Supplies"
+title: "Power Supplies"
 draft: false
 menu:
   docs:

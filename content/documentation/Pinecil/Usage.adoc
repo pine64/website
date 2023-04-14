@@ -22,7 +22,7 @@ Do not try to bend the two https://pine64.com/product/pinecil-copper-clips/[inte
 
 . Remove the screw from the front top-side of handle. Then, gently push the tip all the way back until the wide collar/guard is touching the front of the plastic (see link::File:Pinecilv2-1.jpg[photo]).
 . Gently tighten or loosen this screw to install or swap the tip. (careful, tiny screws break easy, if tip does not fall out, it's tight enough)
-. The bottom front screw should not touch the tip, it only holds the handle together (see link:#Fasteners/Screws|Fasteners[Fasteners]).
+. The bottom front screw should not touch the tip, it only holds the handle together (see link:#fasteners/screws[Fasteners]).
 . Always unplug before swapping tips if you have multiple tips.
 
 *2. Supply power*: the USB-C port, connected to any supply, is enough power to show the display screen, but not necessarily enough to heat the tip.

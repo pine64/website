@@ -1,11 +1,11 @@
 ---
-title: "ReExternal linkssources"
+title: "External links"
 draft: false
 menu:
   docs:
     title:
     parent: "PinePhone/Further_information"
-    identifier: "PinePhone/Further_information/ReExternal_linkssources"
+    identifier: "PinePhone/Further_information/External_links"
     weight: 
 ---
 

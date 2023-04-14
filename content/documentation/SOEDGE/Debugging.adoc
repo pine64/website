@@ -9,9 +9,7 @@ menu:
     weight: 2
 ---
 
-
-
-=== Serial Console
+== Serial Console
 
 
 System Serial is located on PI-5 bus (11x2 GPIO header).

@@ -13,7 +13,7 @@ menu:
 The gateway will be available in two variants - indoor and outdoor. All that is known about the outdoor unit is that it will have "an aluminum, rugged and water resistant case".
 The indoor unit consists of a PINE A64-LTS, fitted with a purpose built hat (adapter) which uses a LoRa module by RakWireless. The chipset used is the SX1303, and the module via the SPI interface. There are two external connections on the enclosure for the GPS and loRa antenna.
 
-=== Connections
+== Connections
 
 * GPS is connected to UART2 on the A64 board
 * SX1303 on SPI0
@@ -45,12 +45,15 @@ The indoor unit consists of a PINE A64-LTS, fitted with a purpose built hat (ada
 |GPIO73 (/sys/class/gpio/gpio73)
 |===
 
-=== Pictures
+== Pictures
 
-image:/documentation/images/Blog-april-InsideLoRaGateway.jpg[]_image:/documentation/images/Blog-april-InsideLoRaGateway2.jpeg[]_image:/documentation/images/Discord-lora-gateway-20210413_143615.jpg[]_image:/documentation/images/Discord-lora-gateway-20210413_1435271.jpg[]
+image:/documentation/images/Blog-april-InsideLoRaGateway.jpg[]
+image:/documentation/images/Blog-april-InsideLoRaGateway2.jpeg[]
+image:/documentation/images/Discord-lora-gateway-20210413_143615.jpg[]
+image:/documentation/images/Discord-lora-gateway-20210413_1435271.jpg[]
 
 
-=== Operating systems
+== Operating systems
 
 The Pinedio Gateway carries the A64-LTS board. The link:/documentation/SOPINE/Software[SOPINE releases] are also compatible based on the RAM specifications.
 

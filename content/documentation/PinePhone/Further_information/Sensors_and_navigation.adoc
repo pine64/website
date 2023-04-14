@@ -65,9 +65,7 @@ TODO: explain body reference choices, north-east-down world coordinates
 
 == Software
 
-
 === Drivers
-
 
 TODO: i2cdev, linux-iio, support matrix
 
@@ -76,7 +74,6 @@ TODO: i2cdev, linux-iio, support matrix
 ** /dev/ttyUSB1 : default NMEA data output
 
 * MPU6050:inv_mpu6050, inv_mpu6050_i2c, industrialio
-
  
 	iio:device2: mpu6050 (buffer capable)
 		9 channels found:

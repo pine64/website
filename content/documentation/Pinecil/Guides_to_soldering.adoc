@@ -50,14 +50,11 @@ This article is a list of convenient links to guides on soldering. Although it's
 2. Another method is an Internet search to find a chart like below for your specific type of solder alloy:
 * https://www.kester.com/Portals/0/Documents/Knowledge%20Base/Alloy%20Temperature%20Chart.pdf[Alloy Temperature Chart - Kester]
 
-3. Adding a small amount of solder to your tip before starting increases the thermal mass of the tip and could help instead of cranking the temperature super high (which causes other problems). See the link:#General_soldering_guides|soldering guides[soldering guides] above for demonstrations of this in several articles and videos.
+3. Adding a small amount of solder to your tip before starting increases the thermal mass of the tip and could help instead of cranking the temperature super high (which causes other problems). See the link:#general_soldering_guides[soldering guides] above for demonstrations of this in several articles and videos.
 
 == Using the Conical tip
 
 *How do I use the conical tip that comes default with Pinecil to get enough heat transfer?*
 
-1. Use the *side* of the tip to heat the pin. Do not hold it vertically like a pen because the very end of the tip has little heat mass. See https://cdn.sparkfun.com/assets/learn_tutorials/5/8/4/SolderingAdvice_1edit.png
-
-2. Correct amount of solder and solder flow. See https://cdn.sparkfun.com/assets/learn_tutorials/5/8/4/SolderingAdvice_2.png
-
-
+. Use the *side* of the tip to heat the pin. Do not hold it vertically like a pen because the very end of the tip has little heat mass. See https://cdn.sparkfun.com/assets/learn_tutorials/5/8/4/SolderingAdvice_1edit.png
+. Correct amount of solder and solder flow. See https://cdn.sparkfun.com/assets/learn_tutorials/5/8/4/SolderingAdvice_2.png

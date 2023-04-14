@@ -20,8 +20,10 @@ There are several end-node units planned:
 
 All the end-nodes use the SX1262 chip.
 
-=== Pictures
+== Pictures
 
-image:/documentation/images/Blog-april-USB-LoRa-1024x655.jpg[]_image:/documentation/images/Blog-april-LoRa-something-839x1024.jpg[]_image:/documentation/images/Discord_20210421_lora_usb_closeup.jpg[]
+image:/documentation/images/Blog-april-USB-LoRa-1024x655.jpg[]
+image:/documentation/images/Blog-april-LoRa-something-839x1024.jpg[]
+image:/documentation/images/Discord_20210421_lora_usb_closeup.jpg[]
 
 

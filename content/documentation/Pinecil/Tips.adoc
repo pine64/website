@@ -23,26 +23,31 @@ TIP: Pay attention to the length|Pine Store sells two different lengths of tips.
 
 === How to increase tip life?
 
-. Typically, lead solder uses a working temperature of ~300°C-320°C and no-lead solder ~350°C-365°C (check the temperature charts in link:/documentation/Pinecil/Guides_to_soldering#What_temperature_should_I_use?|the soldering guides[the soldering guides] or google it for your specific solder type, it varies).  Always start lower than needed and increase ~5°C at a time until you reach a good working temperature. If you want your tips to last longer, use the lowest temperatures you can comfortably work at. Thicker wires, etc., may need more (adjust).
+. Typically, lead solder uses a working temperature of ~300°C-320°C and no-lead solder ~350°C-365°C (check the temperature charts in link:/documentation/Pinecil/Guides_to_soldering#What_temperature_should_I_use?[the soldering guides] or google it for your specific solder type, it varies).  Always start lower than needed and increase ~5°C at a time until you reach a good working temperature. If you want your tips to last longer, use the lowest temperatures you can comfortably work at. Thicker wires, etc., may need more (adjust).
 . The open source firmware may allow the use of temperatures past the manufacturer limit for tips, but that doesn't mean you should. That said, people have reported using the boost feature at 5-15 second burst to >430°C and have been perfectly fine (TS100 and Pine64 tips are readily available at reasonable prices and some people prefer convenience of higher temperatures and accept they might replace tips more frequently as a trade-off).
 . If the tips are not too expensive, some keep spare tips and boost to high temperatures freely for convenience, and simply replace the tip when it loses the plating or the tip fails (common sign of tip failure is tip plating is gone, has pit holes, or a multimeter measures OL infinite ohms across the 2 silver contacts on the cold end of the tip).
 . Check out this link:/documentation/Pinecil/Guides_to_soldering[Soldering Guide article] for more details on best practices for use and maintenance of tips.
 
-image:/documentation/images/Multimeter_measuring_Short_Tip.png[ Short Tip 6.2 Ω,title=" Short Tip 6.2 Ω",width=200]
-
 === How to check new tips?
 
-. Clean new cartridges/tips with isopropyl alcohol (IPA) to remove factory residue before installing (avoid strange behavior). If you have no IPA, use a dry clean towel, especially the 2 silver contacts at the white end (do not use water; it could get into the seam line on the white end). This resolves issues with glitchy temperatures or random no-tip symbol from poor or dirty electric contact.
-. If you have a multi-meter, set it to ohms and the correct range, and measure the 2 silver contacts on the white end of the tip.
-. Note that warm tips change the measurements, spec is based on cold tips.
-#* Short tips could be ~6.2-6.5 ohms
-#* Normal tips could be ~7.8-8.3 ohms
-#* If the tip measures OL (open loop) or not the expected rating for ohms, then it might be defective.
-. If you don't have a multimeter, try to heat the tips to 350C a few times, then check if it melts solder (add a little solder to the tip end also before storing it).
+image:/documentation/images/Multimeter_measuring_Short_Tip.png[Short Tip 6.2 Ω,title=" Short Tip 6.2 Ω",width=200]
+
+1. Remove the screw on top, then remove the cartridge. Clean new cartridges/tips with isopropyl alcohol (IPA) to remove any factory residue before installing (avoid strange behavior). If you have no IPA, use a dry clean towel, especially the white end with the two silver contacts (do not use water; it could get into the seam line on the white end). This often resolves issues with glitchy temperatures or random no-tip symbol from poor or dirty electric contact [https://github.com/Ralim/IronOS/issues/1601 reference].
+
+image:/documentation/images/CleanTip-Cartridge-Contacts.jpg[Clean contacts with IPA]
+	
+. Then install the cartridge/tip, re-install the screw on top, and heat the tip a few times to 350 °C for a couple minutes.
+. If you don't have a multimeter, then after you initially heat the tips a few times to 350 °C. Then change the temperature to the link:documentation/Pinecil/Guides_to_soldering#what_temperature_should_i_use?[correct range] for the solder you purchased and check if it melts solder (add a little solder to the tip end also before storing it).
+. If you have a multimeter (dmm) and have an issue with the cartridge/tip, then you can measure when the tip is cold (room temperature and unused a couple hours). Set dmm to ohms and the correct range, and measure the 2 silver contacts on the rear white end.
+. Warning: warm tips change the measurements (measure only when cold and unused for a couple hours).
+* Short tips could be ~6.2-6.5 ohms
+* Normal length tips could be ~7.8-8.3 ohms
+* If the tip measures OL (open loop) it is defective. Also a tip that is way off spec, e.g., 10 ohm will cause strange behavior on temperature readings.
+* If you measure when it's even a little warm, the ohms will be much higher; this is normal and how the cartridge/tip works.
 
 === Why have different tips?
 
-* See the link:/documentation/Pinecil/Guides_to_soldering#General_soldering_guides|Soldering Guides[Soldering Guides] for usage of different tips and how to keep tips clean.
+* See the link:/documentation/Pinecil/Guides_to_soldering#general_soldering_guides[Soldering Guides] for usage of different tips and how to keep tips clean.
 
 === How does the tip work?
 
@@ -54,9 +59,7 @@ image:/documentation/images/Multimeter_measuring_Short_Tip.png[ Short Tip 6.2 Ω
 
 == Pine Store Tip Options
 
-
 === I. Short tips
-
 
 IMPORTANT: *Pay attention to the length in your cart|* Pine Store sells two different lengths.
 
@@ -69,8 +72,8 @@ IMPORTANT: *Pay attention to the length in your cart|* Pine Store sells two diff
 
 NOTE: Older Pinecil V1 can not use the short tips until firmware code is written to enable manual selection of 6.2 Ω or 8.0 Ω tip. *Only the V2 model* has the hardware to auto-detect the two kinds of tips short 6.2 Ω or regular length 8.0 Ω. If you would like to help with the code, see https://github.com/Ralim/IronOS[GitHub/IronOS].
 
-image:/documentation/images/Pinecil-Short-Tip-SetGross-1.jpeg[https://pine64.com/product/pinecil-soldering-short-tip-set-gross/[Short_Gross_set,_white_box]:_ST-I,_ST-C4,_ST-D24,_ST-K,title="https://pine64.com/product/pinecil-soldering-short-tip-set-gross/[Short_Gross_set,_white_box]:_ST-I,_ST-C4,_ST-D24,_ST-K",width=300]_image:/documentation/images/Pinecil-Short-Tip-SetFine-1.jpeg[https://pine64.com/product/pinecil-soldering-short-tip-set-fine/[Short_Fine_set,_white_box]:_ST-BC2,_ST-C1,_ST-ILS,_ST-Ku,title="https://pine64.com/product/pinecil-soldering-short-tip-set-fine/[Short Fine set, white box]: ST-BC2, ST-C1, ST-ILS, ST-Ku",width=300]
-
+image:/documentation/images/Pinecil-Short-Tip-SetGross-1.jpeg[https://pine64.com/product/pinecil-soldering-short-tip-set-gross/[Short_Gross_set,_white_box]
+image:/documentation/images/Pinecil-Short-Tip-SetFine-1.jpeg[https://pine64.com/product/pinecil-soldering-short-tip-set-fine/[Short_Fine_set,_white_box]
 image:/documentation/images/Pinecil-ST-B2.jpg[ST-B2 conical short tip included with the V2 Pinecil,title="ST-B2 conical short tip included with the V2 Pinecil",width=250]
 
 * The shorter tip is designed for higher performance and requires more power than longer traditional TS100 tips
@@ -83,22 +86,22 @@ image:/documentation/images/Pinecil-ST-B2.jpg[ST-B2 conical short tip included w
 
 === II. Normal tips
 
-IMPORTANT: *Pay attention to the length|* Pine Store sells two different lengths.
+IMPORTANT: *Pay attention to the length!* Pine Store sells two different lengths.
 
 * Normal Length https://pine64.com/product/pinecil-soldering-tip-set-gross/[Gross Set here] (~8.0 Ω)
 * Normal Length https://pine64.com/product/pinecil-soldering-tip-set-fine/[Fine Set here] (~8.0 Ω)
 
-image:/documentation/images/Pinecil-Tip-SetFine-1.jpg[ Fine Set, Normal length,title=" Fine Set, Normal length",width=250]
+image:/documentation/images/Pinecil-Tip-SetFine-1.jpg[Fine Set, Normal length,title=" Fine Set, Normal length",width=250]
 
-image:/documentation/images/Pinecil-Tip-SetGross-1.jpg[ Gross Set, Normal length,title=" Gross Set, Normal length",width=250]
+image:/documentation/images/Pinecil-Tip-SetGross-1.jpg[Gross Set, Normal length,title=" Gross Set, Normal length",width=250]
 
-image:/documentation/images/PinecilTipSets.jpg[ Regular Length TS Tips: Left= Fine set, Right = Gross set. Both TS sets have ~8.0 ohm tips and are the standard length similar to other TS100 style tips.,title=" Regular Length TS Tips: Left= Fine set, Right = Gross set. Both TS sets have ~8.0 ohm tips and are the standard length similar to other TS100 style tips.",width=500]
+image:/documentation/images/PinecilTipSets.jpg[Regular Length TS Tips: Left= Fine set, Right = Gross set. Both TS sets have ~8.0 ohm tips and are the standard length similar to other TS100 style tips.,title=" Regular Length TS Tips: Left= Fine set, Right = Gross set. Both TS sets have ~8.0 ohm tips and are the standard length similar to other TS100 style tips.",width=500]
 
 IMPORTANT: Currently, Pinecil V1 original uses the normal length ts100 style tips and not the newer Short tips designed for V2. Ralim is working on adding a feature to the firmware to allow people with the older V1 Pinecil to manually switch a profile setting which allows toggling between Normal Tip and Short tip profiles (adequate power supply must also be used min. PD65w 3.25A, 20V recommended). Check Github Ralim's IronOS for progress information. Always unplug when swapping tips.
 
 === Other compatible tips
 
-image:/documentation/images/TS100-Tip-Styles.png[ BC3 and JL02 are not sold by Pine Store, ~8.0 Ω,title=" BC3 and JL02 are not sold by Pine Store, ~8.0 Ω",width=300]
+image:/documentation/images/TS100-Tip-Styles.png[BC3 and JL02 are not sold by Pine Store, ~8.0 Ω,title=" BC3 and JL02 are not sold by Pine Store, ~8.0 Ω",width=300]
 
 *Common resistances for tips:*
 
@@ -113,10 +116,5 @@ image:/documentation/images/TipResistance2.png[width=200]
 
 This photo shows common irons to compare the distance from the finger grip to the work surface.
 
-image:/documentation/images/Compare-iron-tip-sizes.jpg[width=500]_image:/documentation/images/Compare-PinecilV2-iron-sizes.png[width=500]
-
-== Go back to Pinecil article
-
-Go back to link:/documentation/Pinecil/_index[Pinecil] article.
-
-
+image:/documentation/images/Compare-iron-tip-sizes.jpg[width=500]
+image:/documentation/images/Compare-PinecilV2-iron-sizes.png[width=500]
