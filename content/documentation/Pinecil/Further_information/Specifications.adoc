@@ -11,7 +11,7 @@ menu:
 
 
 
-=== Pinecil V2
+== Pinecil V2
 
 
 * *Package:* 15cm x 9cm x 2.2cm, white box (released Aug 2, 2022)
@@ -36,7 +36,7 @@ menu:
 *** Bleeding edge users are using/testing this.
 *** EPR is potentially the fastest/highest performance possible for V2; officially Pine Store states 12V-24V, 88W.
 
-=== Pinecil V1
+== Pinecil V1
 
 * *Package:* 16.8cm x 11.8cm x 2.3cm, black box with clear plastic front (sold before Aug 2, 2022)
 * *Dimensions:* 170mm with solder tip or 98mm without solder tip x 12.8mm x 16.2mm
@@ -52,7 +52,7 @@ menu:
 ** USB-C 12-20V PD or QC3.0 (magnetic tip USB-C cables are not recommended, and not USB compliant)
 ** Recommend operating voltage 12-21V, some components can tolerate higher voltages at "absolute maximum" but it's very ill-advised
 
-=== Fasteners/Screws
+== Fasteners/Screws
 
 image:/documentation/images/Pinecil-Thumb-Screws-02.png[ Thumb Screws,title=" Thumb Screws",width=200]
 
