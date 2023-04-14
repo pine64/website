@@ -1,0 +1,24 @@
+---
+title: "Armbian"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PineCube/Software"
+    identifier: "PineCube/Software/Armbian"
+    weight: 
+---
+
+
+image:/documentation/images/armbian.png[width=100]
+
+*Armbian* is a Linux distribution designed for ARM boards. They are usually Debian or Ubuntu flavored.
+
+Download:
+
+* https://www.armbian.com/pinecube/
+
+Notes:
+
+* See link:/documentation/PineCube/Software/Armbian_notes[Armbian notes]
+

@@ -1,0 +1,13 @@
+---
+title: "Power supplies"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "Pinecil"
+    identifier: "Pinecil/Power_supplies"
+    weight: 5
+---
+
+* link:Power_supplies_and_watts[Power supplies and watts]
+* link:Power_supplies[Power supplies]

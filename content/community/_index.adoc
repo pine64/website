@@ -1,0 +1,56 @@
+---
+title: "Welcome!"
+date: 
+draft: false
+description:
+---
+
+If you are new to single board computers, Arm or RISC-V devices such as the PinePhone or Pinebook Pro, and open source communities in general, then it may be all a bit too overwhelming at first.
+
+This website will get you up to speed on everything you need to know.
+
+Have fun!
+
+== Community
+
+The most important asset we have at our disposal is our community. We foster an active, friendly and large community of developers, contributors and end-users like yourself. Across our various community-ran chats and forums there are tens of thousands of people willing to help with any issues you may encounter.
+
+There are a wide range of communication protocols to choose from.
+
+
+=== Chat platforms
+* https://discord.gg/pine64[Discord]
+* https://matrix.to/#/!sbmInimykuNPjjIQMN:matrix.org?via=matrix.org&via=t2bot.io&via=privacytools.io[Matrix]
+* https://t.me/mtrx_pine64[Telegram]
+* https://www.pine64.org/web-irc/[IRC]
+
+=== Forums and subreddits
+* https://forum.pine64.org/[PINE64 Forum]
+* https://www.reddit.com/r/PINE64official/[PINE64 Official Subreddit]
+* https://www.reddit.com/r/PinePhoneOfficial/[PinePhone Official Subreddit]
+* https://www.reddit.com/r/PinebookPro/[Pinebook Pro Offcial Subreddit]
+
+== Staying up to date and more
+
+There are many ways to stay up-to-date with PINE64 hardware and software news. We maintain a blog with frequent updates and notify the users of new content via social media, on our forum as well as  dedicated channels on the chat platforms. We publish a https://www.pine64.org/blog/[Community Update blog post] regularly. A summary of the Community Update is also available in video format on https://www.youtube.com/c/PINE64inc/videos[Youtube], https://tilvids.com/accounts/pine64tilvids/videos[Peertube] and https://odysee.com/@PINE64:a[Odysee].
+
+We also have a community hosted bi-weekly podcast, called the PineTalk, which is available on most platforms including Spotify and Apple Podcasts.
+
+To be notified of new blog entries, enter your email address in the widget at the bottom of this page.
+
+== PINE64 Wiki
+
+All necessary Documentation for your device is available on the https://wiki.pine64.org/wiki/Main_Page[PINE64 Wiki]. If you are a registered forum member, and have at least 3 moderated posts, then you are welcome to contribute material to device sections of your choice. Device sections also contain information that will help you get started with your project; this includes basics for beginners who may, for instance, require information about flashing the SD card or eMMC module, or proper troubleshooting protocols in the event of issues.
+
+== Operating Systems 
+
+Regardless of which PINE64 device you received you will need an operating system to actually make use of it. PINE64 devices benefit from a wide-range of software support from partner projects as well as community developers. Devices such as the PinePhone, Pinebook Pro or the PineTab ship with an open source system preinstalled, but single board computers, compute and AI modules as well as other devices (e.g. the PineCube) will require you to install an operating system on your own. Suggested operating systems can be found in the device-grid below.
+
+
+== Information
+
+link:contact[Contact]
+
+link:partner_projects[Partner Projects]
+
+link:philosophy[Philosophy]

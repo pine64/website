@@ -1,0 +1,24 @@
+---
+title: "Hardware revisions"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PinePhone"
+    identifier: "PinePhone/Revisions"
+    weight: 
+---
+
+
+image:/documentation/images/Pinephone_revisions.png[The history of the PinePhone CEs,title="The history of the PinePhone CEs",width=400]
+
+The following are all hardware revisions of the PinePhone that have existed, ordered by the time of their releases:
+
+* link:/documentation/PinePhone/Revisions/Project_Anakin[Project Anakin] - Development kit
+* link:/documentation/PinePhone/Revisions/Project_Dont_be_evil[Project Don't be evil] - Development kit
+* link:/documentation/PinePhone/Revisions/PinePhone_v1.0_-Dev[PinePhone v1.0] - Developer Edition
+* link:/documentation/PinePhone/Revisions/PinePhone_v1.1_-_Braveheart[PinePhone v1.1] - Braveheart Edition
+* link:/documentation/PinePhone/Revisions/PinePhone_v1.2[PinePhone v1.2] - Ubports Community Edition
+* link:/documentation/PinePhone/Revisions/PinePhone_v1.2a[PinePhone v1.2a] - postmarketOS Community Edition
+* link:/documentation/PinePhone/Revisions/PinePhone_v1.2b[PinePhone v1.2b] - Manjaro Community Edition, KDE Community Edition, Mobian Community Edition and Beta Edition
+

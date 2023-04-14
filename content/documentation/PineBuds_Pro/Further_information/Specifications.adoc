@@ -1,0 +1,55 @@
+---
+title: "Specifications"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PineBuds_Pro/Further_information"
+    identifier: "PineBuds_Pro/Further_information/Specifications"
+    weight: 
+---
+
+
+Dimensions:
+
+* Earbud: Unknown
+* Charging case: 70 x 50 x 35mm (unconfirmed)
+
+Weight:
+
+* Earbud: 5g
+* Charging case: 65g
+
+IP Rating of Earbuds: IPX4
+
+Dynamic transducer (speaker): 6mm
+
+Microphone: 3 – FeedForward, FeedBack, Talk
+
+System on Chip (in each earbud): BES 2300YP
+
+* CPU: Dual-core 300MHz ARM Cortex-M4F
+* ROM: 448KB
+* SRAM: 992KB
+* BT shared SRAM: 64KB
+* Flash: 4MB (Endurance erase cycles: >500)
+
+Communication:
+
+* Bluetooth: Bluetooth 5.2 dual-mode compliant
+* USB: USB to dual UARTs at charging case
+
+Battery:
+
+* Earbud: Built-in LiPo 3.7V 40mAh
+* Charging case: Built-in LiPo 3.7V 800mAh
+
+Ports earbud:
+
+* 4 pins
+
+Ports charging case:
+
+* 4 pogo pins
+* USB type-C port 5V 500mA
+

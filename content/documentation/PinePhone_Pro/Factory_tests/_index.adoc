@@ -1,0 +1,13 @@
+---
+title: "Factory tests"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PinePhone_Pro"
+    identifier: "PinePhone_Pro/Factory_tests"
+    weight: 
+---
+
+* link:Factory_test_battery_charging[Factory test battery charging]
+* link:Factory_test_hardware_checking[Factory test hardware checking]

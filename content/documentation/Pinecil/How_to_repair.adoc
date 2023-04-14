@@ -1,0 +1,257 @@
+---
+title: "How to Repair"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "Pinecil"
+    identifier: "Pinecil/How_to_repair"
+    weight: 
+---
+
+This article explains how dismantle, test, and repair the link:/documentation/Pinecil/_index[Pinecil].
+
+== Cautions
+
+WARNING: while opening your Pinecil will not necessarily void your warranty, all self-repairs are *done at your own risk*. Read everything in this section and related or linked articles to get a good idea of the procedure, and go to the Pinecil community chat if you desire advice/support from experienced volunteers. Self-repairs or modifications might void your warranty so proceed if this is not a concern. This information is for educational purposes only.
+
+Pinecil V1 and V2 have slightly different schematics and have different MCU chips. Doing repairs often requires referencing the correct schematics or photos. The datasheets are also important to get information about the chips, and to order replacement parts. The schematics and known datasheets are all at the bottom of this article and linked in the contents table at the top. Chatting with other owners of Pinecil is encouraged as they have experience - already broke things so you don't have to (see Pinecil volunteer link:/documentation/#_chat_platforms[chat link here]).
+
+NOTE: This is a new work in progress (WIP) started Feb. 18, 2023 which may be updated over time as volunteers have time to write up information. For sections that are missing, try asking in the live chat as a volunteer may have some clues to get you headed in the right path.
+
+== Tools needed
+
+. Digital multimeter (DMM)
+. Philips screwdriver
+. All schematics, datasheets for known common parts, and links to where to buy replacement parts are all in this article under link:#Schematics_and_Board_Data[Schematics and board data].
+* Refer to the correct section for V1 or V2 parts.
+* Which model do I have? The older V1 model has an all black handle with a blue silicone grip and was discontinued in July 2022. The new V2 model has a black handle with a green thumb grip and is the only model PINE64 and authorized resellers started selling after August 1, 2022.
+. Magnifying lamp or jeweler's glasses with led light and good room light.
+. Photos/videos will help to chat with volunteers in the link:/documentation/#_chat_platforms[live Pinecil chat channel] if getting clarification or troubleshooting.
+. Optional: mobile phone to take macro photos or video. A macro lens to take phone photos is helpful; there are cheap ones that simply clip on.
+. Possibly another soldering iron to do the repair, some flux, solder, and isopropyl alcohol (IPA) for cleaning the PCB. See [[Pinecil_Cases,_Stands,_Supplies#Soldering_supplies| this guide]] for some basic supply options.
+. Optional: better needle size probe leads for DMM makes things easier and are nice for electronic work.
+. Reference photos are in the images section.
+
+== Dismantle steps
+
+=== Easy trick to open Pinecil
+
+* Video of easy trick: https://www.youtube.com/watch?v=aK01V5DrrVk
+
+* Handle replacement https://wiki.pine64.org/wiki/File:Pinecil_Shell_Replacement_Guide.pdf[graphic]
+
+* Step-by-step
+
+. It is recommended to take photos to help with reassembly.
+. Loosen the top tip screw (PH1) (top is the side with the screen).
+. Gently pull the tip out and set aside (let the tip cool down first or use protection to prevent burns).
+. Slide the rubber thumb grip off the front.
+. Remove the bottom-front screw (between the bottom feet (PH1)).
+. Remove the ground screw (longer m2x4mm screw next to the screen near the (-) button (PH1)).
+. Slightly pull the two halves of the case apart at the tip front end first, enough to get a fingernail or guitar pick between 2 parts.
+. Move the pick down the length of the split to loosen the bottom half's clips from the top half of the case.
+. Once loose, remove the bottom half by sliding it a little forward (it is retained by the top half at the DC barrel side).
+. Remove the screws retaining the copper tip contacts (PH000, M1.4 x 5).
+. Remove the copper tip contacts (note the orientation of the contacts & tiny tab hole).
+. Lift the PCB gently up from Tip end.
+. Remove the round copper ring contact from under the PCB, near the tip end of the handle (this is installed first before the PCB because it provides ground contact from the front of the Pinecil to the rear ground screw).
+. Remove the two small round buttons so they do not get lost.
+
+== Assembly steps
+
+. Place the two round buttons into the two holes in the top half of the case.
+. Install the round copper ground ring at the tip end *before installing the PCB*.
+. Place the PCB board into handle at an angle, DC barrel end goes in first.
+.. Lower the rest of the board into the case and align the PCB with the 2 contact screw holes.
+. Install the two copper tip contacts (note the small tab on the contact and the small hole in the PCB for it).
+.. Orient the contact to align the alignment pin with the alignment hole next to the big hole on one of the big gold pads.
+.. Install and gently tighten the PH000 screw until the clip is no longer loose.
+. Place the bottom half of the case into the top half by sliding the lip on the port side (side without the feet) of the bottom half under the arch of the port side of the top half.
+. Gently close the case by bringing the two halves together, paying attention to each clip's alignment and ensuring the case edges align.
+. Install the short PH1 screw at the bottom of the tip side of the case.
+. Install the longer PH1 screw at the ground connection point at the top side of the case (between the display and the ports).
+. Slide the rubber sleeve on (larger ridge first).
+. Gently insert tip.
+. Gently tighten the top PH1 screw to retain the tip.
+
+NOTE: For normal operation of the iron, omission of the copper ring in step #2 does not impact operation. If you are working with ESD components, you need it in order to ground the iron tip via the earth screw at the back of the iron. It is recommended to keep this installed.
+
+== FAQ
+
+=== Common Fixes
+
+. Sometimes, just updating to the newest firmware fixes issues as Ralim and team are very active in adding features and enhancements (see link:/documentation/Pinecil/Firmware/[Firmware]).
+. Some https://ralim.github.io/IronOS/Troubleshooting/[Troubleshooting information] is also on GitHub Ralim's IronOS (which is the firmware that is on the Pinecil). There are several hidden Debug tools in the firmware that also help with diagnosis.
+. Clean all new Tips (Cartridges) with 90%-99% IPA (Isopropyl Alcohol) especially the white end with the 2 silver contacts.
+. If you can't find the information here or it hasn't been written yet; simply join the volunteer run link:/documentation/#_chat_platforms[live Pinecil chat channel]. Sometimes you can get a clue to the right path.
+
+=== Common Questions
+
+. *Temperature is flickering wildly*: Most likely just need to clean whole cartridge/tip with IPA, see link:#Poor_Contact_Fix[Poor Contact Fix here]. If it's jumping wildly after reaching set temperature, this is also caused by using a low amp/volt charger that is below the 3amp minimum recommended for pinecil, upgrading to a 3.25amp/20V charger often fixes this. Also might need to update firmware; there are ADC adjustments coming in 2.21 Release IronOS.
+. *I see No Tip connected symbol randomly on new Pinecil*: tip is installed and it heats up, but randomly I get no tip symbol. See #1 above, it is most likely the same reason, dirty contacts on the back of the cartridge/tip. follow the same instructions for link:#Poor_Contact_Fix[Poor Contact Fix here]. https://github.com/Ralim/IronOS/issues/1601[Reference ticket on Github].
+. *How do I install the optional Hall Effect Sensor?* See the Hall Effect Sensor article for installation; location is U14 on the PCB & in the Schematics. Reference schematics section also.
+. *Help, I think I bricked Pinecil doing an update*: no worries, it's very hard to brick a Pinecil because of the way the firmware is loaded in ROM. Usually just flashing again with a newer or different version brings it back to life (link:/documentation/Pinecil/_index#Firmware_&_Updates[see Firmware]). This can be done even if you can't see your screen anymore.
+. *My Pinecil keeps rebooting*: change to a different charger or add a ground wire to your Pinecil ground screw (search for _ts100 ground wire_ on a search engine). Also see the link:/documentation/Pinecil/_index#Power_Supplies_and_Watts[Power Supplies article]. This could happen because of the way 2-prong no-ground chargers are made with no ground path for small current leakage. Also try to plug the charger into a surge protector strip (type that have 3-prong ground and plug the surge protector into a 3-prong grounded wall outlet). Try a different cable or flipping the cable over also.
+. *Tip is glowing red hot*. Unplug immediately, you have most likely a blown MOSFET, check that out, replacement parts in Datasheets below. Tip is probably damaged too.
+. *My temperature display is way off and Pinecil is at room temerature*: first, check the poor contact fix. Then enter the hidden debug menu and look for HAN C which is the internal handle temperature. This should normally be close to or slightly higher than the room temperature if the pinecil tip is also at room temperature. Under load, the HAN C can go up a bit, otherwise when the tip is cold, the HAN C should be close to ambient. Check the hidden debug menu for HAN C or C Han depending on your version of IronOS. See IronOS https://ralim.github.io/IronOS/Troubleshooting/[Troubleshooting here], esp. about CHan and the Temperature sensor. If the reading is out of spec (very low/high), and reflowing/resoldering the Temperature sensor does not work, replacement might be needed.
+. *Screen shows X symbol* (no tip installed) and I have a tip installed. Remove the Tip screw, seat the tip all the way back, reinstalled the screw. See link:#Tip_Problems[Tip Problems] and link:#Poor_Contact_repair[Poor Contact repair].
+. *I see `Thermal Runaway` or `Undervoltage` messages on the screen*. This is often caused by using a weak power supply that does not have a minimum of 12V-3amps and is not rated to work with Pinecil. Pinecil will stop heat to the tip and display `Thermal Runaway`.
+#* TL;DR get a USB-C charger 20V 3.25 amps, PD 65W (best bang for the buck for good Pinecil performance) many available between $15-$25.
+#* Detailed information on chargers can be found under link:/documentation/Pinecil/Power_supplies/Power_supplies[Power supplies].
+. *I plugged in the wrong kind of DC barrel charger, it was a not Center-positive pin and now the Pinecil won't turn on*: see [[#Reverse_polarity_damage|Reverse polarity damage]]. Usually requires replacing the MOSFET (U13) and Buck Converter/Step-down (U8). See the datasheets for links to parts.
+. *I hear a sizzling/crackle sound from my new Pinecil*: this is usually fine and may disappear after a few days of use, see [[#Hissing_Crackle_Sound|Hissing Crackle Sound]].
+. *Screen is black*: first try to update firmware. Check out the IronOS troubleshooting https://ralim.github.io/IronOS/Troubleshooting/#no-display-or-dots-on-the-display[guide here] for possible issues. See the link:#Datasheets_for_Components[datasheets here] at the bottom of this article for links to replacement parts. Repair method would be similar to ts100 screens of which there are many guides like https://www.youtube.com/watch?v=HlWAY0oYPFI[this video]. If the tip heats up, but screen is black, the OLED may have failed/burned out. If tip does not heat up, it may be something else. Sometimes just reflow/reheat the solder for the OLED screen fixes issues. Using OLED screen at lower brightness extends the life.
+
+== Solutions
+
+
+=== Hissing Crackle Sound
+
+
+. The sizzle sound will usually go away after a few days of use and heating up the iron. After wiping the tip contacts with IPA, heat it up a few times to 350 °C.
+. Ralim said, "there is usually a bit of noise when you first use it, and a slight hiss/pop noise from the handle and that is normal. depends a bit on exactly what batch of caps are in your unit. The Tip drive signal is AC coupled through a capacitor for safety, downside is that it means the firmware is hitting that cap with a square wave the whole time the tip is on. Once you have heated up the duty cycle, it drops off so it's not as noticeable."
+. Some members reported that after they opened their new Pinecil, wiped the PCB and tips gently with IPA, let it dry, all the sizzling noise went away. They also did a break-in of the new tips, bringing the temperature to 350 C a few times.
+. Video of similar https://www.reddit.com/r/soldering/comments/qv66a6/weird_crackling_noise_from_ts100_not_from_the_hot/[crackle sound] on the ts100 iron (don't have example of Pinecil, but it's similar sound).
+
+=== Reverse Polarity Damage
+
+Pinecil requires a center-positive DC power supply which most are, but some are reverse polarity and will destroy the electronics if used. If you plugged in a "center-negative" DC power supply, most likely the MOSFET and the buck converter are broken. This usually requires replacing the MOSFET (U13) and buck converter / step-down (U8). See the datasheets for links to replacement parts which is at the bottom of this article [[#Datasheets_for_Components| here]].
+
+IMPORTANT: *Check the polarity* of the DC barrel plug before plugging in a random charger. Incorrect polarity will break the Pinecil. The https://www.youtube.com/watch?v=5DBTNplNTfA[video here] shows how to check.
+
+image:/documentation/images/AC_adaptor_polarity.png[width=400]
+
+image:/documentation/images/Nintendo-center-negative.png[width=300]
+
+Reference the article on [[Pinecil_Power_Supplies#DC_Barrel_Power| DC barrel chargers here]], (i.e., laptop bricks) for appropriate USB-C and DC chargers that will work with the Pinecil.
+
+=== Cartridge/Tip Problems
+
+. Wipe entire tip (cartridge) clean, details in link:#Poor_Contact_test_and_repair[Poor Contact] section
+. Using a multimeter, switch it to ohms to measure resistance. Measure the two silver bands at the rear end (white).
+. If it measures OL or infinity, or extremely out of the spec range below, it might be bad.
+#* Normal ts100 style tips should measure ~7.8 ohms - 8.3 ohms.
+#* PINE64 brand Short tips should measure ~6.1-6.5 ohms.
+#* See the link:/documentation/Pinecil/Tips[Tips] for more details.
+
+=== Poor Contact Fix
+
+. Most likely the tip (cartridge) is not making good contact (at the silver bands on the rear white end). Usually this issue goes away after a few days of use as the cartridge rubs against the internal contacts more. New cartridges could have factory residue on them that interferes with the R-tip reading.
+. To fix this issue quicker, wipe all new tips (cartridges) with a dry towel or 90-99% IPA (isopropyl alcohol) especially the two silver contacts at the white end (do not use water to wipe as it could get into the seam line on the white end).
+. With the Pinecil unplugged, remove and reinsert the tip a couple times and spin it a little inside against the contacts. Then plug it in and heat it up to 350 °C a few times for a couple minutes. These steps tend to resolve most new Pinecil or new cartridges causing flickering temperatures or "no-tip" icon displays randomly.
+. Always unplug Pinecil before swapping tips. Hot swapping is not a good idea, and for the V2 this could cause strange behavior as the V2 auto-detects tip resistance only on power-up or reboot.
+. Sometimes just disassembling and reassembling all parts back correctly and installing the 2 internal contacts with screws correctly also helps.
+. Poor contact could happen if the tips are not clean or brand new with factory residue or not making good contact with the internal clips inside the Pinecil. The two contacts inside might need to also be removed, wiped and reinstalled with the two screws (ensure the small metal tab on the clip sits into the small hole in the PCB).
+
+== Images
+
+image:/documentation/images/PCP-Top-side-screen.jpg[Screen side: V2 on top, V1 below]
+image:/documentation/images/PCP-Bottom-Side.jpg[Pinecone side: V2 on top, V1 below]
+image:/documentation/images/Pinecil_v2_MOSFET.JPG[_MOSFET_V2_|alt=alt_language,title="_MOSFET_V2_|alt=alt_language"]
+image:/documentation/images/FUSB302-V2-02.JPG[width=302]
+image:/documentation/images/Pinecil_LDOandOP-Amp.png[_LDO_and_OP-Amp|alt=alt_language,title="_LDO_and_OP-Amp|alt=alt_language"]
+image:/documentation/images/Under_OLED_screen01.png[ Under the OLED screen, V2|alt=alt language,title=" Under the OLED screen, V2|alt=alt language"]
+
+
+== Schematics and Board Data
+
+
+=== Pinecil V2 mainboard schematic
+
+
+* https://files.pine64.org/doc/Pinecil/Pinecil_schematic_v2.0_20220608.pdf[Pinecil mainboard schematic ver 2.0 20220608, this is production version schematic]
+* https://files.pine64.org/doc/Pinecil/Pinecil_PCB_placement_v2.0_20220608.pdf[Pinecil mainboard ver 2.0 PCB Component Placement PDF file]
+
+=== Pinecil V1 mainboard schematic
+
+V1 was only sold until July 2022, and then discontinued for newer V2 model
+
+* https://files.pine64.org/doc/Pinecil/Pinecil_schematic_v1.0a_20201120.pdf[Pinecil mainboard schematic ver 1.0 20201120, this is production version schematic]
+* https://files.pine64.org/doc/Pinecil/Pinecil-PCB-placement-v1.0-topplace.pdf[Pinecil mainboard ver 1.0 PCB Component Placement Top PDF file]
+* https://files.pine64.org/doc/Pinecil/Pinecil-PCB-placement-v1.0-bottomplace.pdf[Pinecil mainboard ver 1.0 PCB Component Placement Bottom PDF file]
+* https://files.pine64.org/doc/Pinecil/Pinecil-PCB-placement-v1.0-topplace.dxf[Pinecil mainboard ver 1.0 PCB Component Placement Top Drawing file]
+* https://files.pine64.org/doc/Pinecil/Pinecil-PCB-placement-v1.0-bottomplace.dxf[Pinecil mainboard ver 1.0 PCB Component Placement Bottom Drawing file]
+
+== Datasheets for Components
+
+
+=== Pinecil V2 datasheets
+
+
+* Power MOSFET Switch: https://datasheet.lcsc.com/lcsc/2105241831_HUASHUO-HSM4313_C2828487.pdf[HSM4313], location U13 (https://lcsc.com/product-detail/MOSFETs_HUASHUO-HSM4313_C2828487.html[Replacement HSM4313]).
+
+* LDO Regulator: https://datasheet.lcsc.com/lcsc/1912111437_LOWPOWER-LP3986-33B3F_C387689.pdf[LP 3986-33], Ultra-low noise, location U5 (Replacement https://www.lcsc.com/product-detail/Linear-Voltage-Regulators-LDO_LOWPOWER-LP3986-33B3F_C387689.html[LP 3986-33]).
+
+* Buck Converter: https://datasheet.lcsc.com/lcsc/2108072230_TECH-PUBLIC-TP6841S6_C2844736.pdf[TP6841S6 40V], Step-Down, location U8, (Replacement https://www.lcsc.com/product-detail/DC-DC-Converters_TECH-PUBLIC-TP6841S6-A_C2844924.html[TP6841S6-A]).
+
+* USB-C PD Controller: https://rocelec.widen.net/view/pdf/0av2cqef3a/FAIR-S-A0001311862-1.pdf?t.download=true&u=5oefqw[FUSB302MPX], location U1, (Replacement https://www.lcsc.com/product-detail/span-style-background-color-ff0-USB-span-ICs_onsemi-Fusb302mpx_C442699.html[FUSB302MPX])
+
+* Acceleration/Gyroscope: https://lcsc.com/product-detail/Attitude-Sensor-Gyroscope_Hangzhou-Silan-Microelectronics-SC7A20TR_C5126709.html[SC7A20 sensor], Silan, location U9 (replacement unknown).
+
+* NTC Temperature Sensor: https://media.digikey.com/pdf/Data%20Sheets/TDK%20PDFs/NTCG163JF103FTDS_Spec.pdf[NTCG163JF103FTDS], location NTC1 (Replacement https://lcsc.com/product-detail/span-style-background-color-ff0-NTC-span-Thermistors_TDK-NTCG163JF103FTDS_C435270.html[NTC here]). Note that U10 is empty if NTC type thermistor is used.
+
+* Optional Hall Effect Sensor: https://files.pine64.org/doc/datasheet/pinecil/si7210-datasheet.pdf[ Si7210-B-00-IV(R) ]by Silicon Labs, location U14. This is a user add-on and does not come installed on the pcb.
+** (https://www.silabs.com/documents/public/application-notes/an1018-si72xx-sensors.pdf[How magnets work near Hall Sensor Si7210])
+** (https://lcsc.com/product-detail/Position-Sensor_SILICON-LABS-SI7210-B-00-IVR_C2654956.html[Replacement Si7210-B-00-IV], also at Digikey and Mouser)
+
+* Operational Amplifier https://files.pine64.org/doc/datasheet/pinecil/SGM8557.pdf[SGM8557-1AXN5G], SGMicro, Low Noise OP Amp Datasheet, location U11 (replacement unknown).
+
+* Display Screen OLED https://files.pine64.org/doc/datasheet/pinecil/1810010328_UG-Univision-Semicon-UG-9616TSWCG02_C88335.pdf[QUG-9616TSWCG02] datasheet (Replacement https://www.lcsc.com/product-detail/OLED-Displays-Modules_UG-Univision-Semicon-UG-9616TSWCG02_C88335.html[QUG-9616TSWCG02] OLED Display).
+
+MCU: Bouffalo Labs, BL-706_QFN48, RISC-V + 2.4 GHz RF SoC
+
+* https://lupyuen.github.io/articles/bl706[BL706 Analysis], by Lupyuen, includes datasheet, location U15.
+* https://dev.bouffalolab.com/media/doc/702/open/datasheet/en/html/index.html[BL706 datasheet]
+* https://dev.bouffalolab.com/media/doc/702/open/reference_manual/en/html/index.html[BL706 Reference Manual]
+* https://github.com/bouffalolab/bl_mcu_sdk[SDK and Bouffalo documents]
+* https://datasheet.lcsc.com/lcsc/1912111437_TAE-Zhejiang-Abel-Elec-TAXM32M4ZFBCCT2T_C388797.pdf[SMD Resonator] for Bluetooth BLE,  32MHZ/12PF-10PPM, SMD2016-4P, location UX1 (Replacement https://lcsc.com/product-detail/Crystals_TAE-Zhejiang-Abel-Elec-TAXM32M4ZFBCCT2T_C388797.html[SMD Resonator]).
+
+USB-C port:
+
+* possible part, has not been verified: https://www.lcsc.com/product-detail/span-style-background-color-ff0-USB-span-Connectors_SHOU-HAN-TYPE-C-24P-QT_C2681555.html[Replacement USB-C port]
+
+=== Pinecil V1 datasheets
+
+* Buck converter: https://files.pine64.org/doc/datasheet/pinecil/RT7272B-05.pdf[RT7272B 3A Datasheet], Ricktek, Step-Down converter, location U8
+* LDO Regulator: https://datasheet.lcsc.com/lcsc/1912111437_LOWPOWER-LP3986-33B3F_C387689.pdf[LP 3986-33], location U5, (https://www.lcsc.com/product-detail/Linear-Voltage-Regulators-LDO_LOWPOWER-LP3986-33B3F_C387689.html[Replacement here]).
+* MOSFET Switch: https://files.pine64.org/doc/datasheet/pinecil/Changjiang-Electronics-Tech-CJ-CJQ7328.pdf[CJQ7328 8A datasheet], Chang Jiang.
+** Hint: people have replaced V1 mosfet using the better rated one from the newer V2 datasheets (HSM4313 has same footprint and higher rating), see V2 section for MOSFET.
+* Acceleration https://files.pine64.org/doc/datasheet/pinecil/BMA223-Bosch.pdf[Bosch BMA223 Sensor Datasheet]
+* Temperature Sensor: https://files.pine64.org/doc/datasheet/pinecil/TMP35_36_37.pdf[Analog Device TMP36 Datasheet], location U10, (possible https://www.lcsc.com/product-detail/Temperature-Sensors_Analog-Devices-TMP36GRTZ-REEL7_C129489.html[replacement here]).
+* Optional Hall Effect Sensor: https://files.pine64.org/doc/datasheet/pinecil/si7210-datasheet.pdf[ Si7210-B-00-IV(R) by Silicon Labs, location U14]. This is a user add-on and does not come installed on the pcb.
+** (https://www.silabs.com/documents/public/application-notes/an1018-si72xx-sensors.pdf[How magnets work near Hall Sensor Si7210])
+** (https://lcsc.com/product-detail/Position-Sensor_SILICON-LABS-SI7210-B-00-IVR_C2654956.html[One place to buy it], also at Digikey and Mouser)
+* OLED Display screen: https://files.pine64.org/doc/datasheet/pinecil/1810010328_UG-Univision-Semicon-UG-9616TSWCG02_C88335.pdf[QUG 9616TSWCG02 Display Module Datasheet]
+* USB Type-C PD Controller: https://files.pine64.org/doc/datasheet/pinecil/FUSB302-D.PDF[FUSB302 USB PD Datasheet]
+* OP Amp information: https://files.pine64.org/doc/datasheet/pinecil/SGM8557.pdf[SGMicro SGM8557-1 Low Noise OP Amp Datasheet (U11)]
+* Capacitors: https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0603KRX7R9BB105_C559769.html[possible replacement part for C5, 1uF/50V]
+* USB-C port: possible part, has not been verified: https://www.lcsc.com/product-detail/span-style-background-color-ff0-USB-span-Connectors_SHOU-HAN-TYPE-C-24P-QT_C2681555.html[Replacement]
+
+GigaDevice RISC-V SoC data:
+
+* https://files.pine64.org/doc/datasheet/pinecil/GD32VF103_Datasheet_Rev%201.1.pdf[GigaDevice RISC-V GD32VF103TB SoC Datasheet V1.1]
+* https://files.pine64.org/doc/datasheet/pinecil/GD32VF103_User_Manual_EN_V1.2.pdf[GigaDevice RISC-V GD32VF103TB SoC Usermanual V1.2]
+
+Breakout Board Datasheet: https://files.pine64.org/doc/datasheet/pinecil/LP6498B6F.pdf[LP6498B6F 1.2A Switching Power Regulator]
+
+== Pinecil V1, 24V Mod
+
+WARNING: Do this at your own risk, read everything in this section and related/linked articles, and go to the Pinecil community chat if you desire advice. An incorrect cut of the trace could render the Pinecil non-working.
+
+. This modification is not for the V2 as the newer V2 already has 24V DC capability.
+. If you have an older V1 model, then first upgrade to the newest link:/documentation/Pinecil/_index#Firmware_&_Updates[firmware here] before starting this modification. The PD debug menu was added to the firmware in 2.17 and other important fixes came later. Access to the hidden PD debug menu is necessary to assist with this mod.
+. See Ralim's IronOS for how to use the hidden https://ralim.github.io/IronOS/DebugMenu/#pd-debug-menu[PD Debug here] and check if your version of Pinecil V1 could benefit from the modification.
+. If PD-Debug menu says "No VBUS", then stop here, you do not need the modification or any cut of the trace line, it will not benefit you because there is no connection to the VBUS already. If it says "w. Vbus" then continue. If you don't have a PD-Debug menu, then upgrade to the newest firmware first, see instructions above.
+. Some models of V1 came with the PCB already capable of 24V as the Pine Store made modifications to the PCB (not all batches of V1 were the same). Do the PD debug test first to see if the mod is not required.
+. See the February 2022 https://www.pine64.org/2022/02/15/february-update-chat-with-the-machine/[Community update here]. The photo is incorrect in the article. It is _not_ a before and after photo.
+* Photo shows two separate PCBs of Pinecil V1 made at different times; therefore, the trace is cut in a slightly different location depending on which one it looks like.
+* The PCB with 2 small via holes and is harder to cut in the correct location to avoid damaging the holes. This is called the "whalecil" in community chat (looks like a whale).
+image:/documentation/images/Pinecil_V1_24V_Mod.png[width=400]
+ PCB 1 style (left photo) is easier to cut the trace. Cut all the way across the trace and deep enough to cut the copper contact. PCB 2 style (right photo) is harder because the trace has to be cut without damaging the 2 via holes.
+. Don't plug in 24V until you first check with a USB-C PD charger that PD debug says *No VBUS* which means the mod is complete. If it still says *W. Vbus*, then the connection still exist. Cut a little deeper and clean the cut with some IPA (isopropyl alcohol) to remove any copper dust, dry it and check again. Taking a macro photo with a phone helps to examine the cut.
+If a USB-C charger is not available, often a phone with a USB-C port is a PD type, and can be used like a charger to plug in and check the PD debug messages (unfortunately, a PC port is not normally "PD" and won't give proper PD Debug).
+
+. If you want another set of eyes on it before you cut, post a photo of your PCB (near the Pinecone) on the Pine64 > link:/documentation/#_chat_platforms[[live Pinecil chat channel]. Ask for a volunteer who has _completed_ the 24V mod on a Pinecil V1 to assist. Not all chat people own a Pinecil even if they are in the Pinecil channel.
+
+

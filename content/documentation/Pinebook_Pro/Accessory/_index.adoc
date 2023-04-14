@@ -1,0 +1,12 @@
+---
+title: "Accessory"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "Pinebook_Pro"
+    identifier: "Pinebook_Pro/Accessory"
+    weight: 
+---
+
+* link:Compatibility[]

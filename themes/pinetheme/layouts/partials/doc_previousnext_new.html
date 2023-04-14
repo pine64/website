@@ -1,0 +1,8 @@
+{{ $pages := where site.RegularPages "Section" .Section }}
+{{ with $pages.ByTitle.Next . }}
+	<a title="Next page in {{ .Section }}" href="{{ .Permalink }}">Next</a>
+{{ end }}
+
+{{ with $pages.ByTitle.Prev . }}
+	<a title="Previous page in {{ .Section }}" href="{{ .Permalink }}">Previous</a>
+{{ end }}

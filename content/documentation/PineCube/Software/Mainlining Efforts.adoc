@@ -1,0 +1,85 @@
+---
+title: "Mainlining Efforts"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PineCube/Software"
+    identifier: "PineCube/Software/Mainlining Efforts"
+    weight: 
+---
+
+
+Please note:
+
+* this list is most likely not complete
+* no review of functionality is done here, it only serves as a collection of efforts
+
+|===
+3+|Linux kernel
+
+| Type
+| Link
+| Available in version
+
+| Devicetree Entry Pinecube
+| https://lkml.org/lkml/2020/9/22/1241
+| 5.10
+
+| Correction for AXP209 driver
+| https://lkml.org/lkml/2020/9/22/1243
+| 5.9
+
+| Additional Fixes for AXP209 driver
+| https://lore.kernel.org/lkml/20201031182137.1879521-8-contact@paulk.fr/
+| 5.12
+
+| Device Tree Fixes
+| https://lore.kernel.org/lkml/20201003234842.1121077-1-icenowy@aosc.io/
+| 5.10
+
+| Audio Device and IR LED Fix
+| https://github.com/danielfullmer/pinecube-nixos/blob/master/kernel/Pine64-PineCube-support.patch
+| https://github.com/danielfullmer/pinecube-nixos/issues/2[TBD]
+
+3+|U-boot
+
+| Type
+| Link
+| Available in version
+
+| PineCube Board Support
+| https://patchwork.ozlabs.org/project/uboot/list/?series=210044
+| v2021.04
+
+3+|Buildroot
+
+| Type
+| Link
+| Available in version
+
+| PineCube Board Support
+| https://patchwork.ozlabs.org/project/buildroot/list/?series=314653
+|
+|===
+
+== Debugging
+
+Camera issues can be debugged with the gstreamer pipeline. If the camera does not appear to work, it is possible to change the `v4l2src` to `videotestsrc` and the gstreamer pipeline will produce a synthetic test image without using the camera hardware.
+
+If the camera is only sensor noise lines over a black or white image, the camera may be in a broken state. When in that state, the following kernel messages were observed:
+
+ [ 1703.577304] alloc_contig_range: [46100, 464f5) PFNs busy
+ [ 1703.578570] alloc_contig_range: [46200, 465f5) PFNs busy
+ [ 1703.596924] alloc_contig_range: [46300, 466f5) PFNs busy
+ [ 1703.598060] alloc_contig_range: [46400, 467f5) PFNs busy
+ [ 1703.600480] alloc_contig_range: [46400, 468f5) PFNs busy
+ [ 1703.601654] alloc_contig_range: [46600, 469f5) PFNs busy
+ [ 1703.619165] alloc_contig_range: [46100, 464f5) PFNs busy
+ [ 1703.619528] alloc_contig_range: [46200, 465f5) PFNs busy
+ [ 1703.619857] alloc_contig_range: [46300, 466f5) PFNs busy
+ [ 1703.641156] alloc_contig_range: [46100, 464f5) PFNs busy
+
+== Camera Adjustments
+
+

@@ -1,0 +1,29 @@
+{{ partial "header_beta_warning.html" . }}
+
+
+
+<div id="navigation">
+    <div id="nav-border">
+
+        <!-- Navigation -->
+        <nav id="nav" class="nav justify-content-center">
+
+            <!-- Logo -->
+            <a href="/"><img class="logo" src="/img/logo_new_5.png"></a>
+
+            <div class="hamburger"><label for="hamburger">&#9776;</label></div>
+            <input type="checkbox" id="hamburger"/>
+
+            <div id="navlinks_right">
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.right }}
+                    <a class='nav-link {{.Identifier}} {{if (hasPrefix $.Page.RelPermalink .URL) }} active{{end}}' href="{{ .URL }}" {{ if in .URL "https://" }}target='_blank'{{ end }}>
+                {{ $text := print .Name | safeHTML }}
+                {{ $text }}
+                </a>
+                {{ end }}
+            </div>
+        </nav>
+
+    </div>
+</div>

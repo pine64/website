@@ -1,0 +1,13 @@
+---
+title: "Tuning"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PineCube"
+    identifier: "PineCube/Tuning"
+    weight: 
+---
+
+* link:Sound_controls[Sound controls]
+* link:Camera[]

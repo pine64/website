@@ -1,0 +1,17 @@
+---
+title: "Pins and GPIOs"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "SOPINE"
+    identifier: "SOPINE/Pins_and_GPIOs"
+    weight: 2
+---
+
+
+The following articles contain further details regarding the pins:
+
+* link:/documentation/SOPINE/Pin_assignment_table[Pin assignment table]
+* link:/documentation/SOPINE/GPIO_alternate_functions_table[GPIO alternate functions table]
+

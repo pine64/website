@@ -1,0 +1,29 @@
+---
+title: "Template:SeeMainArticle"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "Templates"
+    identifier: "Templates/mainarticle"
+    weight: 
+---
+
+<noinclude>
+{{Template}}
+
+== Usage
+
+`{{SeeMainArticle|article}}`
+
+== Example
+
+[cols="1,1"]
+|===
+| | Source
+| | Result
+
+|  | <pre >{{SeeMainArticle|ROCK64}}`
+| {{SeeMainArticle|ROCK64}}
+|===
+</noinclude><includeonly>Main Article: </includeonly>

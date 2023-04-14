@@ -1,0 +1,36 @@
+---
+title: "Board Features"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "Ox64/Further_information"
+    identifier: "Ox64/Further_information/Board_Features"
+    weight: 
+---
+
+
+
+=== Network
+
+* 2.4GHz 1T1R WiFi 802.11 b/g/n
+* Bluetooth 5.2
+* Zigbee
+* 10/100Mbps Ethernet (optional, on expansion board)
+
+=== Storage
+
+* On-board 16Mb (2MB) or 128Mb (16MB) XSPI NOR flash memory
+* MicroSD - supports SDHC and SDXC (only 128Mb version)
+
+=== Expansion Ports
+
+* USB 2.0 OTG port
+* 26 GPIO Pins, including SPI, I2C and UART functionality. Possible I2S and GMII expansion
+* Dual lane MiPi CSI port, located at USB-C port, for camera module
+
+=== Audio
+
+* Microphone (optional, on camera module)
+* Speaker (optional, on camera module)
+

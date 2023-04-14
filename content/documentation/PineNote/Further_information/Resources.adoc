@@ -1,0 +1,14 @@
+---
+title: "Resources"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PineNote/Further_information"
+    identifier: "PineNote/Further_information/Resources"
+    weight: 
+---
+
+
+* link:/documentation/PineNote/Press[Press]
+

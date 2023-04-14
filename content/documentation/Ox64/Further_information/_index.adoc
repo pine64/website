@@ -1,0 +1,16 @@
+---
+title: "Further information"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "Ox64"
+    identifier: "Ox64/Further_information"
+    weight: 
+---
+
+* link:Resources[]
+* link:Compatible_UARTs[Compatible UARTs]
+* link:Datasheets[]
+* link:Board_Features[Board Features]
+* link:SoC_and_Memory_Specification[SoC and Memory Specification]

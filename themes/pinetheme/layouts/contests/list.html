@@ -1,0 +1,57 @@
+{{ define "main" }}
+
+<div id="contest_header">
+    <div class="generic_header_container">
+        <h1>Contests</h1>
+
+        <p>Contests of the PINE64 community</p>
+
+        <p>
+        {{ with .OutputFormats.Get "rss" -}}
+        {{ printf `<a href="%s">RSS feed</a>` .Permalink | safeHTML }}
+        {{ end -}}
+        </p>
+    </div>
+</div>
+
+
+<div class="mid_flex_container">
+    
+<div class="blog-list-title"><h1>{{ .Title }}</h1></div>
+
+<div class="contests-container">
+
+    {{ $paginator := .Paginate (where .Data.Pages "Type" "contests") 4 }}
+
+    {{ range $paginator.Pages }}
+
+    <div class="clearfix">
+        <div class="contests-entry">
+            <a class="summary" href="{{ .RelPermalink }}">
+                <div class="contests_img_container">
+                    {{if and (isset .Params.cover "image") (ne .Params.cover.image "") }}
+                        <img class="contests-preview" src="/contests/images/{{ .Params.cover.image }}"/>
+                    {{end}}
+                </div>
+
+                <h3>{{ .Title }}</h3>
+
+                {{ partial "blog_date.html" . }}
+
+                <br><br>
+
+                {{ .Summary }} <span>Read more</span>
+            </a>
+        </div>
+    </div>
+
+    {{ end }}
+
+</div>
+
+{{ template "_internal/pagination.html" . }}
+
+</div>
+
+{{ end }}
+

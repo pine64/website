@@ -1,0 +1,36 @@
+---
+title: "Board Features"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PINE_H64_Model_A"
+    identifier: "PINE_H64_Model_A/Board_Features"
+    weight: 
+---
+
+
+=== Video
+* Digital Video 4KP60 (Type A - full)
+
+=== Audio
+
+* 3.5mm stereo earphone/microphone plug
+
+=== Network
+
+* 10/100/1000Mbps Ethernet
+* WiFi 802.11 b/g/n/ac with Bluetooth 4.0/4.1 (optional)
+
+=== Storage
+
+* microSD - bootable, support SDHC and SDXC, storage up to 256GB
+* USB -	1 USB3.0 Host port and 2 USB2.0 Host port
+
+=== Expansion Ports
+
+* RTC - Real Time Clock Battery Connector
+* Wifi/BT Module Header - SDIO 3.0 and UART
+* 2x20 pins "Pi2" GPIO Header
+* mini PCIe connector
+

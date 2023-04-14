@@ -1,0 +1,27 @@
+---
+title: "S02E04: Behind the curtains"
+date: 2021-12-28
+draft: false
+description: "In this episode Justin and Brian recorded live on Discord with the stage feature. This episode covers updates for various mobile interfaces, the MNT reform SOQuartz module adapter, the PinePhone malware, the keyboard addon availability, and more!"
+aliases:
+    - /2021/12/28/s02e04-pinetalk-behind-the-curtains/
+---
+
+{{< podcast_player episode="s02e04">}}
+
+In this episode Justin and Brian recorded live on Discord with the stage feature. This episode covers updates for various mobile interfaces, the MNT reform SOQuartz module adapter, the PinePhone malware, the keyboard addon availability, and more!
+
+Links and topics discussed:
+
+* https://plasma-mobile.org/2021/12/07/plasma-mobile-gear-21-12/
+* https://sr.ht/mil/framebufferphone/
+* https://github.com/GloDroid/glodroid_manifest/releases/tag/v0.7.0-embed-fest-2021
+* https://gitlab.com/famedly/fluffychat/-/blob/main/CHANGELOG.md
+* https://mastodon.social/@mntmn/107422486591550104
+* https://fosstodon.org/@danct12/107444234027433862
+
+Music from Bensound.com and Zed (@itismezed)
+
+https://soundcloud.com/kevinflynnretro
+
+Edited by Zed

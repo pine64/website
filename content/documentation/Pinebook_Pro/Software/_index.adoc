@@ -1,0 +1,18 @@
+---
+title: "Software"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "Pinebook_Pro"
+    identifier: "Pinebook_Pro/Software"
+    weight: 1
+---
+
+* link:Tuning_guide[Tuning guide]
+* link:Quick_Start_Manjaro[Quick Start Manjaro]
+* link:Tuning[]
+* link:Releases[]
+* link:Installing_Void_Linux_ARM[Installing Void Linux ARM]
+* link:Installing_Arch_Linux_ARM[Installing Arch Linux ARM]
+* link:Debian_installer[Debian installer]

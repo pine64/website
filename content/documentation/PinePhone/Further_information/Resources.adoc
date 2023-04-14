@@ -1,0 +1,27 @@
+---
+title: "Resources"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PinePhone/Further_information"
+    identifier: "PinePhone/Further_information/Resources"
+    weight: 
+---
+
+
+The following articles contain more specific information:
+
+* link:/documentation/PinePhone/Accessibility[Accessibility]
+* link:/documentation/PinePhone/Software_tricks/Power_management[Power management]
+* link:/documentation/PinePhone/Software_tricks/Security[Security]
+* link:/documentation/PinePhone/Further_information/Ubuntu_Touch_design[Ubuntu Touch design]
+
+The following resources have been made available by Ondřej Jirman, a developer for the Pinephone:
+
+* https://xnux.eu/howtos/pine64-pinephone-getting-started.html[Getting started with PinePhone Hardware]
+* https://xnux.eu/devices/pine64-pinephone.html[State of development progress]
+* https://xnux.eu/log/[Development log]
+* https://xnux.eu/news.html[PinePhone Technical News and Update, also applies to other Allwinner devices including PINE A64 SBC]
+* https://xnux.eu/contribute.html[Contributions to the kernel development]
+

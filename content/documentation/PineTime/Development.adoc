@@ -1,0 +1,243 @@
+---
+title: "Development"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PineTime"
+    identifier: "PineTime/Development"
+    weight: 
+---
+
+== Reprogramming
+
+link:/documentation/PineTime/Further_information/Devkit_wiring[Wire it up] and then [[Reprogramming the PineTime| flash something]].
+
+== Available firmware and projects
+
+[cols="1,1,1,1"]
+|===
+|
+|Project Homepage
+|Project Source
+|PineTime Implementations
+
+
+|FreeRTOS
+|https://www.freertos.org
+| https://sourceforge.net/projects/freertos/
+|
+|===
+|link:/documentation/PineTime/Software/InfiniTime[InfiniTime] (GitHub: https://github.com/JF002/Pinetime[JF002/Pinetime])
+
+|https://github.com/kaythe/pinetime-os[kaythe/pinetime-os]
+|===
+
+
+|Zephyr
+| https://www.zephyrproject.org
+| https://github.com/zephyrproject-rtos/zephyr
+|
+|===
+|https://github.com/najnesnaj/pinetime-zephyr[najnesnaj/pinetime-zephyr]
+
+|https://github.com/SuperPrower/pinetime_zephyr_sample_fw[SuperPrower/pinetime_zephyr_sample_fw]
+
+|https://github.com/Dejvino/pinetime-hermes-firmware[Dejvino/pinetime-hermes-firmware]
+
+|https://github.com/endian-albin/pinetime-hypnos[endian-albin/pinetime-hypnos]
+
+|https://zephyrlabs.github.io/Watchfaces/OmegaTime/[omegatime watchface]
+|===
+
+
+|mynewt
+| https://mynewt.apache.org/about/
+| https://github.com/apache/mynewt-core
+|
+|===
+|https://github.com/lupyuen/pinetime-rust-mynewt[lupyuen/pinetime-rust-mynewt](Discontinued by Creator)
+
+|https://gitlab.com/caspermeijn/klok[caspermeijn/klok]
+|===
+
+
+|MbedOS
+| https://os.mbed.com
+| https://github.com/ARMmbed/mbed-os
+|
+|===
+|https://github.com/sethitow/mbed-pinetime[sethitow/mbed-pinetime]
+
+|https://github.com/geoffrey-vl/mbed-pinetime[geoffrey.vl/mbed-pinetime]
+|===
+
+
+|RIOT
+| http://riot-os.org/
+| https://github.com/RIOT-OS/RIOT/
+| https://github.com/bosmoment/PineTime-apps[bosmoment/PineTime-apps]
+
+
+|TinyGo
+| https://tinygo.org
+| https://github.com/tinygo-org/tinygo
+| https://github.com/aykevl/go-smartwatch[aykevl/go-smartwatch]
+
+
+|wasp-os (MicroPython)
+| https://wasp-os.readthedocs.io/
+| https://github.com/daniel-thompson/wasp-os
+| https://wasp-os.readthedocs.io/en/latest/install.html#pine64-pinetime-developer-edition[WaspOS PineTime install guide]
+
+
+|Rust + RTFM
+| https://rtfm.rs/
+| https://github.com/rtfm-rs/cortex-m-rtfm[rtfm-rs/cortex-m-rtfm]
+| https://github.com/dbrgn/pinetime-rtfm/
+
+
+|Bare Metal
+|
+|
+|===
+|https://github.com/xriss/timecake
+
+|https://github.com/Arc13/Pyrus
+[cols="1,1,1"]
+|===
+|
+|===
+|https://github.com/xriss/timecake[xriss/timecake]
+
+|https://github.com/Arc13/Pyrus[Arc13/Pyrus]
+|===
+
+
+|AdaFruit bootloader
+|
+| https://github.com/adafruit/Adafruit_nRF52_Bootloader
+| https://github.com/daniel-thompson/wasp-bootloader[daniel-thompson/wasp-bootloader]
+
+
+|Useful drivers
+|
+| https://github.com/sethitow/mbed-pinetime
+| https://github.com/sethitow/mbed-pinetime/tree/master/drivers[https://github.com/sethitow/mbed-pinetime]
+[cols="1,1,1,1,1"]
+|===
+[cols="1,1,1,1"]
+|===
+|
+|Project Homepage
+|Project Source
+|PineTime Implementations
+
+
+|Gadgetbridge (Android companion app)
+| https://gadgetbridge.org/
+| https://codeberg.org/Freeyourgadget/Gadgetbridge
+| InfiniTime support in mainline
+
+
+|Arduino
+| https://youtu.be/4aFDjymXjOw
+| https://github.com/atc1441/ATCwatch
+| https://github.com/atc1441/ATCwatch
+
+
+|OTA Update Flasher / DaFlasher
+| https://youtu.be/gUVEz-pxhgg
+| https://github.com/atc1441/DaFlasherFiles
+| https://github.com/atc1441/DaFlasherFiles
+
+
+|InfiniTime companion app for Linux
+| https://github.com/alexr4535/siglo[alexr4535/siglo]
+|
+|
+
+
+|Wasp-os companion app for Linux
+| https://github.com/Siroj42/wasp-companion[Siroj42/wasp-companion]
+|
+|
+
+
+|UI design proposal
+| https://github.com/arteeh/pinetime[arteeh/pinetime]
+|
+|
+
+
+|Flashing app for Linux
+| https://github.com/arteeh/pinetime-flasher[arteeh/pinetime-flasher]
+|
+|
+
+
+|Flashing app for Windows
+| https://github.com/ZephyrLabs/PinetimeFlasher[ZephyrLabs/PinetimeFlasher]
+|
+|
+
+
+|ESP32 / ESP8266 SWD WebFlasher
+| https://youtu.be/Iu6RoXRZxOk
+| https://github.com/atc1441/ESP32_nRF52_SWD
+|
+
+
+|InfiniTime companion daemon for Linux
+| https://gitea.arsenm.dev/Arsen6331/itd[Arsen6331/itd]
+|
+|
+
+
+|===
+
+=== Manuals
+
+* https://github.com/JF002/Pinetime[InfiniTime installation]
+* https://github.com/najnesnaj/pinetime-zephyr[Zephyr installation] Beginner manual which explains how to install Zephyr (by najnesnaj).
+* https://wasp-os.readthedocs.io/en/latest/[Wasp-OS installation] Full manual with install instructions and an application writer's guide.
+
+== How to write battery friendly software?
+
+The key to save battery is to enable only what you need when you need it. nRF52832 has a lot of functionalities allowing you to draw as little current as possible. Here are some tips and tricks:
+
+* Disable / shutdown / put in sleep mode *all devices around the MCU* (display controller, touch controller, external memory,...).
+* Disable all *peripheral inside the MCU* when you don't need them (SPI, TWI(I²C),...). The power management of the NRF52832 is very smart and will completely shut down (power off and disable the clock) the peripheral when the software disables it.
+* Put the MCU to sleep as soon and as often as possible. If you are not using a RTOS, this is done by calling _WFE_ (wait for event) instruction. Most of the time, RTOS implement this functionality. For example, FreeRTOS calls it the _tickless mode_ : it puts the CPU in sleep mode when no task is planned for execution for more than a specified time, and wakes up as soon as an event is detected or when a task is ready to run.
+* Do not use logging (JLink RTT, SWO, semihosting,...), it uses a lot of power.
+* Ensure that the debug circuitry of the MCU is not enabled when you measuring the battery life. The debug peripheral is enabled as soon as you connect a debugger to the device, and *is not automatically disabled*, even if you disconnect the debugger you will have to wait for the battery to go flat to disable to port. The software running in the NRF52832 cannot disable the debug peripheral. How to disable the debug circuitry:
+  - using _nrfjprog --reset_
+  - using JLinkExe : issue the command _writeDP 1 0_
+
+  or with OpenOCD
+  - issue the command _halt_
+  - issue the command _flash fillw 0x10001208 0xFFFFFF00 0x01_
+  - issue the command _reset_
+
+  you can check if the debug port is enabled using the following code
+  DWT->CYCCNT ? "NO":"YES"
+* Read https://infocenter.nordicsemi.com/pdf/nRF52832_Rev_2_Errata_v1.1.pdf[the errata sheet of the MCU] and apply workarounds if they apply to your software.
+
+== Wishlist
+
+In order to keep track of features and changes to the hardware people would like to see, check out this article: link:/documentation/PineTime/Development/Hardware_wishlist[Hardware wishlist]
+
+== Compatibility with other projects
+
+Different firmware running using different bootloaders and Bluetooth stacks on the nRF52832 have different requirements on how they should be initialised and what should be placed where in the internal flash.
+
+To keep track of what, how and why things work like they do across the different projects, check out the link:/documentation/PineTime/Flashing/SD_MCUBoot[PineTime SoftDevice and MCUBoot compatibility] article.
+
+== Compatibility with companions apps and Bluetooth communication
+
+There are a lot of different firmware running on the Pinetime that implement different BLE APIs (time synchronization, notifications, ...). Companion apps must be able to differentiate between different firmware and forks of the same firmware. See link:/documentation/PineTime/Bluetooth[Bluetooth].
+
+== PineTime equivalents and jailbreaking
+
+This page contains a list of PineTime-like smartwatches that might be "jailbreakable" or a good source for ideas for the PineTime: link:/documentation/PineTime/Further_information/Equivalents[Equivalents]
+

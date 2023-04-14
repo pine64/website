@@ -1,0 +1,31 @@
+<div class="yt_prev shortcode-youtube" onclick='load_yt( {{ .Get "id" }} )'>
+
+    <!-- Video overlay (first click) -->
+    <div id='yt_overlay_{{ .Get "id" }}'>
+        <div class="yt_overlay_content">
+            <div class="yt_pb"></div>
+            <div id='yt_prev_{{ .Get "id" }}' style="z-index: 1;">
+                <img src='/blog/images/yt_preview/{{ .Get "id" }}.png' alt='Youtube video {{ .Get "id" }}' width="100%">
+            </div>
+        </div>
+        <div class="yt_note"><b>Note:</b> This image preview protects your privacy. Click to load the video from the Google servers.
+            <noscript>
+                <a href='https://www.youtube.com/watch?v={{ .Get "id" }}'>Link to the video</a>
+            </noscript>
+        </div>
+        <div class="yt_lbl"></div>
+    </div>
+
+    <!-- Video container -->
+    <div class="video-container">
+        <iframe id='yt_frame_{{ .Get "id" }}' width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<script>
+function load_yt(a) {
+  document.getElementById('yt_frame_'+arguments[0]).src = 'https://www.youtube.com/embed/' + arguments[0] + '?&autoplay=1';
+
+  document.getElementById('yt_overlay_'+arguments[0]).style.display = "none";
+}
+</script>

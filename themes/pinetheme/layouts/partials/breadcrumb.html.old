@@ -1,0 +1,30 @@
+<div id="doc-breadcrumbs">
+    <div id="doc-breadcrumbs-contents">
+        {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+        {{ $.Scratch.Set "path" .Site.BaseURL }}
+        {{ $.Scratch.Set "cur" .Page.Permalink }}
+        <ul class="breadcrumbs">
+          <span id="doc-breadcrumbs-icon"><img src="/img/tree.svg"></span>
+          {{ range $index, $element := split $url "/" }}
+          {{ $.Scratch.Add "path" $element }}
+              {{ $.Scratch.Add "path" "/" }}
+              {{ if ne $element "" }}
+                {{ if ne ($.Scratch.Get "path") ($.Scratch.Get "cur")  }}
+                    <a href='{{ $.Scratch.Get "path" }}'>{{ replace . "_" " " }}</a>
+                    / 
+                {{ else }}
+                    {{ replace . "_" " " }}
+                {{ end }}
+              {{ end }}
+
+          {{ end }}
+        </ul> 
+
+
+    </div>
+    <div>
+        <span class="editpage">
+            <a href="https://github.com/???/???/edit/content/{{ .File.Path }}"> Edit page </a>
+        </span>
+    </div>
+</div>

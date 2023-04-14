@@ -1,0 +1,25 @@
+---
+title: "Case information"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PineCube"
+    identifier: "PineCube/Case_information"
+    weight: 
+---
+
+
+
+image:/documentation/images/PineCube_Case-1.jpg[]_image:/documentation/images/PineCube_Case-2.jpg[]
+
+
+Model:
+
+* https://files.pine64.org/doc/PineCube/PineCube%20Case%203D.zip[PineCube (proprietary) 3D file]
+
+User models:
+
+* https://drive.google.com/file/d/1MDNxnPL2kuYGC4Y4qf9J6YPYZF15KnN7/view?usp=sharing[Quick and dirty STL conversion (beta) by doodlebro. Prints and fits at 0.25mm layer height.]
+* https://drive.google.com/drive/folders/1ddisX1V2qibqFuQG74-7w9SgdOE1idTN?usp=sharing[New model with removable front cover and mounting plate with hole for strong magnet and adjustable rotation angle.] See README for more details. Available FreeCAD source models, STL, G-code and 3mf data. https://www.printables.com/cs/model/296091-pinecube-box[Also available at printables.com]
+

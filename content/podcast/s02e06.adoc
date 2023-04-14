@@ -1,0 +1,31 @@
+---
+title: "S02E06: The Community has been ACTIVE!"
+date: 2022-03-06
+draft: false
+description: "In this episode Justin and Brian cover exciting community digs"
+aliases:
+    - /2022/03/06/s02e06-pinetalk-the-community-has-been-active/
+---
+
+{{< podcast_player episode="s02e06">}}
+
+In this episode Justin and Brian cover exciting community digs
+
+Links and topics discussed:
+
+* https://xnux.eu/log/#058
+* https://plasma-mobile.org/2022/02/09/plasma-mobile-gear-22-02/
+* https://lists.sr.ht/~mil/sxmo-announce/%3C20220205203322.w5idffuf3jiy7uxy%40worker.anaproy.lxd%3E
+* https://postmarketos.org/blog/2022/02/11/v21.12.2-release/
+* https://github.com/dreemurrs-embedded/Pine64-Arch/releases
+* https://github.com/Biktorgj/pinephone_modem_sdk/releases/tag/0.5.9
+* https://forum.pine64.org/showthread.php?tid=16094
+* https://blog.brixit.nl/pinephone-camera-pt5/
+
+Music from Bensound.com and Zed (@itismezed), https://soundcloud.com/kevinflynnretro
+
+Edited by Zed
+
+Yugen – Emotional Ethnic Music by Keys of Moon | https://soundcloud.com/keysofmoon - Attribution 4.0 International (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/
+
+Music promoted by https://www.chosic.com/free-music/all/

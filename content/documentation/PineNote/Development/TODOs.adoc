@@ -1,0 +1,139 @@
+---
+title: "TODOs"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PineNote/Development"
+    identifier: "PineNote/Development/TODOs"
+    weight: 
+---
+
+== Kernel/driver TODOs
+These exist, but they haven't been written down yet.
+
+== Userspace TODOs
+
+The TODOs in this space are organized around what functionality they enable. A table of the important functions that a user may want in the PineNote and a status are listed below:
+
+|===
+|scope="col" | Functionality
+|scope="col" | Approaches (apps)
+|scope="col" | Level of support (subjective)
+|scope="col" | Supports
+|scope="col" | Does not yet support
+|scope="col" | Notes
+
+|scope="row" rowspan="3" | Reading Documents
+| `https://github.com/koreader/koreader[Koreader]`
+| | Great
+| Fully featured ebook reader; Supports many filetypes;
+| Handwritten notes
+| Large user base on many devices; codebase has a somewhat of a reputation for being messy
+
+| `https://github.com/xournalpp/xournalpp[Xournalpp]`
+|  | Good
+| Reading/writing PDFs and other files;
+| No definition support (long-press for definition)
+| Billed more as a note-taking app than a document reading app
+|===
+
+=== Themes
+
+A lot of getting the PineNote to work nicely will be theming things appropriately. Please list themes for various components here:
+
+==== GNOME
+
+Untested: https://github.com/fujimo-t/gnome-shell-theme-e-ink
+
+==== GTK
+
+TODO
+
+=== GNOME Configurations
+
+See https://wiki.pine64.org/wiki/PineNote_Development/Apps#Gnome[here].
+
+=== Sway Configurations
+
+See https://wiki.pine64.org/wiki/PineNote_Development/Apps#Sway[here].
+
+== Documentation TODOs
+
+* Pin Mesa Packages so they don't update when we upgrade other packages
+** Add the information near step 5 https://wiki.pine64.org/wiki/PineNote_Development/Building_Kernel#Steps_to_build[here].
+* Control the backlight
+* Building alacritty correctly
+* Force a screen refresh?
+** See conversation here: https://matrix.to/#/|QtTzSRYMuozjbOQkzJ:matrix.org/$tfumBpnP2UPouNpaeFrggR40ZkrD_pHAtJdQmQvzL-o?via=matrix.org&via=kde.org&via=tchncs.de
+
+=== Status table draft
+
+This table is a draft for the wiki development page:
+
+[cols="1,1,1,1,1"]
+|===
+|scope="col" | Functionality
+|scope="col"   | Component
+|scope="col"  | Status (Android from factory)
+|scope="col"  | Status (Linux)
+|scope="col" | Notes
+
+| Bootloader
+| `Bootloader`
+|  | Android only
+|  | WIP for Linux
+| Booting into linux requires a patched U-Boot. https://wiki.pine64.org/wiki/PineNote_Development/Booting_Linux[Instructions here.]
+
+
+|scope="row" rowspan="4" | Operating System
+
+| `Stability`
+| colspan="2"  | WIP
+| Users have successfully booted Arch, Manjaro, and Debian. Debian has most support right now.
+
+| `Suspend`
+| colspan="2"  | Works
+| https://gitlab.com/hrdl/pinenote-shared/-/blob/main/patches/linux/0001-Rudimentary-attempt-to-keep-PMIC-usable-after-suspen.patch[This kernel patch] adds suspend support.
+
+| `Updates`
+| colspan="2"  | WIP
+| GPU libs (mesa) and mutter rely on patched packages. These should not be updated via the package manager at the moment, make sure to exclude them.
+
+| <Code>Networking`
+| colspan="2"  | Works
+|
+
+
+|scope="row" rowspan="5"| Components
+
+| `E-Paper Display`
+| colspan="2"  | WIP
+| Mostly functional. There is some ghosting and work remains, but the device and screen are usable.
+
+| `Touch`
+| colspan="2"  | Works
+|
+
+| `Bluetooth`
+| colspan="2"  | Works, audio stutters
+| https://wiki.pine64.org/wiki/PineNote_Development/Building_Kernel#Fixing_Bluetooth[Switching the driver] provides stable connections for keyboards, but audio still stutters. Trying to fix this https://wiki.pine64.org/wiki/PineNote_Development/Software_Tweaks#Preliminary_fix_for_stuttering_bluetooth_audio[here].
+
+| `Sensors`
+| colspan="2"  | Unsure
+| Light sensors? Rotational sensors?
+
+| `Buttons`
+| colspan="2"  | Works
+| Power button works.
+
+
+| Accessory compatibility, spare parts
+
+| `Spare parts`
+| colspan="2"  | Not available yet
+| Spare parts currently not available yet in the store.
+
+|===
+
+

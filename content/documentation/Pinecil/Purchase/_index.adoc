@@ -1,0 +1,13 @@
+---
+title: "Purchase"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "Pinecil"
+    identifier: "Pinecil/Purchase"
+    weight: 
+---
+
+* link:Where_to_buy[Where to buy]
+* link:Shipping_and_tracking[Shipping and tracking]

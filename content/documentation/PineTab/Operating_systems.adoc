@@ -1,0 +1,111 @@
+---
+title: "Operating systems"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PineTab"
+    identifier: "PineTab/Operating_systems"
+    weight: 2
+---
+
+
+The PineTab will automatically boot from microSD if a bootable card is inserted. Although it is technically possible to use any ARM distro (because the PineTab uses the mainline kernel), only few of them will actually be usable on Early Adopters PineTab, due to specifics of working with LCD panel. Among those listed all except for postmarketOS have working builds.
+
+=== Arch Linux ARM
+
+image:/documentation/images/Archlinux-logo.png[right|80px,title="right|80px"]
+
+Unofficial *Arch Linux ARM* with Phosh as the UI selection, maintained by the DanctNIX community.
+
+Download:
+
+* The latest image can be downloaded https://github.com/dreemurrs-embedded/Pine64-Arch/releases[here]
+
+-----
+
+=== Manjaro ARM
+
+image:/documentation/images/Manjaro-logo.svg[right|80px,title="right|80px"]
+
+*Manjaro* is a Linux based alternative operating system with no adverts or licensing fees, it respects user privacy and gives them full control over their hardware. The PineTab "Early Adopter" edition is currently the only device supported by Manjaro ARM.
+
+Download:
+
+* Images with several different environments, including Phosh and Plasma, are available for the "Dev" pre-release can be downloaded https://osdn.net/projects/manjaro-arm/storage/pinetab/[here]
+* Images for the Early Adopter version can be downloaded https://github.com/manjaro-arm/pinetab-images/releases[here].
+
+Both Beta releases and weekly unstable builds for Phosh and Plasma Mobile can be found there.
+
+-----
+
+=== Mobian
+
+image:/documentation/images/Debian-logo.png[right|80px,title="right|80px"]
+
+*Mobian* is a project providing Debian images for mobile devices.
+
+Download:
+
+* PineTab images can be downloaded https://images.mobian.org/pinetab/[here]. The password is *1234*
+
+-----
+
+=== postmarketOS
+
+image:/documentation/images/PostmarketOS_logo.png[right|80px,title="right|80px"]
+
+*postmarketOS* extends https://www.alpinelinux.org/[Alpine Linux] to run on smartphones and other mobile devices.
+
+It offers various user interfaces (Phosh, Plasma Mobile, Sxmo, Plasma Desktop, Gnome 3, Kodi, XFCE4 and more). As of writing, official images are provided with Phosh and Plasma Mobile. The official images come in two flavors, either as demo image to try out postmarketOS, or with the installer.
+
+When using the installer images (recommended), it is possible to:
+
+* encrypt your installation
+* install from the SD card to eMMC
+
+Getting postmarketOS for the PineTab:
+
+* https://postmarketos.org/download/[Download page]
+* https://wiki.postmarketos.org/wiki/PINE64_PineTab_(pine64-pinetab)#Installation[Flashing instructions]
+* Power users may also create their own image with the distribution's install and development tool `pmbootstrap`
+
+-----
+
+=== Sailfish OS
+
+image:/documentation/images/SailfishOS_logo.png[right|80px,title="right|80px"]
+
+You can get *SailfishOS* on your with the flash-it script, which will write an image on a SD card. https://github.com/sailfish-on-dontbeevil/flash-it
+
+There is a forum discussion with further information.
+
+http://forum.pine64.org/showthread.php?tid=11850
+
+Many things are still broken but Bluetooth, Audio, Rotation and Keyboard are working.
+
+-----
+
+=== UBPorts
+
+image:/documentation/images/Ubports-logo.png[right|80px,title="right|80px"]
+
+The *UBPorts Ubuntu Touch* is what was preinstalled on the PineTab Early Adopters batch.
+
+It can update itself in System Settings, and also a jenkins daily build can be downloaded at this updated address for the latest daily image:
+
+https://ci.ubports.com/job/rootfs/job/rootfs-pinetab-systemimage/
+
+The last stable builds are also listed and appear to be updated every few weeks.
+
+It should be noted that as of 20th January the latest stable/release candidate and development builds  still lacked Bluetooth, Rotation and had the same issues with online accounts etc
+
+Online accounts access have a fix for Google accounts here https://github.com/rubencarneiro/account-plugins/releases
+
+There are however significant updates to the original PineTab image (without the issues above)
+
+The old image appears to be deprecated here
+https://ci.ubports.com/job/rootfs/job/rootfs-pinetab/[here]
+
+In the event that WiFi fails to connect, the USB port can be used with an appropriate dongle to connect for internet using ethernet cable.
+

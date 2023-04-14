@@ -1,0 +1,57 @@
+---
+title: "Template:Hint"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "Templates"
+    identifier: "Templates/hint"
+    weight: 
+---
+
+<noinclude>
+{{Template}}
+
+A hint box for showing helpful hints.
+
+== Usage
+
+ TIP: hint content
+
+== Example
+
+ TIP: This is an hint.
+
+TIP: This is an hint.
+
+For a more flexible usage, it doesn't start with "*Hint:*" by default,
+you may add it manually with `*Hint:*`:
+
+ TIP: *Hint:* This is another hint.
+
+TIP: *Hint:* This is another hint.
+
+== Technical notes
+
+The boxes use `display: table` to support both adaptive width and floating siblings, all other alternatives can't archive them as perfect as this solution within just one HTML element. However, it has its own flaw, if you put it into another table, its padding will gone. Avoid putting hints, notes and warnings into any tables until solution was found, or we give up and use two elements for just one box.
+
+This template uses class `.template-box` and `.template-hint`.
+In the future, if the https://www.mediawiki.org/wiki/Extension:TemplateStyles[TemplateStyles Extension] is installed on this MediaWiki instance,
+one may move the embedded inline styles to Template Style files.
+
+== See also
+
+* https://wiki.archlinux.org/title/Template:Tip[ArchWiki: Template:Tip]: the template on which this one is based on
+* Template:Note
+* Template:Info
+* Template:Warning
+</noinclude><includeonly><div role="note" class="template-box template-hint" style="
+display: table;
+min-width: 16em;
+min-height: 1.6em;
+margin: .5em 0;
+padding: .5em 1em;
+border: 1px solid #9bcdfd;
+color: #003670;
+background-color: #d1ecfd;
+">{{{1|===}}</includeonly>

@@ -1,0 +1,24 @@
+---
+title: "Resources"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "Ox64/Further_information"
+    identifier: "Ox64/Further_information/Resources"
+    weight: 
+---
+
+
+* A video on how to connect to, flash and boot the Ox64 as at 2023-02 (15min) can be found https://youtube.com/watch?v=czRtF-UNiEY[here].
+* Another video that covers soldering pins, connecting via Pi Pico and flashing Linux (inc u-boot, as of 2023-Mar-3) posted https://youtu.be/vPAk5sq_Ilc[here].
+* https://gist.github.com/lupyuen/7a0c697b89abccda8e38b33dfe5ebaff[First Batch of Ox64 won't appear as USB Serial Port]
+* https://gist.github.com/lupyuen/2087e9b3fb40aab5e0795bb02a265a3b[First Batch of Ox64 tested OK with CH340C/G]
+* https://www.robertlipe.com/bl808-not-symmetric/[First thoughts on the (a)symmetry of Bouffalo Labs BL808 as in Pine64’s Ox64]
+* https://thelittleengineerthatcould.blogspot.com/2022/12/the-8-linux-computer-part-2.html[The $8 linux computer (with picoprobe-rp2040 programming instructions)]
+* https://github.com/p4ddy1/pine_ox64/blob/main/build_toolchain_macos.md[Building the Xuantie GNU Toolchain for Ox64 on macOS and Apple Silicon]
+
+Git repositories:
+
+* https://github.com/sfranzyshen/arduino-bl808[Community made Arduino Core specifically for the Bouffalo Labs BL808 RISC-V MCU] (Initial development has been postponed until further notice.)
+

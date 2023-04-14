@@ -1,0 +1,166 @@
+---
+title: "PinePhone Installation Instructions"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PinePhone"
+    identifier: "PinePhone/Installation_instructions"
+    weight: 
+---
+
+This section has generic installation instructions.
+
+For specific installation instructions for each distribution please see the software releases pages:
+
+* for the *PinePhone*: link:/documentation/PinePhone/Software/Operating_systems[Operating systems]
+* for the *PinePhone Pro*: link:/documentation/PinePhone_Pro/Software/Releases[Releases]
+
+== Boot priority
+
+
+=== PinePhone Pro
+
+
+For details regarding the boot priority on the PinePhone Pro see link:/documentation/PinePhone_Pro/_index#Boot order[PinePhone Pro].
+
+=== PinePhone
+
+The PinePhone always boots from the microSD card first. It is therefore recommended to have a microSD card handy. It is *not* possible to lock themself out of the phone when the installation on the internal storage (the eMMC) fails, as a correctly flashed microSD card will always boot. Note: Booting from USB is not supported by the hardware, a live USB stick will not boot.
+
+The phone will also try to boot from microSD cards, which were previously flashed with an OS and formatted later, causing the phone to fail to boot. See link:#Reuse SD card for data storage on system booting from eMMC|reuse SD card[reuse SD card] on how to format the microSD card properly, including wiping the residues of u-boot.
+
+== Installation to the microSD
+
+To install an image to the microSD card:
+
+. Download your chosen image from link:/documentation/PinePhone/Software/Operating_systems[Operating systems] for the regular *PinePhone* and link:/documentation/PinePhone_Pro/Software/Releases[Releases] for the *PinePhone Pro*
+. Extract the compressed file
+. Write the image to your microSD card, see below
+. Plug microSD card into phone (make sure to use the top slot, not the bottom slot)
+. On the *PinePhone Pro*: The eMMC might have to be disconnected to boot from the microSD card, see link:/documentation/PinePhone_Pro/_index#Boot order[PinePhone Pro]
+. Boot phone
+
+image:/documentation/images/Pinephone_slots.png[The microSD belongs in the upper slot, the micro-SIM in the lower slot.,title="The microSD belongs in the upper slot, the micro-SIM in the lower slot.",width=600]
+
+=== Flashing the microSD
+
+==== Using dd
+Make sure to select the correct device using `lsblk`. Then run `dd` with the selected device:
+
+ sudo dd if=*IMAGE.img* of=/dev/*[DEVICE]* bs=1M status=progress conv=fsync
+
+NOTE: The image needs to be written to the whole device, not to partition 1. Make sure you're NOT selecting _/dev/sda1_ or _/dev/mmcblk0p1_ as target.
+
+==== Using bmaptool
+
+Make sure to select the correct device using `lsblk`. Then run bmaptool with the correct device:
+
+Download the _IMAGE.xz_ and the _IMAGE.bmap_ files, then run `bmaptool copy --bmap *IMAGE.bmap* *IMAGE.xz* /dev/*[DEVICE]*`. This takes around 2.5 minutes to flash a 4 Gb file.
+
+==== Using graphical tools
+
+GUI applications such as Etcher and GNOME Disks can be used to flash the microSD too.
+
+== Installation to the eMMC
+
+
+=== From the booted microSD OS
+
+. Flash an OS to the microSD card (and optionally resize the partition, see below)
+. Insert microSD card and boot the phone
+. Download the desired OS' image on the booted OS or transfer it to the microSD card
+. Extract the image file if it is archived
+. Flash the image file to eMMC using `dd if=*IMAGE.img* of=/dev/*mmcblkX* bs=1M status=progress conv=fsync` where X is the number label of the eMMC (of the disk, not the partition|). Use the command `lsblk` to check your devices: typically with the current kernel the microSD card is _/dev/mmcblk0_ and the eMMC is _/dev/mmcblk2_ but as always with _dd_ be extremely cautious to get the devices correct.
+. Turn off phone, remove microSD card and then turn on the phone.
+
+=== Using JumpDrive
+
+NOTE: This only applies to the regular *PinePhone*, not the *PinePhone Pro*.
+
+image:/documentation/images/jumpdrive.jpg[Jumpdrive running on the PinePhone,title="Jumpdrive running on the PinePhone",width=400]
+The internal eMMC flash storage can be flashed using the Jumpdrive utility by Danct12 and Martijn from postmarketOS.
+This utility boots from micro SD and exposes the internal eMMC flash storage when the PinePhone is connected to a computer.
+The process of flashing an OS to the exposed and mounted eMMC is identical to that of any other storage medium - e.g. a microSD card. You can use the _dd_ command or a utility such as Etcher or Gnome Disks, etc.
+
+Latest Jumpdrive can be found https://github.com/dreemurrs-embedded/Jumpdrive/releases/[here].
+
+. Download and extract https://github.com/dreemurrs-embedded/Jumpdrive/releases[the Jumpdrive image]
+. Flash the Jumpdrive image to a microSD card
+. Boot the PinePhone from the Jumpdrive microSD card
+. Connect the PinePhone to your computer using USB-A -> USB-C cable
+. Flash the exposed PinePhone drive (e.g. _/dev/mm..._, check for the right device in `dmesg`, GNOME disks, or similar, and make sure it's unmounted) with your chosen OS image
+. Once the flashing process is complete, disconnect the PinePhone from your PC, power it down and remove the Jumpdrive microSD card
+. The process is now finished, and you can boot from eMMC
+
+The Jumpdrive image is smaller than 50MB. You can keep an microSD card specifically for using Jumpdrive, and there are 64MB microSD cards sold cheaply that will suffice. Jumpdrive also acts as a rescue image in case if you messed up your installation. To do so, you can telnet to *172.16.42.1*, mount rootfs and fix it|
+
+=== SD to eMMC via installer
+
+An special installer image booted from the microSD card can be used to flash the eMMC as well. Mobian and postmarketOS installer images booted from microSD card will simply ask the user if they want to install to eMMC. The feature lives in the distribution-agnostic calamares-extensions repository (see https://github.com/calamares/calamares-extensions/pull/7[calamares-extensions#7]), so other distributions might adopt this in the future.
+
+=== Using Tow-Boot
+
+Tow-Boot is an opinionated distribution of the U-Boot bootloader. It includes an USB Mass Storage Mode, which exposes the flash drive(s) to a computer connected to the phone via USB-C. The Tow-Boot bootloader has to be installed if it is not pre-installed already. For instructions see the following links:
+
+* *PinePhone:* https://tow-boot.org/devices/pine64-pinephoneA64.html
+* *PinePhone Pro:* https://tow-boot.org/devices/pine64-pinephonePro.html
+
+If Tow-Boot is installed the phone can be started into USB Mass Storage Mode by holding the _volume up_ key on startup.
+
+The steps of flashing an operating system to the phone after booting Tow-Boot's USB Mass Storage Mode and connecting the phone to a computer is identical to that of any other storage medium - e.g. a microSD card. You can use the _dd_ command or a utility such as Etcher or Gnome Disks from the computer the phone is connected to.
+
+== Resize partition to fit disk space
+
+NOTE: Many operating systems already include a script, which is resizing the partition on first boot, where this step is not required.
+
+Once you've flashed the OS to your microSD card or eMMC storage, you may also need to expand the partition to fill all the available space.
+
+=== Resize SD card's partition using computer
+
+For microSD cards, insert the microSD card and resize the partitions through the computer. For eMMC, insert the phone cable and use Jumpdrive to access the eMMC directly, and resize the partition after flashing the image. To do the flashing you have two options:
+
+==== Using Growpart
+
+Install _growpart_ and run:
+ growpart /dev/*mmcblkX* *Y*
+ resize2fs /dev/*mmcblkXpY*
+where _X_ is the storage device and _Y_ is the partition number (viewable from `lsblk`).
+
+If you get any errors about missing or unknown commands, use `apt-cache search` to find and install the needed software. Also don't forget to use `sudo`.
+
+==== Using Parted
+
+Parted's interactive mode and resize work well together. Do this before you put your microSD card into the PinePhone for the first time for best results.
+
+ sudo parted /dev/*<your_sd_card_device>*
+ (parted) resizepart 2 100%
+ (parted) quit
+ sudo resize2fs /dev/*<the_second_sd_card_PARTITION>*
+
+=== Resize from within the PinePhone
+
+eMMC: you would need to resize the partition on eMMC (flashed with the operating system) by booting another image from the microSD card: that way, the eMMC will be unmounted. It is *not recommended* to resize eMMC while booted from eMMC|Resizing a currently mounted partition can have weird results. If you booted from the microSD card, you can follow the above guidelines on how to resize from a computer.
+
+MicroSD card: It is generally not possible to boot from eMMC to partition the unmounted microSD card, because of the boot order - you would have to write the image to the empty microSD card first, then resize partition, all without rebooting. It is also *not recommended* to resize the microSD card while booted from microSD card|Resizing a currently mounted partition can have weird results.
+
+== Reuse SD card for data storage on system booting from eMMC
+
+Once you have installed your release of choice to eMMC, you may wish to use an microSD card for data storage. If you choose to re-use a card you have previously used to boot from, you will find your phone will not boot if you just reformat the card and insert it. This is because the Allwinner firmware in the PinePhone uses some (normally) unused space at the front of the microSD card to store boot software, which you need to clear.
+
+This can be done as follows on any Linux system:
+ lsblk
+to check the device of your microSD card – as an example lets assume it is /dev/mmcblk0
+then
+ sudo dd if=/dev/zero of=/dev/*[DEVICE]* bs=8k seek=1 count=4
+will clear the relevant sectors of your card.
+
+Since Danctnix (arch) switched to a gpt partition table from mbr in May of 2022 it installs u-boot at an offset of 128k instead of 8k, which means this command must be used instead
+ sudo dd if=/dev/zero of=/dev/*[DEVICE]* bs=32k seek=4 count=1
+
+== Web resources
+
+* https://www.youtube.com/watch?v=7HMkU43P9hw[Youtube video on how to flash OS images on the Pinephone (SD or eMMC) by Tech Pills]
+* https://www.youtube.com/watch?v=u65dofYFAPY[Youtube video on How to install different operating systems on the PinePhone plus an Mobian overview by Elatronion]
+
+

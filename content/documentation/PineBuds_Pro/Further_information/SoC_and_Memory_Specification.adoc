@@ -1,0 +1,60 @@
+---
+title: "SoC and Memory Specification"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PineBuds_Pro/Further_information"
+    identifier: "PineBuds_Pro/Further_information/SoC_and_Memory_Specification"
+    weight: 
+---
+
+
+The PineBuds Pro's buds are based on the http://www.bestechnic.com/home/product/index/cate_id/6[BES 2300YP].
+
+image:/documentation/images/BES2300YP_Block_Diagram.jpg[width=230]_image:/documentation/images/Cortex-M4.png[width=400]
+
+CPU Features:
+
+* https://developer.arm.com/Processors/Cortex-M4[Dual-core ARM Cortex-M4F Processor Processor up to 300MHz CPU]
+* CMOS Single-chip Fully-integrated RF, PMU, Audio CODEC and Cortex-M4F CPU
+
+Memory Features:
+
+* 4MB Serial Flash On-chip for Custom Program
+* Internal ROM 448KB for critical constants and code
+* Internal SRAM 992KB for critical data and code
+
+BT Features:
+
+* Bluetooth 5.2 dual-mode compliant
+* Profiles: A2DP, AVRCP, HFP
+* Audio Codecs: SBC, AAC
+
+Audio Features:
+
+* Support BES Intelligent Bluetooth Retransmission (IBRT)
+* Support FF/Hybrid ANC
+* Dual MICs noise reduction
+* Echo Cancellation
+* Support low power voice activity detection
+* Multi-band EQ and Bass enhancement
+* Support Active Crossover
+* Support TWS
+* HiFi Stereo Audio DAC: 120dB SNR, 110dB DNR
+* HiFi Stereo Audio ADC: 100dB SNR
+* Sample rates from 8 kHz to 384 kHz
+* Support dual/single Mic noise suppression
+** -45dB attenuation nominal 50-200Hz
+** -55dB max attenuation @150Hz
+* Support ambient awareness
+* Support talk through
+* 24-bit audio processing
+
+PMU Features
+
+* 3.1V-5.5V Input for VBAT
+* Internal LPO for low power mode.
+* DCXO with internal oscillator circuit
+* Internal temperature sensor
+

@@ -1,0 +1,51 @@
+---
+title: "PineTab2"
+draft: false
+menu:
+  docs:
+    title:
+    parent: ""
+    identifier: "PineTab2"
+    weight: 
+---
+
+image:/documentation/images/PineTab2_Front.jpg[The PineTab2 with the detachable keyboard attached,title="The PineTab2 with the detachable keyboard attached",width=250]
+
+The *PineTab2* is PINE64's successor to the original link:/documentation/PineTab/_index[PineTab] Linux tablet computer, featuring a faster processor and better availability. The tablet is available in two configurations, 4GB of RAM and 64GB of internal storage or 8GB of RAM and 128GB of internal storage. The tablet ships with a detachable keyboard that doubles as a protective cover.
+
+The tablet is designed around the Rockchip RK3566 processor, which features 4 energy-efficient Cortex-A55 64-bit ARM cores and enjoys good mainline Linux support.
+
+Pre-orders started on the 13th of April 2023, with pricing starting at USD 159 for the 4GB/64GB version and USD 209 for the 8GB/128GB version. The PineTab2 is expected to ship mid-May of 2023.
+
+== Frequently Asked Questions
+
+
+=== Does the Tablet support a Pen?
+
+
+No, adding a digitiser for pen inputs would make the price too high.
+
+=== Can I run Android on it?
+
+Theoretically yes, practically there's little chance anyone wants to make a well-supported Android build for this device. If you're looking for an Android tablet, buy any mainstream tablet, you'll get better value for your money.
+
+=== Is there SPI Flash?
+
+No.
+
+=== My only Development Experience is Visual Basic Macros in Excel and Redstone in Minecraft, should I buy this?
+
+At this stage, probably not, unless you're happy with a tablet that has a buggy Wi-Fi driver and no camera controller driver.
+
+=== How does the Tablet compare to a Pinebook Pro?
+
+It's slower, as it is intended to be a successor to the PineTab1, not the Pinebook Pro. It'll still handle web browsing, video playback and documents fine though.
+
+=== What is the Performance of the PineTab2 compared to the PineTab-V?
+
+The PineTab2 is notably faster than the PineTab-V. You can see this by https://github.com/ThomasKaiser/sbc-bench/blob/master/Results.md[comparing the Quartz64 sbc-bench results to the Star64 ones]. Performance should not be a factor of consideration when purchasing a PineTab-V.
+
+=== Does PineTab2 play back DRM'd Content such as Netflix?
+
+No, there are no Widevine binaries included in the image the PineTab2 ships with. (If they even exist for aarch64?)
+

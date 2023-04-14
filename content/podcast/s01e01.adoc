@@ -1,0 +1,14 @@
+---
+title: "S01E01: Introduction"
+date: 2021-01-27
+draft: false
+description: "In this introductory episode of the PineTalk, Ezra and Peter talk about how they got started with computers, PINE64 and FOSS in general. Which PINE64 devices are most interesting to the hosts, how did the PinePhone grab their attention and what do they think about the upcoming Quartz64 SBC?"
+aliases:
+    - /2021/01/27/001-introduction/
+---
+
+{{< podcast_player episode="s01e01">}}
+
+In this introductory episode of the PineTalk, Ezra and Peter talk about how they got started with computers, PINE64 and FOSS in general.
+
+Which PINE64 devices are most interesting to the hosts, how did the PinePhone grab their attention and what do they think about the upcoming Quartz64 SBC?

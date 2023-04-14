@@ -1,0 +1,103 @@
+<div class="cr">
+    <div class="cr-inner">
+        <input class="cr-open" type="radio" id="cr-1" name="cr" aria-hidden="true" hidden="" checked="checked">
+        <div class="cr-item">
+            <div class="cr-center">
+                <div class="cr-left">
+                    <div class="cr-img">
+                        <img src="/img/start/rockpro64.png">
+                    </div>
+                </div>
+                <div class="cr-right">
+                    <h1>RockPro64</h1>
+
+                    <span>The ROCKPro64 features a Rockchip RK3399 hexa-core SoC.</span>
+
+                    <br><br><br>
+                    <a href="/documentation/ROCKPro64/">Learn more</a>
+                </div>
+            </div>
+        </div>
+        <input class="cr-open" type="radio" id="cr-2" name="cr" aria-hidden="true" hidden="">
+        <div class="cr-item">
+            <div class="cr-center">
+                <div class="cr-left">
+                    <div class="cr-img">
+                        <img src="/img/start/quartz64_modb.png">
+                    </div>
+                </div>
+                <div class="cr-right">
+                    <h1>Quartz64 Model B</h1>
+
+                    <span>The Quartz64 Model B is powered by a Rockchip RK3566 quad-core ARM Cortex A55 64-Bit Processor with a Mali G-52 GPU. It comes equipped with 2GB, 4GB or 8GB LPDDR4 system memory.</span>
+
+                    <br><br><br>
+                    <a href="/documentation/Quartz64/">Learn more</a>
+                </div>
+            </div>
+        </div>
+        <input class="cr-open" type="radio" id="cr-3" name="cr" aria-hidden="true" hidden="">
+        <div class="cr-item">
+            <div class="cr-center">
+                <div class="cr-left">
+                    <div class="cr-img">
+                        <img src="/img/start/star64.png">
+                    </div>
+                </div>
+                <div class="cr-right">
+                    <h1>Star64 <span>featuring RISC-V</span></h1> 
+
+                    <span>The Star64 is PINE64's first RISC-V SBC. It comes with a StarFive JH7110 64bit CPU sporting quad SiFive FU740 cores clocked at 1.5GHz.</span>
+
+                    <br><br><br>
+                    <a href="/documentation/STAR64/">Learn more</a>
+                </div>
+            </div>
+        </div>
+        <label for="cr-3" class="cr-control prev control-1" onclick="lclick()">‹</label>
+        <label for="cr-2" class="cr-control next control-1" onclick="lclick()">›</label>
+        <label for="cr-1" class="cr-control prev control-2" onclick="lclick()">‹</label>
+        <label for="cr-3" class="cr-control next control-2" onclick="lclick()">›</label>
+        <label for="cr-2" class="cr-control prev control-3" onclick="lclick()">‹</label>
+        <label for="cr-1" class="cr-control next control-3" onclick="lclick()">›</label>
+        <ol class="cr-indicators">
+            <li>
+                <label for="cr-1" class="cr-bullet" onclick="lclick()"></label>
+            </li>
+            <li>
+                <label for="cr-2" class="cr-bullet" onclick="lclick()"></label>
+            </li>
+            <li>
+                <label for="cr-3" class="cr-bullet" onclick="lclick()"></label>
+            </li>
+        </ol>
+    </div>
+</div>
+
+<script>
+    var cr1 = document.querySelector("[id='cr-1']");
+    var cr2 = document.querySelector("[id='cr-2']");
+    var cr3 = document.querySelector("[id='cr-3']");
+    var timeout = 5000;
+    var timer;
+
+    function lclick() {
+        clearTimeout(timer)
+        timer = setTimeout(click, 20000)
+    }
+
+
+    function click () {
+
+        if (document.getElementById("cr-1").checked) {
+            cr2.click();
+        } else if (document.getElementById("cr-2").checked) {
+            cr3.click();
+        } else if (document.getElementById("cr-3").checked) {
+            cr1.click();
+        }
+    
+        timer = setTimeout(click, timeout)
+    }
+    timer = setTimeout(click, timeout);
+</script>

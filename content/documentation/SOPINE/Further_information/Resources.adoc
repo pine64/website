@@ -1,0 +1,14 @@
+---
+title: "Resources"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "SOPINE/Further_information"
+    identifier: "SOPINE/Further_information/Resources"
+    weight: 
+---
+
+
+* link:/documentation/SOPINE/Software_tricks/Armbian_LCD_and_camera[Armbian LCD and camera]
+

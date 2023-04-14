@@ -1,0 +1,262 @@
+---
+title: "Hardware"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PineTime/Further_information"
+    identifier: "PineTime/Further_information/Hardware"
+    weight: 
+---
+
+
+
+=== Display
+
+
+Note: The factory-default software on the PineTime does not auto-detect the display being disconnected when it has already booted. That can cause garbled output, to fix it just restart the PineTime.
+
+The display is driven using the ST7789 display controller. Use the following pins to drive the screen:
+
+[cols="1,1"]
+|===
+|PineTime pin
+|ST7789 pin
+
+| LCD_SCK (P0.02)
+| SPI clock
+
+| LCD_SDI (P0.03)
+| SPI MOSI
+
+| LCD_RS (P0.18)
+| Command/Data pin (CD)
+
+| LCD_CS (P0.25)
+| Chip select
+
+| LCD_RESET (P0.26)
+| Display reset
+
+| LCD_BACKLIGHT_{LOW,MID,HIGH}
+| Backlight (active low)
+|===
+
+Notes:
+
+* Chip select must be held low while driving the display. It must be high when using other SPI devices on the same bus (such as external flash storage) so that the display controller won't respond to the wrong commands.
+* SPI must be used in mode 3. Mode 0 (the default) won't work.
+* LCD_BACKLIGHT_* is used to enable the backlight. Set at least one to low to see anything on the screen.
+* Use SPI at 8MHz (the fastest clock available on the nRF52832) because otherwise refreshing will be super slow.
+
+*References*:
+
+https://github.com/adafruit/Adafruit-ST7735-Library/[Adafruit ST7789 driver in cpp]
+
+=== Battery measurement
+
+Reading whether the PineTime has power attached is easy: simply read the charge indication pin (P0.12). When it is high it is running on battery, when it is low it is charging.
+
+Reading the battery voltage is a bit harder. For that you can use the battery voltage pin on P0.31 (AIN7). The returned value is 12 bits, which means it is 0..4095. You can get the measured voltage with the following formula, assuming a reference voltage of 3.3V (this is configurable in the ADC):
+
+ adcVoltage = adcValue / (4095 / 3.3)
+
+The measured voltage is actually half of the actual battery voltage, because the ADC is connected between a voltage divider where both resistors are 1MΩ. This can be corrected by multiplying the value:
+
+ batteryVoltage = adcValue * 2 / (4095 / 3.3)
+
+It's often better to avoid floating point values on embedded systems and in this case there is no reason to use float at all, we can just represent the value in millivolts. Therefore the formula can be simplified to:
+
+ batteryVoltage = adcValue * 2000 / (4095 / 3.3)
+ batteryVoltage = adcValue * 2000 / 1241
+
+Converting this voltage to an estimated capacity in percent requires a more complicated algorithm, because Lithium-ion batteries have a non-linear discharge curve.
+
+=== Button
+
+The button on the side of the PineTime is disabled by default. To enable it, drive the button out pin (P0.15) high.
+
+While enabled, the button in pin (P0.13) will be high when the button is pressed, and low when it is not pressed.
+
+=== Touch panel
+
+The touch panel is controlled by a Hynitron CST816S chips. Unfortunately, there is not much information about this chip on the internet apart from the datasheet below and a https://github.com/lupyuen/hynitron_i2c_cst0xxse/[reference driver]. This is enough to implement a basic driver, but crucial information needed to implement advanced functionalities are missing (I²C protocol and registers, timings, power modes,...).
+
+==== Pins
+
+* P0.10 : Reset
+* P0.28 : Interrupt (signal to the CPU when a touch event is detected)
+* P0.06 : I²C SDA
+* P0.07 : I²C SCL
+
+==== I²C
+
+* Device address : 0x15
+* Frequency : from 10Khz to 400Khz
+
+*NOTE: * The controller go to sleep when no event is detected. In sleep mode, the controller does not communicate on the I²C bus (it appears disconnected). So, for the communication to work, you need to tap on the screen so that the chip wakes-up.
+
+*NOTE: * The I²C bus, also known as TWI bus has known issues, make sure to write your TWI driver with timeouts.
+
+==== Touch events
+
+Touch information is available from the 63 first registers of the controller. Remember: the device is in sleep mode when no touch event is detected. It means that you can read the register only when the touch controller detected an event. You can use the _Interrupt_ pin to detect such event in the software.
+
+These 63 bytes contain up to 10 touch point (X, Y, event type, pressure,...) :
+
+|===
+|Byte
+|Bit7
+|Bit6
+|Bit5
+|Bit4
+|Bit3
+|Bit2
+|Bit1
+|Bit0
+
+|0
+|colspan="8"|?
+
+|1
+|colspan="8"|GestureID : (Gesture code ,
+
+0x00: no gesture,
+
+0x01: Slide down,
+
+0x02: Slide up,
+
+0x03: Slide left,
+
+0x04: Slide right,
+
+0x05: Single click,
+
+0x0B: Double click,
+
+0x0C: Long press)
+
+|2
+|colspan="4"|?
+|colspan="4"|Number of touch points
+
+|3
+|colspan="2"|Event (0 = Down, 1 = Up, 2 = Contact)
+|colspan="2"|?
+|colspan="4"|X (MSB) coordinate
+
+|4
+|colspan="8"|X (LSB) coordinate
+
+|5
+|colspan="2"|?
+|colspan="2"|Touch ID
+|colspan="4"|Y (MSB) coordinate
+
+|6
+|colspan="8"|Y (LSB) coordinate
+
+|7
+|colspan="8"|Pressure (?)
+
+|8
+|colspan="8"|Miscellaneous (?)
+|===
+
+Bytes 3 to 8 are repeated 10 times (10*6 + 3 = 63 bytes).
+
+*NOTES*
+
+* The touch controller seems to report only 1 touch point
+* Fields X, Y, Number of touch points and touch ID are updated. The others are always 0.
+
+==== Registers
+
+The reference driver specifies some registers and value, but there is no information about them:
+
+[cols="1,1,1"]
+|===
+|Register
+|Address
+|Description
+
+|HYN_REG_INT_CNT
+|0x8F
+|
+
+|HYN_REG_FLOW_WORK_CNT
+|0x91
+|
+
+|HYN_REG_WORKMODE
+|0x00
+|0 = WORK, 0x40 = FACTORY
+
+|HYN_REG_CHIP_ID
+|0xA3
+|
+
+|HYN_REG_CHIP_ID2
+|0x9F
+
+|HYN_REG_POWER_MODE
+|0xA5
+|0x03 = SLEEP (reset the touchpanel using the reset pin before using this register : pin_low, delay 5ms, pin_high, delay 50ms then write 3 to register 0xA5)
+
+|HYN_REG_FW_VER
+|0xA6
+|
+
+|HYN_REG_VENDOR_ID
+|0xA8
+|
+
+|HYN_REG_LCD_BUSY_NUM
+|0xAB
+|
+
+|HYN_REG_FACE_DEC_MODE_EN
+|0xB0
+|
+
+|HYN_REG_GLOVE_MODE_EN
+|0xC0
+|
+
+|HYN_REG_COVER_MODE_EN
+|0xC1
+|
+
+|HYN_REG_CHARGER_MODE_EN
+|0x8B
+|
+
+|HYN_REG_GESTURE_EN
+|0xD0
+|
+
+|HYN_REG_GESTURE_OUTPUT_ADDRESS
+|0xD3
+|
+
+|HYN_REG_ESD_SATURATE 0xED
+|0xED
+|
+|===
+
+*WARNING : * <del>Writing the SLEEP command (write 0x05 in HYN_REG_POWER_MODE) seems to freeze the controller (it returns only static values) until the battery is totally drained and the whole system reset. Analysis and debugging is more than welcome|</del>
+
+=== Accelerometer
+
+The on board accelerometer in devices shipped before July 2021 is a Bosch BMA421, connected to the I2C bus.
+Devices shipped after July 2021 use a Bosch BMA425 accelerometer.
+
+==== Pins
+
+* P0.06 : I²C SDA
+* P0.07 : I²C SCL
+* P0.08 : Interrupt
+
+I2C Device address : 0x18
+

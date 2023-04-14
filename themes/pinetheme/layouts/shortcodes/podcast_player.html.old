@@ -1,0 +1,8 @@
+<script src="https://cdn.podlove.org/web-player/5.x/embed.js"></script>
+
+<div class="app" id="app" style="min-width: 100%;"></div>
+
+<script>
+    podlovePlayer("#app", '/podcast/episodes/{{ .Get "episode" }}.json', "/pod/pine64theme.json")
+</script> 
+

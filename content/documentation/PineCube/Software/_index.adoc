@@ -1,0 +1,16 @@
+---
+title: "Software"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PineCube"
+    identifier: "PineCube/Software"
+    weight: 
+---
+
+* link:Mainlining Efforts[]
+* link:Buildroot[]
+* link:NixOS[]
+* link:Armbian[]
+* link:Armbian_notes[Armbian notes]

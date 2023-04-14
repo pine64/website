@@ -1,0 +1,16 @@
+---
+title: "Software"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PineTime"
+    identifier: "PineTime/Software"
+    weight: 
+---
+
+* link:Companion_apps[Companion apps]
+* link:Default_OS[Default OS]
+* link:Upgrade_to_InfiniTime_1_0_0[Upgrade to InfiniTime 1 0 0]
+* link:InfiniTime[]
+* link:Firmware_versioning_for_companion_apps[Firmware versioning for companion apps]

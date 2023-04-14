@@ -1,0 +1,11 @@
+---
+title: "Schematics and certifications"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "SOEDGE_Baseboard"
+    identifier: "SOEDGE_Baseboard/Schematics_and_certifications"
+    weight: 
+---
+

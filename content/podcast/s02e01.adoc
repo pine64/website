@@ -1,0 +1,14 @@
+---
+title: "S02E01: Season 2 Introductions"
+date: 2021-09-17
+draft: false
+description: "The first episode of the new Pinetalk show with Brian and Justin! We go into the new structure for the show, such as the introduction of two monthly releases. We’re sure you have feedback for us, and we know there’s lots of room to improve! Stay tuned!"
+aliases:
+    - /2021/09/17/s2e01-pinetalk-news-season-2-introductions/
+---
+
+{{< podcast_player episode="s02e01">}}
+
+The first episode of the new Pinetalk show with Brian and Justin! We go into the new structure for the show, such as the introduction of two monthly releases. We’re sure you have feedback for us, and we know there’s lots of room to improve! Stay tuned!
+
+

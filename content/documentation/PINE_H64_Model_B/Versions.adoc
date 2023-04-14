@@ -1,0 +1,17 @@
+---
+title: "Versions"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PINE_H64_Model_B"
+    identifier: "PINE_H64_Model_B/Versions"
+    weight: 
+---
+
+
+There are two types of PINE H64 models:
+
+* link:/documentation/PINE_H64_Model_A/_index[PINE H64 Model A] (discontinued)
+* *PINE H64 Model B* (this page)
+

@@ -1,0 +1,13 @@
+---
+title: "S02E02: The big PP"
+date: 2021-10-16
+draft: false
+description: "In this episode the PinePhone Pro is discussed in length, with other news mixed in. Listen towards the end for a in-depth discussion of the the PinePhone Pro!"
+aliases:
+    - /2021/10/16/s2e02-pinetalk-the-big-pp/
+---
+
+{{< podcast_player episode="s02e02">}}
+
+In this episode the PinePhone Pro is discussed in length, with other news mixed in. Listen towards the end for a in-depth discussion of the the PinePhone Pro!
+

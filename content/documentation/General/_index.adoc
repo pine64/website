@@ -1,0 +1,16 @@
+---
+title: "General"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "General"
+    identifier: "General"
+    weight: 
+---
+
+* link:Where_to_report_bugs[Where to report bugs]
+* link:Brand_and_logo[Brand and logo]
+* link:Rules[]
+* link:How_to_contribute[How to contribute]
+* link:Getting_started[Getting started]

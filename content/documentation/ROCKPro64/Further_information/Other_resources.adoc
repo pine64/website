@@ -1,0 +1,20 @@
+---
+title: "Other resources"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "ROCKPro64/Further_information"
+    identifier: "ROCKPro64/Further_information/Other_resources"
+    weight: 
+---
+
+
+* https://forum.pine64.org/forumdisplay.php?fid=98[ROCKPro64 Forum]
+* https://pine64.com/?post_type=product[PINE64 shop]
+* https://github.com/rockchip-linux[Rockchip Linux GitHub Repo]
+* http://opensource.rock-chips.com/[Rockchip Open Source Wiki]
+* ExplainingComputers have a video review https://www.youtube.com/watch?v=CeoNHGFN_30[of the RockPro64 here, including linux first boot.]
+* link:/documentation/ROCKPro64/Software/Installing_Arch_Linux_ARM[Installing Arch Linux ARM]
+* link:/documentation/ROCKPro64/Powering_from_an_ATX_supply[Powering from an ATX supply]
+

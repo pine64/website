@@ -1,0 +1,26 @@
+---
+title: "Template:Under construction"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "Templates"
+    identifier: "Templates/under_construction"
+    weight: 
+---
+
+<noinclude>
+{{Template}}
+
+== Usage
+
+`{{Under construction}}`
+
+== Category
+
+Also adds articles to .
+
+== Example
+
+{{Under construction}}
+</noinclude><includeonly>This page or section is under construction<p >Please help to review and edit this page or section. Information are subject to change.</p> </includeonly>

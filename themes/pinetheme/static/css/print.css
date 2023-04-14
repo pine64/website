@@ -1,0 +1,23 @@
+@media print {
+    /* General */
+    #navigation {
+        display:none;
+    }
+    #footer {
+        display:none;
+    }
+    /* Docs */
+    .next-post {
+        display:none;
+    }
+    .previous-post {
+        display:none;
+    }
+    #doc-nav {
+        display:none;
+    }
+    #doc-breadcrumbs {
+        display:none;
+    }
+
+}

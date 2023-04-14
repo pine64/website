@@ -1,0 +1,137 @@
+---
+title: "Hardware"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "QuartzPro64"
+    identifier: "QuartzPro64/Hardware"
+    weight: 3
+---
+
+
+image:/documentation/images/Quartzpro64_soc_and_ram_resized.jpeg[The SoC and RAM packages,title="The SoC and RAM packages",width=200]
+
+=== General
+
+* RK3588 SoC (8 cores: 4x A76@2.4GHz + 4x A55@1.8GHz)
+* Mali G610MC4 GPU (4x Valhalla cores)
+* 16 GB LPDDR4X (SK hynix)
+* 64 GB eMMC (Foresee, soldered)
+* 1x USB-C (with video-alt mode)
+* 1x USB-C (FTDI debug UART, FT232RL)
+* 1x USB 3.0
+* 2x USB 2.0
+* 1x HDMI in
+* 2x HDMI out
+* 1x PCIe 3.0 slot (open-ended)
+* 1x SD / TF card slot
+* 2x SATA ports
+* 2x Gigabit ethernet (1x from SoC, 1x on PCIe, RTL8211F, RTL8111HS)
+* 1x WiFi & BT Module (AMPAK Tech AP6275PR3)
+* 2x SMA Antenna
+* 2x MIPI DPHY
+* 1x MIPI D/C PHY
+* 1x MIPI CSI
+* 1x Fan header
+* 1x RTC battery socket (looks like an LR44, TODO: check this info)
+* 1x MIC (soldered)
+* 1x audio output 3.5mm jack
+* Power in via DC 12V
+
+=== Cooler
+
+The board comes with two cooler mounts, a 4-hole mount that appears to be spaced 55x55mm apart, and the ~60mm diagonal "northbridge heatsink" mount the ROCKPro64 and Quartz64 Model A uses.
+
+RK3588 is slightly (<1mm?) taller than the DRAM chips, use a thick enough thermal pad instead of thermal compound.
+
+=== UART
+
+Plug in the USB-C port labelled "**DEBUG PORT**" on the QP64 board to another computer with a USB-A-to-C cable.
+
+It will show up as a FT232 USB Serial adapter in `lsusb`:
+```
+$ lsusb
+[...]
+Bus 005 Device 027: ID 0403:6001 Future Technology Devices International, Ltd FT232 Serial (UART) IC
+[...]
+```
+
+Baud rate is 1.5 mbauds or 1500000.
+
+Ensure you have the driver module loaded:
+```
+. modprobe ftdi_sio
+. lsmod | grep ftdi_sio
+ftdi_sio               61440  0
+usbserial              53248  1 ftdi_sio
+usbcore               290816  7 ftdi_sio,usbserial,xhci_hcd,usbhid,usbkbd,usbmouse,xhci_pci
+```
+
+If the above is not working, check the required driver is supported by your kernel, using one of the following commands:
+```
+$ zgrep FTDI_SIO /proc/config.gz
+CONFIG_USB_SERIAL_FTDI_SIO=m
+$ grep FTDI_SIO "/boot/config-$(uname -r)"
+CONFIG_USB_SERIAL_FTDI_SIO=m
+```
+
+Using the `dmesg` command, you should see something like the following:
+```
+[24784.535804] usb 5-3: new full-speed USB device number 3 using xhci_hcd
+[24784.710714] usb 5-3: New USB device found, idVendor=0403, idProduct=6001, bcdDevice= 6.00
+[24784.710723] usb 5-3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[24784.710725] usb 5-3: Product: FT232R USB UART
+[24784.710727] usb 5-3: Manufacturer: FTDI
+[24784.710728] usb 5-3: SerialNumber: A10LLO86
+[24784.723858] usbcore: registered new interface driver usbserial_generic
+[24784.723865] usbserial: USB Serial support registered for generic
+[24784.725286] usbcore: registered new interface driver ftdi_sio
+[24784.725295] usbserial: USB Serial support registered for FTDI USB Serial Device
+[24784.725348] ftdi_sio 5-3:1.0: FTDI USB Serial Device converter detected
+[24784.725368] usb 5-3: Detected FT232RL
+[24784.731685] usb 5-3: FTDI USB Serial Device converter now attached to ttyUSB0
+```
+
+Then you can get console output from the QP64 with, for example:
+
+```
+screen /dev/ttyUSB0 1500000
+```
+
+=== Mounting Holes
+
+Can't be bothered to take a precise measurement of all the holes right now, just use https://www.ebay.com/sch/i.html?kw=pc%20standoff%20kit[some PC standoffs] and have the board sit on your desk, it's a dev board after all.
+
+See the PCB layout PDF files, linked in the https://wiki.pine64.org/wiki/QuartzPro64_Development#Documentation[Documentation] section.
+
+=== Storage
+
+image:/documentation/images/Quartzpro64_emmc_resized.jpeg[The eMMC on the dev board,title="The eMMC on the dev board",width=200]
+
+* Soldered on 64 GB FORESEE eMMC chip, it comes pre-flashed with some Android (you'll even get a brief bit of HDMI output)
+* microSD card slot
+* 2x SATA 3.0 (molex power connector for it not populated, but easy to remedy)
+
+=== Power
+
+image:/documentation/images/Power_and_switch.jpg[Power switch & barrel connector,title="Power switch & barrel connector",width=100]
+
+You can provide power to the board via the 12V barrel connector, it's 5.5mm OD/2.1mm ID barrel 'coaxial' type "M" centre-positive, the ROCKPro64 5A power supply from the PINE64 store will work. (TODO: add alternative ways).
+
+There is a hardware flip switch to power up / down the board.
+
+=== PMU
+
+image:/documentation/images/Quartzpro64_pmu.jpeg[The PMU,title="The PMU",width=100]
+
+2x RK806-2, not RK808 compatible. It's a dual PMU configuration where one PMU is a subordinate of the other.
+
+Verify this once we have access to SDK sources.
+
+=== Ethernet
+
+The RGMII ethernet port (near the SDCARD socket) is working if you use neg2led's linux-quartz64 repo.
+
+The other port (near the sound jack) is hooked to the SoC via PCIe and is currently reported working (on the matrix channel) with latest neggles kernel.
+

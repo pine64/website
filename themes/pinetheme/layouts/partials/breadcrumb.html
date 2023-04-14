@@ -1,0 +1,27 @@
+<div id="doc-breadcrumbs">
+    <div id="doc-breadcrumbs-contents">
+           
+            <ul class="breadcrumbs">
+                <span id="doc-breadcrumbs-icon"><img src="/img/tree.svg"></span>
+                {{ range .Ancestors.Reverse }}
+
+                    <!-- Filter top level -->
+                    {{ if ne .Permalink .Site.BaseURL }}
+
+                    <a href="{{ .Permalink }}">{{ .LinkTitle }}</a> /
+
+                    {{ end }}
+                {{ end }}
+
+                <!-- Current -->
+                {{ .LinkTitle }}
+              
+            </ul>
+
+    </div>
+    <div>
+        <span class="editpage">
+            <a href="https://github.com/pine64/website/edit/content/{{ .File.Path }}"> Edit page </a>
+        </span>
+    </div>
+</div>

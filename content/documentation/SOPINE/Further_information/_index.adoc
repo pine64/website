@@ -1,0 +1,14 @@
+---
+title: "Further information"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "SOPINE"
+    identifier: "SOPINE/Further_information"
+    weight: 
+---
+
+* link:Resources[]
+* link:Schematics_and_certifications[Schematics and certifications]
+* link:Specification[]

@@ -1,0 +1,13 @@
+---
+title: "Various"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PinePhone_Pro"
+    identifier: "PinePhone_Pro/Various"
+    weight: 
+---
+
+* link:Software_state[Software state]
+* link:Development[]

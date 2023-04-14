@@ -1,0 +1,6 @@
+{{ if and (ge (len .TableOfContents) 100) (ne .Params.toc "false") }}
+
+    {{.TableOfContents}}
+    <hr>
+
+{{ end }}

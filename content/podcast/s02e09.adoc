@@ -1,0 +1,36 @@
+---
+title: "S02E09: Gaming on Pine64 is a Thing"
+date: 2022-07-10
+draft: false
+description: "Zed the editor and Porky explore the world of Linux and Open Source gaming. Porky also talks about why he won't be getting a Steam Deck afterall…"
+aliases:
+    - /2022/07/10/s02e09-gaming-on-pine64-is-a-thing/
+---
+
+{{< podcast_player episode="s02e09">}}
+
+Zed the editor and Porky explore the world of Linux and Open Source gaming. Porky also talks about why he won't be getting a Steam Deck afterall…
+
+* https://linmob.net/weekly-update-21-2022/
+* https://linmob.net/weekly-update-22-2022/
+* https://linmob.net/weekly-update-23-2022/
+* https://linmob.net/weekly-update-24-2022/
+* https://linmob.net/weekly-update-25-2022/
+
+* https://gitlab.com/postmarketOS/pmaports/-/merge_requests/3123
+
+Steam Deck: https://store.steampowered.com/news/app/1675200/view/3220644827954565733
+
+Steam Summer Sale began and boy are my arms tired: https://www.gamingonlinux.com/2022/06/steam-summer-sale-2022/
+
+Bootlooping issues found, currently solutions being worked on: https://twitter.com/OnDeck/status/1518809743619334144?cxt=HHwWgICpncba8pMqAAAA
+
+Steam Deck parts now available at ifixit.com: https://twitter.com/OnDeck/status/1528783641454579712?cxt=HHwWgMCg9eenqrcqAAAA
+
+SteamOS 3.2 Update: https://store.steampowered.com/news/app/1675200/view/3297210455204349335
+
+Music from Bensound.com and Zed (@itismezed)
+
+https://soundcould.com/kevinflynnretro
+
+Edited by Zed

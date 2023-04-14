@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="center-container">
+    <div class="center-contents">
+        <a href="/blog/" class="backlink"><img src = "/img/arrow_left.svg" width="14">All blog posts</a><br><br>
+        <div class="blog-header">
+            
+            <div class="blog-title"><h1>{{ .Title }}</h1></div>
+            {{ partial "blog_tags.html" . }}
+        </div>
+        {{ partial "blog_date.html" . }}
+
+        <br><br>
+        {{ .Content }}
+    </div>
+</div>
+{{ end }}

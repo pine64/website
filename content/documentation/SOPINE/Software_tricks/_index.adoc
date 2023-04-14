@@ -1,0 +1,12 @@
+---
+title: "Software tricks"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "SOPINE"
+    identifier: "SOPINE/Software_tricks"
+    weight: 
+---
+
+* link:Armbian_LCD_and_camera[Armbian LCD and camera]

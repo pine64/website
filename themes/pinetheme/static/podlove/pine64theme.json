@@ -1,0 +1,91 @@
+{
+    "base": "/podlove/",
+    "activeTab":"chapters",
+    "subscribe-button":null,
+    "share":{
+       "channels":[
+          "facebook",
+          "twitter",
+          "whats-app",
+          "linkedin",
+          "pinterest",
+          "xing",
+          "mail",
+          "link"
+       ],
+       "sharePlaytime":true
+    },
+    "related-episodes":{
+       "source":"disabled",
+       "value":null
+    },
+    "version":5,
+    "theme":{
+       "tokens":{
+          "brand":"",
+          "brandDark":"#2C5FADFF",
+          "brandDarkest":"#002559FF",
+          "brandLightest":"#EBEBEBFF",
+          "shadeDark":"#848484FF",
+          "shadeBase":"#8E8E8EFF",
+          "contrast":"#000",
+          "alt":"#fff"
+       },
+       "fonts":{
+          "ci":{
+             "name":"ci",
+             "family":[
+                "-apple-system",
+                "BlinkMacSystemFont",
+                "Segoe UI",
+                "Roboto",
+                "Helvetica",
+                "Arial",
+                "sans-serif",
+                "Apple Color Emoji",
+                "Segoe UI Emoji\", \"Segoe UI Symbol"
+             ],
+             "src":[
+                
+             ],
+             "weight":800
+          },
+          "regular":{
+             "name":"regular",
+             "family":[
+                "-apple-system",
+                "BlinkMacSystemFont",
+                "Segoe UI",
+                "Roboto",
+                "Helvetica",
+                "Arial",
+                "sans-serif",
+                "Apple Color Emoji",
+                "Segoe UI Emoji\", \"Segoe UI Symbol"
+             ],
+             "src":[
+                
+             ],
+             "weight":300
+          },
+          "bold":{
+             "name":"bold",
+             "family":[
+                "-apple-system",
+                "BlinkMacSystemFont",
+                "Segoe UI",
+                "Roboto",
+                "Helvetica",
+                "Arial",
+                "sans-serif",
+                "Apple Color Emoji",
+                "Segoe UI Emoji\", \"Segoe UI Symbol"
+             ],
+             "src":[
+                
+             ],
+             "weight":700
+          }
+       }
+    }
+ }

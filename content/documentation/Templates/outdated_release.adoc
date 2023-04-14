@@ -1,0 +1,14 @@
+---
+title: "Template:Outdated release"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "Templates"
+    identifier: "Templates/outdated_release"
+    weight: 
+---
+
+|===
+|⚠️ The linked release is  and should no longer be used|
+|===

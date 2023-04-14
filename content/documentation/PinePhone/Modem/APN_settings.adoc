@@ -1,0 +1,594 @@
+---
+title: "PinePhone APN Settings"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PinePhone/Modem"
+    identifier: "PinePhone/Modem/APN_settings"
+    weight: 
+---
+
+The https://en.wikipedia.org/wiki/Access_Point_Name[APN] setting is the gateway between your carrier's cellular network and the *public Internet*. The APN setting - if not set automatically by the user's OS - has to be set by the user to enable the use of the mobile Internet on the phone.
+
+== Setting the APN
+
+The location of the APN setting depend on the user interface the distribution is using.
+
+=== Gnome
+
+One of the biggest actively maintained open (Creative Commons Public Domain) database of mobile broadband service providers and their APN settings is maintained by the Gnome project, and is available in their https://gitlab.gnome.org/GNOME/mobile-broadband-provider-info/-/blob/main/serviceproviders.xml[serviceproviders.xml]. It is a rare case, when you don't find your own provider in that list, but if it happens, then please consider contributing to it upstream. If your provider is in that database, then for setting up the APN, you only have to select your provider from the list under ` Settings > Network > Network Dropdown > Add new connection`.
+
+Further details are https://help.gnome.org/users/gnome-help/stable/net-mobile.html.en[described by the Gnome help].
+
+=== Phosh
+
+APN settings are either located in `Settings > Mobile > Access Point Names` (Arch Linux ARM, PureOS, Debian + Phosh) or ` Settings > Network > Network Dropdown > Add new connection` (postmarketOS, Fedora).
+
+=== Plasma Mobile
+
+TBD
+
+== List of tested carriers
+
+Disclaimer: Go to the websites of or speak to the customer support lines of those carriers which you want to use. No guarantees. This list is simply user-generated and serves to demonstrate examples of what worked for them. This list is not exhaustive, does not cover all possible carriers.
+
+=== 4ka (Slovakia)
+
+ Name: 4ka Internet
+ APN: internet
+ Username: <empty>
+ Password: <empty>
+
+Source: https://www.4ka.sk/vitajte/navody-a-nastavenia/detail-navodu
+
+=== AT&T-based
+
+
+==== AT&T (USA)
+
+ APN: NXTGENPHONE
+ MMSC: http://mmsc.mobile.att.net
+ MMS proxy: proxy.mobile.att.net
+
+APN: `phone` may alternatively work.
+
+Source: https://www.att.com/support/article/wireless/KM1218306/
+
+==== AT&T Mexico (Mexico)
+
+APN: ` wap.attmex.mx `
+
+==== Cricket (USA)
+
+APN: `phone` or `ndo` or `NXTGENPHONE`
+
+=== Blau.de (Germany)
+
+ APN: internet.eplus.de
+ Username: eplus
+ Password: gprs
+
+Source: https://www.my-gps.org/412-apn-einstellungen-deutschland
+
+=== Bouygues Telecom (France)
+
+ Name: Bouygues Telecom
+ APN: mmsbouygtel.com
+ Username: <empty>
+ Password: <empty>
+
+Source: https://www.assistance.bouyguestelecom.fr/s/article/parametrage-mobile-email-mms-internet
+
+=== Congstar - Telekom Net (Germany)
+
+ Name: Telekom Internet
+ APN: internet.telekom
+ Username: telekom
+ Password: telekom
+
+Other settings seem to work, too. https://forum.congstar.de/Tarife/Tarif-Produktberatung/46325-Mobil-surfen-mit-congstar-manuelle-Einstellungen-zum-mobilen-Internet-APN/[Congstar mentions]
+
+ Name: Congstar Internet
+ APN: internet.telekom
+ Username: congstar
+ Password: cs
+
+=== Eastlink Wireless (Canada)
+
+ Name: Eastlink Internet
+ APN: wisp.mobi.eastlink.ca
+ Username: <empty>
+ Password: <empty>
+
+Source: https://www.apnsettings.org/canada/eastlink-ca/
+
+=== Free (France)
+
+ Name: Free
+ APN: free
+ Username: free
+ Password: <empty>
+
+Source: https://mobile.free.fr/assistance/46.html
+
+=== Freedom Mobile (Canada)
+
+ Name: 1
+ APN: internet.freedommobile.ca
+ Username: <empty>
+ Password: <empty>
+
+=== Google Fi (USA)
+
+These are settings that Google provides for their "data-only" SIM cards, but also appears to work fine with the normal SIM card for texting and calling.
+
+ Name: Google Fi
+ APN: h2g2
+ Username: <empty>
+ Password: <empty>
+
+Source: https://support.google.com/fi/answer/6330195?hl=en
+
+=== Hofer Telekom (Austria)
+
+ Name: HoT Internet
+ APN: webaut
+ Username: <empty>
+ Password: <empty>
+
+Source: https://www.hot.at/config/faqs/HoT_Einstellungen_Endgera_te.pdf
+
+=== kölbi (Costa Rica)
+
+ Name: Costa Rica:Kolbi:Internet
+ APN: kolbi3g
+ Username: <empty>
+ Password: <empty>
+
+Note: alternatively `kolbi4g` also works as APN.
+
+=== Koodo (Canada)
+
+ Name: Internet/MMS 2
+ APN: sp.koodo.com
+ Username: <empty>
+ Password: <empty>
+
+Source: https://www.4gapn.com/ca/en/koodo
+
+=== KT (South Korea)
+
+ Name: KT LTE
+ APN: lte.ktfwing.com
+ Username: <empty>
+ Password: <empty>
+
+ Name: KT 3G
+ APN: alwayson.ktfwing.com
+ Username: <empty>
+ Password: <empty>
+
+Note: APN automatically detected in Manjaro Phosh. Use either KT LTE or KT 3G according to your subscription.
+
+=== Lebara (UK)
+
+ Name: Lebara
+ APN: uk.lebara.mobi
+ Username: wap
+ Password: wap
+
+These settings work on 4G.
+
+Ignore Default/asdamobiles.co.uk APN if present.
+
+=== Magenta LTE (Austria)
+
+ Name: Magenta
+ APN: internet.t-mobile.at
+ Username: t-mobile
+ Password: tm
+
+Source: https://www.magenta.at/faq/entry/%7Etechnische-anfrage%7Esmartphone%7Efunktionen%26dienste/%7EInternet_APN%7Emaster
+
+=== Mineo (Japan)
+
+Tested with S plan (Softbank) and D plan (Docomo). Mobile LTE data currently working only on Phosh-based operating systems, because they use Network Manager and Modem Manager. Ubuntu Touch not working yet, see issue #58. https://gitlab.com/ubports/community-ports/pinephone/-/issues/58
+
+ Name: Mineo
+ APN: mineo-d.jp
+ Username: mineo@k-opti.com
+ Password: mineo
+
+Source: https://support.mineo.jp/manual/network_setup_d.html
+
+=== Mint Mobile (USA)
+
+Call their customer service to activate using the number on their website, or activate on their https://my.mintmobile.com/activation[website]. You may also need to reboot your phone.
+
+Use the following APN settings:
+
+ Name: Ultra
+ APN: Wholesale
+
+Source: https://www.mintmobile.com/setup-for-android/
+
+=== Mobile Vikings (Belgium)
+
+ Name: Mobile Vikings
+ APN: web.be
+ Username: web
+ Password: web
+
+Source: https://support.vikingco.com/hc/en-us/articles/202836041-I-don-t-have-any-mobile-internet-What-do-I-do-
+
+If the first one doesn't work try this one:
+
+ Name: Mobile Vikings
+ APN: web.be
+ Username: <empty>
+ Password: <empty>
+
+Source: autoconfig on ubports
+
+=== Movistar (Colombia)
+
+ Name: Movistar Internet
+ APN: internet.movistar.com.co
+ Username: movistar
+ Password: movistar
+
+=== Orange Telecom (France)
+
+ Name: Orange Internet
+ APN: orange
+ Username: orange
+ Password: orange
+
+Source: https://assistance.orange.fr/mobile-tablette/tous-les-mobiles-et-tablettes/depanner/probleme-avec-un-service-d-orange-internet-sms-mms-mails-cloud-tv/mms/configurer-un-apn-internet-et-mms_192948-738196
+
+=== Orange (Poland)
+
+ Name: Internet IPv4
+ APN: internet
+ Username: internet
+ Password: internet
+
+Source: https://www.orange.pl/omnibook/konfiguracja-internetu-mms-sms-w-telefonie#
+
+Note: don't forget to activate sim-card using official android/ios app.
+
+=== Patriot Mobile (USA T-Mobile)
+
+Internet
+
+ Name: T-Mobile
+ APN: Fast.t-mobile.com
+ Username: <empty>
+ Password: <empty>
+
+MMS (requires chatty v0.6.1 and mmsd-tng v1.8)
+
+in /home/alarm/.mms/modemmanager/mms
+
+ [Modem Manager]
+ CarrierMMSC=http://mms.msg.eng.t-mobile.com/mms/wapenc
+ MMS_APN=Fast.t-mobile.com
+ CarrierMMSProxy=NULL
+ DefaultModemNumber=NULL
+ AutoProcessOnConnection=true
+ AutoProcessSMSWAP=true
+
+ [Settings]
+ UseDeliveryReports=false
+ TotalMaxAttachmentSize=600000
+ MaxAttachments=25
+ AutoCreateSMIL=true
+ ForceCAres=false
+
+Source: https://www.t-mobile.com/support/devices/not-sold-by-t-mobile/byod-t-mobile-data-and-apn-settings
+
+=== Penny Mobil (Germany)
+
+APN settings:
+
+ name: Penny Mobil
+ APN: internet.t-mobile
+ username: t-mobile
+ password: tm
+
+=== Public Mobile (Canada)
+
+Internet only, mms not tested.
+
+ Name: Public Mobile
+ APN: sp.mb.com
+ Username: <empty>
+ Password: <empty>
+
+Source: https://productioncommunity.publicmobile.ca/t5/Phones-Hardware/How-do-I-set-up-data-APN-on-my-smartphone/td-p/3
+
+=== Red Pocket (USA)
+
+You can choose AT&T, Verizon, T-Mobile or Sprint network.
+
+APN settings:
+
+ name: Red Pocket
+ APN: RESELLER
+
+=== Rogers (Canada)
+
+ Name: 4G/LTE Rogers Data
+ APN: ltemobile.apn
+ Username: <empty>
+ Password: <empty>
+
+ Name: 3G Rogers Data
+ APN: internet.com
+ Username: wapuser1
+ Password: wap
+
+Source: https://communityforums.rogers.com/t5/Wireless-Knowledge-Base/Rogers-APN-Settings/ta-p/410438
+
+=== Simyo (Spain)
+
+APN settings:
+ APN: orangeworld
+
+Source: https://blog.simyo.es/simyo-configuracion-internet-wap-mms/configura-tu-movil/
+
+=== SFR (France)
+
+APN settings:
+ Name: SFR webphone
+ APN: sl2sfr
+ username: <empty>
+ password: <empty>
+
+Source: https://assistance.sfr.fr/tel-mobile/utilisation-param/parametrer-apn-sfr-mobile.html
+
+=== Sunrise (Switzerland)
+
+ Name: Sunrise
+ APN: internet
+ Username: <empty>
+ Password: <empty>
+
+=== Swisscom (Switzerland)
+
+ Name: Swisscom
+ APN: gprs.swisscom.ch
+ Username: <empty>
+ Password: <empty>
+
+=== Tele2 (Sweden)
+
+ Name: tele2
+ APN: 4G.tele2.se
+ Username: <empty>
+ Password: <empty>
+
+Source: https://www.tele2.se/support/felsokning-guider/tjanster-installningar/mms-och-data
+
+=== Telekom (Germany)
+
+APN settings:
+
+ Name: Telekom
+ APN: internet.t-mobile
+ Username: t-mobile
+ Password: tm
+
+Source: https://www.telekom.de/hilfe/mobilfunk-mobiles-internet/mobiles-internet-e-mail/apn-mobilfunk/wie-lauten-die-apn-fuer-mobilfunk?samChecked=true
+
+=== Telekom (Hungary)
+
+APN settings:
+
+ Name: Default
+ APN: internet.telekom
+ Username: <empty>
+ Password: <empty>
+
+=== Telenor/Yettel (Hungary)
+
+Voice based plan - both calls and data are included:
+ Name: Yettel Online
+ APN: online
+ Username: <empty>
+ Password: <empty>
+
+Data-only plan - no calls, only data and SMS:
+ Name: Yettel Net
+ APN: net
+ Username: <empty>
+ Password: <empty>
+
+IPv4 is preferred, as IPv4v6 is not reliable according to multiple Yettel customer service employees.
+
+Source: https://www.yettel.hu/beallitasok/android
+
+=== Telenor (Sweden)
+
+ Name: Telenor SE
+ APN: services.telenor.se
+ Username: <empty>
+ Password: <empty>
+
+Source: https://www.telenor.se/kundservice/vanliga-fragor/min-mobil-surfplatta/vad-har-telenor-for-apn-installningar/
+
+=== Telia (Finland)
+
+ Name: internet
+ APN: internet
+ Username: <empty>
+ Password: <empty>
+
+=== Tello (USA)
+
+ Name: T-Mobile
+ APN: fast.t-mobile.com
+ Username: <empty>
+ Password: <empty>
+
+MMS settings:
+
+ MMSC: http://wholesale.mmsmvno.com/mms/wapenc
+ APN: fast.t-mobile.com
+ Proxy: <empty>
+
+=== Telstra (Australia)
+
+ Name: Telstra Internet/WAP
+ APN: telstra.iph
+ Username: <empty>
+ Password: <empty>
+
+=== Three (UK)
+
+ Name: 3
+ APN: three.co.uk
+ Username: <empty>
+ Password: <empty>
+
+=== Ting (USA)
+
+Using the X3 sim card:
+ Name: Ting Data
+ APN: wireless.dish.com
+ Username: <empty>
+ Password: <empty>
+
+For MMS configuration had success using:
+ MMSC: http://wholesale.mmsmvno.com/mms/wapenc
+
+The article mentions using this APN for a hotspot, but unconfirmed
+ Name: Ting Hotspot
+ APN: tethering.dish.com
+ Username: <empty>
+ Password: <empty>
+
+Source: https://help.ting.com/hc/en-us/articles/205428698-APN-setup-guide#android-apn-settings-with-the-x3-sim-card-0-1
+
+=== Tracfone (USA)
+
+_BYOP SIM Card Kit_ works with T-Mobile and AT&T compatible SIM cards provided in BYOP kit.
+
+3G/4G data known to work with Verizon & AT&T SIMs (most likely works for T-Mobile as well).
+
+Use the following APN settings:
+
+ Name: Tracfone
+ APN: RESELLER
+ Username: <empty>
+ Password: <empty>
+
+To use Verizon's network:
+
+ Name: Tracfone
+ APN: TRACFONE.VZWENTP
+ Username: <empty>
+ Password: <empty>
+
+MMS has worked with the following settings:
+
+ MMSC: http://mmsc.cingular.com
+ MMS Proxy: proxy.mvno.tracfone.com
+
+=== T-Mobile (Czech Republic)
+
+ Name: T-Mobile CZ
+ APN: internet.t-mobile.cz
+ Username: <empty>
+ Password: <empty>
+
+=== Verizon Contract (USA)
+
+There are several APN names which can be used, for example:
+
+ Name: 4G LTE Contract
+ APN: vzwinternet
+ Username: <empty>
+ Password: <empty>
+
+Other APN names which appear, and may work if the above does not:
+
+ vzwapp
+ vzwims
+
+=== Videotron (Canada)
+
+ Name: Videotron
+ APN: media.ng
+ Username: free
+ Password: <empty>
+
+=== Virgin Mobile (Canada)
+
+Settings might work with Bell Canada too since it is the same network.
+
+ Name: Mobile Fast Web
+ APN: pda2.bell.ca
+ Username: <empty>
+ Password: <empty>
+
+=== Vodafone (Czech Republic)
+
+ Name: internet
+ APN: internet
+ Username: <empty>
+ Password: <empty>
+
+Source: https://www.vodafone.cz/pece/osobni-a-firemni/otazky/zaciname-s-chytrym-telefonem/pripojeni-nastaveni-internetu-v-telefonu/
+
+=== Vodafone (UK)
+
+ Name: Vodafone
+ APN: wap.vodafone.co.uk
+ Username: wap
+ Password: wap
+
+These settings work on 4G.
+
+Ignore Default/asdamobiles.co.uk APN if present.
+
+=== winSIM (Germany)
+
+ Name: winSIM
+ APN: internet
+ Username: <empty>
+ Passwort: <empty>
+
+Source: https://service.winsim.de/help/showGeraeteeinstellungen (Requires login)
+
+== Carriers that do not work
+
+
+=== FreedomPop (USA)
+
+
+VoIP-service. Customer service said they require Android 4.3+, and their free calling and texting works only with the Google Play app they make you use. So calls and texts don't work with non-smart phones and won't work with the PinePhone (even though it is a smart phone) because of software incompatibility. However, the data part still work if APN has been seen correctly set to *fp.com.attz*. You get 200MB free data per month. However, please watch out that you will get ding by $20 top up charge when over 200MB limit.
+
+APN: `fp.com.attz`
+
+=== Sprint (USA)
+
+Sprint is currently not supported due to unknown issues, see also link:/documentation/PinePhone/Modem/Carrier_support#Sprint[Carrier support]. Any input regarding this issue is highly appreciated.
+
+APN: `cinet.spcs`
+
+=== Visible (USA)
+
+Visible does not have any way to approve unsupported phones, it might be possible through APN settings, but requires more research and dev time. Even activating a SIM using a supported phone, and then moving it to the Pinephone does not work.
+
+=== Other
+
+Other VoLTE services.
+
+== External links
+
+* See also https://forum.pine64.org/showthread.php?tid=9150
+* LineageOS APN and MMS defaults - https://github.com/LineageOS/android_vendor_lineage/blob/lineage-19.1/prebuilt/common/etc/apns-conf.xml
+
+

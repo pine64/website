@@ -1,0 +1,29 @@
+---
+title: "S02E03:  Performance, UIs, the Keyboard, Oh My!"
+date: 2021-11-23
+draft: false
+description: "In this episode Justin and Brian talk about this week's software improvements coming to PINE64 devices, discuss the keyboard some more, and talk about the future of Mobile Linux."
+aliases:
+    - /2021/11/23/s2e03-pinetalk-performance-uis-the-keyboard-oh-my/
+---
+
+{{< podcast_player episode="s02e03">}}
+
+In this episode Justin and Brian talk about this week's software improvements coming to PINE64 devices, discuss the keyboard some more, and talk about the future of Mobile Linux.
+
+Links:
+
+* https://linuxrocks.online/@ManjaroARM/107293939046484672
+* https://aspiechattr.me/@ManjaroLinuxBot/107283210032486227
+* https://github.com/InfiniTimeOrg/InfiniTime/releases/tag/1.7.1
+* https://nitter.net/ManjaroLinux/status/1458102366310477837#m
+* https://nitter.net/salva_lieb/status/1460035543983611905#m
+* https://gitlab.com/postmarketOS/megapixels/-/tags/1.4.0
+* https://fosstodon.org/@tuxdevices/107291616567947744
+* https://wiki.pine64.org/wiki/Overclocking
+
+Music from Bensound.com and Zed (@itismezed)
+
+https://soundcloud.com/kevinflynnretro
+
+Edited by Zed

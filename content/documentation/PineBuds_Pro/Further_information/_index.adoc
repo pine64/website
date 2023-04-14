@@ -1,0 +1,15 @@
+---
+title: "Further information"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PineBuds_Pro"
+    identifier: "PineBuds_Pro/Further_information"
+    weight: 
+---
+
+* link:Specifications[]
+* link:Datasheets_for_Components_and_Peripherals[Datasheets for Components and Peripherals]
+* link:Information,_Schematics_and_Certifications[Information, Schematics and Certifications]
+* link:SoC_and_Memory_Specification[SoC and Memory Specification]

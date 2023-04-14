@@ -1,0 +1,40 @@
+---
+title: "Ox64"
+draft: false
+menu:
+  docs:
+    title:
+    parent: ""
+    identifier: "Ox64"
+    weight: 
+---
+
+image:/documentation/images/Ox64_board.jpg[The Ox64,title="The Ox64", 200]
+image:/documentation/images/Ox64_pinout.png[Pinout of the production version,title="Pinout of the production version", 400, float="right"]
+
+The *Ox64* is a RISC-V based Single Board Computer powered by Bouffalo Lab BL808 C906 64-Bit RISC-V CPU, 32-Bit CPU, embedded 64MB PSRAM memory and build-on 3 radio RF (Wifi, BT, Zigbee). It provides breadboard friendly form factor, MicroSD Card slot, USB 2.0, and many other peripheral interfaces for makers to integrate with sensors and other devices.
+
+== Board Information, Schematics and Certifications
+
+image:/documentation/images/Ox64_ethphy.png[Pinout for wiring ethernet PHY to EMAC,title="Pinout for wiring ethernet PHY to EMAC", 320,float="right"]
+
+* Baseboard Dimensions: 51mm x 21mm x 19mm x 3.5mm (Breadboard friendly)
+* Input Power: 5V 0.5A microUSB or USB-C port
+
+Production version schematic:
+
+* https://files.pine64.org/doc/ox64/PINE64_Ox64-Schematic-202221018.pdf[Ox64 Schematic 20221018 v1.1]
+* https://files.pine64.org/doc/ox64/PINE64_Ox64_PCB_Placement-Top-20221018.pdf[Ox64 PCB Component placement(ToP) 20221018 v1.1]
+* https://files.pine64.org/doc/ox64/PINE64_Ox64_PCB_Placement-Bottom-20221018.pdf[Ox64 PCB Component placement(Bottom) 20221018 v1.1]
+
+Prototype (dispatched to developers) schematic:
+
+* https://files.pine64.org/doc/ox64/PINE64_Ox64-Schematic-202221007.pdf[Ox64 Schematic 20221007 v1.0]
+* https://files.pine64.org/doc/ox64/PINE64_Ox64_PCB_Placement-Top-20221007.pdf[Ox64 PCB Component placement(ToP) 20221007 v1.0]
+* https://files.pine64.org/doc/ox64/PINE64_Ox64_PCB_Placement-Bottom-20221007.pdf[Ox64 PCB Component placement(Bottom) 20221007 v1.0]
+
+Certifications:
+
+* Disclaimer: Please note that PINE64 SBC is not a "final" product and in general certification is not necessary.
+* Not yet available
+

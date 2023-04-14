@@ -1,0 +1,78 @@
+baseURL = 'http://beta.pine64.org/'
+languageCode = 'en-us'
+#title = 'PINE64 | Open. Friendly. Community-Driven.'
+title = 'PINE64 Community'
+theme = "pinetheme"
+
+# Blog post summary limit
+summaryLength = 30
+
+pluralizelisttitles = "false"
+
+# Required to get well formatted code blocks
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+disablePathToLower = true
+
+# Required if you want to render robots.txt template
+enableRobotsTXT = true
+
+# Pagination for the blog posts (x posts per page)
+paginate = 9
+
+sectionPagesMenu = "docs2"
+
+[permalinks]
+  blog = '/:year/:month/:day/:filename/'
+
+
+[cover]
+  hidden = false # hide everywhere but not in structured data
+  hiddenInList = false # hide on list pages and home
+  hiddenInSingle = false # hide on single page
+
+[security.exec]
+  allow = ["^asciidoctor$"]
+
+[params]
+  # Description for the main page
+  Description = "PINE64 is a large, vibrant and diverse community and creates software, documentation and projects."
+
+# Docs menu
+[menu]
+  [[menu.right]]
+    name = "Blog"
+    pre = ""
+    url = "/blog/"
+    weight = 1
+  [[menu.right]]
+    name = "Podcast"
+    pre = ""
+    url = "/podcast/"
+    weight = 5
+  [[menu.right]]
+    name = "Contests"
+    pre = ""
+    url = "/contests/"
+    weight = 4
+  [[menu.right]]
+    name = "Documentation"
+    pre = ""
+    url = "/documentation/"
+    weight = 3
+  [[menu.right]]
+    name = "Community"
+    pre = ""
+    url = "/community/"
+    weight = 2
+#  [[menu.right]]
+#    name = "Forums"
+#    pre = ""
+#    url = "https://forum.pine64.org/"
+#    weight = 6
+  [[menu.right]]
+    name = "Store"
+    pre = "Test"
+    url = "https://www.pine64.com/"
+    weight = 7
+    identifier = "external"

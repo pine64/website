@@ -1,0 +1,13 @@
+---
+title: "Modifications"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "Pinecil"
+    identifier: "Pinecil/Modifications"
+    weight: 
+---
+
+* link:Optional_advanced_modifications[Optional advanced modifications]
+* link:Hall_effect_sensor[Hall effect sensor]

@@ -1,0 +1,23 @@
+---
+title: "External ports list"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "Pinebook_Pro"
+    identifier: "Pinebook_Pro/External_ports_list"
+    weight: 
+---
+
+
+Here are a list of the external ports. See link:/documentation/Pinebook_Pro/_index#Expansion_Ports|Technical Reference - Expansion Ports[Technical Reference - Expansion Ports] for port specifications.
+
+* Left side
+** Barrel jack for power, (with LED)
+** USB 3, Type A
+** USB 3, Type C
+* Right side
+** USB 2, Type A
+** Standard headset jack
+** MicroSD card slot
+

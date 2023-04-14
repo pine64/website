@@ -1,0 +1,29 @@
+---
+title: "Getting started"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "Quartz64"
+    identifier: "Quartz64/Getting_started"
+    weight: 1
+---
+
+
+
+== Flashing the device
+
+
+Natively the board only supports booting from the eMMC or microSD card, see link:#Boot_order[boot order]. There doesn't seem to be a way to boot from USB devices or SATA yet.
+
+The board can be booted by flashing your favorite operating system to a microSD card using another device and to insert the microSD card into the Quartz64, see the article link:/documentation/General/Getting_started[Getting started]. Flashing the eMMC is possible by booting an operating system from the microSD card and to overwrite the eMMC from within the booted operating system.
+
+== Boot order
+
+The hardware boot order of the Quartz64 is:
+
+. SPI NOR flash
+. SPI NAND flash
+. eMMC
+. microSD card
+

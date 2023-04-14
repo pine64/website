@@ -1,0 +1,15 @@
+---
+title: "Further information"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "Pinebook"
+    identifier: "Pinebook/Further_information"
+    weight: 6
+---
+
+* link:Other_resources[Other resources]
+* link:Datasheets[]
+* link:Schematics_and_certifications[Schematics and certifications]
+* link:Specifications[]

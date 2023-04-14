@@ -1,0 +1,16 @@
+---
+title: "ReExternal linkssources"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PinePhone/Further_information"
+    identifier: "PinePhone/Further_information/ReExternal_linkssources"
+    weight: 
+---
+
+
+* https://pine64.com/product-category/pinephone/[The PinePhone on the official Pine store]
+* https://pine64.com/product-category/smartphone-spare-parts/[PinePhone spare parts on the official Pine store]
+* https://pine64.com/product-category/smartphone-accessories/[PinePhone accessories on the official Pine store]
+

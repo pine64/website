@@ -1,0 +1,53 @@
+{{ define "main" }}
+
+
+
+<div id="blog_header">
+    <div class="generic_header_container">
+        <h1>Blog posts</h1>
+
+        <p>The latest blog posts from the PINE64 community bringing the latest news. Get the 
+        {{ with .OutputFormats.Get "rss" -}}
+        {{ printf `<a href="%s">RSS feed</a>.` .Permalink | safeHTML }}
+        {{ end -}}
+        </p>
+    </div>
+</div>
+
+
+
+<div class="mid_flex_container">
+<div class="blog-container">
+
+{{ $paginator := .Paginate (where .Data.Pages "Type" "blog") }}
+
+{{ range $paginator.Pages }}
+
+<div class="blog-preview">
+    <a class="summary" href="{{ .RelPermalink }}">
+    <h3>{{ .Title }}</h3>
+
+    {{if and (isset .Params.cover "image") (ne .Params.cover.image "") }}
+        <div class="blog-cover">
+            <img src="/blog/images/{{ .Params.cover.image }}"/>
+        </div>
+    {{end}}
+
+        <p>{{ .Summary }}</p>
+    </a>
+
+    {{ partial "blog_date.html" . }}
+
+</div>
+
+
+{{ end }}
+
+</div>
+
+{{ template "_internal/pagination.html" . }}
+
+</div>
+
+{{ end }}
+

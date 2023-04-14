@@ -1,0 +1,58 @@
+---
+title: "Template:Diagonal split header"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "Templates"
+    identifier: "Templates/diagonal_split_reader"
+    weight: 
+---
+
+<includeonly>|{{{2}}}{{{1}}}</includeonly><noinclude>
+Allows you to do tables like this:
+[cols="1,1"]
+|===
+|scope="col" {{Template:Diagonal split header|From|To}}
+|scope="col" |A |B |C
+
+|scope="row" |1
+| X
+| Y
+| Z
+
+|scope="row" |2
+| U
+| V
+| W
+
+|scope="row" |3
+| R
+| S
+| T
+|===
+
+With code like this:
+`
+[cols="1,1"]
+|===
+|scope="col" {{Template:Diagonal split header|From|To}}
+|scope="col" |A |B |C
+
+|scope="row" |1
+| X
+| Y
+| Z
+
+|scope="row" |2
+| U
+| V
+| W
+
+|scope="row" |3
+| R
+| S
+| T
+|===
+`
+</noinclude>

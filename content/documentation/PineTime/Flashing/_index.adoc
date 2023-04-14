@@ -1,0 +1,13 @@
+---
+title: "Flashing"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PineTime"
+    identifier: "PineTime/Flashing"
+    weight: 
+---
+
+* link:External_flash_partitioning[External flash partitioning]
+* link:SD_MCUBoot[SD MCUBoot]

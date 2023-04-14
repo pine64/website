@@ -1,0 +1,15 @@
+---
+title: "SOQuartz"
+draft: false
+menu:
+  docs:
+    title:
+    parent: ""
+    identifier: "SOQuartz"
+    weight: 
+---
+
+image:/documentation/images/SOQuartz_module-1s.jpg[The SOQuartz,title="The SOQuartz",width=400]
+
+The *SOQuartz* is a RK3566 based compute module and parts of Quartz64 series.
+

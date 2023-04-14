@@ -1,0 +1,52 @@
+<!-- sidebar start -->
+<nav class="sidebar-nav">
+    {{ $currentPage := . }}
+
+    <!-- If on the main page -->
+    {{ if eq .RelPermalink "/documentation/"}}
+        {{ .TableOfContents }}
+    {{end}}
+
+    <!-- Categories -->
+    {{ range .Site.Menus.docs }}
+
+        <!-- Displays only current category -->
+        {{if or ($currentPage.IsMenuCurrent "docs" .) ($currentPage.HasMenuCurrent "docs" .) }} 
+            <!-- Hide "Main Page"-->
+            {{if ne .Name "Main Page" }}
+                <a class='sidebar-nav-item' href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+                <br> 
+                <hr>
+
+                <br>
+            {{end}}
+
+        {{end}}
+
+        
+        {{ if .HasChildren }}
+            {{ if or ($currentPage.IsMenuCurrent "docs" .) ($currentPage.HasMenuCurrent "docs" .) }}
+
+                <ul>
+
+                <!-- Children -->
+                {{ range .Children }}
+                
+                    <li><a class='sidebar-nav-subitem {{if $currentPage.IsMenuCurrent "docs" .}}active{{end}}' href='{{.URL}}'>{{ .Title }}</a></li>
+                    {{ if .HasChildren }}
+                        <ul>
+
+                        <!-- Children-Children -->
+                        {{ range .Children }}
+                            <li class="doc_subitem"><a class='sidebar-nav-subsubitem {{if $currentPage.IsMenuCurrent "docs" .}}active{{end}}' href='{{.URL}}'>{{ .Title }}</a></li>
+                        {{end}}
+
+                        </ul>
+                    {{end}}
+                {{end}}
+
+                </ul>
+            {{end}}
+        {{end}}
+    {{ end }}
+</nav>

@@ -1,0 +1,16 @@
+---
+title: "Software releases"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PinePhone_Pro"
+    identifier: "PinePhone_Pro/Software"
+    weight: 4
+---
+
+
+The link:/documentation/PinePhone_Pro/Software/Releases[Releases] page has a complete list of currently supported phone-optimized operating system images that work with the PinePhone Pro.
+
+NOTE: Images of the regular PinePhone are not compatible with the PinePhone Pro.
+

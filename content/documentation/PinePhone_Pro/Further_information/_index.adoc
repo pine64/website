@@ -1,0 +1,16 @@
+---
+title: "Further information"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PinePhone_Pro"
+    identifier: "PinePhone_Pro/Further_information"
+    weight: 
+---
+
+* link:External_links[External links]
+* link:Press[]
+* link:Datasheets,_schematics_and_certifications[Datasheets, schematics and certifications]
+* link:Components[]
+* link:Specifications[]

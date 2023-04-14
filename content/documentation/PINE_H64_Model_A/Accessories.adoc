@@ -1,0 +1,14 @@
+---
+title: "Accessories"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PINE_H64_Model_A"
+    identifier: "PINE_H64_Model_A/Accessories"
+    weight: 
+---
+
+
+The step-by-step guides for the accessories can be found under link:/documentation/Unsorted/Accessories_Step_by_Step_Guides[Accessories Step by Step Guides].
+

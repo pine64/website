@@ -1,0 +1,72 @@
+---
+title: "Components"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PinePhone_Pro/Further_information"
+    identifier: "PinePhone_Pro/Further_information/Components"
+    weight: 
+---
+
+
+[cols="1,1"]
+|===
+|Component
+|Model
+
+| Touchscreen
+| Goodix GT917S
+
+| LCD
+| Himax HX8394 compatible
+
+| Rear camera
+| IMX258
+
+| Front camera
+| OV8858
+
+| Camera flash
+| AW3641EDNR
+
+| WiFi + Bluetooth
+| https://www.azurewave.com/img/wireless-modules/AW_CM256SM_DS_Rev15_CYW.pdf[AzureWave AW-CM256SM]
+
+| Modem
+| http://static.abstore.pl/design/accounts/soyter/img/dokumentacje/quectel_eg25-g.pdf[Quectel EG25-G]
+
+| GNSS/GPS
+| http://static.abstore.pl/design/accounts/soyter/img/dokumentacje/quectel_eg25-g.pdf[Quectel EG25-G]
+
+| <s>3 Axis Magnetometer</s>
+| <s>https://www.st.com/en/mems-and-sensors/lis3mdl.html[ST LIS3MDL]</s> *_Note:*_ The _AF8133J_ is used instead.
+
+| Geo Magnetic Sensor
+| http://www.voltafield.com/products01.html[Voltafield AF8133J]
+
+| Ambient light / Proximity
+| STK3311-A
+
+| Accelerometer / Gyroscope
+| https://invensense.tdk.com/products/motion-tracking/6-axis/mpu-6500/[TDK MPU-6500]
+
+| Vibration motor
+|
+
+| Notification LED
+| LED0603RGB
+
+| Audio Codec
+| ALC5616 and ALC5640
+
+| Volume buttons
+| Buttons connected to the KEYADC
+
+| Power button
+|
+
+| Battery fuel gauge
+| https://rockchip.fr/RK818%20datasheet%20V1.0.pdf[RK818]
+|===
+

@@ -1,0 +1,33 @@
+---
+title: "S02E07: Pine in a field, on a mountain, over a river"
+date: 2022-04-23
+draft: false
+description: "In this episode Brian and Justin talk in length about the newly announced PINE64 line of audio products."
+aliases:
+    - /2022/04/23/s02e07-pine-in-a-field-on-a-mountain-over-a-river/
+---
+
+{{< podcast_player episode="s02e07">}}
+
+In this episode Brian and Justin talk in length about the newly announced PINE64 line of audio products.
+
+Links and topics discussed:
+
+* https://forum.sailfishos.org/t/release-notes-vanha-rauma-4-4-0/10656
+* https://github.com/Tow-Boot/Tow-Boot/releases/tag/release-2021.10-004
+* https://blog.mobian.org/posts/2022/03/30/universal-images/
+* https://github.com/Biktorgj/pinephone_modem_sdk/releases/tag/0.6.1
+* https://www.youtube.com/watch?v=m_XRdHec154
+* https://www.youtube.com/watch?v=PQiHOjIUTiE
+* https://box86.org/2022/03/box86-box64-vs-qemu-vs-fex-vs-rosetta2/
+* https://www.phoronix.com/scan.php?page=news_item&px=Box86-0.2.6-Box64-0.1.8
+* https://nxos.org/maui/maui-shell-alpha-release/
+* https://www.pine64.org/2022/04/15/april-update-no-more-unicorns/
+
+Music from Bensound.com and Zed (@itismezed), https://soundcloud.com/kevinflynnretro
+
+Edited by Zed
+
+Yugen – Emotional Ethnic Music by Keys of Moon | https://soundcloud.com/keysofmoon - Attribution 4.0 International (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/
+
+Music promoted by https://www.chosic.com/free-music/all/

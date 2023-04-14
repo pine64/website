@@ -1,0 +1,55 @@
+---
+title: "Specifications"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PineTab2"
+    identifier: "PineTab2/Specifications"
+    weight: 1
+---
+
+
+image:/documentation/images/RK3566_icon.png[right,title="right"]
+* *SoC:* Rockchip RK3566
+* *CPU:* 4x ARM Cortex-A55 @ 1.8 GHz
+** 32KB L1 Instruction Cache and 32KB L1 Data Cache per core
+** 512KB unified system L3 cache
+** ARMv8 Cryptography Extensions
+* *GPU:* Mali-G52 MP2 @ 800 MHz
+** Supported by the open source 'Panfrost' driver in Linux and Mesa
+** Supports OpenGL 3.1 and OpenGL ES 3.1 with many newer extensions
+* *NPU:* 0.8 TOPS Neural Processing Unit
+* *RAM:* 4GB or 8GB LPDDR4
+* *Storage:*
+** 64GB or 128GB internal eMMC
+** 1x MicroSD slot
+* *Display:* 10.1" IPS LCD Resolution 1280x800
+* *Cameras:* 2Mpx front, 5Mpx rear
+* *Battery:* 6000 mAh (22.2Wh)
+* *Buttons:* Power, volume up, volume down
+* *Network:*
+** Wi-Fi
+** Bluetooth
+* *I/O:*
+** 1x USB-C 3.0
+** 1x USB-C 2.0
+** 1x MicroHDMI
+** 1x 3.5mm audio jack
+** 1x 5 pin Pogo connector for keyboard
+** (PCIe on PCB as a flat flex ribbon connector, no room for M.2 NVMe drives in case)
+* *Multimedia:*
+** rkdjpeg: 1080p120 JPEG decode
+*** no driver in mainline yet
+** hantro: JPEG/VP8/H.264 encode, 1080p MPEG-2/H.263/VP8/H.264 AVC decode
+*** mainline driver does not yet support all codecs/functions
+*** see link:/documentation/Unsorted/Mainline_Hardware_Decoding[Mainline Hardware Decoding] and link:/documentation/Unsorted/Mainline_Hardware_Encoding[Mainline Hardware Encoding]
+** rkvdec2: 4K H.264 AVC Main10 L5.1/H.265 HEVC Main10 L5.1/VP9 Profile 0 and 2 L5.1 decode
+*** no driver in mainline yet
+** rkvenc2: 4K H.264 AVC/H.265 HEVC encode
+*** no driver in mainline yet
+* *Build:* Metal and Plastic
+* *Dimensions:* 242x161x9mm
+* *Misc:*
+** Protective cover with keyboard
+

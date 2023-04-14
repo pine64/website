@@ -1,0 +1,242 @@
+---
+title: "PinePhone Pro Software Releases"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PinePhone_Pro/Software"
+    identifier: "PinePhone_Pro/Software/Releases"
+    weight: 
+---
+
+This page contains a list of all available releases and tools for the link:/documentation/PinePhone_Pro/_index[PinePhone Pro].
+
+== Arch Linux ARM
+
+image:/documentation/images/Archlinux-logo.png[width=100]
+
+(Unofficial) Arch Linux ARM with choice of Phosh UI, Plasma Mobile, sxmo or barebones.
+Currently being maintained by the https://danctnix.org/[DanctNIX] community (GitHub: https://github.com/DanctNIX/danctnix[danctnix], https://github.com/dreemurrs-embedded[dreemurrs-embedded]).
+
+=== Download
+
+Get both stable and test builds at https://github.com/dreemurrs-embedded/Pine64-Arch/releases[GitHub releases].
+
+|===
+2+| Default credentials
+
+|Default user
+| `alarm/123456`
+
+|root (barebone only)
+| `root/root`
+|===
+
+=== Notes
+
+The GitHub page can be found here: https://github.com/dreemurrs-embedded/Pine64-Arch/[dreemurrs-embedded/Pine64-Arch]
+
+A re-image of the above Arch image providing a Btrfs root partitioning has been https://github.com/K-arch27/pinebtrfs/[made by user kaida].
+
+== Gentoo
+
+image:/documentation/images/GentooLogo.png[width=100]
+
+There are unofficial Gentoo overlays with ebuilds for the PinePhone Pro. There are no images - the image must be built manually, including picking the kernel, bootloader and the desired desktop environment. The ARM64 version of Gentoo has to be selected. The PinePhone Pro will not boot with P-Boot but will boot with U-Boot, there is an ebuild for it.
+
+=== Download
+
+The overlay can be found under https://github.com/stealthgun/gjdwebserver-overlay
+
+=== Notes
+
+See https://stealthgun.tweakblogs.net/blog/19830/gentoo-on-a-pinephone-pro for the documentation.
+
+NOTE: Please consider cross-compiling the software on the computer. Long compilation times and heat production can lead to a reduced lifespan of the phone.
+
+== GloDroid
+
+A fully open-source port of Android and LineageOS to the PinePhone Pro.
+
+GitHub: https://github.com/GloDroidCommunity/pine64-pinephonepro[GloDroid]
+
+=== Download
+
+* Releases: https://github.com/GloDroidCommunity/pine64-pinephonepro/releases[GloDroid]
+
+=== Notes
+
+Project status https://github.com/GloDroidCommunity/pine64-pinephonepro/issues/1[link]
+
+== LuneOS
+
+image:/documentation/images/Luneos-logo-256.png[width=100]
+
+LuneOS is one of the original multi-tasking OS-es that runs on Linux. Based on HP/Palm's webOS, merged with latest technology stack from LG called webOS OSE (a derivative of what LG uses on their Smart TV's), software such as Qt5 and makes use of the Yocto build system.
+
+=== Download
+
+* LuneOS (Initial preview): https://github.com/webOS-ports/meta-pine64-luneos/releases[Downloads]
+
+|===
+2+| Default credentials
+
+|Default user
+| `root`
+|===
+
+=== Notes
+
+In order to connect to the device using SSH/SCP via WiFi: You can simply connect via SSH/SCP via WiFi using the PinePhonePro's IP address on port 22.
+
+== Manjaro ARM
+
+image:/documentation/images/Manjaro-logo.svg[width=100]
+
+Manjaro is a user-friendly Linux distribution based on the independently developed Arch operating system with the Plasma Mobile and Phosh desktop environment.
+
+=== Download
+
+* Phosh: https://github.com/manjaro-pinephone/phosh-dev/releases[Dev] and https://github.com/manjaro-pinephone/phosh/releases[Stable] (recommended)
+* Plasma Mobile: https://github.com/manjaro-pinephone/plasma-mobile-dev/releases[Dev] and https://github.com/manjaro-pinephone/plasma-mobile/releases[Stable] (recommended)
+
+|===
+2+| Default credentials
+
+|Default user
+| `manjaro/123456`
+
+|root
+| `root/root`
+|===
+
+== Mobian
+
+image:/documentation/images/Debian-logo.png[width=100]
+
+An unofficial https://www.debian.org[Debian] build for ARM64 running with Phosh (developed by Purism, uses Wayland instead of Xorg).
+The base system is pure Debian, with only the GUI applications and a few others (ModemManager, WiFi chip firmware) being built from modified sources (as well as the kernel and u-boot).
+Current version is Debian Bookworm.
+
+=== Download
+
+https://images.mobian.org/pinephonepro/[Images]
+
+NOTE: Tow-Boot required to be able to boot the images, see https://wiki.mobian-project.org/doku.php?id&#61;install-linux[here]|
+
+|===
+2+| Default credentials
+
+|Default user
+| `mobian/1234`
+|===
+
+=== Notes
+
+The development is work in progress. See https://gitlab.com/mobian1/devices/pinephonepro-support[pinephonepro-support] for further information. The Mobian wiki can be found https://wiki.mobian-project.org/[here].
+
+In order to connect to the device using SSH/SCP via WiFi, you need to install SSH on the device. You can do this by executing the following in a shell: "sudo apt-get install ssh", afterwards you can connect via SSH/SCP via WiFi using the PinePhonePro's IP address on port 22.
+
+== Kali Linux
+
+image:/documentation/images/Kali-logo.png[width=200]
+
+The official Kali Nethunter images for PinePhone and PinePhone Pro have been released now. Get https://github.com/Shubhamvis98/nethunter-pinephone[Nethunter App] for your PinePhone's Kali Linux.
+
+=== Download
+
+* https://github.com/Shubhamvis98/kali-pinephone/releases[Kali Phosh Unofficial]
+* https://www.kali.org/get-kali/#kali-mobile[Kali Nethunter Pro Official]
+
+|===
+2+| Default credentials
+
+|Default user for Unofficial Releases
+| `kali/8888`
+
+|Default user for Nethunter Releases
+| `kali/1234`
+|===
+
+=== Notes
+
+Installation:
+
+ $ unxz -c nethunterpro-*-pinephonepro-phosh.img.xz | dd of=/dev/{storage_block} bs=1M status=progress
+ $ growpart /dev/mmcblkX Y
+ $ e2fsck -y -f /dev/mmcblkXpY
+ $ resize2fs /dev/mmcblkXpY
+ # X: Storage Device Y: Partition Number
+
+== Nemo Mobile
+
+image:/documentation/images/nemo_mobile.png[width=100]
+
+Nemo Mobile is the open source build of Sailfish OS with a open source UI called http://nemomobile.net/glacier-home/[Glacier], http://nemomobile.net/pages/Hello_manjaro/[based on Manjaro].
+
+=== Download
+
+https://img.nemomobile.net/2022.05/Manjaro-ARM-nemomobile-pinephonepro-0.9.img.xz[Image]
+
+|===
+2+| Default credentials
+
+|Default user
+| `manjaro/123456`
+
+|root
+| `root/root`
+|===
+
+=== Notes
+
+The website of the Nemo Mobile UX Team can be found https://nemomobile.net/[here]. Please report bugs regarding the Nemo Mobile UI as https://github.com/nemomobile-ux/main/issues[GitHub issue].
+
+== NixOS
+
+image:/documentation/images/NixOS.webp[width=100]
+
+NixOS is a Linux distribution built on top of the Nix package manager using declarative configuration to allow reliable system upgrades.
+
+=== Download
+
+Not available yet.
+
+=== Notes
+
+WIP. See https://github.com/NixOS/mobile-nixos/issues/440
+
+== postmarketOS
+
+image:/documentation/images/PostmarketOS_logo.png[width=100]
+
+postmarketOS extends https://www.alpinelinux.org/[Alpine Linux] to run on smartphones and other mobile devices.
+It offers various user interfaces (Phosh, Plasma Mobile, Sxmo, Plasma Desktop, Gnome 3, Kodi, XFCE4, ...).
+
+=== Download
+
+https://postmarketos.org/download/[Download page]
+
+Note that images for the PinePhone Pro are in the "community" category of devices indicating some features may not work. You can also build your own image using https://wiki.postmarketos.org/wiki/Installation_guide[pmbootstrap]
+
+=== Notes
+
+See the https://wiki.postmarketos.org/wiki/PINE64_PinePhone_Pro_(pine64-pinephonepro)[pine64-pinephonepro] page of the postmarketOS wiki for details.
+
+== Various DPA Images
+
+Multiple versions of unofficial images of various Debian-based distributions by the user DPA. They also contain some of DPA's own software.
+
+=== Download
+
+The latest successful image builds can be found here: https://repo.dpa.li/apt/dpa-image-builder/images/?board=pinephone-pro
+
+=== Notes
+
+Most of these images are still in development / incomplete and DPA doesn't have time to test them all, but they can still be useful as a starting point to get distributions running for which no other images have been created yet. DPA made these images because they wanted to run their favorite distribution, Devuan, on their phone.
+
+The build scripts can be found in various places: https://gitlab.com/DanielAbrecht/dpa-image-builder[GitLab], https://projects.dpa.li/git/?p=dpa-image-builder.git;a=summary[my server], https://github.com/Daniel-Abrecht/dpa-image-builder[GitHub]
+
+In theory, these build scripts can create images for any Debian-based distribution which supports ARM64 and can be bootstrapped using _debootstrap_.
+
+

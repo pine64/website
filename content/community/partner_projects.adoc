@@ -1,0 +1,63 @@
+---
+title: "Partner projects"
+date: 
+draft: false
+---
+
+link:https://aosc.io[AOSC OS]
+
+link:https://www.armbian.com/[Armbian]
+
+link:http://batocera-linux.xorhub.com/[Batocera Linux]
+
+link:https://dietpi.com/[DietPi]
+
+link:https://hardenedbsd.org/[HardenedBSD]
+
+link:https://kde.org/[KDE Community]
+
+link:https://neon.kde.org/[KDE Neon]
+
+link:https://elementary.io/[elementary]
+
+link:http://www.lakka.tv/[Lakka]
+
+link:https://en.wikipedia.org/wiki/LuneOS[LuneOS]
+
+link:https://libreelec.tv/[LibreELEC]
+
+link:https://maemo-leste.github.io/[Maemo Leste]
+
+link:https://manjaro.org/[Manjaro]
+
+link:https://mobian-project.org/[Mobian]
+
+link:https://nemslinux.com/[NEMS Linux]
+
+link:https://www.netbsd.org/[NetBSD]
+
+link:https://ownyourbits.com/nextcloudpi/[NextCloudPi]
+
+link:https://nixos.org/[NixOS]
+
+link:https://www.openbsd.org/[OpenBSD]
+
+link:https://www.openhab.org/[OpenHAB]
+
+link:https://www.openmediavault.org/[Open Media Vault]
+
+link:https://www.plasma-mobile.org/[Plasma Mobile]
+
+link:https://postmarketos.org/[PostmarketOS]
+
+link:https://q4os.org/[Q4OS]
+
+link:https://www.recalbox.com/[Recalbox]
+
+link:https://odroidarena.com/[Retro Arena]
+
+link:https://sailfishos.org/[SailfishOS]
+
+link:https://ubports.com/[UBPorts Foundation]
+
+link:https://volumio.org/[Volumio]

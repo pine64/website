@@ -1,0 +1,24 @@
+---
+title: "Case dimensions and data"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "Pinebook_Pro/Further_information"
+    identifier: "Pinebook_Pro/Further_information/Case_dimensions_and_data"
+    weight: 
+---
+
+
+* Dimensions: 329mm x 220mm x 12mm (WxDxH)
+* Weight: 1.26Kg
+* Screws
+** Philips head type screws
+** M2 flat head machine screws (measurements in mm)
+** 4 x Small screws (used along the front edge): Head - 3.44, Thread Diameter - 1.97, Thread Length - 2.1, Overall length - 3.05
+** 6 x Large screws: Head - 3.44, Thread Diameter - 1.97, Thread Length - 4.41, Overall Length - 5.85
+* Rubber Feet
+** 18mm diameter
+** 3mm height
+** Dome shaped
+

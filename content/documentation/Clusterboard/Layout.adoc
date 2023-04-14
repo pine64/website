@@ -1,0 +1,105 @@
+---
+title: "Layout"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "Clusterboard"
+    identifier: "Clusterboard/Layout"
+    weight: 
+---
+
+
+image:/documentation/images/ClusterBoardFront-Annotated.jpg[Front_view_of_the_Clusterboard_(revision_2.3),title="Front_view_of_the_Clusterboard_(revision_2.3)",width=400]_image:/documentation/images/ClusterBoardBack.jpg[Rear view of the Clusterboard (revision 2.3),title="Rear view of the Clusterboard (revision 2.3)",width=200]
+
+[cols="1,1"]
+|===
+|Label
+|Description
+
+| A
+| Barrel-type DC jack (6.3&nbsp;mm outer diameter, 3.0&nbsp;mm inner diameter) for a +5&nbsp;V, 15&nbsp;A power supply
+
+| B
+| Gigabit Ethernet port
+
+| C
+| Reset button, for all seven modules
+
+| D
+| Holder for two non-rechargeable 1.5&nbsp;V AA-size batteries, providing backup for the real-time clock (RTC) on all modules
+
+| E
+| Connector for an eMMC module, for the first SOPINE or SOEDGE module
+
+| F
+| Slot for a SOPINE or SOEDGE module
+
+| G
+| USB&nbsp;2.0 Type-A socket
+
+| H
+| MicroUSB Type-B USB&nbsp;2.0 socket
+
+| I
+| Activity LED
+
+| J
+| 20-pin expansion connector
+
+| K
+| Three-pin connector for a lithium battery
+
+| L
+| RTL8211E Gigabit Ethernet PHY, with two status LEDs
+
+| M
+| Gigabit Ethernet Switch (RTL8370N)
+
+| N
+| 24-pin ATX Power Connector
+
+| O
+| Two-pin connector for a switch/button that turns on connected ATX power supply
+
+| P
+| 5&nbsp;V power output for hard disk drives (optional)
+
+| Q
+| Places for soldering two resistors (optional, for use with an ATX power suppply that requires dummy load on 3.3&nbsp;V and 12&nbsp;V rails)
+|===
+
+For the part D, please see the important note in the link:#Specifications|section above[section above].  For the part K, please see the notes in the link:#Hardware revisions|section below[section below].  Parts F to L exist separately for each of all seven SOPINE or SOEDGE modules.
+
+=== 20-pin Expansion Connector
+
+The 20-pin expansion connector is the part J decribed in the link:#Layout|section above[section above], available for each SOPINE or SOEDGE module.  There is an unofficial description of the pinout in https://forum.pine64.org/showthread.php?tid=5713[this forum thread].  The unofficial pinout is also visible directly in https://forum.pine64.org/attachment.php?aid=1111[this picture].
+
+=== SOPINE Module
+
+image:/documentation/images/SOPine-Annotated.jpg[Front (top) and rear (bottom) views of the SOPINE module,title="Front (top) and rear (bottom) views of the SOPINE module",width=300]
+
+[cols="1,1"]
+|===
+|Label
+|Description
+
+| A
+| A64 SoC
+
+| B
+| 2&nbsp;GB of DDR3 RAM
+
+| C
+| AXP803 PMIC
+
+| D
+| Edge connector, the same as on SO-DIMM modules
+
+| E
+| microSD card slot
+
+| F (not annotated yet)
+| Power LED
+|===
+

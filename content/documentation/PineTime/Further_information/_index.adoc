@@ -1,0 +1,16 @@
+---
+title: "Further information"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PineTime"
+    identifier: "PineTime/Further_information"
+    weight: 
+---
+
+* link:Datasheets,_schematics_and_certifications[Datasheets, schematics and certifications]
+* link:Hardware[]
+* link:Specifications[]
+* link:Equivalents[]
+* link:Devkit_wiring[Devkit wiring]

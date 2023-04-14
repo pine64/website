@@ -1,0 +1,14 @@
+---
+title: "Obtaining a Development Board"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "QuartzPro64"
+    identifier: "QuartzPro64/Obtaining_a_Development_Board"
+    weight: 1
+---
+
+
+Request/Register: https://preorder.pine64.org/#/quartzpro64[https://preorder.pine64.org/$$#$$/quartzpro64]
+

@@ -1,0 +1,71 @@
+---
+title: "Components"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PinePhone/Further_information"
+    identifier: "PinePhone/Further_information/Components"
+    weight: 
+---
+
+
+[cols="1,1"]
+|===
+|Component
+|Model
+
+| Touchscreen
+| Goodix GT917S
+
+| Rear camera
+| OmniVision OV5640
+
+| Camera flash
+| SGMICRO SGM3140
+
+| Front camera
+| GalaxyCore GC2145
+
+| LCD
+| Xingbangda XBD599
+
+| WiFi
+| Realtek RTL8723CS
+
+| Bluetooth
+| Realtek RTL8723CS
+
+| Modem
+| http://static.abstore.pl/design/accounts/soyter/img/dokumentacje/quectel_eg25-g.pdf[Quectel EG25-G]
+
+| GNSS/GPS
+| http://static.abstore.pl/design/accounts/soyter/img/dokumentacje/quectel_eg25-g.pdf[Quectel EG25-G]
+
+| Magnetometer
+| ST LIS3MDL
+
+| Ambient light / Proximity
+| SensorTek STK3335
+
+| Accelerometer / Gyroscope
+| InvenSense MPU-6050
+
+| Vibration motor
+| Unknown model
+
+| Notification LED
+| LED0603RGB
+
+| Volume buttons
+| Buttons connected to the KEYADC
+
+| Power button
+| X-Powers AXP803
+
+| Battery fuel gauge
+| X-Powers AXP803
+|===
+
+See the link:/documentation/PinePhone/Further_information/Components_list[PinePhone Component List].
+

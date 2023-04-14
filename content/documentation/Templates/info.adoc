@@ -1,0 +1,49 @@
+---
+title: "Template:Info"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "Templates"
+    identifier: "Templates/info"
+    weight: 
+---
+
+<noinclude>
+{{Template}}
+
+A general, non-obtrusive information box.
+
+== Usage
+
+ NOTE: information content
+
+== Example
+
+ NOTE: This is an information.
+
+NOTE: This is an information.
+
+== Technical notes
+
+The boxes use `display: table` to support both adaptive width and floating siblings, all other alternatives can't archive them as perfect as this solution within just one HTML element. However, it has its own flaw, if you put it into another table, its padding will gone. Avoid putting hints, notes and warnings into any tables until solution was found, or we give up and use two elements for just one box.
+
+This template uses class `.template-box` and `.template-warning`.
+In the future, if the https://www.mediawiki.org/wiki/Extension:TemplateStyles[TemplateStyles Extension] is installed on this MediaWiki instance,
+one may move the embedded inline styles to Template Style files.
+
+== See also
+
+* https://wiki.archlinux.org/title/Template:Warning[ArchWiki: Template:Warning]: the template on which this one is based on
+* Template:Hint
+* Template:Note
+* Template:Warning
+</noinclude><includeonly><div role="note" class="template-box template-info" style="
+display: table;
+min-width: 16em;
+min-height: 1.6em;
+margin: .5em 0;
+padding: 0.1em 0.4em;
+border-left: 6px solid #ddd;
+color: #000000;
+"><b>Note: </b>{{{1|===}}</includeonly>

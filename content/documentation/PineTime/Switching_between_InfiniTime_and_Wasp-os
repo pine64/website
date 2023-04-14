@@ -1,0 +1,60 @@
+---
+title: "Switching your PineTime between InfiniTime and Wasp-os"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PineTime"
+    identifier: "PineTime/Switching_between_InfiniTime_and_Wasp-os"
+    weight: 
+---
+
+image:/documentation/images/Flash-reloader-mcuboot.jpg[Flashing_`reloader-mcuboot.zip`,title="Flashing_`reloader-mcuboot.zip`",width=600]_image:/documentation/images/Flash-micropython.jpg[Flashing `micropython.zip`,title="Flashing `micropython.zip`",width=400]
+
+== Introduction
+
+Both Infinitime and Wasp-os are very cool OS'es for the link:/documentation/PineTime/_index[PineTime] and many people will want to try both. This is possible, even with a sealed device|
+
+Both devices use the same Nordic (legacy) DFU protocol for updating firmware over the air. But the BLE stack and the bootloaders for both are different. That's why we need to use the https://github.com/daniel-thompson/wasp-reloader[reloader]. However, instructions you find elsewhere (including https://www.youtube.com/watch?v=lPasAt1LJmo[Daniel Thompsons video]) are somewhat outdated.
+
+Flashing can be done with any of
+
+* https://www.gadgetbridge.org[Gadgetbridge] (Android >= 4.4)
+* https://github.com/piggz/harbour-amazfish[Amazfish] (SailfishOS and Linux)
+* https://github.com/alexr4535/siglo[Siglo] (Linux desktop and Pinephone) (Use the 'Manual OTA File' option)
+* https://github.com/ZephyrLabs/PinetimeFlasher[PinetimeFlasher] (Windows)
+* ota-dfu-python (Linux CLI) which is included in sources of both Infinitime and Wasp-os
+** `InfiniTime/bootloader/ota-dfu-python/dfu.py`
+** `wasp-os/tools/ota-dfu-python/dfu.py`
+_Note: We removed mentions to NRFConnect as this app is closed source and recent versions do not work anymore with InfiniTime (the last version known to work is 4.24.3). If you used NRFConnect in the past, we recommend you switch to Gadgetbridge._
+
+
+This guide has been last updated for Infinitime 1.1.0 and Wasp-os 0.4.1
+
+== InfiniTime => Wasp-os
+
+All the zips you need can be found from the https://wasp-os.readthedocs.io/en/latest/install.html#binary-downloads[wasp-os installation guide].
+
+* Make sure the watch is running Infinitime and can be found by your companion device (PC, phone, etc).
+* First we need to flash the reloader, with the wasp-os bootloader as payload. To do this, flash: <br>`wasp-os-0.4/build-pinetime/reloader-mcuboot.zip`
+* After flashing, it will boot using the Infinitime bootloader (green large pine cone), then it'll hang for a few seconds, then it'll show the reloader animation (blue smaller pine cone), and then it'll boot the wasp-os bootloader.
+* Make sure the watch is on the screen with the pine cone and arrow. If it is in a bootloop instead, then reboot the watch by holding the button until the arrow appears.
+* Now you can flash micropython with wasp-os: <br>`wasp-os-0.4/build-pinetime/micropython.zip`
+* Wasp-os should now boot. Enjoy|
+
+== Wasp-os => InfiniTime
+
+image:/documentation/images/Flash-reloader-infinitime-recovery.jpg[Flashing_`reloader-infinitime-recovery-0.14.1.zip.zip`,title="Flashing_`reloader-infinitime-recovery-0.14.1.zip.zip`",width=500]_image:/documentation/images/Flash-infinitime.jpg[Flashing `pinetime-mcuboot-app-dfu-1.1.0.zip.zip`,title="Flashing `pinetime-mcuboot-app-dfu-1.1.0.zip.zip`",width=600]
+
+The `reloader-factory.zip` was broken in the original wasp-os 0.4 but was fixed in wasp-os 0.4.1. However the Infinitime binaries are outdated the 0.4 release and I do not recommend flashing these. Older InfiniTime versions have flaky BLE which makes upgrading from there very unreliable.
+
+You can get newer binaries from the wasp-os projects CI system (see the https://wasp-os.readthedocs.io/en/latest/install.html#binary-downloads[wasp-os installation guide]) or alternatively, I made my own containing just the https://github.com/JF002/InfiniTime/releases/tag/0.14.1[InfiniTime 0.14.1] https://github.com/JF002/pinetime-mcuboot-bootloader/blob/develop/README.md#recovery-firmware[recovery firmware]. This allows you to flash any future release of InfiniTime without having to find a new reloader zip. Get the https://github.com/Peetz0r/wasp-reloader/releases/tag/infinitime-0.14.1-recovery[reloader zip here] and the https://github.com/JF002/InfiniTime/releases[latest Infinitime here].
+
+* Reboot the watch by holding the button until the pine cone arrow appears.
+* Flash the reloader zip: <br>`reloader-infinitime-recovery-0.14.1.zip`
+* After flashing, the reloader will run (blue smaller pine cone), then it'll boot the InfiniTime bootloader (large pine cone) will run.
+* Boot the watch into recovery mode by holding the button until the pine cone turns red. It'll boot again (large pine cone will turn green) and then the InfiniTime logo will appear.
+* You can now flash InfiniTime 1.1.0 (or any other version): <br>`pinetime-mcuboot-app-dfu-1.1.0.zip`
+* InfiniTime should now boot. Enjoy|
+
+

@@ -1,0 +1,28 @@
+---
+title: "S02E05: Talk about a dense 15 minutes"
+date: 2022-01-26
+draft: false
+description: "In this episode Justin and Brian chat a bit about the PinePhone keyboard, Plasma Mobile Maui shell and more!"
+aliases:
+    - /2022/01/26/6118/
+---
+
+{{< podcast_player episode="s02e05">}}
+
+In this episode Justin and Brian chat a bit about the PinePhone keyboard, Plasma Mobile Maui shell and more!
+
+Links and topics discussed:
+
+* https://avery.cafe/blog/a-quick-fix-for-the-pinephone-keyboards-top-row/
+* https://postmarketos.org/blog/2022/01/17/v21.12.1-release/
+* https://lists.sr.ht/~mil/sxmo-announce/%3C20220107164241.u7q5uaok5wkw37y6%40worker.anaproy.lxd%3E
+* https://pine64.com/product-category/smartphone-accessories/
+* https://github.com/InfiniTimeOrg/InfiniTime/releases/tag/1.8.0
+* https://nxos.org/maui/introducing-maui-shell/
+* https://forum.sailfishos.org/t/sailfish-community-news-30th-december-what-a-year/9797
+
+Music from Bensound.com and Zed (@itismezed)
+
+https://soundcloud.com/kevinflynnretro
+
+Edited by Zed

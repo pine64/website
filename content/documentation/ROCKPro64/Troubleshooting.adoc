@@ -1,0 +1,29 @@
+---
+title: "Troubleshooting"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "ROCKPro64"
+    identifier: "ROCKPro64/Troubleshooting"
+    weight: 4
+---
+
+
+
+== No Video or GPU Acceleration on Debian
+
+
+If you can log in through serial but don't get any video or GPU acceleration on Debian, this is likely due to Debian's decision to compile the devfreq governors as loadable modules but not including them early enough for panfrost to be able to be provided with one of them.
+
+The usual sign of this being the case is the following line in your log: `[drm:panfrost_devfreq_init [panfrost]] *ERROR* Couldn't initialize GPU devfreq`
+
+Log in to your ROCKPro64, and run the following:
+
+ sudo -i
+ echo governor_simpleondemand >> /etc/initramfs-tools/modules && update-initramfs -u -k $(uname -r)
+ exit
+
+Then, reboot.
+
+

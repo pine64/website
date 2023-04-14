@@ -1,0 +1,44 @@
+---
+title: "S02E08: So Porky Is Now a Developer..."
+date: 2022-06-03
+draft: false
+description: "In this Episode Brian and Justin explore the world of Open Source Android and Open Source Nuclear Reactors. And then some real stuff."
+aliases:
+    - /2022/06/03/6517/
+---
+
+{{< podcast_player episode="s02e08">}}
+
+In this Episode Brian and Justin explore the world of Open Source Android and Open Source Nuclear Reactors. And then some real stuff.
+
+Links and topics discussed:
+
+https://tuxphones.com/howto-linux-as-second-wireless-display-for-linux/
+
+https://lists.sr.ht/~mil/sxmo-announce/%3C3FV34P1BUD8B6.34I97X4SKLKHH%40yellow-orcess.my.domain%3E
+
+https://github.com/biktorgj/pinephone_modem_sdk/releases/tag/0.6.5
+
+https://gitlab.com/postmarketOS/pmaports/-/merge_requests/3123
+
+https://github.com/MadameMalady/Manjaro-Waydroid-Manager
+
+https://porkyofthepine.org/blog/rice_sxmo_sway.html
+
+https://github.com/Raezroth/Linux-ARM-Gaming-Chroot
+
+https://github.com/MadameMalady/PinePhone-Pro-Manjaro-Maui-Shell-Installer-MMSI/releases
+
+https://github.com/dreemurrs-embedded/Pine64-Arch/releases/tag/20220502
+
+https://xnux.eu/log/#067
+
+https://dylanvanassche.be/blog/2022/bluetooth-hfp-linux-mobile/
+
+https://www.cnx-software.com/2022/03/26/capyloon-mobile-web-based-os-works-on-pinephone-pro-librem-5-pixel-3a/
+
+Music from Bensound.com and Zed (@itismezed)
+
+https://soundcould.com/kevinflynnretro
+
+Edited by Zed

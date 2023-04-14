@@ -1,0 +1,44 @@
+---
+title: "Troubleshooting"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "SOPINE"
+    identifier: "SOPINE/Troubleshooting"
+    weight: 3
+---
+
+
+There is a number of things that can prevent the PINE A64(+) board from booting up properly. The most common culprits of a failed boot are (to find out more click http://forum.pine64.org/showthread.php?tid=514[here]):
+
+* Subpar or counterfeit microSD card
+* Subpar Power Supply
+* High resistance (thin) or a very long microUSB cable
+* Failed imaging of the microSD card (refer to  the respective ‘imaging microSD card section)
+
+Make sure to have the newest version of the OS image your are running. On Linux, you can update the kernel and uboot using scripts located in the following directory: /usr/local/sbin
+
+* To navigate to the directory type (in terminal): _cd /usr/local/sbin_
+* You list all the available scripts by typing (in terminal): _ls_
+* To run the script required update script run the following command: _sudo ./update_script.sh_ (substitute the relevant update script for update_script)
+
+*Supported Screen Resolutions*
+
+The pine supports a number of video resolutions under Linux, however RemixOS and Android images currently only support *720p* and *1080p*. Linux supports a wider range of resolutions (see all resolutions supported on Linux https://github.com/longsleep/sunxi-disp-tool#available-hdmi-output-names[here]). If the native resolution of your monitor or TV is not compatible with the PINE A64(+) then you will be unable to get a video to work with your screen.
+
+*Troubleshooting Step by Step*
+
+Follow these steps to determine the cause of your problem:
+
+* Check your PSU and barrel cable ratings
+* Download and image a base image of Linux
+* Plug in Power and Ethernet into your Board
+* Watch Ethernet port LED activity
+* Check your router for SOPINE IP
+* Attempt to ssh into the SOPINE from your computer
+
+If neither of the above mentioned scenarios fits the problem you are facing, please consult this thread (thanks to Ghost for compiling the list): http://forum.pine64.org/showthread.php?tid=680
+
+If you cannot find a solution to your problem you can submit a ticket at: https://support.pine64.org/
+

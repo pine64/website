@@ -1,0 +1,90 @@
+---
+title: "SOQuartz Software Releases"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "SOQuartz"
+    identifier: "SOQuartz/Software"
+    weight: 
+---
+
+This page contains a list of all available operating systems for the link:/documentation/SOQuartz/_index[SOQuartz].
+
+== Manjaro ARM
+
+image:/documentation/images/Manjaro-logo.svg[width=100]
+
+Manjaro ARM is a user friendly rolling release distribution, based on Arch Linux ARM.
+
+* https://github.com/manjaro-arm/soquartz-cm4-images/releases[Images for SOQuartz on GitHub]
+
+WiFI, Bluetooth, Ethernet, HDMI USB etc. works, others are not tested.
+
+Currently the image is built for Raspberry Pi CM4 - IO board, so to get it working with other base board like pine64 Soquartz model A base board then follow this steps
+*Flash the image to a SD card/ EMMC.
+*Go to Boot partition.
+*Then change the DTB listed in /boot/extlinux/extlinux.conf to -model-a.dtb instead of -cm4.dtb.
+*Now put the SD card/ EMMC to the preferred base board and boot.
+*First boot will take time as the user partition will resize to take whole storage size.
+
+For headless installation, simply enter "root" at the login: prompt and complete setup.
+
+== pgwipeout's Quartz CI
+
+pgwipeout's https://gitlab.com/pgwipeout/quartz64_ci/-/jobs[Quartz CI] includes a Debian installer image for the SOQuartz, with the CM4 I/O board as the base board. To download, click the "Download artifacts" button on the right hand side, unzip the archive and take a peek inside the "images" folder to see the selection of pre-built images. Assuming your target device is **/dev/sdX**, you can flash it with:
+
+ sudo -i
+ xzcat /path/to/rk3566-soquartz-cm4.dtb.img.xz > /dev/sdX
+
+You will need 3.3V UART at 1.5 mbauds (1500000) to access the interface.
+
+Currently the latest image built on 16.07.2022 doesn't work. If anyone manages to get it working please update this page with the details of which release works.
+
+== Custom Debian image from user PBXForums
+
+PBXForums shared a custom built Debian image that appears to work to some degree in this GitHub issue:
+
+* https://github.com/adamfowleruk/deskpi-super6c/issues/2#issuecomment-1223702579[Custom Debian based image]
+
+== Armbian Ubuntu Jammy with kernel 5.19.7
+
+A better image, IMHO that the one I shared above. This is a regular Balbes150 image for the Quartz A but with a working uboot and a changed DTB.
+
+Burn the image to SD/EMMC
+
+Boot up you module, give it a couple of minutes to resize sdcard/emmc and then find its IP
+
+Log in via SSH root/1234 and it will take you through the armbian first boot process.
+
+https://www.t95plus.com/forums/downloads/Armbian_22.11.0-trunk_soquartz_jammy_current_5.19.7.img.gz
+
+== DietPi support with Debian/Bullseye
+
+Info and downloads:  https://dietpi.com/docs/hardware/#pine64
+
+James Chambers did a soquartz review, and recommends the Armbian build from above.
+
+* https://jamesachambers.com/pine64-soquartz-cm4-alternative-review/
+
+== Plebian
+
+Plebian stands for *P*INE64 *L*ive D*ebian* and aims to be a fairly vanilla live Debian image for Quartz64 and SOQuartz devices, based on Debian Bookworm. It supports both of PINE64's officially released SOQuartz base boards.
+
+* https://github.com/Plebian-Linux/quartz64-images/releases[Download Release Images]
+* https://github.com/Plebian-Linux/quartz64-images/blob/main/RUNNING.md[Read The Instructions]
+* https://plebian.org/[Visit plebian.org to learn more]
+
+To flash, run (replace **/dev/sdX** with your target block device):
+
+ $ xzcat imagename.img.xz | sudo dd of=/dev/sdX bs=4M oflag=dsync status=progress
+
+Some quick notes:
+
+* You will be asked to change your password on first login (for what the default login is, read the instructions|)
+* Root file system is grown to take up the entire space of your boot device
+* NetworkManager is used instead of Debian's interfaces config to be more flexible with what adapters are plugged in and working
+* An sshd is started on port 22 with freshly generated keys
+* *Please flash the correct image for your SOQuartz baseboard|*
+
+

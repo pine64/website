@@ -1,0 +1,36 @@
+
+<!-- Previous section -->
+{{ with .NextInSection }}
+    <div class="previous-post">
+        <a class="previous" href="{{ .Permalink }}">« {{.Title}}</a>
+    </div>
+{{ else }}
+    <div class="previous-post">
+        <a class="previous" href="{{ .Parent.RelPermalink }}">« Section: {{.Parent.Title}}</a>
+    </div>
+{{ end }}
+
+<!-- Next section -->
+{{ with .PrevInSection }}
+
+    <div class="next-post">
+        <a class="next" href="{{ .Permalink }}">{{.Title}} »</a>
+    </div>
+{{ else }}
+    {{ $parentPage := .Parent}}
+    {{ $len := (len .Parent.Parent.Pages) }}
+    {{ range $index, $value := .Parent.Parent.Pages }}
+        {{if eq $parentPage.RelPermalink .RelPermalink }}
+            {{ $nextindex := add $index 1 }}
+            {{if lt $nextindex $len}}
+                {{ $nextsection := index .Parent.Pages (add $index 1) }}
+
+                {{if ne .Parent.RelPermalink (printf "/%s/" .Section)}}
+                    <div class="next-post">
+                        <a class="previous" href="{{ $nextsection.RelPermalink }}">Next section: {{$nextsection.Title}} »</a>
+                    </div>
+                {{end}}
+            {{end}}
+        {{end}}
+    {{ end }}
+{{ end }}

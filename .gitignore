@@ -1,0 +1,8 @@
+# html files
+public
+
+# Hugo lock
+.hugo_build.lock
+
+# Podcasts (local testing)
+/themes/pinetheme/static/podcast
