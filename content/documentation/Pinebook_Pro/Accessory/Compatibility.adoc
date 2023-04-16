@@ -366,9 +366,9 @@ Standalone network devices only, please; see below for multifunction devices
 
 |USB-C Hub | Delock 87721 | | Network Works, USB Works, Card Reader not tested, Power Good, HDMI Works but does not show as an extra output in X. It just mirrors the default display | Delock 87721 [https://www.delock.de/produkte/G_87721/merkmale.html?setLanguage=en]
 
-|USB-3 combo hub (network, card slots, usb ports) | generic | 05e3:0610 hub, 0bda:8153 gigE, 05e3:0743 card reader | Network good, usb ports good, card reader good |
+|USB-3 combo hub (network, card slots, USB ports) | generic | 05e3:0610 hub, 0bda:8153 gigE, 05e3:0743 card reader | Network good, USB ports good, card reader good |
 
-|USB-C combo hub (network, card slots, usb ports) | generic | 05e3:0612 hub, 0bda:8153 realtek gigE | Network good, usb ports fail, card reader fail |
+|USB-C combo hub (network, card slots, USB ports) | generic | 05e3:0612 hub, 0bda:8153 realtek gigE | Network good, USB ports fail, card reader fail |
 
 |5-1 USB-C hub | https://www.aliexpress.com/item/32954358411.html[from aliexpress] |  05e3:0626 hub | HDMI, Network, USB-3, USB-C PD http://www.sympato.ch/~dryak/files/usbc-dock.jpg[good] | Might need changing orientation or USB-C cable
 
@@ -380,7 +380,7 @@ Standalone network devices only, please; see below for multifunction devices
 
 |USB-C dock | Planet Computers Gemini USB-C hub | 0bda:0411 hub, 0bda:8153 ethernet | good | USB works, NIC recognized by kernel, but untested if link actually works. Interestingly, dmesg shows unconnected alternate mode DP, but no connector is present. It seems as if PlanetCom actually made custom version of above i-Tec device.
 
-|USB-C dock | DELL USB-C to HDMI/VGA/Ethernet/USB 3.0 DA200g | idVendor=05e3, idProduct=0610, bcdDevice=49.70 | mixed | USB works, detected as u port usb hub, the rest is not working
+|USB-C dock | DELL USB-C to HDMI/VGA/Ethernet/USB 3.0 DA200g | idVendor=05e3, idProduct=0610, bcdDevice=49.70 | mixed | USB works, detected as u port USB hub, the rest is not working
 
 |USB-C dock | Lenovo ThinkPad 40A9 | 17ef:3063 17ef:1021 17ef:1026 17ef:3060 17ef:3062 17ef:1025 | mixed | USB hub works, audio device works, ethernet device works, display does NOT despite plug's orientation
 
@@ -441,7 +441,7 @@ Note that only USB C alternate mode Display Port will pass video. Any HDMI, DVI 
 
 |USB-C to HDMI cable | Planet Computers USB-C to HDMI cable |  | fail | does not work regardless of orientation in USB slot
 
-|USB-C combo hub | Moreslan 11in1 (https://www.amazon.fr/gp/product/B08397B66G) | | good | GbE: OK, HDMI: OK, 4 usb ports: OK, Power via USB-C: OK, microSD: OK, TFT: OK, Jack: OK, VGA: Not tested; UPDATE: HDMI Display not working anymore since Manjaro release 20.08
+|USB-C combo hub | Moreslan 11in1 (https://www.amazon.fr/gp/product/B08397B66G) | | good | GbE: OK, HDMI: OK, 4 USB ports: OK, Power via USB-C: OK, microSD: OK, TFT: OK, Jack: OK, VGA: Not tested; UPDATE: HDMI Display not working anymore since Manjaro release 20.08
 
 |USB-C Multiport Adapter | https://www.wentronic.com/en/usb-ctm-multiport-adapter-hdmi-ethernet-pd-white-62105[Goobay 62105] | | Fail | GbE: OK, UBS port: OK, Power via USB-C: OK, HDMI: Does generate an image, but it jumps X pixels right from time to time (4K@30 and FHD)
 

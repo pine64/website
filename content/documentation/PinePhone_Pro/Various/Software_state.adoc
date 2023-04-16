@@ -1,5 +1,5 @@
 ---
-title: "PinePhone Pro Software State"
+title: "Software State"
 draft: false
 menu:
   docs:
@@ -24,137 +24,132 @@ TIP: The software is *written by the community*, any contributions towards the c
 
 [cols="1,1,1,1,1"]
 |===
-|scope="col" | Functionality
-|scope="col"   | Component
-|scope="col"  | Status (factory)¹
-|scope="col"  | Status (updated)²
-|scope="col" | Notes
+| Functionality | Component | Status (factory)¹ | Status (updated)² | Notes
 
-|scope="row" rowspan="3" | Bootloader
+.3+| Bootloader
 | `Bootloader`
-| colspan="2"  | Critical bugs
+2+| Critical bugs
 | Some critical software bugs currently not fixed yet: A drained battery causes U-Boot to bootloop (cause is known and currently being worked on);^link:/documentation/PinePhone_Pro/_index#The battery is fully drained[Report]^. *Note:* Tow-Boot is now pre-installed on the SPI from the factory - issues need verification to be issues with Tow-Boot.
 
 | `SPI`
-| colspan="2"  | Implemented
+2+| Implemented
 | Devices bought after end of July 2022 come with Tow-Boot flashed to the SPI memory, making it considerably easier to flash the device and boot from microSD card.
 
 | `Boot GUI`
-| colspan="2"  | Not implemented
+2+| Not implemented
 | Currently there is no graphical boot selection implemented^https://tow-boot.org/[Possibly planned]^
 
-|scope="row" rowspan="3" | Operating System
+.3+| Operating System
 | `Stability`
-| colspan="2"  | WIP
+2+| WIP
 |
 
 | `Suspend`
-| colspan="2"  | Experimental
+2+| Experimental
 | Audio is often higher pitched after waking up from suspend due to a bug, make sure to update your system^https://github.com/dreemurrs-embedded/Pine64-Arch/issues/381[Report]^^https://gitlab.manjaro.org/manjaro-arm/packages/core/linux-pinephonepro/-/issues/3[Report]^
 
 | `Updates`
-| colspan="2"  | WIP
+2+| WIP
 | The pre-flashed and outdated operating system on the eMMC often gets corrupted after updating^https://forum.pine64.org/showthread.php?tid=15950[Example]^; Pacman database lock preventing updates^https://wiki.archlinux.org/title/pacman#%22Failed_to_init_transaction_(unable_to_lock_database)%22_error[Solution]^; Keyring bug^[Solution is to run "pinephonepro-post-install" script as root]^
 
-|scope="row" rowspan="5" | Modem
+.5+| Modem
 | `General`
-| colspan="2"  | Critical bugs
+2+| Critical bugs
 | The modem connection crashes frequently^https://gitlab.com/mobian1/devices/eg25-manager/-/issues/34#note_984212350[Report]^^https://github.com/Biktorgj/pinephone_modem_sdk[Alternative firmware]^; Slow wakeup^https://gitlab.com/mobian1/devices/eg25-manager/-/issues/34[Report]^; Some carriers blocking specific TANs in their network^link:/documentation/PinePhone/Modem/Carrier_support[Carrier support]^; *Note:* Proprietary firmware
 
 | `Phone`
-| colspan="2"  | WIP
+2+| WIP
 | The modem connection crashes frequently, which can lead to missed calls^https://gitlab.com/mobian1/devices/eg25-manager/-/issues/34#note_984212350[Report]^^https://github.com/Biktorgj/pinephone_modem_sdk[Alternative firmware]^; Slow wakeup^https://gitlab.com/mobian1/devices/eg25-manager/-/issues/34[Report]^; bad call audio quality^https://gitlab.manjaro.org/manjaro-arm/issues/pinephone/phosh/-/issues/249[Report]^; Audio is often higher pitched after waking up from suspend due to a bug^https://github.com/dreemurrs-embedded/Pine64-Arch/issues/381[Report]^^https://gitlab.manjaro.org/manjaro-arm/packages/core/linux-pinephonepro/-/issues/3[Report]^
 
 | `SMS`
-| colspan="2"  | Working
+2+| Working
 | SMS functionality is expected to work. In certain cases the functionality might be blocked by a clogged modem^https://gitlab.manjaro.org/manjaro-arm/issues/pinephone/phosh/-/issues/203[Report]^; Some bugs
 
 | `MMS`
-| colspan="2"  | WIP
+2+| WIP
 | MMS functionality is integrated into the application "Spacebar", some bugs remaining and expected
 
 | `Push notifications`
-| colspan="2"  | Not implemented
+2+| Not implemented
 | Receiving push notifications while the phone is suspended is not implemented
 
-|scope="row" rowspan="12" | Components
+.12+| Components
 | `LCD`
-| colspan="2"  | WIP
+2+| WIP
 | *Hardware issue*^https://xnux.eu/log/#055[Details]^; Under certain circumstances it is difficult to wake up the screen^[Citation]^
 
 | `Touch`
-| colspan="2"  | Working
+2+| Working
 |
 
 | `Rear camera`
-|  | Not working
-|  | WIP
+| Not working
+| WIP
 | Camera work-in-progress with DTS fix^[Citation]^; userspace still needs to do some catching up^link:/documentation/PinePhone_Pro/Various/IMX258_camera_debugging[debugging article]^; Green image tint^[Citation]^
 
 | `Front camera`
-|  | Not working
-|  | WIP
+| Not working
+| WIP
 | Camera work-in-progress with DTS fix^[Citation]^; userspace still needs to do some catching up^link:/documentation/PinePhone_Pro/Various/IMX258_camera_debugging[debugging article]^; Green image tint^[Citation]^
 
 | `Camera flash`
-| colspan="2"  | Critical issues
+2+| Critical issues
 | *Hardware issue*^https://xnux.eu/log/#069[Details]^; Note: `/sys/class/leds/white:flash`
-|
 
 | `WiFi`
-| colspan="2"  | Working
+2+| Working
 | WiFi is expected to work. Some remaining tasks, such as "monitor mode" (hint: likely not supported by the hardware). *Note:* Proprietary firmware
 
 | `Bluetooth`
-| colspan="2"  | WIP
+2+| WIP
 | Bluetooth not necessarily working for calls yet due to missing audio routing^[Citation]^; Bluetooth in general dodgy under Pulseaudio.^https://wiki.archlinux.org/title/bluetooth_headset#Headset_via_Pipewire[Info]^ *Note:* Proprietary firmware
 
 | `GNSS/GPS`
-| colspan="2"  | WIP
+2+| WIP
 | aGPS to be implemented^link:/documentation/PinePhone/_index#GPS_/_GNSS[See original PinePhone article]^; long loading times to get a GPS fix^[Citation]^; No preinstalled application^[Citation]^
 
 | `Sensors`
-| colspan="2"  | WIP
+2+| WIP
 | "Geo Magnetic Sensor" (`af8133j`): Status unknown (at `/sys/bus/i2c/devices/4-001c/iio:device1`) +
 "Accelerometer / Gyroscope" (`mpu6500`): Working (at `/sys/bus/i2c/devices/4-0068/iio:device2`) +
 "Ambient light / Proximity" (`stk3311`): Working after updating
 
 | `Vibration motor`
-| colspan="2"  | Working
+2+| Working
 |
 
 | `Notification LED`
-| colspan="2"  | Working
+2+| Working
 |
 
 | `Buttons`
-| colspan="2"  | Working
+2+| Working
 | Power buttons and volume buttons are working.
 
-|scope="row" rowspan="5" | Accessory compatibility, spare parts
+.5+| Accessory compatibility, spare parts
 | `Keyboard Add-on`
-| colspan="2"  | WIP and critical hardware issue
+2+| WIP and critical hardware issue
 | The keyboard add-on compatibility is work-in-progress. *Hardware issue: USB-C port of the phone must not be used while the current keyboard revision is connected*^link:/documentation/Phone_Accessories/Keyboard#Safety[Citation]^; Keyboard hot-plugging not supported^[Citation]^; Battery state not exposed in the pre-flashed operating system state^[Citation]^; general driver bugs^[Citation]^
 
 | `LoRa Add-on`
-| colspan="2"  | Not implemented
+2+| Not implemented
 | No software support implemented
 
 | `Qi Wireless Charging Add-on`
-| colspan="2"  | WIP
+2+| WIP
 | Wireless charging with the add-on case is expected to work to some degree. Certain software functionality and a driver is currently missing^[Citation]^
 
 | `Fingerprint Reader Add-on`
-| colspan="2"  | Not implemented
+2+| Not implemented
 | No software support implemented
 
 | `Spare parts`
-| colspan="2"  | Partial
+2+| Partial
 | Some spare parts now available in the store.^https://pine64.com/product-category/pinephonepro-spare-parts/[Store]^
 
-|scope="row" rowspan="1" | Software notes
+| Software notes
 | `Waydroid`
-| colspan="2"  | Working
+2+| Working
 | Waydroid is an Android container used to run Android applications.
 
 |===

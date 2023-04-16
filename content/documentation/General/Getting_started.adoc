@@ -18,7 +18,7 @@ You will need the following to get started with using your link:/documentation/P
 * A Windows / Linux PC or Mac device with a MicroSD Card Reader
 * Internet connection / pre-downloaded OS image files
 * Power Supply:
-** *PINE A64(+)*: Power Supply (PSU) and a micro usb cable. Please make sure to use a PSU rated at +5V @2A and a micro USB cable that is at least 26 AWG thick.
+** *PINE A64(+)*: Power Supply (PSU) and a micro USB cable. Please make sure to use a PSU rated at +5V @2A and a micro USB cable that is at least 26 AWG thick.
 ** *SOPine/PINE A64-LTS*: Power Supply (PSU) with 3.5mm OD/1.5mm ID barrel DC Jack. Please make sure to use a PSU rated at +5V @2A.
 ** *Pinebook* and *ROCK64*: Power Supply (PSU) with 3.5mm OD/1.5mm ID barrel DC Jack. Please make sure to use a PSU rated at +5V @3A.
 * MicroSD card (Recommend: 8GB or higher capacity, 10MB/s or faster speed)
@@ -48,7 +48,7 @@ Unless you are planning on running your board headless (without a monitor / as a
 
 *Apply Power to Your Board*
 
-Once you have imaged your microSD and plugged everything in, you are ready to apply power to the PINE64 Single Board Computer. You'll need a good quality 5 Volt, 2 Amp PSU. Using a good quality PSU is very important as failing to meet the required specifications may prevent the board from booting correctly. A marginally higher PSU Voltage is acceptable (for instance, 5.1 volts - due to the nature of the micro usb connection, a 5.1v supply can help protect slightly against voltage drops which can cause undesirable results). However, a significantly higher voltage of 7 Volts or more will damage the PINE64 Single Board Computer and may render it inoperative.
+Once you have imaged your microSD and plugged everything in, you are ready to apply power to the PINE64 Single Board Computer. You'll need a good quality 5 Volt, 2 Amp PSU. Using a good quality PSU is very important as failing to meet the required specifications may prevent the board from booting correctly. A marginally higher PSU Voltage is acceptable (for instance, 5.1 volts - due to the nature of the micro USB connection, a 5.1v supply can help protect slightly against voltage drops which can cause undesirable results). However, a significantly higher voltage of 7 Volts or more will damage the PINE64 Single Board Computer and may render it inoperative.
 
 For PINE A64(+) board, if you are using a separate micro USB cable with your PSU, make sure that the cable has a low resistance rating. Cables with high resistance will cause improper function and the unit may not boot at all or only partially. The thicker the internal cabling, the better https://voyager8.blogspot.co.uk/2013/04/how-to-choose-good-usb-data-and.html[i.e. AWG (American Wire Gauge) 20 is better than AWG 28]. In General, *power-only microUSB* cables come with red colour USB header.
 

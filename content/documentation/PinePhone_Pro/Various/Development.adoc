@@ -1,5 +1,5 @@
 ---
-title: "PinePhone Pro Development"
+title: "Development"
 draft: false
 menu:
   docs:

@@ -92,8 +92,8 @@ image:/documentation/images/USB_C_PD_shared_watts_charger.jpg[width=400]
 . https://a.co/4RLyqzN[65W 3-port charger]
 . https://a.co/d/5Ai1McE[EfaithFix PD65W, 3-port]
 . https://a.co/1mhjg35[Ultra-thin Portable PD65w]
-#* small flat, full 20V PD65W charger, works well with Pinecil
-#* it may not as durable as bigger chargers as it has no thick insulation around it.
+* small flat, full 20V PD65W charger, works well with Pinecil
+* it may not as durable as bigger chargers as it has no thick insulation around it.
 . https://www.amazon.com/Charger-HTC-PowerIQ-Foldable-Charging/dp/B09F6HF28L[HTC PD65W, 3-port black]
 . https://www.amazon.com/HTC-Charger-Compact-Foldable-MacBook/dp/B09J83YZ8M[HTC PD65W, 3-port, white]
 . https://www.amazon.com/gp/product/B087MD5MYH[Amazon Basics 65W One-Port GaN USB-C PD 3.0]
@@ -125,8 +125,8 @@ image:/documentation/images/Nintendo-center-negative.png[width=350]
 . DC5525 barrel plug will plug in directly (5.5mmm x 2.5mm) but if you have a different plug, there are many adapters to convert it to 5.5mm, 2.5mm (don't force a different plug into Pinecil, https://forum.pine64.org/showthread.php?tid=13237[it will Break the barrel port]), and possibly push back and break the positive pin connection inside Pinecil where the DC barrel attaches to the PCB.
 . DC barrel 24V is supported on V2 (most V1 can only do a max of 21V unless a modification is performed to cut the trace to the Vbus and enable 24V safely (see https://github.com/Ralim/IronOS/blob/dev/Documentation/DebugMenu.md#pd-debug-menu[Ralim's IronOS DebugMenu for details])
 . It is recommended to use a quality brand DC barrel charger. Often a used name-brand laptop charger (Dell, HP, Toshiba, etc..) that gets some QC testing is a better option than a no-name cheap DC barrel charger. The cheap ones might have large voltage spikes that are out of the 21V range for Pinecil V1 and 24V range of Pinecil V2 causing the Mosfet and Buck regulator to break.
-#* These two parts are low cost and not too hard to replace if your Pinecil breaks from a poor quality DC charger (see [[Pinecil#Datasheets_for_Components| Datasheets section of the Wiki]] for links to get replacement chips]].
-#* Members have experienced broken Pinecils after using low quality off-brand DC barrel chargers and had to replace both the Mosfet and Buck Converter. Sometimes it's just one part, but it's best to order a couple of both as they are usually under $0.35 each.
+* These two parts are low cost and not too hard to replace if your Pinecil breaks from a poor quality DC charger (see [[Pinecil#Datasheets_for_Components| Datasheets section of the Wiki]] for links to get replacement chips]].
+* Members have experienced broken Pinecils after using low quality off-brand DC barrel chargers and had to replace both the Mosfet and Buck Converter. Sometimes it's just one part, but it's best to order a couple of both as they are usually under $0.35 each.
 
 === Tool Batteries 18V-21V
 

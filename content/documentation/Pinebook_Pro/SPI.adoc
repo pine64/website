@@ -48,7 +48,7 @@ The button works by shorting two pins in the SPI device. But in some cases it ju
 . Power off the Pinebook Pro.
 . Unscrew the bottom cover.
 . Remove the metal shield surrounding the main CPU. The shield is held in place by a tape and micro clamps on the board. The clamps can be released with a pry tool and some force. https://forum.pine64.org/showthread.php?tid=11073&pid=75096#pid75096[This forum post with photos] shows how it can be done.
-. Disconnect all (||) boot devices (emmc, sdcard, usb).
+. Disconnect all (!) boot devices (eMMC, SD card, USB).
 . Locate SPI flash (component number 29 on https://wiki.pine64.org/images/4/45/PBPL_S.jpg[this photo of the Pinebook Pro internals]).
 . Connect your PBP with USB-C - USB-A cable to second machine (PBP on USB-C side)
 . Short pins CLK and VSS (see chip diagram to the right for the names of pins). This can be done with a pair of tweezers when short on tools. image:/documentation/images/Spi.png[right,title="right"]

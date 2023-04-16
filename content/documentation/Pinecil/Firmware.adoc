@@ -19,7 +19,7 @@ image:/documentation/images/Pinecil-V1andV2.png[right,title="right",width=400]
 
 The firmware that comes with the Pinecil is https://ralim.github.io/IronOS/[open source Ralim's IronOS]. It's a good idea to check for updates regularly as development is very active and there may be enhancements or bug fixes.
 
-Depending on whether you have a Pinecil V1 or V2, they are updated using different flashers since they have completely different MCU chip (brains). The V1 is any pinecil sold up to July 2022 (has a blue thumb grip). The V2 is any pinecil sold after Aug 1, 2022 (has a green thumb grip). If you don't have the two models mentioned, then you might not have an link:/documentation/Pinecil/Authenticity[authentic pinecil]. This aritcle is designed and tested on authentic pinecils only.
+Depending on whether you have a Pinecil V1 or V2, they are updated using different flashers since they have completely different MCU chip (brains). The V1 is any Pinecil sold up to July 2022 (has a blue thumb grip). The V2 is any Pinecil sold after Aug 1, 2022 (has a green thumb grip). If you don't have the two models mentioned, then you might not have an link:/documentation/Pinecil/Authenticity[authentic Pinecil]. This aritcle is designed and tested on authentic Pinecils only.
 
 * Go to the appropriate section below depending on if you have a V1 or V2 model.
 * Long hold down `[-]` to see the current firmware version installed.
@@ -35,7 +35,7 @@ IMPORTANT: Do not use the DC barrel jack while updating firmware or you may dest
 
 Both V1 and V2 connect to the PC/laptop and enter the Flash mode the same way for updating purposes:
 
-. Plug one end of the Usb cable to the PC/laptop.
+. Plug one end of the USB cable to the PC/laptop.
 . Long hold the `[-]` button _before plugging_ the USB-C cable into the back of the Pinecil. Keep holding down the `[-]` for ~10-15 seconds after plugging in the cable, then release the button.
 . Screen should be black/empty which means Pinecil is in Flashing Mode. If you have issues, try again, do not plug the USB-C cable into Pinecil until you first press & hold the `[-]` button. Flip the cable over or try another port/cable/PC if you still have issues.
 . Unlike irons from other brands, Pinecil will *not* show in the PC as a USB data drive. On Windows, you will hear a single beep when connected in flash mode.
@@ -58,7 +58,7 @@ IMPORTANT: Do not use the DC barrel jack while updating firmware or you may dest
 . From the Pinecilv2 folder you extracted above, copy the `Pinecilv2_EN.bin` (English) file into the Blisp folder (same place as the Blisp.exe). Other languages are available, substitute the `Pinecil_EN.bin` file for the language file desired (follow 2-letter international language code). The Pinecil Zip can now be deleted, only the single BIN file in the language you want is used.
 . Run powershell as administrator.
 . Now, connect the Pinecil V2 to the PC: hold down the [-] *Before* plugging the cable to the back of Pinecil. See (link:#Flash Mode[Flash Mode section for details]).
-. Screen on pinecil should be black/empty before proceeding; it means you are in the correct Flash mode. If you are curious, it will connect as a PORT COM device in Device Manager. If your screen is not black, then repeat the connect to PC above. If necessary, change cables or ports, or try a different PC/laptop.
+. Screen on Pinecil should be black/empty before proceeding; it means you are in the correct Flash mode. If you are curious, it will connect as a PORT COM device in Device Manager. If your screen is not black, then repeat the connect to PC above. If necessary, change cables or ports, or try a different PC/laptop.
 . Use `cd` to change to the Blisp folder (location of blisp.exe and Pinecil_EN.bin).
 .. `#example change to location of blisp folder`
 .. `PS C:\> cd G:\Users\name\Downloads\blisp\`
@@ -85,7 +85,7 @@ IMPORTANT: Do not use the DC barrel jack while updating firmware or you may dest
 . Download the latest https://github.com/Ralim/IronOS/releases/[stable Pinecilv2.zip release] (scroll down to the Assets section, get the Pinecilv2.zip).
 . Extract the zip file and put `Pinecilv2_EN.bin` (for English) into the Blisp folder (same place as the Blisp executable). Other languages are available, substitute the *EN.bin file for the language file desired (use the 2-digit international language code). If you have the Pinecil Zip, the rest could be deleted, only the single BIN file is needed. Select the appropriate two-letter code for your language. If you accidentally flash *.dfu file on your Pinecil, it will not boot or work - be sure to only use the BIN file.
 . Connect the V2 to the PC and enter Flash mode: hold down the [-] before plugging the cable to the back of Pinecil. See ([[#Flash_Mode| Flash Mode section for details]]). If you are curious on Linux, it will connect as a serial _ttyACM_ USB ACM type device.
-. Screen on pinecil should be black/empty before proceeding or you are not in Flash mode.
+. Screen on Pinecil should be black/empty before proceeding or you are not in Flash mode.
 . *Blisp must have executable permission set.*
 . `cd` to the Blisp folder and `ls -l` to check permissions of blisp.
 . Make blisp executable: `chmod +x ./blisp`
@@ -107,9 +107,9 @@ IMPORTANT: Do not use the DC barrel jack while updating firmware or you may dest
     C:\Users\yourName\Downloads\blisp1> .\blisp.exe write -c bl70x --reset .\Pinecilv2_EN.bin
 
 . Often, updating issues are related to the USB cable, or the port on the PC does not support a connection to Pinecil, try:
-#* flipping the cable over, different cables. Try both use-C to C cables and also USB-C to USB-A cables (your cable may be power-only and not able to do firmware data transfers). All working usb-C to usb-C cables can do data transfer but some USB-A cables can only do power and will not work for firmware updates because they can not do data transfers.
-#* Try other ports on the PC/laptop, or a different machine. There have been issues with some laptop USB-C ports not negotiating correctly, but the flashing worked using the USB-A port. Try a different OS if you can access one, some people who had issues on Linux for example were able to flash on Windows. Note that some virtual environments might have an issue with flashing to USB ports.
-#* Don't use a hub, connect directly to a port, ports on the back of a PC may sometimes be better as they are directly connected to the motherboard.
+* flipping the cable over, different cables. Try both use-C to C cables and also USB-C to USB-A cables (your cable may be power-only and not able to do firmware data transfers). All working USB-C to USB-C cables can do data transfer but some USB-A cables can only do power and will not work for firmware updates because they can not do data transfers.
+* Try other ports on the PC/laptop, or a different machine. There have been issues with some laptop USB-C ports not negotiating correctly, but the flashing worked using the USB-A port. Try a different OS if you can access one, some people who had issues on Linux for example were able to flash on Windows. Note that some virtual environments might have an issue with flashing to USB ports.
+* Don't use a hub, connect directly to a port, ports on the back of a PC may sometimes be better as they are directly connected to the motherboard.
 . Follow the Flash mode instructions and make sure the [-] button is held down BEFORE plugging in the cable to the back of the Pinecil. And don't release for ~10 seconds.
 . If that doesn't work try holding down the `[-]` the whole time (don't let go of the button).
 . Blisp flashers are from Gamiee's open source https://github.com/pine64/blisp[Blisp code here]. It is only an updater for the BL706 MCU on the Pinecil V2. It is separate from the firmware files needed which are in located in GitHub Ralim's IronOS. The firmware contains all the menus, functions, and languages, and the flasher is the tool to push the firmware onto the MCU chip (the brain). Different MCU's need different flasher tools.
@@ -170,7 +170,7 @@ image:/documentation/images/Boot-logo-dogbone.jpg[Dog bone by River M.]
 
 * Boot logo art is art that you custom make or download from IronOS Meta. It displays when you initially power on the Pinecil (boot up).
 * Currently '''only''' older Pinecil V1 models which use DFU files can flash boot logo art. 
-* Download and extract all the premade Boot logo art from this https://github.com/Ralim/IronOS-Meta/releases pinecil.zip[file here].
+* Download and extract all the premade Boot logo art from this https://github.com/Ralim/IronOS-Meta/releases[pinecil.zip file here].
 * Note that for Pinecil V1, only the images with filename "dfu" will work, you can delete all other formats from the extracted zip.
 * Sample images of https://github.com/Ralim/IronOS-Meta/tree/main/Bootup%20Logos#logos-preview[premade free art].
 * To make custom art, https://github.com/Ralim/IronOS-Meta[follow instructions here].

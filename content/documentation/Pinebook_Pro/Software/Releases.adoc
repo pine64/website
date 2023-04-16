@@ -199,7 +199,7 @@ User account and password are created on first run.
 
 image:/documentation/images/dietpi.png[width=100]
 
-DietPi is a lightweight, yet easy to setup and feature-rich Linux distribution, based on Debian. To find out more about DietPi, please visit the https://dietpi.com/docs/[official documentation]. * Discuss the Pinebook Pro build on the https://forum.pine64.org/showthread.php?tid=14061[PINE64 forum thread].
+DietPi is a lightweight, yet easy to setup and feature-rich Linux distribution, based on Debian. To find out more about DietPi, please visit the https://dietpi.com/docs/[official documentation]. Discuss the Pinebook Pro build on the https://forum.pine64.org/showthread.php?tid=14061[PINE64 forum thread].
 
 Download:
 
@@ -218,7 +218,7 @@ image:/documentation/images/opensuse-distribution.png[width=100]
 
 *Download location*
 
-Get the latest openSUSE Tumbleweed images for Pinebook Pro here: [https://en.opensuse.org/HCL:Pinebook-Pro-RK3399]
+Get the latest openSUSE Tumbleweed images for Pinebook Pro here: https://en.opensuse.org/HCL:Pinebook-Pro-RK3399
 
 Credits to [https://bugzilla.opensuse.org/show_bug.cgi?id=1194491]
 Step 1. Flash Tow-Boot[https://github.com/Tow-Boot/Tow-Boot] to SPI
@@ -229,11 +229,11 @@ devicetree /boot/dtb/rockchip/rk3399-pinebook-pro.dtb
 
 Press ctrl + x to boot
 
-Work : display, wifi
-Not tested : bluetooth
-Doesn't work : audio
+Works: display, WiFi
+Not tested: bluetooth
+Doesn't work: audio
 
-You may build rpms and see if it fix issues from this repository: [https://github.com/bengtfredh/pinebook-pro-copr]
+You may build rpms and see if it fix issues from this repository: https://github.com/bengtfredh/pinebook-pro-copr
 
 Default password for root is "linux"
 
@@ -274,6 +274,7 @@ Some notes about the images:
 ==== Do It Yourself
 
 WARNING: This is not an official, nor supported way of using Void Linux on the Pinebook Pro.
+
 You can also manually install Void from a rootfs tarball: link:/documentation/Pinebook_Pro/Software/Installing_Void_Linux_ARM[see instructions here].
 
 == BSD
@@ -380,13 +381,13 @@ Next, if you already have an OS on an SD card, you can use that for installing g
 
 Log into your host device as root with the following command:
 
-` sudo su `
+`sudo su`
 
 Enter your password.
 
 Let the device on which you intend to install gentoo be refered to hereafter as /dev/<gentoo>. Use the following command to prepare this disk for installation:
 
-` fdisk -B /dev/<gentoo> `
+`fdisk -B /dev/<gentoo>`
 
 Note: don't just copy these commands|You should substitute <gentoo> for mmcblk2 for the internal eMMC flash storage.
 
@@ -408,7 +409,7 @@ mkswap /dev/<gentoo>p2
 
 mkfs.ext4 /dev/<gentoo>p3`
 
-This may be a slightly different format if you're installing to a usb stick.
+This may be a slightly different format if you're installing to an USB stick.
 
 *Installation*
 
