@@ -9,7 +9,8 @@ menu:
     weight: 
 ---
 
-image:/documentation/images/Ox64_board.jpg[The Ox64,title="The Ox64", 200]
-image:/documentation/images/Ox64_pinout.png[Pinout of the production version,title="Pinout of the production version", 400, float="right"]
+image:/documentation/images/Ox64_board.jpg[The Ox64,title="The Ox64", 100]
 
 The *Ox64* is a RISC-V based Single Board Computer powered by Bouffalo Lab BL808 C906 64-Bit RISC-V CPU, 32-Bit CPU, embedded 64MB PSRAM memory and build-on 3 radio RF (Wifi, BT, Zigbee). It provides breadboard friendly form factor, MicroSD Card slot, USB 2.0, and many other peripheral interfaces for makers to integrate with sensors and other devices.
+
+image:/documentation/images/Ox64_pinout.png[Pinout of the production version,title="Pinout of the production version"]

@@ -1,51 +1,163 @@
 ---
-title: "Welcome!"
+title: "Welcome to the PINE64 community!"
 date: 
 draft: false
 description:
 ---
 
-If you are new to single board computers, Arm or RISC-V devices such as the PinePhone or Pinebook Pro, and open source communities in general, then it may be all a bit too overwhelming at first.
+PINE64 is a community-driven company focused on creating high-quality, low-cost ARM devices and, more recently, RISC-V devices for individuals and businesses around the globe. PINE64 made its debut with the link:Pine_A64[PINE A64] single-board computer, which successfully launched on Kickstarter in 2015. PINE64 has since released a multitude of other devices, including both development boards and end-user devices.
 
-This website will get you up to speed on everything you need to know.
+PINE64 has a large, diverse and active community, and offers a variety of resources for hobbyists and businesses to successfully leverage various PINE64 products. To become connected and involved with the community, please see link:Main_Page#Community_and_Support[Community and Support] for a list of available channels and chat platforms.
 
-Have fun!
+For information about PINE64 branding, including the usage of the PINE64 logo in non-commercial and other applications, please read the link:General/Brand_and_logo[article about our brand and logo].
 
-== Community
-
-The most important asset we have at our disposal is our community. We foster an active, friendly and large community of developers, contributors and end-users like yourself. Across our various community-ran chats and forums there are tens of thousands of people willing to help with any issues you may encounter.
+The most important asset we have at our disposal is our community. We foster an active, friendly and large community of developers, contributors and end-users like yourself. Across our various community-ran chats and forums there are tens of thousands of people willing to help with any issues you may encounter. 
 
 There are a wide range of communication protocols to choose from.
 
+== Chat platforms
 
-=== Chat platforms
-* https://discord.gg/pine64[Discord]
-* https://matrix.to/#/!sbmInimykuNPjjIQMN:matrix.org?via=matrix.org&via=t2bot.io&via=privacytools.io[Matrix]
-* https://t.me/mtrx_pine64[Telegram]
-* https://www.pine64.org/web-irc/[IRC]
+PINE64 has a large and very active community. Community discussion takes place on a variety of chat platforms, which are all bridged together so the messages sent via one platform are sent to all other platforms automatically. The other networks and their users are represented by P64ProtocolBot.
 
-=== Forums and subreddits
-* https://forum.pine64.org/[PINE64 Forum]
-* https://www.reddit.com/r/PINE64official/[PINE64 Official Subreddit]
-* https://www.reddit.com/r/PinePhoneOfficial/[PinePhone Official Subreddit]
+The community chat platforms are the following:
+
+* *Discord*: use this *https://discord.gg/pine64[Invite Link]*. All Pine64 discord channels are immediately viewable, do not need to join separate channels like the Telegram/Matrix table below.
+* *IRC*: the server is _irc.pine64.org_. Use `/list` command or the table below to see the full list of channels.
+* *Matrix and Telegram*: See the table below.
+
+|===
+|Channel | Matrix |Telegram |IRC
+
+| General channel
+| https://matrix.to/#/#pine64:matrix.org[#pine64:matrix.org]
+| https://t.me/mtrx_pine64[@mtrx_pine64]
+| #pine64
+
+| News
+| https://matrix.to/#/#pine64-announcements:matrix.org[#pine64-announcements:matrix.org]
+| https://t.me/PINE64_News[@PINE64_News]
+| Unavailable
+
+| PINE A64(+), A64-LTS & SOPine
+| https://matrix.to/#/#pine64sopine:matrix.org[#pine64sopine:matrix.org]
+| https://t.me/pine64sopine[@pine64sopine]
+| #lts-sopine
+
+| ROCK64 / ROCKPro64
+| https://matrix.to/#/#rock64:matrix.org[#rock64:matrix.org]
+| https://t.me/mtrx_rock64[@mtrx_rock64]
+| #rock64
+
+| Quartz64
+| https://matrix.to/#/#quartz64:matrix.org[#quartz64:matrix.org]
+| https://t.me/joinchat/Vq50DXkH31e0_i-f[Quartz64]
+| #quartz64
+
+| Quartz64 Development
+| https://matrix.to/#/#quartz64-dev:matrix.org[#quartz64-dev:matrix.org]
+| https://t.me/q64dev[@q64dev]
+| #quartz-dev
+
+| Star64
+| https://matrix.to/#/#star64:matrix.org[#star64:matrix.org]
+| https://t.me/star64_sbc[@star64-sbc]
+| Unavailable
+
+| Pinebook and Pinebook Pro
+| https://matrix.to/#/#pinebook:matrix.org[#pinebook:matrix.org]
+| https://t.me/mtx_pinebook[@mtx_pinebook]
+| #pinebook
+
+| PinePhone
+| https://matrix.to/#/#pinephone:matrix.org[#pinephone:matrix.org]
+| https://t.me/pinephone[@pinephone]
+| #pinephone
+
+| PineNote
+| https://matrix.to/#/#pinenote:matrix.org[#pinenote:matrix.org]
+| https://t.me/pinenote[@PineNote]
+| #pinenote
+
+| PineTab
+| https://matrix.to/#/#pinetab64:matrix.org[#pinetab64:matrix.org]
+| https://t.me/PineTab[@PineTab]
+| #pinetab
+
+| PineTime
+| https://matrix.to/#/#pinetime:matrix.org[#pinetime:matrix.org]
+| https://t.me/pinetime[@pinetime]
+| #Pinetime
+
+| PineTime Development
+| https://matrix.to/#/#pinetime-dev:matrix.org[#pinetime-dev:matrix.org]
+| https://t.me/pinetime_dev[@pinetime_dev]
+| #pinetime-dev
+
+| PineBuds Pro
+| https://matrix.to/#/#pinebuds:matrix.org[#pinebuds:matrix.org]
+| https://t.me/+nJVhM0mZ9KhlYmZl[@pinebuds]
+| Unavailable
+
+| Pinecil
+| https://matrix.to/#/#pinecil:matrix.org[#pinecil:matrix.org]
+| https://t.me/joinchat/Kmi2S1iej-_4DgrVf3jjnQ[Pinecil]
+| #pinecil
+
+| Pinecil Development
+| https://matrix.to/#/#pinecil-dev:matrix.org[#pinecil-dev:matrix.org]
+| https://t.me/+8_pdKqXrVuQ4OTk1[Pinecil-dev]
+| Unavailable
+
+| Pinetalk Podcast | Unavailable | Unavailable | Unavailable
+
+| PineCube
+| https://matrix.to/#/#cube64:matrix.org[#cube64:matrix.org]
+| https://t.me/pinecube[@pinecube]
+| #cube
+
+| Nutcracker, Ox64
+| https://matrix.to/#/#pine64-nutcracker:matrix.org[#pine64-nutcracker:matrix.org]
+| https://t.me/joinchat/Kmi2S0nOsT240emHk-aO6g[Nutcracker]
+| #nutcracker
+
+| LoRa
+| https://matrix.to/#/#pinelora:matrix.org[#pinelora:matrix.org]
+| https://t.me/pine64lora[@pine64lora]
+| #lora
+
+| Off-topic
+| https://matrix.to/#/#offtopic64:matrix.org[#offtopic64:matrix.org]
+| https://t.me/pine64offtopic[@pine64offtopic]
+| Unavailable
+|===
+
+There is also an unofficial Matrix Space at https://matrix.to/#/#pine64-space:matrix.org[#pine64-space:matrix.org] for supported clients that organizes all of the above matrix channels into one place.
+
+=== Notes
+
+PINE64 community is not some always responding, restless commercial customer service, or some sort of almighty existence that can resolve all your problems. When participating in community discussions, please be patient and do not expect questions to be answered immediately, certainly, or currently.
+
+* The activity of community members varies depending on the time of day and the number of active users.
+* Whether your questions will be answered & whether the answers are right and definitive, depends on the information you provide, and, after all, difficulty of your questions & community members' ability.
+* Read http://www.catb.org/~esr/faqs/smart-questions.html[How To Ask Questions The Smart Way] to learn more.
+* PINE64 uses a bridge bot (_https://github.com/42wim/matterbridge[matterbridge]_ with some modifications), which allows Discord, IRC, Matrix, and Telegram users to see and participate in the community chat.
+* The bot name is "Pine64 Protocol Droid" and if you see this, look in the message to see the actual author of the message.
+* When the bot relays messages it will show the platform the user is using: _[D]_ for _Discord_, _[I]_ for _IRC_, _[M]_ for _Matrix_ and _[T]_ for _Telegram_.
+
+
+== Forums
+
+PINE64 runs an official forum powered by the open-source forum server software _MyBB_. The forum can be used to report issues, help out other users, offer findings and new information and more. Users can also engage directly with the community and the developers of partner projects, as well as with the PINE64 members.
+
+The official PINE64 forum can be accessed here:
+
+* https://forum.pine64.org/[Official PINE64 Forum]
+
+Also, these are the official Subreddits:
+
+* https://www.reddit.com/r/PINE64official/[Official PINE64 Reddit]
+* https://www.reddit.com/r/PinePhoneOfficial/[Official PinePhone Reddit]
 * https://www.reddit.com/r/PinebookPro/[Pinebook Pro Offcial Subreddit]
-
-== Staying up to date and more
-
-There are many ways to stay up-to-date with PINE64 hardware and software news. We maintain a blog with frequent updates and notify the users of new content via social media, on our forum as well as  dedicated channels on the chat platforms. We publish a https://www.pine64.org/blog/[Community Update blog post] regularly. A summary of the Community Update is also available in video format on https://www.youtube.com/c/PINE64inc/videos[Youtube], https://tilvids.com/accounts/pine64tilvids/videos[Peertube] and https://odysee.com/@PINE64:a[Odysee].
-
-We also have a community hosted bi-weekly podcast, called the PineTalk, which is available on most platforms including Spotify and Apple Podcasts.
-
-To be notified of new blog entries, enter your email address in the widget at the bottom of this page.
-
-== PINE64 Wiki
-
-All necessary Documentation for your device is available on the https://wiki.pine64.org/wiki/Main_Page[PINE64 Wiki]. If you are a registered forum member, and have at least 3 moderated posts, then you are welcome to contribute material to device sections of your choice. Device sections also contain information that will help you get started with your project; this includes basics for beginners who may, for instance, require information about flashing the SD card or eMMC module, or proper troubleshooting protocols in the event of issues.
-
-== Operating Systems 
-
-Regardless of which PINE64 device you received you will need an operating system to actually make use of it. PINE64 devices benefit from a wide-range of software support from partner projects as well as community developers. Devices such as the PinePhone, Pinebook Pro or the PineTab ship with an open source system preinstalled, but single board computers, compute and AI modules as well as other devices (e.g. the PineCube) will require you to install an operating system on your own. Suggested operating systems can be found in the device-grid below.
-
 
 == Information
 

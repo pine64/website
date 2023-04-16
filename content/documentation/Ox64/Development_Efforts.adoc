@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Ox64"
     identifier: "Ox64/Development_Efforts"
-    weight: 2
+    weight: 3
 ---
 
 * https://twitter.com/gamelaster/status/1583916501400068096[Ox64 boots Linux successfully]

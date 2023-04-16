@@ -50,23 +50,27 @@ ul.pagination li.active a, ul.pagination li a:hover{
     color: #0069B5;
 }
 
-.ulist {
+div.ulist{
+    padding: 0 0 0.6em 2em;
+}
+div.olist{
     padding-left: 2em;
 }
 
 /* Paragraph and section margins */
+
 .paragraph {
     padding-bottom: 0.6em;
 }
-.sect1 {
-    padding-bottom: 0.6em;
+.paragraph .right {
+    float: right;
 }
-.sect2 {
-    padding-bottom: 0.6em;
-}
+/*
 p {
     padding-bottom: 0.6em;
 }
+*/
+
 /* Blockquotes */
 .quoteblock { 
    margin: 0 48px;
@@ -96,15 +100,6 @@ h1 {
 
 
 /* Margins docs */
-#doc-page div.ulist{
-    padding-bottom: 0.6em;
-    padding-left: 2em;
-}
-#doc-page div.olist{
-    padding-bottom: 0.6em;
-    padding-left: 2em;
-}
-
 #navigation {
     background: white;
     border-bottom: 1px solid #ddd;
@@ -413,11 +408,10 @@ button.rounded:hover {
 /* Documentation text style */
 #doc-page h1 {
     color: #2F82C6;
-    margin-bottom: 0.5em;
 }
 #doc-page h2, h3, h4, h5, h6 {
     color: #444;
-    margin-bottom: 0.5em;
+    padding: 0.6em 0 0.4em 0;
 }
 
 div#doc-page code{
@@ -572,7 +566,7 @@ nav#TableOfContents ul ul{
 
 /* Admonition */
 #doc-page .admonitionblock {
-    margin: 1rem;
+    margin: 1.4rem 1rem 1rem 1rem;
 }
 #doc-page .admonitionblock>table {
     table-layout: fixed;
@@ -662,9 +656,6 @@ nav#TableOfContents ul ul{
     padding: 10px 0;
 }
 /* Margins blog */
-.center-contents p {
-    padding-bottom: 0.8em;
-}
 /* Scale multiple images down in one paragraph
 .center-contents p {
     clear: both;
@@ -676,10 +667,6 @@ nav#TableOfContents ul ul{
 */
 .center-contents ul{
     padding-left: 2em;
-    padding: 0.8em;
-}
-.center-contents h2{
-    padding: 0.9em 0 0.2em 0;
 }
 .blog-list-title {
     margin: 2em 0 1em 0;
@@ -771,14 +758,13 @@ table {
 
 table td,
 table th {
-    padding: 0.1em;
+    padding: 0.1em 0.1em 0.1em 0.3em;
     vertical-align: top;
     margin-bottom: 0;
 }
-table td > p {
+table td p, table td .paragraph {
     padding: 0;
 }
-
 thead {
     background: #ececec;
     margin-bottom: 0;
