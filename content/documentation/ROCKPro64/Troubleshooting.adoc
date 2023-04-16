@@ -9,10 +9,7 @@ menu:
     weight: 4
 ---
 
-
-
 == No Video or GPU Acceleration on Debian
-
 
 If you can log in through serial but don't get any video or GPU acceleration on Debian, this is likely due to Debian's decision to compile the devfreq governors as loadable modules but not including them early enough for panfrost to be able to be provided with one of them.
 
@@ -25,5 +22,4 @@ Log in to your ROCKPro64, and run the following:
  exit
 
 Then, reboot.
-
 

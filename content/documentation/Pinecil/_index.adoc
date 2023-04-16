@@ -15,5 +15,6 @@ Note: Other irons only care if they can solder. The Pinecil is held to an additi
 
 image:/documentation/images/Pinecil_GraphicGreenRISCV.png[width=500]
 
-image:/documentation/images/Pinecilv2-1.jpg[Pinecil_V2,_launched_Aug_2,_2022,title="Pinecil_V2,_launched_Aug_2,_2022",width=300]_image:/documentation/images/Pinecilv2-2-transparent-background.png[ Pinecil V2, side view,title=" Pinecil V2, side view",width=300]
+image:/documentation/images/Pinecilv2-1.jpg[Pinecil_V2,_launched_Aug_2,_2022,title="Pinecil_V2,_launched_Aug_2,_2022",width=300]
+image:/documentation/images/Pinecilv2-2-transparent-background.png[ Pinecil V2, side view,title=" Pinecil V2, side view",width=300]
 

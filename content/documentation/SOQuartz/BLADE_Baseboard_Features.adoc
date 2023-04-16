@@ -1,33 +1,33 @@
 ---
-title: "SOQuartz BLADE Baseboard Features"
+title: "BLADE Baseboard Features"
 draft: false
 menu:
   docs:
     title:
     parent: "SOQuartz"
-    identifier: "SOQuartz/SOQuartz_BLADE_Baseboard_Features"
+    identifier: "SOQuartz/BLADE_Baseboard_Features"
     weight: 
 ---
 
-
 image:/documentation/images/SOQuartz_BLADE_Dimension.jpg[SOQuartz BLADE Baseboard,title="SOQuartz BLADE Baseboard",width=400]
+
 * SOQuartz BLADE Baseboard Dimensions: 200mm x 40mm x 15mm
 * Input Power:
 ** DC 5V @ 3A 3.5OD/1.35ID (IEC 60130-10 Type H) Barrel DC Jack connector
 ** PoE
 
-=== Storage
+== Storage
 
 * microSD - bootable, support SDHC and SDXC, storage up to 2TB
 * USB - USB2.0 Host port (with header for setting OTG ID pin)
 
-=== Expansion Ports
+== Expansion Ports
 
 * 2x20 pins "Pi2" GPIO Header
 * M.2 slot
 * PWM fan header
 
-=== Jumpers
+== Jumpers
 
 * OTG ID jumper
 * GPIO voltage, select 3.3V or 1.8V

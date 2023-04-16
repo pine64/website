@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 SOEDGE module schematics:
 
 * https://files.pine64.org/doc/SOEdge/SOEdge-Schematic-v2.0-190919.pdf[SOEDGE Module ver 2.0 20190919 Schematic]

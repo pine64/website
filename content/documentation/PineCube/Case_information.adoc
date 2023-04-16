@@ -9,10 +9,8 @@ menu:
     weight: 
 ---
 
-
-
-image:/documentation/images/PineCube_Case-1.jpg[]_image:/documentation/images/PineCube_Case-2.jpg[]
-
+image:/documentation/images/PineCube_Case-1.jpg[]
+image:/documentation/images/PineCube_Case-2.jpg[]
 
 Model:
 

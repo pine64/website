@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-This guide is for the PINE64 devices. For device-specific information please see the corresponding device pages listed on the link:/documentation/_index#Devices|main page[main page].
+This guide is for the PINE64 devices. For device-specific information please see the corresponding device pages listed on the link:/documentation/_index#Devices[main page].
 
 == Requirements
 
@@ -36,9 +36,9 @@ The process of flashing PINE64 OS images to micro SD on your Windows, Linux or O
 
 Please refer to the relevant section below for instructions on how to image your microSD card:
 
-* link:#Imaging microSD on Windows 7/8/8.1/10|Imaging microSD on Windows 7/8/8.1/10[Imaging microSD on Windows 7/8/8.1/10]
-* link:#Imaging microSD on Apple OSX|Imaging microSD on Apple OSX[Imaging microSD on Apple OSX]
-* link:#Imaging microSD on Linux|Imaging microSD on Linux[Imaging microSD on Linux]
+* link:#Imaging microSD on Windows 7/8/8.1/10[Imaging microSD on Windows 7/8/8.1/10]
+* link:#Imaging microSD on Apple OSX[Imaging microSD on Apple OSX]
+* link:#Imaging microSD on Linux[Imaging microSD on Linux]
 
 Having successfully imaged your microSD card, insert it into the microSD slot.
 
@@ -100,7 +100,7 @@ TIP: Phoenix Card utility and images are NOT available on macOS.
 
 *Downloading and extracting OS image(s), insert the SD card*
 
-You can find OS images for the respective devices in the link:/documentation/_index#Devices|device section[device section] of the main page.
+You can find OS images for the respective devices in the link:/documentation/_index#Devices[device section] of the main page.
 
 Having downloaded the required OS image, proceed to use the compression utility to unarchive it and get the .img file.
 Once the process has completed, you can proceed to write it to your SD card.
@@ -211,7 +211,7 @@ A USB-to-eMMC adapter is available from purchase from the https://pine64.com/pro
 
 *This installation method works for all devices that support eMMC modules regardless of the chipset* and it is therefore the preferred way of flashing OS images to eMMC. All available OS images for your device can be installed on the eMMC module this way.
 
-*This process of flashing an OS image to eMMC is *completely identical to imaging micro SD cards*, so please read link:/documentation/General/Getting_started#Step-by-Step_Instructions_to_Flashing_MicroSD_Cards|Step-by-Step Instructions to Flashing Micro SD Cards[Step-by-Step Instructions to Flashing Micro SD Cards] before you begin.
+*This process of flashing an OS image to eMMC is *completely identical to imaging micro SD cards*, so please read link:/documentation/General/Getting_started#Step-by-Step_Instructions_to_Flashing_MicroSD_Cards[Step-by-Step Instructions to Flashing Micro SD Cards] before you begin.
 
 For this method you will need the following:
 
@@ -239,11 +239,11 @@ There are *two ways* in which an OS image can be flashed from within a micro SD 
 
 *Via a script called Pine64_install_to_eMMC.sh found in _/usr/local/sbin_. This script will install an Ubuntu Mate OS installation (identical to the on running on the SD) to the eMMC module. To execute the script navigate to its location in the terminal and type `sudo ./Pine64_install_to_eMMC.sh`. Follow the instructions.
 
-*By manually downloading and flashing a OS image for your device using DD or the Disk GUI. This way of flashing an OS image to the eMMC is identical to that used on a Linux computer (e.g. for flashing an OS image to a SD card). For more information on how the process works please see the detailed guide on link:/documentation/General/Getting_started#Imaging_microSD_on_Linux|imaging OS images to SD card on Linux[imaging OS images to SD card on Linux].
+*By manually downloading and flashing a OS image for your device using DD or the Disk GUI. This way of flashing an OS image to the eMMC is identical to that used on a Linux computer (e.g. for flashing an OS image to a SD card). For more information on how the process works please see the detailed guide on link:/documentation/General/Getting_started#Imaging_microSD_on_Linux[imaging OS images to SD card on Linux].
 
 For the latter of the two methods here is a summary of the process:
 
-*Flash an OS image which recognizes eMMC as mounted storage to a micro SD card. For details on how to flash a micro SD card see link:/documentation/General/Getting_started#Step-by-Step_Instructions_to_Flashing_MicroSD_Cards|section 3[section 3]
+*Flash an OS image which recognizes eMMC as mounted storage to a micro SD card. For details on how to flash a micro SD card see link:/documentation/General/Getting_started#Step-by-Step_Instructions_to_Flashing_MicroSD_Cards[section 3]
 
 *Insert both the micro SD and eMMC module into your device and power it on.
 
@@ -289,7 +289,7 @@ or
 
 Once your device mounts as UMS it will appear in your file manager. In CLI you can check if the storage is listed using _fdisk -l_.
 
-This process of flashing an OS image to eMMC with the device in FEL mode and mounted as UMS is  *literally identical to imaging micro SD cards*, so please read link:/documentation/General/Getting_started#Step-by-Step_Instructions_to_Flashing_MicroSD_Cards|Step-by-Step Instructions to Flashing Micro SD Cards[Step-by-Step Instructions to Flashing Micro SD Cards] and follow the procedure. You can use DD or Disks/ Disk Utility to flash the OS image directly to your device's eMMC.
+This process of flashing an OS image to eMMC with the device in FEL mode and mounted as UMS is  *literally identical to imaging micro SD cards*, so please read link:/documentation/General/Getting_started#Step-by-Step_Instructions_to_Flashing_MicroSD_Cards[Step-by-Step Instructions to Flashing Micro SD Cards] and follow the procedure. You can use DD or Disks/ Disk Utility to flash the OS image directly to your device's eMMC.
 
 Once the flashing process is completed, power down your device, remove the A-to-A USB OTG cable and after reapply power to boot your device from eMMC.
 
@@ -363,7 +363,7 @@ Writing u-boot to SPI Flash can be achieved in two ways:
 
 === Using a Stand-Alone Image to Write u-boot to SPI
 
-This may be the simplest method of flashing u-boot to SPI. Download a dedicated image labelled *u-boot-flash-spi.img.xz* from https://github.com/ayufan-rock64/linux-u-boot/releases[ayufan's github] and flash it to a microSD card, the same as you would with any OS image (to learn how to flash OS images to microSD please follow steps outlined in link:/documentation/General/Getting_started#Step-by-Step_Instructions_to_Flashing_MicroSD_Cards|Section 3[Section 3].
+This may be the simplest method of flashing u-boot to SPI. Download a dedicated image labelled *u-boot-flash-spi.img.xz* from https://github.com/ayufan-rock64/linux-u-boot/releases[ayufan's github] and flash it to a microSD card, the same as you would with any OS image (to learn how to flash OS images to microSD please follow steps outlined in link:/documentation/General/Getting_started#Step-by-Step_Instructions_to_Flashing_MicroSD_Cards[Section 3].
 
 *Having flashed the image follow these steps*:
 
@@ -378,7 +378,7 @@ The board is now ready to boot from USB 2.0/3.0 storage.
 
 === Using a Script on Linux OS Images
 
-Most of recent (newer than 0.6.9) Linux OS images contain a script called *rock64_write_spi_flash.sh*, which is found in _/usr/local/sbin_ directory. To run the script you will first need to flash a Linux OS image to a micro SD card (to learn how to flash OS images to micro SD please following steps outlined in link:/documentation/General/Getting_started#Step-by-Step_Instructions_to_Flashing_MicroSD_Cards|Section 3[Section 3]). Before proceeding *make sure that the eMMC module is disconnected* from the board. Once you have booted into Linux on your PINE64 device all you have to do is run the aforementioned script using this command:
+Most of recent (newer than 0.6.9) Linux OS images contain a script called *rock64_write_spi_flash.sh*, which is found in _/usr/local/sbin_ directory. To run the script you will first need to flash a Linux OS image to a micro SD card (to learn how to flash OS images to micro SD please following steps outlined in link:/documentation/General/Getting_started#Step-by-Step_Instructions_to_Flashing_MicroSD_Cards[Section 3]). Before proceeding *make sure that the eMMC module is disconnected* from the board. Once you have booted into Linux on your PINE64 device all you have to do is run the aforementioned script using this command:
 
 `sudo ./rock64_write_spi_flash.sh`
 
@@ -402,7 +402,7 @@ To boot an OS image from USB 2.0/3.0 Storage such as a SSD/HDD or a thumbdrive y
 
 Once you have u-boot on your SPI, the process of booting is very similar to booting from microSD or eMMC.
 *Download one of the supported OS images for your PINE64 device
-*Flash the OS image to your USB 2.0/USB 3.0 storage device (to learn how to flash OS images please following steps outlined in link:/documentation/General/Getting_started#Step-by-Step_Instructions_to_Flashing_MicroSD_Cards|Section 3[Section 3] The instructions are identical for all types of storage, including USB 2.0/USB 3.0 HDDs and thumb-drives.)
+*Flash the OS image to your USB 2.0/USB 3.0 storage device (to learn how to flash OS images please following steps outlined in link:/documentation/General/Getting_started#Step-by-Step_Instructions_to_Flashing_MicroSD_Cards[Section 3] The instructions are identical for all types of storage, including USB 2.0/USB 3.0 HDDs and thumb-drives.)
 *Insert the USB storage device with the flashed OS image into one of the USB ports on your PINE64 device
 *Apply power
 
@@ -441,5 +441,4 @@ If your PSU and microUSB meet the criteria, and you have correctly followed the 
 If your PSU and microUSB meet the criteria, and you have correctly imaged the OS to your card and power on the board and your can ssh into your PINE A64(+) but get no video feed, then it's likely that the native resolution of your monitor/TV is not supported.
 
 If neither of the above mentioned scenarios fits the problem you are facing, please consult this thread (thanks to Ghost for compiling the list): https://forum.pine64.org/showthread.php?tid=680
-
 

@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 Allwinner H6 SoC information:
 
 * https://files.pine64.org/doc/datasheet/pine-h64/Allwinner-H6-Brief_V1.0.pdf[Allwinner H6 SoC Brief Introduction]

@@ -87,4 +87,3 @@ At the time of publishing, these are some of the notable resource, listed in no 
 * https://github.com/manjaro-pinephone[Manjaro repository]
 * link:/documentation/PinePhone_Pro/Various/Development[Development]
 
-

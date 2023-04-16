@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 PineCube mainboard schematic:
 
 * https://files.pine64.org/doc/PineCube/PineCube%20MainBoard%20Schematic%20ver%201.0-20200727.pdf[PineCube mainboard Released Schematic ver 1.0]

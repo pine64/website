@@ -17,9 +17,7 @@ Only the steps that are different are listed here. Be careful, the numbering of 
 
 == Installing the root filesystem
 
-
 === Downloading and verifying the rootfs tarball
-
 
 You can go to the Void Linux https://voidlinux.org/download/[download page], select the "arm" tab, and choose one of the aarch64 rootfs tarballs, either glibc or musl.
 How to check integrity of the downloaded file is explained on the same page.

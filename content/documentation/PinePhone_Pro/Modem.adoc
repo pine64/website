@@ -9,6 +9,8 @@ menu:
     weight: 6
 ---
 
+The PinePhone Pro uses Quectel EG25-G as modem. AT commands are used to communicate with the modem.
+
 == AT commands
 
 A list of documented AT commands can be found for example in this https://wiki.pine64.org/wiki/File:Quectel_EC2x&EG9x&EG2x-G&EM05_Series_AT_Commands_Manual_V2.0.pdf[AT commands documentation] from Quectel. Further undocumented AT commands found by the developer megi, who reverse-engineered parts of the modem and its firmware, can be found on megi's website http://xnux.eu/devices/feature/modem-pp-reveng.html#toc-un-der-documented-at-commands[here].

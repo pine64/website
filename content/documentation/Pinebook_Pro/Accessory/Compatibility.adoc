@@ -9,11 +9,9 @@ menu:
     weight: 
 ---
 
-
 Please test as many things as you can find with your link:/documentation/Pinebook_Pro/_index[Pinebook Pro] and share the results here. Some devices which should work don't|
 
 == Storage
-
 
 === NVMe SSD drives
 
@@ -21,114 +19,269 @@ Only PCI Express M.2 drives can work, due to the available connectivity of the P
 
 You need to buy and install the M.2 adapter in order to fit one, please see link:/documentation/Pinebook_Pro/_index#Using the optional NVMe adapter[Pinebook Pro]
 
-Please see link:/documentation/Pinebook_Pro/Troubleshooting#NVMe SSD issues|a separate section[a separate section] that describes reported issues with the NVMe drives in PineBook Pro.
+Please see link:/documentation/Pinebook_Pro/Troubleshooting#NVMe SSD issues[a separate section] that describes reported issues with the NVMe drives in PineBook Pro.
 
 |===
-|Type | Make/Model | Size | Hardware IDs | Result | Notes | Power options<br/>Active only | Save<br/>power<br/>setting?
+|Type | Make/Model | Size | Hardware IDs | Result | Notes | Power options (active only) | Save power setting?
 
-| 2280 | Corsair MP300 | 120 GB | CSSD-F120GBMP300 | good | | PS 0: 3.00W<br/>PS 1: 2.00W<br/>PS 2: 2.00W<br/>PS 3: 0.1W<br/>PS 4: 0.005W<br/>APSTE Disabled by default |
+| 2280 | Corsair MP300 | 120 GB | CSSD-F120GBMP300 | good | a| * PS 0: 3.00W PS 1: 2.00W +
+* PS 2: 2.00W +
+* PS 3: 0.1W +
+* PS 4: 0.005W +
+* APSTE Disabled by default |
 
-| 2280 | Corsair MP400 | 1 TB | CSSD-F1000GBMP400R2 | fail | | PS 0: 5.55W<br/>PS 1: 4.49W<br/>PS 2: 3.97W<br/>PS 3: 0.0490W<br/>PS 4: 0.0018W<br/>APSTE Disabled by default |
+| 2280 | Corsair MP400 | 1 TB | CSSD-F1000GBMP400R2 | fail | a| * PS 0: 5.55W +
+* PS 1: 4.49W +
+* PS 2: 3.97W +
+* PS 3: 0.0490W +
+* PS 4: 0.0018W +
+* APSTE Disabled by default |
 
-| 2280 | Crucial P1 | 1 TB | CT1000P1SSD8 | good | With PS 2 and APST impact on battery life seems to be minimal.<br>Running powerstat seems to confirm little additional power draw. | PS 0: 9.00W<br/>PS 1: 4.60W<br/>PS 2: 3.80W<br/>PS 3: 0.0300W<br/>PS 4: 0.0030W<br/>APSTE: enabled by default | Yes
+| 2280 | Crucial P1 | 1 TB | CT1000P1SSD8 | good | With PS 2 and APST impact on battery life seems to be minimal. Running powerstat seems to confirm little additional power draw. a| * PS 0: 9.00W +
+* PS 1: 4.60W +
+* PS 2: 3.80W +
+* PS 3: 0.0300W +
+* PS 4: 0.0030W +
+* APSTE: enabled by default | Yes
 
-| 2280 | Crucial P2 | 500GB | CT500P2SSD8 | ok | problems loading from u-boot [http://u-boot.10912.n7.nabble.com/NVMe-boot-issues-on-RockPro64-td424863.html] | PS 0: 3.50W<br/>PS 1: 1.90W<br/>PS 2: 1.50W<br/>PS 3: 0.0700W<br/>PS 4: 0.0020W<br/> APSTE: enabled by default | No
+| 2280 | Crucial P2 | 500GB | CT500P2SSD8 | ok | problems loading from u-boot [http://u-boot.10912.n7.nabble.com/NVMe-boot-issues-on-RockPro64-td424863.html] a| * PS 0: 3.50W +
+* PS 1: 1.90W +
+* PS 2: 1.50W +
+* PS 3: 0.0700W +
+* PS 4: 0.0020W +
+*  APSTE: enabled by default | No
 
-| 2280 | Kingston A2000 | 250 GB | SA2000M8250G | good |  | PS 0: 9.00W<br/>PS 1: 4.60W<br/>PS 2: 3.80W<br/>PS 3: 0.045W<br/>PS 4: 0.004W<br/>APSTE: enabled by default | Yes
+| 2280 | Kingston A2000 | 250 GB | SA2000M8250G | good |  a| * PS 0: 9.00W +
+* PS 1: 4.60W +
+* PS 2: 3.80W +
+* PS 3: 0.045W +
+* PS 4: 0.004W +
+* APSTE: enabled by default | Yes
 
 | 2280 | Kingston A2000 | 1 TB | SA2000M81000G | good |  | same as 250 GB | Yes
 
 | 2280 | Kingston KC2500 | 2 TB | SKC2500M82000G | good | PCB too thick for supplied holder nut, used another one | same as A2000 models above | Yes
 
-| 2280 | Kingston NV1 | 250 GB  | SNVS/250G | good | Kingston's specifications claim that the 250 GB model consumes 1.5W max, but smartctl/nvme-cli report much higher values. The drive appears to be fully stable. | PS 0: 6.00W<br/>PS 1: 3.00W<br/>PS 2: 1.50W<br/>PS 3: 0.025W (non-op)<br/>PS 4: 0.004W (non-op)<br/>APSTE: enabled by default | Battery drain feels high. Not sure how to confirm APST is really working.
+| 2280 | Kingston NV1 | 250 GB  | SNVS/250G | good | Kingston's specifications claim that the 250 GB model consumes 1.5W max, but smartctl/nvme-cli report much higher values. The drive appears to be fully stable. a| * PS 0: 6.00W +
+* PS 1: 3.00W +
+* PS 2: 1.50W +
+* PS 3: 0.025W (non-op) +
+* PS 4: 0.004W (non-op) +
+* APSTE: enabled by default | Battery drain feels high. Not sure how to confirm APST is really working.
 
 | 2242 | Toshiba OCZ RC 100 | 240 GB | RC100-M22242-240G | good | | |
 
-| 2242 | Lexar NM520 | 256 GB | LNM520-256RBNA | good |For some data on power use and performance, see https://forum.pine64.org/showthread.php?tid=9029[here.]  | PS 0: 3.05W<br/>PS 1: 2.44W<br/>PS 2: 2.02W | No.  See https://forum.pine64.org/showthread.php?tid=8737&pid=56481#pid56481[workaround].
+| 2242 | Lexar NM520 | 256 GB | LNM520-256RBNA | good |For some data on power use and performance, see https://forum.pine64.org/showthread.php?tid=9029[here.]  a| * PS 0: 3.05W +
+* PS 1: 2.44W +
+* PS 2: 2.02W | No.  See https://forum.pine64.org/showthread.php?tid=8737&pid=56481#pid56481[workaround].
 
 | 2280 | XPS SX8200 | 512 GB | ASX8200PNP-512GT-C | good | Performed https://forum.pine64.org/showthread.php?tid=8322[these] steps for physical installation.  Currently rooting from drive. | |
 
-| 2280 | Intel 660p M.2 | 512 GB | SSDPEKNW512G8X1 | good | PS 1 (2.70W) will work without issues, even under heavy load. Recommended over PS 2, as PS 2 will incur an additional 80% performance penalty. APSTE shows enabled but drive does not support it. | PS 0: 3.50W<br/>PS 1: 2.70W<br/>PS 2: 2.00W | No
+| 2280 | Intel 660p M.2 | 512 GB | SSDPEKNW512G8X1 | good | PS 1 (2.70W) will work without issues, even under heavy load. Recommended over PS 2, as PS 2 will incur an additional 80% performance penalty. APSTE shows enabled but drive does not support it. a| * PS 0: 3.50W +
+* PS 1: 2.70W +
+* PS 2: 2.00W | No
 
-| 2280 | Intel 660p M.2 | 1 TB | SSDPEKNW010T8X1 | good | | PS 0: 4.00W<br/>PS 1: 3.00W<br/>PS 2: 2.20W<br/>APSTE Disabled by default | No
+| 2280 | Intel 660p M.2 | 1 TB | SSDPEKNW010T8X1 | good | a| * PS 0: 4.00W +
+* PS 1: 3.00W +
+* PS 2: 2.20W +
+* APSTE Disabled by default | No
 
-| 2280 | Intel 660p M.2 | 2 TB | SSDPEKNW020T8 | good | https://forum.pine64.org/showthread.php?tid=7524&pid=49300#pid49300[Performance tests results] | PS 0: 5.50W<br/>PS 1: 3.60W<br/>PS 2: 2.60W<br/>PS 3: 0.0300W<br/>PS 4: 0.0040W | No
+| 2280 | Intel 660p M.2 | 2 TB | SSDPEKNW020T8 | good | https://forum.pine64.org/showthread.php?tid=7524&pid=49300#pid49300[Performance tests results] a| * PS 0: 5.50W +
+* PS 1: 3.60W +
+* PS 2: 2.60W +
+* PS 3: 0.0300W +
+* PS 4: 0.0040W | No
 
-| 2280 | Intel 760p M.2 | 128 GB | SSDPEKKW128G8 | good | Firmware Revision 004C | PS 0: 9.00W<br/>PS 1: 4.60W<br/>PS 2: 3.80W<br/>PS 3: 0.045W<br/>PS 4: 0.004W<br/>APSTE: disabled by default with 4.4 kernel (mrfixit Debian), enabled by default with 5.6 kernel (Manjaro KDE) | Yes
+| 2280 | Intel 760p M.2 | 128 GB | SSDPEKKW128G8 | good | Firmware Revision 004C a| * PS 0: 9.00W +
+* PS 1: 4.60W +
+* PS 2: 3.80W +
+* PS 3: 0.045W +
+* PS 4: 0.004W +
+* APSTE: disabled by default with 4.4 kernel (mrfixit Debian), enabled by default with 5.6 kernel (Manjaro KDE) | Yes
 
-| 2280 | Intel 760p M.2 | 256 GB | SSDPEKKW256G8 | good | Firmware Revision 004C | PS 0: 9.00W<br/>PS 1: 4.60W<br/>PS 2: 3.80W<br/>PS 3: 0.045W<br/>PS 4: 0.004W<br/>Need to use lower power. |
+| 2280 | Intel 760p M.2 | 256 GB | SSDPEKKW256G8 | good | Firmware Revision 004C a| * PS 0: 9.00W +
+* PS 1: 4.60W +
+* PS 2: 3.80W +
+* PS 3: 0.045W +
+* PS 4: 0.004W +
+* Need to use lower power. |
 
 | 2280 | integral 256GB SSD M.2 2280 NVME | 256 GB | INSSD256GM280NM1 | usable |  | PS 0: 9.00W | No
 
-| 2280 | PNY CS1030 | 500GB | CS1030 | good | | PS 0: 4.50W<br/>PS 1: 2.70W<br/>PS 2: 2.16W<br/>PS 3: 0.0700W<br/>PS 4: 0.0050W<br/>APSTE: Enabled|
+| 2280 | PNY CS1030 | 500GB | CS1030 | good | a| * PS 0: 4.50W +
+* PS 1: 2.70W +
+* PS 2: 2.16W +
+* PS 3: 0.0700W +
+* PS 4: 0.0050W +
+* APSTE: Enabled|
 
-| 2280 | PNY CS3030 | 1 TB | M280CS3030-1TB-RB | | | PS 0: 10.57W<br/>PS 1: 7.00W<br/>PS 2: 5.22W<br/>PS 3: 0.0490W<br/>PS 4: 0.0018W<br/>APSTE: |
+| 2280 | PNY CS3030 | 1 TB | M280CS3030-1TB-RB | | a| * PS 0: 10.57W +
+* PS 1: 7.00W +
+* PS 2: 5.22W +
+* PS 3: 0.0490W +
+* PS 4: 0.0018W +
+* APSTE: |
 
 | 2280 | Samsung 970 EVO Plus | 250 GB | MZ-V7S250BW | fail | Tested on Manjaro-ARM as root drive. Limited to PS 2 and Volatile Write Cache off gives the most stable results, but it will still hang on a hdparm test. | |
 
-| 2280 | Samsung 970 EVO Plus | 500 GB | MZ-V7S500 | fail | Too power hungry? | PS 0: 6.2W<br/>PS 1: 4.3W<br/>PS 2: 2.1W |
+| 2280 | Samsung 970 EVO Plus | 500 GB | MZ-V7S500 | fail | Too power hungry? a| * PS 0: 6.2W +
+* PS 1: 4.3W +
+* PS 2: 2.1W |
 
 | 2280 | Samsung 970 EVO | 1 TB | MZ-V7E1T0BW | fail | Too power hungry? | |
 
-| 2280 | Samsung 970 PRO | 1 TB | MZ-V7P1T0BW | good |  | PS 0: 6.20W<br/>PS 1: 4.30W<br/>PS 2: 2.10W<br/>PS 3: 0.04W<br/>PS 4: 0.005W<br/>APSTE: enabled by default | Yes
+| 2280 | Samsung 970 PRO | 1 TB | MZ-V7P1T0BW | good |  a| * PS 0: 6.20W +
+* PS 1: 4.30W +
+* PS 2: 2.10W +
+* PS 3: 0.04W +
+* PS 4: 0.005W +
+* APSTE: enabled by default | Yes
 
-| 2280 | Samsung 980 | 1 TB | SSD 980 1TB | good | Firmware version 2B4QFXO7 | PS 0: 5.24W<br/>PS 1: 4.49W<br/>PS 2: 2.19W<br/>PS 3: 0.05W<br/>PS 4: 0.005W<br/>|
+| 2280 | Samsung 980 | 1 TB | SSD 980 1TB | good | Firmware version 2B4QFXO7 a| * PS 0: 5.24W +
+* PS 1: 4.49W +
+* PS 2: 2.19W +
+* PS 3: 0.05W +
+* PS 4: 0.005W +
+* |
 
-| 2230 | Samsung 991 | 128 GB | MZ-9LQ128A | Fail | Using as a boot drive. Will randomly lock up during use or during boot. | PS 0: 4.83W<br/>PS 1: 3.54W<br/>PS 2: 3.04W<br/> PS 3: 0.0500W<br/> PS 4: 0.0050W | No
+| 2230 | Samsung 991 | 128 GB | MZ-9LQ128A | Fail | Using as a boot drive. Will randomly lock up during use or during boot. a| * PS 0: 4.83W +
+* PS 1: 3.54W +
+* PS 2: 3.04W +
+*  PS 3: 0.0500W +
+*  PS 4: 0.0050W | No
 
 | 2280 | Silicon Power P34A60 | 1TB | SP001TBP34A60M28 | Usable | Power eager, but doesn't seem to use all 9W all the time, only under heavy I/O | PS 0: 9W | N/A
 
-| 2280 | Silicon Power P34A60 | 256 GB | SPCC M.2 PCIe SSD | detected | ASIN B07ZH6QR8Q "Silicon Power PCIe M.2 NVMe SSD 256GB Gen3x4" / PCIe A60 | PS 0: 6.77W<br/> PS 1: 5.71W<br/> PS 2: 5.19W<br/>APSTE Enabled by default | No
+| 2280 | Silicon Power P34A60 | 256 GB | SPCC M.2 PCIe SSD | detected | ASIN B07ZH6QR8Q "Silicon Power PCIe M.2 NVMe SSD 256GB Gen3x4" / PCIe A60 a| * PS 0: 6.77W +
+*  PS 1: 5.71W +
+*  PS 2: 5.19W +
+* APSTE Enabled by default | No
 
 | 2280 | Silicon Power P34A60 | 256 GB | ??? | fail | Isn't detected | |
 
 | 2280 | Sabrent Rocket | 256 GB | SB-ROCKET-256 | good | | | No
 
-| 2242 | Sabrent Rocket Nano | 512 GB | SB-1342-512 | good* | No touchpad issues, didn't trim NVME adapter board.<br/>(*Might be too power hungry. More testing needed.) | |
+| 2242 | Sabrent Rocket Nano | 512 GB | SB-1342-512 | good* | No touchpad issues, didn't trim NVME adapter board. (* Might be too power hungry. More testing needed.) | |
 
-| 2242 | Sabrent Rocket | 1 TB | SB-RKTQ-1TB | good | | PS 0: 5.55W<br/>PS 1: 4.49W<br/>PS 2: 3.97W<br/>PS 3: 0.049W<br/>PS 4: 0.0018W<br/>APSTE: available | Yes
+| 2242 | Sabrent Rocket | 1 TB | SB-RKTQ-1TB | good | a| * PS 0: 5.55W +
+* PS 1: 4.49W +
+* PS 2: 3.97W +
+* PS 3: 0.049W +
+* PS 4: 0.0018W +
+* APSTE: available | Yes
 
-| 2280 | MyDigitalSSD SBXe | 960 GB | | good | | APST enabled<br/>Power states N/A | N/A
+| 2280 | MyDigitalSSD SBXe | 960 GB | | good | | APST enabled. Power states N/A | N/A
 
 | 2280 | HP SSD EX900 | 250GB | | good | No low-power modes available | |
 
 | 2280 | HP SSD EX950  | 512GB | | good | Unsure about low-power modes | |
 
-| 2280 | WD GREEN SN350 | 480GB | WDC WDS480G2G0C-00AJM0 | good | Booted successfully from NVMe (Manjaro) | PS 0: 3.50W<br/>PS 1: 2.70W<br/>PS 2: 1.90W<br/>APSTE Enabled by default | No |
+| 2280 | WD GREEN SN350 | 480GB | WDC WDS480G2G0C-00AJM0 | good | Booted successfully from NVMe (Manjaro) a| * PS 0: 3.50W +
+* PS 1: 2.70W +
+* PS 2: 1.90W +
+* APSTE Enabled by default | No
 
-| 2280 | WD BLUE SN550 | 1TB | WDC WDS100T2B0C-00PXH0 | good | Booted successfully from NVMe (Bionic MATE) | PS 0: 3.50W<br/>PS 1: 2.70W<br/>PS 2: 1.90W<br/>PS 3: 0.0250W<br/>PS 4: 0.0050W<br/>APSTE Disabled by default | N/A
+| 2280 | WD BLUE SN550 | 1TB | WDC WDS100T2B0C-00PXH0 | good | Booted successfully from NVMe (Bionic MATE) a| * PS 0: 3.50W +
+* PS 1: 2.70W +
+* PS 2: 1.90W +
+* PS 3: 0.0250W +
+* PS 4: 0.0050W +
+* APSTE Disabled by default | N/A
 
-| 2280 | WD Blue SN550 | 500GB | WDC WDS500G2B0C-00PXH0 | good | | PS 0: 3.50W<br/>PS 1: 2.40W<br/>PS 2: 1.90W<br/>APSTE enabled by default with 5.9 kernel (Manjaro XFCE) | No
+| 2280 | WD Blue SN550 | 500GB | WDC WDS500G2B0C-00PXH0 | good | a| * PS 0: 3.50W +
+* PS 1: 2.40W +
+* PS 2: 1.90W +
+* APSTE enabled by default with 5.9 kernel (Manjaro XFCE) | No
 
 | 2280 | WD Blue SN500 | 500GB | WDS500G1B0C | fail | Works OK on power state 2 (2.5W), but hangs the system whenever there is intense IO (peak draw) on the drive | |
 
-| 2242 | WD PC SN520 | 256GB | SDAPMUW-256G-1101 | good | | APSTE enabled by default<br>PS 0: 2.6W<br>PS 1: 2.6W<br>PS 2: 1.7W |
+| 2242 | WD PC SN520 | 256GB | SDAPMUW-256G-1101 | good | a| * APSTE enabled by default +
+* PS 0: 2.6W +
+* PS 1: 2.6W +
+* PS 2: 1.7W |
 
-| 2280 | WD PC SN530 | 256GB | SDBPNPZ-256G-1002 | good | Works on AC power with defaults settings, but causes kernel panics on battery, unlesss limited to PS 1 that fixes this. | APSTE enabled by default<br>PS 0: 3.5W<br>PS 1: 2.4W<br>PS 2: 1.9W | No. Fixed by systemd script, see https://wiki.pine64.org/wiki/Pinebook_Pro#Post_NVMe_install_power_limiting[Wiki].
+| 2280 | WD PC SN530 | 256GB | SDBPNPZ-256G-1002 | good | Works on AC power with defaults settings, but causes kernel panics on battery, unlesss limited to PS 1 that fixes this. a| * APSTE enabled by default +
+* PS 0: 3.5W +
+* PS 1: 2.4W +
+* PS 2: 1.9W | No. Fixed by systemd script, see https://wiki.pine64.org/wiki/Pinebook_Pro#Post_NVMe_install_power_limiting[Wiki].
 
-| 2280 | WD PC SN730 | 512GB | SDBPNTY-512G-1032 | good | No touchpad issues. Works after latest updates. |APST enabled by default<br/>PS 0: 5.50W<br/>PS 1: 3.50W<br/>PS 2: 3.00W<br/>PS 3: 0.0700W<br/>PS 4: 0.0025W | No
+| 2280 | WD PC SN730 | 512GB | SDBPNTY-512G-1032 | good | No touchpad issues. Works after latest updates. a| * APST enabled by default +
+* PS 0: 5.50W +
+* PS 1: 3.50W +
+* PS 2: 3.00W +
+* PS 3: 0.0700W +
+* PS 4: 0.0025W | No
 
-| 2280 | WD BLACK SN750 | 250GB | WDS250G3X0C-00SJG0 | good | No touchpad issues, didn't trim NVME adapter board. | APSTE disabled by default<br/> PS 0: 5.00W<br/>PS 1: 3.50W<br/>PS 2: 3.00W|
+| 2280 | WD BLACK SN750 | 250GB | WDS250G3X0C-00SJG0 | good | No touchpad issues, didn't trim NVME adapter board. a| * APSTE disabled by default +
+*  PS 0: 5.00W +
+* PS 1: 3.50W +
+* PS 2: 3.00W |
 
-| 2280 | WD BLACK SN750 | 500GB | WDS500G3X0C-00SJG0 | good | No tp issues. had to charge battery for 20% initially. | APSTE disabled by default<br/> PS 0: 5.50W<br/>PS 1: 3.50W<br/>PS 2: 3.00W<br/>PS 3: 0.07W<br/>PS 4: 0.0025W|
+| 2280 | WD BLACK SN750 | 500GB | WDS500G3X0C-00SJG0 | good | No tp issues. had to charge battery for 20% initially. a| * APSTE disabled by default +
+*  PS 0: 5.50W +
+* PS 1: 3.50W +
+* PS 2: 3.00W +
+* PS 3: 0.07W +
+* PS 4: 0.0025W |
 
-| 2280 | WD BLACK SN750 | 1TB | WDS100T3X0C-00SJG0 | mixed | Drive works as expected (so far) though with 50% reduction in battery life.<br/><br/>Unable to set power mode (due to APST being enabled?).<br/><br/>Also unable to suspend PineBook Pro with NVMe drive attached. From dmesg:<br/>rockchip-pcie f8000000.pcie: PCIe link enter L2 timeout|<br/>PM: dpm_run_callback(): rockchip_pcie_suspend_noirq+0x0/0x100 returns -110<br/>PM: Devvice f8000000.pcie failed to suspend noirq: error -110<br/>PM: no irq suspend of devices failed<br/> | APST enabled by default<br/> PS 0: 6.00W<br/>PS 1: 3.50W<br/>PS 2: 3.00W<br/>PS 3: 0.1000W<br/>PS 4: 0.0025W | No
+| 2280 | WD BLACK SN750 | 1TB | WDS100T3X0C-00SJG0 | mixed a| * Drive works as expected (so far) though with 50% reduction in battery life. +
+* Unable to set power mode (due to APST being enabled?). Also unable to suspend PineBook Pro with NVMe drive attached. From dmesg: `rockchip-pcie f8000000.pcie: PCIe link enter L2 timeout` +
+* PM: dpm_run_callback(): rockchip_pcie_suspend_noirq+0x0/0x100 returns -110 +
+* PM: Devvice f8000000.pcie failed to suspend noirq: error -110 +
+* PM: no irq suspend of devices failed
+a| * APST enabled by default +
+* PS 0: 6.00W +
+* PS 1: 3.50W +
+* PS 2: 3.00W +
+* PS 3: 0.1000W +
+* PS 4: 0.0025W | No
 
-| 2242 | KingSpec NE-512 | 512 GB | NE512 | good | | APST enabled<br/>Power states N/A | N/A
+| 2242 | KingSpec NE-512 | 512 GB | NE512 | good | a| * APST enabled +
+* Power states N/A | N/A
 
-| 2230 | Kioxia BG4 256GBTB| 256 GB | KBG40ZNS256G | good | | APST enabled by default<br/>Power states PS 0: 3.60W<br/>PS 1: 2.60W<br/>PS 2: 2.20W<br/>PS 3: 0.005W<br/>PS 4: 0.005W |
+| 2230 | Kioxia BG4 256GBTB| 256 GB | KBG40ZNS256G | good | a| * APST enabled by default +
+* Power states PS 0: 3.60W +
+* PS 1: 2.60W +
+* PS 2: 2.20W +
+* PS 3: 0.005W +
+* PS 4: 0.005W |
 
-| 2280 | Patriot P300 | 256 GB | P300P256GM28US | good | Booted successfully with / on NVMe and /boot on eMMC (Armbian Buster) | APSTE disabled by default<br/> PS 0: 4.50W<br/> PS 1: 2.70W<br/> PS 2: 2.16W<br/>PS 3: 0.07W<br/>PS 4: 0.002W|
+| 2280 | Patriot P300 | 256 GB | P300P256GM28US | good | Booted successfully with / on NVMe and /boot on eMMC (Armbian Buster) a| * APSTE disabled by default +
+*  PS 0: 4.50W +
+*  PS 1: 2.70W +
+*  PS 2: 2.16W +
+* PS 3: 0.07W +
+* PS 4: 0.002W|
 
 | 2280 | Team Group MP33 | 128 GB | TM8FP6128G0C101 | good   | | |
 
-| 2280 | Team Group MP34 | 512 GB | TM8FP6512G0C101 | fail  |APST enabled by default and scripts do not change the power mode. <br>Higher power consumption modes cause the PBP to crash<br/> | PS 0 5.55W <br/>PS 1 4.49W<br/>PS 2 3.97W <br/>PS 3 0.0490W <br/>PS 4 0.0018W |No
+| 2280 | Team Group MP34 | 512 GB | TM8FP6512G0C101 | fail  a| * APST enabled by default and scripts do not change the power mode.  +
+* Higher power consumption modes cause the PBP to crash | PS 0 5.55W  +
+* PS 1 4.49W +
+* PS 2 3.97W  +
+* PS 3 0.0490W  +
+* PS 4 0.0018W |No
 
-| 2280 | Digifast Ace | 256 GB | DGFA256M2L01 | good  |No touchpad issues. Board not trimmed. | PS 0 6.77W <br/>PS 1 5.71W<br/>PS 2 5.19W <br/>PS 3 0.0490W <br/>PS 4 0.0018W |Yes
+| 2280 | Digifast Ace | 256 GB | DGFA256M2L01 | good  |No touchpad issues. Board not trimmed. a| * PS 0 6.77W  +
+* PS 1 5.71W +
+* PS 2 5.19W  +
+* PS 3 0.0490W  +
+* PS 4 0.0018W |Yes
 
-| 2280 | Toshiba XG6 | 256 GB | KXG60ZNV256G | good |  | PS 0: 6.00W<br/>PS 1: 2.70W<br/>PS 2: 1.30W<br/>PS 3: 0.0500W<br/>PS 4: 0.0050W<br/>PS 5: 0.0030W<br/>APSTE: enabled by default | No
+| 2280 | Toshiba XG6 | 256 GB | KXG60ZNV256G | good |  a| * PS 0: 6.00W +
+* PS 1: 2.70W +
+* PS 2: 1.30W +
+* PS 3: 0.0500W +
+* PS 4: 0.0050W +
+* PS 5: 0.0030W +
+* APSTE: enabled by default | No
 
-| 2280 | SK hynix Gold P31 gen3 | 500 GB | SHGP31-500GM-2   | good | SvenKiljan's arch+towboot with 5.15.8-1-manjaro arm kernel ps1:574.65MB/s (ps0 0.500-2.1GB/s)343 MB/s r/w ps2:63.78-187/45.1 MB/s r/w  on encrypted root /tmp | PS 0: 6.30W <br/>PS 1: 2.40W  <br/>PS 2: 1.90W <br/>PS 3: 0.0500W <br/>PS 4: 0.0040W<br/>APSTE: enabled | No, see "workaround(cron job+nvme-cli)"
+| 2280 | SK hynix Gold P31 gen3 | 500 GB | SHGP31-500GM-2   | good | SvenKiljan's arch+towboot with 5.15.8-1-manjaro arm kernel ps1:574.65MB/s (ps0 0.500-2.1GB/s)343 MB/s r/w ps2:63.78-187/45.1 MB/s r/w  on encrypted root /tmp a| * PS 0: 6.30W  +
+* PS 1: 2.40W   +
+* PS 2: 1.90W  +
+* PS 3: 0.0500W  +
+* PS 4: 0.0040W +
+* APSTE: enabled | No, see "workaround(cron job+nvme-cli)"
 
 |===
 
@@ -139,7 +292,7 @@ Please see link:/documentation/Pinebook_Pro/Troubleshooting#NVMe SSD issues|a se
 
 |SD Card | Samsung Evo Select 512GB | MB-ME512GA/AM | good |
 
-|SD Card | Samsung Evo Select 32GB | MB-ME32GA/AM | Good | Works as expected |
+|SD Card | Samsung Evo Select 32GB | MB-ME32GA/AM | Good | Works as expected
 
 |SD Card | Samsung Evo Plus 64GB | | good | Hdparm tested 44MBps read speeds
 
@@ -164,9 +317,7 @@ eMMC
 
 == USB hardware
 
-
 === USB Card Readers
-
 
 Standalone card readers only, please; see below for multifunction devices.
 
@@ -256,7 +407,7 @@ Note that only USB C alternate mode Display Port will pass video. Any HDMI, DVI 
 
 |USB-C combo hub (HDMI, network, card slots, USB ports) | generic | | fail |
 
-|USB-C combo hub (HDMI, VGA, Ethernet, card slots, USB 2 & 3 | Powlaken | 05e3:0610 0bda:8153 | USB, Power, Ethernet and SD good, HDMI and VGA fail
+|USB-C combo hub (HDMI, VGA, Ethernet, card slots, USB 2 & 3 | Powlaken | 05e3:0610 0bda:8153 | USB, Power, Ethernet and SD good, HDMI and VGA fail |
 
 |USB-C Dock (HDMI, VGA, Ethernet, microSD/SD card slots, 2 USB 3 Ports, 1 USB-C Port, USB-Power Passthru | Digitus DA-70865 | | USB, Ethernet and MicroSD/SD good, video crashes System (fail). | Tested on Manjaro w/ Kernel 5.5. You have to turn the USB-C connector upside down for it to work. Video seems to be a driver issue.
 
@@ -272,7 +423,7 @@ Note that only USB C alternate mode Display Port will pass video. Any HDMI, DVI 
 
 |USB-C to HDMI adapter | MHL TH002 | | good | Tested at 1080p@60
 
-|USB-C combo hub (USB-C power, HDMI, 2xUSB, 1xUSB-C(no power)) | Baseus | | good
+|USB-C combo hub (USB-C power, HDMI, 2xUSB, 1xUSB-C(no power)) | Baseus | | good |
 
 |USB-C Travel Dock with DP ALT-MODE | Targus DOCK411-A | 0835:2a01 (BILLBOARD DEVICE) 0bda:8153 (RTL8153 GbE Adapter) | GbE: works, HDMI: works, USB3.0 port: works, VGA: unknown | HDMI@1080p@60Hz: works OK, HDMI@4K@30Hz: works but buggy. GbE is only picked up when the USB C is plugged in with one certain side facing upwards. It is not detected the other way around. (Sounds weird, but reproduced it multiple times.)
 
@@ -284,7 +435,7 @@ Note that only USB C alternate mode Display Port will pass video. Any HDMI, DVI 
 
 |USB-C Dock 6-in-1 HDMI | Ugreen 50771 | | HDMI: works, Ethernet: works, 3x USB: works, USB-PD: works | Tested on Manjaro 2020/03/18 Works USB-C PD Chargers provided they can do 5V3A, works with 5V3A USB-C Raspberry Pi 4 power supply (Doesn't work with 5V2A USB-C). No HDMI Audio.
 
-|USB-C to DP cable | https://www.amazon.es/gp/product/B01N5RFAI4/[CHOETECH V-XCP-0012BK] | | good
+|USB-C to DP cable | https://www.amazon.es/gp/product/B01N5RFAI4/[CHOETECH V-XCP-0012BK] | | good |
 
 | https://www.apple.com/ca/shop/product/MQ4H2AM/A/thunderbolt-3-usb%E2%80%91c-cable-08-m[Thunderbolt 3 (USB‑C) Cable (0.8 m)] | Apple | | Display Port Alternate Mode: Fails, USB-PD: works | Tested on Manjaro 2020/05/29 - Charges but no video
 

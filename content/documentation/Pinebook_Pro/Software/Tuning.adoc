@@ -235,13 +235,11 @@ Some people find that a 14" LCD screen with 1080p, (1920 x 1080), has text and i
 * When at home or office, use an external monitor
 * Change the X-Windows DPI. One such method that someone used successfully, is: `echo "Xft.dpi: 150" >> ~/.Xresources` Change the 150 as desired to get the size adjustment you want.
 
-However, do not change the resolution of the LCD screen, otherwise you may end up with a blank / black screen. If that happens, see this troubleshooting section for the fix: link:/documentation/Pinebook_Pro/_index#After_changing_builtin_LCD_resolution.2C_blank_screen|Blank screen after changing builtin LCD resolution[Blank screen after changing builtin LCD resolution]
+However, do not change the resolution of the LCD screen, otherwise you may end up with a blank / black screen. If that happens, see this troubleshooting section for the fix: link:/documentation/Pinebook_Pro/_index#After_changing_builtin_LCD_resolution.2C_blank_screen[Blank screen after changing builtin LCD resolution]
 
 == Chromium tweaks
 
-
 === Flags
-
 
 From the https://github.com/mrfixit2001/updates_repo/blob/v1.8/pinebook/filesystem/default[official Debian image]:
 
@@ -311,5 +309,4 @@ Newer systems may use a different option as in the configuration below:
  $ zgrep HANTRO /proc/config.gz
  CONFIG_VIDEO_HANTRO=m
  CONFIG_VIDEO_HANTRO_ROCKCHIP=y
-
 

@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 Please note:
 
 * this list is most likely not complete
@@ -81,5 +80,4 @@ If the camera is only sensor noise lines over a black or white image, the camera
  [ 1703.641156] alloc_contig_range: [46100, 464f5) PFNs busy
 
 == Camera Adjustments
-
 

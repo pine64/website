@@ -1,18 +1,15 @@
 ---
-title: "SOQuartz exposed peripherals"
+title: "Exposed peripherals"
 draft: false
 menu:
   docs:
     title:
     parent: "SOQuartz"
-    identifier: "SOQuartz/SOQuartz_exposed_peripherals"
+    identifier: "SOQuartz/Exposed_peripherals"
     weight: 
 ---
 
-
-
-=== Displays / Cameras
-
+== Displays / Cameras
 
 * 1x HDMI
 * 2x DSI
@@ -20,7 +17,7 @@ menu:
 * 1x LVDS (not available when dual-mode DSI)
 * 1x CSI 4-line
 
-=== Connectivity
+== Connectivity
 
 * 1x Ethernet (1Gbit)
 * 1x USB 2.0 OTG

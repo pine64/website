@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 * Rockchip RK3566 SoC information:
 ** https://files.pine64.org/doc/quartz64/Rockchip%20RK3566%20Datasheet%20V1.0-20201210.pdf[Rockchip RK3566 ver 1.0 datasheet, already got release permission from Rockchip]
 * Rockchip PMU (Power Management Unit) Information:
@@ -30,7 +29,7 @@ menu:
 * i2C to PWM Controller user in BLADE info:
 ** https://files.pine64.org/doc/datasheet/quartz64/GP7101_cn_V1_qsxn.pdf[GP7101 i2c to PWM Controller Datasheet in Chinese]
 ** GP7101 i2c to PWM Controller Datasheet translated to English by neggles https://wiki.pine64.org/wiki/File:GP7101 cn V1 qsxn en.pdf
-** I<sup>2</sup>C address is 0x58 despite what datasheet says
+** I^2^C address is 0x58 despite what datasheet says
 * PoE DC/DC Controller user in BLADE info:
 ** https://files.pine64.org/doc/datasheet/quartz64/SD4954B%20Datasheet.pdf[Silan SD4954B PD and DC/DC Controller compatible with IEEE 802.3AF standard Datasheet]
 

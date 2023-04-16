@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 This page is under construction, but aims to get you more familiar with Bluetooth and how the PineTime utilizes it
 
 == PineTime Bluetooth LE agreements

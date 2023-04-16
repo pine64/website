@@ -9,8 +9,6 @@ menu:
     weight: 2
 ---
 
-
-
 === Video
 
 * Digital Video output up to 4K@30Hz

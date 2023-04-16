@@ -31,9 +31,7 @@ Are these errors bad/fatal? Inspecting the https://github.com/megous/linux/blob/
 
 === How can we test the camera?
 
-
 ==== Megapixels
-
 
 https://gitlab.com/postmarketOS/megapixels[Megapixels] requires a per-device file to configure cameras. This one isn't complete (most of its numbers are complete nonsense), but it should let us see what happens when Megapixels tries to access the camera:
 `pine64,pinephone-pro.ini`:
@@ -105,9 +103,7 @@ https://www.kernel.org/doc/html/v4.13/media/uapi/v4l/vidioc-qbuf.html[VIDIOC_DQB
 
 === Now what?
 
-
 ==== Does i2c work at all?
-
 
 The camera driver uses i2c; we can see the camera https://github.com/megous/linux/blob/c5af9f4f874a66b65c73c450b79f6a86b1b46332/arch/arm64/boot/dts/rockchip/rk3399-pinephone-pro.dts#L890-L914[in the .dts] to determine that it's on i2c bus 1, address 0x1a.
 
@@ -216,5 +212,4 @@ In some cases, the isp exposes 2 devices nodes, and the nodes have separate topo
 * https://files.pine64.org/doc/PinePhonePro/PinephonePro-Schematic-V1.0-20211127.pdf[Pinephone Pro Schematic]
 * https://blog.krybot.com/a?ID=01650-cea27a80-a1ab-4da1-9cb5-3945be91e3e1[Background on the GIC]
 * https://elinux.org/images/9/94/ISP-presentation.pdf[Background on the rkisp1 ISP]
-
 

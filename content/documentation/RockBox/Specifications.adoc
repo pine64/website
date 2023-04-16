@@ -9,7 +9,6 @@ menu:
     weight: 5
 ---
 
-
 * *Dimensions*: 106mm x 106mm x 16.9mm
 * *Weight*: 143 g
 * *CPU*: Rockchip RK3328, Quad core Cortex-A53 @ up to 1.5GHz

@@ -21,4 +21,3 @@ The idea is to create a silicone case like https://www.amazon.com/dp/B0BGNBFY6Z[
 * "You can find a local hackspace or makerspace. Or you can use one of the many services available via the Internet who can print a model for you. Just design, upload, and pay." (https://matrix.to/#/|OGWEsuBXqiRfaqvtfm:matrix.org/$TD5kfUkVLfx9Sbx5t0Z2oCsUTvmS0FPrwQn0Xrr5YiQ?via=matrix.org&via=tchncs.de&via=envs.net[source])
 * "The only one I know of is "https://www.pcbway.com/rapid-prototyping/injection-molding/"" (https://matrix.to/#/|jnYVOKPfUvfPXbQIpt:matrix.org/$sJ_QPEsqeSsJ8hRjgoZhZ9QwxpnslvOuBpT7SkSffAE?via=matrix.org&via=tchncs.de&via=matrix.ravenfieldsystems.com[source])
 
-

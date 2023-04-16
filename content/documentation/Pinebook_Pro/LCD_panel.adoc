@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 * Model: BOE NV140FHM-N49
 * 14.0" (35.56 cm) diagonal size
 * 1920x1080 resolution

@@ -73,7 +73,6 @@ List partitions:
  14              9730048            9861119      67108864       device
  15              9861120          241827775  118766927872       userdata
 
-
 WARNING: this process is very new|Proceed at your own risk.
 
 See https://github.com/m-weigand/pinenote-debian-recipes/releases/tag/v0.1[instructions on this artifact]. It will instruct you on extracting the rootfs into an empty ext4 partition. This can be done from Linux or Android. Further instructions on building your own rootfs https://github.com/m-weigand/pinenote-debian-recipes[can be found here].
@@ -153,7 +152,7 @@ While in maskrom mode, we need to have a u-boot to download onto the device for 
 
 You also need to install Python and pyelftools.
 
-<b> Note that rkbin is a &gt;5GB download|</b> This will take some time to clone and process the deltas.
+* Note that rkbin is a &gt;5GB download|* This will take some time to clone and process the deltas.
 
 ```
 git clone -b quartz64 https://gitlab.com/pgwipeout/u-boot-rockchip.git
@@ -165,7 +164,6 @@ make rk3566-quartz64_defconfig
 ./make.sh
 ```
 
-<blockquote>
 In the current version (current as of 2022-01-02), there might have to be made a change to one line to get a clean compilation:
 
 ```
@@ -185,6 +183,7 @@ index 123701fc3b..64a1ce6450 100644
 ```
 
 For systems where the global python executable points to python2, compilation fails with an error related to pyelftools not being installed (even if it is). To fix this:
+
 ```
 diff --git a/make.sh b/make.sh
 index 2bba05b4e4..cfe5b0afd5 100755
@@ -200,7 +199,6 @@ index 2bba05b4e4..cfe5b0afd5 100755
                         exit 1
                 fi
 ```
-</blockquote>
 
 === Entering Maskrom/Rockusb Mode
 
@@ -240,7 +238,6 @@ Jan 07 15:04:13 melttower kernel: usb 1-14: New USB device strings: Mfr=0, Produ
 $ rkdeveloptool list-devices
 DevNo=1 Vid=0x2207,Pid=0x350a,LocationID=10e    Maskrom
 
-
 If nothing shows up, you can try to hold down the power button for 5 seconds and then try again.
 
 === Running rkdeveloptool
@@ -276,9 +273,8 @@ You can create a filesystem image that replaces the Android boot or recovery par
 
 == Using fastboot
 
-Follow the steps for link:/documentation/PineNote/Development/Flashing#Creating a mainline boot image|Creating a mainline boot image[Creating a mainline boot image], but instead of flashing it with _rkdeveloptool_, use _fastboot_. You can enter fastboot in either of two ways:
+Follow the steps for link:/documentation/PineNote/Development/Flashing#Creating a mainline boot image[Creating a mainline boot image], but instead of flashing it with _rkdeveloptool_, use _fastboot_. You can enter fastboot in either of two ways:
 
 * Use "reboot bootloader" from adb or a UART console or
 * get a U-Boot prompt and run `fastboot usb 0`.
-
 

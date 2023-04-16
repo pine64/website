@@ -9,7 +9,6 @@ menu:
     weight: 5
 ---
 
-
 * https://www.youtube.com/watch?v=cJ0wpANpbyc[Video: A peek at Pine64's LoRa gateway and modules]
 * https://iotw.io/[IOTW - Blockchain-Enabled IoT Data Platform]
 * https://lupyuen.github.io/articles/pinedio[PineDio Stack BL604 RISC-V Board: Testing The Prototype]
@@ -35,5 +34,4 @@ menu:
 * https://lupyuen.github.io/articles/lvgl[Build an LVGL Touchscreen App with Zig]
 * https://youtu.be/_vADRu939sI[Apache NuttX RTOS on a RISC-V IoT Gadget: PineDio Stack BL604 (Video)]
 * https://youtu.be/-2OIHur8X1E[Simpler, safer LVGL Touchscreen Apps with Zig and Apache NuttX RTOS (Video)]
-
 

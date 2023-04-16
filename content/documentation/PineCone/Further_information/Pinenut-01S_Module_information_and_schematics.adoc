@@ -9,10 +9,8 @@ menu:
     weight: 
 ---
 
-
-
-image:/documentation/images/Pinenut-01S_PCB-Front.png[width=200]_image:/documentation/images/Pinenut-01S_PCB-Back.png[width=200]
-
+image:/documentation/images/Pinenut-01S_PCB-Front.png[width=200]
+image:/documentation/images/Pinenut-01S_PCB-Back.png[width=200]
 
 Schematics and GPIO definitions:
 

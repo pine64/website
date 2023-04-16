@@ -15,16 +15,19 @@ The *PinePhone (Pro) Keyboard Case* is a case compatible with the link:/document
 
 == Getting started
 
-[[File:Ppkb_description.png|thumb|upright=1.2|
-① Contact pads<br>
-② Battery switch<br>
-③ USB-C connector]]
+image:/documentation/images/Ppkb_description.png[]
+
+① Contact pads
+
+② Battery switch
+
+③ USB-C connector
 
 The keyboard case works with both the PinePhone and PinePhone Pro and features a clam-shell design. It uses pogo pins located on the phone’s midsection and attaches by replacing the default back cover. When folded, the phone’s screen and the keyboard rest securely against each other. The hinge features a 180° design, which not only allows for two-hand typing on a surface but also for comfortable thumb-typing when fully extended. The etched keycaps can be easily relocated for alternate layouts such as AZERTY or QWERTZ. The keyboard case runs an https://xff.cz/git/pinephone-keyboard/[open firmware], which means that anyone with the know-how can alter existing functions or add new ones. The bottom (keyboard) and top (phone) sections of the assembly are well-balanced thanks to the large, 6000mAh, internal battery capable of charging the PinePhone (Pro) during operation. The internal battery effectively triples the phone’s battery life. The internal keyboard battery can be manually toggled on/off and the keyboard’s battery charge level can be read in the supported operating systems; the keyboard remains functional with the battery fully depleted.
 
 You do not lose access to the PinePhone (Pro)’s USB-C port, speaker, microphone, or any external features, such as volume and lock buttons, with the keyboard attached. There is also a cut-out for the camera, torch, and headphone jack. The USB-C port on the keyboard is capable of powering both the keyboard and PinePhone (Pro) simultaneously. <s>This means that you can plug in a USB mouse, a USB-C dongle, or some other peripheral while the phone and keyboard’s internal battery charge</s>.
 
-WARNING: Do NOT plug any device into the phone USB-C port while the keyboard is attached. Doing so may result in damage or loss of the keyboard charging functionality. Technical details regarding the issue can be found in https://www.pine64.org/2022/05/31/may-update-worth-the-wait/[this] blog post. Please see the link:/documentation/Phone_Accessories/Keyboard#Safety|safety[safety] section.
+WARNING: Do NOT plug any device into the phone USB-C port while the keyboard is attached. Doing so may result in damage or loss of the keyboard charging functionality. Technical details regarding the issue can be found in https://www.pine64.org/2022/05/31/may-update-worth-the-wait/[this] blog post. Please see the link:/documentation/Phone_Accessories/Keyboard#safety[safety] section.
 
 Please keep in mind that the keyboard case transforms the PinePhone (Pro) into a PDA, which means that taking calls will likely prove awkward without a wired or wireless headset connected (try speakerphone button if available).
 
@@ -42,7 +45,7 @@ The keyboard will function automatically once a PinePhone running a compatible o
 
 The keyboard features an in-built 6000mAh battery. The battery can be turned ON/OFF using the button on the right leading edge of the keyboard ②. A short button press activates the internal battery while a long (15 seconds) press or double press deactivates it. Compatible operating systems display both the PinePhone’s and keyboard’s battery status together.
 
-You should charge the PinePhone and the keyboard <u>only</u> using the USB-C ③ port on the keyboard. The keyboard’s USB-C port cannot be used for peripherals. The PinePhone’s USB-C port remains operational when mounted in the keyboard and can be used for data and peripherals.
+You should charge the PinePhone and the keyboard *only* using the USB-C ③ port on the keyboard. The keyboard’s USB-C port cannot be used for peripherals. The PinePhone’s USB-C port remains operational when mounted in the keyboard and can be used for data and peripherals.
 
 === Troubleshooting
 
@@ -63,27 +66,17 @@ The keys of the top row may be less responsive. The issue can be worked around b
 
 ==== Software issues
 
-For any software issue please see the link:/documentation/Phone_Accessories/Keyboard#Software support|Software support section[Software support section] and the link:/documentation/Phone_Accessories/Keyboard#Frequently asked questions|FAQ section[FAQ section].
+For any software issue please see the link:/documentation/Phone_Accessories/Keyboard#software_support[Software support section] and the link:/documentation/Phone_Accessories/Keyboard#frequently_asked_questions[FAQ section].
 
 == Safety
 
-[WARNING]
-
-==== 
-
-Do NOT plug any device into the phone USB-C port while the keyboard is attached. Doing so may result in damage or loss of the keyboard charging functionality. Technical details regarding the issue can be found in https://www.pine64.org/2022/05/31/may-update-worth-the-wait/[this] blog post. <br><br>
-
-Due to this limitation users may want block the USB-C port of the phone while the keyboard is connected to prevent connecting any USB device to the phone under any circumstances. See for example https://fosstodon.org/web/@silverhax/107783280758831068[here].
-
-==== 
+WARNING: Do NOT plug any device into the phone USB-C port while the keyboard is attached. Doing so may result in damage or loss of the keyboard charging functionality. Technical details regarding the issue can be found in https://www.pine64.org/2022/05/31/may-update-worth-the-wait/[this] blog post. Due to this limitation users may want block the USB-C port of the phone while the keyboard is connected to prevent connecting any USB device to the phone under any circumstances. See for example https://fosstodon.org/web/@silverhax/107783280758831068[here].
 
 *Please note:* Only use mild isopropyl alcohol when wiping down the clamshell of the device. Stronger solutions may partially strip the coatings. Do not lube the keyboard with GPL 205G0 switch grease, it can cause problems with the key responsiveness and tactility.
 
 == Software support
 
-
 === Kernel-space driver
-
 
 Kernel driver implementation from Samuel Holland: CONFIG_IP5XXX_POWER (module ip5xxx_power) and CONFIG_KEYBOARD_PINEPHONE (module pinephone_keyboard) https://github.com/smaeul/linux/commits/wip/pp-keyboard
 
@@ -111,11 +104,9 @@ In *Sxmo* disabling the keyboard is not required, as the keyboard will only show
 
 == Keyboard layout
 
-The keyboard features a default layout (pictured below) created and agreed upon by the community. The keyboard layout can be altered using software as well as by physically repositioning keycaps. All keycaps, with the <u>exception</u> of space and return keys, can be easily and safely relocated for alternative layouts corresponding to software settings.
+The keyboard features a default layout (pictured below) created and agreed upon by the community. The keyboard layout can be altered using software as well as by physically repositioning keycaps. All keycaps, with the _exception_ of space and return keys, can be easily and safely relocated for alternative layouts corresponding to software settings.
 
-<gallery mode="nolines" widths="500px" heights="400px">
-Image:Ppkb_layout2.png|The keyboard layout how the keys were originally intended
-
+image:/documentation/Ppkb_layout2.png[The keyboard layout how the keys were originally intended]
 
 == Keyboard firmware
 
@@ -133,7 +124,8 @@ Much time and effort went into the development of this firmware. If you wish to 
 
 === Firmware License
 
-<blockquote>Copyright (C) 2021 Ondřej Jirman <megi@xff.cz>
+```
+Copyright (C) 2021 Ondřej Jirman <megi@xff.cz>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -145,7 +137,8 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 See GNU General Public License for more details.
 
-GNU General Public License http://www.gnu.org/licenses/</blockquote>
+GNU General Public License http://www.gnu.org/licenses/
+```
 
 == Hardware
 
@@ -162,49 +155,60 @@ Key hardware specifications:
 
 == Frequently asked questions
 
-{{Under construction}}
+*What is the keyboard driver situation?*
 
-* What is the keyboard driver situation? *<br>
 See https://xnux.eu/pinephone-keyboard/faq.html#drivers
 
-* Are keyboard drivers included in my distribution? *<br>
+*Are keyboard drivers included in my distribution?*
+
 See https://xnux.eu/pinephone-keyboard/faq.html#distros
 
-* What's the status of the existing software for the keyboard? *<br>
+*What's the status of the existing software for the keyboard?*
+
 See https://xnux.eu/pinephone-keyboard/faq.html#sw-status
 
-* My keyboard doesn't work (well)|*<br>
+*My keyboard doesn't work (well)!*
+
 See https://xnux.eu/pinephone-keyboard/faq.html#faq-ts
 
-* How does charging work? *<br>
+*How does charging work?*
+
 See https://xnux.eu/pinephone-keyboard/faq.html#charging
 
-* What charger is best for the keyboard? *<br>
+*What charger is best for the keyboard?*
+
 See https://xnux.eu/pinephone-keyboard/faq.html#chargers
 
-* How safe is the charger circuit in the keyboard? *<br>
+*How safe is the charger circuit in the keyboard?*
+
 See https://xnux.eu/pinephone-keyboard/faq.html#safety
 
-* Keyboard doesn't react to any key presses *<br>
+*Keyboard doesn't react to any key presses*
+
 See https://xnux.eu/pinephone-keyboard/faq.html#ts
 
-* Keyboard works but top row of keys is less responsive *<br>
+*Keyboard works but top row of keys is less responsive*
+
 See https://xnux.eu/pinephone-keyboard/faq.html#ts
 
-* Phone is not charging from the keyboard *<br>
+*Phone is not charging from the keyboard*
+
 See https://xnux.eu/pinephone-keyboard/faq.html#ts
 
-* Phone is charging slowly from the keyboard battery *<br>
-See https://xnux.eu/pinephone-keyboard/faq.html#ts
-and https://forum.pine64.org/showthread.php?tid=16979&pid=111414#pid111414#ts
+*Phone is charging slowly from the keyboard battery*
 
-* Can you open the keyboard and add extra functionality? *<br>
+See https://xnux.eu/pinephone-keyboard/faq.html#ts and https://forum.pine64.org/showthread.php?tid=16979&pid=111414#pid111414#ts
+
+*Can you open the keyboard and add extra functionality?*
+
 It is possible to do so, however the production units can be extremely difficult to open. Do not attempt to open the keyboard if you do not want to risk cosmetic damage (scaring and scratching of the plastic).
 
-* How can I rotate the screen display in tty ? *<br>
+*How can I rotate the screen display in tty ?*
+
 Under Linux this can be done using the command `echo 1 | sudo tee /sys/class/graphics/fbcon/rotate`
 
-* Top row stopped displaying symbols|(kernel > 5.17) * <br>
+*Top row stopped displaying symbols|(kernel > 5.17)*
+
 * For Phosh (at the example of Mobian) see: https://wiki.mobian-project.org/doku.php?id=ppaccessories
 * For TTY and SWMO see: https://codeberg.org/HazardChem/PinePhone_Keyboard
 * For Plasma Mobile, one of either _/etc/xdg/kxkbrc_ or _~/.config/kxkbrc_ is necessary, with contents as described in https://gitlab.com/postmarketOS/pmaports/-/merge_requests/3438
@@ -216,22 +220,23 @@ Under Linux this can be done using the command `echo 1 | sudo tee /sys/class/gra
 
 == Schematics, Datasheet and certifications
 
-* Schematic:
-** https://files.pine64.org/doc/PinePhone/PinePhone%20Keyboard%20Schematic%20V1.0-20211009.pdf[PinePhone Keyboard Schematic ver 1.0 20211009]
+Schematic:
 
-* Datasheet:
-** https://files.pine64.org/doc/datasheet/pinephone/EM85F684A.pdf[PEM85F684A USB Microcontroller Datasheet]
-** https://files.pine64.org/doc/datasheet/pinephone/IP5209.pdf[IP5209 Power Bank SOC Datasheet]
-** https://files.pine64.org/doc/datasheet/pinephone/txs0104e.pdf[TXS0104E 4-Bit Bidirectional Voltage-Level Translator Datasheet]
+* https://files.pine64.org/doc/PinePhone/PinePhone%20Keyboard%20Schematic%20V1.0-20211009.pdf[PinePhone Keyboard Schematic ver 1.0 20211009]
 
-* Certifications:
-** https://files.pine64.org/doc/cert/PinePhone%20Keyboard%20FCC%20Certificate-S21111804102001.pdf[PinePhone Keyboard FCC Certificate]
-** https://files.pine64.org/doc/cert/PinePhone%20Keyboard%20CE%20Certificate-S21111804101001.pdf[PinePhone Keyboard CE RED Certificate]
+Datasheet:
+
+* https://files.pine64.org/doc/datasheet/pinephone/EM85F684A.pdf[PEM85F684A USB Microcontroller Datasheet]
+* https://files.pine64.org/doc/datasheet/pinephone/IP5209.pdf[IP5209 Power Bank SOC Datasheet]
+* https://files.pine64.org/doc/datasheet/pinephone/txs0104e.pdf[TXS0104E 4-Bit Bidirectional Voltage-Level Translator Datasheet]
+
+Certifications:
+
+* https://files.pine64.org/doc/cert/PinePhone%20Keyboard%20FCC%20Certificate-S21111804102001.pdf[PinePhone Keyboard FCC Certificate]
+* https://files.pine64.org/doc/cert/PinePhone%20Keyboard%20CE%20Certificate-S21111804101001.pdf[PinePhone Keyboard CE RED Certificate]
 
 == External links
 
 * https://www.pine64.org/2022/01/11/pinephone-pro-explorer-edition-pre-orders-open-january-11/[Pre-order announcement]
 * FAQ of the developer megous: https://xnux.eu/pinephone-keyboard/faq.html
-
-
 

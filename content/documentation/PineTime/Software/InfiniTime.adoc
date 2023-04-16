@@ -196,4 +196,3 @@ This new version of the bootloader fixes link:#Black_screen_after_a_reset_in_sle
 * Fix display corruption when the timer is triggered (#1053)
 * Fix freeze in Music app when the title/album name were too long (#1036 #1054)
 
-

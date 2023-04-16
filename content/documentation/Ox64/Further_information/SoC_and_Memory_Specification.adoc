@@ -9,14 +9,13 @@ menu:
     weight: 
 ---
 
-
 image:/documentation/images/Bouffalo_Lab_icon.png[right,title="right"]
 
 Based on the https://en.bouffalolab.com/product/[Bouffalo Lab BL808]
 
 image:/documentation/images/BL808_Block_Diagram.jpg[width=500]
 
-=== CPU Architecture
+== CPU Architecture
 
 image:/documentation/images/T-Head.png[width=200]
 
@@ -51,7 +50,7 @@ T-Head E902 150MHz 32-bit RISC-V CPU:
 
 * See https://www.t-head.cn/product/e902?lang=en[here]
 
-=== System Memory
+== System Memory
 
 * Embedded 64MB PSRAM
 

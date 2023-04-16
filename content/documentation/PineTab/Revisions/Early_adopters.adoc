@@ -25,7 +25,6 @@ The device shipped with a beta build of Ubuntu Touch by UBports. This build is a
 * GUI apps with Libertine are not working, because of missing bits between wayland and Libertine
 * Cannot add accounts (Google, Evernote...) in System Settings
 
-
 The first-time setup wizard advises the user to unplug the keyboard dock (avoiding the mouse issues) and update the system. Unfortunately, as of this update to this page (September 8, 2020) this will not fix any of the issues above.
 
 === 16GB/64GB storage software error
@@ -55,9 +54,7 @@ Use user _phablet_ along with your password or PIN to log in.
 
 == Wifi
 
-
 === Wifi disappears
-
 
 If wifi stopped working, first try usual means:
 

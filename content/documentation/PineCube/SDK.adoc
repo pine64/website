@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 Stock Linux:
 
 * https://files.pine64.org/SDK/PineCube/PineCube%20Stock%20BSP-SDK%20ver1.0.7z[Direct Download from pine64.org] (MD5 (7zip file): efac108dc98efa0a1f5e77660ba375f8, file size: 3.50GB)
@@ -18,7 +17,7 @@ Compilation:
 
 You can either setup a machine for the build environment, or use a Vagrant virtual machine provided by https://elimo.io[Elimo Engineering]
 
-=== Compile on a dedicated machine
+== Compile on a dedicated machine
 
 Recommended system requirements:
 
@@ -94,7 +93,7 @@ Unpack SDK and then compile and pack the image:
  make -j3
  pack
 
-=== Compile using Vagrant
+== Compile using Vagrant
 
 You can avoid setting up your machine and just use Vagrant to spin up a development environment in a VM.
 
@@ -111,7 +110,7 @@ After spinning up the VM, you just need to run the build:
  make -j3
  pack
 
-=== Flashing the image
+== Flashing the image
 
 See link:/documentation/Unsorted/PhoenixCard[PhoenixCard] for a manual on how to flash Allwinners BSP images.
 

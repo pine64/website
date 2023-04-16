@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 In total, there are four LEDs on the Pinebook Pro, three of which are placed in the top-left side of the keyboard, and one near the barrel port:
 
 . The red LED next to the barrel port indicates charging, in three ways. First, it will illuminate steadily when either the factory power supply or a USB Type-C charger is connected to the Pinebook Pro, and the battery is getting charged. Second, if the battery is at 100%, the LED will remain turned off regardless of the connected power input. However, this is https://forum.pine64.org/showthread.php?tid=10899[rather rarely achieved]. Third, this LED will flash at 0.5 Hz if there are any problems that prevent charging, such as the battery becoming too hot.

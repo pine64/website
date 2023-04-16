@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 The following projects are documented here:
 
 * link:/documentation/PineCube/Projects/Streaming_the_camera_to_the_network[Streaming the camera to the network]

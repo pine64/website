@@ -1,5 +1,5 @@
 ---
-title: "PinePhone Thermal Tweaks"
+title: "Thermal tweaks"
 draft: false
 menu:
   docs:

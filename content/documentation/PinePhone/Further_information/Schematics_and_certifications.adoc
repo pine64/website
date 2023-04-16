@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 PinePhone mainboard schematic:
 
 * https://files.pine64.org/doc/PinePhone/PinePhone%20v1.2b%20Released%20Schematic.pdf[PinePhone mainboard Released Schematic ver 1.2b]

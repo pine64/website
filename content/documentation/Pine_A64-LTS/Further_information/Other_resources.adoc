@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 * https://linux-sunxi.org/Pine64#Manufacturer_images[Linux Sunxi Wiki page on PINE A64]
 * https://github.com/umiddelb/z2d/tree/master/pine64[Collection of scripts to set up a minimal Xenial 14.04.3 / Debian 8 Jessie root filesystem Contributed By Uli Middelberg]
 * https://github.com/apritzel/pine64[Linux Image created by Andre Przywara]
@@ -23,5 +22,4 @@ menu:
 * https://rayhightower.com/blog/2016/04/04/pine64-quick-start-guide-using-mac-os-x/[PINE64 Quick Start Guide (with Gotchas)]
 * https://softwarebakery.com/shrinking-images-on-linux[Shrinking images on Linux by FrozenCow]
 * https://gitlab.manjaro.org/packages/community/manjaro-arm-installer[Manjaro Arm installation script]
-
 

@@ -31,9 +31,10 @@ The Anakin kit consists of following components:
 * Lithium Ion Battery case (note: battery not included, can accommodate 1-3 pieces of 18650 size Lithium Ion batter. In general, one is good enough)
 * Quectel EC20 R2.1 LTE Module (note: The SIM tray design not distinguish polarity well and all reverse slot in)
 
-
-image:/documentation/images/Anakin_kit_1.jpg[]_image:/documentation/images/Anakin_kit_2.jpg[]_image:/documentation/images/Anakin_kit_4.jpg[]_image:/documentation/images/Anakin_kit_3.jpg[]
-
+image:/documentation/images/Anakin_kit_1.jpg[]
+image:/documentation/images/Anakin_kit_2.jpg[]
+image:/documentation/images/Anakin_kit_4.jpg[]
+image:/documentation/images/Anakin_kit_3.jpg[]
 
 == Accessories Step-by-Step Guides
 
@@ -48,7 +49,8 @@ Under link:/documentation/Unsorted/Accessories_Step_by_Step_Guides['Guides for P
 * Based on Allwinner A64/R18
 * R18 and A64 are identical SoC but R18 committed for 10 years supply by vendor.
 
-image:/documentation/images/Allwinner_A64.jpg[]_image:/documentation/images/Allwinner_R18.png[]
+image:/documentation/images/Allwinner_A64.jpg[]
+image:/documentation/images/Allwinner_R18.png[]
 
 === CPU Architecture
 
@@ -188,5 +190,4 @@ LTE module information:
 * https://www.stdin.xyz/downloads/people/longsleep/pine64-images/[PINE64 Linux image by Longsleep]
 * https://softwarebakery.com/shrinking-images-on-linux[Shrinking images on Linux by FrozenCow]
 * https://osmocom.org/projects/quectel-modems/wiki/EC25/24[Quectel EC-25 LTE module open source information]
-
 

@@ -9,7 +9,6 @@ menu:
     weight: 6
 ---
 
-
 image:/documentation/images/PinePhone_Kill_Interruptors_de_Maquinari_del_PinePhone_4529.jpg[Picture of the privacy switches,title="Picture of the privacy switches",width=320]
 
 The PinePhone features six switches that can be used to configure its hardware. They are numbered 1-6, with switch 1 located nearest to the modem. Their "on" position is toward the top of the phone.

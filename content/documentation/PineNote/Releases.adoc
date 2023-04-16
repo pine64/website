@@ -31,4 +31,3 @@ NOTE: Check the https://github.com/m-weigand/pinenote-debian-recipes/tree/dev[de
 
 See https://wiki.postmarketos.org/wiki/PINE64_PineNote_(pine64-pinenote)
 
-

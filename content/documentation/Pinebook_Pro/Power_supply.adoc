@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 * Input Power: 5V DC @ 3A
 * Mechanical: 3.5mm OD / 1.35mm ID, Barrel jack
 * USB-C 5V, 15W PD quickcharge

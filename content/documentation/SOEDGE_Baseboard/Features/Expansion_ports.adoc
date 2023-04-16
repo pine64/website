@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 * DSI - Display Serial Interface, 4 lanes MiPi, up to 1080P
 * TP - Touch Panel Port, SPI with interrupt
 * RTC - Real Time Clock Battery Connector

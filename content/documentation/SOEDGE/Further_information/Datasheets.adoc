@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 Rockchip RK1808 SoC information:
 
 * http://opensource.rock-chips.com/images/4/43/Rockchip_RK1808_Datasheet_V1.2_20190527.pdf[Rockchip RK1808 ver 1.2 datasheet]

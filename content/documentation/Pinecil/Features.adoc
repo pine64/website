@@ -9,7 +9,6 @@ menu:
     weight: 2
 ---
 
-
 * Portability and Temperature control
 * Soldering tips:
 . Replaceable and low cost
@@ -19,7 +18,7 @@ menu:
 . USB-C PD (power delivery), minimum 3 Amps, 12V.
 . DC 5525 Barrel jack charger, minimum 3 Amps, 12V.
 . Battery: connect to 18V-21V Lithium-ion tool batteries or 3S/4S/5S LiPo batteries.
-* Pinecil V2 has a BL706 chip, see link:#History_of_Pinecil_Changes|history of changes below[history of changes below].
+* Pinecil V2 has a BL706 chip, see link:#History_of_Pinecil_Changes[history of changes below].
 ** Board link:#Schematics,_Board_Data,_Certifications[schematics] are open. Software is open. Create your own|
 ** https://pine64.com/product/pinecil-break-out-board/[Pinecil breakout board] lets you use JTAG, GPIO, A2D, SPI, and more.
 

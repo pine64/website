@@ -9,10 +9,9 @@ menu:
     weight: 5
 ---
 
-
 If the PinePhone Pro is not booting (either booting incompletely into a boot splash or tty or if the PinePhone Pro is showing no signs of life) this will typically have the following two reasons:
 
-==== The battery is fully drained
+== The battery is fully drained
 
 If the battery is drained then the board can reset during boot causing a boot loop because of undervoltage condition. It can happen on all stages of the boot including _U-Boot_ bootloader, display initialization and USB (re-)configuration. In that case it is not possible to charge the phone. The battery can be charged by interrupting the boot loop by booting the PinePhone Pro into _Maskrom mode_ or by charging the battery externally. It is possible to follow these instructions without a computer by using a wall charger, however it would not be possible to determine if Maskrom mode was started successfully. To boot the PinePhone Pro into _Maskrom mode_:
 
@@ -34,15 +33,15 @@ NOTE: If the device doesn't appear under _lsusb_ please try again with a differe
 
 The device should now be able to boot from the boot medium again. If that is not the case the installation got corrupted, as explained below.
 
-==== The installation is corrupted
+== The installation is corrupted
 
 The PinePhone Pro won't be able to boot if the installation on the SPI flash, the eMMC or the microSD card got corrupted. To boot a working operating system:
 
-* Prepare a microSD card as explained in the section link:/documentation/PinePhone_Pro/_index#Flashing to microSD card|Flashing to microSD card[Flashing to microSD card]
+* Prepare a microSD card as explained in the section link:/documentation/PinePhone_Pro/_index#flashing_to_microSD_card[Flashing to microSD card]
 * Remove any USB-C cable or device or add-on case from the PinePhone Pro
 * Make sure the device is powered off by shortly removing the battery for a second
 * Insert the microSD card into the top slot of the PinePhone Pro. Make sure the microSD card is inserted all the way and that the notch of the right side of the microSD card is not visible anymore.
-* Power on the device while bypassing the SPI and eMMC as explained under link:/documentation/PinePhone_Pro/_index#Boot order|Boot order[Boot order]
+* Power on the device while bypassing the SPI and eMMC as explained under link:/documentation/PinePhone_Pro/_index#boot_order[Boot order]
 
 The device should now boot from the microSD card. If the phone does not boot from the microSD card the microSD card was flashed with an incompatible image or the battery got drained as explained above.
 

@@ -1,5 +1,5 @@
 ---
-title: "PinePhone Modding"
+title: "Mods"
 draft: false
 menu:
   docs:
@@ -95,5 +95,4 @@ ANX states:
 ===== VCONN mod, Replacement
 
 Using 2x NCP334FCT2G you could do the full fix, making VCONN powered devices able to negotiate power. IT needs the parts to be removed first without damaging the pads, and then replacing the parts.
-
 

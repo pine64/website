@@ -54,7 +54,7 @@ Here's a table of the current support for different hardware. "In review" means 
 |scope="row" | H.264/AVC
 | | Yes
 | | Yes
-| | Yes <sup >a</sup>
+| | Yes <sup >a^
 | | No
 
 |scope="row" | H.265/HEVC
@@ -110,7 +110,6 @@ No mainline driver exists for it so far.
 
 == Software
 
-
 === GStreamer
 
 H.264 video decoding is possible when using GStreamer built from source, or an application utilizing it such as https://github.com/Rafostar/clapper[Clapper] or https://flathub.org/apps/details/org.sigxcpu.Livi[µPlayer]. µPlayer includes a indicator of when hardware acceleration is properly working and in use.
@@ -144,5 +143,4 @@ In mpv versions prior to 0.35, you can use the copyback hwdec with:
 == See Also
 
 * link:/documentation/Unsorted/Mainline_Hardware_Encoding[Mainline Hardware Encoding]
-
 

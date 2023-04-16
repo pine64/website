@@ -62,4 +62,3 @@ HW fix is to replace AW3512 with a variant of the chip that preserves the EN sig
 * https://www.youtube.com/watch?v=ZqOb45N2sMc[Video: "The equally stupid way"], workaround video by Dalton, using a soldering iron. Less chances to permanently damage the board than the next if you are handy with a soldering iron, but still high.
 * https://www.youtube.com/watch?v=j3jc7Mvn9Eo[Video: "The stupid way"] workaround video by Lukasz, with pliers. Slightly damages the circuit board, preventing you from soldering the replacement chips at a later point. You might be fine with this.
 
-

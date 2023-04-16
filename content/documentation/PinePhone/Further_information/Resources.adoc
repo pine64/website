@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 The following articles contain more specific information:
 
 * link:/documentation/PinePhone/Accessibility[Accessibility]

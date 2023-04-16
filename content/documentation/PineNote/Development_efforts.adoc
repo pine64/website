@@ -9,7 +9,6 @@ menu:
     weight: 2
 ---
 
-
 The following page discusses the development efforts for the PineNote:
 
 * link:/documentation/PineNote/Development/_index[PineNote Development] for general information regarding how to flash the device and other development information.

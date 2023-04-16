@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 * microSD - bootable, support SDHC and SDXC, storage up to 256GB
 * USB -	2 USB2.0 Host port
 

@@ -9,14 +9,13 @@ menu:
     weight: 
 ---
 
-
 Mainline Linux works on the RockBox without patches. To create a compatible u-boot image, https://github.com/mrfixit2001/uboot_builder may be used. The _dtb_ has to be compiled from a recent _dts_, such as https://github.com/mrfixit2001/mainline-kernel/blob/master/arch/arm64/boot/dts/rockchip/rk3328-rockbox.dts[this], otherwise network and video won't work.
 
-==== Building u-boot
+== Building u-boot
 
 TIP: TODO
 
-==== Building the dtb
+== Building the dtb
 
 The dtb can be compiled from a recent dts. To do that, download a kernel source and add a dts, or use a kernel source with an fitting dts. The second variant is showcased here:
 
@@ -36,7 +35,7 @@ Now compile the dts files:
 
 The compiled dtb file can now be copied from _/arch/arm64/boot/dts/rockchip/rk3328-rockbox.dtb_ into for example the EXTLINUX location.
 
-==== Configuring EXTLINUX
+== Configuring EXTLINUX
 
 In the EXTLINUX location, the _/extlinux/extlinux.conf_ should be pointed to the correct kernel image and the correct dtb file. An example configuration (with serial output with 1500000 baud being enabled for the OS and with the root directory set to the second partition _mmcblk1p2_) can look like the following example:
 

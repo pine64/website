@@ -15,8 +15,8 @@ Vector images and pictures for the link:/documentation/PineNote/_index[PineNote]
 
 Background ideas:
 
-
-image:/documentation/images/Pinenotebg1.png[Author:_Funeral,_License:_CC0,title="Author:_Funeral,_License:_CC0"]_image:/documentation/images/Pinenotebg2.png[Author:_Funeral,_License:_CC0,title="Author:_Funeral,_License:_CC0"]_image:/documentation/images/Pinenotebg3.png[Author:_Funeral,_License:_CC0,title="Author:_Funeral,_License:_CC0"]_image:/documentation/images/Pinenotebg4.png[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
-
-
+image:/documentation/images/Pinenotebg1.png[Author:_Funeral,_License:_CC0,title="Author:_Funeral,_License:_CC0"]
+image:/documentation/images/Pinenotebg2.png[Author:_Funeral,_License:_CC0,title="Author:_Funeral,_License:_CC0"]
+image:/documentation/images/Pinenotebg3.png[Author:_Funeral,_License:_CC0,title="Author:_Funeral,_License:_CC0"]
+image:/documentation/images/Pinenotebg4.png[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
 

@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 Allwinner A64 SoC information:
 
 * https://files.pine64.org/doc/datasheet/pine64/A64%20brief%20v1.0%2020150323.pdf[Allwinner A64 SoC Brief Introduction]

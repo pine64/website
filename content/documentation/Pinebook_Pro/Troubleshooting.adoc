@@ -28,14 +28,12 @@ https://archived.forum.manjaro.org/t/another-mirror-transition-manual-interventi
 
 == Power And Boot
 
-
 === New from the factory - Pinebook Pro won't boot / power on
 
-
 * Some Pinebook Pros came from the factory with the eMMC switch in the disabled position. It should be switched towards the back / hinge to enable the eMMC.
-* The eMMC may have come loose during shipment. link:/documentation/Pinebook_Pro/_index#Accessing the Internals - Disassembly and Reassembly|Open the back[Open the back] and verify that the eMMC is firmly seated.
+* The eMMC may have come loose during shipment. link:/documentation/Pinebook_Pro/_index#Accessing the Internals - Disassembly and Reassembly[Open the back] and verify that the eMMC is firmly seated.
 * You may want to try unplugging the SD card daughterboard ribbon cable and see if it powers on (remove the battery and peel off a bit of the tape before unplugging it to avoid damage). If it does, try reseating it on both sides. It might have come loose during shipping.
-* It's possible that your eMMC is empty from the factory. Simply create a bootable link:/documentation/Pinebook_Pro/_index#Pinebook_Pro_images|SD card[SD card] and see if your Pinebook Pro link:/documentation/Pinebook_Pro/_index#Boot_sequence_details|boots[boots]. If so, you can then write an OS image to the eMMC, see link:/documentation/General/Getting_started[Getting started].
+* It's possible that your eMMC is empty from the factory. Simply create a bootable link:/documentation/Pinebook_Pro/_index#Pinebook_Pro_images[SD card] and see if your Pinebook Pro link:/documentation/Pinebook_Pro/_index#Boot_sequence_details[Getting started].
 
 === Pinebook Pro will not power on after toggling the eMMC enable/disable switch
 
@@ -48,7 +46,7 @@ https://archived.forum.manjaro.org/t/another-mirror-transition-manual-interventi
 
 === Pinebook Pro won't boot when using UART console cable
 
-* If you're using the link:/documentation/Pinebook_Pro/_index#Using_the_UART|UART[UART] cable sold on the https://pine64.com/product-category/pinebook-pro/[Pine Store], you may want to see if it boots after you disconnect it. Some users report that custom-made cables based on FTDI UART adapters do not cause this issue.
+* If you're using the link:/documentation/Pinebook_Pro/_index#Using_the_UART[Pine Store], you may want to see if it boots after you disconnect it. Some users report that custom-made cables based on FTDI UART adapters do not cause this issue.
 * Make sure your USB to serial UART device is 3.3v. Many are 5v and some even +-12v. Pinebook Pro's only support 3.3v and may act eratically when using higher voltage. Further, higher voltage could permananetly damage the Pinebook Pro's SoC.
 
 === Pinebook Pro will not sleep with lid closed
@@ -90,11 +88,9 @@ Your Pinebook Pro should now sleep properly when the lid is closed.
 
 == WiFi And Bluetooth
 
-
 === WiFi issues
 
-
-* First, check the privacy switches to make sure your WiFi is enabled. They are persistant. See link:/documentation/Pinebook_Pro/_index#Privacy_Switches|Privacy Switches[Privacy Switches]
+* First, check the privacy switches to make sure your WiFi is enabled. They are persistant. See link:/documentation/Pinebook_Pro/_index#Privacy_Switches[Privacy Switches]
 * Next, you may have to modify the `/etc/NetworkManager/NetworkManager.conf` as root user, and replace `managed=false` with `managed=true`. Then reboot.
 * If that doesn't work, and if `dmesg | grep brcmfmac` reports missing firmware, you will need to manually add the brcmfmac43455-sdio.* firmware files. This is due to a quiet change in the 2022 hardware revision. This https://github.com/reMarkable/brcmfmac-firmware[repo] has been tested and confirmed to work by no112.
 * For connections that drop and resume too often, it might be due to WiFi power management from earlier OS releases. Later OS releases either removed WiFi power management, or default to full power. (Power management can be turned off via command line with `iw dev wlan0 set power_save off` or `iwconfig wlan0 power off`, although it is not persistent through re-boot.)
@@ -110,7 +106,7 @@ Your Pinebook Pro should now sleep properly when the lid is closed.
 === Bluetooth issues
 
 * When connecting a Bluetooth device, such as a Bluetooth mouse, it does not automatically re-connect on re-boot. In the Bluetooth connection GUI, there is a yellow star for re-connect on boot. Use that button to enable a persistent connection. It can be changed back later.
-* Bluetooth-attached speakers or headset require the <b>pulseaudio-module-bluetooth</b> package. If not already installed, it can be installed with a package manager or using the following: `sudo apt-get install pulseaudio-module-bluetooth`
+* Bluetooth-attached speakers or headset require the *pulseaudio-module-bluetooth* package. If not already installed, it can be installed with a package manager or using the following: `sudo apt-get install pulseaudio-module-bluetooth`
 * When using Bluetooth-attached speakers or headset and 2.4Ghz WiFi at the same time, you may experience stuttering of the audio. One solution is to use 5Ghz WiFi if you can. Or you may try using a different 2.4Ghz channel, perhaps channel 1 or the top channel, (11 in the USA, or 13/14 in some other countries).
 
 == Sound issues
@@ -133,9 +129,7 @@ Some PineBook Pro users have reported issues with the default settings for the A
 
 == Keyboard and trackpad
 
-
 === Random Duplicated Key-Presses
-
 
 Whether caused by an error in the Hailuck Keyboard firmware, or a physical defect in the membrane, the Pinebook Pro keyboard may randomly register some key-presses twice. The solution to this problem is trivial. Simply run the following command:
 
@@ -155,7 +149,7 @@ This issue occurs when your thumb or edge of the palm makes contact with left or
 
 Using Fn+F7 to disable the touchpad will keep it from also disabling the keyboard.
 
-A link:/documentation/Pinebook_Pro/_index#Trackpad|firmware update[firmware update] has been released to address this.
+A link:/documentation/Pinebook_Pro/_index#Trackpad[firmware update] has been released to address this.
 
 === Key mapping
 
@@ -213,10 +207,9 @@ If the above fix did not work, you can try this:
 * Login using the GUI and test
 * If you are still loggied in via the GUI, you will have to reboot using `sudo shutdown -r now`. After the reboot, you should be able to login to the GUI login and have the resolution back to normal.
 
-After restoring the usability of your Pinebook Pro's graphical screen, also see link:/documentation/Pinebook_Pro/_index#Improving readability|this section[this section] on improving readability and usability.
+After restoring the usability of your Pinebook Pro's graphical screen, also see link:/documentation/Pinebook_Pro/_index#Improving readability[this section] on improving readability and usability.
 
 == Outer Shell
-
 
 === Cracks in the plastic
 
@@ -231,5 +224,4 @@ This seems to apply to the first batches in 2019. Later versions of the keyboard
 There have been a few reports of cracks in the plastic around the LCD display, but these appear to be less common. There are replacement LCDs with top cases available in the Pine64 Store.
 
 Be extra careful if you open the PBP, the plastic parts of the shell, around the back corners or the hinges are really tiny and break easily.
-
 

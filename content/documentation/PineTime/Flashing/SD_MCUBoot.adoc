@@ -23,8 +23,6 @@ menu:
 
 === Dual Bootloader Modes
 
-
-
 ==== Process
 
 - PineTime will support 2 Bootloader Modes: https://github.com/JuulLabs-OSS/mcuboot/wiki[MCUBoot] and SoftDevice. Default is MCUBoot Mode.

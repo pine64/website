@@ -1,5 +1,5 @@
 ---
-title: "PinePhone FAQ"
+title: "FAQ"
 draft: false
 menu:
   docs:
@@ -12,7 +12,6 @@ menu:
 A list of frequently asked question.
 
 == Hardware
-
 
 === Revisions
 
@@ -45,9 +44,7 @@ Besides the varied back covers, starting with the launch of the PostmarketOS CE 
 
 === General
 
-
 ==== How powerful is the PinePhone's hardware?
-
 
 The PinePhone is about on par with a Raspberry Pi 3 in terms of CPU performance, however it's Mali 400 MP2 is much weaker than the Pi 3's VideoCore IV. The Mali 400 was the first mobile OpenGL ES 2.0 GPU on the market back in 2008 when it was released, compared to the much newer Videocore IV released in 2010. The PinePhone has been shown to handle smooth H.264 1440p30 video playback using Cedrus and gstreamer as documented https://xnux.eu/log/#toc-2020-09-17-video-acceleration-experiments-with-pinephone[here]. The device should be more than capable of a smooth phone experience when used in conjunction with well optimized software that makes use of its hardware features. It is also capable of running many light games (including 3D ones such as SuperTuxKart), and retro gaming. Expect further speed improvements over time as the drivers are improved, and in the meanwhile you can look into slightly link:/documentation/Unsorted/Overclocking[Overclocking] the device (at your own risk).
 
@@ -61,9 +58,7 @@ For some reason, using pipewire-pulse with bluetooth headphones (In my case, Son
 
 === Modem
 
-
 ==== The modem isn't working
-
 
 In order to use the modem and Wi-Fi/Bluetooth, you need to ensure the battery is inside the device and has a sufficient charge. Even when supplying the phone with enough power, the modem and Wi-Fi chip will not work without a connected battery. Further, double check that you have not put the SD card into the sim card slot, or vice versa.
 
@@ -73,9 +68,7 @@ Yes. Unless the PinePhone is configured to wake up every few minutes from deep s
 
 === Battery
 
-
 ==== The battery is stuck inside the phone
-
 
 The battery can be stuck in the phone if the screws of the frame are overtightened.
 
@@ -89,7 +82,7 @@ The issue is not present on the Community Edition. Due to a hardware bug, after 
 
 ==== The battery only charges to ~84%
 
-Some pre-made operating systems using megi's kernel limit the maximum amount of charge to roughly ~84% in the hope of prolonging the battery life, as repeatedly reaching the upper level of battery charge reduces the battery's lifetime (this is <b>not</b> a safety feature|). The same effect however also applies when repeatedly draining the battery to a low level - users are therefore advised to consider if that setting is reasonable depending on their usage. The setting can be overwritten via Sysfs, to let the battery fully charge (this can lower the replaceable battery's lifetime considerably depending on the charging behavior|):
+Some pre-made operating systems using megi's kernel limit the maximum amount of charge to roughly ~84% in the hope of prolonging the battery life, as repeatedly reaching the upper level of battery charge reduces the battery's lifetime (this is *not* a safety feature|). The same effect however also applies when repeatedly draining the battery to a low level - users are therefore advised to consider if that setting is reasonable depending on their usage. The setting can be overwritten via Sysfs, to let the battery fully charge (this can lower the replaceable battery's lifetime considerably depending on the charging behavior|):
 
 WARNING: The following instructions are directed towards expert-level users and developers|
 
@@ -139,16 +132,13 @@ WARNING: The following instructions are directed towards expert-level users and 
 
 === Memory
 
-
 ==== What's the speed difference between the eMMC and SD cards?
 
 Maximum transfer speed of the eMMC is around 85 MB/s, while SD cards are limited to approximately 23 MB/s (even with faster cards).
 
 === GPS
 
-
 ==== GPS doesn't work
-
 
 Like almost all smartphones, the PinePhone GPS antenna is small and can only get a first fix unassisted if the GPS signal is very strong. To make first fix faster and more reliable, phones download assistance data either from the phone network or from the internet. The GPS in the PinePhone modem supports the internet based assistance method, as detailed in the modem documentation, but this is currently only supported by a few distributions, and a https://gist.github.com/alastair-dm/263209b54d01209be28828e555fa6628[proof of concept script] that shows it can work.
 
@@ -160,9 +150,7 @@ Currently, due to the magnetometer not being hooked up in software at this time,
 
 == Software
 
-
 === Installation
-
 
 ==== How can I install an operating system on the SD card / eMMC?
 
@@ -174,9 +162,7 @@ Read the link:/documentation/PinePhone/Software/Updating_instructions[Update ins
 
 === Booting
 
-
 ==== What's the boot order for SD cards and eMMC?
-
 
 The PinePhone will automatically boot from microSD if a bootable card is inserted. If no (bootable) microSD is found, it will boot from eMMC.
 
@@ -189,7 +175,7 @@ There was a project by Danct12 which allowed the user to select different operat
 This can be the result of at least one situation:
 
 . The eMMC installation became corrupt or otherwise unbootable
-. An SD card is present but not bootable (consider link:/documentation/PinePhone/_index#Detailed usage instructions[PinePhone])
+. An SD card is present but not bootable (consider link:/documentation/PinePhone/_index#detailed_usage_instructions[PinePhone])
 
 If there is an installation of Manjaro on both the eMMC & an SD card, the SD card will always boot first on the device. Try taking the SD card out and booting the installation that is on the eMMC. If the problem persists, it is likely there is an issue with both installations and you will need to reinstall your distribution. You may also want to check with your distribution's maintainers if boot issues are a common problem in a recent update.
 
@@ -213,16 +199,14 @@ This is caused by corruption on the userdata partition. Normally this should be 
 
 ==== The PinePhone does not boot
 
-Most operating systems on the PinePhone do not boot if the battery is not connected or if it is fully drained. If you received a new PinePhone make sure to remove the battery isolator as explained under link:/documentation/PinePhone/_index#First time installation[PinePhone].
+Most operating systems on the PinePhone do not boot if the battery is not connected or if it is fully drained. If you received a new PinePhone make sure to remove the battery isolator as explained under link:/documentation/PinePhone/_index#first_time_installation[PinePhone].
 
 If you removed the battery isolator and the battery contacts are intact, the battery is either fully drained or there is no valid OS (or a corrupted OS or bootloader) installed on the eMMC or the SD card. Make sure to charge the phone with a compatible charger (500 mAh is not enough for modern phones), as well as the installation instruction under link:/documentation/PinePhone/Installation_instructions[Installation instructions]. If the OS got corrupted it is highly recommend to simply reflash.
 
 If nothing works please don't hesitate to contact the community via link:/documentation/_index#Chat Platforms[Main Page], they are eager to help and booting issues are usually very easy to solve (as they are typically either battery or installation related. The phones itself are all tested individually at the factory. Do not contact PINE64's support for booting issues.
 
-<gallery mode="nolines" widths="400px" heights="400px">
-Image:Pinephone_warning.png|A protection foil isolates the battery for the shipping.
-Image:Pinephone_backside.png|The microSD belongs in the upper slot, the micro SIM in the lower slot.
-
+image:/documentation/images/Pinephone_warning.png[A protection foil isolates the battery for the shipping.]
+image:/documentation/images/Pinephone_backside.png[The microSD belongs in the upper slot, the micro SIM in the lower slot.]
 
 ==== Can I install a different OS on my Community Edition?
 
@@ -230,9 +214,7 @@ Yes|While all the Community Edition PinePhones come with an OS preinstalled, you
 
 === Other
 
-
 ==== How can I enable SSH?
-
 
 In Ubuntu Touch you can run "sudo start ssh" to get a one-time start, or edit /etc/init/ssh.override and remove the manual line to make it auto-start.
 
@@ -278,9 +260,7 @@ The PinePhone uses https://files.pine64.org/doc/datasheet/pine64/RTL8723BS.pdf[R
 
 === SMS
 
-
 ==== The phone does not receive SMS
-
 
 Sometimes incoming SMS messages are not being received, but outgoing ones, phone calls and data are working fine. One cause of this is if ModemManager fails to receive messages from the modem and they build up. These messages are not cleared by either rebooting reflashing the phone.
 
@@ -323,7 +303,6 @@ Import taxes have to be paid by the buyer depending on the jurisdiction of the c
 
 == Accessories
 
-
 === Protection
 
 ==== Which screen protector should I use?
@@ -343,14 +322,11 @@ Currently the PinePhone battery is known to be compatible with replacement batte
 
 === External hardware
 
-
 ==== Will PINE64 sell other add-ons made for the PinePhone?
-
 
 Yes, currently there is a keyboard case https://forum.pine64.org/showthread.php?tid=8537&pid=55396#pid55396[with similarities to the Psion 5] which includes an internal battery, and a https://www.pine64.org/2020/05/15/may-update-pinetab-pre-orders-pinephone-qi-charging-more/[Qi wireless charging] add-on planned, both of which PINE64 intends to directly sell. There is the potential for future add-ons such as a game pad, however that is currently just an idea and not in any way planned.
 
 ==== Which 3rd party hardware can connect to my PinePhone?
 
 See link:/documentation/Phone_Accessories/Hardware_accessory_compatibility[Hardware accessory compatibility].
-
 

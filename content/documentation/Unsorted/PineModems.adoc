@@ -228,7 +228,7 @@ Context: https://gitlab.freedesktop.org/mobile-broadband/ModemManager/-/issues/3
 
 Some functionality is not built into ModemManager, and is instead managed via eg25-specific software. There are two variants of this, but only one should be used.
 
-* https://gitlab.com/mobian1/devices/eg25-manager[eg25-manager] <b>recommended</b>, used in most distributions.
+* https://gitlab.com/mobian1/devices/eg25-manager[eg25-manager] *recommended*, used in most distributions.
 * https://xnux.eu/devices/feature/modem-pp.html[modem-power]
 
 ==== Testing

@@ -9,7 +9,6 @@ menu:
     weight: 3
 ---
 
-
 Under link:/documentation/Unsorted/Accessories_Step_by_Step_Guides[Accessories Step by Step Guides] you can find instructions and guides pertaining to:
 
 * Enclosures

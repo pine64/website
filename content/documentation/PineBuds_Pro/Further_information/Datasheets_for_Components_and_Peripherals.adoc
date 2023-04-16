@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 BES 2300YP SoC information:
 
 * https://files.pine64.org/doc/datasheet/PineBudsPro/BES2300-YP_Datasheet_v1.0.pdf[BES 2300-YP Datasheet V1.0]
@@ -26,5 +25,4 @@ EarBuds:
 * https://files.pine64.org/doc/datasheet/PineBudsPro/LP3992-33B5F.pdf[LowPower Semi LP3992 LDO Regulator Datasheet]
 * https://files.pine64.org/doc/datasheet/PineBudsPro/HLW-YHX190_20190810.pdf[HLW Semi HLW-YHX190 OTP micro Datasheet in Chinese (noted: for power-on and reset control)]
 * https://files.pine64.org/doc/datasheet/PineBudsPro/TTP233D-SB6_V1.0_EN.pdf[Tontek TTP-233D one key touch pad detect IC Datasheet]
-
 

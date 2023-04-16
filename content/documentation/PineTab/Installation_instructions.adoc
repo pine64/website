@@ -9,7 +9,6 @@ menu:
     weight: 1
 ---
 
-
 For instructions on how to install the operating systems to the eMMC or microSD card see link:/documentation/PinePhone/Installation_instructions[Installation instructions]. The information is almost the same for the PineTab, as it is a very similar device. Do not try to use the PinePhone images though, use the PineTab images linked above.
 
 For details see the link:/documentation/General/Getting_started[Getting started] article.

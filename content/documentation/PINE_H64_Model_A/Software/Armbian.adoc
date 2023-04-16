@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 *Armbian* is a Linux distribution designed for ARM boards. They are usually Debian or Ubuntu flavored.
 
 Download:

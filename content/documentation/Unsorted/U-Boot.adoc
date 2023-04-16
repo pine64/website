@@ -13,9 +13,7 @@ TIP: It is helpful to have a debugging serial cable for this.
 
 == Building U-Boot manually
 
-
 === Prerequisites
-
 
 These instructions are written with a host Arch Linux desktop system in mind.
 
@@ -106,5 +104,4 @@ https://linux-sunxi.org/Mainline_U-Boot[Sunxi U-Boot Wiki]
 https://raw.githubusercontent.com/u-boot/u-boot/master/board/sunxi/README.sunxi64[U-Boot build instructions]
 
 https://musl.cc/or1k-linux-musl-cross.tgz[or1k toolchain download]
-
 

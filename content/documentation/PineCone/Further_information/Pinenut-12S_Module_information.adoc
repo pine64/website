@@ -9,10 +9,8 @@ menu:
     weight: 
 ---
 
-
-
-image:/documentation/images/NUT-12S_module-front.jpg[width=200]_image:/documentation/images/NUT-12S_module-back.jpg[width=200]
-
+image:/documentation/images/NUT-12S_module-front.jpg[width=200]
+image:/documentation/images/NUT-12S_module-back.jpg[width=200]
 
 GPIO definition: https://files.pine64.org/doc/Pinenut/NUT-12S%20GPIO%20Definition%20ver%201.0.pdf[Pinenut-12S GPIO Definition ver 1.0]
 

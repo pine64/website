@@ -1,5 +1,5 @@
 ---
-title: "PineNote Development"
+title: "Development"
 draft: false
 menu:
   docs:
@@ -13,9 +13,7 @@ This article seeks to provide general mainline Linux development information for
 
 == Mainline development
 
-
 === Status
-
 
 The following table aims to provide a list of kernel modules required for running the PineNote. It also aims at listing repositories of work in progress. While some overlap with the Quartz64 module list (link:/documentation/Quartz64/Development/_index#Upstreaming_Status[Development]) is expected, only modules relevant to the PineNote hardware should be listed here.
 
@@ -28,12 +26,12 @@ The following table aims to provide a list of kernel modules required for runnin
 | Suspend mode driver
 | colspan="2" |tbd
 | `rockchip-sip`
-| The rockchip-sip driver is not mainlineable; it is only needed <sup>https://github.com/smaeul/linux/commit/72127ca2806623a9de52cc1de39b06a38a22fe48[(via a hack)]</sup> for suspend/resume to work when downstream TF-A is used. Suspend on upstream TF-A (https://review.trustedfirmware.org/c/TF-A/trusted-firmware-a/+/16952[status]) should work without any special drivers.
+| The rockchip-sip driver is not mainlineable; it is only needed ^https://github.com/smaeul/linux/commit/72127ca2806623a9de52cc1de39b06a38a22fe48[(via a hack)]^ for suspend/resume to work when downstream TF-A is used. Suspend on upstream TF-A (https://review.trustedfirmware.org/c/TF-A/trusted-firmware-a/+/16952[status]) should work without any special drivers.
 
 | Touchscreen
 | colspan="2" |Linux Mainline
 | `cyttsp5`
-| As of 6.2-rc1<sup>[https://git.kernel.org/linus/5b0c03e24a061f9c9e8b28fa157b80990c559a37]</sup>
+| As of 6.2-rc1^[https://git.kernel.org/linus/5b0c03e24a061f9c9e8b28fa157b80990c559a37]^
 
 | Digitizer
 | colspan="2" |Linux Mainline
@@ -53,7 +51,7 @@ The following table aims to provide a list of kernel modules required for runnin
 | EBC PMic
 | colspan="2" |tbd
 | `tps65185`
-| driver developed here: <sup>https://github.com/smaeul/linux/tree/rk35/tps65185]</sup>,[small tweaks to resume behavior added on top here: <sup>[https://github.com/m-weigand/linux/commits/mw/rk35/tps65185]
+| driver developed here: ^https://github.com/smaeul/linux/tree/rk35/tps65185]^,[small tweaks to resume behavior added on top here: ^[https://github.com/m-weigand/linux/commits/mw/rk35/tps65185]
 
 | LED backlight driver
 | colspan="2" |Linux Mainline
@@ -63,20 +61,20 @@ The following table aims to provide a list of kernel modules required for runnin
 | Accelerometer
 | colspan="2" |Linux Mainline
 | `st-accel-i2c` (silan,sc7a20)
-| As of 5.18-rc1<sup>[https://git.kernel.org/linus/c7a43b089826b17e46419d93c00c0d2f4b26735f]
+| As of 5.18-rc1^[https://git.kernel.org/linus/c7a43b089826b17e46419d93c00c0d2f4b26735f]
 
 | Rastergraphics unit RGA2e
 | colspan="2" |tbd
 | `rga` (v4l2 mem2mem driver)
-| WIP patches for activation on the Pinenote/dithering/Y4-conversion can be found here: <sup>[https://github.com/m-weigand/linux/commits/mw/rk35/rk356x-rga]</sup>.
+| WIP patches for activation on the Pinenote/dithering/Y4-conversion can be found here: ^[https://github.com/m-weigand/linux/commits/mw/rk35/rk356x-rga]^.
 Note that the rga2e in the rk3566 only works for RAM <= 4 G|).
-Simple demo program found here: <sup>[https://github.com/m-weigand/rga-v4l2-demo]</sup>
+Simple demo program found here: ^[https://github.com/m-weigand/rga-v4l2-demo]^
 
 | Mali GPU
 | |Linux Mainline
 | |Upstream Mesa
 | `panfrost`
-| As of 5.18 <sup>[https://git.kernel.org/linus/810028668c6d9da25664195d6b906c98a8169f72]</sup> this got added to the `.dtsi` file, but it's status is disabled. Enabling the `gpu` node upstream needs to wait till `rockchip-ebc` is upstreamed.
+| As of 5.18 ^[https://git.kernel.org/linus/810028668c6d9da25664195d6b906c98a8169f72]^ this got added to the `.dtsi` file, but it's status is disabled. Enabling the `gpu` node upstream needs to wait till `rockchip-ebc` is upstreamed.
 
 | Wifi/BT
 | colspan="2" |Linux Mainline
@@ -156,9 +154,7 @@ Booting with individual commands can be useful when you need to temporarily add 
 
 == Configuration
 
-
 === Firmware for WiFi & Bluetooth and Waveform data
-
 
 ==== Using Maximilian's Debian image
 
@@ -237,8 +233,8 @@ By default the pen config is flipped 180° (which makes it unusable) and the tou
 
 Mesa needs to be patched to add the driver entry point. The alternative to this, is the renaming of the ebc driver to an existing mesa driver entry point. A good existing name can be "repaper". To change the driver name, edit in the kernel tree the following files:
 
-* replace "rockchip-ebc" with "repaper" in the two places in the file: drivers/gpu/drm/rockchip/rockchip_ebc.c <br>
-* preventive, replace "repaper" with "repaper-disabled" in the two places in the file: drivers/gpu/drm/tiny/repaper.c <br>
+* replace "rockchip-ebc" with "repaper" in the two places in the file: drivers/gpu/drm/rockchip/rockchip_ebc.c
+* preventive, replace "repaper" with "repaper-disabled" in the two places in the file: drivers/gpu/drm/tiny/repaper.c
 
 === Video of Factory Android OS
 

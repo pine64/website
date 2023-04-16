@@ -31,7 +31,7 @@ The following table shows the current supported codecs for encoding for each SoC
 
 |scope="row" | VP8
 | | N/A
-| | In review<sup>[https://lore.kernel.org/linux-rockchip/20230309125651.23911-1-andrzej.p@collabora.com/T/]</sup>
+| | In review^[https://lore.kernel.org/linux-rockchip/20230309125651.23911-1-andrzej.p@collabora.com/T/]^
 | | No
 | | No
 
@@ -73,5 +73,4 @@ Alternatively, you can encode in variable bitrate mode with a target bitrate giv
 == See Also
 
 * link:/documentation/Unsorted/Mainline_Hardware_Decoding[Mainline Hardware Decoding]
-
 

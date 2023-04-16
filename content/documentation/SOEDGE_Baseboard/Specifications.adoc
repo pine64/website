@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 * Gigabit Ethernet
 * HD Digital Video Out
 * 2x USB 3.0 Host

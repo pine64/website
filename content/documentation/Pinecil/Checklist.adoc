@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 Prep tasks:
 
 . *Clean new cartridges/tips with 99% isopropyl alcohol (IPA)* to remove factory residue before installing (avoid strange behavior from poor electric contact). If you have none, try to at least wipe down the new cartridge with a clean towel especially the 2 contacts at the rear white end (do not use water, as it could get into the small white seam line).

@@ -9,15 +9,14 @@ menu:
     weight: 
 ---
 
-
 This section outlines the most important characteristics of the board and its components.
 
-=== SoC and Memory Specification
+== SoC and Memory Specification
 
 * Based on Rockchip RK3399
 image:/documentation/images/Rockchip_RK3399.png[right,title="right"]
 
-==== CPU Architecture
+=== CPU Architecture
 
 * https://developer.arm.com/products/processors/cortex-a/cortex-a72[Dual-core Cortex-A72 up to 2.0GHz CPU]
 * https://developer.arm.com/products/processors/cortex-a/cortex-a53[Quad-core Cortex-A53 up to 1.5GHz CPU]
@@ -42,7 +41,7 @@ image:/documentation/images/Rockchip_RK3399.png[right,title="right"]
 * Full CoreSight debug solution
 * One isolated voltage domain to support DVFS
 
-==== GPU Architecture
+=== GPU Architecture
 
 * https://developer.arm.com/products/graphics-and-multimedia/mali-gpus/mali-t860-and-mali-t880-gpus[ARM Mali-T860MP4 Quad-core GPU]
 * The highest performance GPUs built on Arm Mali’s famous Midgard architecture, the Mali-T860 GPU is designed for complex graphics use cases and provides stunning visuals for UHD content.
@@ -50,12 +49,12 @@ image:/documentation/images/Rockchip_RK3399.png[right,title="right"]
 * Throughput: 1300Mtri/s, 10.4Gpix/s
 * OpenGL® ES 1.1, 1.2, 2.0, 3.1, 3.2, Vulkan 1.0*, OpenCL™ 1.1, 1.2, DirectX® 11 FL11_1, RenderScript™.
 
-==== System Memory
+=== System Memory
 
 * LPDDR4 RAM Memory Variants: Dual Channels 2GB and 4GB.
 * Storage Memory: 128Mb built-in SPI Flash memory (as at August 2018 only support for USB boot).
 
-=== Display
+== Display
 
 * Dual VOP: one supports resolutions up to 4096x2160 and https://www.arm.com/why-arm/technologies/graphics-technologies/arm-frame-buffer-compression[AFBC]; the other supports resolutions up to 2560x1600
 * Dual channel MIPI-DSI (4 lanes per channel)
@@ -64,7 +63,7 @@ image:/documentation/images/Rockchip_RK3399.png[right,title="right"]
 * DisplayPort 1.2 (4 lanes, up to 4K 60Hz)
 * Supports Rec.2020 and conversion to Rec.709
 
-=== Video
+== Video
 
 * Digital Video output up to 4K@60Hz
 * 4K HDR @ 30fps
@@ -77,22 +76,22 @@ image:/documentation/images/Rockchip_RK3399.png[right,title="right"]
 * VC-1, SP@ML, MP@HL, AP@L0-3, up to 1080P @ 60fps
 * MVC is supported based on H.264 or H.265, up to 1080P @ 60fps
 
-=== Audio
+== Audio
 
 * 3.5mm Phone Jack
 * 3-pin S/PDIF header
 * Audio via Digital Video port
 
-=== Camera
+== Camera
 
-* Dual MIPI CSI，dual ISP, maximum input resolution of 13M pixels
+* Dual MIPI CSI, dual ISP, maximum input resolution of 13M pixels
 
-=== Network
+== Network
 
 * 10/100/1000Mbps Ethernet - Capable of pushing 941 MBit/s in iperf3
 * Wi-Fi 802.11 ac/a/b/g/n with Bluetooth 4.01 (old version with 2x2) / Bluetooth 5 (new version with 1x1) (optional)
 
-=== Storage
+== Storage
 
 * microSD - bootable, support SDHC and SDXC, storage up to 256GB
 * eMMC - bootable (optional eMMC Module)
@@ -100,12 +99,12 @@ image:/documentation/images/Rockchip_RK3399.png[right,title="right"]
 * 1 USB type C OTG port with DP output
 * 2 USB2.0 Dedicated Host ports
 
-=== Expansion Ports
+== Expansion Ports
 
 * 2x20 pins "Pi2" GPIO Header
 * PCIe 2.1 (4 full-duplex lanes with 20Gbps) x4 open ended port
 
-==== GPIO Pins
+=== GPIO Pins
 
 [cols="1,1,1,1"]
 |===
@@ -119,12 +118,12 @@ image:/documentation/images/Rockchip_RK3399.png[right,title="right"]
 | | 2
 | | 5 V
 
-| | GPIO1_C4 (I2C8_SDA) <sup >a</sup>
+| | GPIO1_C4 (I2C8_SDA) <sup >a^
 | | 3
 | | 4
 | | 5 V
 
-| | GPIO1_C5 (I2C8_SCL) <sup >a</sup>
+| | GPIO1_C5 (I2C8_SCL) <sup >a^
 | | 5
 | | 6
 | | GND
@@ -215,11 +214,11 @@ image:/documentation/images/Rockchip_RK3399.png[right,title="right"]
 | | GPIO3_D7 (I2S0_SDO0)
 |===
 
-===== Notes
+==== Notes
 
 * pulled high to 3.3V through 2.2kOhm resistor
 
-===== Linux /dev/gpiochip Assignments
+==== Linux /dev/gpiochip Assignments
 
 [cols="1,1"]
 |===
@@ -241,7 +240,7 @@ For example, `gpioset 4 25=1` (run as root) would turn pin 22 on. Do beware that
 
 The conversion table at right is also available as a https://gist.github.com/CounterPillow/fe066655bf2d929148fe6eb3f15b1dd5[C header file].
 
-=== Working Features
+== Working Features
 
 |===
 |Feature/Option

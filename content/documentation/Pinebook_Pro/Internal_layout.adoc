@@ -9,8 +9,6 @@ menu:
     weight: 
 ---
 
-
-
 === Main chips
 
 * RK3399 system-on-chip (1)

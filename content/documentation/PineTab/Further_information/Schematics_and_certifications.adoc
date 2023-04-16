@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 PineTab mainboard schematic:
 
 * https://files.pine64.org/doc/PineTab/PineTab%20Schematic%20v1.2-20191125.pdf[PineTab mainboard Released Schematic ver 1.2]

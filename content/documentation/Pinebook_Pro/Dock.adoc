@@ -51,9 +51,7 @@ With Mobian: jack, Ethernet, SD-card readers, USB-A and -C, VGA fully works, HDM
 
 == Known Bugs
 
-
 === Audio Volume on Linux
-
 
 Currently, the audio output from this dock
 

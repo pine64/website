@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 A good DRM PowerPoint presentation by Free Electron https://free-electrons.com/pub/conferences/2017/kr/ripard-drm/ripard-drm.pdf[here] and the DRM video presentation by Free Electron https://www.youtube.com/watch?v=LbDOCJcDRoo[here].
 
 32-bit Wayland MALI Driver:

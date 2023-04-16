@@ -9,10 +9,7 @@ menu:
     weight: 
 ---
 
-
-
 === Swapping in a new mainboard revision
-
 
 The mainboard can be replaced, for example for upgrading to a newer hardware revision or if it is faulty. The replacement board does not have an OS preinstalled, to test if everything is working after swapping the mainboard a flashed SD card is required. The mainboard also comes with a non-functional firmware on the ANX chip, a newer firmware version has to be flashed as explained below to get certain USB functionality to work.
 
@@ -40,9 +37,7 @@ image:/documentation/images/Pinephone_martijn_pcb_replacement.png[Watch Martijn 
 
 ==== Flashing the ANX firmware
 
-
 ===== Method 1
-
 
 After swapping the mainboard the ANX7688 chip has to be flashed for full USB functionality.
 
@@ -57,11 +52,11 @@ and executing as root ("sudo su") on the phone:
 
 ===== Method 2
 
-Booting a factory test image will automatically flash the ANX7688 chip. See link:/documentation/PinePhone/Software/Operating_systems#Factory Test OS|Factory Test OS[Factory Test OS] for such an image.
+Booting a factory test image will automatically flash the ANX7688 chip. See link:/documentation/PinePhone/Software/Operating_systems#Factory Test OS[Factory Test OS] for such an image.
 
 === Replacing the screen
 
-Before attempting to replace the screen be sure to review the section on link:#Swapping in a new mainboard revision|replacing the mainboard[replacing the mainboard] since that will get you most of the way there. Be aware that the replacement screen is actually the entire front frame of the phone and there are components that will need to be swapped from your old screen.
+Before attempting to replace the screen be sure to review the section on link:#Swapping in a new mainboard revision[replacing the mainboard] since that will get you most of the way there. Be aware that the replacement screen is actually the entire front frame of the phone and there are components that will need to be swapped from your old screen.
 
 * Make sure you have a precision screwdriver set that has the correct size Philips tip. The screws are very small and the heads can easily be stripped if the screwdriver is not correct - if you feel your screwdriver slipping, stop what you are doing and try one that is a better fit. A magnetized screwdriver will help in not losing screws, as will a magnetic parts holder to keep them in while working.
 

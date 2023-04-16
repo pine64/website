@@ -9,10 +9,7 @@ menu:
     weight: 2
 ---
 
-
-
 === Firmwares
-
 
 * https://github.com/pine64/OpenPineBuds[OpenPineBuds]
 * https://github.com/hall/little-buddy[Little Buddy]

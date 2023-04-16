@@ -9,14 +9,15 @@ menu:
     weight: 
 ---
 
-
 * Based on https://www.starfivetech.com/en/site/soc[StarFive JH7110]
-image:/documentation/images/StarFive.jpg[right,title="right"]_image:/documentation/images/JH7110_Block_Diagram.png[width=800]
 
-=== CPU Architecture
+image:/documentation/images/StarFive.jpg[]
+image:/documentation/images/JH7110_Block_Diagram.png[width=800]
+
+== CPU Architecture
+image:/documentation/images/SiFive.jpg[width=200]
 
 * https://www.sifive.com/cores/u74[Quad-core U74 up to 1.5GHz CPU]
-image:/documentation/images/SiFive.jpg[width=200]
 * Fully compliant with the RISC-V ISA specification
 * 64-bit RISC-V Application Core
 * 32KB L1 I-cache with ECC
@@ -27,10 +28,10 @@ image:/documentation/images/SiFive.jpg[width=200]
 * includes RV64IMAC S7 monitor core, 16 KB L1 I-Cache with ECC, 8 KB DTIM with ECC
 * 32-bit RISC-V CPU core (E24) for real time control, support RV32IMFC RISC-V ISA
 
-=== GPU Architecture
+== GPU Architecture
+image:/documentation/images/imgtech.png[width=200]
 
 * https://www.imaginationtech.com/product/img-bxe-4-32-mc4/[Imagination Technology BXE-4-32 up to 600Mhz GPU]
-image:/documentation/images/imgtech.png[width=200]
 * Support OpenCL 3.0
 * Support OpenGL ES 3.2
 * Support Vulkan 1.2
@@ -39,7 +40,7 @@ image:/documentation/images/imgtech.png[width=200]
 * On fly frame buffer compression and decompression (TFBC) algorithm
 * Performance: 128 FP32 FLOPs/Clock, 256 FP16 FLOPs/Clock
 
-=== System Memory
+== System Memory
 
 * LPDDR4 RAM Memory Variants: 2GB, 4GB and 8GB.
 

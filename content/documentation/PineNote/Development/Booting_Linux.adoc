@@ -15,36 +15,36 @@ Here the method from https://gist.github.com/charasyn/206b2537534b6679b0961be64c
 
 == Steps to patch U-Boot
 
-1. Get the https://gist.github.com/charasyn/206b2537534b6679b0961be64cf9c35f[patch and the Python tool]:
+* Get the https://gist.github.com/charasyn/206b2537534b6679b0961be64cf9c35f[patch and the Python tool]:
 
  $ mkdir pinenote-uboot && cd pinenote-uboot
  $ curl https://gist.githubusercontent.com/charasyn/206b2537534b6679b0961be64cf9c35f/raw/cc513998a36fac0cea266260e3ca3e64abfe3696/boot-menu.patch -o boot-menu.patch
  $ curl https://gist.githubusercontent.com/charasyn/206b2537534b6679b0961be64cf9c35f/raw/cc513998a36fac0cea266260e3ca3e64abfe3696/pinenote-uboot-envtool.py -o pinenote-uboot-envtool.py
  $ chmod o+x pinenote-uboot-envtool.py
 
-2. Write your U-Boot partition to an image file: `dd if=/dev/mmcblk0p1 of=~/uboot.img`
+* Write your U-Boot partition to an image file: `dd if=/dev/mmcblk0p1 of=~/uboot.img`
 
-3. Extract the environment: `./pinenote-uboot-envtool.py extract uboot.img uboot.env`
+* Extract the environment: `./pinenote-uboot-envtool.py extract uboot.img uboot.env`
 
-4. Poke around the files (or skip this if you don't like to learn...):
+* Poke around the files (or skip this if you don't like to learn...):
 
-. Open `uboot.env` -- see, it's just text at this point|
+* Open `uboot.env` -- see, it's just text at this point|
 
-. Open `boot-menu.patch` to get a feel for how that works
+* Open `boot-menu.patch` to get a feel for how that works
 
-5. The boot-menu.patch makes assumptions about where your Linux partition lives. Specifically, it will look at partition 0x11 (which is 17 in decimal). Change this in boot-menu.patch to reflect where your Linux boot partition lives.
+* The boot-menu.patch makes assumptions about where your Linux partition lives. Specifically, it will look at partition 0x11 (which is 17 in decimal). Change this in boot-menu.patch to reflect where your Linux boot partition lives.
 
-6. Apply boot-menu.patch: `patch uboot.env boot-menu.patch`
+* Apply boot-menu.patch: `patch uboot.env boot-menu.patch`
 
-NOTE: Note: Might fail with the following error: "_patch: **** unexpected end of file in patch at line 27_". In that case applying the patch manually is the solution.
+NOTE: Note: Might fail with the following error: "_patch: \**** unexpected end of file in patch at line 27_". In that case applying the patch manually is the solution.
 
-7. Rewrite the new environment to the image: `./pinenote-uboot-envtool.py insert uboot.img uboot.env uboot-patched.img`
+* Rewrite the new environment to the image: `./pinenote-uboot-envtool.py insert uboot.img uboot.env uboot-patched.img`
 
-8. Write the image to the boot partition from the PineNote: `dd if=~/uboot-patched.img of=/dev/mmcblk0p1`
+* Write the image to the boot partition from the PineNote: `dd if=~/uboot-patched.img of=/dev/mmcblk0p1`
 
-9. At this point, restarting your system will boot into Android -- this is because the patched U-Boot we've just created looks for `/boot/which_os.txt` to determine whether to boot Android or Linux, and since it can't find this file (we haven't made it yet), the bootloader defaults to Android. Create that file on the same boot partition you specified in the boot-menu.patch file, placing an `l` in the file for Linux.
+* At this point, restarting your system will boot into Android -- this is because the patched U-Boot we've just created looks for `/boot/which_os.txt` to determine whether to boot Android or Linux, and since it can't find this file (we haven't made it yet), the bootloader defaults to Android. Create that file on the same boot partition you specified in the boot-menu.patch file, placing an `l` in the file for Linux.
 
-10. Reboot into Linux
+* Reboot into Linux
 
 == Sources and further reading
 

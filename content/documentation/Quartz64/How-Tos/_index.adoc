@@ -9,10 +9,7 @@ menu:
     weight: 6
 ---
 
-
-
 == Connect Debug UART
-
 
 The easiest way to get debug output is to connect a 3.3V 1.5mbaud capable UART adapter to the board.
 

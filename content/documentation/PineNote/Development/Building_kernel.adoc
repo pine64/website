@@ -109,4 +109,3 @@ link:/documentation/PineNote/Development/Booting_Linux[PineNote Development/Boot
 
 See link:/documentation/PineNote/Development/Software_tweaks[PineNote Development/Software Tweaks]
 
-

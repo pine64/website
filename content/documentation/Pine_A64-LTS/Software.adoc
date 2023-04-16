@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 The SOPINE operating system images are compatible with PINE A64-LTS. Under link:/documentation/SOPINE/Software[Software] you will find a complete list of currently supported operating system images, which work with the PINE A64-LTS, as well as other related software.
 <|--
 Below is a list of links to the build sources and environments for some operating system images. Some of them are labelled as *beta or nightly builds*, which means they are fit for testing purposes only. Those images should be used at your own risk and are not fit for regular use.

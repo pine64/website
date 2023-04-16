@@ -17,10 +17,10 @@ To install the SBC inside the case, stick the long screws into the SBC mounting 
 
 == Mods
 
-
 === 3D-Printable Top With Fan Cutout
 
-image:/documentation/images/Model_b_open_enclosure_top_cad.png[thumb|Top_view_of_the_plate,title="thumb|Top_view_of_the_plate"]_image:/documentation/images/Model_B_Open_Enclosure_Top_Fan_Mount.jpeg[thumb|The assembled modified case with a Noctua NF-A4x10 5V PWM mounted to it. The SBC is mounted in the enclosure upside-down.,title="thumb|The assembled modified case with a Noctua NF-A4x10 5V PWM mounted to it. The SBC is mounted in the enclosure upside-down."]
+image:/documentation/images/Model_b_open_enclosure_top_cad.png[thumb|Top_view_of_the_plate,title="thumb|Top_view_of_the_plate"]
+image:/documentation/images/Model_B_Open_Enclosure_Top_Fan_Mount.jpeg[thumb|The assembled modified case with a Noctua NF-A4x10 5V PWM mounted to it. The SBC is mounted in the enclosure upside-down.,title="thumb|The assembled modified case with a Noctua NF-A4x10 5V PWM mounted to it. The SBC is mounted in the enclosure upside-down."]
 
 User:CounterPillow]] has created an alternate 3D-printable top plate which allows for the mounting of a 40mmx40mmx10mm fan. The STL and STEP files [[INTFL:Model_B_acrylic_case_top_plate_with_fan_cutout.zip|are available free of charge, licensed as CC-BY 4.0.
 

@@ -9,7 +9,6 @@ menu:
     weight: 4
 ---
 
-
 The board can boot from the following interfaces:
 
 * SPI

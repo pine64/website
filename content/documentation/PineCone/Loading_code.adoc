@@ -9,7 +9,6 @@ menu:
     weight: 4
 ---
 
-
 To load code, you must move the jumper to the position closest to the edge, press reset, load the code, move the jumper back toward the center of the board, and press reset again.
 
 There are currently a number of loaders in progress, each with differing degrees of completeness and success on various operating systems.

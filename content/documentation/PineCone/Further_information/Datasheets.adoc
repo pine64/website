@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 Bouffalo BL-602 SoC information:
 
 * https://github.com/bouffalolab/bl_docs[Bouffalo Lab's official bl_docs repository]: should always contain the latest SoC documentation available, in PDF, HTML, and reStructuredText source forms.

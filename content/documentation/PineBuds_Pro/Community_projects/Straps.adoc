@@ -19,4 +19,3 @@ Although PineBuds Pro, "true wireless", earbuds are comfortably light and stay i
 
 Each bud has pins through which is UART connection. When we find or make a strap for PineBuds Pro we can add wiring inside it and put PCB in the middle that receives analog signal with the 3.5mm AUX connector and feeds it to the buds.
 
-

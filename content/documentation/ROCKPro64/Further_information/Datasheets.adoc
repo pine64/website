@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 Rockchip RK3399 SoC information:
 
 * https://www.rock-chips.com/a/en/products/RK33_Series/2016/0419/758.html[Rockchip RK3399 SoC Brief]

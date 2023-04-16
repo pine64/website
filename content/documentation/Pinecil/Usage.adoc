@@ -9,7 +9,6 @@ menu:
     weight: 3
 ---
 
-
 == Overview
 
 *Prep Tasks*
@@ -28,7 +27,7 @@ Do not try to bend the two https://pine64.com/product/pinecil-copper-clips/[inte
 *2. Supply power*: the USB-C port, connected to any supply, is enough power to show the display screen, but not necessarily enough to heat the tip.
 
 . USB port at 5 volts (i.e., laptop) shows _DC Low_, this is enough for https://ralim.github.io/IronOS/#getting-started[firmware updates] and to view the menu, but not to run the soldering iron.
-. See link:#Power_Supplies_and_Watts|Power section[Power section] for details on power options. link:#QC_Chargers|QC 12V phone chargers will not work, too weak[QC 12V phone chargers will not work, too weak]
+. See link:#Power_Supplies_and_Watts[Power section] for details on power options. link:#QC_Chargers[QC 12V phone chargers will not work, too weak]
 
 *3. Heat the tip*: plug Pinecil into an appropriate link:/documentation/Pinecil/Power_supplies/Power_supplies[power supply].
 

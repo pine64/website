@@ -15,7 +15,6 @@ WARNING: Please note that following these instructions comes at your own risk. W
 
 == Shopping List
 
-
 === Components
 
 You may have some or all of these in your junk/parts drawer.  They're all common value, and easily recovered from scrap circuit-boards.

@@ -103,5 +103,3 @@ I2C to SPI firmware:
 
 * https://github.com/zschroeder6212/tiny-i2c-spi[zschroeder6212's tiny-i2c-spi Github page]
 
-
-

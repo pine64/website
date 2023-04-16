@@ -65,7 +65,6 @@ In this configuration, the boot logo is part of the bootloader, not of the appli
 
 == Changes ==
 
-
 === Factory image
 
 The factory image is a 'light' build of InfiniTime that contains the bare minimum code to provide OTA to the user : basic UI, BLE and OTA. No apps, no fancy functionalities,...
@@ -160,7 +159,6 @@ Firmware based on the NRF SoftDevice share the BLE stack with the bootloader, it
 The downside of this design is that firmwares developers are somewhat forced to use the NRF BLE stack. If they want to integrate another BLE stacak (NimBLE for example), these 120kB used by the SoftDevice would be wasted.
 
 That's why we decided to make the MCUBoot bootloader a simple bootloader without OTA functionality. It's very lighweight (less than 20kB) and leaves the developers the right to choose the BLE stack they want.
-
 
 === Fixed vs dynamic memory map
 

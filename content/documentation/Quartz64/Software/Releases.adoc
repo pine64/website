@@ -152,9 +152,7 @@ Download:
 
 == Android SDK
 
-
 === Android 11 SDK
-
 
 The *Android 11 SDK* for the Quartz64 Model A SBC.
 
@@ -164,7 +162,6 @@ Download:
 * Just the boot blobs (<1MB): https://wiki.pine64.org/wiki/File:Rk35-blobs.tar.gz
 
 === Android 11 Production Test Builds
-
 
 ==== Android 11 Stock
 

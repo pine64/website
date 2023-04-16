@@ -19,7 +19,6 @@ For Edge Finger view, look https://wiki.pine64.org/wiki/File:SOPine_Pin_Assigmen
 
 https://forum.pine64.org/showthread.php?tid=8058[a PDF mapping the pins from the A64 chip itself, to the gold-fingers on the SO-DIMM edge, to the multiple connectors on the baseboard and on the clusterboard, attached to this forum post.]
 
-
 |===
 |SOPine Pin |SOPine Name |Allwinner name |Allwinner category |Ball |Type |Description
 

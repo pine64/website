@@ -1,5 +1,5 @@
 ---
-title: "PinePhone Sensors and Navigation"
+title: "Sensors and navigation"
 draft: false
 menu:
   docs:
@@ -140,7 +140,6 @@ TODO: i2cdev, linux-iio, support matrix
 				attr  1: watermark value: 1
 		Current trigger: trigger1(mpu6050-dev2)
 
-
 * LIS3MDL: st_sensors, st_sensors_i2c, st_magn, st_magn_i2c, industrialio
 
  
@@ -170,7 +169,6 @@ TODO: i2cdev, linux-iio, support matrix
 				attr  0: data_available value: 0
 				attr  1: watermark value: 1
 		Current trigger: trigger0(lis3mdl-trigger)
-
 
 === Userspace services
 
@@ -221,5 +219,4 @@ TODO: Open issues, tasks, projects
 * geoclue API
 ** https://www.freedesktop.org/software/geoclue/docs/gdbus-org.freedesktop.GeoClue2.Location.html
 ** https://www.freedesktop.org/software/geoclue/docs/libgeoclue/GClueLocation.html
-
 

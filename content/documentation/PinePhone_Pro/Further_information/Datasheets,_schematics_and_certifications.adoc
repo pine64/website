@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 PinePhone Pro mainboard schematic:
 
 * https://files.pine64.org/doc/PinePhonePro/PinephonePro-Schematic-V1.0-20211127.pdf[PinePhone Pro mainboard Explorer Edition Released Schematic ver 1.0 20211127]

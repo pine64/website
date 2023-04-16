@@ -21,9 +21,7 @@ Recent PINE64 devices have included a hardware UART connected to their 3.5mm TRR
 
 == Discussion
 
-
 === August 15, 2021
-
 
 We decided to ask the PineNote product team to explore USB-C Debug Accessory Mode, where the product changes the USB-C port's personality when both CC1 and CC2 are pulled high. In normal usage, either CC1 or CC2 will be floating since these are the connector rotation pins. When both are detected, there is a very good chance that a debug harness is connected.
 
@@ -51,5 +49,4 @@ Additionally, the hardware team proposed designing a breakout board with pull-up
 dsimic commented that this proposed layout meant that a Google-designed SuzyQable would *not* work for debugging the PineNote. This was deemed acceptable, as long as it is clear to developers that the combination of PineNote and SuzyQable will not result in any useful debugging abilities.
 
 Caleb commented that the Google Pixel series of devices bring out UART over the SB1 and SB2 pins on the USB-C connector. It was surmised that copying this layout would allow reusing hardware that developers already have, however there are no harnesses on the market that directly break out this interface. Instead, it seems that most developers use a USB-C breakout board and stuff wires in the appropriate place when needed[https://github.com/Peter-Easton/android-debug-cable-howto]. A similar approach could be taken with the proposed PineNote solution if someone did not wish to purchase the breakout board.
-
 

@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 image:/documentation/images/NixOS.webp[width=100]
 
 *NixOS* is a Linux distribution built on top of the Nix package manager using declarative configuration to allow reliable system upgrades.

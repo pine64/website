@@ -239,4 +239,3 @@ The build scripts can be found in various places: https://gitlab.com/DanielAbrec
 
 In theory, these build scripts can create images for any Debian-based distribution which supports ARM64 and can be bootstrapped using _debootstrap_.
 
-

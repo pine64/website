@@ -9,7 +9,6 @@ menu:
     weight: 4
 ---
 
-
 == Gateway
 * https://semtech.my.salesforce.com/sfc/p/#E0000000JelG/a/2R000000Hlli/Te0cB6.fNWAPfxRfoFz38R6LOTf3sLAJhD4CpS2RwFc[SX1303 datasheets and resources]
 * https://docs.rakwireless.com/Product-Categories/WisLink/RAK5146/Datasheet/#overview[RAK5146 datasheets and resources]

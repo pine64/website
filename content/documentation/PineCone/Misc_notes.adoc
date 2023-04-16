@@ -9,7 +9,6 @@ menu:
     weight: 3
 ---
 
-
 Planned to be available in at least three form factors:
 
 * NUT-01S -> ESP-01S

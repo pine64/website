@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 Linux BSP Kernel 4.9
 
 Download:

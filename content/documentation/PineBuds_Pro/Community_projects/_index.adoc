@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 The following community projects are currently being worked on:
 
 * link:/documentation/PineBuds_Pro/Community_projects/Wireless_charging[Wireless charging], bringing wireless charging to the PineBuds Pro case using vacant contacts

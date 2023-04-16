@@ -9,7 +9,6 @@ menu:
     weight: 3
 ---
 
-
 The following variants exist of the Pinebook:
 
 * Pinebook 11.6″

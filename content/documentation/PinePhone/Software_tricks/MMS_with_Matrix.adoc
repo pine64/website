@@ -1,5 +1,5 @@
 ---
-title: "PinePhone MMS with Matrix"
+title: "MMS with Matrix"
 draft: false
 menu:
   docs:
@@ -86,9 +86,7 @@ Open fractal and log into the homeserver at http://localhost:8008 with username 
 
 == Set up MMSD
 
-
 === From git
-
 
 Note: historical, no longer needed, mmsdtng commonly packaged
 
@@ -264,5 +262,4 @@ At this point if you get a message a new room should be created by the bridge bo
 == Other clients
 
 *quaternion* also seems to work but has clunky UI issues. Might work better with scaling
-
 

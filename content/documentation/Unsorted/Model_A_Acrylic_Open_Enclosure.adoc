@@ -21,9 +21,7 @@ For the Quartz64 Model A, you may need to file down the inner corner of one of t
 
 == Mods
 
-
 === 3D-Printable Top With Fan and PCIe Cutout
-
 
 image:/documentation/images/Model_a_top_render.png[thumb|left|Non-artist's impression of the replacement top plate,title="thumb|left|Non-artist's impression of the replacement top plate"]
 

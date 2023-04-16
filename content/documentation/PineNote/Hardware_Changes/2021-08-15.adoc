@@ -15,7 +15,6 @@ Times are in UTC-5
 
 Logs collected from #pinedev on irc.pine64.org
 
-
 *Sunday, August 15, 2021*
 
 7:42:56 PM <@UniversalSuperBox> Anyone know of an existing standard to route 115200 baud serial over USB-C?
@@ -575,5 +574,4 @@ Logs collected from #pinedev on irc.pine64.org
 10:13:02 PM <@UniversalSuperBox> Were there any other signals coming out to flex connectors on the final revision? (re @tl_lim: the product board will have microSD signal bring to a flex connector)
 
 10:14:36 PM <@tl_lim> other will be easter egg hunting games
-
 

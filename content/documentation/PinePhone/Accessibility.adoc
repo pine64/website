@@ -1,5 +1,5 @@
 ---
-title: "PinePhone Accessibility"
+title: "Accessibility"
 draft: false
 menu:
   docs:
@@ -13,9 +13,7 @@ Although most accessibility support for the link:/documentation/PinePhone/_index
 
 == Input
 
-
 === Braille
-
 
 Various portable devices, such as Apple's iPhone, support braille input.
 This uses multi-touch capability on the device's capacitative touch screen.
@@ -46,9 +44,7 @@ the phone should be able to produce similar results.
 
 == Output
 
-
 === Speech
-
 
 The PinePhone's processor should have plenty of capacity to generate clear speech.
 This can be output using either the 3.5 mm audio jack or a Bluetooth connection.

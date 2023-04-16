@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-This page details a hardware fix for an issue that affects some early link:/documentation/PinePhone/_index#Hardware_revisions|PinePhone[PinePhone] units, namely link:/documentation/PinePhone/Revisions/PinePhone_v1.1_-_Braveheart[v1.1 Braveheart] units (fixed since link:/documentation/PinePhone/Revisions/PinePhone_v1.2[1.2 community edition] included).
+This page details a hardware fix for an issue that affects some early link:/documentation/PinePhone/_index#Hardware_revisions[v1.1 Braveheart] units (fixed since link:/documentation/PinePhone/Revisions/PinePhone_v1.2[1.2 community edition] included).
 
 The issue was [[PinePhone_v1.1_-_Braveheart#Excess_power_usage_while_driving_VBUS | originally reported here]] by megi.
 
@@ -43,7 +43,6 @@ Please be careful not to overheat nearby components trough the PCB traces when a
 
 Feel free to add your experiences and tips here.
 
-
 === Tradeoffs
 
 TODO: Unknown to the author
@@ -56,5 +55,4 @@ TODO
 
 * https://xnux.eu/devices/pp-pmic-fix.jpg[Tutorial from megi]
 * https://xnux.eu/devices/feature/anx7688.html[Description from megi] at the end of the page
-
 

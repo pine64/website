@@ -9,14 +9,13 @@ menu:
     weight: 
 ---
 
-
 The RK3399S processor in the PinePhone Pro searches for the bootloader (such as _U-Boot_ or _Tow-Boot_) in the following order:
 
 . SPI flash
 . eMMC (the internal memory)
 . MicroSD card
 
-==== Boot from microSD card temporarily
+== Boot from microSD card temporarily
 
 To temporarily boot from an inserted *microSD card* do the following:
 
@@ -24,17 +23,17 @@ To temporarily boot from an inserted *microSD card* do the following:
 
 * On the *Explorer Edition ordered between January and July 2022* hold the _RE_ button underneath the cover for a few seconds, while powering on the device. If the button is labeled _RESET_ instead of _RE_ please verify if the device is a regular link:/documentation/PinePhone/_index[PinePhone] (or the Developer Edition). This is required because older batches don't ship with _Tow-Boot_ on the SPI. Flashing _Tow-Boot_ can be caught up by following https://tow-boot.org/devices/pine64-pinephonePro.html[this] instruction. Note: If _Tow-Boot_ is flashed later, the microSD card can be selected at boot with the volume down key as well.
 
-* On the *Developer Edition (sold to selected developers only)* the SPI and the eMMC can be bypassed by shorting the bypass test points while booting. The process is explained in the article link:/documentation/PinePhone_Pro/Revisions/Developer_Edition#Nuking the factory AOSP installation|PinePhone Pro Developer Edition[PinePhone Pro Developer Edition]. Please join the community chat for any questions regarding the process.
+* On the *Developer Edition (sold to selected developers only)* the SPI and the eMMC can be bypassed by shorting the bypass test points while booting. The process is explained in the article link:/documentation/PinePhone_Pro/Revisions/Developer_Edition#Nuking the factory AOSP installation[PinePhone Pro Developer Edition]. Please join the community chat for any questions regarding the process.
 
 The RE button disables the SPI and the eMMC at the hardware level while the button is held and the PinePhone Pro will try to boot from the next available boot medium, which is the microSD card. Note: When holding the _RE_ button (or when shorting the contact points in case of the _Developer Edition_) for a longer time at boot the operating system will not initialize the SPI and eMMC and it will not be possible to write to these storage mediums until the next reboot.
 
 NOTE: The bootloader uses its own boot order for loading the kernel and other core operating system components at boot, which for example may result in the boot loader residing on the eMMC loading and booting the kernel from a microSD card.
 
-==== Boot from microSD card permanently
+== Boot from microSD card permanently
 
 The bootloader (such as _U-Boot_) resides in the free space in front of the first partition. Wiping the bootloader from the eMMC to make the PinePhone Pro boot from microSD card can be done using `sudo dd if&#61;/dev/zero of&#61;/dev/mmcblk2 seek&#61;64 count&#61;400 conv&#61;fsync`. Formatting the drive or deleting the partition table is not sufficient to wipe the bootloader.
 
-==== Notes
+== Notes
 
 If you received your device after July of 2022, the bootloader (_Tow-Boot_) resides on the SPI. To boot to an SD card, place the SD card in your PinePhone Pro and turn it on. The phone will vibrate once. At this point, hold down the volume down button until you feel the device vibrate again then release the button. The LED color should change to blue and your display should remain black for a few seconds. In a few seconds you should see the SD card booting, the indications of which are dependent on what image you chose. If the LED is flashing instead, the boot from SD failed. Erasing the SPI can be achieved via the Tow-Boot installer image. Instructions are available here https://tow-boot.org/devices/pine64-pinephonePro.html[Tow-Boot PinePhone Pro Instructions].
 

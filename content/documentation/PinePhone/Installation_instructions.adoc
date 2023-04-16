@@ -1,12 +1,12 @@
 ---
-title: "PinePhone Installation Instructions"
+title: "Installation Instructions"
 draft: false
 menu:
   docs:
     title:
     parent: "PinePhone"
     identifier: "PinePhone/Installation_instructions"
-    weight: 
+    weight: 3
 ---
 
 This section has generic installation instructions.
@@ -18,9 +18,7 @@ For specific installation instructions for each distribution please see the soft
 
 == Boot priority
 
-
 === PinePhone Pro
-
 
 For details regarding the boot priority on the PinePhone Pro see link:/documentation/PinePhone_Pro/_index#Boot order[PinePhone Pro].
 
@@ -28,7 +26,7 @@ For details regarding the boot priority on the PinePhone Pro see link:/documenta
 
 The PinePhone always boots from the microSD card first. It is therefore recommended to have a microSD card handy. It is *not* possible to lock themself out of the phone when the installation on the internal storage (the eMMC) fails, as a correctly flashed microSD card will always boot. Note: Booting from USB is not supported by the hardware, a live USB stick will not boot.
 
-The phone will also try to boot from microSD cards, which were previously flashed with an OS and formatted later, causing the phone to fail to boot. See link:#Reuse SD card for data storage on system booting from eMMC|reuse SD card[reuse SD card] on how to format the microSD card properly, including wiping the residues of u-boot.
+The phone will also try to boot from microSD cards, which were previously flashed with an OS and formatted later, causing the phone to fail to boot. See link:#Reuse SD card for data storage on system booting from eMMC[reuse SD card] on how to format the microSD card properly, including wiping the residues of u-boot.
 
 == Installation to the microSD
 
@@ -63,7 +61,6 @@ Download the _IMAGE.xz_ and the _IMAGE.bmap_ files, then run `bmaptool copy --bm
 GUI applications such as Etcher and GNOME Disks can be used to flash the microSD too.
 
 == Installation to the eMMC
-
 
 === From the booted microSD OS
 
@@ -162,5 +159,4 @@ Since Danctnix (arch) switched to a gpt partition table from mbr in May of 2022 
 
 * https://www.youtube.com/watch?v=7HMkU43P9hw[Youtube video on how to flash OS images on the Pinephone (SD or eMMC) by Tech Pills]
 * https://www.youtube.com/watch?v=u65dofYFAPY[Youtube video on How to install different operating systems on the PinePhone plus an Mobian overview by Elatronion]
-
 

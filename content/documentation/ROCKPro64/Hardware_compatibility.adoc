@@ -9,6 +9,5 @@ menu:
     weight: 5
 ---
 
-
 The hardware compatibility list can be found under link:/documentation/ROCKPro64/Hardware_compatibility[Hardware compatibility].
 

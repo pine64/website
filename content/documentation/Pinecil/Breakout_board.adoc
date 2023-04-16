@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 The Pinecil Break out board has these features:
 
 * Connect to JTAG port or ADC/DAC, I2C, UART, SPI
@@ -21,7 +20,7 @@ The Pinecil Break out board has these features:
 
 Photos:
 
-
-image:/documentation/images/Pinecil_breakout_top.jpg[Top_view,title="Top_view"]_image:/documentation/images/Pinecil_breakout_bottom.jpg[Bottom_view,title="Bottom_view"]_image:/documentation/images/UART-pinecil-breakout-board-testing30.png[ UART Debugging,title=" UART Debugging"]
-
+image:/documentation/images/Pinecil_breakout_top.jpg[Top_view,title="Top_view"]
+image:/documentation/images/Pinecil_breakout_bottom.jpg[Bottom_view,title="Bottom_view"]
+image:/documentation/images/UART-pinecil-breakout-board-testing30.png[ UART Debugging,title=" UART Debugging"]
 

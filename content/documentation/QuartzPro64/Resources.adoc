@@ -9,10 +9,7 @@ menu:
     weight: 7
 ---
 
-
-
 === Kernel
-
 
 * http://lists.infradead.org/pipermail/linux-rockchip/[The linux-rockchip mailing list archives]
 * https://patchwork.kernel.org/project/linux-rockchip/list/[linux-rockchip patchwork]
@@ -41,5 +38,4 @@ The various documents relating to the chips and board haven't been publicly rele
 * https://devzone.pine64.org/uploads/d392f228-d53b-11ec-9ab8-fe0395c0c83d/cf368836-966e-4c3c-9e0d-04a82a705d45/QuartzPro64-DevBoard-PCB-V1.0_20220216_topplace.pdf[QuartzPro64 PCB top layout]
 * https://devzone.pine64.org/uploads/d392f228-d53b-11ec-9ab8-fe0395c0c83d/ec260213-d4f7-4c61-ad1f-40ee7b7b7a35/QuartzPro64-DevBoard-PCB-V1.0_20220216_bottomplace.pdf[QuartzPro64 PCB bottom layout]
 * https://datasheet.lcsc.com/lcsc/2203311530_AMPAK-Tech-AP6275PR3_C2984106.pdf[AMPAK-Tech AP6275PR3 (WIFI & BT chip) datasheet]
-
 

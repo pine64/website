@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 * Gigabit Ethernet
 * eMMC module slot
 * HD Digital Video Out

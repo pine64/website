@@ -66,8 +66,8 @@ IMPORTANT: *Pay attention to the length in your cart|* Pine Store sells two diff
 . All new Pinecil V2 soldering irons include a single Pine64 newly designed Short tip (ST-B2 conical).
 . The discontinued V1 came with a longer normal length TS-B2 conical tip.
 . Pine Store carries 4-Packs of Pine64 designed Short Tips (only Pine64 makes the short style presently)
-#* Short tips https://pine64.com/product/pinecil-soldering-short-tip-set-fine/[Fine link, white box] (~6.2-6.5 Ω)
-#* Short tips https://pine64.com/product/pinecil-soldering-short-tip-set-gross/[Gross link, white box] (~6.2-6.5 Ω)
+* Short tips https://pine64.com/product/pinecil-soldering-short-tip-set-fine/[Fine link, white box] (~6.2-6.5 Ω)
+* Short tips https://pine64.com/product/pinecil-soldering-short-tip-set-gross/[Gross link, white box] (~6.2-6.5 Ω)
 . Pine64 Short tip packs are lower resistance/ohms which means higher performance and better ergonomics. Many professional irons have shorter tips for more control while soldering.
 
 NOTE: Older Pinecil V1 can not use the short tips until firmware code is written to enable manual selection of 6.2 Ω or 8.0 Ω tip. *Only the V2 model* has the hardware to auto-detect the two kinds of tips short 6.2 Ω or regular length 8.0 Ω. If you would like to help with the code, see https://github.com/Ralim/IronOS[GitHub/IronOS].

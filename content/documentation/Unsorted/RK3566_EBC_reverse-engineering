@@ -15,9 +15,7 @@ Unfortunately, the driver published for this eInk interface within the BSP kerne
 
 == Sources
 
-
 === Downstream
-
 
 The ebc driver source is https://gitlab.com/pine64-org/quartz-bsp/rockchip-linux/-/tree/quartz64/drivers/gpu/drm/rockchip/ebc-dev[available from the quartz-bsp repository].
 
@@ -39,9 +37,7 @@ https://github.com/smaeul/linux/commits/rk356x-ebc-dev[rk356x-ebc-dev] is the br
 
 == Documentation
 
-
 === Datasheets
-
 
 ==== EBC
 
@@ -186,9 +182,7 @@ which in of itself goes on to reference `0x1970`, and looking this one up, we'll
 
 == Reverse-Engineered Stuff
 
-
 === Structs
-
 
 ==== ebc_info
 
@@ -231,7 +225,6 @@ struct rkf_waveform {
 </source>
 
 === Enums
-
 
 ==== rkf_waveform_type
 

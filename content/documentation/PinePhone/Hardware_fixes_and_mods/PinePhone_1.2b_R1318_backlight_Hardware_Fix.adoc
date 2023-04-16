@@ -35,4 +35,3 @@ image:/documentation/images/Pinephone-pcb-r1318.png[R1318 location on the board,
 
 * https://xnux.eu/log/#022[Megi's blog: Backlight changes when swithcing between USB-C power modes]
 
-

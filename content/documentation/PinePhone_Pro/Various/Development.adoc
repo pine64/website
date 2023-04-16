@@ -13,9 +13,7 @@ This page documents the current status of software support for the link:/documen
 
 == Overview
 
-
 === Upstreaming Status
-
 
 |===
 |scope="col" | Function
@@ -41,9 +39,7 @@ The following sections give an overview over the current status of different par
 
 === Working
 
-
 ==== Kernel
-
 
 There's no canonical location for Pinephone Pro Linux kernel development, because Pinephone Pro DT is not mainline, yet. https://xff.cz/git/linux/log/?h=orange-pi-5.16[megi's kernel tree] is the most complete one, as of November 2021.
 
@@ -82,9 +78,7 @@ Working.
 
 === Not working
 
-
 === Unknown
-
 
 ==== Front camera
 

@@ -278,7 +278,6 @@ You can also manually install Void from a rootfs tarball: link:/documentation/Pi
 
 == BSD
 
-
 === NetBSD
 
 image:/documentation/images/netbsd.png[width=100]
@@ -312,7 +311,6 @@ The image boots from microSD card and from eMMC. To learn more about OpenBSD, pl
 ARM64 images, (including support for Pinebook Pro), can be found here https://www.openbsd.org/arm64.html[OpenBSD arm64]
 
 == Linux Installer Releases
-
 
 === Manjaro ARM
 
@@ -410,7 +408,6 @@ mkswap /dev/<gentoo>p2
 
 mkfs.ext4 /dev/<gentoo>p3`
 
-
 This may be a slightly different format if you're installing to a usb stick.
 
 *Installation*
@@ -431,9 +428,10 @@ Mount the boot partition.
 
 Chroot into the mounted directory and Install the operating system as per the AMD64 manual [https://wiki.gentoo.org/wiki/Handbook:AMD64]. Before you emerge anything, however, be sure to set your use flags as follows:
 
-`nano /etc/portage/make.conf`
+```
+nano /etc/portage/make.conf
 
-`MAKEOPTS="-j4 -l4"
+MAKEOPTS="-j4 -l4"
 
 ACCEPT_KEYWORDS="* **"
 
@@ -472,7 +470,8 @@ Begin the kernel configuration
 
 At this point, you're almost on your own. I don't know a strict cause-and-effect relationship between my kernel config and the behavior of my system. For starters, just go into platform selection and deselect everything except rockchip platforms. Once you're done save your configuration and exit. Make sure boot is mounted, and your fstab is set up with your swap mounted. Make sure dracut is installed.
 
-`make
+```
+make
 
 make modules
 
@@ -495,6 +494,7 @@ emerge the package extlinux and run `u-boot-update`. Open the extlinux configura
 
 And configure it as follows:
 
+```
 LABEL <label of your choice, for example GENTOO ARM>
 
 KERNEL /<name of your vmlinuz kernel image. Include the slash, but be relative to boot, not root.>

@@ -1,5 +1,5 @@
 ---
-title: "PinePhone APN Settings"
+title: "APN settings"
 draft: false
 menu:
   docs:
@@ -43,7 +43,6 @@ Disclaimer: Go to the websites of or speak to the customer support lines of thos
 Source: https://www.4ka.sk/vitajte/navody-a-nastavenia/detail-navodu
 
 === AT&T-based
-
 
 ==== AT&T (USA)
 
@@ -564,9 +563,7 @@ Source: https://service.winsim.de/help/showGeraeteeinstellungen (Requires login)
 
 == Carriers that do not work
 
-
 === FreedomPop (USA)
-
 
 VoIP-service. Customer service said they require Android 4.3+, and their free calling and texting works only with the Google Play app they make you use. So calls and texts don't work with non-smart phones and won't work with the PinePhone (even though it is a smart phone) because of software incompatibility. However, the data part still work if APN has been seen correctly set to *fp.com.attz*. You get 200MB free data per month. However, please watch out that you will get ding by $20 top up charge when over 200MB limit.
 
@@ -590,5 +587,4 @@ Other VoLTE services.
 
 * See also https://forum.pine64.org/showthread.php?tid=9150
 * LineageOS APN and MMS defaults - https://github.com/LineageOS/android_vendor_lineage/blob/lineage-19.1/prebuilt/common/etc/apns-conf.xml
-
 

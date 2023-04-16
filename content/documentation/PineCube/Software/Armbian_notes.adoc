@@ -65,4 +65,3 @@ On a test computer on the same network segment run iperf3 as a client:
 The same test computer, run iperf3 in the reverse direction:
 `iperf3 -c pinecube -t 60 -R`
 
-

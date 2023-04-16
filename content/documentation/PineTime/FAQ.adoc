@@ -188,5 +188,5 @@ The fix was to soft-reset the watch, by holding the PineTime button for ~8 secon
 
 == I'm stuck. How can I get help?
 
-Chat with the PineTime Community on link:/documentation/PineTime/_index#Community|Matrix / Discord / Telegram / IRC[Matrix / Discord / Telegram / IRC] (They are bridged into a single chatroom)
+Chat with the PineTime Community on link:/documentation/PineTime/_index#Community[Matrix / Discord / Telegram / IRC] (They are bridged into a single chatroom)
 

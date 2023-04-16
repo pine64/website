@@ -49,4 +49,3 @@ Fields from the Device Information Service:
 |"0.7.1"
 |===
 
-

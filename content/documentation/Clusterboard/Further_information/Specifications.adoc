@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 These are the Clusterboard specifications, based on the https://www.pine64.org/clusterboard/[product introduction]:
 
 * Standard mITX form-factor (167&nbsp;mm&nbsp;x 170&nbsp;mm)

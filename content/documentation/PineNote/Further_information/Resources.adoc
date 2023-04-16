@@ -9,6 +9,5 @@ menu:
     weight: 
 ---
 
-
 * link:/documentation/PineNote/Press[Press]
 

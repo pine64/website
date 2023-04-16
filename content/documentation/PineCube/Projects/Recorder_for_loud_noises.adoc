@@ -33,4 +33,3 @@ The link:/documentation/PineCube/_index[PineCube] can be used as a recorder for 
       echo "$ts $stats" >> noise-stats.txt
  done
 
-

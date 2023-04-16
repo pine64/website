@@ -166,4 +166,3 @@ Now that you have /dev/video10 hooked into the gstreamer pipeline you can then c
 
 Be sure to disconnect VLC before trying to use the virtual web camera with chromium. Launch chromium and go to a web conference like https://meet.jit.si[jitsi]. When it prompts you for the camera pick the "Dummy Video Device..." and it should be much like what you see in VLC. Note that Firefox isn't really working at this moment and the symptoms appear very similar to the problem with mpv/ffmpeg mentioned above, ie. when they connect to the camera they show only the first frame and then drop. It's unclear whether the bug is in gstreamer, v4l, or ffmpeg (or somewhere in these instructions).
 
-

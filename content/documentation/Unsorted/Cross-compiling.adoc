@@ -13,7 +13,6 @@ The Pinephone's triple for cross-compiling is `aarch64-unknown-linux-gnu`.
 
 == C/++
 
-
 === Installing the Toolchain
 
 IMPORTANT: Please add instructions for other distributions to this section if you know them|
@@ -38,9 +37,7 @@ _Note: If you are trying to build an Arch Linux package with `makepkg`, also mak
 
 ==== GNU Make
 
-
 ===== Kernel Makefile
-
 
 For each invocation of `make`, be sure to pass the options `ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu-` like this:
 
@@ -80,9 +77,7 @@ OR it can be installed with multirust [Is this still accurate???]:
 
 === Compiling
 
-
 ==== rustc
-
 
 When using rustc just add the two flags --target=aarch64-unknown-linux-gnu and -C linker=$gcc_name. Under Arch, this would look like:
 

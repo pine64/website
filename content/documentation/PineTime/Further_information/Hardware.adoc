@@ -9,10 +9,7 @@ menu:
     weight: 
 ---
 
-
-
 === Display
-
 
 Note: The factory-default software on the PineTime does not auto-detect the display being disconnected when it has already booted. That can cause garbled output, to fix it just restart the PineTime.
 

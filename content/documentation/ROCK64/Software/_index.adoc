@@ -13,7 +13,6 @@ This page contains a list of all available releases for the link:/documentation/
 
 == Linux
 
-
 === AOSC
 
 image:/documentation/images/aosc.png[width=100]
@@ -294,7 +293,6 @@ Flashing the distribution to the eMMC:
 
 == BSD
 
-
 === FreeBSD
 
 image:/documentation/images/Freebsd_Logo.png[width=100]
@@ -499,5 +497,4 @@ Download:
 * https://files.pine64.org//SDK/ROCK64/ROCK64_SDK_android9.0.tar.gz[Direct Download] from _pine64.org_ (104.34GB)
 
 NOTE: The MD5 hash of the TAR-GZip file is _1EAC08942E238293E3AF11C7890DF307_
-
 

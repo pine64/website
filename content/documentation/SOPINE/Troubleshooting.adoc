@@ -9,7 +9,6 @@ menu:
     weight: 3
 ---
 
-
 There is a number of things that can prevent the PINE A64(+) board from booting up properly. The most common culprits of a failed boot are (to find out more click http://forum.pine64.org/showthread.php?tid=514[here]):
 
 * Subpar or counterfeit microSD card

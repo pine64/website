@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 * Board Dimensions: 133mm x 80mm x 19mm
 * Input Power: +12V @3A/5A with 5.5mm/2.1mm Type M Barrel type DC connector
 * https://files.pine64.org/doc/rockpro64/rockpro64_v21-SCH.pdf[ROCKPro64 Schematic v2.1 (Second Batch Production Release)]

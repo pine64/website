@@ -185,4 +185,3 @@ Also, these are the official Subreddits:
 * *link:General/Getting_started[General/Getting started]*: Basic information on setting up and handling PINE64 devices, such as how to write (flash) OS images to microSD cards and eMMC modules
 * *link:General/How_to_contribute[General/How to contribute]*: Information about how to contribute to different partner projects
 * *link:General/Where_to_report_bugs[General/Where to report bugs]*: Information about how to report bugs
-* *link:Unsorted/Project[]*: A variety of well documented PINE64 projects to serve as inspiration

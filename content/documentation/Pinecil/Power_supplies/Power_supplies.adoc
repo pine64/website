@@ -13,9 +13,7 @@ This article is about compatible power supplies for the link:/documentation/Pine
 
 == Power Options for Pinecil
 
-
 === Overview
-
 
 . Using a power supply that is at the higher end of the Voltage/Amps requirements will give faster heating and performance.
 . Any USB-C power supply that supports PD (Power Delivery) and has at least the minimum Volt/amps listed should work. The USB-C PD65W, 3.25A, 20V is recommended, but a lower PD45W will also work on V1.
@@ -166,5 +164,4 @@ image:/documentation/images/Power_Wheel_Adapters_for_18-21V_Tool_Batteries.png[_
 == Go back to Pinecil article
 
 Go back to link:/documentation/Pinecil/_index[Pinecil article].
-
 

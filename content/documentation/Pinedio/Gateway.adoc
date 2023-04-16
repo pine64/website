@@ -9,7 +9,6 @@ menu:
     weight: 1
 ---
 
-
 The gateway will be available in two variants - indoor and outdoor. All that is known about the outdoor unit is that it will have "an aluminum, rugged and water resistant case".
 The indoor unit consists of a PINE A64-LTS, fitted with a purpose built hat (adapter) which uses a LoRa module by RakWireless. The chipset used is the SX1303, and the module via the SPI interface. There are two external connections on the enclosure for the GPS and loRa antenna.
 
@@ -25,7 +24,10 @@ The indoor unit consists of a PINE A64-LTS, fitted with a purpose built hat (ada
 |PINE A64-LTS
 
 |SX1303 SPI
-|Pin 19 = MOSI / PC0<br/>Pin 21 = MISO/PC1<br/>Pin23 = CLK/PC2<br/>Pin24 = CS/PC3
+|Pin 19 = MOSI / PC0 +
+Pin 21 = MISO/PC1 +
+Pin23 = CLK/PC2 +
+Pin24 = CS/PC3
 |SPI0 (/dev/spidev0.0)
 
 |SX1303 RESET
@@ -33,7 +35,8 @@ The indoor unit consists of a PINE A64-LTS, fitted with a purpose built hat (ada
 |GPIO71 (/sys/class/gpio/gpio71)
 
 |GPS UART
-|Pin 8 = TX/<br>Pin 10 = RX
+|Pin 8 = TX/ +
+Pin 10 = RX
 |UART2 (/dev/ttyS2)
 
 |GPS RESET
@@ -51,7 +54,6 @@ image:/documentation/images/Blog-april-InsideLoRaGateway.jpg[]
 image:/documentation/images/Blog-april-InsideLoRaGateway2.jpeg[]
 image:/documentation/images/Discord-lora-gateway-20210413_143615.jpg[]
 image:/documentation/images/Discord-lora-gateway-20210413_1435271.jpg[]
-
 
 == Operating systems
 

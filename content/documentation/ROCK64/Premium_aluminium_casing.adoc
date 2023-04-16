@@ -29,9 +29,7 @@ The built in heat spreader does do its job at sinking heat into the case. User:C
 
 == Tips and Tricks
 
-
 === HDMI and Audio Jack Clearance Issues
-
 
 Some cases may not allow the ROCK64 IO to snugly fit into its predestined cutout holes on its long side. If this is the case for you, try loosening the screws on the HDMI, power and audio jack port side, and only tightening the screws on the GPIO side to still make good ground contact. The HDMI and audio jacks should then fit into their holes snugly. If you wish to try, you can also try adjusting the screws holding in the posts on the bottom of the case.
 
@@ -56,5 +54,4 @@ Anodising has a significantly poorer thermal conductivity than aluminium, theref
 === Using the case with the PINE H64
 
 Whilst the case is sold as a ROCK64 accessory, all the connectors and mounting screws on the link:/documentation/PINE_H64_Model_B/_index[PINE H64] are in the same spots.  The only difficulty is that the H6 CPU is closer to the "Pi2" connector and extends beyond the edge of the heat spreader by about 5mm.  User:AlephNull used a piece of copper shim on top of the H6 (with a smear of thermal paste) to spread the heat back to the thermal pad.  In this configuration, the CPU stabilised at about 76°C running 4 copies of a CPU stress test.  Whilst a lower temperature might be nice, this is still well below the 125°C limit.
-
 

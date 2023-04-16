@@ -1,5 +1,5 @@
 ---
-title: "Pinecil Hall Effect Sensor"
+title: "Hall Effect Sensor"
 draft: false
 menu:
   docs:

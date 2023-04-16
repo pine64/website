@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 * https://linux-sunxi.org/Pine64#Manufacturer_images[Linux Sunxi Wiki page on PINE A64]
 * https://github.com/longsleep/build-pine64-image[PINE A64 Linux build scripts, tools and instructions by Longsleep]
 * https://www.stdin.xyz/downloads/people/longsleep/pine64-images/[PINE A64 Linux image by Longsleep]

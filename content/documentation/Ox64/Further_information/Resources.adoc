@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 * A video on how to connect to, flash and boot the Ox64 as at 2023-02 (15min) can be found https://youtube.com/watch?v=czRtF-UNiEY[here].
 * Another video that covers soldering pins, connecting via Pi Pico and flashing Linux (inc u-boot, as of 2023-Mar-3) posted https://youtu.be/vPAk5sq_Ilc[here].
 * https://gist.github.com/lupyuen/7a0c697b89abccda8e38b33dfe5ebaff[First Batch of Ox64 won't appear as USB Serial Port]

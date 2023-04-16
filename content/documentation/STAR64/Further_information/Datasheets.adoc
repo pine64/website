@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 * Star64 JH7110 SoC information:
 ** https://doc-en.rvspace.org/JH7110/PDF/JH7110_Product_Brief.pdf[StarFive JH7110 SoC Product Brief]
 ** https://doc-en.rvspace.org/JH7110/PDF/JH7110_Datasheet.pdf[StarFive JH7110 SoC Datasheet]

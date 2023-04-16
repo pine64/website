@@ -9,24 +9,18 @@ menu:
     weight: 
 ---
 
-
 The following section contains notes regarding compatible bootloaders with the PinePhone Pro.
 
-==== U-Boot
+== U-Boot
 
 The pre-installed operating system on the PinePhone Pro Explorer Edition, if sold prior to the end of July of 2022, is using link:/documentation/Unsorted/U-Boot[U-Boot] as default bootloader. Batches sold after July of 2022 are using _Tow-Boot_
 
-==== Tow-Boot
+== Tow-Boot
 
 Current batches of the PinePhone Pro ship with _Tow-Boot_ pre-installed to the SPI flash, which is an opinionated distribution of _U-Boot_ and brings numerous advantages over stock _U-Boot_, such as the possibility to choose from booting the eMMC or microSD card using the volume buttons during boot, as well as a _USB Mass Storage mode_, where the device can be written to by connecting the device to a computer via USB.
 
 The user can flash Tow-Boot to the PinePhone Pro using the https://tow-boot.org/devices/pine64-pinephonePro.html[instructions on the Tow-Boot website].
 
-==== levinboot
+== levinboot
 
 The levinboot bootloader is another option for the PinePhone Pro. The project repository can be found https://gitlab.com/DeltaGem/levinboot/-/tree/master/[here]. (Pinephone Pro supporting fork is https://xff.cz/git/levinboot/[here].)
-
-== Modem
-
-The PinePhone uses Quectel EG25-G as modem. AT commands are used to communicate with the modem.
-

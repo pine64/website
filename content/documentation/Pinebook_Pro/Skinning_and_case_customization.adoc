@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 Template files for creating custom skins. Each includes template layers for art placement, and CUT lines:
 
 * https://wiki.pine64.org/wiki/File:Pbp_template_case_bottom.pdf[Case Lid Template]

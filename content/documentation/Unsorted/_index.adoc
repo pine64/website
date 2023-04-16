@@ -13,7 +13,6 @@ menu:
 * link:U-Boot[]
 * link:Supported_displays[Supported displays]
 * link:RK3399_boot_sequence[RK3399 boot sequence]
-* link:Project[]
 * link:PineModems[]
 * link:PhoenixCard[]
 * link:POT[]

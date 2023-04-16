@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 * https://www.pine64.org/pinephonepro/[Product Page]
 * https://www.youtube.com/watch?v=wP2-6Z74W44[Announcement video]
 * https://www.pine64.org/2021/10/15/october-update-introducing-the-pinephone-pro/[Blog post] with the announcement

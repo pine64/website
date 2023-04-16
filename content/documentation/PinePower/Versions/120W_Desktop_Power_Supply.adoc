@@ -9,12 +9,11 @@ menu:
     weight: 2
 ---
 
-
 image:/documentation/images/PinePower-Desktop-2.jpg[PinePower Desktop 120W render,title="PinePower Desktop 120W render",width=400]
 
 A 120W desktop power adapter. It features 1 USB-C port and 4 USB-A port. The 120W output is not per port, but total output power. This is calculated by combining the 65W USB-C, 3x15W USB-A and the 18W USB-A QC, making a total of 128W. The only difference between the US and EU edition is the supplied power cable. Every port, with exception of the wireless Q-charger, has a display, portraying the output voltage and amps. The display back light can be turned on and off by capacitive touch button, located on the top left side of the unit.
 
-=== General specifications
+== General specifications
 
 Body:
 
@@ -44,7 +43,7 @@ Connections:
 * 4x USB-A
 * 1x USB-C
 
-=== Power specifications
+== Power specifications
 
 [cols="1,1,1,1,1"]
 |===
@@ -79,13 +78,16 @@ Connections:
 | -
 |===
 
-=== Internals
+== Internals
 
 The power unit is not made to be disassembled, do so at your own risk. The front plate is secured with 4 tabs, that can be disengaged with a screwdriver. The complete assembly can be slid out, but do mind the same tab in the casing. The power button at the back of the case has a plug that can be disconnected from the main PCB. The wireless charging PCB has to be de-soldered, or forcefully removed from the inner casing, as it is glued to the top of the case.
 
-<gallery mode="packed-hover" heights="180">
-image:/documentation/images/PinPower-Desktop-front-plate-removal.jpg[_(Removal_of_the_front_plate),title="_(Removal_of_the_front_plate)"]_image:/documentation/images/PinPower-Desktop-Display-front.jpg[_(Front_view_display_PCB),title="_(Front_view display PCB)"]_image:/documentation/images/PinPower-Desktop-Display-back.jpg[_(Back_side_display_PCB),title="_(Back_side_display_PCB)"]_image:/documentation/images/PinPower-Desktop-PCB-top.jpg[_(Top_side_main_PCB),title="_(Top_side_main_PCB)"]_image:/documentation/images/PinPower-Desktop-PCB-bottom.jpg[_(Bottom_view_main_PCB),title="_(Bottom_view_main_PCB)"]_image:/documentation/images/PinPower-Desktop-wireless-charger.jpg[ (Wireless charger),title=" (Wireless charger)"]
-
+image:/documentation/images/PinPower-Desktop-front-plate-removal.jpg[(Removal_of_the_front_plate),title="(Removal_of_the_front_plate)"]
+image:/documentation/images/PinPower-Desktop-Display-front.jpg[(Front_view_display_PCB),title="(Front_view display PCB)"]
+image:/documentation/images/PinPower-Desktop-Display-back.jpg[(Back_side_display_PCB),title="(Back_side_display_PCB)"]
+image:/documentation/images/PinPower-Desktop-PCB-top.jpg[(Top_side_main_PCB),title="(Top_side_main_PCB)"]
+image:/documentation/images/PinPower-Desktop-PCB-bottom.jpg[(Bottom_view_main_PCB),title="(Bottom_view_main_PCB)"]
+image:/documentation/images/PinPower-Desktop-wireless-charger.jpg[(Wireless charger),title="(Wireless charger)"]
 
 Some remarks:
 

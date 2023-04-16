@@ -47,7 +47,6 @@ The article contains information about cases, holders/stands, 3D-models, and sup
 
 image:/documentation/images/3D-Pinecil-handle-white-02.jpg[width=400]
 
-
 === Soldering supplies
 
 * https://www.aliexpress.us/item/2251832826887062.html[Brass w/Rosin] - Brass Wool with hard rosin in the bottom for tip cleaning. Twirl the tip in the brass wool often during soldering to keep the tip clean. Lower the temperature and dip lower into the hard rosin when you need a deeper cleaning.
@@ -66,5 +65,4 @@ Videos comparing expensive and budget flux and solder (includes links to items).
 . https://www.youtube.com/watch?v=zZ9wxs6xuYU
 
 * Fume Fan: this removes flux smoke from the air. Work near an open window and soldering outside also helps. Set up a work area where the air and smoke is being sucked away. Many videos showing how to make a fume fan for soldering.
-
 

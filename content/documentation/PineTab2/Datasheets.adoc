@@ -9,7 +9,6 @@ menu:
     weight: 3
 ---
 
-
 Rockchip RK3566 SoC information:
 
 * https://files.pine64.org/doc/quartz64/Rockchip%20RK3566%20Datasheet%20V1.0-20201210.pdf[Rockchip RK3566 ver 1.0 datasheet]

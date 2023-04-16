@@ -9,7 +9,6 @@ menu:
     weight: 1
 ---
 
-
 *Read these first|*
 
 * link:/documentation/PineTime/Software/Upgrade_to_InfiniTime_1_0_0[Upgrading your new PineTime to InfiniTime 1.0.0]

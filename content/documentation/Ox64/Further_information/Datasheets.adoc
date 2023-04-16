@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 Bouffalo BL808 SoC information:
 
 * https://raw.githubusercontent.com/bouffalolab/bl_docs/main/BL808_DS/en/BL808_DS_1.2_en.pdf[Bouffalo Lab BL808 SoC Datasheet]

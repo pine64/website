@@ -9,7 +9,6 @@ menu:
     weight: 3
 ---
 
-
 Note: This section to be refined/replaced as boards and tools mature.
 
 . The https://files.pine64.org/doc/star64/Star64_Schematic_V1.0_20220721.pdf[schematic] has several discrepancies with actual board labels.
@@ -23,5 +22,4 @@ Note: This section to be refined/replaced as boards and tools mature.
  *** Warning - bad CRC, using default environment
 
  Not a StarFive EEPROM data format - magic error
-
 

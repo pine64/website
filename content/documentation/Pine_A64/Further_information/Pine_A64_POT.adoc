@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 * link:/documentation/Unsorted/POT[PINE A64 Peripheral On Top (POT) and Related Devices]
 * link:/documentation/Unsorted/Wifi_remote_i2c[WiFi Remote I2c Quick Start Guide]
 

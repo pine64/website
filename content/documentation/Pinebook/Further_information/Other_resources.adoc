@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 * https://linux-sunxi.org/Pine_Pinebook[Linux Sunxi Wiki page on Pinebook]
 * https://github.com/ayufan-pine64/linux-build/releases[Pinebook Linux Github by ayufan]
 * https://github.com/ayufan-pine64/android-7.1/releases[Pinebook Android Github by ayufan]

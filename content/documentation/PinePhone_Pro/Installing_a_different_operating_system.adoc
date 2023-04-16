@@ -9,10 +9,9 @@ menu:
     weight: 3
 ---
 
-
 The software releases can be installed (the process is being referred to as _flashing_) to the eMMC or to an microSD card.
 
-==== Flashing to microSD card
+== Flashing to microSD card
 
 To install an image to the microSD card:
 
@@ -28,11 +27,11 @@ To install an image to the microSD card:
 #* On the *Explorer Edition ordered between January and July 2022* hold the _RE_ button underneath the back cover while booting (or use the _volume down key_ if you flashed _Tow-Boot_).
 #* On the *Developer Edition (sold to selected developers only)* apply the bypass by shorting the testing pads while booting according to the datasheet (or use the _volume down key_ if you flashed _Tow-Boot_).
 
-Details regarding the boot order can be found in the link:/documentation/PinePhone_Pro/_index#Boot order|Boot order[Boot order] section.
+Details regarding the boot order can be found in the link:/documentation/PinePhone_Pro/_index#Boot order[Boot order] section.
 
-==== Flashing to the eMMC
+== Flashing to the eMMC
 
-Flashing to the eMMC can either be done using _Tow-Boot*s USB Mass Storage mode (see link:#Boot order[Boot order] if you are unsure if the device comes with Tow-Bot pre-installed) or by booting an operating system from the microSD (see the section link:/documentation/PinePhone_Pro/_index#Flashing to microSD card|Flashing to microSD card[Flashing to microSD card]) and by writing to the eMMC directly from there:
+Flashing to the eMMC can either be done using _Tow-Boot*s USB Mass Storage mode (see link:#Boot order[Boot order] if you are unsure if the device comes with Tow-Bot pre-installed) or by booting an operating system from the microSD (see the section link:/documentation/PinePhone_Pro/_index#Flashing to microSD card[Flashing to microSD card]) and by writing to the eMMC directly from there:
 
 By using Tow-Boot:
 . Power off the device
@@ -46,7 +45,7 @@ By using Tow-Boot:
 
 By booting a microSD card:
 
-. Boot an operating system link:/documentation/PinePhone_Pro/_index#Flashing to microSD card|from the microSD card[from the microSD card]. If there is already a bootloader on the eMMC installed see the section link:/documentation/PinePhone_Pro/_index#Boot order|Boot order[Boot order] to bypass it.
+. Boot an operating system link:/documentation/PinePhone_Pro/_index#Flashing to microSD card[from the microSD card]. If there is already a bootloader on the eMMC installed see the section link:/documentation/PinePhone_Pro/_index#Boot order[Boot order] to bypass it.
 . Download or copy the desired image to the microSD card as file
 . Check if the eMMC appears under `lsblk`. If it doesn't appear in the output of the command, the eMMC wasn't initialized due to applying the above explained bypass method for a too long time during the boot
 . *Important:* Typically the image will be compressed in an archive file to reduce the download size (such as _.gz_ or _.xz_). Extract the image from its archive file to get the file with the file extension _.img_.

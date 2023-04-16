@@ -5,21 +5,21 @@ menu:
   docs:
     title:
     parent: "SOQuartz"
-    identifier: "SOQuartz/SOQuartz_Model-A_Baseboard_Features"
+    identifier: "SOQuartz/Model-A_Baseboard_Features"
     weight: 
 ---
 
-
 image:/documentation/images/SOQuartz_model-A_baseboard.jpg[SOQuartz Model-A Baseboard,title="SOQuartz Model-A Baseboard",width=400]
+
 * Model "A" Baseboard Dimensions: 133mm x 80mm x 19mm
 * Input Power: DC 12V @ 3A 5.5OD/2.1ID (IEC 60130-10 Type A) Barrel DC Jack connector
 
-=== Storage
+== Storage
 
 * microSD - bootable, support SDHC and SDXC, storage up to 2TB
 * USB -	2 USB2.0 Host port
 
-=== Expansion Ports
+== Expansion Ports
 
 * MiPi-CSI - 1x 2 lanes, 1x 4 lanes
 * MiPi-DSI - 1x 2 lanes, 1x 4 lanes
@@ -27,7 +27,7 @@ image:/documentation/images/SOQuartz_model-A_baseboard.jpg[SOQuartz Model-A Base
 * PCIe 1x open ended slot
 * 1x5 pin USB Expansion Header (J15)
 
-=== GPIO Pins
+== GPIO Pins
 
 Attention|GPIOs are 3.3V|
 
@@ -45,12 +45,12 @@ Interesting alternate pin configurations are listed in [brackets].
 | | 2
 | | 5 V
 
-| | _[I2C2_SDA_M1]_ GPIO4_B4_3V3 <sup >a</sup>
+| | _[I2C2_SDA_M1]_ GPIO4_B4_3V3 <sup >a^
 | | 3
 | | 4
 | | 5 V
 
-| | _[I2C2_SCL_M1]_ GPIO4_B5_3V3 <sup >a</sup>
+| | _[I2C2_SCL_M1]_ GPIO4_B5_3V3 <sup >a^
 | | 5
 | | 6
 | | GND
@@ -105,10 +105,10 @@ Interesting alternate pin configurations are listed in [brackets].
 | | 26
 | | GPIO4_A7_3V3 _[SPI3_CS1_M0]_
 
-| | _[I2C3_SDA_M0]_ GPIO1_A0_3V3 <sup >a</sup>
+| | _[I2C3_SDA_M0]_ GPIO1_A0_3V3 <sup >a^
 | | 27
 | | 28
-| | GPIO1_A1_3V3 _[I2C3_SCL_M0]_ <sup >a</sup>
+| | GPIO1_A1_3V3 _[I2C3_SCL_M0]_ <sup >a^
 
 | | GPIO3_A5_3V3
 | | 29
@@ -141,7 +141,7 @@ Interesting alternate pin configurations are listed in [brackets].
 | | GPIO3_D1_3V3 _[I2S1_SDO_M1]_
 |===
 
-==== Notes
+=== Notes
 
 <ol >
   <li>pulled high to 3.3V through 2.2kOhm resistor</li>
@@ -149,7 +149,7 @@ Interesting alternate pin configurations are listed in [brackets].
 
 Source: Page 11 of https://files.pine64.org/doc/quartz64/SOQuartz-Model-A-Baseboard-Schematic-20220522.pdf[the board schematics].
 
-=== USB Expansion Header
+== USB Expansion Header
 
 [cols="1,1"]
 |===

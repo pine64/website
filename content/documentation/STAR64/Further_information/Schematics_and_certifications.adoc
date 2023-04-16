@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 * Model "A" Baseboard Dimensions: 133mm&times;80mm&times;19mm
 * Input Power: DC 12V @ 3A 5.5mmOD/2.1mmID center-positive Barrel DC Jack connector
 * Schematic:

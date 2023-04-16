@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-= Mali-400 64-bit driver
 Here is the good DRM powerpoint presentation by Free Electron: https://free-electrons.com/pub/conferences/2017/kr/ripard-drm/ripard-drm.pdf
 
 Here is the DRM video presentation by Free Electron: https://www.youtube.com/watch?v=LbDOCJcDRoo
@@ -41,27 +40,3 @@ Known issue：
 
 Due to rotate hardware not support crop, and majority exa accelerators operate using crop，sunxi_arm_video is reference code (features already verified)，this allow familiar with xorg hardware accelation，
 If using web page and character appear vertical strip, this may not related to cache problem and may due to character library. This issue still need to further verified.
-
-<|--
-
-== Original Chinese statement (X11 version).
-
-附件是实现的相关代码和库文件。
-
-lib_x11_r6p0.tar.bz2：是上层opengles的库；
-r6p0_kernel_driver.tar.bz2：gpu驱动代码；
-sunxi_arm_video.tar.bz2：是video有关dri2和exa加速的参考实现；
-sunxi_drm_0622.tar.bz2：是drm驱动；
-
-方法：
-
-使用drm驱动不能通display驱动共存，其借用了display对硬件的BSP部分；
-drm驱动中可以结合sunxi_arm_video中申请gem时使用cache和刷新cache，打开cache确实提升性能；
-drm驱动中同样借用了sunxi_tr中的对rotate的BSP部分，不要同sunxi_tr公用；
-
-已知问题：
-
-由于rotate硬件不支持crop，而exa加速中大部分都是crop操作，sunxi_arm_video中只是实现了参考代码（验证过功能），你们熟悉xorg硬件加速，更为详细的优化你们更为专业；
-使用后网页等字体会出现竖条纹，应该不是cache的问题，字体库还是其它原因，可能需要你们进一步确认。-->
-
-

@@ -9,8 +9,8 @@ menu:
     weight: 
 ---
 
-
-image:/documentation/images/ClusterBoardFront-Annotated.jpg[Front_view_of_the_Clusterboard_(revision_2.3),title="Front_view_of_the_Clusterboard_(revision_2.3)",width=400]_image:/documentation/images/ClusterBoardBack.jpg[Rear view of the Clusterboard (revision 2.3),title="Rear view of the Clusterboard (revision 2.3)",width=200]
+image:/documentation/images/ClusterBoardFront-Annotated.jpg[Front_view_of_the_Clusterboard_(revision_2.3),title="Front_view_of_the_Clusterboard_(revision_2.3)",width=400]
+image:/documentation/images/ClusterBoardBack.jpg[Rear view of the Clusterboard (revision 2.3),title="Rear view of the Clusterboard (revision 2.3)",width=200]
 
 [cols="1,1"]
 |===
@@ -69,13 +69,13 @@ image:/documentation/images/ClusterBoardFront-Annotated.jpg[Front_view_of_the_Cl
 | Places for soldering two resistors (optional, for use with an ATX power suppply that requires dummy load on 3.3&nbsp;V and 12&nbsp;V rails)
 |===
 
-For the part D, please see the important note in the link:#Specifications|section above[section above].  For the part K, please see the notes in the link:#Hardware revisions|section below[section below].  Parts F to L exist separately for each of all seven SOPINE or SOEDGE modules.
+For the part D, please see the important note in the link:#Specifications[section above].  For the part K, please see the notes in the link:#Hardware revisions[section below].  Parts F to L exist separately for each of all seven SOPINE or SOEDGE modules.
 
-=== 20-pin Expansion Connector
+== 20-pin Expansion Connector
 
-The 20-pin expansion connector is the part J decribed in the link:#Layout|section above[section above], available for each SOPINE or SOEDGE module.  There is an unofficial description of the pinout in https://forum.pine64.org/showthread.php?tid=5713[this forum thread].  The unofficial pinout is also visible directly in https://forum.pine64.org/attachment.php?aid=1111[this picture].
+The 20-pin expansion connector is the part J decribed in the link:#Layout[section above], available for each SOPINE or SOEDGE module.  There is an unofficial description of the pinout in https://forum.pine64.org/showthread.php?tid=5713[this forum thread].  The unofficial pinout is also visible directly in https://forum.pine64.org/attachment.php?aid=1111[this picture].
 
-=== SOPINE Module
+== SOPINE Module
 
 image:/documentation/images/SOPine-Annotated.jpg[Front (top) and rear (bottom) views of the SOPINE module,title="Front (top) and rear (bottom) views of the SOPINE module",width=300]
 

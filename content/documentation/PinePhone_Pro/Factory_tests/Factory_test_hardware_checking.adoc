@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 image:/documentation/images/PPP_Abdroid_Test_Utility-5.jpg[width=400]
 
 Please note that this Android build solely for PinePhone Pro hardware checking purpose and solely used by the support team. This is NOT a general release build.

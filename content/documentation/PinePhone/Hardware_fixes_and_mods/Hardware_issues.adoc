@@ -1,5 +1,5 @@
 ---
-title: "PinePhone Hardware Issues"
+title: "Hardware issues"
 draft: false
 menu:
   docs:
@@ -13,9 +13,7 @@ menu:
 
 == Main Board
 
-
 === Sim Reader
-
 
 The sim reader may fail to read a sim card (reporting 'sim-missing' in mmcli), possibly due to deformed pins (if you put your sim adapter in without a sim), or due to a warped sim card adapter.
 

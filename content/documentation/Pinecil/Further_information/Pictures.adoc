@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 Pre-release:
 
 image:/documentation/images/Pinecil_Exploded_Diagram_ver_0.9.png[Pinecil_renders|alt=alt_language,title="Pinecil_renders|alt=alt_language"]

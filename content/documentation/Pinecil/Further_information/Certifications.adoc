@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 Pinecil V2 Certifications:
 
 * https://files.pine64.org/doc/cert/Pinecilv2%20CE%20Certificate%20LCSA070722058E.pdf[Pinecil V2 CE Certificate]

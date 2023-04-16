@@ -1,12 +1,12 @@
 ---
-title: "PinePhone Updating Instructions"
+title: "Updating instructions"
 draft: false
 menu:
   docs:
     title:
     parent: "PinePhone/Software"
     identifier: "PinePhone/Software/Updating_instructions"
-    weight: 
+    weight: 3
 ---
 
 == Methods of updating
@@ -28,7 +28,6 @@ To update all packages under Arch-based distributions, the package manager _pacm
 
   $ sudo pacman -Syu
 
-Note: ` sudo pacman -Syu --cachedir /path/to/external` can be used for a separate download location to improve installation speed, otherwise consider reading https://wiki.archlinux.org/index.php/Pacman#Configuration for further optimization.
+Note: `sudo pacman -Syu --cachedir /path/to/external` can be used for a separate download location to improve installation speed, otherwise consider reading https://wiki.archlinux.org/index.php/Pacman#Configuration for further optimization.
 
 If you encounter any errors during the update, you may have to update the Pacman mirrors. Under Manjaro this can be done using `sudo pacman-mirrors -f`
-

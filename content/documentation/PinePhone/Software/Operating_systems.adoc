@@ -1,12 +1,12 @@
 ---
-title: "PinePhone Software Releases"
+title: "Releases"
 draft: false
 menu:
   docs:
     title:
     parent: "PinePhone/Software"
     identifier: "PinePhone/Software/Operating_systems"
-    weight: 
+    weight: 1
 ---
 
 This page contains a list of all available releases and tools for the link:/documentation/PinePhone/_index[PinePhone] in alphabetical order.
@@ -16,7 +16,6 @@ NOTE: Some releases may not have a good setup for the backlight at low brightnes
 See link:/documentation/PinePhone/Installation_instructions[Installation instructions] on how to install the operating systems. Please see link:/documentation/PinePhone/Software/Updating_instructions[Update instructions] for how to update the phone.
 
 == Software Releases
-
 
 === Arch Linux ARM
 
@@ -672,8 +671,7 @@ After power up or reboot, you may perform and complete the test routine, or appl
 
 All the download links below are direct download from pine64.org.
 
-WARNING: These images are for testing purposes only. If you are looking for an up-to-date image please select one from the link:#Software Releases|software releases[software releases] section instead.
-
+WARNING: These images are for testing purposes only. If you are looking for an up-to-date image please select one from the link:#Software Releases[software releases] section instead.
 
 [cols="1,1,1,1"]
 |===
@@ -713,7 +711,6 @@ WARNING: These images are for testing purposes only. If you are looking for an u
 | `2d7f5271e7a281db8f1b1219bedbe131`
 |===
 
-
 == Installing other ARM64 distributions
 
 Other ARM64 distributions might be installed as well, however this requires some tinkering and may not work well.
@@ -744,7 +741,7 @@ If you would like to see examples or specific commands for how to complete these
 
 Community
 
-* link:/documentation/_index#Community_and_Support|Links to the community services[Links to the community services]
+* link:/documentation/_index#Community_and_Support[Links to the community services]
 
 Hardware information
 
@@ -771,5 +768,4 @@ Other
 * https://tuxphones.com/yet-another-librem-5-and-pinephone-linux-smartphone-comparison/[Martijn Braam Librem 5 comparison, especially covering openness/blobs]
 * https://fam-ribbers.com/2019/12/28/State-of-Linux-on-mobile-and-common-misconceptions.html[Bart Ribbers blog on Linux distributions and desktop environments on mobile devices]
 * https://www.jeffgeerling.com/blog/2019/a2-class-microsd-cards-offer-no-better-performance-raspberry-pi[Jeff Geerling on testing microSD cards]
-
 

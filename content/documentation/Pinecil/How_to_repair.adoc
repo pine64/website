@@ -155,12 +155,9 @@ image:/documentation/images/FUSB302-V2-02.JPG[width=302]
 image:/documentation/images/Pinecil_LDOandOP-Amp.png[_LDO_and_OP-Amp|alt=alt_language,title="_LDO_and_OP-Amp|alt=alt_language"]
 image:/documentation/images/Under_OLED_screen01.png[ Under the OLED screen, V2|alt=alt language,title=" Under the OLED screen, V2|alt=alt language"]
 
-
 == Schematics and Board Data
 
-
 === Pinecil V2 mainboard schematic
-
 
 * https://files.pine64.org/doc/Pinecil/Pinecil_schematic_v2.0_20220608.pdf[Pinecil mainboard schematic ver 2.0 20220608, this is production version schematic]
 * https://files.pine64.org/doc/Pinecil/Pinecil_PCB_placement_v2.0_20220608.pdf[Pinecil mainboard ver 2.0 PCB Component Placement PDF file]
@@ -177,9 +174,7 @@ V1 was only sold until July 2022, and then discontinued for newer V2 model
 
 == Datasheets for Components
 
-
 === Pinecil V2 datasheets
-
 
 * Power MOSFET Switch: https://datasheet.lcsc.com/lcsc/2105241831_HUASHUO-HSM4313_C2828487.pdf[HSM4313], location U13 (https://lcsc.com/product-detail/MOSFETs_HUASHUO-HSM4313_C2828487.html[Replacement HSM4313]).
 
@@ -257,5 +252,4 @@ image:/documentation/images/Pinecil_V1_24V_Mod.png[width=400]
 If a USB-C charger is not available, often a phone with a USB-C port is a PD type, and can be used like a charger to plug in and check the PD debug messages (unfortunately, a PC port is not normally "PD" and won't give proper PD Debug).
 
 . If you want another set of eyes on it before you cut, post a photo of your PCB (near the Pinecone) on the Pine64 > link:/documentation/#_chat_platforms[[live Pinecil chat channel]. Ask for a volunteer who has _completed_ the 24V mod on a Pinecil V1 to assist. Not all chat people own a Pinecil even if they are in the Pinecil channel.
-
 

@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 https://elimo.io[Elimo Engineering] integrated support for the PineCube into Buildroot.
 
 This has not been merged into upstream Buildroot yet, but you can find the repository on https://github.com/elimo-engineering/buildroot[Elimo's GitHub account] and build instructions in the https://github.com/elimo-engineering/buildroot/tree/pine64/pinecube/board/pine64/pinecube[board support directory] readme.

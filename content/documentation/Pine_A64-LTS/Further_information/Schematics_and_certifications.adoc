@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 <|--* Model "A" Baseboard Dimensions: 133mm x 80mm x 19mm-->
 
 Input Power: DC 5V @ 2A, 3.7V Li-Ion battery connector, 3.5OD/1.35ID Barrel DC Jack connector, Euler connector

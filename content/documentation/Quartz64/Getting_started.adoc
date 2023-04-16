@@ -9,10 +9,7 @@ menu:
     weight: 1
 ---
 
-
-
 == Flashing the device
-
 
 Natively the board only supports booting from the eMMC or microSD card, see link:#Boot_order[boot order]. There doesn't seem to be a way to boot from USB devices or SATA yet.
 

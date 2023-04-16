@@ -9,7 +9,6 @@ menu:
     weight: 5
 ---
 
-
 Be very careful here. It is not a 'pop off' cover design.
 Special care should be directed to AVOID anything that may appear to cause a "bend" in screen.
 

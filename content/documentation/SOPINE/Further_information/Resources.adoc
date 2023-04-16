@@ -9,6 +9,5 @@ menu:
     weight: 
 ---
 
-
 * link:/documentation/SOPINE/Software_tricks/Armbian_LCD_and_camera[Armbian LCD and camera]
 

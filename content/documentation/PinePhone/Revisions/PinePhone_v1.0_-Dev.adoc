@@ -24,7 +24,5 @@ This page contains resources which are exclusive to the 1.0 revision of the Pine
 
 == Known issues
 
-See link:/documentation/PinePhone/Revisions/PinePhone_v1.1_-_Braveheart#Known issues|the known issues with v1.1 (Braveheart)[the known issues with v1.1 (Braveheart)], which are all carried forward from v1.0.
-
-
+See link:/documentation/PinePhone/Revisions/PinePhone_v1.1_-_Braveheart#Known issues[the known issues with v1.1 (Braveheart)], which are all carried forward from v1.0.
 

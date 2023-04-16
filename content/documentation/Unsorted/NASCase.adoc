@@ -59,7 +59,9 @@ There are a few other things which you may wish to consider purchasing for your 
 
 == Which software should I use?
 
-image:/documentation/images/OMVGUI.png[The_OMV_WebGUI_is_easy_to_understand_but_also_very_robust._It_offers_easy_installation_of_plugins,_system administration and overview of available services,title="The OMV WebGUI is easy to understand but also very robust. It offers easy installation of plugins, system administration and overview of available services",width=200]_If you are intending to build a home or small company NAS, then we strongly recommend you use link:/documentation/ROCKPro64/Software/_index#OpenMediaVault|Open Media Vault (OMV)[Open Media Vault (OMV)]. OMV is an open source NAS solution that makes setting up user accounts, network shares and services a breeze. It also simplifies installing additional features (called plugins), such as: PLEX media server; Remote Desktop; Encryption; RSync; etc.
+image:/documentation/images/OMVGUI.png[The_OMV_WebGUI_is_easy_to_understand_but_also_very_robust._It_offers_easy_installation_of_plugins,_system administration and overview of available services,title="The OMV WebGUI is easy to understand but also very robust. It offers easy installation of plugins, system administration and overview of available services",width=200]
+
+If you are intending to build a home or small company NAS, then we strongly recommend you use link:/documentation/ROCKPro64/Software/_index#OpenMediaVault[Open Media Vault (OMV)]. OMV is an open source NAS solution that makes setting up user accounts, network shares and services a breeze. It also simplifies installing additional features (called plugins), such as: PLEX media server; Remote Desktop; Encryption; RSync; etc.
 
 Its worth noting that Nextcloud, or other similar Cloud storage solutions, can also be easily installed alongside the OMV OS Image.
 
@@ -82,7 +84,8 @@ You should now be left with a bare case ready for installation of the necessary 
 
 === Step 2. Installing the ROCKPro64 into the NAS Case
 
-image:/documentation/images/ROCKPro64inNASCase.jpg[Correct_Placement_of_the_ROCKPro64_in_the_empty_case,_with_Ethernet;_Power;_and_HDMI_at_the_back_of the NAS Case,title="Correct Placement of the ROCKPro64 in the empty case, with Ethernet; Power; and HDMI at the back of the NAS Case",width=300]_image:/documentation/images/FrontIO.png[Front IO with IR and LED relay installed,title="Front IO with IR and LED relay installed",width=300]
+image:/documentation/images/ROCKPro64inNASCase.jpg[Correct_Placement_of_the_ROCKPro64_in_the_empty_case,_with_Ethernet;_Power;_and_HDMI_at_the_back_of the NAS Case,title="Correct Placement of the ROCKPro64 in the empty case, with Ethernet; Power; and HDMI at the back of the NAS Case",width=300]
+image:/documentation/images/FrontIO.png[Front IO with IR and LED relay installed,title="Front IO with IR and LED relay installed",width=300]
 Make sure nothing is plugged into your ROCKPro64 - including a micro SD card.
 If you intend to use a heatsink with your board then please install it now before proceeding. If you bought the heatsink from the Pine64 store it comes with thermal paste and/or a thermal pad. You can use one or the other (not both|). The thermal pad is easier to apply but the thermal paste should be better at cooling if properly applied.
 
@@ -96,7 +99,8 @@ If you wish to install an IRx receiver into your case then you should also place
 
 === Step 3 PCIe to SATA adapter and Cabling
 
-image:/documentation/images/DC_Location.jpg[DC_header_on_the_ROCKPro64_for_the_power_cable,title="DC_header_on_the_ROCKPro64_for_the_power_cable",width=200]_image:/documentation/images/PCIeFittedSATAsockets.png[PCIe to SATA installed. Note the SATA connection orientation,title="PCIe to SATA installed. Note the SATA connection orientation",width=200]
+image:/documentation/images/DC_Location.jpg[DC_header_on_the_ROCKPro64_for_the_power_cable,title="DC_header_on_the_ROCKPro64_for_the_power_cable",width=200]
+image:/documentation/images/PCIeFittedSATAsockets.png[PCIe to SATA installed. Note the SATA connection orientation,title="PCIe to SATA installed. Note the SATA connection orientation",width=200]
 With the board in place it's time to set up the PCIe to SATA adapter and do the cabling necessary to attach HDDs / SSDs.
 
 Place the SATA Adapter into the PCIe slot on the ROCKPro64 board so that the holding bracket of the adapter faces the back of the case. In the back of the case there is a cutout for the PCIe adapter; some
@@ -111,6 +115,7 @@ Have the cables hang outside the case or to the side for now so that they do not
 === Step 4. Installing HDDs / SSDs into the Holding Bracket
 
 image:/documentation/images/Bracket_Orientation.png[Bracket Orientation in the NAS Case,title="Bracket Orientation in the NAS Case",width=300]
+
 The next step is to install HDDs/ SSDs into their holding bracket; 2.5” drives need to be installed at the very bottom of the bracket while 3.5” drives are at the top of the the bracket.
 
 For 2.5” drives make sure that the drives are oriented up and their SATA and power ports face the front of the NAS Case.
@@ -124,6 +129,7 @@ Once the holding bracket is assembled and you have your drives mounted, please s
 === Step 5. Installing Extras (eMMC; WiFi BT module + SMA Antennas; 80mm Fan)
 
 image:/documentation/images/80mmfan.png[The 80mm fan is a worthwhile addition to the NAS Case build,title="The 80mm fan is a worthwhile addition to the NAS Case build",width=200]
+
 If you have additional peripherals, such as an eMMC or WiFi/BT module as well as the 80mm fan, then now is the right time to install them. If you have *none of the above*, please *proceed to step 6* of this guide.
 
 The eMMC and WiFi/BT modules are fitted into their respective placements on the ROCKPro64 board - please consult the diagram for their correct installation.
@@ -136,7 +142,9 @@ Plug in the fan at this stage of the installation and route the cable at the bot
 
 === Step 6. Installing the HDD / SSD Bracket and Routing Cables
 
-image:/documentation/images/NASCAsewithdrives.jpg[Complete_assembly_of_the_NAS_Case,title="Complete_assembly_of_the_NAS_Case",width=300]_image:/documentation/images/TopViewAssembly.png[Top view of a complete NAS Case Assembly,title="Top view of a complete NAS Case Assembly",width=300]
+image:/documentation/images/NASCAsewithdrives.jpg[Complete_assembly_of_the_NAS_Case,title="Complete_assembly_of_the_NAS_Case",width=300]
+image:/documentation/images/TopViewAssembly.png[Top view of a complete NAS Case Assembly,title="Top view of a complete NAS Case Assembly",width=300]
+
 Installing the HDD/SSD bracket into the case and wiring it up is the last step before closing up the case.
 
 Place the bracket with the disks installed (from step 4) into the case. The bracket should line up with the guiding bolts and screw holes at the bottom of the case. The section of the bracket that holds 3.5” HDDs needs to face the left side of the case (when viewed from front) and should overhang the ROCKPro64 board slightly. The 3.5” SATA and power ports should face the right side of the case - where the fan mounts, while 2.5” SATA and power ports should face the front of the case.

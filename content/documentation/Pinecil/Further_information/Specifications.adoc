@@ -9,10 +9,7 @@ menu:
     weight: 
 ---
 
-
-
 == Pinecil V2
-
 
 * *Package:* 15cm x 9cm x 2.2cm, white box (released Aug 2, 2022)
 * *Dimensions:* 155mm with solder tip or 103mm without solder tip x 12.8mm x 16.2mm

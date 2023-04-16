@@ -186,4 +186,3 @@ Thanks to https://github.com/ayufan-rock64[Ayufan]'s work (with their https://gi
 
 GPU needs investigating, but current mainline device tree does not try to clock up the GPU at all.
 
-

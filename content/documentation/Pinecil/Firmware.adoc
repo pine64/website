@@ -39,7 +39,7 @@ Both V1 and V2 connect to the PC/laptop and enter the Flash mode the same way fo
 . Long hold the `[-]` button _before plugging_ the USB-C cable into the back of the Pinecil. Keep holding down the `[-]` for ~10-15 seconds after plugging in the cable, then release the button.
 . Screen should be black/empty which means Pinecil is in Flashing Mode. If you have issues, try again, do not plug the USB-C cable into Pinecil until you first press & hold the `[-]` button. Flip the cable over or try another port/cable/PC if you still have issues.
 . Unlike irons from other brands, Pinecil will *not* show in the PC as a USB data drive. On Windows, you will hear a single beep when connected in flash mode.
-. Then use one of the flasher methods below based on the OS you have in order to flash new firmware (link:#Update_V1|older V1 instructions are lower down here[older V1 instructions are lower down here]).
+. Then use one of the flasher methods below based on the OS you have in order to flash new firmware (link:#Update_V1[older V1 instructions are lower down here]).
 
 == Update V2: Windows
 
@@ -57,7 +57,7 @@ IMPORTANT: Do not use the DC barrel jack while updating firmware or you may dest
 . Right click on all zip files > properties, and check "Unblock" if present to unblock them, then extract the Blisp zip and the Pinecilv2 zip https://github.com/builder555/PineSAM/discussions/106#discussion-4960445[screenshot of Unblock here]. If you don't see "Unblock" then keep going.
 . From the Pinecilv2 folder you extracted above, copy the `Pinecilv2_EN.bin` (English) file into the Blisp folder (same place as the Blisp.exe). Other languages are available, substitute the `Pinecil_EN.bin` file for the language file desired (follow 2-letter international language code). The Pinecil Zip can now be deleted, only the single BIN file in the language you want is used.
 . Run powershell as administrator.
-. Now, connect the Pinecil V2 to the PC: hold down the [-] *Before* plugging the cable to the back of Pinecil. See (link:#Flash Mode|Flash Mode section for details[Flash Mode section for details]).
+. Now, connect the Pinecil V2 to the PC: hold down the [-] *Before* plugging the cable to the back of Pinecil. See (link:#Flash Mode[Flash Mode section for details]).
 . Screen on pinecil should be black/empty before proceeding; it means you are in the correct Flash mode. If you are curious, it will connect as a PORT COM device in Device Manager. If your screen is not black, then repeat the connect to PC above. If necessary, change cables or ports, or try a different PC/laptop.
 . Use `cd` to change to the Blisp folder (location of blisp.exe and Pinecil_EN.bin).
 .. `#example change to location of blisp folder`

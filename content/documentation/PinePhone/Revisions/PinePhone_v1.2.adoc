@@ -37,9 +37,7 @@ The v1.2 mainboard revision changes the routing of several GPIOs to fix bugs and
 
 == Known issues
 
-
 === Backlight
-
 
 Backlight LED current regulation depends on gpio0-ldo voltage stability due to feedback voltage from current sensing resistor being modified via SoC's PWM pin and pullup resistor to gpio0-ldo. gpio0-ldo also powers the CTP controller and light/proximity sensor, among other things. When backlight brightness is very low and the CTP controller actively communicates on the I2C bus the backlight blinks heavily. It's not a very good idea to tie boost converter's current regulating feedback circuit to the potential source of noise, especially since the noise will have much larger effect when the backlight LED current is low. It's possible this can be mitigated if C1110 can be raised to 22-47uF range, or by changing the resistor values in the feedback circuit.
 
@@ -60,6 +58,4 @@ In SW this can only be worked around by manual selection of PinePhone's data and
 Hardware workaround is to desolder U1305 and U1309 switches (BGA like packages). This will void the VCONN control, but it will release the CC pins for their proper connection detection and negotiation roles (see https://xnux.eu/devices/pp-usbc-fix.jpg).
 
 Hardware fix is to replace AW3512 with a variant of the chip that preserves the EN signal polarity and that doesn't have the "quick discharge function" that ties the output to the GND via a 75 Ohm resistor when the switch is OFF. User _mozzwald_ used NCP334FCT2G as a replacement.
-
-
 

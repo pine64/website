@@ -9,13 +9,13 @@ menu:
     weight: 
 ---
 
-In this article, we'll go over how to hook up a PCF8574 I<sup>2</sup>C I/O extender to a link:/documentation/Quartz64/_index[Quartz64] Model A single-board computer, including what device tree changes to make and how to control it.
+In this article, we'll go over how to hook up a PCF8574 I^2^C I/O extender to a link:/documentation/Quartz64/_index[Quartz64] Model A single-board computer, including what device tree changes to make and how to control it.
 
 == Introduction to the PCF8574
 
-The PCF8574 is a fairly ubiquitous GPIO extender that communicates through the I<sup>2</sup>C bus. You can find modules featuring it from many vendors on the usual marketplaces for cheap. It exposes 8 additional GPIO lines, and can be daisy chained to up to 8 devices, giving you an additional 64 GPIO outputs. Combining it with 8 PCF8574A modules will actually push this to a total of 128 GPIO outputs added to your board|
+The PCF8574 is a fairly ubiquitous GPIO extender that communicates through the I^2^C bus. You can find modules featuring it from many vendors on the usual marketplaces for cheap. It exposes 8 additional GPIO lines, and can be daisy chained to up to 8 devices, giving you an additional 64 GPIO outputs. Combining it with 8 PCF8574A modules will actually push this to a total of 128 GPIO outputs added to your board|
 
-The PCF8574 has a mainline Linux driver, meaning that you do not need to use I<sup>2</sup>C directly to control it; it will just appear as another `/dev/gpiochip_<n>_` device. A lot of Raspberry Pi focused guides for this chip get this precise thing wrong actually, and have the user manually fiddle with the bus.
+The PCF8574 has a mainline Linux driver, meaning that you do not need to use I^2^C directly to control it; it will just appear as another `/dev/gpiochip_<n>_` device. A lot of Raspberry Pi focused guides for this chip get this precise thing wrong actually, and have the user manually fiddle with the bus.
 
 == Device tree changes
 
@@ -72,7 +72,7 @@ In **arch/arm64/boot/dts/rockchip/rk3566-quartz64-a.dts**, add the following sec
  	};
  };
 
-This lets the kernel know that there's a PCF8574 hanging off the third I<sup>2</sup>C controller, and is listening on slave address `0x20` (decimal: 32). Be sure to use tabs of size 8 for the indentation, this is the style the kernel uses.
+This lets the kernel know that there's a PCF8574 hanging off the third I^2^C controller, and is listening on slave address `0x20` (decimal: 32). Be sure to use tabs of size 8 for the indentation, this is the style the kernel uses.
 
 Now run `make dtbs` to compile the device tree. This should give you a **arch/arm64/boot/dts/rockchip/rk3566-quartz64-a.dt*b***, which you can then copy into your **/boot/dtbs/** as for example **quartz-with-pcf8574.dtb** or something like that. Then, in your **extlinux.conf**, either add a new boot label or modify your existing boot labels `FDT` line to point towards this dtb file, with the path being relative to **/boot** and not to **/**.
 

@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 Disassembling the charging case:
 
 NOTE: A video tutorial regarding the disassembly can be watched from **Linux Lounge** https://www.youtube.com/watch?v=xXxRGXWvdVw&t=230s[here]

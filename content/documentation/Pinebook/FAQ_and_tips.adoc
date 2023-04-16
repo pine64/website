@@ -9,7 +9,6 @@ menu:
     weight: 4
 ---
 
-
 *Key left of Z ( \ | )*
 
 How to map the key next to Z to the symbols on \ and | (rather than <>) ?
@@ -108,5 +107,4 @@ To set mouse speed
 Check different numbers for 0.95 to meet your needs.
 
 For more details on xinput and mouse speed also see the Archlinux Wiki [https://wiki.archlinux.org/index.php/Mouse_acceleration#Using_xinput]
-
 

@@ -151,4 +151,3 @@ For security, change the default passwords for root and the default user *alarm*
 
 Congratulations, you have now installed Arch Linux ARM on your PineBook Pro|
 
-

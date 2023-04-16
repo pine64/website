@@ -9,10 +9,9 @@ menu:
     weight: 3
 ---
 
-
 image:/documentation/images/Quartzpro64_soc_and_ram_resized.jpeg[The SoC and RAM packages,title="The SoC and RAM packages",width=200]
 
-=== General
+== General
 
 * RK3588 SoC (8 cores: 4x A76@2.4GHz + 4x A55@1.8GHz)
 * Mali G610MC4 GPU (4x Valhalla cores)
@@ -39,13 +38,13 @@ image:/documentation/images/Quartzpro64_soc_and_ram_resized.jpeg[The SoC and RAM
 * 1x audio output 3.5mm jack
 * Power in via DC 12V
 
-=== Cooler
+== Cooler
 
 The board comes with two cooler mounts, a 4-hole mount that appears to be spaced 55x55mm apart, and the ~60mm diagonal "northbridge heatsink" mount the ROCKPro64 and Quartz64 Model A uses.
 
 RK3588 is slightly (<1mm?) taller than the DRAM chips, use a thick enough thermal pad instead of thermal compound.
 
-=== UART
+== UART
 
 Plug in the USB-C port labelled "**DEBUG PORT**" on the QP64 board to another computer with a USB-A-to-C cable.
 
@@ -99,13 +98,13 @@ Then you can get console output from the QP64 with, for example:
 screen /dev/ttyUSB0 1500000
 ```
 
-=== Mounting Holes
+== Mounting Holes
 
 Can't be bothered to take a precise measurement of all the holes right now, just use https://www.ebay.com/sch/i.html?kw=pc%20standoff%20kit[some PC standoffs] and have the board sit on your desk, it's a dev board after all.
 
 See the PCB layout PDF files, linked in the https://wiki.pine64.org/wiki/QuartzPro64_Development#Documentation[Documentation] section.
 
-=== Storage
+== Storage
 
 image:/documentation/images/Quartzpro64_emmc_resized.jpeg[The eMMC on the dev board,title="The eMMC on the dev board",width=200]
 
@@ -113,7 +112,7 @@ image:/documentation/images/Quartzpro64_emmc_resized.jpeg[The eMMC on the dev bo
 * microSD card slot
 * 2x SATA 3.0 (molex power connector for it not populated, but easy to remedy)
 
-=== Power
+== Power
 
 image:/documentation/images/Power_and_switch.jpg[Power switch & barrel connector,title="Power switch & barrel connector",width=100]
 
@@ -121,7 +120,7 @@ You can provide power to the board via the 12V barrel connector, it's 5.5mm OD/2
 
 There is a hardware flip switch to power up / down the board.
 
-=== PMU
+== PMU
 
 image:/documentation/images/Quartzpro64_pmu.jpeg[The PMU,title="The PMU",width=100]
 
@@ -129,7 +128,7 @@ image:/documentation/images/Quartzpro64_pmu.jpeg[The PMU,title="The PMU",width=1
 
 Verify this once we have access to SDK sources.
 
-=== Ethernet
+== Ethernet
 
 The RGMII ethernet port (near the SDCARD socket) is working if you use neg2led's linux-quartz64 repo.
 

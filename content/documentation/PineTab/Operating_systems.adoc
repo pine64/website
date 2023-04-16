@@ -9,12 +9,11 @@ menu:
     weight: 2
 ---
 
-
 The PineTab will automatically boot from microSD if a bootable card is inserted. Although it is technically possible to use any ARM distro (because the PineTab uses the mainline kernel), only few of them will actually be usable on Early Adopters PineTab, due to specifics of working with LCD panel. Among those listed all except for postmarketOS have working builds.
 
-=== Arch Linux ARM
+== Arch Linux ARM
 
-image:/documentation/images/Archlinux-logo.png[right|80px,title="right|80px"]
+image:/documentation/images/Archlinux-logo.png[]
 
 Unofficial *Arch Linux ARM* with Phosh as the UI selection, maintained by the DanctNIX community.
 
@@ -22,11 +21,9 @@ Download:
 
 * The latest image can be downloaded https://github.com/dreemurrs-embedded/Pine64-Arch/releases[here]
 
------
+== Manjaro ARM
 
-=== Manjaro ARM
-
-image:/documentation/images/Manjaro-logo.svg[right|80px,title="right|80px"]
+image:/documentation/images/Manjaro-logo.svg[]
 
 *Manjaro* is a Linux based alternative operating system with no adverts or licensing fees, it respects user privacy and gives them full control over their hardware. The PineTab "Early Adopter" edition is currently the only device supported by Manjaro ARM.
 
@@ -37,11 +34,9 @@ Download:
 
 Both Beta releases and weekly unstable builds for Phosh and Plasma Mobile can be found there.
 
------
+== Mobian
 
-=== Mobian
-
-image:/documentation/images/Debian-logo.png[right|80px,title="right|80px"]
+image:/documentation/images/Debian-logo.png[]
 
 *Mobian* is a project providing Debian images for mobile devices.
 
@@ -49,11 +44,9 @@ Download:
 
 * PineTab images can be downloaded https://images.mobian.org/pinetab/[here]. The password is *1234*
 
------
+== postmarketOS
 
-=== postmarketOS
-
-image:/documentation/images/PostmarketOS_logo.png[right|80px,title="right|80px"]
+image:/documentation/images/PostmarketOS_logo.png[]
 
 *postmarketOS* extends https://www.alpinelinux.org/[Alpine Linux] to run on smartphones and other mobile devices.
 
@@ -70,11 +63,9 @@ Getting postmarketOS for the PineTab:
 * https://wiki.postmarketos.org/wiki/PINE64_PineTab_(pine64-pinetab)#Installation[Flashing instructions]
 * Power users may also create their own image with the distribution's install and development tool `pmbootstrap`
 
------
+== Sailfish OS
 
-=== Sailfish OS
-
-image:/documentation/images/SailfishOS_logo.png[right|80px,title="right|80px"]
+image:/documentation/images/SailfishOS_logo.png[]
 
 You can get *SailfishOS* on your with the flash-it script, which will write an image on a SD card. https://github.com/sailfish-on-dontbeevil/flash-it
 
@@ -84,11 +75,9 @@ http://forum.pine64.org/showthread.php?tid=11850
 
 Many things are still broken but Bluetooth, Audio, Rotation and Keyboard are working.
 
------
+== UBPorts
 
-=== UBPorts
-
-image:/documentation/images/Ubports-logo.png[right|80px,title="right|80px"]
+image:/documentation/images/Ubports-logo.png[]
 
 The *UBPorts Ubuntu Touch* is what was preinstalled on the PineTab Early Adopters batch.
 

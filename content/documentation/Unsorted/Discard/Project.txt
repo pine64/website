@@ -9,17 +9,6 @@ menu:
     weight: 
 ---
 
-__TOC__
-
-<p >*PINE64 Community Projects Wiki Page*</p>
-
-
-The *PINE64* Wiki is community-driven and can be edited by *_anyone*_ who wishes to contribute.
-
-*Please remember to always login into the Wiki to see the latest updates*. You can use your PINE64 forum login details.
-
-There are currently ** on this wiki.
-
 == Introduction and Instructions
 
 This Wiki section offers a variety of projects for PINE64 devices. It is co-created and driven by users like yourself, so feel free to browse the listed projects or even submit your own. If you are interested in contributing a project then *please first read* though the following two sub-sections (on Contributing New Projects and Authorship) before entering your submission.
@@ -31,19 +20,16 @@ If you feel that a particular theme or project type is not represented on the Wi
 === Contributing New Projects
 
 There are a number of ways in which you can contribute new projects to this Wiki section. Projects can be submitted by:
-*Adding a link to a post on the forum, blog, git instructions, etc.,
-*Adding a link to an article (please read about authorship in 1.2)
-*Adding a https://en.wikipedia.org/wiki/Wikipedia:How_to_create_a_page[new entry to the Wiki]
-*Adding a link to a video or audio file with project instructions
-*Adding links to documents (e.g. Google docs, PDFs, etc,.) of images hosted on Google Drive, Imgur, etc,.
-*A combination of two or more of the above
+
+* Adding a link to a post on the forum, blog, git instructions, etc.,
+* Adding a link to an article (please read about authorship in 1.2)
+* Adding a link to a video or audio file with project instructions
+* Adding links to documents (e.g. Google docs, PDFs, etc,.) of images hosted on Google Drive, Imgur, etc,.
+* A combination of two or more of the above
 
 The preferable way of submitting a new project is by *creating a new Wiki entry* as this assures that it will be *easy to locate* by other users. Wiki entries can include attachments in the form of photos, videos, documents and external links (e.g. to formatted code); making them ideal for storing complex and lengthy tutorials and instructions.
+
 That said, if you do not wish to migrate your project tutorial from another place (e.g. the forums) then a link to the complete write-up, code, video or another medium will suffice.
-
-*Adding an entry to the listing in the relevant project section should follow this syntax:*
-
-| Name | Device | Link to project | Notes about the project
 
 === Authorship
 
@@ -60,7 +46,10 @@ image:/documentation/images/Retrogame_icon.png[Most PINE64 devices are capable o
 |===
 |+*Suitable Devices for this Project*
 
-| | image:/documentation/images/PINEA64_sideimg.jpg[width=160]_|_|_image:/documentation/images/PINEA64_LTS_sideimg.jpg[width=160]_|_|_image:/documentation/images/PinebookMain.jpg[width=160]_|_|_image:/documentation/images/Rock64.jpg[width=160]
+| | image:/documentation/images/PINEA64_sideimg.jpg[width=160]_|_|
+image:
+image:
+image:/documentation/images/PINEA64_LTS_sideimg.jpg[width=160]_|_|_image:/documentation/images/PinebookMain.jpg[width=160]_|_|_image:/documentation/images/Rock64.jpg[width=160]
 
 | PINE A64/A64+ | PINE A64-LTS/SoPine | PINEBOOK | ROCK64
 [cols="1,1,1,1,1"]
@@ -95,6 +84,8 @@ image:/documentation/images/Retrogame_icon.png[Most PINE64 devices are capable o
 | colspan="3"  |
 image:/documentation/images/Computer_icon.png[All PINE64 Single Board Computers are capable of acting as destkop computers. This includes a variety of Linux destkop environments (such as Mate or XFCE) as well as different types of Android. ,title="All PINE64 Single Board Computers are capable of acting as destkop computers. This includes a variety of Linux destkop environments (such as Mate or XFCE) as well as different types of Android. "]
 |===
+image:
+image:
 |+*Suitable Devices for this Project*
 
 | | image:/documentation/images/PINEA64_sideimg.jpg[width=160]_|_|_image:/documentation/images/PINEA64_LTS_sideimg.jpg[width=160]_|_|_image:/documentation/images/Rock64.jpg[width=160]
@@ -124,6 +115,8 @@ image:/documentation/images/Computer_icon.png[All PINE64 Single Board Computers 
 | | NAS Projects
 
 | colspan="3"  |
+image:
+image:
 image:/documentation/images/NAS_icon.png[Most PINE64 Single Board Computers feature Gigabit Ethernet connections and multiple USB 2.0 / 3.0 ports, and are therefore well suited for domestic NAS applications.,title="Most PINE64 Single Board Computers feature Gigabit Ethernet connections and multiple USB 2.0 / 3.0 ports, and are therefore well suited for domestic NAS applications."]
 |===
 |+*Suitable Devices for this Project*
@@ -154,6 +147,8 @@ image:/documentation/images/NAS_icon.png[Most PINE64 Single Board Computers feat
 
 |===
 | | Media Server and Player Projects
+image:
+image:
 
 | colspan="3"  |
 image:/documentation/images/Mediaplayer_icon.png[All PINE64 Single Board Computers are capable of acting at media servers as well as playback devices. Dedicated Linux destributions such as LibreELEC as well as Android TV make for great couch media consumption experiences. Your device may also perform the role of a media server.,title="All PINE64 Single Board Computers are capable of acting at media servers as well as playback devices. Dedicated Linux destributions such as LibreELEC as well as Android TV make for great couch media consumption experiences. Your device may also perform the role of a media server."]
@@ -184,6 +179,9 @@ image:/documentation/images/Mediaplayer_icon.png[All PINE64 Single Board Compute
 
 == Projects Utilising General Purpose Input/Output (GPIO) Pins
 
+image:
+image:
+image:
 |===
 | | GPIO Projects
 
@@ -216,10 +214,10 @@ image:/documentation/images/GPIO_icon.png[All PINE64 Single Board Computers have
 
 | TARINGA|| A64/LTSI | https://www.taringa.net/posts/ebooks-tutoriales/19673288/Server-web-gpio-Pine64.html[GPIO over web Server] | Web server for Pine A64 GPIO setup instructions
 
-
-
 |===
 |===
+image:
+image:
 
 == Server Projects
 
@@ -265,6 +263,8 @@ image:/documentation/images/server_icon.png[All PINE64 Single Board Computers ca
 
 | Yuan Gao | Rock64/A64/LTS | https://ee-fans.com/pi-dashboard[Status Monitor] | Rock64: Monitor Rock64 status, like CPU usage, RAM usage, network traffic, etc. on webpage.
 
+image:
+image:
 | Yuan Gao | Rock64/A64/LTS | https://ee-fans.com / https://ee-fans.com/how-to-install-lamp-lnmp-on-rock64-with-aapanel-2/[Web Server] | Install LAMP/LNMP on Rock64 and easily to add SSL and other things.
 |===
 
@@ -300,6 +300,8 @@ image:/documentation/images/Cluster_icon.png[Have you got two or more PINE64 Sin
 
 | DiversITEurope | A64/LTS | https://www.diversit.eu/post/2016/07/13/running-docker-on-pine64.html[Docker Installation] | Docker installation instructions for Pine A64
 
+image:
+image:
 | Mimuni  | Rock64 | https://github.com/docker/compose/issues/5198[Rock64 Docker-compose] | Build docker-compose on Rock64 Board
 
 |===
@@ -337,6 +339,8 @@ image:/documentation/images/Homeautomation_icon.png[PINE64 Single Board Computer
 
 |  Andrew Klimovski | A64/LTS | https://andrew-klimovski.blogspot.co.uk/2017/03/home-automation-openhab2-on-pine64.html[OpenHAB Basics] | Basic installation and setup of OPneHAB on Pine A64 running Ubuntu
 
+image:
+image:
 | Jewgeni R | A64/LTS | https://www.youtube.com/watch?v=j19QPLnZRcc[ioBroker] | Video about ioBroker on Pine A64 N.B. In German
 
 | Deviant Engineer | A64/LTS/Rock64 | https://deviantengineer.com/2016/09/hass-dietpi/[Z-Wave bindings DietPi] | Z-Wave Bindings + Home Assistant installation from DietPi
@@ -366,7 +370,6 @@ image:/documentation/images/Robotic_icon.png[Use your PINE64 Single Board Comput
 |scope="col"  | Project Link
 |scope="col"  | Notes
 
-
 | Name | Device | Link to project | Notes about the project
 
 |===
@@ -385,11 +388,13 @@ image:/documentation/images/PADIstamp_icon.png[PADI is a tiny microcontroller th
 |scope="col"  | Device(s)
 |scope="col"  | Project Link
 |scope="col"  | Notes
+image:
+image:
+image:
 
 | thomash | PADI | https://forum.pine64.org/showthread.php?tid=4586[Programming via IDE] | Programming PADI with Arduino IDE
 
 | MarkHaysHarris777 | PADI | https://forum.pine64.org/showthread.php?tid=2482[Programming PADI] | Programming PADI basics
-
 
 |===
 |===
@@ -427,7 +432,6 @@ image:/documentation/images/Otherproject_icon.png[You have no doubt come up with
 | vovakurz | A64/LTS | https://ishwestscriptwault.wordpress.com/2016/12/29/running-unifi-controller-5-on-pine64-en/[Ubiquiti UAPs rely on a UniFi] | CA UniFi relay for better/Smoother WiFi roaming.
 
 | iPhyse  | A64/LTS | https://www.instructables.com/id/Holodock-Pine64/[Holodoc Project] | Instructions on creating a holographic doc using the Pine A64
-
 
 | carlosviansi | A64/LTS | https://forum.pine64.org/archive/index.php?thread-423.html[Weather station] | Weather Station using Pine A64 + I2C POT
 

@@ -9,7 +9,6 @@ menu:
     weight: 1
 ---
 
-
 image:/documentation/images/RK3566_icon.png[right,title="right"]
 * *SoC:* Rockchip RK3566
 * *CPU:* 4x ARM Cortex-A55 @ 1.8 GHz

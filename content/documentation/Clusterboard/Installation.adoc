@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 To install a cluster it is important to know the IP addresses of each module, so the remote login sessions do not get mixed up.
 
 Each module may be plugged into the Clusterboard individually or consecutively, which makes it easy to assign a hostname to each module separately. It is also possible to manually edit the hostname in the OS image of each module before the first boot.
@@ -18,7 +17,7 @@ TIP: The board has no hotplug functionality, so make sure you only plug/unplug t
 
 TIP: No management features are available on the switch ship, so there is no VLAN support.
 
-=== Serial console
+== Serial console
 
 To boot use the serial console connect the pins to UART0 on the GPIO header and connect using baud 115200
 

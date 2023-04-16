@@ -9,10 +9,7 @@ menu:
     weight: 4
 ---
 
-
-
 === Reset
-
 
 If your PineTab is in unknown state or doesn't want to start: Press power button for 7-8s. It makes a sound and you know it's totally off. 3 seconds after, power button  again for 2-3s and it will start to boot.
 

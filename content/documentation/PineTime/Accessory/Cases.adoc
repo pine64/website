@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 There are no cases for PineTime yet, but some cases for Fitbit are suitable for it. Cases for Fitbit have one microphone hole, which is unnecessary for the PineTime, but otherwise they fit perfectly.
 
 * https://www.aliexpress.com/item/1005003150606521.html[Soft TPU case for Fitbit Versa 2/Versa Lite from AliExpress]
@@ -22,5 +21,4 @@ The community designed the following cases:
 * https://www.prusaprinters.org/prints/88913-pinetime-charger-case[PineTime Charger Travel Case by brett at PrusaPrinters]
 
 == Datasheets, Schematics and Certifications
-
 

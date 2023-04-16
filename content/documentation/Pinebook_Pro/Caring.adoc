@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 === Bypass Cables
 The mainboard features two (disconnected by default) bypass cables that are only to be used with the battery disconnected. The female (10) male (6) ends of the bypass cables can be connected to provide power to the mainboard if you need to run the laptop without a battery. Please refer to this https://files.pine64.org/doc/PinebookPro/PinebookPro_Engineering_Notice.pdf[engineering notice].
 

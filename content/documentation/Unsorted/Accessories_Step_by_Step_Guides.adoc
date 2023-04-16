@@ -21,9 +21,9 @@ Accessories Step by Step Guides
 
 If you wish to stack two or more of these enclosures, the screws that serve as feet can be replaced by M8-1.25x16mm grub screws.
 
-<blockquote>
+```
 1.25mm is the pitch between threads, and for the M8 (8mm outer diameter) that's the default pitch, and most are advertised as M8x16mm screws. 16mm is really the minimum workable length to catch both the bottom and top aluminium standoffs, with both washers and the acrylic sheet in between. It's workable, but if you can get 20mm it's probably for the best.
-</blockquote>
+```
 
 Images: https://imgur.com/a/Zka1qfb
 

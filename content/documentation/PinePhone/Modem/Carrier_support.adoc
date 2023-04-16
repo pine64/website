@@ -1,5 +1,5 @@
 ---
-title: "PinePhone Carrier Support"
+title: "Carrier support"
 draft: false
 menu:
   docs:
@@ -57,14 +57,13 @@ The following is a list of carriers which has been tested by users and confirmed
 
 | Japan | 楽天モバイル / Rakuten Mobile | Yes | Not tested | Yes | Yes | Mobian Phosh, January 2022 (revised from January 2021)
 
-| China | China Unicom | Yes | Not tested | Yes | Yes | https://postmarketos.org/[pmOS] 22.06.3 Phosh, [[PineModems#Bootloader_unlocking | BLunlck'd]], link:/documentation/PinePhone/_index#Firmware_update|upd'd[upd'd] to https://github.com/Biktorgj/quectel_eg25_recovery/tree/EG25GGBR07A08M2G_30.006.30.006[*8M2G_30.006*], November 2022
+| China | China Unicom | Yes | Not tested | Yes | Yes | https://postmarketos.org/[pmOS] 22.06.3 Phosh, [[PineModems#Bootloader_unlocking | BLunlck'd]], link:/documentation/PinePhone/_index#Firmware_update[*8M2G_30.006*], November 2022
 |===
 
 === Africa
 
 |===
 |Country | Carrier name | SMS working | MMS working | Calls working | Data working | Tested OS (with version) and UI
-
 
 | Test | Test | Yes | Yes | Yes | Yes | TestOS with Phosh, 20201129
 
@@ -75,9 +74,7 @@ The following is a list of carriers which has been tested by users and confirmed
 |===
 |Country | Carrier name | SMS working | MMS working | Calls working | Data working | Tested OS (with version) and UI
 
-
 | Ukraine | KyivStar | Yes | Not tested | Yes | Yes | Mobian Phosh(11Nov21)
-
 
 | Ukraine | Vodafone | Yes | Not tested | Yes | Yes | Manjaro ARM Phosh(29Jun22)
 
@@ -144,7 +141,6 @@ The following is a list of carriers which has been tested by users and confirmed
 
 |===
 |Country | Carrier name | SMS working | MMS working | Calls working | Data working | Tested OS (with version) and UI
-
 
 | USA | AT&T | Yes | Yes | Yes | Yes |
 * Mobian - Phosh
@@ -235,7 +231,6 @@ The following is a list of carriers which has been tested by users and confirmed
 |===
 |Country | Carrier name | SMS working | MMS working | Calls working | Data working | Tested OS (with version) and UI
 
-
 | Test | Test | Yes | Yes | Yes | Yes | TestOS with Phosh, 20201129
 
 |===
@@ -244,7 +239,6 @@ The following is a list of carriers which has been tested by users and confirmed
 
 |===
 |Country | Carrier name | SMS working | MMS working | Calls working | Data working | Tested OS (with version) and UI
-
 
 | Test | Test | Yes | Yes | Yes | Yes | TestOS with Phosh, 20201129
 
@@ -266,27 +260,19 @@ The following is a list of carriers which has been tested by users and confirmed
 |===
 |Country | Carrier name | SMS working | USSD working | MMS working | Calls working | Data working | Tested OS (with version) and UI
 
-
 | Israel| Cellcom prepay| receive+notify| NA | NA | ring+ notify | NA | on PmOS Sxmo May 14 2021.
-
 
 | Israel| Cellcom Talkman| receive+notify| YES | YES (when manually selecting the MMS APN) | ring(VoLTE not working)  | YES | on mobian Feb 04, 2022, Earthquake early warning system did not show a notification on Feb 07, 2022
 
-
 | Israel| Cellcom Talkman| NO | NO | NO | ring+ notify (VoLTE not working)| YES | on Plasma Mobile Feb 04, 2022
-
 
 | Israel| Golan TC | receive+notify| YES | NA |  ring+ notify (VoLTE not working) | Yes | on mobian/phosh March 13 2022
 
-
 | Israel| Partner prepay | receive+notify| NA |  NA | ring+ notify | NA | on PmOS Sxmo May 14 2021.
-
 
 | Israel| Pelephone prepay| receive+notify| NA |  NA | ring+ notify | NA | on PmOS Sxmo May 14 2021.
 
-
 | Israel| Hot prepay| receive+notify| NA | NA |  ring+ notify | NA | on PmOS Sxmo May 14 2021.
-
 
 | Israel| 019 prepay| No | NA | NA |Bars only | NA | on PmOS Sxmo May 14 2021.
 
@@ -300,9 +286,7 @@ Some carriers might support only certain frequencies or might require certain se
 
 === USA
 
-
 ==== AT&T
-
 
 According to https://ltefix.com/wp-content/uploads/USA-Major-Carriers-Bands-Frequencies-CA.pdf[this page], AT&T's primary bands are 12 and 17 - 700ac and 700 MHz respectively. Phone and SMS with PinePhone work out-of-the-box with AT&T. If you transfer a SIM card from another phone you were using with AT&T, you may need to activate the PinePhone through https://www.att.com/buy/wireless/byod/byod[AT&T's website]. Calls and SMS messages work. 4G and MMS work if https://www.att.com/support/article/wireless/KM1062162/[these settings] are used for APN, MMSC, and Proxy.
 
@@ -356,9 +340,7 @@ It should also be noted that Google uses a non-standard MMS implementation that 
 
 === Europe
 
-
 ==== Telekom Germany
-
 
 With low signal, there may be loud interference noise audible in calls on the receiving end. It has not yet been tested whether or not this problem is carrier specific. An easy fix is extending the modem antenna with aluminum foil (or similar) inside the back cover of the phone.
 
@@ -372,9 +354,7 @@ Calls, SMS, and data (2G, 3G, and 4G) should work out of the box (tested three c
 
 === Asia
 
-
 ==== China Telecom
-
 
 The baseband itself ships with bad (for CDMA, which isn't supported by EG25-G) MBN file for CT, so a force change of MBN file to the generic one is needed to get VoLTE (thus SMS+Call) work.
 
@@ -410,5 +390,4 @@ There is a Haskel MMS client. MMS can also be manually composed with mmsd on the
 == Resources
 
 * IMEI - https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity[International Mobile Equipment Identity]
-
 

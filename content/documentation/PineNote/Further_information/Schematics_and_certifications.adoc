@@ -9,8 +9,6 @@ menu:
     weight: 
 ---
 
-
-
 === PineNote Developer kit version
 
 Version v1.2 is the PineNote production version that was sold through the Pines64 store

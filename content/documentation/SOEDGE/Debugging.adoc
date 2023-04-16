@@ -11,7 +11,6 @@ menu:
 
 == Serial Console
 
-
 System Serial is located on PI-5 bus (11x2 GPIO header).
 
 * TXD: Pin 6 (Yellow cable) (Connect to RXD on Serial adapter)
@@ -21,6 +20,4 @@ System Serial is located on PI-5 bus (11x2 GPIO header).
 image:/documentation/images/Soedge_serial_pins.jpg[width=400]
 
 The default baudrate is 1500000, note that not all serial adapters support this high baudrate.
-
-
 

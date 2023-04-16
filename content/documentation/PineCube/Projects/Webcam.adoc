@@ -13,9 +13,8 @@ The link:/documentation/PineCube/_index[PineCube] can be powered by the host and
 
 == Pictures
 
-
-image:/documentation/images/Pinecube_webcam1.jpg[]_image:/documentation/images/Pinecube_webcam2.jpg[]
-
+image:/documentation/images/Pinecube_webcam1.jpg[]
+image:/documentation/images/Pinecube_webcam2.jpg[]
 
 == USB as an Ethernet gadget
 
@@ -87,7 +86,7 @@ Progress report so far (by Disctanger):
 
 Configfs method is going to be used to control OTG port.
 
-1. Additional patch to PineCube device tree disable ehci0 and ohci0, enabling usb_otg device instead and setting *dr_mode* to *otg*. If otg is not working for you, try setting *dr_mode* to *peripheral*. _On Armbian there is no need for disabling ehci0 and ohci0. Device tree can be edited via armbian-config tool on Armbian OS. (armbian-config -> System -> DTC)_
+* Additional patch to PineCube device tree disable ehci0 and ohci0, enabling usb_otg device instead and setting *dr_mode* to *otg*. If otg is not working for you, try setting *dr_mode* to *peripheral*. _On Armbian there is no need for disabling ehci0 and ohci0. Device tree can be edited via armbian-config tool on Armbian OS. (armbian-config -> System -> DTC)_
 : sample DTC on Armbian:
                 -----
              
@@ -108,36 +107,35 @@ Configfs method is going to be used to control OTG port.
              
                 -----
 
-2. Load necessary kernel modules.
+* Load necessary kernel modules.
  modprobe sunxi
  modprobe configfs
  modprobe libcomposite
 
-3. Set up camera so that it would capture images in YUYV format (Currently only supported format in UVC gadget). You can adjust resolutions but have to adjust Configfs set up step as well.
+* Set up camera so that it would capture images in YUYV format (Currently only supported format in UVC gadget). You can adjust resolutions but have to adjust Configfs set up step as well.
  media-ctl --set-v4l2 '"ov5640 1-003c":0[fmt:YUYV8_2X8/640x480@1/30]'
 
-4. Clone UVC gadget repo for raspberry pi to your PineCube
+* Clone UVC gadget repo for raspberry pi to your PineCube
  git clone https://github.com/peterbay/uvc-gadget.git
  cd uvc_gadget
 
-5. Comment out 1182~1185 lines of `uvc-gadget.c` file:
+* Comment out 1182~1185 lines of `uvc-gadget.c` file:
  //    if (|uvc_shutdown_requested && ((uvc_dev.dqbuf_count + 1) >= uvc_dev.qbuf_count)) {
  //        return;
  //    }
 
-6. Build the source code inside PineCube using make command. It takes only few seconds to build the code.
+* Build the source code inside PineCube using make command. It takes only few seconds to build the code.
  make
  gcc -W -Wall -g   -c -o uvc-gadget.o uvc-gadget.c
  gcc -g -o uvc-gadget uvc-gadget.o
 
-7. Set up configfs (multi-gadget):
+* Set up configfs (multi-gadget):
 
 You can have the following script as a bash script as well.
 
   GADGET_PATH=/sys/kernel/config/usb_gadget/pinecube
 
   mkdir $GADGET_PATH
-
 
   echo 0x1d6b > $GADGET_PATH/idVendor
   echo 0x0104 > $GADGET_PATH/idProduct
@@ -239,19 +237,18 @@ You can have the following script as a bash script as well.
 
 If above script goes without issues you should be able to see one more additional `/dev/video*` device.
 
-8. run uvc-gadget
+* run uvc-gadget
 
 UVC Gadget software links camera of PineCube and UVC gadget (OTG port).
 
 "-v" is for video input device - PineCube Camera, "-u" is for output video device UVC device or OTG port, -x shows FPS.
  ./uvc-gadget -u /dev/video1 -v /dev/video0 -x
 
-9. Plug the PineCube to your laptop or pc and check if you can see PineCube Webcam.
+* Plug the PineCube to your laptop or pc and check if you can see PineCube Webcam.
 
 Known issues:
 
 . Low Frame rate(3FPS~5FPS). That is because:
 .. At the time of writing this section, `streaming_maxpacket` value cannot be set to max value (2048 bytes.) It can be set only to 512 bytes. If `streaming_maxpacket` is set to max (2048) value, UDC cannot be turned on with `Invalid Value` error.
 .. YUYV (uncompressed) file format is being used to stream the images. Uncompressed images take a lot of USB bandwidth compared to compressed. We can stream more frames, if MJPEG or even H254 (compressed images) would be used. I will be investigating further on how to stream more frames through USB port.
-
 

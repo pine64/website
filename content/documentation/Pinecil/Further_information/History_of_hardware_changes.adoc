@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 *Pinecil V2*
 
 * On Aug. 2, 2022, Pinecil V2 was released with improved hardware & accessories. It retains the same ergonomics and design as the original Pinecil, and will work with any accessories you already have including existing handles, cases, and tips. It comes with a green color silicone grip versus the light blue finger grip from Pinecil V1. It also includes one of PINE64's newly designed shorter 6.2 ohm tips. By reducing the tip length and resistance from 8 to 6.2 ohms, it allows greater performance and and faster heating (short tips are potentially 64W @ 20V compared to 8ohm normal tips which allow a max of 50W to Pinecil). Pinecil V2 is _officially_ rated for 12V-24V.

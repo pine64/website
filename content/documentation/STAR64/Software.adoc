@@ -9,7 +9,6 @@ menu:
     weight: 1
 ---
 
-
 The releases are still in *alpha* state and are only fit for testing purposes.
 
 * https://github.com/Icenowy/linux/tree/star64-5.15/[Icenowy's Star64's Github Linux kernel source tree]

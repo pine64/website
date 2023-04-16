@@ -110,12 +110,16 @@ For mainline-based U-Boots, these stages usually come in 2 images:
 
 IMPORTANT: This section applies to BSP U-Boot. Mainline-based U-Boots pack TF-A into *u-boot.itb*.
 
-There are 3 sections for the boot loader. They are in order, without gap, though their is no need to use all the space in each section.<br>
+There are 3 sections for the boot loader. They are in order, without gap, though their is no need to use all the space in each section.
+
 Here are the details:
+
 [cols="1,1,1,1"]
 |===
-|Start in<br>sectors
-|Size in<br>sectors
+|Start in +
+sectors
+|Size in +
+sectors
 |Name
 |Description
 
@@ -143,7 +147,8 @@ If a new U-Boot is supplied, it is generally installed similar to this:
 
 === Different devices
 
-The RK3399 boots to multiple devices. Boot device selection is done in the following order, and it cannot be changed.<br>
+The RK3399 boots to multiple devices. Boot device selection is done in the following order, and it cannot be changed.
+
 If a device is blank / unused, the SoC code moves on to the next device in the list.
 
 * SPI

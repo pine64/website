@@ -60,7 +60,6 @@ As of July 2022, the Pinenote ships with the following items in the box:
 
 == "Table of Contents" for Linux Installation Pages
 
-
 === Building Kernel
 
 link:/documentation/PineNote/Development/Building_kernel[PineNote Development/Building Kernel]
@@ -89,5 +88,4 @@ link:/documentation/PineNote/Development/Apps[PineNote Development/Apps]
 * Gnome extension: https://github.com/m-weigand/mw_pinenote_misc/tree/main/gnome_extension
 * Vim config: https://github.com/m-weigand/mw_pinenote_misc/tree/main/vim
 * Xournal++, nwg and libinput tweaks: https://gitlab.com/hrdl/pinenote-shared/
-
 

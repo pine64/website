@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 * *Dimensions:* 55mm x 51mm x 51.5mm
 * *Weight:* 55g
 * *Storage:*

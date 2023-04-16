@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 Dimensions:
 
 * Earbud: Unknown

@@ -9,7 +9,6 @@ menu:
     weight: 5
 ---
 
-
 These are instruction guides for the disassembly:
 
 NOTE: The installation process is the reverse order of removal guide

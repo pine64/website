@@ -9,10 +9,9 @@ menu:
     weight: 1
 ---
 
-
 The PinePower is a small and compact palm size 65W wall socket power adapter. It features 2 USB-C ports and 1 USB-A port charger. https://en.wikipedia.org/wiki/Gallium_nitride[Gallium Nitride] technology ensures a small and light charger with high charging efficiency. It has a retractable US plug.
 
-=== General specifications
+== General specifications
 
 Body:
 
@@ -33,7 +32,7 @@ Connections:
 * 1x USB-A
 * 2x USB-C
 
-=== Power specifications
+== Power specifications
 
 [cols="1,1,1,1,1"]
 |===
@@ -91,7 +90,7 @@ USB-C2 + USB-A combined
 | -
 |===
 
-=== Internals
+== Internals
 
 _TBA_
 

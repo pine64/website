@@ -70,4 +70,3 @@ OR command line
  guvcview -d /dev/video0 -x 640x480 -r sdl -f yu12
  guvcview -d /dev/video0 -x 640x480 -r sdl -f nv12
 
-

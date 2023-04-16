@@ -9,10 +9,7 @@ menu:
     weight: 4
 ---
 
-
-
 == Do I Need A Fan/What Heatsink Do I Need?
-
 
 You don't need a fan. The https://pine64.com/product/rockpro64-20mm-mid-profile-heatsink/[20mm medium heatsink for Model A is plenty enough]. For Model B, the https://pine64.com/product/small-fan-type-heatsink/[fan type heatsink] will do fine.
 

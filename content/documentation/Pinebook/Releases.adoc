@@ -158,7 +158,6 @@ Download:
 
 == BSD Image Releases
 
-
 === NetBSD
 
 image:/documentation/images/netbsd.png[width=100]
@@ -232,9 +231,7 @@ Notes:
 
 === Android 6.x eMMC
 
-
 ==== Android 6.0.1
-
 
 Rootable build, online update (OTA) only works when the build is not rooted. The LCD resolution is 1366 x 768.
 
@@ -357,5 +354,4 @@ Download:
 * Mali_Driver
 * https://drive.google.com/file/d/0B0cEs0lxTtL3VmstaEFfbmU1NFk/view?usp=sharing[Allwinner PhoenixCard Bootable SD-Card Creator]
 * https://chinagadgetsreviews.com/download-dragonface-latest-version-v-2-2-5.html[Allwinner DragonFace V2.2.5 software that will let you edit and modify A64 Android Build PhoenixCard image] (https://mega.nz/#|QxEjmaKB|S5nsVnzXVZg5aJ6qLtPOx1yJDPlbl0Vs4iV9VliRpE8[Direct download at Mega])
-
 

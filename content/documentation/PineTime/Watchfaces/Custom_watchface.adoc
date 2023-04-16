@@ -358,7 +358,7 @@ And another small bit of info we will need for later that looks like,
 The PineTime uses a display that uses a 16 bit color space, also known as RGB565.
 
 These 16 bit are assigned to RGB as 5 bits each for Red and Blue and 6 bits for Green, so 5+6+5=16 bits are required, so each pixel's color occupies 2 bytes of data,
-and since 2<sup>16</sup> is equal to 65,536 it allows us to view 65,536 or 65k colors
+and since 2^16^ is equal to 65,536 it allows us to view 65,536 or 65k colors
 
 The way it packs these bits is by converting the bits into 2x  4+4 bit hex-code, so for example,
 
@@ -447,7 +447,6 @@ so your Entire top region of declaration looks like,
  const uint8_t <name>_map[] = {0x00,0x00,0x00...
  ...0x00,0x00,0x00
  };
-
 
  *note: Declaring variables outside a function like we did above is known as global scope declaration, this means the variable can be used by not just one function but the Entire code...*
 
@@ -643,20 +642,13 @@ Be aware the paths for the cmake command must be absolute. The -DBUILD_DFU argum
 
 ==== Activating the firmware
 
-
 ==== How to troubleshoot
-
 
 === Conclusions
 
-
 === Next steps
-
 
 === More in-depth documentation
 
-
 === Thanks for the help
-
-
 

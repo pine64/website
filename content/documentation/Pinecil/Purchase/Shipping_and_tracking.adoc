@@ -1,5 +1,5 @@
 ---
-title: "Pinecil Shipping and Tracking"
+title: "Shipping and Tracking"
 draft: false
 menu:
   docs:
@@ -36,7 +36,7 @@ Not discussed in this article: big battery devices such as the Pinebook Pro, Pin
 
 == Why doesn't Pine Store Ship to my country?
 
-. If Pine Store does not ship to your country currently, check out one of the many legit link:/documentation/Pinecil/_index#Where to buy a Pinecil|resellers here[resellers here].
+. If Pine Store does not ship to your country currently, check out one of the many legit link:/documentation/Pinecil/_index#where_to_buy_a_pinecil[resellers here].
 #* Try emailing a few of the resellers, you might get lucky.
 #* Consider that resellers probably don't want to lose money sending a package that doesn't get there because then the customer asks for a refund.
 . Keep in mind that the Pine Store is small with a limited number of staff.
@@ -46,11 +46,10 @@ Not discussed in this article: big battery devices such as the Pinebook Pro, Pin
 #* Too many packages have gotten lost to some countries. Pinecil and other items have a low margin; lost packages have a great impact. Some resellers are more prepared to take the risks so that the Pine Store can stay focused on engineering new hardware.
 . When possible, the Pine Store leaves open the more expensive courier option instead of stopping all shipping to a country. Some friends try to do a group purchase to spread out the shipping cost for each person.
 . Pine Store is registered at Hong Kong/Singapore and is not a registered China company and therefore can not ship to China addresses (exports only) even though many Pine64 products like Pinecil are made and shipped from Shenzhen, China.
-. Pine Store can not sell on AliExpress (see above). All AliExpress items using the PINE64 and Pinecone logos are fake copies ([[Pinecil#Authenticity |see authenticity here]]).
+. Pine Store can not sell on AliExpress (see above). All AliExpress items using the PINE64 and Pinecone logos are fake copies (link:/documentation/Pinecil#a#uthenticity[see authenticity here]).
 . For some countries people reported using a package forwarding company (unsure if safe or reliable, *use at your own risk*).
 
 == Go back to Pinecil article
 
 Go back to link:/documentation/Pinecil/_index[Pinecil article].
-
 

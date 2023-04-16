@@ -9,10 +9,7 @@ menu:
     weight: 
 ---
 
-
-
-=== Armbian
-
+== Armbian
 
 To get the cluster running, start off with a basic https://www.armbian.com/sopine-a64/[Armbian SOPINE] install on the first module or directly on all the modules. Armbian offers Debian and Ubuntu as options for download.
 
@@ -28,7 +25,7 @@ There are a number of possible basic installation methods.
 * eMMC install on the first module.
 * PXE boot for all modules, from the first module, or an external host.
 
-=== Others
+== Others
 
 The current version of NetBSD may have the networking issue solved in Armbian, as described above.
 

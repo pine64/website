@@ -1,0 +1,15 @@
+---
+title: "Software"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "SOQuartz"
+    identifier: "SOQuartz/Software"
+    weight: 
+---
+
+* link:Releases[]
+* link:Android_SDK[]
+* link:BSP_Linux_SDK[]
+

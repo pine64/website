@@ -1,5 +1,5 @@
 ---
-title: "PinePhone Power Management"
+title: "Power Management"
 draft: false
 menu:
   docs:
@@ -13,9 +13,7 @@ The data on this page is based on the the link:/documentation/PinePhone/Revision
 
 == Regulators
 
-
 === Current Assignments
-
 
 [cols="1,1,1,1,1"]
 |===
@@ -190,9 +188,7 @@ The data on this page is based on the the link:/documentation/PinePhone/Revision
 
 === Suggested Regulator Hardware Changes
 
-
 ==== ANX7688
-
 
 . Move ANX7688 AVDD33 (the chip input only, not the other things connected to 3v3) and ANX7688 I2C Level Shift (3.3V side) from DLD01 to DCDC1, and ANX7688 VCONN_EN Disable Pull-up (R1355 and R1366) from DLDO1 to ANX1.8V
 . <strike>Move ANX7688 ANX1.8V from GPIO1-LDO to ALDO2</strike>
@@ -264,9 +260,7 @@ Note: Only regulators that were modified are included here.
 
 == GPIO
 
-
 === Current Modem Pin Assignments
-
 
 Note: only pins relevant to power management are included in this table.
 
@@ -426,9 +420,7 @@ Note: only pins relevant to power management are included in this table.
 
 === Pins Held During Suspend
 
-
 === Pins Active During Suspend
-
 
 === Suggested GPIO Hardware Changes
 

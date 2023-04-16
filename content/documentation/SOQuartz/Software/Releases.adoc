@@ -1,12 +1,12 @@
 ---
-title: "SOQuartz Software Releases"
+title: "Releases"
 draft: false
 menu:
   docs:
     title:
     parent: "SOQuartz"
-    identifier: "SOQuartz/Software"
-    weight: 
+    identifier: "SOQuartz/Software/Releases"
+    weight: 1
 ---
 
 This page contains a list of all available operating systems for the link:/documentation/SOQuartz/_index[SOQuartz].
@@ -86,5 +86,4 @@ Some quick notes:
 * NetworkManager is used instead of Debian's interfaces config to be more flexible with what adapters are plugged in and working
 * An sshd is started on port 22 with freshly generated keys
 * *Please flash the correct image for your SOQuartz baseboard|*
-
 

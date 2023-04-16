@@ -6,10 +6,8 @@ menu:
     title:
     parent: "PinePhone/Software"
     identifier: "PinePhone/Software/Crust"
-    weight: 
+    weight: 4
 ---
-
-{{under construction}}
 
 As per the README.md on https://github.com/crust-firmware/crust[the crust github]:
 
@@ -30,5 +28,4 @@ This example will put the device to sleep for 10 seconds and then wake it up. Mo
 For manually suspending the device on distributions with Systemd you can use the following command with super user permissions: `systemctl suspend`
 
 On non-systemd distributions you can directly echo: `echo mem > /sys/power/state`
-
 

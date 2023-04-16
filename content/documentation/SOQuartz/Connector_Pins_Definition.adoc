@@ -9,6 +9,5 @@ menu:
     weight: 
 ---
 
-
 * https://files.pine64.org/doc/quartz64/SOQuartz%20Connector%20Pin%20Assignments%20ver%201.0.ods[SOQuartz Module Connector Pins Definition ver 1.0]
 

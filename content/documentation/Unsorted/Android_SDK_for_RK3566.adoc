@@ -13,7 +13,6 @@ Two Android SDKs are available from Pine64 for RK3566 devices:-
 
 == QUARTZ64_SDK_android11
 
-
 === Android 11 SDK
 
 for Quartz64 model A SBC and SOQuartz
@@ -25,7 +24,6 @@ for Quartz64 model A SBC and SOQuartz
 
 == QUARTZ64-model-A_eink.android11_SDK
 
-
 === Android 11 eink SDK
 
 for PineNote and Quart64 model A SBC
@@ -36,7 +34,6 @@ for PineNote and Quart64 model A SBC
 ** Android build version:
 
 == Compiling
-
 
 === Build machine
 
@@ -71,7 +68,6 @@ You will also need libncurses.so.5. The easiest way to install this appears to b
 ** don't use sudo
 
 === Patches
-
 
 ==== QUARTZ64-model-A_eink.android11_SDK
 

@@ -9,10 +9,10 @@ menu:
     weight: 
 ---
 
-
 The PineBuds Pro's buds are based on the http://www.bestechnic.com/home/product/index/cate_id/6[BES 2300YP].
 
-image:/documentation/images/BES2300YP_Block_Diagram.jpg[width=230]_image:/documentation/images/Cortex-M4.png[width=400]
+image:/documentation/images/BES2300YP_Block_Diagram.jpg[width=230]
+image:/documentation/images/Cortex-M4.png[width=400]
 
 CPU Features:
 

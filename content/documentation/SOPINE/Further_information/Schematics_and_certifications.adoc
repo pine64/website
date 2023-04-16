@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 SOPINE module schematic:
 
 * https://files.pine64.org/doc/SOPINE-A64/SOPINE-A64-Schematic-ver-0.9.pdf[SOPINE Module Schematic]
@@ -31,7 +30,7 @@ SOPINE (together with model "A" baseboard) certification:
 * https://files.pine64.org/doc/cert/SOPine%20CE%20certification%20VOC20170428.pdf[SOPINE with model "A" baseboard CE Certificate]
 * https://files.pine64.org/doc/cert/SOPine%20ROHS%20certification%20VOC20170322.pdf[SOPINE with model "A" baseboard RoHS Certificate]
 
-=== PINE A64, PINE A64+, PINE A64-LTS and SOPINE related
+== PINE A64, PINE A64+, PINE A64-LTS and SOPINE related
 
 Five megapixel CMOS camera module information:
 

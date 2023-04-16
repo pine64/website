@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 * https://www.pine64.org/clusterboard/ Clusterboard Introduction
 * https://www.pine64.org/sopine/ SOPINE Introduction
 * https://pine64.com/product/clusterboard-with-7-sopine-compute-module-slots/ Store page for Clusterboard

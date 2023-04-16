@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 == Video
 
 * Digital Video 4KP60 (Type A - full)

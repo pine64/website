@@ -9,7 +9,6 @@ menu:
     weight: 6
 ---
 
-
 * https://www.retro-center.com/product/rockbox-r-cade/[Retro Center online store]
 * https://www.retro-center.com/about-r-cade/[R-Cade software detail]
 * http://www.networkedmediatank.com/forumdisplay.php?fid=154[Networked Media Tank forum section]

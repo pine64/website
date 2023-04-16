@@ -47,4 +47,3 @@ image:/documentation/images/pinebookpro_keyboard_key.jpg[width=400]
 Damaged keys might look like this, note that the pin on the lower right side of the mechanism is slightly deformed and the latch on the upper half of the mechanism is bowed out slightly and cracked.
 This is enough damage to cause the key to pop out when pressed in the upper corners.
 
-

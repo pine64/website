@@ -13,9 +13,7 @@ This page documents the current status of software support for the link:/documen
 
 == Overview
 
-
 === Upstreaming Status
-
 
 [%header, cols="1,1,1,1,1,1"]
 |===
@@ -106,7 +104,6 @@ h| 3D Acceleration
 | `rockchip-spdif`
 | As of 5.15^link:https://git.kernel.org/linus/dac825b6a6bdca41347e25f07354ad94fdc97445[Source]^
 |
-
 
 2+| Linux Mainline
 | `rk817-codec`
@@ -348,9 +345,7 @@ According to pgwipeout, I/O device performance is within expected ranges now.
 
 == TODO
 
-
 === ebc-dev Reverse Engineering and Development
-
 
 The https://gitlab.com/pine64-org/quartz-bsp/linux-next/-/tree/rk356x-ebc-dev[driver for the eInk panel] needs to both be reverse engineered and then rewritten as C. In its current form, it is mostly an assembly dump produced by gcc with debug symbols. See link:/documentation/Unsorted/RK3566_EBC_reverse-engineering[RK3566 EBC Reverse-Engineering] for details.
 

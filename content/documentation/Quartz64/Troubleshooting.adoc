@@ -9,10 +9,7 @@ menu:
     weight: 5
 ---
 
-
-
 == Stability/Boot Issues With Missing Battery Shunt
-
 
 If there is no battery plugged into the board, the jumper labelled "ON/OFF_BATT" must be in place. If this is set wrong, stability issues such as failures to boot will occur.
 

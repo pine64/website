@@ -9,14 +9,13 @@ menu:
     weight: 
 ---
 
-
 image:/documentation/images/Pbp_emmc_disable_sw.jpg[The PineBook Pro eMMC module and switch, shown in 'enabled' position,title="The PineBook Pro eMMC module and switch, shown in 'enabled' position",width=480]
 
-=== Boot sequence details
+== Boot sequence details
 
 The RK3399's mask 32KB ROM boot code looks for the next stage of code at byte off-set 32768, (sector 64 if using 512 byte sectors). This is where U-Boot code would reside on any media that is bootable, link:/documentation/Unsorted/RK3399_boot_sequence[RK3399 boot sequence]
 
-=== Boot devices
+== Boot devices
 
 The Pinebook Pro is capable of booting from eMMC, USB 2.0, USB 3.0, or an SD card. It cannot boot from USB-C. The boot order of the hard-coded ROM of its RK3399 SoC is: SPI NOR, eMMC, SD, USB OTG.
 
@@ -27,7 +26,7 @@ At this time, the Pinebook Pro ships with a Manjaro + KDE build with https://www
 Please note that PCIe, the interface used for NVMe SSD on the Pinebook Pro, is not bootable on the RK3399 and therefore is not a part of the boot hierarchy. It is possible to run the desired OS from NVMe by pointing extlinux on the eMMC to rootfs on the SSD. This requires uboot, the Kernel image, DTB, and extlinux.conf
 in a /boot partition on the eMMC.
 
-=== eMMC information
+== eMMC information
 
 The eMMC appears to be hot-pluggable. This can be useful if trying to recover data or a broken install. Best practice is probably to turn the eMMC switch to off position before changing modules. Note that the enable/disable label on the silkscreen is incorrect on some board revisions (known bad on v2.1).
 

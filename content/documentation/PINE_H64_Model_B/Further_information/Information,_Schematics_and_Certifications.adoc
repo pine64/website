@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 * Board Dimensions: 85mm x 56mm x 18.8mm
 * Input Power: DC 5V @ 3A, 3.5mm OD/ 1.35mm ID DC jack connector
 

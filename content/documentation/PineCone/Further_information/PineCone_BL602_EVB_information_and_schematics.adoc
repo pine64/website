@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 image:/documentation/images/PADI-II_EVB.png[width=120]
 
 The approximate dimensions are 26mm x 43mm.

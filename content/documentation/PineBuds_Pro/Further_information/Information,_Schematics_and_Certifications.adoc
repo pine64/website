@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 The charging case's input power: DC 5V @ 0.5A USB Type-C
 
 Documents:

@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 * https://files.pine64.org/doc/clusterboard/PINE64%20CLUSTER%20BOARD_2_2.DSN[Clusterboard version 2.2 Schematic Capture source file]
 * https://files.pine64.org/doc/clusterboard/PINE64%20CLUSTER%20BOARD_2_2_Schematic.pdf[Clusterboard version 2.2 Schematic Capture PDF file]
 * https://files.pine64.org/doc/clusterboard/PINE64%20CLUSTER%20BOARD_2_2.brd[Clusterboard version 2.2 PCB Job source file]

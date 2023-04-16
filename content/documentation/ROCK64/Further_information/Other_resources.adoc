@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 * https://forum.pine64.org/forumdisplay.php?fid=85[ROCK64 Forum]
 * IRC Server: irc.pine64.org Channel: ROCK64
 * https://github.com/rock64-linux[ROCK64 Linux GitHub Repo]

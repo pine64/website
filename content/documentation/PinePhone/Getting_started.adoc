@@ -9,7 +9,6 @@ menu:
     weight: 2
 ---
 
-
 image:/documentation/images/Pinephone_warning.png[A protection foil isolates the battery for the shipping.,title="A protection foil isolates the battery for the shipping.",width=320]
 
 When shipped the battery is isolated from the device using a protective plastic tab, which is required to be removed before using the phone. The battery *will not* charge or boot until it is removed and the battery is connected again.

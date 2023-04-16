@@ -37,4 +37,3 @@ Note that you must modify /etc/motion/motion.conf to match the v4l2_palette, wid
  UYVY8_2X8/1280x720@1/15  # This one seems to be fine for live viewing, but causes performance problems when using Motion to capture videos
  JPEG_1X8/1280x720@1/15
 
-

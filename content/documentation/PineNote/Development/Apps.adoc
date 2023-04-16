@@ -30,9 +30,7 @@ https://www.youtube.com/watch?v=ZCLyJfbzbrU[Here is a video] showing the perform
 
 == Desktop Environments
 
-
 === Sway
-
 
 * https://github.com/hmpthcs/WinkShell[WinkShell] "Collected applications, configurations and scripts for using a wlroots-based compositor with an EPD (aka e-ink display). Currently supports Sway only."
 
@@ -64,14 +62,11 @@ High contrast style for eink-devices can be found https://github.com/MichiMolle/
 
 == Application support on the PineNote
 
-
 === System-Control
-
 
 A rust-based dbus service is being https://github.com/m-weigand/pinenote_dbus_service[developed] to enable easy, system-wide control over some of the PineNote-specific settings by users and programs (e.g., triggering global screen refreshes, changing waveforms, enabling/disabling dithering). Requires https://github.com/m-weigand/linux/releases[this kernel].
 
 === Notetaking
-
 
 ==== Xournal++
 
@@ -87,7 +82,6 @@ Works well, EInk-Theme can be found https://github.com/MichiMolle/obsidian-eink[
 
 === Web Browsing
 
-
 ==== Firefox
 
 Pretty good experience|Enabling GPU acceleration is helpful.
@@ -100,5 +94,4 @@ See https://github.com/0cc4m/pinenote-misc#firefox-hardware-acceleration[0ccam's
 
 ==== syncthing
 High contrast theme can be found https://github.com/MichiMolle/syncthing-eink[here].
-
 

@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 * Board Dimensions: 133mm x 80mm x 19mm
 * Input Power: DC 5V @ 3A, 3.5mm OD/ 1.35mm ID DC jack connector, Euler connector
 * https://files.pine64.org/doc/Pine%20H64/Pine%20H64%20Port%20Assignment%20rev1.0.pdf[PINE H64 Pi-2/Euler/Ext Bus Connector Pin Assignment]

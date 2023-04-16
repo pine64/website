@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 Pinebook Pro Main Board Schematic And Silkscreen:
 
 * https://files.pine64.org/doc/PinebookPro/pinebookpro_schematic_v21a_20220419.pdf[Pinebook Pro Main Board ver 2.1a Schematic 20220419]

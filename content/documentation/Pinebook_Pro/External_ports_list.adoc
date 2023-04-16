@@ -9,8 +9,7 @@ menu:
     weight: 
 ---
 
-
-Here are a list of the external ports. See link:/documentation/Pinebook_Pro/_index#Expansion_Ports|Technical Reference - Expansion Ports[Technical Reference - Expansion Ports] for port specifications.
+Here are a list of the external ports. See link:/documentation/Pinebook_Pro/_index#Expansion_Ports[Technical Reference - Expansion Ports] for port specifications.
 
 * Left side
 ** Barrel jack for power, (with LED)

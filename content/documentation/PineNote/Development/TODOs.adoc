@@ -85,7 +85,6 @@ This table is a draft for the wiki development page:
 |  | WIP for Linux
 | Booting into linux requires a patched U-Boot. https://wiki.pine64.org/wiki/PineNote_Development/Booting_Linux[Instructions here.]
 
-
 |scope="row" rowspan="4" | Operating System
 
 | `Stability`
@@ -103,7 +102,6 @@ This table is a draft for the wiki development page:
 | <Code>Networking`
 | colspan="2"  | Works
 |
-
 
 |scope="row" rowspan="5"| Components
 
@@ -127,7 +125,6 @@ This table is a draft for the wiki development page:
 | colspan="2"  | Works
 | Power button works.
 
-
 | Accessory compatibility, spare parts
 
 | `Spare parts`
@@ -135,5 +132,4 @@ This table is a draft for the wiki development page:
 | Spare parts currently not available yet in the store.
 
 |===
-
 

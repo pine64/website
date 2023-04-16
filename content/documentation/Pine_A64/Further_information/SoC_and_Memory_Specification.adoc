@@ -9,11 +9,11 @@ menu:
     weight: 
 ---
 
-
 * Based on Allwinner A64
+
 image:/documentation/images/Allwinner_A64.jpg[right,title="right"]
 
-=== CPU Architecture
+== CPU Architecture
 
 * https://www.arm.com/products/processors/cortex-a/cortex-a53-processor.php[Quad-core ARM Cortex-A53 Processor@1152Mhz]
 * A power-efficient ARM v8 architecture
@@ -24,12 +24,12 @@ image:/documentation/images/Allwinner_A64.jpg[right,title="right"]
 * 32KB L1 Instruction cache and 32KB L1 Data cache
 * 512KB L2 cache
 
-=== GPU Architecture
+== GPU Architecture
 
 * https://www.arm.com/products/multimedia/mali-gpu/ultra-low-power/mali-400.php[ARM Mali400MP2 Dual-core GPU]
 * Support OpenGL ES 2.0 and OpenVG 1.1 standard
 
-=== System Memory
+== System Memory
 
 * RAM Memory Variants: 512MB, 1GB and 2GB DDR3.
 * Storage Memory: PINE A64 boards _do not_ have built-in Flash memory but use *bootable microSD Cards* or USB attached storage.

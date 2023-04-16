@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 * Dimensions: 329mm x 220mm x 12mm (WxDxH)
 * Weight: 1.26Kg
 * Screws

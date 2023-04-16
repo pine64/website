@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 * To operate this board you will need a power supply, Pine advises a "5V 15A power supply with 6.3mm OD/3.0mm ID barrel type DC Jack" which is also available in the store (https://pine64.com/product/clusterboard-eu-power-supply/[EU] / https://pine64.com/product/clusterboard-us-power-supply/[US] versions). There are other ways to power this board, but they are not described here yet.
 * The board works best when it is protected by a (mITX)case, and has some airflow provided by a fan.
 * Each SOPINE module can use cooling, both by a casefan, and by using heatsinks on the individual modules. At least the A64 could use some cooling.

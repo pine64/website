@@ -25,7 +25,8 @@ Place the jumper J2 on USB/UART Programming/Console Adapter (PMPROG01) to 5V out
 
 === Setting Configuration
 
-image:/documentation/images/Wr_Termite2.JPG[thumb|Termite_Setup_Screen,title="thumb|Termite_Setup_Screen"]_image:/documentation/images/Wr_cfghelp_scr.JPG[thumb|Help Command,title="thumb|Help Command"]
+image:/documentation/images/Wr_Termite2.JPG[thumb|Termite_Setup_Screen,title="thumb|Termite_Setup_Screen"]
+image:/documentation/images/Wr_cfghelp_scr.JPG[thumb|Help Command,title="thumb|Help Command"]
 * For windows system, you can use terminal emulator program Termite to configure the device.
 * Termite can be downloaded at http://www.compuphase.com/software_termite.htm[CompuPhase Website ]
 * Make sure the 'Port' setting is refer to the USB/UART Programming/Console Adapter (PMPROG01)'s Virtual Comm Port.

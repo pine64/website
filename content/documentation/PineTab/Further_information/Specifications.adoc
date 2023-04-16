@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 * *Dimensions:* 11mm x 175mm x 260mm (Thickness, Width, Height)
 * *Weight:* 575g (Tablet alone)
 * *Build:* Plastic
@@ -30,7 +29,7 @@ menu:
 * *Display:*
 ** *Size:* 10.1 inches (257mm) diagonal
 ** *Type:* HD IPS capacitive touchscreen, 16M colors
-** *Resolution:* 1280x800, 16:10 ratio <br>
+** *Resolution:* 1280x800, 16:10 ratio
 * *Attachments/Accessories:* Magnetically attached keyboard (optional)
 * *Battery:* 6000MAh (6Ah)
 * *Misc. features:*

@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 Mainboard schematics:
 
 * https://files.pine64.org/doc/pinebook/pinebook_mainboard_schematic_3.0.pdf[Pinebook Mainboard schematics]

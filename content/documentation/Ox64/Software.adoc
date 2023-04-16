@@ -6,13 +6,10 @@ menu:
     title:
     parent: "Ox64"
     identifier: "Ox64/Software"
-    weight: 
+    weight: 1
 ---
 
-
-
-=== Quick Links to the Source of OS Images Build
-
+== Quick Links to the Source of OS Images Build
 
 There is a community effort to bring updated kernels, peripherals and buildroot - Lots of communication happening in the #ox64-nutcracker channel.
 
@@ -33,7 +30,7 @@ Toolchain:
 * linux_toolchain/bin/riscv64-unknown-linux-gnu-gcc (Xuantie-900 linux-5.10.4 glibc gcc Toolchain V2.2.4 B-20211227) 10.2.0
 * cmake version 3.19.3
 
-=== Software Development Kits
+== Software Development Kits
 
 * https://github.com/bouffalolab/bl_mcu_sdk[BL808 MCU SDK]
 * https://dev.bouffalolab.com/download[BLDevCube Flashing Tool for Windows, macOS and Ubuntu x64]

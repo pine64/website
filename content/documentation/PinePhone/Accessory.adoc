@@ -9,8 +9,6 @@ menu:
     weight: 
 ---
 
-
-
 === Add-ons
 
 The PinePhone (and PinePhone Pro) is compatible with the official add-on cases, such as the keyboard, the LoRa add-on, the Qi wireless charging add-on and the fingerprint reader add-on. Details can be found under:

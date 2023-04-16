@@ -19,7 +19,8 @@ The PinePhone development has been broken down into three distinct phases:
 * Second phase - purpose-built development kit code named "Don't be evil" and introduced at FOSDEM 2019
 * Lastly, the third phase which is the PinePhone itself - scheduled to be prototype released in Q3 2019 and BTO batch released with mobile OS parents in Q4 2019 (pending on software development).
 
-image:/documentation/images/Qsud2Gt.jpg[thumb,title="thumb"]_image:/documentation/images/Martijnpocket.jpg[thumb,title="thumb"]
+image:/documentation/images/Qsud2Gt.jpg[thumb,title="thumb"]
+image:/documentation/images/Martijnpocket.jpg[thumb,title="thumb"]
 
 == Baseboard and SOPine Module Information, and Schematics
 
@@ -51,7 +52,8 @@ Pin assignment:
 
 Based on the Allwinner A64/R18. The R18 and A64 are identical SoC but R18 committed for 10 years supply by vendor.
 
-image:/documentation/images/Allwinner_A64.jpg[]_image:/documentation/images/Allwinner_R18.png[]
+image:/documentation/images/Allwinner_A64.jpg[]
+image:/documentation/images/Allwinner_R18.png[]
 
 === CPU Architecture
 
@@ -233,25 +235,25 @@ For the Mali driver see link:/documentation/Unsorted/Mali_driver[Mali Driver].
 
 == Errata for ver1.1 and ver1.2 board
 
-1. Please DON'T insert micro SIM card to dev kit board micro SIM card slot, the SIM data, VPP, and GND signal have been misplaced. A miciPCIe adapter with sim card holder 9shown as below photo) will be provide to developers to correct this mistake.
+. Please DON'T insert micro SIM card to dev kit board micro SIM card slot, the SIM data, VPP, and GND signal have been misplaced. A miciPCIe adapter with sim card holder 9shown as below photo) will be provide to developers to correct this mistake.
 
 image:/documentation/images/MiniPCIe_with_sim_slot_adapter.png[width=200]
 
-2. The PinePhone dev kit doesn't charge due to VBUS on SOPine module is not connected. Please connect R9688 solder pads with 0 ohm resistor or using thin wire bridge up the solder pads. Location shows as below:
+. The PinePhone dev kit doesn't charge due to VBUS on SOPine module is not connected. Please connect R9688 solder pads with 0 ohm resistor or using thin wire bridge up the solder pads. Location shows as below:
 
 image:/documentation/images/PinePhone_VBUS_charging_small.png[width=200]
 
-3. The SOPINE's SPI NOR flash storage and the devkit's camera flash (heh) share the same GPIO pins. The flash storage may not be used.
+. The SOPINE's SPI NOR flash storage and the devkit's camera flash (heh) share the same GPIO pins. The flash storage may not be used.
 
 image:/documentation/images/SOPINE-SPI-Flash.png[width=200]
 
-4. On the camera flash GPIO conflict, the new assignment of GPIO PB3 pin for SGM3140 FLASH_EN and GPIP PD7 for FLASH_TRIGOUT. Please note that PD7 is also LCD_ID pin which may not be used.
+. On the camera flash GPIO conflict, the new assignment of GPIO PB3 pin for SGM3140 FLASH_EN and GPIP PD7 for FLASH_TRIGOUT. Please note that PD7 is also LCD_ID pin which may not be used.
 
 Images:
 
-
-image:/documentation/images/GPIO_PB3_location.jpg[GPIO_PB3_location,title="GPIO_PB3_location"]_image:/documentation/images/U54_SGM3140_FLASH_EN_pin_location.jpg[width=314]_image:/documentation/images/Flash_GPIO_Reassigned.jpg[Flash GPIOs Reassigned wiring,title="Flash GPIOs Reassigned wiring"]
-
+image:/documentation/images/GPIO_PB3_location.jpg[GPIO_PB3_location,title="GPIO_PB3_location"]
+image:/documentation/images/U54_SGM3140_FLASH_EN_pin_location.jpg[width=314]
+image:/documentation/images/Flash_GPIO_Reassigned.jpg[Flash GPIOs Reassigned wiring,title="Flash GPIOs Reassigned wiring"]
 
 == Other Resources
 
@@ -261,5 +263,4 @@ image:/documentation/images/GPIO_PB3_location.jpg[GPIO_PB3_location,title="GPIO_
 * https://www.stdin.xyz/downloads/people/longsleep/pine64-images/[PINE64 Linux image by Longsleep]
 * https://softwarebakery.com/shrinking-images-on-linux[Shrinking images on Linux by FrozenCow]
 * https://osmocom.org/projects/quectel-modems/wiki/EC25/24[Quectel EC-25 LTE module open source information]
-
 

@@ -9,14 +9,13 @@ menu:
     weight: 
 ---
 
-
 The optional NVMe adapter allows the use of M.2 cards that support the NVMe standard, (but not SATA standard). The optional NVMe M.2 adapter supports *M* & *M*+*B* keyed devices, in both 2242 & 2280 physical sizes, the most common ones available. In addition, 2230 & 2260 are also supported, though NVMe devices that use those sizes are rare.
 
 Once you have fitted and tested your NVMe drive, please add a note to this page link:/documentation/Pinebook_Pro/Accessory/Compatibility[Accessory compatibility] to help build a list of tried and tested devices.
 
-Please see link:/documentation/Pinebook_Pro/Troubleshooting#NVMe SSD issues|a separate section[a separate section] that describes reported issues with the NVMe drives in PineBook Pro.
+Please see link:/documentation/Pinebook_Pro/Troubleshooting#nvme_ssd_issues[a separate section] that describes reported issues with the NVMe drives in PineBook Pro.
 
-=== Installing the adapter
+== Installing the adapter
 
 The V2.1-2019-0809 SSD adapter that shipped with the initial Pinebook Pro batches had significant issues. A repair kit will be shipped to address those issues.
 (If necessary, it can be modified to work. There is https://forum.pine64.org/showthread.php?tid=8322&pid=52700#pid52700[an unofficial tutorial on the forums] describing these modifications.)
@@ -27,7 +26,7 @@ This is the link to the Pinebook Pro accessories in the store: https://pine64.co
 
 Actual installation instructions are a work in progress. Unofficial instructions for installing V2-2019-1107 can be found https://eli.gladman.cc/blog/2020/06/23/pine-book-pro-nvme.html[here].
 
-=== Post NVMe install power limiting
+== Post NVMe install power limiting
 
 Some NVMe SSDs allow reducing the maximum amount of power. Doing so may reduce the speed, but it may be needed in the Pinebook Pro to both improve reliability on battery: Some NVME may be stable with default settings when runnning on AC power but cause frequent kernel panics (system freeze with power LED blinking red/green) when running on battery. Reducing NVME power drain solves this in some cases. And reducing power used gives better battery life.
 Here are the commands to obtain and change the power settings. The package 'nvme-cli' is required to run these commands. The example shows how to find the available power states, and then sets it to the lowest, non-standby setting, (which is 3.8 watts for the device shown):
@@ -81,11 +80,11 @@ Information for this feature, (on a Pinebook Pro), is a work in progress. It is 
 On some NVME SSDS (WD), APST is compatible with limiting NVME maximum power: APST will work and not exceed maximum power state defined using
 previous method.
 
-=== Using as data drive
+== Using as data drive
 
 As long as the kernel in use has both the PCIe and NVMe drivers, you should be able to use a NVMe drive as a data drive. It can automatically mount when booting from either the eMMC or an SD card. This applies to Linux, FreeBSD, and Chromium, using the normal partitioning and file system creation tools. Android requires testing.
 
-=== Using as OS root drive
+== Using as OS root drive
 
 The SoC does not include the NVMe boot code, so the NVMe is not in the SoC's boot order. However, using the https://github.com/mrfixit2001/updates_repo/blob/v1.1/pinebook/filesystem/mrfixit_update.sh[U-Boot update script] from the mrfixit2001 Debian or https://pastebin.com/raw/EeK074XB[Arglebargle's modified script], and https://github.com/pcm720/rockchip-u-boot/releases[the modified u-boot images] provided by forum user pcm720, you can now add support to boot from an NVMe drive. Binary images are useable with SD, eMMC, and link:/documentation/Pinebook_Pro/SPI[SPI flash]. For OS images using the mainline kernel, there are a few variants of U-Boot available that also support NVMe as the OS drive. Though these may require writing the U-Boot to the SPI flash for proper use of the NVMe as the OS drive.
 
@@ -99,5 +98,5 @@ For more information, please refer to https://forum.pine64.org/showthread.php?ti
 
 It is also possible to initially boot off an eMMC or SD card, then transfer to a root file system on the NVMe. Currently, it is necessary to have the U-Boot code on an eMMC or SD card. (A forum member https://forum.pine64.org/showthread.php?tid=8439[posted here] about using a modified version of U-Boot with NVMe drivers, that uses */boot* and */* off the NVMe drive. So this may change in the future.)
 
-Please see link:/documentation/Pinebook_Pro/_index#Bootable Storage|Bootable Storage[Bootable Storage].
+Please see link:/documentation/Pinebook_Pro/_index#bootable_storage[Bootable Storage].
 

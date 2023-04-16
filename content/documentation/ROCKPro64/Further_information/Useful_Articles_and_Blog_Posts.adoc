@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 If you want to dive in to the ecosystem, here's a short list of various articles and blog posts that can help you set up your soft- or hardware development environment.
 
 * https://stikonas.eu/wordpress/2019/09/15/blobless-boot-with-rockpro64/[Blobless boot with RockPro64 by Andrius Štikonas]

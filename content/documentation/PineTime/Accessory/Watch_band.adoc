@@ -9,11 +9,9 @@ menu:
     weight: 
 ---
 
-
 The PineTime uses a standard 20mm watch band / strap. There is a https://forum.pine64.org/showthread.php?tid=9392&pid=81902[thread] in the forum discussing this.
 
 Due to the watches design. Retention for the spring bars are recessed into the watch. Not all 20mm bands / straps work. This is especially the case for Nato style bands / straps being too thick.
-
 
 Known working bands:
 

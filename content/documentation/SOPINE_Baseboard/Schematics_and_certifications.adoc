@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 SOPINE Model "A" Baseboard schematic and PCB board resources:
 
 * SOPINE model "A" Baseboard is an hardware open source project but is not "OSH" compliant

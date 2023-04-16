@@ -34,24 +34,20 @@ OS build Installation Guide and tools:
 |Android/Linux
 |Kodi/Linux
 
-
 | 2160p 30Hz 8bit h264/h265/vp8
 | partial? https://forum.pine64.org/showthread.php?tid=4861&pid=32474#pid32474[1]
 | yes
 | yes
-
 
 | UI using GPU
 | no
 | yes
 | yes
 
-
 | Youtube
 | no
 | yes
 | no
-
 
 | vp9 / mpeg4 / mpeg2 / 10bit HDR / YCbCr
 | no
@@ -290,9 +286,7 @@ The ROCK64 fits in three officially sold cases.
 
 == Troubleshooting
 
-
 === HDMI output disconnects as soon as it connects
-
 
 Some older monitors seemingly can get into a weird state wherein the ROCK64 is unable to establish a proper connection with them. User:CounterPillow has seen this happen on an iiyama ProLite G2773HS connected over HDMI, and an Acer P225HQL connected over an HDMI to DVI adapter. The symptoms usually are that you see the monitor briefly turn on its backlight without displaying a picture, but then immediately either shutting off again or showing a "No Signal" message.
 

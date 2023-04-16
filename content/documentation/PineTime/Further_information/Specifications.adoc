@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-
 * *Dimensions:* 37.5 x 40 x 11mm
 * *Weight:* 38 grams
 * *IP Rating:* IP67 (waterproof to 1 meter (sealed edition|))
