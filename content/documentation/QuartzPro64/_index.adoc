@@ -1,5 +1,5 @@
 ---
-title: "QuartzPro64 Development"
+title: "QuartzPro64"
 draft: false
 menu:
   docs:
@@ -9,8 +9,8 @@ menu:
     weight: 1
 ---
 
-image:/documentation/images/Quartzpro64_whole_board_top_resized.jpeg[The_QuartzPro64_development_board,title="The_QuartzPro64_development_board",width=250]
-image:/documentation/images/BoardBackSide.jpg[Board back side,title="Board back side",width=100]
+image:/documentation/images/Quartzpro64_whole_board_top_resized.jpeg[The_QuartzPro64_development_board,title="The_QuartzPro64_development_board",height=250]
+image:/documentation/images/BoardBackSide.jpg[Board back side,title="Board back side",height=250]
 
 A *QuartzPro64 Development* page before a *QuartzPro64* page? It's more likely than you think|
 

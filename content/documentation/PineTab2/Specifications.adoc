@@ -10,6 +10,7 @@ menu:
 ---
 
 image:/documentation/images/RK3566_icon.png[right,title="right"]
+
 * *SoC:* Rockchip RK3566
 * *CPU:* 4x ARM Cortex-A55 @ 1.8 GHz
 ** 32KB L1 Instruction Cache and 32KB L1 Data Cache per core

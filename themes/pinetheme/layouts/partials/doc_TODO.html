@@ -1,0 +1,8 @@
+
+<!--By menu weight-->
+{{ range (.Parent.Pages.ByParam "menu.docs.weight") }}
+
+<a href="{{ .RelPermalink }}" class="block">
+    {{ .Title }}
+</a>
+{{ end }}

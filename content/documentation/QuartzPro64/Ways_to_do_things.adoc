@@ -9,7 +9,7 @@ menu:
     weight: 6
 ---
 
-=== Using rkdeveloptool
+== Using rkdeveloptool
 
 Use the https://gitlab.com/pine64-org/quartz-bsp/rkdeveloptool[PINE64 fork of rkdeveloptool].
 
@@ -47,11 +47,11 @@ Now, we can e.g. show the partitions on the eMMC:
 
 You can now use `rkdeveloptool write-partition partitionname yourfile` to overwrite one of the eMMC partitions.
 
-=== U-Boot + Kernel On SD, RootFS On eMMC
+== U-Boot and kernel on SD, RootFS on eMMC
 
 This is the setup User:CounterPillow currently uses. In short, you'll need a vendor U-Boot on your SD card, with a boot partition on it that contains your **extlinux.conf**, device tree and kernel.
 
-==== Setting Up The SD Card
+=== Setting up the SD card
 
 Assuming your SD card is **/dev/sdX**, partition as e.g. follows:
 
@@ -63,16 +63,20 @@ Assuming your SD card is **/dev/sdX**, partition as e.g. follows:
  # parted -s /dev/sdX set 4 boot on
 
 Flash SPL and u-boot:
+
  # dd if=rk3588_spl_loader_v1.06.109.bin of=/dev/sdX1
  # dd if=uboot.img of=/dev/sdX2
 
 Then make the filesystem:
+
  # mkfs.vfat -n "efi" /dev/sdX4
 
 Mount it to e.g. **/mnt/sdcardboot**:
+
  # mount /dev/sda4 /mnt/sdcardboot
 
 Put the following in **/mnt/sdcardboot/extlinux/extlinux.conf**:
+
  default l0
  menu title QuartzPro64 Boot Menu
  prompt 0
@@ -88,32 +92,38 @@ Copy your kernel to **/mnt/sdcardboot/jank** and your DTB to **/mnt/sdcardboot/d
 
 Unmount it, we're done with the SD card.
 
-==== Creating The Root File System
+=== Creating the root file system
 
 First, allocate a file the size of your desired root partition (larger sizes will take longer to transfer, don't make the same mistakes as CounterPillow did), here we choose 16G:
+
  $ fallocate -l 16G rootpart.bin
 
 then, make the filesystem on it. CounterPillow went for ext4 because nobody has ever been fired for using ext4:
+
  $ mkfs.ext4 rootpart.bin
 
 Cool, now mount it:
+
  # mount rootpart.bin /mnt/emmc-root
 
 Now we'll download the Arch Linux ARM generic rootfs tarball and go to town:
+
  $ wget -N http://os.archlinuxarm.org/os/ArchLinuxARM-aarch64-latest.tar.gz{,.sig}
  $ curl 'https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x68b3537f39a313b3e574d06777193f152bdbe6a6' | gpg --import=-    # in case you're lacking the key
  $ gpg --verify ArchLinuxARM-aarch64-latest.tar.gz.sig    # don't you dare skip this
  # bsdtar -xpf ArchLinuxARM-aarch64-latest.tar.gz -C /mnt/emmc-root    # notice that this is run as root
 
 Then we just need to edit fstab. Get the UUID (not PARTUUID) from lsblk:
+
  $ lsblk -o NAME,SIZE,MOUNTPOINTS,UUID
 
 and put it in **/mnt/emmc-root/etc/fstab** as follows:
+
  UUID=_root-uuid-here_  /       ext4    defaults        0       1
 
 Unmount **/mnt/emmc-root**, we're done with it.
 
-==== Flashing The Root File System With RockUSB
+=== Flashing the root file system with RockUSB
 
 WARNING: This *will* destroy whatever data is on that userdata partition. But you're here to run Linux, not Android, right?
 
@@ -126,7 +136,7 @@ If your device doesn't show up in `lsusb` or `rkdeveloptool list` command, pull 
 Next, flash the partition. Depending on the size of it, this can take over an hour:
  $ rkdeveloptool write-partition userdata rootpart.bin
 
-==== Booting
+=== Booting
 
 Unplug the download USB-C cable once done.
 
@@ -134,7 +144,7 @@ Put the SD card in the board. Reset it. You can now boot and your rootfs on eMMC
 
 To update kernels or the device tree, just shut down the board, take out the SD card, write a new kernel or dtb to it, and plug it back in. No more need for rkdeveloptool, yay.
 
-=== Using neg2led's kernel branch
+== Using neg2led's kernel branch
 
 IMPORTANT: *Note:* Boot hangs have been observed with latest code in this branch. Try to revert back to commit https://github.com/neggles/linux-quartz64/commit/01f523af0fce727a0e0a37029bbb2d45626d209a[arm64: dts: rockchip: rk3588: add pine64 quartzpro64 board] then retest.
 

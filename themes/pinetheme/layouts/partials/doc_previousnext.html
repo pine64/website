@@ -1,15 +1,14 @@
-
 <!-- Previous section -->
 {{if .NextInSection}}
-    <div class="next-post">
-        <a class="next" href="{{ .NextInSection.Permalink }}">{{.NextInSection.Title}} »</a>
+    <div class="previous-post">
+        <a class="previous" href="{{ .NextInSection.Permalink }}">« {{.NextInSection.Title}}</a>
     </div>
 
 {{ else }}
             
     {{ with index .Pages 0 }}
-    <div class="next-post" style="float:right;">
-        <a class="next" href="{{ .RelPermalink }}">{{ .Title }} »</a>
+    <div class="previous-post" style="float:right;">
+        <a class="previous" href="{{ .RelPermalink }}">{{ .Title }} »</a>
     </div>
     {{ end }}
     
@@ -17,8 +16,8 @@
 
 <!-- Next section -->
 {{if .PrevInSection}}
-    <div class="previous-post">
-        <a class="previous" href="{{ .PrevInSection.Permalink }}">« {{.PrevInSection.Title}}</a>
+    <div class="next-post">
+        <a class="next" href="{{ .PrevInSection.Permalink }}">{{.PrevInSection.Title}} »</a>
     </div>
 
 {{ end }}

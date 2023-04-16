@@ -15,6 +15,10 @@ a {
     color: rgb(10, 83, 154);
     text-decoration: none;
 }
+h2, h3, h4, h5, h6 {
+    color: #444;
+    padding: 0.6em 0 0.4em 0;
+}
 
 hr {
     height: 1.5px;
@@ -60,7 +64,7 @@ div.olist{
 /* Paragraph and section margins */
 
 .paragraph {
-    padding-bottom: 0.6em;
+    padding-bottom: 0.8em;
 }
 .paragraph .right {
     float: right;
@@ -404,24 +408,16 @@ button.rounded:hover {
 #doc-container img {
     max-width: 100%;
 }
-
-/* Documentation text style */
-#doc-page h1 {
+div#doc-page h1 {
     color: #2F82C6;
 }
-#doc-page h2, h3, h4, h5, h6 {
-    color: #444;
-    padding: 0.6em 0 0.4em 0;
-}
-
+/* Documentation text style */
 div#doc-page code{
     padding: 1px 4px;
     background-color: #f8f9fa;
     border: 1px solid #eaecf0;
     font-family: monospace;
     display: inline-block;
-
-
 }
 div#doc-page pre {
     padding: 1em;

@@ -20,11 +20,8 @@ enableRobotsTXT = true
 # Pagination for the blog posts (x posts per page)
 paginate = 9
 
-sectionPagesMenu = "docs2"
-
 [permalinks]
   blog = '/:year/:month/:day/:filename/'
-
 
 [cover]
   hidden = false # hide everywhere but not in structured data

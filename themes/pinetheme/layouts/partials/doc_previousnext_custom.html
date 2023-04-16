@@ -1,0 +1,81 @@
+<!--By menu weight-->
+
+
+<!-- Don't apply this to the main page -->
+{{if ne "/documentation/" .RelPermalink}}
+
+{{ $currentPage := .RelPermalink }}
+{{ $parentPage := .Parent.RelPermalink }}
+{{$i_curr := 0}}
+{{$arr := .Parent.Pages.ByParam "menu.docs.weight"}}
+{{$arr2 := .Pages.ByParam "menu.docs.weight"}}
+
+{{$n := 0}}
+
+{{range $index, $value := $arr}}
+    {{ if (eq $currentPage .RelPermalink) }}
+        {{$i_curr = $index}}
+    {{ end }}
+{{ end }}
+
+{{$i_prev := sub $i_curr 1}}
+{{$i_next := add $i_curr 1}}
+
+<!-- Previous section -->
+<!-- Check if it's not the first in section -->
+<!-- If $i_prev >= 0 -->
+{{ if and (ge $i_prev 0) (ne "/documentation/" .Parent.RelPermalink) }}
+    <div class="previous-post">
+        <a class="previous" href="{{(index ($arr) $i_prev).Permalink}}">« {{(index ($arr) $i_prev).Title}}</a>
+    </div>
+{{ else }}
+    <div class="previous-post">
+        <a class="previous" href="{{ .Parent.RelPermalink }}">« Section: {{.Parent.Title}}</a>
+    </div>
+{{ end }}
+
+<!-- Next section -->
+<!-- Check if it's not the end of section -->
+<!-- If $i_next <= len of menu -->
+{{ if le $i_prev (sub (len $arr) 1) }}
+    <!-- Check if the current page has subpages (for the "next" button) -->
+    {{if gt (len (.Pages.ByParam "menu.docs.weight")) 0}}
+        <div class="next-post">
+            <a class="next" href="{{(index ($arr2) 0).Permalink}}">{{(index ($arr2) 0).Title}} »</a>
+        </div>
+    <!-- Page has no subpages -->
+    {{else}}
+        {{if eq ($i_next) (len $arr)}}
+
+            {{$arr3 := .Parent.Parent.Pages.ByParam "menu.docs.weight"}}
+            {{range $index, $value := $arr3}}
+                {{ if (eq $parentPage .RelPermalink) }}
+                    {{$i_curr = $index}}
+                {{ end }}
+            {{ end }}
+
+            {{$i_next := add $i_curr 1}}
+
+            <!-- Case: Subsection-->
+            {{if le ($i_next) (sub (len $arr3) 1)}}
+                <!-- Check prevents jumping to next device when there are no subpages -->
+                {{if ne "/documentation/" .Parent.Parent.RelPermalink}}
+                    <div class="next-post">
+                        <a class="next" href="{{(index ($arr3) $i_next).Permalink}}">{{(index ($arr3) $i_next).Title}} »</a>
+                    </div>
+                {{end}}
+            <!-- Case: Last subsection-->
+            {{else}}
+
+            {{end}}
+        {{else}}
+            <div class="next-post">
+                <a class="next" href="{{(index ($arr) $i_next).Permalink}}">{{(index ($arr) $i_next).Title}} »</a>
+            </div>
+        {{end}}
+    {{end}}
+{{else}}
+
+{{ end }}
+
+{{ end }}
