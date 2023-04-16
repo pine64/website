@@ -24,7 +24,7 @@ image:/documentation/images/RK3566_icon.png[right,title="right"]
 ** 64GB or 128GB internal eMMC
 ** 1x MicroSD slot
 * *Display:* 10.1" IPS LCD Resolution 1280x800
-* *Cameras:* 2Mpx front, 5Mpx rear
+* *Cameras:* 2Mpx front (Galaxycore GC02M2), 5Mpx rear (Omnivision OV5648)
 * *Battery:* 6000 mAh (22.2Wh)
 * *Buttons:* Power, volume up, volume down
 * *Network:*

@@ -26,7 +26,7 @@ Download:
 !colspan="2" style="background: #a7d7f9;"| Default credentials
 |-
 ! Default user
-| <code>aosc/anthon</code>
+| `aosc/anthon`
 |}
 
 === Armbian ===
@@ -86,7 +86,7 @@ Info:The installation guide can be found https://docs.nemslinux.com/installation
 !colspan="2" style="background: #a7d7f9;"| Default credentials
 |-
 ! Default user
-| <code>nemsadmin/nemsadmin</code>
+| `nemsadmin/nemsadmin`
 |}
 
 === OpenEmbedded ===
@@ -121,7 +121,7 @@ Notes:
 !colspan="2" style="background: #a7d7f9;"| Default credentials
 |-
 ! Default user
-| <code>-/passwd</code>
+| `-/passwd`
 |}
 
 == BSD ==
@@ -139,7 +139,7 @@ Download:
 !colspan="2" style="background: #a7d7f9;"| Default credentials
 |-
 ! Root user and SSH
-| <code>root/[none]</code>
+| `root/[none]`
 |}
 
 Notes:

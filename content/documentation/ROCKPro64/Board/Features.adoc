@@ -266,10 +266,10 @@ The conversion table at right is also available as a https://gist.github.com/Cou
 ROCKPro64 1x1 Dual Band WiFi 802.11AC / Bluetooth 5.0 Module (new)</small>
 | Yes/Yes
 |
-| No/No
+| No/Yes*
 |
-|
-| In 0.7.9 Ayufan linux releases this is deliberately disabled for stability reasons.
+| For the "new" ROCKPro64 WIFI module: Verified with Manjaro ARM (kernel 6.2.5). A config file ("firmware file") is needed at `/lib/firmware/brcm/brcmfmac43455-sdio.txt`. See here for the file contents and details: https://askubuntu.com/a/1211986.
+| In 0.7.9 Ayufan linux releases this is deliberately disabled for stability reasons. After testing for a few hours, on Manjaro ARM (kernel 6.2.5), there haven't been stability issues found (WiFi stayed connected). On a 5GHz network (802.11AC), it was tested to be possible to get about 120Mbps using the "new" ROCKPro64 WIFI module.
 | https://store.pine64.org/product/rockpro64-1x1-dual-band-wifi-802-11acbluetooth-5-0-module[ROCKPro64 1x1 Dual Band WiFi 802.11AC / Bluetooth 5.0 Module]
 
 | USB OTG
@@ -332,7 +332,7 @@ ROCKPro64 1x1 Dual Band WiFi 802.11AC / Bluetooth 5.0 Module (new)</small>
 | Yes
 | 4.4.132-1083 - 4.4.138-1100
 |
-| Stopped working in 4.4.154.1105. Ayufan is looking into it.
+| Stopped working in 4.4.154.1105. Ayufan is looking into it. This is working in Manjaro ARM (kernel 6.2.5). Select the `Analog Output (Built-in Audio Stereo)` option in the audio output device selection window (either use `pavucontrol` or the volume button in the KDE desktop). Despite the slightly misleading name, audio does go through the HDMI port. See here for details: https://forum.manjaro.org/t/no-hdmi-audio-on-rockpro64/25595/2.
 |
 
 | 3.5mm Audio/Mic
