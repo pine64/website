@@ -11,15 +11,15 @@ menu:
 
 Pre-release:
 
-image:/documentation/images/Pinecil_Exploded_Diagram_ver_0.9.png[Pinecil_renders|alt=alt_language,title="Pinecil_renders|alt=alt_language"]
-image:/documentation/images/PinecilPrototype.jpg[Pinecil prototype|alt=alt language,title="Pinecil prototype|alt=alt language"]
+image:/documentation/images/Pinecil_Exploded_Diagram_ver_0.9.png[Pinecil_renders,title="Pinecil_renders"]
+image:/documentation/images/PinecilPrototype.jpg[Pinecil prototype,title="Pinecil prototype"]
 
 Production:
 
 image:/documentation/images/Pinecil-V2-box-1024x1024.jpg[width=202]
 image:/documentation/images/Pinecilv2-2.jpg[https://pine64.com/product-category/pinecil/[Pinecil_V2,_side_view]
-image:/documentation/images/Pinecil-V2-dissasebled.jpg[Pinecil_V2_disassembled,_newly_designed_shorter_6.2_ohm_tip|alt=alt_language,title="Pinecil_V2_disassembled,_newly_designed shorter 6.2 ohm tip|alt=alt language"]
-image:/documentation/images/Pinecil-Clear-Case1.png[Transparent_handle|alt=alt_language,title="Transparent handle|alt=alt language"]
+image:/documentation/images/Pinecil-V2-dissasebled.jpg[Pinecil_V2_disassembled,_newly_designed_shorter_6.2_ohm_tip,title="Pinecil_V2_disassembled,_newly_designed shorter 6.2 ohm tip"]
+image:/documentation/images/Pinecil-Clear-Case1.png[Transparent_handle,title="Transparent handle"]
 image:/documentation/images/Pinecil-Contact2.png[https://pine64.com/product-category/pinecil/[Replacement_internal_contacts]
 image:/documentation/images/Pinecil-bb2-01.jpg[width=202]
 
@@ -32,9 +32,9 @@ image:/documentation/images/Pinecil-Tip-SetGross-1.jpg[_https://pine64.com/produ
 
 PCB:
 
-image:/documentation/images/PCP-Top-side-screen.jpg[Pinecil_PCB_screen_side,_V2_on_top,_V1_on_bottom|alt=alt_language,title="Pinecil_PCB_screen_side,_V2_on_top,_V1 on bottom|alt=alt language"]
-image:/documentation/images/PCP-Bottom-Side.jpg[Pinecil PCB bottom side, V2 on top, V1 on bottom|alt=alt language,title="Pinecil PCB bottom side, V2 on top, V1 on bottom|alt=alt language"]
+image:/documentation/images/PCP-Top-side-screen.jpg[Pinecil_PCB_screen_side,_V2_on_top,_V1_on_bottom,title="Pinecil_PCB_screen_side,_V2_on_top,_V1 on bottom"]
+image:/documentation/images/PCP-Bottom-Side.jpg[Pinecil PCB bottom side, V2 on top, V1 on bottom,title="Pinecil PCB bottom side, V2 on top, V1 on bottom"]
 
 Accessories:
 
-image:/documentation/images/Pinecil-Thumb-Screws.png[Thumb screws on V1 & V2 |alt=alt language,title="Thumb screws on V1 & V2 |alt=alt language"]
+image:/documentation/images/Pinecil-Thumb-Screws.png[Thumb screws on V1 & V2 ,title="Thumb screws on V1 & V2 "]

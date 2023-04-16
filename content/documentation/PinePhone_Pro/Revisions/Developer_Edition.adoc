@@ -19,7 +19,7 @@ Consider this a crash course rather than a comprehensive overview; you are also 
 
 === Getting the hardware ready
 
-After unpacking the PinePhone Pro from its box, detach the back cover (looking at the back of the phone, there is a fingernail notch on the left leading edge) and remove the plastic tab between the battery and mainboard. You can also flip the headphone jack privacy switch at this point - this enables UART output via the headphone jack. Serial console works the https://wiki.pine64.org/wiki/PinePhone#Serial_console[same way as on the original PinePhone.]
+After unpacking the PinePhone Pro from its box, detach the back cover (looking at the back of the phone, there is a fingernail notch on the left leading edge) and remove the plastic tab between the battery and mainboard. You can also flip the headphone jack privacy switch at this point - this enables UART output via the headphone jack. Serial console works the same way as on the original PinePhone.
 
 == Factory hardware test image
 
@@ -71,7 +71,7 @@ Another method of erasing the image is to connect serial console, break into U-B
 
 You will want to do all your testing and development on a SD card; you DO NOT want to flash an OS to eMMC at this time. Builds frequently break at this early development stage and recovering from a corrupted eMMC installation is presently time consuming and tedious. A fast 16-64GB micro SD card for $15 will work just fine.
 
-There are a handful of OS builds available for the PinePhone Pro already. These can be found under the https://wiki.pine64.org/wiki/PinePhone_Pro#Software_releases[Software Releases] Wiki section.
+There are a handful of OS builds available for the PinePhone Pro already. These can be found under the link:/documentation/PinePhone_Pro/Software/Releases[Software Releases] section.
 
 If you are a developer porting your own distribution to the PinePhone Pro, please make sure to make an entry for it in the Software Releases section on the Wiki. If you want / need help with entering your build onto the Wiki please ping one of the mods or admins in the chats (see Forums and Chats drop-down menu).
 

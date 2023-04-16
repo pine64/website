@@ -172,5 +172,5 @@ This issue is also present on the PinePhone 1.2 (CE) version and was fixed with 
 
 _No hardware change suggested, to maintain accessory compatibility._
 
-This is possibly just a documentation issue. https://wiki.pine64.org/index.php/PinePhone#Pogo_Pins[The wiki claims] they provide a "3.3v power source", and on this page, "The Pogo Pin specified voltage is 3.3v". But according to the schematic, they are connected to **USB-5V**, the output of the 5V boost regulator.
+This is possibly just a documentation issue. The wiki claimed they provide a "3.3v power source", and on this page, "The Pogo Pin specified voltage is 3.3v". But according to the schematic, they are connected to **USB-5V**, the output of the 5V boost regulator.
 

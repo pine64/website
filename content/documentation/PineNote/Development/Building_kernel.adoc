@@ -99,7 +99,7 @@ If you're using a logind system, edit your */etc/systemd/logind.conf* config. Mo
 
 === Configuring your apps
 
-See https://wiki.pine64.org/wiki/PineNote_Development/Apps[this page].
+See link:/documentation/PineNote/Development/Apps[Apps].
 
 === Booting Linux instead of Android
 

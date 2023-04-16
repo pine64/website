@@ -52,16 +52,16 @@ TODO
 
 === GNOME Configurations
 
-See https://wiki.pine64.org/wiki/PineNote_Development/Apps#Gnome[here].
+See link:/documentation/PineNote/Development/Apps#Gnome[here].
 
 === Sway Configurations
 
-See https://wiki.pine64.org/wiki/PineNote_Development/Apps#Sway[here].
+See link:/documentation/wiki/PineNote/Development/Apps#Sway[here].
 
 == Documentation TODOs
 
 * Pin Mesa Packages so they don't update when we upgrade other packages
-** Add the information near step 5 https://wiki.pine64.org/wiki/PineNote_Development/Building_Kernel#Steps_to_build[here].
+** Add the information near step 5 link:/documentation/PineNote/Development/Building_Kernel#Steps_to_build[here].
 * Control the backlight
 * Building alacritty correctly
 * Force a screen refresh?
@@ -83,7 +83,7 @@ This table is a draft for the wiki development page:
 | `Bootloader`
 |  | Android only
 |  | WIP for Linux
-| Booting into linux requires a patched U-Boot. https://wiki.pine64.org/wiki/PineNote_Development/Booting_Linux[Instructions here.]
+| Booting into linux requires a patched U-Boot. link:/documentation/PineNote/Development/Booting_Linux[Instructions here.]
 
 |scope="row" rowspan="4" | Operating System
 
@@ -115,7 +115,7 @@ This table is a draft for the wiki development page:
 
 | `Bluetooth`
 | colspan="2"  | Works, audio stutters
-| https://wiki.pine64.org/wiki/PineNote_Development/Building_Kernel#Fixing_Bluetooth[Switching the driver] provides stable connections for keyboards, but audio still stutters. Trying to fix this https://wiki.pine64.org/wiki/PineNote_Development/Software_Tweaks#Preliminary_fix_for_stuttering_bluetooth_audio[here].
+| link:/documentation/PineNote/Development/Building_Kernel#Fixing_Bluetooth[Switching the driver] provides stable connections for keyboards, but audio still stutters. Trying to fix this link:/documentation/PineNote/Development/Software_Tweaks#Preliminary_fix_for_stuttering_bluetooth_audio[here].
 
 | `Sensors`
 | colspan="2"  | Unsure

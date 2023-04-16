@@ -19,7 +19,7 @@ image:/documentation/images/Pinecil-V1andV2.png[right,title="right",width=400]
 
 The firmware that comes with the Pinecil is https://ralim.github.io/IronOS/[open source Ralim's IronOS]. It's a good idea to check for updates regularly as development is very active and there may be enhancements or bug fixes.
 
-Depending on whether you have a Pinecil V1 or V2, they are updated using different flashers since they have completely different MCU chip (brains). The V1 is any pinecil sold up to July 2022 (has a blue thumb grip). The V2 is any pinecil sold after Aug 1, 2022 (has a green thumb grip). If you don't have the two models mentioned, then you might not have an https://wiki.pine64.org/wiki/Pinecil#Authenticity[authentic pinecil]. This aritcle is designed and tested on authentic pinecils only.
+Depending on whether you have a Pinecil V1 or V2, they are updated using different flashers since they have completely different MCU chip (brains). The V1 is any pinecil sold up to July 2022 (has a blue thumb grip). The V2 is any pinecil sold after Aug 1, 2022 (has a green thumb grip). If you don't have the two models mentioned, then you might not have an link:/documentation/Pinecil/Authenticity[authentic pinecil]. This aritcle is designed and tested on authentic pinecils only.
 
 * Go to the appropriate section below depending on if you have a V1 or V2 model.
 * Long hold down `[-]` to see the current firmware version installed.

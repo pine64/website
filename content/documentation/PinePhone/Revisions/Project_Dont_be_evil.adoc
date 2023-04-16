@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-image:/documentation/images/Qee3ovj.jpg[thumb,title="thumb"]
+image:/documentation/images/Qee3ovj.jpg[]
 
 The Project *Don't be evil* is the phase two of _PINE64's_ smartphone, the link:/documentation/PinePhone/_index[PinePhone] Development Kit. Project Don't be evil is an actual smartphone developer kit for the PINE64 Smartphone dubbed "PinePhone". It is used in the early stages of development as a starting point for affiliated projects.
 
@@ -19,8 +19,8 @@ The PinePhone development has been broken down into three distinct phases:
 * Second phase - purpose-built development kit code named "Don't be evil" and introduced at FOSDEM 2019
 * Lastly, the third phase which is the PinePhone itself - scheduled to be prototype released in Q3 2019 and BTO batch released with mobile OS parents in Q4 2019 (pending on software development).
 
-image:/documentation/images/Qsud2Gt.jpg[thumb,title="thumb"]
-image:/documentation/images/Martijnpocket.jpg[thumb,title="thumb"]
+image:/documentation/images/Qsud2Gt.jpg[]
+image:/documentation/images/Martijnpocket.jpg[]
 
 == Baseboard and SOPine Module Information, and Schematics
 

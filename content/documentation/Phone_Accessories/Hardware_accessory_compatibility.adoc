@@ -53,23 +53,3 @@ USB hubs do not require a custom driver and are therefore expected to be compati
 === Bluetooth devices
 
 In general, Bluetooth should be working. However, due to the audio setup on the PinePhone and PinePhone Pro being complicated due to the dynamic rerouting needed for phone calls.
-
-<|--
-|===
-|Name | Product type | Bluetooth version | Result | Tested OS | Kernel version | Notes
-
-| Beats Powerbeats Pro | Headset | TBD | Works | Ubuntu Touch | 5.6 | Working
-
-| Sony WH-CH510 | Headset | TBD | Works | Mobian | 5.9 | Audio works with A2DP profile, when using HSP/HFP only loud noise appears, unable to make calls and talk via headphones microphone
-
-| Sony WH-1000XM3 | Headset | TBD | Works | Manjaro | 5.11.3-1 | Audio works. Have not tested yet to make calls and talk via headphones microphone
-
-| Sony WH-1000XM4 | Headset | TBD | Works | Manjaro | 5.14.17-1 | Audio works with A2DP profile, LDAC profile does not showup. Have not tested yet to make calls and talk via headphones microphone
-
-| MPOW-059 | Headset | TBD | Works | Ubuntu Touch | 5.6 | Works fine most of the time, but occasionally disconnects when the phone is doing a CPU intensive task
-
-| Apple Airpods Pro | Headset | TBD | Works | Mobian | 5.9 | Works fine, but when you are only using one ear bud and decide to use the other one, it'll disconnect and will start sending audio through the internal speaker. It also doesnt work for phone calls
-
-|===
--->
-

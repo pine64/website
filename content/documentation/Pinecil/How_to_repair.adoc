@@ -150,10 +150,10 @@ Reference the article on [[Pinecil_Power_Supplies#DC_Barrel_Power| DC barrel cha
 
 image:/documentation/images/PCP-Top-side-screen.jpg[Screen side: V2 on top, V1 below]
 image:/documentation/images/PCP-Bottom-Side.jpg[Pinecone side: V2 on top, V1 below]
-image:/documentation/images/Pinecil_v2_MOSFET.JPG[_MOSFET_V2_|alt=alt_language,title="_MOSFET_V2_|alt=alt_language"]
+image:/documentation/images/Pinecil_v2_MOSFET.JPG[MOSFET V2,title="MOSFET V2"]
 image:/documentation/images/FUSB302-V2-02.JPG[width=302]
-image:/documentation/images/Pinecil_LDOandOP-Amp.png[_LDO_and_OP-Amp|alt=alt_language,title="_LDO_and_OP-Amp|alt=alt_language"]
-image:/documentation/images/Under_OLED_screen01.png[ Under the OLED screen, V2|alt=alt language,title=" Under the OLED screen, V2|alt=alt language"]
+image:/documentation/images/Pinecil_LDOandOP-Amp.png[_LDO_and_OP-Amp,title="_LDO_and_OP-Amp"]
+image:/documentation/images/Under_OLED_screen01.png[ Under the OLED screen, V2,title=" Under the OLED screen, V2"]
 
 == Schematics and Board Data
 

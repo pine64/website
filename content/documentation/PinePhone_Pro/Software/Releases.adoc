@@ -1,5 +1,5 @@
 ---
-title: "PinePhone Pro Software Releases"
+title: "Releases"
 draft: false
 menu:
   docs:

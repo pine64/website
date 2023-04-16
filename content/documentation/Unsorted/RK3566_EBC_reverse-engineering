@@ -186,8 +186,6 @@ which in of itself goes on to reference `0x1970`, and looking this one up, we'll
 
 ==== ebc_info
 
-<|-- I don't know why mediawiki scuffs the formatting here -->
-
 See https://gitlab.com/smaeul/ebc-dev/-/blob/main/auto_image.h#L124, which is based on https://gitlab.com/pine64-org/quartz-bsp/linux-next/-/commits/2de5fb11a888c37f366642544e5a53ec2faae32d[the v1.04 BSP Linux driver].
 
 ==== ebc

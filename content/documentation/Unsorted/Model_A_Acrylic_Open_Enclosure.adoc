@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-image:/documentation/images/Model_a_acrylic_case_with_pine_a64.jpg[thumb|A Pine A64 mounted in the "Model A" Acrylic Open Enclosure. The text on the top is "PINE64" nowadays.,title="thumb|A Pine A64 mounted in the "Model A" Acrylic Open Enclosure. The text on the top is "PINE64" nowadays."]
+image:/documentation/images/Model_a_acrylic_case_with_pine_a64.jpg[A Pine A64 mounted in the "Model A" Acrylic Open Enclosure. The text on the top is "PINE64" nowadays.,title="A Pine A64 mounted in the "Model A" Acrylic Open Enclosure. The text on the top is "PINE64" nowadays."]
 
 The *"Model A" Acrylic Open Enclosure* is a case for "Model A" sized single-board computers (Pine A64, ROCKPro64, Quartz64 Model A) sold by PINE64, available from https://pine64.com/product/pine-a64-rockpro64-acrylic-open-enclosure/[the official store].
 
@@ -23,9 +23,9 @@ For the Quartz64 Model A, you may need to file down the inner corner of one of t
 
 === 3D-Printable Top With Fan and PCIe Cutout
 
-image:/documentation/images/Model_a_top_render.png[thumb|left|Non-artist's impression of the replacement top plate,title="thumb|left|Non-artist's impression of the replacement top plate"]
+image:/documentation/images/Model_a_top_render.png[Non-artist's impression of the replacement top plate,title="Non-artist's impression of the replacement top plate"]
 
-User:CounterPillow]] has created an alternate 3D-printable top plate which allows for the mounting of a 40mmx40mmx10mm fan, as well as allowing for PCIe cards to be mounted while the case is assembled. The STL and STEP files [[INTFL:Model_A_acrylic_case_top_plate_with_fan_cutout.zip|are available free of charge, licensed as CC-BY 4.0.
+User:CounterPillow has created an alternate 3D-printable top plate which allows for the mounting of a 40mmx40mmx10mm fan, as well as allowing for PCIe cards to be mounted while the case is assembled. The STL and STEP files are available under https://wiki.pine64.org/wiki/File:Model_A_acrylic_case_top_plate_with_fan_cutout.zip free of charge, licensed as CC-BY 4.0.
 
 A fan is mounted to it using self-tapping fan screws usually shipped with computer fans; put the fan on the underside of the plate, and screw in the self-tapping screws from the top side. You can either have the fan exhaust air through the top, or blow it onto the SoC's heatsink. The latter configuration appears to work better, but precise measurements haven't been made yet.
 

@@ -365,7 +365,7 @@ Image downloads (for Rockchip Tool):
 * https://files.pine64.org/os/ROCK64/android/ROCK64_20190617_stock_android_9.0_emmcboot.img.gz[Stock image] from _pine64.org_ (544MB, MD5 of the Gzip file _9B717263E7749A732C8B5C7D7D59C5C6_, build 20190617)
 * https://files.pine64.org/os/ROCK64/android/ROCK64_20190618_stock_rooted_android_9.0_emmcboot.img.gz[Rooted image] from _pine64.org_ (544MB, MD5 of the Gzip file _FC5F80C3A939AD0F8DCE5B85F22D20A1_, build 20190618)
 
-NOTE: See the https://wiki.pine64.org/index.php/NOOB#Flashing_to_eMMC_using_Rockchip_Tools_.28Rock64_Only.29[guide to flashing eMMC using Rockchip Tools]. Please unzip the file first and then use Rockchip tool to flash it. The OTG port located at top USB 2.0 port and it needs USB type A to type A cable.
+NOTE: See the guide to flashing eMMC using Rockchip Tools. Please unzip the file first and then use Rockchip tool to flash it. The OTG port located at top USB 2.0 port and it needs USB type A to type A cable.
 
 Notes:
 
@@ -404,7 +404,7 @@ Image downloads (for Rockchip Tool):
 
 * https://files.pine64.org/os/ROCK64/android/rock64_android8.1_emmc_boot_v1.1.zip[Direct download] from _pine64.org_ (752MB, MD5 of the .xz file _9738F060D2F62A83637797363D2B38C9_, build 20180606)
 
-NOTE: See the https://wiki.pine64.org/index.php/NOOB#Flashing_to_eMMC_using_Rockchip_Tools_.28Rock64_Only.29[guide to flashing eMMC using Rockchip Tools]. Please unzip the file first and then use Rockchip tool to flash it. The OTG port located at top USB 2.0 port and it needs USB type A to type A cable.
+NOTE: See the page about how to flash the eMMC using Rockchip Tools. Please unzip the file first and then use Rockchip tool to flash it. The OTG port located at top USB 2.0 port and it needs USB type A to type A cable.
 
 === Android 8.x TV
 

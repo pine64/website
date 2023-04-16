@@ -84,7 +84,7 @@ Note: If you've upgraded to >=5.18, don't forget to upgrade the dtb as kb151 now
 
 === User-space driver
 
-The user-space driver is available https://xff.cz/git/pinephone-keyboard/[here]. Use git to clone the repository. You're going to need sdcc 4.1+ installed to build it, so use your package manager to install that first. Next you'll cd into the directory you cloned pinephone-keyboard and use the command "make" to build. After the build is completed, cd into the build directory and you'll notice several new files starting with ppkb-. To use your keyboard case, you'll want to run the following command: `sudo ./ppkb-i2c-inputd` <|-- this isn't running as a daemon, if anyone knows how to make it do so please edit that info in-> Open something you can type into like a new terminal window or text editor and you should now be able to use the keyboard case|
+The user-space driver is available https://xff.cz/git/pinephone-keyboard/[here]. Use git to clone the repository. You're going to need sdcc 4.1+ installed to build it, so use your package manager to install that first. Next you'll cd into the directory you cloned pinephone-keyboard and use the command "make" to build. After the build is completed, cd into the build directory and you'll notice several new files starting with ppkb-. To use your keyboard case, you'll want to run the following command: `sudo ./ppkb-i2c-inputd`. Open something you can type into like a new terminal window or text editor and you should now be able to use the keyboard case.
 
 === Notes
 

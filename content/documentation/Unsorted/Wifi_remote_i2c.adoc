@@ -14,26 +14,30 @@ image:/documentation/images/PMWF01A_Description.jpg[boarder|PMWF01A : Wifi Remot
 == Quick Start Guide
 
 === Hardware Setup
-image:/documentation/images/PMWF01A_Wifi_Remote_IO_Rev3-1.jpg[thumb|Hardware Setup,title="thumb|Hardware Setup"]
+image:/documentation/images/PMWF01A_Wifi_Remote_IO_Rev3-1.jpg[Hardware Setup,title="Hardware Setup"]
+
 * Make sure that the driver for USB/UART Programming/Console Adapter (PMPROG01) is properly install and the PC is detected it as Comm Port.
 * The USB/UART Bridge is base on http://www.silabs.com/products/interface/usb-bridges/classic-usb-bridges/Pages/usb-to-uart-bridge.aspx[Silicon Lab CP2012 chipset].
 * USB/UART Programming/Console Adapter (PMPROG01) driver can be https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx[Download here]
 * Connect the USB/UART Programming/Console Adapter (PMPROG01) to the Wifi Remote I2c Device.
 * You can power-up the WiFI Remote I2c module through the USB Bus for configuration and programming.
+
 image:/documentation/images/Wr_USB_Adpt_5v.jpg[width=100]
+
 Place the jumper J2 on USB/UART Programming/Console Adapter (PMPROG01) to 5V output selection.
 
 === Setting Configuration
 
-image:/documentation/images/Wr_Termite2.JPG[thumb|Termite_Setup_Screen,title="thumb|Termite_Setup_Screen"]
-image:/documentation/images/Wr_cfghelp_scr.JPG[thumb|Help Command,title="thumb|Help Command"]
+image:/documentation/images/Wr_Termite2.JPG[Termite Setup Screen,title="Termite Setup Screen"]
+image:/documentation/images/Wr_cfghelp_scr.JPG[Help Command,title="Help Command"]
+
 * For windows system, you can use terminal emulator program Termite to configure the device.
 * Termite can be downloaded at http://www.compuphase.com/software_termite.htm[CompuPhase Website ]
 * Make sure the 'Port' setting is refer to the USB/UART Programming/Console Adapter (PMPROG01)'s Virtual Comm Port.
 * Follow the setting according to the setup screen capture. (57600Baud 8-N-1)
 * Once Termite configuration is done, press 'OK' to save the setting.
 * On the Wifi Remote I2c Device, Press the configuration button to allow the device to go into configuration mode.
-image:/documentation/images/Wr_Config_Mode_Sw.jpg[frameless|caption,title="frameless|caption"]
+image:/documentation/images/Wr_Config_Mode_Sw.jpg[]
 Press Config Mode button to go into configuration mode
 
 * Type 'help' to show the command available for configuration.
@@ -53,7 +57,7 @@ Press Config Mode button to go into configuration mode
 
 === Setup the PineWifiServer
 
-* http://wiki.pine64.org/index.php/Wifi_Remote_I2c#Download[Download the PineWifiServer from the Download Section]
+* link:/documentation/Unsorted/Wifi_remote_i2c#download[Download the PineWifiServer from the Download Section]
 * Copy PineWifiServer xxxxxxxx.gz  into your PineA64 with linux on it. (where xxxxxxxx is the version number)
 * Unzip the file using gunzip.
 * Add Execution flag on both of the file by
@@ -63,7 +67,7 @@ Press Config Mode button to go into configuration mode
 * Once the server is started, you will notice that the LED indicator on the Wifi Remote I2c Hardware will change from slow blinking to always on.
 * To login into the server, telnet into localhost port 10000
   telnet localhost 10000
-image:/documentation/images/Wr_putty_login.JPG[thumb|PineWifiServer Login Screen,title="thumb|PineWifiServer Login Screen"]
+image:/documentation/images/Wr_putty_login.JPG[PineWifiServer Login Screen,title="PineWifiServer Login Screen"]
 * To show current connect Wifi Remote I2c type 'list' in small capital letter.
 * To see all available command, type 'help'.
 * To exit the console, type 'exit'.
@@ -71,7 +75,7 @@ image:/documentation/images/Wr_putty_login.JPG[thumb|PineWifiServer Login Screen
 
 === Running the WifiAppDemo
 
-* http://wiki.pine64.org/index.php/Wifi_Remote_I2c#Download[Download the PineWifiServer from the Download Section]
+* link:/documentation/Unsorted/Wifi_remote_i2c#download[Download the PineWifiServer from the Download Section]
 * Copy WifiAppDemo xxxxxxxx.gz into your same PineA64 board that currently running with PineWifiServer. (where xxxxxxxx is the version number)
 * Unzip both of the file using gunzip.
 * Add Execution flag on both of the file by
@@ -82,15 +86,20 @@ image:/documentation/images/Wr_putty_login.JPG[thumb|PineWifiServer Login Screen
 * To start the WifiAppDemo, type
   ./WifiAppDemo
 * The Application will connect the PineWifiServer currently running in the localhost.
+
 image:/documentation/images/Wr_demo_application.JPG[center|caption,title="center|caption"]
+
 Example of screen shot with WifiAppDemo polling multiple Wifi Remote I2c with Ambient Light Sensor and Humidity/Temperature Sensor connected on it. The speed for each round of polling is 1 second per poll.
 
 == Firmware Upgrade
 
 === Hardware Setup
 image:/documentation/images/Wr_Programming_Mode_Jumper.jpg[width=100]
+
 Short Jumper S2 on the WiFI Remote I2c module (before power up the board) to allow the board to go in to firmware programming mode.
-image:/documentation/images/PMWF01A_Wifi_Remote_IO_Rev3-1.jpg[thumb|Hardware Setup,title="thumb|Hardware Setup"]
+
+image:/documentation/images/PMWF01A_Wifi_Remote_IO_Rev3-1.jpg[Hardware Setup,title="Hardware Setup"]
+
 * Make sure that the driver for USB/UART Programming/Console Adapter (PMPROG01) is properly install and the PC is detected it as Comm Port.
 * The USB/UART Bridge is base on http://www.silabs.com/products/interface/usb-bridges/classic-usb-bridges/Pages/usb-to-uart-bridge.aspx[Silicon Lab CP2012 chipset].
 * USB/UART Programming/Console Adapter (PMPROG01) driver can be https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx[Download here]
@@ -101,7 +110,7 @@ Place the jumper J2 on USB/UART Programming/Console Adapter (PMPROG01) to 5V out
 
 === Software Setup
 
-* Download the firmware from the http://wiki.pine64.org/index.php/Wifi_Remote_I2c#Download[download section] and unzip the file.
+* Download the firmware from the link:/documentation/Unsorted/Wifi_remote_i2c#Download[download section] and unzip the file.
 * Download the windows Python base Flash Download Tools by Espressif from http://espressif.com/en/products/hardware/esp8266ex/resources[Espressif website].
 * Setup the ESP Flash Download tools according to the screen short.
 image:/documentation/images/Esp_prog_tool.JPG[width=400]
@@ -111,12 +120,12 @@ image:/documentation/images/Esp_prog_tool.JPG[width=400]
 
 == Technical Specification
 
-*Dimension : 47.00mm x 34.00mm
-*Input Voltage : 5V
-*Max. Input Current: 200mA
-*Operating Frequency: 2412MHz-2484MHz
-*Output power of PA for 802.11b: 19.5dBm-21.5dBm
-*Recieived Sensitivity at DSSS, 1Mbps: -98dBm
+* Dimension : 47.00mm x 34.00mm
+* Input Voltage : 5V
+* Max. Input Current: 200mA
+* Operating Frequency: 2412MHz-2484MHz
+* Output power of PA for 802.11b: 19.5dBm-21.5dBm
+* Recieived Sensitivity at DSSS, 1Mbps: -98dBm
 
 == I/O Pin Out
 
@@ -125,21 +134,21 @@ image:/documentation/images/IO_Pin.JPG[]
 == Download
 
 === Program/Driver
-*http://www.compuphase.com/software_termite.htm[Termite a simple RS232 terminal]
-*http://espressif.com/en/products/hardware/esp8266ex/resources[Flash Download Tools v2.4] Under Tools Section
-*https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx[Silicon Lab CP2102 Virtual COM Port Driver]
-*http://files.pine64.org/doc/POT/WifiAppDemo.gz[WifiAppDemo.gz]
-*http://files.pine64.org/doc/POT/PineWifiServer.gz[PineWifiServer.gz]
-*http://files.pine64.org/doc/POT/PMWF01A%20Firmware.zip[PMWF01A Firmware]
-*http://files.pine64.org/doc/POT/PMWF01A%20Firmware%20Source.zip[PMWF01A Firmware Source]
-*http://files.pine64.org/doc/POT/PineWifiRemoteI2c%20Server%20Source.tar.gz[PineWifiRemoteI2c Server Source.tar.gz]
+* http://www.compuphase.com/software_termite.htm[Termite a simple RS232 terminal]
+* http://espressif.com/en/products/hardware/esp8266ex/resources[Flash Download Tools v2.4] Under Tools Section
+* https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx[Silicon Lab CP2102 Virtual COM Port Driver]
+* http://files.pine64.org/doc/POT/WifiAppDemo.gz[WifiAppDemo.gz]
+* http://files.pine64.org/doc/POT/PineWifiServer.gz[PineWifiServer.gz]
+* http://files.pine64.org/doc/POT/PMWF01A%20Firmware.zip[PMWF01A Firmware]
+* http://files.pine64.org/doc/POT/PMWF01A%20Firmware%20Source.zip[PMWF01A Firmware Source]
+* http://files.pine64.org/doc/POT/PineWifiRemoteI2c%20Server%20Source.tar.gz[PineWifiRemoteI2c Server Source.tar.gz]
 
 === Datasheet/Related Information
 
-*http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=PCJ_series_relay_data_sheet_E&DocType=DS&DocLang=EN[TE PCJ-105D3M Relay Datasheet]
-*https://drive.google.com/file/d/0B0cEs0lxTtL3SDdCcWd0LVI2bk0/view?usp=sharing[ESP8266 Datasheet]
-*http://bbs.espressif.com/[ESP8266 forum]
-*http://espressif.com/en/products/hardware/esp8266ex/resources[ESP8266 Flash Download Tools, Please refer to the Tools section]
-*http://espressif.com/en/products/hardware/esp8266ex/resources[ESP8266 Resources]
-*https://www.silabs.com/Support%20Documents/TechnicalDocs/CP2102-9.pdf[CP2102 Datasheet]
+* http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=PCJ_series_relay_data_sheet_E&DocType=DS&DocLang=EN[TE PCJ-105D3M Relay Datasheet]
+* https://drive.google.com/file/d/0B0cEs0lxTtL3SDdCcWd0LVI2bk0/view?usp=sharing[ESP8266 Datasheet]
+* http://bbs.espressif.com/[ESP8266 forum]
+* http://espressif.com/en/products/hardware/esp8266ex/resources[ESP8266 Flash Download Tools, Please refer to the Tools section]
+* http://espressif.com/en/products/hardware/esp8266ex/resources[ESP8266 Resources]
+* https://www.silabs.com/Support%20Documents/TechnicalDocs/CP2102-9.pdf[CP2102 Datasheet]
 

@@ -15,7 +15,7 @@ There are several end-node units planned:
 * standalone USB dongle-type end-node adapter
 * PineTab adapter
 * as well as a SPI module (which can also be configured as a USB LoRa dongle)
-* a LoRa stick powered by a single 18650 battery (using the https://wiki.pine64.org/wiki/Nutcracker[BL602], and can be fitted with GPS, an low-power OLED panel and additional sensors)
+* a LoRa stick powered by a single 18650 battery (using the BL602, and can be fitted with GPS, an low-power OLED panel and additional sensors)
 
 All the end-nodes use the SX1262 chip.
 

@@ -41,7 +41,7 @@ IMPORTANT: In the future it is possible that someone may make a driver to adjust
 
 === GPU
 
-Open `/boot/dtbs/allwinner/sun50i-a64-pinephone-1.2.dts` (You will have to find the source of the kernel used by your distribution. There is the Pine64 kernel, and Megi's) in a text editor following these instructions: https://wiki.pine64.org/wiki/Overclocking#Edit_Pinephone_DTS
+Open `/boot/dtbs/allwinner/sun50i-a64-pinephone-1.2.dts` (You will have to find the source of the kernel used by your distribution. There is the Pine64 kernel, and Megi's) in a text editor following the PinePhone overclocking instructions.
 
 Look for `mali: gpu@1c4000 {` and within that block search for `assigned-clock-rates = <432000000>;`
 

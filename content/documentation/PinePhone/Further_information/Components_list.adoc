@@ -297,7 +297,7 @@ ANT1400
 
 U1500:
 
-* https://www.quectel.com/product/lte-eg25-g/[Quectel EG25-G]https://wiki.pine64.org/wiki/File:Quectel_EG25-G_LTE_Standard_Specification_V1.3.pdf GSM/UMTS/LTE cellular modem and GNSS (GPS/Galileo/GLONASS/BeiDou/QZSS, with A-GPS), LGA-144 9.0x32.0x2.4 mm
+* https://www.quectel.com/product/lte-eg25-g/[Quectel EG25-G] https://wiki.pine64.org/wiki/File:Quectel_EG25-G_LTE_Standard_Specification_V1.3.pdf GSM/UMTS/LTE cellular modem and GNSS (GPS/Galileo/GLONASS/BeiDou/QZSS, with A-GPS), LGA-144 9.0x32.0x2.4 mm
 
 U1502, 1503, 1504:
 

@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-image:/documentation/images/BL602_Block_Diagram.jpg[thumb|right,title="thumb|right"]
+image:/documentation/images/BL602_Block_Diagram.jpg[]
 
 CPU:
 

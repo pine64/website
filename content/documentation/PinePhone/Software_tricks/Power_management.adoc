@@ -201,11 +201,9 @@ The result of these changes would be that:
 . GPIO1-LDO only needs to be powered when a USB cable is detected, and is enough to power the rest of the chip (except HDMI)
 . DLDO1 only needs to be enabled if the display pipeline or sensors are active, even if a USB cable is plugged in
 
-<|--==== Sensors
+==== Sensors
 
 . This may or may not be a good idea, so it's a very weak suggestion: Swap the VDD and LEDA inputs of the STK3311-A sensor, moving VDD to DLDO1 and LEDA to GPIO0-LDO. The sensor VDD needs to match the I2C voltage, and the LED driver should be on a separate power supply from the sensors. There is some concern, because GPIO0-LDO has a 100mA limit, but the proximity sensor should work properly at the lowest LED drive current (12.5mA).
-
--->
 
 === Assignments after Suggested Changes
 

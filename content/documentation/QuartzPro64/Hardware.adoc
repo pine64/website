@@ -102,7 +102,7 @@ screen /dev/ttyUSB0 1500000
 
 Can't be bothered to take a precise measurement of all the holes right now, just use https://www.ebay.com/sch/i.html?kw=pc%20standoff%20kit[some PC standoffs] and have the board sit on your desk, it's a dev board after all.
 
-See the PCB layout PDF files, linked in the https://wiki.pine64.org/wiki/QuartzPro64_Development#Documentation[Documentation] section.
+See the PCB layout PDF files, linked in the link:/documentation/QuartzPro64/Documentation[Documentation] section.
 
 == Storage
 

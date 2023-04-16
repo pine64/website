@@ -41,7 +41,7 @@ image:/documentation/images/ArduinoSerialPinecube.jpg[width=400]
 
 == Serial connection using pinephone/pinebook pro serial debugging cable
 
-You can use the https://wiki.pine64.org/wiki/PinePhone#Serial_console[serial console] USB cable for pinephone and pinebook pro at the https://pine64.com/product/pinebook-pinephone-pinetab-serial-console/[store]. With a https://www.amazon.com/3-5mm-Stereo-Female-terminal-connector/dp/B077XPSKQD[female terminal block] wire using breadboard wire into the GPIO block at the following locations in a "null modem" configuration with transmit and receive crossed between your computer and the pinecube:
+You can use the serial console USB cable for PinePhones and Pinebook Pros at the https://pine64.com/product/pinebook-pinephone-pinetab-serial-console/[store]. With a https://www.amazon.com/3-5mm-Stereo-Female-terminal-connector/dp/B077XPSKQD[female terminal block] wire using breadboard wire into the GPIO block at the following locations in a "null modem" configuration with transmit and receive crossed between your computer and the pinecube:
 
  S - Ground (to pin 9)
  R - Transmit (to pin 8)

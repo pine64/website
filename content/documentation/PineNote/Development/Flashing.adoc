@@ -13,7 +13,7 @@ menu:
 
 NOTE: These instructions are directed towards experienced developers only|
 
-This page contains information on flashing software to the https://wiki.pine64.org/wiki/PineNote[PineNote].
+This page contains information on flashing software to the link:/documentation/PineNote[PineNote].
 
 Currently, software can be flashed using rkdeveloptool or from the factory Android installation (UART shell, adb, or fastboot).
 

@@ -14,5 +14,5 @@ menu:
 
 image:/documentation/images/PineTabBoard.jpeg[The insides of the PineTab,title="The insides of the PineTab",width=400]
 
-image:/documentation/images/PineTab_Board.jpg[thumb|right|Pinetab Board,title="thumb|right|Pinetab Board"]
+image:/documentation/images/PineTab_Board.jpg[Pinetab Board,title="Pinetab Board"]
 
