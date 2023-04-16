@@ -1,7 +1,6 @@
 # Welcome to the PINE64.org community website
 
-
-
+![Screenshot of the website](screenshot.png)
 
 ## Building the website
 
