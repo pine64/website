@@ -13,7 +13,6 @@
     -->
     {{ $title := print .Title " | " .Site.Title }}
     {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
-    <meta name="color-scheme" content="light only">
     
     <title>{{ $title }}</title>
 

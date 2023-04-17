@@ -40,7 +40,7 @@
     height: 40px;
     line-height: 35px;
     position: absolute;
-    top: 50%;
+    bottom: 50%;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
@@ -167,12 +167,22 @@ div.cr-right a:hover {
         padding: 40px 20px 20px 60px;
     }
     ol.cr-indicators {
-        display: none;
+        bottom: 10px;
     }
     div.cr-item {
         min-height: 650px;
     }
     div.cr-right span {
         font-size: 18px;
+    }
+    .cr-control {
+        bottom: -20px !important;
+        background: none;
+        color: #7F7F7F;
+    }
+    .cr-bullet {
+        width: 12px;
+        height: 12px;
+        border-radius: 3px;
     }
 }
