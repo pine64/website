@@ -21,8 +21,9 @@
     -webkit-transition: opacity 0.6s ease-out;
     transition: opacity 0.6s ease-out;
     height: 498px;
+    display: flex;
+    justify-content: center;
 }
-
 .cr-item img {
     display: block;
     height: auto;
@@ -106,10 +107,7 @@
     background-color: #2868B0;
 }
 
-div.cr-item {
-    display: flex;
-    justify-content: center;
-}
+
 div.cr-center {
     max-width: 1100px;
 }
@@ -119,7 +117,6 @@ div.cr-left {
     padding: 100px 0 100px 0;
 }
 div.cr-img {
-
     max-height: 298px;
     max-width: 509px;
 }
@@ -147,7 +144,6 @@ div.cr-right a {
     border-radius: 20pt;
     color: white;
     border: none;
-    z-index: 1;
 }
 div.cr-right a:hover {
     color: rgba(255, 255, 255, 1);
@@ -168,6 +164,8 @@ div.cr-right a:hover {
     }
     ol.cr-indicators {
         bottom: 10px;
+        width: 50%;
+        margin: 0 auto;
     }
     div.cr-item {
         min-height: 650px;
