@@ -224,6 +224,9 @@ h1 {
 div.container {
     padding: 30px;
 }
+div.container p{
+    margin-bottom: 1em;
+}
 div.dark{
     background: linear-gradient(90deg, #2868B0 0%, #2F82C6 100%);
     color: white;
