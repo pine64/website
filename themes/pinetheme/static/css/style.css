@@ -761,6 +761,17 @@ table th {
 table td p, table td .paragraph {
     padding: 0;
 }
+table td {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
 thead {
     background: #ececec;
     margin-bottom: 0;
