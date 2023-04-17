@@ -12,15 +12,29 @@
     
     <title>{{ $title }}</title>
 
+    <!-- Meta tags -->
     <!-- Responsive website -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Page description-->
     {{- if .IsHome -}}
     <meta name="description" content="{{ site.Params.Description }}" />
+    <meta property="og:description" content="{{ site.Params.Description }}">
     {{- else -}}
         {{ if .Params.Description }}
     <meta name="description" content="{{ .Params.Description }}" />
+    <meta property="og:description" content="{{ .Params.Description }}">
+        {{- else -}}
+    <meta name="description" content="{{ .Summary | plainify }}">
+    <meta property="og:description" content="{{ .Summary | plainify }}">
         {{- end }}
+    {{- end }}
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{.Permalink}}">
+    <meta property="og:title" content="{{ $title }}">
+    {{ if .Params.cover.image}}
+    <meta property="og:image" content="{{.Site.BaseURL}}blog/images/{{ .Params.cover.image }}">
+    {{- else -}}
+    <meta property="og:image" content="{{.Site.BaseURL}}img/logo.png">
     {{- end }}
 
     <!-- RSS -->
