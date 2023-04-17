@@ -168,6 +168,8 @@ div.cr-right a:hover {
     }
     ol.cr-indicators {
         bottom: 10px;
+        width: 50%;
+        margin: 0 auto;
     }
     div.cr-item {
         min-height: 650px;
