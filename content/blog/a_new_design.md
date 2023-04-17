@@ -23,7 +23,7 @@ To give an insight into some technical details:
 
 The former website was running on Wordpress. While easy to use, this also means there was a lot of heavy Javascript, connections to third-party websites (like Google fonts) constantly had to be prevented by adjusting site settings and if people found typos in the blog post then admins had to be asked to fix them. 
 
-The redesign tries to go a different way. It uses [Hugo](https://gohugo.io/) ("The world’s fastest framework for building websites") and it creates static html pages from content formats such as Markdown, Pandoc and AsciiDoc (see [Hugo - Content Formats](https://gohugo.io/content-management/formats/) for the supported formats). In fact this blog post you are reading is written in Markdown - show and edit this blog post under [a_new_design.md](https://github.com/pine64/website/edit/content/blog/a_new_design.md).
+The redesign tries to go a different way. It uses [Hugo](https://gohugo.io/) ("The world’s fastest framework for building websites") and it creates static html pages from content formats such as Markdown, Pandoc and AsciiDoc (see [Hugo - Content Formats](https://gohugo.io/content-management/formats/) for the supported formats). In fact this blog post you are reading is written in Markdown - show and edit this blog post under [a_new_design.md](https://github.com/pine64/website/blob/main/content/blog/a_new_design.md).
 
 ![](/blog/images/rebrand_structure.png)
 
