@@ -11,12 +11,33 @@
             <input type="checkbox" id="hamburger"/>
 
             <div id="navlinks_right">
-                {{ $currentPage := . }}
+                {{$currentPage := .}}
                 {{ range .Site.Menus.right }}
-                    <a class='nav-link {{.Identifier}} {{if (hasPrefix $.Page.RelPermalink .URL) }} active{{end}}' href="{{ .URL }}" {{ if in .URL "https://" }}target='_blank'{{ end }}>
-                {{ $text := print .Name | safeHTML }}
-                {{ $text }}
-                </a>
+                    <!-- Menu item has subitems -->
+                    {{ if .HasChildren }}
+                        <a class='nav-link
+                        {{- if or ($currentPage.IsMenuCurrent "right" .) ($currentPage.HasMenuCurrent "right" .) }} active{{end -}}
+                        {{- if eq .Params.external true }} external{{end -}}
+                        ' href="{{ .URL }}" 
+                        {{- if eq .Params.external true }}target="_blank" rel="noopener noreferrer"{{ end -}}>
+                        {{- .Name | safeHTML -}}
+                        </a>
+
+                        <!-- All children items -->
+                        {{ range .Children }}
+                            {{- .Name | safeHTML -}} ({{ .URL }})
+                            <br>
+                        {{ end }}
+                    <!-- Menu item has no subitems -->
+                    {{ else }}
+                        <a class='nav-link
+                        {{- if or ($currentPage.IsMenuCurrent "right" .) ($currentPage.HasMenuCurrent "right" .) }} active{{end -}}
+                        {{- if eq .Params.external true }} external{{end -}}
+                        ' href="{{ .URL }}" 
+                        {{- if eq .Params.external true }}target="_blank" rel="noopener noreferrer"{{ end -}}>
+                        {{- .Name | safeHTML -}}
+                        </a>
+                    {{ end }}
                 {{ end }}
             </div>
         </nav>

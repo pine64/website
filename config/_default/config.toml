@@ -43,33 +43,53 @@ paginate = 9
     url = "/blog/"
     weight = 1
   [[menu.right]]
-    name = "Podcast"
+    name = "Community"
     pre = ""
-    url = "/podcast/"
-    weight = 5
-  [[menu.right]]
-    name = "Contests"
-    pre = ""
-    url = "/contests/"
-    weight = 4
+    url = "/community/"
+    weight = 2
   [[menu.right]]
     name = "Documentation"
     pre = ""
     url = "/documentation/"
     weight = 3
   [[menu.right]]
-    name = "Community"
+    name = "Contests"
     pre = ""
-    url = "/community/"
-    weight = 2
-#  [[menu.right]]
-#    name = "Forums"
-#    pre = ""
-#    url = "https://forum.pine64.org/"
-#    weight = 6
+    url = "/contests/"
+    weight = 4
+  [[menu.right]]
+    name = "Podcast"
+    pre = ""
+    url = "/podcast/"
+    weight = 5
   [[menu.right]]
     name = "Store"
-    pre = "Test"
+    url = "#"
+    weight = 6
+    identifier = "store"
+    [menu.right.params]
+      external = true
+  [[menu.right]]
+    name = "Global"
     url = "https://www.pine64.com/"
-    weight = 7
-    identifier = "external"
+    parent = "store"
+    weight = 1
+    identifier = ""
+    [menu.right.params]
+      external = true
+  [[menu.right]]
+    name = "EU"
+    url = "https://www.pine64eu.com/"
+    parent = "store"
+    weight = 2
+    identifier = ""
+    [menu.right.params]
+      external = true
+  [[menu.right]]
+    name = "Affiliates"
+    url = "/affiliates/"
+    parent = "store"
+    weight = 3
+    identifier = ""
+    [menu.right.params]
+      external = true
