@@ -15,19 +15,30 @@
                 {{ range .Site.Menus.right }}
                     <!-- Menu item has subitems -->
                     {{ if .HasChildren }}
-                        <a class='nav-link
-                        {{- if or ($currentPage.IsMenuCurrent "right" .) ($currentPage.HasMenuCurrent "right" .) }} active{{end -}}
-                        {{- if eq .Params.external true }} external{{end -}}
-                        ' href="{{ .URL }}" 
-                        {{- if eq .Params.external true }}target="_blank" rel="noopener noreferrer"{{ end -}}>
-                        {{- .Name | safeHTML -}}
-                        </a>
+                        <div class="dropdown">
+                            <label class='nav-link d-block
+                                {{- if or ($currentPage.IsMenuCurrent "right" .) ($currentPage.HasMenuCurrent "right" .) }} active{{end -}}
+                                {{- if eq .Params.external true }} external{{end -}}
+                                ' for="{{ .Identifier }}"
+                            >
+                                {{- .Name | safeHTML -}}
+                            </label>
+                            <input type="checkbox" id="{{ .Identifier }}" class="dropdown-toggle" />
 
-                        <!-- All children items -->
-                        {{ range .Children }}
-                            {{- .Name | safeHTML -}} ({{ .URL }})
-                            <br>
-                        {{ end }}
+                            <!-- All children items -->
+                            <div class="dropdown-items">
+                                {{ range .Children }}
+                                    <a class='dropdown-item nav-link
+                                        {{- if or ($currentPage.IsMenuCurrent "right" .) ($currentPage.HasMenuCurrent "right" .) }} active{{end -}}
+                                        {{- if eq .Params.external true }} external{{end -}}
+                                        ' href="{{ .URL }}" 
+                                        {{- if eq .Params.external true }}target="_blank" rel="noopener noreferrer"{{ end -}}
+                                    >
+                                        {{- .Name | safeHTML -}}
+                                    </a>
+                                {{ end }}
+                            </div>
+                        </div>
                     <!-- Menu item has no subitems -->
                     {{ else }}
                         <a class='nav-link
