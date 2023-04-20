@@ -11,7 +11,7 @@ menu:
 
 == Reprogramming
 
-link:/documentation/PineTime/Further_information/Devkit_wiring[Wire it up] and then [[Reprogramming the PineTime| flash something]].
+link:/documentation/PineTime/Further_information/Devkit_wiring[Wire it up] and then flash something.
 
 == Available firmware and projects
 
@@ -25,48 +25,33 @@ link:/documentation/PineTime/Further_information/Devkit_wiring[Wire it up] and t
 |FreeRTOS
 |https://www.freertos.org
 | https://sourceforge.net/projects/freertos/
-|
-|===
-|link:/documentation/PineTime/Software/InfiniTime[InfiniTime] (GitHub: https://github.com/JF002/Pinetime[JF002/Pinetime])
+a|link:/documentation/PineTime/Software/InfiniTime[InfiniTime] (GitHub: https://github.com/JF002/Pinetime[JF002/Pinetime])+
+https://github.com/kaythe/pinetime-os[kaythe/pinetime-os]
 
-|https://github.com/kaythe/pinetime-os[kaythe/pinetime-os]
-|===
 
 |Zephyr
 | https://www.zephyrproject.org
 | https://github.com/zephyrproject-rtos/zephyr
-|
-|===
-|https://github.com/najnesnaj/pinetime-zephyr[najnesnaj/pinetime-zephyr]
+a|https://github.com/najnesnaj/pinetime-zephyr[najnesnaj/pinetime-zephyr] +
+https://github.com/SuperPrower/pinetime_zephyr_sample_fw[SuperPrower/pinetime_zephyr_sample_fw] +
+https://github.com/Dejvino/pinetime-hermes-firmware[Dejvino/pinetime-hermes-firmware] +
+https://github.com/endian-albin/pinetime-hypnos[endian-albin/pinetime-hypnos] +
+https://zephyrlabs.github.io/Watchfaces/OmegaTime/[omegatime watchface]
 
-|https://github.com/SuperPrower/pinetime_zephyr_sample_fw[SuperPrower/pinetime_zephyr_sample_fw]
-
-|https://github.com/Dejvino/pinetime-hermes-firmware[Dejvino/pinetime-hermes-firmware]
-
-|https://github.com/endian-albin/pinetime-hypnos[endian-albin/pinetime-hypnos]
-
-|https://zephyrlabs.github.io/Watchfaces/OmegaTime/[omegatime watchface]
-|===
 
 |mynewt
 | https://mynewt.apache.org/about/
 | https://github.com/apache/mynewt-core
-|
-|===
-|https://github.com/lupyuen/pinetime-rust-mynewt[lupyuen/pinetime-rust-mynewt](Discontinued by Creator)
+|https://github.com/lupyuen/pinetime-rust-mynewt[lupyuen/pinetime-rust-mynewt](Discontinued by Creator) +
+https://gitlab.com/caspermeijn/klok[caspermeijn/klok]
 
-|https://gitlab.com/caspermeijn/klok[caspermeijn/klok]
-|===
 
 |MbedOS
 | https://os.mbed.com
 | https://github.com/ARMmbed/mbed-os
-|
-|===
-|https://github.com/sethitow/mbed-pinetime[sethitow/mbed-pinetime]
+|https://github.com/sethitow/mbed-pinetime[sethitow/mbed-pinetime] +
+https://github.com/geoffrey-vl/mbed-pinetime[geoffrey.vl/mbed-pinetime]
 
-|https://github.com/geoffrey-vl/mbed-pinetime[geoffrey.vl/mbed-pinetime]
-|===
 
 |RIOT
 | http://riot-os.org/
@@ -90,19 +75,11 @@ link:/documentation/PineTime/Further_information/Devkit_wiring[Wire it up] and t
 
 |Bare Metal
 |
-|
-|===
-|https://github.com/xriss/timecake
+| https://github.com/xriss/timecake +
+https://github.com/Arc13/Pyrus
+|https://github.com/xriss/timecake[xriss/timecake] +
+https://github.com/Arc13/Pyrus[Arc13/Pyrus]
 
-|https://github.com/Arc13/Pyrus
-[cols="1,1,1"]
-|===
-|
-|===
-|https://github.com/xriss/timecake[xriss/timecake]
-
-|https://github.com/Arc13/Pyrus[Arc13/Pyrus]
-|===
 
 |AdaFruit bootloader
 |
@@ -113,8 +90,8 @@ link:/documentation/PineTime/Further_information/Devkit_wiring[Wire it up] and t
 |
 | https://github.com/sethitow/mbed-pinetime
 | https://github.com/sethitow/mbed-pinetime/tree/master/drivers[https://github.com/sethitow/mbed-pinetime]
-[cols="1,1,1,1,1"]
 |===
+
 [cols="1,1,1,1"]
 |===
 |
