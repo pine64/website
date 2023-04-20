@@ -85,11 +85,12 @@ The touch panel is controlled by a Hynitron CST816S chips. Unfortunately, there 
 
 The PineTime appears to be able to sleep with a current consumption of [https://github.com/InfiniTimeOrg/InfiniTime/issues/53#issuecomment-783654321 only 66µA].
 
-To investigate current consumption, it's a good idea to disable everything possible to get the lowest current consumption possible, and then re-enable things one by one. Here is one way to get a baseline current consumption of 0.17mA (163µA according to my multimeter), as measured from the 3.3V pin with the battery disconnected:
+To investigate current consumption, it's a good idea to disable everything possible to get the lowest current consumption possible, and then re-enable things one by one. Here is one way to get a baseline current consumption of 0.60µA, as measured from the 3.3V pin with the battery disconnected:
 
 * Enable the DC/DC regulator. This doesn't affect the current consumption while sleeping, but almost halves the runtime current consumption.
 * Use the low-frequency (32.768kHz) oscillator.
 * Leave all pins in their default state, except for P0.05 (SPI CS) and P0.25 (LCD CS) which should be configured as an output and set to high.
+* Put the heart rate sensor in sleep mode by setting the PDRIVER (0x0C) register to 0, see https://files.pine64.org/doc/datasheet/pinetime/HRS3300%20Heart%20Rate%20Sensor.pdf#page=12[the HRS3300 datasheet for details].
 * Put the SPI flash in https://datasheet.lcsc.com/szlcsc/2005251035_XTX-XT25F32BSOIGU-S_C558851.pdf#page=38[deep power-down mode] by setting flash CS high, then low, then writing the byte 0xb9 on the SPI bus, and then setting flash CS high again.
 * Sleep in a loop, using WFE or WFI (if you're using the Nordic SoftDevice, call <code>sd_app_evt_wait</code> instead).
 
