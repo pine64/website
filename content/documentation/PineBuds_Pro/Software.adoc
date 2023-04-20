@@ -9,12 +9,12 @@ menu:
     weight: 2
 ---
 
-=== Firmwares
+== Firmwares
 
 * https://github.com/pine64/OpenPineBuds[OpenPineBuds]
 * https://github.com/hall/little-buddy[Little Buddy]
 
-=== Firmware images
+== Firmware images
 
 Flash back factory default firmware using Windows based utility:
 
@@ -23,7 +23,7 @@ Flash back factory default firmware using Windows based utility:
 * https://files.pine64.org/os/PineBudsPro/AC08_20221102.bin[PineBuds Pro factory default firmware build]
 * https://files.pine64.org/os/PineBudsPro/ota_boot_rel_8054309a08.bin[PineBuds Pro factory default OTA build]
 
-=== SDK release
+== SDK
 
 * https://files.pine64.org//SDK/PineBudsPro/PineBudsPro_SDK-20221128.7z[PineBuds Pro "Little Whale" SDK date:20221128]
 

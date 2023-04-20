@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-=== Display
+== Display
 
 Note: The factory-default software on the PineTime does not auto-detect the display being disconnected when it has already booted. That can cause garbled output, to fix it just restart the PineTime.
 
@@ -50,7 +50,7 @@ Notes:
 
 https://github.com/adafruit/Adafruit-ST7735-Library/[Adafruit ST7789 driver in cpp]
 
-=== Battery measurement
+== Battery measurement
 
 Reading whether the PineTime has power attached is easy: simply read the charge indication pin (P0.12). When it is high it is running on battery, when it is low it is charging.
 
@@ -69,24 +69,82 @@ It's often better to avoid floating point values on embedded systems and in this
 
 Converting this voltage to an estimated capacity in percent requires a more complicated algorithm, because Lithium-ion batteries have a non-linear discharge curve.
 
-=== Button
+== Button
 
 The button on the side of the PineTime is disabled by default. To enable it, drive the button out pin (P0.15) high.
 
 While enabled, the button in pin (P0.13) will be high when the button is pressed, and low when it is not pressed.
 
-=== Touch panel
+NOTE: the button consumes around 34µA when P0.15 is left high. To reduce current consumption, set it to low most of the time and only set it to high shortly before reading it. The button needs a short time to give good outputs though, setting P0.15 high at least four times in a row seems to result in enough delay that P0.13 has a stable output.
+
+== Touch panel
 
 The touch panel is controlled by a Hynitron CST816S chips. Unfortunately, there is not much information about this chip on the internet apart from the datasheet below and a https://github.com/lupyuen/hynitron_i2c_cst0xxse/[reference driver]. This is enough to implement a basic driver, but crucial information needed to implement advanced functionalities are missing (I²C protocol and registers, timings, power modes,...).
 
-==== Pins
+== Reducing power consumption
+
+The PineTime appears to be able to sleep with a current consumption of [https://github.com/InfiniTimeOrg/InfiniTime/issues/53#issuecomment-783654321 only 66µA].
+
+To investigate current consumption, it's a good idea to disable everything possible to get the lowest current consumption possible, and then re-enable things one by one. Here is one way to get a baseline current consumption of 0.17mA (163µA according to my multimeter), as measured from the 3.3V pin with the battery disconnected:
+
+* Enable the DC/DC regulator. This doesn't affect the current consumption while sleeping, but almost halves the runtime current consumption.
+* Use the low-frequency (32.768kHz) oscillator.
+* Leave all pins in their default state, except for P0.05 (SPI CS) and P0.25 (LCD CS) which should be configured as an output and set to high.
+* Put the SPI flash in https://datasheet.lcsc.com/szlcsc/2005251035_XTX-XT25F32BSOIGU-S_C558851.pdf#page=38[deep power-down mode] by setting flash CS high, then low, then writing the byte 0xb9 on the SPI bus, and then setting flash CS high again.
+* Sleep in a loop, using WFE or WFI (if you're using the Nordic SoftDevice, call <code>sd_app_evt_wait</code> instead).
+
+Here are some current consumption statistics (current consumed in addition to the baseline power), roughly ordered from large to small:
+
+|===
+|Source|Current|Notes
+
+|SWD
+|3.05mA
+|Power cycle the chip after programming to avoid this, it can hide other inefficiencies.
+
+|LCD
+|5.61mA
+|Set the LCD to sleep mode when not used, using SLPIN.
+
+|Backlight high 
+|12.27mA
+.3+|
+	
+|Backlight mid
+|5.51mA
+
+|Backlight low
+|1.83mA
+
+|ADC left enabled
+|1.3mA
+|Stopping SAADC brings the current back to the baseline. It seems that it doesn't need to be disabled entirely.
+
+|Edge triggered pin interrupts
+|0-0.47mA?
+|It appears that under some configurations, edge triggered interrupts result in a large power drain. One way to avoid this is by using the pin sense mechanism.
+	
+|BUTTON_OUT left high
+|0.04mA
+|See link:#Button[Button] for how to avoid this.
+
+|SPI flash sleep mode
+|0.014mA
+|Sleep mode still consumes power. Put it in https://datasheet.lcsc.com/szlcsc/2005251035_XTX-XT25F32BSOIGU-S_C558851.pdf#page=38[deep power down mode] to avoid this.
+
+|SPI, I2C
+|(negligible)
+|SPI and I2C appear to consume very little power when idle, around 1µA or less.
+|===
+
+=== Pins
 
 * P0.10 : Reset
 * P0.28 : Interrupt (signal to the CPU when a touch event is detected)
 * P0.06 : I²C SDA
 * P0.07 : I²C SCL
 
-==== I²C
+=== I²C
 
 * Device address : 0x15
 * Frequency : from 10Khz to 400Khz
@@ -95,7 +153,7 @@ The touch panel is controlled by a Hynitron CST816S chips. Unfortunately, there 
 
 *NOTE: * The I²C bus, also known as TWI bus has known issues, make sure to write your TWI driver with timeouts.
 
-==== Touch events
+=== Touch events
 
 Touch information is available from the 63 first registers of the controller. Remember: the device is in sleep mode when no touch event is detected. It means that you can read the register only when the touch controller detected an event. You can use the _Interrupt_ pin to detect such event in the software.
 
@@ -168,7 +226,7 @@ Bytes 3 to 8 are repeated 10 times (10*6 + 3 = 63 bytes).
 * The touch controller seems to report only 1 touch point
 * Fields X, Y, Number of touch points and touch ID are updated. The others are always 0.
 
-==== Registers
+=== Registers
 
 The reference driver specifies some registers and value, but there is no information about them:
 
@@ -244,16 +302,16 @@ The reference driver specifies some registers and value, but there is no informa
 
 *WARNING : * <del>Writing the SLEEP command (write 0x05 in HYN_REG_POWER_MODE) seems to freeze the controller (it returns only static values) until the battery is totally drained and the whole system reset. Analysis and debugging is more than welcome|</del>
 
-=== Accelerometer
+== Accelerometer
 
 The on board accelerometer in devices shipped before July 2021 is a Bosch BMA421, connected to the I2C bus.
 Devices shipped after July 2021 use a Bosch BMA425 accelerometer.
 
-==== Pins
+=== Pins
 
 * P0.06 : I²C SDA
 * P0.07 : I²C SCL
 * P0.08 : Interrupt
 
-I2C Device address : 0x18
+I²C Device address: 0x18
 

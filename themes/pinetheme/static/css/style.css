@@ -451,6 +451,9 @@ button.rounded:hover {
 div#doc-page h1 {
     color: #2F82C6;
 }
+div#doc-page h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: #2F82C6;
+}
 /* Documentation text style */
 div#doc-page code{
     padding: 1px 4px;

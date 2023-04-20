@@ -45,7 +45,16 @@ Both V1 and V2 connect to the PC/laptop and enter the Flash mode the same way fo
 
 IMPORTANT: Do not use the DC barrel jack while updating firmware or you may destroy your PC and Pinecil.
 
-. Blisp runs in a CLI (command line interface or terminal) like Powershell which is already installed on most Windows PC. For using BLISP only a couple basic terminal commands are needed such as `cd` to change directories (folders).
+=== Option 1: PineFlash
+
+The PineFlash is a GUI updater it's an all-in one app that downloads firmware and flashes.
+	
+. Download the easy premade binary installer for Windows https://github.com/Spagett1/PineFlash[here].
+. If PineFlash doesn't work try the Blisp terminal app.
+
+=== Option 2: Blisp
+
+. Blisp is a CLI (command line interface or terminal) and needs a program like the Powershell, which is already installed on most Windows PCs. For using Blisp only a couple basic terminal commands are needed, such as `cd` to change directories (folders).
 . If you prefer to use "command" terminal over Powershell, see instructions for Command in link:/documentation/Pinecil/Firmware#Troubleshoot_V2_Flashing[Troubleshooting and then skip to #8 here]
 . Can install newest Powershell https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3[from here].
 . Rick click and run Powershell as administrator.
@@ -57,7 +66,7 @@ IMPORTANT: Do not use the DC barrel jack while updating firmware or you may dest
 . Right click on all zip files > properties, and check "Unblock" if present to unblock them, then extract the Blisp zip and the Pinecilv2 zip https://github.com/builder555/PineSAM/discussions/106#discussion-4960445[screenshot of Unblock here]. If you don't see "Unblock" then keep going.
 . From the Pinecilv2 folder you extracted above, copy the `Pinecilv2_EN.bin` (English) file into the Blisp folder (same place as the Blisp.exe). Other languages are available, substitute the `Pinecil_EN.bin` file for the language file desired (follow 2-letter international language code). The Pinecil Zip can now be deleted, only the single BIN file in the language you want is used.
 . Run powershell as administrator.
-. Now, connect the Pinecil V2 to the PC: hold down the [-] *Before* plugging the cable to the back of Pinecil. See (link:#Flash Mode[Flash Mode section for details]).
+. Now, connect the Pinecil V2 to the PC: hold down the [-] *Before* plugging the cable to the back of Pinecil. See (link:#Flash_Mode[Flash Mode section for details]).
 . Screen on Pinecil should be black/empty before proceeding; it means you are in the correct Flash mode. If you are curious, it will connect as a PORT COM device in Device Manager. If your screen is not black, then repeat the connect to PC above. If necessary, change cables or ports, or try a different PC/laptop.
 . Use `cd` to change to the Blisp folder (location of blisp.exe and Pinecil_EN.bin).
 .. `#example change to location of blisp folder`
@@ -66,7 +75,7 @@ IMPORTANT: Do not use the DC barrel jack while updating firmware or you may dest
 .. Type the `.\` (dot and slash) or it will fail to find the files!
 .. `.\blisp.exe write -c bl70x --reset .\Pinecilv2_EN.bin`
 . After update, unplug and reboot it, then hold down `[-]` for ~3 seconds to see the new version.
-. See link:#Troubleshooting_V2_Flashing|troubleshooting[troubleshooting] down below if it does not flash.
+. See link:#Troubleshoot_V2_Flashing[troubleshooting] down below if it does not flash.
 
 == Bluetooth (BLE) Apps
 
@@ -80,7 +89,16 @@ IMPORTANT: Do not use the DC barrel jack while updating firmware or you may dest
 
 IMPORTANT: Do not use the DC barrel jack while updating firmware or you may destroy your PC and Pinecil.
 
-. For V2, download the CLI https://github.com/pine64/blisp#how-to-update-pinecil-v2[Blisp Flasher] from Github; get the latest zip file for Linux or Mac. The main page has background info and there are instructions if you want to https://github.com/pine64/blisp/wiki/Update-Pinecil-V2[build it from code] instead of using the premade executable.
+=== Option 1: PineFlash
+
+PineFlash is a GUI updater that downloads firmware and flashes. Download the easy premade binary for [https://github.com/Spagett1/PineFlash#desktop_computer-install-options Linux here].
+	
+. For MacOS, currently there is a 2-step script that will build PineFlash.
+. If you have issues with Pineflash, then use Blisp below.
+
+=== Option 2: Blisp Flasher
+This is a CLI that runs in a terminal console. Get the latest zip file for Linux or Mac. The main page has background info and there are instructions if you want to https://github.com/pine64/blisp/wiki/Update-Pinecil-V2[build it from code] instead of using the easier premade executable.
+
 . Extract the Blisp zip, and using a terminal, `cd` to the blisp folder.
 . Download the latest https://github.com/Ralim/IronOS/releases/[stable Pinecilv2.zip release] (scroll down to the Assets section, get the Pinecilv2.zip).
 . Extract the zip file and put `Pinecilv2_EN.bin` (for English) into the Blisp folder (same place as the Blisp executable). Other languages are available, substitute the *EN.bin file for the language file desired (use the 2-digit international language code). If you have the Pinecil Zip, the rest could be deleted, only the single BIN file is needed. Select the appropriate two-letter code for your language. If you accidentally flash *.dfu file on your Pinecil, it will not boot or work - be sure to only use the BIN file.
@@ -91,7 +109,7 @@ IMPORTANT: Do not use the DC barrel jack while updating firmware or you may dest
 . Make blisp executable: `chmod +x ./blisp`
 . Then execute:
 
-     *sudo ./blisp write -c bl70x --reset Pinecilv2_EN.bin*
+ sudo ./blisp write -c bl70x --reset Pinecilv2_EN.bin
 
 . After a successful update, unplug and reboot it, then hold down `[-]` for ~2 seconds to see the new version.
 . See link:#Troubleshooting_V2_Flashing|troubleshooting[troubleshooting] down below if it does not flash.
@@ -100,8 +118,8 @@ IMPORTANT: Do not use the DC barrel jack while updating firmware or you may dest
 == Troubleshoot V2 Flashing
 
 . Double check that the command is typed exactly, e.g., in Windows, the dot\slash ` .\ ` can not be skipped in Powershell.
-. For Windows, instead of powershell, try *command* (right click, run as administrator) and move into the blisp folder; https://www3.ntu.edu.sg/home/ehchua/programming/howto/CMD_Survival.html#zz-2.1[example commands to move to folders].
-. Two different sample commands work when command/cmd terminal is run as administrator. First move into the folder you have both blisp.exe and Pinecil_EN.bin. Then execute one of the following:
+. For Windows, instead of PowerShell, try the *cmd.exe* (right click, run as administrator) and move into the blisp folder; https://www3.ntu.edu.sg/home/ehchua/programming/howto/CMD_Survival.html#zz-2.1[example commands to move to folders].
+. Two different samples work when the cmd.exe is run as administrator. First move into the folder you have both blisp.exe and Pinecil_EN.bin. Then execute one of the following:
 
     C:\Users\yourName\Downloads\blisp1>blisp.exe write -c bl70x --reset Pinecilv2_EN.bin
     C:\Users\yourName\Downloads\blisp1> .\blisp.exe write -c bl70x --reset .\Pinecilv2_EN.bin

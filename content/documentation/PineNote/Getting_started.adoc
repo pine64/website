@@ -11,15 +11,15 @@ menu:
 
 {{Under construction}}
 
-This page is a work in progress. Its goals are to help users get their devices up and running while minimizing redundancy with other pages (e.g., Documentation, Development), and to synthesize information provided in existing guides. Sections below represent a rough outline and will need to be expanded with details and further instructions.
+This page is a work in progress. Its goals are to help users get their devices up and running while minimizing redundancy with other pages (for example documentation, development), and to synthesize information provided in existing guides. Sections below represent a rough outline and will need to be expanded with details and further instructions.
 
-== Who Can Contribute
+== Who can contribute?
 
-Anyone|Generally, the PineNote is in a very early state, and at least an intermediate level of linux knowledge is probably necessary to be able to do anything at this moment. That said, there are multiple efforts happening at once, and there are a number of ways a person of any skill level can help:
+Anyone! Generally, the PineNote is in a very early state, and at least an intermediate level of linux knowledge is probably necessary to be able to do anything at this moment. That said, there are multiple efforts happening at once, and there are a number of ways a person of any skill level can help:
 . Join in the ongoing documentation effort
 . Help mainline the kernel by testing, fixing bugs.
 
-== Out of the Box
+== Out of the box
 
 === Information on software shipped with the Pinenote
 As of July 2022, the Pinenote ships with a modified version of android. Under this OS, users interested only in reading ebooks and possibly leaking data to unknown parties may find the device more than satisfactory (read: use caution when handling ultra personal or sensitive data). All hardware items are functional with this OS, though the ability to tune and tweak may be limited by the proprietary nature of some drivers (e.g., the driver for the e-ink display). Ongoing support for this OS is absent, though further community development is possible and hoped for by more than a few users already.
@@ -58,9 +58,9 @@ As of July 2022, the Pinenote ships with the following items in the box:
 * USB-c to micro-b cable (for stylus)
 * UART dongle
 
-== "Table of Contents" for Linux Installation Pages
+== "Table of Contents" for Linux installation pages
 
-=== Building Kernel
+=== Building the Kernel
 
 link:/documentation/PineNote/Development/Building_kernel[PineNote Development/Building Kernel]
 
@@ -73,11 +73,11 @@ Additional useful references:
 * https://github.com/DorianRudolph/pinenotes
 * https://musings.martyn.berlin/dual-booting-the-pinenote-with-android-and-debian
 
-=== OS Installation
+=== OS installation
 
 See link:/documentation/PineNote/Releases[Releases]
 
-=== Configuring OS and Apps
+=== Configuring OS and apps
 
 link:/documentation/PineNote/Development/Apps[PineNote Development/Apps]
 

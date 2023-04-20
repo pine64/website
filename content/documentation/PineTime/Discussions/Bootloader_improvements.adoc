@@ -4,18 +4,21 @@ draft: false
 menu:
   docs:
     title:
-    parent: "PineTime/Development"
-    identifier: "PineTime/Development/Bootloader_improvements"
+    parent: "PineTime/Discussions"
+    identifier: "PineTime/Discussions/Bootloader_improvements"
     weight: 
 ---
 
-== Request for comments ==
+Discussion by the user JF:
+
+== Request for comments
+
 In this page, I explain the changes and improvements I would like to implement to the MCUBoot bootloader to make it more reliable, and to allow bootloader upgrade and switch (mcuboot <-> wasp-bootloader, for example).
 I try to explain why I made these choices too.
 
 Do not hesitate to edit this page and add a new section if you want to add any comment to these points (if you agree, disagree, want to try something else,...).
 
-== Introduction ==
+== Introduction
 
 This pages describes the improvements I propose to make to the bootloader and OTA to make the whole process more reliable.
 
@@ -27,9 +30,9 @@ My goals are:
 * Provide a way to upgrade the bootloader
 * Provide a way to switch from MCUBoot to NRF bootloaders
 
-== Current memory map ==
+== Current memory map
 
-[[PineTime| Pinetime Devkit0]] is using a nRF52832-QFAA MCU with 512kB flash and a https://datasheet.lcsc.com/szlcsc/2005251035_XTX-XT25F32BSOIGU-S_C558851.pdf[XT25F32B SPI NOR external flash] with 4096kB.
+Pinetime Devkit0 is using a nRF52832-QFAA MCU with 512kB flash and a https://datasheet.lcsc.com/szlcsc/2005251035_XTX-XT25F32BSOIGU-S_C558851.pdf[XT25F32B SPI NOR external flash] with 4096kB.
 
 image:/documentation/images/MemoryMap.png[]
 
@@ -63,7 +66,7 @@ The application don't know anything about the bootloader except that:
 
 In this configuration, the boot logo is part of the bootloader, not of the application : the same logo will be displayed whatever application firmware will be loaded.
 
-== Changes ==
+== Changes
 
 === Factory image
 
@@ -82,7 +85,7 @@ In order to simplify the code, the graphics will be stored into the bootloader c
  - Easier to document : 1 specific logo = bootloader mode
  - Do not have to worry about the dynamic size of the logo (the binary size of the graphics will vary with the content when they are RLE encoded).
 
-=== Bootloader ===
+=== Bootloader
 
 * Display the bootloader version on the screen and expose the version to the application firmware
 * Provide a way to revert the firmware to the last working version AND to the factory firmware
@@ -93,11 +96,11 @@ In order to simplify the code, the graphics will be stored into the bootloader c
 
 image:/documentation/images/PineTimeBootloaderWorkflow.png[]
 
-=== Upgrade & Reloader ===
+=== Upgrade & Reloader
 
 The reloader is a tool that allows to upgrade the current version of the bootloader AND to switch from MCUBoot to NRF and vice versa.
 
-==== How does it work ?
+==== How does it work?
 
 * Upgrade
 ** The reloader is first OTAed like any firmware upgrade.
@@ -114,9 +117,9 @@ The reloader is a tool that allows to upgrade the current version of the bootloa
 ** From InfiniTime to wasp-os : the reloader contains the NRF Bootloader and Softdevice. This bootloader provides the OTA mecanism out of the box. Wasp-os is downloaded when the NRF bootloader is running
 ** From wasp-os to InfiniTime : the reloader contains the factory image (infinitime-factory). The complete version of InfiniTime will be OTAed when this factory image is running.
 
-== Discussions ==
+== Discussions
 
-=== Boot Logo : embedded into the bootloader binary vs stored in the external SPI flash
+=== Boot Logo: embedded into the bootloader binary vs stored in the external SPI flash
 Embedding (and compressing) the boot logo inside the bootloader binary brings many advantages:
 
 * All the data are available in memory at runtime. No need to load them & check them, and no need to handle errors and invalid corrupted data.
@@ -130,6 +133,8 @@ But it also has some disadvantages:
 * The size of the boot logo is limited (depending on the compression ratio)
 
 My (JF) point is that the bootloader must be as reliable as possible. I would like to remove all part of the code than can fail. If we read the boot logo from the SPI flash, we will write something like this:
+
+```
  int ret;
 boot_logo_info info;
 ret = SpiNor_read(infoOffset, &info, sizeof(boot_logo_info));
@@ -143,15 +148,15 @@ if(check_boot_logo_info(info) == false) {
   panic(); // ? reset ? Display nothing?
 }
 ...
+```
 
-We could find invalid image info if a firmware did not respect the memory map and erased/overwrote the external memory map. In this case, the bootloader couldn't run properly.
-Of course, we can implement something smart in panic() (retry, use failover values,...), but again, this adds complexity and bug probability.
+We could find invalid image info if a firmware did not respect the memory map and erased/overwrote the external memory map. In this case, the bootloader couldn't run properly. Of course, we can implement something smart in panic() (retry, use failover values,...), but again, this adds complexity and bug probability.
 
 All these if's that call panic() can be avoided by using hard-coded values at build-time.
 
 If the image is hard-coded, you won't be able to easily (not that easy, actually...) customize the boot logo. But remember that this logo is only display for a short time only when the device reset (manually or during an OTA).
 
-=== Why not add OTA functionality to the bootloader ?
+=== Why not add OTA functionality to the bootloader?
 
 This is exactly how the NRF bootloader/SoftDevice works: the bootloader is a standalone firmware that provides OTA functionality thanks to the SoftDevice. The downside is that the BLE stack needed to provide OTA is quite big and uses a lot of space in flash memory (~124kB according to the documentation). This is roughly 1/4 of the available space in the internal flash memory.
 

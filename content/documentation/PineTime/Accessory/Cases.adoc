@@ -19,6 +19,3 @@ The community designed the following cases:
 * https://www.thingiverse.com/thing:4651462[PineTime dev kit back fix by joaquimorg at thingiverse]
 * https://www.thingiverse.com/thing:4763267[PineTime dev kit charging holder v4 by zevix81 at thingiverse]
 * https://www.prusaprinters.org/prints/88913-pinetime-charger-case[PineTime Charger Travel Case by brett at PrusaPrinters]
-
-== Datasheets, Schematics and Certifications
-
