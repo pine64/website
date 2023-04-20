@@ -385,7 +385,7 @@ Most of recent (newer than 0.6.9) Linux OS images contain a script called *rock6
 Once the script finishes its operation, power off your board and remove the microSD card.
 The board is now ready to boot from USB 2.0/3.0 storage.
 
-=== Erasing and Rewriting SPI ===
+=== Erasing and Rewriting SPI
 
 There are two ways of removing u-boot from SPI. You can either download *u-boot-flash-spi.img.xz* from https://github.com/ayufan-rock64/linux-u-boot/releases[ayufan's github] or use a script found on Linux OS images titled:*rock64_erase_spi_flash.sh*. Follow the instructions in the previous sub-sections for the chosen method of removing u-boot from SPI; the instructions are are identical, as the process of erasing u-boot is the exact opposite of flashing it.
 

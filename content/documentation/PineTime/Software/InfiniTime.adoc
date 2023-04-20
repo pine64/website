@@ -48,7 +48,7 @@ This issue can be avoided by ensuring that the display is ON when manually reset
 
 This issues is fixed in https://github.com/JF002/InfiniTime/releases/tag/0.8.3[InfiniTime 0.8.3]
 
-== Releases ==
+== Releases
 
 In the order of oldest first.
 

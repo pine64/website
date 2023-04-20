@@ -49,7 +49,7 @@ Old template:
 
 image:/documentation/images/Pinephone_rendering_blank.png[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
 
-== Lockscreen template ==
+== Lockscreen template
 
 For renderings you can use and modify this template:
 

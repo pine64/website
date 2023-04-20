@@ -73,7 +73,7 @@ TBD
 
 * InfiniTime: https://github.com/InfiniTimeOrg/InfiniTime/issues?q=is%3Aissue
 
-== PineTab ==
+== PineTab
 
 * Arch Linux ARM: https://github.com/dreemurrs-embedded/Pine64-Arch/issues?q=is%3Aissue+label%3A%22device%3A+pinetab%22
 * Manjaro ARM: https://gitlab.manjaro.org/manjaro-arm/issues

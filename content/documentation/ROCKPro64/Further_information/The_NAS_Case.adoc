@@ -14,11 +14,12 @@ image:/documentation/images/NASCaseMain.png[Front View of the PINE64 NAS Case fo
 Please link:/documentation/Unsorted/NASCase[follow this this link] for *detailed instructions on how to assemble the ROCKPro64 NAS Case*.
 
 The NAS Case instructions also contains detailed information about:
-*what the NAS Case ships with
-*What additional things you need to purchase for your NAS Case
-*What optional things you can consider purchasing for your NAS build
-*What OS Image we recommend you use for your NAS build
-*IO accessibility after installing the ROCKPro64 into the NAS Case
-*https://files.pine64.org/doc/rockpro64/ROCKPro64%20NAS%20Case%20Exploded%20View%20Diagram.pdf[NAS Case Exploded View]
-*https://files.pine64.org/doc/rockpro64/NAS%20Case%20Drawing.dwg[NAS Case Drawing]
+
+* what the NAS Case ships with
+* What additional things you need to purchase for your NAS Case
+* What optional things you can consider purchasing for your NAS build
+* What OS Image we recommend you use for your NAS build
+* IO accessibility after installing the ROCKPro64 into the NAS Case
+* https://files.pine64.org/doc/rockpro64/ROCKPro64%20NAS%20Case%20Exploded%20View%20Diagram.pdf[NAS Case Exploded View]
+* https://files.pine64.org/doc/rockpro64/NAS%20Case%20Drawing.dwg[NAS Case Drawing]
 

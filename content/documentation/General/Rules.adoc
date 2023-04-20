@@ -61,12 +61,12 @@ Lastly, keep in mind that moderators have no power to make someone a friendly or
 * *Harassment*, defined as any behaviour aimed at intimidating or humiliating another community member, needs to be immediately reported to the moderation team. If moderators determine that the offending party’s actions were designed to purposefully humiliate and intimidate another community member, then a subsequent ban from all PINE64 platforms will be enforced.
 * *Slander* of fellow community members, Pine Store contractors and moderation team members will result in warning and, if the situation is not rectified, a permanent ban spanning all PINE64 social platforms. Slander is defined as: a knowingly false statement designed to damage reputation.
 
-=== 5) Privacy ===
+=== 5) Privacy
 
 * *Private details.* Any materials made public on purpose or by accident which contains private or otherwise identifying information will be removed from our platform without prior notice. We define private details as information that includes, but is not limited to, phone numbers, emails, shipping addresses or IP address. For example: if you post a video of an unboxing where you inadvertently show your shipping address, the moderation team will pull the video down to preserve your privacy. If you encounter such content, please notify the moderation team.
 * *Materials under NDA or Embargo.* Any confidential materials issued under an NDA are subject to removal from our community platforms without notifying the original poster. Such materials may include documents (e.g. schematics), schematics of unreleased devices, images of prototypes or written descriptions of unannounced devices.
 
-=== 6) Software Feedback ===
+=== 6) Software Feedback
 
 * *Software feedback.* We and our partner projects value your feedback, but this feedback needs to be communicated in a structured and respectful manner. When addressing developers on our platforms please make sure to formulate your feedback and criticism in a constructive manner. Everyone has their favorite distribution, desktop environment and software implementations. This, however, doesn’t mean that alternatives to your favorite software should be taunted or ridiculed; ultimately, everyone is working towards a common goal and everyone’s work ought to be respected. In short, stay respectful of people’s work.
 * *Software feature requests*, similarly to feedback, should be relayed in a respectful and considerate manner. Keep in mind that many developers working on PINE64 hardware do so in their spare time, on limited resources and are offering their software as a service to this community. No user has ‘a right to demand’ inclusion of software features.

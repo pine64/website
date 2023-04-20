@@ -9,13 +9,13 @@ menu:
     weight: 
 ---
 
-== Camera Adjustments ==
+== Camera Adjustments
 
-=== Focus ===
+=== Focus
 
 The focus of the lens can be manually adjusted through rotation. Note that initially, the lens could be tight.
 
-=== Low light mode ===
+=== Low light mode
 
 To get imagery in low-light conditions you can turn on the infrared LED's to light up the dark area and also enable the IR cut filter using the commands below. Note that these were performed on Armbian using the instructions from here [https://github.com/danielfullmer/pinecube-nixos#enablingdisabling-ir-cut-filter].
 

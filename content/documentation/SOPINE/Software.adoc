@@ -11,9 +11,9 @@ menu:
 
 Note that SOPINE images are also compatible with the PINE A64-LTS.
 
-== Linux ==
+== Linux
 
-=== AOSC ===
+=== AOSC
 image:/documentation/images/aosc.png[]
 
 '''AOSC OS''' is a general purpose Linux distribution that strives to simplify user experience and improve free and open source software for day-to-day productivity. To learn more about AOSC, please visit the official https://aosc.io/[AOSC website].
@@ -29,7 +29,7 @@ Download:
 | `aosc/anthon`
 |}
 
-=== Armbian ===
+=== Armbian
 image:/documentation/images/armbian.png[]
 
 '''Armbian''' is a Linux distribution designed for ARM boards. They are usually Debian or Ubuntu flavored. 
@@ -38,7 +38,7 @@ Download:
 
 * https://armbian.hosthatch.com/archive/pine64so/archive/
 
-=== FreedomBox ===
+=== FreedomBox
 image:/documentation/images/FreedomBox.jpg[]
 
 '''FreedomBox''' is a private server for non-experts: it lets you install and configure server applications with only a few clicks. For more information about FreedomBox, please visit http://www.freedombox.org.
@@ -55,7 +55,7 @@ Notes:
 * Please plug-in Ethernet cable first before initial power up. After power up for 10 minutes, using browser and type in http://fredombox.local to setup. Browser may warms for unsecure site and please proceed with exception.
 * Freedom Manual: https://wiki.debian.org/FreedomBox/Manual
 
-=== LibreELEC ===
+=== LibreELEC
 image:/documentation/images/libreelec.jpg[]
 
 '''LibreELEC''' is a "Just enough OS" Linux distribution combining the Kodi media center with an operating system.
@@ -68,7 +68,7 @@ Notes:
 
 * Nightly build for microSD and eMMC boot.
 
-=== NEMS Linux ===
+=== NEMS Linux
 image:/documentation/images/nems.jpg[]
 
 '''NEMS''' stands for "Nagios Enterprise Monitoring Server" and it is a modern pre-configured, customized and ready-to-deploy Nagios Core image designed to run on low-cost micro computers. To find out more on NEMS Linux, please visit their https://nemslinux.com/[site].
@@ -89,7 +89,7 @@ Info:The installation guide can be found https://docs.nemslinux.com/installation
 | `nemsadmin/nemsadmin`
 |}
 
-=== OpenEmbedded ===
+=== OpenEmbedded
 image:/documentation/images/openembedded.png[]
 
 '''OpenEmbedded''' is the build framework for embedded Linux. OpenEmbedded offers a best-in-class cross-compile environment. It allows developers to create a complete Linux Distribution for embedded systems. See https://www.openembedded.org/wiki/Main_Page for more information on OpenEmbedded.
@@ -104,7 +104,7 @@ Notes:
 * This layer aims to support as many features as possible on Pine64 devices. Where possible the layer aims to use opensource and upstream projects avoiding custom forks and binary solutions.
 * More information and instructions can be found in the repo readme: https://github.com/alistair23/meta-pine64/#building
 
-=== OpenWRT ===
+=== OpenWRT
 image:/documentation/images/Openwrt_logo_square.png[]
 
 '''OpenWRT''' community build for microSD boot. The OpenWrt Project is a Linux operating system targeting embedded devices.
@@ -124,9 +124,9 @@ Notes:
 | `-/passwd`
 |}
 
-== BSD ==
+== BSD
 
-=== NetBSD ===
+=== NetBSD
 image:/documentation/images/netbsd.png[]
 
 '''NetBSD''' is a free, fast, secure, and highly portable Unix-like Open Source operating system. To learn more about NetBSD please visit https://www.netbsd.org/[NetBSD main page]. 
@@ -147,7 +147,7 @@ Notes:
 * NetBSD community build for microSD boot
 * Instructions concerning enabling SSH can be found https://www.netbsd.org/docs/guide/en/chap-boot.html#chap-boot-ssh[here]
 
-== Linux BSP SDK ==
+== Linux BSP SDK
 
 Linux BSP Kernel 4.9
 
@@ -155,7 +155,7 @@ Download:
 
 * http://files.pine64.org/SDK/PINE-A64/PINE-A64_lichee_BSP4.9.tar.xz[Direct Download] from ''pine64.org'' (5.40GB, MD5 of the TAR-GZip ''7736e3c4d50c021144d125cc4ee047a4'')
 
-== Android SDK ==
+== Android SDK
 Android Oreo (v8.1)
 
 Download:

@@ -12,37 +12,43 @@ menu:
 The PINE64 NAS Case is intended for either a Network Attached Storage (NAS) or Desktop application, but it can also be used in a number of other server capacities. It is built from precision-cut and powder-coated aluminum. The physical dimensions are 232.4mm (Width) x 105.0mm (Height) x 145.2mm (Depth).
 
 An exploded view of the NAS Case, illustrating how all the components come together, can be found http://files.pine64.org/doc/rockpro64/ROCKPro64%20NAS%20Case%20Exploded%20View%20Diagram.pdf[here]. Please refer back to this PDF document during assembly to verify correct orientation of individual components.
+
 image:/documentation/images/NASCaseMain.png[Front View of the PINE64 NAS Case for the ROCKPro64,title="Front View of the PINE64 NAS Case for the ROCKPro64",width=400]
 
-== What does the NAS Case house?==
+== What does the NAS Case house?
 
 image:/documentation/images/NAS_Case_internals.jpg[Internal Layout of the NAS Case,title="Internal Layout of the NAS Case",width=200]
 
 The NAS Case can house the following components:
-*A ROCKPro64 Single Board Computer (SBC) with a tall, mid-size or slim/ no heatsink
-*A PCIe to dual SATA adapter or a different low-profile PCIe card, e.g. an NVMe adapter
-*Either two 3.5” OR two 2.5” HDDs / SSDs; combination of any two sized drives is accepted
-*A 80mm fan with a Ph 2-Pin connector
-*Up to three SMA antennas, two of which can be attached to the WiFi/ BT module
+
+* A ROCKPro64 Single Board Computer (SBC) with a tall, mid-size or slim/ no heatsink
+* A PCIe to dual SATA adapter or a different low-profile PCIe card, e.g. an NVMe adapter
+* Either two 3.5” OR two 2.5” HDDs / SSDs; combination of any two sized drives is accepted
+* A 80mm fan with a Ph 2-Pin connector
+* Up to three SMA antennas, two of which can be attached to the WiFi/ BT module
 
 == What comes in the box?
 
 When you purchase the NAS Case from the PINE store the following items are shipped to you:
-*The NAS Case itself, which consists of a top and a bottom half as well as an internal HDD SSD mount.
-*Two SATA cables
-*A custom power cable capable of powering two  2.5” or 3.5” HDDs /SSDs
-*The required screws, fittings and a LED relay
+
+* The NAS Case itself, which consists of a top and a bottom half as well as an internal HDD SSD mount.
+* Two SATA cables
+* A custom power cable capable of powering two  2.5” or 3.5” HDDs /SSDs
+* The required screws, fittings and a LED relay
 
 == What other bare-minimum things do I need for a NAS build?
 
-image:/documentation/images/PCIetoSATA.png[You_will_need_the_PCIe_to_SATA_adapter_from_the_PINE64_store_to_connect_your_disks_to_your_ROCKPro64 board. https://forum.pine64.org/showthread.php?tid=6932[*WARNING*: this adapter does not] https://forum.pine64.org/showthread.php?tid=6511[work well with two HDD|],title="You will need the PCIe to SATA adapter from the PINE64 store to connect your disks to your ROCKPro64 board. https://forum.pine64.org/showthread.php?tid=6932[*WARNING*: this adapter does not] https://forum.pine64.org/showthread.php?tid=6511[work well with two HDD|]",width=200]
+image:/documentation/images/PCIetoSATA.png[You will need the PCIe to SATA adapter from the PINE64 store to connect your disks to your ROCKPro64 board. \https://forum.pine64.org/showthread.php?tid=6932. WARNING: this adapter does not work well with two HDDs, https://forum.pine64.org/showthread.php?tid=6511,width=200]
+
 To assemble a functional NAS in the NAS Case you will require a number of additional parts.
+
 With the exception of HDDs/SSDs, everything you need for a complete build can be purchased from the PINE store:
-*A ROCKPro64 2GB or 4GB board
-*A 12V 5A power supply
-*A PCIe to dual SATA adapter: https://forum.pine64.org/showthread.php?tid=6932[*WARNING*, the SATA adapter from PINE64 store is low-quality and] https://forum.pine64.org/showthread.php?tid=6511[will not function well with two SATA HDD].
-*One or two 2.5”/ 3.5” HDDs (not sold in the PINE store).
-*A class 10 micro SD card and/or eMMC module.
+
+* A ROCKPro64 2GB or 4GB board
+* A 12V 5A power supply
+* A PCIe to dual SATA adapter: https://forum.pine64.org/showthread.php?tid=6932[*WARNING*, the SATA adapter from PINE64 store is low-quality and] https://forum.pine64.org/showthread.php?tid=6511[will not function well with two SATA HDD].
+* One or two 2.5”/ 3.5” HDDs (not sold in the PINE store).
+* A class 10 micro SD card and/or eMMC module.
 
 You can purchase all the aforementioned items in the https://www.pine64.org/?post_type=product[PINE64 store]
 
@@ -59,7 +65,7 @@ There are a few other things which you may wish to consider purchasing for your 
 
 == Which software should I use?
 
-image:/documentation/images/OMVGUI.png[The_OMV_WebGUI_is_easy_to_understand_but_also_very_robust._It_offers_easy_installation_of_plugins,_system administration and overview of available services,title="The OMV WebGUI is easy to understand but also very robust. It offers easy installation of plugins, system administration and overview of available services",width=200]
+image:/documentation/images/OMVGUI.png[The OMV WebGUI is easy to understand but also very robust. It offers easy installation of plugins, system administration and overview of available services,title="The OMV WebGUI is easy to understand but also very robust. It offers easy installation of plugins, system administration and overview of available services",width=200]
 
 If you are intending to build a home or small company NAS, then we strongly recommend you use link:/documentation/ROCKPro64/Software/_index#OpenMediaVault[Open Media Vault (OMV)]. OMV is an open source NAS solution that makes setting up user accounts, network shares and services a breeze. It also simplifies installing additional features (called plugins), such as: PLEX media server; Remote Desktop; Encryption; RSync; etc.
 
@@ -84,8 +90,10 @@ You should now be left with a bare case ready for installation of the necessary 
 
 === Step 2. Installing the ROCKPro64 into the NAS Case
 
-image:/documentation/images/ROCKPro64inNASCase.jpg[Correct_Placement_of_the_ROCKPro64_in_the_empty_case,_with_Ethernet;_Power;_and_HDMI_at_the_back_of the NAS Case,title="Correct Placement of the ROCKPro64 in the empty case, with Ethernet; Power; and HDMI at the back of the NAS Case",width=300]
+image:/documentation/images/ROCKPro64inNASCase.jpg[Correct Placement of the ROCKPro64 in the empty case, with Ethernet; Power; and HDMI at the back of the NAS Case,title="Correct Placement of the ROCKPro64 in the empty case, with Ethernet; Power; and HDMI at the back of the NAS Case",width=300]
+
 image:/documentation/images/FrontIO.png[Front IO with IR and LED relay installed,title="Front IO with IR and LED relay installed",width=300]
+
 Make sure nothing is plugged into your ROCKPro64 - including a micro SD card.
 If you intend to use a heatsink with your board then please install it now before proceeding. If you bought the heatsink from the Pine64 store it comes with thermal paste and/or a thermal pad. You can use one or the other (not both|). The thermal pad is easier to apply but the thermal paste should be better at cooling if properly applied.
 
@@ -99,8 +107,10 @@ If you wish to install an IRx receiver into your case then you should also place
 
 === Step 3 PCIe to SATA adapter and Cabling
 
-image:/documentation/images/DC_Location.jpg[DC_header_on_the_ROCKPro64_for_the_power_cable,title="DC_header_on_the_ROCKPro64_for_the_power_cable",width=200]
+image:/documentation/images/DC_Location.jpg[DC header on the ROCKPro64 for the power cable,title="DC header on the ROCKPro64 for the power cable",width=200]
+
 image:/documentation/images/PCIeFittedSATAsockets.png[PCIe to SATA installed. Note the SATA connection orientation,title="PCIe to SATA installed. Note the SATA connection orientation",width=200]
+
 With the board in place it's time to set up the PCIe to SATA adapter and do the cabling necessary to attach HDDs / SSDs.
 
 Place the SATA Adapter into the PCIe slot on the ROCKPro64 board so that the holding bracket of the adapter faces the back of the case. In the back of the case there is a cutout for the PCIe adapter; some
@@ -142,7 +152,8 @@ Plug in the fan at this stage of the installation and route the cable at the bot
 
 === Step 6. Installing the HDD / SSD Bracket and Routing Cables
 
-image:/documentation/images/NASCAsewithdrives.jpg[Complete_assembly_of_the_NAS_Case,title="Complete_assembly_of_the_NAS_Case",width=300]
+image:/documentation/images/NASCAsewithdrives.jpg[Complete assembly of the NAS Case,title="Complete assembly of the NAS Case",width=300]
+
 image:/documentation/images/TopViewAssembly.png[Top view of a complete NAS Case Assembly,title="Top view of a complete NAS Case Assembly",width=300]
 
 Installing the HDD/SSD bracket into the case and wiring it up is the last step before closing up the case.
@@ -152,6 +163,7 @@ Place the bracket with the disks installed (from step 4) into the case. The brac
 With the bracket aligned, flip the bottom of the case over while holding the bracket in place. Screw it into place using 4x Phillips head screws that came included with the NAS Case.
 
 The last thing remaining before the NAS Case can be screwed shut is routing SATA and power cables:
+
 For 3.5” HDDs we suggest routing power and SATA cables underneath the drives, where 2.5” HDDs/SSDs would otherwise reside.
 
 For 2.5” disks you have plenty of routing options as there is much space available. The most obvious route is straight over the disks, where the 3.5” HDDs would reside.

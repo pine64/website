@@ -180,11 +180,11 @@ IMPORTANT: Do not use the DC barrel jack while updating firmware or you may dest
 * One advantage of Pinecil (V1/V2) over other irons (i.e., Miniware) is you can not really brick them since Pinecil's bootloader is in ROM. If there is a problem, just flash the firmware again or a different version. This empowers people to experiment and do forks of the main IronOS firmware without as much risk.
 * Problems with IronOS firmware? - read https://ralim.github.io/IronOS/[documents here]. If the answer is not found, open a https://github.com/Ralim/IronOS/issues[ticket here] or join the link:/documentation/#_community_and_support[live Pinecil community chat].
 
-== Boot Logo Art ==
+== Boot Logo Art
 
 image:/documentation/images/Boot-logo-dogbone.jpg[Dog bone by River M.]
 
-=== Get Art ===
+=== Get Art
 
 * Boot logo art is art that you custom make or download from IronOS Meta. It displays when you initially power on the Pinecil (boot up).
 * Currently '''only''' older Pinecil V1 models which use DFU files can flash boot logo art. 
@@ -196,7 +196,7 @@ image:/documentation/images/Boot-logo-dogbone.jpg[Dog bone by River M.]
 
 image:/documentation/images/IronOS.gif[]
 
-=== Install ===
+=== Install
 	
 * If you have Windows or Mac, you can use this GUI [https://github.com/pine64/pine64_updater/releases/ Pine64 flasher].
 * If you have Linux  or Mac, use this GUI [https://github.com/Spagett1/PineFlash/releases/ Pineflash].

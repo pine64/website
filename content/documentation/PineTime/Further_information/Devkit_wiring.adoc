@@ -57,7 +57,7 @@ The tips of the Pogo Pins will partially penetrate the SWD holes like this... *(
 
 image:/documentation/images/PineTime_pogo_swd.jpg[width=400]
 
-== Soldered wires example ==
+== Soldered wires example
 
 Before attempting this, make sure you have a good soldering iron, some magnification and you haven't set your iron too high. If you haven't ever before soldered things this small, you really really do not want to start out on something this dense, small and thus fragile.
 

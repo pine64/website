@@ -207,7 +207,7 @@ In some cases, the isp exposes 2 devices nodes, and the nodes have separate topo
 * libcamera and megapixels still don't work. Megapixels appears to need support for debayering YUYV, and both appear to be configuring the rkisp1 pipeline wrong.
 * The images captured are pretty green and seem to have two pixels of garbage at their bottom edge. rkisp1 supports auto white-balance (AWB) using the params/stats pads, and libcamera has some smarts that may hook these up properly. In the meantime, raw images can be postprocessed to improve white balance and exposure.
 
-== Useful links ==
+== Useful links
 
 * https://files.pine64.org/doc/PinePhonePro/PinephonePro-Schematic-V1.0-20211127.pdf[Pinephone Pro Schematic]
 * https://blog.krybot.com/a?ID=01650-cea27a80-a1ab-4da1-9cb5-3945be91e3e1[Background on the GIC]
