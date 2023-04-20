@@ -22,6 +22,9 @@ h2, h3, h4, h5, h6 {
     color: #444;
     padding: 0.6em 0 0.4em 0;
 }
+h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: #2F82C6;
+}
 
 hr {
     height: 1.5px;
@@ -451,9 +454,6 @@ button.rounded:hover {
 div#doc-page h1 {
     color: #2F82C6;
 }
-div#doc-page h2 a, h3 a, h4 a, h5 a, h6 a {
-    color: #2F82C6;
-}
 /* Documentation text style */
 div#doc-page code{
     padding: 1px 4px;
@@ -824,13 +824,6 @@ tbody {
     background: #f8f8f8;
     margin-bottom: 0;
 }
-
-
-/* Heading anchor: hover */
-a.heading-anchor { font-size: 100%; visibility: hidden; color:silver;}
-h1:hover a, h2:hover a, h3:hover a, h4:hover a { visibility: visible}
-
-
 
 /* Podcast page */
 .podcast_intro {
