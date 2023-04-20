@@ -9,7 +9,7 @@ menu:
     weight: 3
 ---
 
-Note: This section to be refined/replaced as boards and tools mature.
+NOTE: This section to be refined/replaced as boards and tools mature.
 
 . The https://files.pine64.org/doc/star64/Star64_Schematic_V1.0_20220721.pdf[schematic] has several discrepancies with actual board labels.
 . The serial console can be found with TXD on pin 8 and RXD on pin 10; a convention common to Pi-style boards. Use the 40pin header pinouts in color on page one and not the schematic prose.

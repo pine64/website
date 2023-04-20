@@ -20,6 +20,13 @@ enableRobotsTXT = true
 # Pagination for the blog posts (x posts per page)
 paginate = 9
 
+
+# https://gohugo.io/getting-started/configuration-markup/
+[markup]
+  [markup.asciidocExt]
+    [markup.asciidocExt.attributes]
+      sectlinks = true
+
 [permalinks]
   blog = '/:year/:month/:day/:filename/'
 

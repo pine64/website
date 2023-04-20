@@ -20,7 +20,7 @@ menu:
 * *Chipset:* Bouffalo BL-706
 * *CPU:* 32-bit RV32IMAFC RISC-V “SiFive E24 Core” @ 144 MHz
 * *Memory:*
-** 192KB Internal Flash
+** 192KB Internal ROM
 ** 132KB SRAM System
 * *Power Ports (12V-24V, 88 Watts):*
 ** Only use one power port at a time (USB or DC barrel)
