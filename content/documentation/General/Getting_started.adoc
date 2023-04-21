@@ -215,15 +215,15 @@ A USB-to-eMMC adapter is available from purchase from the https://pine64.com/pro
 
 For this method you will need the following:
 
-*A Windows, Linux or Mac OS computer
-*A PINE64 eMMC module
-*The PINE64 USB-to-eMMC adapter
+* A Windows, Linux or Mac OS computer
+* A PINE64 eMMC module
+* The PINE64 USB-to-eMMC adapter
 
 *Flashing eMMC using the adapter*
 
-*Insert the the eMMC module into the USB adaptor and plug it into your Windows, Linux or Mac OS computer. It should mount as a regular USB drive and show up in your file manager.
-*If you are using Linux or Mac OS you can either use the dd terminal command or a GUI utility such as https://etcher.io/[Etcher] to flash the chosen OS Image to eMMC.
-*If you are using a Windows machine use https://etcher.io/[Etcher] or https://sourceforge.net/projects/win32diskimager/[Win32 Disk Imager] to flash the OS Image to the eMMC module.
+* Insert the the eMMC module into the USB adaptor and plug it into your Windows, Linux or Mac OS computer. It should mount as a regular USB drive and show up in your file manager.
+* If you are using Linux or Mac OS you can either use the dd terminal command or a GUI utility such as https://etcher.io/[Etcher] to flash the chosen OS Image to eMMC.
+* If you are using a Windows machine use https://etcher.io/[Etcher] or https://sourceforge.net/projects/win32diskimager/[Win32 Disk Imager] to flash the OS Image to the eMMC module.
 
 Once the image has been flashed using your preferred method safely dismount the USB adapter in your system and unplug it from your computer. Your eMMC is now ready to boot and can be inserted into the eMMC socket on your PINE64 device.
 
@@ -237,27 +237,27 @@ Some of the available Linux images for Allwinner A64 devices recognise eMMC modu
 
 There are *two ways* in which an OS image can be flashed from within a micro SD boot:
 
-*Via a script called Pine64_install_to_eMMC.sh found in _/usr/local/sbin_. This script will install an Ubuntu Mate OS installation (identical to the on running on the SD) to the eMMC module. To execute the script navigate to its location in the terminal and type `sudo ./Pine64_install_to_eMMC.sh`. Follow the instructions.
+* Via a script called Pine64_install_to_eMMC.sh found in _/usr/local/sbin_. This script will install an Ubuntu Mate OS installation (identical to the on running on the SD) to the eMMC module. To execute the script navigate to its location in the terminal and type `sudo ./Pine64_install_to_eMMC.sh`. Follow the instructions.
 
-*By manually downloading and flashing a OS image for your device using DD or the Disk GUI. This way of flashing an OS image to the eMMC is identical to that used on a Linux computer (e.g. for flashing an OS image to a SD card). For more information on how the process works please see the detailed guide on link:/documentation/General/Getting_started#Imaging_microSD_on_Linux[imaging OS images to SD card on Linux].
+* By manually downloading and flashing a OS image for your device using DD or the Disk GUI. This way of flashing an OS image to the eMMC is identical to that used on a Linux computer (e.g. for flashing an OS image to a SD card). For more information on how the process works please see the detailed guide on link:/documentation/General/Getting_started#Imaging_microSD_on_Linux[imaging OS images to SD card on Linux].
 
 For the latter of the two methods here is a summary of the process:
 
-*Flash an OS image which recognizes eMMC as mounted storage to a micro SD card. For details on how to flash a micro SD card see link:/documentation/General/Getting_started#Step-by-Step_Instructions_to_Flashing_MicroSD_Cards[section 3]
+* Flash an OS image which recognizes eMMC as mounted storage to a micro SD card. For details on how to flash a micro SD card see link:/documentation/General/Getting_started#Step-by-Step_Instructions_to_Flashing_MicroSD_Cards[section 3]
 
-*Insert both the micro SD and eMMC module into your device and power it on.
+* Insert both the micro SD and eMMC module into your device and power it on.
 
-*Once the PINE64 device boots from micro SD, you cannot flash the contents of the micro SD card to the eMMC while you are running from the micro SD so you will actually use this session to download an OS image to flash to the eMMC. Depending on the distribution this may be the same image you just flashed to the micro SD card and booted from.
+* Once the PINE64 device boots from micro SD, you cannot flash the contents of the micro SD card to the eMMC while you are running from the micro SD so you will actually use this session to download an OS image to flash to the eMMC. Depending on the distribution this may be the same image you just flashed to the micro SD card and booted from.
 
-*Once the OS image downloads check in terminal or in Disks utility the eMMC's mounting location and unmount all but "/". Example command to show disks and mounts:
+* Once the OS image downloads check in terminal or in Disks utility the eMMC's mounting location and unmount all but "/". Example command to show disks and mounts:
 
 `$ lsblk`
 
-*Use the DD command or Disks utility to flash the downloaded image to the eMMC module. Note your output device may be mmcblk1 or mmcblk2, use the command above to verify the correct one. Example DD command:
+* Use the DD command or Disks utility to flash the downloaded image to the eMMC module. Note your output device may be mmcblk1 or mmcblk2, use the command above to verify the correct one. Example DD command:
 
 `$ xzcat imagename.img.xz | sudo dd of=/dev/mmcblk1 bs=1M status=progress conv=fsync`
 
-*Once the flashing process is completed power down your device and remove the micro SD card. You should now be able to power your device back up and it will boot the image flashed to the eMMC module.
+* Once the flashing process is completed power down your device and remove the micro SD card. You should now be able to power your device back up and it will boot the image flashed to the eMMC module.
 
 === Flashing to eMMC using FEL (Allwinner A64 Devices Only)
 
@@ -266,12 +266,14 @@ Under particular circumstances it may prove difficult to rely on a SD card to fl
 The process of flashing via FEL is more complex than utilising a micro SD and is therefore *better suited for proficient and advanced users*.
 
 For the process of flashing an image to the eMMC on a device in FEL mode you will need:
-*A computer running Mac OS or Linux
-*An OTG USB A-to-A cable
+
+* A computer running Mac OS or Linux
+* An OTG USB A-to-A cable
 
 To enter FEL you will need to:
-*On the Pinebook, power down the Pinebook and remove the PSU, unscrew the bottom of the case and press down the FEL button on the PCB (REF). Plug in the OTG USB A-to-A cord to your computer and the OTG USB port on the Pinebook (on the right facing an open case). Reinsert the PSU cord and press the power button with the FEL button pressed down. Release the FEL button after 3 seconds.
-*On the Pine A64(+) power down the board and remove the micro SD card and power cord. Plug in the OTG USB A-to-A cord to your computer and the OTG USB port on the Pine A64 (+) and SoPine (top port). Power on the device and immediately after insert a micro SD card https://app.box.com/s/s3m7rb5zfe0jkwqhaiy1zytqq3436fqs[with FEL code].
+
+* On the Pinebook, power down the Pinebook and remove the PSU, unscrew the bottom of the case and press down the FEL button on the PCB (REF). Plug in the OTG USB A-to-A cord to your computer and the OTG USB port on the Pinebook (on the right facing an open case). Reinsert the PSU cord and press the power button with the FEL button pressed down. Release the FEL button after 3 seconds.
+* On the Pine A64(+) power down the board and remove the micro SD card and power cord. Plug in the OTG USB A-to-A cord to your computer and the OTG USB port on the Pine A64 (+) and SoPine (top port). Power on the device and immediately after insert a micro SD card https://app.box.com/s/s3m7rb5zfe0jkwqhaiy1zytqq3436fqs[with FEL code].
 
 You can check if your device entered FEL mode using _lsusb_ command in terminal. It should be listed as a device on the USB Bus.
 
@@ -298,60 +300,64 @@ Once the flashing process is completed, power down your device, remove the A-to-
 Rockchip has a different boot hierarchy to Allwinner's devices making it much more difficult to flash OS images using the micro SD-to-eMMC scheme used on A64. There are, however, flashing tools that make it possible to flash directly to eMMC on a Rock64 in loader and MarkROM modes.
 
 To flash to the eMMC module using these tools you will need the following:
-*A Windows, Mac OS or Linux computer
-*An A-to-A USB cable
-*The Rock64 board with the eMMC module inserted into the socket
 
-*Using Windows 7/8.1/10 *
+* A Windows, Mac OS or Linux computer
+* An A-to-A USB cable
+* The Rock64 board with the eMMC module inserted into the socket
+
+Using Windows 7/8.1/10:
+
 You will need to download the https://github.com/rockchip-linux/tools/tree/master/windows[DriverAssistant aka Rockchip driver] as well as the https://github.com/rockchip-linux/tools/tree/master/windows[AndroidTool_Release] used for flashing OS images. Having completed the downloads extract both archives.The Rockchip driver needs to be installed prior to using the AndroidTool utility.
 
 Having installed the driver and flashing utility, follow these steps:
-*Make sure that eMMC is inserted into the slot on the Rock64
-*Place a jumper / short out the eMMC pins on the board (consult https://files.pine64.org/doc/rock64/guide/ROCK64_Installing_Android_To_eMMC.pdf[this PDF document] for more details.
-*Insert one end of the A-to-A cable into your Windows PC and the other into your Rock64 OTG USB port (top)
-*Inset the power cord into the Rock64
-*Start AndroidTool; make sure that it reports 'Found One Maskrom Device' (if it does not recognise your device, please repeat previous steps)
-*Select either the latest Stock Android build or ayufan's Android TV build with the suffic -update. Download and the extract the chosen image.
-*In AndroidTool press the firmware tab and navigate to where you extracted the OS image and select it.
-*Press the upgrade tab. You will be prompted when the flashing process is completed.
-*Remove the USB A-to-A cable, power off your board and power it on again to boot into eMMC.
 
-*Using Linux or Mac OS*
+* Make sure that eMMC is inserted into the slot on the Rock64
+* Place a jumper / short out the eMMC pins on the board (consult https://files.pine64.org/doc/rock64/guide/ROCK64_Installing_Android_To_eMMC.pdf[this PDF document] for more details.
+* Insert one end of the A-to-A cable into your Windows PC and the other into your Rock64 OTG USB port (top)
+* Inset the power cord into the Rock64
+* Start AndroidTool; make sure that it reports 'Found One Maskrom Device' (if it does not recognise your device, please repeat previous steps)
+* Select either the latest Stock Android build or ayufan's Android TV build with the suffic -update. Download and the extract the chosen image.
+* In AndroidTool press the firmware tab and navigate to where you extracted the OS image and select it.
+* Press the upgrade tab. You will be prompted when the flashing process is completed.
+* Remove the USB A-to-A cable, power off your board and power it on again to boot into eMMC.
 
-*Make sure that eMMC is inserted into the slot on the Rock64
-*Download latest stable or pre-release (to be used at own risk) Android TV OS image from https://github.com/ayufan-rock64/android-7.1/releases[ayufan's github]. The image you wish to download is the one *without a suffix*; without -update or -raw in the OS image title.
-*In terminal, download rkflashtool following instructions on https://github.com/ayufan-rock64/android-7.1/blob/master/README.md[ayufan's github]
-*Extract the folder containing partitions of the OS image and place the script listed on ayufan's github in the folder
-*Hold down the recovery button on the board
-*Insert one end of the A-to-A cable into your Mac OS or Linux PC and the other into your Rock64 OTG USB port (top)
-*Inset the power cord into the Rock64
-*Check that your device is in loader mode by typing in the terminal `sudo rkflashtool n`. If rkflashtool doesn't detect the Rock64 please repeat last 3 steps
-*In terminal navigate to where you extracted the Android folder containing the OS partitions and the script and type `rkinstall`; this will install the community Android TV build to eMMC.
-*Remove the USB A-to-A cable, power off your board and power it on again to boot into eMMC.
+Using Linux or Mac OS:
+
+* Make sure that eMMC is inserted into the slot on the Rock64
+* Download latest stable or pre-release (to be used at own risk) Android TV OS image from https://github.com/ayufan-rock64/android-7.1/releases[ayufan's github]. The image you wish to download is the one *without a suffix*; without -update or -raw in the OS image title.
+* In terminal, download rkflashtool following instructions on https://github.com/ayufan-rock64/android-7.1/blob/master/README.md[ayufan's github]
+* Extract the folder containing partitions of the OS image and place the script listed on ayufan's github in the folder
+* Hold down the recovery button on the board
+* Insert one end of the A-to-A cable into your Mac OS or Linux PC and the other into your Rock64 OTG USB port (top)
+* Inset the power cord into the Rock64
+* Check that your device is in loader mode by typing in the terminal `sudo rkflashtool n`. If rkflashtool doesn't detect the Rock64 please repeat last 3 steps
+* In terminal navigate to where you extracted the Android folder containing the OS partitions and the script and type `rkinstall`; this will install the community Android TV build to eMMC.
+* Remove the USB A-to-A cable, power off your board and power it on again to boot into eMMC.
 
 === Flashing to eMMC Android 'Update' OS Images on Linux (Rock64 Only)
 
 It is possible to flash Android 'update' images to the Rock64 eMMC using a Linux PC. This process requires a tool called https://www.haoyuelectronics.com/service/RK3066/tools/linux/Linux_Upgrade_Tool_v1.2.tar.gz[Linux Upgrade Tool] and the full documentation of its functions can be found https://www.hotmcu.com/wiki/Flashing_Firmware_Image_Files_Using_The_Rockchip_Tool#Using_Linux_Upgrade_Tool_to_flash_update.img[here]. Make sure that you download v1.2 or newer, as older tools do not support the RK3328 used on the Rock64.
 
 To flash the eMMC module using this method you will need the following:
-*A Linux computer
-*An A-to-A USB cable
-*The Rock64 board with the eMMC module inserted into the socket
+
+* A Linux computer
+* An A-to-A USB cable
+* The Rock64 board with the eMMC module inserted into the socket
 
 Start by downloading an Android *update* image for the Rock64. Both PINE64 and Ayufan provide such images for the board - and they are clearly designated as such on both this WiKi's download section and on ayufan's github. For the purpose of this example, I'll use the ayufan's ATV community build:
 
-*Download latest stable or pre-release (to be used at own risk) Android TV OS image from https://github.com/ayufan-rock64/android-7.1/releases[ayufan's github]. The image you wish to download is the one *with update suffix*. You need to *rename the downloaded image to update.img*.
-*Download the https://www.haoyuelectronics.com/service/RK3066/tools/linux/Linux_Upgrade_Tool_v1.2.tar.gz[Linux Upgrade Tool] to your Linux PC and unarchived it.
-*Extract the archived update Android OS image somewhere where you will remember its path
-*Hold down the recovery button on the board
-*Insert one end of the A-to-A cable into your Mac OS or Linux PC and the other into your Rock64 OTG USB port (top)
-*Inset the power cord into the Rock64
-*In terminal, navigate to where you extracted Rockchip Update Tool and issue the following command substituting the correct path for where the Android Update OS Image is located:
+* Download latest stable or pre-release (to be used at own risk) Android TV OS image from https://github.com/ayufan-rock64/android-7.1/releases[ayufan's github]. The image you wish to download is the one *with update suffix*. You need to *rename the downloaded image to update.img*.
+* Download the https://www.haoyuelectronics.com/service/RK3066/tools/linux/Linux_Upgrade_Tool_v1.2.tar.gz[Linux Upgrade Tool] to your Linux PC and unarchived it.
+* Extract the archived update Android OS image somewhere where you will remember its path
+* Hold down the recovery button on the board
+* Insert one end of the A-to-A cable into your Mac OS or Linux PC and the other into your Rock64 OTG USB port (top)
+* Inset the power cord into the Rock64
+* In terminal, navigate to where you extracted Rockchip Update Tool and issue the following command substituting the correct path for where the Android Update OS Image is located:
 
 `sudo ./upgrade_tool uf /path/to/update.img`
 
-*Wait as the utility installs Android to eMMC on your Rock64.
-*Remove the USB A-to-A cable, power off your board and power it on again to boot into eMMC.
+* Wait as the utility installs Android to eMMC on your Rock64.
+* Remove the USB A-to-A cable, power off your board and power it on again to boot into eMMC.
 
 == Flashing u-boot to SPI Flash
 
@@ -367,12 +373,12 @@ This may be the simplest method of flashing u-boot to SPI. Download a dedicated 
 
 *Having flashed the image follow these steps*:
 
-*Insert the SD into the ROCK64
-*Remove all other peripherals from the board
-**Make sure that the eMMC module is disconnected from the board*
-*Apply power to the ROCK64
-*Wait (few seconds) until the the LEDs on the board will blink continually
-*Power off the board.
+* Insert the SD into the ROCK64
+* Remove all other peripherals from the board
+* *Make sure that the eMMC module is disconnected from the board*
+* Apply power to the ROCK64
+* Wait (few seconds) until the the LEDs on the board will blink continually
+* Power off the board.
 
 The board is now ready to boot from USB 2.0/3.0 storage.
 
@@ -401,10 +407,11 @@ To do so, you need to download mtd-utils. on Debian or Ubuntu follow these instr
 To boot an OS image from USB 2.0/3.0 Storage such as a SSD/HDD or a thumbdrive you first need to have u-boot written to your SPI flash. Please follow the instructions in the previous sub-sections to learn how to write u-boot to SPI on your PINE64 device.
 
 Once you have u-boot on your SPI, the process of booting is very similar to booting from microSD or eMMC.
-*Download one of the supported OS images for your PINE64 device
-*Flash the OS image to your USB 2.0/USB 3.0 storage device (to learn how to flash OS images please following steps outlined in link:/documentation/General/Getting_started#Step-by-Step_Instructions_to_Flashing_MicroSD_Cards[Section 3] The instructions are identical for all types of storage, including USB 2.0/USB 3.0 HDDs and thumb-drives.)
-*Insert the USB storage device with the flashed OS image into one of the USB ports on your PINE64 device
-*Apply power
+
+* Download one of the supported OS images for your PINE64 device
+* Flash the OS image to your USB 2.0/USB 3.0 storage device (to learn how to flash OS images please following steps outlined in link:/documentation/General/Getting_started#Step-by-Step_Instructions_to_Flashing_MicroSD_Cards[Section 3] The instructions are identical for all types of storage, including USB 2.0/USB 3.0 HDDs and thumb-drives.)
+* Insert the USB storage device with the flashed OS image into one of the USB ports on your PINE64 device
+* Apply power
 
 If you have followed all the steps correctly, the board should boot from your USB 2.0/3.0 storage device.
 

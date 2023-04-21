@@ -21,12 +21,13 @@ Manjaro ARM is a user friendly rolling release distribution, based on Arch Linux
 
 WiFI, Bluetooth, Ethernet, HDMI USB etc. works, others are not tested.
 
-Currently the image is built for Raspberry Pi CM4 - IO board, so to get it working with other base board like pine64 Soquartz model A base board then follow this steps
-*Flash the image to a SD card/ EMMC.
-*Go to Boot partition.
-*Then change the DTB listed in /boot/extlinux/extlinux.conf to -model-a.dtb instead of -cm4.dtb.
-*Now put the SD card/ EMMC to the preferred base board and boot.
-*First boot will take time as the user partition will resize to take whole storage size.
+Currently the image is built for Raspberry Pi CM4 - IO board, so to get it working with other base board like pine64 Soquartz model A base board then follow this steps:
+
+* Flash the image to a SD card/ EMMC.
+* Go to Boot partition.
+* Then change the DTB listed in /boot/extlinux/extlinux.conf to -model-a.dtb instead of -cm4.dtb.
+* Now put the SD card/ EMMC to the preferred base board and boot.
+* First boot will take time as the user partition will resize to take whole storage size.
 
 For headless installation, simply enter "root" at the login: prompt and complete setup.
 

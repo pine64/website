@@ -22,7 +22,8 @@ PINE A64-LTS / SOPINE WiFi/BT module schematic:
 * https://files.pine64.org/doc/Pine%20A64%20Schematic/A64-DB-WIFI-BT-REV%20B.pdf[PINE A64 WiFi/BT Module Schematic]
 
 PINE A64-LTS / SOPINE Stereo Audio DAC board schematic:
-*https://forum.pine64.org/attachment.php?aid=697[PINE A64-LTS / SOPINE Stereo Audio DAC Board Schematic]
+
+* https://forum.pine64.org/attachment.php?aid=697[PINE A64-LTS / SOPINE Stereo Audio DAC Board Schematic]
 
 SOPINE (together with model "A" baseboard) certification:
 

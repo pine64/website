@@ -82,15 +82,18 @@ There is a discussion on the merits of the different ways to do the fix
 link:/documentation/PinePhone/Hardware_fixes_and_mods/PinePhone_1.2_VCONN_Hardware_Fix[PinePhone 1.2 VCONN hardware fix]
 
 There are now a few documented ways,
-*Removal only, the tweezer "stupid" way: https://www.youtube.com/watch?v=j3jc7Mvn9Eo
-*Removal only, the soldering iron "less stupid" way: https://www.youtube.com/watch?v=ZqOb45N2sMc
+
+* Removal only, the tweezer "stupid" way: https://www.youtube.com/watch?v=j3jc7Mvn9Eo
+* Removal only, the soldering iron "less stupid" way: https://www.youtube.com/watch?v=ZqOb45N2sMc
+
 There are hopefully videos coming doing it the proper way, and so they can be linked here.
 
 After this the firmware for the power negotiation chip needs to be upgraded, this can be done by running the factory test image, version http://images.postmarketos.org/pinephone/pine64-pinephone-20200724-factorytest55.img.xz or higher. This will do the firmware flashing and respond with a message indicating the state. After this the phone is ready for its added functions.
 ANX states:
-*No CC Fix - Fix not applied
-*No USB Cable - No USBC connection, cannot upgrade firmware
-*OK - Firmware Applied, you are all set
+
+* No CC Fix - Fix not applied
+* No USB Cable - No USBC connection, cannot upgrade firmware
+* OK - Firmware Applied, you are all set
 
 ===== VCONN mod, Replacement
 
