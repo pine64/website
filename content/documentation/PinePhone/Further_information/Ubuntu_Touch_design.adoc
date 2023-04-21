@@ -19,7 +19,7 @@ I personally think the UBports team has made some very smart decisions to make L
 
 Specifically I asked for an answer to the reasoning behind the formatting scheme and creation of the UBports image, which is one of the things a lot of the people seem to struggle with. There are more issues that seemingly stop users from using their OS as a open system to experiment on, but these are for great reasons as well, in my opinion. If we could understand those reasons better, all of our communities could improve.
 
-UniversalSuperBox was willing to provide us with some answers, and as always, presented them very well, and it was very interesting to read. Thank you for that|
+UniversalSuperBox was willing to provide us with some answers, and as always, presented them very well, and it was very interesting to read. Thank you for that!
 
 As I think it would be sad to leave such valuable info in the backlog of the chat, I would like to post it here as well, and try to make the most sense out of them. I hope many will add their conclusions, so we all learn. Later on, I hope we can look into other differences of the UBports system, and look into the specific solutions other operation systems found for some common problems.
 
@@ -57,7 +57,7 @@ Unaddressed part:
 
 == Analysis
 
-So we can at first learn some basics, the existence of 10|partitions on the flashable image. This explains the need for the bmaptools use, as if you need to separate things so well, normally you actually have to -time consuming- write the whole image if using dd and then resize the rest to gain usable free space, and bmaptools can write partitions where they are needed, and just mark the empty parts as free. This is why bmaptools is so much faster, and it even uses some checks to secure the image and the flashing process. Dd only provides blind block copying, no regard for tests etc. My conclusion about finding out about bmaptools was that it might be a good idea to move away drom dd wherever we can. That is a lot of info in such a short line :)
+So we can at first learn some basics, the existence of 10 partitions on the flashable image. This explains the need for the bmaptools use, as if you need to separate things so well, normally you actually have to -time consuming- write the whole image if using dd and then resize the rest to gain usable free space, and bmaptools can write partitions where they are needed, and just mark the empty parts as free. This is why bmaptools is so much faster, and it even uses some checks to secure the image and the flashing process. Dd only provides blind block copying, no regard for tests etc. My conclusion about finding out about bmaptools was that it might be a good idea to move away drom dd wherever we can. That is a lot of info in such a short line
 
 Then there is a list of all the partitions: "Loader, scr, persist, boot_a, boot_b, recovery_a, recovery_b, cache, system, data." Each of the names provides an indication about its function, but lets try to make a nice list out of it here on the wiki:
 

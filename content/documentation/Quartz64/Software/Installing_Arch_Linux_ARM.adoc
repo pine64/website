@@ -142,5 +142,5 @@ Once you hit a login shell, log in as `root` with password `root` and run:
  # pacman-key --init
  # pacman-key --populate archlinuxarm
 
-You are now ready to use Arch Linux ARM|Either delete or rename (and move the homedir of) the `alarm` user, and you're all set. Don't forget to install things like `sudo` and setting up sudo groups and such.
+You are now ready to use Arch Linux ARM! Either delete or rename (and move the homedir of) the `alarm` user, and you're all set. Don't forget to install things like `sudo` and setting up sudo groups and such.
 

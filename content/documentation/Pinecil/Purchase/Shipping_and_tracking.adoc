@@ -48,8 +48,3 @@ Not discussed in this article: big battery devices such as the Pinebook Pro, Pin
 . Pine Store is registered at Hong Kong/Singapore and is not a registered China company and therefore can not ship to China addresses (exports only) even though many Pine64 products like Pinecil are made and shipped from Shenzhen, China.
 . Pine Store can not sell on AliExpress (see above). All AliExpress items using the PINE64 and Pinecone logos are fake copies (link:/documentation/Pinecil#a#uthenticity[see authenticity here]).
 . For some countries people reported using a package forwarding company (unsure if safe or reliable, *use at your own risk*).
-
-== Go back to Pinecil article
-
-Go back to link:/documentation/Pinecil/_index[Pinecil article].
-

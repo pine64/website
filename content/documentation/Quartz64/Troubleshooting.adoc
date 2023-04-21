@@ -48,4 +48,3 @@ As of 2022-10-19 device tree in mainline kernel for Quartz64 model A has wrong c
 
   command 0x0c03 tx timeout
   Bluetooth: hci0: BCM: Reset failed (-110)
-

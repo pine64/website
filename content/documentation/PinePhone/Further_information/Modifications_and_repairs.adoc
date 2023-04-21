@@ -9,11 +9,11 @@ menu:
     weight: 
 ---
 
-=== Swapping in a new mainboard revision
+== Swapping in a new mainboard revision
 
 The mainboard can be replaced, for example for upgrading to a newer hardware revision or if it is faulty. The replacement board does not have an OS preinstalled, to test if everything is working after swapping the mainboard a flashed SD card is required. The mainboard also comes with a non-functional firmware on the ANX chip, a newer firmware version has to be flashed as explained below to get certain USB functionality to work.
 
-==== Replacing the mainboard
+=== Replacing the mainboard
 
 TIP: Replacement boards come with an empty eMMC, which means that trying to boot from them looks like the board is faulty (no LEDs, no screen, no reaction of the phone). Please boot an OS from SD card.
 
@@ -35,9 +35,9 @@ After swapping the mainboard the phone won't boot as there is no OS on the repla
 A video tutorial by _Martijn Braam_ can be found here (or alternatively a video tutorial by user _brigadan_ with additional notes about the camera swap and proximity sensor isolator https://www.youtube.com/watch?v=J3AJEF7akkw[here]):
 image:/documentation/images/Pinephone_martijn_pcb_replacement.png[Watch Martijn Braam's video tutorial here: https://www.youtube.com/watch?v=5GbMoZ_zuZs.,title="Watch Martijn Braam's video tutorial here: https://www.youtube.com/watch?v=5GbMoZ_zuZs.",width=600]
 
-==== Flashing the ANX firmware
+=== Flashing the ANX firmware
 
-===== Method 1
+==== Method 1
 
 After swapping the mainboard the ANX7688 chip has to be flashed for full USB functionality.
 
@@ -50,11 +50,11 @@ and executing as root ("sudo su") on the phone:
  cp anx7688-fw.bin /lib/firmware/
  echo 1 > /sys/class/typec/port0/device/flash_eeprom
 
-===== Method 2
+==== Method 2
 
 Booting a factory test image will automatically flash the ANX7688 chip. See link:/documentation/PinePhone/Software/Operating_systems#Factory Test OS[Factory Test OS] for such an image.
 
-=== Replacing the screen
+== Replacing the screen
 
 Before attempting to replace the screen be sure to review the section on link:#Swapping in a new mainboard revision[replacing the mainboard] since that will get you most of the way there. Be aware that the replacement screen is actually the entire front frame of the phone and there are components that will need to be swapped from your old screen.
 
@@ -68,13 +68,13 @@ Before attempting to replace the screen be sure to review the section on link:#S
 
 Take your time, use the right tools, be careful and you should be rewarded with success.
 
-=== Spare parts not available in the PINE64 store
+== Spare parts not available in the PINE64 store
 
-* Earpiece dimensions: 12x6x2 mm. Compatible with Xiaomi Mi2 / Mi3 (but not Mi4|) and others, see https://forum.pine64.org/showthread.php?tid=12046&pid=85698#pid85698[here]
+* Earpiece dimensions: 12x6x2 mm. Compatible with Xiaomi Mi2 / Mi3 (but not Mi4!) and others, see https://forum.pine64.org/showthread.php?tid=12046&pid=85698#pid85698[here]
 * Loudspeaker dimensions: 15x11x3 mm. Compatible with Nokia N91, Lenovo A536 (requires soldering) and others, see https://forum.pine64.org/showthread.php?tid=12046&pid=85698#pid85698[here]
 * Proximity sensor rubber isolator
 
-=== Other hardware issues
+== Other hardware issues
 
 See also link:/documentation/PinePhone/Hardware_fixes_and_mods/Hardware_issues[Hardware issues] for more issues and how-to's.
 

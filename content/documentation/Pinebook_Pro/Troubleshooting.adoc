@@ -23,8 +23,7 @@ If something has gone wrong, the key thing is remain calm and not do anything ha
 
 == Manjaro Updates Fail With 404
 
-If you have an old Manjaro installation then it will have the wrong repositories/mirrors set up and they won't work. Set up new repositories by following these instructions:
-https://archived.forum.manjaro.org/t/another-mirror-transition-manual-intervention-required/132302
+If you have an old Manjaro installation then it will have the wrong repositories/mirrors set up and they won't work. Set up new repositories by following these instructions: https://archived.forum.manjaro.org/t/another-mirror-transition-manual-intervention-required/132302
 
 == Power And Boot
 
@@ -55,7 +54,8 @@ A problem with the positioning of the lid magnet has been identified by several 
 
 ==== Lid Magnet Repositioning Step-by-Step
 
-* Read these steps thoroughly before starting. This is a somewhat laborious process involving fragile parts|
+Read these steps thoroughly before starting. This is a somewhat laborious process involving fragile parts!
+
 . Remove bottom cover.
 . Disconnect LCD and webcam ribbon cable from main board. Flip the small black strip on the connector upward and the ribbon cable can be easily removed. Do not pull the cable out without first raising the black retaining mechanism.
 . Remove the small black plastic standoffs on each hinge and set aside.

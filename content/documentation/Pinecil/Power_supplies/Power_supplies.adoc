@@ -120,17 +120,19 @@ image:/documentation/images/Nintendo-center-negative.png[width=350]
 === DC Laptop Brick
 
 . Generally a center-positive laptop charger with more than 3 Amps and 19V-24V will work on Pinecil V2 (https://www.youtube.com/watch?v=5DBTNplNTfA[*video to check polarity*]). Plugging in a DC barrel charger with the wrong polarity symbol on the back will break the Pinecil.
-. *Avoid Universal power supplies and cheap off-brand ones* with low quality control. <tl_lim> said "try to avoid such universal power ...The output contains sharp voltage spike and can kill the Pinecil. There are already several cases reported by support team that Pinecils are damaged by such power supply."
+. *Avoid Universal power supplies and cheap off-brand ones* with low quality control. <tl_lim> said "try to avoid such universal power. The output contains sharp voltage spike and can kill the Pinecil. There are already several cases reported by support team that Pinecils are damaged by such power supply."
 . Read the 2 answers in https://community.element14.com/products/manufacturers/keysight/f/forum/39013/what-is-the-effect-of-switching-noise[this link] that give an idea of why using cheap DC power supplies could damage electronics due to switching noise/voltage spikes. Cheap DC bricks don't have all the extra protections needed, go through little quality control, and most have no certification stamps related to industry testing.
 . DC5525 barrel plug will plug in directly (5.5mmm x 2.5mm) but if you have a different plug, there are many adapters to convert it to 5.5mm, 2.5mm (don't force a different plug into Pinecil, https://forum.pine64.org/showthread.php?tid=13237[it will Break the barrel port]), and possibly push back and break the positive pin connection inside Pinecil where the DC barrel attaches to the PCB.
 . DC barrel 24V is supported on V2 (most V1 can only do a max of 21V unless a modification is performed to cut the trace to the Vbus and enable 24V safely (see https://github.com/Ralim/IronOS/blob/dev/Documentation/DebugMenu.md#pd-debug-menu[Ralim's IronOS DebugMenu for details])
 . It is recommended to use a quality brand DC barrel charger. Often a used name-brand laptop charger (Dell, HP, Toshiba, etc..) that gets some QC testing is a better option than a no-name cheap DC barrel charger. The cheap ones might have large voltage spikes that are out of the 21V range for Pinecil V1 and 24V range of Pinecil V2 causing the Mosfet and Buck regulator to break.
-* These two parts are low cost and not too hard to replace if your Pinecil breaks from a poor quality DC charger (see [[Pinecil#Datasheets_for_Components| Datasheets section of the Wiki]] for links to get replacement chips]].
+* These two parts are low cost and not too hard to replace if your Pinecil breaks from a poor quality DC charger (see [[Pinecil#Datasheets_for_Components| Datasheets section of the Wiki]] for links to get replacement chips).
 * Members have experienced broken Pinecils after using low quality off-brand DC barrel chargers and had to replace both the Mosfet and Buck Converter. Sometimes it's just one part, but it's best to order a couple of both as they are usually under $0.35 each.
 
 === Tool Batteries 18V-21V
 
-image:/documentation/images/Power_Wheel_Adapters_for_18-21V_Tool_Batteries.png[_https://a.co/bo626Nk[Power-Wheels_adapter_link]_with_Ryobi_battery,title="_https://a.co/bo626Nk[Power-Wheels adapter link] with Ryobi battery",width=475]
+image:/documentation/images/Power_Wheel_Adapters_for_18-21V_Tool_Batteries.png[width=475]
+
+https://a.co/bo626Nk[Power-Wheels adapter link] with Ryobi battery
 
 * Easy way: just get a Power Wheels adapter. They are made for different tool brands and get a DC5525 Pigtail wire.
 * https://www.amazon.com/Hobbypark-Connector-Soldering-Outdoor-Repairing/dp/B08LKY5DBX[DC5525 pigtail] (keep the XT60 connector or cut it off)
@@ -160,8 +162,3 @@ image:/documentation/images/Power_Wheel_Adapters_for_18-21V_Tool_Batteries.png[_
 * Zendure Power bank like https://www.amazon.com/dp/B07P8NRNX7[this one] does not work. It does not appear to be USB-C PD 3.0 compliant. Only the USB-A port seems to work at lower QC voltage. It does not deliver USB-C 20V-5amps or USB-C 20V -3amps.
 * Smartphone Charger RAVpower 30W Dual USB Turbo Wall Charger (Should provide QC3@9V/12V, but only provides 5 V on both ports)
 * Sabrent HB-B7C3 USB3 hub, 7 data ports, 3 charge ports, 60W supply -- does not negotiate higher voltages.
-
-== Go back to Pinecil article
-
-Go back to link:/documentation/Pinecil/_index[Pinecil article].
-

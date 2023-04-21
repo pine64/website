@@ -42,7 +42,7 @@ Crimp the terminals onto the wires, crimp the strain relief onto the insulation,
 You will need:
 
 * https://pine64.com/product/lithium-battery-casing/[PINE64 Lithium Battery Casing]
-* an 18650 sized lithium battery (*not* LiFePo4|)
+* an 18650 sized lithium battery (*not* LiFePo4!)
 
 *TODO:* Get one of these and document how to use them
 

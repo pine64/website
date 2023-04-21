@@ -19,8 +19,6 @@ The PinePhone contains various components that enable or aid orientation and nav
 * IMU (Inertial Measurement Unit), combined Accelerometer and Gyroscope sensor (MPU6050)
 * Magnetometer (LIS3MDL or AF8133J)
 
-...
-
 image:/documentation/images/Pp_sensors_block.png[PinePhone navigation sensors,title="PinePhone navigation sensors",width=500]
 
 == Hardware
@@ -70,8 +68,8 @@ TODO: explain body reference choices, north-east-down world coordinates
 TODO: i2cdev, linux-iio, support matrix
 
 * EG25G: provides either UART or USB based interfaces for NMEA data
-** /dev/ttyUSB2 : AT command interface
-** /dev/ttyUSB1 : default NMEA data output
+** /dev/ttyUSB2: AT command interface
+** /dev/ttyUSB1: default NMEA data output
 
 * MPU6050:inv_mpu6050, inv_mpu6050_i2c, industrialio
  

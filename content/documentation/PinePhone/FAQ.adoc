@@ -82,9 +82,9 @@ The issue is not present on the Community Edition. Due to a hardware bug, after 
 
 ==== The battery only charges to ~84%
 
-Some pre-made operating systems using megi's kernel limit the maximum amount of charge to roughly ~84% in the hope of prolonging the battery life, as repeatedly reaching the upper level of battery charge reduces the battery's lifetime (this is *not* a safety feature|). The same effect however also applies when repeatedly draining the battery to a low level - users are therefore advised to consider if that setting is reasonable depending on their usage. The setting can be overwritten via Sysfs, to let the battery fully charge (this can lower the replaceable battery's lifetime considerably depending on the charging behavior|):
+Some pre-made operating systems using megi's kernel limit the maximum amount of charge to roughly ~84% in the hope of prolonging the battery life, as repeatedly reaching the upper level of battery charge reduces the battery's lifetime (this is *not* a safety feature!). The same effect however also applies when repeatedly draining the battery to a low level - users are therefore advised to consider if that setting is reasonable depending on their usage. The setting can be overwritten via Sysfs, to let the battery fully charge (this can lower the replaceable battery's lifetime considerably depending on the charging behavior!):
 
-WARNING: The following instructions are directed towards expert-level users and developers|
+WARNING: The following instructions are directed towards expert-level users and developers!
 
 `echo 4350000 > /sys/class/power_supply/axp20x-battery/voltage_max_design`
 
@@ -191,7 +191,7 @@ If there is an installation of Manjaro on both the eMMC & an SD card, the SD car
 . In the new Rescue SD shell, type `umount /dev/mmcblk2p10; e2fsck -fy /dev/mmcblk2p10 && sync`
 . Once this command pipeline finishes, type `sync && reboot -f`
 
-Your PinePhone should reboot into Ubuntu Touch. Now head to Settings -> Updates and install the new update|
+Your PinePhone should reboot into Ubuntu Touch. Now head to Settings -> Updates and install the new update!
 
 If these steps did not solve your issue, please create a new thread here on the PINE64 forums, note what the problem looks like, then say that you've tried these steps already.
 

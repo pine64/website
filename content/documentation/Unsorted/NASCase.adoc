@@ -95,7 +95,7 @@ image:/documentation/images/ROCKPro64inNASCase.jpg[Correct Placement of the ROCK
 image:/documentation/images/FrontIO.png[Front IO with IR and LED relay installed,title="Front IO with IR and LED relay installed",width=300]
 
 Make sure nothing is plugged into your ROCKPro64 - including a micro SD card.
-If you intend to use a heatsink with your board then please install it now before proceeding. If you bought the heatsink from the Pine64 store it comes with thermal paste and/or a thermal pad. You can use one or the other (not both|). The thermal pad is easier to apply but the thermal paste should be better at cooling if properly applied.
+If you intend to use a heatsink with your board then please install it now before proceeding. If you bought the heatsink from the Pine64 store it comes with thermal paste and/or a thermal pad. You can use one or the other (not both!). The thermal pad is easier to apply but the thermal paste should be better at cooling if properly applied.
 
 Place your ROCKPro64 into the case with USB 2.0 and 3.0/C ports facing the front of the case. It should fit snugly and align with the port cut-outs in the case. Do not attempt at installing the board at an angle; insert it while holding it level and lowering it into the case.
 

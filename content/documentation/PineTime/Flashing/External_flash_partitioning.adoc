@@ -39,7 +39,7 @@ The summing-up is that every system using partion index and not hardcoded stores
 
 === Paper
 
-PineTime is a device under open development and it offers undreamed possibilities to develop and to flash several firmwares by users. It might be convenient that external storage (SPI flash) can be accessed by using a partition table so, different firmwares will be able to share partitions with user information, settings, bluetooth bindings, calibration parameters, etcetera...
+PineTime is a device under open development and it offers undreamed possibilities to develop and to flash several firmwares by users. It might be convenient that external storage (SPI flash) can be accessed by using a partition table so, different firmwares will be able to share partitions with user information, settings, bluetooth bindings, calibration parameters.
 
 For example, it is possible to organize the flash to save a logo shown by the bootloader. And it doesn't mean a mandatory requirement at the moment but bootloader or application can be changed and they will be able to found the logo to show or save a customized one.
 

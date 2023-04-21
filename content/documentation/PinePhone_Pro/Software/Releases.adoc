@@ -122,7 +122,7 @@ Current version is Debian Bookworm.
 
 https://images.mobian.org/pinephonepro/[Images]
 
-NOTE: Tow-Boot required to be able to boot the images, see https://wiki.mobian-project.org/doku.php?id&#61;install-linux[here]|
+NOTE: Tow-Boot required to be able to boot the images, see https://wiki.mobian-project.org/doku.php?id&#61;install-linux[here]!
 
 |===
 2+| Default credentials
@@ -211,7 +211,7 @@ WIP. See https://github.com/NixOS/mobile-nixos/issues/440
 image:/documentation/images/PostmarketOS_logo.png[width=100]
 
 postmarketOS extends https://www.alpinelinux.org/[Alpine Linux] to run on smartphones and other mobile devices.
-It offers various user interfaces (Phosh, Plasma Mobile, Sxmo, Plasma Desktop, Gnome 3, Kodi, XFCE4, ...).
+It offers various user interfaces (Phosh, Plasma Mobile, Sxmo, Plasma Desktop, Gnome 3, Kodi, XFCE4, [...]).
 
 === Download
 

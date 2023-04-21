@@ -13,7 +13,7 @@ menu:
 
 The PineTime Dev Kit comes with the back not glued down to allow it to be easily reprogrammed, however the kit does not include an hardware programmer/debugger.
 
-*Before you can use your debugger/programmer, you probably have to link:/documentation/PineTime/Further_information/Devkit_wiring[wire up your pinetime]. Heavily recommended you read this first|*
+Before you can use your debugger/programmer, you probably have to link:/documentation/PineTime/Further_information/Devkit_wiring[wire up your pinetime]. Heavily recommended you read this first.
 
 There is a bewildering variety of different hardware programmers available but whatever programmer you have there are only a few tasks you will have to learn about:
 
@@ -27,7 +27,6 @@ Unlocking the device is a one-time action that is needed to enable the debug por
 
 == SWD Pinout
 
- 	
 See link:/documentation/PineTime/Further_information/Devkit_wiring[Devkit wiring]
 
 == nrfjprog (for Segger JLink)

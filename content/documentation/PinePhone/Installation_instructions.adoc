@@ -69,7 +69,7 @@ GUI applications such as Etcher and GNOME Disks can be used to flash the microSD
 . Insert microSD card and boot the phone
 . Download the desired OS' image on the booted OS or transfer it to the microSD card
 . Extract the image file if it is archived
-. Flash the image file to eMMC using `dd if=*IMAGE.img* of=/dev/*mmcblkX* bs=1M status=progress conv=fsync` where X is the number label of the eMMC (of the disk, not the partition|). Use the command `lsblk` to check your devices: typically with the current kernel the microSD card is _/dev/mmcblk0_ and the eMMC is _/dev/mmcblk2_ but as always with _dd_ be extremely cautious to get the devices correct.
+. Flash the image file to eMMC using `dd if=*IMAGE.img* of=/dev/*mmcblkX* bs=1M status=progress conv=fsync` where X is the number label of the eMMC (of the disk, not the partition!). Use the command `lsblk` to check your devices: typically with the current kernel the microSD card is _/dev/mmcblk0_ and the eMMC is _/dev/mmcblk2_ but as always with _dd_ be extremely cautious to get the devices correct.
 . Turn off phone, remove microSD card and then turn on the phone.
 
 === Using JumpDrive
@@ -91,7 +91,7 @@ Latest Jumpdrive can be found https://github.com/dreemurrs-embedded/Jumpdrive/re
 . Once the flashing process is complete, disconnect the PinePhone from your PC, power it down and remove the Jumpdrive microSD card
 . The process is now finished, and you can boot from eMMC
 
-The Jumpdrive image is smaller than 50MB. You can keep an microSD card specifically for using Jumpdrive, and there are 64MB microSD cards sold cheaply that will suffice. Jumpdrive also acts as a rescue image in case if you messed up your installation. To do so, you can telnet to *172.16.42.1*, mount rootfs and fix it|
+The Jumpdrive image is smaller than 50MB. You can keep an microSD card specifically for using Jumpdrive, and there are 64MB microSD cards sold cheaply that will suffice. Jumpdrive also acts as a rescue image in case if you messed up your installation. To do so, you can telnet to *172.16.42.1*, mount rootfs and fix it!
 
 === SD to eMMC via installer
 
@@ -138,9 +138,9 @@ Parted's interactive mode and resize work well together. Do this before you put 
 
 === Resize from within the PinePhone
 
-eMMC: you would need to resize the partition on eMMC (flashed with the operating system) by booting another image from the microSD card: that way, the eMMC will be unmounted. It is *not recommended* to resize eMMC while booted from eMMC|Resizing a currently mounted partition can have weird results. If you booted from the microSD card, you can follow the above guidelines on how to resize from a computer.
+eMMC: you would need to resize the partition on eMMC (flashed with the operating system) by booting another image from the microSD card: that way, the eMMC will be unmounted. It is *not recommended* to resize eMMC while booted from eMMC! Resizing a currently mounted partition can have weird results. If you booted from the microSD card, you can follow the above guidelines on how to resize from a computer.
 
-MicroSD card: It is generally not possible to boot from eMMC to partition the unmounted microSD card, because of the boot order - you would have to write the image to the empty microSD card first, then resize partition, all without rebooting. It is also *not recommended* to resize the microSD card while booted from microSD card|Resizing a currently mounted partition can have weird results.
+MicroSD card: It is generally not possible to boot from eMMC to partition the unmounted microSD card, because of the boot order - you would have to write the image to the empty microSD card first, then resize partition, all without rebooting. It is also *not recommended* to resize the microSD card while booted from microSD card! Resizing a currently mounted partition can have weird results.
 
 == Reuse SD card for data storage on system booting from eMMC
 

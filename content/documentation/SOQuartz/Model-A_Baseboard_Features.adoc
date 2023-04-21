@@ -29,7 +29,7 @@ image:/documentation/images/SOQuartz_model-A_baseboard.jpg[SOQuartz Model-A Base
 
 == GPIO Pins
 
-Attention|GPIOs are 3.3V|
+Attention! GPIOs are 3.3V!
 
 Interesting alternate pin configurations are listed in [brackets].
 

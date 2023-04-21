@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-image:/documentation/images/PMWF01A_Description.jpg[boarder|PMWF01A : Wifi Remote I2c Module,title="boarder|PMWF01A : Wifi Remote I2c Module"]
+image:/documentation/images/PMWF01A_Description.jpg[PMWF01A: Wifi Remote I2c Module,title="PMWF01A: Wifi Remote I2c Module"]
 
 == Quick Start Guide
 
@@ -87,7 +87,7 @@ image:/documentation/images/Wr_putty_login.JPG[PineWifiServer Login Screen,title
   ./WifiAppDemo
 * The Application will connect the PineWifiServer currently running in the localhost.
 
-image:/documentation/images/Wr_demo_application.JPG[center|caption,title="center|caption"]
+image:/documentation/images/Wr_demo_application.JPG[]
 
 Example of screen shot with WifiAppDemo polling multiple Wifi Remote I2c with Ambient Light Sensor and Humidity/Temperature Sensor connected on it. The speed for each round of polling is 1 second per poll.
 
@@ -105,6 +105,7 @@ image:/documentation/images/PMWF01A_Wifi_Remote_IO_Rev3-1.jpg[Hardware Setup,tit
 * USB/UART Programming/Console Adapter (PMPROG01) driver can be https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx[Download here]
 * Connect the USB/UART Programming/Console Adapter (PMPROG01) to the Wifi Remote I2c Device.
 * You can power-up the WiFI Remote I2c module through the USB Bus for configuration and programming.
+
 image:/documentation/images/Wr_USB_Adpt_5v.jpg[width=100]
 Place the jumper J2 on USB/UART Programming/Console Adapter (PMPROG01) to 5V output selection.
 
@@ -120,8 +121,8 @@ image:/documentation/images/Esp_prog_tool.JPG[width=400]
 
 == Technical Specification
 
-* Dimension : 47.00mm x 34.00mm
-* Input Voltage : 5V
+* Dimension: 47.00mm x 34.00mm
+* Input Voltage: 5V
 * Max. Input Current: 200mA
 * Operating Frequency: 2412MHz-2484MHz
 * Output power of PA for 802.11b: 19.5dBm-21.5dBm

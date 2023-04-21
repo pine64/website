@@ -97,7 +97,7 @@ In particular, USB 3.0 and the SATA connector on the board are mutually exclusiv
 
 == GPIO Pins (Quartz64 Model A)
 
-Attention|GPIOs are 3.3V|
+Attention! GPIOs are 3.3V!
 
 [%header, cols="1,1,1,1"]
 |===
@@ -169,7 +169,7 @@ Source: Page 28 of https://wiki.pine64.org/wiki/File:Quartz64_model-A_schematic_
 
 == GPIO Pins (Quartz64 Model B)
 
-Attention|GPIOs are 3.3V|
+Attention! GPIOs are 3.3V!
 
 Interesting alternate pin configurations are listed in [brackets].
 

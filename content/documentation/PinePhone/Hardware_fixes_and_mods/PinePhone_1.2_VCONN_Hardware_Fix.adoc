@@ -18,7 +18,7 @@ The issue was [[PinePhone_v1.1_-_Braveheart#USB-C_CC_pins_are_pulled_to_the_GND_
 . Requires confirmation: link:/documentation/PinePhone/Revisions/Project_Dont_be_evil["Project Don't Be Evil" devkit]
 . Requires confirmation: link:/documentation/PinePhone/Revisions/PinePhone_v1.0_-Dev[PinePhone v1.0 - Developer batch]
 . link:/documentation/PinePhone/Revisions/PinePhone_v1.1_-_Braveheart[PinePhone v1.1 - Braveheart]
-. [[PinePhone v1.2‎]] - UBports Community Edition
+. link:/documentation/PinePhone/Revisions/PinePhone_v1.2[PinePhone v1.2 - UBports Community Edition]
 
 == Disclaimer
 

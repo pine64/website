@@ -118,7 +118,7 @@ Download:
 
 Notes:
 
-* Decompress the image (**unxz**) before flashing, or decompress on the fly while flashing (**xzcat** in a root shell, Etcher, ...)
+* Decompress the image (**unxz**) before flashing, or decompress on the fly while flashing (**xzcat** in a root shell, Etcher, or others)
 * A display and keyboard will be required for first boot.
 * Initial setup includes: keyboard layout, locale, username, user password, and root password.
 * The installer will expand the root partition to use the remaining space on the storage device you've flashed.

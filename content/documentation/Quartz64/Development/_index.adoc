@@ -31,8 +31,8 @@ This page documents the current status of software support for the link:/documen
 
 2+| Needs porting
 | `rockchip-edpphy-naneng`
-| Downstream: https://gitlab.com/pine64-org/quartz-bsp/rockchip-linux/-/blob/quartz64/drivers/phy/rockchip/phy-rockchip-naneng-edp.c[Source] and https://gitlab.com/pine64-org/quartz-bsp/rockchip-linux/-/commit/d7ad116fb30d11d110aeb880754cf27f34c45c40#7e8e2ef87e479c54539dc519c0b92d6b31727f8d_671_681[Source]] Coordinate any porting with Rockchip first
-| 
+| Downstream: https://gitlab.com/pine64-org/quartz-bsp/rockchip-linux/-/blob/quartz64/drivers/phy/rockchip/phy-rockchip-naneng-edp.c[Source] and https://gitlab.com/pine64-org/quartz-bsp/rockchip-linux/-/commit/d7ad116fb30d11d110aeb880754cf27f34c45c40#7e8e2ef87e479c54539dc519c0b92d6b31727f8d_671_681[Source] Coordinate any porting with Rockchip first
+|
 
 2+| Linux Mainline
 | `dw-mipi-dsi-rockchip`
@@ -210,7 +210,7 @@ h| Battery
 2+| Linux Mainline
 | `rk817-charger`
 | As of 6.1^link:https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/drivers/power/supply/rk817_charger.c?id=11cb8da0189b417392e2334ae967b0ba1f0d1be8[Source]^
-| Quartz64 Model A, Pinenote
+| Quartz64 Model A, PineNote
 
 h| Microphone
 2+| Linux Mainline
@@ -507,7 +507,7 @@ The RK3566 boot ROM will search for a valid ID BLOCK in the following order on t
 * SD-Card
 * eMMC
 
-... if this fails, the boot ROM will initialize the USB0 port and wait for a connection from the Rockchip
+If this fails, the boot ROM will initialize the USB0 port and wait for a connection from the Rockchip
 flash/boot tools.
 
 ==== Bootloader Flashing

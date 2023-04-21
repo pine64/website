@@ -18,7 +18,7 @@ To install an image to the microSD card:
 . Download a compatible image from link:/documentation/PinePhone_Pro/Software/Releases[Releases].
 . *Important:* Typically the image will be compressed in an archive file to reduce the download size (such as _.gz_ or _.xz_). Extract the image from its archive file to get the file with the file extension _.img_.
 . Write the image to your microSD card using your favorite method, examples:
-* Using _dd_: On the device you're flashing the microSD card from, find the correct device under `lsblk` and then flash the image to the microSD card using `sudo dd if=*IMAGE.img* of=/dev/*[DEVICE]* bs=1M status=progress conv=fsync`. Make sure the target is the whole microSD card and not its first partition (_sdc1_ or _mmcblk0p1_ are wrong|).
+* Using _dd_: On the device you're flashing the microSD card from, find the correct device under `lsblk` and then flash the image to the microSD card using `sudo dd if=*IMAGE.img* of=/dev/*[DEVICE]* bs=1M status=progress conv=fsync`. Make sure the target is the whole microSD card and not its first partition (_sdc1_ or _mmcblk0p1_ are wrong!).
 * Using _bmaptool_: Make sure to select the correct device using `lsblk`. Then run bmaptool with the correct device: Download the _IMAGE.xz_ and the _IMAGE.bmap_ files, then run `bmaptool copy --bmap *IMAGE.bmap* *IMAGE.xz* /dev/*[DEVICE]*`. This takes around 2.5 minutes to flash a 4 GB file.
 * Using _a graphical tool_: A graphical tool such as Gnome Disks under Linux or Etcher under Windows may also be used.
 . Insert the microSD card into the top slot of the PinePhone Pro. Make sure the microSD card is inserted all the way and that the notch of the right side of the microSD card is not visible anymore, see link::File:Pinephone slots.png[here].

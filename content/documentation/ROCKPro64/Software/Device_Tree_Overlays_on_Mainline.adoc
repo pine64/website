@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-If your u-boot has been compiled with `CONFIG_OF_LIBFDT_OVERLAY` (which Manjaro's is), adding device tree overlays the mainline way is very simple and easy.
+If your U-Boot has been compiled with `CONFIG_OF_LIBFDT_OVERLAY` (which Manjaro's is), adding device tree overlays the mainline way is very simple and easy.
 
 == Writing Your Device Tree Overlay
 

@@ -26,7 +26,7 @@ Here the method from https://gist.github.com/charasyn/206b2537534b6679b0961be64c
 
 * Extract the environment: `./pinenote-uboot-envtool.py extract uboot.img uboot.env`
 
-* Poke around the files (or skip this if you don't like to learn...):
+* Poke around the files (or skip this if you don't like to learn):
 
 * Open `uboot.env` -- see, it's just text at this point! 
 

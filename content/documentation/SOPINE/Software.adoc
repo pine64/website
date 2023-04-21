@@ -22,12 +22,12 @@ Download:
 
 * https://aosc.io/downloads/ (supports the microSD card and eMMC, 8GB or more)
 
-{| class="wikitable"
-!colspan="2" style="background: #a7d7f9;"| Default credentials
-|-
-! Default user
+|===
+2+| Default credentials
+
+|Default user
 | `aosc/anthon`
-|}
+|===
 
 === Armbian
 image:/documentation/images/armbian.png[]
@@ -82,12 +82,12 @@ Download:
 
 Info:The installation guide can be found https://docs.nemslinux.com/installation[here].
 
-{| class="wikitable"
-!colspan="2" style="background: #a7d7f9;"| Default credentials
-|-
-! Default user
+|===
+2+| Default credentials
+
+|Default user
 | `nemsadmin/nemsadmin`
-|}
+|===
 
 === OpenEmbedded
 image:/documentation/images/openembedded.png[]
@@ -117,12 +117,12 @@ Notes:
 
 * This is headless build, please use serial console to configure
 
-{| class="wikitable"
-!colspan="2" style="background: #a7d7f9;"| Default credentials
-|-
-! Default user
+|===
+2+| Default credentials
+
+|Default user
 | `-/passwd`
-|}
+|===
 
 == BSD
 
@@ -135,12 +135,12 @@ Download:
 
 * http://www.armbsd.org/arm/[Direct download] (select ''PINE A64-LTS / SoPine with baseboard'')
 
-{| class="wikitable"
-!colspan="2" style="background: #a7d7f9;"| Default credentials
-|-
-! Root user and SSH
+|===
+2+| Default credentials
+
+| Root user and SSH
 | `root/[none]`
-|}
+|===
 
 Notes:
 

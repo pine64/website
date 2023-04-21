@@ -155,7 +155,7 @@ image:/documentation/images/Manjaro-logo.svg[width=100]
 
 *Manjaro* is a user-friendly Linux distribution based on the independently developed Arch operating system. Manjaro editions for Rock64 are available directly from Manjaro. To learn more about Manjaro please visit the https://forum.manjaro.org/tags/manjaroarm[Manjaro Forum].
 
-NOTE: Only supports ROCK64 version 2 SBC|
+NOTE: Only supports ROCK64 version 2 SBC!
 
 Download:
 

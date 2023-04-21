@@ -30,7 +30,7 @@ This page contains a list of things people wish PineTime did differently
 ** It has the property that its X and Y coordinates are each addressable with a single byte, with no bounds checking
 ** Its total number of pixels is a power of 2 (65536), and each pixel is addressable with exactly 2 bytes.
 ** The http://Pelulamu.net/ibniz[IBNIZ (Ideally Bare Numeric Impression giZmo) virtual machine], designed for minimalist demoscene graphics, has chosen 256×256 for its virtual display specifically for code efficiency.
-*** If PineTime also chose 256×256 then it would be a target platform for unclipped IBNIZ demoscene programmes, which would be really fun to play around with on one's wrist|
+*** If PineTime also chose 256×256 then it would be a target platform for unclipped IBNIZ demoscene programmes, which would be really fun to play around with on one's wrist!
 * Full screen refresh is very slow
 ** A full 16-bit redraw on the display takes at worst 120ms, which is 8Hz
 ** Modest optimization is possible by adopting 12-bit color

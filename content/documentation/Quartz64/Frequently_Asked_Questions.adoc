@@ -15,7 +15,7 @@ You don't need a fan. The https://pine64.com/product/rockpro64-20mm-mid-profile-
 
 == Can This Run A Minecraft Server?
 
-Yes|Sort of. Testing on an 8GB Model A with PaperMC, User:CounterPillow was able to out-row world generation in a boat with just one player online, but aside from the slow world gen (which can be pre-generated) the server handled things like TNT explosions and mobs fine. It'll probably do okay with 1-3 players.
+Yes! Sort of. Testing on an 8GB Model A with PaperMC, User:CounterPillow was able to out-row world generation in a boat with just one player online, but aside from the slow world gen (which can be pre-generated) the server handled things like TNT explosions and mobs fine. It'll probably do okay with 1-3 players.
 
 == Do I Need The 5A Power Supply For Model A?
 

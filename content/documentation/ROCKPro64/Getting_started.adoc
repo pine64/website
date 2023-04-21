@@ -27,7 +27,7 @@ Forum member Bullet64 has documented https://forum.frank-mankel.org/topic/208/bo
 
 == Setup a Serial Console (UART2)
 
-WARNING: RockPro64 is designed to use 3VDC3A (3 Volts Direct Current 3 Ampere) for the connection, using 5VDC and more might damage the board|
+WARNING: RockPro64 is designed to use 3VDC3A (3 Volts Direct Current 3 Ampere) for the connection, using 5VDC and more might damage the board!
 
 To use Serial Console you will a need operating system that supports it on your RockPro64, by default the serial console is provided for baud 9 600 which is far too slow for rockpro64 so consider using 1 500 000 (1.5Mbps) instead *IF* your serial console device supports it (many doesn't which results in their inability to use the console).
 

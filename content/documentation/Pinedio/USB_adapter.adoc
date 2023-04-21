@@ -337,7 +337,7 @@ WARNING: It is not sure if these are the correct pins to use|
 | 26        | RST#        | Hard Reset | dio_reset  | Output             | NRESET         
 |===
 
-The function of these pins can be changed from user space by using libgpiod. The command line tools installed with the library (gpioset, gpioget, gpiodetect, gpioinfo...) can be used for bash scripts, etc. and applications should all use the libgpiod interfaces. The /sys/class/gpio interface has been removed from the kernel in 5.15, so any apps using /sys/class/gpio to access gpio pins are broken, or will be as distos update their kernels to 5.15 and beyond.
+The function of these pins can be changed from user space by using libgpiod. The command line tools installed with the library (gpioset, gpioget, gpiodetect, gpioinfo and others can be used for bash scripts, etc. and applications should all use the libgpiod interfaces. The /sys/class/gpio interface has been removed from the kernel in 5.15, so any apps using /sys/class/gpio to access gpio pins are broken, or will be as distos update their kernels to 5.15 and beyond.
 
 GPIO pins can be listed with gpioinfo:
 

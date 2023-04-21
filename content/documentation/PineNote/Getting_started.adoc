@@ -83,7 +83,7 @@ link:/documentation/PineNote/Development/Apps[PineNote Development/Apps]
 
 == Links to dotfiles, configuration examples, etc.
 
-* Sway config, Mesa for hardware-acceleration using GPU, KO reader : https://github.com/0cc4m/pinenote-misc
+* Sway config, Mesa for hardware-acceleration using GPU, KO reader: https://github.com/0cc4m/pinenote-misc
 * Setting up X: https://musings.martyn.berlin/setting-up-x-on-the-pinenote-in-debian-with-touchscreen-onboard-keyboard-and
 * Gnome extension: https://github.com/m-weigand/mw_pinenote_misc/tree/main/gnome_extension
 * Vim config: https://github.com/m-weigand/mw_pinenote_misc/tree/main/vim

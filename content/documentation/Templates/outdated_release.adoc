@@ -10,5 +10,5 @@ menu:
 ---
 
 |===
-|⚠️ The linked release is  and should no longer be used|
+|⚠️ The linked release is  and should no longer be used!
 |===

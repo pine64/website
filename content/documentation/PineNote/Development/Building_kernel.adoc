@@ -44,10 +44,6 @@ NOTE: If anyone reading this has recommended reading for how we can understand w
 
 It is assumed you've already got an operating system installed on your Pinenote other than the stock Android. Doing this isn't trivial, but it is well understood - you will be following the footsteps of many others. Dorian Rudolph made a guide for doing this, available https://github.com/DorianRudolph/pinenotes#starter-guide[here].
 
-=== What do you need to know?
-
-If you followed Dorian's guide to get here and felt semi-comfortable, you'll be fine. This is no more complicated than that. If you are intimidated, that's okay!I'll still encourage you to try :) you will learn a lot, just be patient and don't put any data on your PineNote that you wouldn't be okay losing. If you run into trouble, ask for help in the https://discord.com/invite/pine64[Discord] / https://matrix.to/#/#pinenote:matrix.org[Matrix]. Please try to solve problems on your own first, and then ask for help -- if nobody replies, please be patient and ask again soon.
-
 === Steps to build
 
 . Clone Maximilian's scripts:

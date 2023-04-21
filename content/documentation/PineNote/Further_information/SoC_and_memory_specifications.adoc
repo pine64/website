@@ -44,6 +44,6 @@ image:/documentation/images/RK3566_icon.png[right,title="right"]
 
 == System Memory
 
-* RAM Memory : 4GB LPDDR4.
+* RAM Memory: 4GB LPDDR4.
 * Flash Memory: 128GB eMMC
 

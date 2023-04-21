@@ -19,7 +19,7 @@ TIP: Pay attention to the length! Pine Store sells two different lengths of tips
 
 . Pinecil V2 uses both Pine64 designed Short Tips (ST line, 6.2-6.5 Ω) and TS-100 Normal length compatible tips (TS line, ~8.0 Ω).
 . Presently, the V1 uses the normal length TS100 style tips (~8.0 ohms) until a firmware update enables manually switching the tip types. Check Github Ralim's IronOS https://github.com/Ralim/IronOS/issues/1558[here] for progress on this.
-. *Unplug before swapping* tips as the V2 automatically detects the tip resistance at boot-up and...it is safer.
+. *Unplug before swapping* tips as the V2 automatically detects the tip resistance at boot-up and it is safer.
 
 === How to increase tip life?
 

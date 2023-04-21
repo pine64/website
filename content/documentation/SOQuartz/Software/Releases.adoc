@@ -82,9 +82,9 @@ To flash, run (replace **/dev/sdX** with your target block device):
 
 Some quick notes:
 
-* You will be asked to change your password on first login (for what the default login is, read the instructions|)
+* You will be asked to change your password on first login (for what the default login is, read the instructions!)
 * Root file system is grown to take up the entire space of your boot device
 * NetworkManager is used instead of Debian's interfaces config to be more flexible with what adapters are plugged in and working
 * An sshd is started on port 22 with freshly generated keys
-* *Please flash the correct image for your SOQuartz baseboard|*
+* Please flash the correct image for your SOQuartz baseboard!
 

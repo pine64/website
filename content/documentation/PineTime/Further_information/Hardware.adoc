@@ -78,19 +78,22 @@ NOTE: the button consumes around 34µA when P0.15 is left high. To reduce curren
 
 == Touch panel
 
-The touch panel is controlled by a Hynitron CST816S chips. Unfortunately, there is not much information about this chip on the internet apart from the datasheet below and a https://github.com/lupyuen/hynitron_i2c_cst0xxse/[reference driver]. This is enough to implement a basic driver, but crucial information needed to implement advanced functionalities are missing (I²C protocol and registers, timings, power modes, ...).
+The touch panel is controlled by a Hynitron CST816S chips. Unfortunately, there is not much information about this chip on the internet apart from the datasheet below and a https://github.com/lupyuen/hynitron_i2c_cst0xxse/[reference driver]. This is enough to implement a basic driver, but crucial information needed to implement advanced functionalities are missing (I²C protocol and registers, timings, power modes).
 
 === Pins
 
-* P0.10 : Reset
-* P0.28 : Interrupt (signal to the CPU when a touch event is detected)
-* P0.06 : I²C SDA
-* P0.07 : I²C SCL
+* P0.10=== What do you need to know?
+
+If you followed Dorian's guide to get here and felt semi-comfortable, you'll be fine. This is no more complicated than that. If you are intimidated, that's okay! I'll still encourage you to try. You will learn a lot, just be patient and don't put any data on your PineNote that you wouldn't be okay losing. If you run into trouble, ask for help in the https://discord.com/invite/pine64[Discord] / https://matrix.to/#/#pinenote:matrix.org[Matrix]. Please try to solve problems on your own first, and then ask for help -- if nobody replies, please be patient and ask again soon.
+Reset
+* P0.28: Interrupt (signal to the CPU when a touch event is detected)
+* P0.06: I²C SDA
+* P0.07: I²C SCL
 
 === I²C
 
-* Device address : 0x15
-* Frequency : from 10Khz to 400Khz
+* Device address: 0x15
+* Frequency: from 10Khz to 400Khz
 
 NOTE: The controller go to sleep when no event is detected. In sleep mode, the controller does not communicate on the I²C bus (it appears disconnected). So, for the communication to work, you need to tap on the screen so that the chip wakes-up.
 
@@ -110,7 +113,7 @@ These 63 bytes contain up to 10 touch point (X, Y, event type, pressure,...) :
 8+|?
 
 |1
-8+|GestureID : (Gesture code ,
+8+|GestureID: (Gesture code ,
 
 0x00: no gesture,
 
@@ -192,7 +195,7 @@ The reference driver specifies some registers and value, but there is no informa
 
 |HYN_REG_POWER_MODE
 |0xA5
-|0x03 = SLEEP (reset the touchpanel using the reset pin before using this register : pin_low, delay 5ms, pin_high, delay 50ms then write 3 to register 0xA5)
+|0x03 = SLEEP (reset the touchpanel using the reset pin before using this register: pin_low, delay 5ms, pin_high, delay 50ms then write 3 to register 0xA5)
 
 |HYN_REG_FW_VER
 |0xA6
@@ -242,9 +245,9 @@ Devices shipped after July 2021 use a Bosch BMA425 accelerometer.
 
 === Pins
 
-* P0.06 : I²C SDA
-* P0.07 : I²C SCL
-* P0.08 : Interrupt
+* P0.06: I²C SDA
+* P0.07: I²C SCL
+* P0.08: Interrupt
 
 I²C Device address: 0x18
 

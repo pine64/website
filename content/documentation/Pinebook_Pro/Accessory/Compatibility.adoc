@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-Please test as many things as you can find with your link:/documentation/Pinebook_Pro/_index[Pinebook Pro] and share the results here. Some devices which should work don't|
+Please test as many things as you can find with your link:/documentation/Pinebook_Pro/_index[Pinebook Pro] and share the results here. Some devices which should work don't!
 
 == Storage
 

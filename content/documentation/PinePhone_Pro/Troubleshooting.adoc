@@ -20,7 +20,7 @@ If the battery is drained then the board can reset during boot causing a boot lo
 * Reinsert the battery
 * Hold the _RE_ button underneath the back cover of your _Explorer Edition_ (or short the bypass contact points on the _Developer Edition_)
 
-NOTE: Confirm that the label of the button says _RE_ and not _RESET_|If the button label says _RESET_ instead you probably have a regular PinePhone and you're reading the wrong page.
+NOTE: Confirm that the label of the button says _RE_ and not _RESET_! If the button label says _RESET_ instead you probably have a regular PinePhone and you're reading the wrong page.
 
 * Connect the phone to an USB port of a computer, while still holding the button for some time
 * Confirm if the phone was booted in Maskrom mode:

@@ -27,7 +27,8 @@ imx258 1-001a: supply vdig not found, using dummy regulator
 This tells us the kernel loads the driver, which is something.
 
 Are these errors bad/fatal? Inspecting the https://github.com/megous/linux/blob/orange-pi-5.17/drivers/media/i2c/imx258.c[source] shows us that these supplies are defined in the `imx258_supply_names` array, and `imx258_probe` calls `devm_regulator_bulk_get` to set them up.
-`imx258_probe` checks the return code from `devm_regulator_bulk_get`, emitting a fatal "Failed to get supplies" message if the return code is negative (indicating failure). Since we don't see this message (or any others from the driver), it looks like it loads successfully|
+
+`imx258_probe` checks the return code from `devm_regulator_bulk_get`, emitting a fatal "Failed to get supplies" message if the return code is negative (indicating failure). Since we don't see this message (or any others from the driver), it looks like it loads successfully!
 
 === How can we test the camera?
 

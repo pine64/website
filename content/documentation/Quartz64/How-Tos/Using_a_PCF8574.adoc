@@ -13,7 +13,7 @@ In this article, we'll go over how to hook up a PCF8574 I^2^C I/O extender to a 
 
 == Introduction to the PCF8574
 
-The PCF8574 is a fairly ubiquitous GPIO extender that communicates through the I^2^C bus. You can find modules featuring it from many vendors on the usual marketplaces for cheap. It exposes 8 additional GPIO lines, and can be daisy chained to up to 8 devices, giving you an additional 64 GPIO outputs. Combining it with 8 PCF8574A modules will actually push this to a total of 128 GPIO outputs added to your board|
+The PCF8574 is a fairly ubiquitous GPIO extender that communicates through the I^2^C bus. You can find modules featuring it from many vendors on the usual marketplaces for cheap. It exposes 8 additional GPIO lines, and can be daisy chained to up to 8 devices, giving you an additional 64 GPIO outputs. Combining it with 8 PCF8574A modules will actually push this to a total of 128 GPIO outputs added to your board!
 
 The PCF8574 has a mainline Linux driver, meaning that you do not need to use I^2^C directly to control it; it will just appear as another `/dev/gpiochip_<n>_` device. A lot of Raspberry Pi focused guides for this chip get this precise thing wrong actually, and have the user manually fiddle with the bus.
 
@@ -100,7 +100,7 @@ As previously stated, you can hook up multiple of these modules onto the same bu
 
 Notice how the labels (the part before the colon) have been differentiated, and the address (number after the @ and number in the reg field) has changed for the second module.
 
-*Note:* be sure to change the A0, A1 and A2 pins accordingly to set the addresses of the daisy chained modules|For example, for the second module, pull A0 high and leave A1 and A2 low. The address pins work like a binary counter, so 000 -> 001 -> 010 -> 011 -> 100 -> ...
+NOTE: be sure to change the A0, A1 and A2 pins accordingly to set the addresses of the daisy chained modules! For example, for the second module, pull A0 high and leave A1 and A2 low. The address pins work like a binary counter, so 000 -> 001 -> 010 -> 011 -> 100 -> ...
 
 == Interrupts
 

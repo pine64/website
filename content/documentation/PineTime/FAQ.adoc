@@ -11,7 +11,7 @@ menu:
 
 == Does PineTime run Linux?
 
-No. https://forum.pine64.org/showthread.php?tid=8112[Please read this forum article] for information about Linux on PineTime. Also check out the article https://lupyuen.github.io/pinetime-rust-mynewt/articles/pinetime["PineTime doesn't run Linux... But that's OK|"]
+No. https://forum.pine64.org/showthread.php?tid=8112[Please read this forum article] for information about Linux on PineTime. Also check out the article https://lupyuen.github.io/pinetime-rust-mynewt/articles/pinetime["PineTime doesn't run Linux... But that's OK!"]
 
 == Why are there two versions of the PineTime in the store?
 
@@ -122,11 +122,11 @@ https://github.com/lupyuen/[Lup Yuen Lee] (just call him Lup, rhymes with "Up") 
 
 == Can I code firmware for PineTime without an actual PineTime?
 
-Yes, you may code PineTime Watch Faces and preview them in a web browser (thanks to WebAssembly)...
+Yes, you may code PineTime Watch Faces and preview them in a web browser (thanks to WebAssembly).
 
 https://lupyuen.github.io/pinetime-rust-mynewt/articles/simulator[PineTime Simulator]
 
-Then flash your firmware remotely to a real PineTime via Telegram, and watch your firmware run in a live video stream...
+Then flash your firmware remotely to a real PineTime via Telegram, and watch your firmware run in a live video stream.
 
 https://github.com/lupyuen/remote-pinetime-bot/blob/master/README.md[Remote PineTime]
 

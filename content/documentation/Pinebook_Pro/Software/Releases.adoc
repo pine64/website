@@ -39,7 +39,7 @@ Download:
 
 Notes:
 
-* If you have any difficulties please visit our https://forum.armbian.com[forum] or come chat with us on https://docs.armbian.com/Community_IRC/[IRC / Discord|]
+* If you have any difficulties please visit our https://forum.armbian.com[forum] or come chat with us on https://docs.armbian.com/Community_IRC/[IRC / Discord]
 * As of April 2023, Armbian only has Ubuntu images pre-made.  However, using their tools to create a Debian image from scratch takes little expertise and results in an image that can be burned onto a USB stick or SD card.  Their installer can then install it onto internal eMMC, including a working bootloader.
 
 === Twister OS

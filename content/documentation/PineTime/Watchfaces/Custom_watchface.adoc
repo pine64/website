@@ -15,7 +15,7 @@ This is a tutorial to help new users create custom watchfaces based on the Infin
 
 We will explain some of the things we went through while creating some custom Watchfaces, so consider this as a log of experiments of sorts..
 
-So stay tuned to it as it will be dynamically updated...
+So stay tuned to it as it will be dynamically updated.
 
 === What you need to start
 
@@ -48,26 +48,24 @@ So, everything we will be doing in the basic modifications is purely messing wit
 === Labels
 
 ==== What are labels?
-Labels are considered as “elemental” parts that make up a screen's Text-based UI by the LVGL library...
-Each label is also considered as an “object” or “obj” and can be manipulated, by changing the data attributed with the "obj", for example, position, internal data like the strings/text etc.
-when can change what the label shows and where it shows it...
+Labels are considered as “elemental” parts that make up a screen's Text-based UI by the LVGL library. Each label is also considered as an “object” or “obj” and can be manipulated, by changing the data attributed with the "obj", for example, position, internal data like the strings/text etc. when can change what the label shows and where it shows it.
 
 ==== Modifying label data
 
-let's observe something small like the word "BPM" near the bottom of the watch face...
+let's observe something small like the word "BPM" near the bottom of the watch face.
+
 image:/documentation/images/PineTimeCustom-1.png[width=200]
 
-If we take a look at the source file of the watchface, (a.k.a. the clock.cpp file)
-we can observe that these particular lines are what attributes to the word “BPM” being displayed...
+If we take a look at the source file of the watchface, (a.k.a. the clock.cpp file) we can observe that these particular lines are what attributes to the word “BPM” being displayed.
+
  heartbeatBpm = lv_label_create(lv_scr_act(), NULL);
  lv_label_set_text(heartbeatBpm, "BPM");
 
-we can modify the text inside the quotes and replace the word 'BPM' between those quotes to something like 'LOVE'
-and the result after compiling the firmware again with the changes and flashing it to the watch would be that the text changes on the watch face and displays 'LOVE' in place of 'BPM'...
+We can modify the text inside the quotes and replace the word 'BPM' between those quotes to something like 'LOVE' and the result after compiling the firmware again with the changes and flashing it to the watch would be that the text changes on the watch face and displays 'LOVE' in place of 'BPM'.
 
-If this happened correctly, then you have successfully made a custom new watchface|Now we can do something a bit more complex...
+If this happened correctly, then you have successfully made a custom new watchface|Now we can do something a bit more complex.
 
-Now take for in instance the days of the week that we have on the bottom line with the date...
+Now take for in instance the days of the week that we have on the bottom line with the date.
 
 they are stored a "C array" which is basically multiple words separated by commas..
 the date is in a format of *<day of the week> <day> <Month> <year>*
@@ -77,31 +75,37 @@ which in the source file is expressed as,
  lv_label_set_text(label_date, dateStr);
 
 here,
+
  %s %d %s %d
+
 stores the print format of the variables, and
 
  DayOfWeekToString(dayOfWeek), day, MonthToString(month), year
-are the variables themselves...
 
-Now,
-if the date was a Saturday 11/7/2020, you can observe that the date looks like
+are the variables themselves
+
+Now, if the date was a Saturday 11/7/2020, you can observe that the date looks like
+
  SATURDAY 11 JUL 2020
+
 as seen in the above image (the one where we changed BPM to LOVE)
 
-by modifying the format of the variables, we can change how those words are arranged, and add some extra characters if we like...
- (there is a catch to the list of characters you can use however, but it will be discussed later...)
+by modifying the format of the variables, we can change how those words are arranged, and add some extra characters if we like (there is a catch to the list of characters you can use however, but it will be discussed later)
 
 For example,
 
-If we modify the format by adding a comma... "," in between the second "%s" and "%d" like this,
+If we modify the format by adding a comma "," in between the second "%s" and "%d" like this,
+
  "%s %d %s, %d"
-and changing that in the line...
+and changing that in the line
+
  sprintf(dateStr, "%s %d %s, %d", DayOfWeekToString(dayOfWeek), day, MonthToString(month), year);
 
-we can make the date become...
+we can make the date become
+
  SATURDAY 11 JUL, 2020
 
-which means we now were able to modify how the text got displayed to make it a bit more nice...
+which means we now were able to modify how the text got displayed to make it a bit more nice
 
 but if you haven't noticed, the line containing the date is already full, meaning we will get some problems while displaying the date and causing it to wrap around,
 making a single character go to the next line and look more like,
@@ -109,14 +113,13 @@ making a single character go to the next line and look more like,
  SATURDAY 11 JUL, 202
  0
 
-So, why don't we shorten the characters present in the date from being "SATURDAY" to simply just "sat." (It will have the small period at the end, and is only 3 characters long)
-I will also convert the months of the year from Capital to small letters...
+So, why don't we shorten the characters present in the date from being "SATURDAY" to simply just "sat." (It will have the small period at the end, and is only 3 characters long). I will also convert the months of the year from Capital to small letters.
 
 For that look into the part where the days of the week of are stored as text,
 and also while looking at it, we can solve another question, why was there two variables in the date format that looked like, DayOfWeekToString(dayOfWeek), and MonthToString(month) ?
 
 It is because the system gives the date/ time as numbers (Monday-1, Tuesday-2 Wednesday-3 for the days, and 1-January, 2-February, 3-March ),
-and so, a function along with a C array is used to assign these numbers to Days/Months in text form as it is easier to read...
+and so, a function along with a C array is used to assign these numbers to Days/Months in text form as it is easier to read.
 
 this is the Array containing the day of the week, (as text)
  char const *Clock::DaysString[] = {
@@ -147,9 +150,7 @@ and this Array stores the months of the year, (as text)
         "DEC"
  };
 
-here we can see that the days are stored in a full format as "SUNDAY", "MONDAY", "TUESDAY" etc.
-we can change all of them to a shorter format like "sun.", "mon.", "tue.", to make it short and nice...
-while doing so, we can even make the months use small letters, as said before..
+Here we can see that the days are stored in a full format as "SUNDAY", "MONDAY", "TUESDAY" etc. We can change all of them to a shorter format like "sun.", "mon.", "tue.", to make it short and nice. While doing so, we can even make the months use small letters, as said before.
 
 so the source file (clock.cpp) becomes,
 
@@ -184,7 +185,8 @@ and
         "dec"
  };
 
-which means now our original date, Saturday 11/7/2020 will become...
+which means now our original date, Saturday 11/7/2020 will become
+
  sat. 11 Jul, 2020
 
 you now know how to change the data present in a label object, and the format of it..,
@@ -192,15 +194,13 @@ you now know how to change the data present in a label object, and the format of
 Here is a fun idea you can try: you can even replace the days with whatever thing that tells you (or) reminds you the day of the week
 (like the food served in the café, Monday/taco, Tuesday/burger, Wednesday/pasta etc.)
 
- NOTE: when making the custom array, don't forget to leave an empty "" as the first element of the array,
- This is because the date is given by the system in a natural numbers format (1,2,3...) rather than a zero-starting format (0,1,2,3...), which the C array uses to index...
+NOTE: when making the custom array, don't forget to leave an empty "" as the first element of the array, This is because the date is given by the system in a natural numbers format (1,2,3, and so on) rather than a zero-starting format (0,1,2,3, and so on), which the C array uses to index
+
  so the C array indexes the days as ""-0, "Monday"-1, "Tuesday"-2 etc. and the months as ""-0, "January"-1, "February"-2 etc.)
 
 ==== Label positioning
 
-The locational placement in LVGL is done on a Cartesian plane,
-where each object can have dynamic origin placement, and the Y-axis is inverted...
-So going down is done with a positive Y-axis value and not negative as it is by default...
+The locational placement in LVGL is done on a Cartesian plane, where each object can have dynamic origin placement, and the Y-axis is inverted. So going down is done with a positive Y-axis value and not negative as it is by default.
 
 image:/documentation/images/LVGL_coord_system.png[LVGL coord system,title="LVGL coord system",width=200]
 
@@ -211,7 +211,8 @@ and the top-left corner is the Cartesian origin, aka coordinates (0,0)
 
 this image can show you how to decide label placement for lv_obj_set_pos(...)
 
-We use another function, that is more advanced, that gives the positional alignment based on preset locations...
+We use another function, that is more advanced, that gives the positional alignment based on preset locations
+
  lv_obj_align(obj, obj_ref, LV_ALIGN_..., x_ofs, y_ofs);
 
 *obj* is your text label
@@ -224,14 +225,16 @@ If obj_ref = lv_scr_act(), then the whole screen will be used.
 
 *x_ofs, y_ofs* allow you to shift the object by a specified number of pixels after aligning it
 
-Label positioning based on alignment is both a simple and complicated thing to understand, so here I have given something you can refer to while modifying the position of the various labels and objects...
+Label positioning based on alignment is both a simple and complicated thing to understand, so here I have given something you can refer to while modifying the position of the various labels and objects.
 
 You can also refer here to LVGL's documentation of coordinate system https://docs.lvgl.io/master/overview/coords.html
 
-List of the possible alignments : https://docs.lvgl.io/latest/en/html/widgets/obj.html#alignment
+List of the possible alignments: https://docs.lvgl.io/latest/en/html/widgets/obj.html#alignment
 
 It is however recommended that you use the first method to set the location
+
  lv_obj_set_pos(<obj>, <new_x>, <new_y>)
+ 
 as it is simple and easier for beginners
 
 Here is a small example.
@@ -247,18 +250,18 @@ and now we have made some space up top..
 
 now let's try something a bit complex,
 
-Take the position argument for the label that tells you time...
-here, in the source file (WatchFaceDigital.cpp),
+Take the position argument for the label that tells you time. Here, in the source file (WatchFaceDigital.cpp),
+
  lv_obj_align(label_time, lv_scr_act(), LV_ALIGN_IN_RIGHT_MID, 0, 0);
 
-this line determines the position of the Label telling time, as seen in the image...
+this line determines the position of the Label telling time, as seen in the image
 
 we're modifying this, by changing the origin alignment parameter (here it is LV_ALIGN_IN_RIGHT_MID) to LV_ALIGN_IN_TOP_LEFT
 
 you can alternatively swap the whole line to:
  lv_obj_set_pos(label_time, 0, 0);
 
-this makes the Time label/obj. to go to the top-left corner...
+this makes the Time label/obj. to go to the top-left corner
 
 but I will do something a little extra,
 I will modify the label that store the data and Time format,
@@ -288,25 +291,27 @@ you will need to do the following,
 to convert your image to a C array and having the Color format as "True color" and the output format as "C array"
 make sure to use something simple as the name we will be using "bitmap" as the name, but will also be referred as <name> for simplicity
 
- Note: for example we shall use <name> = bitmap, but any simple word can be used, as long as it does not cause problems with system variables
+NOTE: for example we shall use <name> = bitmap, but any simple word can be used, as long as it does not cause problems with system variables
 
 ==== Image size considerations
 
 since the image will be using the flash directly, we need to be considerate about flash memory usage.
 
-<picture_X> x <picture_Y> x 2
-gives you the number of KB the image used in storage...
+ <picture_X> x <picture_Y> x 2
+
+gives you the number of KB the image used in storage
 
 where, <picture_X> <picture_Y> are the dimensions of the image horizontally and vertically
 
 for example,
+
  if <picture_X>=80px <picture_Y>=64px
+
 then,
+
  total storage used = 80 x 60 x 2 = 10.24KB
 
- please use the flash storage with consideration, when using other apps as well, excess usage of storage
- might mean the Firmware will not compile... the limit to storage to about 400Kb for the user, the
- firmware size must not exceed that...
+Please use the flash storage with consideration, when using other apps as well, excess usage of storage might mean the Firmware will not compile. The limit to storage to about 400Kb for the user, the firmware size must not exceed that.
 
 === Preparing the image for inclusion as an icon
 
@@ -351,7 +356,7 @@ And another small bit of info we will need for later that looks like,
   .data = bitmap_map,
  };
 
- NOTE: There are some header files at the top, which we can ignore...
+NOTE: There are some header files at the top, which we can ignore.
 
 ==== RGB565 image format
 
@@ -369,7 +374,7 @@ and so, converting the binary into Hex-code,
 
 the two parts are *0xB4* and *0xF5*
 
-These two parts in conjunction are used for determining the color of one pixel...
+These two parts in conjunction are used for determining the color of one pixel.
 
 also from the binary, it is observed that,
 
@@ -384,11 +389,11 @@ The reason for this is to allow the use of 8-bit SPI interfaces, but we do not r
 To make sure you are ready for the next step, make sure that inside your LVGL configuration file (located at *src/libs/lv_conf.h*)
 
 this parameter,
- *#define LV_COLOR_16_SWAP   1*
-is set to "1" as seen...
 
- NOTE: if you haven't modified it or tampered with it with your GitHub fork, you shouldn't have a problem
- as it is correct by default, and you can skip these steps
+ *#define LV_COLOR_16_SWAP   1*
+is set to "1" as seen.
+
+NOTE: if you haven't modified it or tampered with it with your GitHub fork, you shouldn't have a problem as it is correct by default, and you can skip these steps
 
 ==== Creating an Object from the Array
 
@@ -416,9 +421,11 @@ In clock.cpp, just below the header files and the Task creation part (I.e event_
  }
 
 create a name for the label with,
- static lv_img_dsc_t <name>; // remember to replace <name> with the actual name you gave to your image while converting|
+
+ static lv_img_dsc_t <name>; // remember to replace <name> with the actual name you gave to your image while converting!
 
 then below it create a array to hold the data with,
+
  const uint8_t <name>_map[] = {}; // paste the array you copied from the conversion file we specified above...
 
 so your  array is something like,
@@ -448,10 +455,12 @@ so your Entire top region of declaration looks like,
  ...0x00,0x00,0x00
  };
 
- *note: Declaring variables outside a function like we did above is known as global scope declaration, this means the variable can be used by not just one function but the Entire code...*
+NOTE: Declaring variables outside a function like we did above is known as global scope declaration, this means the variable can be used by not just one function but the Entire code.
 
 Then inside the
+
  Clock::Clock(DisplayApp* app,...){...
+
 region, (the watchface function)
 You need to place a particular set of lines which LVGL uses to define the object to declare the array as an Icon/Image, You can place this set of lines above label_time...
 
@@ -464,7 +473,7 @@ You need to place a particular set of lines which LVGL uses to define the object
   lv_obj_t *img_src = lv_img_create(lv_scr_act(), NULL);  // Create an image object
   lv_img_set_src(img_src, &<name>);        // Set the created file as image (<name>)
 
-again, make sure to replace <name> with the name you gave it during conversion|
+again, make sure to replace <name> with the name you gave it during conversion!
 
 Now that we have bought in the image data, we need to set the position, you can place this just below the lines we wrote for bringing in the image, It can be done with either,
  lv_obj_set_pos(img_src, <x_pos, <y_pos>); // <x_pos>, <y_pos> are the coordinates of the Cartesian plane
@@ -472,7 +481,7 @@ or,
  lv_obj_align(img_src, lv_scr_act(), LV_ALIGN_<parameter>, <x_pos, <y_pos>);
 
 If done correctly, you will now have a beautiful little Icon/Image in your Watch face,
-Make sure that your Watch face can accommodate the image by pushing the other labels farther away, creating space for it...
+Make sure that your Watch face can accommodate the image by pushing the other labels farther away, creating space for it.
 
 We have provided a small template you can use for adding even a large image comfortably
 
@@ -485,6 +494,7 @@ The instructions above describe how to modify the existing default watchface, if
 === Create the watchface files
 
 The watchface is composed of 2 files, WatchFaceName.cpp and WatchFaceName.h. You can copy them from one of the existing watchfaces and give it a new name to provide a basic layout to start from. It is important to increment the ClockFace number near the top of WatchFaceName.cpp otherwise the wrong watchface will be displayed when leaving the menu.
+
    settingsController.SetClockFace(0);
 
 === Add the watchface to Clock.cpp and Clock.h
@@ -541,6 +551,7 @@ Important do not forget to rename the class names to reflect the new filenames.
 Clock.cpp now provides the ability to switch between multiple watchfaces by long-pressing the screen. You will need to make 3 modifications in Clock.cpp, 1 modification in Clock.h and two modifications in SettingsWatchFace.h which will allow us to select the newly created watch face.
 
 *src/displayapp/screens/Clock.cpp*
+
  #include "displayapp/screens/WatchFaceDigital.h"
  #include "displayapp/screens/WatchFaceAnalog.h"
  *#include "displayapp/screens/WatchFaceName.h"*

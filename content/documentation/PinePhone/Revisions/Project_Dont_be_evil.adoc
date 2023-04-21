@@ -201,7 +201,7 @@ Instructions:
 
 Notes:
 
-* The script will format and flash the SD card, make sure that you don't have any important data on the SD card|
+* The script will format and flash the SD card, make sure that you don't have any important data on the SD card!
 
 === Maemo Leste
 

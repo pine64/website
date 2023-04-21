@@ -13,7 +13,7 @@ menu:
 
 Use the https://gitlab.com/pine64-org/quartz-bsp/rkdeveloptool[PINE64 fork of rkdeveloptool].
 
-Connect a USB-C cable to the "DEBUG PORT" USB-C port, and a second to the "DOWNLOAD" USB-C port. *Cable direction for the latter matters, so if it doesn't show up after entering download mode, try rotating the USB-C connector to the other side|*
+Connect a USB-C cable to the "DEBUG PORT" USB-C port, and a second to the "DOWNLOAD" USB-C port. Cable direction for the latter matters, so if it doesn't show up after entering download mode, try rotating the USB-C connector to the other side.
 
 Interrupt the boot by mashing Ctrl+C very quickly on the serial comms, then type `download` to enter rockusb download mode.
 

@@ -12,10 +12,10 @@ menu:
 == InfiniTime
 InfiniTime (also known as JF's project, FreeRTOS firmware or Pinetime-JF) is an open source (GPLv3) firmware written in C++ and based on FreeRTOS, LVGL and NimBLE. This firmware (version 0.7.1) is preloaded at the factory since the new batch of PineTime devkits and sealed PineTimes of end of September 2020. *This page contains general information about the project. Actual project documentation and nuances are documented in the repository*
 
-* GitHub repo : https://github.com/InfiniTimeOrg/InfiniTime
-* Official website : https://infinitime.io/
+* GitHub repo: https://github.com/InfiniTimeOrg/InfiniTime
+* Official website: https://infinitime.io/
 
-== Read this first|
+== Read this first!
 
 * InfiniTime and the bootloader are still in heavy development, and some features might not work as expected. Any issues should be reported on GitHub.
 * Do not use a sealed PineTime as a development device, there is a fair amount of chances that you'll brick it with very experimental firmware.
@@ -23,18 +23,18 @@ InfiniTime (also known as JF's project, FreeRTOS firmware or Pinetime-JF) is an 
 
 == Known issues
 
-WARNING: Please read this section carefully before upgrading the firmware on your PineTime, especially if you are using a sealed device|
+WARNING: Please read this section carefully before upgrading the firmware on your PineTime, especially if you are using a sealed device!
 
 === Black screen after a reset in sleep mode
 
 ==== Description
-This issue occurs if you are using the original bootloader (from InfiniTime 0.7.1), upgraded from InfiniTime 0.7.1 to 0.8.2 and the watch resets while the display is OFF : the watch is stuck on a black screen and does not respond to touch, button press or BLE.
+This issue occurs if you are using the original bootloader (from InfiniTime 0.7.1), upgraded from InfiniTime 0.7.1 to 0.8.2 and the watch resets while the display is OFF: the watch is stuck on a black screen and does not respond to touch, button press or BLE.
 
 The reset can be triggered by the watchdog or manually by long pressing the button. If that doesn't work, wait for the battery to run out, it'll reboot then.
 
 This issue is caused by InfiniTime 0.8.2 that put the external SPI flash memory to sleep before switching the display off and by the bootloader that cannot wake the memory chip up. The bootloader is stuck in an infinite loop.
 
-More info : https://github.com/lupyuen/pinetime-rust-mynewt/issues/24 and https://github.com/JF002/InfiniTime/issues/60
+More info: https://github.com/lupyuen/pinetime-rust-mynewt/issues/24 and https://github.com/JF002/InfiniTime/issues/60
 
 ==== Workaround
 
@@ -62,7 +62,7 @@ This is the version that ships with PineTime devkits and sealed PineTime as of S
 * Integration with AmazFish (SailFishOS) and Gadgetbridge (Android)
 * OTA using NRFConnect
 
-Bootloader : https://github.com/lupyuen/pinetime-rust-mynewt/releases/tag/v4.1.7
+Bootloader: https://github.com/lupyuen/pinetime-rust-mynewt/releases/tag/v4.1.7
 
 === https://github.com/JF002/InfiniTime/releases/tag/0.8.2[Version 0.8.2]
 
@@ -70,7 +70,7 @@ Bootloader : https://github.com/lupyuen/pinetime-rust-mynewt/releases/tag/v4.1.7
 * Paint app
 * Manual image validation after OTA
 
-Bootloader : https://github.com/lupyuen/pinetime-rust-mynewt/releases/tag/v5.0.4.
+Bootloader: https://github.com/lupyuen/pinetime-rust-mynewt/releases/tag/v5.0.4.
 
 This new version of the bootloader fixes link:#Black_screen_after_a_reset_in_sleep_mode[Black screen after a reset in sleep mode] and enables the watchdog before launching the firmware.
 

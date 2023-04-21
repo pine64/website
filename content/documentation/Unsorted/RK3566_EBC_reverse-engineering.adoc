@@ -55,7 +55,7 @@ The format of the waveform file is documented here:
 
 https://www.waveshare.net/w/upload/c/c4/E-paper-mode-declaration.pdf
 
-https://www.waveshare.net/w/upload/archive/c/c4/20190611032540|E-paper-mode-declaration.pdf
+https://www.waveshare.net/w/upload/archive/c/c4/20190611032540!E-paper-mode-declaration.pdf
 
 === Utilities
 
@@ -117,7 +117,7 @@ This gives us a `ebc_dev_v8.o` which we can feed into analysis tools.
 
 For both of these, keep in mind that we're only interested in stuff from ebc_dev.c, or any other files for which we don't have the source. There's no point in getting the struct description or reverse-engineering a function that we have the source code for. A lot more than ebc_dev will be in the object file due to inlining and such.
 
-Also make sure that if you are looking up known struct accesses, that you use struct definitions from the BSP kernel, not from mainline. The kernel has no internal ABI for drivers|
+Also make sure that if you are looking up known struct accesses, that you use struct definitions from the BSP kernel, not from mainline. The kernel has no internal ABI for drivers!
 
 === Faster and Easier - Ghidra
 
@@ -194,9 +194,9 @@ See https://gitlab.com/smaeul/ebc-dev/-/blob/main/auto_image.h#L200, which is ba
 
 ==== rkf_waveform
 
-Note: all known waveform data files are the "PVI" variant, not the "RKF" variant.
+NOTE: all known waveform data files are the "PVI" variant, not the "RKF" variant.
 
-<source lang="c">
+```C
 struct rkf_waveform {
     int length,
     char[16] format,
@@ -220,13 +220,13 @@ struct rkf_waveform {
     uint[64] du_list,
     uint[64] a2_list
 }
-</source>
+```
 
 === Enums
 
 ==== rkf_waveform_type
 
-<source lang="c">
+```C
 enum rkf_waveform_type {
     RKF_WF_RESET = 0,
     RKF_WF_DU    = 1,
@@ -236,5 +236,5 @@ enum rkf_waveform_type {
     RKF_WF_GLD16 = 5,
     RKF_WF_A2    = 6
 }
-</source>
+```
 

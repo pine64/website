@@ -9,10 +9,10 @@ menu:
     weight: 1
 ---
 
-image:/documentation/images/Quartzpro64_whole_board_top_resized.jpeg[The_QuartzPro64_development_board,title="The_QuartzPro64_development_board",height=250]
+image:/documentation/images/Quartzpro64_whole_board_top_resized.jpeg[The QuartzPro64 development board,title="The QuartzPro64 development board",height=250]
 image:/documentation/images/BoardBackSide.jpg[Board back side,title="Board back side",height=250]
 
-A *QuartzPro64 Development* page before a *QuartzPro64* page? It's more likely than you think|
+A *QuartzPro64 Development* page before a *QuartzPro64* page? It's more likely than you think!
 
 This page will be used for both documenting the current development efforts and the board in general, as we don't know yet how a generally available QuartzPro64 will look like so documenting the dev board is probably best left to the development page.
 

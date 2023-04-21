@@ -13,6 +13,7 @@ menu:
 * link:U-Boot[]
 * link:Supported_displays[Supported displays]
 * link:RK3399_boot_sequence[RK3399 boot sequence]
+* link:RK3566_EBC_reverse-engineering[RK3566 EBC reverse-engineering]
 * link:PineModems[]
 * link:PhoenixCard[]
 * link:POT[]

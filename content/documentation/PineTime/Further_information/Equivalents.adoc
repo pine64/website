@@ -11,7 +11,7 @@ menu:
 
 This page contains a list of PineTime hardware equivalents or very close clones. Primarily to keep track of which devices could possibly be "jailbroken" and run PineTime firmware.
 
-_Please add devices that use the same chipset to this list._
+Please add devices that use the same chipset to this list.
 
 == Kalakate
 

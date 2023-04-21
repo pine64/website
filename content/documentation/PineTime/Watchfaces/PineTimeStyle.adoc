@@ -43,5 +43,5 @@ There is also a 'Rnd' button which randomises all colors, a 'Rst' button which r
 
 image:/documentation/images/PineTimeStyle-SidebarSettings.png[PineTimeStyle Sidebar Settings,title="PineTimeStyle Sidebar Settings"]
 
-The sidebar settings currently only has one option, for the step gauge style. By pressing the 'Steps style' button you can toggle between 3 options, the original full gauge, a half size gauge plus seconds display, or a numerical step count display. The image above shows the half gauge plus seconds. Further options will be added in the future|
+The sidebar settings currently only has one option, for the step gauge style. By pressing the 'Steps style' button you can toggle between 3 options, the original full gauge, a half size gauge plus seconds display, or a numerical step count display. The image above shows the half gauge plus seconds. Further options will be added in the future!
 

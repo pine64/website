@@ -15,7 +15,7 @@ The Pinephone's triple for cross-compiling is `aarch64-unknown-linux-gnu`.
 
 === Installing the Toolchain
 
-IMPORTANT: Please add instructions for other distributions to this section if you know them|
+IMPORTANT: Please add instructions for other distributions to this section if you know them!
 
 First, you'll need to install the gcc cross-compilation toolchain.
 
@@ -87,7 +87,7 @@ To test it, run the program on your Pinephone
 
   $ scp main user@ipadress:/home/user/Downloads
   $ ssh user@ipadress /home/user/Downloads/main
-  Hello, world|
+  Hello, world!
 
 ==== cargo
 
@@ -110,7 +110,7 @@ To test it, copy the file on your Pinephone
 Then you can execute it by
 
   $ ssh user@ipadress ./main -h
-  Hello, world|
+  Hello, world!
 
 === Possible Errors
 

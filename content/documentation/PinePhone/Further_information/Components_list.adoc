@@ -16,20 +16,20 @@ The following list of components are found in the https://files.pine64.org/doc/P
 The following https://www.electronics-notes.com/articles/analogue_circuits/circuits-symbols-diagrams/electronics-circuit-symbols-overview.php[abbreviations] are used as the starting letter(s) to identify the components in the PinePhone schematics:
 
 * *ANT*: antenna
-* *C* : https://www.electronics-notes.com/articles/analogue_circuits/circuits-symbols-diagrams/capacitors-polar-nonpolar-variable.php[capacitor]
-* *D* : https://www.electronics-notes.com/articles/analogue_circuits/circuits-symbols-diagrams/diode-semiconductor.php[diode]
-* *DU* : Only used in the "DU1", which is an integrated circuit for memory
-* *ED* : Zener diode to protect against electrostatic discharge
-* *FB* : https://en.wikipedia.org/wiki/Ferrite_bead[ferrite bead]
-* *J* : https://www.electronics-notes.com/articles/analogue_circuits/circuits-symbols-diagrams/wires-switches-connectors.php[wire link] (i.e. a connector)
-* *R* : https://www.electronics-notes.com/articles/analogue_circuits/circuits-symbols-diagrams/resistors-fixed-variable.php[resistor]
-* *L* : https://www.electronics-notes.com/articles/analogue_circuits/circuits-symbols-diagrams/inductors-chokes-coils-transformers.php[inductor]
-* *NC/* : not connected (i.e. the part probably isn't placed on the board, but there are circuits in the PCB for it)
-* *Q* : transistor
-* *SW* : switch
-* *T* : test point
-* *U* : integrated circuit (i.e. a silicon chip)
-* *X* : crystal oscillator (used for clocks)
+* *C*: https://www.electronics-notes.com/articles/analogue_circuits/circuits-symbols-diagrams/capacitors-polar-nonpolar-variable.php[capacitor]
+* *D*: https://www.electronics-notes.com/articles/analogue_circuits/circuits-symbols-diagrams/diode-semiconductor.php[diode]
+* *DU*: Only used in the "DU1", which is an integrated circuit for memory
+* *ED*: Zener diode to protect against electrostatic discharge
+* *FB*: https://en.wikipedia.org/wiki/Ferrite_bead[ferrite bead]
+* *J*: https://www.electronics-notes.com/articles/analogue_circuits/circuits-symbols-diagrams/wires-switches-connectors.php[wire link] (i.e. a connector)
+* *R*: https://www.electronics-notes.com/articles/analogue_circuits/circuits-symbols-diagrams/resistors-fixed-variable.php[resistor]
+* *L*: https://www.electronics-notes.com/articles/analogue_circuits/circuits-symbols-diagrams/inductors-chokes-coils-transformers.php[inductor]
+* *NC/*: not connected (i.e. the part probably isn't placed on the board, but there are circuits in the PCB for it)
+* *Q*: transistor
+* *SW*: switch
+* *T*: test point
+* *U*: integrated circuit (i.e. a silicon chip)
+* *X*: crystal oscillator (used for clocks)
 
 == P.4 LPDDR3 FPGA178
 

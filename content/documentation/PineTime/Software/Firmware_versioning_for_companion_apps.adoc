@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-BLE defines a standard service (Device Information Service, DIS) that allows BLE devices to expose information about them : hardware version, software version,...
+BLE defines a standard service (Device Information Service, DIS) that allows BLE devices to expose information about them: hardware version, software version.
 
 Companion apps will use these information to detect which firmware (or fork of a firmware) is running on the Pinetime they are connected to.
 

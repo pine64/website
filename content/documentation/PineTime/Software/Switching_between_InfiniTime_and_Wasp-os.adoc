@@ -3,9 +3,9 @@ title: "Switching your PineTime between InfiniTime and Wasp-os"
 draft: false
 menu:
   docs:
-    title:
-    parent: "PineTime"
-    identifier: "PineTime/Switching_between_InfiniTime_and_Wasp-os"
+    title: "Switching InfiniTime and Wasp-os"
+    parent: "PineTime/Software"
+    identifier: "PineTime/Software/Switching_between_InfiniTime_and_Wasp-os"
     weight: 
 ---
 
@@ -14,7 +14,7 @@ image:/documentation/images/Flash-micropython.jpg[Flashing `micropython.zip`,tit
 
 == Introduction
 
-Both Infinitime and Wasp-os are very cool OS'es for the link:/documentation/PineTime/_index[PineTime] and many people will want to try both. This is possible, even with a sealed device|
+Both Infinitime and Wasp-os are very cool OS'es for the link:/documentation/PineTime/_index[PineTime] and many people will want to try both. This is possible, even with a sealed device!
 
 Both devices use the same Nordic (legacy) DFU protocol for updating firmware over the air. But the BLE stack and the bootloaders for both are different. That's why we need to use the https://github.com/daniel-thompson/wasp-reloader[reloader]. However, instructions you find elsewhere (including https://www.youtube.com/watch?v=lPasAt1LJmo[Daniel Thompsons video]) are somewhat outdated.
 
@@ -41,7 +41,7 @@ All the zips you need can be found from the https://wasp-os.readthedocs.io/en/la
 * After flashing, it will boot using the Infinitime bootloader (green large pine cone), then it'll hang for a few seconds, then it'll show the reloader animation (blue smaller pine cone), and then it'll boot the wasp-os bootloader.
 * Make sure the watch is on the screen with the pine cone and arrow. If it is in a bootloop instead, then reboot the watch by holding the button until the arrow appears.
 * Now you can flash micropython with wasp-os: `wasp-os-0.4/build-pinetime/micropython.zip`
-* Wasp-os should now boot. Enjoy|
+* Wasp-os should now boot. Enjoy!
 
 == Wasp-os to InfiniTime
 
@@ -57,4 +57,4 @@ You can get newer binaries from the wasp-os projects CI system (see the https://
 * After flashing, the reloader will run (blue smaller pine cone), then it'll boot the InfiniTime bootloader (large pine cone) will run.
 * Boot the watch into recovery mode by holding the button until the pine cone turns red. It'll boot again (large pine cone will turn green) and then the InfiniTime logo will appear.
 * You can now flash InfiniTime 1.1.0 (or any other version): `pinetime-mcuboot-app-dfu-1.1.0.zip`
-* InfiniTime should now boot. Enjoy|
+* InfiniTime should now boot. Enjoy!

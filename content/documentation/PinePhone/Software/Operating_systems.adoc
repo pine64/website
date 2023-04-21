@@ -280,7 +280,7 @@ Current version is Debian Bookworm.
 
 * https://images.mobian.org/pinephone/[Images]
 
-NOTE: Tow-Boot is required to be able to boot the images, see https://wiki.mobian-project.org/doku.php?id&#61;install-linux[here]|
+NOTE: Tow-Boot is required to be able to boot the images, see https://wiki.mobian-project.org/doku.php?id&#61;install-linux[here]!
 
 |===
 2+| Default credentials
@@ -451,7 +451,7 @@ You will also find information in our wiki on how to report issues (Contributing
 image:/documentation/images/PostmarketOS_logo.png[width=100]
 
 postmarketOS extends https://www.alpinelinux.org/[Alpine Linux] to run on smartphones and other mobile devices.
-It offers various user interfaces (Phosh, Plasma Mobile, Sxmo, Plasma Desktop, Gnome 3, Kodi, XFCE4, ...).
+It offers various user interfaces (Phosh, Plasma Mobile, Sxmo, Plasma Desktop, Gnome 3, Kodi, XFCE4 and others).
 
 ==== Download
 
@@ -495,7 +495,8 @@ https://sailfishos.org/[Sailfish OS] is a Linux-based operating system based on 
 The Sailfish OS image is built on Gitlab CI. The latest image can be installed using the https://raw.githubusercontent.com/sailfish-on-dontbeevil/flash-it/master/flash-it.sh[flashing script].
 
 The script downloads the image and bootloader from the CI, extracts everything and burns it onto the SD card.
-Note: The script will format and erase the SD card|
+
+NOTE: The script will format and erase the SD card!
 
 Instructions:
 . Download the flashing script
@@ -505,7 +506,7 @@ Instructions:
 . Execute it: `./flash-it.sh`
 . Follow the instructions. Some commands in the script require root permissions (for example: mounting and flashing the SD card).
 
-* When asked where to flash, type 'raw' and it will build the image on your computer. Otherwise define the path /dev/....  to flash to card or internal emmc.
+When asked where to flash, type 'raw' and it will build the image on your computer. Otherwise define the path */dev/[...]*.  to flash to card or internal emmc.
 
 *username/password*
 

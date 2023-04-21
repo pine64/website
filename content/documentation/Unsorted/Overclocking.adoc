@@ -9,13 +9,13 @@ menu:
     weight: 
 ---
 
-WARNING: There is the possibility of damaging your equipment by overclocking. Do so at your own risk|
+WARNING: There is the possibility of damaging your equipment by overclocking. Do so at your own risk!
 
 TIP: This page is incomplete, you're welcome to improve it.
 
 TIP: All information regarding clock speeds, voltages and more are stored in the DTB (Device Tree Blob). You can learn more about it https://elinux.org/Device_Tree_Reference[here].
 
-Overclocking is a way to get more performance out of the system by running it at higher clock speeds than the factory default, usually while putting out more heat and using more power (You can also downclock to possibly reduce power consumption and thermals at the cost of performance). It is highly recommended that you avoid overvolting the device, as that has a high risk of damaging the hardware, hence the warning at the beginning of this page. However, just some slight overclocks without the added voltage can not only improve performance, but not carry as much risk (Still: Do at your own risk|). It should be noted however that overclocking can cause instability, so you will need to test and see what values work best with your device (There is a silicon lottery for the Pinephone's hardware).
+Overclocking is a way to get more performance out of the system by running it at higher clock speeds than the factory default, usually while putting out more heat and using more power (You can also downclock to possibly reduce power consumption and thermals at the cost of performance). It is highly recommended that you avoid overvolting the device, as that has a high risk of damaging the hardware, hence the warning at the beginning of this page. However, just some slight overclocks without the added voltage can not only improve performance, but not carry as much risk (Still: Do at your own risk!). It should be noted however that overclocking can cause instability, so you will need to test and see what values work best with your device (There is a silicon lottery for the Pinephone's hardware).
 
 == A64-based devices
 

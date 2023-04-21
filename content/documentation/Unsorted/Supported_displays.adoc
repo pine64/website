@@ -17,7 +17,7 @@ IMPORTANT: Contribute to it by looking for MIPI-DSI panels in `drivers/gpu/drm/p
 
 === MIPI Channels and Lanes
 
-The MIPI Lanes number is given in a format of `channels`&times;`lanes`. Before buying one, make sure that your SBC has enough channels and lanes to drive the display|
+The MIPI Lanes number is given in a format of `channels`&times;`lanes`. Before buying one, make sure that your SBC has enough channels and lanes to drive the display!
 
 * *ROCKPro64:* 2&times;4
 * *Quartz64 Model A:* 1&times;4

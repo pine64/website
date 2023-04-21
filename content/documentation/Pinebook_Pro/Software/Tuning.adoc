@@ -66,7 +66,7 @@ Here are some hints on what you can do to customize the Pinebook Pro's previous 
 
 When you first get your Pinebook Pro, you should consider setting strong passwords and making the default account your own.
 
-* Reboot (this is just to ensure all background processes belong to the user are not running... there are other ways to achieve this but this way is easy)
+* Reboot (this is just to ensure all background processes belong to the user are not running. There are other ways to achieve this but this way is easy)
 * Once the machine reboots press Alt-Ctrl-F1 to bring up a text terminal
 * Login as root (login: root, password: root)
 * Set a strong password for the root user using the following command and it's prompts:

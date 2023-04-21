@@ -18,5 +18,5 @@ Here are some companion apps:
 * https://github.com/ZephyrLabs/PinetimeFlasher[PinetimeFlasher] (Windows) - Companion desktop app, only supports flashing firmware.
 * https://apps.apple.com/us/app/nrf-connect-for-mobile/id1054362403[nRFConnect] (iOS) - Only supports flashing firmware.  The app is closed source and versions after 4.24.3 don't work for the PineTime anymore
 * https://github.com/xan-m/InfiniLink[InfiniLink] (iOS) - Companion mobile app in development. Supports updating firmware/bootloader, setting date and time, Apple Music controls, and battery and heart rate data.
-* https://gitea.arsenm.dev/Arsen6331/itd[itd] (Linux)
+* https://gitea.elara.ws/Elara6331/itd[ITD] (Linux)
 

@@ -16,7 +16,7 @@ menu:
 . The PhoenixCard software from Allwinner.
 . You can download it https://drive.google.com/file/d/0B0cEs0lxTtL3VmstaEFfbmU1NFk/view?usp=sharing[here]
 . A firmware image (.img files)
-. A SD-Card (best Class 10 with 8GB or more SD-Card) - backup everything first, the Card will be formatted|
+. A SD-Card (best Class 10 with 8GB or more SD-Card) - backup everything first, the Card will be formatted!
 . An external SD-Card Reader
 . A Windows PC
 
