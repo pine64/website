@@ -133,7 +133,7 @@ The community chat platforms are the following:
 
 There is also an unofficial Matrix Space at https://matrix.to/#/#pine64-space:matrix.org[#pine64-space:matrix.org] for supported clients that organizes all of the above matrix channels into one place.
 
-=== Notes
+=== Notes regarding the chat
 
 PINE64 community is not some always responding, restless commercial customer service, or some sort of almighty existence that can resolve all your problems. When participating in community discussions, please be patient and do not expect questions to be answered immediately, certainly, or currently.
 
