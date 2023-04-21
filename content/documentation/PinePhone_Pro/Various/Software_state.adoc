@@ -13,7 +13,7 @@ Presently the PinePhone Pro Explorer Edition is aimed at *Linux developers with 
 
 Bear in mind that the software for these smartphones is still in a very early stage, with most of the software being in alpha or beta state. That's especially also the case for scalability of applications, their availability and practicability, any hardware function implementations and the firmware. The software is provided as is. There is no warranty for the software, not even for merchantability or fitness for a particular purpose.
 
-The following table lists the feature functionality status of the unaltered pre-installed factory image of the current shipping batch and as comparison an up-to-date reference image (no responsibility is accepted for the accuracy of this information, the list is provided and updated by the community). If you have any questions regarding the current state of the software or of specific features working, please don't hesitate to ask in the link:/documentation/_index#Community and Support[community chat] *before buying the device*:
+The following table lists the feature functionality status of the unaltered pre-installed factory image of the current shipping batch and as comparison an up-to-date reference image (no responsibility is accepted for the accuracy of this information, the list is provided and updated by the community). If you have any questions regarding the current state of the software or of specific features working, please don't hesitate to ask in the link:/documentation/_index#Community_and_Support[community chat] *before buying the device*:
 
 * Discord: _#pinephone_ under https://discord.gg/pine64
 * IRC: _#pinephone_ on _irc.pine64.org_. Note: please consider Matrix, Discord or Telegram due to the volatile nature of IRC

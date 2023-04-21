@@ -112,7 +112,7 @@ This is a CLI that runs in a terminal console. Get the latest zip file for Linux
  sudo ./blisp write -c bl70x --reset Pinecilv2_EN.bin
 
 . After a successful update, unplug and reboot it, then hold down `[-]` for ~2 seconds to see the new version.
-. See link:#Troubleshooting_V2_Flashing|troubleshooting[troubleshooting] down below if it does not flash.
+. See link:#Troubleshooting_V2_Flashing[troubleshooting] down below if it does not flash.
 . To use V2 with BLE Apps, see link:#Bluetooth_(BLE)_Apps[here].
 
 == Troubleshoot V2 Flashing

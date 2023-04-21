@@ -59,22 +59,22 @@ https://forum.pine64.org/showthread.php?tid=8058[a PDF mapping the pins from the
 | KEYADC | KEYADC | ADC | A16 | AI | ADC input for key
 
 |13
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO363|GPIO363[GPIO363] | PL11 | GPIO | PL11 | GPIO | General Purpose Input Output #363
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO363[GPIO363] | PL11 | GPIO | PL11 | GPIO | General Purpose Input Output #363
 
 |14
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO356|GPIO356[GPIO356] | PL4 | GPIO | PL4 | GPIO | General Purpose Input Output #356
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO356[GPIO356] | PL4 | GPIO | PL4 | GPIO | General Purpose Input Output #356
 
 |15
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO360|GPIO360[GPIO360] | PL8 | GPIO | PL8 | GPIO | General Purpose Input Output #360
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO360[GPIO360] | PL8 | GPIO | PL8 | GPIO | General Purpose Input Output #360
 
 |16
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO358|GPIO358[GPIO358] | PL6 | GPIO | PL6 | GPIO | General Purpose Input Output #358
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO358[GPIO358] | PL6 | GPIO | PL6 | GPIO | General Purpose Input Output #358
 
 |17
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO361|GPIO361[GPIO361] | PL9 | GPIO | PL9 | GPIO | General Purpose Input Output #361
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO361[GPIO361] | PL9 | GPIO | PL9 | GPIO | General Purpose Input Output #361
 
 |18
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO357|GPIO357[GPIO357] | PL5 | GPIO | PL5 | GPIO | General Purpose Input Output #357
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO357[GPIO357] | PL5 | GPIO | PL5 | GPIO | General Purpose Input Output #357
 
 |19
 | GND | GND | POWER | ? | G |
@@ -83,34 +83,34 @@ https://forum.pine64.org/showthread.php?tid=8058[a PDF mapping the pins from the
 | GND | GND | POWER | ? | G |
 
 |21
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO354|GPIO354[GPIO354] | PL2 | GPIO | PL2 | GPIO | General Purpose Input Output #354
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO354[GPIO354] | PL2 | GPIO | PL2 | GPIO | General Purpose Input Output #354
 
 |22
 | HP-DET | HP-DET | AUDIO_CODEC | D11 | AI | Headphone Detect
 
 |23
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO355|GPIO355[GPIO355] | PL3 | GPIO | PL3 | GPIO | General Purpose Input Output #355
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO355[GPIO355] | PL3 | GPIO | PL3 | GPIO | General Purpose Input Output #355
 
 |24
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO359|GPIO359[GPIO359] | PL7 | GPIO | PL7 | GPIO | General Purpose Input Output #359
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO359[GPIO359] | PL7 | GPIO | PL7 | GPIO | General Purpose Input Output #359
 
 |25
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO69|GPIO69[GPIO69] | PC5 | GPIO | PC5 | GPIO | General Purpose Input Output #69
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO69[GPIO69] | PC5 | GPIO | PC5 | GPIO | General Purpose Input Output #69
 
 |26
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO234|GPIO234[GPIO234] | PH10 | GPIO | PH10 | GPIO | General Purpose Input Output #234
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO234[GPIO234] | PH10 | GPIO | PH10 | GPIO | General Purpose Input Output #234
 
 |27
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO37|GPIO37[GPIO37] | PB5 | GPIO | PB5 | GPIO | General Purpose Input Output #37
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO37[GPIO37] | PB5 | GPIO | PB5 | GPIO | General Purpose Input Output #37
 
 |28
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO36|GPIO36[GPIO36] | PB4 | GPIO | PB4 | GPIO | General Purpose Input Output #36
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO36[GPIO36] | PB4 | GPIO | PB4 | GPIO | General Purpose Input Output #36
 
 |29
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO39|GPIO39[GPIO39] | PB7 | GPIO | PB7 | GPIO | General Purpose Input Output #39
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO39[GPIO39] | PB7 | GPIO | PB7 | GPIO | General Purpose Input Output #39
 
 |30
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO35|GPIO35[GPIO35] | PB3 | GPIO | PB3 | GPIO | General Purpose Input Output #35
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO35[GPIO35] | PB3 | GPIO | PB3 | GPIO | General Purpose Input Output #35
 
 |31
 | GND | GND | POWER | ? | G |
@@ -119,28 +119,28 @@ https://forum.pine64.org/showthread.php?tid=8058[a PDF mapping the pins from the
 | GND | GND | POWER | ? | G |
 
 |33
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO41|GPIO41[GPIO41] | PB9 | GPIO | PB9 | GPIO | General Purpose Input Output #41
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO41[GPIO41] | PB9 | GPIO | PB9 | GPIO | General Purpose Input Output #41
 
 |34
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO40|GPIO40[GPIO40] | PB8 | GPIO | PB8 | GPIO | General Purpose Input Output #40
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO40[GPIO40] | PB8 | GPIO | PB8 | GPIO | General Purpose Input Output #40
 
 |35
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO32|GPIO32[GPIO32] | PB0 | GPIO | PB0 | GPIO | General Purpose Input Output #32
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO32[GPIO32] | PB0 | GPIO | PB0 | GPIO | General Purpose Input Output #32
 
 |36
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO34|GPIO34[GPIO34] | PB2 | GPIO | PB2 | GPIO | General Purpose Input Output #34
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO34[GPIO34] | PB2 | GPIO | PB2 | GPIO | General Purpose Input Output #34
 
 |37
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO227|GPIO227[GPIO227] | PH3 | GPIO | PH3 | GPIO | General Purpose Input Output #227
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO227[GPIO227] | PH3 | GPIO | PH3 | GPIO | General Purpose Input Output #227
 
 |38
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO232|GPIO232[GPIO232] | PH8 | GPIO | PH8 | GPIO | General Purpose Input Output #232
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO232[GPIO232] | PH8 | GPIO | PH8 | GPIO | General Purpose Input Output #232
 
 |39
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO38|GPIO38[GPIO38] | PB6 | GPIO | PB6 | GPIO | General Purpose Input Output #38
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO38[GPIO38] | PB6 | GPIO | PB6 | GPIO | General Purpose Input Output #38
 
 |40
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO103|GPIO103[GPIO103] | PD7 | GPIO | PD7 | GPIO | General Purpose Input Output #103
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO103[GPIO103] | PD7 | GPIO | PD7 | GPIO | General Purpose Input Output #103
 
 |41
 | GND | GND | POWER | ? | G |
@@ -149,40 +149,40 @@ https://forum.pine64.org/showthread.php?tid=8058[a PDF mapping the pins from the
 | GND | GND | POWER | ? | G |
 
 |43
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO224|GPIO224[GPIO224] | PH0 | GPIO | PH0 | GPIO | General Purpose Input Output #224
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO224[GPIO224] | PH0 | GPIO | PH0 | GPIO | General Purpose Input Output #224
 
 |44
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO101|GPIO101[GPIO101] | PD5 | GPIO | PD5 | GPIO | General Purpose Input Output #101
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO101[GPIO101] | PD5 | GPIO | PD5 | GPIO | General Purpose Input Output #101
 
 |45
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO102|GPIO102[GPIO102] | PD6 | GPIO | PD6 | GPIO | General Purpose Input Output #102
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO102[GPIO102] | PD6 | GPIO | PD6 | GPIO | General Purpose Input Output #102
 
 |46
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO225|GPIO225[GPIO225] | PH1 | GPIO | PH1 | GPIO | General Purpose Input Output #225
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO225[GPIO225] | PH1 | GPIO | PH1 | GPIO | General Purpose Input Output #225
 
 |47
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO116|GPIO116[GPIO116] | PD20 | GPIO | PD20 | GPIO | General Purpose Input Output #116
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO116[GPIO116] | PD20 | GPIO | PD20 | GPIO | General Purpose Input Output #116
 
 |48
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO107|GPIO107[GPIO107] | PD11 | GPIO | PD11 | GPIO | General Purpose Input Output #107
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO107[GPIO107] | PD11 | GPIO | PD11 | GPIO | General Purpose Input Output #107
 
 |49
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO97|GPIO97[GPIO97] | PD1 | GPIO | PD1 | GPIO | General Purpose Input Output #97
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO97[GPIO97] | PD1 | GPIO | PD1 | GPIO | General Purpose Input Output #97
 
 |50
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO120|GPIO120[GPIO120] | PD24 | GPIO | PD24 | GPIO | General Purpose Input Output #120
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO120[GPIO120] | PD24 | GPIO | PD24 | GPIO | General Purpose Input Output #120
 
 |51
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO106|GPIO106[GPIO106] | PD10 | GPIO | PD10 | GPIO | General Purpose Input Output #106
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO106[GPIO106] | PD10 | GPIO | PD10 | GPIO | General Purpose Input Output #106
 
 |52
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO100|GPIO100[GPIO100] | PD4 | GPIO | PD4 | GPIO | General Purpose Input Output #100
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO100[GPIO100] | PD4 | GPIO | PD4 | GPIO | General Purpose Input Output #100
 
 |53
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO118|GPIO118[GPIO118] | PD22 | GPIO | PD22 | GPIO | General Purpose Input Output #118
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO118[GPIO118] | PD22 | GPIO | PD22 | GPIO | General Purpose Input Output #118
 
 |54
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO133|GPIO133[GPIO133] | PE5 | GPIO | PE5 | GPIO | General Purpose Input Output #133
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO133[GPIO133] | PE5 | GPIO | PE5 | GPIO | General Purpose Input Output #133
 
 |55
 | GND | GND | POWER | ? | G |
@@ -191,40 +191,40 @@ https://forum.pine64.org/showthread.php?tid=8058[a PDF mapping the pins from the
 | GND | GND | POWER | ? | G |
 
 |57
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO98|GPIO98[GPIO98] | PD2 | GPIO | PD2 | GPIO | General Purpose Input Output #98
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO98[GPIO98] | PD2 | GPIO | PD2 | GPIO | General Purpose Input Output #98
 
 |58
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO128|GPIO128[GPIO128] | PE0 | GPIO | PE0 | GPIO | General Purpose Input Output #128
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO128[GPIO128] | PE0 | GPIO | PE0 | GPIO | General Purpose Input Output #128
 
 |59
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO137|GPIO137[GPIO137] | PE9 | GPIO | PE9 | GPIO | General Purpose Input Output #137
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO137[GPIO137] | PE9 | GPIO | PE9 | GPIO | General Purpose Input Output #137
 
 |60
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO96|GPIO96[GPIO96] | PD0 | GPIO | PD0 | GPIO | General Purpose Input Output #96
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO96[GPIO96] | PD0 | GPIO | PD0 | GPIO | General Purpose Input Output #96
 
 |61
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO99|GPIO99[GPIO99] | PD3 | GPIO | PD3 | GPIO | General Purpose Input Output #99
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO99[GPIO99] | PD3 | GPIO | PD3 | GPIO | General Purpose Input Output #99
 
 |62
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO226|GPIO226[GPIO226] | PH2 | GPIO | PH2 | GPIO | General Purpose Input Output #226
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO226[GPIO226] | PH2 | GPIO | PH2 | GPIO | General Purpose Input Output #226
 
 |63
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO194|GPIO194[GPIO194] | PG2 | GPIO | PG2 | GPIO | General Purpose Input Output #194
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO194[GPIO194] | PG2 | GPIO | PG2 | GPIO | General Purpose Input Output #194
 
 |64
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO228|GPIO228[GPIO228] | PH4 | GPIO | PH4 | GPIO | General Purpose Input Output #228
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO228[GPIO228] | PH4 | GPIO | PH4 | GPIO | General Purpose Input Output #228
 
 |65
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO135|GPIO135[GPIO135] | PE7 | GPIO | PE7 | GPIO | General Purpose Input Output #135
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO135[GPIO135] | PE7 | GPIO | PE7 | GPIO | General Purpose Input Output #135
 
 |66
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO230|GPIO230[GPIO230] | PH6 | GPIO | PH6 | GPIO | General Purpose Input Output #230
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO230[GPIO230] | PH6 | GPIO | PH6 | GPIO | General Purpose Input Output #230
 
 |67
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO235|GPIO235[GPIO235] | PH11 | GPIO | PH11 | GPIO | General Purpose Input Output #235
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO235[GPIO235] | PH11 | GPIO | PH11 | GPIO | General Purpose Input Output #235
 
 |68
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO229|GPIO229[GPIO229] | PH5 | GPIO | PH5 | GPIO | General Purpose Input Output #229
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO229[GPIO229] | PH5 | GPIO | PH5 | GPIO | General Purpose Input Output #229
 
 |69
 | GND | GND | POWER | ? | G |
@@ -233,70 +233,70 @@ https://forum.pine64.org/showthread.php?tid=8058[a PDF mapping the pins from the
 | GND | GND | POWER | ? | G |
 
 |71
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO231|GPIO231[GPIO231] | PH7 | GPIO | PH7 | GPIO | General Purpose Input Output #231
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO231[GPIO231] | PH7 | GPIO | PH7 | GPIO | General Purpose Input Output #231
 
 |72
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO192|GPIO192[GPIO192] | PG0 | GPIO | PG0 | GPIO | General Purpose Input Output #192
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO192[GPIO192] | PG0 | GPIO | PG0 | GPIO | General Purpose Input Output #192
 
 |73
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO104|GPIO104[GPIO104] | PD8 | GPIO | PD8 | GPIO | General Purpose Input Output #104
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO104[GPIO104] | PD8 | GPIO | PD8 | GPIO | General Purpose Input Output #104
 
 |74
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO117|GPIO117[GPIO117] | PD21 | GPIO | PD21 | GPIO | General Purpose Input Output #117
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO117[GPIO117] | PD21 | GPIO | PD21 | GPIO | General Purpose Input Output #117
 
 |75
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO33|GPIO33[GPIO33] | PB1 | GPIO | PB1 | GPIO | General Purpose Input Output #33
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO33[GPIO33] | PB1 | GPIO | PB1 | GPIO | General Purpose Input Output #33
 
 |76
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO119|GPIO119[GPIO119] | PD23 | GPIO | PD23 | GPIO | General Purpose Input Output #119
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO119[GPIO119] | PD23 | GPIO | PD23 | GPIO | General Purpose Input Output #119
 
 |77
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO233|GPIO233[GPIO233] | PH9 | GPIO | PH9 | GPIO | General Purpose Input Output #233
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO233[GPIO233] | PH9 | GPIO | PH9 | GPIO | General Purpose Input Output #233
 
 |78
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO113|GPIO113[GPIO113] | PD17 | GPIO | PD17 | GPIO | General Purpose Input Output #113
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO113[GPIO113] | PD17 | GPIO | PD17 | GPIO | General Purpose Input Output #113
 
 |79
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO115|GPIO115[GPIO115] | PD19 | GPIO | PD19 | GPIO | General Purpose Input Output #115
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO115[GPIO115] | PD19 | GPIO | PD19 | GPIO | General Purpose Input Output #115
 
 |80
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO111|GPIO111[GPIO111] | PD15 | GPIO | PD15 | GPIO | General Purpose Input Output #111
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO111[GPIO111] | PD15 | GPIO | PD15 | GPIO | General Purpose Input Output #111
 
 |81
 | GND | GND | POWER | ? | G |
 
 |82
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO112|GPIO112[GPIO112] | PD16 | GPIO | PD16 | GPIO | General Purpose Input Output #112
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO112[GPIO112] | PD16 | GPIO | PD16 | GPIO | General Purpose Input Output #112
 
 |83
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO105|GPIO105[GPIO105] | PD9 | GPIO | PD9 | GPIO | General Purpose Input Output #105
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO105[GPIO105] | PD9 | GPIO | PD9 | GPIO | General Purpose Input Output #105
 
 |84
 | GND | GND | POWER | ? | G |
 
 |85
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO114|GPIO114[GPIO114] | PD18 | GPIO | PD18 | GPIO | General Purpose Input Output #114
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO114[GPIO114] | PD18 | GPIO | PD18 | GPIO | General Purpose Input Output #114
 
 |86
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO203|GPIO203[GPIO203] | PG11 | GPIO | PG11 | GPIO | General Purpose Input Output #203
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO203[GPIO203] | PG11 | GPIO | PG11 | GPIO | General Purpose Input Output #203
 
 |87
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO110|GPIO110[GPIO110] | PD14 | GPIO | PD14 | GPIO | General Purpose Input Output #110
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO110[GPIO110] | PD14 | GPIO | PD14 | GPIO | General Purpose Input Output #110
 
 |88
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO200|GPIO200[GPIO200] | PG8 | GPIO | PG8 | GPIO | General Purpose Input Output #200
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO200[GPIO200] | PG8 | GPIO | PG8 | GPIO | General Purpose Input Output #200
 
 |89
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO109|GPIO109[GPIO109] | PD13 | GPIO | PD13 | GPIO | General Purpose Input Output #109
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO109[GPIO109] | PD13 | GPIO | PD13 | GPIO | General Purpose Input Output #109
 
 |90
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO198|GPIO198[GPIO198] | PG6 | GPIO | PG6 | GPIO | General Purpose Input Output #198
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO198[GPIO198] | PG6 | GPIO | PG6 | GPIO | General Purpose Input Output #198
 
 |91
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO108|GPIO108[GPIO108] | PD12 | GPIO | PD12 | GPIO | General Purpose Input Output #108
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO108[GPIO108] | PD12 | GPIO | PD12 | GPIO | General Purpose Input Output #108
 
 |92
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO144|GPIO144[GPIO144] | PE16 | GPIO | PE16 | GPIO | General Purpose Input Output #144
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO144[GPIO144] | PE16 | GPIO | PE16 | GPIO | General Purpose Input Output #144
 
 |93
 | GND | GND | POWER | ? | G |
@@ -305,28 +305,28 @@ https://forum.pine64.org/showthread.php?tid=8058[a PDF mapping the pins from the
 | GND | GND | POWER | ? | G |
 
 |95
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO132|GPIO132[GPIO132] | PE4 | GPIO | PE4 | GPIO | General Purpose Input Output #132
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO132[GPIO132] | PE4 | GPIO | PE4 | GPIO | General Purpose Input Output #132
 
 |96
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO134|GPIO134[GPIO134] | PE6 | GPIO | PE6 | GPIO | General Purpose Input Output #134
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO134[GPIO134] | PE6 | GPIO | PE6 | GPIO | General Purpose Input Output #134
 
 |97
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO205|GPIO205[GPIO205] | PG13 | GPIO | PG13 | GPIO | General Purpose Input Output #205
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO205[GPIO205] | PG13 | GPIO | PG13 | GPIO | General Purpose Input Output #205
 
 |98
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO140|GPIO140[GPIO140] | PE12 | GPIO | PE12 | GPIO | General Purpose Input Output #140
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO140[GPIO140] | PE12 | GPIO | PE12 | GPIO | General Purpose Input Output #140
 
 |99
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO202|GPIO202[GPIO202] | PG10 | GPIO | PG10 | GPIO | General Purpose Input Output #202
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO202[GPIO202] | PG10 | GPIO | PG10 | GPIO | General Purpose Input Output #202
 
 |100
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO130|GPIO130[GPIO130] | PE2 | GPIO | PE2 | GPIO | General Purpose Input Output #130
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO130[GPIO130] | PE2 | GPIO | PE2 | GPIO | General Purpose Input Output #130
 
 |101
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO131|GPIO131[GPIO131] | PE3 | GPIO | PE3 | GPIO | General Purpose Input Output #131
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO131[GPIO131] | PE3 | GPIO | PE3 | GPIO | General Purpose Input Output #131
 
 |102
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO129|GPIO129[GPIO129] | PE1 | GPIO | PE1 | GPIO | General Purpose Input Output #129
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO129[GPIO129] | PE1 | GPIO | PE1 | GPIO | General Purpose Input Output #129
 
 |103
 | GND | GND | POWER | ? | G |
@@ -335,31 +335,31 @@ https://forum.pine64.org/showthread.php?tid=8058[a PDF mapping the pins from the
 | GND | GND | POWER | ? | G |
 
 |105
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO136|GPIO136[GPIO136] | PE8 | GPIO | PE8 | GPIO | General Purpose Input Output #136
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO136[GPIO136] | PE8 | GPIO | PE8 | GPIO | General Purpose Input Output #136
 
 |106
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO196|GPIO196[GPIO196] | PG4 | GPIO | PG4 | GPIO | General Purpose Input Output #196
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO196[GPIO196] | PG4 | GPIO | PG4 | GPIO | General Purpose Input Output #196
 
 |107
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO138|GPIO138[GPIO138] | PE10 | GPIO | PE10 | GPIO | General Purpose Input Output #138
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO138[GPIO138] | PE10 | GPIO | PE10 | GPIO | General Purpose Input Output #138
 
 |108
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO193|GPIO193[GPIO193] | PG1 | GPIO | PG1 | GPIO | General Purpose Input Output #193
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO193[GPIO193] | PG1 | GPIO | PG1 | GPIO | General Purpose Input Output #193
 
 |109
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO145|GPIO145[GPIO145] | PE17 | GPIO | PE17 | GPIO | General Purpose Input Output #145
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO145[GPIO145] | PE17 | GPIO | PE17 | GPIO | General Purpose Input Output #145
 
 |110
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO195|GPIO195[GPIO195] | PG3 | GPIO | PG3 | GPIO | General Purpose Input Output #195
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO195[GPIO195] | PG3 | GPIO | PG3 | GPIO | General Purpose Input Output #195
 
 |111
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO139|GPIO139[GPIO139] | PE11 | GPIO | PE11 | GPIO | General Purpose Input Output #139
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO139[GPIO139] | PE11 | GPIO | PE11 | GPIO | General Purpose Input Output #139
 
 |112
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO197|GPIO197[GPIO197] | PG5 | GPIO | PG5 | GPIO | General Purpose Input Output #197
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO197[GPIO197] | PG5 | GPIO | PG5 | GPIO | General Purpose Input Output #197
 
 |113
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO141|GPIO141[GPIO141] | PE13 | GPIO | PE13 | GPIO | General Purpose Input Output #141
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO141[GPIO141] | PE13 | GPIO | PE13 | GPIO | General Purpose Input Output #141
 
 |114
 | GND | GND | POWER | ? | G |
@@ -371,16 +371,16 @@ https://forum.pine64.org/showthread.php?tid=8058[a PDF mapping the pins from the
 | DSI-D1P | MDSI-D1P | MIPI_DSI | P22 | AO | MIPI DSI Positive Differential Data Line 1
 
 |117
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO201|GPIO201[GPIO201] | PG9 | GPIO | PG9 | GPIO | General Purpose Input Output #201
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO201[GPIO201] | PG9 | GPIO | PG9 | GPIO | General Purpose Input Output #201
 
 |118
 | DSI-D1N | MDSI-D1N | MIPI_DSI | R22 | AO | MIPI DSI Negative Differential Data Line 1
 
 |119
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO199|GPIO199[GPIO199] | PG7 | GPIO | PG7 | GPIO | General Purpose Input Output #199
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO199[GPIO199] | PG7 | GPIO | PG7 | GPIO | General Purpose Input Output #199
 
 |120
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO204|GPIO204[GPIO204] | PG12 | GPIO | PG12 | GPIO | General Purpose Input Output #204
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO204[GPIO204] | PG12 | GPIO | PG12 | GPIO | General Purpose Input Output #204
 
 |121
 | DSI-D0P | MDSI-D0P | MIPI_DSI | T22 | AO | MIPI DSI Positive Differential Data Line 0
@@ -410,22 +410,22 @@ https://forum.pine64.org/showthread.php?tid=8058[a PDF mapping the pins from the
 | DSI-CKN | MDSI-CKN | MIPI_DSI | P23 | AO | MIPI DSI Negative Differential Clock Line
 
 |130
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO72|GPIO72[GPIO72] | PC8 | GPIO | PC8 | GPIO | General Purpose Input Output #72
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO72[GPIO72] | PC8 | GPIO | PC8 | GPIO | General Purpose Input Output #72
 
 |131
 | GND | GND | POWER | ? | G |
 
 |132
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO71|GPIO71[GPIO71] | PC7 | GPIO | PC7 | GPIO | General Purpose Input Output #71
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO71[GPIO71] | PC7 | GPIO | PC7 | GPIO | General Purpose Input Output #71
 
 |133
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO79|GPIO79[GPIO79] | PC15 | GPIO | PC15 | GPIO | General Purpose Input Output #79
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO79[GPIO79] | PC15 | GPIO | PC15 | GPIO | General Purpose Input Output #79
 
 |134
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO64|GPIO64[GPIO64] | PC0 | GPIO | PC0 | GPIO | General Purpose Input Output #64
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO64[GPIO64] | PC0 | GPIO | PC0 | GPIO | General Purpose Input Output #64
 
 |135
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO68|GPIO68[GPIO68] | PC4 | GPIO | PC4 | GPIO | General Purpose Input Output #68
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO68[GPIO68] | PC4 | GPIO | PC4 | GPIO | General Purpose Input Output #68
 
 |136
 | VIDEO-HTX0P | HTX0P | HDMI | G22 | AO | HDMI Positive Differential Data Line 0
@@ -446,31 +446,31 @@ https://forum.pine64.org/showthread.php?tid=8058[a PDF mapping the pins from the
 | VIDEO-HTX2P | HTX2P | HDMI | D23 | AO | HDMI Positive Differential Data Line 2
 
 |142
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO66|GPIO66[GPIO66] | PC2 | GPIO | PC2 | GPIO | General Purpose Input Output #66
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO66[GPIO66] | PC2 | GPIO | PC2 | GPIO | General Purpose Input Output #66
 
 |143
 | VIDEO-HTX1P | HTX1P | HDMI | E23 | AO | HDMI Positive Differential Data Line 1
 
 |144
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO80|GPIO80[GPIO80] | PC16 | GPIO | PC16 | GPIO | General Purpose Input Output #80
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO80[GPIO80] | PC16 | GPIO | PC16 | GPIO | General Purpose Input Output #80
 
 |145
 | VIDEO-HTX1N | HTX1N | HDMI | F22 | AO | HDMI Negative Differential Data Line 1
 
 |146
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO76|GPIO76[GPIO76] | PC12 | GPIO | PC12 | GPIO | General Purpose Input Output #76
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO76[GPIO76] | PC12 | GPIO | PC12 | GPIO | General Purpose Input Output #76
 
 |147
 | GND | GND | POWER | ? | G |
 
 |148
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO67|GPIO67[GPIO67] | PC3 | GPIO | PC3 | GPIO | General Purpose Input Output #67
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO67[GPIO67] | PC3 | GPIO | PC3 | GPIO | General Purpose Input Output #67
 
 |149
 | VIDEO-TXCN | HTXCN | HDMI | H23 | AO | HDMI Negative Differential Clock Line
 
 |150
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO65|GPIO65[GPIO65] | PC1 | GPIO | PC1 | GPIO | General Purpose Input Output #65
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO65[GPIO65] | PC1 | GPIO | PC1 | GPIO | General Purpose Input Output #65
 
 |151
 | VIDEO-TXCP | HTXCP | HDMI | H22 | AO | HDMI Positive Differential Clock Line
@@ -479,19 +479,19 @@ https://forum.pine64.org/showthread.php?tid=8058[a PDF mapping the pins from the
 | GND | GND | POWER | ? | G |
 
 |153
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO73|GPIO73[GPIO73] | PC9 | GPIO | PC9 | GPIO | General Purpose Input Output #73
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO73[GPIO73] | PC9 | GPIO | PC9 | GPIO | General Purpose Input Output #73
 
 |154
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO70|GPIO70[GPIO70] | PC6 | GPIO | PC6 | GPIO | General Purpose Input Output #70
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO70[GPIO70] | PC6 | GPIO | PC6 | GPIO | General Purpose Input Output #70
 
 |155
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO78|GPIO78[GPIO78] | PC14 | GPIO | PC14 | GPIO | General Purpose Input Output #78
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO78[GPIO78] | PC14 | GPIO | PC14 | GPIO | General Purpose Input Output #78
 
 |156
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO74|GPIO74[GPIO74] | PC10 | GPIO | PC10 | GPIO | General Purpose Input Output #74
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO74[GPIO74] | PC10 | GPIO | PC10 | GPIO | General Purpose Input Output #74
 
 |157
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO77|GPIO77[GPIO77] | PC13 | GPIO | PC13 | GPIO | General Purpose Input Output #77
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO77[GPIO77] | PC13 | GPIO | PC13 | GPIO | General Purpose Input Output #77
 
 |158
 | USB1-DP | USB1-DP | USB | B23 | A I/O | USB 1 Data Positive
@@ -515,10 +515,10 @@ https://forum.pine64.org/showthread.php?tid=8058[a PDF mapping the pins from the
 | VIDEO-HPD | HHPD | HDMI | E21 | I/O | HDMI Hot Plug Detection
 
 |165
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO75|GPIO75[GPIO75] | PC11 | GPIO | PC11 | GPIO | General Purpose Input Output #75
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO75[GPIO75] | PC11 | GPIO | PC11 | GPIO | General Purpose Input Output #75
 
 |166
-| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO362|GPIO362[GPIO362] | PL10 | GPIO | PL10 | GPIO | General Purpose Input Output #362
+| link:/documentation/SOPINE/GPIO_alternate_functions_table#GPIO362[GPIO362] | PL10 | GPIO | PL10 | GPIO | General Purpose Input Output #362
 
 |167
 | VIDEO-CEC | HCEC | HDMI | F21 | I/O | HDMI CEC
@@ -542,7 +542,7 @@ https://forum.pine64.org/showthread.php?tid=8058[a PDF mapping the pins from the
 | USB0-DM | USB0-DM | USB | B22 | A I/O | USB 0 Data Negative
 
 |174
-| GPIO0-link:/documentation/SOPINE/GPIO_alternate_functions_table#LDO|LDO[LDO] | GPIO0 | POWER | ? | P | 3.3V@100mA from LDO for Capacitive Touch Screen I2C interface as pull-up and other purposes with low power consumption
+| GPIO0-link:/documentation/SOPINE/GPIO_alternate_functions_table#LDO[LDO] | GPIO0 | POWER | ? | P | 3.3V@100mA from LDO for Capacitive Touch Screen I2C interface as pull-up and other purposes with low power consumption
 
 |175
 | CHG_LED | CHGLED | OTHER | 53 | O | Charger status indication

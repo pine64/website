@@ -48,7 +48,7 @@ The following accessory is made by the community:
 == Peripheral equipment
 
 === Hubs
-USB hubs do not require a custom driver and are therefore expected to be compatible with the PinePhone, as long as they are within the USB specification. On revisions the PinePhone mainboard revisions v1.1 and v1.2 the VCONN fix is required, on v1.2a and later the USB hub should work out of the box, see link:/documentation/PinePhone/_index#Hardware revisions[PinePhone].
+USB hubs do not require a custom driver and are therefore expected to be compatible with the PinePhone, as long as they are within the USB specification. On revisions the PinePhone mainboard revisions v1.1 and v1.2 the VCONN fix is required, on v1.2a and later the USB hub should work out of the box, see link:/documentation/PinePhone/_index#Hardware_revisions[PinePhone].
 
 === Bluetooth devices
 

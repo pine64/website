@@ -11,7 +11,7 @@ menu:
 
 In this section we document a variety of ways to stream video to the network from the link:/documentation/PineCube/_index[PineCube]. Unless specified otherwise, all of these examples have been tested on Ubuntu groovy (20.10). See https://github.com/ioerror/pinecube[this small project for the PineCube] for easy to use programs tuned for the PineCube.
 
-In the examples which use h264, we are currently encoding using the x264 library which is not very fast on this CPU. The SoC in the PineCube does have a hardware h264 encoder, which the authors of these examples have so far not tried to use. It appears that https://github.com/gtalusan/gst-plugin-cedar might provide easy access to it, however. Please update this wiki if you find out how to use the hardware encoder|
+In the examples which use h264, we are currently encoding using the x264 library which is not very fast on this CPU. The SoC in the PineCube does have a hardware h264 encoder, which the authors of these examples have so far not tried to use. It appears that https://github.com/gtalusan/gst-plugin-cedar might provide easy access to it, however. Please update this wiki if you find out how to use the hardware encoder! 
 
 == gstreamer: h264 HLS
 
@@ -29,13 +29,13 @@ In one terminal, run the camera capture pipeline:
 ```
 cd /dev/shm/hls/ &&
 media-ctl --set-v4l2 '"ov5640 1-003c":0[fmt:UYVY8_2X8/240x320@1/15]' &&
-gst-launch-1.0 v4l2src |video/x-raw,width=320,height=240,format=UYVY,framerate=15/1 |decodebin |videoconvert |video/x-raw,format=I420 |clockoverlay |timeoverlay valignment=bottom |x264enc speed-preset=ultrafast tune=zerolatency |mpegtsmux |hlssink target-duration=1 playlist-length=2 max-files=3
+gst-launch-1.0 v4l2src ! video/x-raw,width=320,height=240,format=UYVY,framerate=15/1 ! decodebin ! videoconvert ! video/x-raw,format=I420 ! clockoverlay ! timeoverlay valignment=bottom ! x264enc speed-preset=ultrafast tune=zerolatency ! mpegtsmux ! hlssink target-duration=1 playlist-length=2 max-files=3
 ```
 
 Alternatively it is possible to capture at a higher resolution:
 ```
 media-ctl --set-v4l2 '"ov5640 1-003c":0[fmt:UYVY8_2X8/1920x1080@1/15]'
-cd /dev/shm/hls/ && gst-launch-1.0 v4l2src |video/x-raw,width=1920,height=1080,format=UYVY,framerate=15/1 |decodebin |videoconvert |video/x-raw,format=I420 |clockoverlay |timeoverlay valignment=bottom |x264enc speed-preset=ultrafast tune=zerolatency |mpegtsmux |hlssink target-duration=1 playlist-length=2 max-files=3
+cd /dev/shm/hls/ && gst-launch-1.0 v4l2src ! video/x-raw,width=1920,height=1080,format=UYVY,framerate=15/1 ! decodebin ! videoconvert ! video/x-raw,format=I420 ! clockoverlay ! timeoverlay valignment=bottom ! x264enc speed-preset=ultrafast tune=zerolatency ! mpegtsmux ! hlssink target-duration=1 playlist-length=2 max-files=3
 ```
 
 In another, run a simple single threaded webserver which will serve html, javascript, and HLS to web clients:
@@ -53,7 +53,7 @@ Or with gst-play-1.0: `gst-play-1.0 http://pinecube:8000/playlist.m3u8` (or with
 
 To find out about other options you can configure in the `hlssink` gstreamer element, you can run `gst-inspect-1.0 hlssink`.
 
-It is worth noting here that the `hlssink` element in GStreamer is not widely used in production environments. It is handy for testing, but for real-world free-software HLS live streaming deployments the standard tool today (January 2021) is nginx's RTMP module which can be used with ffmpeg to produce "adaptive streams" which are re-encoded at varying quality levels. You can send data to an nginx-rtmp server from a gstreamer pipeline using the `rtmpsink` element. It is also worth noting that gstreamer has a new `hlssink2` element which we have not tested; perhaps in the future it will even have a webserver|
+It is worth noting here that the `hlssink` element in GStreamer is not widely used in production environments. It is handy for testing, but for real-world free-software HLS live streaming deployments the standard tool today (January 2021) is nginx's RTMP module which can be used with ffmpeg to produce "adaptive streams" which are re-encoded at varying quality levels. You can send data to an nginx-rtmp server from a gstreamer pipeline using the `rtmpsink` element. It is also worth noting that gstreamer has a new `hlssink2` element which we have not tested; perhaps in the future it will even have a webserver! 
 
 == v4l2rtspserver: h264 RTSP
 
@@ -93,9 +93,9 @@ You'll probably see about a 2-3s lag with this approach, possibly due to the H26
 
 GStreamer's RTSP server isn't an element you can use with gst-launch, but rather a library. We failed to build its example program, so instead used this very small 3rd party tool which is based on it: https://github.com/sfalexrog/gst-rtsp-launch/
 
-After building gst-rtsp-launch (which is relatively simple on Ubuntu groovy; just `apt install libgstreamer1.0-dev libgstrtspserver-1.0-dev` first), you can read JPEG data directly from the camera and stream it via RTSP: `media-ctl --set-v4l2 '"ov5640 1-003c":0[fmt:JPEG_1X8/1280x720]' && gst-rtsp-launch 'v4l2src |image/jpeg,width=1280,height=720 |rtpjpegpay name=pay0'`
+After building gst-rtsp-launch (which is relatively simple on Ubuntu groovy; just `apt install libgstreamer1.0-dev libgstrtspserver-1.0-dev` first), you can read JPEG data directly from the camera and stream it via RTSP: `media-ctl --set-v4l2 '"ov5640 1-003c":0[fmt:JPEG_1X8/1280x720]' && gst-rtsp-launch 'v4l2src ! image/jpeg,width=1280,height=720 ! rtpjpegpay name=pay0'`
 
-This stream can be played using `vlc rtsp://pinecube.local:8554/video` or mpv, ffmpeg, gst-play-1.0, etc. If you increase the resolution to 1920x1080, mpv and gst-play can still play it, but VLC will complain `The total received frame size exceeds the client's buffer size (2000000).  73602 bytes of trailing data will be dropped|` if you don't tell it to increase its buffer size with `--rtsp-frame-buffer-size=300000`.
+This stream can be played using `vlc rtsp://pinecube.local:8554/video` or mpv, ffmpeg, gst-play-1.0, etc. If you increase the resolution to 1920x1080, mpv and gst-play can still play it, but VLC will complain `The total received frame size exceeds the client's buffer size (2000000).  73602 bytes of trailing data will be dropped! ` if you don't tell it to increase its buffer size with `--rtsp-frame-buffer-size=300000`.
 
 == gstreamer: h264 RTSP
 
@@ -105,19 +105,19 @@ Left as an exercise to the reader (please update the wiki). Hint: involves bits 
 
 Configure camera: `media-ctl --set-v4l2 '"ov5640 1-003c":0[fmt:JPEG_1X8/1920x1080]'`
 
-Transmit with: `gst-launch-1.0 v4l2src |image/jpeg,width=1920,height=1080 |rtpjpegpay name=pay0 |udpsink host=$client_ip port=8000`
+Transmit with: `gst-launch-1.0 v4l2src ! image/jpeg,width=1920,height=1080 ! rtpjpegpay name=pay0 ! udpsink host=$client_ip port=8000`
 
-Receive with: `gst-launch-1.0 udpsrc port=8000 | application/x-rtp, encoding-name=JPEG,payload=26 | rtpjpegdepay | jpegdec | autovideosink`
+Receive with: `gst-launch-1.0 udpsrc port=8000 !  application/x-rtp, encoding-name=JPEG,payload=26 !  rtpjpegdepay !  jpegdec !  autovideosink`
 
-Note that the sender must specify the recipient's IP address in place of `$client_ip`; this can actually be a multicast address allowing for many receivers|(You'll need to specify a valid multicast address in the receivers' pipeline also; see `gst-inspect-1.0 udpsrc` and `gst-inspect-1.0 udpsink` for details.)
+Note that the sender must specify the recipient's IP address in place of `$client_ip`; this can actually be a multicast address allowing for many receivers! (You'll need to specify a valid multicast address in the receivers' pipeline also; see `gst-inspect-1.0 udpsrc` and `gst-inspect-1.0 udpsink` for details.)
 
 == gstreamer: JPEG RTP TCP
 
 Configure camera: `media-ctl --set-v4l2 '"ov5640 1-003c":0[fmt:JPEG_1X8/1920x1080]'`
 
-Transmit with: `gst-launch-1.0 v4l2src |image/jpeg,width=1920,height=1080 |rtpjpegpay name=pay0 |rtpstreampay |tcpserversink host=0.0.0.0 port=1234`
+Transmit with: `gst-launch-1.0 v4l2src ! image/jpeg,width=1920,height=1080 ! rtpjpegpay name=pay0 ! rtpstreampay ! tcpserversink host=0.0.0.0 port=1234`
 
-Receive with: `gst-launch-1.0 tcpclientsrc host=pinecube.local port=1234 |application/x-rtp-stream,encoding-name=JPEG |rtpstreamdepay |application/x-rtp, media=video, encoding-name=JPEG |rtpjpegdepay | jpegdec | autovideosink`
+Receive with: `gst-launch-1.0 tcpclientsrc host=pinecube.local port=1234 ! application/x-rtp-stream,encoding-name=JPEG ! rtpstreamdepay ! application/x-rtp, media=video, encoding-name=JPEG ! rtpjpegdepay !  jpegdec !  autovideosink`
 
 == gstreamer and socat: MJPEG HTTP server
 
@@ -128,11 +128,11 @@ This approach has the advantage of being relatively low latency (under a second)
 Gstreamer can almost do this by itself, as it has a multipartmux element which produces the headers which precede each frame. But sadly, despite various forum posts lamenting the lack of one over the last 12+ years, as of the end of the 50th year of the UNIX era (aka 2020), somehow nobody has yet gotten a webserver element merged in to gstreamer (which is necessary to produce the HTTP response, which is required for browsers other than firefox to play it). So, here is an absolutely minimal "webserver" which will get MJPEG displaying in a (single) browser.
 
 Create a file called `mjpeg-response.sh`:
- #|/bin/bash
+ #! /bin/bash
  media-ctl --set-v4l2 '"ov5640 1-003c":0[fmt:JPEG_1X8/1920x1080]'
  b="--duct_tape_boundary"
  echo -en "HTTP/1.1 200 OK\r\nContent-type: multipart/x-mixed-replace;boundary=$b\r\n\r\n"
- gst-launch-1.0 v4l2src |image/jpeg,width=1920,height=1080 |multipartmux boundary=$b |fdsink fd=2 2>&1 >/dev/null
+ gst-launch-1.0 v4l2src ! image/jpeg,width=1920,height=1080 ! multipartmux boundary=$b ! fdsink fd=2 2>&1 >/dev/null
 
 Make it executable: `chmod +x mjpeg-response.sh`
 
@@ -147,13 +147,13 @@ It's possible to set up the PineCube as a virtual camera video device (Video 4 L
 First, you will need to set up the pinecube with gstreamer much like the above gstreamer, but in 1280x720 resolution. Also, you will be streaming to the desktop machine using UDP, with IP address represented by $desktop below at UDP port 8000.
 
  media-ctl --set-v4l2 '"ov5640 1-003c":0[fmt:JPEG_1X8/1280x720]'
- gst-launch-1.0 v4l2src device=/dev/video0 |image/jpeg,width=1280,height=720,framerate=30/1 |rtpjpegpay name=pay0 |udpsink host=$desktop port=8000
+ gst-launch-1.0 v4l2src device=/dev/video0 ! image/jpeg,width=1280,height=720,framerate=30/1 ! rtpjpegpay name=pay0 ! udpsink host=$desktop port=8000
 
 On your desktop machine, you will need to install the gstreamer suite and the special v4l2loopback kernel module to bring the mjpeg stream to the Video 4 Linux device /dev/video10.
 
  sudo apt install gstreamer1.0-tools gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly v4l2loopback-dkms
  sudo modprobe v4l2loopback video_nr=10 max_buffers=32 exclusive_caps=1 # Creates /dev/video10 as a virtual v4l2 device, allocates increased buffers and exposes exclusive capabilities for chromium to find the video device
- gst-launch-1.0 udpsrc port=8000 |application/x-rtp, encoding-name=JPEG,payload=26,framerate=30/1 |rtpjpegdepay |jpegdec |video/x-raw, format=I420, width=1280, height=720 |autovideoconvert |v4l2sink device=/dev/video10
+ gst-launch-1.0 udpsrc port=8000 ! application/x-rtp, encoding-name=JPEG,payload=26,framerate=30/1 ! rtpjpegdepay ! jpegdec ! video/x-raw, format=I420, width=1280, height=720 ! autovideoconvert ! v4l2sink device=/dev/video10
 
 The most common error found when launching the gstreamer pipeline above is the following error message, which seems to happen when the https://github.com/umlaeute/v4l2loopback/issues/174[max_buffers aren't set] on the v4l2loopback module (see above), or if there is a v4l client (vlc, chromium) already connected to /dev/video10 when starting the pipeline. There does seem to be a small level of instability in this stack that could be improved.
 

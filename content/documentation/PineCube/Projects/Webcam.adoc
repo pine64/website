@@ -120,7 +120,7 @@ Configfs method is going to be used to control OTG port.
  cd uvc_gadget
 
 * Comment out 1182~1185 lines of `uvc-gadget.c` file:
- //    if (|uvc_shutdown_requested && ((uvc_dev.dqbuf_count + 1) >= uvc_dev.qbuf_count)) {
+ //    if (! uvc_shutdown_requested && ((uvc_dev.dqbuf_count + 1) >= uvc_dev.qbuf_count)) {
  //        return;
  //    }
 
@@ -232,7 +232,7 @@ You can have the following script as a bash script as well.
 
   ln -s $GADGET_PATH/functions/uvc.usb0 $GADGET_PATH/configs/c.1/uvc.usb0
   ln -s $GADGET_PATH/functions/acm.usb0 $GADGET_PATH/configs/c.1/acm.usb0
-  udevadm settle -t 5 | :
+  udevadm settle -t 5 !  :
   ls /sys/class/udc > $GADGET_PATH/UDC
 
 If above script goes without issues you should be able to see one more additional `/dev/video*` device.

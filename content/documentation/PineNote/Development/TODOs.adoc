@@ -65,7 +65,7 @@ See link:/documentation/wiki/PineNote/Development/Apps#Sway[here].
 * Control the backlight
 * Building alacritty correctly
 * Force a screen refresh?
-** See conversation here: https://matrix.to/#/|QtTzSRYMuozjbOQkzJ:matrix.org/$tfumBpnP2UPouNpaeFrggR40ZkrD_pHAtJdQmQvzL-o?via=matrix.org&via=kde.org&via=tchncs.de
+** See conversation here: https://matrix.to/#/!QtTzSRYMuozjbOQkzJ:matrix.org/$tfumBpnP2UPouNpaeFrggR40ZkrD_pHAtJdQmQvzL-o?via=matrix.org&via=kde.org&via=tchncs.de
 
 === Status table draft
 

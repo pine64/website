@@ -9,11 +9,11 @@ menu:
     weight: 5
 ---
 
-=== Enable cpufreq Stuff
+== Enable cpufreq Stuff
 
-Current neggles kernel has the CPU at 1.2 GHz, apparently SRE has patches to enable cpufreq? (see below, in link:/documentation/QuartzPro64/_index#Kernel|Resources[Resources])
+Current neggles kernel has the CPU at 1.2 GHz, apparently SRE has patches to enable cpufreq? (see below, in link:/documentation/QuartzPro64/_index#Kernel[Resources])
 
-=== Add RK3588 Support To VOP2
+== Add RK3588 Support To VOP2
 
 VOP2 IP on the RK3588 is very similar to the one on the RK356x, but it still needs platform specific code added.
 

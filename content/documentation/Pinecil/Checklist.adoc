@@ -13,7 +13,7 @@ Prep tasks:
 
 . *Clean new cartridges/tips with 99% isopropyl alcohol (IPA)* to remove factory residue before installing (avoid strange behavior from poor electric contact). If you have none, try to at least wipe down the new cartridge with a clean towel especially the 2 contacts at the rear white end (do not use water, as it could get into the small white seam line).
 . Do not bend the two tiny https://pine64.com/product/pinecil-copper-clips/[internal contacts], they are thin spring metal and may break.
-. Only use one port, USB-C or the DC barrel, but Never both at the same time. Damage will occur to PC/ Laptop/ Pinecil|
+. Only use one port, USB-C or the DC barrel, but Never both at the same time. Damage will occur to PC/Laptop/Pinecil!
 . If using a DC barrel brick for power, do not use more than 24V for Pinecil V2 and not more than 21V for Pinecil V1 (a link:/documentation/Pinecil/How_to_repair#Pinecil_V1,_24V_Mod[special end-user modification] is possible for V1 which allows it to use up to 24V safely.
 
 Upon receipt, or buying a used Pinecil, one may want to check the following:

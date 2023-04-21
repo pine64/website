@@ -28,7 +28,7 @@ You will need the following to get started with using your link:/documentation/P
 
 == Step-by-Step Instructions for Flashing MicroSD Cards
 
-IMPORTANT: *Caution|* Handle the Pine64 Single Board Computers' PCBs with care. Always hold bare boards by the edges and make sure to wear an anti-static wrist strap. Touching components on the front and back of the boards can result in an ESD discharge that may cause damage to the electronics. Avoid placing bare boards on materials such as carpets, plastics or other surfaces prone to electrostatic build-up
+IMPORTANT: *Caution!* Handle the Pine64 Single Board Computers' PCBs with care. Always hold bare boards by the edges and make sure to wear an anti-static wrist strap. Touching components on the front and back of the boards can result in an ESD discharge that may cause damage to the electronics. Avoid placing bare boards on materials such as carpets, plastics or other surfaces prone to electrostatic build-up
 
 *Begin by imaging the OS of your choice*
 
@@ -36,9 +36,9 @@ The process of flashing PINE64 OS images to micro SD on your Windows, Linux or O
 
 Please refer to the relevant section below for instructions on how to image your microSD card:
 
-* link:#Imaging microSD on Windows 7/8/8.1/10[Imaging microSD on Windows 7/8/8.1/10]
-* link:#Imaging microSD on Apple OSX[Imaging microSD on Apple OSX]
-* link:#Imaging microSD on Linux[Imaging microSD on Linux]
+* link:#Imaging_microSD_on_Windows_7/8/8.1/10[Imaging microSD on Windows 7/8/8.1/10]
+* link:#Imaging_microSD_on_Apple_OSX[Imaging microSD on Apple OSX]
+* link:#Imaging_microSD_on_Linux[Imaging microSD on Linux]
 
 Having successfully imaged your microSD card, insert it into the microSD slot.
 
@@ -87,7 +87,7 @@ On Windows, you can also use Phoenix Card (for detailed instructions click link:
 
 * Launch phoenixcard.exe. You will be presented with a ‘disk’ drop-down menu and a field denoted as ‘.img File’. Click on ‘.img File’ and navigate to and select the OS image have downloaded and unarchived. Next, make sure to select the disk that your microSD card has been assigned. WARNING: Pay close attention to the selected drive (remember your letter) – the imaging process will permanently erase and format the selected drive. If you choose the wrong drive all your data will be lost.
 
-* Make sure to select ‘Startup|’ from the ‘Write mode’ window and click Burn. Once the image has been written to your microSD card you will receive a confirmation in the ‘option’ window. Be sure to close the application and to eject/remove your SD card safely from Windows.
+* Make sure to select ‘Startup!’ from the ‘Write mode’ window and click Burn. Once the image has been written to your microSD card you will receive a confirmation in the ‘option’ window. Be sure to close the application and to eject/remove your SD card safely from Windows.
 
 === Imaging microSD on macOS
 

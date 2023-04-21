@@ -41,7 +41,7 @@ For app development see:
 
 === Android
 
-Android 11 e-ink SDK for the PineNote and [[Quartz64|Quartz64 Model A]. This is the Android SDK build for 10.3" eink panels on Quartz64 Model A.
+Android 11 e-ink SDK for the PineNote and Quartz64 Model A. This is the Android SDK build for 10.3" eink panels on Quartz64 Model A.
 
 Download:
 
@@ -76,7 +76,7 @@ The following topics have resolved:
 
 The following concerns have been brought up as open, unanswered topics:
 
-* Does https://en.wikipedia.org/wiki/USB-C#Audio_Adapter_Accessory_Mode_2|USB-C[Audio Adapter Accessory Mode] work? It appears that the Headphone output of the audio codec was routed to the USB-C audio+USB switch, but it's unclear whether CC lines are hooked up correctly for detection of such a device. The PineNote hardware team will be testing this functionality soon (as of August 19, 2021). Note that Audio Accessory mode is detectable by reading the I2C registers of the WUSB3801Q. So connecting ASEL to a GPIO would be enough to get this working if it is not working already.
+* Does https://en.wikipedia.org/wiki/USB-C#Audio_Adapter_Accessory_Mode_2[Audio Adapter Accessory Mode] work? It appears that the Headphone output of the audio codec was routed to the USB-C audio+USB switch, but it's unclear whether CC lines are hooked up correctly for detection of such a device. The PineNote hardware team will be testing this functionality soon (as of August 19, 2021). Note that Audio Accessory mode is detectable by reading the I2C registers of the WUSB3801Q. So connecting ASEL to a GPIO would be enough to get this working if it is not working already.
 * Why is the Headphone output of the audio codec routed to the speakers? HPL_OUT is routed from the RK817 PMIC and audio codec to U9010 (the USB-C switch) and U6 (the audio amplifier). SPK_OUT is unused. It seems like SPK_OUT should be routed to U6 and HPL_OUT to U9010.
 * Nitpick: The cold white charging LED bleeds through the gap between the rear case and the device's face. It does not bleed onto the screen, but it is jarring in low-light conditions or when the screen is amber. Could be resolved in software by turning off the charge LED when the screen is on.
 * Is there any way to indicate when the device is in rockusb mode, such as connecting a certain magic pin to the power LED?

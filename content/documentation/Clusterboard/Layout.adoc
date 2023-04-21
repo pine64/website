@@ -69,11 +69,11 @@ image:/documentation/images/ClusterBoardBack.jpg[Rear view of the Clusterboard (
 | Places for soldering two resistors (optional, for use with an ATX power suppply that requires dummy load on 3.3&nbsp;V and 12&nbsp;V rails)
 |===
 
-For the part D, please see the important note in the link:#Specifications[section above].  For the part K, please see the notes in the link:#Hardware revisions[section below].  Parts F to L exist separately for each of all seven SOPINE or SOEDGE modules.
+For the part D, please see the important note in the link:#Specifications[section above]. For the part K, please see the notes in the link:#Hardware_revisions[section below].  Parts F to L exist separately for each of all seven SOPINE or SOEDGE modules.
 
 == 20-pin Expansion Connector
 
-The 20-pin expansion connector is the part J decribed in the link:#Layout[section above], available for each SOPINE or SOEDGE module.  There is an unofficial description of the pinout in https://forum.pine64.org/showthread.php?tid=5713[this forum thread].  The unofficial pinout is also visible directly in https://forum.pine64.org/attachment.php?aid=1111[this picture].
+The 20-pin expansion connector is the part J decribed in the link:#Layout[section above], available for each SOPINE or SOEDGE module. There is an unofficial description of the pinout in https://forum.pine64.org/showthread.php?tid=5713[this forum thread].  The unofficial pinout is also visible directly in https://forum.pine64.org/attachment.php?aid=1111[this picture].
 
 == SOPINE Module
 

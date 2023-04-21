@@ -10,7 +10,7 @@ menu:
 ---
 
 == Fixing Bluetooth
-Some users have noticed instability with their wireless driver. Upgrading the driver to the version provided by LibreELEC may help|To do this, download the BCM4345C0.hcd, brcmfmac43455-sdio.bin, and brcmfmac43455-sdio.txt from the https://github.com/LibreELEC/brcmfmac_sdio-firmware/tree/master[libreELEC repositories] and place them in the same location as your previous firmware (`/lib/firmware/brmc/`). Then rename brcmfmac43455-sdio.{txt,bin} as `brcmfmac43455-sdio.pine64,pinenote-v1.2.{txt,bin}`. If this doesn't help, ask about it in the matrix chat|
+Some users have noticed instability with their wireless driver. Upgrading the driver to the version provided by LibreELEC may help! To do this, download the BCM4345C0.hcd, brcmfmac43455-sdio.bin, and brcmfmac43455-sdio.txt from the https://github.com/LibreELEC/brcmfmac_sdio-firmware/tree/master[libreELEC repositories] and place them in the same location as your previous firmware (`/lib/firmware/brmc/`). Then rename brcmfmac43455-sdio.{txt,bin} as `brcmfmac43455-sdio.pine64,pinenote-v1.2.{txt,bin}`. If this doesn't help, ask about it in the matrix chat!
 
 === Preliminary fix for stuttering bluetooth audio
 

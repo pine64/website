@@ -53,9 +53,9 @@ Logs collected from #pinedev on irc.pine64.org
 
 7:48:46 PM <dsimic> or even to route microSD lines :)
 
-7:48:56 PM <dsimic> or both|:)
+7:48:56 PM <dsimic> or both! :)
 
-7:49:08 PM <dsimic> woo-hoo|:)
+7:49:08 PM <dsimic> woo-hoo! :)
 
 7:49:19 PM <@MartijnBraam> jumpdrive for pinenote :P
 

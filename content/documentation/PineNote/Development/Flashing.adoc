@@ -11,7 +11,7 @@ menu:
 
 {{Under construction}}
 
-NOTE: These instructions are directed towards experienced developers only|
+NOTE: These instructions are directed towards experienced developers only!
 
 This page contains information on flashing software to the link:/documentation/PineNote[PineNote].
 
@@ -73,7 +73,7 @@ List partitions:
  14              9730048            9861119      67108864       device
  15              9861120          241827775  118766927872       userdata
 
-WARNING: this process is very new|Proceed at your own risk.
+WARNING: this process is very new! Proceed at your own risk.
 
 See https://github.com/m-weigand/pinenote-debian-recipes/releases/tag/v0.1[instructions on this artifact]. It will instruct you on extracting the rootfs into an empty ext4 partition. This can be done from Linux or Android. Further instructions on building your own rootfs https://github.com/m-weigand/pinenote-debian-recipes[can be found here].
 
@@ -152,7 +152,7 @@ While in maskrom mode, we need to have a u-boot to download onto the device for 
 
 You also need to install Python and pyelftools.
 
-* Note that rkbin is a &gt;5GB download|* This will take some time to clone and process the deltas.
+Note that rkbin is a &gt;5GB download! This will take some time to clone and process the deltas.
 
 ```
 git clone -b quartz64 https://gitlab.com/pgwipeout/u-boot-rockchip.git
@@ -193,8 +193,8 @@ index 2bba05b4e4..cfe5b0afd5 100755
         fi
 
         if [ "${ARM64_TRUSTZONE}" == "y" ]; then
--               if |python -c "import elftools" ; then
-+               if |python3 -c "import elftools" ; then
+-               if !python -c "import elftools" ; then
++               if !python3 -c "import elftools" ; then
                         echo "ERROR: No python 'pyelftools', please: pip install pyelftools"
                         exit 1
                 fi
@@ -264,7 +264,7 @@ IMPORTANT: *TODO:* Section needs to be finished
 
 You can create a filesystem image that replaces the Android boot or recovery partition by doing roughly the following:
 
-. Erase boot and dtbo with rkdeveloptool or fastboot (back them up first||)
+. Erase boot and dtbo with rkdeveloptool or fastboot (back them up first!)
 . Create an ext2 partition image and mount it (fallocate, mkfs.ext2)
 . Build your mainline kernel
 . Copy the kernel, dtb and an initramfs to the root of the mounted image (use any old postmarketOS initramfs)

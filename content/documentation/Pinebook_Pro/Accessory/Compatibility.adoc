@@ -17,9 +17,9 @@ Please test as many things as you can find with your link:/documentation/Pineboo
 
 Only PCI Express M.2 drives can work, due to the available connectivity of the Pinebook Pro.  Consequently, SATA or USB M.2 cards will not work.
 
-You need to buy and install the M.2 adapter in order to fit one, please see link:/documentation/Pinebook_Pro/_index#Using the optional NVMe adapter[Pinebook Pro]
+You need to buy and install the M.2 adapter in order to fit one, please see link:/documentation/Pinebook_Pro/_index#Using_the_optional_NVMe_adapter[Pinebook Pro]
 
-Please see link:/documentation/Pinebook_Pro/Troubleshooting#NVMe SSD issues[a separate section] that describes reported issues with the NVMe drives in PineBook Pro.
+Please see link:/documentation/Pinebook_Pro/Troubleshooting#NVMe_SSD_issues[a separate section] that describes reported issues with the NVMe drives in PineBook Pro.
 
 |===
 |Type | Make/Model | Size | Hardware IDs | Result | Notes | Power options (active only) | Save power setting?

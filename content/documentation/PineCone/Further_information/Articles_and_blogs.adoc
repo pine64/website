@@ -18,7 +18,7 @@ menu:
 * https://lupyuen.github.io/articles/led[Control PineCone BL602 RGB LED with GPIO and PWM by Lup Yuen]
 * https://lupyuen.github.io/articles/gpio[Mynewt GPIO ported to PineCone BL602 RISC-V Board by Lup Yuen]
 * https://lupyuen.github.io/articles/i2c[PineCone BL602 talks to I2C Sensors by Lup Yuen]
-* https://lupyuen.github.io/articles/spi[PineCone BL602 talks SPI too|by Lup Yuen]
+* https://lupyuen.github.io/articles/spi[PineCone BL602 talks SPI too! by Lup Yuen]
 * https://lupyuen.github.io/articles/display[PineCone BL602 Blasting Pixels to ST7789 Display with LVGL Library by Lup Yuen]
 * https://lupyuen.github.io/articles/uart[PineCone BL602 Talks UART to Grove E-Ink Display by Lup Yuen]
 * https://lupyuen.github.io/articles/book[The RISC-V BL602 Book by Lup Yuen]

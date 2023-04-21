@@ -17,7 +17,7 @@ TIP: It is helpful to have a debugging serial cable for this.
 
 These instructions are written with a host Arch Linux desktop system in mind.
 
-This guide will be especially useful if you are looking to overclock the ram on your PinePhone following the information found link:/documentation/Unsorted/Overclocking#DRAM|here[here].
+This guide will be especially useful if you are looking to overclock the ram on your PinePhone following the information found link:/documentation/Unsorted/Overclocking#DRAM[here].
 
 You must have these packages installed: `dtc swig bc aarch64-linux-gnu-gcc`
 

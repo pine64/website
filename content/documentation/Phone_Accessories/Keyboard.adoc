@@ -55,7 +55,7 @@ There are multiple possible hardware issues users could face. It is recommend to
 
 Under certain scenarios the keyboard's contacts are not making proper contact with the pogo pins of the phone. To address the issue:
 
-* Power down the phone|
+* Power down the phone!
 * Apply *slight* pressure in the upper mid of the PinePhone's backside until the plastic holder pin towards the upper middle of the keyboard cover, until an audible click can be heard.
 * Make sure the contacts and pogo pins are clean and the pogo pins can be slightly pressed individually.
 * If the above does not work, a shim under the keyboard's contacts might be required, as explained https://xnux.eu/pinephone-keyboard/faq.html#ts[FAQ troubleshooting section]. See also this https://freiburg.social/system/media_attachments/files/107/684/243/421/870/279/original/a5e9c68ff3510ec8.jpeg[photo of where to place the shim], or https://www.youtube.com/watch?v=4ixPjz6SPIA[this video].
@@ -207,7 +207,7 @@ It is possible to do so, however the production units can be extremely difficult
 
 Under Linux this can be done using the command `echo 1 | sudo tee /sys/class/graphics/fbcon/rotate`
 
-*Top row stopped displaying symbols|(kernel > 5.17)*
+*Top row stopped displaying symbols (kernel > 5.17)*
 
 * For Phosh (at the example of Mobian) see: https://wiki.mobian-project.org/doku.php?id=ppaccessories
 * For TTY and SWMO see: https://codeberg.org/HazardChem/PinePhone_Keyboard

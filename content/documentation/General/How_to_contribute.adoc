@@ -42,14 +42,14 @@ TIP: The following list is not a comprehensive list and solely a selection of di
 * postmarketOS: https://postmarketos.org/donate/
 * UBports: https://ubports.com/donate
 
-and many more|
+and many more!
 
 === Developers
 
 * Danct12: https://ko-fi.com/danct12[Ko-fi], https://liberapay.com/Danct12[Liberapay], https://patreon.com/Danct12[Patreon]
 * megi: https://xnux.eu/contribute.html#toc-donations
 
-and many more|
+and many more!
 
 == Help with the documentation
 
@@ -64,7 +64,7 @@ Other ways to contribute to the projects might include:
 * Ideas
 * Supplying hardware
 
-and many more|
+and many more!
 
 == By being a positive member of the community
 

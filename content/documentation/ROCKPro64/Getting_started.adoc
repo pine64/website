@@ -66,9 +66,9 @@ GNU/Linux:
 
 == Booting from USB or PXE
 
-The default choice of boot device is first eMMC (if present) then SDcard. See [[ROCKPro64#Disable_eMMC | jumpers above for details on adjusting this sequence.]]
+The default choice of boot device is first eMMC (if present) then SDcard. See link:/documentation/ROCKPro64[ROCKPro64] under "jumpers" for details on adjusting this sequence.
 
-It is possible to flash the SPI to extend the options for boot devices to USB drives or PXE. The preferred method is now the rock64_write_spi_flash.sh script (see [[ROCKPro64#Useful_scripts | useful scripts above.]]) The Getting started wiki article has more details [[Getting started#Flashing_u-boot_to_SPI_Flash | here.]]
+It is possible to flash the SPI to extend the options for boot devices to USB drives or PXE. The preferred method is now the rock64_write_spi_flash.sh script (see useful scripts above).
 
 Background info and historic details of this usage https://github.com/ayufan-rock64/linux-build/blob/master/recipes/flash-spi.md[can be found here.]
 

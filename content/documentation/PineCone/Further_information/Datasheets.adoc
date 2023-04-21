@@ -12,7 +12,7 @@ menu:
 Bouffalo BL-602 SoC information:
 
 * https://github.com/bouffalolab/bl_docs[Bouffalo Lab's official bl_docs repository]: should always contain the latest SoC documentation available, in PDF, HTML, and reStructuredText source forms.
-* https://github.com/pine64/bl602-docs/tree/main/mirrored[PINE64's bl602-docs repository]: contains an archive of all historical datasheets and reference manual PDFs but may lag behind Bouffalo's official repository. If you notice that it is, please submit a pull request|
+* https://github.com/pine64/bl602-docs/tree/main/mirrored[PINE64's bl602-docs repository]: contains an archive of all historical datasheets and reference manual PDFs but may lag behind Bouffalo's official repository. If you notice that it is, please submit a pull request!
 
 USB/Serial adapter:
 

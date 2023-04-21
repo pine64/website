@@ -28,7 +28,7 @@ Here the method from https://gist.github.com/charasyn/206b2537534b6679b0961be64c
 
 * Poke around the files (or skip this if you don't like to learn...):
 
-* Open `uboot.env` -- see, it's just text at this point|
+* Open `uboot.env` -- see, it's just text at this point! 
 
 * Open `boot-menu.patch` to get a feel for how that works
 
@@ -50,5 +50,5 @@ NOTE: Note: Might fail with the following error: "_patch: \**** unexpected end o
 
 . https://u-boot.readthedocs.io/en/latest/board/rockchip/rockchip.html[U-boot with rockchip docs]
 . https://stackoverflow.com/questions/31244862/what-is-the-use-of-spl-secondary-program-loader[Helpful stack overflow to learn a bit about the boot process/terminology]
-. https://matrix.to/#/|QtTzSRYMuozjbOQkzJ:matrix.org/$bVBxdD3E01da7w4LRm45-mwbw_jPk6CrJTQWGMG3B2I?via=matrix.org&via=kde.org&via=tchncs.de[This conversation in matrix between pgwipeout, vveapon, and pinenewb about flashing U-Boot.]
+. https://matrix.to/#/!QtTzSRYMuozjbOQkzJ:matrix.org/$bVBxdD3E01da7w4LRm45-mwbw_jPk6CrJTQWGMG3B2I?via=matrix.org&via=kde.org&via=tchncs.de[This conversation in matrix between pgwipeout, vveapon, and pinenewb about flashing U-Boot.]
 

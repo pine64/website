@@ -13,7 +13,7 @@ This article is about the available tips for the link:/documentation/Pinecil/_in
 
 == Pinecil Tips
 
-TIP: Pay attention to the length|Pine Store sells two different lengths of tips.
+TIP: Pay attention to the length! Pine Store sells two different lengths of tips.
 
 === What kind of tips work?
 
@@ -61,7 +61,7 @@ image:/documentation/images/CleanTip-Cartridge-Contacts.jpg[Clean contacts with 
 
 === I. Short tips
 
-IMPORTANT: *Pay attention to the length in your cart|* Pine Store sells two different lengths.
+IMPORTANT: *Pay attention to the length in your cart!* Pine Store sells two different lengths.
 
 . All new Pinecil V2 soldering irons include a single Pine64 newly designed Short tip (ST-B2 conical).
 . The discontinued V1 came with a longer normal length TS-B2 conical tip.

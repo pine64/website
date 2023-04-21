@@ -57,7 +57,7 @@ The following is a list of carriers which has been tested by users and confirmed
 
 | Japan | 楽天モバイル / Rakuten Mobile | Yes | Not tested | Yes | Yes | Mobian Phosh, January 2022 (revised from January 2021)
 
-| China | China Unicom | Yes | Not tested | Yes | Yes | https://postmarketos.org/[pmOS] 22.06.3 Phosh, [[PineModems#Bootloader_unlocking | BLunlck'd]], link:/documentation/PinePhone/_index#Firmware_update[*8M2G_30.006*], November 2022
+| China | China Unicom | Yes | Not tested | Yes | Yes | https://postmarketos.org/[pmOS] 22.06.3 Phosh, link:/documentation/PinePhone/_index#Firmware_update[*8M2G_30.006*], November 2022
 |===
 
 === Africa
