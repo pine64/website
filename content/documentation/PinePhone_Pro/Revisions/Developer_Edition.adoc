@@ -13,9 +13,9 @@ The Developer Edition was the first edition of the link:/documentation/PinePhone
 
 == Getting started
 
-This wiki page is strictly aimed at developers receiving their PinePhone Pro dev units. Please note that the following instructions do not apply to Explorer Edition or other future editions of the PinePhone Pro - everything below is only pertinent to the dev phones.
+This documentation page is strictly aimed at developers receiving their PinePhone Pro dev units. Please note that the following instructions do not apply to Explorer Edition or other future editions of the PinePhone Pro - everything below is only pertinent to the dev phones.
 
-Consider this a crash course rather than a comprehensive overview; you are also welcome to participate in documenting the process (and everything else related to the PinePhone Pro) on the Wiki. You can either create a Wiki account or use your https://forum.pine64.org[PINE64 forum] credentials to log in.
+Consider this a crash course rather than a comprehensive overview; you are also welcome to participate in documenting the process (and everything else related to the PinePhone Pro) on the documentation.
 
 === Getting the hardware ready
 
@@ -73,11 +73,11 @@ You will want to do all your testing and development on a SD card; you DO NOT wa
 
 There are a handful of OS builds available for the PinePhone Pro already. These can be found under the link:/documentation/PinePhone_Pro/Software/Releases[Software Releases] section.
 
-If you are a developer porting your own distribution to the PinePhone Pro, please make sure to make an entry for it in the Software Releases section on the Wiki. If you want / need help with entering your build onto the Wiki please ping one of the mods or admins in the chats (see Forums and Chats drop-down menu).
+If you are a developer porting your own distribution to the PinePhone Pro, please make sure to make an entry for it in the Software Releases section on the documentation. If you want / need help with entering your build onto the documentation please ping one of the mods or admins in the chats (see Forums and Chats drop-down menu).
 
 == Resources
 
-Aside from the PINE64 Wiki there are also other useful resources scattered across different Wikis, repositories and blogs. In time these will be gathered into one place - the https://gitlab.com/mobian1/devices/eg25-manager/-/merge_requests/41#note_744117720[DevZone] - which will help to streamline the development process.
+Aside from the PINE64 documentation there are also other useful resources scattered across different Wikis, repositories and blogs. In time these will be gathered into one place - the https://gitlab.com/mobian1/devices/eg25-manager/-/merge_requests/41#note_744117720[DevZone] - which will help to streamline the development process.
 
 At the time of publishing, these are some of the notable resource, listed in no particular order:
 

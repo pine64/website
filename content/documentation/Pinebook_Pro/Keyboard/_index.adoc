@@ -111,7 +111,7 @@ image:/documentation/images/Pinebook_Pro_new_keyboard-zoom-daughterboard.jpg[wid
 
 _Step 4_: Unplug the ribbon cables.
 
-NOTE: you should remove the M.2 adapter board now if you have one installed. See elsewhere in this wiki for instructions on how to install/remove that piece.
+NOTE: you should remove the M.2 adapter board now if you have one installed. See elsewhere in the documentation for instructions on how to install/remove that piece.
 
 There are several ribbon cables. To remove, flip up the tab and gentle pull the ribbon out.
 
@@ -175,7 +175,7 @@ Reattach the microphones, antenna, and speakers to their respective areas, makin
 
 _Step 14_: Reattach other ribbon cables.
 
-NOTE: this would be a good time to attach/install the M.2 adapter board if that is desired. See elsewhere in this wiki for those instructions.
+NOTE: this would be a good time to attach/install the M.2 adapter board if that is desired. See elsewhere in the documentation for those instructions.
 
 The LCD panel, keyboard and touchpad ribbon cables should be reattached. Make sure the flap is open, insert the ribbon into the slot (a portion of the cable will disappear), and push the flap down. The cable should not be easy to pull out.
 

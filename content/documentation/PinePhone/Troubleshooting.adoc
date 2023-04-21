@@ -4,9 +4,9 @@ draft: false
 menu:
   docs:
     title:
-    parent: "PinePhone/Software"
-    identifier: "PinePhone/Software/Troubleshooting"
-    weight: 2
+    parent: "PinePhone"
+    identifier: "PinePhone/Troubleshooting"
+    weight: 5
 ---
 
 If the PinePhone is not booting from eMMC and/or microSD card anymore it can have two causes:

@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PinePhone"
     identifier: "PinePhone/Privacy_switches"
-    weight: 
+    weight: 7
 ---
 
 image:/documentation/images/PinePhone_Kill_Interruptors_de_Maquinari_del_PinePhone_4529.jpg[Picture of the privacy switches,title="Picture of the privacy switches",width=320]

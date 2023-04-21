@@ -69,7 +69,7 @@ See link:/documentation/wiki/PineNote/Development/Apps#Sway[here].
 
 === Status table draft
 
-This table is a draft for the wiki development page:
+This table is a draft for the documentation development page:
 
 [cols="1,1,1,1,1"]
 |===

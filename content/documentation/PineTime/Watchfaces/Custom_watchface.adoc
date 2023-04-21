@@ -25,7 +25,7 @@ Since the compiling and file management is done by GitHub online, you have nothi
 
 So with those things settled, let's start with the basics of a watchface.
 
-Please remember that this is a wiki, so you can make an account and help us improve this page.
+Please remember that this is a public documentation, so you can make an account and help us improve this page.
 
 Please make sure not to unilaterally remove info though, but offer an alternative. If it is indeed a better way, in time your alternative will grow into the main text, and the latter info will be pruned.
 

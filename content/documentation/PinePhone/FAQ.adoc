@@ -191,7 +191,7 @@ If there is an installation of Manjaro on both the eMMC & an SD card, the SD car
 . In the new Rescue SD shell, type `umount /dev/mmcblk2p10; e2fsck -fy /dev/mmcblk2p10 && sync`
 . Once this command pipeline finishes, type `sync && reboot -f`
 
-Your PinePhone should reboot into Ubuntu Touch. Now head to Settings -> Updates and install the new update!
+Your PinePhone should reboot into Ubuntu Touch. Now head to Settings - Updates and install the new update!
 
 If these steps did not solve your issue, please create a new thread here on the PINE64 forums, note what the problem looks like, then say that you've tried these steps already.
 
@@ -203,7 +203,7 @@ Most operating systems on the PinePhone do not boot if the battery is not connec
 
 If you removed the battery isolator and the battery contacts are intact, the battery is either fully drained or there is no valid OS (or a corrupted OS or bootloader) installed on the eMMC or the SD card. Make sure to charge the phone with a compatible charger (500 mAh is not enough for modern phones), as well as the installation instruction under link:/documentation/PinePhone/Installation_instructions[Installation instructions]. If the OS got corrupted it is highly recommend to simply reflash.
 
-If nothing works please don't hesitate to contact the community via link:/documentation/_index#Chat Platforms[Main Page], they are eager to help and booting issues are usually very easy to solve (as they are typically either battery or installation related. The phones itself are all tested individually at the factory. Do not contact PINE64's support for booting issues.
+If nothing works please don't hesitate to contact the community, they are eager to help and booting issues are usually very easy to solve (as they are typically either battery or installation related). The phones itself are all tested individually at the factory. Do not contact PINE64's support for booting issues.
 
 image:/documentation/images/Pinephone_warning.png[A protection foil isolates the battery for the shipping.]
 image:/documentation/images/Pinephone_backside.png[The microSD belongs in the upper slot, the micro SIM in the lower slot.]

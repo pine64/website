@@ -4,8 +4,8 @@ draft: false
 menu:
   docs:
     title:
-    parent: "PinePhone"
-    identifier: "PinePhone/Accessibility"
+    parent: "PinePhone/Further_information"
+    identifier: "PinePhone/Further_information/Accessibility"
     weight: 
 ---
 

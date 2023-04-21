@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PinePhone"
     identifier: "PinePhone/Modem"
-    weight: 5
+    weight: 6
 ---
 
 The PinePhone uses Quectel EG25-G as modem. AT commands are used to communicate with the modem.
