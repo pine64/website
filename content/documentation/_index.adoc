@@ -15,9 +15,9 @@ In this documentation you can learn more about the following devices:
 
 == Devices
 
-[%autowidth]
+[cols="25h,~"]
 |===
-|Category | Device
+| Category | Device
 
 | Phones
 a|link:PinePhone[PinePhone] +
@@ -38,7 +38,8 @@ link:PineTime[PineTime]
 
 | Laptops
 a|link:Pinebook[Pinebook] +
-link:Pinebook_Pro[Pinebook Pro] and link:Pinebook_Pro/Dock[Pinebook Pro Docking station]
+link:Pinebook_Pro[Pinebook Pro] +
+link:Pinebook_Pro/Dock[Pinebook Pro Docking station]
 
 | Single-board computers
 a|link:Ox64[Ox64] +
@@ -57,8 +58,10 @@ a|link:RockBox[RockBox]
 
 | Clusters and modules
 a|link:Clusterboard[Clusterboard] +
-link:SOPINE[SOPINE] and link:SOPINE_Baseboard[SOPINE Baseboard] +
-link:SOEDGE[SOEDGE] and link:SOEDGE_Baseboard[SOEDGE Baseboard] +
+link:SOPINE[SOPINE] +
+link:SOPINE_Baseboard[SOPINE Baseboard] +
+link:SOEDGE[SOEDGE] +
+link:SOEDGE_Baseboard[SOEDGE Baseboard] +
 link:SOQuartz[SOQuartz]
 
 | IP camera
