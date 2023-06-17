@@ -463,17 +463,30 @@ div#doc-page code{
     display: inline-block;
 }
 div#doc-page pre {
-    padding: 1em;
+    background-color: black;
+    opacity: 0.9;
+    color: white;
+    font-family: monospace;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    /* padding: 1em;
     background-color: #f8f9fa;
-    border: 1px solid #eaecf0;
+    border: 1px solid #1a9e1a;
     margin-bottom: 1em;
     font-family: monospace;
     white-space: pre-wrap;       /* css-3 */
-    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-    white-space: -pre-wrap;      /* Opera 4-6 */
-    white-space: -o-pre-wrap;    /* Opera 7 */
-    word-wrap: break-word;       /* Internet Explorer 5.5+ */
-}
+    /* white-space: -moz-pre-wrap;  Mozilla, since 1999 */
+    /* white-space: -pre-wrap;      Opera 4-6 */
+    /* white-space: -o-pre-wrap;    Opera 7 */
+    /* word-wrap: break-word;       /* Internet Explorer 5.5+ */  */
+} 
+/* div#doc-page pre code::before {
+    content: "\$ ";
+    color: green;
+    font-weight: bold;
+  } */
 div#doc-page pre code {
     padding: 0;
     border: none;
@@ -485,7 +498,20 @@ div#doc-page pre code {
     white-space: -pre-wrap;      /* Opera 4-6 */
     white-space: -o-pre-wrap;    /* Opera 7 */
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
+
 }
+.language-bash::before {
+    content: "\$";
+}
+.language-bash {
+    color: #333;
+    font-family: Consolas, Monaco, monospace;
+    font-size: 14px;
+    line-height: 1.4;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
 div#doc-page .line-through {
     text-decoration:line-through
 }

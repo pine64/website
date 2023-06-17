@@ -1,0 +1,113 @@
+---
+title: "Getting Started"
+draft: false
+toc: true
+menu:
+  docs:
+    title:
+    parent: "STAR64/Software"
+    identifier: "STAR64/Software/Getting_Started"
+    weight: 
+---
+:toc: right
+:theme: hugo-theme-component-asciidoctor-skin
+
+WARNING: This page is a work in progress, use at your own risk
+
+== Prerequisites
+
+* https://pine64.com/product-category/star64/[Star64 SBC]
+* https://pine64.com/product-category/star64-accessories/[12V 3A to 5A Power Supply] (Any 12V 3A or 5A type M 5.5mm OD/2.1mm ID barrel type DC Jack Power Supply will work)
+* One or more types of removeable flash memory
+** https://pine64.com/product/64gb-class10-microsd-card/[SD card] of at least ??GB, no greater than 256GB
+** https://pine64.com/product-category/star64-accessories/[eMMC Module] with https://pine64.com/product/usb-adapter-for-emmc-module/[USB adapter]
+*Ability to flash a storage device with a disk image. https://etcher.balena.io/[Balena Etcher] is recommended, but advanced users can also use dd in a Unix-like OS
+
+toc::[]
+== Choosing Your Distribution
+There are currently two working distributions of Linux compatible with the Star64, pinix and Armbian. Both distributions use the same kernel[???].The pinix distribution is a custom distribution built by Fishwaldo using Yocto which is an open source project used to create Linux distributions for embedded devices. The pinix distribution is currently focusing on support for GPU and VGPU acceleration for desktop environments. Both distributions use the deb package manager. The Armbian distribution is based on Debian/Ubuntu with changes to make it lightweight and compatible with ARM/RISC-V development boards. 
+
+While there are other RISC-V compatible distributions, none of these have the required device tree entries for the Star64 meaning that none will work fully on the Star64. This includes images for the StarFive2, a sister board which uses the same processor, due to other hardware differences. It may be possible to get other distributions to run on the Star64 by cross compiling the working kernel into another distribution. 
+
+More information about support for features can be accessed [[User:RemDogKap/SandBox/Status of Features | here]].
+
+== pinix
+There are currently three prebuilt versions of pinix. one command line only and two desktop environments. Choose one to use for this setup. 
+
+* star64-image-minimal - A command line only image.
+* star64-image-weston - A Weston/Wayland "Demo" image.
+* star64-image-plasma- A Plasma Based Image.
+
+=== Flashing the Image
+
+==== Linux
+
+First, if not already installed, install `bzip2` and `wget`.
+
+[source,bash]
+----
+sudo apt update && sudo apt install bzip2 wget
+----
+
+Second, download a compressed disk image (`.wic.bz2`) of your chosen verison (minimal, weston, or plasma) from https://pine64.my-ho.st:8443/[here] (source code available https://github.com/Fishwaldo/meta-pine64[here]) using wget. 
+
+```
+$ wget  https://pine64.my-ho.st:8443/<Name of Image File>
+```
+
+.Example
+[%collapsible]
+====
+[source,bash]
+----
+$ wget https://pine64.my-ho.st:8443/star64-image-minimal-star64-1.2.wic.bz2
+----
+====
+
+Where `<Name of Image File>` is the name of your chosen image file. 
+
+
+Next, decompress the file using bzip2.
+[source,bash]
+----
+bzip2 -d <Path to Image File>
+----
+.Example
+[%collapsible]
+====
+[source,bash]
+----
+$ bzip2 -d star64-image-minimal-star64-1.2.wic.bz2
+----
+====
+Where `<Path to Image File>` is the path to your image file. 
+
+
+
+Next, flash the image to the SD card or eMMC module. The open source Balena Etcher with GUI support is recommended but dd will work as well if you are an advanced user. 
+
+==== Windows
+
+First, make sure that you have https://7-zip.org/[7zip] installed and if not, install it. 
+
+Second, download a compressed disk image (`.wic.bz2`) from https://pine64.my-ho.st:8443/[here] (source code available https://github.com/Fishwaldo/meta-pine64[here]) by clicking on the files. 
+
+Third, right click on the downloaded file and select 7-zip. Next click extract. 
+
+Finally, use Balena Etcher to write your disk image to the SD Card or eMMC module . 
+
+=== Booting the Image
+
+First, make sure that the Star64 is powered off, then set the boot dip switches to SD Card or eMMC, whichever applies to you.
+
+.Dip switch settings to boot from SD Card.
+image::/documentation/images/STAR64_SD_switch_map.png[400,400]
+
+
+.Dip switch settings to boot from eMMC module.
+image::/documentation/images/STAR64_eMMC_switch_map.png[400,400]
+
+
+After that, insert your flash media of choice and connect your peripherals. These can be a keyboard mouse and monitor or a TTL UART cable connected to the GPIO header. Finally, power on the system.
+
+After boot, you should be met with a login screen. The default credentials here for a root user are `root` as a username and `pine64` as a password. The default credentials for a regular user are `pine64` as a username and `pine64` as a password. If you do not see the troublshooting section below
