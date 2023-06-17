@@ -18,9 +18,21 @@ a {
     color: rgb(10, 83, 154);
     text-decoration: none;
 }
+p {
+    margin-bottom: 1em;
+}
+li p {
+    margin-bottom: 0;
+}
+th p {
+    margin-bottom: 0;
+}
+td p {
+    margin-bottom: 0;
+}
 h2, h3, h4, h5, h6 {
     color: #444;
-    padding: 0.6em 0 0.4em 0;
+    padding: 0.8em 0 0.6em 0;
 }
 h2 a, h3 a, h4 a, h5 a, h6 a {
     color: #2F82C6;
@@ -68,18 +80,9 @@ div.olist{
 }
 
 /* Paragraph and section margins */
-
-.paragraph {
-    padding-bottom: 0.8em;
-}
 .paragraph .right {
     float: right;
 }
-/*
-p {
-    padding-bottom: 0.6em;
-}
-*/
 
 /* Blockquotes */
 .quoteblock { 
@@ -373,7 +376,6 @@ button.rounded:hover {
     max-width: 80rem;
     margin: 0 auto;
     padding: 1rem;
-    background: #fff;
     display: flex;
     font-size: 1em;
     font-weight: 300;
@@ -412,6 +414,13 @@ button.rounded:hover {
     letter-spacing: -0.02em;*/
     color: #2F82C6;
 }
+#doc-nav nav.sidebar-nav {
+    position:-webkit-sticky; 
+    position:sticky; 
+    top:0;
+    max-height: 100vh;
+    overflow: scroll;
+}
 #doc-nav .sidebar-nav-item {
     font-weight: 500;
     padding: 6px 4px;
@@ -440,6 +449,9 @@ button.rounded:hover {
     }*/
     #doc-container {
         display: block;
+    }
+    #doc-nav nav.sidebar-nav {
+        max-height: 250px;
     }
 }
 
