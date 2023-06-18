@@ -1,0 +1,32 @@
+---
+title: "Testing Page"
+draft: false
+toc: true
+menu:
+  docs:
+    title:
+    parent: "STAR64/Software"
+    identifier: "STAR64/Software/testing_page"
+    weight: 
+---
+
+{{< highlight bash >}}
+sudo apt install git
+sudo apt update && sudo apt install aptitude 
+{{< /highlight >}}
+
+.Title
+{{< highlight plaintext >}}
+this is a test
+testing testing testing 
+test test tes 
+{{< /highlight >}}
+
+.Title
+[source,bash]
+----
+sudo apt install git
+----
+
+
+please realod 

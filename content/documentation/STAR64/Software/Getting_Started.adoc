@@ -44,45 +44,42 @@ There are currently three prebuilt versions of pinix. one command line only and 
 
 First, if not already installed, install `bzip2` and `wget`.
 
-[source,bash]
-----
+{{< highlight bash >}}
 sudo apt update && sudo apt install bzip2 wget
-----
+{{< /highlight >}}
 
 Second, download a compressed disk image (`.wic.bz2`) of your chosen verison (minimal, weston, or plasma) from https://pine64.my-ho.st:8443/[here] (source code available https://github.com/Fishwaldo/meta-pine64[here]) using wget. 
 
-```
-$ wget  https://pine64.my-ho.st:8443/<Name of Image File>
-```
+{{< highlight bash >}}
+wget  https://pine64.my-ho.st:8443/<Name of Image File>
+{{< /highlight >}}
+
 
 .Example
 [%collapsible]
 ====
-[source,bash]
-----
-$ wget https://pine64.my-ho.st:8443/star64-image-minimal-star64-1.2.wic.bz2
-----
+{{< highlight bash >}}
+wget https://pine64.my-ho.st:8443/star64-image-minimal-star64-1.2.wic.bz2
+{{< /highlight >}}
 ====
 
 Where `<Name of Image File>` is the name of your chosen image file. 
 
-
 Next, decompress the file using bzip2.
-[source,bash]
-----
+{{< highlight bash >}}
 bzip2 -d <Path to Image File>
-----
+{{< /highlight >}}
+
+
 .Example
 [%collapsible]
 ====
-[source,bash]
-----
-$ bzip2 -d star64-image-minimal-star64-1.2.wic.bz2
-----
+{{< highlight bash >}}
+bzip2 -d star64-image-minimal-star64-1.2.wic.bz2
+{{< /highlight >}}
 ====
+
 Where `<Path to Image File>` is the path to your image file. 
-
-
 
 Next, flash the image to the SD card or eMMC module. The open source Balena Etcher with GUI support is recommended but dd will work as well if you are an advanced user. 
 
@@ -100,14 +97,11 @@ Finally, use Balena Etcher to write your disk image to the SD Card or eMMC modul
 
 First, make sure that the Star64 is powered off, then set the boot dip switches to SD Card or eMMC, whichever applies to you.
 
-.Dip switch settings to boot from SD Card.
-image::/documentation/images/STAR64_SD_switch_map.png[400,400]
-
-
-.Dip switch settings to boot from eMMC module.
-image::/documentation/images/STAR64_eMMC_switch_map.png[400,400]
-
+{{< figure src="/documentation/images/STAR64_SD_switch_map.png" caption="Dip switch settings to boot from SD Card." class="floatleft" >}}       
+{{< figure src="/documentation/images/STAR64_eMMC_switch_map.png" caption="Dip switch settings to boot from eMMC module." class="floatleft" >}}
 
 After that, insert your flash media of choice and connect your peripherals. These can be a keyboard mouse and monitor or a TTL UART cable connected to the GPIO header. Finally, power on the system.
 
-After boot, you should be met with a login screen. The default credentials here for a root user are `root` as a username and `pine64` as a password. The default credentials for a regular user are `pine64` as a username and `pine64` as a password. If you do not see the troublshooting section below
+After boot, you should be met with a login screen. The default credentials here for a root user are `root` as a username and `pine64` as a password. The default credentials for a regular user are `pine64` as a username and `pine64` as a password. I
+
+
