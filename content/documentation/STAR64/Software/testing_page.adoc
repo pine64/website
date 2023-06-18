@@ -9,11 +9,13 @@ menu:
     identifier: "STAR64/Software/testing_page"
     weight: 
 ---
-
+.bash 
 {{< highlight bash >}}
 sudo apt install git
 sudo apt update && sudo apt install aptitude 
 {{< /highlight >}}
+
+hugo plaintext highlight
 
 .Title
 {{< highlight plaintext >}}
@@ -22,10 +24,55 @@ testing testing testing
 test test tes 
 {{< /highlight >}}
 
+
+asciidocs [source,bash]
+
 .Title
 [source,bash]
 ----
 sudo apt install git
+----
+
+hugo bash highlight 
+{{< highlight bash >}}
+testing testing testing 
+{{< /highlight >}}
+
+doc_file custom shortcodee
+
+
+
+{{< custom_html >}}
+
+{{< /custom_html >}}
+
+doc_terminal custom shortcode
+
+
+.Example Terminal output 
+{{< highlight plaintext >}}
+<span class=cl style="color:#16c60c">●</span><span class=cl> tftpd-hpa.service - LSB: HPA's tftp server
+     Loaded: loaded (/etc/init.d/tftpd-hpa; generated)
+     Active: </span><span class=cl style="color:#16c60c">active (running)</span><span class=cl> since Sat 2023-06-10 20:51:28 CDT; 17min ago
+       Docs: man:systemd-sysv-generator(8)
+    Process: 1016 ExecStart=/etc/init.d/tftpd-hpa start (code=exited, status=0/SUCCESS)
+      Tasks: 1 (limit: 2306)
+     Memory: 588.0K
+        CPU: 23ms
+     CGroup: /system.slice/tftpd-hpa.service
+            └─1023 /usr/sbin/in.tftpd --listen --user tftp --address :69 --secure /srv/tftp
+ 
+Jun 10 20:51:28 debian-bookworm systemd[1]: Starting tftpd-hpa.service - LSB: HPA's tftp server...
+Jun 10 20:51:28 debian-bookworm tftpd-hpa[1016]: Starting HPA's tftpd: in.tftpd.
+Jun 10 20:51:28 debian-bookworm systemd[1]: Started tftpd-hpa.service - LSB: HPA's tftp server. </span> 
+{{< /highlight >}}
+
+asciidoc source,bash
+[source,bash,title='FILENAME']
+----
+htieuoshifd
+htesihjfkd
+htuieshfhdk
 ----
 
 

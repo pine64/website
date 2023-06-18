@@ -477,27 +477,17 @@ div#doc-page code{
     box-shadow: 0.05em 0.05em 0.25em #b5b5b5;
 }
 div#doc-page pre {
-    background-color: #242628;
-    opacity: 0.9;
-    color: #f8f9fa;
-    font-family: monospace;
-    font-size: 14px;
-    padding: 10px;
-    border-radius: 15px;
-    border: none;
-    position: relative;
-    box-shadow: 0.1em 0.1em 0.5em #7a7a7a;
-
-    /* padding: 1em;
+    padding: 1em;
     background-color: #f8f9fa;
-    border: 1px solid #414141;
+    border: none;
     margin-bottom: 1em;
     font-family: monospace;
-    white-space: pre-wrap;       css-3
-    white-space: -moz-pre-wrap;  Mozilla, since 1999
-    white-space: -pre-wrap;      Opera 4-6
-    white-space: -o-pre-wrap;    Opera 7
-    word-wrap: break-word;       Internet Explorer 5.5+  */
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    box-shadow: 0.05em 0.05em 0.25em #b5b5b5;
 } 
 /* div#doc-page pre code::before {
     content: "\$ ";
@@ -508,24 +498,16 @@ div#doc-page pre > code {
     box-shadow: none;
 }
 div#doc-page pre code {
-    /* background-color: #629ccb;
-    opacity: 0.9;
-    color: f8f9fa;
-    font-family: monospace;
-    font-size: 14px;
-    padding: 10px;
-    border-radius: 15px;
-    border: none; */
     padding: 0;
     border: none;
     margin: 0;
     max-width: 100%;
     background-color: inherit;
-    white-space: pre-wrap;       css-3
-    white-space: -moz-pre-wrap;  Mozilla, since 1999
-    white-space: -pre-wrap;      Opera 4-6
-    white-space: -o-pre-wrap;    Opera 7
-    word-wrap: break-word;       Internet Explorer 5.5+
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 /* .language-bash {
     color: #f8f9fa;
@@ -536,9 +518,10 @@ div#doc-page pre code {
     border: none;
   } */
 
-div#doc-page code[data-lang="bash"] span.line::before {
+div#doc-page code[data-lang="bash"] > span::before {
     content: "\$ ";
     font-family: monospace;
+    color:#2F82C6;
 }
 
 div#doc-page code[data-lang="openSPI"]::before {
@@ -554,13 +537,29 @@ div#doc-page pre > code[data-lang="openSPI"]::after {
     color: white;
     padding: 4px;
 }
-div#doc-page pre > code[data-lang="bash"]::before {
+div#doc-page pre:hover > code[data-lang="bash"]::after {
     content: "bash";
     position: absolute;
     top: 1px;
     right: 5px;
     color: white;
     padding: 4px;
+}
+
+div#doc-page div > div.title {
+    margin: 0 0 0 0; 
+    border: none; 
+    background-color: rgb(113, 113, 113); 
+    border-radius: 7px 7px 0 0; 
+    overflow: hidden; 
+    color: white;
+    padding: 1em;
+    font-family: monospace;
+    box-shadow: 0.05em 0 0.25em #b5b5b5;
+}
+
+div#doc-page div.title + div pre {
+    border-radius: 0 0 7px 7px;
 }
 
 div#doc-page summary {
