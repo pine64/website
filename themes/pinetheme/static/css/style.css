@@ -489,11 +489,7 @@ div#doc-page pre {
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
     box-shadow: 0.05em 0.05em 0.25em #b5b5b5;
 } 
-/* div#doc-page pre code::before {
-    content: "\$ ";
-    color: green;
-    font-weight: bold;
-  } */
+
 div#doc-page pre > code {
     box-shadow: none;
 }
@@ -509,14 +505,6 @@ div#doc-page pre code {
     white-space: -o-pre-wrap;    /* Opera 7 */
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
-/* .language-bash {
-    color: #f8f9fa;
-    opacity: 0.9;
-    font-family: monospace;
-    font-size: 14px;
-    padding: 10px;
-    border: none;
-  } */
 
 div#doc-page code[data-lang="bash"] > span::before {
     content: "\$ ";
@@ -592,7 +580,6 @@ div#doc-page .doc_device_box {
 div#doc-page .doc_device_box a{
     color: rgb(74, 74, 74);
 }
-
 div#doc-page .doc_device_box_img_container{
     height: 140px;
     width: 140px;

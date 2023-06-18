@@ -1,5 +1,4 @@
 {{ define "main" }}
-{{ js }}
     <div id="doc-container">
         
         <div id="doc-nav">
@@ -12,12 +11,13 @@
             {{ partial "breadcrumb.html" . }}
 
             <!-- partial "doc_beta_warning.html" . -->
+
             <article>
                 <header>
                     <h1>{{.Title}}</h1>
                 </header>
                 <!-- .TableOfContents -->
-                {{ .TableOfContents }}
+                {{ partial "toc.html" . }}
 
                 <!-- ".Content" pulls from the markdown content of the corresponding _index.md -->
                 {{.Content}}
@@ -27,4 +27,6 @@
             {{partial "doc_previousnext_custom.html" .}}
 
         </div>
+
+    </div>  
 {{ end }}
