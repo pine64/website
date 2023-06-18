@@ -474,6 +474,7 @@ div#doc-page code{
     font-family: monospace;
     display: inline-block;
     border-radius: 5px;
+    box-shadow: 0.05em 0.05em 0.25em #b5b5b5;
 }
 div#doc-page pre {
     background-color: #242628;
@@ -485,6 +486,7 @@ div#doc-page pre {
     border-radius: 15px;
     border: none;
     position: relative;
+    box-shadow: 0.1em 0.1em 0.5em #7a7a7a;
 
     /* padding: 1em;
     background-color: #f8f9fa;
@@ -502,6 +504,9 @@ div#doc-page pre {
     color: green;
     font-weight: bold;
   } */
+div#doc-page pre > code {
+    box-shadow: none;
+}
 div#doc-page pre code {
     /* background-color: #629ccb;
     opacity: 0.9;
@@ -521,7 +526,6 @@ div#doc-page pre code {
     white-space: -pre-wrap;      Opera 4-6
     white-space: -o-pre-wrap;    Opera 7
     word-wrap: break-word;       Internet Explorer 5.5+
-
 }
 /* .language-bash {
     color: #f8f9fa;
@@ -537,6 +541,19 @@ div#doc-page code[data-lang="bash"] span.line::before {
     font-family: monospace;
 }
 
+div#doc-page code[data-lang="openSPI"]::before {
+    content: "\# ";
+    font-family: monospace;
+}
+
+div#doc-page pre > code[data-lang="openSPI"]::after {
+    content: "U-Boot bash";
+    position: absolute;
+    top: 1px;
+    right: 5px;
+    color: white;
+    padding: 4px;
+}
 div#doc-page pre > code[data-lang="bash"]::before {
     content: "bash";
     position: absolute;
@@ -576,6 +593,7 @@ div#doc-page .doc_device_box {
 div#doc-page .doc_device_box a{
     color: rgb(74, 74, 74);
 }
+
 div#doc-page .doc_device_box_img_container{
     height: 140px;
     width: 140px;

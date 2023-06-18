@@ -1,0 +1,316 @@
+---
+title: "Updating XSPI Flash"
+draft: false
+toc: true
+menu:
+  docs:
+    title:
+    parent: "STAR64/Software"
+    identifier: "STAR64/Software/Updating_XSPI_Flash"
+    weight: 
+---
+:toc: right
+
+WARNING: This page is a work in progress, use at your own risk
+
+The Star64 ships with an integrated 128 megabit (16 megabyte) xSPI NOR flash. Loaded on this flash from the factory is firmware called U-Boot and SPL but an old version designed for the StarFive VisionFive 2 SBC which may have incompatibilities with the Star64. The firmware on this flash is known as Das U-Boot, commonly just U-Boot which is an open-source primary boot loader. It performs similar functions to the BIOS on x86 platforms. The SPL or Secondary Program Loader is the software that loads U-Boot, which in turn loads the Linux kernel.
+
+There are two main ways to update the xSPI flash. The first uses the `flashcp` command which requires the Star64 to first boot into an OS. This method may not work on older versions of [firmware, os, something else????]. The other method requires only the ability to load U-Boot and uses TFTP and the U-Boot `tftpboot` command. 
+
+== Prerequisites
+Required:
+
+* Star64 SBC
+* Computer running Linux, MacOS, or Windows
+
+Possibly required:
+
+* Ability to communicate over TTL (transistor to transistor logic) UART
+* Ability to network the Star64 to a computer over ethernet
+
+== flashcp
+First, connect to your Star64 over UART or with a mouse, keyboard, and monitor. 
+
+Next, install the `mtd-utils` package onto the Star64 if not already installed. This package is a set of tools that allow access to raw flash storage devices such as the xSPI flash. Also install `wget` if not already installed. These instructions assume that you are using the `deb` package manager. 
+
+{{< highlight bash >}}
+sudo apt update && sudo apt install mtb-utils wget
+{{< /highlight >}}
+
+Next, using `wget` download the `.bin.normal.out` SPL file and the `.img` U-Boot image onto the.
+
+{{< highlight bash >}}
+wget https://pine64.my-ho.st:8443/[fishwaldo SPL file goes here]
+wget https://pine64.my-ho.st:8443/[fishwaldo U-Boot image goes here]
+{{< /highlight >}}
+
+Next, print out the list of MTD (Memory Technology Device) raw flash devices using `cat`.
+
+{{< highlight bash >}}
+cat /proc/mtd
+{{< /highlight >}}
+
+The output should look something like this: 
+
+{{< highlight plaintext >}}
+dev:    size   erasesize  name
+mtd0: 00020000 00001000 "spl"
+mtd1: 00300000 00001000 "uboot"
+mtd2: 00100000 00001000 "data"
+{{< /highlight >}}
+
+Finally, write the `.bin.normal.out` SPL file and the `.img` U-Boot image. to the respective partitions using `flashcp`, a command which writes to raw flash devices with more protections than `dd`.
+
+{{< highlight bash >}}
+flashcp -v [fishwaldo spl file name here].bin.normal.out /dev/<SPL Partition>
+flashcp -v [fishwaldo uboot img file name here].img /dev/<U-Boot Partition>
+{{< /highlight >}}
+
+Where `<SPL Partition>` is the partition name found under the "dev" column for the row "spl" from the cat printout, in this case `mtd0` and `<U-Boot Partition>` is the partition name found under the "dev" column for the row "uboot" in the cat printout, in this case `mtd1`.
+
+At this point your xSPI flash has been rewritten and only a system restart is needed for the changes to take effect. 
+
+== tftpboot
+The `tftpboot` method uses a TFTP (Trivial File Transfer Protocol, a protocol which allows for basic file transfer functionality without authentication) server to transfer the SPL file and U-Boot image from a host computer to the Star64 running U-Boot and using the `tftpboot` command and then written to flash using the `sf` command which is a U-Boot command used to access SPI flash. 
+
+=== Preparing The TFTP Server
+==== Linux
+First, on your computer (not the Star64) install a TFTP server and `wget` if you do not already have it.
+
+{{< highlight bash >}}
+sudo apt update && sudo apt install tftpd-hpa wget
+{{< /highlight >}}
+
+Next, check that the TFPT server is running using `systemctl`.
+
+{{< highlight bash >}}
+sudo systemctl status tftpd-hpa
+{{< /highlight >}}
+
+This should output somethng like: 
+
+{{< highlight plaintext >}}
+● tftpd-hpa.service - LSB: HPA's tftp server
+     Loaded: loaded (/etc/init.d/tftpd-hpa; generated)
+     Active: active (running) since Sat 2023-06-10 20:51:28 CDT; 17min ago
+       Docs: man:systemd-sysv-generator(8)
+    Process: 1016 ExecStart=/etc/init.d/tftpd-hpa start (code=exited, status=0/SUCCESS)
+      Tasks: 1 (limit: 2306)
+     Memory: 588.0K
+        CPU: 23ms
+     CGroup: /system.slice/tftpd-hpa.service
+            └─1023 /usr/sbin/in.tftpd --listen --user tftp --address :69 --secure /srv/tftp
+ 
+Jun 10 20:51:28 debian-bookworm systemd[1]: Starting tftpd-hpa.service - LSB: HPA's tftp server...
+Jun 10 20:51:28 debian-bookworm tftpd-hpa[1016]: Starting HPA's tftpd: in.tftpd.
+Jun 10 20:51:28 debian-bookworm systemd[1]: Started tftpd-hpa.service - LSB: HPA's tftp server.           
+{{< /highlight >}}
+
+If the service is not running, try
+
+{{< highlight bash >}}
+sudo systemctl start tftpd-hpa
+{{< /highlight >}}
+
+and check the status again. If it is still not running please join the #star64 channel in the Pine64 IRC, Discord, or Matrix.
+
+Next, edit the configuration file for tftpd-hpa.
+
+{{< highlight bash >}}
+sudo nano /etc/default/tftpd-hpa
+{{< /highlight >}}
+
+By default it should look like:
+
+{{< highlight plaintext >}}
+TFTP_USERNAME="tftp"
+TFTP_DIRECTORY="/srv/tftp"
+TFTP_ADDRESS=":69"
+TFTP_OPTIONS="--secure"
+{{< /highlight >}}
+
+Change `TFTP_DIRECTORY="/srv/tftp" ` to `TFTP_DIRECTORY="/home/user/tftp_share"`. The final file should look like: 
+
+{{< highlight plaintext >}}
+TFTP_USERNAME="tftp"
+TFTP_DIRECTORY="/home/<user>/tftp_share"
+TFTP_ADDRESS=":69"
+TFTP_OPTIONS="--secure"
+{{< /highlight >}}
+
+Where `<user>` is your username. 
+After that, save and close the file then restart the TFTP server.
+
+{{< highlight bash >}}
+sudo systemctl restart tftpd-hpa
+{{< /highlight >}}
+
+Next in your home directory (`/home/user`) create a folder called `tftp_share`.
+
+{{< highlight bash >}}
+mkdir /home/user/tftp_share
+{{< /highlight >}}
+
+In this folder, download  the `.bin.normal.out` SPL file and the `.img` U-Boot image using `wget`. 
+
+{{< highlight bash >}}
+cd /home/user/tftp_share
+wget https://pine64.my-ho.st:8443/[fishwaldo SPL file goes here]
+wget https://pine64.my-ho.st:8443/[fishwaldo U-Boot image goes here]
+{{< /highlight >}}
+
+Before connecting to the Star64 and updating the firmware install minicom, virtual console software, so it will be possible to communicate with the Star64.
+
+{{< highlight bash >}}
+sudo apt update && sudo apt install minicom 
+{{< /highlight >}}
+
+Next connect the your USB to TTL UART adapter to the computer and list the connected serial devices. 
+
+{{< highlight bash >}}
+dmesg | grep tty
+{{< /highlight >}}
+
+Example output:
+
+{{< highlight plaintext >}}
+to be
+filled in
+later 
+{{<  /highlight >}}
+
+Find the address of the TTL UART to USB adapter in the list (example: `ttyUSB0`) and connect to the serial device with a baud rate of 115200. 
+
+{{< highlight bash >}}
+sudo minicom -D /dev/<Device Address> -b 115200
+{{< /highlight >}}
+
+Where `<Device Address>` is the address found in the step above. 
+
+.Example
+[%collapsible]
+====
+{{< highlight bash>}}
+sudo minicom -D /dev/ttyUSB0 -b 115200
+{{< /highlight >}}
+====
+
+==== Windows
+
+First, install two pieces of software, https://pjo2.github.io/tftpd64/[tftpd64], a TFTP server for windows, and http://ttssh2.osdn.jp/index.html.en[Tera Term], a virtual console for interacting with the Star64 in U-Boot.
+Next on your desktop, create a folder called `tftp_share`.
+In this folder, download  the `.bin.normal.out` SPL file and the `.img` U-Boot image from https://pine64.my-ho.st:8443/[here].
+
+Next, load tftpd64 and configure the settings to have the "Current Directory" as the `tftp_share` folder on the desktop and "Server interfaces" is set to `127.0.0.1 Software Loopback Interface 1`. The path should look something like `C:\Users\${Username}\Desktop\tftp_share` where `${Username}` is your username on Windows. 
+{{< figure src="/documentation/images/STAR64_tftpd64_settings.png" >}}
+
+=== Updating the SPI Flash
+
+Next, connect a TTL UART to USB cable to to the Star64 with the GND cable on pin 6 of the GPIO header, TXD on pin 8, and RXD on pin 10 as well as ethernet. Note that depending on your UART adapter you may have to switch TXD and RXD. Now power on the Star64 and enter U-Boot. You will need to press a key to prevent it from autobooting and instead enter the U-Boot command prompt.
+
+Once you are in the U-Boot shell set some environment variables. 
+First, set the IP address of the Star64 and connect it to the network using the `dhcp` command.
+
+{{< highlight openSPI >}}
+dhcp 
+{{< /highlight >}}
+
+Set an environment variable of the TFTP server to make future command easier. If you don't what the IP address of your TFTP server is you can see connected devices in your router's configuration which can usually be accessed by typing in the IP address found on the router itself.
+
+{{< highlight openSPI >}}
+setenv <server IP>
+{{< /highlight >}}
+
+Where `<server IP>` is the IP address of the TFTP server. 
+
+.Example
+[%collapsible]
+====
+{{< highlight openSPI >}}
+setenv 192.168.1.199
+{{< /highlight >}}
+====
+
+Ping the TFTP server from the Star64 to make sure the connection works where `<Server IP>` refers to the IP address of your TFTP server.  Note that if you are hosting the TFTP server on Windows, you may need to configure Windows firewall to allow `‘File and Printer Sharing (Echo Request – ICMPv4 – In)’`. This is only needed to test the network connection with `ping` and not for the actual `tftpboot` command so if `ping` fails `tftpboot` may still succeed. 
+
+{{< highlight openSPI >}}
+ping <Server IP>
+{{< /highlight >}}
+
+.Example
+[%collapsible]
+====
+{{< highlight openSPI >}}
+ # ping 192.168.1.228
+{{< /highlight >}}
+====
+
+The result should look something like this:
+
+{{< highlight plaintext >}}
+Star64 # ping 192.168.1.199
+Using ethernet@16030000 device
+host 192.168.1.199 is alive
+{{< /highlight >}}
+
+If ping fails, please try again or please join the #star64 channel in the Pine64 IRC, Discord, or Matrix for help. 
+
+Finally, it is time to update the xSPI flash. 
+
+First, initialize the flash with the `sf probe` command.
+
+{{< highlight openSPI >}}
+sf probe
+{{< /highlight >}}
+
+The output should be something like: 
+
+{{< highlight plaintext >}}
+Star64 # sf probe
+SF: Detected gd25lq128 with page size 256 Bytes, erase size 4 KiB, total 16 MiB
+{{< /highlight >}}
+
+Next copy the SPL `.bin.normal.out` file to memory address `0xa0000000` from our TFTP server.
+
+{{< highlight openSPI >}}
+tftpboot 0xa0000000 ${serverip}:[name of fishwaldo spl file]
+{{< /highlight >}}
+
+Where `${serverip}` is the environment variable we set earlier, no need to change it. 
+Then use `sf update` to erase and update the SPI flash from memory. In this case we are copying from memory address `0xa0000000` which we wrote to earlier with an offset of `0x0`.
+
+{{< highlight openSPI >}}
+sf update 0xa0000000 0x0 $filesize
+{{< /highlight >}}
+
+This should produce an output like: 
+
+{{< highlight plaintext >}}
+To be 
+filled
+in later
+{{< /highlight >}}
+
+Next, copy the U-Boot `.img` binary to memory address `0xa0000000` from the TFTP server. 
+
+{{< highlight openSPI >}}
+tftpboot 0xa0000000 ${serverip}:[name of fishwaldo uboot image]
+{{< /highlight >}}
+
+Where `${serverip}` is the environment variable we set earlier, no need to change it. 
+
+Finally, write the new U-Boot binary using `sf update` from memory address `0xa0000000` with an offset of `0x100000`. 
+
+{{< highlight openSPI >}}
+sf update 0xa0000000 0x100000 $filesize
+{{< /highlight >}}
+
+This should produce an output like: 
+
+{{< highlight plaintext >}}
+To be 
+filled
+in later
+{{< /highlight >}}
+
+Reboot the Star64 and the changes should have taken effect.

@@ -10,7 +10,6 @@ menu:
     weight: 
 ---
 :toc: right
-:theme: hugo-theme-component-asciidoctor-skin
 
 WARNING: This page is a work in progress, use at your own risk
 
