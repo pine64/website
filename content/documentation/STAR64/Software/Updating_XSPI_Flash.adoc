@@ -122,6 +122,7 @@ sudo nano /etc/default/tftpd-hpa
 
 By default it should look like:
 
+./etc/default/tftpd-hpa
 {{< highlight plaintext >}}
 TFTP_USERNAME="tftp"
 TFTP_DIRECTORY="/srv/tftp"
@@ -131,6 +132,7 @@ TFTP_OPTIONS="--secure"
 
 Change `TFTP_DIRECTORY="/srv/tftp" ` to `TFTP_DIRECTORY="/home/user/tftp_share"`. The final file should look like: 
 
+./etc/default/tftpd-hpa
 {{< highlight plaintext >}}
 TFTP_USERNAME="tftp"
 TFTP_DIRECTORY="/home/<user>/tftp_share"

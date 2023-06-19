@@ -104,6 +104,9 @@ pre {
 code, .cl {
     font-family: monospace;
 }
+code, .o {
+    font-family: monospace;
+}
 
 /* Headlines */
 h1 {
@@ -417,7 +420,7 @@ button.rounded:hover {
 #doc-nav nav.sidebar-nav {
     position:-webkit-sticky; 
     position:sticky; 
-    top:0;
+    top: 15px;
     max-height: 100vh;
     overflow: scroll;
 }
@@ -488,6 +491,8 @@ div#doc-page pre {
     white-space: -o-pre-wrap;    /* Opera 7 */
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
     box-shadow: 0.05em 0.05em 0.25em #b5b5b5;
+    border-radius: 7px;
+    position: relative;
 } 
 
 div#doc-page pre > code {
@@ -515,14 +520,15 @@ div#doc-page code[data-lang="bash"] > span::before {
 div#doc-page code[data-lang="openSPI"]::before {
     content: "\# ";
     font-family: monospace;
+    color:#2F82C6;
 }
 
-div#doc-page pre > code[data-lang="openSPI"]::after {
+div#doc-page pre:hover > code[data-lang="openSPI"]::after {
     content: "U-Boot bash";
     position: absolute;
     top: 1px;
     right: 5px;
-    color: white;
+    color: #333;
     padding: 4px;
 }
 div#doc-page pre:hover > code[data-lang="bash"]::after {
@@ -530,7 +536,7 @@ div#doc-page pre:hover > code[data-lang="bash"]::after {
     position: absolute;
     top: 1px;
     right: 5px;
-    color: white;
+    color: #333;
     padding: 4px;
 }
 
@@ -632,6 +638,10 @@ nav#TableOfContents ul li{
 nav#TableOfContents ul li ul li {
     font-weight: 300 !important;
     box-decoration-break: clone;
+    padding: 0 20px;
+}
+nav#TableOfContents ul {
+    margin: 6px 0px;
 }
 nav#TableOfContents ul ul{
     padding-left: 1em;
