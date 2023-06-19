@@ -104,6 +104,9 @@ pre {
 code, .cl {
     font-family: monospace;
 }
+code, .o {
+    font-family: monospace;
+}
 
 /* Headlines */
 h1 {
@@ -417,7 +420,7 @@ button.rounded:hover {
 #doc-nav nav.sidebar-nav {
     position:-webkit-sticky; 
     position:sticky; 
-    top:0;
+    top: 15px;
     max-height: 100vh;
     overflow: scroll;
 }
@@ -470,14 +473,16 @@ div#doc-page h1 {
 div#doc-page code{
     padding: 1px 4px;
     background-color: #f8f9fa;
-    border: 1px solid #eaecf0;
+    border: 1px solid #abadb0;
     font-family: monospace;
     display: inline-block;
+    border-radius: 5px;
+    box-shadow: 0.05em 0.05em 0.25em #b5b5b5;
 }
 div#doc-page pre {
     padding: 1em;
     background-color: #f8f9fa;
-    border: 1px solid #eaecf0;
+    border: none;
     margin-bottom: 1em;
     font-family: monospace;
     white-space: pre-wrap;       /* css-3 */
@@ -485,6 +490,13 @@ div#doc-page pre {
     white-space: -pre-wrap;      /* Opera 4-6 */
     white-space: -o-pre-wrap;    /* Opera 7 */
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    box-shadow: 0.05em 0.05em 0.25em #b5b5b5;
+    border-radius: 7px;
+    position: relative;
+} 
+
+div#doc-page pre > code {
+    box-shadow: none;
 }
 div#doc-page pre code {
     padding: 0;
@@ -498,6 +510,64 @@ div#doc-page pre code {
     white-space: -o-pre-wrap;    /* Opera 7 */
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
+
+div#doc-page code[data-lang="bash"] > span::before {
+    content: "\$ ";
+    font-family: monospace;
+    color:#2F82C6;
+}
+
+div#doc-page code[data-lang="openSPI"]::before {
+    content: "\# ";
+    font-family: monospace;
+    color:#2F82C6;
+}
+
+div#doc-page pre:hover > code[data-lang="openSPI"]::after {
+    content: "U-Boot bash";
+    position: absolute;
+    top: 1px;
+    right: 5px;
+    color: #333;
+    padding: 4px;
+}
+div#doc-page pre:hover > code[data-lang="bash"]::after {
+    content: "bash";
+    position: absolute;
+    top: 1px;
+    right: 5px;
+    color: #333;
+    padding: 4px;
+}
+
+div#doc-page div > div.title {
+    margin: 0 0 0 0; 
+    border: none; 
+    background-color: rgb(113, 113, 113); 
+    border-radius: 7px 7px 0 0; 
+    overflow: hidden; 
+    color: white;
+    padding: 1em;
+    font-family: monospace;
+    box-shadow: 0.05em 0 0.25em #b5b5b5;
+}
+
+div#doc-page div.title + div pre {
+    border-radius: 0 0 7px 7px;
+}
+
+div#doc-page summary {
+    margin-bottom: 1em;
+}
+
+div#doc-page figure.floatleft {
+    max-width: 30%;
+	width: auto\9*0.3; /* ie8 */
+	height: auto;
+	float: left;
+    padding: 1em;
+}
+
 div#doc-page .line-through {
     text-decoration:line-through
 }
@@ -568,6 +638,10 @@ nav#TableOfContents ul li{
 nav#TableOfContents ul li ul li {
     font-weight: 300 !important;
     box-decoration-break: clone;
+    padding: 0 20px;
+}
+nav#TableOfContents ul {
+    margin: 6px 0px;
 }
 nav#TableOfContents ul ul{
     padding-left: 1em;

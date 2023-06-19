@@ -2,8 +2,10 @@
 <nav class="sidebar-nav">
     {{ $currentPage := . }}
 
-    <!-- If on the main page -->
-    {{ if eq .RelPermalink "/documentation/"}}
+    <!-- If toc: true is specified -->
+    {{ if .Params.toc }}
+        <a class="sidebar-nav-item">Content</a>
+        <hr>
         {{ .TableOfContents }}
     {{end}}
 

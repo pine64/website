@@ -1,6 +1,7 @@
 ---
 title: "Main Page"
 draft: false
+toc: true
 menu:
   docs:
     title:
