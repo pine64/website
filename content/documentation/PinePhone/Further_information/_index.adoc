@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-* link:ReExternal_linkssources[ReExternal linkssources]
+* link:External_links[External links]
 * link:Resources[]
 * link:Datasheets[]
 * link:Schematics_and_certifications[Schematics and certifications]

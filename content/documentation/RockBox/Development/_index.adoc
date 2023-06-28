@@ -6,7 +6,7 @@ menu:
     title:
     parent: "RockBox"
     identifier: "RockBox/Development"
-    weight: 
+    weight: 4
 ---
 
 * link:Mainline_Linux[Mainline Linux]

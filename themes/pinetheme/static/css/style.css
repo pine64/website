@@ -576,23 +576,23 @@ nav#TableOfContents ul ul{
 /* Footer */
 #footer {
     min-height: 100px;
-    background-color: #444444;
+    background-color: #444;
     padding-top: 3em;
-    color: rgb(85, 85, 85);
+    color: #eee;
 }
 
-#footer h3{
-    font-size: 12pt;
+#footer h2 {
+    font-size: 18pt;
     font-weight: 600;
-    color: white;
+    color: #4496da;
 }
 
-#footer a{
+#footer a {
     text-decoration: none;
     color: #eee;
 }
 
-#footer ul{
+#footer ul {
     list-style-type: none;
     padding: 0;
     margin: 0 0 20px 0;
@@ -601,7 +601,7 @@ nav#TableOfContents ul ul{
     align-items: baseline !important;
 }
 #footer .container {
-    max-width: 80rem;
+    max-width: 70rem;
     margin: 0 auto;
     display: flex;
 }

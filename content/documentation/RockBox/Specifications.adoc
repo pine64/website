@@ -6,7 +6,7 @@ menu:
     title:
     parent: "RockBox"
     identifier: "RockBox/Specifications"
-    weight: 5
+    weight: 1
 ---
 
 * *Dimensions*: 106mm x 106mm x 16.9mm

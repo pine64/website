@@ -1,12 +1,12 @@
 ---
-title: "PINE A64 Software Releases"
+title: "Software Releases"
 draft: false
 menu:
   docs:
     title:
     parent: "Pine_A64"
     identifier: "Pine_A64/Software"
-    weight: 
+    weight: 2
 ---
 
 This page contains a list of all available releases for the link:/documentation/Pine_A64/_index[PINE A64(+)], as well as links to other resources.

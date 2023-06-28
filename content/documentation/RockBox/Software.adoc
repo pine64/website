@@ -6,7 +6,7 @@ menu:
     title:
     parent: "RockBox"
     identifier: "RockBox/Software"
-    weight: 1
+    weight: 2
 ---
 
 * https://www.retro-center.com/about-r-cade/[Retro-Center's R-Cade: 100+ retro-gaming systems, a lightweight web browser, and 4k UHD media center] on the https://www.retro-center.com/product/rockbox-r-cade/[RockBox R-Cade]

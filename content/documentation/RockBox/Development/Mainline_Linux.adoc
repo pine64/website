@@ -6,7 +6,7 @@ menu:
     title:
     parent: "RockBox/Development"
     identifier: "RockBox/Development/Mainline_Linux"
-    weight: 
+    weight: 1
 ---
 
 Mainline Linux works on the RockBox without patches. To create a compatible u-boot image, https://github.com/mrfixit2001/uboot_builder may be used. The _dtb_ has to be compiled from a recent _dts_, such as https://github.com/mrfixit2001/mainline-kernel/blob/master/arch/arm64/boot/dts/rockchip/rk3328-rockbox.dts[this], otherwise network and video won't work.

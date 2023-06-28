@@ -1,5 +1,5 @@
 ---
-title: "Main Page"
+title: "PINE64 Manual"
 draft: false
 menu:
   docs:

@@ -19,7 +19,8 @@ X-Powers AXP803 PMU (Power Management Unit) information:
 
 * https://files.pine64.org/doc/datasheet/pine64/AXP803_Datasheet_V1.0.pdf[AXP803 PMIC Datasheet]
 
-*PINE A64, PINE A64+ and SOPINE Related:*
+PINE A64, PINE A64+ and SOPINE Related:
+
 * 5MPixel CMOS Camera module information:
 ** https://files.pine64.org/doc/datasheet/pine64/YL-PINE64-4EC.pdf[PINE64 YL-PINE64-4EC 5M Pixel CMOS Image Sensor Module (Description in Chinese)]
 ** https://files.pine64.org/doc/datasheet/pine64/S5K4EC%205M%208%205X8%205%20PLCC%20%20Data%20Sheet_V1.0.pdf[S5K4EC 5MP CMOS Image Sensor SoC Module Datasheet]

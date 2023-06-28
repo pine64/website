@@ -4,8 +4,9 @@
 
     <!-- If on the main page -->
     {{ if eq .RelPermalink "/documentation/"}}
+        <h3>Table of contents</h3>
         {{ .TableOfContents }}
-    {{end}}
+    {{ end }}
 
     <!-- Categories -->
     {{ range .Site.Menus.docs }}
@@ -13,7 +14,7 @@
         <!-- Displays only current category -->
         {{if or ($currentPage.IsMenuCurrent "docs" .) ($currentPage.HasMenuCurrent "docs" .) }} 
             <!-- Hide "Main Page"-->
-            {{if ne .Name "Main Page" }}
+            {{if ne .URL "/documentation/" }}
                 <a class='sidebar-nav-item' href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
                 <br> 
                 <hr>

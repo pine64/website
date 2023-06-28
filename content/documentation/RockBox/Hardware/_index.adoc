@@ -6,7 +6,7 @@ menu:
     title:
     parent: "RockBox"
     identifier: "RockBox/Hardware"
-    weight: 
+    weight: 3
 ---
 
 * link:LED[]
