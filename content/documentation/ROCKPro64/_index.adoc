@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-image:/documentation/images/ROCKPro64v21FRONT.jpg[The ROCKPro64,title="The ROCKPro64",width=400]
+image:/documentation/images/rockpro64.svg[The ROCKPro64,title="The ROCKPro64",width=400]
 
 The *ROCKPro64* is the most powerful Single Board Computer released by PINE64. It is powered by a Rockchip RK3399 Hexa-Core (dual ARM Cortex A72 and quad ARM Cortex A53) 64-Bit Processor with a Mali T-860 Quad-Core GPU. The key features include a PCIe x4 open ended slot, the use of LPDDR4 RAM, and industry standard heatsink mounting holes.
 

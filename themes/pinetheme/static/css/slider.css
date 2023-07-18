@@ -26,16 +26,14 @@
     z-index: -1;
 }
 .cr-item img {
-
     height: auto;
     max-width: 100%;
     filter: drop-shadow(5px 5px 8px #aaa);
 }
 
 .cr-control {
-    background: rgba(0, 0, 0, 0.28);
     border-radius: 50%;
-    color: #fff;
+    color: #888;
     cursor: pointer;
     display: none;
     font-size: 40px;
@@ -43,13 +41,16 @@
     line-height: 35px;
     position: absolute;
     bottom: 50%;
+    /*
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
+    */
     cursor: pointer;
     text-align: center;
     width: 40px;
     z-index: 10;
+    transition: all 0.3s ease-in-out;
 }
 
 .cr-control.prev {
@@ -61,8 +62,8 @@
 }
 
 .cr-control:hover {
-    background-color: #2868B0;
-    color: #fff;
+    color: #000;
+    transform: scale(1.1);
 }
 
 #cr-1:checked ~ .control-1,
@@ -96,6 +97,7 @@
     background-color: #aaaaaa;
     width: 30px;
     height: 5px;
+    transition: all 0.2s ease-in-out;
 }
 
 .cr-bullet:hover {
