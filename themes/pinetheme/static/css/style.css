@@ -130,7 +130,7 @@ h1 {
     float: left;
     height: 64px;
     max-height: 50px;
-    padding: 10px;
+    padding: 10px 10px 10px 20px;
 }
 #navlinks_right { 
     display: flex; 
@@ -140,8 +140,8 @@ h1 {
     padding: 15px;
     color: #333;
     text-decoration: none;
-    text-align: center;
     font-size: 18px;
+    white-space: nowrap;
 }
 #navlinks_right .nav-link:hover { 
     color: #0069B5;
@@ -152,7 +152,7 @@ h1 {
 
 /* External nav links */
 #navlinks_right .nav-link.external:hover { 
-    color: red;
+    text-decoration: underline;
 }
 
 #navlinks_right .dropdown {
@@ -170,6 +170,7 @@ h1 {
 .dropdown-items {
     display: none;
     position: absolute;
+    right: 0px;
     z-index: 1;
     background: white;
     border: 1px solid #ddd;
@@ -181,6 +182,7 @@ h1 {
 
 .dropdown-items .dropdown-item:first-of-type {
     border-top: none;
+    font-weight: 500;
 }
 
 .dropdown-toggle:checked ~ .dropdown-items {
@@ -196,7 +198,6 @@ h1 {
         display: block;
         width: 100%;
         padding: 14px 20px;
-        text-align: left !important;
     }
     #navlinks_right { 
         margin-left: 0;
@@ -237,7 +238,6 @@ h1 {
         width: 100%;
         height: 100%;
         color: white;
-        margin-top: 6px;
         font-style: normal;
         font-size: 1.4em;
     }
@@ -263,12 +263,6 @@ h1 {
 #content {
     min-height: 800px;
     color: #333;
-}
-div.container {
-    padding: 30px;
-}
-div.container p{
-    margin-bottom: 1em;
 }
 div.dark{
     background: linear-gradient(90deg, #2868B0 0%, #2F82C6 100%);
@@ -302,11 +296,14 @@ div.box img{
 }
 div.boxhalf {
     max-width: 500px;
-    margin: 0 1em 2em 1em;
+    margin: 2em 1em;
     background-color: white;
-    border-radius: 25px;
+    border-radius: 10px;
 }
-
+div.boxhalf img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
 @media screen and (max-width: 1100px){
@@ -317,10 +314,11 @@ div.boxhalf {
 }
 
 div.boxshadow {
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    
 }
 div.boxshadow:hover {
-    box-shadow: 0 3px 10px rgb(0,105,181, 0.4);
+    box-shadow: rgba(0, 105, 181, 0.4) 0px 8px 24px;
 }
 div.boxhalf h3 { 
     color: #333;
@@ -672,7 +670,6 @@ nav#TableOfContents ul ul{
     padding: 2em 1em;
 }
 
-
 /* Blog posts */
 .backlink {
     color: rgb(10, 83, 154);
@@ -837,11 +834,27 @@ tbody {
     margin-bottom: 0;
 }
 
+
+.box_generic {
+    padding: 3em 2em !important;
+}
+.box_generic a {
+    color: #4ab1ff;
+}
+.box_generic a:hover {
+    color: #bee3ff;
+}
+
+.intro_community {
+    background-color: rgb(34, 102, 153);
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    font-weight: 500;
+}
+
 /* Podcast page */
-.podcast_intro {
+.intro_podcast {
     background-color: #e4f0ff;
-    margin-bottom: 4em;
-    padding: 4em 2em !important;
 }
 button.podcast {
     padding: 1.4em 2em;
@@ -910,11 +923,7 @@ button.podcast:hover {
 
 
 
-#blog_header {
-    /*
-    background-color: #f4f4f4;
-    color: #333;
-    */
+.intro_blog {
     color: black;
     height: 300px;
     font-weight: 400;
@@ -923,31 +932,15 @@ button.podcast:hover {
     background-repeat: no-repeat;
     background-size: cover;
 }
-#contest_header {
+.intro_contest {
     background-color: rgb(211, 211, 211);
     background-image: url("/artwork/tria2_i.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 300px;
+
     color: white;
     text-shadow: 2px 2px 8px black;
     font-weight: 500;
-}
-
-.generic_header_container {
-    height: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 1em;
-}
-.generic_header_container h1 {
-    padding-top: 40px;
-}
-.generic_header_container a {
-    color: #4ab1ff;
-}
-.generic_header_container a:hover {
-    color: #bee3ff;
 }
 .contests-container {
     padding-bottom: 4em;

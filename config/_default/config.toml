@@ -75,9 +75,9 @@ paginate = 9
     weight = 6
     identifier = "store"
     [menu.right.params]
-      external = true
+      external = false
   [[menu.right]]
-    name = "Global"
+    name = "🌐 Global"
     url = "https://www.pine64.com/"
     parent = "store"
     weight = 1
@@ -85,7 +85,7 @@ paginate = 9
     [menu.right.params]
       external = true
   [[menu.right]]
-    name = "EU"
+    name = "🇪🇺 EU"
     url = "https://www.pine64eu.com/"
     parent = "store"
     weight = 2
