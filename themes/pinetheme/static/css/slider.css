@@ -12,20 +12,21 @@
 
 .cr-open:checked + .cr-item {
     position: static;
-    opacity: 100;
+    opacity: 1.0;
 }
 
 .cr-item {
     position: absolute;
-    opacity: 0;
+    opacity: 0.0;
     -webkit-transition: opacity 0.6s ease-out;
     transition: opacity 0.6s ease-out;
     height: 498px;
     display: flex;
     justify-content: center;
+    z-index: -1;
 }
 .cr-item img {
-    display: block;
+
     height: auto;
     max-width: 100%;
     filter: drop-shadow(5px 5px 8px #aaa);
