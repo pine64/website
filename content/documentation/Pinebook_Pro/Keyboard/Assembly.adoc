@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-{{Under construction}}
+{{% docs/construction %}}
 
 The Pinebook Pro keyboard comes as a pre-assembled unit built into the main shell of the device, a damaged shell had the keyboard removed from it to be studied.
 Note that removing the keyboard from the shell is technically irreversible since it's held in with melted plastic rivets. If these ever happen to break then you could likely hold the keyboard in with adhesives or drill small holes and use screws instead.

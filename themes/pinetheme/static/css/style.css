@@ -274,22 +274,26 @@ div.grey{
 }
 
 div.box {
+    max-width: 1100px;
     min-height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /*align-items: center;*/
     flex: 1 1 auto;
     font-size: 13pt;
+    margin: 0 auto;
+    flex-wrap: wrap;
 }
-div.box h1{
+
+div.box h1 {
+    max-width: 1100px;
     margin-bottom: 0.6em;
     font-size:24pt;
+    width: 100%;
+    text-align: center;
 }
 div.nonflex {
     display: block !important;
-    max-width: 1100px;
-    margin: 0 auto;
 }
 div.box img{
     width: 100%;
@@ -297,8 +301,13 @@ div.box img{
 div.boxhalf {
     max-width: 500px;
     margin: 2em 1em;
-    background-color: white;
     border-radius: 10px;
+}
+div.boxhalf h1{
+    text-align: left;
+}
+div.indexblog {
+    background-color: white;
 }
 div.indexblog img {
     border-top-left-radius: 10px;
@@ -575,7 +584,7 @@ nav#TableOfContents ul ul{
 #footer {
     min-height: 100px;
     background-color: #444;
-    padding-top: 3em;
+    padding: 3em 0.2em 1em 0.2em;
     color: #eee;
 }
 

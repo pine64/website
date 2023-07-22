@@ -177,7 +177,7 @@ div.cr-right a:hover {
         font-size: 18px;
     }
     .cr-control {
-        bottom: -20px !important;
+        bottom: 0px !important;
         background: none;
         color: #7F7F7F;
     }

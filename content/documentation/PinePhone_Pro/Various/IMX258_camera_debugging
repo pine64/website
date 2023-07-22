@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-{{Under construction}}
+{{% docs/construction %}}
 
 == Background
 

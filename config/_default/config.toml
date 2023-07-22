@@ -38,10 +38,6 @@ paginate = 9
 [security.exec]
   allow = ["^asciidoctor$"]
 
-[params]
-  # Description for the main page
-  Description = "PINE64 is a large, vibrant and diverse community and creates software, documentation and projects."
-
 # Docs menu
 [menu]
   [[menu.right]]

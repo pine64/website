@@ -417,7 +417,7 @@ If you have followed all the steps correctly, the board should boot from your US
 
 == Troubleshooting
 
-{{Under construction}}
+{{% docs/construction %}}
 
 A number of things can prevent the PINE64 board from booting up properly. The most common culprits of a failed boot are: (to find out more click https://forum.pine64.org/showthread.php?tid=514[here])
 

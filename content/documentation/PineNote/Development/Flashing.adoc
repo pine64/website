@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-{{Under construction}}
+{{% docs/construction %}}
 
 NOTE: These instructions are directed towards experienced developers only!
 

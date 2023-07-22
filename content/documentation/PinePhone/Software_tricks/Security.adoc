@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-{{under construction}}
+{{% docs/construction %}}
 
 == Encryption
 

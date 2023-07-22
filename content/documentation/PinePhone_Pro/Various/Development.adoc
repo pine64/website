@@ -16,21 +16,17 @@ This page documents the current status of software support for the link:/documen
 === Upstreaming Status
 
 |===
-|scope="col" | Function
-2+| Status
-|scope="col" | Component
-|scope="col" | Notes
+| Function | Status | Component | Notes
 
-|scope="row" | Bootloader (u-boot)
-| colspan="2" | Working. Not upstreamed.
+| Bootloader (u-boot)
+| Working. Not upstreamed.
 |
 | https://github.com/dreemurrs-embedded/Pine64-Arch/tree/master/PKGBUILDS/pine64/uboot-pinephonepro uses https://git.sr.ht/~martijnbraam/u-boot.
 
-|scope="row" | Modem
-| colspan="2" |Working. Not upstreamed.
+| Modem
+| Working. Not upstreamed.
 |
 | Support in https://gitlab.com/mobian1/devices/eg25-manager and Megi's kernel.
-
 |===
 
 == Current Status

@@ -13,9 +13,7 @@ The PinePhone Pro is PINE64’s second smartphone and a successor to the origina
 
 == State of the software
 
-link:/documentation/PinePhone_Pro/Various/Software_state[View separately]
-
-{{:PinePhone Pro Software State}}
+See the page link:/documentation/PinePhone_Pro/Various/Software_state[software state]
 
 == Editions and revisions
 

@@ -1,0 +1,16 @@
+<div class="boxhalf">
+    {{- if eq (.Get "type") "image" -}}
+        <img src='{{ .Get "link" }}'>
+    {{- else -}}
+        <h1>{{ .Get "title" }}</h1>
+        {{- if .Get "content" -}}
+            {{- if eq (.Get "content") "adoc" -}}
+                {{ .Inner | .Page.RenderString (dict "markup" "adoc") }}
+            {{- else if eq (.Get "content") "markdown" -}}
+                {{ .Inner | markdownify }}
+            {{- end -}}
+        {{- else -}}
+            {{ .Inner }}
+        {{- end -}}
+    {{- end -}}
+</div>

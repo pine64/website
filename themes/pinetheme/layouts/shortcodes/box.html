@@ -1,0 +1,15 @@
+<div class='box_generic {{ if .Get "style" }} {{ .Get "style" }}{{ end }}'>
+    <div class='box {{ if .Get "flex" }} {{ .Get "flex" }}{{ end }}'>
+        {{ if .Get "title" }}<h1>{{ .Get "title" }}</h1>{{- end -}}
+
+        {{- if .Get "content" -}}
+            {{- if eq (.Get "content") "adoc" -}}
+                {{ .Inner | .Page.RenderString (dict "markup" "adoc") }}
+            {{- else if eq (.Get "content") "markdown" -}}
+                {{ .Inner | markdownify }}
+            {{- end -}}
+        {{- else -}}
+            {{ .Inner }}
+        {{- end -}}
+    </div>
+</div>

@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-{{Under construction}}
+{{% docs/construction %}}
 
 This page is a work in progress. Its goals are to help users get their devices up and running while minimizing redundancy with other pages (for example documentation, development), and to synthesize information provided in existing guides. Sections below represent a rough outline and will need to be expanded with details and further instructions.
 

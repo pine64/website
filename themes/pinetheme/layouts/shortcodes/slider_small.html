@@ -1,5 +1,5 @@
-{{ $slides := 8 }}
-{{ $sec := 10 }}
+{{ $slides := (strings.Count "<img" .Inner) }}
+{{ $sec := .Get "seconds" }}
 
 <style>
 .slideshow {width:350px; height:300px; overflow:hidden; position:relative; }
@@ -12,12 +12,5 @@
 </style>
 
 <div class="slideshow">
-  <img src="/img/slider_index_1.png">
-  <img src="/img/slider_index_2.png">
-  <img src="/img/slider_index_3.png">
-  <img src="/img/slider_index_4.png">
-  <img src="/img/slider_index_5.png">
-  <img src="/img/slider_index_6.png">
-  <img src="/img/slider_index_7.png">
-  <img src="/img/slider_index_8.png">
+{{ .Inner }}
 </div>
