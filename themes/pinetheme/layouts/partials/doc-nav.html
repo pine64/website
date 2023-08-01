@@ -25,29 +25,29 @@
         {{end}}
 
         
-        {{ if .HasChildren }}
-            {{ if or ($currentPage.IsMenuCurrent "docs" .) ($currentPage.HasMenuCurrent "docs" .) }}
+        {{ if and .HasChildren (or ($currentPage.IsMenuCurrent "docs" .) ($currentPage.HasMenuCurrent "docs" .)) }}
 
-                <ul>
+            <ul>
 
-                <!-- Children -->
-                {{ range .Children }}
-                
-                    <li><a class='sidebar-nav-subitem {{if $currentPage.IsMenuCurrent "docs" .}}active{{end}}' href='{{.URL}}'>{{ .Title }}</a></li>
-                    {{ if .HasChildren }}
-                        <ul>
+            <!-- Children -->
+            {{ range .Children }}
+            
+                <li><a class='sidebar-nav-subitem {{if $currentPage.IsMenuCurrent "docs" .}}active{{end}}' href='{{.URL}}'>{{ .Title }}</a></li>
 
-                        <!-- Children-Children -->
-                        {{ range .Children }}
-                            <li class="doc_subitem"><a class='sidebar-nav-subsubitem {{if $currentPage.IsMenuCurrent "docs" .}}active{{end}}' href='{{.URL}}'>{{ .Title }}</a></li>
-                        {{end}}
+                {{ if .HasChildren }}
+                    <ul>
 
-                        </ul>
-                    {{end}}
+                    <!-- Children-Children -->
+                    {{ range .Children }}
+                        <li class="doc_subitem"><a class='sidebar-nav-subsubitem {{if $currentPage.IsMenuCurrent "docs" .}}active{{end}}' href='{{.URL}}'>{{ .Title }}</a></li>
+                    {{ end }}
+
+
+                    </ul>
                 {{end}}
-
-                </ul>
             {{end}}
+
+            </ul>
         {{end}}
     {{ end }}
 </nav>

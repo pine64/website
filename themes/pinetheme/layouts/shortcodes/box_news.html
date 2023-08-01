@@ -16,14 +16,11 @@
                     <div class="box_news_text">
                         <h3>{{ .Title }}</h3>
                         <p>{{ .Summary }}</p>
-
-                        {{ if .Truncated }}
-                        <!-- This <div> includes a read more link, but only if the summary is truncated... -->
+                        
                         <br>
                         <div>
                           <a href="{{ .RelPermalink }}">Read More</a>
                         </div>
-                        {{ end }}
                     </div>
                 </a>
             </div>

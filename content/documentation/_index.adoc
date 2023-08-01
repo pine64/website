@@ -11,9 +11,9 @@ menu:
 
 :toc:
 
-In this documentation you can learn more about the following devices:
-
 == Devices
+
+The following PINE64 devices are available in the documentation
 
 [cols="25h,~"]
 |===

@@ -1,0 +1,28 @@
+{{- $src := .Get "src" -}}
+{{- $title := .Get "title" -}}
+{{- $text := .Get "text" -}}
+{{- $link := .Get "link" -}}
+{{- $num := .Get "num" -}}
+
+{{- with .Parent -}}
+
+<input class="cr-open" type="radio" id="cr-{{ $num }}" name="cr" aria-hidden="true" hidden="" {{if eq $num "1"}}checked="checked"{{end}}>
+<div class="cr-item">
+    <div class="cr-center">
+        <div class="cr-left">
+            <div class="cr-img">
+                <img src="{{ $src }}">
+            </div>
+        </div>
+        <div class="cr-right">
+            <h1>{{ $title | safeHTML }}</h1>
+
+            <span>{{ $text | safeHTML  }}</span>
+
+            <br><br><br>
+            <a href="{{ $link }}">Learn more</a>
+        </div>
+    </div>
+</div>
+
+{{- end -}}

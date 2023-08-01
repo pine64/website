@@ -1,8 +1,9 @@
 <div class="boxhalf">
     {{- if eq (.Get "type") "image" -}}
-        <img src='{{ .Get "link" }}'>
+        <img src='{{ .Get "link" }}' {{- if isset .Params "height" -}}height='{{- .Get "height" -}}'{{- else -}}{{- end -}}>
     {{- else -}}
         <h1>{{ .Get "title" }}</h1>
+        <p>
         {{- if .Get "content" -}}
             {{- if eq (.Get "content") "adoc" -}}
                 {{ .Inner | .Page.RenderString (dict "markup" "adoc") }}
@@ -12,5 +13,6 @@
         {{- else -}}
             {{ .Inner }}
         {{- end -}}
+        </p>
     {{- end -}}
 </div>

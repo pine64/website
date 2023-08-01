@@ -178,7 +178,8 @@ which in of itself goes on to reference `0x1970`, and looking this one up, we'll
     <197a>   DW_AT_sibling     : <0x1c4f>
  <2><197e>: Abbrev Number: 27 (DW_TAG_member)
     <197f>   DW_AT_name        : (indirect string, offset: 0x7d00): i_mode
-[etc etc...]
+
+etc.
 
 == Reverse-Engineered Stuff
 

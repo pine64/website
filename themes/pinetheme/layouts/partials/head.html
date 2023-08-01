@@ -1,34 +1,28 @@
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="stylesheet" type="text/css" href="/css/print.css">
     <link rel="icon" type="image/x-icon" href="/img/logo_blue.svg">
     <link rel="stylesheet" type="text/css" href="/css/slider.css">
 
-    {{ $title := print .Title " | " .Site.Title }}
-    {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+    {{- $title := print .Title " - " .Site.Title -}}
+    {{- if .IsHome -}}{{- $title = .Site.Title -}}{{- end -}}
     
     <title>{{ $title }}</title>
 
-    <!-- Meta tags -->
-    <!-- Responsive website -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Page description-->
-
-    {{ if .Params.Description }}
+    {{- if .Params.Description -}}
     <meta name="description" content="{{ .Params.Description }}" />
     <meta property="og:description" content="{{ .Params.Description }}">
     {{- else -}}
     <meta name="description" content="{{ .Summary | plainify }}">
     <meta property="og:description" content="{{ .Summary | plainify }}">
     {{- end }}
-
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{.Permalink}}">
     <meta property="og:title" content="{{ $title }}">
-    {{ if .Params.cover.image}}
+    {{- if .Params.cover.image -}}
     <meta property="og:image" content="{{.Site.BaseURL}}blog/images/{{ .Params.cover.image }}">
     {{- else -}}
     <meta property="og:image" content="{{.Site.BaseURL}}img/logo.png">

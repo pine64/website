@@ -11,8 +11,8 @@
             <input type="checkbox" id="hamburger"/>
 
             <div id="navlinks_right">
-                {{$currentPage := .}}
-                {{ range .Site.Menus.right }}
+                {{- $currentPage := . -}}
+                {{- range .Site.Menus.right -}}
                     <!-- Menu item has subitems -->
                     {{ if .HasChildren }}
                         <div class="dropdown">
@@ -32,7 +32,7 @@
                                     {{- if or (or ($currentPage.IsMenuCurrent "right" .) ($currentPage.HasMenuCurrent "right" .)) (strings.Contains $currentPage .URL ) }} active{{end -}}
                                         {{- if eq .Params.external true }} external{{end -}}
                                         ' href="{{ .URL }}" 
-                                        {{- if eq .Params.external true }}target="_blank" rel="noopener noreferrer"{{ end -}}
+                                        {{- if eq .Params.external true }} target="_blank" rel="noopener noreferrer"{{ end -}}
                                     >
                                         {{- .Name | safeHTML -}}
                                     </a>
@@ -40,16 +40,16 @@
                             </div>
                         </div>
                     <!-- Menu item has no subitems -->
-                    {{ else }}
+                    {{- else -}}
                         <a class='nav-link
                         {{- if or (or ($currentPage.IsMenuCurrent "right" .) ($currentPage.HasMenuCurrent "right" .)) (strings.Contains $currentPage .URL ) }} active{{end -}}
                         {{- if eq .Params.external true }} external{{end -}}
                         ' href="{{ .URL }}" 
-                        {{- if eq .Params.external true }}target="_blank" rel="noopener noreferrer"{{ end -}}>
+                        {{- if eq .Params.external true }} target="_blank" rel="noopener noreferrer"{{ end -}}>
                         {{- .Name | safeHTML -}}
                         </a>
-                    {{ end }}
-                {{ end }}
+                    {{- end -}}
+                {{- end -}}
             </div>
         </nav>
 

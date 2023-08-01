@@ -1,0 +1,60 @@
+{{ $slides := (strings.Count "<img" .Inner) }}
+
+<div class="cr">
+    <div class="cr-inner">
+
+        {{ .Inner }}
+
+        {{ range $index, $num := (seq $slides) }}
+            {{- if eq $num 1 -}}
+        <label for="cr-1" class="cr-control prev control-2" onclick="lclick()">‹</label>
+        <label for="cr-1" class="cr-control next control-{{ $slides }}" onclick="lclick()">›</label>
+            {{- else if eq $num $slides -}}
+        <label for="cr-{{ $num }}" class="cr-control prev control-1" onclick="lclick()">‹</label>
+        <label for="cr-{{ $num }}" class="cr-control next control-{{ sub $num 1 }}" onclick="lclick()">›</label>
+            {{- else -}}
+        <label for="cr-{{ $num }}" class="cr-control prev control-{{ add $num 1 }}" onclick="lclick()">‹</label>
+        <label for="cr-{{ $num }}" class="cr-control next control-{{ sub $num 1 }}" onclick="lclick()">›</label>
+            {{- end -}}
+        {{ end }}
+
+        <ol class="cr-indicators">
+            {{ range $index, $num := (seq $slides) }}
+            <li><label for="cr-{{ $num | safeJS }}" class="cr-bullet" onclick="lclick()"></label></li>
+            {{ end }}
+        </ol>
+    </div>
+</div>
+
+<script>
+    {{ range $index, $num := (seq $slides) }}
+    var cr{{ $num | safeJS }} = document.querySelector("[id='cr-{{$num | safeJS }}']"); 
+    {{ end }}
+
+    var timeout = 5000;
+    var timer;
+
+    function lclick() {
+        clearTimeout(timer)
+        timer = setTimeout(click, 20000)
+    }
+
+    function click () {
+        {{ range $index, $num := (seq $slides) }}
+            {{- if eq $num 1 -}}
+                if (document.getElementById("cr-1").checked) {
+                    cr2.click();
+            {{- else if eq $num $slides -}}
+                } else if (document.getElementById("cr-{{ $num | safeJS }}").checked) {
+                    cr1.click();
+                }
+            {{- else -}}
+                } else if (document.getElementById("cr-{{ $num | safeJS }}").checked) {
+                    cr{{ add $num 1 | safeJS }}.click();
+            {{- end -}}
+        {{ end }}
+    
+        timer = setTimeout(click, timeout)
+    }
+    timer = setTimeout(click, timeout);
+</script>

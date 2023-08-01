@@ -51,6 +51,7 @@
     width: 40px;
     z-index: 10;
     transition: all 0.3s ease-in-out;
+    background-color: inherit;
 }
 
 .cr-control.prev {
@@ -68,8 +69,28 @@
 
 #cr-1:checked ~ .control-1,
 #cr-2:checked ~ .control-2,
-#cr-3:checked ~ .control-3 {
+#cr-3:checked ~ .control-3,
+#cr-4:checked ~ .control-4,
+#cr-5:checked ~ .control-5,
+#cr-6:checked ~ .control-6,
+#cr-7:checked ~ .control-7,
+#cr-8:checked ~ .control-8,
+#cr-9:checked ~ .control-9,
+#cr-10:checked ~ .control-10 {
     display: block;
+}
+
+#cr-1:checked ~ .control-1 ~ .cr-indicators li:nth-child(1) .cr-bullet,
+#cr-2:checked ~ .control-2 ~ .cr-indicators li:nth-child(2) .cr-bullet,
+#cr-3:checked ~ .control-3 ~ .cr-indicators li:nth-child(3) .cr-bullet,
+#cr-4:checked ~ .control-4 ~ .cr-indicators li:nth-child(4) .cr-bullet,
+#cr-5:checked ~ .control-5 ~ .cr-indicators li:nth-child(5) .cr-bullet,
+#cr-6:checked ~ .control-6 ~ .cr-indicators li:nth-child(6) .cr-bullet,
+#cr-7:checked ~ .control-7 ~ .cr-indicators li:nth-child(7) .cr-bullet,
+#cr-8:checked ~ .control-8 ~ .cr-indicators li:nth-child(8) .cr-bullet,
+#cr-9:checked ~ .control-9 ~ .cr-indicators li:nth-child(9) .cr-bullet,
+#cr-10:checked ~ .control-10 ~ .cr-indicators li:nth-child(10) .cr-bullet {
+    background-color: #2868B0;
 }
 
 .cr-indicators {
@@ -103,13 +124,6 @@
 .cr-bullet:hover {
     background-color: #2868B0 !important;
 }
-
-#cr-1:checked ~ .control-1 ~ .cr-indicators li:nth-child(1) .cr-bullet,
-#cr-2:checked ~ .control-2 ~ .cr-indicators li:nth-child(2) .cr-bullet,
-#cr-3:checked ~ .control-3 ~ .cr-indicators li:nth-child(3) .cr-bullet {
-    background-color: #2868B0;
-}
-
 
 div.cr-center {
     max-width: 1100px;

@@ -1,7 +1,6 @@
 baseURL = 'http://beta.pine64.org/'
 languageCode = 'en-us'
-#title = 'PINE64 | Open. Friendly. Community-Driven.'
-title = 'PINE64 Community'
+title = 'PINE64'
 theme = "pinetheme"
 
 # Blog post summary limit

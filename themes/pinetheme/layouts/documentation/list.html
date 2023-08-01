@@ -2,15 +2,13 @@
     <div id="doc-container">
 
         <div id="doc-nav">
-            {{ partial "search.html" . }}
-
             {{ partial "doc-nav.html" . }}
         </div>
 
         <div id="doc-page">
             {{ partial "breadcrumb.html" . }}
 
-            <!--  partial "doc_beta_warning.html" . -->
+            <!-- partial "doc_beta_warning.html" . -->
 
             <article>
                 <header>
@@ -21,7 +19,7 @@
             </article>
 
             <!-- partial "doc_previousnext.html" . -->
-            {{partial "doc_previousnext_custom.html" .}}
+            {{ partial "doc_previousnext_custom.html" .}}
 
         </div>
         
