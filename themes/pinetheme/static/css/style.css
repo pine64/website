@@ -442,6 +442,10 @@ button.rounded:hover {
     max-height: 100vh;
     overflow: scroll;
 }
+#doc-nav .sidebar-nav > ul > ul {
+    border-left: 1px solid #ddd;
+    margin-left: 10px;
+}
 #doc-nav .sidebar-nav-item {
     font-weight: 500;
     padding: 6px 4px;
@@ -456,7 +460,8 @@ button.rounded:hover {
 }
 #doc-nav .sidebar-nav-subsubitem {
     font-weight: 300 !important;
-    padding-left: 20px;
+    padding-left: 5px;
+    margin-left: 5px;
     box-decoration-break: clone;
 }
 @media screen and (max-width: 1000px){
@@ -691,6 +696,9 @@ nav#TableOfContents ul ul{
 .center-contents {
     max-width: 1000px;
     padding: 2em 1em;
+}
+.center-contents > p > img {
+    max-height: 600px;
 }
 
 /* Blog posts */
