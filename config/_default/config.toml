@@ -34,6 +34,9 @@ paginate = 9
   hiddenInList = false # hide on list pages and home
   hiddenInSingle = false # hide on single page
 
+[social]
+  twitter = 'thepine64'
+
 [security.exec]
   allow = ["^asciidoctor$"]
 
