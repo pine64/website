@@ -145,6 +145,7 @@ This is a CLI that runs in a terminal console. Get the latest zip file for Linux
 == Update V1
 
 image:/documentation/images/Pinecil-V1andV2.png[right,title="right",width=400]
+
 . Pinecil V1 uses a *.dfu file type for firmware. The newer Pinecil V2 only uses *.bin firmware type files.
 . Pinecil V1 models were sold until July 2022 and then discontinued.
 . Boot logo art: the same flashers used to install IronOS firmware can be used to install the art. Boot logo art will not overwrite the firmware, it resides in a separate space on the chip.

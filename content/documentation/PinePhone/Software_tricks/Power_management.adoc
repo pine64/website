@@ -197,6 +197,7 @@ The data on this page is based on the the link:/documentation/PinePhone/Revision
 These are all medium priority.
 
 The result of these changes would be that:
+
 . The always-on part of the ANX7688 chip (AVDD33, DVDD1V8) will always be powered
 . GPIO1-LDO only needs to be powered when a USB cable is detected, and is enough to power the rest of the chip (except HDMI)
 . DLDO1 only needs to be enabled if the display pipeline or sensors are active, even if a USB cable is plugged in

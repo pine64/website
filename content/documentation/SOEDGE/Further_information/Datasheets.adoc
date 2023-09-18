@@ -23,6 +23,7 @@ DDR4 information:
 * https://files.pine64.org/doc/datasheet/SOEdge/Micron%208Gb_DDR4_SDRAM.pdf[Micron DDR4 Datasheet]
 
 eMMC information:
+
 * https://files.pine64.org/doc/rock64/PINE64_eMMC_Module_20170719.pdf[PINE64 eMMC module schematic]
 * https://files.pine64.org/doc/rock64/usb%20emmc%20module%20adapter%20v2.pdf[PINE64 USB adapter for eMMC module V2 schematic]
 * https://files.pine64.org/doc/rock64/USB%20adapter%20for%20eMMC%20module%20PCB.tar[PINE64 USB adapter for eMMC module PCB in JPEG]

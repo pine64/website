@@ -26,6 +26,7 @@ LPDDR3 (178 Balls) SDRAM:
 * https://files.pine64.org/doc/rock64/SPECTEK_178B_32GB_V91M_MOBILE_LPDDR3.pdf[Spectek LPDDR3 Datasheet]
 
 eMMC information:
+
 * https://files.pine64.org/doc/rock64/PINE64_eMMC_Module_20170719.pdf[PINE64 eMMC module schematic]
 * https://files.pine64.org/doc/rock64/usb%20emmc%20module%20adapter%20v2.pdf[PINE64 USB adapter for eMMC module V2 schematic]
 * https://files.pine64.org/doc/rock64/USB%20adapter%20for%20eMMC%20module%20PCB.tar[PINE64 USB adapter for eMMC module PCB in JPEG]
@@ -48,6 +49,7 @@ Wifi/BT module information:
 * https://files.pine64.org/doc/datasheet/pine64/RTL8723BS.pdf[Realtek RTL8723BS 1x1 WiFi with BT 4.0 SDIO]
 
 miniPCIe SATA module information:
+
 * https://files.pine64.org/doc/datasheet/pine-h64/miniPCIe%20connector.jpg[Molex miniPCie Socket information]
 * https://files.pine64.org/doc/datasheet/pine-h64/ASM1061_Data%20Sheet_R1_8.pdf[ASmedia ASM1061 2x2WiFi with BT 4.1 SDIO]
 

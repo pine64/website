@@ -249,6 +249,7 @@ UVC Gadget software links camera of PineCube and UVC gadget (OTG port).
 Known issues:
 
 . Low Frame rate(3FPS~5FPS). That is because:
+
 .. At the time of writing this section, `streaming_maxpacket` value cannot be set to max value (2048 bytes.) It can be set only to 512 bytes. If `streaming_maxpacket` is set to max (2048) value, UDC cannot be turned on with `Invalid Value` error.
 .. YUYV (uncompressed) file format is being used to stream the images. Uncompressed images take a lot of USB bandwidth compared to compressed. We can stream more frames, if MJPEG or even H254 (compressed images) would be used. I will be investigating further on how to stream more frames through USB port.
 

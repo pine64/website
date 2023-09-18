@@ -246,7 +246,7 @@ First, you'll want to make sure the device you've connected is in maskrom mode:
 
  ./rkdeveloptool list
 
-It should output something like "_DevNo=1 Vid=0x2207,Pid=0x350a,LocationID=202 Maskrom_". If it doesn't, see link:/documentation/PineNote/Development/_index#Entering Maskrom Mode[PineNote Development].
+It should output something like "_DevNo=1 Vid=0x2207,Pid=0x350a,LocationID=202 Maskrom_". If it doesn't, see link:/documentation/PineNote/Development/_index#Entering_Maskrom_Mode[PineNote Development].
 
 You can now download u-boot onto it:
 
@@ -273,7 +273,7 @@ You can create a filesystem image that replaces the Android boot or recovery par
 
 == Using fastboot
 
-Follow the steps for link:/documentation/PineNote/Development/Flashing#Creating a mainline boot image[Creating a mainline boot image], but instead of flashing it with _rkdeveloptool_, use _fastboot_. You can enter fastboot in either of two ways:
+Follow the steps for link:/documentation/PineNote/Development/Flashing#Creating_a_mainline_boot_image[Creating a mainline boot image], but instead of flashing it with _rkdeveloptool_, use _fastboot_. You can enter fastboot in either of two ways:
 
 * Use "reboot bootloader" from adb or a UART console or
 * get a U-Boot prompt and run `fastboot usb 0`.

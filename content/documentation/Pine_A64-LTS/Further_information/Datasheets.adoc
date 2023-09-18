@@ -28,6 +28,7 @@ LPDDR3 information:
 * https://files.pine64.org/doc/datasheet/pine64/LPDDR3%20178ball%208Gb_H9CCNNN8JTALAR_Rev1.0.pdf[Hynix LPDDR3 Datasheet]
 
 eMMC information:
+
 * https://files.pine64.org/doc/rock64/PINE64_eMMC_Module_20170719.pdf[PINE64 eMMC module schematic]
 * https://files.pine64.org/doc/rock64/usb%20emmc%20module%20adapter%20v2.pdf[PINE64 USB adapter for eMMC module V2 schematic]
 * https://files.pine64.org/doc/rock64/USB%20adapter%20for%20eMMC%20module%20PCB.tar[PINE64 USB adapter for eMMC module PCB in JPEG]

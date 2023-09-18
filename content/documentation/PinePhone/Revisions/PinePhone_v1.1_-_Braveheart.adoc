@@ -11,7 +11,7 @@ menu:
 
 The PinePhone v1.1 "Braveheart" is a hardware revision of the link:/documentation/PinePhone/_index[PinePhone] that shipped in January 2020.
 
-This page contains resources which are exclusive to the 1.1 revision of the PinePhone. For newer revisions or for resources related to other PinePhone revisions see link:/documentation/PinePhone/_index#Hardware revisions[PinePhone].
+This page contains resources which are exclusive to the 1.1 revision of the PinePhone. For newer revisions or for resources related to other PinePhone revisions see link:/documentation/PinePhone/_index#Hardware_revisions[PinePhone].
 
 == Schematic
 

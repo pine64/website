@@ -67,7 +67,9 @@ Press Config Mode button to go into configuration mode
 * Once the server is started, you will notice that the LED indicator on the Wifi Remote I2c Hardware will change from slow blinking to always on.
 * To login into the server, telnet into localhost port 10000
   telnet localhost 10000
+
 image:/documentation/images/Wr_putty_login.JPG[PineWifiServer Login Screen,title="PineWifiServer Login Screen"]
+
 * To show current connect Wifi Remote I2c type 'list' in small capital letter.
 * To see all available command, type 'help'.
 * To exit the console, type 'exit'.
@@ -114,7 +116,9 @@ Place the jumper J2 on USB/UART Programming/Console Adapter (PMPROG01) to 5V out
 * Download the firmware from the link:/documentation/Unsorted/Wifi_remote_i2c#Download[download section] and unzip the file.
 * Download the windows Python base Flash Download Tools by Espressif from http://espressif.com/en/products/hardware/esp8266ex/resources[Espressif website].
 * Setup the ESP Flash Download tools according to the screen short.
+
 image:/documentation/images/Esp_prog_tool.JPG[width=400]
+
 * Make sure that the firmware address is set correctly. Baud rate is set to 115200baud and Com Port is set according to the Virtual Com Port of your PC.
 * Once the ESP Flash Download tool and hardware is setup properly, press the 'Start' button to start the firmware uploading process.
 * After uploading is done, power off and on again the WiFi Remote I2c module to restart the system.

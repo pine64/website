@@ -22,6 +22,7 @@ LPDDR4 (200 Balls) SDRAM:
 * ---
 
 eMMC information:
+
 * https://en.biwin.com.cn/product/detail/6[Biwin 128GB eMMC model: BWCTASC41P128G]
 
 E-ink Panel information:

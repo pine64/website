@@ -63,7 +63,7 @@ In order to cross-compile Rust applications for the Pinephone, you need to have 
 
 The cross-compiler might have a different name depending on the operating system. Further along this instruction the name for the gcc cross-compiler will be used. Replace all occurences of `$gcc_name` with the name on your distribution.
 
-For how to install the gcc cross-compilation toolchain on your distribution, please see link:/documentation/Unsorted/Cross-compiling#Installing The Toolchain[Cross-compiling]
+For how to install the gcc cross-compilation toolchain on your distribution, please see link:/documentation/Unsorted/Cross-compiling#Installing_The_Toolchain[Cross-compiling]
 
 === Installing Rust Dependencies
 

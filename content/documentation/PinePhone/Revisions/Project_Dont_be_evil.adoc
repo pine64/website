@@ -98,6 +98,7 @@ LPDDR3 information:
 * https://files.pine64.org/doc/datasheet/pine64/LPDDR3%20178ball%208Gb_H9CCNNN8JTALAR_Rev1.0.pdf[Hynix LPDDR3 Datasheet]
 
 eMMC information:
+
 * https://files.pine64.org/doc/rock64/PINE64_eMMC_Module_20170719.pdf[PINE64 eMMC module schematic]
 * https://files.pine64.org/doc/rock64/usb%20emmc%20module%20adapter%20v2.pdf[PINE64 USB adapter for eMMC module V2 schematic]
 * https://files.pine64.org/doc/rock64/USB%20adapter%20for%20eMMC%20module%20PCB.tar[PINE64 USB adapter for eMMC module PCB in JPEG]
@@ -113,11 +114,13 @@ SPI NOR Flash information:
 === Related datasheets
 
 2MPixel front CMOS Camera module information:
+
 * https://files.pine64.org/doc/datasheet/pinephone/GC20355Mp-module_for_pinephone_devkit.pdf[2MP CMOS Image Sensor Module Drawing]
 * https://files.pine64.org/doc/datasheet/pinephone/GC2035%20Product%20Brief.pdf[GalaxyCore GC2035 2MP CMOS Image Sensor Product Brief]
 * https://files.pine64.org/doc/datasheet/pinephone/GC2035%20DataSheet.pdf[GalaxyCore GC2035 2MP CMOS Image Sensor Datasheet]
 
 5MPixel Rear CMOS Camera module information:
+
 * https://files.pine64.org/doc/datasheet/pinephone/ATK-OV5640-5Mp-module_for_pinephone_devkit.pdf[5MP CMOS Image Sensor Module Drawing]
 * https://files.pine64.org/doc/datasheet/pinephone/OV5640_datasheet.pdf[OmniVision OV5640 5MP CMOS Image Sensor Datasheet]
 * https://www.arducam.com/downloads/modules/OV5640/OV5640_Software_app_note_parallel.pdf[OmniVision OV5640 5MP CMOS Image Sensor Software Application Note]
@@ -193,6 +196,7 @@ The Sailfish OS image is build on Gitlab CI, the latest image can be installed u
 The script downloads the image and bootloader from our CI, extracts everything and burns it onto the SD card.
 
 Instructions:
+
 . Download the flashing script
 . Insert a microSD card in your device
 . Make the script executable: `chmod +x flash-it.sh`

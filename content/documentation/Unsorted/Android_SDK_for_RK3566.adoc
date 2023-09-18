@@ -15,7 +15,8 @@ Two Android SDKs are available from Pine64 for RK3566 devices:-
 
 === Android 11 SDK
 
-for Quartz64 model A SBC and SOQuartz
+For Quartz64 model A SBC and SOQuartz
+
 * http://files.pine64.org/SDK/Quartz64/QUARTZ64_SDK_android11.tar.gz[Direct Download from pine64.org]
 ** MD5 (TAR-GZip file): 77c2ff57ea3372fb04da7fb49e17d12b
 ** File Size: 79.00GB
@@ -26,7 +27,8 @@ for Quartz64 model A SBC and SOQuartz
 
 === Android 11 eink SDK
 
-for PineNote and Quart64 model A SBC
+For PineNote and Quart64 model A SBC
+
 * http://files.pine64.org/SDK/Quartz64/QUARTZ64-model-A_eink.android11_SDK.tar.gz[Direct Download from pine64.org]
 ** MD5 (TAR-GZip file): 293a550584298de4fb95ceae18103672
 ** File Size: 72.88GB

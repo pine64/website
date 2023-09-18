@@ -83,9 +83,11 @@ https://youtu.be/jnX7WwYDiDE[Video showing how to start the update]
 
 . Run Amazfish (service + UI)
 . Pair with you device:
+
 .. Unzip the DFU file to extract the .bin file.
 .. Click on "pair with watch" on the top
 .. Select "PineTime" (if your device is running InfiniTime 0.7.1 or lower) or "InfiniTime (if it's running InfiniTime 0.8+) and choose your device in the list
+
 . Click on "Download file" on the top
 . Click on "Choose file" and select the .bin file you extracted from the DFU file
 . Click on "Send file"

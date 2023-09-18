@@ -85,7 +85,9 @@ The touch panel is controlled by a Hynitron CST816S chips. Unfortunately, there 
 * P0.10=== What do you need to know?
 
 If you followed Dorian's guide to get here and felt semi-comfortable, you'll be fine. This is no more complicated than that. If you are intimidated, that's okay! I'll still encourage you to try. You will learn a lot, just be patient and don't put any data on your PineNote that you wouldn't be okay losing. If you run into trouble, ask for help in the https://discord.com/invite/pine64[Discord] / https://matrix.to/#/#pinenote:matrix.org[Matrix]. Please try to solve problems on your own first, and then ask for help -- if nobody replies, please be patient and ask again soon.
+
 Reset
+
 * P0.28: Interrupt (signal to the CPU when a touch event is detected)
 * P0.06: I²C SDA
 * P0.07: I²C SCL

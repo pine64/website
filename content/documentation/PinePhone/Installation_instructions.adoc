@@ -21,13 +21,13 @@ For specific installation instructions for each distribution please see the soft
 
 === PinePhone Pro
 
-For details regarding the boot priority on the PinePhone Pro see link:/documentation/PinePhone_Pro/_index#Boot order[PinePhone Pro].
+For details regarding the boot priority on the PinePhone Pro see link:/documentation/PinePhone_Pro/_index#Boot_order[PinePhone Pro].
 
 === PinePhone
 
 The PinePhone always boots from the microSD card first. It is therefore recommended to have a microSD card handy. It is *not* possible to lock themself out of the phone when the installation on the internal storage (the eMMC) fails, as a correctly flashed microSD card will always boot. Note: Booting from USB is not supported by the hardware, a live USB stick will not boot.
 
-The phone will also try to boot from microSD cards, which were previously flashed with an OS and formatted later, causing the phone to fail to boot. See link:#Reuse SD card for data storage on system booting from eMMC[reuse SD card] on how to format the microSD card properly, including wiping the residues of u-boot.
+The phone will also try to boot from microSD cards, which were previously flashed with an OS and formatted later, causing the phone to fail to boot. See link:#Reuse_SD_card_for_data_storage_on_system_booting_from_eMMC[reuse SD card] on how to format the microSD card properly, including wiping the residues of u-boot.
 
 == Installation to the microSD
 
@@ -37,7 +37,7 @@ To install an image to the microSD card:
 . Extract the compressed file
 . Write the image to your microSD card, see below
 . Plug microSD card into phone (make sure to use the top slot, not the bottom slot)
-. On the *PinePhone Pro*: The eMMC might have to be disconnected to boot from the microSD card, see link:/documentation/PinePhone_Pro/_index#Boot order[PinePhone Pro]
+. On the *PinePhone Pro*: The eMMC might have to be disconnected to boot from the microSD card, see link:/documentation/PinePhone_Pro/_index#Boot_order[PinePhone Pro]
 . Boot phone
 
 image:/documentation/images/Pinephone_slots.png[The microSD belongs in the upper slot, the micro-SIM in the lower slot.,title="The microSD belongs in the upper slot, the micro-SIM in the lower slot.",width=600]

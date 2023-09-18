@@ -40,6 +40,7 @@ This article is a list of convenient links to guides on soldering. Although it's
 == What temperature should I use?
 
 1. General Formula: `add 120°C to the melting point` listed on the solder label, and adjust up/down as needed for different tasks.
+
 * Example: the solder says 220°C melt point, then `220 + 120 = 340 °C`
 * One could also try these common working temperatures below, start lower and increment by 5°C until you get a comfortable working temperature (thicker wires & situations dictate more or less).
 
@@ -48,6 +49,7 @@ This article is a list of convenient links to guides on soldering. Although it's
  # For No-lead solder: 350°C - 365°C
 
 2. Another method is an Internet search to find a chart like below for your specific type of solder alloy:
+
 * https://www.kester.com/Portals/0/Documents/Knowledge%20Base/Alloy%20Temperature%20Chart.pdf[Alloy Temperature Chart - Kester]
 
 3. Adding a small amount of solder to your tip before starting increases the thermal mass of the tip and could help instead of cranking the temperature super high (which causes other problems). See the link:#general_soldering_guides[soldering guides] above for demonstrations of this in several articles and videos.

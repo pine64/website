@@ -64,6 +64,7 @@ It has been observed in the past that the Pinebook Pro is somewhat temperamental
  echo "sink" | sudo tee /sys/class/typec/port0/power_role
 
 Please note:
+
 . This command cannot be run with sudo, you must be the root user.
 . If this command still fails with the message "bash: /sys/class/typec/port0/power_role: No such file or directory" Please ensure that the file actually exists. The most likely cultprits are that either /sys/class/typec does not exist or /sys/class/typec/port0 has a different name on your machine.
 

@@ -11,7 +11,7 @@ menu:
 
 The PinePhone v1.2a is a hardware revision of the link:/documentation/PinePhone/_index[PinePhone] that started shipping in Q3 2020.
 
-This page contains information and resources which are specific to the v1.2a revision of the PinePhone. For other revisions or for resources related to all PinePhone revisions, see link:/documentation/PinePhone/_index#Hardware revisions[PinePhone].
+This page contains information and resources which are specific to the v1.2a revision of the PinePhone. For other revisions or for resources related to all PinePhone revisions, see link:/documentation/PinePhone/_index#Hardware_revisions[PinePhone].
 
 == Schematics
 

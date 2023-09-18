@@ -89,6 +89,7 @@ Verify the tarball's authenticity.
  $ gpg --verify ArchLinuxARM-aarch64-latest.tar.gz.sig
 
 Verifying the authenticity of the tarball protects you in two ways:
+
 . Makes sure the tarball came directly from Arch Linux ARM and was not tampered with
 . Prevents you from using a corrupt tarball (for example from an interrupted download)
 

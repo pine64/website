@@ -32,7 +32,7 @@ A basic 3D model to print replacement standoffs for the back cover screws is htt
 
 == Display disassembly
 
-It is not recommended to adjust the position of the lid when the bottom cover is removed, because the bottom cover provides structural strength, so the lid should be open fully as the first step, before starting any disassembly of the laptop. After opening the lid, remove the bottom cover by following the instruction found in the section above. Alternatively, you can keep the lid closed and remove the screws that hold the hinges to the main laptop body, as described in link:#Caring for the PineBook Pro[Pinebook Service Step by Step Guides].
+It is not recommended to adjust the position of the lid when the bottom cover is removed, because the bottom cover provides structural strength, so the lid should be open fully as the first step, before starting any disassembly of the laptop. After opening the lid, remove the bottom cover by following the instruction found in the section above. Alternatively, you can keep the lid closed and remove the screws that hold the hinges to the main laptop body, as described in link:#Caring_for_the_PineBook_Pro[Pinebook Service Step by Step Guides].
 
 Parts of the hinge mechanism, as well as the screws that hold the hinges to the lid, are hidden behind an elongated plastic U-shaped cover that snaps in place using latches. Use a dedicated plastic prying tool or a guitar pick to gently pry the cover and remove it, starting from the outer edge. Once you pry the cover to a certain extent, it should be possible to remove it fully using only your hands. The U-shaped cover is rather sturdy, but still be careful not to break or bend it.
 

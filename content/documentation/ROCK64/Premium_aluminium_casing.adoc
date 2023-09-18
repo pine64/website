@@ -19,7 +19,7 @@ Make sure the LED light guide and rubber plug are taken out of the case. Drop yo
 
 Install the light guide and the rubber plug by pushing them in from the outside.
 
-Ideally, clean the SoC of any possible residue with some isopropyl alcohol. Next, remove the plastic foil protecting the thermal pad on the top half of the case, and slot the top half into place, making sure that the HDMI and audio jack ports fall into their respective place in the side section (see link:#HDMI and Audio Jack Clearance Issues[HDMI and Audio Jack Clearance Issues] if they don't.)
+Ideally, clean the SoC of any possible residue with some isopropyl alcohol. Next, remove the plastic foil protecting the thermal pad on the top half of the case, and slot the top half into place, making sure that the HDMI and audio jack ports fall into their respective place in the side section (see link:#HDMI_and_Audio_Jack_Clearance_Issues[HDMI and Audio Jack Clearance Issues] if they don't.)
 
 Once the top half is firmly in place, screw in the four flat top screws with a Phillips #00 screw driver.
 

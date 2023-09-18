@@ -16,6 +16,7 @@ This page is a work in progress. Its goals are to help users get their devices u
 == Who can contribute?
 
 Anyone! Generally, the PineNote is in a very early state, and at least an intermediate level of linux knowledge is probably necessary to be able to do anything at this moment. That said, there are multiple efforts happening at once, and there are a number of ways a person of any skill level can help:
+
 . Join in the ongoing documentation effort
 . Help mainline the kernel by testing, fixing bugs.
 

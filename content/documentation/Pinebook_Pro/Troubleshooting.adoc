@@ -30,7 +30,7 @@ If you have an old Manjaro installation then it will have the wrong repositories
 === New from the factory - Pinebook Pro won't boot / power on
 
 * Some Pinebook Pros came from the factory with the eMMC switch in the disabled position. It should be switched towards the back / hinge to enable the eMMC.
-* The eMMC may have come loose during shipment. link:/documentation/Pinebook_Pro/_index#Accessing the Internals - Disassembly and Reassembly[Open the back] and verify that the eMMC is firmly seated.
+* The eMMC may have come loose during shipment. link:/documentation/Pinebook_Pro/_index#Accessing_the_Internals_-_Disassembly_and_Reassembly[Open the back] and verify that the eMMC is firmly seated.
 * You may want to try unplugging the SD card daughterboard ribbon cable and see if it powers on (remove the battery and peel off a bit of the tape before unplugging it to avoid damage). If it does, try reseating it on both sides. It might have come loose during shipping.
 * It's possible that your eMMC is empty from the factory. Simply create a bootable link:/documentation/Pinebook_Pro/_index#Pinebook_Pro_images[SD card] and see if your Pinebook Pro link:/documentation/Pinebook_Pro/_index#Boot_sequence_details[Getting started].
 
@@ -77,6 +77,7 @@ Your Pinebook Pro should now sleep properly when the lid is closed.
 ==== Alternative Non-Invasive Lid Magnet Repositioning Method
 
 * This method only takes a few seconds, and doesn't require disassembling your Pinebook Pro:
+
 . Turn on your Pinebook Pro so you can easily test when the internal magnet is in the correct position.
 . Open the lid.
 . Take a tiny 1/8" neodymium magnet, and place it along the right edge of the front bezel (LCD side) to locate the internal positioning magnet and discover the correct polarity. There should be one spot where it has the most attraction. Mark that spot.
@@ -157,8 +158,8 @@ A link:/documentation/Pinebook_Pro/_index#Trackpad[firmware update] has been rel
 
 === Pinebook Pro gets stuck after first reboot in Trackpad Firmware Update
 
-This refers to the firmware update shown here:
-https://github.com/dragan-simic/pinebook-pro-keyboard-updater#update-all-firmware-images
+This refers to the firmware update shown here: https://github.com/dragan-simic/pinebook-pro-keyboard-updater#update-all-firmware-images
+
 * If the system is not responding after the 1st reboot, it might be easiest to do a system restore or boot an sdcard-only OS, and follow up by running the second step of the trackpad firmware update with a USB keyboard and mouse plugged in
 * System restore https://forum.pine64.org/showthread.php?tid=8229
 * Firmware update https://github.com/dragan-simic/pinebook-pro-keyboard-updater#update-all-firmware-images
@@ -207,7 +208,7 @@ If the above fix did not work, you can try this:
 * Login using the GUI and test
 * If you are still loggied in via the GUI, you will have to reboot using `sudo shutdown -r now`. After the reboot, you should be able to login to the GUI login and have the resolution back to normal.
 
-After restoring the usability of your Pinebook Pro's graphical screen, also see link:/documentation/Pinebook_Pro/_index#Improving readability[this section] on improving readability and usability.
+After restoring the usability of your Pinebook Pro's graphical screen, also see link:/documentation/Pinebook_Pro/_index#Improving_readability[this section] on improving readability and usability.
 
 == Outer Shell
 

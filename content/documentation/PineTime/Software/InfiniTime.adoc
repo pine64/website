@@ -139,7 +139,7 @@ This new version of the bootloader fixes link:#Black_screen_after_a_reset_in_sle
   * Wakeup source (button only, single tap, double tap and wrist rotation)
   * Time format (12/24H)
   * Watchface
-* New navigation flow :
+* New navigation flow:
 * User settings stored in flash memory and restored on reset
 
 === https://github.com/JF002/InfiniTime/releases/tag/1.1.0[Version 1.1.0 "Dragon Fruit"]

@@ -22,6 +22,7 @@ LPDDR4 SDRAM (366-pin BGA):
 * https://files.pine64.org/doc/datasheet/PinebookPro/micron%20SM512M64Z01MD4BNK-053FT%20LPDDR4%20(366Ball).pdf[Micron 366 balls Mobile LPDDR4 Datasheet]
 
 eMMC information:
+
 * https://files.pine64.org/doc/rock64/PINE64_eMMC_Module_20170719.pdf[PINE64 eMMC module schematic]
 * https://files.pine64.org/doc/rock64/usb%20emmc%20module%20adapter%20v2.pdf[PINE64 USB adapter for eMMC module V2 schematic]
 * https://files.pine64.org/doc/rock64/USB%20adapter%20for%20eMMC%20module%20PCB.tar[PINE64 USB adapter for eMMC module PCB in JPEG]

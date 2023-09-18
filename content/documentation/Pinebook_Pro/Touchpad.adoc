@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-Documentation for the touchpad can be found in link:#Datasheets for Components and Peripherals[Datasheets for Components and Peripherals]. It is the only component of the Pinebook Pro held in place with strong adhesive tape. Here are some of its features:
+Documentation for the touchpad can be found in link:#Datasheets_for_Components_and_Peripherals[Datasheets for Components and Peripherals]. It is the only component of the Pinebook Pro held in place with strong adhesive tape. Here are some of its features:
 
 * 2 actuating buttons.
 * multi-touch functionality.

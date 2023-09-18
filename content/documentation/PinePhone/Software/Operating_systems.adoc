@@ -499,6 +499,7 @@ The script downloads the image and bootloader from the CI, extracts everything a
 NOTE: The script will format and erase the SD card!
 
 Instructions:
+
 . Download the flashing script
 . Insert a microSD card in your device
 . Make the script executable: `chmod +x flash-it.sh`

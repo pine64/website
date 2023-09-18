@@ -61,6 +61,7 @@ image:/documentation/images/3D-Pinecil-handle-white-02.jpg[width=400]
 * Solder: first decide if you want to use No-lead or leaded. Leaded is easier to work with at lower temperatures. No-lead is used now by all manufacturers of electronics per ROHS. Depending on the work being done different sizes might be needed, for example, 0.3mm for small work, 0.5mm for pins, and larger 0.8mm+ for thicker wires. One could make due with smaller solder by folding a piece in half and twisting it to make it thicker. See the video below to help compare types.
 
 Videos comparing expensive and budget flux and solder (includes links to items).
+
 . https://www.youtube.com/watch?v=iKDAmY9Rdag
 . https://www.youtube.com/watch?v=zZ9wxs6xuYU
 

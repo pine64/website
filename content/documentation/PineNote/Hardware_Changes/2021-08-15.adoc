@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-For some relevant takeaways from this discussion, see link:/documentation/PineNote/Hardware_Changes/Closed_Case_UART#August 15, 2021[PineNote/Hardware Changes/Closed Case UART]
+For some relevant takeaways from this discussion, see link:/documentation/PineNote/Hardware_Changes/Closed_Case_UART#August_15,_2021[PineNote/Hardware Changes/Closed Case UART]
 
 Times are in UTC-5
 
