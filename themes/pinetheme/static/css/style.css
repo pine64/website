@@ -1,11 +1,15 @@
 * {
     padding: 0;
     margin: 0;
-
     font-family: Roboto, sans-serif;
 }
 body {
     background-color: #fff;
+}
+
+:root {
+    --blue: #4496da;
+    --white: #ffffff;
 }
 
 /* Utility classes */
@@ -15,7 +19,7 @@ body {
 
 /* Text styles */
 a {
-    color: rgb(10, 83, 154);
+    color: var(--blue);
     text-decoration: none;
 }
 p {
@@ -32,11 +36,11 @@ td p {
     margin-bottom: 0;
 }
 h2, h3, h4, h5, h6 {
-    color: #444;
+    color: var(--blue);
     padding: 0.8em 0 0.6em 0;
 }
 h2 a, h3 a, h4 a, h5 a, h6 a {
-    color: #2F82C6;
+    color: var(--blue);
 }
 
 hr {
@@ -303,6 +307,12 @@ div.box {
     flex-wrap: wrap;
 }
 
+div.container {
+    max-width: 70rem;
+    padding: 3em 1em 1em 1em;
+    margin: 0 auto;
+}
+
 div.box h1 {
     max-width: 1100px;
     margin-bottom: 0.6em;
@@ -490,7 +500,7 @@ button.rounded:hover {
     max-width: 100%;
 }
 div#doc-page h1 {
-    color: #2F82C6;
+    color: var(--blue);
 }
 /* Documentation text style */
 div#doc-page code{
@@ -602,20 +612,13 @@ nav#TableOfContents ul ul{
 /* Footer */
 #footer {
     min-height: 100px;
-    background-color: #444;
-    padding: 3em 0.2em 1em 0.2em;
-    color: #eee;
+    background-color: #e6e6e6;
+    color: #555;
 }
-
-#footer h2 {
-    font-size: 18pt;
-    font-weight: 600;
-    color: #4496da;
-}
-
 #footer a {
     text-decoration: none;
-    color: #eee;
+    font-weight: 300;
+    color: #555;
 }
 
 #footer ul {
@@ -699,6 +702,9 @@ nav#TableOfContents ul ul{
 }
 .center-contents > p > img {
     max-height: 600px;
+}
+.center-contents > video {
+    max-width: 1000px;
 }
 
 /* Blog posts */
@@ -794,9 +800,6 @@ nav#TableOfContents ul ul{
 .blog-cover {
     overflow: hidden;
     background-color: white;
-}
-.blog-cover h1, h2, h3 {
-    color: #0069B5;
 }
 .blog-cover img{
     width: 100%;
@@ -896,12 +899,6 @@ tbody {
 .box_generic {
     padding: 3em 2em !important;
     min-height: 250px;
-}
-.box_generic a {
-    color: #4ab1ff;
-}
-.box_generic a:hover {
-    color: #bee3ff;
 }
 
 .intro_community {
