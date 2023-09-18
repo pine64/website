@@ -5,9 +5,9 @@ draft: false
 description:
 ---
 
-*PINE64* is a community-driven company focused on creating high-quality, low-cost ARM devices and, more recently, RISC-V devices for individuals and businesses around the globe. PINE64 made its debut with the link:Pine_A64[PINE A64] single-board computer, which successfully launched on Kickstarter in 2015. PINE64 has since released a multitude of other devices, including both development boards and end-user devices.
+*PINE64* is a community-driven company focused on creating high-quality, low-cost ARM devices and, more recently, RISC-V devices for individuals and businesses around the globe. PINE64 made its debut with the link:/documentation/Pine_A64[PINE A64] single-board computer, which successfully launched on Kickstarter in 2015. PINE64 has since released a multitude of other devices, including both development boards and end-user devices.
 
-For information about PINE64 branding, including the usage of the PINE64 logo in non-commercial and other applications, please read the link:General/Brand_and_logo[article about our brand and logo].
+For information about PINE64 branding, including the usage of the PINE64 logo in non-commercial and other applications, please read the link:Brand_and_logo[article about our brand and logo].
 
 The most important asset we have at our disposal is our community. We foster an active, friendly and large community of developers, contributors and end-users like yourself. Across our various community-ran chats and forums there are tens of thousands of people willing to help with any issues you may encounter. 
 
@@ -16,6 +16,8 @@ There are a wide range of communication protocols to choose from.
 == Chat platforms
 
 PINE64 has a large and very active community. Community discussion takes place on a variety of chat platforms, which are all bridged together so the messages sent via one platform are sent to all other platforms automatically. The other networks and their users are represented by P64ProtocolBot.
+
+> **NOTE:** Please read link:/community/Rules/[PINE64 Community Rules and Code of Conduct].
 
 The community chat platforms are the following:
 
