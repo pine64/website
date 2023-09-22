@@ -5,9 +5,11 @@ menu:
   docs:
     title:
     parent: "PinePhone/Software"
-    identifier: "PinePhone/Software/Operating_systems"
+    identifier: "PinePhone/Software/Releases"
     weight: 1
 ---
+
+:toc:
 
 This page contains a list of all available releases and tools for the link:/documentation/PinePhone[PinePhone] in alphabetical order.
 
@@ -22,7 +24,8 @@ See link:/documentation/PinePhone/Installation_instructions[Installation instruc
 image:/documentation/images/Archlinux-logo.png[width=100]
 
 (Unofficial) Arch Linux ARM with choice of Phosh UI, Plasma Mobile, sxmo or barebones.
-Currently being maintained by the https://danctnix.org/[DanctNIX] community (GitHub: https://github.com/DanctNIX/danctnix[danctnix], https://github.com/dreemurrs-embedded[dreemurrs-embedded]).
+
+It is maintained by the https://danctnix.org/[DanctNIX] community (GitHub: https://github.com/DanctNIX/danctnix[danctnix], https://github.com/dreemurrs-embedded[dreemurrs-embedded]).
 
 ==== Download
 
@@ -40,7 +43,7 @@ Get both stable and test builds at https://github.com/dreemurrs-embedded/Pine64-
 
 ==== Notes
 
-* There are archmobile chat rooms on Matrix (https://matrix.to/#/#archmobile:kde.org[#archmobile:kde.org]) and Telegram (https://t.me/archmobile[@archmobile]).
+* There are _archmobile_ chat rooms on Matrix (https://matrix.to/#/#archmobile:kde.org[#archmobile:kde.org]) and Telegram (https://t.me/archmobile[@archmobile]).
 * Feel free to send us https://github.com/dreemurrs-embedded/Pine64-Arch/pulls[pull requests] and reports https://github.com/dreemurrs-embedded/Pine64-Arch/issues[issues] on https://github.com/dreemurrs-embedded/Pine64-Arch[GitHub].
 
 === ExpidusOS
@@ -170,15 +173,6 @@ The official Kali Nethunter images for PinePhone and PinePhone Pro have been rel
 | `kali/1234`
 |===
 
-==== Notes
-
-Installation:
-
- $ unxz -c Kali-PinePhone-{Release}.img.xz | dd of=/dev/{storage_block} bs=1M status=progress
- $ growpart /dev/mmcblkX Y
- $ e2fsck -y -f /dev/mmcblkXpY
- $ resize2fs /dev/mmcblkXpY
- # X: Storage Device Y: Partition Number
 
 === LuneOS
 
@@ -478,6 +472,30 @@ Power users may also create their own image with the distribution's install and 
 
 See the https://wiki.postmarketos.org/wiki/PINE64_PinePhone_(pine64-pinephone)[pine64-pinephone] page of the postmarketOS wiki for details.
 
+	
+=== Rhino Linux ===
+
+Rhino Linux is an Ubuntu-based distribution that uses the rolling-release model by tracking the devel` branch of repositories. The port is currently maintained by Oren Klopfer (oklopfer).
+	
+Tow-Boot is required for installing Rhino Linux. Instructions for installing Tow-Boot to the PinePhone can be found https://tow-boot.org/devices/pine64-pinephoneA64.html[here]. After Tow-Boot has been installed to your device, Rhino Linux installation just requires flashing the `.img.xz` to an SD or the eMMC.
+
+==== Download ====
+
+https://rhinolinux.org/download.html[Rhino Linux Downloads] (select Pine64 on the dropdown)
+
+|===
+2+| Default credentials
+	
+| Default user
+| `rhino`/`1234`
+|===
+	
+==== Notes ====
+	
+Foundational to the distribution is https://pacstall.dev[Pacstall], a Debian-based user repository inspired by the AUR. Additionally, RL comes with https://rhinolinux.org/unicorn/[Unicorn], a custom modified version of XFCE with various modernizations and improvements, including auto-rotation for mobile devices.
+	
+https://discord.gg/reSvc8Ztk3[Discord] - https://matrix.to/#/#rolling-rhino-remix:matrix.org[Matrix] - https://github.com/rhino-linux[GitHub] - https://rhinolinux.org/wiki.html[Wiki]
+
 === Sailfish OS
 
 image:/documentation/images/SailfishOS_logo.png[width=100]
@@ -607,30 +625,32 @@ Discussion: https://forum.pine64.org/showthread.php?tid=12181&highlight=slackwar
 
 image:/documentation/images/Ubports-logo.png[width=100]
 
-A Mobile Version of the Ubuntu Operating System made and maintained by the UBports Community.
-
-Ubuntu touch is a mobile version of Ubuntu developed by the UBports community.
-Installation instructions can be found on
-https://gitlab.com/ubports/community-ports/pinephone#how-do-i-install-ubuntu-touch-on-my-pinephone[the UBports PinePhone project].
-There is also a https://github.com/goddard/pinephone/[script] to download the latest image and flash to your PinePhone.
-In the future, Ubuntu Touch will be able to be installed onto the PinePhone with the https://devices.ubuntu-touch.io/installer[UBports installer] GUI tool.
+A Mobile Version of the Ubuntu Operating System made and maintained by the UBports Community. The port is currently maintained by Oren Klopfer (oklopfer).
+	
+NOTE: Tow-Boot is required for installing the latest version of Ubuntu Touch (20.04) on the PinePhone. Instructions for installing Tow-Boot to the PinePhone can be found https://tow-boot.org/devices/pine64-pinephoneA64.html[here].  
+	
+Installation instructions can be found at https://ubports.com/en/blog/ubports-news-1/post/pinephone-and-pinephone-pro-3889[this UBports post]. After Tow-Boot has been installed to your device, Ubuntu Touch installation just requires flashing the _.img.xz_ to an SD or the eMMC.
 
 ==== Download
 
-https://gitlab.com/ubports/community-ports/pinephone#how-do-i-install-ubuntu-touch-on-my-pinephone[UBports PinePhone project]
+* https://gitlab.com/ook37/pinephone-pro-debos/-/releases[UBports 20.04 PinePhone Latest Releases]
+* https://devices.ubuntu-touch.io/device/pinephone/release/focal[UBports PinePhone Device Info]
 
 |===
 2+| Default credentials
 
 |Default user
 | Set during boot
+
+| root
+| `phablet`/`1234`
 |===
 
 ==== Notes
 
-Scroll down to the bottom of https://gitlab.com/ubports/community-ports/pinephone[this page], or directly here [https://devices.ubuntu-touch.io/device/pinephone/#deviceOverview] to see which features work.
-
-Contributions and bug reports can be made via. https://gitlab.com/ubports/community-ports/pinephone[UBports gitlab page]. See https://ubports.com/foundation/sponsors[UBports website] for how to donate.
+Scroll down to the middle of https://gitlab.com/ook37/pinephone-pro-debos/[the GitLab project page], or directly here https://devices.ubuntu-touch.io/device/pinephone/release/focal/#deviceOverview[at the UBports website] to see which features work.
+	
+Contributions and bug reports can be made at the https://gitlab.com/ook37/pinephone-pro-debos/[UBports PinePhone GitLab page]. See https://ubports.com/foundation/sponsors[UBports website] for how to donate.
 
 == Tools
 
@@ -714,18 +734,29 @@ software releases section instead.
 | `2d7f5271e7a281db8f1b1219bedbe131`
 |===
 
+== Further Releases
+
+=== Apache NuttX RTOS
+
+https://nuttx.apache.org/docs/latest[Apache NuttX RTOS] is a Real-Time Operating System that supports PinePhone
+
+* https://nuttx.apache.org/docs/latest/platforms/arm/a64/boards/pinephone/index.html[Apache NuttX RTOS on PINE64 PinePhone]
+
+=== Sculpt Operating System (Genode OS Framework)
+
+https://genode.org/news/sculpt-os-release-23.04[Sculpt OS since version 23.04] supports PinePhone.
+
+Ready-to-use system image available on the https://genode.org/download/sculpt[download page].
+
 == Installing other ARM64 distributions
 
 Other ARM64 distributions might be installed as well, however this requires some tinkering and may not work well.
 
 [NOTE]
-
-==== 
-
+====
 Distributions not on this page may not even boot after you follow this section. In the best case, they will be barely usable.
 This is more for fun, or if you would like to port a new distribution to the PinePhone.
-
-==== 
+====
 
 General steps:
 
@@ -742,21 +773,6 @@ If you would like to see examples or specific commands for how to complete these
 
 == Other Resources
 
-Community
-
-* link:/documentation#Community_and_Support[Links to the community services]
-
-Hardware information
-
-* link:/documentation/PinePhone[General PinePhone hardware info] in this Pine64 wiki
-* Details specific to the Braveheart Edition: link:/documentation/PinePhone/Revisions/PinePhone_v1.1_-_Braveheart[PinePhone 1.1 Braveheart hardware details]
-* Details specific to the Community Edition: link:/documentation/PinePhone/Revisions/PinePhone_v1.2[PinePhone 1.2 hardware details]
-* The postmarketOS wiki has a detailed page on the PinePhone hardware https://wiki.postmarketos.org/wiki/PINE64_PinePhone_(pine64-pinephone)[here] and the preceding devkit https://wiki.postmarketos.org/wiki/PINE64_Don%27t_be_evil_devkit_(pine64-dontbeevil)[here]
-
-https://nuttx.apache.org/docs/latest[Apache NuttX RTOS] is a Real-Time Operating System that supports PinePhone
-
-* https://nuttx.apache.org/docs/latest/platforms/arm/a64/boards/pinephone/index.html[Apache NuttX RTOS on PINE64 PinePhone]
-
 Other software information
 
 * https://linux-sunxi.org/Main_Page[sunxi community wiki]
@@ -766,7 +782,6 @@ Other software information
 
 Other
 
-* https://pine64.com/?post_type=product[Pine64 shop]
 * https://www.pine64.org/2020/01/24/setting-the-record-straight-pinephone-misconceptions/[Pine64 blog on blobs]
 * https://tuxphones.com/yet-another-librem-5-and-pinephone-linux-smartphone-comparison/[Martijn Braam Librem 5 comparison, especially covering openness/blobs]
 * https://fam-ribbers.com/2019/12/28/State-of-Linux-on-mobile-and-common-misconceptions.html[Bart Ribbers blog on Linux distributions and desktop environments on mobile devices]

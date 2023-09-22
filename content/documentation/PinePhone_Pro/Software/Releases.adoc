@@ -158,16 +158,6 @@ The official Kali Nethunter images for PinePhone and PinePhone Pro have been rel
 | `kali/1234`
 |===
 
-=== Notes
-
-Installation:
-
- $ unxz -c nethunterpro-*-pinephonepro-phosh.img.xz | dd of=/dev/{storage_block} bs=1M status=progress
- $ growpart /dev/mmcblkX Y
- $ e2fsck -y -f /dev/mmcblkXpY
- $ resize2fs /dev/mmcblkXpY
- # X: Storage Device Y: Partition Number
-
 == Nemo Mobile
 
 image:/documentation/images/nemo_mobile.png[width=100]
@@ -219,9 +209,70 @@ https://postmarketos.org/download/[Download page]
 
 Note that images for the PinePhone Pro are in the "community" category of devices indicating some features may not work. You can also build your own image using https://wiki.postmarketos.org/wiki/Installation_guide[pmbootstrap]
 
+|===
+2+| Default credentials
+
+|Default user
+| `user/147147`
+|===
+
 === Notes
 
 See the https://wiki.postmarketos.org/wiki/PINE64_PinePhone_Pro_(pine64-pinephonepro)[pine64-pinephonepro] page of the postmarketOS wiki for details.
+
+== Rhino Linux ==
+
+Rhino Linux is an Ubuntu-based distribution that uses the rolling-release model by tracking the <code>devel</code> branch of repositories. The port is currently maintained by Oren Klopfer (oklopfer).
+
+Tow-Boot is required for installing Rhino Linux. Instructions for installing Tow-Boot to the PinePhone Pro can be found https://tow-boot.org/devices/pine64-pinephonePro.html[here]. After Tow-Boot has been installed to your device, Rhino Linux installation just requires flashing the <code>.img.xz</code> to an SD or the eMMC.
+	
+=== Download ===
+	
+* https://rhinolinux.org/download.html[Rhino Linux Downloads] (select Pine64 on the dropdown)
+	
+|===
+2+| Default credentials
+
+| Default user
+| `rhino`/`1234`
+|===
+	
+=== Notes ===
+	
+Foundational to the distribution is https://pacstall.dev[Pacstall], a Debian-based user repository inspired by the AUR. Additionally, RL comes with https://rhinolinux.org/unicorn/[Unicorn], a custom modified version of XFCE with various modernizations and improvements, including auto-rotation for mobile devices.
+	
+https://discord.gg/reSvc8Ztk3[Discord] - https://matrix.to/#/#rolling-rhino-remix:matrix.org[Matrix] - https://github.com/rhino-linux[GitHub] - https://rhinolinux.org/wiki.html[Wiki]
+	
+== Ubuntu Touch
+
+A Mobile Version of the Ubuntu Operating System made and maintained by the UBports Community. The port is currently maintained by Oren Klopfer (oklopfer).
+	
+Tow-Boot is required for installing the latest version of Ubuntu Touch (20.04) to the PinePhone Pro. Instructions for installing Tow-Boot to the PinePhone Pro can be found https://tow-boot.org/devices/pine64-pinephonePro.html[here].
+	
+Installation instructions can be found at
+	
+https://ubports.com/en/blog/ubports-news-1/post/pinephone-and-pinephone-pro-3889[this UBports post]. After Tow-Boot has been installed to your device, Ubuntu Touch installation just requires flashing the _.img.xz_ to an SD or the eMMC.
+	
+=== Download
+	
+* https://gitlab.com/ook37/pinephone-pro-debos/-/releases[UBports 20.04 PinePhone Pro Latest Releases]
+* https://devices.ubuntu-touch.io/device/pinephone-pro/release/focal[UBports PinePhone Pro Device Info]
+	
+|===
+2+| Default credentials
+
+| Default user
+| Set during boot
+
+| root
+| `phablet`/`1234`
+|===
+
+=== Notes
+	
+Scroll down to the middle of https://gitlab.com/ook37/pinephone-pro-debos/[the GitLab project page], or directly here https://devices.ubuntu-touch.io/device/pinephone-pro/release/focal/#deviceOverview[at the UBports website] to see which features work.
+	
+Contributions and bug reports can be made at the https://gitlab.com/ook37/pinephone-pro-debos/[UBports PinePhone Pro GitLab page]. See https://ubports.com/foundation/sponsors[UBports website] for how to donate.
 
 == Various DPA Images
 

@@ -13,7 +13,11 @@ If the PinePhone is not booting from eMMC and/or microSD card anymore it can hav
 
 == The battery is drained
 
-If the battery is fully drained, most operating systems and distributions won't boot anymore. One of the exceptions which still boots is the utility _Jumpdrive_, which can usually be used to expose the eMMC and microSD card as drives to a USB-connected computer. Mind that JumpDrive won't expose the eMMC and microSD card with a drained battery but it still can be flashed and booted from microSD card to confirm that the phone still functions and boots up fine. JumpDrive can be downloaded from https://github.com/dreemurrs-embedded/Jumpdrive/releases/download/0.8/pine64-pinephone.img.xz[here] (not compatible with the PinePhone Pro!). If JumpDrive boots and other releases do not boot, the battery is likely drained. In that case let it charge while running JumpDrive with a compatible charger for multiple hours and make sure to not fully drain the battery in the future anymore, as that significantly reduces the battery lifetime.
+If the battery is fully drained, most operating systems and distributions won't boot anymore. One of the exceptions which still boots is the utility _Jumpdrive_, which can usually be used to expose the eMMC and microSD card as drives to a USB-connected computer. Mind that JumpDrive won't expose the eMMC and microSD card with a drained battery but it still can be flashed and booted from microSD card to confirm that the phone still functions and boots up fine. 
+
+JumpDrive can be downloaded from https://github.com/dreemurrs-embedded/Jumpdrive/releases/download/0.8/pine64-pinephone.img.xz[here] (not compatible with the PinePhone Pro!). 
+
+NOTE: If JumpDrive boots and other releases do not boot, the battery is likely drained. In that case let it charge while running JumpDrive with a compatible charger for multiple hours and make sure to not fully drain the battery in the future anymore, as that significantly reduces the battery lifetime.
 
 Alternatively to testing JumpDrive, the issue can also be diagnosed by checking the battery charge. Simply remove the battery from the device and measure the voltage on the (+) and (-) contacts on the battery. Make sure to not shorten the contacts as shorting battery pins is a severe life and safety danger.
 

@@ -4,8 +4,8 @@ draft: false
 menu:
   docs:
     title:
-    parent: "PinePhone/Further_information"
-    identifier: "PinePhone/Further_information/Modifications_and_repairs"
+    parent: "PinePhone/Hardware_fixes_and_mods"
+    identifier: "PinePhone/Hardware_fixes_and_mods/Modifications_and_repairs"
     weight: 
 ---
 
@@ -33,7 +33,8 @@ Prior to replacing your PinePhone’s mainboard please read the steps outlined i
 After swapping the mainboard the phone won't boot as there is no OS on the replacement board's eMMC preinstalled. To boot an OS insert a flashed SD card.
 
 A video tutorial by _Martijn Braam_ can be found here (or alternatively a video tutorial by user _brigadan_ with additional notes about the camera swap and proximity sensor isolator https://www.youtube.com/watch?v=J3AJEF7akkw[here]):
-image:/documentation/images/Pinephone_martijn_pcb_replacement.png[Watch Martijn Braam's video tutorial here: https://www.youtube.com/watch?v=5GbMoZ_zuZs.,title="Watch Martijn Braam's video tutorial here: https://www.youtube.com/watch?v=5GbMoZ_zuZs.",width=600]
+
+image:/documentation/images/Pinephone_martijn_pcb_replacement.png[width=600]
 
 === Flashing the ANX firmware
 

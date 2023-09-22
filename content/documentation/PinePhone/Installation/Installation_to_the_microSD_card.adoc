@@ -1,0 +1,71 @@
+---
+title: "Installation to the microSD card"
+draft: false
+weight: 
+menu:
+  docs:
+    title:
+    parent: "PinePhone/Installation"
+    identifier: "PinePhone/Installation/Installation_to_the_microSD_card"
+    weight: 2
+---
+
+For this installation method you need a *microSD card*, a *microSD card reader* and a *compatible device*, such as a computer or a laptop with Linux, iOS, Windows or similar (note: ChromeOS is not supported).
+
+To install an image to the microSD card:
+
+. Download your chosen image from link:/documentation/PinePhone/Software/Operating_systems[Operating systems] for the regular *PinePhone* and link:/documentation/PinePhone_Pro/Software/Releases[Releases] for the *PinePhone Pro*
+. Extract the compressed file
+. Write (_flash_) the image to your microSD card, see the isntructions below
+. Plug microSD card into phone (make sure to use the top slot, not the bottom slot)
+. *On the PinePhone Pro*: The eMMC might have to be overruled to boot from the microSD card, see link:/documentation/PinePhone_Pro#Boot_order[PinePhone Pro]
+. Boot up the phone
+
+image:/documentation/images/Pinephone_slots.png[The microSD belongs in the upper slot, the micro-SIM in the lower slot.,title="The microSD belongs in the upper slot, the micro-SIM in the lower slot.",width=600]
+
+== Flashing the microSD
+
+=== Using Balena Etcher
+
+Using the graphical application _Balena Etcher_ to flash the microSD card is _'recommended_' for new or inexperienced users.
+
+Download: https://etcher.balena.io/#download-etcher
+
+Install the application and start it.
+
+Click the button _Flash from file_:
+
+image:../Etcher1.png[width=600]
+
+Select the downloaded image and make sure that you downloaded the correct one. Images for the PinePhone and the PinePhone Pro are _'not compatible_' with each other. Images for the PinePhone typically have the word "PinePhone" in the filename, while images for the PinePhone Pro typically have "PinePhone Pro" in their filename.
+
+NOTE: At this the image file does not have to be extracted from the archive format. Balena Etcher handles the extracting automatically.
+
+Then click on _Select target_:
+
+image:../Etcher3.png[width=600]
+
+NOTE: Make sure to select the correct target by comparing the name and the disk capacity with the label on the microSD card.
+
+Then click on _Flash!_:
+
+image:../Etcher4.png[width=600]
+
+That's it! Now follow the further instructions above.
+
+=== Using dd
+Make sure to select the correct device using `lsblk`. Then run `dd` with the selected device:
+
+`sudo dd if=*IMAGE.img* of=/dev/*[DEVICE]* bs=1M status=progress conv=fsync`
+
+NOTE: The image needs to be written to the whole device, not to partition 1. Make sure you're NOT selecting _/dev/sda1_ or _/dev/mmcblk0p1_ as target.
+
+=== Using bmaptool
+
+Make sure to select the correct device using `lsblk`. Then run bmaptool with the correct device:
+
+Download the _IMAGE.xz_ and the _IMAGE.bmap_ files, then run `bmaptool copy --bmap *IMAGE.bmap* *IMAGE.xz* /dev/*[DEVICE]*`. This takes around 2.5 minutes to flash a 4 Gb file.
+
+=== Using Gnome Disks
+
+Gnome Disks can be used to flash the microSD card. To do so, select the correct device in the left device selection, then click on the three dot menu and select _Restore Disk Image..._ and follow the on-screen instructions.

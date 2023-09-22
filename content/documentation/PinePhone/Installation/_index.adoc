@@ -1,0 +1,25 @@
+---
+title: "Installation"
+draft: false
+weight: 3
+menu:
+  docs:
+    title:
+    parent: "PinePhone"
+    identifier: "PinePhone/Installation"
+    weight: 3
+---
+
+To learn more about the pboot priority on the PinePhone, click on link:/documentation/PinePhone/Installation/Boot_priority[boot priority].
+
+The installation instructions can be found here:
+
+* link:/documentation/PinePhone/Installation/Installation_to_the_microSD_card[Installation to the microSD card]
+* link:/documentation/PinePhone/Installation/Installation_to_the_eMMC[Installation to the eMMC]
+
+== Notes
+
+For specific installation instructions for each distribution please see the software releases pages:
+
+* for the *PinePhone*: link:/documentation/PinePhone/Software/Operating_systems[Operating systems]
+* for the *PinePhone Pro*: link:/documentation/PinePhone_Pro/Software/Releases[Releases]

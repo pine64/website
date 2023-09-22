@@ -11,8 +11,7 @@ menu:
 
 [cols="1,1"]
 |===
-|Component
-|Model
+| Component | Model
 
 | Touchscreen
 | Goodix GT917S

@@ -22,7 +22,7 @@ The following table lists the feature functionality status of the unaltered pre-
 
 TIP: The software is *written by the community*, any contributions towards the community projects are greatly appreciated! Please see "link:/documentation/General/How_to_contribute[How to Contribute]" to learn about how to contribute to the software projects and "link:/documentation/General/Where_to_report_bugs[Where to Report Bugs]" to learn about where to report bugs.
 
-[cols="1,1,1,1,1"]
+[cols="2,2,1,1,4"]
 |===
 | Functionality | Component | Status (factory)¹ | Status (updated)² | Notes
 
@@ -54,8 +54,8 @@ TIP: The software is *written by the community*, any contributions towards the c
 
 .5+| Modem
 | `General`
-2+| Critical bugs
-| The modem connection crashes frequently^https://gitlab.com/mobian1/devices/eg25-manager/-/issues/34#note_984212350[Report]^^https://github.com/Biktorgj/pinephone_modem_sdk[Alternative firmware]^; Slow wakeup^https://gitlab.com/mobian1/devices/eg25-manager/-/issues/34[Report]^; Some carriers blocking specific TANs in their network^link:/documentation/PinePhone/Modem/Carrier_support[Carrier support]^; *Note:* Proprietary firmware
+2+| WIP
+| https://github.com/Biktorgj/pinephone_modem_sdk[Alternative firmware]; Slow wakeup^https://gitlab.com/mobian1/devices/eg25-manager/-/issues/34[Report]^; Some carriers blocking specific TANs in their network^link:/documentation/PinePhone/Modem/Carrier_support[Carrier support]^; *Note:* Proprietary firmware
 
 | `Phone`
 2+| WIP
@@ -76,7 +76,7 @@ TIP: The software is *written by the community*, any contributions towards the c
 .12+| Components
 | `LCD`
 2+| WIP
-| *Hardware issue*^https://xnux.eu/log/#055[Details]^; Under certain circumstances it is difficult to wake up the screen^[Citation]^
+| *Hardware issue*^https://xnux.eu/log/#055[Details]^
 
 | `Touch`
 2+| Working
@@ -128,8 +128,8 @@ TIP: The software is *written by the community*, any contributions towards the c
 
 .5+| Accessory compatibility, spare parts
 | `Keyboard Add-on`
-2+| WIP and critical hardware issue
-| The keyboard add-on compatibility is work-in-progress. *Hardware issue: USB-C port of the phone must not be used while the current keyboard revision is connected*^link:/documentation/Phone_Accessories/Keyboard#Safety[Citation]^; Keyboard hot-plugging not supported^[Citation]^; Battery state not exposed in the pre-flashed operating system state^[Citation]^; general driver bugs^[Citation]^
+2+| WIP
+| The keyboard add-on compatibility is work-in-progress.
 
 | `LoRa Add-on`
 2+| Not implemented
