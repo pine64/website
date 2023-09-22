@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-Connecting to the link:/documentation/ROCKPro64/_index[ROCKPro64] single-board computer serial interface can sometimes be tricky, as the lack of buffering can cause the Uboot-SPL to stop functioning due to  transient voltage spikes during startup.  This simple circuit allows a user to hot-plug their serial connection at any time, or can be left attached full time.
+Connecting to the link:/documentation/ROCKPro64[ROCKPro64] single-board computer serial interface can sometimes be tricky, as the lack of buffering can cause the Uboot-SPL to stop functioning due to  transient voltage spikes during startup.  This simple circuit allows a user to hot-plug their serial connection at any time, or can be left attached full time.
 
 WARNING: Please note that following these instructions comes at your own risk. While best efforts have been made to write reliable, safe instructions, the author cannot be held liable for the quality of procured components or the assembly job of the person following the instructions, and the damages caused by either of these not being up to par.
 
@@ -31,7 +31,7 @@ You may have some or all of these in your junk/parts drawer.  They're all common
 
 === Tools
 
-* A soldering iron, e.g. the link:/documentation/Pinecil/_index[Pinecil]
+* A soldering iron, e.g. the link:/documentation/Pinecil[Pinecil]
 * solder, fine gauge, anything suitable for electronics
 * Wire strippers, suitable for the thickness of wire you chose
 * Diagonal cutters,  to trim excess leads from components and wires

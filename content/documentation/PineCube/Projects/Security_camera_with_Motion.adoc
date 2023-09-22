@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-It's possible to use the link:/documentation/PineCube/_index[PineCube] as an inside or outside security camera using https://motion-project.github.io/index.html[motion]. For outside, you'll need an enclosure with a transparent dome to protect from the weather. One suggestion is to mount the camera with the lens as close as possible to the dome to avoid reflection.
+It's possible to use the link:/documentation/PineCube[PineCube] as an inside or outside security camera using https://motion-project.github.io/index.html[motion]. For outside, you'll need an enclosure with a transparent dome to protect from the weather. One suggestion is to mount the camera with the lens as close as possible to the dome to avoid reflection.
 
 image:/documentation/images/Pinecube_outside_enclosure.jpg[width=400]
 

@@ -11,7 +11,7 @@ menu:
 
 == Enable cpufreq Stuff
 
-Current neggles kernel has the CPU at 1.2 GHz, apparently SRE has patches to enable cpufreq? (see below, in link:/documentation/QuartzPro64/_index#Kernel[Resources])
+Current neggles kernel has the CPU at 1.2 GHz, apparently SRE has patches to enable cpufreq? (see below, in link:/documentation/QuartzPro64#Kernel[Resources])
 
 == Add RK3588 Support To VOP2
 

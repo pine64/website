@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-The RK3566 SoC, used in the link:/documentation/Quartz64/_index[Quartz64] SBC by PINE64, contains an eInk interface. This is referred to as `ebc` by Rockchip apparently.
+The RK3566 SoC, used in the link:/documentation/Quartz64[Quartz64] SBC by PINE64, contains an eInk interface. This is referred to as `ebc` by Rockchip apparently.
 
 Unfortunately, the driver published for this eInk interface within the BSP kernel is an assembly dump produced by gcc. Fortunately, it contains quite a bit of debug information, which we can use to reverse engineer it.
 

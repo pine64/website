@@ -4,9 +4,9 @@ draft: false
 menu:
   docs:
     title:
-    parent: "PineTab2"
-    identifier: "PineTab2/Datasheets"
-    weight: 3
+    parent: "PineTab2/Further_information"
+    identifier: "PineTab2/Further_information/Datasheets"
+    weight: 
 ---
 
 Rockchip RK3566 SoC information:

@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-The articles explains the installation of Arch Linux ARM on the link:/documentation/Quartz64/_index[Quartz64].
+The articles explains the installation of Arch Linux ARM on the link:/documentation/Quartz64[Quartz64].
 
 Commands to be run as a normal user are prefixed with `$`, commands to be run as root are prefixed with `#`. We assume your target device is **/dev/sdX**, adjust accordingly.
 

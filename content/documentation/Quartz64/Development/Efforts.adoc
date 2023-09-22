@@ -11,7 +11,7 @@ menu:
 
 See link:/documentation/Quartz64/Development/[Quartz64 Development]
 
-Information and resources of the ongoing development effort for the Quartz64 can be found on the link:/documentation/Quartz64/Development/_index[Development] page, where the current status of various board functions can be found, and whether they have landed in upstream.
+Information and resources of the ongoing development effort for the Quartz64 can be found on the link:/documentation/Quartz64/Development[Development] page, where the current status of various board functions can be found, and whether they have landed in upstream.
 
 * https://gitlab.com/pine64-org/quartz-bsp[Quartz64 BSP Gitlab Page]
 

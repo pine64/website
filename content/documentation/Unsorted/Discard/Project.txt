@@ -41,7 +41,7 @@ However, if you are linking or referencing an external project or source code th
 |===
 | | PINE64 Retro Gaming Projects
 
-| colspan="3"  |
+|
 image:/documentation/images/Retrogame_icon.png[Most PINE64 devices are capable of emulating old computer and video game consoles such as the Nintendo Entertainment System. ,title="Most PINE64 devices are capable of emulating old computer and video game consoles such as the Nintendo Entertainment System. "]
 |===
 |+*Suitable Devices for this Project*
@@ -56,10 +56,10 @@ image:/documentation/images/PINEA64_LTS_sideimg.jpg[width=160]_|_|_image:/docume
 |===
 [cols="1,1,1,1"]
 |===
-|scope="col"  | Project Author(s)	
-|scope="col"  | Device(s)
-|scope="col"  | Project Link
-|scope="col"  | Notes
+ | Project Author(s)	
+ | Device(s)
+ | Project Link
+ | Notes
 
 | HeadShot | LTS/A64 | https://forum.pine64.org/archive/index.php?thread-496.html[Pine A64 in a Playstation] | Pine A64 in a Playstation Case using original controllers
 
@@ -81,7 +81,7 @@ image:/documentation/images/PINEA64_LTS_sideimg.jpg[width=160]_|_|_image:/docume
 |===
 | | Desktop Applications of PINE64 SBCs
 
-| colspan="3"  |
+3+|
 image:/documentation/images/Computer_icon.png[All PINE64 Single Board Computers are capable of acting as destkop computers. This includes a variety of Linux destkop environments (such as Mate or XFCE) as well as different types of Android. ,title="All PINE64 Single Board Computers are capable of acting as destkop computers. This includes a variety of Linux destkop environments (such as Mate or XFCE) as well as different types of Android. "]
 |===
 image:
@@ -95,10 +95,10 @@ image:
 |===
 [cols="1,1,1,1"]
 |===
-|scope="col"  | Project Author(s)	
-|scope="col"  | Device(s)
-|scope="col"  | Project Link
-|scope="col"  | Notes
+ | Project Author(s)	
+ | Device(s)
+ | Project Link
+ | Notes
 
 | Swapnil Bhartiya| A64 | https://www.linux.com/news/build-20-computer-pine64[Debian desktop on Pine64] | Installing Debian Mate on simple image
 
@@ -114,7 +114,7 @@ image:
 |===
 | | NAS Projects
 
-| colspan="3"  |
+3+|
 image:
 image:
 image:/documentation/images/NAS_icon.png[Most PINE64 Single Board Computers feature Gigabit Ethernet connections and multiple USB 2.0 / 3.0 ports, and are therefore well suited for domestic NAS applications.,title="Most PINE64 Single Board Computers feature Gigabit Ethernet connections and multiple USB 2.0 / 3.0 ports, and are therefore well suited for domestic NAS applications."]
@@ -128,10 +128,10 @@ image:/documentation/images/NAS_icon.png[Most PINE64 Single Board Computers feat
 |===
 [cols="1,1,1,1"]
 |===
-|scope="col"  | Project Author(s)	
-|scope="col"  | Device(s)
-|scope="col"  | Project Link
-|scope="col"  | Notes
+ | Project Author(s)	
+ | Device(s)
+ | Project Link
+ | Notes
 
 | Ptheven | A64/LTS/Rock64 | https://forum.pine64.org/showthread.php?tid=5231[RAID 0] | A RAID 0 setup for you PINE64 SBC
 
@@ -150,7 +150,7 @@ image:/documentation/images/NAS_icon.png[Most PINE64 Single Board Computers feat
 image:
 image:
 
-| colspan="3"  |
+3+|
 image:/documentation/images/Mediaplayer_icon.png[All PINE64 Single Board Computers are capable of acting at media servers as well as playback devices. Dedicated Linux destributions such as LibreELEC as well as Android TV make for great couch media consumption experiences. Your device may also perform the role of a media server.,title="All PINE64 Single Board Computers are capable of acting at media servers as well as playback devices. Dedicated Linux destributions such as LibreELEC as well as Android TV make for great couch media consumption experiences. Your device may also perform the role of a media server."]
 |===
 |+*Suitable Devices for this Project*
@@ -162,10 +162,10 @@ image:/documentation/images/Mediaplayer_icon.png[All PINE64 Single Board Compute
 |===
 [cols="1,1,1,1"]
 |===
-|scope="col"  | Project Author(s)	
-|scope="col"  | Device(s)
-|scope="col"  | Project Link
-|scope="col"  | Notes
+ | Project Author(s)	
+ | Device(s)
+ | Project Link
+ | Notes
 
 | JulianM | A64 | https://forum.pine64.org/archive/index.php?thread-1563-2.html[MDP Server + Speakers] | A custom build of MDP Server and speakers using a Pine A64
 
@@ -185,7 +185,7 @@ image:
 |===
 | | GPIO Projects
 
-| colspan="3"  |
+3+|
 image:/documentation/images/GPIO_icon.png[All PINE64 Single Board Computers have a set of GPIO pins that you can use in your project. The PINEBOOK can also make use GPIO using different means ... you can read about them in this section.,title="All PINE64 Single Board Computers have a set of GPIO pins that you can use in your project. The PINEBOOK can also make use GPIO using different means ... you can read about them in this section."]
 |===
 |+*Suitable Devices for this Project*
@@ -197,10 +197,10 @@ image:/documentation/images/GPIO_icon.png[All PINE64 Single Board Computers have
 |===
 [cols="1,1,1,1"]
 |===
-|scope="col"  | Project Author(s)	
-|scope="col"  | Device(s)
-|scope="col"  | Project Link
-|scope="col"  | Notes
+ | Project Author(s)	
+ | Device(s)
+ | Project Link
+ | Notes
 
 | machinehum and MarkHaysHarris777| PINEBOOK | https://forum.pine64.org/showthread.php?tid=5055[uSD Breakout] | This project allows 6 GPIO pins to be accessed via SD card slot
 
@@ -224,7 +224,7 @@ image:
 |===
 | | Server/Docker Projects
 
-| colspan="3"  |
+3+|
 image:/documentation/images/server_icon.png[All PINE64 Single Board Computers can be used as a wide variety of servers. Common applications include LAMP and Docker servers, but a there is nearly a limitless amount of plausible server applications.,title="All PINE64 Single Board Computers can be used as a wide variety of servers. Common applications include LAMP and Docker servers, but a there is nearly a limitless amount of plausible server applications."]
 |===
 |+*Suitable Devices for this Project*
@@ -236,10 +236,10 @@ image:/documentation/images/server_icon.png[All PINE64 Single Board Computers ca
 |===
 [cols="1,1,1,1"]
 |===
-|scope="col"  | Project Author(s)	
-|scope="col"  | Device(s)
-|scope="col"  | Project Link
-|scope="col"  | Notes
+ | Project Author(s)	
+ | Device(s)
+ | Project Link
+ | Notes
 
 | Hypriot OS | PINE A64/A64+/A64-LTS/SOPine | https://blog.hypriot.com/post/the-pine-a64-is-about-to-become=the-cheapest-ARM-64-bit-platform-to-run-Docker/[Pine A64 Docker] | Docker on Pine A64, applies to other PINE64 devices
 
@@ -273,7 +273,7 @@ image:
 |===
 | | Cluster Projects
 
-| colspan="3"  |
+3+|
 image:/documentation/images/Cluster_icon.png[Have you got two or more PINE64 Single Board Computer board? Consider building a cluster. Clutering of two or more PINE64 boards presents as a fantastic oportunity to explore and learn about node failure management, task scheduling, debuggin, data sharing and much more.,title="Have you got two or more PINE64 Single Board Computer board? Consider building a cluster. Clutering of two or more PINE64 boards presents as a fantastic oportunity to explore and learn about node failure management, task scheduling, debuggin, data sharing and much more."]
 |===
 |+*Suitable Devices for this Project*
@@ -285,10 +285,10 @@ image:/documentation/images/Cluster_icon.png[Have you got two or more PINE64 Sin
 |===
 [cols="1,1,1,1"]
 |===
-|scope="col"  | Project Author(s)	
-|scope="col"  | Device(s)
-|scope="col"  | Project Link
-|scope="col"  | Notes
+ | Project Author(s)	
+ | Device(s)
+ | Project Link
+ | Notes
 
 | Climbers.net| PINE A64/A64+/A64-LTS/SOPine | https://climbers.net/sbc/bargain-pine-a64-cluster/[ 5 Node Cluster with PINE A64+] | Cluster in a dedicated acrylic case
 
@@ -312,7 +312,7 @@ image:
 |===
 | | Home Automation Projects
 
-| colspan="3"  |
+3+|
 image:/documentation/images/Homeautomation_icon.png[PINE64 Single Board Computers - all equipped with milti-core SOCs and GPIO - can become an adition to, or the basis for, your home automation project. Use an existing platform like OpenHAB which is compatible with commercially available devices, add aditional functionality to MotionEye, or just hack away and make things your own.,title="PINE64 Single Board Computers - all equipped with milti-core SOCs and GPIO - can become an adition to, or the basis for, your home automation project. Use an existing platform like OpenHAB which is compatible with commercially available devices, add aditional functionality to MotionEye, or just hack away and make things your own."]
 |===
 |+*Suitable Devices for this Project*
@@ -324,10 +324,10 @@ image:/documentation/images/Homeautomation_icon.png[PINE64 Single Board Computer
 |===
 [cols="1,1,1,1"]
 |===
-|scope="col"  | Project Author(s)	
-|scope="col"  | Device(s)
-|scope="col"  | Project Link
-|scope="col"  | Notes
+ | Project Author(s)	
+ | Device(s)
+ | Project Link
+ | Notes
 
 | FrankA2 | A64 | https://www.instructables.com/id/Inexpensive-Touchscreen-Life-Command-Center-Using-/[Life Command Center]| Display weather, email and information about home using a Pine A64
 
@@ -353,7 +353,7 @@ image:
 |===
 | | Robotics Projects
 
-| colspan="3"  |
+3+|
 image:/documentation/images/Robotic_icon.png[Use your PINE64 Single Board Computer featuring a milti-core SOCs and GPIO to have a go at robotics. Download an existing Open Source robotics project from Github or start your own; browse this section for inspiration and resources.,title="Use your PINE64 Single Board Computer featuring a milti-core SOCs and GPIO to have a go at robotics. Download an existing Open Source robotics project from Github or start your own; browse this section for inspiration and resources."]
 |===
 |+*Suitable Devices for this Project*
@@ -365,10 +365,10 @@ image:/documentation/images/Robotic_icon.png[Use your PINE64 Single Board Comput
 |===
 [cols="1,1,1,1"]
 |===
-|scope="col"  | Project Author(s)	
-|scope="col"  | Device(s)
-|scope="col"  | Project Link
-|scope="col"  | Notes
+ | Project Author(s)	
+ | Device(s)
+ | Project Link
+ | Notes
 
 | Name | Device | Link to project | Notes about the project
 
@@ -380,14 +380,14 @@ image:/documentation/images/Robotic_icon.png[Use your PINE64 Single Board Comput
 |===
 | | PADI Projects
 
-| colspan="3"  |
+3+|
 image:/documentation/images/PADIstamp_icon.png[PADI is a tiny microcontroller that can be used in conjunction with your PINE64 SBC or the Pinebook ,title="PADI is a tiny microcontroller that can be used in conjunction with your PINE64 SBC or the Pinebook "]
 [cols="1,1,1,1"]
 |===
-|scope="col"  | Project Author(s)	
-|scope="col"  | Device(s)
-|scope="col"  | Project Link
-|scope="col"  | Notes
+ | Project Author(s)	
+ | Device(s)
+ | Project Link
+ | Notes
 image:
 image:
 image:
@@ -404,7 +404,7 @@ image:
 |===
 | | Other Projects
 
-| colspan="3"  |
+3+|
 image:/documentation/images/Otherproject_icon.png[You have no doubt come up with something that we didn't think about, and that is truly great. Perhaps your project is interesting enough that it will be granted its own section. After all if you have imagination then sky is the limit.,title="You have no doubt come up with something that we didn't think about, and that is truly great. Perhaps your project is interesting enough that it will be granted its own section. After all if you have imagination then sky is the limit."]
 |===
 |+*Suitable Devices for this Project*
@@ -416,10 +416,10 @@ image:/documentation/images/Otherproject_icon.png[You have no doubt come up with
 |===
 [cols="1,1,1,1"]
 |===
-|scope="col"  | Project Author(s)	
-|scope="col"  | Device(s)
-|scope="col"  | Project Link
-|scope="col"  | Notes
+ | Project Author(s)	
+ | Device(s)
+ | Project Link
+ | Notes
 
 | bits_and_wires | Pinebook | https://forum.pine64.org/showthread.php?tid=5302[case mod] | Pinebook Case modification
 

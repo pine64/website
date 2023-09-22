@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-Vector images and pictures of the link:/documentation/PinePhone/_index[PinePhone] and link:/documentation/PinePhone_Pro/_index[PinePhone Pro] you can freely use for projects and press inquiries. Attribute the author if attribution is required via the license (such as CC BY).
+Vector images and pictures of the link:/documentation/PinePhone[PinePhone] and link:/documentation/PinePhone_Pro[PinePhone Pro] you can freely use for projects and press inquiries. Attribute the author if attribution is required via the license (such as CC BY).
 
 == PinePhone Pro
 

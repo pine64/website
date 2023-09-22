@@ -11,7 +11,7 @@ menu:
 
 == Useful Links
 
-link:/documentation/Pinebook_Pro/_index[Back to the main Pinebook Pro page]
+link:/documentation/Pinebook_Pro[Back to the main Pinebook Pro page]
 
 link:/documentation/Pinebook_Pro/Accessory/Compatibility[Hardware Compatibility page]
 
@@ -30,9 +30,9 @@ If you have an old Manjaro installation then it will have the wrong repositories
 === New from the factory - Pinebook Pro won't boot / power on
 
 * Some Pinebook Pros came from the factory with the eMMC switch in the disabled position. It should be switched towards the back / hinge to enable the eMMC.
-* The eMMC may have come loose during shipment. link:/documentation/Pinebook_Pro/_index#Accessing_the_Internals_-_Disassembly_and_Reassembly[Open the back] and verify that the eMMC is firmly seated.
+* The eMMC may have come loose during shipment. link:/documentation/Pinebook_Pro#Accessing_the_Internals_-_Disassembly_and_Reassembly[Open the back] and verify that the eMMC is firmly seated.
 * You may want to try unplugging the SD card daughterboard ribbon cable and see if it powers on (remove the battery and peel off a bit of the tape before unplugging it to avoid damage). If it does, try reseating it on both sides. It might have come loose during shipping.
-* It's possible that your eMMC is empty from the factory. Simply create a bootable link:/documentation/Pinebook_Pro/_index#Pinebook_Pro_images[SD card] and see if your Pinebook Pro link:/documentation/Pinebook_Pro/_index#Boot_sequence_details[Getting started].
+* It's possible that your eMMC is empty from the factory. Simply create a bootable link:/documentation/Pinebook_Pro#Pinebook_Pro_images[SD card] and see if your Pinebook Pro link:/documentation/Pinebook_Pro#Boot_sequence_details[Getting started].
 
 === Pinebook Pro will not power on after toggling the eMMC enable/disable switch
 
@@ -45,7 +45,7 @@ If you have an old Manjaro installation then it will have the wrong repositories
 
 === Pinebook Pro won't boot when using UART console cable
 
-* If you're using the link:/documentation/Pinebook_Pro/_index#Using_the_UART[Pine Store], you may want to see if it boots after you disconnect it. Some users report that custom-made cables based on FTDI UART adapters do not cause this issue.
+* If you're using the link:/documentation/Pinebook_Pro#Using_the_UART[Pine Store], you may want to see if it boots after you disconnect it. Some users report that custom-made cables based on FTDI UART adapters do not cause this issue.
 * Make sure your USB to serial UART device is 3.3v. Many are 5v and some even +-12v. Pinebook Pro's only support 3.3v and may act eratically when using higher voltage. Further, higher voltage could permananetly damage the Pinebook Pro's SoC.
 
 === Pinebook Pro will not sleep with lid closed
@@ -91,7 +91,7 @@ Your Pinebook Pro should now sleep properly when the lid is closed.
 
 === WiFi issues
 
-* First, check the privacy switches to make sure your WiFi is enabled. They are persistant. See link:/documentation/Pinebook_Pro/_index#Privacy_Switches[Privacy Switches]
+* First, check the privacy switches to make sure your WiFi is enabled. They are persistant. See link:/documentation/Pinebook_Pro#Privacy_Switches[Privacy Switches]
 * Next, you may have to modify the `/etc/NetworkManager/NetworkManager.conf` as root user, and replace `managed=false` with `managed=true`. Then reboot.
 * If that doesn't work, and if `dmesg | grep brcmfmac` reports missing firmware, you will need to manually add the brcmfmac43455-sdio.* firmware files. This is due to a quiet change in the 2022 hardware revision. This https://github.com/reMarkable/brcmfmac-firmware[repo] has been tested and confirmed to work by no112.
 * For connections that drop and resume too often, it might be due to WiFi power management from earlier OS releases. Later OS releases either removed WiFi power management, or default to full power. (Power management can be turned off via command line with `iw dev wlan0 set power_save off` or `iwconfig wlan0 power off`, although it is not persistent through re-boot.)
@@ -150,7 +150,7 @@ This issue occurs when your thumb or edge of the palm makes contact with left or
 
 Using Fn+F7 to disable the touchpad will keep it from also disabling the keyboard.
 
-A link:/documentation/Pinebook_Pro/_index#Trackpad[firmware update] has been released to address this.
+A link:/documentation/Pinebook_Pro#Trackpad[firmware update] has been released to address this.
 
 === Key mapping
 
@@ -208,7 +208,7 @@ If the above fix did not work, you can try this:
 * Login using the GUI and test
 * If you are still loggied in via the GUI, you will have to reboot using `sudo shutdown -r now`. After the reboot, you should be able to login to the GUI login and have the resolution back to normal.
 
-After restoring the usability of your Pinebook Pro's graphical screen, also see link:/documentation/Pinebook_Pro/_index#Improving_readability[this section] on improving readability and usability.
+After restoring the usability of your Pinebook Pro's graphical screen, also see link:/documentation/Pinebook_Pro#Improving_readability[this section] on improving readability and usability.
 
 == Outer Shell
 

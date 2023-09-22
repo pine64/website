@@ -9,7 +9,7 @@ menu:
     weight: 1
 ---
 
-This page contains a list of all available releases and tools for the link:/documentation/Pinebook/_index[Pinebook].
+This page contains a list of all available releases and tools for the link:/documentation/Pinebook[Pinebook].
 
 == Linux Image Releases
 

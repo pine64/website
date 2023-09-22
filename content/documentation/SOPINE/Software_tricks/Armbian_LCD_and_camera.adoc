@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-Guide on how to get the camera and the LCD working on the link:/documentation/SOPINE/_index[SOPINE] on Armbian.
+Guide on how to get the camera and the LCD working on the link:/documentation/SOPINE[SOPINE] on Armbian.
 
 == LCD
 

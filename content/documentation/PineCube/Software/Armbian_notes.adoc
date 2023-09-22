@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-This article contains notes regarding Armbian on the link:/documentation/PineCube/_index[PineCube].
+This article contains notes regarding Armbian on the link:/documentation/PineCube[PineCube].
 
 == General notes
 

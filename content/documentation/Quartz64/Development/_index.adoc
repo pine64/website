@@ -9,7 +9,7 @@ menu:
     weight: 3
 ---
 
-This page documents the current status of software support for the link:/documentation/Quartz64/_index[Quartz64] single-board computer, and provides links to resources to help prospective contributors get started. Information is kept current on a best-effort basis as various patches get accepted into the kernel.
+This page documents the current status of software support for the link:/documentation/Quartz64[Quartz64] single-board computer, and provides links to resources to help prospective contributors get started. Information is kept current on a best-effort basis as various patches get accepted into the kernel.
 
 == Overview
 

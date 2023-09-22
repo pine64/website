@@ -9,75 +9,73 @@ menu:
     weight: 
 ---
 
-This article seeks to provide general mainline Linux development information for the link:/documentation/PineNote/_index[PineNote].
+This article seeks to provide general mainline Linux development information for the link:/documentation/PineNote[PineNote].
 
 == Mainline development
 
 === Status
 
-The following table aims to provide a list of kernel modules required for running the PineNote. It also aims at listing repositories of work in progress. While some overlap with the Quartz64 module list (link:/documentation/Quartz64/Development/_index#Upstreaming_Status[Development]) is expected, only modules relevant to the PineNote hardware should be listed here.
+The following table aims to provide a list of kernel modules required for running the PineNote. It also aims at listing repositories of work in progress. While some overlap with the Quartz64 module list (link:/documentation/Quartz64/Development#Upstreaming_Status[Development]) is expected, only modules relevant to the PineNote hardware should be listed here.
 
+[cols="2,1,1,2,6"]
 |===
-|scope="col" | Function
-2+| Status
-|scope="col" | Module
-|scope="col" | Notes
+| Function 2+| Status | Module | Notes
 
 | Suspend mode driver
-| colspan="2" |tbd
+2+|tbd
 | `rockchip-sip`
 | The rockchip-sip driver is not mainlineable; it is only needed ^https://github.com/smaeul/linux/commit/72127ca2806623a9de52cc1de39b06a38a22fe48[(via a hack)]^ for suspend/resume to work when downstream TF-A is used. Suspend on upstream TF-A (https://review.trustedfirmware.org/c/TF-A/trusted-firmware-a/+/16952[status]) should work without any special drivers.
 
 | Touchscreen
-| colspan="2" |Linux Mainline
+2+|Linux Mainline
 | `cyttsp5`
 | As of 6.2-rc1^[https://git.kernel.org/linus/5b0c03e24a061f9c9e8b28fa157b80990c559a37]^
 
 | Digitizer
-| colspan="2" |Linux Mainline
+2+|Linux Mainline
 | `i2c_hid_of`
 |
 
 | Pen BLE Buttons
-| colspan="2" |tbd
+2+|tbd
 | `ws8100-pen`
 | https://github.com/smaeul/linux/commit/46e87f1f9c7dd22af26d99f60eb83d2cace43cb5
 
 | EBC Display controller
-| colspan="2" |tbd
+2+|tbd
 | `rockchip-ebc`
 | https://lore.kernel.org/all/20220413221916.50995-1-samuel@sholland.org/[RFC PATCH 00/16 drm/rockchip: Rockchip EBC ("E-Book Controller") display driver]
 
 | EBC PMic
-| colspan="2" |tbd
+2+|tbd
 | `tps65185`
-| driver developed here: ^https://github.com/smaeul/linux/tree/rk35/tps65185]^,[small tweaks to resume behavior added on top here: ^[https://github.com/m-weigand/linux/commits/mw/rk35/tps65185]
+| driver developed here: ^https://github.com/smaeul/linux/tree/rk35/tps65185^, small tweaks to resume behavior added on top here: ^[https://github.com/m-weigand/linux/commits/mw/rk35/tps65185]^
 
 | LED backlight driver
-| colspan="2" |Linux Mainline
+2+|Linux Mainline
 | `lm3630a`
 |
 
 | Accelerometer
-| colspan="2" |Linux Mainline
+2+|Linux Mainline
 | `st-accel-i2c` (silan,sc7a20)
-| As of 5.18-rc1^[https://git.kernel.org/linus/c7a43b089826b17e46419d93c00c0d2f4b26735f]
+| As of 5.18-rc1 ^[https://git.kernel.org/linus/c7a43b089826b17e46419d93c00c0d2f4b26735f]^
 
 | Rastergraphics unit RGA2e
-| colspan="2" |tbd
+2+|tbd
 | `rga` (v4l2 mem2mem driver)
 | WIP patches for activation on the Pinenote/dithering/Y4-conversion can be found here: ^[https://github.com/m-weigand/linux/commits/mw/rk35/rk356x-rga]^.
-Note that the rga2e in the rk3566 only works for RAM <= 4 G|).
+Note that the rga2e in the rk3566 only works for RAM <= 4 G!).
 Simple demo program found here: ^[https://github.com/m-weigand/rga-v4l2-demo]^
 
 | Mali GPU
-| |Linux Mainline
-| |Upstream Mesa
+| Linux Mainline
+| Upstream Mesa
 | `panfrost`
 | As of 5.18 ^[https://git.kernel.org/linus/810028668c6d9da25664195d6b906c98a8169f72]^ this got added to the `.dtsi` file, but it's status is disabled. Enabling the `gpu` node upstream needs to wait till `rockchip-ebc` is upstreamed.
 
 | Wifi/BT
-| colspan="2" |Linux Mainline
+2+|Linux Mainline
 | `brcmfmac`
 |
 |===
@@ -98,7 +96,7 @@ The software releases can be found here in the future:
 
 The following pages discuss the development efforts for the PineNote:
 
-* link:/documentation/PineNote/Development/_index[PineNote Development]
+* link:/documentation/PineNote/Development[PineNote Development]
 * link:/documentation/PineNote/Development/Flashing[PineNote Development/Flashing]
 * link:/documentation/PineNote/Development/Booting_Linux[PineNote Development/Booting Linux]
 * link:/documentation/PineNote/Development/Building_kernel[PineNote Development/Building Kernel]

@@ -9,7 +9,7 @@ menu:
     weight: 1
 ---
 
-This page contains a list of all available operating systems for the link:/documentation/Quartz64/_index[Quartz64] in alphabetical order, as well as links to other resources.
+This page contains a list of all available operating systems for the link:/documentation/Quartz64[Quartz64] in alphabetical order, as well as links to other resources.
 
 == Software releases
 

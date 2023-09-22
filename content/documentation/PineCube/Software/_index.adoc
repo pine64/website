@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-* link:Mainlining Efforts[]
+* link:Mainlining_Efforts[]
 * link:Buildroot[]
 * link:NixOS[]
 * link:Armbian[]

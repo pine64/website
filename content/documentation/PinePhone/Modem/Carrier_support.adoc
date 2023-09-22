@@ -12,7 +12,7 @@ menu:
 {{% docs/construction %}}
 
 This page contains hints on setting up cellular network connectivity for specific carriers.
-For more general information, see the carrier support section of link:/documentation/PinePhone/_index#Modem[PinePhone]. For the APN settings see link:/documentation/PinePhone/Modem/APN_settings[APN settings].
+For more general information, see the carrier support section of link:/documentation/PinePhone#Modem[PinePhone]. For the APN settings see link:/documentation/PinePhone/Modem/APN_settings[APN settings].
 
 == Check compatibility
 
@@ -57,7 +57,7 @@ The following is a list of carriers which has been tested by users and confirmed
 
 | Japan | 楽天モバイル / Rakuten Mobile | Yes | Not tested | Yes | Yes | Mobian Phosh, January 2022 (revised from January 2021)
 
-| China | China Unicom | Yes | Not tested | Yes | Yes | https://postmarketos.org/[pmOS] 22.06.3 Phosh, link:/documentation/PinePhone/_index#Firmware_update[*8M2G_30.006*], November 2022
+| China | China Unicom | Yes | Not tested | Yes | Yes | https://postmarketos.org/[pmOS] 22.06.3 Phosh, link:/documentation/PinePhone#Firmware_update[*8M2G_30.006*], November 2022
 |===
 
 === Africa
@@ -379,7 +379,7 @@ Known issues:
 
 == MMS workarounds
 
-These scripts allow partial MMS support on a link:/documentation/PinePhone/_index[PinePhone] in distributions without working MMS support:
+These scripts allow partial MMS support on a link:/documentation/PinePhone[PinePhone] in distributions without working MMS support:
 
 * JMMS: [https://git.sr.ht/~amindfv/jmms]
 * silvermms: [https://gitlab.com/5ilver/silvermms]

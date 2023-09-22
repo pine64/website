@@ -17,7 +17,7 @@ If there is no battery plugged into the board, the jumper labelled "ON/OFF_BATT"
 
 Make sure the kernel is built with `CONFIG_MOTORCOMM_PHY` set to `y`. Building it as a module (`m`) and then relying on module auto-loading is unlikely to work, because if the generic PHY driver is built in it will bind to the PHY first, unless you include the motorcomm module in your initramfs.
 
-Note: Starting with https://salsa.debian.org/kernel-team/linux/-/merge_requests/551[Debian's `6.1~rc3-1~exp1` kernel] the module is included, but set to `m` and I (Diederik) have verified that it gets included in the initramfs and *works* on Model-A and Model-B with the link:/documentation/Quartz64/_index#Plebian[Quartz64] images.
+Note: Starting with https://salsa.debian.org/kernel-team/linux/-/merge_requests/551[Debian's `6.1~rc3-1~exp1` kernel] the module is included, but set to `m` and I (Diederik) have verified that it gets included in the initramfs and *works* on Model-A and Model-B with the link:/documentation/Quartz64#Plebian[Quartz64] images.
 
 == "Model A" Acrylic Case Doesn't Fit
 

@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-This page documents the current status of software support for the link:/documentation/PinePhone_Pro/_index[PinePhone Pro], and provides links to resources to help prospective contributors get started.
+This page documents the current status of software support for the link:/documentation/PinePhone_Pro[PinePhone Pro], and provides links to resources to help prospective contributors get started.
 
 == Overview
 

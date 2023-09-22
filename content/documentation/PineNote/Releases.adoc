@@ -9,7 +9,7 @@ menu:
     weight: 3
 ---
 
-This page contains a list of all available operating systems for the link:/documentation/PineNote/_index[PineNote] in alphabetical order.
+This page contains a list of all available operating systems for the link:/documentation/PineNote[PineNote] in alphabetical order.
 
 == Alpine
 

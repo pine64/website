@@ -21,7 +21,7 @@ Alternatively to testing JumpDrive, the issue can also be diagnosed by checking 
 
 If the installation of the prioritized boot medium is corrupted or incorrect, the PinePhone will not boot anymore. The following problems are common:
 
-* The microSD card is in the wrong slot (see link:#First time installation[first time installation])
+* The microSD card is in the wrong slot (see first time installation)
 * The image file was flashed to partition 1 (example: _sdx1_, _nvme0x1p1_) instead of the whole device (example: _sdx_, _nvme0x1_)
 * An image without bootloader was flashed (mind the _Tow-Boot_ bootloader requirements of _Mobian_ and _postmarketOS_)
 * The operating systems got corrupted, for example after running updates (reflash the device, see link:/documentation/PinePhone/Installation_instructions[Installation instructions])

@@ -15,7 +15,7 @@ PINE64 ships the PinePhone with a stock version of the Quectel EG25-G modem's fi
 
 == Quectel EG25-G Modem
 
-Quectel EG25-G is an LTE Cat 4 module optimized specially for M2M and IoT applications. It is used in the link:/documentation/PinePhone/_index[PinePhone].
+Quectel EG25-G is an LTE Cat 4 module optimized specially for M2M and IoT applications. It is used in the link:/documentation/PinePhone[PinePhone].
 
 * Specifications: https://wiki.pine64.org/wiki/File:Quectel_EG25-G_LTE_Standard_Specification_V1.3.pdf
 * Hardware design: https://wiki.pine64.org/wiki/File:Quectel_EG25-G_Hardware_Design_V1.4.pdf
@@ -173,7 +173,7 @@ Once in EDL mode, open a terminal, navigate to the root directory of the recover
 * If you use an ARM64 distribution (most likely): `sudo ./qfirehose -f ./` or `sudo ./qfirehose_arm64 -f ./`
 * If you use an ARMHF (32 bit) distribution: `sudo ./qfirehose_armhf -f ./`
 
-It will reboot the modem after finished. After about 30 seconds, it will get back up and running. To check the firmware version after that, use an AT command `AT+QGMR` like at link:/documentation/PinePhone/_index#Firmware_update[PinePhone].
+It will reboot the modem after finished. After about 30 seconds, it will get back up and running. To check the firmware version after that, use an AT command `AT+QGMR` like at link:/documentation/PinePhone#Firmware_update[PinePhone].
 
 === Bootloader unlocking
 

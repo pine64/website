@@ -9,7 +9,7 @@ menu:
     weight: 6
 ---
 
-Powering the link:/documentation/ROCKPro64/_index[ROCKPro64] single-board computer from an ATX power supply allows the board to be powered with more than just two disks, and is a reliable and safe way to power it from your household mains.
+Powering the link:/documentation/ROCKPro64[ROCKPro64] single-board computer from an ATX power supply allows the board to be powered with more than just two disks, and is a reliable and safe way to power it from your household mains.
 
 WARNING: Please note that following these instructions comes at your own risk. While best efforts have been made to write reliable, safe instructions, the authors cannot be held liable for the quality of procured components or the assembly job of the person following the instructions, and the damages caused by either of these not being up to par.
 
@@ -23,7 +23,7 @@ WARNING: Please note that following these instructions comes at your own risk. W
 
 === Tools
 
-* *A soldering iron*, e.g. the link:/documentation/Pinecil/_index[Pinecil], with some solder
+* *A soldering iron*, e.g. the link:/documentation/Pinecil[Pinecil], with some solder
 * *Some wirestrippers* suitable for the thickness of wire you chose
 
 == Assembly

@@ -17,22 +17,17 @@ These exist, but they haven't been written down yet.
 The TODOs in this space are organized around what functionality they enable. A table of the important functions that a user may want in the PineNote and a status are listed below:
 
 |===
-|scope="col" | Functionality
-|scope="col" | Approaches (apps)
-|scope="col" | Level of support (subjective)
-|scope="col" | Supports
-|scope="col" | Does not yet support
-|scope="col" | Notes
+| Functionality | Approaches (apps) | Level of support (subjective) | Supports | Does not yet support | Notes
 
-|scope="row" rowspan="3" | Reading Documents
+.2+| Reading Documents
 | `https://github.com/koreader/koreader[Koreader]`
-| | Great
+| Great
 | Fully featured ebook reader; Supports many filetypes;
 | Handwritten notes
 | Large user base on many devices; codebase has a somewhat of a reputation for being messy
 
 | `https://github.com/xournalpp/xournalpp[Xournalpp]`
-|  | Good
+| Good
 | Reading/writing PDFs and other files;
 | No definition support (long-press for definition)
 | Billed more as a note-taking app than a document reading app
@@ -71,64 +66,60 @@ See link:/documentation/wiki/PineNote/Development/Apps#Sway[here].
 
 This table is a draft for the documentation development page:
 
-[cols="1,1,1,1,1"]
+[cols="1,1,1,1,2"]
 |===
-|scope="col" | Functionality
-|scope="col"   | Component
-|scope="col"  | Status (Android from factory)
-|scope="col"  | Status (Linux)
-|scope="col" | Notes
+| Functionality | Component | Status (Android from factory) | Status (Linux) | Notes
 
 | Bootloader
 | `Bootloader`
-|  | Android only
-|  | WIP for Linux
+|  Android only
+|  WIP for Linux
 | Booting into linux requires a patched U-Boot. link:/documentation/PineNote/Development/Booting_Linux[Instructions here.]
 
-|scope="row" rowspan="4" | Operating System
+.4+| Operating System
 
 | `Stability`
-| colspan="2"  | WIP
+2+| WIP
 | Users have successfully booted Arch, Manjaro, and Debian. Debian has most support right now.
 
 | `Suspend`
-| colspan="2"  | Works
+2+| Works
 | https://gitlab.com/hrdl/pinenote-shared/-/blob/main/patches/linux/0001-Rudimentary-attempt-to-keep-PMIC-usable-after-suspen.patch[This kernel patch] adds suspend support.
 
 | `Updates`
-| colspan="2"  | WIP
+2+| WIP
 | GPU libs (mesa) and mutter rely on patched packages. These should not be updated via the package manager at the moment, make sure to exclude them.
 
-| <Code>Networking`
-| colspan="2"  | Works
+| `Networking`
+2+| Works
 |
 
-|scope="row" rowspan="5"| Components
+.5+| Components
 
 | `E-Paper Display`
-| colspan="2"  | WIP
+2+| WIP
 | Mostly functional. There is some ghosting and work remains, but the device and screen are usable.
 
 | `Touch`
-| colspan="2"  | Works
+2+| Works
 |
 
 | `Bluetooth`
-| colspan="2"  | Works, audio stutters
+2+| Works, audio stutters
 | link:/documentation/PineNote/Development/Building_Kernel#Fixing_Bluetooth[Switching the driver] provides stable connections for keyboards, but audio still stutters. Trying to fix this link:/documentation/PineNote/Development/Software_Tweaks#Preliminary_fix_for_stuttering_bluetooth_audio[here].
 
 | `Sensors`
-| colspan="2"  | Unsure
+2+| Unsure
 | Light sensors? Rotational sensors?
 
 | `Buttons`
-| colspan="2"  | Works
+2+| Works
 | Power button works.
 
 | Accessory compatibility, spare parts
 
 | `Spare parts`
-| colspan="2"  | Not available yet
+2+| Not available yet
 | Spare parts currently not available yet in the store.
 
 |===

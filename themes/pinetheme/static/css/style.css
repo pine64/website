@@ -38,6 +38,7 @@ td p {
 h2, h3, h4, h5, h6 {
     color: var(--blue);
     padding: 0.8em 0 0.6em 0;
+    font-weight: 400;
 }
 h2 a, h3 a, h4 a, h5 a, h6 a {
     color: var(--blue);
@@ -78,7 +79,7 @@ ul.pagination li.active a, ul.pagination li a:hover{
 }
 
 div.ulist{
-    padding: 0 0 0.6em 2em;
+    padding: 0 0 0 2em;
 }
 div.olist{
     padding-left: 2em;
@@ -411,6 +412,12 @@ button.rounded:hover {
     font-weight: 300;
 
 }
+#doc-container h2 {
+    border-bottom: 1px solid #ddd;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: .2em 0;
+}
 #doc-breadcrumbs {
     background-color: rgb(248, 249, 250); 
     padding: .5rem 1rem;
@@ -453,7 +460,7 @@ button.rounded:hover {
     overflow: scroll;
 }
 #doc-nav .sidebar-nav > ul > ul {
-    border-left: 1px solid #ddd;
+    border-left: 1px solid #fafafa;
     margin-left: 10px;
 }
 #doc-nav .sidebar-nav-item {
@@ -499,12 +506,18 @@ button.rounded:hover {
 #doc-container img {
     max-width: 100%;
 }
+/* Documentation text style */
 div#doc-page h1 {
     color: var(--blue);
 }
-/* Documentation text style */
+#doc-page article ol {
+    margin-bottom: 1em;
+}
+#doc-page article ul {
+    margin-bottom: 1em;
+}
 div#doc-page code{
-    padding: 1px 4px;
+    padding: 0 0.4em;
     background-color: #f8f9fa;
     border: 1px solid #eaecf0;
     font-family: monospace;
@@ -652,6 +665,9 @@ nav#TableOfContents ul ul{
     table-layout: fixed;
     position: relative;
     width: 100%;
+}
+#doc-page .admonitionblock .paragraph:not(:last-child) {
+    padding-bottom: 1em;
 }
 #doc-page .admonitionblock td.content {
     padding: 1rem 1rem .75rem;

@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-The article contains information about cases, holders/stands, 3D-models, and supplies for the link:/documentation/Pinecil/_index[Pinecil] soldering iron. This is a small set of examples based on the many questions asked every week in the live Pinecil chat channel. There may be better althernatives depending on your part of the world, but this gives an idea of some possible options.
+The article contains information about cases, holders/stands, 3D-models, and supplies for the link:/documentation/Pinecil[Pinecil] soldering iron. This is a small set of examples based on the many questions asked every week in the live Pinecil chat channel. There may be better althernatives depending on your part of the world, but this gives an idea of some possible options.
 
 == Cases and bags
 

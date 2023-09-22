@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-This article is a list of convenient links to guides on soldering. Although it's not directly related to link:/documentation/Pinecil/_index[Pinecil] hardware, many PINE64 members ask for this kind of information in daily live chat. If you don't find something here, then try an Internet search as this is just a starting point for convenience.
+This article is a list of convenient links to guides on soldering. Although it's not directly related to link:/documentation/Pinecil[Pinecil] hardware, many PINE64 members ask for this kind of information in daily live chat. If you don't find something here, then try an Internet search as this is just a starting point for convenience.
 
 == General soldering guides
 

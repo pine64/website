@@ -9,7 +9,7 @@ menu:
     weight: 1
 ---
 
-This page contains a list of all available operating systems for the link:/documentation/SOQuartz/_index[SOQuartz].
+This page contains a list of all available operating systems for the link:/documentation/SOQuartz[SOQuartz].
 
 == Manjaro ARM
 

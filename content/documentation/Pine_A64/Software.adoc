@@ -9,7 +9,7 @@ menu:
     weight: 2
 ---
 
-This page contains a list of all available releases for the link:/documentation/Pine_A64/_index[PINE A64(+)], as well as links to other resources.
+This page contains a list of all available releases for the link:/documentation/Pine_A64[PINE A64(+)], as well as links to other resources.
 
 Note that the PINE A64(+) images are *not compatible with the PINE A64-LTS* due to LPDDR3 memory configuration. For PINE A64-LTS, please use the link:/documentation/SOPINE/Software[Software].
 

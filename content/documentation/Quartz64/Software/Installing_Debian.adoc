@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-It is possible to install Debian onto eMMC of the link:/documentation/Quartz64/_index[Quartz64] from the pgewipout quartz64_ci imaged to a Micro SDcard, or vice versa.
+It is possible to install Debian onto eMMC of the link:/documentation/Quartz64[Quartz64] from the pgewipout quartz64_ci imaged to a Micro SDcard, or vice versa.
 
 This might be useful if you don't have an eMMC to USB adapter or if the board is inside a case which doesn't allow eMMC removal.
 

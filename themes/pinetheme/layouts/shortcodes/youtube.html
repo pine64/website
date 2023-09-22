@@ -26,6 +26,7 @@
 function load_yt(a) {
   document.getElementById('yt_frame_'+arguments[0]).src = 'https://www.youtube.com/embed/' + arguments[0] + '?&autoplay=1';
 
-  document.getElementById('yt_overlay_'+arguments[0]).style.display = "none";
+  /*document.getElementById('yt_overlay_'+arguments[0]).style.display = "none";*/
+  document.getElementById('yt_overlay_'+arguments[0]).style.visibility = "hidden";
 }
 </script>

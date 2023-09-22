@@ -14,7 +14,7 @@ image:/documentation/images/Flash-micropython.jpg[Flashing `micropython.zip`,tit
 
 == Introduction
 
-Both Infinitime and Wasp-os are very cool OS'es for the link:/documentation/PineTime/_index[PineTime] and many people will want to try both. This is possible, even with a sealed device!
+Both Infinitime and Wasp-os are very cool OS'es for the link:/documentation/PineTime[PineTime] and many people will want to try both. This is possible, even with a sealed device!
 
 Both devices use the same Nordic (legacy) DFU protocol for updating firmware over the air. But the BLE stack and the bootloaders for both are different. That's why we need to use the https://github.com/daniel-thompson/wasp-reloader[reloader]. However, instructions you find elsewhere (including https://www.youtube.com/watch?v=lPasAt1LJmo[Daniel Thompsons video]) are somewhat outdated.
 

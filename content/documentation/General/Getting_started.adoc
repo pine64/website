@@ -9,11 +9,11 @@ menu:
     weight: 
 ---
 
-This guide is for the PINE64 devices. For device-specific information please see the corresponding device pages listed on the link:/documentation/_index#Devices[main page].
+This guide is for the PINE64 devices. For device-specific information please see the corresponding device pages listed on the link:/documentation#Devices[main page].
 
 == Requirements
 
-You will need the following to get started with using your link:/documentation/Pine_A64/_index[PINE A64(+)], link:/documentation/Pine_A64-LTS/_index[PINE A64-LTS], link:/documentation/Pinebook/_index[Pinebook] or link:/documentation/ROCK64/_index[ROCK64] board:
+You will need the following to get started with using your link:/documentation/Pine_A64[PINE A64(+)], link:/documentation/Pine_A64-LTS[PINE A64-LTS], link:/documentation/Pinebook[Pinebook] or link:/documentation/ROCK64[ROCK64] board:
 
 * A Windows / Linux PC or Mac device with a MicroSD Card Reader
 * Internet connection / pre-downloaded OS image files
@@ -66,7 +66,7 @@ You will need the following utilities to get started with imaging the OS of your
 
 *Downloading and extracting OS image(s)*
 
-You can find OS images for the respective devices in the link:/documentation/_index[device section] on the main page.
+You can find OS images for the respective devices in the link:/documentation[device section] on the main page.
 Images designated ‘DD’ need to be flashed using Etcher or Win32imager, whilst images labelled ‘Phoenix Card Image’ require the Phoenix Card utility.
 
 Having downloaded the required OS image proceed to use 7zip to unarchive it by right-clicking the archive, and selecting ‘Extract All’. Upon completion, note the destination of where the .img file was extracted (‘Downloads’ folder by default). Once the process has completed, you can proceed to imaging the .img file.
@@ -100,7 +100,7 @@ TIP: Phoenix Card utility and images are NOT available on macOS.
 
 *Downloading and extracting OS image(s), insert the SD card*
 
-You can find OS images for the respective devices in the link:/documentation/_index#Devices[device section] of the main page.
+You can find OS images for the respective devices in the link:/documentation#Devices[device section] of the main page.
 
 Having downloaded the required OS image, proceed to use the compression utility to unarchive it and get the .img file.
 Once the process has completed, you can proceed to write it to your SD card.
@@ -153,7 +153,7 @@ TIP: Phoenix Card utility and images are NOT available on Linux.
 
 *Downloading and extracting OS image(s)*
 
-You can find OS images for the respective devices in the link:/documentation/_index[device section] on the main page. On Linux you can only use images designated as ‘DD’.
+You can find OS images for the respective devices in the link:/documentation[device section] on the main page. On Linux you can only use images designated as ‘DD’.
 
 Having downloaded the required OS image proceed to use 7zip to unarchive it by double clicking the archive, and selecting ‘Extract All’. Upon completion, note the destination where the .img file was extracted (‘Downloads’ folder by default). Once the process has completed, you can proceed to imaging the .img file.
 

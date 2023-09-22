@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-This page is about the community project to bring a silicone case to the link:/documentation/PineBuds_Pro/_index[PineBuds Pro].
+This page is about the community project to bring a silicone case to the link:/documentation/PineBuds_Pro[PineBuds Pro].
 
 == Introduction
 

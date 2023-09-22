@@ -1,0 +1,7 @@
+
+
+{{ range ( where .Site.Pages "Section" "documentation"  ) }}
+<h2>{{ . }}</h2>
+<hr>
+{{ .Content }}
+{{end}}

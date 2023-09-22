@@ -98,5 +98,5 @@ For more information, please refer to https://forum.pine64.org/showthread.php?ti
 
 It is also possible to initially boot off an eMMC or SD card, then transfer to a root file system on the NVMe. Currently, it is necessary to have the U-Boot code on an eMMC or SD card. (A forum member https://forum.pine64.org/showthread.php?tid=8439[posted here] about using a modified version of U-Boot with NVMe drivers, that uses */boot* and */* off the NVMe drive. So this may change in the future.)
 
-Please see link:/documentation/Pinebook_Pro/_index#bootable_storage[Bootable Storage].
+Please see link:/documentation/Pinebook_Pro#bootable_storage[Bootable Storage].
 

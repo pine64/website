@@ -21,72 +21,66 @@ Here's a table of the current support for different hardware. "In review" means 
 
 [cols="1,1,1,1,1"]
 |===
-|scope="col" {{Diagonal split header|Codec|SoC}}
-|scope="col" | RK3328
-|scope="col" | RK3399
-|scope="col" | RK3566
-|scope="col" | RK3588
+| | RK3328 | RK3399 | RK3566 | RK3588
 
-|scope="row" | JPEG
-| | No
-| | Yes
-| | No
-| | No
+| JPEG
+| No
+| Yes
+| No
+| No
 
-|scope="row" | MPEG-2
-| | Yes
-| | Yes
-| | Yes
-| | No
+| MPEG-2
+| Yes
+| Yes
+| Yes
+| No
 
-|scope="row" | MPEG-4 Part 2/H.263
-| | No
-| | No
-| | No
-| | No
+| MPEG-4 Part 2/H.263
+| No
+| No
+| No
+| No
 
-|scope="row" | VP8
-| | Yes
-| | Yes
-| | Yes
-| | No
+| VP8
+| Yes
+| Yes
+| Yes
+| No
 
-|scope="row" | H.264/AVC
-| | Yes
-| | Yes
-| | Yes <sup >a^
-| | No
+| H.264/AVC
+| Yes
+| Yes
+| Yes ^a^
+| No
 
-|scope="row" | H.265/HEVC
-| | In review
-| | In review
-| | No
-| | No
+| H.265/HEVC
+| In review
+| In review
+| No
+| No
 
-|scope="row" | VP9
-| | Yes
-| | Yes
-| | No
-| | No
+| VP9
+| Yes
+| Yes
+| No
+| No
 
-|scope="row" | AVS2
-| | N/A
-| | N/A
-| | N/A
-| | No
+| AVS2
+| N/A
+| N/A
+| N/A
+| No
 
-|scope="row" | AV1
-| | N/A
-| | N/A
-| | N/A
-| | No
+| AV1
+| N/A
+| N/A
+| N/A
+| No
 |===
 
 === Notes
 
-<ol >
-  <li>only Hantro, not rkvdec2, so with a maximum resolution of 1080p for now</li>
-</ol>
+^a^ only Hantro, not rkvdec2, so with a maximum resolution of 1080p for now
 
 === Cedrus
 

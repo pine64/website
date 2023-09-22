@@ -9,7 +9,7 @@ menu:
     weight: 1
 ---
 
-This page contains a list of all available releases and tools for the link:/documentation/PinePhone/_index[PinePhone] in alphabetical order.
+This page contains a list of all available releases and tools for the link:/documentation/PinePhone[PinePhone] in alphabetical order.
 
 NOTE: Some releases may not have a good setup for the backlight at low brightness. If configured too low, the backlight shuts down completely, but the screen is still displayed and usable in bright front-light.
 
@@ -638,7 +638,7 @@ There are software tools, that can be booted on the PinePhone.
 
 === JumpDrive
 
-JumpDrive can be used to flash the eMMC (and the microSD card), see link:/documentation/PinePhone/Installation_instructions#Using JumpDrive[Installation instructions].
+JumpDrive can be used to flash the eMMC (and the microSD card), see link:/documentation/PinePhone/Installation_instructions#Using_JumpDrive[Installation instructions].
 
 See https://github.com/dreemurrs-embedded/Jumpdrive/releases for the latest image.
 Make sure to download the "PinePhone" image and to unpack the archive before flashing.
@@ -673,7 +673,8 @@ After power up or reboot, you may perform and complete the test routine, or appl
 
 All the download links below are direct download from pine64.org.
 
-WARNING: These images are for testing purposes only. If you are looking for an up-to-date image please select one from the link:#Software Releases[software releases] section instead.
+WARNING: These images are for testing purposes only. If you are looking for an up-to-date image please select one from the
+software releases section instead.
 
 [cols="1,1,1,1"]
 |===
@@ -743,11 +744,11 @@ If you would like to see examples or specific commands for how to complete these
 
 Community
 
-* link:/documentation/_index#Community_and_Support[Links to the community services]
+* link:/documentation#Community_and_Support[Links to the community services]
 
 Hardware information
 
-* link:/documentation/PinePhone/_index[General PinePhone hardware info] in this Pine64 wiki
+* link:/documentation/PinePhone[General PinePhone hardware info] in this Pine64 wiki
 * Details specific to the Braveheart Edition: link:/documentation/PinePhone/Revisions/PinePhone_v1.1_-_Braveheart[PinePhone 1.1 Braveheart hardware details]
 * Details specific to the Community Edition: link:/documentation/PinePhone/Revisions/PinePhone_v1.2[PinePhone 1.2 hardware details]
 * The postmarketOS wiki has a detailed page on the PinePhone hardware https://wiki.postmarketos.org/wiki/PINE64_PinePhone_(pine64-pinephone)[here] and the preceding devkit https://wiki.postmarketos.org/wiki/PINE64_Don%27t_be_evil_devkit_(pine64-dontbeevil)[here]

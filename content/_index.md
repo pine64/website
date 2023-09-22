@@ -42,8 +42,10 @@ Our goal is to push the envelope and deliver Arm and RISC-V devices that you wan
 The PINE64 community is large, vibrant and diverse. Independent and partner-project developers, hackers and hardware enthusiasts, privacy advocates and FOSS geeks - you name it, we’ve got 'em all. They all contribute to the project thereby shaping it and determining its course. This page is community run, as is the Wiki, the chats as well as the forums.
 
 What can you contribute?
-  {{</ boxhalf >}}
-  {{< boxhalf type="text" content="" >}}
+{{</ boxhalf >}}
+
+
+{{< boxhalf type="text" content="" >}}
   {{< slider_small slides=8 seconds=10 >}}
   <img src="/img/slider_index_1.png">
   <img src="/img/slider_index_2.png">
@@ -54,7 +56,9 @@ What can you contribute?
   <img src="/img/slider_index_7.png">
   <img src="/img/slider_index_8.png">
     {{</ slider_small >}}
-  {{</ boxhalf >}}
+{{</ boxhalf >}}
+
 {{</ box >}}
+
 
 {{< box_news title="Latest contest" type="contests" amount="1" style="themegrey" >}}

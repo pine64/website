@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-This article is about the available tips for the link:/documentation/Pinecil/_index[Pinecil] and how they work.
+This article is about the available tips for the link:/documentation/Pinecil[Pinecil] and how they work.
 
 == Pinecil Tips
 

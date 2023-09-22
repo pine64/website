@@ -13,7 +13,7 @@ menu:
 
 *A*: The MAC address is specific to the SOPINE module; swapping modules within the Clusterboard does not change the MAC address of the module.
 
-*Q*: Why will SOPINE modules not reboot when installed on a Clusterboard, but will when installed on a link:/documentation/SOPINE_Baseboard/_index[SOPINE Baseboard]?
+*Q*: Why will SOPINE modules not reboot when installed on a Clusterboard, but will when installed on a link:/documentation/SOPINE_Baseboard[SOPINE Baseboard]?
 
 *A*: The cause has been determined to be back-EMF, and can be resolved with some relatively easy hardware modifications, thanks to excellent troubleshooting performed by Eric. Please, have a look at the https://ericdraken.com/a64-reset-problem/[extensive article] he wrote to find out how to resolve this issue.  See also https://forum.pine64.org/showthread.php?tid=5849&page=2[this forum thread] for further information.
 

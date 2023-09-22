@@ -9,9 +9,9 @@ menu:
     weight: 
 ---
 
-The PinePhone v1.2b is a hardware revision of the link:/documentation/PinePhone/_index[PinePhone] that started shipping in Q4 2020.
+The PinePhone v1.2b is a hardware revision of the link:/documentation/PinePhone[PinePhone] that started shipping in Q4 2020.
 
-This page contains information and resources which are specific to the v1.2b revision of the PinePhone. For other revisions or for resources related to all PinePhone revisions, see link:/documentation/PinePhone/_index#Hardware_revisions[PinePhone].
+This page contains information and resources which are specific to the v1.2b revision of the PinePhone. For other revisions or for resources related to all PinePhone revisions, see link:/documentation/PinePhone#Hardware_revisions[PinePhone].
 
 == Schematics
 

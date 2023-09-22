@@ -108,110 +108,107 @@ image:/documentation/images/Rockchip_RK3399.png[right,title="right"]
 
 [cols="1,1,1,1"]
 |===
-|scope="col"  | Assigned To
-|scope="col" | Pin Nr.
-|scope="col" | Pin Nr.
-|scope="col"  | Assigned To
+| Assigned To | Pin Nr. | Pin Nr. | Assigned To
 
-| | 3.3 V
-| | 1
-| | 2
-| | 5 V
+| 3.3 V
+| 1
+| 2
+| 5 V
 
-| | GPIO1_C4 (I2C8_SDA) <sup >a^
-| | 3
-| | 4
-| | 5 V
+| GPIO1_C4 (I2C8_SDA) ^a^
+| 3
+| 4
+| 5 V
 
-| | GPIO1_C5 (I2C8_SCL) <sup >a^
-| | 5
-| | 6
-| | GND
+| GPIO1_C5 (I2C8_SCL) ^a^
+| 5
+| 6
+| GND
 
-| | GPIO4_D0 (CPU_GPCLK)
-| | 7
-| | 8
-| | GPIO4_C4 (UART2_TX)
+| GPIO4_D0 (CPU_GPCLK)
+| 7
+| 8
+| GPIO4_C4 (UART2_TX)
 
-| | GND
-| | 9
-| | 10
-| | GPIO4_C3 (UART2_RX)
+| GND
+| 9
+| 10
+| GPIO4_C3 (UART2_RX)
 
-| | GPIO1_C6
-| | 11
-| | 12
-| | GPIO3_D0 (I2S0_CLK)
+| GPIO1_C6
+| 11
+| 12
+| GPIO3_D0 (I2S0_CLK)
 
-| | GPIO1_C2
-| | 13
-| | 14
-| | GND
+| GPIO1_C2
+| 13
+| 14
+| GND
 
-| | GPIO1_A1
-| | 15
-| | 16
-| | GPIO1_A4
+| GPIO1_A1
+| 15
+| 16
+| GPIO1_A4
 
-| | 3.3 V
-| | 17
-| | 18
-| | GPIO4_C5 [SPDIF]
+| 3.3 V
+| 17
+| 18
+| GPIO4_C5 [SPDIF]
 
-| | [UART4_TX] GPIO1_B0 (SPI1_TXD)
-| | 19
-| | 20
-| | GND
+| [UART4_TX] GPIO1_B0 (SPI1_TXD)
+| 19
+| 20
+| GND
 
-| | [UART4_RX] GPIO1_A7 (SPI1_RXD)
-| | 21
-| | 22
-| | GPIO4_D1
+| [UART4_RX] GPIO1_A7 (SPI1_RXD)
+| 21
+| 22
+| GPIO4_D1
 
-| | GPIO1_B1 (SPI1_CLK)
-| | 23
-| | 24
-| | GPIO1_B2 (SPI1_CSN0)
+| GPIO1_B1 (SPI1_CLK)
+| 23
+| 24
+| GPIO1_B2 (SPI1_CSN0)
 
-| | GND
-| | 25
-| | 26
-| | GPIO1_B5
+| GND
+| 25
+| 26
+| GPIO1_B5
 
-| | GPIO1_B3 (I2C4_SDA)
-| | 27
-| | 28
-| | GPIO1_B4 (I2C4_SCL)
+| GPIO1_B3 (I2C4_SDA)
+| 27
+| 28
+| GPIO1_B4 (I2C4_SCL)
 
-| | GPIO4_D3
-| | 29
-| | 30
-| | GND
+| GPIO4_D3
+| 29
+| 30
+| GND
 
-| | GPIO4_D4
-| | 31
-| | 32
-| | GPIO3_D4 (I2S0_SDI1SDO3)
+| GPIO4_D4
+| 31
+| 32
+| GPIO3_D4 (I2S0_SDI1SDO3)
 
-| | GPIO3_D5 (I2S0_SDI2SDO2)
-| | 33
-| | 34
-| | GND
+| GPIO3_D5 (I2S0_SDI2SDO2)
+| 33
+| 34
+| GND
 
-| | GPIO3_D2 (I2S0_LRCKTX)
-| | 35
-| | 36
-| | GPIO3_D6 (I2S0_SDI3SDO1)
+| GPIO3_D2 (I2S0_LRCKTX)
+| 35
+| 36
+| GPIO3_D6 (I2S0_SDI3SDO1)
 
-| | GPIO3_D1 (I2S0_LRCKRX)
-| | 37
-| | 38
-| | GPIO3_D3 (I2S0_SDI0)
+| GPIO3_D1 (I2S0_LRCKRX)
+| 37
+| 38
+| GPIO3_D3 (I2S0_SDI0)
 
-| | GND
-| | 39
-| | 40
-| | GPIO3_D7 (I2S0_SDO0)
+| GND
+| 39
+| 40
+| GPIO3_D7 (I2S0_SDO0)
 |===
 
 ==== Notes
@@ -220,15 +217,15 @@ image:/documentation/images/Rockchip_RK3399.png[right,title="right"]
 
 ==== Linux /dev/gpiochip Assignments
 
-[cols="1,1"]
+[cols="h,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"]
 |===
-|scope="row" | Pin Nr.
+| Pin Nr. 
 | 3 | 5 | 7 | 8 | 10 | 11 | 12 | 13 | 15 | 16 | 18 | 19 | 21 | 22 | 23 | 24 | 26 | 27 | 28 | 29 | 31 | 32 | 33 | 35 | 36 | 37 | 38 | 40
 
-|scope="row" | Chip
+| Chip
 | 1 | 1 | 4 | 4 | 4 | 1 | 3 | 1 | 1 | 1 | 4 | 1 | 1 | 4 | 1 | 1 | 1 | 1 | 1 | 4 | 4 | 3 | 3 | 3 | 3 | 3 | 3 | 3
 
-|scope="row" | Line
+| Line
 | 20 | 21 | 24 | 20 | 19 | 22 | 24 | 18 | 1 | 4 | 21 | 8 | 7 | 25 | 9 | 10 | 13 | 11 | 12 | 27 | 28 | 28 | 29 | 26 | 30 | 25 | 27 | 31
 |===
 
@@ -243,14 +240,7 @@ The conversion table at right is also available as a https://gist.github.com/Cou
 == Working Features
 
 |===
-|Feature/Option
-|Android
-|Android Version
-|Linux
-|Linux Version
-|Test/Verify Steps
-|Notes
-|Product Link
+| Feature/Option | Android | Android Version | Linux | Linux Version | Test/Verify Steps | Notes | Product Link
 
 | PINE64 LCD Touchscreen (Screen/Touch)
 | Yes/Yes
@@ -262,8 +252,8 @@ The conversion table at right is also available as a https://gist.github.com/Cou
 | https://pine64.com/?product=7-lcd-touch-screen-panel[7″ LCD Touch Screen Panel]
 
 | Wireless
-<small>ROCKPro64 2×2 MIMO Dual Band WiFi 802.11AC / Bluetooth 4.2 Module (old)
-ROCKPro64 1x1 Dual Band WiFi 802.11AC / Bluetooth 5.0 Module (new)</small>
+ROCKPro64 2×2 MIMO Dual Band WiFi 802.11AC / Bluetooth 4.2 Module (old)
+ROCKPro64 1x1 Dual Band WiFi 802.11AC / Bluetooth 5.0 Module (new)
 | Yes/Yes
 |
 | No/Yes*
@@ -278,7 +268,7 @@ ROCKPro64 1x1 Dual Band WiFi 802.11AC / Bluetooth 5.0 Module (new)</small>
 |
 |
 | use this script: https://github.com/ayufan-rock64/linux-package/blob/master/root-rockpro64/usr/local/sbin/rockpro64_enable_otg.sh[rockpro64_enable_otg.sh], then configure ip on usb0: ifconfig usb0 169.169.222.222 and run iperf, you should likely see about 200-300MB/s
-| link:/documentation/ROCKPro64/_index#OTG_mode[ROCKPro64]
+| link:/documentation/ROCKPro64#OTG_mode[ROCKPro64]
 |
 
 | USB Mass Storage USB2/USB3

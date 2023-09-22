@@ -9,7 +9,7 @@ menu:
     weight: 1
 ---
 
-This page contains a list of all available releases and tools for the link:/documentation/Pinebook_Pro/_index[Pinebook Pro].
+This page contains a list of all available releases and tools for the link:/documentation/Pinebook_Pro[Pinebook Pro].
 
 == Linux OS Image Releases
 

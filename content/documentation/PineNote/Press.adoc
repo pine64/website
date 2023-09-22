@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-Vector images and pictures for the link:/documentation/PineNote/_index[PineNote] you can freely use for projects and press inquiries. Attribute the author if attribution is required via the license (such as CC BY).
+Vector images and pictures for the link:/documentation/PineNote[PineNote] you can freely use for projects and press inquiries. Attribute the author if attribution is required via the license (such as CC BY).
 
 == Backgrounds
 

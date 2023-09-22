@@ -146,5 +146,5 @@ Sometimes during the update process, the connection will drop, and the update wi
 
 Version 1.0.0 of InfiniTime is merely the first version that was considered sufficiently feature-complete and stable enough for daily use. This isn't to say there aren't still bugs present ('cause there are!). So there are a few bugs still present in the update process and the bootloader. One unfortunate bug appears to be that sometimes when the watch tries to restart after an update, the bootloader locks up, and the watch won't turn on. In this case, you will need to wait until the watch battery goes flat, to force the watch to reset. This will most likely involve waiting for a week, and then when you put the watch on the charging cradle, it will power up and you should be right to try again.
 
-If you get stuck or have any questions, join us on your preferred link:/documentation/_index#Chat_Platforms[chat platform] or the product https://forum.pine64.org/forumdisplay.php?fid=134[forum]. There's usually someone available who can help, or will get back to you in a few hours.
+If you get stuck or have any questions, join us on your preferred link:/documentation#Chat_Platforms[chat platform] or the product https://forum.pine64.org/forumdisplay.php?fid=134[forum]. There's usually someone available who can help, or will get back to you in a few hours.
 

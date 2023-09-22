@@ -30,6 +30,7 @@ link:Phone_Accessories/Keyboard[Phone Accessories/Keyboard]
 | Tablets
 a|link:PineTab[PineTab] +
 link:PineTab2[PineTab2] +
+link:PineTab-V[PineTab-V] +
 link:PineNote[PineNote]
 
 | Wearable

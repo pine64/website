@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-This page contains a list of all available releases and tools for the link:/documentation/PinePhone_Pro/_index[PinePhone Pro].
+This page contains a list of all available releases and tools for the link:/documentation/PinePhone_Pro[PinePhone Pro].
 
 == Arch Linux ARM
 

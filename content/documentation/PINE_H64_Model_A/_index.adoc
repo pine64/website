@@ -11,5 +11,5 @@ menu:
 
 image:/documentation/images/PINE_H64_Model_A.jpg[The PINE H64 Model A,title="The PINE H64 Model A",width=400]
 
-The *PINE H64 Model A* is a discontinued Single Board Computer by _PINE64_. It is powered by an Allwinner “H6” Quad-Core ARM Cortex A53 64-Bit Processor with a MALI T-722 GPU. For the Model B version see link:/documentation/PINE_H64_Model_B/_index[PINE H64] article.
+The *PINE H64 Model A* is a discontinued Single Board Computer by _PINE64_. It is powered by an Allwinner “H6” Quad-Core ARM Cortex A53 64-Bit Processor with a MALI T-722 GPU. For the Model B version see link:/documentation/PINE_H64_Model_B[PINE H64] article.
 

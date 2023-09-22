@@ -4,9 +4,9 @@ draft: false
 menu:
   docs:
     title:
-    parent: "PineTab2"
-    identifier: "PineTab2/Specifications"
-    weight: 1
+    parent: "PineTab2/Further_information"
+    identifier: "PineTab2/Further_information/Specifications"
+    weight: 
 ---
 
 image:/documentation/images/RK3566_icon.png[right,title="right"]
@@ -22,34 +22,36 @@ image:/documentation/images/RK3566_icon.png[right,title="right"]
 * *NPU:* 0.8 TOPS Neural Processing Unit
 * *RAM:* 4GB or 8GB LPDDR4
 * *Storage:*
-** 64GB or 128GB internal eMMC
+** 64GB or 128GB internal eMMC ([https://www.szyuda88.com/product-77313-276594.html SiliconGo SGM8 100C-S36BCG]; eMMC 5.1, up o 400MB/s)
 ** 1x MicroSD slot
 * *Display:* 10.1" IPS LCD Resolution 1280x800
-* *Cameras:* 2Mpx front (Galaxycore GC02M2), 5Mpx rear (Omnivision OV5648)
+* *Cameras:*
+** Front: 2Mpx, chipset: Galaxycore GC02M2
+** Rear: 5Mpx, chipset: Omnivision OV5648
 * *Battery:* 6000 mAh (22.2Wh)
 * *Buttons:* Power, volume up, volume down
 * *Network:*
-** Wi-Fi
-** Bluetooth
+** Wi-Fi: BES2600
+*** Driver under development, use a USB wifi dongle for now
+** Bluetooth: BES2600
 * *I/O:*
-** 1x USB-C 3.0
-** 1x USB-C 2.0
+** 1x USB-C 3.0 (top, host mode only; power output up to 680mA)
+** 1x USB-C 2.0 + PD (bottom, device mode by default; power input)
 ** 1x MicroHDMI
-** 1x 3.5mm audio jack
-** 1x 5 pin Pogo connector for keyboard
+** 1x 4 pole 3.5mm audio jack (microphone right) and headphone detection
+** 2x speakers + microphone (microphone left)
+** 1x 5 pin (USB 2.0; <=680mA) Pogo connector for keyboard
 ** (PCIe on PCB as a flat flex ribbon connector, no room for M.2 NVMe drives in case)
+* *Sensors:*
+** Accelerometer: Silan SC7A20
+** Ambient Light & Proximity Sensor
 * *Multimedia:*
 ** rkdjpeg: 1080p120 JPEG decode
-*** no driver in mainline yet
 ** hantro: JPEG/VP8/H.264 encode, 1080p MPEG-2/H.263/VP8/H.264 AVC decode
-*** mainline driver does not yet support all codecs/functions
-*** see link:/documentation/Unsorted/Mainline_Hardware_Decoding[Mainline Hardware Decoding] and link:/documentation/Unsorted/Mainline_Hardware_Encoding[Mainline Hardware Encoding]
 ** rkvdec2: 4K H.264 AVC Main10 L5.1/H.265 HEVC Main10 L5.1/VP9 Profile 0 and 2 L5.1 decode
-*** no driver in mainline yet
 ** rkvenc2: 4K H.264 AVC/H.265 HEVC encode
-*** no driver in mainline yet
 * *Build:* Metal and Plastic
 * *Dimensions:* 242x161x9mm
+* *Weight:* 538g
 * *Misc:*
 ** Protective cover with keyboard
-

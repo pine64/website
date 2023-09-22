@@ -36,7 +36,7 @@ Not discussed in this article: big battery devices such as the Pinebook Pro, Pin
 
 == Why doesn't Pine Store Ship to my country?
 
-. If Pine Store does not ship to your country currently, check out one of the many legit link:/documentation/Pinecil/_index#where_to_buy_a_pinecil[resellers here].
+. If Pine Store does not ship to your country currently, check out one of the many legit link:/documentation/Pinecil#where_to_buy_a_pinecil[resellers here].
 * Try emailing a few of the resellers, you might get lucky.
 * Consider that resellers probably don't want to lose money sending a package that doesn't get there because then the customer asks for a refund.
 . Keep in mind that the Pine Store is small with a limited number of staff.

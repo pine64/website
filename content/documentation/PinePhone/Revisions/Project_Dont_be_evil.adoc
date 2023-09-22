@@ -11,7 +11,7 @@ menu:
 
 image:/documentation/images/Qee3ovj.jpg[]
 
-The Project *Don't be evil* is the phase two of _PINE64's_ smartphone, the link:/documentation/PinePhone/_index[PinePhone] Development Kit. Project Don't be evil is an actual smartphone developer kit for the PINE64 Smartphone dubbed "PinePhone". It is used in the early stages of development as a starting point for affiliated projects.
+The Project *Don't be evil* is the phase two of _PINE64's_ smartphone, the link:/documentation/PinePhone[PinePhone] Development Kit. Project Don't be evil is an actual smartphone developer kit for the PINE64 Smartphone dubbed "PinePhone". It is used in the early stages of development as a starting point for affiliated projects.
 
 The PinePhone development has been broken down into three distinct phases:
 

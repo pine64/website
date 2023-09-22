@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-Instructions to install a hall effect sensor (HES) on the link:/documentation/Pinecil/_index[Pinecil] V1 and V2.
+Instructions to install a hall effect sensor (HES) on the link:/documentation/Pinecil[Pinecil] V1 and V2.
 
 The Hall Effect Sensor (HES) is an optional end user installed sensor that activates to put Pinecil to sleep when it enters a holder or stand. This requires a neodymium magnet attached to the stand. The closer the HES in the Pinecil is to the magnet, the more likely the HES will activate to enter sleep mode. This adds a feature to Pinecil that is often seen in high end pro irons.
 
@@ -29,7 +29,7 @@ The Hall Effect Sensor (HES) is an optional end user installed sensor that activ
 
 == Installation
 
-. Updating to the newest firmware before installing is recommended, see the link:/documentation/Pinecil/_index#firmware_&_updates[Firmware article]. These instructions are for 2.18 or newer firmware.
+. Updating to the newest firmware before installing is recommended, see the link:/documentation/Pinecil#firmware_&_updates[Firmware article]. These instructions are for 2.18 or newer firmware.
 . The HES is located at the very front of the Pinecil, tip end, see link:#images[PCB images here].
 . Once it is soldered, cleaned, and assembled, check the sleep menu, a new hall sensitivity option appears.
 . See this article on how to set up the https://github.com/Ralim/IronOS/blob/dev/Documentation/HallSensor.md[sensitivity settings] on the firmware menu (Ralim's IronOS).

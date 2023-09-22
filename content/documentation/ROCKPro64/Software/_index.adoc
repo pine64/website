@@ -9,7 +9,7 @@ menu:
     weight: 3
 ---
 
-This page contains a list of all available releases and tools for the link:/documentation/ROCKPro64/_index[ROCKPro64] in alphabetical order.
+This page contains a list of all available releases and tools for the link:/documentation/ROCKPro64[ROCKPro64] in alphabetical order.
 
 == Linux
 
@@ -76,7 +76,7 @@ Notes:
 
 * An Ethernet connection is required for the above installer
 * Remember to leave some space before your first partition for u-boot|You can do this by creating a 32M size unused partition at the start of the device.
-* See the link:/documentation/ROCKPro64/_index#No_Video_or_GPU_Acceleration_on_Debian[troubleshooting section] if you encounter issues with GPU acceleration.
+* See the link:/documentation/ROCKPro64#No_Video_or_GPU_Acceleration_on_Debian[troubleshooting section] if you encounter issues with GPU acceleration.
 
 === DietPi
 

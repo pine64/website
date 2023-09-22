@@ -75,11 +75,11 @@ In the fourth item of the list, "0" means voice and and "1" means data. If both 
 
 == APN settings
 
-The APN setting is only required for a public Internet connection ("data") on the phone. For tested APN settings and how to apply them see link:/documentation/PinePhone APN Settings[APN settings].
+The APN setting is only required for a public Internet connection ("data") on the phone. For tested APN settings and how to apply them see link:/documentation/PinePhone/Modem/APN_settings[APN settings].
 
 == Carrier support
 
-The page link:/documentation/PinePhone Carrier Support[Carrier support] contains information about the frequency support of different carriers and hints on setting up cellular network connectivity.
+The page link:/documentation/PinePhone/Modem/Carrier_support/[Carrier support] contains information about the frequency support of different carriers and hints on setting up cellular network connectivity.
 
 == Documents
 

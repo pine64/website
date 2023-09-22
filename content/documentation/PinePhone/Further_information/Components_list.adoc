@@ -393,7 +393,7 @@ Source: https://forums.puri.sm/t/component-counts-in-the-librem-5-and-pinephone/
 == Other components not in the schematics
 
 * SGMICRO http://www.sg-micro.com/uploads/soft/20190829/1567071622.pdf[SGM3140] 500mA buck/boost charge pump LED driver for camera flash and torch, TDFN-10 3x3x0.75 mm
-* Note: The link:/documentation/PinePhone/_index#Components[PinePhone page] lists the SGM3140, but the schematics contain the U1000: awinic AW3641EDNR, so it is unclear why the SGM3140 is needed.
+* Note: The link:/documentation/PinePhone#Components[PinePhone page] lists the SGM3140, but the schematics contain the U1000: awinic AW3641EDNR, so it is unclear why the SGM3140 is needed.
 * Goodix http://files.pine64.org/doc/datasheet/pinephone/GT917S-Datasheet.pdf[GT917S] touch controller
 * Sitronix http://files.pine64.org/doc/datasheet/pinephone/ST7703_DS_v01_20160128.pdf[ST7703] MIPI LCD driver
 * Xingbangda https://lkml.org/lkml/2020/6/16/1654[XBD599] 5.99″ IPS LCD, 720x1440 pixels, 16.7M colors, hardened glass

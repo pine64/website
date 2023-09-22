@@ -6,7 +6,7 @@ menu:
     title:
     parent: ""
     identifier: "PineBuds_Pro"
-    weight: 
+    weight: 1
 ---
 
 image:/documentation/images/PineBudsPro.jpg[The PineBuds Pro,title="The PineBuds Pro",width=400]

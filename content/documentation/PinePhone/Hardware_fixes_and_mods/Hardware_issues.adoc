@@ -39,7 +39,7 @@ Place new issues here.
 
 == See Also
 
-* link:/documentation/PinePhone/_index#Modifications_and_repairs[PinePhone]
+* link:/documentation/PinePhone#Modifications_and_repairs[PinePhone]
 * link:/documentation/PinePhone/Revisions/PinePhone_v1.2[PinePhone v1.2]
 * link:/documentation/PinePhone/Revisions/PinePhone_v1.2a#Known_issues[PinePhone v1.2a]
 * link:/documentation/PinePhone/Revisions/PinePhone_v1.2b#Known_issues[PinePhone v1.2b]

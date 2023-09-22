@@ -29,12 +29,12 @@ The MIPI Lanes number is given in a format of `channels`&times;`lanes`. Before b
 These displays have free and open-source drivers in the main Linux kernel tree.
 
 |===
-|scope="col" | Manufacturer
-|scope="col" | Part Number
-|scope="col" | Size
-|scope="col" | Resolution
-|scope="col" | Panel Technology
-|scope="col" | MIPI Lanes
+| Manufacturer
+| Part Number
+| Size
+| Resolution
+| Panel Technology
+| MIPI Lanes
 
 | Feiyang
 | **FY07024DI26A30-D**

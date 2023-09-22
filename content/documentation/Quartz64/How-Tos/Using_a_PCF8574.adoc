@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-In this article, we'll go over how to hook up a PCF8574 I^2^C I/O extender to a link:/documentation/Quartz64/_index[Quartz64] Model A single-board computer, including what device tree changes to make and how to control it.
+In this article, we'll go over how to hook up a PCF8574 I^2^C I/O extender to a link:/documentation/Quartz64[Quartz64] Model A single-board computer, including what device tree changes to make and how to control it.
 
 == Introduction to the PCF8574
 

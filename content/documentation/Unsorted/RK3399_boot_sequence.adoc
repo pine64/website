@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-This article describes the boot sequence of the RK3399, the SoC on which the link:/documentation/ROCKPro64/_index[ROCKPro64] single board computer, link:/documentation/Pinebook_Pro/_index[Pinebook Pro] laptop and the link:/documentation/PinePhone_Pro/_index[PinePhone Pro] are based.
+This article describes the boot sequence of the RK3399, the SoC on which the link:/documentation/ROCKPro64[ROCKPro64] single board computer, link:/documentation/Pinebook_Pro[Pinebook Pro] laptop and the link:/documentation/PinePhone_Pro[PinePhone Pro] are based.
 
 == Boot ROM operation
 

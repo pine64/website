@@ -11,7 +11,7 @@ menu:
 
 The following page discusses the development efforts for the PineNote:
 
-* link:/documentation/PineNote/Development/_index[PineNote Development] for general information regarding how to flash the device and other development information.
+* link:/documentation/PineNote/Development[PineNote Development] for general information regarding how to flash the device and other development information.
 
 == Software
 
@@ -22,7 +22,7 @@ The following page discusses the development efforts for the PineNote:
 
 * link:/documentation/Unsorted/RK3566_EBC_reverse-engineering[RK3566 EBC Reverse-Engineering] for the EBC (eInk Panel) driver.
 * link:/documentation/PineNote/Development/Building_kernel[PineNote Development/Building Kernel]
-* BSP Linux SDK version 4.19 for the PineNote and link:/documentation/Quartz64/_index[Quartz64 Model A]:
+* BSP Linux SDK version 4.19 for the PineNote and link:/documentation/Quartz64[Quartz64 Model A]:
 ** http://files.pine64.org/SDK/Quartz64/QUARTZ64-model-A_BSP%20Linux.tar.gz[Direct download] from _pine64.org_ (32.67GB, MD5 of the TAR-GZip file _24554419aec29700add97167a3a4c9ed_)
 ** https://tmp.mwfc.info/pinenote/QUARTZ64-model-A_BSP%20Linux.tar.gz[Mirror by mwfc]
 ** An unofficial torrent download provided by a community member of the BSP Linux and Android SDKs can be found https://cdn.discordapp.com/attachments/870707390998282292/907726420204208148/pinenote.torrent[here] (100GB).
@@ -56,7 +56,7 @@ Notes:
 
 === Related
 
-* link:/documentation/Quartz64/Development/_index[Development] for the mainlining status of various functions on the Rockchip RK3566 SoC.
+* link:/documentation/Quartz64/Development[Development] for the mainlining status of various functions on the Rockchip RK3566 SoC.
 
 == Hardware
 

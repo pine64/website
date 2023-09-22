@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-This article is about updating/flashing the link:/documentation/Pinecil/_index[Pinecil] firmware.
+This article is about updating/flashing the link:/documentation/Pinecil[Pinecil] firmware.
 
 == Overview
 

@@ -24,7 +24,7 @@ The Community Edition program (featuring the mainboard numbers 1.2 through 1.2b 
 
 Aside from the back cover, the only other difference between each Community Edition is that starting with the postmarketOS PinePhone, a convergence package option was released that adds another gigabyte of ram to the phone and a 32GB eMMC instead of a 16GB eMMC. Convergence packages also included a dock for plugging in USB peripherals and connecting to an HDMI monitor, however you can purchase a generic USB-C dock to use with a 2GB PinePhone.
 
-The predecessor to the Convergence Edition PinePhones was the Braveheart Edition intended for developers to bring up the platform, which had the version number 1.1. For more details about the topic see link:/documentation/PinePhone/_index#Hardware Revisions[PinePhone].
+The predecessor to the Convergence Edition PinePhones was the Braveheart Edition intended for developers to bring up the platform, which had the version number 1.1. For more details about the topic see link:/documentation/PinePhone/Revisions[PinePhone].
 
 ==== Will there be other Community Editions?
 
@@ -32,7 +32,7 @@ Five Community Editions have been announced: https://www.pine64.org/2020/04/02/p
 
 ==== In simple terms, what are the differences between Braveheart and the new Community Edition?
 
-The Braveheart PinePhone was the first public revision of the PinePhone which was intended solely for developers and Linux enthusiasts. The UBports Community Edition was the next revision of the PinePhone with an updated mainboard based on feedback from the Braveheart Edition, see link:/documentation/PinePhone/_index#Hardware Revisions[PinePhone]. All current revisions of the PinePhone continue to be intended for developers and enthusiasts, however, PINE64 will be starting to offer partnered retail units of the PinePhone which will have a better warranty and technical support (keep in mind even then it is not intended for a broader audience at this time, as the software still needs work and the hardware does not hold up well to modern consumer standards).
+The Braveheart PinePhone was the first public revision of the PinePhone which was intended solely for developers and Linux enthusiasts. The UBports Community Edition was the next revision of the PinePhone with an updated mainboard based on feedback from the Braveheart Edition, see link:/documentation/PinePhone/Revisions[PinePhone]. All current revisions of the PinePhone continue to be intended for developers and enthusiasts, however, PINE64 will be starting to offer partnered retail units of the PinePhone which will have a better warranty and technical support (keep in mind even then it is not intended for a broader audience at this time, as the software still needs work and the hardware does not hold up well to modern consumer standards).
 
 ==== Will there be a newer revision after the Community Editions?
 
@@ -175,7 +175,7 @@ There was a project by Danct12 which allowed the user to select different operat
 This can be the result of at least one situation:
 
 . The eMMC installation became corrupt or otherwise unbootable
-. An SD card is present but not bootable (consider link:/documentation/PinePhone/_index#detailed_usage_instructions[PinePhone])
+. An SD card is present but not bootable (consider link:/documentation/PinePhone#detailed_usage_instructions[PinePhone])
 
 If there is an installation of Manjaro on both the eMMC & an SD card, the SD card will always boot first on the device. Try taking the SD card out and booting the installation that is on the eMMC. If the problem persists, it is likely there is an issue with both installations and you will need to reinstall your distribution. You may also want to check with your distribution's maintainers if boot issues are a common problem in a recent update.
 
@@ -199,7 +199,7 @@ This is caused by corruption on the userdata partition. Normally this should be 
 
 ==== The PinePhone does not boot
 
-Most operating systems on the PinePhone do not boot if the battery is not connected or if it is fully drained. If you received a new PinePhone make sure to remove the battery isolator as explained under link:/documentation/PinePhone/_index#first_time_installation[PinePhone].
+Most operating systems on the PinePhone do not boot if the battery is not connected or if it is fully drained. If you received a new PinePhone make sure to remove the battery isolator as explained under link:/documentation/PinePhone#first_time_installation[PinePhone].
 
 If you removed the battery isolator and the battery contacts are intact, the battery is either fully drained or there is no valid OS (or a corrupted OS or bootloader) installed on the eMMC or the SD card. Make sure to charge the phone with a compatible charger (500 mAh is not enough for modern phones), as well as the installation instruction under link:/documentation/PinePhone/Installation_instructions[Installation instructions]. If the OS got corrupted it is highly recommend to simply reflash.
 

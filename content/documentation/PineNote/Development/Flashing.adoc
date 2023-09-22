@@ -246,7 +246,7 @@ First, you'll want to make sure the device you've connected is in maskrom mode:
 
  ./rkdeveloptool list
 
-It should output something like "_DevNo=1 Vid=0x2207,Pid=0x350a,LocationID=202 Maskrom_". If it doesn't, see link:/documentation/PineNote/Development/_index#Entering_Maskrom_Mode[PineNote Development].
+It should output something like "_DevNo=1 Vid=0x2207,Pid=0x350a,LocationID=202 Maskrom_". If it doesn't, see link:/documentation/PineNote/Development#Entering_Maskrom_Mode[PineNote Development].
 
 You can now download u-boot onto it:
 

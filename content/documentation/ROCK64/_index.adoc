@@ -17,7 +17,7 @@ It supports many different open source operating systems, such as Android, Debia
 
 == Software releases
 
-Under link:/documentation/ROCK64/Software/_index[Software] you will find a complete list of currently supported operating system images, which work with the ROCK64, as well as other related software.
+Under link:/documentation/ROCK64/Software[Software] you will find a complete list of currently supported operating system images, which work with the ROCK64, as well as other related software.
 
 OS build Installation Guide and tools:
 
@@ -29,10 +29,7 @@ OS build Installation Guide and tools:
 
 [cols="1,1,1,1"]
 |===
-|Requirement
-|GNU/Linux
-|Android/Linux
-|Kodi/Linux
+| Requirement | GNU/Linux | Android/Linux | Kodi/Linux
 
 | 2160p 30Hz 8bit h264/h265/vp8
 | partial? https://forum.pine64.org/showthread.php?tid=4861&pid=32474#pid32474[1]
@@ -58,40 +55,39 @@ OS build Installation Guide and tools:
 
 == Upstreaming Status
 
+[cols="1,1,1,2,2"]
 |===
-|scope="col" | Function
-2+| Status
-|scope="col" | Component
-|scope="col" | Notes
+| Function 2+| Status | Component | Notes
 
-|scope="row" | Video Output
-| colspan="2" |Linux Mainline
+| Video Output
+2+| Linux Mainline
 | `rockchipdrm`
 | With mpv, you'll need to specify something like `mpv --gpu-context=drm --drm-connector=1.HDMI-A-1` to get it to play back on a VT
 
-|scope="row" | 3D Acceleration
-| |Linux Mainline
-| |Upstream Mesa
+| 3D Acceleration
+| Linux Mainline
+| Upstream Mesa
 | `lima`
 | Very recent version recommended for the best experience. Has weird glitches on HDMI output in weston.
 
-|scope="row" | Video Decode
-| |Linux Staging
-| |Broken/Not in ffmpeg
+| Video Decode
+| Linux Staging
+| Broken/Not in ffmpeg
 | `hantro_vpu` and `rockchip_vdec`, using `v4l2-requests`
 | https://lore.kernel.org/linux-media/49b1-608d4d00-2b-62afdf80@101971638/[Soon to be moved out of staging], ffmpeg patch set https://patchwork.ffmpeg.org/project/ffmpeg/patch/20201209202513.27449-3-jonas@kwiboo.se/[seemingly abandoned], does not work on newer kernels. https://github.com/Kwiboo/FFmpeg/commits/v4l2-request-hwaccel-master-stable[Git branch with commits]
 
-|scope="row" | Audio
-| colspan="2"  |Linux Mainline
+| Audio
+2+| Linux Mainline
 | `snd_soc_rockchip_*`
+| 
 
-|scope="row" | Power Button
-| colspan="2" |Linux Mainline
+| Power Button
+2+| Linux Mainline
 | `rk805_pwrkey`
 | If your PWR switch does nothing unless held, this may need to be loaded manually with `modprobe` or by putting it in `/etc/modules-load.d/`
 
-|scope="row" | Analog Video Output
-| colspan="2" |Needs porting
+| Analog Video Output
+2+| Needs porting
 | `rockchip_drm_tve`
 | Definitely needs some cleanup before it'd be ready for mainline, and needs some dt bindings written.
 |===
@@ -119,9 +115,9 @@ image:/documentation/images/Rockchip_RK3328.png[right,title="right"]
 
 ==== Frequencies & Voltages
 
+[cols="1,1"]
 |===
-|Frequency
-|Voltage
+| Frequency | Voltage
  
 | 408 MHz
 | 0.950 V
@@ -151,9 +147,7 @@ Please keep in mind that under real world usage, many other factors come into pl
 Helpful refresher on the formula for power (W) on DC: power = current &times; voltage, because the power factor is 1. The ROCK64 runs on 5V, so use that to calculate current if you need to.
 
 |===
-|Frequency
-|Power cpu
-|Power vm
+|Frequency |Power cpu |Power vm
  
 | 1296 MHz
 | 2.64 W
@@ -180,7 +174,7 @@ Helpful refresher on the formula for power (W) on DC: power = current &times; vo
 | 1.72 W
  
 | Idle (no load)
-|colspan="2" | 1.10 W
+2+| 1.10 W
 |===
 
 It appears a good upper bound for a headless setup is in the neighbourhood of 3 W, or the energy contained in 0.025 bananas per hour.
@@ -281,7 +275,7 @@ image:/documentation/images/Rock64-Al-Case1-1.jpg[width=100]
 
 The ROCK64 fits in three officially sold cases.
 
-* link:"Model B" Acrylic Open Enclosure[], https://pine64.com/product/model-b-acrylic-open-enclosure/[Store]
+* "Model B" Acrylic Open Enclosure, https://pine64.com/product/model-b-acrylic-open-enclosure/[Store]
 * "Model B" Aluminum Waterproof Enclosure, https://pine64.com/product/model-b-aluminum-waterproof-enclosure/[Store]
 * link:/documentation/ROCK64/Premium_aluminium_casing[Premium Aluminium Casing], https://pine64.com/product/model-b-premium-aluminum-casing/?v=0446c16e2e66[Store]
 

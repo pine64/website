@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-A nice aluminum case is available for the link:/documentation/Quartz64/_index[Quartz64] on the PINE64 store listed as "ROCKPro64 PREMIUM ALUMINUM CASING".
+A nice aluminum case is available for the link:/documentation/Quartz64[Quartz64] on the PINE64 store listed as "ROCKPro64 PREMIUM ALUMINUM CASING".
 
 The Quartz64 model A can be made to fit this case, however some filing of one of the holes is necessary because one of the RockPro64 ports is a type-C, whereas on the Quartz64 model A all of the ports are type As.
 

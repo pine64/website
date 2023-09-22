@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-This page contains a list of all available releases for the link:/documentation/ROCK64/_index[ROCK64], as well as links to other resources.
+This page contains a list of all available releases for the link:/documentation/ROCK64[ROCK64], as well as links to other resources.
 
 == Linux
 

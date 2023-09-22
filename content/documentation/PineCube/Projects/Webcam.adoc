@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-The link:/documentation/PineCube/_index[PineCube] can be powered by the host and communicate as a peripheral. First, you'll need to a dual USB-A (male) cable to plug it into your computer. Note that the Micro-USB port can be used only for power because the data lines are not connected.
+The link:/documentation/PineCube[PineCube] can be powered by the host and communicate as a peripheral. First, you'll need to a dual USB-A (male) cable to plug it into your computer. Note that the Micro-USB port can be used only for power because the data lines are not connected.
 
 == Pictures
 

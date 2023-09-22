@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-Releases for the link:/documentation/SOEDGE/_index[SOEDGE].
+Releases for the link:/documentation/SOEDGE[SOEDGE].
 
 == Linux BSP
 

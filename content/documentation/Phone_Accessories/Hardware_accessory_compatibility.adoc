@@ -33,7 +33,7 @@ The OtterBox uniVERSE Case for Samsung Galaxy XCover Pro is https://forum.pine64
 
 The PinePhone and PinePhone Pro can be extended by replacing the default back cover with custom accessory connecting to the pogo pins on the phone's midsection. Currently the keyboard case, the fingerprint reader, the wireless charging case and the PineDio LoRa case is available. Details can be found under:
 
-* link:/documentation/Phone_Accessories/_index[Accessories]
+* link:/documentation/Phone_Accessories[Accessories]
 * link:/documentation/Phone_Accessories/Keyboard[Keyboard]
 
 == Community-built accessory
@@ -48,7 +48,7 @@ The following accessory is made by the community:
 == Peripheral equipment
 
 === Hubs
-USB hubs do not require a custom driver and are therefore expected to be compatible with the PinePhone, as long as they are within the USB specification. On revisions the PinePhone mainboard revisions v1.1 and v1.2 the VCONN fix is required, on v1.2a and later the USB hub should work out of the box, see link:/documentation/PinePhone/_index#Hardware_revisions[PinePhone].
+USB hubs do not require a custom driver and are therefore expected to be compatible with the PinePhone, as long as they are within the USB specification. On revisions the PinePhone mainboard revisions v1.1 and v1.2 the VCONN fix is required, on v1.2a and later the USB hub should work out of the box, see link:/documentation/PinePhone#Hardware_revisions[PinePhone].
 
 === Bluetooth devices
 

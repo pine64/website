@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-The link:/documentation/Quartz64/_index[Quartz64] single-board computers (both Model A and Model B) come with MIPI-DSI ports for connecting a MIPI-DSI compatible display.
+The link:/documentation/Quartz64[Quartz64] single-board computers (both Model A and Model B) come with MIPI-DSI ports for connecting a MIPI-DSI compatible display.
 
 This article will go into how to connect the official https://pine64.com/product/7-lcd-touch-screen-panel/[PINE64 7" LCD Touch Screen Panel] and setting up the software. Since this requires a panel driver for each panel, other displays generally are *not* interchangeable, as they won't use the same driver compatible (or even have a mainline driver at all!)
 

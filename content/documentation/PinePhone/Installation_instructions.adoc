@@ -21,7 +21,7 @@ For specific installation instructions for each distribution please see the soft
 
 === PinePhone Pro
 
-For details regarding the boot priority on the PinePhone Pro see link:/documentation/PinePhone_Pro/_index#Boot_order[PinePhone Pro].
+For details regarding the boot priority on the PinePhone Pro see link:/documentation/PinePhone_Pro#Boot_order[PinePhone Pro].
 
 === PinePhone
 
@@ -37,7 +37,7 @@ To install an image to the microSD card:
 . Extract the compressed file
 . Write the image to your microSD card, see below
 . Plug microSD card into phone (make sure to use the top slot, not the bottom slot)
-. On the *PinePhone Pro*: The eMMC might have to be disconnected to boot from the microSD card, see link:/documentation/PinePhone_Pro/_index#Boot_order[PinePhone Pro]
+. On the *PinePhone Pro*: The eMMC might have to be disconnected to boot from the microSD card, see link:/documentation/PinePhone_Pro#Boot_order[PinePhone Pro]
 . Boot phone
 
 image:/documentation/images/Pinephone_slots.png[The microSD belongs in the upper slot, the micro-SIM in the lower slot.,title="The microSD belongs in the upper slot, the micro-SIM in the lower slot.",width=600]

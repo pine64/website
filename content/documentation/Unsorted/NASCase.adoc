@@ -67,14 +67,14 @@ There are a few other things which you may wish to consider purchasing for your 
 
 image:/documentation/images/OMVGUI.png[The OMV WebGUI is easy to understand but also very robust. It offers easy installation of plugins, system administration and overview of available services,title="The OMV WebGUI is easy to understand but also very robust. It offers easy installation of plugins, system administration and overview of available services",width=200]
 
-If you are intending to build a home or small company NAS, then we strongly recommend you use link:/documentation/ROCKPro64/Software/_index#OpenMediaVault[Open Media Vault (OMV)]. OMV is an open source NAS solution that makes setting up user accounts, network shares and services a breeze. It also simplifies installing additional features (called plugins), such as: PLEX media server; Remote Desktop; Encryption; RSync; etc.
+If you are intending to build a home or small company NAS, then we strongly recommend you use link:/documentation/ROCKPro64/Software#OpenMediaVault[Open Media Vault (OMV)]. OMV is an open source NAS solution that makes setting up user accounts, network shares and services a breeze. It also simplifies installing additional features (called plugins), such as: PLEX media server; Remote Desktop; Encryption; RSync; etc.
 
 Its worth noting that Nextcloud, or other similar Cloud storage solutions, can also be easily installed alongside the OMV OS Image.
 
 Administration and monitoring of OMV is done via an advanced WebGUI, which also allows for updating and upgrading the ROCKPro64.
 To learn more about OMV please visit https://www.openmediavault.org/[their website]. 
 
-To download the latest OMV build OR one of the numerous available Linux Distribution OS Images please visit the link:/documentation/ROCKPro64/Software/_index[ROCKPro64 OS download section].
+To download the latest OMV build OR one of the numerous available Linux Distribution OS Images please visit the link:/documentation/ROCKPro64/Software[ROCKPro64 OS download section].
 
 == Step-by-Step Assembly Instructions
 

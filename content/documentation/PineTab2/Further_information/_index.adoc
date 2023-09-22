@@ -1,0 +1,18 @@
+---
+title: "Further information"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PineTab2"
+    identifier: "PineTab2/Further_information"
+    weight: 
+---
+
+image:PPineTab2-pcb.jpg[PineTab2 Board,title="PineTab2 Board",width=450]
+
+* link:Certifications[]
+* link:Datasheets[]
+* link:Disassembly_guide[Disassembly guide]
+* link:Schematics[]
+* link:Specifications[]

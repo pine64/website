@@ -1,0 +1,13 @@
+---
+title: "Software"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PineTab-V"
+    identifier: "PineTab-V/Software"
+    weight: 1
+---
+
+* link:Software_state[Software state]
+* link:Releases[]

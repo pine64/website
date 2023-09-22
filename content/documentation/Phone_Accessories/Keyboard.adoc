@@ -11,7 +11,7 @@ menu:
 
 image:/documentation/images/PP_KB_Front-1024x576.jpg[Picture of the PinePhone (Pro) Keyboard,title="Picture of the PinePhone (Pro) Keyboard",width=400]
 
-The *PinePhone (Pro) Keyboard Case* is a case compatible with the link:/documentation/PinePhone/_index[PinePhone] and link:/documentation/PinePhone_Pro/_index[PinePhone Pro], adding a keyboard functionality to the phone. It features a clam-shell design and uses the pogo pins located on the smartphone’s midsection and attaches by replacing the default back cover. This add-on effectively turns the PinePhone (Pro) into a PDA with an in-built LTE modem.
+The *PinePhone (Pro) Keyboard Case* is a case compatible with the link:/documentation/PinePhone[PinePhone] and link:/documentation/PinePhone_Pro[PinePhone Pro], adding a keyboard functionality to the phone. It features a clam-shell design and uses the pogo pins located on the smartphone’s midsection and attaches by replacing the default back cover. This add-on effectively turns the PinePhone (Pro) into a PDA with an in-built LTE modem.
 
 == Getting started
 

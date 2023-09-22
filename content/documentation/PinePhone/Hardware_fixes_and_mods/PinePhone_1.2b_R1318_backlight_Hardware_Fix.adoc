@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-This page details a hardware fix for an issue that was found on early link:/documentation/PinePhone/_index[PinePhone] hardware revisions (see link:/documentation/PinePhone/_index#Hardware_revisions[PinePhone] for an overview of the different revisions) and has been fixed since the 1.2b hardware revision.
+This page details a hardware fix for an issue that was found on early link:/documentation/PinePhone[PinePhone] hardware revisions (see link:/documentation/PinePhone#Hardware_revisions[PinePhone] for an overview of the different revisions) and has been fixed since the 1.2b hardware revision.
 
 == Affected Units
 
