@@ -1,17 +1,11 @@
 {{ define "main" }}
 
-
-
-<!--
-    <div class="blog-list-title"><h1>{{ .Title }}</h1></div>
--->
-
 <!-- Get the RSS feed URL -->
 {{ with .OutputFormats.Get "rss" -}}
 {{ $rss := .Permalink | safeHTML }}
 
-<div class="box_generic intro_podcast">
-    <div class="box nonflex">
+<div class="box full themelightblue">
+    <div class="box pad">
         <h1>PineTalk</h1>
 
         <p>We discuss PINE64 hardware, software development and open source in general. Send in your questions! A community ran podcast for the community.</p><br>
@@ -23,63 +17,63 @@
 
 {{ end -}}
 
-<div class="podcast-container">
+<div class="box rows pad">
 
-<!-- Section: Newest episode -->
-<h1 id="podcast_newest_anchor">Newest episode</h1>
+    <!-- Section: Newest episode -->
+    <h1 id="podcast_newest_anchor">Newest episode</h1>
 
     {{ range ( where .Site.RegularPages "Type" "podcast" | first 1 ) }}
-    <h3>{{ .Title }}</h3>
-
-    <!-- Variant 1: Just get the player, split it at first paragraph to exclude the episode description -->
-    {{ $summary := index (split .Content "</p>") 0 }}
-    {{ printf $summary | safeHTML }}
-
-    <!-- Variant 2: Complete episode page -->
-    <!--
-    .Content
-    -->
-
-    <p>
-        <a href="{{ .RelPermalink }}"><button class="podcast podcast-blue">Open the full episode page</button></a>
-    </p>
-
-{{end}}
-
-
-
-<!-- Section: All episodes -->
-<h1>All episodes</h1>
-
-
-{{ $paginator := .Paginate (where .Data.Pages "Type" "podcast") 4 }}
-
-{{ range $paginator.Pages.ByDate.Reverse }}
-
-<div class="clearfix">
-<div class="podcast_row">
-    <a class="summary" href="{{ .RelPermalink }}">
-    <img class="coverimg" src="/img/pinetalk.png">
-    <div class="podcast_desc">
         <h3>{{ .Title }}</h3>
 
-        {{ $dateTime := .PublishDate.Format "2006-01-02" }}
-        {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
+        <!-- Variant 1: Just get the player, split it at first paragraph to exclude the episode description -->
+        {{ $summary := index (split .Content "</p>") 0 }}
+        {{ printf $summary | safeHTML }}
 
-        <p>{{ .PublishDate.Format $dateFormat }}</p>
+        <!-- Variant 2: Complete episode page -->
+        <!--
+        .Content
+        -->
 
-        <p>{{ .Description }}</p>
+        <p>
+            <a href="{{ .RelPermalink }}"><button class="podcast podcast-blue">Open the full episode page</button></a>
+        </p>
+    {{end}}
+
+    <br><br>
+
+    <!-- Section: All episodes -->
+    <h1>All episodes</h1>
+
+    {{ $paginator := .Paginate (where .Data.Pages "Type" "podcast") 4 }}
+
+
+    <div class="box rows gap">
+        {{ range $paginator.Pages.ByDate.Reverse }}
+            <a class="podcast_preview" href="{{ .RelPermalink }}">
+            <div class="box col">
+                <div class="box f25">
+                    <img class="coverimg" src="/img/pinetalk.png" width="200" height="200">
+                </div>
+                <div class="box f75 rows">
+
+                        <h3>{{ .Title }}</h3>
+
+                        {{ $dateTime := .PublishDate.Format "2006-01-02" }}
+                        {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
+
+                        <p>{{ .PublishDate.Format $dateFormat }}</p>
+
+                        <p>{{ .Description }}</p>
+
+                </div>
+            </div>
+            </a>
+        {{ end }}
     </div>
-
-    </a>
-</div>
-</div>
-
-{{ end }}
-
 
 {{ template "_internal/pagination.html" . }}
 
+</div>
 </div>
 
 {{ end }}

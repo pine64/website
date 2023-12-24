@@ -1,7 +1,7 @@
 {{ define "main" }}
 
-<div class="box_generic intro_community">
-    <div class="box nonflex">
+<div class="box full themecommunity">
+    <div class="box pad rows">
         <h1>{{.Title}}</h1>
 
         <p>PINE64 has a large, diverse and active community, and offers a variety of resources for hobbyists and businesses to successfully leverage various PINE64 products.</p>
@@ -10,11 +10,8 @@
     </div>
 </div>
 
-<div class="center-container">
-    <div class="center-contents">
-        <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
-        {{.Content}}
-    </div>
+<div class="box pad rows">
+    {{.Content}}
 </div>
 
 {{ end }}

@@ -49,8 +49,9 @@ paginate = 9
   hiddenInList = false # hide on list pages and home
   hiddenInSingle = false # hide on single page
 
-[social]
-  twitter = 'thepine64'
+[params]
+  [params.social]
+    twitter = 'thepine64'
 
 [security.exec]
   allow = ["^asciidoctor$"]
@@ -62,30 +63,35 @@ paginate = 9
     pre = ""
     url = "/blog/"
     weight = 1
+[[menu.right]]
+    name = "Devices"
+    pre = ""
+    url = "/devices/"
+    weight = 2
   [[menu.right]]
     name = "Community"
     pre = ""
     url = "/community/"
-    weight = 2
+    weight = 3
   [[menu.right]]
     name = "Documentation"
     pre = ""
     url = "/documentation/"
-    weight = 3
+    weight = 4
   [[menu.right]]
     name = "Contests"
     pre = ""
     url = "/contests/"
-    weight = 4
+    weight = 5
   [[menu.right]]
     name = "Podcast"
     pre = ""
     url = "/podcast/"
-    weight = 5
+    weight = 6
   [[menu.right]]
     name = "Store"
     url = "#"
-    weight = 6
+    weight = 7
     identifier = "store"
     [menu.right.params]
       external = false

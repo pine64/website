@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+<div class="headerbox">
+    <div class="namebox">
+        <h1>{{ .Title }}</h1>
+    </div>
+    <div class="imagebox">
+        {{if and (isset .Params.cover "image") (ne .Params.cover.image "") }}
+            <img src="/devices/{{ .Params.cover.image }}"/>
+        {{end}}
+    </div>
+</div>
+
+<div class="devices box rows pad">
+    {{ .Content }}
+</div>
+
+{{ end }}

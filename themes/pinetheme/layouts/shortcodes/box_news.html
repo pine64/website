@@ -1,19 +1,19 @@
-<div class='box_generic {{ if .Get "style" }}{{ .Get "style" }}{{ end }}'>
+<div class='box {{ if .Get "style" }}{{ .Get "style" }}{{ end }}'>
     <div class="box">
         <h1>{{ .Get "title" }}</h1>
     </div>
-    <div class="box blog-start-preview">
 
+    <div class="box gap cols">
         {{ $type := .Get "type" }}
         
         {{ range ( where .Site.RegularPages "Type" $type | first (.Get "amount") ) }}
-            <div class="boxhalf boxshadow indexblog">
+            <div class="box f50 themeblogpreview rounded l400">
                 <a href="{{ .RelPermalink }}">
                     {{if and (isset .Params.cover "image") (ne .Params.cover.image "") }}
                         <img src="/{{$type}}/images/{{ .Params.cover.image }}"/>
                     {{end}}
 
-                    <div class="box_news_text">
+                    <div class="pad_s">
                         <h3>{{ .Title }}</h3>
                         <p>{{ .Summary }}</p>
                         
@@ -24,13 +24,11 @@
                     </div>
                 </a>
             </div>
-            <br clear="all">
         {{end}}
-
-        
     </div>
 
-    <a href="/{{$type}}/"><button class="rounded center">View all</button></a>
+    <div class="box pad">
+        <a href="/{{$type}}/"><button class="rounded center">View all</button></a>
+    </div>
 
-    <br><br>
 </div>

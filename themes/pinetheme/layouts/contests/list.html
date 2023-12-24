@@ -1,8 +1,8 @@
 {{ define "main" }}
 
 
-<div class="box_generic intro_contest">
-    <div class="box nonflex">
+<div class="box themecontest full">
+    <div class="box rows pad">
         <h1>Contests</h1>
 
         <p>Contests of the PINE64 community</p>
@@ -15,25 +15,23 @@
     </div>
 </div>
 
-
-<div class="mid_flex_container">
-    
-<div class="blog-list-title"><h1>{{ .Title }}</h1></div>
-
-<div class="contests-container">
+<div class="box rows">
+    <div class="blog-list-title"><h1>{{ .Title }}</h1></div>
 
     {{ $paginator := .Paginate (where .Data.Pages "Type" "contests") 4 }}
 
     {{ range $paginator.Pages }}
 
-    <div class="clearfix">
-        <div class="contests-entry">
-            <a class="summary" href="{{ .RelPermalink }}">
+    <a class="summary" href="{{ .RelPermalink }}">
+        <div class="box cols  contests-entry">
+            <div class="box f25">
                 <div class="contests_img_container">
                     {{if and (isset .Params.cover "image") (ne .Params.cover.image "") }}
                         <img class="contests-preview" src="/contests/images/{{ .Params.cover.image }}"/>
                     {{end}}
                 </div>
+            </div>
+            <div class="box rows f75 contests-entry">
 
                 <h3>{{ .Title }}</h3>
 
@@ -42,17 +40,17 @@
                 <br><br>
 
                 {{ .Summary }} <span>Read more</span>
-            </a>
+            </div>
         </div>
-    </div>
+    </a>
 
     {{ end }}
-
 </div>
 
+<div class="box full">
 {{ template "_internal/pagination.html" . }}
-
 </div>
+
 
 {{ end }}
 

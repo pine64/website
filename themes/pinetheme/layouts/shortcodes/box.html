@@ -1,5 +1,7 @@
-<div class='box_generic {{ if .Get "style" }} {{ .Get "style" }}{{ end }}'>
-    <div class='box {{ if .Get "flex" }} {{ .Get "flex" }}{{ end }}'>
+<div class='box {{ if .Get "style" }} {{ .Get "style" }}{{ end }}'>
+    {{- if eq (.Get "type") "image" -}}
+        <img src='{{ .Get "link" }}' {{- if isset .Params "height" -}}height='{{- .Get "height" -}}'{{- end -}}{{- if isset .Params "width" -}}width='{{- .Get "width" -}}'{{- end -}}>
+    {{- else -}}
         {{ if .Get "title" }}<h1>{{ .Get "title" | safeHTML }}</h1>{{- end -}}
 
         {{- if .Get "content" -}}
@@ -11,5 +13,5 @@
         {{- else -}}
             {{ .Inner }}
         {{- end -}}
-    </div>
+    {{- end -}}
 </div>

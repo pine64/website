@@ -17,7 +17,7 @@ images: ["/img/logo.png"]
 {{</ slider >}}
 
 
-{{< box title="The <b>PINE64</b> community" content="markdown" style="" flex="nonflex">}}
+{{< box title="The <b>PINE64</b> community" content="markdown" style="pad rows">}}
 Our goal is to push the envelope and deliver ARM and RISC-V devices that you want to use and develop for. To this end, we actively work with the development community and champion end-user initiatives. Rather than applying business to a FOSS setting, we allow FOSS principles to guide our business.
 
 We are available on Discord, IRC, Matrix and Telegram, in the Forum and on Reddit.
@@ -25,40 +25,41 @@ We are available on Discord, IRC, Matrix and Telegram, in the Forum and on Reddi
 [Join our community!](/community/)
 {{</ box >}}
 
-
-{{< box_news title="News" type="blog" amount="2" style="themegrey" >}}
-
-
-{{< box style="themeblue" >}}
-  {{< boxhalf type="image" link="/img/philosophy.png" height="220">}}{{</ boxhalf >}}
-  {{< boxhalf title="Our vision" type="text" content="markdown" >}}
-Our goal is to push the envelope and deliver Arm and RISC-V devices that you want to use and develop for. To this end, we actively work with the development community and champion end-user initiatives. Rather than applying business to a FOSS setting, we allow FOSS principles to guide our business.
-  {{</ boxhalf >}}
+{{< box style="full themegrey pad" >}}
+  {{< box_news title="News" type="blog" amount="2" style="rows" >}}
 {{</ box >}}
 
+{{< box style="full themeblue" >}}
+  {{< box style="cols pad" >}}
+    {{< box style="f25" type="image" link="/img/philosophy.png" width="120" >}}{{</ box >}}
+    {{< box style="f75 rows" title="Our vision">}}
+      Our goal is to push the envelope and deliver Arm and RISC-V devices that you want to use and develop for. To this end, we actively work with the development community and champion end-user initiatives. Rather than applying business to a FOSS setting, we allow FOSS principles to guide our business.
+    {{</ box >}}
+  {{</ box >}}
+{{</ box >}}
 
-{{< box style="themewhite" >}}
-  {{< boxhalf title="Join in" type="text" content="markdown" >}}
+{{< box style="themewhite cols pad" >}}
+  {{< box style="f50 rows" title="Join in" content="markdown" >}}
 The PINE64 community is large, vibrant and diverse. Independent and partner-project developers, hackers and hardware enthusiasts, privacy advocates and FOSS geeks - you name it, we’ve got 'em all. They all contribute to the project thereby shaping it and determining its course. This page is community run, as is the Wiki, the chats as well as the forums.
 
 What can you contribute?
-{{</ boxhalf >}}
+{{</ box >}}
 
-
-{{< boxhalf type="text" content="" >}}
+{{< box style="f50" >}}
   {{< slider_small slides=8 seconds=10 >}}
-  <img src="/img/slider_index_1.png">
-  <img src="/img/slider_index_2.png">
-  <img src="/img/slider_index_3.png">
-  <img src="/img/slider_index_4.png">
-  <img src="/img/slider_index_5.png">
-  <img src="/img/slider_index_6.png">
-  <img src="/img/slider_index_7.png">
-  <img src="/img/slider_index_8.png">
-    {{</ slider_small >}}
-{{</ boxhalf >}}
+    <img src="/img/slider_index_1.png">
+    <img src="/img/slider_index_2.png">
+    <img src="/img/slider_index_3.png">
+    <img src="/img/slider_index_4.png">
+    <img src="/img/slider_index_5.png">
+    <img src="/img/slider_index_6.png">
+    <img src="/img/slider_index_7.png">
+    <img src="/img/slider_index_8.png">
+  {{</ slider_small >}}
+{{</ box >}}
 
 {{</ box >}}
 
-
-{{< box_news title="Latest contest" type="contests" amount="1" style="themegrey" >}}
+{{< box style="themegrey full pad" >}}
+  {{< box_news title="Latest contest" type="contests" amount="1" style="rows" >}}
+{{</ box >}}

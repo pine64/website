@@ -1,0 +1,10 @@
+{{ define "main" }}
+
+<div class="box rows pad">
+    <h1>{{ .Title }}</h1>
+
+    <p>{{ .Content | safeHTML}}</p>
+</div>
+
+{{ end }}
+

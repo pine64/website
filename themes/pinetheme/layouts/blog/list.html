@@ -1,54 +1,48 @@
 {{ define "main" }}
 
-
-<div class="box_generic intro_blog">
-    <div class="box nonflex">
+<div class="box full themeblog">
+    <div class="box rows pad">
         <h1>{{ .Title }}</h1>
 
         <p>{{ .Content | safeHTML}}</p>
 
-        <p>
-            Get the <a href="{{.RelPermalink }}index.xml">RSS feed</a>
-        </p>
+        <p>Get the <a href="{{.RelPermalink }}index.xml">RSS feed</a></p>
     </div>
 </div>
 
 
+<div class="box themelightgrey full">
+    <div class="box pad gap">
+        {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") }}
 
-<div class="mid_flex_container bg_grey">
-<div class="blog-container">
+        {{ range $paginator.Pages }}
 
-{{ $paginator := .Paginate (where .Data.Pages "Type" "blog") }}
+            <div class="box cols f50 themewhite rounded">
+                <a class="summary" href="{{ .RelPermalink }}">
+                    {{if and (isset .Params.cover "image") (ne .Params.cover.image "") }}
+                        <div class="box">
+                            <img src="/blog/images/{{ .Params.cover.image }}">
+                        </div>
+                    {{end}}
 
-{{ range $paginator.Pages }}
+                    <div class="box rows pad_s">
+                        <h3 style="padding: 0;">{{ .Title }}</h3>
+                            <p>{{ .Summary }}</p>
+                        {{ partial "blog_date.html" . }}
+                    </div>
+                </a>
+            </div>
 
-<div class="blog-preview">
-    <a class="summary" href="{{ .RelPermalink }}">
-
-    {{if and (isset .Params.cover "image") (ne .Params.cover.image "") }}
-        <div class="blog-cover">
-            <img src="/blog/images/{{ .Params.cover.image }}"/>
-        </div>
-    {{end}}
-
-    <div class="blog-preview-summary">
-        <h3>{{ .Title }}</h3>
-            <p>{{ .Summary }}</p>
-        {{ partial "blog_date.html" . }}
+        {{ end }}
     </div>
 
-    </a>
+</div>
 
+<div class="box themelightgrey full">
+    {{ template "_internal/pagination.html" . }}
 </div>
 
 
-{{ end }}
-
-</div>
-
-{{ template "_internal/pagination.html" . }}
-
-</div>
 
 {{ end }}
 
