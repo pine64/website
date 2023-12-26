@@ -61,8 +61,6 @@ Optional GPIO breakout for development purposes
 
 == Resources
 
-{{< youtube id="-u_o-yNjpzs" >}}
-
 https://www.youtube.com/watch?v=-u_o-yNjpzs
 Pinecil soldering iron powered by a PinePower Desktop unit
 
