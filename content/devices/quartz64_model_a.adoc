@@ -80,3 +80,11 @@ The Quartz64 A comes with a built-in E-ink interface
 The Quartz64 A comes with up to 8GB of LPDDR4 RAM
 
 == Documentation
+
+[cols="1"]
+|===
+
+| link:/documentation/Quartz64/[Quartz64]
+
+| link:/documentation/Quartz64/Further_information/Schematics_and_certifications/[Schematics and certifications]
+|===

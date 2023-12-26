@@ -52,3 +52,11 @@ With the small SODIMM form-factor the SOPINE is perfect for use as a compute mod
 
 
 == Documentation
+
+[cols="1"]
+|===
+
+| link:/documentation/SOPINE/[SOPINE]
+
+| link:/documentation/SOPINE/Further_information/Schematics_and_certifications/[Schematics and certifications]
+|===

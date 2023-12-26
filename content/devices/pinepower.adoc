@@ -43,3 +43,10 @@ Default US style plug with adapters for the EU, UK, AU
 Weighing only 130 grams the PinePower is a sleek and lightweight portable charger
 
 == Documentation
+
+[cols="1"]
+|===
+
+| link:/documentation/PinePower/[PinePower]
+
+|===

@@ -49,6 +49,14 @@ Individual voltage and status displays for each port
 
 == Documentation
 
+[cols="1"]
+|===
+
+| link:/documentation/PinePower/[PinePower]
+
+|===
+
+
 == Resources
 
 https://www.youtube.com/watch?v=60IG0XmHtcY

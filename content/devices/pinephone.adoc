@@ -78,8 +78,16 @@ You can find parts for the PinePhone on the store to fully repair or upgrade you
 Five hardware switches allow you to disable the cameras, microphone, WiFi and Bluetooth, and the LTE modem
 
 
-
 == Documentation
+
+[cols="1"]
+|===
+
+| link:/documentation/PinePhone/[PinePhone]
+
+| link:/documentation/PinePhone/Further_information/Schematics_and_certifications/[Schematics and certifications]
+|===
+
 
 == Accessories
 {{< devices/device_flexbox >}}

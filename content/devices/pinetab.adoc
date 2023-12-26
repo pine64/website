@@ -82,9 +82,15 @@ Expansion modules for LTE modem and LoRa
 Micro digital HD video out port allows for displaying content on an external monitor
 
 
-
 == Documentation
 
+[cols="1"]
+|===
+
+| link:/documentation/PineTab/[PineTab]
+
+| link:/documentation/PineTab/Further_information/Schematics_and_certifications/[Schematics and certifications]
+|===
 
 
 == Accessories

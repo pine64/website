@@ -109,7 +109,10 @@ UART via audio jack
 
 [cols="1"]
 |===
-|
+
+| link:/documentation/PinePhone_Pro/[PinePhone Pro]
+
+| link:/documentation/PinePhone_Pro/Further_information/Datasheets_schematics_and_certifications/[Datasheets, schematics and certifications]
 |===
 
 == What’s inside?

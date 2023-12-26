@@ -46,3 +46,11 @@ GPIO pins are exposed for each module including UART
 
 
 == Documentation
+
+[cols="1"]
+|===
+
+| link:/documentation/Clusterboard/[Clusterboard]
+
+| link:/documentation/Clusterboard/Schematics/[Schematics]
+|===

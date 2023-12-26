@@ -78,3 +78,11 @@ Built-in Ethernet port allows for fast internet access
 Optional 802.11 b/g/n WiFi and Bluetooth 4.0 module
 
 == Documentation
+
+[cols="1"]
+|===
+
+| link:/documentation/Pine_A64-LTS/[PINE A64-LTS]
+
+| link:/documentation/Pine_A64-LTS/Further_information/Schematics_and_certifications/[Schematics and certifications]
+|===

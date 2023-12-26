@@ -76,3 +76,10 @@ With an optional HAT module you can power the ROCK64 using POE
 Up to 4GB of LPDDR3 RAM
 
 == Documentation
+
+[cols="1"]
+|===
+
+| link:/documentation/ROCK64/[ROCK64]
+
+|===

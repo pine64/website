@@ -86,6 +86,14 @@ The Pinebook Pro's keyboard firmware includes key combinations to disable the Ca
 
 == Documentation
 
+[cols="1"]
+|===
+
+| link:/documentation/Pinebook_Pro/[Pinebook Pro]
+
+| link:/documentation/Pinebook_Pro/Further_information/Schematics_and_certifications/[Schematics and certifications]
+|===
+
 == Accessories
 {{< devices/device_flexbox >}}
 

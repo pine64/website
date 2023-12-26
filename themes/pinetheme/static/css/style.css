@@ -844,6 +844,7 @@ nav#TableOfContents ul ul{
     flex-wrap: wrap-reverse;
     margin-bottom: 2em;
     margin-top: 2em;
+
 }
 .namebox {
     min-width: 300px;
@@ -858,12 +859,14 @@ nav#TableOfContents ul ul{
     color: #013F85;
 }
 .imagebox {
-    display: flex;
     min-width: 300px;
     max-width: 500px;
     max-height: 500px;
     justify-content: center;
     object-fit: contain;
+}
+.imagebox img {
+    max-width: 500px;
 }
 @media screen and (max-width: 1100px){
     .headerbox {
@@ -876,6 +879,9 @@ nav#TableOfContents ul ul{
     .namebox {
         font-size: 18pt;
         width: 1000px;
+    }
+    .deviceshr {
+        margin-left: 1em;
     }
 }
 .devices table {

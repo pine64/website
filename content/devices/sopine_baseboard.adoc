@@ -70,3 +70,11 @@ The SOPINE baseboard comes with a 2x20 pin PI-2 GPIO heade
 
 
 == Documentation
+
+[cols="1"]
+|===
+
+| link:/documentation/SOPINE_Baseboard/[SOPINE_Baseboard]
+
+| link:/documentation/SOPINE_Baseboard/Schematics_and_certifications/[Schematics and certifications]
+|===

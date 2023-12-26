@@ -72,3 +72,11 @@ Built-in 802.11ac Wi-Fi and Bluetooth 5
 The Quartz64 B comes with up to 8GB of LPDDR4 RAM
 
 == Documentation
+
+[cols="1"]
+|===
+
+| link:/documentation/Quartz64/[Quartz64]
+
+| link:/documentation/Quartz64/Further_information/Schematics_and_certifications/[Schematics and certifications]
+|===

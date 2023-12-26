@@ -53,3 +53,12 @@ GPIO pins to allow further functionality in your project
 
 
 == Documentation
+
+[cols="1"]
+|===
+
+| link:/documentation/PineCube/[PineCube]
+
+| link:/documentation/PineCube/Further_information/Schematics_and_certifications/[Schematics and certifications]
+|===
+

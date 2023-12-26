@@ -73,6 +73,14 @@ The Pinebook's light weight and small size make it a extremely portable machine
 
 == Documentation
 
+[cols="1"]
+|===
+
+| link:/documentation/Pinebook/[Pinebook]
+
+| link:/documentation/Pinebook/Further_information/Schematics_and_certifications/[Schematics and certifications]
+|===
+
 == Accessories
 {{< devices/device_flexbox >}}
 

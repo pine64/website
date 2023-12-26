@@ -70,3 +70,11 @@ Expand what you can do with the device thanks to onboard WiFi and Bluetooth
 
 
 == Documentation
+
+[cols="1"]
+|===
+
+| link:/documentation/PineNote/[PineNote]
+
+| link:/documentation/PineNote/Further_information/Schematics_and_certifications/[Schematics and certifications]
+|===

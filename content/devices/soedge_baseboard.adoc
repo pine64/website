@@ -33,3 +33,11 @@ The SOEDGE Baseboard is a baseboard that hosts the SOEDGE compute module and tur
 |===
 
 == Documentation
+
+[cols="1"]
+|===
+
+| link:/documentation/SOEDGE_Baseboard/[SOEDGE Baseboard]
+
+| link:/documentation/SOEDGE_Baseboard/Schematics_and_certifications/[Schematics and certifications]
+|===

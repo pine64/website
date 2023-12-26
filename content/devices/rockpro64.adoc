@@ -90,3 +90,11 @@ PCIe 4x open-ended slot for attaching devices and extra storage
 The power RK3399 hexa-core SoC can handle most tasks you throw at it
 
 == Documentation
+
+[cols="1"]
+|===
+
+| link:/documentation/ROCKPro64/[ROCKPro64]
+
+| link:/documentation/ROCKPro64/Further_information/Schematics_and_certifications/[Schematics and certifications]
+|===

@@ -77,6 +77,15 @@ With a built-in accelerometer and heart-rate sensor, the PineTime can help you k
 
 == Documentation
 
+[cols="1"]
+|===
+
+| link:/documentation/PineTime/[PineTime]
+
+| link:/documentation/PineTime/Further_information/Datasheets_schematics_and_certifications/[Datasheets, schematics and certifications]
+|===
+
+
 == Resources
 https://www.youtube.com/watch?v=1AmsDaFMEF0
 WaspOS with a custom star trek theme

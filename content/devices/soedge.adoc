@@ -71,5 +71,12 @@ The RK1808 uses a power efficient Armv8-A archeitecture with dual ARM Cortex A35
 The RK1808 SoC has a Verisilicon Vivante NPU
 
 
-
 == Documentation
+
+[cols="1"]
+|===
+
+| link:/documentation/SOEDGE/[SOEDGE]
+
+| link:/documentation/SOEDGE/Further_information/Schematics_and_certifications/[Schematics and certifications]
+|===

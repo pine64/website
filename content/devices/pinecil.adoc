@@ -49,10 +49,19 @@ Optional GPIO breakout for development purposes
 
 32-bit RV32IMAC RISC-V processor running open firmware
 
-
 == Documentation
 
+[cols="1"]
+|===
+
+| link:/documentation/Pinecil/[Pinecil]
+
+| link:/documentation/Pinecil/Further_information/Certifications/[Certifications]
+|===
+
 == Resources
+
+{{< youtube id="-u_o-yNjpzs" >}}
 
 https://www.youtube.com/watch?v=-u_o-yNjpzs
 Pinecil soldering iron powered by a PinePower Desktop unit
