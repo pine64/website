@@ -1,6 +1,5 @@
 ---
 title: "Affiliates"
-date: ""
 ---
 
 Affiliates of the Pine Store:

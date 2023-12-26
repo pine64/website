@@ -15,7 +15,7 @@
     </div>
 </div>
 
-<div class="box rows">
+<div class="box rows pad">
     <div class="blog-list-title"><h1>{{ .Title }}</h1></div>
 
     {{ $paginator := .Paginate (where .Data.Pages "Type" "contests") 4 }}
@@ -23,7 +23,7 @@
     {{ range $paginator.Pages }}
 
     <a class="summary" href="{{ .RelPermalink }}">
-        <div class="box cols  contests-entry">
+        <div class="box cols  contests-entry eff1">
             <div class="box f25">
                 <div class="contests_img_container">
                     {{if and (isset .Params.cover "image") (ne .Params.cover.image "") }}

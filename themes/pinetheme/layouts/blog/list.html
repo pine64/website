@@ -17,7 +17,7 @@
 
         {{ range $paginator.Pages }}
 
-            <div class="box cols f50 themewhite rounded">
+            <div class="box cols f50 themewhite rounded eff1">
                 <a class="summary" href="{{ .RelPermalink }}">
                     {{if and (isset .Params.cover "image") (ne .Params.cover.image "") }}
                         <div class="box">
