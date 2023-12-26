@@ -4,6 +4,8 @@
 <!-- Don't apply this to the main page -->
 {{if ne "/documentation/" .RelPermalink}}
 
+<div class="box space-between gap">
+
 {{ $currentPage := .RelPermalink }}
 {{ $parentPage := .Parent.RelPermalink }}
 {{$i_curr := 0}}
@@ -77,5 +79,7 @@
 {{else}}
 
 {{ end }}
+
+</div>
 
 {{ end }}

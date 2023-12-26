@@ -30,7 +30,7 @@ We are available on Discord, IRC, Matrix and Telegram, in the Forum and on Reddi
 {{</ box >}}
 
 {{< box style="full themeblue" >}}
-  {{< box style="cols pad" >}}
+  {{< box style="pad" >}}
     {{< box style="f25" type="image" link="/img/philosophy.png" width="120" >}}{{</ box >}}
     {{< box style="f75 rows" title="Our vision">}}
       Our goal is to push the envelope and deliver Arm and RISC-V devices that you want to use and develop for. To this end, we actively work with the development community and champion end-user initiatives. Rather than applying business to a FOSS setting, we allow FOSS principles to guide our business.
@@ -38,7 +38,7 @@ We are available on Discord, IRC, Matrix and Telegram, in the Forum and on Reddi
   {{</ box >}}
 {{</ box >}}
 
-{{< box style="themewhite cols pad" >}}
+{{< box style="themewhite pad" >}}
   {{< box style="f50 rows" title="Join in" content="markdown" >}}
 The PINE64 community is large, vibrant and diverse. Independent and partner-project developers, hackers and hardware enthusiasts, privacy advocates and FOSS geeks - you name it, we’ve got 'em all. They all contribute to the project thereby shaping it and determining its course. This page is community run, as is the Wiki, the chats as well as the forums.
 
@@ -60,6 +60,8 @@ What can you contribute?
 
 {{</ box >}}
 
-{{< box style="themegrey full pad" >}}
+{{< box style="themegrey full" >}}
+{{< box style="pad" >}}
   {{< box_news title="Latest contest" type="contests" amount="1" style="rows" >}}
+{{</ box >}}
 {{</ box >}}

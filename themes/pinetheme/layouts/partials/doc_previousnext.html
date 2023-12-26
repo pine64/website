@@ -3,15 +3,12 @@
     <div class="previous-post">
         <a class="previous" href="{{ .NextInSection.Permalink }}">« {{.NextInSection.Title}}</a>
     </div>
-
 {{ else }}
-            
     {{ with index .Pages 0 }}
     <div class="previous-post" style="float:right;">
         <a class="previous" href="{{ .RelPermalink }}">{{ .Title }} »</a>
     </div>
     {{ end }}
-    
 {{ end }}
 
 <!-- Next section -->
@@ -19,5 +16,4 @@
     <div class="next-post">
         <a class="next" href="{{ .PrevInSection.Permalink }}">{{.PrevInSection.Title}} »</a>
     </div>
-
 {{ end }}

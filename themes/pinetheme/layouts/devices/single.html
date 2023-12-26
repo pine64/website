@@ -1,13 +1,19 @@
 {{ define "main" }}
 
-<div class="headerbox">
+<div class="headerbox pad">
     <div class="namebox">
-        <h1>{{ .Title }}</h1>
+        <h1>{{ .Title }}<br><span>BY&nbsp;PINE64</span></h1>
     </div>
     <div class="imagebox">
         {{if and (isset .Params.cover "image") (ne .Params.cover.image "") }}
             <img src="/devices/{{ .Params.cover.image }}"/>
         {{end}}
+    </div>
+</div>
+
+<div class="box full">
+    <div class="box rows ">
+        <div class="deviceshr"></div>
     </div>
 </div>
 

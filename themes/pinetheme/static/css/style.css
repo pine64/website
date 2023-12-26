@@ -105,6 +105,9 @@ div.box img {
     justify-content: start !important;
     flex: 1 1 auto;
 }
+.space-between {
+    justify-content: space-between !important;
+}
 .f25 {
     flex: 0.25 0.25 0 !important;
 }
@@ -190,6 +193,16 @@ div.themegradient1 {
     background: rgb(131,58,180);
     background: linear-gradient(0deg, rgba(131,58,180,1) 0%, rgba(91,137,255,1) 100%); 
     color: white;
+}
+div.themegradient2 {
+    background: #A770EF;
+    background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);
+    background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);
+}
+div.themegradient3 {
+    background: #E55D87;
+    background: -webkit-linear-gradient(to right, #5FC3E4, #E55D87);
+    background: linear-gradient(-125deg, #5FC3E4, #E55D87);
 }
 
 /* Pagination (blog) */
@@ -416,12 +429,13 @@ button.rounded:hover {
 
 /* Documentation */
 #doc-container {
-    max-width: 80rem;
+    /* max-width: 80rem; */
     margin: 0 auto;
     padding: 1rem;
     display: flex;
     font-size: 1em;
     font-weight: 300;
+    width: 1000px;
 
 }
 #doc-container h2 {
@@ -437,6 +451,7 @@ button.rounded:hover {
     margin-bottom: 1.5rem;
     justify-content: space-between;
     display: flex;
+    width: 100%;
 }
 
 #doc-breadcrumbs-icon{
@@ -460,8 +475,6 @@ button.rounded:hover {
     color: #2F82C6;
 }
 #doc-nav a.active {
-    /*font-weight: 550 !important;
-    letter-spacing: -0.02em;*/
     color: #2F82C6;
 }
 #doc-nav nav.sidebar-nav {
@@ -494,14 +507,6 @@ button.rounded:hover {
     box-decoration-break: clone;
 }
 @media screen and (max-width: 1000px){
-    /*
-    #doc-nav {
-        display: none;
-    }
-    */
-    /*nav.sidebar-nav ul ul li.doc_subitem {
-        display: none;
-    }*/
     #doc-container {
         display: block;
     }
@@ -511,9 +516,15 @@ button.rounded:hover {
 }
 
 #doc-page {
-    min-width: 18rem;
-    flex-grow: 1;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    max-width: 912px;
+    flex-direction: column;
     padding: 1rem 0;
+}
+article {
+    min-height: 400px;
 }
 #doc-container img {
     max-width: 100%;
@@ -570,7 +581,7 @@ div#doc-page .doc_device_box {
     border-radius: 8pt;
     margin: 10pt; 
     border: 1pt solid rgb(228, 228, 228);
-    float:left;
+    float: left;
     font-weight: 400;
     color: rgb(74, 74, 74);
 }
@@ -581,7 +592,7 @@ div#doc-page .doc_device_box_img_container{
     height: 140px;
     width: 140px;
     padding-top: 2em;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
@@ -604,14 +615,6 @@ div#doc-page .doc_device_box:hover{
 div#doc-page p{
     clear: left;
 }
-
-div#doc-page .previous-post {
-    float: left;
-}
-div#doc-page .next-post {
-    float: right;
-}
-
 div#doc-page article {
     margin-bottom: 2em;
 }
@@ -836,7 +839,7 @@ nav#TableOfContents ul ul{
 
 /* Devices */
 .headerbox {
-    height: 100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap-reverse;
     margin-bottom: 2em;
@@ -846,25 +849,34 @@ nav#TableOfContents ul ul{
     min-width: 300px;
     max-width: 500px;
     padding-top: 2em;
+    margin-right: 1em;
     width: 50%;
+    font-size: 28pt;
+    line-height: 1.1;
+}
+.namebox span {
+    color: #013F85;
 }
 .imagebox {
     display: flex;
     min-width: 300px;
     max-width: 500px;
     max-height: 500px;
-    width: 50%;
     justify-content: center;
+    object-fit: contain;
 }
 @media screen and (max-width: 1100px){
+    .headerbox {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
     .imagebox img {
         max-width: 100%;
     }
-}
-.devices h1 {
-    font-size: 55px;
-    font-weight: 700;
-    line-height: 1.1;
+    .namebox {
+        font-size: 18pt;
+        width: 1000px;
+    }
 }
 .devices table {
     border: none;
@@ -878,14 +890,19 @@ nav#TableOfContents ul ul{
     padding: 16px 12px 16px 12px;
 }
 .devices h2, .devices h2 a {
-    color: #333;
+    color: #4384da;
     font-size: 30px;
     font-weight: 700;
 }
 .devices h3, .devices h3 a {
-    color: #333;
+    color: #686868;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 400;
+}
+.deviceshr {
+    background-color: #021d3b;
+    width: 100px;
+    height: 24px;
 }
 .device_flexbox {
     display: flex;
