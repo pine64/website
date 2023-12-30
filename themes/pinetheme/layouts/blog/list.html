@@ -11,7 +11,7 @@
 </div>
 
 
-<div class="box themelightgrey full">
+<div class="box themegradient3 full" >
     <div class="box pad gap">
         {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") }}
 
@@ -34,14 +34,10 @@
             </div>
 
         {{ end }}
+
+        {{ template "_internal/pagination.html" . }}
     </div>
-
 </div>
-
-<div class="box themelightgrey full">
-    {{ template "_internal/pagination.html" . }}
-</div>
-
 
 
 {{ end }}

@@ -1,5 +1,5 @@
 ---
-title: "PINE H64"
+title: "PINE H64 Model B"
 categories: 
   - "SBCs"
 cover: 
@@ -8,7 +8,7 @@ cover:
 
 == PINE H64 Model B Single Board Computer Featuring USB 3.0 and Gigabit Ethernet
 
-The PINE H64 is powered by an Allwinner “H6” quad-core ARM Cortex A53 64-Bit Processor with a Mali T-722 GPU. The PINE H64 is equipped with up-to 3GB LPDDR3 PC-1600 system memory and 128Mb SPI boot Flash. There is also an optional eMMC module (up to 128GB) and microSD slot for booting. The board is also equipped with onboard built-in 802.11n Wifi and Bluetooth 4.0, 1x USB 3.0 Host, 2x USB 2.0 Host, Gigabit Ethernet, PI-2 GPIO Bus, and a Euler GPIO bus as well other peripheral device interfaces such as UART, SPI, and I2C for makers to integrate with sensors and other peripherals.
+The PINE H64 Model B is powered by an Allwinner “H6” quad-core ARM Cortex A53 64-Bit Processor with a Mali T-722 GPU. The PINE H64 is equipped with up-to 3GB LPDDR3 PC-1600 system memory and 128Mb SPI boot Flash. There is also an optional eMMC module (up to 128GB) and microSD slot for booting. The board is also equipped with onboard built-in 802.11n Wifi and Bluetooth 4.0, 1x USB 3.0 Host, 2x USB 2.0 Host, Gigabit Ethernet, PI-2 GPIO Bus, and a Euler GPIO bus as well other peripheral device interfaces such as UART, SPI, and I2C for makers to integrate with sensors and other peripherals.
 
 == Features and Specifications
 

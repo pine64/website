@@ -6,17 +6,17 @@ description:
 ---
 
 == Single Board Computers
-* link:/devices/ox64[Ox64] (missing)
-* link:/devices/star64[STAR64] (missing)
+* link:/devices/ox64[Ox64]
+* link:/devices/star64[STAR64]
 * link:/devices/pine_a64[PINE A64 (+)]
 * link:/devices/pine_a64-lts[PINE A64-LTS]
 * link:/devices/rock64[ROCK64]
 * link:/devices/rockpro64[ROCKPro64]
-* link:/devices/pine_h64_model_a[PINE H64 Model A] (missing)
+* link:/devices/pine_h64_model_a[PINE H64 Model A]
 * link:/devices/pine_h64_model_b[PINE H64 Model B]
 * link:/devices/quartz64_model_a[Quartz64 Model A]
 * link:/devices/quartz64_model_b[Quartz64 Model B]
-* QuartzPro64
+* link:/devices/quartzpro64[QuartzPro64]
 
 == Laptops
 * link:/devices/pinebook[Pinebook]
@@ -27,8 +27,8 @@ description:
 * link:/devices/pinephone[PinePhone]
 * link:/devices/pinenote[PineNote]
 * link:/devices/pinetab[PineTab]
-* link:/devices/pinetab2[PineTab2] (missing)
-* link:/devices/pinetab-v[PineTab-V] (missing)
+* link:/devices/pinetab2[PineTab2]
+* link:/devices/pinetab-v[PineTab-V]
 
 == Smartwatches
 * link:/devices/pinetime[PineTime]
@@ -39,7 +39,7 @@ description:
 * link:/devices/soedge[SOEDGE]
 * link:/devices/soedge_baseboard[SOEDGE Baseboard]
 * link:/devices/sopine_clusterboard[SOPINE Clusterboard]
-* link:/devices/soquartz[SOQuartz] (missing)
+* link:/devices/soquartz[SOQuartz]
 
 == IP Cameras
 * link:/devices/pinecube[PineCube]
@@ -48,8 +48,8 @@ description:
 * link:/devices/pinecil[Pinecil]
 
 == Makerspace
-* link:/devices/pinecone[PineCone] (missing)
-* link:/devices/pinedio[Pinedio] (missing)
+* link:/devices/pinecone[PineCone]
+* link:/devices/pinedio[Pinedio]
 
 == Power Supplies
 * link:/devices/pinepower[PinePower]

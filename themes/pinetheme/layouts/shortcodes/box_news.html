@@ -7,7 +7,7 @@
         {{ $type := .Get "type" }}
         
         {{ range ( where .Site.RegularPages "Type" $type | first (.Get "amount") ) }}
-            <div class="box f50 themeblogpreview rounded l400">
+            <div class="box f50 themeblogpreview l400 index_news">
                 <a href="{{ .RelPermalink }}">
                     {{if and (isset .Params.cover "image") (ne .Params.cover.image "") }}
                         <img src="/{{$type}}/images/{{ .Params.cover.image }}"/>
@@ -19,7 +19,7 @@
                         
                         <br>
                         <div>
-                          <a href="{{ .RelPermalink }}">Read More</a>
+                          <a href="{{ .RelPermalink }}">Read more</a>
                         </div>
                     </div>
                 </a>

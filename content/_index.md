@@ -25,15 +25,15 @@ We are available on Discord, IRC, Matrix and Telegram, in the Forum and on Reddi
 [Join our community!](/community/)
 {{</ box >}}
 
-{{< box style="full themegrey pad" >}}
+{{< box style="full themevlblue pad" >}}
   {{< box_news title="News" type="blog" amount="2" style="rows" >}}
 {{</ box >}}
 
-{{< box style="full themeblue" >}}
+{{< box style="full themegradient1" >}}
   {{< box style="pad" >}}
-    {{< box style="f25" type="image" link="/img/philosophy.png" width="120" >}}{{</ box >}}
-    {{< box style="f75 rows" title="Our vision">}}
-      Our goal is to push the envelope and deliver Arm and RISC-V devices that you want to use and develop for. To this end, we actively work with the development community and champion end-user initiatives. Rather than applying business to a FOSS setting, we allow FOSS principles to guide our business.
+    {{< box style="f25" type="image" link="/img/philosophy.png" width="200" >}}{{</ box >}}
+    {{< box style="f75 rows" title="Our vision" content="markdown" >}}
+Our goal is to push the envelope and deliver Arm and RISC-V devices that you want to use and develop for. To this end, we actively work with the development community and champion end-user initiatives. Rather than applying business to a FOSS setting, we allow FOSS principles to guide our business.
     {{</ box >}}
   {{</ box >}}
 {{</ box >}}
@@ -45,19 +45,7 @@ The PINE64 community is large, vibrant and diverse. Independent and partner-proj
 What can you contribute?
 {{</ box >}}
 
-{{< box style="f50" >}}
-  {{< slider_small slides=8 seconds=10 >}}
-    <img src="/img/slider_index_1.png">
-    <img src="/img/slider_index_2.png">
-    <img src="/img/slider_index_3.png">
-    <img src="/img/slider_index_4.png">
-    <img src="/img/slider_index_5.png">
-    <img src="/img/slider_index_6.png">
-    <img src="/img/slider_index_7.png">
-    <img src="/img/slider_index_8.png">
-  {{</ slider_small >}}
-{{</ box >}}
-
+    {{< box style="f50" type="image" link="/img/pinecil_philosophy.png" width="400" >}}{{</ box >}}
 {{</ box >}}
 
 {{< box style="themegrey full" >}}
