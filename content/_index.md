@@ -16,13 +16,15 @@ images: ["/img/logo.png"]
   {{< slide src="/img/start/pinetime.png" title="PineTime" text="The <b>PineTime</b> is a free and open source smartwatch capable of running custom-built open operating systems." link="/documentation/PineTime" num="9">}}
 {{</ slider >}}
 
-
 {{< box title="The <b>PINE64</b> community" content="markdown" style="pad rows">}}
 Our goal is to push the envelope and deliver ARM and RISC-V devices that you want to use and develop for. To this end, we actively work with the development community and champion end-user initiatives. Rather than applying business to a FOSS setting, we allow FOSS principles to guide our business.
 
 We are available on Discord, IRC, Matrix and Telegram, in the Forum and on Reddit.
 
-[Join our community!](/community/)
+**[Join our community](/community/)**
+
+![Multiple PinePhones with different operating systems.](/img/Pinephone_revisions.png)
+
 {{</ box >}}
 
 {{< box style="full themevlblue pad" >}}
@@ -31,21 +33,33 @@ We are available on Discord, IRC, Matrix and Telegram, in the Forum and on Reddi
 
 {{< box style="full themegradient1" >}}
   {{< box style="pad" >}}
-    {{< box style="f25" type="image" link="/img/philosophy.png" width="200" >}}{{</ box >}}
-    {{< box style="f75 rows" title="Our vision" content="markdown" >}}
-Our goal is to push the envelope and deliver Arm and RISC-V devices that you want to use and develop for. To this end, we actively work with the development community and champion end-user initiatives. Rather than applying business to a FOSS setting, we allow FOSS principles to guide our business.
+
+    {{< box style="rows" title="Together we are shaping the future" content="markdown" >}}
+
+Our goal is to push the envelope and deliver Arm and RISC-V devices that you want to use and develop for. 
+
+To achieve this, we actively work with the development community and champion end-user initiatives. Rather than applying business to a FOSS setting, we allow FOSS principles to guide our business.
+
+![The Pinecil by PINE64 on an abstract background.](/img/pinecil_philosophy.svg)
+
     {{</ box >}}
   {{</ box >}}
 {{</ box >}}
 
 {{< box style="themewhite pad" >}}
-  {{< box style="f50 rows" title="Join in" content="markdown" >}}
-The PINE64 community is large, vibrant and diverse. Independent and partner-project developers, hackers and hardware enthusiasts, privacy advocates and FOSS geeks - you name it, we’ve got 'em all. They all contribute to the project thereby shaping it and determining its course. This page is community run, as is the Wiki, the chats as well as the forums.
+  {{< box style="f50 rows" title="Innovation meets collaboration" content="markdown" >}}
+The PINE64 community is large, vibrant and diverse. Independent and partner-project developers, hackers and hardware enthusiasts, privacy advocates and FOSS geeks - you name it, we’ve got 'em all. 
 
-What can you contribute?
+They all contribute to the project thereby shaping it and determining its course. This page is community run, as is the Wiki, the chats as well as the forums.
+
+
+![The PinePhone connected to a screen symbolizing its convergence capabilities.](/img/Pinephone_convergence.png)
+
+**Unleash your creativity with community**
+
 {{</ box >}}
 
-    {{< box style="f50" type="image" link="/img/pinecil_philosophy.png" width="400" >}}{{</ box >}}
+    {{< box style="f50" type="image" link="/img/pinenotebg1.png" width="400" >}}{{</ box >}}
 {{</ box >}}
 
 {{< box style="themegrey full" >}}

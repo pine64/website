@@ -1,9 +1,15 @@
 {{ define "main" }}
 
-<div class="box rows pad">
-    <h1>{{ .Title }}</h1>
+<div class="box full themeblue">
+    <div class="box rows pad">
+        <h1>{{ .Title }}</h1>
+    </div>
+</div>
 
-    <p>{{ .Content | safeHTML}}</p>
+<div class="box full">
+    <div class="box rows pad">
+        <p>{{ .Content | safeHTML}}</p>
+    </div>
 </div>
 
 {{ end }}
