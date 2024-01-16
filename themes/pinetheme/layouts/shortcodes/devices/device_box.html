@@ -1,11 +1,14 @@
 <div class="device_box">
     <a href='{{ .Get "link" }}'>
+        {{ if .Get "text" }}
+            <h3>{{ with .Get "title" }} {{ . }} {{ end }}</h3>
+            <p>{{ with .Get "text" }} {{ . }} {{ end }}</p>
+        {{ else }}
+            <h2>{{ with .Get "title" }} {{ . }} {{ end }}</h2>
+        {{ end }}
+        
         <div class="device_box_image">
             <img src='{{ .Get "img" }}'>
         </div>
-
-        <h3>{{ with .Get "title" }} {{ . }} {{ end }}</h3>
-
-        <p>{{ with .Get "text" }} {{ . }} {{ end }} <br><br></p>
     </a>
 </div>

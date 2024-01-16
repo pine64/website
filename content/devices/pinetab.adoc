@@ -102,11 +102,6 @@ Micro digital HD video out port allows for displaying content on an external mon
 
 == Resources
 
-https://www.youtube.com/watch?v=9zisqhlUrXI
-Switched to Linux unboxing of the PineTab
-
-https://www.youtube.com/watch?v=1RzX1exKdKk
-Another PineTab unboxing by Linux Lounge
-
-https://www.youtube.com/watch?v=clmsrEQgKpc
-First impressions of the PineTab by Privacy & Tech Tips
+* link:https://www.youtube.com/watch?v=9zisqhlUrXI[YouTube: Switched to Linux unboxing of the PineTab]
+* link:https://www.youtube.com/watch?v=1RzX1exKdKk[YouTube: Another PineTab unboxing by Linux Lounge]
+* link:https://www.youtube.com/watch?v=clmsrEQgKpc[YouTube: First impressions of the PineTab by Privacy & Tech Tips]

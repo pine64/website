@@ -104,11 +104,6 @@ The Pinebook Pro's keyboard firmware includes key combinations to disable the Ca
 
 == Resources
 
-https://www.youtube.com/watch?v=l6dGeRUt4dg
-DistroTube unboxing and review of the Pinebook Pro
-
-https://www.youtube.com/watch?v=omhmO6a8NJ0
-Pinebook Pro teardown
-
-https://www.youtube.com/watch?v=cJJBJ4XqpOI
-Sabrent NVMe drive installation in the Pinebook Pro
+* link:https://www.youtube.com/watch?v=l6dGeRUt4dg[YouTube: DistroTube unboxing and review of the Pinebook Pro]
+* link:https://www.youtube.com/watch?v=omhmO6a8NJ0[YouTube: Pinebook Pro teardown]
+* link:https://www.youtube.com/watch?v=cJJBJ4XqpOI[YouTube: Sabrent NVMe drive installation in the Pinebook Pro]

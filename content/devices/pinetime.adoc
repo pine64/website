@@ -87,11 +87,6 @@ With a built-in accelerometer and heart-rate sensor, the PineTime can help you k
 
 
 == Resources
-https://www.youtube.com/watch?v=1AmsDaFMEF0
-WaspOS with a custom star trek theme
-
-https://www.youtube.com/watch?v=CvT5D0kxoiQ
-Elatronion’s review of the PineTime
-
-https://www.youtube.com/watch?v=uE-0xoHAyjs
-A review of Infinitime version 1.0.0 on the PineTime
+* link:https://www.youtube.com/watch?v=1AmsDaFMEF0[YouTube: WaspOS with a custom star trek theme]
+* link:https://www.youtube.com/watch?v=CvT5D0kxoiQ[YouTube: Elatronion’s review of the PineTime]
+* link:https://www.youtube.com/watch?v=uE-0xoHAyjs[YouTube: A review of Infinitime version 1.0.0 on the PineTime]

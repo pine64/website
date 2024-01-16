@@ -43,6 +43,9 @@ h2, h3, h4, h5, h6 {
 h2 a, h3 a, h4 a, h5 a, h6 a {
     color: var(--blue);
 }
+.imageblock {
+    margin-bottom: 1.6em;
+}
 
 hr {
     height: 1px;
@@ -218,6 +221,11 @@ div.themegradient3 {
     background: #E55D87;
     background: -webkit-linear-gradient(to right, #5FC3E4, #E55D87);
     background: linear-gradient(195deg, #5FC3E4, #E55D87);
+}
+div.themegradient4 {
+    color: white;
+    background: rgb(1,63,133);
+    background: linear-gradient(10deg, rgba(1,63,133,1) 0%, rgba(59,142,232,1) 100%); 
 }
 div.themedarkblue {
     background-color: #436592;
@@ -581,7 +589,6 @@ button.rounded:hover {
     font-weight: 700;
 }
 .devices h3, .devices h3 a {
-    color: #686868;
     font-size: 24px;
     font-weight: 400;
 }
@@ -597,6 +604,7 @@ button.rounded:hover {
     column-gap: 10px;
     row-gap: 20px;
     justify-content: flex-start;
+    margin-bottom: 50px;
 }
 /* Device box */
 .device_box {
@@ -604,12 +612,14 @@ button.rounded:hover {
     min-width: 300px;
     max-width: 380px;
     border: 1px solid #d1d1d1;
-    border-radius: 30px;
+    border-radius: 14px;
     margin: 0 10px 10px 0;
     max-height: 465px;
+    transition: all .2s ease-in-out;
+    flex: 1 1 auto;
 }
 .device_box:hover {
-    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.02); 
 }
 .device_box:active {
     outline: 0;
@@ -617,20 +627,24 @@ button.rounded:hover {
 }
 .device_box_image {
     display: flex;
-    justify-content: center;
     width: 100%;
     max-height: 240px;
 }
 .device_box_image img {
     max-width: 100%;
     max-height: inherit;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    margin: 14px auto 14px auto;
 }
 .device_box h3 {
     padding: 12px 10px 12px 10px;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
+}
+.device_box h2 {
+    padding: 22px 10px 32px 10px;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
 }
 .device_box p {
     padding: 0 10px 0 10px !important;

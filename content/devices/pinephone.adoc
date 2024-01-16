@@ -115,11 +115,9 @@ Five hardware switches allow you to disable the cameras, microphone, WiFi and Bl
 {{< /devices/device_flexbox >}}
 
 == Resources
-https://www.youtube.com/watch?v=fCKMxzz9cjs
-ShortCircuit review of the PinePhone
 
-https://www.youtube.com/watch?v=6TKpJsXDDng
-PinePhone Beta edition quickstart guide
+* link:https://www.youtube.com/watch?v=fCKMxzz9cjs[YouTube: ShortCircuit review of the PinePhone]
 
-https://www.youtube.com/watch?v=7sxmGxuCM4g
-A showcase of a early developer unit of PinePhone keyboards which interfaces with the pogo pins
+* link:https://www.youtube.com/watch?v=6TKpJsXDDng[YouTube: PinePhone Beta edition quickstart guide]
+
+* link:https://www.youtube.com/watch?v=7sxmGxuCM4g[YouTube: A showcase of a early developer unit of PinePhone keyboards which interfaces with the pogo pins]

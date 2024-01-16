@@ -6,54 +6,84 @@ description:
 ---
 
 == Single Board Computers
-* link:/devices/ox64[Ox64]
-* link:/devices/star64[STAR64]
-* link:/devices/pine_a64[PINE A64 (+)]
-* link:/devices/pine_a64-lts[PINE A64-LTS]
-* link:/devices/rock64[ROCK64]
-* link:/devices/rockpro64[ROCKPro64]
-* link:/devices/pine_h64_model_a[PINE H64 Model A]
-* link:/devices/pine_h64_model_b[PINE H64 Model B]
-* link:/devices/quartz64_model_a[Quartz64 Model A]
-* link:/devices/quartz64_model_b[Quartz64 Model B]
-* link:/devices/quartzpro64[QuartzPro64]
+
+{{< devices/device_flexbox >}}
+    {{< devices/device_box link="/devices/ox64/" img="/img/start/ox64.png" title="Ox64" text="" >}}
+    {{< devices/device_box link="/devices/star64" img="/devices/images/star64.jpg" title="STAR64" text="" >}}
+    {{< devices/device_box link="/devices/pine_a64" img="/devices/images/pine_a64.jpg" title="PINE A64 (+)" text="" >}}
+    {{< devices/device_box link="/devices/pine_a64-lts" img="/devices/images/pine_a64-lts.jpg" title="PINE A64-LTS" text="" >}}
+    {{< devices/device_box link="/devices/rock64" img="/devices/images/rock64.jpg" title="ROCK64" text="" >}}
+    {{< devices/device_box link="/devices/rockpro64" img="/devices/images/rockpro64.jpg" title="ROCKPro64" text="" >}}
+    {{< devices/device_box link="/devices/pine_h64_model_a" img="/devices/images/pine_h64_model_a.jpg" title="PINE H64 Model A" text="" >}}
+    {{< devices/device_box link="/devices/pine_h64_model_b" img="/devices/images/pine_h64_ver_b.jpg" title="PINE H64 Model B" text="" >}}
+    {{< devices/device_box link="/devices/quartz64_model_a" img="/devices/images/quartz64_model_a.jpg" title="Quartz64 Model A" text="" >}}
+    {{< devices/device_box link="/devices/quartz64_model_b" img="/devices/images/quartz64_model_b.png" title="Quartz64 Model B" text="" >}}
+    {{< devices/device_box link="/devices/quartzpro64" img="/documentation/images/Quartzpro64_whole_board_top_resized.jpeg" title="QuartzPro64" text="" >}}
+{{< /devices/device_flexbox >}}
 
 == Laptops
-* link:/devices/pinebook[Pinebook]
-* link:/devices/pinebook_pro[Pinebook Pro]
+
+{{< devices/device_flexbox >}}
+    {{< devices/device_box link="/devices/pinebook" img="/devices/images/pinebook.jpg" title="Pinebook" text="" >}}
+    {{< devices/device_box link="/devices/pinebook_pro" img="/devices/images/pinebook_pro.png" title="Pinebook Pro" text="" >}}
+{{< /devices/device_flexbox >}}
 
 == Phones and Tablets
-* link:/devices/pinephone_pro[PinePhone Pro]
-* link:/devices/pinephone[PinePhone]
-* link:/devices/pinenote[PineNote]
-* link:/devices/pinetab[PineTab]
-* link:/devices/pinetab2[PineTab2]
-* link:/devices/pinetab-v[PineTab-V]
+
+{{< devices/device_flexbox >}}
+    {{< devices/device_box link="/devices/pinephone_pro" img="/devices/images/pinephone_pro.png" title="PinePhone Pro" text="" >}}
+    {{< devices/device_box link="/devices/pinephone" img="/devices/images/pinephone.jpg" title="PinePhone" text="" >}}
+    {{< devices/device_box link="/devices/pinenote" img="/devices/images/pinenote.jpg" title="PineNote" text="" >}}
+    {{< devices/device_box link="/devices/pinetab" img="/devices/images/pinetab.jpg" title="PineTab" text="" >}}
+    {{< devices/device_box link="/devices/pinetab2" img="/documentation/images/PineTab2_Front.jpg" title="PineTab2" text="" >}}
+    {{< devices/device_box link="/devices/pinetab-v" img="/documentation/PineTab-V/Pinetabv_1.jpg" title="PineTab-V" text="" >}}
+{{< /devices/device_flexbox >}}
 
 == Smartwatches
-* link:/devices/pinetime[PineTime]
+
+{{< devices/device_flexbox >}}
+    {{< devices/device_box link="/devices/pinetime" img="/devices/images/pinetime.png" title="PineTime" text="" >}}
+{{< /devices/device_flexbox >}}
 
 == Clusters and Compute Modules
-* link:/devices/sopine[SOPINE]
-* link:/devices/sopine_baseboard[SOPINE Baseboard]
-* link:/devices/soedge[SOEDGE]
-* link:/devices/soedge_baseboard[SOEDGE Baseboard]
-* link:/devices/sopine_clusterboard[SOPINE Clusterboard]
-* link:/devices/soquartz[SOQuartz]
+
+{{< devices/device_flexbox >}}
+    {{< devices/device_box link="/devices/sopine" img="/devices/images/sopine.jpg" title="SOPINE" text="" >}}
+    {{< devices/device_box link="/devices/sopine_baseboard" img="/devices/images/sopine_baseboard.jpg" title="SOPINE Baseboard" text="" >}}
+    {{< devices/device_box link="/devices/soedge" img="/devices/images/soedge.png" title="SOEDGE" text="" >}}
+    {{< devices/device_box link="/devices/soedge_baseboard" img="/devices/images/soedge_baseboard.png" title="SOEDGE Baseboard" text="" >}}
+    {{< devices/device_box link="/devices/sopine_clusterboard" img="/devices/images/sopine_clusterboard.jpg" title="SOPINE Clusterboard" text="" >}}
+    {{< devices/device_box link="/devices/soquartz" img="/documentation/images/SOQuartz_module-1s.jpg" title="SOQuartz" text="" >}}
+{{< /devices/device_flexbox >}}
 
 == IP Cameras
-* link:/devices/pinecube[PineCube]
+
+{{< devices/device_flexbox >}}
+    {{< devices/device_box link="/devices/pinecube" img="/devices/images/pinecube.jpg" title="PineCube" text="" >}}
+{{< /devices/device_flexbox >}}
 
 == Soldering Irons
-* link:/devices/pinecil[Pinecil]
+
+{{< devices/device_flexbox >}}
+    {{< devices/device_box link="/devices/pinecil" img="/devices/images/pinecil.png" title="Pinecil" text="" >}}
+{{< /devices/device_flexbox >}}
 
 == Makerspace
-* link:/devices/pinecone[PineCone]
-* link:/devices/pinedio[Pinedio]
+
+{{< devices/device_flexbox >}}
+    {{< devices/device_box link="/devices/pinecone" img="/documentation/images/Pine64_BL602_EVB_photo-3-small.jpg" title="PineCone" text="" >}}
+    {{< devices/device_box link="/devices/pinedio" img="" title="Pinedio" text="" >}}
+{{< /devices/device_flexbox >}}
 
 == Power Supplies
-* link:/devices/pinepower[PinePower]
-* link:/devices/pinepower_desktop[PinePower Desktop]
+
+{{< devices/device_flexbox >}}
+    {{< devices/device_box link="/devices/pinepower" img="/devices/images/pinepower.jpg" title="PinePower" text="" >}}
+    {{< devices/device_box link="/devices/pinepower_desktop" img="/devices/images/pinepower_desktop.jpg" title="PinePower Desktop" text="" >}}
+{{< /devices/device_flexbox >}}
 
 == IoT
-* link:/devices/pinenut[PineNut]
+
+{{< devices/device_flexbox >}}
+    {{< devices/device_box link="/devices/pinenut" img="/devices/images/pinenut.jpg" title="PineNut" text="" >}}
+{{< /devices/device_flexbox >}}

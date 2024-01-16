@@ -90,15 +90,7 @@ The Pinebook's light weight and small size make it a extremely portable machine
 
 
 == Resources
-https://www.youtube.com/watch?v=tJOc2ZbRB_0
-Pinebook review showcasing Q4OS
 
-
-https://www.youtube.com/watch?v=t_6AFCg4lRw
-Seytonic’s review of the Pinebook
-
-
-https://www.youtube.com/watch?v=k1hHRMIod0A
-MUO review of the Pinebook
-
-
+* link:https://www.youtube.com/watch?v=tJOc2ZbRB_0[YouTube: Pinebook review showcasing Q4OS]
+* link:https://www.youtube.com/watch?v=t_6AFCg4lRw[YouTube: Seytonic’s review of the Pinebook]
+* link:https://www.youtube.com/watch?v=k1hHRMIod0A[YouTube: MUO review of the Pinebook]

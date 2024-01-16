@@ -59,8 +59,5 @@ Individual voltage and status displays for each port
 
 == Resources
 
-https://www.youtube.com/watch?v=60IG0XmHtcY
-Gary Explains reviews the PinePower
-
-https://www.youtube.com/watch?v=ZZcqUMGPl7A
-Desktop PinePower being used to power a Pinecil
+* link:https://www.youtube.com/watch?v=60IG0XmHtcY[YouTube: Gary Explains reviews the PinePower]
+* link:https://www.youtube.com/watch?v=ZZcqUMGPl7A[YouTube: Desktop PinePower being used to power a Pinecil]
