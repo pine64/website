@@ -230,6 +230,11 @@ div.themegradient4 {
 div.themedarkblue {
     background-color: #436592;
 }
+div.themedarkgrey {
+    color: white;
+    font-weight: 400;
+    background-color: #222;
+}
 
 /* Pagination (blog) */
 ul.pagination{
