@@ -152,7 +152,7 @@ div.themeblue {
     color: white;
 }
 div.themegrey {
-    background-color: #F1F1F1;
+    background-color: #F3F6F9;
     color: black;
 }
 div.themegrey p { 
@@ -331,10 +331,17 @@ h1 {
 }
 #navlinks_right .nav-link:hover { 
     color: #0069B5;
-    transition: all .2s ease-in-out; 
+    transition: all .2s ease-in-out;
+}
+#navlinks_right .nav-link:hover svg {
+    stroke: #0069B5;
+    transition: all .2s ease-in-out;
 }
 #navlinks_right .active { 
     color: #0069B5;
+}
+#navlinks_right .active svg {
+    stroke: #0069B5;
 }
 
 #navlinks_right .dropdown {

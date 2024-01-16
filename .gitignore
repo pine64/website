@@ -1,6 +1,9 @@
 # html files
 public
 
+# Generated files
+resources
+
 # Hugo lock
 .hugo_build.lock
 

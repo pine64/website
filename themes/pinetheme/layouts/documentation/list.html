@@ -1,5 +1,6 @@
 {{ define "main" }}
-    <link rel="stylesheet" type="text/css" href="/css/documentation.css">
+    {{- $style_docs := resources.Get "/css/documentation.css" | minify | fingerprint -}}
+    <link rel="stylesheet" href="{{ $style_docs.Permalink }}"  integrity="{{ $style_docs.Data.Integrity }}">
     <div id="doc-container">
 
         <div id="doc-nav">

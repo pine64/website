@@ -55,7 +55,7 @@ They all contribute to the project thereby shaping it and determining its course
 
 ![The PinePhone connected to a screen symbolizing its convergence capabilities.](/img/Pinephone_convergence.png)
 
-**Unleash your creativity with community**
+**Unleash your creativity with the community**
 
 {{</ box >}}
 

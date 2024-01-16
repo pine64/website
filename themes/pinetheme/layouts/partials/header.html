@@ -21,7 +21,7 @@
                                 {{- if eq .Params.external true }} external{{end -}}
                                 ' for="{{ .Identifier }}"
                             >
-                                {{- .Name | safeHTML -}}
+                                {{- .Name | safeHTML -}} {{ .Post }}
                             </label>
                             <input type="checkbox" id="{{ .Identifier }}" class="dropdown-toggle" />
 
