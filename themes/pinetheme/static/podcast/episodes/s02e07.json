@@ -1,0 +1,83 @@
+{
+    "version": 5,
+    "show": {
+      "title": "PineTalk Podcast",
+      "subtitle": "A Community Podcast",
+      "summary": "We discuss PINE64 hardware, software and open source in general.\r\nSend in your questions!\r\nA community ran podcast for the community.\r\n\r\nContact:\r\nEmail: pinetalk@pine64.org\r\nTwitter: @TalkPine",
+      "poster": "/img/pinetalk.png",
+      "link": "https://www.pine64.org"
+    },
+    "title": "S02e07: Pine in a Field, on a Mountain, Over a River",
+    "subtitle": "Two months worth of content",
+    "summary": "In this episode Brian and Justin talk in length about the newly announced PINE64 line of audio products.",
+    "publicationDate": "2022-04-23T23:09:09+00:00",
+    "duration": "00:34:53.391",
+    "poster": "/img/pinetalk.png",
+    "link": "https://www.pine64.org/2022/04/23/s02e07-pine-in-a-field-on-a-mountain-over-a-river/",
+    "chapters": [
+      {
+        "start": "00:00:00.000",
+        "title": "Introduction",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:01:52.000",
+        "title": "Rapid fire",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:03:57.000",
+        "title": "KDE Plasma",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:06:52.000",
+        "title": "Maui Shell alpha",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:08:00.000",
+        "title": "PINE64 EU store merch",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:09:00.000",
+        "title": "PineSound",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:25:06.000",
+        "title": "Field Server",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:33:25.000",
+        "title": "End",
+        "href": "",
+        "image": ""
+      }
+    ],
+    "audio": [
+      {
+        "url": "/podcast/episodes/s02e07.opus",
+        "size": "11987351",
+        "title": "Opus Audio (opus)",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ],
+    "files": [
+      {
+        "url": "/podcast/episodes/s02e07.opus",
+        "size": "11987351",
+        "title": "Opus Audio",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ]
+  }

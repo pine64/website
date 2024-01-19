@@ -8,4 +8,4 @@ resources
 .hugo_build.lock
 
 # Podcasts (local testing)
-/themes/pinetheme/static/podcast
+#/themes/pinetheme/static/podcast

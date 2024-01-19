@@ -1,0 +1,89 @@
+{
+    "version": 5,
+    "show": {
+      "title": "PineTalk Podcast",
+      "subtitle": "A Community Podcast",
+      "summary": "We discuss PINE64 hardware, software and open source in general.\r\nSend in your questions!\r\nA community ran podcast for the community.\r\n\r\nContact:\r\nEmail: pinetalk@pine64.org\r\nTwitter: @TalkPine",
+      "poster": "/img/pinetalk.png",
+      "link": "https://www.pine64.org"
+    },
+    "title": "S2E03: PineTalk - Performance, UIs, the Keyboard, Oh My!",
+    "subtitle": "A discussion about the PinePhone/ Pro keyboard and future of Mobile Linux.",
+    "summary": "In this episode Justin and Brian talk about this week's software improvements coming to PINE64 devices, discuss the keyboard some more, and talk about the future of Mobile Linux.\r\n\r\nMusic from Bensound.com and Zed (@itismezed)\r\nhttps://soundcloud.com/kevinflynnretro\r\n\r\nEdited by Zed",
+    "publicationDate": "2021-11-23T23:37:06+00:00",
+    "duration": "00:00:00.000",
+    "poster": "/img/pinetalk.png",
+    "link": "https://www.pine64.org/2021/11/23/s2e03-pinetalk-performance-uis-the-keyboard-oh-my/",
+    "chapters": [
+      {
+        "start": "00:00:00.000",
+        "title": "Introductions and new schedule",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:00:58.000",
+        "title": "Rapid fire",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:02:25.000",
+        "title": "Performance and thermals of PinePhone Pro",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:02:50.000",
+        "title": "PinePhone keyboard",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:04:28.000",
+        "title": "PinePhone eMMC hardware mod",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:06:35.000",
+        "title": "SXMO Wayland update",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:09:38.000",
+        "title": "Plasma Mobile upcoming improvements",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:12:20.000",
+        "title": "PinePhone dicussion",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:24:20.000",
+        "title": "Outro",
+        "href": "",
+        "image": ""
+      }
+    ],
+    "audio": [
+      {
+        "url": "/podcast/episodes/s02e03.opus",
+        "size": "13041136",
+        "title": "Opus Audio (opus)",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ],
+    "files": [
+      {
+        "url": "/podcast/episodes/s02e03.opus",
+        "size": "13041136",
+        "title": "Opus Audio",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ]
+  }

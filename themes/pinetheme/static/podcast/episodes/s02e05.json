@@ -1,0 +1,89 @@
+{
+    "version": 5,
+    "show": {
+      "title": "PineTalk Podcast",
+      "subtitle": "A Community Podcast",
+      "summary": "We discuss PINE64 hardware, software and open source in general.\r\nSend in your questions!\r\nA community ran podcast for the community.\r\n\r\nContact:\r\nEmail: pinetalk@pine64.org\r\nTwitter: @TalkPine",
+      "poster": "/img/pinetalk.png",
+      "link": "https://www.pine64.org"
+    },
+    "title": "S02E05: PineTalk - Talk about a dense 15 minutes",
+    "subtitle": "A short episode packed with PINE64 news",
+    "summary": "In this episode Justin and Brian chat a bit about the PinePhone keyboard, Plasma Mobile Maui shell and more!",
+    "publicationDate": "2022-01-26T03:19:57+00:00",
+    "duration": "00:15:11.397",
+    "poster": "/img/pinetalk.png",
+    "link": "https://www.pine64.org/2022/01/26/6118/",
+    "chapters": [
+      {
+        "start": "00:00:00.000",
+        "title": "Introductions",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:00:51.000",
+        "title": "Raspid Fire",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:02:16.000",
+        "title": "PinePhone keyboard",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:08:40.000",
+        "title": "Plasma Mobile",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:09:40.000",
+        "title": "Maui shell",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:11:19.000",
+        "title": "RK3588",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:12:40.000",
+        "title": "PineNote",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:13:48.000",
+        "title": "Jolla SailfishOS",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:14:00.000",
+        "title": "Outro",
+        "href": "",
+        "image": ""
+      }
+    ],
+    "audio": [
+      {
+        "url": "/podcast/episodes/s02e05.opus",
+        "size": "5597008",
+        "title": "Opus Audio (opus)",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ],
+    "files": [
+      {
+        "url": "/podcast/episodes/s02e05.opus",
+        "size": "5597008",
+        "title": "Opus Audio",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ]
+  }

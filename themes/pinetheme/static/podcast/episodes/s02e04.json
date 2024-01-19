@@ -1,0 +1,89 @@
+{
+    "version": 5,
+    "show": {
+      "title": "PineTalk Podcast",
+      "subtitle": "A Community Podcast",
+      "summary": "We discuss PINE64 hardware, software and open source in general.\r\nSend in your questions!\r\nA community ran podcast for the community.\r\n\r\nContact:\r\nEmail: pinetalk@pine64.org\r\nTwitter: @TalkPine",
+      "poster": "/img/pinetalk.png",
+      "link": "https://www.pine64.org"
+    },
+    "title": "S02E04: PineTalk - Behind the curtains",
+    "subtitle": "Live recorded on December 15 with participation of community members",
+    "summary": "In this episode Justin and Brian recorded live on Discord with the stage feature. This episode covers updates for various mobile interfaces, the MNT reform SOQuartz module adapter, the PinePhone malware, the keyboard addon availability, and more!\r\n\r\nMusic from Bensound.com and Zed (@itismezed)\r\nhttps://soundcloud.com/kevinflynnretro\r\n\r\nEdited by Zed",
+    "publicationDate": "2021-12-28T01:13:42+00:00",
+    "duration": "00:17:40.596",
+    "poster": "/img/pinetalk.png",
+    "link": "https://www.pine64.org/2021/12/28/s02e04-pinetalk-behind-the-curtains/",
+    "chapters": [
+      {
+        "start": "00:00:00.000",
+        "title": "Livetalk and Introductions",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:00:57.000",
+        "title": "Raspid Fire",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:03:01.000",
+        "title": "Malware news",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:03:35.000",
+        "title": "PinePhone Pro",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:04:19.000",
+        "title": "Malware discussion",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:05:48.000",
+        "title": "KDE Connect discussion",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:07:11.000",
+        "title": "PineTalk discussion",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:13:40.000",
+        "title": "PinePhone discussion",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:16:50.000",
+        "title": "Outro",
+        "href": "",
+        "image": ""
+      }
+    ],
+    "audio": [
+      {
+        "url": "/podcast/episodes/s02e04.opus",
+        "size": "8721919",
+        "title": "Opus Audio (opus)",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ],
+    "files": [
+      {
+        "url": "/podcast/episodes/s02e04.opus",
+        "size": "8721919",
+        "title": "Opus Audio",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ]
+  }

@@ -1,0 +1,125 @@
+{
+    "version": 5,
+    "show": {
+      "title": "PineTalk Podcast",
+      "subtitle": "A Community Podcast",
+      "summary": "We discuss PINE64 hardware, software and open source in general.\r\nSend in your questions!\r\nA community ran podcast for the community.\r\n\r\nContact:\r\nEmail: pinetalk@pine64.org\r\nTwitter: @TalkPine",
+      "poster": "/img/pinetalk.png",
+      "link": "https://www.pine64.org"
+    },
+    "title": "011: Lounging with Linux Lounge",
+    "subtitle": "In this eleventh episode Ezra and Peter discuss the June Community Update and interview content creator Linux Lounge!",
+    "summary": "In this eleventh episode Ezra and Peter discuss the June Community Update and interview content creator Linux Lounge! They also discuss (your) community feedback and questions!",
+    "publicationDate": "2021-06-18T19:38:48+00:00",
+    "duration": "01:04:18.168",
+    "poster": "/img/pinetalk.png",
+    "link": "https://www.pine64.org/2021/06/18/011-lounging-with-linux-lounge/",
+    "chapters": [
+      {
+        "start": "00:00:00.000",
+        "title": "Intro",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:01:25.907",
+        "title": "What have we been up to lately?",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:04:36.186",
+        "title": "App of the Episode",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:05:44.971",
+        "title": "Linux Lounge Interview",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:17:43.795",
+        "title": "News: June Community Update",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:22:11.642",
+        "title": "Quartz64",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:25:20.986",
+        "title": "PinePhone: Keyboard accessory news",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:27:00.498",
+        "title": "PinePhone Software",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:30:54.100",
+        "title": "PineTime",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:32:49.944",
+        "title": "PineDio",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:36:43.358",
+        "title": "Pinecil",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:40:30.511",
+        "title": "Feedback: Pinecube/HomeAssistant",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:42:22.701",
+        "title": "Question: KDE Connect",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:45:11.515",
+        "title": "Question: beginner dev project",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "01:01:08.862",
+        "title": "Outro",
+        "href": "",
+        "image": ""
+      }
+    ],
+    "audio": [
+      {
+        "url": "/podcast/episodes/s01e11.opus",
+        "size": "14971416",
+        "title": "Opus Audio (opus)",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ],
+    "files": [
+      {
+        "url": "/podcast/episodes/s01e11.opus",
+        "size": "14971416",
+        "title": "Opus Audio",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ]
+  }

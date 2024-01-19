@@ -1,0 +1,113 @@
+{
+    "version": 5,
+    "show": {
+      "title": "PineTalk Podcast",
+      "subtitle": "A Community Podcast",
+      "summary": "We discuss PINE64 hardware, software and open source in general.\r\nSend in your questions!\r\nA community ran podcast for the community.\r\n\r\nContact:\r\nEmail: pinetalk@pine64.org\r\nTwitter: @TalkPine",
+      "poster": "/img/pinetalk.png",
+      "link": "https://www.pine64.org"
+    },
+    "title": "008: After √64 (O'Clock)",
+    "subtitle": "In the eighth episode of PineTalk, Ezra and Peter discuss news on the PinePhone keyboard accessory, InfiniTime 1.0, Plasma Mobile progress, Megapixels 1.0 and answer some community questions.",
+    "summary": "In the eighth episode of PineTalk, Ezra and Peter discuss news on the PinePhone keyboard accessory, InfiniTime 1.0, Plasma Mobile progress, Megapixels 1.0 and answer three community questions. They also share their minty-fresh first impressions on Pine-y wrist-wear.",
+    "publicationDate": "2021-05-08T19:35:02+00:00",
+    "duration": "00:52:26.328",
+    "poster": "/img/pinetalk.png",
+    "link": "https://www.pine64.org/2021/05/08/008-after-sqrt64-oclock/",
+    "chapters": [
+      {
+        "start": "00:00:00.000",
+        "title": "Intro",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:01:32.779",
+        "title": "Quote of the Day",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:02:45.935",
+        "title": "What have we been up to lately?",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:08:12.427",
+        "title": "PinePhone Keyboard update",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:09:02.800",
+        "title": "InfiniTime 1.0",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:10:27.761",
+        "title": "Plasma Mobile announces progress",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:14:40.083",
+        "title": "Megapixels 1.0.1",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:16:58.259",
+        "title": "App of the Episode",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:17:15.456",
+        "title": "PineTime first impressions",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:33:20.124",
+        "title": "Voice Assistant",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:38:27.895",
+        "title": "PineTab and revising hardware",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:43:22.141",
+        "title": "NixOS",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:49:58.791",
+        "title": "Outro",
+        "href": "",
+        "image": ""
+      }
+    ],
+    "audio": [
+      {
+        "url": "/podcast/episodes/s01e08.opus",
+        "size": "12208581",
+        "title": "Opus Audio (opus)",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ],
+    "files": [
+      {
+        "url": "/podcast/episodes/s01e08.opus",
+        "size": "12208581",
+        "title": "Opus Audio",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ]
+  }

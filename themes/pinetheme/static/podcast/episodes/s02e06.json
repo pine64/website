@@ -1,0 +1,83 @@
+{
+    "version": 5,
+    "show": {
+      "title": "PineTalk Podcast",
+      "subtitle": "A Community Podcast",
+      "summary": "We discuss PINE64 hardware, software and open source in general.\r\nSend in your questions!\r\nA community ran podcast for the community.\r\n\r\nContact:\r\nEmail: pinetalk@pine64.org\r\nTwitter: @TalkPine",
+      "poster": "/img/pinetalk.png",
+      "link": "https://www.pine64.org"
+    },
+    "title": "S02E06: PineTalk - The Community has been ACTIVE!",
+    "subtitle": "A short episode packed with PINE64 news",
+    "summary": "In this episode Justin and Brian cover exciting community digs",
+    "publicationDate": "2022-03-06T02:24:59+00:00",
+    "duration": "00:00:00.000",
+    "poster": "/img/pinetalk.png",
+    "link": "https://www.pine64.org/2022/03/06/s02e06-pinetalk-the-community-has-been-active/",
+    "chapters": [
+      {
+        "start": "00:00:00.000",
+        "title": "Intro",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:00:00.000",
+        "title": "Rapid fire",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:04:08.000",
+        "title": "PinePhone Pro suspend with Levinboot",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:07:10.000",
+        "title": "Modem update using LVFS",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:08:23.000",
+        "title": "Improved postprocessing for megapixels",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:08:48.000",
+        "title": "A non-propeitary hardware device idea?",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:26:59.000",
+        "title": "Smart speaker dream?",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:27:44.000",
+        "title": "End",
+        "href": "",
+        "image": ""
+      }
+    ],
+    "audio": [
+      {
+        "url": "/podcast/episodes/s02e06.opus",
+        "size": "10233706",
+        "title": "Opus Audio (opus)",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ],
+    "files": [
+      {
+        "url": "/podcast/episodes/s02e06.opus",
+        "size": "10233706",
+        "title": "Opus Audio",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ]
+  }

@@ -1,0 +1,83 @@
+{
+    "version": 5,
+    "show": {
+      "title": "PineTalk Podcast",
+      "subtitle": "A Community Podcast",
+      "summary": "We discuss PINE64 hardware, software and open source in general.\r\nSend in your questions!\r\nA community ran podcast for the community.\r\n\r\nContact:\r\nEmail: pinetalk@pine64.org\r\nTwitter: @TalkPine",
+      "poster": "/img/pinetalk.png",
+      "link": "https://www.pine64.org"
+    },
+    "title": "004: GPU-o-Rama",
+    "subtitle": "In the fourth episode of PineTalk, Ezra and Peter discuss some industry and community news, go through your favourite answers to their question and answer a few of your questions, some of them (spoiler!) GPU related.",
+    "summary": "In the fourth episode of PineTalk, Ezra and Peter discuss some industry and community news, go through your favourite answers to their question and answer a few of your questions, some of them (spoiler!) GPU related.\r\nRemember: This is a community podcast, so please leave feedback on what we should do better, get your suggestion's in and feel free to ask questions!",
+    "publicationDate": "2021-03-12T16:29:55+00:00",
+    "duration": "00:58:01.800",
+    "poster": "/img/pinetalk.png",
+    "link": "https://www.pine64.org/2021/03/12/004-gpu-o-rama/",
+    "chapters": [
+      {
+        "start": "00:00:00.000",
+        "title": "Intro",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:01:07.795",
+        "title": "What have we been up to lately?",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:03:59.901",
+        "title": "Matrix video calling on PinePhone",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:06:50.518",
+        "title": "MIPS joins RISC-V",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:09:53.471",
+        "title": "PineCone LoRaWAN",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:14:53.746",
+        "title": "What would you like to see Pine64 make?",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:45:23.736",
+        "title": "Follow-up Questions",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:55:20.620",
+        "title": "Outro",
+        "href": "",
+        "image": ""
+      }
+    ],
+    "audio": [
+      {
+        "url": "/podcast/episodes/s01e04.opus",
+        "size": "13105779",
+        "title": "Opus Audio (opus)",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ],
+    "files": [
+      {
+        "url": "/podcast/episodes/s01e04.opus",
+        "size": "13105779",
+        "title": "Opus Audio",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ]
+  }

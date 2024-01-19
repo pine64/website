@@ -1,0 +1,107 @@
+{
+    "version": 5,
+    "show": {
+      "title": "PineTalk Podcast",
+      "subtitle": "A Community Podcast",
+      "summary": "We discuss PINE64 hardware, software and open source in general.\r\nSend in your questions!\r\nA community ran podcast for the community.\r\n\r\nContact:\r\nEmail: pinetalk@pine64.org\r\nTwitter: @TalkPine",
+      "poster": "/img/pinetalk.png",
+      "link": "https://www.pine64.org"
+    },
+    "title": "010: Man of Many Apps",
+    "subtitle": "An Interview with Martijn Braam, Homework on PineCube and FM Radio accessories for PinePhone plus Community News and Questions",
+    "summary": "In the first 2-digit episode of PineTalk, Ezra and Peter are happy to interview Martijn Braam, whom you may know of his involvement with postmarketOS, the many apps he develops or his videos and blog posts.\r\nThey also present some homework and discuss community feedback and questions.",
+    "publicationDate": "2021-06-04T19:21:58+00:00",
+    "duration": "01:03:19.296",
+    "poster": "/img/pinetalk.png",
+    "link": "https://www.pine64.org/2021/06/04/010-man-of-many-apps/",
+    "chapters": [
+      {
+        "start": "00:00:00.000",
+        "title": "Intro",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:02:30.749",
+        "title": "What have we been up to lately?",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:05:06.332",
+        "title": "App of the Episode",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:06:23.868",
+        "title": "Interview Martijn Braam",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:23:55.051",
+        "title": "News: FemtoStar: taking aim for the stars",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:25:34.913",
+        "title": "PinePhone kernel news",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:27:05.264",
+        "title": "Homework: PineCube",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:34:53.245",
+        "title": "Homework: FM radio",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:42:23.541",
+        "title": "Feedback: LoRA is not for sending images",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:45:46.408",
+        "title": "Question: Combability of the frameworks/distros",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:54:34.983",
+        "title": "Question: How to help",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:59:32.420",
+        "title": "Outro",
+        "href": "",
+        "image": ""
+      }
+    ],
+    "audio": [
+      {
+        "url": "/podcast/episodes/s01e10.opus",
+        "size": "14605517",
+        "title": "Opus Audio (opus)",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ],
+    "files": [
+      {
+        "url": "/podcast/episodes/s01e10.opus",
+        "size": "14605517",
+        "title": "Opus Audio",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ]
+  }

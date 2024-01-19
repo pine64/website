@@ -1,0 +1,143 @@
+{
+    "version": 5,
+    "show": {
+      "title": "PineTalk Podcast",
+      "subtitle": "A Community Podcast",
+      "summary": "We discuss PINE64 hardware, software and open source in general.\r\nSend in your questions!\r\nA community ran podcast for the community.\r\n\r\nContact:\r\nEmail: pinetalk@pine64.org\r\nTwitter: @TalkPine",
+      "poster": "/img/pinetalk.png",
+      "link": "https://www.pine64.org"
+    },
+    "title": "013: 13th of July",
+    "subtitle": "Peter and Ezra discuss the PINE64 July Community Update and go through more Community Questions than ever before!",
+    "summary": "In Episode 13, Peter and Ezra discuss the PINE64 July Community Update and go through more Community Questions than ever before! There's also something fun and it ends with a bang!",
+    "publicationDate": "2021-07-16T17:43:31+00:00",
+    "duration": "00:00:00.000",
+    "poster": "/img/pinetalk.png",
+    "link": "https://www.pine64.org/2021/07/16/013-13th-of-july/",
+    "chapters": [
+      {
+        "start": "00:00:00.000",
+        "title": "Intro",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:02:49.886",
+        "title": "What have we been up to?",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:04:18.439",
+        "title": "App of the Episode: Image Roll",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:05:03.920",
+        "title": "Community Update: PINE64 development portal",
+        "href": "https://devzone.pine64.org",
+        "image": ""
+      },
+      {
+        "start": "00:06:35.716",
+        "title": "PineTime",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:09:28.186",
+        "title": "PinePhone: Hardware",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:12:07.277",
+        "title": "PinePhone: Software",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:17:06.925",
+        "title": "Quartz64",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:19:20.804",
+        "title": "PineDio",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:19:45.408",
+        "title": "Community engagement: Listener questions",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:20:46.378",
+        "title": "Status of Quartz64 Model B",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:22:18.278",
+        "title": "RockPro64 upgrade and eDP status",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:23:19.880",
+        "title": "China, Open Harmony OS and plans for PP Pro",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:25:48.086",
+        "title": "Current state of PinePhone distributions",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:28:42.357",
+        "title": "Hypothetical Sxmo Distributions",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:30:27.747",
+        "title": "Background of PINE64",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:32:00.636",
+        "title": "Stepping downs",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:36:05.099",
+        "title": "Outro",
+        "href": "",
+        "image": ""
+      }
+    ],
+    "audio": [
+      {
+        "url": "/podcast/episodes/s01e13.opus",
+        "size": "9467208",
+        "title": "Opus Audio (opus)",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ],
+    "files": [
+      {
+        "url": "/podcast/episodes/s01e13.opus",
+        "size": "9467208",
+        "title": "Opus Audio",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ]
+  }

@@ -1,0 +1,113 @@
+{
+    "version": 5,
+    "show": {
+      "title": "PineTalk Podcast",
+      "subtitle": "A Community Podcast",
+      "summary": "We discuss PINE64 hardware, software and open source in general.\r\nSend in your questions!\r\nA community ran podcast for the community.\r\n\r\nContact:\r\nEmail: pinetalk@pine64.org\r\nTwitter: @TalkPine",
+      "poster": "/img/pinetalk.png",
+      "link": "https://www.pine64.org"
+    },
+    "title": "006: Pine for You",
+    "subtitle": "In this sixth episode, Ezra and Peter talk about the next generation ARM architecture, good news around GTK4 and postmarketOS plus more PINE64 community news.",
+    "summary": "In this sixth episode, Ezra and Peter talk about the next generation ARM architecture, good news around GTK4 and postmarketOS plus more PINE64 community news. They also discuss a community question (more required!) and \"Do you want Linux Phones?\"",
+    "publicationDate": "2021-04-10T17:00:42+00:00",
+    "duration": "00:52:51.000",
+    "poster": "/img/pinetalk.png",
+    "link": "https://www.pine64.org/2021/04/10/006-pine-for-you/",
+    "chapters": [
+      {
+        "start": "00:00:00.000",
+        "title": "Intro",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:00:41.989",
+        "title": "Quote of the Day",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:02:55.187",
+        "title": "What have we been up to lately?",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:04:30.058",
+        "title": "Armv9",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:08:06.113",
+        "title": "GTK 4.2.0 & libadwaita",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:13:35.041",
+        "title": "postmarketOS v21.03",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:16:41.295",
+        "title": "Help us help others",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:17:55.540",
+        "title": "The Dual-Screen Pinebook Pro",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:19:31.905",
+        "title": "Blog hosted on a GPS/LTE modem",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:21:40.578",
+        "title": "Do you really want Linux phones?",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:43:18.325",
+        "title": "favourite April fooleries",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:44:03.429",
+        "title": "Signal App on PinePhone",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:49:25.526",
+        "title": "Outro",
+        "href": "",
+        "image": ""
+      }
+    ],
+    "audio": [
+      {
+        "url": "/podcast/episodes/s01e06.opus",
+        "size": "12068236",
+        "title": "Opus Audio (opus)",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ],
+    "files": [
+      {
+        "url": "/podcast/episodes/s01e06.opus",
+        "size": "12068236",
+        "title": "Opus Audio",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ]
+  }

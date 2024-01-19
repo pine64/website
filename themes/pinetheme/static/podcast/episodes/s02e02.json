@@ -1,0 +1,71 @@
+{
+    "version": 5,
+    "show": {
+      "title": "PineTalk Podcast",
+      "subtitle": "A Community Podcast",
+      "summary": "We discuss PINE64 hardware, software and open source in general.\r\nSend in your questions!\r\nA community ran podcast for the community.\r\n\r\nContact:\r\nEmail: pinetalk@pine64.org\r\nTwitter: @TalkPine",
+      "poster": "/img/pinetalk.png",
+      "link": "https://www.pine64.org"
+    },
+    "title": "S2E02: PineTalk - The big PP",
+    "subtitle": "This episode is all about the big PinePhone Pro announcement of October 15th",
+    "summary": "In this episode the PinePhone Pro is discussed in length, with other news mixed in. Listen towards the end for a in-depth discussion of the the PinePhone Pro!\r\n\r\nMusic from Bensound.com and Zed (@itismezed)\r\nhttps://soundcloud.com/kevinflynnretro\r\n\r\nEdited by Zed",
+    "publicationDate": "2021-10-16T19:19:34+00:00",
+    "duration": "00:36:08.596",
+    "poster": "/img/pinetalk.png",
+    "link": "https://www.pine64.org/2021/10/16/s2e02-pinetalk-the-big-pp/",
+    "chapters": [
+      {
+        "start": "00:00:00.000",
+        "title": "Intro",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:00:48.000",
+        "title": "Rapid fire news",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:02:38.000",
+        "title": "PinePhone Pro Information",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:08:38.000",
+        "title": "Discussion",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:34:08.000",
+        "title": "Blog news bits",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:35:44.000",
+        "title": "End",
+        "href": "",
+        "image": ""
+      }
+    ],
+    "audio": [
+      {
+        "url": "/podcast/episodes/s02e02.opus",
+        "size": "8338999",
+        "title": "Opus Audio (opus)",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ],
+    "files": [
+      {
+        "url": "/podcast/episodes/s02e02.opus",
+        "size": "8338999",
+        "title": "Opus Audio",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ]
+  }

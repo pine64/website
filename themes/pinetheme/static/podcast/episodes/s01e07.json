@@ -1,0 +1,113 @@
+{
+  "version": 5,
+  "show": {
+    "title": "PineTalk Podcast",
+    "subtitle": "A Community Podcast",
+    "summary": "We discuss PINE64 hardware, software and open source in general.\r\nSend in your questions!\r\nA community ran podcast for the community.\r\n\r\nContact:\r\nEmail: pinetalk@pine64.org\r\nTwitter: @TalkPine",
+    "poster": "/img/pinetalk.png",
+    "link": "https://www.pine64.org"
+  },
+  "title": "007: My Name is 64 ... PINE64",
+  "subtitle": "Shaken, not stirred: An interview with Danct12, creator of a the Arch Linux ARM Spin for PinePhone and PineTab, Feedback, two aspects of the latest Community Update, and four listener questions.",
+  "summary": "In the seventh episode of PineTalk, the special treat is placed at the end of the episode: An interview with Danct12, creator of a the Arch Linux ARM Spin for PinePhone and PineTab. Before that, Ezra and Peter discuss Feedback, two aspects of the PINE64 April Community Update, and get two answer four (!) PinePhone centric listener questions as the Beta Edition is starting to arrive in peoples hands.",
+  "publicationDate": "2021-04-23T19:36:30+00:00",
+  "duration": "01:00:04.296",
+  "poster": "/img/pinetalk.png",
+  "link": "https://www.pine64.org/2021/04/23/007-my-name-is-64-pine64/",
+  "chapters": [
+    {
+      "start": "00:00:00.000",
+      "title": "Intro",
+      "href": "",
+      "image": ""
+    },
+    {
+      "start": "00:00:44.564",
+      "title": "Quote of the Day",
+      "href": "",
+      "image": ""
+    },
+    {
+      "start": "00:01:44.922",
+      "title": "What have we been up to lately?",
+      "href": "",
+      "image": ""
+    },
+    {
+      "start": "00:05:00.512",
+      "title": "Feedback",
+      "href": "",
+      "image": ""
+    },
+    {
+      "start": "00:06:27.696",
+      "title": "Linux App Summit",
+      "href": "",
+      "image": ""
+    },
+    {
+      "start": "00:08:31.739",
+      "title": "PinePhone accessories",
+      "href": "",
+      "image": ""
+    },
+    {
+      "start": "00:11:38.552",
+      "title": "Mainline Linux for RK3566 & RK3568 SoCs",
+      "href": "",
+      "image": ""
+    },
+    {
+      "start": "00:13:07.468",
+      "title": "PinePhone OS recommendations",
+      "href": "",
+      "image": ""
+    },
+    {
+      "start": "00:23:46.561",
+      "title": "PinePhone convergence",
+      "href": "",
+      "image": ""
+    },
+    {
+      "start": "00:27:18.441",
+      "title": "PinePhone backup",
+      "href": "",
+      "image": ""
+    },
+    {
+      "start": "00:30:46.435",
+      "title": "PinePhone convergence",
+      "href": "",
+      "image": ""
+    },
+    {
+      "start": "00:34:43.022",
+      "title": "Interview Danct12",
+      "href": "",
+      "image": ""
+    },
+    {
+      "start": "00:57:44.829",
+      "title": "Outro",
+      "href": "",
+      "image": ""
+    }
+  ],
+  "audio": [
+    {
+      "url": "/podcast/episodes/s01e07.opus",
+      "size": "13759197",
+      "title": "Opus Audio (opus)",
+      "mimeType": "audio/ogg;codecs=opus"
+    }
+  ],
+  "files": [
+    {
+      "url": "/podcast/episodes/s01e07.opus",
+      "size": "13759197",
+      "title": "Opus Audio",
+      "mimeType": "audio/ogg;codecs=opus"
+    }
+  ]
+}

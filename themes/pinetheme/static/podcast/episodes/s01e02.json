@@ -1,0 +1,89 @@
+{
+    "version": 5,
+    "show": {
+      "title": "PineTalk Podcast",
+      "subtitle": "A Community Podcast",
+      "summary": "We discuss PINE64 hardware, software and open source in general.\r\nSend in your questions!\r\nA community ran podcast for the community.\r\n\r\nContact:\r\nEmail: pinetalk@pine64.org\r\nTwitter: @TalkPine",
+      "poster": "/img/pinetalk.png",
+      "link": "https://www.pine64.org"
+    },
+    "title": "002: New accessories and UBports with Dalton Durst",
+    "subtitle": "Ezra and Peter talk to Dalton from UBports and discuss Community News and Questions.",
+    "summary": "In the second episode of the PineTalk Ezra and Peter talk about to Dalton Durst, Development Manager at UBports, about Ubuntu Touch in general and on the PinePhone more specifically. They also discuss the announcment of the 'End of Community Editions' and answer awesome community questions.",
+    "publicationDate": "2021-02-12T18:02:43+00:00",
+    "duration": "00:48:55.776",
+    "poster": "/img/pinetalk.png",
+    "link": "https://www.pine64.org/2021/02/12/002-new-accessories-and-ubports-with-dalton-durst/",
+    "chapters": [
+      {
+        "start": "00:00:00.000",
+        "title": "Intro",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:00:55.978",
+        "title": "What have we been up to lately?",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:02:34.004",
+        "title": "Interview Dalton Durst",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:30:30.671",
+        "title": "The End of Community Editions",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:33:55.655",
+        "title": "PinePhone Modem Firmware news",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:35:35.790",
+        "title": "PinePhone Flex Break-out Board",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:36:09.928",
+        "title": "PinePhone microSD Extender",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:36:31.772",
+        "title": "Feedback",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:46:42.299",
+        "title": "Outro",
+        "href": "",
+        "image": ""
+      }
+    ],
+    "audio": [
+      {
+        "url": "/podcast/episodes/s01e02.opus",
+        "size": "11311837",
+        "title": "Opus Audio (opus)",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ],
+    "files": [
+      {
+        "url": "/podcast/episodes/s01e02.opus",
+        "size": "11311837",
+        "title": "Opus Audio",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ]
+  }

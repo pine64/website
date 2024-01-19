@@ -1,0 +1,34 @@
+{
+    "version": 5,
+    "show": {
+      "title": "PineTalk Podcast",
+      "subtitle": "A Community Podcast",
+      "summary": "We discuss PINE64 hardware, software and open source in general.\r\nSend in your questions!\r\nA community ran podcast for the community.\r\n\r\nContact:\r\nEmail: pinetalk@pine64.org\r\nTwitter: @TalkPine",
+      "poster": "/img/pinetalk.png",
+      "link": "https://www.pine64.org"
+    },
+    "title": "001: Introduction",
+    "subtitle": "Ezra and Peter introduce themselves.",
+    "summary": "Ezra and Peter introduce themselves. They discuss their computing experiences and also what PineTalk is going to be about.",
+    "publicationDate": "2021-01-27T19:14:58+00:00",
+    "duration": "00:00:00.000",
+    "poster": "/img/pinetalk.png",
+    "link": "https://www.pine64.org/2021/01/27/001-introduction/",
+    "chapters": [],
+    "audio": [
+      {
+        "url": "/podcast/episodes/s01e01.opus",
+        "size": "15844965",
+        "title": "Opus Audio (opus)",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ],
+    "files": [
+      {
+        "url": "/podcast/episodes/s01e01.opus",
+        "size": "15844965",
+        "title": "Opus Audio",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ]
+  }

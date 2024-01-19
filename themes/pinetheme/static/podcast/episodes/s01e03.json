@@ -1,0 +1,77 @@
+{
+    "version": 5,
+    "show": {
+      "title": "PineTalk Podcast",
+      "subtitle": "A Community Podcast",
+      "summary": "We discuss PINE64 hardware, software and open source in general.\r\nSend in your questions!\r\nA community ran podcast for the community.\r\n\r\nContact:\r\nEmail: pinetalk@pine64.org\r\nTwitter: @TalkPine",
+      "poster": "/img/pinetalk.png",
+      "link": "https://www.pine64.org"
+    },
+    "title": "003: Quartzy Keyboards",
+    "subtitle": "In the third episode of PineTalk, Ezra and Peter discuss the PINE64 February Community Update and answer community questions about Sxmo, RISC-V, and ARM Workstations.",
+    "summary": "In the third episode of PineTalk, Ezra and Peter discuss the PINE64 February Community Update and answer community questions about Sxmo, RISC-V, and ARM Workstations.\r\n\r\nRemember: This is a community podcast, we need your questions, ideas and input to make this work! Also, please leave feedback on what we should do better!",
+    "publicationDate": "2021-02-26T15:26:43+00:00",
+    "duration": "00:42:11.448",
+    "poster": "/img/pinetalk.png",
+    "link": "https://www.pine64.org/2021/02/26/003-quartzy-keyboards/",
+    "chapters": [
+      {
+        "start": "00:00:00.000",
+        "title": "Intro",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:00:53.541",
+        "title": "What have we been up to lately?",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:02:21.480",
+        "title": "Quartz64",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:11:56.101",
+        "title": "RISC-V SBC with two RISC-V SoCs",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:17:24.497",
+        "title": "PinePhone",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:27:13.022",
+        "title": "Feedback",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:39:45.581",
+        "title": "Outro",
+        "href": "",
+        "image": ""
+      }
+    ],
+    "audio": [
+      {
+        "url": "/podcast/episodes/s01e03.opus",
+        "size": "9479584",
+        "title": "Opus Audio (opus)",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ],
+    "files": [
+      {
+        "url": "/podcast/episodes/s01e03.opus",
+        "size": "9479584",
+        "title": "Opus Audio",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ]
+  }

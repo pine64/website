@@ -1,0 +1,137 @@
+{
+    "version": 5,
+    "show": {
+      "title": "PineTalk Podcast",
+      "subtitle": "A Community Podcast",
+      "summary": "We discuss PINE64 hardware, software and open source in general.\r\nSend in your questions!\r\nA community ran podcast for the community.\r\n\r\nContact:\r\nEmail: pinetalk@pine64.org\r\nTwitter: @TalkPine",
+      "poster": "/img/pinetalk.png",
+      "link": "https://www.pine64.org"
+    },
+    "title": "009: Eventful No. 9",
+    "subtitle": "In this episode Peter and Ezra discuss two conferences happened recently, the May PINE64 Community Update, some more community news.",
+    "summary": "In this episode Peter and Ezra discuss two conferences happened recently, the May PINE64 Community Update, some more community news. They also answer four community questions and ask kindly for more. \r\nOne more thing: Please ask question or submit feedback for us to discuss! It's not only appreciated, it's necessary to keep this show going.",
+    "publicationDate": "2021-05-21T18:49:41+00:00",
+    "duration": "00:46:22.368",
+    "poster": "/img/pinetalk.png",
+    "link": "https://www.pine64.org/2021/05/21/009-eventful-no-9/",
+    "chapters": [
+      {
+        "start": "00:00:00.000",
+        "title": "Intro",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:01:06.153",
+        "title": "What have we been up to lately?",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:03:15.906",
+        "title": "App of the Episode - Agregore",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:04:19.777",
+        "title": "Linux App Summit 2021",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:15:48.014",
+        "title": "AlpineConf 2021",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:18:11.745",
+        "title": "Community Update: PineTime",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:20:06.881",
+        "title": "Community Update: PinePhone",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:22:48.495",
+        "title": "Community Update: PineBook Pro",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:24:38.788",
+        "title": "Community Update: Quartz64",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:25:43.714",
+        "title": "Community Update: LoraWAN",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:27:18.399",
+        "title": "Our Opinions On LoRaWAN",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:30:56.613",
+        "title": "Custom PinePhone Firmware tryout progress",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:34:47.447",
+        "title": "Mycroft/Almond",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:37:49.127",
+        "title": "Verified boot",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:39:18.650",
+        "title": "Peter & Ezra channels",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:40:30.457",
+        "title": "PinePhone FM radio back cover",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:43:01.869",
+        "title": "Outro",
+        "href": "",
+        "image": ""
+      }
+    ],
+    "audio": [
+      {
+        "url": "/podcast/episodes/s01e09.opus",
+        "size": "10649875",
+        "title": "Opus Audio (opus)",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ],
+    "files": [
+      {
+        "url": "/podcast/episodes/s01e09.opus",
+        "size": "10649875",
+        "title": "Opus Audio",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ]
+  }

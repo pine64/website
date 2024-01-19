@@ -1,0 +1,65 @@
+{
+    "version": 5,
+    "show": {
+      "title": "PineTalk Podcast",
+      "subtitle": "A Community Podcast",
+      "summary": "We discuss PINE64 hardware, software and open source in general.\r\nSend in your questions!\r\nA community ran podcast for the community.\r\n\r\nContact:\r\nEmail: pinetalk@pine64.org\r\nTwitter: @TalkPine",
+      "poster": "/img/pinetalk.png",
+      "link": "https://www.pine64.org"
+    },
+    "title": "S02E09: Gaming on Pine64 is a Thing",
+    "subtitle": "",
+    "summary": "In this episode, Justin and totally, definitely, most certainly Brian discussing gaming on Linux, the Steam Deck, community updates, and read/respond to listener mail!",
+    "publicationDate": "2022-07-10T00:49:45+00:00",
+    "duration": "00:35:51.972",
+    "poster": "/img/pinetalk.png",
+    "link": "https://www.pine64.org/2022/07/10/s02e09-gaming-on-pine64-is-a-thing/",
+    "chapters": [
+      {
+        "start": "00:00:00.000",
+        "title": "Intro",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:00:57.000",
+        "title": "Rapid fire",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:03:35.000",
+        "title": "Mail time",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:11:45.000",
+        "title": "Gaming",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:33:12.000",
+        "title": "Suggestions?",
+        "href": "",
+        "image": ""
+      }
+    ],
+    "audio": [
+      {
+        "url": "/podcast/episodes/s02e09.opus",
+        "size": "8205345",
+        "title": "Opus Audio (opus)",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ],
+    "files": [
+      {
+        "url": "/podcast/episodes/s02e09.opus",
+        "size": "8205345",
+        "title": "Opus Audio",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ]
+  }

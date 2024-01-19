@@ -1,0 +1,101 @@
+{
+    "version": 5,
+    "show": {
+      "title": "PineTalk Podcast",
+      "subtitle": "A Community Podcast",
+      "summary": "We discuss PINE64 hardware, software and open source in general.\r\nSend in your questions!\r\nA community ran podcast for the community.\r\n\r\nContact:\r\nEmail: pinetalk@pine64.org\r\nTwitter: @TalkPine",
+      "poster": "/img/pinetalk.png",
+      "link": "https://www.pine64.org"
+    },
+    "title": "005: Marching on",
+    "subtitle": "In the fifth episode of PineTalk, Ezra and Peter discuss a few aspects of the latest Community Update, PineCube news, the component shortage and answer a few of your questions.",
+    "summary": "In the fifth episode of PineTalk, Ezra and Peter discuss a few aspects of the latest Community Update, PineCube news, the component shortage and answer a few of your questions.",
+    "publicationDate": "2021-03-26T15:36:54+00:00",
+    "duration": "01:11:23.640",
+    "poster": "/img/pinetalk.png",
+    "link": "https://www.pine64.org/2021/03/26/005-marching-on/",
+    "chapters": [
+      {
+        "start": "00:00:00.000",
+        "title": "Intro",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:01:30.385",
+        "title": "What have we been up to lately?",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:10:05.198",
+        "title": "PinePhone Beta Edition",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:17:53.730",
+        "title": "PineBook Pro availability",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:19:19.383",
+        "title": "PineTime",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:26:42.467",
+        "title": "PineCube as a Web Cam",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:30:51.344",
+        "title": "Component shortage",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:38:31.099",
+        "title": "Rockpro64 Experiences",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:54:26.848",
+        "title": "Will development ever be finished?",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "01:01:59.902",
+        "title": "PineBook Pro upgradability",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "01:08:41.644",
+        "title": "Outro",
+        "href": "",
+        "image": ""
+      }
+    ],
+    "audio": [
+      {
+        "url": "/podcast/episodes/s01e05.opus",
+        "size": "16415479",
+        "title": "Opus Audio (opus)",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ],
+    "files": [
+      {
+        "url": "/podcast/episodes/s01e05.opus",
+        "size": "16415479",
+        "title": "Opus Audio",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ]
+  }

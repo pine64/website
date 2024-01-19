@@ -1,0 +1,101 @@
+{
+    "version": 5,
+    "show": {
+      "title": "PineTalk Podcast",
+      "subtitle": "A Community Podcast",
+      "summary": "We discuss PINE64 hardware, software and open source in general.\r\nSend in your questions!\r\nA community ran podcast for the community.\r\n\r\nContact:\r\nEmail: pinetalk@pine64.org\r\nTwitter: @TalkPine",
+      "poster": "/img/pinetalk.png",
+      "link": "https://www.pine64.org"
+    },
+    "title": "S02E08: So Porky Is Now A Developer ....",
+    "subtitle": "",
+    "summary": "In this Episode Brian and Justin explore the world of Open Source Android and Open Source Nuclear Reactors. And then some real stuff.",
+    "publicationDate": "2022-06-03T23:41:14+00:00",
+    "duration": "00:36:34.884",
+    "poster": "/img/pinetalk.png",
+    "link": "https://www.pine64.org/2022/06/03/6517/",
+    "chapters": [
+      {
+        "start": "00:00:00.000",
+        "title": "Introduction",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:00:36.000",
+        "title": "Rapid fire",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:03:00.000",
+        "title": "Emails",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:04:30.000",
+        "title": "Capyloon",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:05:19.000",
+        "title": "Pla Mo Mobian",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:05:42.000",
+        "title": "Tuxphones article",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:06:45.000",
+        "title": "Waydroid and Maui Shell installers",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:07:33.000",
+        "title": "Plasma Mobile",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:09:49.000",
+        "title": "Porky",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:11:41.000",
+        "title": "Degoogled Androids (GrapheneOS & CalyxOS)",
+        "href": "",
+        "image": ""
+      },
+      {
+        "start": "00:34:22.000",
+        "title": "Outro",
+        "href": "",
+        "image": ""
+      }
+    ],
+    "audio": [
+      {
+        "url": "/podcast/episodes/s02e08.opus",
+        "size": "12296303",
+        "title": "Opus Audio (opus)",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ],
+    "files": [
+      {
+        "url": "/podcast/episodes/s02e08.opus",
+        "size": "12296303",
+        "title": "Opus Audio",
+        "mimeType": "audio/ogg;codecs=opus"
+      }
+    ]
+  }
