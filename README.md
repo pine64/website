@@ -24,7 +24,7 @@ Install *Hugo* as explained under https://gohugo.io/installation/.
 * Solus: `sudo eopkg install hugo`
 * Windows: See [here](https://gohugo.io/installation/windows/)
 * MacOS: See [here](https://gohugo.io/installation/macos/)
-* BSC: See [here](https://gohugo.io/installation/bsd/)
+* BSD: See [here](https://gohugo.io/installation/bsd/)
 
 
 ### Preview the website
