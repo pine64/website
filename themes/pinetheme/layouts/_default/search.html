@@ -1,0 +1,80 @@
+{{ define "main" }}
+
+<div class="box full themegrey">
+    <div class="box rows pad">
+        <h1>{{ .Title }}</h1>
+    </div>
+</div>
+
+<div class="box rows pad">
+    <div id="search-results"></div>
+
+    <style>
+        .spinner {
+            margin: 100px auto 0;
+            width: 70px;
+            text-align: center;
+            margin-bottom: 10em;
+        }
+        .spinner > div {
+            width: 18px;
+            height: 18px;
+            background-color: #ccc;
+            border-radius: 100%;
+            display: inline-block;
+            -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+            animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+        }
+        .spinner .bounce1 {
+            -webkit-animation-delay: -0.32s;
+            animation-delay: -0.32s;
+        }
+
+        .spinner .bounce2 {
+            -webkit-animation-delay: -0.16s;
+            animation-delay: -0.16s;
+        }
+        @-webkit-keyframes sk-bouncedelay {
+                0%, 80%, 100% { -webkit-transform: scale(0) }
+                40% { -webkit-transform: scale(1.0) }
+        }
+        @keyframes sk-bouncedelay {
+            0%, 80%, 100% { 
+                -webkit-transform: scale(0);
+                transform: scale(0);
+        } 40% { 
+                -webkit-transform: scale(1.0);
+                transform: scale(1.0);
+            }
+        }
+    </style>
+
+    <div class="search-loading">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+          </div>
+    </div>
+
+
+
+
+    <script id="search-result-template" type="text/x-js-template">
+    <div id="summary-${key}">
+        <h3><a href="${link}">${title}</a></h3>
+        <p>${snippet}</p>
+        <p>
+            <small>
+                ${ isset tags }Tags: ${tags}<br>${ end }
+            </small>
+        </p>
+    </div>
+    </script>
+
+    <script src='{{ "js/fuse/fuse.min.js" | absURL }}' integrity="sha512-Nqw1tH3mpavka9cQCc5zWWEZNfIPdOYyQFjlV1NvflEtQ0/XI6ZQ+H/D3YgJdqSUJlMLAPRj/oXlaHCFbFCjoQ=="></script>
+    <script src='{{ "js/mark/mark.min.js" | absURL }}' integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww=="></script>
+    <script src='{{ "js/search.js" | absURL }}'></script>
+</div>
+
+{{ end }}

@@ -1,57 +1,104 @@
-<div id="navigation">
-    <div id="nav-border">
+<div id="header">
+    <div id="header-container">
+        <!-- Hamburger -->
+        <div id="hamburger"><label for="hamburger_cb">&#9776;</label></div><input type="checkbox" id="hamburger_cb"/>
 
-        <!-- Navigation -->
-        <nav id="nav" class="nav justify-content-center">
+        <!-- Logo -->
+        <a id="logo" href="/"><img src="/img/logo.svg"></a>
 
-            <!-- Logo -->
-            <a href="/"><img class="logo" src="/img/logo.png"></a>
+        <!-- Search -->
+        <div id="search">
+            <form action="/search" method="GET">
+                <input type="search" name="q" id="search-query" placeholder="Search...."><button type="submit">
+                    <svg width="800" height="800" viewBox="0 -0.5 21 21" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m5.94 12.929 1.485 1.414L1.485 20 0 18.586l5.94-5.657ZM13.65 12C10.755 12 8.4 9.757 8.4 7s2.355-5 5.25-5 5.25 2.243 5.25 5-2.355 5-5.25 5Zm0-12C9.59 0 6.3 3.134 6.3 7s3.29 7 7.35 7S21 10.866 21 7s-3.29-7-7.35-7Z" fill="#fff" fill-rule="evenodd"/>
+                    </svg>
+                </button>
+            </form>            
+        </div>
+        <div id="additional">
+            {{- $currentPage := . -}}
+            {{- range .Site.Menus.additional -}}
+                <!-- Menu item has subitems -->
+                {{ if .HasChildren }}
+                    <div class="dropdown">
+                        <label class='nav-link d-block
+                        {{- if or (or ($currentPage.IsMenuCurrent "additional" .) ($currentPage.HasMenuCurrent "additional" .)) (strings.Contains $currentPage .URL ) }} active{{end -}}
+                            {{- if eq .Params.external true }} external{{end -}}
+                            ' for="{{ .Identifier }}"
+                        >
+                            {{- .Name | safeHTML -}} {{ .Post }}
+                        </label>
+                        <input type="checkbox" id="{{ .Identifier }}" class="dropdown-toggle" />
 
-            <div class="hamburger"><label for="hamburger">&#9776;</label></div>
-            <input type="checkbox" id="hamburger"/>
-
-            <div id="navlinks_right">
-                {{- $currentPage := . -}}
-                {{- range .Site.Menus.right -}}
-                    <!-- Menu item has subitems -->
-                    {{ if .HasChildren }}
-                        <div class="dropdown">
-                            <label class='nav-link d-block
-                            {{- if or (or ($currentPage.IsMenuCurrent "right" .) ($currentPage.HasMenuCurrent "right" .)) (strings.Contains $currentPage .URL ) }} active{{end -}}
-                                {{- if eq .Params.external true }} external{{end -}}
-                                ' for="{{ .Identifier }}"
-                            >
-                                {{- .Name | safeHTML -}} {{ .Post }}
-                            </label>
-                            <input type="checkbox" id="{{ .Identifier }}" class="dropdown-toggle" />
-
-                            <!-- All children items -->
-                            <div class="dropdown-items">
-                                {{ range .Children }}
-                                    <a class='dropdown-item nav-link
-                                    {{- if or (or ($currentPage.IsMenuCurrent "right" .) ($currentPage.HasMenuCurrent "right" .)) (strings.Contains $currentPage .URL ) }} active{{end -}}
-                                        {{- if eq .Params.external true }} external{{end -}}
-                                        ' href="{{ .URL }}" 
-                                        {{- if eq .Params.external true }} target="_blank" rel="noopener noreferrer"{{ end -}}
-                                    >
-                                        {{- .Name | safeHTML -}}
-                                    </a>
-                                {{ end }}
-                            </div>
+                        <!-- All children items -->
+                        <div class="dropdown-items">
+                            {{ range .Children }}
+                                <a class='dropdown-item nav-link
+                                {{- if or (or ($currentPage.IsMenuCurrent "right" .) ($currentPage.HasMenuCurrent "right" .)) (strings.Contains $currentPage .URL ) }} active{{end -}}
+                                    {{- if eq .Params.external true }} external{{end -}}
+                                    ' href="{{ .URL }}" 
+                                    {{- if eq .Params.external true }} target="_blank" rel="noopener noreferrer"{{ end -}}
+                                >
+                                    {{- .Name | safeHTML -}}
+                                </a>
+                            {{ end }}
                         </div>
-                    <!-- Menu item has no subitems -->
-                    {{- else -}}
-                        <a class='nav-link
-                        {{- if or (or ($currentPage.IsMenuCurrent "right" .) ($currentPage.HasMenuCurrent "right" .)) (strings.Contains $currentPage .URL ) }} active{{end -}}
-                        {{- if eq .Params.external true }} external{{end -}}
-                        ' href="{{ .URL }}" 
-                        {{- if eq .Params.external true }} target="_blank" rel="noopener noreferrer"{{ end -}}>
-                        {{- .Name | safeHTML -}}
-                        </a>
-                    {{- end -}}
+                    </div>
+                <!-- Menu item has no subitems -->
+                {{- else -}}
+                    <a class='nav-link
+                    {{- if or (or ($currentPage.IsMenuCurrent "right" .) ($currentPage.HasMenuCurrent "right" .)) (strings.Contains $currentPage .URL ) }} active{{end -}}
+                    {{- if eq .Params.external true }} external{{end -}}
+                    ' href="{{ .URL }}" 
+                    {{- if eq .Params.external true }} target="_blank" rel="noopener noreferrer"{{ end -}}>
+                    {{- .Name | safeHTML -}}
+                    </a>
                 {{- end -}}
-            </div>
-        </nav>
+            {{- end -}}
+        </div>
 
+        <!-- Main menu -->
+        <div id="main_menu">
+            {{- $currentPage := . -}}
+            {{- range .Site.Menus.right -}}
+                <!-- Menu item has subitems -->
+                {{ if .HasChildren }}
+                    <div class="dropdown">
+                        <label class='nav-link d-block
+                        {{- if or (or ($currentPage.IsMenuCurrent "right" .) ($currentPage.HasMenuCurrent "right" .)) (strings.Contains $currentPage .URL ) }} active{{end -}}
+                            {{- if eq .Params.external true }} external{{end -}}
+                            ' for="{{ .Identifier }}"
+                        >
+                            {{- .Name | safeHTML -}} {{ .Post }}
+                        </label>
+                        <input type="checkbox" id="{{ .Identifier }}" class="dropdown-toggle" />
+
+                        <!-- All children items -->
+                        <div class="dropdown-items">
+                            {{ range .Children }}
+                                <a class='dropdown-item nav-link
+                                {{- if or (or ($currentPage.IsMenuCurrent "right" .) ($currentPage.HasMenuCurrent "right" .)) (strings.Contains $currentPage .URL ) }} active{{end -}}
+                                    {{- if eq .Params.external true }} external{{end -}}
+                                    ' href="{{ .URL }}" 
+                                    {{- if eq .Params.external true }} target="_blank" rel="noopener noreferrer"{{ end -}}
+                                >
+                                    {{- .Name | safeHTML -}}
+                                </a>
+                            {{ end }}
+                        </div>
+                    </div>
+                <!-- Menu item has no subitems -->
+                {{- else -}}
+                    <a class='nav-link
+                    {{- if or (or ($currentPage.IsMenuCurrent "right" .) ($currentPage.HasMenuCurrent "right" .)) (strings.Contains $currentPage .URL ) }} active{{end -}}
+                    {{- if eq .Params.external true }} external{{end -}}
+                    ' href="{{ .URL }}" 
+                    {{- if eq .Params.external true }} target="_blank" rel="noopener noreferrer"{{ end -}}>
+                    {{- .Name | safeHTML -}}
+                    </a>
+                {{- end -}}
+            {{- end -}}
+        </div>
     </div>
 </div>

@@ -40,7 +40,6 @@ paginate = 9
     style = 'monokai'
     tabWidth = 4
 
-
 [permalinks]
   blog = '/:year/:month/:day/:filename/'
 
@@ -63,7 +62,7 @@ paginate = 9
     pre = ""
     url = "/blog/"
     weight = 1
-[[menu.right]]
+  [[menu.right]]
     name = "Devices"
     pre = ""
     url = "/devices/"
@@ -88,35 +87,36 @@ paginate = 9
     pre = ""
     url = "/podcast/"
     weight = 6
-  [[menu.right]]
+
+  [[menu.additional]]
     name = "Store"
     post = "<svg xmlns='http://www.w3.org/2000/svg' width='22' height='18' fill='none' stroke='#000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='m6 9 6 6 6-6'/></svg>"
     url = "#"
     weight = 7
     identifier = "store"
-    [menu.right.params]
+    [menu.additional.params]
       external = false
-  [[menu.right]]
+  [[menu.additional]]
     name = "🌐 Global"
     url = "https://www.pine64.com/"
     parent = "store"
     weight = 1
     identifier = ""
-    [menu.right.params]
+    [menu.additional.params]
       external = true
-  [[menu.right]]
+  [[menu.additional]]
     name = "🇪🇺 EU"
     url = "https://www.pine64eu.com/"
     parent = "store"
     weight = 2
     identifier = ""
-    [menu.right.params]
+    [menu.additional.params]
       external = true
-  [[menu.right]]
+  [[menu.additional]]
     name = "Affiliates"
     url = "/affiliates/"
     parent = "store"
     weight = 3
     identifier = ""
-    [menu.right.params]
+    [menu.additional.params]
       external = true
