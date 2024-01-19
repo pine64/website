@@ -15,13 +15,17 @@ cd website-main
 
 Install *Hugo* as explained under https://gohugo.io/installation/.
 
-Arch Linux: `sudo pacman -S hugo`
+* Arch Linux: `sudo pacman -S hugo`
+* Debian: `sudo apt install hugo`
+* Fedora: `sudo dnf install hugo`
+* Gentoo: `sudo emerge --ask www-apps/hugo` (SASS/SCSS support not required)
+* NixOS: `nix-shell -p hugo` (to temporarily test it in a nix-shell)
+* openSUSE: `sudo zypper install hugo`
+* Solus: `sudo eopkg install hugo`
+* Windows: See [here](https://gohugo.io/installation/windows/)
+* MacOS: See [here](https://gohugo.io/installation/macos/)
+* BSC: See [here](https://gohugo.io/installation/bsd/)
 
-Debian: `sudo apt install hugo`
-
-Fedora: `sudo dnf install hugo`
-
-Gentoo: `sudo emerge --ask www-apps/hugo` (SASS/SCSS support not required)
 
 ### Preview the website
 
@@ -34,7 +38,6 @@ hugo server
 Then point your browser to [http://localhost:1313/]()
 
 ![Hugo usage](./content/blog/images/rebrand_hugo_usage.svg)
-
 
 For further details see [https://gohugo.io/commands/hugo_server/]().
 
