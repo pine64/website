@@ -1,4 +1,4 @@
-baseURL = 'http://beta.pine64.org/'
+baseURL = 'https://pine64.org/'
 languageCode = 'en-us'
 title = 'PINE64'
 theme = "pinetheme"
