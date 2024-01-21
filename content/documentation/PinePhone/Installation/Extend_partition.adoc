@@ -14,11 +14,11 @@ Once you've flashed the OS to your microSD card or eMMC storage, you may also ne
 
 NOTE: Many operating systems already include a script, which is resizing the partition on first boot, where this step is not required.
 
-=== Resize SD card's partition using computer
+== Resize SD card's partition using computer
 
 For microSD cards, insert the microSD card and resize the partitions through the computer. For eMMC, insert the phone cable and use Jumpdrive to access the eMMC directly, and resize the partition after flashing the image. To do the flashing you have two options:
 
-==== Using Growpart
+=== Using Growpart
 
 Install _growpart_ and run:
  growpart /dev/*mmcblkX* *Y*
@@ -27,7 +27,7 @@ where _X_ is the storage device and _Y_ is the partition number (viewable from `
 
 If you get any errors about missing or unknown commands, use `apt-cache search` to find and install the needed software. Also don't forget to use `sudo`.
 
-==== Using Parted
+=== Using Parted
 
 Parted's interactive mode and resize work well together. Do this before you put your microSD card into the PinePhone for the first time for best results.
 
@@ -36,7 +36,7 @@ Parted's interactive mode and resize work well together. Do this before you put 
  (parted) quit
  sudo resize2fs /dev/*<the_second_sd_card_PARTITION>*
 
-=== Resize from within the PinePhone
+== Resize from within the PinePhone
 
 eMMC: you would need to resize the partition on eMMC (flashed with the operating system) by booting another image from the microSD card: that way, the eMMC will be unmounted. It is *not recommended* to resize eMMC while booted from eMMC! Resizing a currently mounted partition can have weird results. If you booted from the microSD card, you can follow the above guidelines on how to resize from a computer.
 
