@@ -18,3 +18,6 @@ Affiliates of the Pine Store:
 |[Botland.store](https://botland.store/762-pine64-rock64)                                           |Poland (ships to EU)           |
 |[Typeractive.xyz](https://typeractive.xyz/products/pinecil)                                        |USA (ships worldwide)          |
 |[Handheld Legend](https://handheldlegend.com/collections/soldering-essentials)                     |USA (ships worldwide)          |
+|[Breadstick Innovations](https://shop.breadstick.ca/products/pinecil-solder-iron)                  |Canada (ships worldwide)       |
+|[Blinky Parts](https://shop.blinkyparts.com/en/Soldering-Iron/)                                    |Germany (ships worldwide)      |
+|[Keeb Supply](https://keeb.supply/search?q=Pine)                                                   |Germany (ships to EU)          |
