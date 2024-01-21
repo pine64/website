@@ -27,7 +27,7 @@ We are available on Discord, IRC, Matrix and Telegram, in the Forum and on Reddi
 
 **[Join our community](/community/)**
 
-![Multiple PinePhones with different operating systems.](/img/Pinephone_revisions.png)
+![Multiple PinePhones with different operating systems.](/img/Pinephone_revisions.jpg)
 
 {{</ box >}}
 
@@ -57,7 +57,7 @@ The PINE64 community is large, vibrant and diverse. Independent and partner-proj
 They all contribute to the project thereby shaping it and determining its course. This page is community run, as is the Wiki, the chats as well as the forums.
 
 
-![The PinePhone connected to a screen symbolizing its convergence capabilities.](/img/Pinephone_convergence.png)
+![The PinePhone connected to a screen symbolizing its convergence capabilities.](/img/Pinephone_convergence.jpg)
 
 **Unleash your creativity with the community**
 
