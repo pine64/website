@@ -1,3 +1,12 @@
+{{ $page := .Site.GetPage "page" "header-warning.md" }}
+{{ if $page.Params.visible }}
+<div id="header-notice">
+    <div id="header-notice-text">
+        {{ $page.Content }}
+    </div>
+</div>
+{{ end }}
+
 <div id="header">
     <div id="header-container">
         <!-- Hamburger -->
