@@ -31,7 +31,7 @@
                 <!-- Menu item has subitems -->
                 {{ if .HasChildren }}
                     <div class="dropdown">
-                        <label class='nav-link d-block
+                        <label class='nav-link
                         {{- if or (or ($currentPage.IsMenuCurrent "additional" .) ($currentPage.HasMenuCurrent "additional" .)) (strings.Contains $currentPage .URL ) }} active{{end -}}
                             {{- if eq .Params.external true }} external{{end -}}
                             ' for="{{ .Identifier }}"

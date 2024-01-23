@@ -3,4 +3,4 @@ title: "Header warning banner displayed on all pages. Set to visible:true to dis
 visible: true
 ---
 
-Due to a database outage, we currently host the beta website. Bugs expected, [details](/blog/outage_january_24.md).
+Due to a cluster outage, we currently host the beta website. Bugs expected, [details](/blog/outage_january_24.md).

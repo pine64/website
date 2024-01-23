@@ -11,12 +11,6 @@ body {
     --blue: #4496da;
     --white: #ffffff;
 }
-
-/* Utility classes */
-.d-block {
-    display: block !important;
-}
-
 /* Text styles */
 a {
     color: var(--blue);
@@ -73,13 +67,13 @@ div.box {
     max-width: 1200px;
     display: flex;
     justify-content: center;
-    font-size: 13pt;
+    font-size: 1.06rem;
     flex-wrap: wrap;
     text-align: left;
 }
 div.box h1 {
     margin-bottom: 0.6em;
-    font-size:24pt;
+    font-size: 2rem;
 }
 div.box img {
     max-width: 100%;
@@ -253,7 +247,7 @@ ul.pagination li{
     color: #333;
     margin: 2pt;
     text-align: center;
-    font-size: 14pt;
+    font-size: 1.31rem;
     font-weight: 600;
     padding-bottom: 3em;
 }
@@ -305,7 +299,7 @@ code, .cl {
 
 /* Headlines */
 h1 {
-    font-size: 2em;
+    font-size: 2rem;
     padding-bottom: 20px;
 }
 
@@ -345,10 +339,14 @@ h1 {
 }
 #header-container #search {
     flex-grow: 2;
+    margin: 10px;
+}
+#header-container #search form {
+    display: flex;
+    justify-content: center;
 }
 #header-container #search input {
     padding: 0 10px;
-    margin: 12px 0 0 0;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
     background-color: #F3F6F9;
@@ -378,8 +376,8 @@ h1 {
     width: 22px;
 }
 #header-container #additional {
+    flex-grow: 1;
     min-width: 100px;
-    flex-grow: 0;
     margin: 16px 10px 10px 30px;
 }
 @media screen and (max-width: 1000px){
@@ -395,9 +393,6 @@ h1 {
     }
     #header-container #search {
         order: 3;
-        max-width: none;
-        width: auto !important;
-        margin: 0 10px 10px 10px;
     }
 }
 #header-notice {
@@ -428,7 +423,7 @@ h1 {
     padding: 15px;
     color: black;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.13rem;
     white-space: nowrap;
     box-sizing: border-box;
     border: solid 2px transparent;
@@ -441,17 +436,11 @@ h1 {
     color: #0069B5;
     border-bottom: 2px solid #0069B5;
 }
-#main_menu .dropdown {
-    display: block;
-}
-
-.dropdown {
-    position: relative;
-}
 .dropdown-items {
     display: none;
     position: absolute;
     margin-top: 8px;
+    padding-right: 8px;
     z-index: 1;
     background-color: white;
     border: 1px solid #ddd;
@@ -485,7 +474,7 @@ h1 {
         background: linear-gradient(90deg, white 54%, rgba(25,25,25,0.4) 54%);
         backdrop-filter: blur(4px);
         position: absolute;
-        top: 70px;
+        top: 140px;
         z-index: 999;
         border-top: 2px solid #eee;
         border-bottom: 2px solid #eee;
@@ -521,7 +510,7 @@ h1 {
         height: 100%;
         color: white;
         font-style: normal;
-        font-size: 1.4em;
+        font-size: 1.4rem;
     }
   
     /* Toggle menu */
@@ -531,8 +520,8 @@ h1 {
     input#hamburger_cb:checked ~ #main_menu {
         display: block;
     }
-    .dropdown-items {
-        width: 100%;
+    .dropdown label {
+        display: flex; justify-content: flex-end
     }
 }
 
@@ -558,7 +547,7 @@ button.rounded:hover {
 .backlink {
     color: rgb(10, 83, 154);
     font-weight: 800;
-    font-size: 1.08em;
+    font-size: 1.08rem;
 }
 .backlink img {
     padding-right: 2px;
@@ -635,7 +624,7 @@ button.rounded:hover {
     padding-top: 2em;
     margin-right: 1em;
     width: 50%;
-    font-size: 28pt;
+    font-size: 2.31rem;
     line-height: 1.1;
 }
 .namebox span {
@@ -661,7 +650,7 @@ button.rounded:hover {
         max-width: 100%;
     }
     .namebox {
-        font-size: 18pt;
+        font-size: 1.5rem;
         width: 1000px;
     }
     .deviceshr {
@@ -681,11 +670,11 @@ button.rounded:hover {
 }
 .devices h2, .devices h2 a {
     color: #4384da;
-    font-size: 30px;
+    font-size: 1.88rem;
     font-weight: 700;
 }
 .devices h3, .devices h3 a {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 .deviceshr {
@@ -733,19 +722,19 @@ button.rounded:hover {
 }
 .device_box h3 {
     padding: 12px 10px 12px 10px;
-    font-size: 18px;
+    font-size: 1.13rem;
     font-weight: 400;
 }
 .device_box h2 {
     padding: 22px 10px 32px 10px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
 }
 .device_box p {
     padding: 0 10px 0 10px !important;
     color: #555;
-    font-size: 15px;
+    font-size: 0.94rem;
     font-weight: 400;
     margin-bottom: 0;
 }
@@ -799,7 +788,7 @@ button.podcast {
     border: 1px solid #333;
     border-radius: 12pt;
     font-weight: 600;
-    font-size: 12pt;
+    font-size: 1rem;
     color: #333;
     max-width: 300px;
 }
@@ -839,7 +828,7 @@ button.podcast:hover {
     padding: 10px 10px 60px 10px;
 }
 .contests-entry h3 {
-    font-size: 30px;
+    font-size: 1.88rem;
     padding: 0;
 }
 .contests_img_container {

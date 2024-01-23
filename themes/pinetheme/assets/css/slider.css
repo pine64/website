@@ -129,7 +129,6 @@ div.cr-center {
     max-width: 1100px;
 }
 div.cr-left {
-    min-width: 400px;
     float: left;
     padding: 100px 0 100px 0;
 }
@@ -140,18 +139,17 @@ div.cr-img {
 div.cr-right {
     max-width: 500px;
     padding: 80px 20px 20px 60px;
-    min-width: 400px;
     float: right;
 }
 div.cr-right span {
-    font-size: 24px;
+    font-size: 1.5em;
 }
 div.cr-right h1 {
     padding-bottom: 0.6em;
-    font-size: 36px;
+    font-size: 2.25rem;
 }
 div.cr-right h1 span {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 300;
 }
 div.cr-right a {
@@ -169,26 +167,25 @@ div.cr-right a:hover {
 
 @media screen and (max-width: 1100px){
     div.cr-left {
-        padding: 30px 30px 30px 30px;
+        padding: 30px;
     }
     div.cr-img {
         min-height: 198px;
-        margin: 1em;
+        margin: 1rem;
     }
     div.cr-right {
         float: none;
-        padding: 40px 20px 20px 60px;
+        padding: 40px 20px 20px 20px;
     }
     ol.cr-indicators {
         bottom: 10px;
-        width: 50%;
         margin: 0 auto;
     }
     div.cr-item {
-        min-height: 650px;
+        min-height: 700px;
     }
     div.cr-right span {
-        font-size: 18px;
+        font-size: 1.6rem;
     }
     .cr-control {
         bottom: 0px !important;
