@@ -31,7 +31,8 @@ This tiny compute module uses SODIMM-DDR3 form-factor and can be paired with eit
 | Connections
 | CMOS sensor interface port
 
-SODIMM form-factor
+| Form factor
+| SODIMM form-factor
 |===
 
 === Versatile A64 SoC

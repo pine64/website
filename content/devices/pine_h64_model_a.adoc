@@ -15,7 +15,7 @@ The PINE H64 Model A is Single Board Computer by PINE64. It is powered by an All
 [cols="1"]
 |===
 
-| link:/documentation/PINE_H64_Model_A/[PINE_H64_Model_A]
+| link:/documentation/PINE_H64_Model_A/[PINE H64 Model A]
 
 | link:/documentation/PINE_H64_Model_A/Further_information/Information_Schematics_and_Certifications/[Information, Schematics and Certifications]
 |===

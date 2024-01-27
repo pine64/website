@@ -17,39 +17,35 @@ The first batch of the PineNote will be great to write software for, but not gre
 [cols="1,1"]
 |===
 | SoC
-| 
+| 4 x ARM Cortex A55 cores @ 1.8 GHz
 
 | GPU
-| 
+| ARM Mali G52 MP2 GPU
 
 | Memory
-| 
+| 4GB LPDDR4 RAM
 
 | Networking
-| 
+| Built-in 802.11ac WiFi and Bluetooth 5
 
 | Storage
-| 
+| 128GB eMMC storage
+
+| Display
+| 10.3″ 1404×1872 (227 DPI) 16 grayscale multi-touch Eink panel +
+36 levels of cold and warm frontlighting +
+Scratch and glare resistant hardened glass +
+Optional Wacom EMR pen
+
+| Power
+| 4,000mAh battery
 
 | Connections
-
-    4 x ARM Cortex A55 cores @ 1.8 GHz
-    ARM Mali G52 MP2 GPU
-    4GB LPDDR4 RAM
-    128GB eMMC storage
-    10.3″ 1404×1872 (227 DPI) 16 grayscale multi-touch Eink panel
-    36 levels of cold and warm frontlighting
-    Scratch and glare resistant hardened glass
-    Optional Wacom EMR pen
-    Built-in 802.11ac WiFi and Bluetooth 5
-    4,000mAh battery
-    4 x DMIC microphones
-    G-Sensor for rotation sensing
-    1.3W stereo speaker
-    USB-C charging port (2.0)
-    Optional magnetic cover (hall sensor)
-
-
+| 4 x DMIC microphones +
+G-Sensor for rotation sensing +
+1.3W stereo speaker +
+USB-C charging port (2.0) +
+Optional magnetic cover (hall sensor)
 |===
 
 === 10.3" Anti-Glare Eink Display

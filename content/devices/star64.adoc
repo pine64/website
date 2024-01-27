@@ -16,6 +16,7 @@ The Quartz64 is a powerful and versatile platform that will serve PINE64 communi
 
 [cols="1"]
 |===
+
 | link:/documentation/STAR64/[STAR64]
 
 | link:/documentation/STAR64/Further_information/Schematics_and_certifications/[Schematics and certifications]

@@ -50,7 +50,8 @@ Hardware virtualization support
 
 128Mb SPI Flash
 
-SODIMM form-factor
+| Form factor
+| SODIMM form-factor
 |===
 
 

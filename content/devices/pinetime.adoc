@@ -16,45 +16,55 @@ We envision the PineTime as a companion for not only your PinePhone but also for
 
 [cols="1,1"]
 |===
+
+| Display
+| Square 1.3-inch 240×240 IPS capacitive touch display
+
 | SoC
-| 
+| Low-power Nordic Semiconductor nRF52832
 
-| GPU
-| 
+64 MHz + Floating Point
 
-| Memory
-| 
+| Software
+| Any open-source operating systems built on top of numerous RTOSes
 
-| Networking
-| 
+| Body
+| Dimensions: 37.5mm x 40mm x 11mm
+
+Weight: 38 grams
+
+Made with Zinc Alloy and Plastic
+
+Dustproof and water-resistant up to 1m (Rated at IP67)
+
+| Health Tracking
+| Step Counting (with Accelerometer)
+
+Heart Rate Detection
+
+| Notification features
+| Notification access
+
+Wrist vibration
+
+Quick glance via lift-to-wake.
+
+| Connectivity
+| Bluetooth 5 and Bluetooth Low Energy
+
+Compatible with almost any device
+
+Over-the-air update
 
 | Storage
-| 
+| 4 MB of User Storage
 
-| Connections
-    Square 1.3-inch 240×240 IPS capacitive touch display
-    Software: Any open-source operating systems built on top of numerous RTOSes
-    SoC: Low-power Nordic Semiconductor nRF52832
-        64 MHz + Floating Point
-    4 MB of User Storage
-        0.5 MB of OS Storage
-    Bluetooth 5 and Bluetooth Low Energy
-        Compatible with almost any device
-        Over-the-air update
-    Health Tracking
-        Step Counting (with Accelerometer)
-        Heart Rate Detection
-    Notification access
-        Wrist vibration
-        Quick glance via lift-to-wake.
-    All-week 180 mAh battery
-        2-pin USB charging dock
-    Solid build
-        Dimensions: 37.5mm x 40mm x 11mm
-        Weight: 38 grams
-        Made with Zinc Alloy and Plastic
-        Dustproof and water-resistant up to 1m (Rated at IP67)
+0.5 MB of OS Storage
 
+| Battery
+| All-week 180 mAh battery
+
+2-pin USB charging dock
 |===
 
 

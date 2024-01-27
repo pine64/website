@@ -106,10 +106,7 @@ div#doc-page h1 {
 #doc-page article ol {
     margin-bottom: 1em;
 }
-#doc-page article ul {
-    margin-bottom: 1em;
-}
-div#doc-page code{
+div#doc-page code {
     padding: 0 0.4em;
     background-color: #f8f9fa;
     border: 1px solid #eaecf0;
@@ -139,6 +136,10 @@ div#doc-page pre code {
     white-space: -pre-wrap;      /* Opera 4-6 */
     white-space: -o-pre-wrap;    /* Opera 7 */
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+div#doc-page pre strong, div#doc-page code strong {
+    font-family: monospace;
+    font-weight: 600;
 }
 div#doc-page .line-through {
     text-decoration:line-through
@@ -191,13 +192,16 @@ div#doc-page article {
 
 
 /* Table of contents */
+nav#TableOfContents {
+    margin-bottom: 14px;
+}
 nav#TableOfContents ul {
     list-style-type: none;
 }
 nav#TableOfContents ul li{
     font-weight: 500;
     box-decoration-break: clone;
-    padding: 6px 4px;
+    padding: 4px 4px;
 }
 nav#TableOfContents ul li ul li {
     font-weight: 300 !important;
