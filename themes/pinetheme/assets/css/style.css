@@ -933,7 +933,15 @@ button.podcast:hover {
 }
 #footer .col {
     margin: 0.4em;
-    /* To keep all boxes the same size */
     flex: 1 1 0px;
     line-height: 1.5;
+}
+#footer #footerlogo {
+    max-width: 130px;
+    height: auto;
+    margin: 0 2em 2em 0.4em;
+}
+#footer span {
+    font-weight: 300;
+    margin-top: 0.6em;
 }
