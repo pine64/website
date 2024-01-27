@@ -25,6 +25,7 @@ paginate = 9
   [markup.asciidocExt]
     [markup.asciidocExt.attributes]
       sectlinks = true
+      idprefix = ''
   [markup.highlight]
     anchorLineNos = false
     codeFences = true
