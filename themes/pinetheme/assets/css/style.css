@@ -699,30 +699,26 @@ button.rounded:hover {
 .device_box {
     flex: 0 0 100%;
     min-width: 300px;
-    max-width: 380px;
+    width: 380px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     margin: 0 10px 10px 0;
-    max-height: 465px;
-    transition: all .2s ease-in-out;
-    flex: 1 1 auto;
+    transition: transform .2s ease-in-out;
+    flex:none;
 }
 .device_box:hover {
     transform: scale(1.02); 
-}
-.device_box:active {
-    outline: 0;
     box-shadow: 0 0 0 3px rgba(0, 123, 255, .5);
 }
 .device_box_image {
     display: flex;
-    width: 100%;
     max-height: 240px;
+    justify-content: center;
 }
 .device_box_image img {
-    max-width: 100%;
-    max-height: inherit;
-    margin: 14px auto 14px auto;
+    margin: 14px;
+    object-fit: contain;
+    max-width: 80% !important;
 }
 .device_box h3 {
     padding: 12px 10px 12px 10px;
