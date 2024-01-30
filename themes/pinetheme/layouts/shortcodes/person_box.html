@@ -1,0 +1,9 @@
+<div class="person_box">
+    {{ with .Get "img" }} 
+    <div class="person_box_image">
+        <img src='{{ . }}'>
+    </div>
+    {{ end }}
+    <h3>{{ with .Get "name" }} {{ . }} {{ end }}</h3>
+    <p>{{ with .Get "title" }} {{ . }} {{ end }}</p>
+</div>

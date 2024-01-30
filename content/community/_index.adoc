@@ -161,8 +161,6 @@ Also, these are the official Subreddits:
 
 == Information
 
-link:contact[Contact]
-
 link:partner_projects[Partner Projects]
 
 link:philosophy[Philosophy]

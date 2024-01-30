@@ -227,6 +227,11 @@ div.themegradient4 {
     background: rgb(1,63,133);
     background: linear-gradient(10deg, rgba(1,63,133,1) 0%, rgba(59,142,232,1) 100%); 
 }
+div.themegradient5 {
+    color: white;
+    background-color: #8559d8;
+    background: linear-gradient(45deg, #8559d8, #20bd8b);
+}
 div.themedarkblue {
     background-color: #436592;
 }
@@ -616,7 +621,6 @@ button.rounded:hover {
     flex-wrap: wrap-reverse;
     margin-bottom: 2em;
     margin-top: 2em;
-
 }
 .namebox {
     min-width: 300px;
@@ -682,7 +686,7 @@ button.rounded:hover {
     width: 100px;
     height: 24px;
 }
-.device_flexbox {
+.flexbox {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -737,6 +741,40 @@ button.rounded:hover {
     font-size: 0.94rem;
     font-weight: 400;
     margin-bottom: 0;
+}
+
+/* Community people boxes */
+.person_box {
+    border: 2px solid #f4f6f8;
+    border-bottom: 4px solid #0069B5;
+    background-color: white;
+    margin: 16px;
+    width: 200px;
+    flex: 0;
+    transition: scale .05s linear;
+}
+.person_box_image img {
+    width: 200px;
+    height: auto;
+    max-width: 200px !important;
+}
+.person_box h3 {
+    padding: 6px 10px 8px 10px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    font-size: 16pt;
+    color: #444;
+}
+.person_box p {
+    padding: 0 10px 4px 10px;
+    line-height: normal;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    font-size: 14pt;
+    color: rgb(84, 164, 217);
+}
+.person_box:hover {
+    scale: 1.05;
 }
 
 /* Tables */

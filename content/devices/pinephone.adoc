@@ -90,7 +90,7 @@ Five hardware switches allow you to disable the cameras, microphone, WiFi and Bl
 
 
 == Accessories
-{{< devices/device_flexbox >}}
+{{< flexbox >}}
 
     {{< devices/device_box link="/documentation/Phone_Accessories/Keyboard/" img="/documentation/images/PP_KB_Front-1024x576.jpg" title="PinePhone (Pro) Keyboard" text="The keyboard add-on for the PinePhone and PinePhone Pro adds a physical keyboard and a large battery.">}}
 
@@ -112,7 +112,7 @@ Five hardware switches allow you to disable the cameras, microphone, WiFi and Bl
 
     {{< devices/device_box link="https://pine64.com/product/pinephone-tempered-glass-screen-protector/" img="/devices/images/pinephone_glass.jpg" title="Tempered Glass Screen Protector" text="9H hardness tempered glass screen protector specially designed for the Pinephone and PinePhone Pro..">}}
 
-{{< /devices/device_flexbox >}}
+{{</ flexbox >}}
 
 == Resources
 
