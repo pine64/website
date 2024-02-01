@@ -23,11 +23,11 @@ Further details are https://help.gnome.org/users/gnome-help/stable/net-mobile.ht
 
 === Phosh
 
-APN settings are either located in `Settings > Mobile > Access Point Names` (Arch Linux ARM, PureOS, Debian + Phosh) or ` Settings > Network > Network Dropdown > Add new connection` (postmarketOS, Fedora).
+The APN settings are either located under `Settings > Mobile > Access Point Names` or `Settings > Network > Network Dropdown > Add new connection`.
 
 === Plasma Mobile
 
-APN settings are located in `Settings > Cellular Networks > SIM 0 > Modify APNs`. While this is an auto-detect button, some cell providers may be detected incorrectly. Additionally, the settings for MMS are located under `Spacebar > Settings > Multimedia Messages (MMS)`.
+The APN settings are located under `Settings > Cellular Networks > SIM 0 > Modify APNs`. While this is an auto-detect button, some cell providers may be detected incorrectly. Additionally, the settings for MMS are located under `Spacebar > Settings > Multimedia Messages (MMS)`.
 
 == List of tested carrier APN settings
 
