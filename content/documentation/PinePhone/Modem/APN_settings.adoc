@@ -27,9 +27,7 @@ APN settings are either located in `Settings > Mobile > Access Point Names` (Arc
 
 === Plasma Mobile
 
-APN settings are located in 'Settings > Cellular Networks > SIM 0 > Modify APNs'
-While this is an auto detect button, some cell providers are detected incorrectly. (Such as MetroPCS)
-Additionally, MMS settings are located in 'Spacebar > Settings > Multimedia Messages (MMS)'
+APN settings are located in `Settings > Cellular Networks > SIM 0 > Modify APNs`. While this is an auto-detect button, some cell providers may be detected incorrectly. Additionally, the settings for MMS are located under `Spacebar > Settings > Multimedia Messages (MMS)`.
 
 == List of tested carrier APN settings
 
