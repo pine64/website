@@ -4,6 +4,8 @@ categories:
   - "Tablets"
 cover: 
   image: "images/pinenote.jpg"
+images:
+  - "images/pinenote.jpg"
 ---
 
 == One of the most powerful Linux-based Eink tablets

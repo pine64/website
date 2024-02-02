@@ -9,6 +9,8 @@ tags:
   - "community"
 cover: 
   image: "community-update-8-2023-thumbnail.jpg"
+images:
+  - "community-update-8-2023-thumbnail.jpg"
 ---
 
 ![](/blog/images/community-update-8-2023-thumbnail.jpg) 

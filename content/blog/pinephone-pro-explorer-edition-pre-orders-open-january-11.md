@@ -8,6 +8,8 @@ tags:
   - "pinephone-pro"
 cover: 
   image: "PPP-EE-pre-orders-1024x576.png"
+images:
+  - "PPP-EE-pre-orders-1024x576.png"
 ---
 
 ![](/blog/images/PPP-EE-pre-orders-1024x576.png)

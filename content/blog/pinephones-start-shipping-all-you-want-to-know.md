@@ -13,6 +13,8 @@ tags:
   - "pinetime"
 cover: 
   image: "PinePhonesoldout.png"
+images:
+  - "PinePhonesoldout.png"
 ---
 
 ![](/blog/images/PinePhonesoldout.png)

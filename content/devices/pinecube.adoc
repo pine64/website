@@ -4,6 +4,8 @@ categories:
   - "IP cameras"
 cover: 
   image: "images/pinecube.jpg"
+images:
+  - "images/pinecube.jpg"
 ---
 
 == Who is Looking at You? The CUBE is an Open Source IP Cam Under Your Control

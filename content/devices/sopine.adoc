@@ -4,6 +4,8 @@ categories:
   - "Computer modules"
 cover: 
   image: "images/sopine.jpg"
+images:
+  - "images/sopine.jpg"
 ---
 
 == Like the PINEA64-LTS, just much smaller

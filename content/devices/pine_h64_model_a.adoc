@@ -4,6 +4,8 @@ categories:
   - "SBCs"
 cover: 
   image: "images/pine_h64_model_a.jpg"
+images:
+  - "images/pine_h64_model_a.jpg"
 ---
 
 == The PINE H64 Model A

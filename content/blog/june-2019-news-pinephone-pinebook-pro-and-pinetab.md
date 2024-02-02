@@ -12,6 +12,8 @@ tags:
   - "pinetab"
 cover: 
   image: "PinePhoneID.jpg"
+images:
+  - "PinePhoneID.jpg"
 ---
 
 ![](/blog/images/PinePhoneID.jpg)

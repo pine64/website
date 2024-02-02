@@ -8,6 +8,8 @@ tags:
   - "community"
 cover: 
   image: "whats_going_on.png"
+images:
+  - "whats_going_on.png"
 ---
 
 Welcome to our long-awaited community post, where we aim to address the most commonly asked question while also unveiling some more news. Let’s get started!

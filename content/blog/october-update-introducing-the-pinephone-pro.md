@@ -14,6 +14,8 @@ tags:
   - "pinetime"
 cover: 
   image: "ppp-text.png"
+images:
+  - "ppp-text.png"
 ---
 
 ![](/blog/images/ppp-text.png)

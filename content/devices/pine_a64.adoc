@@ -4,6 +4,8 @@ categories:
   - "SBCs"
 cover: 
   image: "images/pine_a64.jpg"
+images:
+  - "images/pine_a64.jpg"
 ---
 
 == Our First 64-bit Single Board Computer

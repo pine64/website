@@ -17,6 +17,8 @@ tags:
   - "rockpro64-2"
 cover: 
   image: "header.jpg"
+images:
+  - "header.jpg"
 ---
 
 ![](/blog/images/header.jpg)

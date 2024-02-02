@@ -4,6 +4,8 @@ categories:
   - "SBCs"
 cover: 
   image: "../img/start/ox64.png"
+images:
+  - "../img/start/ox64.png"
 ---
 
 == An Ox, no bull

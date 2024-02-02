@@ -10,6 +10,8 @@ tags:
   - "pine64"
 cover: 
   image: "RockPro64-Cluster-Large.jpg"
+images:
+  - "RockPro64-Cluster-Large.jpg"
 ---
 
 ![](/blog/images/RockPro64-Cluster-Large.jpg)

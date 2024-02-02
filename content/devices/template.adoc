@@ -4,6 +4,8 @@ categories:
   - ""
 cover: 
   image: "images/"
+images:
+  - "images/"
 ---
 
 == 

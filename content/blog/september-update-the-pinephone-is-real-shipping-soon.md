@@ -11,6 +11,8 @@ tags:
   - "release"
 cover: 
   image: "acutal-pinephone.jpg"
+images:
+  - "acutal-pinephone.jpg"
 ---
 
 ![](/blog/images/acutal-pinephone.jpg)

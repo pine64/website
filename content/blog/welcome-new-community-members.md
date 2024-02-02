@@ -11,6 +11,8 @@ tags:
   - "pinephone"
 cover: 
   image: "Welcome.jpg"
+images:
+  - "Welcome.jpg"
 ---
 
 ![](/blog/images/Welcome.jpg)

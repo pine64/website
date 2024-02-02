@@ -17,6 +17,8 @@ tags:
   - "soedge"
 cover: 
   image: "OctoberCommunityUpdate.jpg"
+images:
+  - "OctoberCommunityUpdate.jpg"
 ---
 
 ![](/blog/images/OctoberCommunityUpdate.jpg)

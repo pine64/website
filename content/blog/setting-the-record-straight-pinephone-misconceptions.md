@@ -7,6 +7,8 @@ tags:
   - "pinephone"
 cover: 
   image: "PinePhone.jpeg"
+images:
+  - "PinePhone.jpeg"
 ---
 
 ![](/blog/images/PinePhone.jpeg)

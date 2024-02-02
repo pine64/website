@@ -8,6 +8,8 @@ tags:
   - "pine64"
 cover: 
   image: "Store.jpg"
+images:
+  - "Store.jpg"
 ---
 
 ![](/blog/images/Store.jpg)

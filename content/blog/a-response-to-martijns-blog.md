@@ -9,6 +9,8 @@ tags:
   - "community"
 cover: 
   image: "cover-wider.jpeg"
+images:
+  - "cover-wider.jpeg"
 ---
 
 ![](/blog/images/cover-wider.jpeg) 

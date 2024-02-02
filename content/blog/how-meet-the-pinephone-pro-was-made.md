@@ -9,6 +9,8 @@ tags:
   - "pinephone-pro"
 cover: 
   image: "pttitle.png"
+images:
+  - "pttitle.png"
 ---
 
 ![](/blog/images/pttitle.png)

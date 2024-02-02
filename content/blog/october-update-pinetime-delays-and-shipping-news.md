@@ -11,6 +11,8 @@ tags:
   - "pinetime"
 cover: 
   image: "PMOS-main1.jpeg"
+images:
+  - "PMOS-main1.jpeg"
 ---
 
 ![](/blog/images/PMOS-main1.jpeg)

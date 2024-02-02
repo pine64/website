@@ -16,6 +16,8 @@ tags:
   - "pinetime"
 cover: 
   image: "Septbanner2.jpg"
+images:
+  - "Septbanner2.jpg"
 ---
 
 ![](/blog/images/Septbanner2.jpg)

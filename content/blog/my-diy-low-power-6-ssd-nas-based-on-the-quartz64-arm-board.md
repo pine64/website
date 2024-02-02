@@ -9,6 +9,8 @@ tags:
   - "quartz64"
 cover: 
   image: "Q64-Nas-build-JF-1230x692.jpg"
+images:
+  - "Q64-Nas-build-JF-1230x692.jpg"
 ---
 
 ARM SBCs have been around for a few years now. They were made popular and accessible mostly by [the RaspberryPi released in 2012](https://en.wikipedia.org/wiki/Raspberry_Pi).

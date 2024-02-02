@@ -10,6 +10,8 @@ tags:
   - "pinephone"
 cover: 
   image: "HeadingNovember15.jpg"
+images:
+  - "HeadingNovember15.jpg"
 ---
 
 ![](/blog/images/HeadingNovember15.jpg)

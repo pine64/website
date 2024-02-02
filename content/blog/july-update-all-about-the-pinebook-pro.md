@@ -9,6 +9,8 @@ tags:
   - "pinebook-pro"
 cover: 
   image: "Pinebook_July.png"
+images:
+  - "Pinebook_July.png"
 ---
 
 ![](/blog/images/Pinebook_July.png)

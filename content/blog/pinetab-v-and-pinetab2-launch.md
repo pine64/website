@@ -10,6 +10,8 @@ tags:
   - "risc-v"
 cover: 
   image: "PineTabs-launch_1.jpg"
+images:
+  - "PineTabs-launch_1.jpg"
 summary: "The PineTab2 and PineTab-V pre-orders begin on April 13th. Both tablets feature a 1200x800 10.1” IPS LCD panel with wide viewing angles, a sturdy metal metal chassis, two USB-C ports (1x USB 3.0, 1x USB 2.0 with charging), a digital video out port, a front 2MPx and rear 5MPx camera as well as a 6000mAh battery."
 ---
 

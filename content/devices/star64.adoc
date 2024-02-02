@@ -4,6 +4,8 @@ categories:
   - ""
 cover: 
   image: "images/star64.jpg"
+images:
+  - "images/star64.jpg"
 ---
 
 == The powerful Quartz64 Model A

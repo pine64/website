@@ -12,6 +12,8 @@ tags:
   - "soedge"
 cover: 
   image: "dinnerfosdem20.jpg"
+images:
+  - "dinnerfosdem20.jpg"
 ---
 
 ![](/blog/images/dinnerfosdem20.jpg)

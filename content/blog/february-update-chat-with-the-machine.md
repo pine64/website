@@ -11,6 +11,8 @@ tags:
   - "pinetime"
 cover: 
   image: "Feb_update_chat_with_the_machine_3.jpg"
+images:
+  - "Feb_update_chat_with_the_machine_3.jpg"
 ---
 
 ![](/blog/images/Feb_update_chat_with_the_machine_3.jpg)

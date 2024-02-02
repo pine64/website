@@ -6,7 +6,9 @@ menu:
     title:
     parent: ""
     identifier: "_index"
-    weight: 
+    weight:
+images:
+  - "/img/opengraph_documentation.png"
 ---
 
 :toc:

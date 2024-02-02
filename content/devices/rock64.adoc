@@ -4,6 +4,8 @@ categories:
   - "SBCs"
 cover: 
   image: "images/rock64.jpg"
+images:
+  - "images/rock64.jpg"
 ---
 
 == A Small Form-Factor Single Board Computer Capable of 4K playback

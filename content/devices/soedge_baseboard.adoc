@@ -4,6 +4,8 @@ categories:
   - "Computer modules"
 cover: 
   image: "images/soedge_baseboard.png"
+images:
+  - "images/soedge_baseboard.png"
 ---
 
 == SOEDGE Baseboard

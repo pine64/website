@@ -9,6 +9,8 @@ tags:
   - "community"
 cover: 
   image: "rebrand_large.png"
+images:
+  - "rebrand_large.png"
 ---
 
 ![](/blog/images/rebrand_large.png) 

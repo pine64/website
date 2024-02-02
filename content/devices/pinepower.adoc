@@ -4,6 +4,8 @@ categories:
   - "Power supplies"
 cover: 
   image: "images/pinepower.jpg"
+images:
+  - "images/pinepower.jpg"
 ---
 
 == PinePower, A 65W GaN Power Supply

@@ -4,6 +4,8 @@ categories:
   - "SBCs"
 cover: 
   image: "../documentation/images/SOQuartz_module-1s.jpg"
+images:
+  - "../documentation/images/SOQuartz_module-1s.jpg"
 ---
 
 == The SOQuartz

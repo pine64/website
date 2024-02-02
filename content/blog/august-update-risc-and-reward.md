@@ -23,6 +23,8 @@ tags:
   - "star64"
 cover: 
   image: "August-update.jpg"
+images:
+  - "August-update.jpg"
 ---
 
 ![](/blog/images/August-update.jpg)

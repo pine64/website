@@ -4,6 +4,8 @@ categories:
   - "Smartwatches"
 cover: 
   image: "images/pinetime.png"
+images:
+  - "images/pinetime.png"
 ---
 
 == An Open Source Smartwatch For Your Favorite Devices. Low Cost, High Fidelity.

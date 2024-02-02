@@ -4,6 +4,8 @@ categories:
   - "Computer modules"
 cover: 
   image: "images/soedge.png"
+images:
+  - "images/soedge.png"
 ---
 
 == A Powerful AI Compute Module

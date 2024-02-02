@@ -4,6 +4,8 @@ categories:
   - "Soldering irons"
 cover: 
   image: "images/pinecil.png"
+images:
+  - "images/pinecil.png"
 ---
 
 == RISC-V Soldering Iron Running an Open Firmware

@@ -10,6 +10,8 @@ tags:
   - "pinepod"
 cover: 
   image: "seriously.jpg"
+images:
+  - "seriously.jpg"
 ---
 
 ![](/blog/images/seriously.jpg)

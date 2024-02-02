@@ -11,6 +11,8 @@ tags:
   - "sustainable-foss"
 cover: 
   image: "Hyde-park-neetup.jpg"
+images:
+  - "Hyde-park-neetup.jpg"
 ---
 
 ![London Meetup](/blog/images/Hyde-park-neetup.jpg)

@@ -15,7 +15,9 @@ tags:
   - "quartzpro64"
   - "star64"
 cover: 
-    image: "october-update-no-bull.jpg"
+  image: "october-update-no-bull.jpg"
+images:
+  - "october-update-no-bull.jpg"
 ---
 
 ![](/blog/images/october-update-no-bull.jpg)

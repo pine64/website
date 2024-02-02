@@ -15,6 +15,8 @@ tags:
   - "risc-v"
 cover: 
   image: "FebruaryUpdateBanner2.jpg"
+images:
+  - "FebruaryUpdateBanner2.jpg"
 ---
 
 ![](/blog/images/FebruaryUpdateBanner2.jpg)

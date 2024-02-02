@@ -4,6 +4,8 @@ categories:
   - "Phones"
 cover: 
   image: "images/pinephone.jpg"
+images:
+  - "images/pinephone.jpg"
 ---
 
 == An Open Source Smartphone Supported by All Major Linux Phone Projects

@@ -4,6 +4,8 @@ categories:
   - "Tablets"
 cover: 
   image: "images/pinetab.jpg"
+images:
+  - "images/pinetab.jpg"
 ---
 
 == PineTab: The Open Source ARM 64-bit Tablet

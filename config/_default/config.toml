@@ -50,6 +50,7 @@ paginate = 9
   hiddenInSingle = false # hide on single page
 
 [params]
+  images = ['/img/opengraph_main.png']
   [params.social]
     twitter = 'thepine64'
 

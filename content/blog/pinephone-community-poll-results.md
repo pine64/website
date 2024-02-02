@@ -12,6 +12,8 @@ tags:
   - "pinephone-pro"
 cover: 
   image: "Community-poll-results-1.jpg"
+images:
+  - "Community-poll-results-1.jpg"
 ---
 
 ![](/blog/images/Community-poll-results-1.jpg)

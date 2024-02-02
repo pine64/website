@@ -10,6 +10,8 @@ tags:
   - "website"
 cover: 
   image: ""
+images:
+  - ""
 ---
 
 Welcome to the new PINE64 website. In time, this blog will be filled with updates and news as well as posts from developers and contributors. The website will be maintained and ran by the community; everything, with the exception of the store, will be accessible to be shaped and molded to suit the PINE64 community of developers and end-users. More information will follow shortly.

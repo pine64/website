@@ -14,6 +14,8 @@ tags:
   - "risc-v"
 cover: 
   image: "JuneUpdate-1024x576.jpg"
+images:
+  - "JuneUpdate-1024x576.jpg"
 ---
 
 ![](/blog/images/JuneUpdate-1024x576.jpg)

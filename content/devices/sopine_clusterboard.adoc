@@ -4,6 +4,8 @@ categories:
   - "Clusters"
 cover: 
   image: "images/sopine_clusterboard.jpg"
+images:
+  - "images/sopine_clusterboard.jpg"
 ---
 
 == SOPINE Clusterboard

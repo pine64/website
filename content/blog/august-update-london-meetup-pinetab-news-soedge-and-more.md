@@ -12,6 +12,8 @@ tags:
   - "pinetab"
 cover: 
   image: "PineTabMain.jpeg"
+images:
+  - "PineTabMain.jpeg"
 ---
 
 ![](/blog/images/PineTabMain.jpeg)

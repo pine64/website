@@ -14,6 +14,8 @@ tags:
   - "soedge"
 cover: 
   image: "marchupdate-1024x594.jpg"
+images:
+  - "marchupdate-1024x594.jpg"
 ---
 
 ![](/blog/images/marchupdate-1024x594.jpg)

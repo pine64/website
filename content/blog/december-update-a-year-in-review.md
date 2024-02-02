@@ -17,6 +17,8 @@ tags:
   - "risc-v"
 cover: 
   image: "December-Update-Header.jpg"
+images:
+  - "December-Update-Header.jpg"
 ---
 
 ![](/blog/images/December-Update-Header.jpg)

@@ -8,6 +8,8 @@ tags:
   - "pinephone"
 cover: 
   image: "endofCEs-1024x594.jpg"
+images:
+  - "endofCEs-1024x594.jpg"
 ---
 
 ![](/blog/images/endofCEs-1024x594.jpg)

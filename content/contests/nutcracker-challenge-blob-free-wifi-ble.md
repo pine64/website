@@ -5,6 +5,8 @@ categories:
   - "community"
 cover: 
   image: "Nutcracker.png"
+images:
+  - "Nutcracker.png"
 ---
 
 Nutcracker challenge: Working towards blob-free WiFi and BLE. Get your EVB now free. <!--more-->

@@ -15,6 +15,8 @@ tags:
   - "star64"
 cover: 
   image: "November-Update-final-1024x576.jpg"
+images:
+  - "November-Update-final-1024x576.jpg"
 ---
 
 ![](/blog/images/November-Update-final-1024x576.jpg)

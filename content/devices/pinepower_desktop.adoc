@@ -4,6 +4,8 @@ categories:
   - "Power supplies"
 cover: 
   image: "images/pinepower_desktop.jpg"
+images:
+  - "images/pinepower_desktop.jpg"
 ---
 
 == PinePower: A 120W Desktop Power Supply

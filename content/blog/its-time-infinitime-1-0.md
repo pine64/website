@@ -8,6 +8,8 @@ tags:
   - "pinetime"
 cover: 
   image: "Infinitime.jpg"
+images:
+  - "Infinitime.jpg"
 ---
 
 ![](/blog/images/Infinitime.jpg)

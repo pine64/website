@@ -9,6 +9,8 @@ tags:
   - "kde"
 cover: 
   image: "KDEpatron-1024x594.jpg"
+images:
+  - "KDEpatron-1024x594.jpg"
 ---
 
 ![](/blog/images/KDEpatron-1024x594.jpg)

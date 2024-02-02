@@ -17,6 +17,8 @@ tags:
   - "quartz64"
 cover: 
   image: "Introducing-thePineNote.jpg"
+images:
+  - "Introducing-thePineNote.jpg"
 ---
 
 ![](/blog/images/Introducing-thePineNote.jpg)

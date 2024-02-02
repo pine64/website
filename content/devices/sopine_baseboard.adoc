@@ -4,6 +4,8 @@ categories:
   - "Computer modules"
 cover: 
   image: "images/sopine_baseboard.jpg"
+images:
+  - "images/sopine_baseboard.jpg"
 ---
 
 == SOPINE Baseboard

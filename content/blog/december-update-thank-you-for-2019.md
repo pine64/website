@@ -16,6 +16,8 @@ tags:
   - "pinetime"
 cover: 
   image: "PINE64_family.jpg"
+images:
+  - "PINE64_family.jpg"
 ---
 
 ![](/blog/images/PINE64_family.jpg)

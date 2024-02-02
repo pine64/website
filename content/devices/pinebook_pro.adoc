@@ -4,6 +4,8 @@ categories:
   - "Laptops"
 cover: 
   image: "images/pinebook_pro.png"
+images:
+  - "images/pinebook_pro.png"
 ---
 
 == A Powerful, Metal and Open Source ARM 64-Bit Laptop for Work, School or Fun

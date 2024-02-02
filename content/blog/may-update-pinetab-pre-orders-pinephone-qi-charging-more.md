@@ -15,6 +15,8 @@ tags:
   - "pinetime"
 cover: 
   image: "PineTab-Header.jpg"
+images:
+  - "PineTab-Header.jpg"
 ---
 
 ![](/blog/images/PineTab-Header.jpg)
