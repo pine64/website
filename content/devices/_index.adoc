@@ -2,7 +2,7 @@
 title: "Devices"
 date: 
 draft: false
-description:
+description: "PINE64 has a variety of different devices. Find out more!"
 ---
 
 == Single Board Computers

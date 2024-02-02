@@ -1,11 +1,12 @@
 ---
 title: "PINE64 Community"
 description: "PINE64 is a large, vibrant and diverse community and creates software, documentation and projects."
-images: ["/img/logo.png"]
 outputs:
 - html
 - rss
 - json
+images: 
+  - "/img/opengraph_main.png"
 ---
 
 {{< slider >}}
