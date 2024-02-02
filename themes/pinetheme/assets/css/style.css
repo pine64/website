@@ -699,8 +699,8 @@ button.rounded:hover {
 /* Device box */
 .device_box {
     flex: 0 0 100%;
-    min-width: 300px;
-    width: 380px;
+    min-width: 200px;
+    width: 280px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     margin: 0 10px 10px 0;
