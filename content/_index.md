@@ -64,7 +64,7 @@ They all contribute to the project thereby shaping it and determining its course
 
 {{</ box >}}
 
-    {{< box style="f50" type="image" link="/img/pinenotebg1.png" width="400" >}}{{</ box >}}
+    {{< box style="pad" type="image" link="/img/pinenotebg1.png" width="400" >}}{{</ box >}}
 {{</ box >}}
 
 {{< box style="themegrey full" >}}
