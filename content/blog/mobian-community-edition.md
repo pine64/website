@@ -8,7 +8,7 @@ tags:
 cover: 
   image: "PinePhoneMobianCEinStore-1024x559.jpg"
 images:
-  - "PinePhoneMobianCEinStore-1024x559.jpg"
+  - "/blog/images/PinePhoneMobianCEinStore-1024x559.jpg"
 ---
 
 ![](/blog/images/PinePhoneMobianCEinStore-1024x559.jpg)

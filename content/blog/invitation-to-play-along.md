@@ -9,7 +9,7 @@ tags:
 cover: 
   image: "PinePhonekeyboard2.jpg"
 images:
-  - "PinePhonekeyboard2.jpg"
+  - "/blog/images/PinePhonekeyboard2.jpg"
 ---
 
 ![](/blog/images/PinePhonekeyboard2.jpg)

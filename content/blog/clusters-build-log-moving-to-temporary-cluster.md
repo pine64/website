@@ -12,7 +12,7 @@ tags:
 cover: 
   image: "cluster-maintenance-p1-1230x692.jpg"
 images:
-  - "cluster-maintenance-p1-1230x692.jpg"
+  - "/blog/images/cluster-maintenance-p1-1230x692.jpg"
 ---
 
 As promised in the last month's community update _[Housekeeping](https://www.pine64.org/2021/08/15/introducing-the-pinenote/)_ section, this is the first part of the cluster's build log! This mini-series in which I will cover everything about upcoming changes our hosting cluster, and it begins with building a temporary cluster.

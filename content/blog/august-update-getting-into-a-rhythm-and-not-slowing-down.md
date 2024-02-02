@@ -18,7 +18,7 @@ tags:
 cover: 
   image: "AugustHeader-elementary.jpg"
 images:
-  - "AugustHeader-elementary.jpg"
+  - "/blog/images/AugustHeader-elementary.jpg"
 ---
 
 ![](/blog/images/AugustHeader-elementary.jpg)

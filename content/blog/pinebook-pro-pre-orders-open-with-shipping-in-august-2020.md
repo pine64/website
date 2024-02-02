@@ -9,7 +9,7 @@ tags:
 cover: 
   image: "pbp1.png"
 images:
-  - "pbp1.png"
+  - "/blog/images/pbp1.png"
 ---
 
 ![](/blog/images/pbp1.png)

@@ -4,7 +4,7 @@ date: "2024-01-21"
 cover: 
   image: "construction.jpg"
 images:
-  - "construction.jpg"
+  - "/blog/images/construction.jpg"
 ---
 
 We regret to inform you that we are currently experiencing an outage in our main cluster. We are currently actively investigating the cause of this issue. We understand the inconvenience this may cause and appreciate your patience during this time.

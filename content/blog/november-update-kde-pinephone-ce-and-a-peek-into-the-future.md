@@ -22,7 +22,7 @@ tags:
 cover: 
   image: "KDECommunityEdition.png"
 images:
-  - "KDECommunityEdition.png"
+  - "/blog/images/KDECommunityEdition.png"
 ---
 
 ![](/blog/images/KDECommunityEdition.png)

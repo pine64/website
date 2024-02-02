@@ -17,7 +17,7 @@ tags:
 cover: 
   image: "updatefollowup-fix.jpg"
 images:
-  - "updatefollowup-fix.jpg"
+  - "/blog/images/updatefollowup-fix.jpg"
 ---
 
 ![](/blog/images/updatefollowup-fix.jpg)

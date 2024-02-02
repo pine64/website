@@ -14,7 +14,7 @@ tags:
 cover: 
   image: "PinebookProandPinePhone1.jpg"
 images:
-  - "PinebookProandPinePhone1.jpg"
+  - "/blog/images/PinebookProandPinePhone1.jpg"
 ---
 
 ![](/blog/images/PinebookProandPinePhone1.jpg)

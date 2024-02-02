@@ -15,7 +15,7 @@ tags:
 cover: 
   image: "January_update.jpg"
 images:
-  - "January_update.jpg"
+  - "/blog/images/January_update.jpg"
 ---
 
 ![January_Post_Banner](/blog/images/January_update.jpg)

@@ -16,7 +16,7 @@ tags:
 cover: 
   image: "Header.jpg"
 images:
-  - "Header.jpg"
+  - "/blog/images/Header.jpg"
 ---
 
 ![](/blog/images/Header.jpg)

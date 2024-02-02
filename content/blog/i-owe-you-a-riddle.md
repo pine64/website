@@ -6,7 +6,7 @@ categories:
 cover: 
   image: "RK3566-RIDDLE.png"
 images:
-  - "RK3566-RIDDLE.png"
+  - "/blog/images/RK3566-RIDDLE.png"
 ---
 
 **The riddle has been solved and we'll be contacting the winner in the coming days.** **The comments section has now been locked until January. Thank you to everyone who played along!**

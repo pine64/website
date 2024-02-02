@@ -18,7 +18,7 @@ tags:
 cover: 
   image: "Brave-Heart.png"
 images:
-  - "Brave-Heart.png"
+  - "/blog/images/Brave-Heart.png"
 ---
 
 ![](/blog/images/Brave-Heart.png)

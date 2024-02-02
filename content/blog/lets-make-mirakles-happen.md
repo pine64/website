@@ -12,7 +12,7 @@ tags:
 cover: 
   image: "RAK_PINE64.jpg"
 images:
-  - "RAK_PINE64.jpg"
+  - "/blog/images/RAK_PINE64.jpg"
 ---
 
 ![](/blog/images/RAK_PINE64.jpg)

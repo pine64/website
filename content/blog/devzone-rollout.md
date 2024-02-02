@@ -11,7 +11,7 @@ tags:
 cover: 
   image: "DevZone-Post-Header.jpg"
 images:
-  - "DevZone-Post-Header.jpg"
+  - "/blog/images/DevZone-Post-Header.jpg"
 ---
 
 ![](/blog/images/DevZone-Post-Header.jpg)

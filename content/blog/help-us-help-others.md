@@ -10,7 +10,7 @@ tags:
 cover: 
   image: "Givingbacktothesociety-1024x596.jpg"
 images:
-  - "Givingbacktothesociety-1024x596.jpg"
+  - "/blog/images/Givingbacktothesociety-1024x596.jpg"
 ---
 
 ![](/blog/images/Givingbacktothesociety-1024x596.jpg)

@@ -11,7 +11,7 @@ tags:
 cover: 
   image: "RISC-V-SBC-riddle-1024x594.jpg"
 images:
-  - "RISC-V-SBC-riddle-1024x594.jpg"
+  - "/blog/images/RISC-V-SBC-riddle-1024x594.jpg"
 ---
 
 **The riddle has been solved by DALTON. I'll be contacting the winner in the coming days.**

@@ -19,7 +19,7 @@ tags:
 cover: 
   image: "July-Update.jpg"
 images:
-  - "July-Update.jpg"
+  - "/blog/images/July-Update.jpg"
 ---
 
 ![](/blog/images/July-Update.jpg)

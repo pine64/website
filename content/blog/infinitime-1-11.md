@@ -8,7 +8,7 @@ tags:
 cover: 
   image: "infinitime11-1230x692.jpg"
 images:
-  - "infinitime11-1230x692.jpg"
+  - "/blog/images/infinitime11-1230x692.jpg"
 ---
 
 We released [InfiniTime 1.11](https://github.com/InfiniTimeOrg/InfiniTime/releases/tag/1.11.0) a few days ago. The timing of the release did not align with the monthly community update, so we decided to write a small blog post to highlight a few new features and provide new about the PineTime community!

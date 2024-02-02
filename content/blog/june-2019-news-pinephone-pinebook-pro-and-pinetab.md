@@ -13,7 +13,7 @@ tags:
 cover: 
   image: "PinePhoneID.jpg"
 images:
-  - "PinePhoneID.jpg"
+  - "/blog/images/PinePhoneID.jpg"
 ---
 
 ![](/blog/images/PinePhoneID.jpg)

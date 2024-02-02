@@ -6,7 +6,7 @@ categories:
 cover: 
   image: "TakingAimForTheStars.jpg"
 images:
-  - "TakingAimForTheStars.jpg"
+  - "/blog/images/TakingAimForTheStars.jpg"
 ---
 
 ![](/blog/images/TakingAimForTheStars.jpg)

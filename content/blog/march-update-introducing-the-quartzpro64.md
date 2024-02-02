@@ -17,7 +17,7 @@ tags:
 cover: 
   image: "March-update-header.jpg"
 images:
-  - "March-update-header.jpg"
+  - "/blog/images/March-update-header.jpg"
 ---
 
 ![](/blog/images/March-update-header.jpg)

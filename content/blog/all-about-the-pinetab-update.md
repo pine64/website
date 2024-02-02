@@ -12,7 +12,7 @@ tags:
 cover: 
   image: "photo_2020-07-24_18-34-20.jpg"
 images:
-  - "photo_2020-07-24_18-34-20.jpg"
+  - "/blog/images/photo_2020-07-24_18-34-20.jpg"
 ---
 
 ![](/blog/images/photo_2020-07-24_18-34-20.jpg)

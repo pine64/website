@@ -14,7 +14,7 @@ tags:
 cover: 
   image: "cropped-dual-screen-Pinebook-Pro-1024x538.jpg"
 images:
-  - "cropped-dual-screen-Pinebook-Pro-1024x538.jpg"
+  - "/blog/images/cropped-dual-screen-Pinebook-Pro-1024x538.jpg"
 ---
 
 In this project, I'll turn my Pinebook Pro into a portable multi-monitor Linux laptop and show you how to do the same.

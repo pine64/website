@@ -10,7 +10,7 @@ tags:
 cover: 
   image: "Community-poll.jpg"
 images:
-  - "Community-poll.jpg"
+  - "/blog/images/Community-poll.jpg"
 ---
 
 ![](/blog/images/Community-poll.jpg)

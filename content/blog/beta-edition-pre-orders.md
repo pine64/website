@@ -8,7 +8,7 @@ tags:
 cover: 
   image: "betaedition-1-1024x594.jpg"
 images:
-  - "betaedition-1-1024x594.jpg"
+  - "/blog/images/betaedition-1-1024x594.jpg"
 ---
 
 ![](/blog/images/betaedition-1-1024x594.jpg)

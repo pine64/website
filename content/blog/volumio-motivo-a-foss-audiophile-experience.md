@@ -11,7 +11,7 @@ tags:
 cover: 
   image: "Volumio-Motivo-Front-web.png"
 images:
-  - "Volumio-Motivo-Front-web.png"
+  - "/blog/images/Volumio-Motivo-Front-web.png"
 ---
 
 ![Volumio-Motivo-Front-web](/blog/images/Volumio-Motivo-Front-web.png "Volumio-Motivo-Front-web")

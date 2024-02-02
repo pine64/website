@@ -11,7 +11,7 @@ tags:
 cover: 
   image: "PPP_KB_ITSHERE.jpg"
 images:
-  - "PPP_KB_ITSHERE.jpg"
+  - "/blog/images/PPP_KB_ITSHERE.jpg"
 ---
 
 ![](/blog/images/PPP_KB_ITSHERE.jpg)

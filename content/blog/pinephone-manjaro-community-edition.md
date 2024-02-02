@@ -13,7 +13,7 @@ tags:
 cover: 
   image: "manjaroCE-header.jpg"
 images:
-  - "manjaroCE-header.jpg"
+  - "/blog/images/manjaroCE-header.jpg"
 ---
 
 ![](/blog/images/manjaroCE-header.jpg)

@@ -9,7 +9,7 @@ tags:
 cover: 
   image: "Store.jpg"
 images:
-  - "Store.jpg"
+  - "/blog/images/Store.jpg"
 ---
 
 ![](/blog/images/Store.jpg)

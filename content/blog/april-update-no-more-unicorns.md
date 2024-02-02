@@ -17,7 +17,7 @@ tags:
 cover: 
   image: "April-Update-No-More-Unicorns.jpg"
 images:
-  - "April-Update-No-More-Unicorns.jpg"
+  - "/blog/images/April-Update-No-More-Unicorns.jpg"
 ---
 
 ![](/blog/images/April-Update-No-More-Unicorns.jpg)

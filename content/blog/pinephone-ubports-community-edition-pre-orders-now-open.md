@@ -13,7 +13,7 @@ tags:
 cover: 
   image: "CommunityEditionUBports.png"
 images:
-  - "CommunityEditionUBports.png"
+  - "/blog/images/CommunityEditionUBports.png"
 ---
 
 ![](/blog/images/CommunityEditionUBports.png)

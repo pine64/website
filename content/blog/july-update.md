@@ -17,7 +17,7 @@ tags:
 cover: 
   image: "JulyHeader.jpg"
 images:
-  - "JulyHeader.jpg"
+  - "/blog/images/JulyHeader.jpg"
 ---
 
 ![](/blog/images/JulyHeader.jpg)

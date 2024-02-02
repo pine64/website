@@ -18,7 +18,7 @@ tags:
 cover: 
   image: "NovUpdateHeader.jpg"
 images:
-  - "NovUpdateHeader.jpg"
+  - "/blog/images/NovUpdateHeader.jpg"
 ---
 
 ![](/blog/images/NovUpdateHeader.jpg)

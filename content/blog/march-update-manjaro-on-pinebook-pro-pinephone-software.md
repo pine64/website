@@ -14,7 +14,7 @@ tags:
 cover: 
   image: "maincorrected.png"
 images:
-  - "maincorrected.png"
+  - "/blog/images/maincorrected.png"
 ---
 
 ![](/blog/images/maincorrected.png)

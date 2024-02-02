@@ -23,7 +23,7 @@ tags:
 cover: 
   image: "DecemberUpdate.jpg"
 images:
-  - "DecemberUpdate.jpg"
+  - "/blog/images/DecemberUpdate.jpg"
 ---
 
 ![](/blog/images/DecemberUpdate.jpg)

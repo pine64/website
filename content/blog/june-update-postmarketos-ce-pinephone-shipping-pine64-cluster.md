@@ -15,7 +15,7 @@ tags:
 cover: 
   image: "pmosedition1.jpg"
 images:
-  - "pmosedition1.jpg"
+  - "/blog/images/pmosedition1.jpg"
 ---
 
 ![](/blog/images/pmosedition1.jpg)

@@ -20,7 +20,7 @@ tags:
 cover: 
   image: "AprilUpdate-1024x594.jpg"
 images:
-  - "AprilUpdate-1024x594.jpg"
+  - "/blog/images/AprilUpdate-1024x594.jpg"
 ---
 
 ![](/blog/images/AprilUpdate-1024x594.jpg)

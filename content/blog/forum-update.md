@@ -12,7 +12,7 @@ tags:
 cover: 
   image: "NewLayout.png"
 images:
-  - "NewLayout.png"
+  - "/blog/images/NewLayout.png"
 ---
 
 **The forum update is scheduled to go live at the end of May** (likely over the weekend **May** **25-26th**). You can expect the forum to be down for a couple of hours as work is being carried out. We hope that the process will be relatively painless, but if unexpected issues arise then this will extend the downtime. The forum upgrade is a part of our ongoing process of improving PINE64 services, which you can expect to carry over to the month of **June with future updates to the Wiki and the chats**.
