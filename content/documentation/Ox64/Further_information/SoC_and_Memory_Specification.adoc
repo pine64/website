@@ -9,15 +9,11 @@ menu:
     weight: 
 ---
 
-image:/documentation/images/Bouffalo_Lab_icon.png[right,title="right"]
-
 Based on the https://en.bouffalolab.com/product/[Bouffalo Lab BL808]
 
-image:/documentation/images/BL808_Block_Diagram.jpg[width=500]
+image:/documentation/Ox64/images/BL808_Block_Diagram.jpg[width=500]
 
 == CPU Architecture
-
-image:/documentation/images/T-Head.png[width=200]
 
 T-Head C906 480 MHz 64-bit RISC-V CPU:
 

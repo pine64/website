@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-image:/documentation/images/Ox64_ethphy.png[Pinout for wiring ethernet PHY to EMAC,title="Pinout for wiring ethernet PHY to EMAC", 320,float="right"]
+image:/documentation/Ox64/images/ox64_ethphy.png[Pinout for wiring ethernet PHY to EMAC,title="Pinout for wiring ethernet PHY to EMAC", 320,float="right"]
 
 * Baseboard dimensions: 51 mm x 21 mm x 19 mm x 3.5 mm (breadboard-friendly)
 * Input power: 5 V, 0.5 A through the microUSB or USB-C ports
@@ -28,6 +28,4 @@ Prototype (dispatched to developers) schematic:
 
 Certifications:
 
-* Disclaimer: Please note that PINE64 SBC is not a "final" product and in general certification is not necessary.
-* Not yet available
-
+* Not available yet
