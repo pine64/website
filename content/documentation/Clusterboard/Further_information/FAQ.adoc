@@ -4,9 +4,9 @@ draft: false
 menu:
   docs:
     title:
-    parent: "Clusterboard"
-    identifier: "Clusterboard/FAQ"
-    weight: 
+    parent: "Clusterboard/Further_information"
+    identifier: "Clusterboard/Further_information/FAQ"
+    weight: 2
 ---
 
 *Q*: Are the individual MAC addresses linked to the PHY chips, or the module?

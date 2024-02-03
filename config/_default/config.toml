@@ -65,14 +65,14 @@ paginate = 9
     url = "/blog/"
     weight = 1
   [[menu.right]]
-    name = "Devices"
-    pre = ""
-    url = "/devices/"
-    weight = 2
-  [[menu.right]]
     name = "Community"
     pre = ""
     url = "/community/"
+    weight = 2
+  [[menu.right]]
+    name = "Devices"
+    pre = ""
+    url = "/devices/"
     weight = 3
   [[menu.right]]
     name = "Documentation"

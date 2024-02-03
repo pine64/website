@@ -9,5 +9,6 @@ menu:
     weight: 
 ---
 
+* link:Revisions[]
+* link:FAQ[]
 * link:Specifications[]
-* link:Links[]

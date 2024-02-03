@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Clusterboard"
     identifier: "Clusterboard/Operating_systems"
-    weight: 
+    weight: 2
 ---
 
 == Armbian

@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Clusterboard"
     identifier: "Clusterboard/Installation"
-    weight: 
+    weight: 3
 ---
 
 To install a cluster it is important to know the IP addresses of each module, so the remote login sessions do not get mixed up.

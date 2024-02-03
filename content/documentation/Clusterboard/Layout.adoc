@@ -6,100 +6,104 @@ menu:
     title:
     parent: "Clusterboard"
     identifier: "Clusterboard/Layout"
-    weight: 
+    weight: 1
 ---
 
-image:/documentation/images/ClusterBoardFront-Annotated.jpg[Front_view_of_the_Clusterboard_(revision_2.3),title="Front_view_of_the_Clusterboard_(revision_2.3)",width=400]
-image:/documentation/images/ClusterBoardBack.jpg[Rear view of the Clusterboard (revision 2.3),title="Rear view of the Clusterboard (revision 2.3)",width=200]
+image:/documentation/Clusterboard/images/clusterboard_labels.png[title="The Clusterboard with labels",width=400]
 
 [cols="1,1"]
 |===
 |Label
 |Description
 
-| A
+| 1
 | Barrel-type DC jack (6.3&nbsp;mm outer diameter, 3.0&nbsp;mm inner diameter) for a +5&nbsp;V, 15&nbsp;A power supply
 
-| B
+| 2
 | Gigabit Ethernet port
 
-| C
+| 3
 | Reset button, for all seven modules
 
-| D
+| 4
 | Holder for two non-rechargeable 1.5&nbsp;V AA-size batteries, providing backup for the real-time clock (RTC) on all modules
 
-| E
+| 5
 | Connector for an eMMC module, for the first SOPINE or SOEDGE module
 
-| F
+| 6
 | Slot for a SOPINE or SOEDGE module
 
-| G
+| 7
 | USB&nbsp;2.0 Type-A socket
 
-| H
+| 8
 | MicroUSB Type-B USB&nbsp;2.0 socket
 
-| I
+| 9
 | Activity LED
 
-| J
+| 10
 | 20-pin expansion connector
 
-| K
+| 11
 | Three-pin connector for a lithium battery
 
-| L
+| 12
 | RTL8211E Gigabit Ethernet PHY, with two status LEDs
 
-| M
+| 13
 | Gigabit Ethernet Switch (RTL8370N)
 
-| N
+| 14
 | 24-pin ATX Power Connector
 
-| O
+| 15
 | Two-pin connector for a switch/button that turns on connected ATX power supply
 
-| P
+| 16
 | 5&nbsp;V power output for hard disk drives (optional)
 
-| Q
+| 17
 | Places for soldering two resistors (optional, for use with an ATX power suppply that requires dummy load on 3.3&nbsp;V and 12&nbsp;V rails)
 |===
 
-For the part D, please see the important note in the link:#Specifications[section above]. For the part K, please see the notes in the link:#Hardware_revisions[section below].  Parts F to L exist separately for each of all seven SOPINE or SOEDGE modules.
+For the part 4, please see the important note in the link:/documentation/Clusterboard/Further_information/Specifications[specifications] page. For the part 11, please see the notes in the link:/documentation/Clusterboard/Further_information/Revisions[hardware revisions] page. Parts 6 to 12 exist separately for each of all seven SOPINE or SOEDGE modules.
 
 == 20-pin Expansion Connector
 
-The 20-pin expansion connector is the part J decribed in the link:#Layout[section above], available for each SOPINE or SOEDGE module. There is an unofficial description of the pinout in https://forum.pine64.org/showthread.php?tid=5713[this forum thread].  The unofficial pinout is also visible directly in https://forum.pine64.org/attachment.php?aid=1111[this picture].
+The 20-pin expansion connector is the part 10 decribed in the section above, available for each SOPINE or SOEDGE module. There is an unofficial description of the pinout in https://forum.pine64.org/showthread.php?tid=5713[this forum thread]. The unofficial pinout is also visible directly in https://forum.pine64.org/attachment.php?aid=1111[this picture].
 
 == SOPINE Module
 
-image:/documentation/images/SOPine-Annotated.jpg[Front (top) and rear (bottom) views of the SOPINE module,title="Front (top) and rear (bottom) views of the SOPINE module",width=300]
+image:/documentation/SOPINE/images/sopine_front_labels.png[Front view of the SOPINE module with labels,title="Front view of the SOPINE module with labels",width=400]
+
+image:/documentation/SOPINE/images/sopine_back_labels.png[Rear view of the SOPINE module with labels,title="Rear view of the SOPINE module with labels",width=400]
 
 [cols="1,1"]
 |===
 |Label
 |Description
 
-| A
+| 1
 | A64 SoC
 
-| B
-| 2&nbsp;GB of DDR3 RAM
+| 2
+| 2 GB of DDR3 RAM
 
-| C
+| 3
 | AXP803 PMIC
 
-| D
+| 4
 | Edge connector, the same as on SO-DIMM modules
 
-| E
+| 5
+| Power LED
+
+| 6
 | microSD card slot
 
-| F (not annotated yet)
-| Power LED
+| 7
+| SPI flash memory
 |===
 
