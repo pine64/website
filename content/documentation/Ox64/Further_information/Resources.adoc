@@ -9,15 +9,28 @@ menu:
     weight: 
 ---
 
-* A video on how to connect to, flash and boot the Ox64 as at 2023-02 (15min) can be found https://youtube.com/watch?v=czRtF-UNiEY[here].
-* Another video that covers soldering pins, connecting via Pi Pico and flashing Linux (inc u-boot, as of 2023-Mar-3) posted https://youtu.be/vPAk5sq_Ilc[here].
-* https://gist.github.com/lupyuen/7a0c697b89abccda8e38b33dfe5ebaff[First Batch of Ox64 won't appear as USB Serial Port]
-* https://gist.github.com/lupyuen/2087e9b3fb40aab5e0795bb02a265a3b[First Batch of Ox64 tested OK with CH340C/G]
-* https://www.robertlipe.com/bl808-not-symmetric/[First thoughts on the (a)symmetry of Bouffalo Labs BL808 as in Pine64’s Ox64]
+* https://www.youtube.com/watch?v=czRtF-UNiEY[Ox64 SBC - Connecting, Flashing and Booting Linux! ($8 from Pine64)]: A short video on how to connect to the Ox64, flash and boot
+* https://www.youtube.com/watch?v=vPAk5sq_Ilc[#24.5 Ox64 Pine64 $8 Risc-V SBC - Programming and Booting Linux]: Another video that covers soldering pins, connecting via Pi Pico and flashing Linux and U-Boot
+* https://wiki.pine64.org/wiki/File:How_to_Run_Ox64.pdf[Step-by-step tutorial] for how to build, flash and run Ox64
+* https://gist.github.com/lupyuen/7a0c697b89abccda8e38b33dfe5ebaff[First batch of Ox64 won't appear as USB serial port]
+* https://gist.github.com/lupyuen/2087e9b3fb40aab5e0795bb02a265a3b[First batch of Ox64 tested OK with CH340C/G]
+* https://www.robertlipe.com/bl808-not-symmetric/ [First thoughts on the (a)symmetry of Bouffalo Labs BL808 as in Pine64 Ox64]
 * https://thelittleengineerthatcould.blogspot.com/2022/12/the-8-linux-computer-part-2.html[The $8 linux computer (with picoprobe-rp2040 programming instructions)]
 * https://github.com/p4ddy1/pine_ox64/blob/main/build_toolchain_macos.md[Building the Xuantie GNU Toolchain for Ox64 on macOS and Apple Silicon]
 
+Ox64 BL808 RISC-V SBC articles by https://lupyuen.codeberg.page/[Lup Yuen LEE]:
+	
+* https://lupyuen.codeberg.page/articles/ox64.html[Booting Linux and (maybe) Apache NuttX RTOS]
+* https://lupyuen.codeberg.page/articles/ox2.html[Starting Apache NuttX real-time operating system]
+* https://lupyuen.codeberg.page/articles/mmu.html[Sv39 Memory Management Unit]
+* https://lupyuen.codeberg.page/articles/app.html[NuttX Apps and Initial RAM Disk]
+* https://lupyuen.codeberg.page/articles/plic2.html[UART Interrupt and Platform-Level Interrupt Controller (PLIC)]
+* https://lupyuen.codeberg.page/articles/plic3.html[Fixing the UART Interrupt and Platform-Level Interrupt Controller]
+* https://www.hackster.io/lupyuen/8-risc-v-sbc-on-a-real-time-operating-system-ox64-nuttx-474358[$8 RISC-V SBC on a Real-Time Operating System: Ox64 + NuttX]
+* https://lupyuen.codeberg.page/articles/nim.html[Nim on a Real-Time Operating System: Apache NuttX RTOS + Ox64 BL808 SBC]
+
 Git repositories:
 
-* https://github.com/sfranzyshen/arduino-bl808[Community made Arduino Core specifically for the Bouffalo Labs BL808 RISC-V MCU] (Initial development has been postponed until further notice.)
+* https://github.com/bouffalolab/bl808-pac[Official Bouffalo BL-808 site]
+* https://github.com/sfranzyshen/arduino-bl808[Community made Arduino Core specifically for the Bouffalo Labs BL808 RISC-V MCU] (initial development has been postponed until further notice.)
 

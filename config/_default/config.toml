@@ -26,6 +26,9 @@ paginate = 9
     [markup.asciidocExt.attributes]
       sectlinks = true
       idprefix = ''
+      allow-uri-read = ""
+      icons = "font"
+      source-highlighter = "rouge"
   [markup.highlight]
     anchorLineNos = false
     codeFences = true

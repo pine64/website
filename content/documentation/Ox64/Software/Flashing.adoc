@@ -1,0 +1,179 @@
+---
+title: "Flashing"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "Ox64/Software"
+    identifier: "Ox64/Software/Flashing"
+    weight: 3
+---
+
+This page explains how to flash an Ox64 board and a microSD card to boot the system.
+
+== Prepare the Environment
+You need a Linux machine, a Raspberry Pi Pico to act as a UART adapter, the Ox64 board, and a microSD card.
+
+Start a terminal session and set the working directory to download some files.
+
+ cd ~/Downloads
+ mkdir ox64 ox64/pico
+ cd ~/Downloads/ox64/pico
+ wget https://github.com/Kris-Sekula/Pine64_Ox64_SBC/blob/main/uart/picoprobe.uf2
+
+ cd ~/Downloads/ox64
+ mkdir ox64/devcube
+ cd ~/Downloads/ox64/devcube
+
+Get the DevCube 1.8.8 flasher from one of mirror servers listed below.
+
+* https://dev.bouffalolab.com/media/upload/download/BouffaloLabDevCube-v1.8.8.zip
+
+Verify the file hashes listed below.
+
+* SHA1: `0f2619e87d946f936f63ae97b0efd674357b1166`
+* SHA256: `e6e6db316359da40d29971a1889d41c9e97d5b1ff1a8636e9e6960b6ff960913`
+
+Finally, uncompress the downloaded archive; for example:
+
+ wget https://dev.bouffalolab.com/media/upload/download/BouffaloLabDevCube-v1.8.8.zip
+ sha256sum BouffaloLabDevCube-v1.8.8.zip
+ unzip BouffaloLabDevCube-v1.8.8.zip
+ chmod u+x BLDevCube-ubuntu
+
+Download compressed file from https://github.com/openbouffalo/buildroot_bouffalo/releases/ and decompress it.
+
+(You can also get the compressed the file from https://github.com/openbouffalo/buildroot_bouffalo/releases/download/v1.0.1/bl808-linux-pine64_ox64_full_defconfig.tar.gz)
+
+ cd ~/Downloads/ox64
+ mkdir openbouffalo && cd openbouffalo
+ wget https://github.com/openbouffalo/buildroot_bouffalo/releases/download/v1.0.1/bl808-linux-pine64_ox64_full_defconfig.tar.gz
+ tar -xvzf bl808-linux-pine64_ox64_full_defconfig.tar.gz
+
+You'll need the following files for the flashing process.
+
+* `m0_lowload_bl808_m0.bin`
+* `d0_lowload_bl808_d0.bin`
+* `bl808-firmware.bin`
+* `sdcard.img`
+
+== Establish Serial Communication from PC to Ox64 using Pi pico
+
+Open a terminal and check the connected USB serial devices.
+
+ ls /dev/ttyACM*
+
+Set the Raspberry Pi Pico board into programming mode.
+
+* Press the BootSel button
+* Apply power by plugging the USB cable to PC
+* Release the BootSel button
+
+''Note: you could also ground pin28 to TP6 while powering.''
+
+Copy `picoprobe.uf2` file into the new device <code>/medi`/media/<user>/RPI-RP2`
+
+ cp ~/Downloads/ox64/pico/picoprobe.uf2 /media/<user>/RPI-RP2
+
+After flashing, the device will auto-set in serial UART communication mode according to the following wiring diagram.
+
+ OX64                      PI PICO
+ uart0_Tx_GPIO14_pin1 <->  uart0_Rx_pin17
+ uart0_Rx_GPIO15_pin2 <->  uart0_Tx_pin16
+ Rxd_GPIO17_pin31     <->  uart1_Tx_pin6
+ Txd_GPIO16_pin32     <->  uart1_Rx_pin7 
+ gnd_pin38            <->  gnd_pin38/3    
+ vbus5v_pin40         <->  vbus5v_pin40
+
+== Flashing the Ox64
+
+There are two new ports to choose from, `/dev/ttyACM0` for serial console and <code>/dev/`/dev/ttyACM1`e flashing.
+
+ minicom -b 2000000 -D /dev/ttyACM0
+
+Set the Ox64 board into programming mode.
+
+* Press the BOOT button
+* Apply power or re-plug the USB cable
+* Release the BOOT button
+
+Close `minicom`. Open a new terminal window to run the DevCube flasher.
+
+ cd ~/Downloads/ox64/devcube
+ ./BLDevCube-ubuntu
+
+Select chip [BL808], press Finish and switch to [MCU] tab.
+
+ M0 Group[group0] Image Addr [0x58000000] [PATH to m0_lowload_bl808_m0.bin]
+ D0 Group[group0] Image Addr [0x58100000] [PATH to d0_lowload_bl808_d0.bin]
+ Interface: UART
+ Port/SN: /dev/ttyACM1 (make sure you don't use /dev/ttyACM0, it's used by the minicom console)
+ Uart rate 2000000
+ UART TX is physical pin 1/GPIO 14.
+ UART RX is physical pin 2/GPIO 15.
+ Click 'Create & Download' and wait until it's done
+
+Switch to the [IOT] tab.
+
+ Enable 'Single Download', set Address with 0x800000, choose [PATH to bl808-firmware.bin]
+ Port/SN: /dev/ttyACM1 (make sure you don't use ACM0, it's used by minicom console)
+ Click 'Create & Download' again and wait until it's done
+ Close DevCube
+
+=== Open-Source Flashing Using CLI
+
+For those who do not want to use the DevCube, BouffaloLab provides open-source flashing packages `bflb-iot-tool` and <code>bflb-`bflb-mcu-tool`
+
+''Note: While these packages do contain binaries in addition to the Python source code, those binaries do not appear to be used for UART flashing.''
+
+First, install `bflb-iot-tool` using your preferred method of managing PIP packages. One option is to set up a Python virtual environment as follows.
+
+ sudo apt install virtualenv python3-virtualenv python3.11-venv
+ python3 -m venv ~/ox64_venv
+ . ~/ox64_venv/bin/activate
+ pip install bflb-iot-tool ''# we are *not* using bflb-mcu-tool''
+
+NOTE: Each time you open a new terminal window you will need to re-run `. ~/ox64_venv/bin/activate` to reactivate the virtual environment.
+
+Next, put Ox64 in programming mode (press the BOOT button when first applying power) and flash the BL808.
+
+ PORT=/dev/ttyACM1 ''# this will depend on which serial adapter you use''
+ BAUD=115200       ''# safe value for macOS, if using Linux set to 2000000 for faster flashing''
+ cd ~/Downloads/ox64/buildroot_bouffalo/buildroot/output/images
+ 
+ bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x000000 --firmware m0_lowload_bl808_m0.bin --single
+ bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x100000 --firmware d0_lowload_bl808_d0.bin --single
+ bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x800000 --firmware bl808-firmware.bin --single
+
+If you get permission errors when running the commands above, you may need to add your user to the `dialout` group. Running the commands as <code>root<`root`ommended since this will make <code>bflb-iot-tool</c`bflb-iot-tool`de>-owned files in `root`ry.
+
+=== BL808 Address Details
+
+Note that the addresses are different according to the flashing method, DevCube or CLI.
+
+              DevCube      CLI   
+ M0 address   0x58000000   0x000000
+ D0 address   0x58100000   0x100000
+ LP address   0x58200000   0x200000
+
+== Flashing a microSD card
+
+Insert microSD card into PC, locate its device file (`/dev/sdb`, for example), erase the start of the card and proceed to flashing.
+
+ cd ~/Downloads/ox64/buildroot_bouffalo/buildroot/output/images
+ sudo dd if=/dev/zero of=/dev/sdb count=1 bs=32768 
+ sudo dd if=sdcard.img of=/dev/sdb bs=1M status=progress conv=fsync
+
+== Booting for the first time
+
+Insert microSD card into Ox64 and set a UART connection to the Ox64 board, using the following parameters.
+
+* UART TX is physical pin 32/GPIO 16
+* UART RX is physical pin 31/GPIO 17
+* Baud rate is 2000000
+
+Choose from serial devices `/dev/ttyACM0` and <code>/dev/`/dev/ttyACM1` lower number.
+
+ minicom -b 2000000 -D /dev/ttyACM0
+
+Re-apply power to the Ox64 and enjoy the booting!

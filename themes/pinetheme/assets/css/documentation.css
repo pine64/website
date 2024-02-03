@@ -189,6 +189,9 @@ div#doc-page p{
 div#doc-page article {
     margin-bottom: 2em;
 }
+div#doc-page .ulist {
+    padding-bottom: 1rem;
+}
 
 
 /* Table of contents */

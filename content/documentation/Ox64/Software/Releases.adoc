@@ -1,11 +1,11 @@
 ---
-title: "Software"
+title: "Releases"
 draft: false
 menu:
   docs:
     title:
-    parent: "Ox64"
-    identifier: "Ox64/Software"
+    parent: "Ox64/Software"
+    identifier: "Ox64/Software/Releases"
     weight: 1
 ---
 
@@ -22,7 +22,7 @@ Original Linux Images provided by Bouffalo - Very basic *alpha build* which are 
 
 * https://github.com/bouffalolab/bl808_linux[Linux for BL808]
 * https://wiki.pine64.org/wiki/File:Linux_BL808.pdf[Installation Instructions for Linux on BL808 (Chinese)]
-* https://wiki.pine64.org/wiki/File:Linux_BL808_en.pdf[Installation Instructions for Linux on BL808 (English Auto-Translation)]
+* https://wiki.pine64.org/wiki/File:Linux_BL808_en.pdf[Installation Instructions for Linux on BL808 (machine-translated to English)]
 
 Toolchain:
 
@@ -41,41 +41,3 @@ Toolchain:
 * https://github.com/bouffalolab/bl808_linux/tree/main/opensbi-0.6-808[OpenSBI for BL808]
 * https://github.com/bouffalolab/bl-pac/tree/main/bl808[Rust Peripheral Access Crate (PAC) for BL808]
 * https://github.com/bouffalolab/bl-pac/blob/main/bl808/bl808.svd[System View Description (SVD) for BL808]
-
-
-== Build procedure
-
-Open the terminal and create a new directory for the build:
-$ cd ~/Downloads/ox64
-
-Clone the primary Buildroot repository and the specific Buildroot Bouffalo repository:
-$ git clone https://github.com/buildroot/buildroot
-$ git clone https://github.com/openbouffalo/buildroot_bouffalo
-
-Define an environment variable for the Buildroot Bouffalo overlay path:
-$ export BR_BOUFFALO_OVERLAY_PATH=$(pwd)/buildroot_bouffalo
-
-Change directory into the cloned Buildroot folder:
-$ cd ~/Downloads/ox64/buildroot_bouffalo/buildroot
-
-Apply the default configuration for Pine64 Ox64:
-$ make BR2_EXTERNAL=$BR_BOUFFALO_OVERLAY_PATH pine64_ox64_defconfig
-# make clean # deletes all the already compiled object files
-
-Use the menuconfig tool to adjust the build settings:
-$ make menuconfig
-
-Within menuconfig, configure the following:
-
-    Navigate to Target Options
-    Enable Integer Multiplication and Division (M)
-    Enable Atomic Instructions (A)
-    Enable Single-precision Floating-point (F)
-    Enable Double-precision Floating-point (D)
-    Set Target ABI to lp64d
-    Under Toolchain, enable Fortran support and OpenMP support
-
-Initiate the build process, but make sure first that your PATH variable contains no spaces:
-$ make
-
-You will get the image files required for flashing in the output/images directory

@@ -222,9 +222,9 @@ See the https://wiki.postmarketos.org/wiki/PINE64_PinePhone_Pro_(pine64-pinephon
 
 == Rhino Linux ==
 
-Rhino Linux is an Ubuntu-based distribution that uses the rolling-release model by tracking the <code>devel</code> branch of repositories. The port is currently maintained by Oren Klopfer (oklopfer).
+Rhino Linux is an Ubuntu-based distribution that uses the rolling-release model by tracking the `devel` branch of repositories. The port is currently maintained by Oren Klopfer (oklopfer).
 
-Tow-Boot is required for installing Rhino Linux. Instructions for installing Tow-Boot to the PinePhone Pro can be found https://tow-boot.org/devices/pine64-pinephonePro.html[here]. After Tow-Boot has been installed to your device, Rhino Linux installation just requires flashing the <code>.img.xz</code> to an SD or the eMMC.
+Tow-Boot is required for installing Rhino Linux. Instructions for installing Tow-Boot to the PinePhone Pro can be found https://tow-boot.org/devices/pine64-pinephonePro.html[here]. After Tow-Boot has been installed to your device, Rhino Linux installation just requires flashing the `.img.xz` to an SD or the eMMC.
 	
 === Download ===
 	

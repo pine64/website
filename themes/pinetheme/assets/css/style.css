@@ -272,7 +272,7 @@ ul.pagination li.active a, ul.pagination li a:hover{
 }
 
 div.ulist{
-    padding: 0 0 0 2rem;
+    padding-left: 2rem;
 }
 div.olist{
     padding-left: 2rem;

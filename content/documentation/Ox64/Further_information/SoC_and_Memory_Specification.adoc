@@ -19,7 +19,7 @@ image:/documentation/images/BL808_Block_Diagram.jpg[width=500]
 
 image:/documentation/images/T-Head.png[width=200]
 
-T-Head C906 480MHz 64-bit RISC-V CPU:
+T-Head C906 480 MHz 64-bit RISC-V CPU:
 
 * Supports RISC-V RV64IMAFCV instruction architecture
 * Five-stage single-issue sequentially executed pipeline
@@ -34,7 +34,7 @@ T-Head C906 480MHz 64-bit RISC-V CPU:
 * Supports hardware performance monitor (HPM) units
 * See https://www.t-head.cn/product/c906?lang=en[here]
 
-T-Head E907 320MHz 32-bit RISC-V CPU:
+T-Head E907 320 MHz 32-bit RISC-V CPU:
 
 * Supports RISC-V RV32IMAFCP instruction set
 * Supports RISC-V 32-bit/16-bit mixed instruction set
@@ -46,7 +46,7 @@ T-Head E907 320MHz 32-bit RISC-V CPU:
 * 16K data cache, two-way set associative structure
 * See https://www.t-head.cn/product/e907?lang=en[here]
 
-T-Head E902 150MHz 32-bit RISC-V CPU:
+T-Head E902 150 MHz 32-bit RISC-V CPU:
 
 * See https://www.t-head.cn/product/e902?lang=en[here]
 
