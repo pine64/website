@@ -25,9 +25,9 @@ Start a terminal session and set the working directory to download some files.
  mkdir ox64/devcube
  cd ~/Downloads/ox64/devcube
 
-Get the DevCube 1.8.8 flasher from one of mirror servers listed below.
+Get the DevCube 1.8.3 flasher from one of mirror servers listed below.
 
-* https://dev.bouffalolab.com/media/upload/download/BouffaloLabDevCube-v1.8.8.zip
+* https://dev.bouffalolab.com/media/upload/download/BouffaloLabDevCube-v1.8.3.zip
 
 Verify the file hashes listed below.
 
@@ -36,9 +36,9 @@ Verify the file hashes listed below.
 
 Finally, uncompress the downloaded archive; for example:
 
- wget https://dev.bouffalolab.com/media/upload/download/BouffaloLabDevCube-v1.8.8.zip
- sha256sum BouffaloLabDevCube-v1.8.8.zip
- unzip BouffaloLabDevCube-v1.8.8.zip
+ wget https://dev.bouffalolab.com/media/upload/download/BouffaloLabDevCube-v1.8.3.zip
+ sha256sum BouffaloLabDevCube-v1.8..zip
+ unzip BouffaloLabDevCube-v1.8.3.zip
  chmod u+x BLDevCube-ubuntu
 
 Download compressed file from https://github.com/openbouffalo/buildroot_bouffalo/releases/ and decompress it.
@@ -154,13 +154,13 @@ Note that the addresses are different according to the flashing method, DevCube 
               DevCube      CLI   
  M0 address   0x58000000   0x000000
  D0 address   0x58100000   0x100000
- LP address   0x58200000   0x200000
+ LP address   0x800000     0x200000
 
 == Flashing a microSD card
 
 Insert microSD card into PC, locate its device file (`/dev/sdb`, for example), erase the start of the card and proceed to flashing.
 
- cd ~/Downloads/ox64/buildroot_bouffalo/buildroot/output/images
+ cd ~/Downloads/ox64/buildroot/output/images
  sudo dd if=/dev/zero of=/dev/sdb count=1 bs=32768 
  sudo dd if=sdcard.img of=/dev/sdb bs=1M status=progress conv=fsync
 
