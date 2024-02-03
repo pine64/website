@@ -25,9 +25,9 @@ Start a terminal session and set the working directory to download some files.
  mkdir ox64/devcube
  cd ~/Downloads/ox64/devcube
 
-Get the DevCube 1.8.8 flasher from one of mirror servers listed below.
+Get the DevCube 1.8.3 flasher from one of mirror servers listed below.
 
-* https://dev.bouffalolab.com/media/upload/download/BouffaloLabDevCube-v1.8.8.zip
+* https://dev.bouffalolab.com/media/upload/download/BouffaloLabDevCube-v1.8.3.zip
 
 Verify the file hashes listed below.
 
@@ -36,9 +36,9 @@ Verify the file hashes listed below.
 
 Finally, uncompress the downloaded archive; for example:
 
- wget https://dev.bouffalolab.com/media/upload/download/BouffaloLabDevCube-v1.8.8.zip
- sha256sum BouffaloLabDevCube-v1.8.8.zip
- unzip BouffaloLabDevCube-v1.8.8.zip
+ wget https://dev.bouffalolab.com/media/upload/download/BouffaloLabDevCube-v1.8.3.zip
+ sha256sum BouffaloLabDevCube-v1.8..zip
+ unzip BouffaloLabDevCube-v1.8.3.zip
  chmod u+x BLDevCube-ubuntu
 
 Download compressed file from https://github.com/openbouffalo/buildroot_bouffalo/releases/ and decompress it.
@@ -143,24 +143,24 @@ Next, put Ox64 in programming mode (press the BOOT button when first applying po
  
  bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x000000 --firmware m0_lowload_bl808_m0.bin --single
  bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x100000 --firmware d0_lowload_bl808_d0.bin --single
- bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x800000 --firmware bl808-firmware.bin --single
+ bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x200000 --firmware bl808-firmware.bin --single
 
 If you get permission errors when running the commands above, you may need to add your user to the `dialout` group. Running the commands as <code>root<`root`ommended since this will make <code>bflb-iot-tool</c`bflb-iot-tool`de>-owned files in `root`ry.
 
 === BL808 Address Details
 
-Note that the addresses are different according to the flashing method, DevCube or CLI.
+Note that the addresses are different according to the flashing method, DevCube or CLI. Bf-mcu-tool will add a 0x2000 offset to addr specified by CLI arg.
 
               DevCube      CLI   
  M0 address   0x58000000   0x000000
  D0 address   0x58100000   0x100000
- LP address   0x58200000   0x200000
+ LP address   0x800000     0x200000
 
 == Flashing a microSD card
 
 Insert microSD card into PC, locate its device file (`/dev/sdb`, for example), erase the start of the card and proceed to flashing.
 
- cd ~/Downloads/ox64/buildroot_bouffalo/buildroot/output/images
+ cd ~/Downloads/ox64/buildroot/output/images
  sudo dd if=/dev/zero of=/dev/sdb count=1 bs=32768 
  sudo dd if=sdcard.img of=/dev/sdb bs=1M status=progress conv=fsync
 
