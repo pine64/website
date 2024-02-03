@@ -143,13 +143,13 @@ Next, put Ox64 in programming mode (press the BOOT button when first applying po
  
  bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x000000 --firmware m0_lowload_bl808_m0.bin --single
  bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x100000 --firmware d0_lowload_bl808_d0.bin --single
- bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x800000 --firmware bl808-firmware.bin --single
+ bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x200000 --firmware bl808-firmware.bin --single
 
 If you get permission errors when running the commands above, you may need to add your user to the `dialout` group. Running the commands as <code>root<`root`ommended since this will make <code>bflb-iot-tool</c`bflb-iot-tool`de>-owned files in `root`ry.
 
 === BL808 Address Details
 
-Note that the addresses are different according to the flashing method, DevCube or CLI.
+Note that the addresses are different according to the flashing method, DevCube or CLI. Bf-mcu-tool will add a 0x2000 offset to addr specified by CLI arg.
 
               DevCube      CLI   
  M0 address   0x58000000   0x000000
