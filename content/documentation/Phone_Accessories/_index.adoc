@@ -1,5 +1,5 @@
 ---
-title: "PinePhone (Pro) Add-ons"
+title: "PinePhone Accessories"
 draft: false
 menu:
   docs:
@@ -9,94 +9,28 @@ menu:
     weight: 
 ---
 
-== Keyboard
+The following add-ons are available:
 
-_Main article: link:/documentation/Phone_Accessories/Keyboard[Keyboard]_
+* link:Keyboard[Keyboard]
+* link:Fingerprint_reader[Fingerprint Reader Add-on]
+* link:Qi_wireless_charging[Qi Wireless Charging Add-on]
+* link:LoRa[LoRa Add-on]
 
-The keyboard case works with both the PinePhone and PinePhone Pro and features a clam-shell design. It uses pogo pins located on the phone’s midsection and attaches by replacing the default back cover. When folded, the phone’s screen and the keyboard rest securely against each other. The hinge features a 180° design, which not only allows for two-hand typing on a surface but also for comfortable thumb-typing when fully extended. The etched keycaps can be easily relocated for alternate layouts such as AZERTY or QWERTZ. The keyboard case runs an https://xff.cz/git/pinephone-keyboard/[open firmware], which means that anyone with the know-how can alter existing functions or add new ones. The bottom (keyboard) and top (phone) sections of the assembly are well-balanced thanks to the large, 6000mAh, internal battery capable of charging the PinePhone (Pro) during operation. The internal battery effectively triples the phone’s battery life. The internal keyboard battery can be manually toggled on/off and the keyboard’s battery charge level can be read in the supported operating systems; the keyboard remains functional with the battery fully depleted.
+== Protection
 
-You do not lose access to the PinePhone (Pro)’s USB-C port, speaker, microphone, or any external features, such as volume and lock buttons, with the keyboard attached. There is also a cut-out for the camera, torch, and headphone jack. The USB-C port on the keyboard is capable of powering both the keyboard and PinePhone (Pro) simultaneously. This means that you can plug in a USB mouse, a USB-C dongle, or some other peripheral while the phone and keyboard’s internal battery charge. Please keep in mind that the keyboard case transforms the PinePhone (Pro) into a PDA, which means that taking calls will likely prove awkward without a wired or wireless headset connected.
+The compatible cases can be found under:
 
-Store page: https://pine64.com/product/pinephone-pinephone-pro-keyboard-case/[pine64.com]
+* link:Cases[Cases]
 
-== LoRa Add-on
+The compatible screen protectors can be found under:
 
-Store page: https://pine64.com/product/pinephone-pinephone-pro-pindio-lora-add-on-case/[pine64.com]
+* link:Screen_protectors[Screen protectors]
 
-image:/documentation/images/PP_LoRa.jpg[width=250]
+== Stands
 
-Uses the pogo pins to interface a Semtech SX1262 LoRa module with the PinePhone (Pro).
+The following accessory is made by the community:
 
-IMPORTANT: Software for receiving and sending LoRa messages with this back cover does exist, however no PinePhone operating system has added support for it yet.
+* https://www.thingiverse.com/thing:4654013[PinePhone Development Stand at Thingverse]
 
-=== Schematics and Datasheet
-
-Schematic:
-
-* https://files.pine64.org/doc/PinePhone/Pinephone%20LoRa%20Back%20Cover%20Panel%20Schematic-v1.0-20210425.pdf[PinePhone LoRa Back Cover Schematic ver 1.0 20210425]
-
-Datasheet:
-
-* https://files.pine64.org/doc/datasheet/pinephone/DS_SX1261-2_V1.1-1307803.pdf[SX1262 Long Range, Low Power, sub-GHz RF Transceiver Datasheet]
-* https://files.pine64.org/doc/datasheet/pinephone/ATmel%20ATTiny%20Microcontroller%20Datasheet.pdf[ATmel ATtiny Microcontroller Datasheet]
-
-I2C to SPI firmware:
-
-* https://github.com/zschroeder6212/tiny-i2c-spi[zschroeder6212's tiny-i2c-spi Github page]
-
-== Qi Wireless Charging Add-on
-
-Store page: https://pine64.com/product/pinephone-pinephone-pro-wireless-charging-add-on-case/[pine64.com]
-
-[WARNING]
-==== 
-Possible safety hazard: If the wireless charging chip fails for some reason, do not plug the phone in to charge via USB-C. Take the back case off first. It is possible that power gets fed into the chip, causing it to overheat, possibly causing damage to the phone and creating a fire-hazard.
-
-Album of damage caused by reverse current: https://imgur.com/a/dJsp5wD
-
-Until the cause of this is determined, it is recommended NOT to use the wireless charging add-on.
-==== 
-
-image:/documentation/images/PinePhone-Wireless-charger.jpg[width=250]
-
-Uses the pogo pins to supply Qi Wireless and Wireless Power Consortium compatible charging. No software required.
-
-=== Schematics and Datasheet
-
-Schematic:
-
-* https://files.pine64.org/doc/PinePhone/PinePhone%20Q-Wireless%20Charger%20Back%20Cover%20Schematic-20210508.pdf[PinePhone Wireless Charger Back Cover Schematic ver 1.0 20210508]
-
-Datasheet:
-
-* https://files.pine64.org/doc/datasheet/pinephone/HL6111RFNWP5_V1p0_20190121.pdf[HL6111RFNWP5 5W WPC Wireless Power Receiver Datasheet]
-
-== Fingerprint Reader Add-on
-
-Store page: https://pine64.com/product/pinephone-pinephone-pro-fingerprint-reader-add-on-case/[pine64.com]
-
-image:/documentation/images/PinePhone-FP-Addon.jpg[width=250]
-
-Uses the pogo pins to interface a high quality fingerprint sensor, which uses open firmware for it's i2c bridge, and can also be used for gesture navigation thanks to it's ability to detect directional swipes.
-
-IMPORTANT: No PinePhone operating system has added support for the fingerprint reader yet.
-
-=== Credits
-
-Credit goes to the user _zschroeder6212_, who carried the PinePhone Fingerprint Cover project from an idea to a real product. Their progress can be followed on GitHub under https://github.com/zschroeder6212.
-
-=== Schematics and Datasheet
-
-Schematic:
-
-* https://files.pine64.org/doc/PinePhone/Schematic_fingerprint%20driver%20board%20V3_2021-01-24.pdf[PinePhone Finger Print Back Cover Schematic ver 3.0 20210124]
-
-Datasheet:
-
-* https://files.pine64.org/doc/datasheet/pinephone/Datasheet_PixelAuth_PIA_Module_P2SDS-NABL2-S05_V7.0.0.5.pdf[P2SD Personal Identity Authentication Module Datasheet]
-* https://files.pine64.org/doc/datasheet/pinephone/ATmel%20ATTiny%20Microcontroller%20Datasheet.pdf[ATmel ATtiny Microcontroller Datasheet]
-
-I2C to SPI firmware:
-
-* https://github.com/zschroeder6212/tiny-i2c-spi[zschroeder6212's tiny-i2c-spi Github page]
-
+== Hubs
+USB hubs do not require a custom driver and are therefore expected to be compatible with the PinePhone, as long as they are within the USB specification. On revisions the PinePhone mainboard revisions v1.1 and v1.2 the VCONN fix is required, on v1.2a and later the USB hub should work out of the box, see link:/documentation/PinePhone#Hardware_revisions[PinePhone].

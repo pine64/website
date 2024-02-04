@@ -1,12 +1,12 @@
 ---
-title: "PinePhone (Pro) Keyboard"
+title: "Keyboard"
 draft: false
 menu:
   docs:
     title:
     parent: "Phone_Accessories"
     identifier: "Phone_Accessories/Keyboard"
-    weight: 
+    weight: 3
 ---
 
 image:/documentation/images/PP_KB_Front-1024x576.jpg[Picture of the PinePhone (Pro) Keyboard,title="Picture of the PinePhone (Pro) Keyboard",width=400]

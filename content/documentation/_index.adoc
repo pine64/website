@@ -27,8 +27,7 @@ a|link:PinePhone[PinePhone] +
 link:PinePhone_Pro[PinePhone Pro]
 
 | Phone accessories
-a|link:Phone_Accessories[Phone Accessories] +
-link:Phone_Accessories/Keyboard[Phone Accessories/Keyboard]
+a|link:Phone_Accessories[Phone Accessories]
 
 | Tablets
 a|link:PineTab[PineTab] +
