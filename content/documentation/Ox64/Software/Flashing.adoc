@@ -186,16 +186,16 @@ Edit /extlinux/extlinux.conf to get a new Nuttx boot option.
  cd <sdcardbootpoint>/extlinux/
  sudo chmod a=rwx extlinux.conf
  sudo cat << EOF >> extlinux.conf
- LABEL Pine64 0X64 Nuttx
+  LABEL Pine64 0X64 Nuttx
          KERNEL ../ImageNuttx
          FDT ../bl808-pine64-ox64.dtb
          APPEND root=PARTLABEL=rootfs rootwait rw rootfstype=ext4 console=ttyS0,2000000 loglevel=8 earlycon=sbi
- EOF
+  EOF
 
  cd <sdcardrootfspoint>/boot/extlinux/
  sudo chmod a=rwx extlinux.conf
- LABEL Pine64 0X64 Nuttx
+  LABEL Pine64 0X64 Nuttx
          KERNEL ../ImageNuttx
          FDT ../bl808-pine64-ox64.dtb
          APPEND root=PARTLABEL=rootfs rootwait rw rootfstype=ext4 console=ttyS0,2000000 loglevel=8 earlycon=sbi
- EOF
+  EOF
