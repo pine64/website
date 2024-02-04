@@ -34,12 +34,12 @@ Start a terminal session and set the working directory to download some files.
  wget https://github.com/openbouffalo/buildroot_bouffalo/releases/download/v1.0.1/bl808-linux-pine64_ox64_full_defconfig.tar.gz
  tar -xvzf bl808-linux-pine64_ox64_full_defconfig.tar.gz
 
-You'll need the following files for the flashing process.
+You'll need the following files to flash the BL808 SoC (M0 core, D0 core, excluding only Low Power core) and the SD card.
 
- m0_lowload_bl808_m0.bin
- d0_lowload_bl808_d0.bin
- bl808-firmware.bin
- sdcard.img
+ m0_lowload_bl808_m0.bin - Runs on M0 wireless core and forwards interupts to the D0 for several peripherals
+ d0_lowload_bl808_d0.bin - Runs on D0 multimedia core and pre-loads opensbi, the kernel and uboot dts files into ram
+ bl808-firmware.bin - Runs on D0 multimedia core and contains opensbi, uboot dtb files
+ sdcard.img - Runs on SD card and contain the rootfs
 
 == Establish Serial Communication from PC to Ox64 using Pi pico
 
@@ -81,15 +81,19 @@ Set the Ox64 board into programming mode.
 * Apply power or re-plug the USB cable
 * Release the BOOT button
 
-Close `minicom`. Open a new terminal window to run the DevCube flasher.
+Close `minicom`. 
+
+=== BLdevCube Flashing Methods ===
+
+Open a new terminal window to run the DevCube flasher.
 
  cd ~/Downloads/ox64/devcube
  ./BLDevCube-ubuntu
 
-Select chip [BL808], press Finish and switch to [MCU] tab.
+Select chip [BL808], press Finish, switch to [MCU] tab and set:
 
- M0 Group[group0] Image Addr [0x58000000] [PATH to m0_lowload_bl808_m0.bin]
- D0 Group[group0] Image Addr [0x58100000] [PATH to d0_lowload_bl808_d0.bin]
+ M0 Group[group0], Image Address [0x58000000], [PATH to m0_lowload_bl808_m0.bin]
+ D0 Group[group0], Image Address [0x58100000], [PATH to d0_lowload_bl808_d0.bin]
  Interface: UART
  Port/SN: /dev/ttyACM1 (make sure you don't use /dev/ttyACM0, it's used by the minicom console)
  Uart rate 2000000 (set a lower rate to avoid errors, i.e. 230400)
@@ -97,15 +101,15 @@ Select chip [BL808], press Finish and switch to [MCU] tab.
  UART RX is physical pin 2/GPIO 15.
  Click 'Create & Download' and wait until it's done
 
-Switch to the [IOT] tab.
+Switch to the [IOT] tab, enable 'Single Download and set:
 
- Enable 'Single Download', set Address with 0x800000, choose [PATH to bl808-firmware.bin]
+ Image Address [0x800000], [PATH to bl808-firmware.bin]
  Port/SN: /dev/ttyACM1 (make sure you don't use ACM0, it's used by minicom console)
+ Uart rate 2000000 (set a lower rate to avoid errors, i.e. 230400)
  Click 'Create & Download' again and wait until it's done
  Close DevCube
 
-=== Open-Source Flashing Using CLI
-
+=== CLI Flashing Methods ===
 For those who do not want to use the DevCube, BouffaloLab provides open-source flashing packages `bflb-iot-tool` and `bflb-mcu-tool`. One option is to set up a Python virtual environment as follows.
 
 First, install `bflb-iot-tool` using your preferred method of managing PIP packages. 
@@ -129,14 +133,6 @@ Next, put Ox64 in programming mode (press the BOOT button when first applying po
 
 If you get permission errors when running the commands above, you may need to add your user to the `dialout` group. Running the commands as `root` is not recommended since this will make `bflb-iot-tool` create root-owned files in your home directory.
 
-=== BL808 Address Details
-
-Note that the addresses are different according to the flashing method, DevCube or CLI. Bf-mcu-tool will add a 0x2000 offset to address specified by CLI arg.
-
-              DevCube      CLI   
- M0 address   0x58000000   0x000000
- D0 address   0x58100000   0x100000
- LP address   0x800000     0x200000
 
 == Flashing a microSD card
 
