@@ -24,38 +24,24 @@ Start a terminal session and set the working directory to download some files.
  cd ~/Downloads/ox64
  mkdir ox64/devcube
  cd ~/Downloads/ox64/devcube
-
-Get the DevCube 1.8.3 flasher from one of mirror servers listed below.
-
-* https://dev.bouffalolab.com/media/upload/download/BouffaloLabDevCube-v1.8.3.zip
-
-Verify the file hashes listed below.
-
-* SHA1: `0f2619e87d946f936f63ae97b0efd674357b1166`
-* SHA256: `e6e6db316359da40d29971a1889d41c9e97d5b1ff1a8636e9e6960b6ff960913`
-
-Finally, uncompress the downloaded archive; for example:
-
  wget https://dev.bouffalolab.com/media/upload/download/BouffaloLabDevCube-v1.8.3.zip
- sha256sum BouffaloLabDevCube-v1.8..zip
+ sha256sum BouffaloLabDevCube-v1.8.3.zip
  unzip BouffaloLabDevCube-v1.8.3.zip
  chmod u+x BLDevCube-ubuntu
-
-Download compressed file from https://github.com/openbouffalo/buildroot_bouffalo/releases/ and decompress it.
-
-(You can also get the compressed the file from https://github.com/openbouffalo/buildroot_bouffalo/releases/download/v1.0.1/bl808-linux-pine64_ox64_full_defconfig.tar.gz)
 
  cd ~/Downloads/ox64
  mkdir openbouffalo && cd openbouffalo
  wget https://github.com/openbouffalo/buildroot_bouffalo/releases/download/v1.0.1/bl808-linux-pine64_ox64_full_defconfig.tar.gz
  tar -xvzf bl808-linux-pine64_ox64_full_defconfig.tar.gz
 
-You'll need the following files for the flashing process.
+You'll need the following files to flash the BL808 SoC (M0 core, D0 core, excluding only Low Power core) and the SD card.
 
-* `m0_lowload_bl808_m0.bin`
-* `d0_lowload_bl808_d0.bin`
-* `bl808-firmware.bin`
-* `sdcard.img`
+ m0_lowload_bl808_m0.bin - Runs on M0 wireless core and forwards interupts to the D0 for several peripherals
+ d0_lowload_bl808_d0.bin - Runs on D0 multimedia core and pre-loads opensbi, the kernel and uboot dts files into ram
+ bl808-firmware.bin - Runs on D0 multimedia core and contains opensbi, uboot dtb files
+ sdcard.img - Runs on SD card and contain the rootfs
+
+One option is to combine m0/d0:lowload and bl808-firmware.bin toghether. See below...
 
 == Establish Serial Communication from PC to Ox64 using Pi pico
 
@@ -71,7 +57,7 @@ Set the Raspberry Pi Pico board into programming mode.
 
 ''Note: you could also ground pin28 to TP6 while powering.''
 
-Copy `picoprobe.uf2` file into the new device <code>/medi`/media/<user>/RPI-RP2`
+Copy `picoprobe.uf2` file into the new device `/media/<user>/RPI-RP2`
 
  cp ~/Downloads/ox64/pico/picoprobe.uf2 /media/<user>/RPI-RP2
 
@@ -87,7 +73,7 @@ After flashing, the device will auto-set in serial UART communication mode accor
 
 == Flashing the Ox64
 
-There are two new ports to choose from, `/dev/ttyACM0` for serial console and <code>/dev/`/dev/ttyACM1`e flashing.
+There are two new ports to choose from, `/dev/ttyACM0` for serial console and `/dev/ttyACM1` for DevCube flashing.
 
  minicom -b 2000000 -D /dev/ttyACM0
 
@@ -97,36 +83,38 @@ Set the Ox64 board into programming mode.
 * Apply power or re-plug the USB cable
 * Release the BOOT button
 
-Close `minicom`. Open a new terminal window to run the DevCube flasher.
+Close `minicom`. 
+
+=== BLdevCube Flashing Method ===
+
+Open a new terminal window to run the DevCube flasher.
 
  cd ~/Downloads/ox64/devcube
  ./BLDevCube-ubuntu
 
-Select chip [BL808], press Finish and switch to [MCU] tab.
+Select chip [BL808], press Finish, switch to [MCU] tab and set:
 
- M0 Group[group0] Image Addr [0x58000000] [PATH to m0_lowload_bl808_m0.bin]
- D0 Group[group0] Image Addr [0x58100000] [PATH to d0_lowload_bl808_d0.bin]
+ M0 Group[group0], Image Address [0x58000000], [PATH to m0_lowload_bl808_m0.bin]
+ D0 Group[group0], Image Address [0x58100000], [PATH to d0_lowload_bl808_d0.bin]
  Interface: UART
  Port/SN: /dev/ttyACM1 (make sure you don't use /dev/ttyACM0, it's used by the minicom console)
- Uart rate 2000000
+ Uart rate 2000000 (set a lower rate to avoid errors, i.e. 230400)
  UART TX is physical pin 1/GPIO 14.
  UART RX is physical pin 2/GPIO 15.
  Click 'Create & Download' and wait until it's done
 
-Switch to the [IOT] tab.
+Switch to the [IOT] tab, enable 'Single Download and set:
 
- Enable 'Single Download', set Address with 0x800000, choose [PATH to bl808-firmware.bin]
+ Image Address [0x800000], [PATH to bl808-firmware.bin]
  Port/SN: /dev/ttyACM1 (make sure you don't use ACM0, it's used by minicom console)
+ Uart rate 2000000 (set a lower rate to avoid errors, i.e. 230400)
  Click 'Create & Download' again and wait until it's done
  Close DevCube
 
-=== Open-Source Flashing Using CLI
+=== CLI Flashing Method ===
+For those who do not want to use the DevCube, BouffaloLab provides open-source flashing packages `bflb-iot-tool` and `bflb-mcu-tool`. One option is to set up a Python virtual environment as follows. 
 
-For those who do not want to use the DevCube, BouffaloLab provides open-source flashing packages `bflb-iot-tool` and <code>bflb-`bflb-mcu-tool`
-
-''Note: While these packages do contain binaries in addition to the Python source code, those binaries do not appear to be used for UART flashing.''
-
-First, install `bflb-iot-tool` using your preferred method of managing PIP packages. One option is to set up a Python virtual environment as follows.
+First, install `bflb-iot-tool` using your preferred method of managing PIP packages. 
 
  sudo apt install virtualenv python3-virtualenv python3.11-venv
  python3 -m venv ~/ox64_venv
@@ -135,26 +123,23 @@ First, install `bflb-iot-tool` using your preferred method of managing PIP packa
 
 NOTE: Each time you open a new terminal window you will need to re-run `. ~/ox64_venv/bin/activate` to reactivate the virtual environment.
 
+Regarding flashing process you can combine m0/d0_lowload and bl808-firmware.bin toghether:
+
+ cd ~/Downloads/ox64/buildroot/output/images
+ dd if=/dev/zero bs=8388608 count=1 | LC_ALL=C tr "\000" "\377" > openbouffalo-bl808.bin
+ dd conv=notrunc if=m0_lowload_bl808_m0.bin of=openbouffalo-bl808.bin
+ dd conv=notrunc if=d0_lowload_bl808_d0.bin of=openbouffalo-bl808.bin seek=1048576 bs=1
+ cat bl808-firmware.bin >> openbouffalo-bl808.bin
+
 Next, put Ox64 in programming mode (press the BOOT button when first applying power) and flash the BL808.
 
  PORT=/dev/ttyACM1 ''# this will depend on which serial adapter you use''
  BAUD=115200       ''# safe value for macOS, if using Linux set to 2000000 for faster flashing''
- cd ~/Downloads/ox64/buildroot_bouffalo/buildroot/output/images
- 
- bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x000000 --firmware m0_lowload_bl808_m0.bin --single
- bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x100000 --firmware d0_lowload_bl808_d0.bin --single
- bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x200000 --firmware bl808-firmware.bin --single
+ cd ~/Downloads/ox64/buildroot/output/images
+ bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x0 --firmware openbouffalo-bl808.bin  --single
 
-If you get permission errors when running the commands above, you may need to add your user to the `dialout` group. Running the commands as <code>root<`root`ommended since this will make <code>bflb-iot-tool</c`bflb-iot-tool`de>-owned files in `root`ry.
+If you get permission errors when running the commands above, you may need to add your user to the `dialout` group. Running the commands as `root` is not recommended since this will make `bflb-iot-tool` create root-owned files in your home directory.
 
-=== BL808 Address Details
-
-Note that the addresses are different according to the flashing method, DevCube or CLI. Bf-mcu-tool will add a 0x2000 offset to addr specified by CLI arg.
-
-              DevCube      CLI   
- M0 address   0x58000000   0x000000
- D0 address   0x58100000   0x100000
- LP address   0x800000     0x200000
 
 == Flashing a microSD card
 
@@ -172,7 +157,7 @@ Insert microSD card into Ox64 and set a UART connection to the Ox64 board, using
 * UART RX is physical pin 31/GPIO 17
 * Baud rate is 2000000
 
-Choose from serial devices `/dev/ttyACM0` and <code>/dev/`/dev/ttyACM1` lower number.
+Choose from serial devices `/dev/ttyACM0` and `/dev/ttyACM1`, using the lower number.
 
  minicom -b 2000000 -D /dev/ttyACM0
 
