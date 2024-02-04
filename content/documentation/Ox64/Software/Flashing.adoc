@@ -83,7 +83,7 @@ Set the Ox64 board into programming mode.
 
 Close `minicom`. 
 
-=== BLdevCube Flashing Methods ===
+=== BLdevCube Flashing Method ===
 
 Open a new terminal window to run the DevCube flasher.
 
@@ -109,7 +109,7 @@ Switch to the [IOT] tab, enable 'Single Download and set:
  Click 'Create & Download' again and wait until it's done
  Close DevCube
 
-=== CLI Flashing Methods ===
+=== CLI Flashing Method ===
 For those who do not want to use the DevCube, BouffaloLab provides open-source flashing packages `bflb-iot-tool` and `bflb-mcu-tool`. One option is to set up a Python virtual environment as follows.
 
 First, install `bflb-iot-tool` using your preferred method of managing PIP packages. 
