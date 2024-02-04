@@ -9,13 +9,9 @@ menu:
     weight: 2
 ---
 
-Open the terminal and create a new directory for the build:
+Open the terminal and clone the primary Buildroot repository and the specific Buildroot Bouffalo repository:
 
  cd ~/Downloads/ox64
- mkdir buildroot_bouffalo && cd buildroot_bouffalo
-
-Clone the primary Buildroot repository and the specific Buildroot Bouffalo repository:
-
  git clone https://github.com/buildroot/buildroot
  git clone https://github.com/openbouffalo/buildroot_bouffalo
 
@@ -25,7 +21,7 @@ Define an environment variable for the Buildroot Bouffalo overlay path:
 
 Change directory into the cloned Buildroot folder:
 
- cd ~/Downloads/ox64/buildroot_bouffalo/buildroot
+ cd ~/Downloads/ox64/buildroot
 
 Apply the default configuration for Pine64 Ox64:
 
@@ -50,4 +46,4 @@ Initiate the build process, but make sure first that your `PATH` variable contai
 
  make
 
-You will get the image files required for flashing in the `output/images` directory
+You will get the image files required for flashing in the `buildroot/output/images` directory.
