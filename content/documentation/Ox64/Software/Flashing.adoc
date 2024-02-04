@@ -178,7 +178,8 @@ More info on building on https://nuttx.apache.org/docs/latest/platforms/risc-v/b
 
 Insert, mount microSD card and add image.
 
- sudo scp -r ~/Downloads/ox64/nuttx/ImageNUTTX <mountpoint>/ImageNuttx
+ sudo scp -r ~/Downloads/ox64/nuttx/ImageNUTTX <sdcardbootpoint>/ImageNuttx
+ sudo scp -r ~/Downloads/ox64/nuttx/ImageNUTTX <sdcardrootfspoint>/boot/ImageNuttx
 
 Edit /extlinux/extlinux.conf to get a new Nuttx boot option.
 
