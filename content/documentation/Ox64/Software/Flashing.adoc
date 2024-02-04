@@ -44,7 +44,7 @@ You'll need the following files to flash the BL808 SoC (M0 core, D0 core, exclud
 
 One option is to combine m0/d0:lowload and bl808-firmware.bin toghether. See below...
 
-== Establish Serial Communication from PC to Ox64 using Pi pico
+== Establish Serial Communication from PC to Ox64 using Pi Pico
 
 Open a terminal and check the connected USB serial devices.
 
@@ -142,7 +142,7 @@ Next, put Ox64 in programming mode (press the BOOT button when first applying po
 If you get permission errors when running the commands above, you may need to add your user to the `dialout` group. Running the commands as `root` is not recommended since this will make `bflb-iot-tool` create root-owned files in your home directory.
 
 
-== Flashing a microSD card ==
+== Flashing a microSD Card ==
 
 Insert microSD card into PC, locate its device file (`/dev/sdb`, for example), erase the start of the card and proceed to flashing.
 
@@ -150,7 +150,7 @@ Insert microSD card into PC, locate its device file (`/dev/sdb`, for example), e
  sudo dd if=/dev/zero of=/dev/sdb count=1 bs=32768 
  sudo dd if=sdcard.img of=/dev/sdb bs=1M status=progress conv=fsync
 
-== Booting for the first time
+== Booting for the First Time ==
 
 Insert microSD card into Ox64 and set a UART connection to the Ox64 board, using the following parameters.
 
@@ -179,7 +179,7 @@ More info on building on https://nuttx.apache.org/docs/latest/platforms/risc-v/b
 Insert, mount microSD card and add image.
  sudo scp -r ~/Downloads/ox64/nuttx/ImageNUTTX <mountpoint>/ImageNuttx
 
-Edit /extlinux/extlinux.conf to get a new option to boot Nuttx system.
+Edit /extlinux/extlinux.conf to get a new Nuttx boot option.
 
 cd <sdcardbootpoint>/extlinux/
 cat << EOF >> extlinux.conf
