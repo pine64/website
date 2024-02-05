@@ -3,9 +3,9 @@ title: "PinePhone Pro"
 categories: 
   - "Phones"
 cover: 
-  image: "images/pinephone_pro.png"
+  image: "/devices/images/pinephone_pro.png"
 images:
-  - "images/pinephone_pro.png"
+  - "/devices/images/pinephone_pro.png"
 ---
 
 Meet the PinePhone Pro, our flagship smartphone and the best way to experience mainline Linux on a mobile device

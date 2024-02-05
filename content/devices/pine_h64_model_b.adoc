@@ -3,9 +3,9 @@ title: "PINE H64 Model B"
 categories: 
   - "SBCs"
 cover: 
-  image: "images/pine_h64_ver_b.jpg"
+  image: "/devices/images/pine_h64_ver_b.jpg"
 images:
-  - "images/pine_h64_ver_b.jpg"
+  - "/devices/images/pine_h64_ver_b.jpg"
 ---
 
 == PINE H64 Model B Single Board Computer Featuring USB 3.0 and Gigabit Ethernet

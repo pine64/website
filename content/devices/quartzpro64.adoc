@@ -3,9 +3,9 @@ title: "QuartzPro64"
 categories: 
   - "SBCs"
 cover: 
-  image: "../documentation/images/Quartzpro64_whole_board_top_resized.jpeg"
+  image: "/documentation/images/Quartzpro64_whole_board_top_resized.jpeg"
 images:
-  - "../documentation/images/Quartzpro64_whole_board_top_resized.jpeg"
+  - "/documentation/images/Quartzpro64_whole_board_top_resized.jpeg"
 ---
 
 == A QuartzPro64 Development page before a QuartzPro64 page? 

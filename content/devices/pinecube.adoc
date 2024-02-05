@@ -3,9 +3,9 @@ title: "PineCube"
 categories: 
   - "IP cameras"
 cover: 
-  image: "images/pinecube.jpg"
+  image: "/devices/images/pinecube.jpg"
 images:
-  - "images/pinecube.jpg"
+  - "/devices/images/pinecube.jpg"
 ---
 
 == Who is Looking at You? The CUBE is an Open Source IP Cam Under Your Control

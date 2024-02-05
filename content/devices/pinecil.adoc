@@ -3,9 +3,9 @@ title: "Pinecil"
 categories: 
   - "Soldering irons"
 cover: 
-  image: "images/pinecil.png"
+  image: "/devices/images/pinecil.png"
 images:
-  - "images/pinecil.png"
+  - "/devices/images/pinecil.png"
 ---
 
 == RISC-V Soldering Iron Running an Open Firmware

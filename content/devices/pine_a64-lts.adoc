@@ -3,9 +3,9 @@ title: "PINE A64-LTS"
 categories: 
   - "SBCs"
 cover: 
-  image: "images/pine_a64-lts.jpg"
+  image: "/devices/images/pine_a64-lts.jpg"
 images:
-  - "images/pine_a64-lts.jpg"
+  - "/devices/images/pine_a64-lts.jpg"
 ---
 
 == The Long Term Supply Version of the PINE A64 (+)

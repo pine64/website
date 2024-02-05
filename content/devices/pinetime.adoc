@@ -3,9 +3,9 @@ title: "PineTime"
 categories: 
   - "Smartwatches"
 cover: 
-  image: "images/pinetime.png"
+  image: "/devices/images/pinetime.png"
 images:
-  - "images/pinetime.png"
+  - "/devices/images/pinetime.png"
 ---
 
 == An Open Source Smartwatch For Your Favorite Devices. Low Cost, High Fidelity.

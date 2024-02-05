@@ -3,9 +3,9 @@ title: "Ox64"
 categories: 
   - "SBCs"
 cover: 
-  image: "../img/start/ox64.png"
+  image: "/img/start/ox64.png"
 images:
-  - "../img/start/ox64.png"
+  - "/img/start/ox64.png"
 ---
 
 == An Ox, no bull

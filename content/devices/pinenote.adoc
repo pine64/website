@@ -3,9 +3,9 @@ title: "PineNote"
 categories: 
   - "Tablets"
 cover: 
-  image: "images/pinenote.jpg"
+  image: "/devices/images/pinenote.jpg"
 images:
-  - "images/pinenote.jpg"
+  - "/devices/images/pinenote.jpg"
 ---
 
 == One of the most powerful Linux-based Eink tablets

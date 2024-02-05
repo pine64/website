@@ -3,9 +3,9 @@ title: "PineTab-V"
 categories: 
   - "Tablets"
 cover: 
-  image: "../documentation/PineTab-V/Pinetabv_1.jpg"
+  image: "/documentation/PineTab-V/Pinetabv_1.jpg"
 images:
-  - "../documentation/PineTab-V/Pinetabv_1.jpg"
+  - "/documentation/PineTab-V/Pinetabv_1.jpg"
 ---
 
 == The PineTab-V: PINE64's first RISC-V tablet

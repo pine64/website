@@ -3,9 +3,9 @@ title: "SOEDGE Baseboard"
 categories: 
   - "Computer modules"
 cover: 
-  image: "images/soedge_baseboard.png"
+  image: "/devices/images/soedge_baseboard.png"
 images:
-  - "images/soedge_baseboard.png"
+  - "/devices/images/soedge_baseboard.png"
 ---
 
 == SOEDGE Baseboard

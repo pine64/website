@@ -3,9 +3,9 @@ title: "SOEDGE"
 categories: 
   - "Computer modules"
 cover: 
-  image: "images/soedge.png"
+  image: "/devices/images/soedge.png"
 images:
-  - "images/soedge.png"
+  - "/devices/images/soedge.png"
 ---
 
 == A Powerful AI Compute Module

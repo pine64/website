@@ -3,9 +3,9 @@ title: "PINE A64 and PINE A64+"
 categories: 
   - "SBCs"
 cover: 
-  image: "images/pine_a64.jpg"
+  image: "/devices/images/pine_a64.jpg"
 images:
-  - "images/pine_a64.jpg"
+  - "/devices/images/pine_a64.jpg"
 ---
 
 == Our First 64-bit Single Board Computer

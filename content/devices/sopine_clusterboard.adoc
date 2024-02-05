@@ -3,9 +3,9 @@ title: "SOPINE Clusterboard"
 categories: 
   - "Clusters"
 cover: 
-  image: "images/sopine_clusterboard.jpg"
+  image: "/devices/images/sopine_clusterboard.jpg"
 images:
-  - "images/sopine_clusterboard.jpg"
+  - "/devices/images/sopine_clusterboard.jpg"
 ---
 
 == SOPINE Clusterboard

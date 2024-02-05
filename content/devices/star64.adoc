@@ -3,9 +3,9 @@ title: "STAR64"
 categories: 
   - ""
 cover: 
-  image: "images/star64.jpg"
+  image: "/devices/images/star64.png"
 images:
-  - "images/star64.jpg"
+  - "/devices/images/star64.png"
 ---
 
 == The powerful Quartz64 Model A

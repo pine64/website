@@ -3,9 +3,9 @@ title: "PineNut"
 categories: 
   - "IoT"
 cover: 
-  image: "images/pinenut.jpg"
+  image: "/devices/images/pinenut.jpg"
 images:
-  - "images/pinenut.jpg"
+  - "/devices/images/pinenut.jpg"
 ---
 
 == PineNut, an Attempt to Open Source WiFi and BLE module for PINE64 devices

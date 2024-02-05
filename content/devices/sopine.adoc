@@ -3,9 +3,9 @@ title: "SOPINE"
 categories: 
   - "Computer modules"
 cover: 
-  image: "images/sopine.jpg"
+  image: "/devices/images/sopine.jpg"
 images:
-  - "images/sopine.jpg"
+  - "/devices/images/sopine.jpg"
 ---
 
 == Like the PINEA64-LTS, just much smaller

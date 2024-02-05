@@ -3,9 +3,9 @@ title: "PinePhone"
 categories: 
   - "Phones"
 cover: 
-  image: "images/pinephone.jpg"
+  image: "/devices/images/pinephone.jpg"
 images:
-  - "images/pinephone.jpg"
+  - "/devices/images/pinephone.jpg"
 ---
 
 == An Open Source Smartphone Supported by All Major Linux Phone Projects

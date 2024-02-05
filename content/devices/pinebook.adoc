@@ -3,9 +3,9 @@ title: "Pinebook"
 categories: 
   - "Laptops"
 cover: 
-  image: "images/pinebook.jpg"
+  image: "/devices/images/pinebook.jpg"
 images:
-  - "images/pinebook.jpg"
+  - "/devices/images/pinebook.jpg"
 ---
 
 == A Thin and Light Open Source ARM 64-bit Notebook for Tinkering
