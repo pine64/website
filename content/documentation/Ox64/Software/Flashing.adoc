@@ -180,27 +180,57 @@ More info on building on https://nuttx.apache.org/docs/latest/platforms/risc-v/b
  wget https://github.com/lupyuen2/wip-pinephone-nuttx/releases/download/bl808d-1/Image
  sudo mv Image ImageNuttx
 
-Insert, mount microSD card and add image.
+If necessary wipe beginning of the microSD card.
 
- sudo scp -r ~/Downloads/ox64/nuttx/ImageNUTTX <sdcardbootpoint>/ImageNuttx
- sudo scp -r ~/Downloads/ox64/nuttx/ImageNUTTX <sdcardrootfspoint>/boot/ImageNuttx
+ sudo dd if=/dev/zero of=/dev/sdb count=1 bs=32768 status=progress
+
+Before removing partitions, if you need to remove also left signatures, use gParted and format each partition "cleared". Than remove all partitions with gParted.
+
+ sudo wipefs /dev/sdb # shows current signatures
+ sudo wipefs --all --force /dev/sdb # erase current signatures
+
+Partition the microSD card.
+
+ sudo sfdisk /dev/sdb --wipe always <<EOF
+  label: gpt
+  first-lba: 34
+  table-length: 8
+  start=34, size=2097152, type=linuxswap, name="swap"
+  size=210MB, name="boot", attrs="RequiredPartition,LegacyBIOSBootable"
+  size=537MB, name="rootfs", attrs="RequiredPartition,LegacyBIOSBootable"
+  size=+, name="extra", attrs="RequiredPartition,LegacyBIOSBootable"
+ EOF
+
+Mount the image, copy boot and rootfs to the partitions. You need also to make some changes on some files.
+
+ cd ~/Downloads/ox64/buildroot/output/images
+ sudo losetup -P /dev/loop1 sdcard.img
+
+ sudo dd if=/dev/loop1p2 of=/dev/sdb2 bs=1M status=progress conv=fsync
+ sudo mkdir /mnt/nuttx_boot_sd
+ sudo mount /dev/sdb2 /mnt/nuttx_boot_sd/
+ sudo scp -r ~/Downloads/ox64/nuttx/ImageNuttx /mnt/nuttx_boot_sd
 
 Edit `/extlinux/extlinux.conf` to get a new Nuttx boot option.
+ sudo nano /mnt/nuttx_boot_sd/extlinux/extlinux.conf
+ +LABEL Pine64 0X64 Nuttx
+ +        KERNEL ../ImageNuttx
+ +        FDT ../bl808-pine64-ox64.dtb
+ +        APPEND root=PARTLABEL=rootfs rootwait rw rootfstype=ext4 console=ttyS0,2000000 loglevel=8 earlycon=sbi
 
- cd <sdcardbootpoint>/extlinux/
- sudo chmod a=rwx extlinux.conf
- sudo cat << EOF >> extlinux.conf
-  LABEL Pine64 0X64 Nuttx
-         KERNEL ../ImageNuttx
-         FDT ../bl808-pine64-ox64.dtb
-         APPEND root=PARTLABEL=rootfs rootwait rw rootfstype=ext4 console=ttyS0,2000000 loglevel=8 earlycon=sbi
- EOF
+ sudo dd if=/dev/loop1p3 of=/dev/sdb3 bs=1M status=progress conv=fsync
+ sudo mkdir /mnt/nuttx_rootfs_sd
+ sudo mount /dev/sdb3 /mnt/nuttx_rootfs_sd/
+ sudo scp -r ~/Downloads/ox64/nuttx/ImageNuttx /mnt/nuttx_rootfs_sd/boot
 
- cd <sdcardrootfspoint>/boot/extlinux/
- sudo chmod a=rwx extlinux.conf
- sudo cat << EOF >> extlinux.conf
-  LABEL Pine64 0X64 Nuttx
-         KERNEL ../ImageNuttx
-         FDT ../bl808-pine64-ox64.dtb
-         APPEND root=PARTLABEL=rootfs rootwait rw rootfstype=ext4 console=ttyS0,2000000 loglevel=8 earlycon=sbi
- EOF
+Edit `/extlinux/extlinux.conf` to get a new Nuttx boot option.
+ sudo nano /mnt/nuttx_rootfs_sd/boot/extlinux/extlinux.conf
+ +LABEL Pine64 0X64 Nuttx
+ +        KERNEL ../ImageNuttx
+ +        FDT ../bl808-pine64-ox64.dtb
+ +        APPEND root=PARTLABEL=rootfs rootwait rw rootfstype=ext4 console=ttyS0,2000000 loglevel=8 earlycon=sbi
+
+Do some cleaning
+ sudo umount /mnt/* && sudo rm -r /mnt/*
+ sudo umount /media/* && sudo rm -r /media/*
+ sudo losetup -D
