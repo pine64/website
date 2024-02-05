@@ -107,7 +107,7 @@ In the [MCU] tab set also:
  D0 Group[group0], Image Address [0x58100000], [PATH to d0_lowload_bl808_d0.bin]
  Click 'Create & Download' and wait until it's done
 
-In the [IOT] tab set:
+Switch to the [IOT] tab and set:
 
  Enable 'Single Download'
  Image Address [0x800000], [PATH to bl808-firmware.bin]
