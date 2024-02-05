@@ -58,7 +58,7 @@ Set the Raspberry Pi Pico board into programming mode.
 
 ''Note: you could also ground pin28 to TP6 while powering.''
 
-Copy `picoprobe.uf2` file into the new device `/media/<user>/RPI-RP2`
+Copy `picoprobe.uf2` file into the new device `/media/<user>/RPI-RP2`.
 
  cp ~/Downloads/ox64/pico/picoprobe.uf2 /media/<user>/RPI-RP2
 
@@ -100,16 +100,16 @@ Select chip [BL808], press Finish and set for EACH tabs [MCU] and [IOT]. When yo
  Interface: UART
  Port/SN: /dev/ttyACM1 (make sure you don't use /dev/ttyACM0, it's used by the minicom console)
  Uart rate 2000000 (set a lower rate to avoid errors, i.e. 230400)
- UART TX is physical pin 1/GPIO 14.
- UART RX is physical pin 2/GPIO 15.
+ UART TX is physical pin 1/GPIO 14
+ UART RX is physical pin 2/GPIO 15
 
-In the [MCU] tab set also:
+In the [MCU] tab set also
 
  M0 Group[group0], Image Address [0x58000000], [PATH to m0_lowload_bl808_m0.bin]
  D0 Group[group0], Image Address [0x58100000], [PATH to d0_lowload_bl808_d0.bin]
  Click 'Create & Download' and wait until it's done
 
-Switch to the [IOT] tab and set:
+Switch to the [IOT] tab and set
 
  Enable 'Single Download'
  Image Address [0x800000], [PATH to bl808-firmware.bin]
@@ -128,7 +128,7 @@ First, install `bflb-iot-tool` using your preferred method of managing PIP packa
 
 NOTE: Each time you open a new terminal window you will need to re-run `. ~/ox64_venv/bin/activate` to reactivate the virtual environment.
 
-Regarding flashing process you can combine m0/d0_lowload and bl808-firmware.bin toghether:
+Regarding flashing process you can combine `m0/d0_lowload and bl808-firmware.bin` toghether.
 
  cd ~/Downloads/ox64/buildroot/output/images
  dd if=/dev/zero bs=8388608 count=1 | LC_ALL=C tr "\000" "\377" > openbouffalo-bl808.bin
@@ -185,7 +185,7 @@ Insert, mount microSD card and add image.
  sudo scp -r ~/Downloads/ox64/nuttx/ImageNUTTX <sdcardbootpoint>/ImageNuttx
  sudo scp -r ~/Downloads/ox64/nuttx/ImageNUTTX <sdcardrootfspoint>/boot/ImageNuttx
 
-Edit /extlinux/extlinux.conf to get a new Nuttx boot option.
+Edit `/extlinux/extlinux.conf` to get a new Nuttx boot option.
 
  cd <sdcardbootpoint>/extlinux/
  sudo chmod a=rwx extlinux.conf
