@@ -72,6 +72,8 @@ After flashing, the device will auto-set in serial UART communication mode accor
  gnd_pin38            <->  gnd_pin38/3    
  vbus5v_pin40         <->  vbus5v_pin40
 
+[insert image here]
+
 == Flashing the Ox64
 
 There are two new ports to choose from, `/dev/ttyACM0` for serial console and `/dev/ttyACM1` for DevCube flashing.
