@@ -11,7 +11,7 @@ menu:
 
 This page explains how to flash an Ox64 board and a microSD card to boot the system.
 
-== Prepare the Environment
+== Prepare the environment
 You need a Linux machine, a Raspberry Pi Pico to act as a UART adapter, the Ox64 board, and a microSD card.
 
 Start a terminal session and set the working directory to download some files.
@@ -30,7 +30,8 @@ Start a terminal session and set the working directory to download some files.
  chmod u+x BLDevCube-ubuntu
 
  cd ~/Downloads/ox64
- mkdir openbouffalo && cd openbouffalo
+ mkdir openbouffalo
+ cd ~/Downloads/ox64/openbouffalo
  wget https://github.com/openbouffalo/buildroot_bouffalo/releases/download/v1.0.1/bl808-linux-pine64_ox64_full_defconfig.tar.gz
  tar -xvzf bl808-linux-pine64_ox64_full_defconfig.tar.gz
 
@@ -43,7 +44,7 @@ You'll need the following files to flash the BL808 SoC (M0 core, D0 core, exclud
 
 One option is to combine m0/d0:lowload and bl808-firmware.bin toghether. See below...
 
-== Establish Serial Communication from PC to Ox64 using Pi pico
+== Establish serial communication from PC to Ox64 using Pi Pico
 
 Open a terminal and check the connected USB serial devices.
 
@@ -57,7 +58,7 @@ Set the Raspberry Pi Pico board into programming mode.
 
 ''Note: you could also ground pin28 to TP6 while powering.''
 
-Copy `picoprobe.uf2` file into the new device `/media/<user>/RPI-RP2`
+Copy `picoprobe.uf2` file into the new device `/media/<user>/RPI-RP2`.
 
  cp ~/Downloads/ox64/pico/picoprobe.uf2 /media/<user>/RPI-RP2
 
@@ -70,6 +71,8 @@ After flashing, the device will auto-set in serial UART communication mode accor
  Txd_GPIO16_pin32     <->  uart1_Rx_pin7 
  gnd_pin38            <->  gnd_pin38/3    
  vbus5v_pin40         <->  vbus5v_pin40
+
+[insert image here]
 
 == Flashing the Ox64
 
@@ -85,33 +88,35 @@ Set the Ox64 board into programming mode.
 
 Close `minicom`. 
 
-=== BLdevCube Flashing Method ===
+=== BLdevCube flashing method
 
 Open a new terminal window to run the DevCube flasher.
 
  cd ~/Downloads/ox64/devcube
  ./BLDevCube-ubuntu
 
-Select chip [BL808], press Finish, switch to [MCU] tab and set:
+Select chip [BL808], press Finish and set for EACH tabs [MCU] and [IOT]. When you switch between tabs double check these common setting.
 
- M0 Group[group0], Image Address [0x58000000], [PATH to m0_lowload_bl808_m0.bin]
- D0 Group[group0], Image Address [0x58100000], [PATH to d0_lowload_bl808_d0.bin]
  Interface: UART
  Port/SN: /dev/ttyACM1 (make sure you don't use /dev/ttyACM0, it's used by the minicom console)
  Uart rate 2000000 (set a lower rate to avoid errors, i.e. 230400)
- UART TX is physical pin 1/GPIO 14.
- UART RX is physical pin 2/GPIO 15.
+ UART TX is physical pin 1/GPIO 14
+ UART RX is physical pin 2/GPIO 15
+
+In the [MCU] tab set also
+
+ M0 Group[group0], Image Address [0x58000000], [PATH to m0_lowload_bl808_m0.bin]
+ D0 Group[group0], Image Address [0x58100000], [PATH to d0_lowload_bl808_d0.bin]
  Click 'Create & Download' and wait until it's done
 
-Switch to the [IOT] tab, enable 'Single Download and set:
+Switch to the [IOT] tab and set
 
+ Enable 'Single Download'
  Image Address [0x800000], [PATH to bl808-firmware.bin]
- Port/SN: /dev/ttyACM1 (make sure you don't use ACM0, it's used by minicom console)
- Uart rate 2000000 (set a lower rate to avoid errors, i.e. 230400)
  Click 'Create & Download' again and wait until it's done
  Close DevCube
 
-=== CLI Flashing Method ===
+=== CLI flashing method
 For those who do not want to use the DevCube, BouffaloLab provides open-source flashing packages `bflb-iot-tool` and `bflb-mcu-tool`. One option is to set up a Python virtual environment as follows. 
 
 First, install `bflb-iot-tool` using your preferred method of managing PIP packages. 
@@ -123,7 +128,7 @@ First, install `bflb-iot-tool` using your preferred method of managing PIP packa
 
 NOTE: Each time you open a new terminal window you will need to re-run `. ~/ox64_venv/bin/activate` to reactivate the virtual environment.
 
-Regarding flashing process you can combine m0/d0_lowload and bl808-firmware.bin toghether:
+Regarding flashing process you can combine `m0/d0_lowload and bl808-firmware.bin` toghether.
 
  cd ~/Downloads/ox64/buildroot/output/images
  dd if=/dev/zero bs=8388608 count=1 | LC_ALL=C tr "\000" "\377" > openbouffalo-bl808.bin
@@ -162,3 +167,40 @@ Choose from serial devices `/dev/ttyACM0` and `/dev/ttyACM1`, using the lower nu
  minicom -b 2000000 -D /dev/ttyACM0
 
 Re-apply power to the Ox64 and enjoy the booting!
+
+
+== Adding Nuttx RTOS
+
+Get Nuttx image from lupyen's github page and add to the microSD card.
+More info on building on https://nuttx.apache.org/docs/latest/platforms/risc-v/bl808/boards/ox64/index.html.
+
+ cd ~/Downloads/ox64
+ mkdir nuttx
+ cd ~/Downloads/ox64/nuttx
+ wget https://github.com/lupyuen2/wip-pinephone-nuttx/releases/download/bl808d-1/Image
+ sudo mv Image ImageNuttx
+
+Insert, mount microSD card and add image.
+
+ sudo scp -r ~/Downloads/ox64/nuttx/ImageNUTTX <sdcardbootpoint>/ImageNuttx
+ sudo scp -r ~/Downloads/ox64/nuttx/ImageNUTTX <sdcardrootfspoint>/boot/ImageNuttx
+
+Edit `/extlinux/extlinux.conf` to get a new Nuttx boot option.
+
+ cd <sdcardbootpoint>/extlinux/
+ sudo chmod a=rwx extlinux.conf
+ sudo cat << EOF >> extlinux.conf
+  LABEL Pine64 0X64 Nuttx
+         KERNEL ../ImageNuttx
+         FDT ../bl808-pine64-ox64.dtb
+         APPEND root=PARTLABEL=rootfs rootwait rw rootfstype=ext4 console=ttyS0,2000000 loglevel=8 earlycon=sbi
+ EOF
+
+ cd <sdcardrootfspoint>/boot/extlinux/
+ sudo chmod a=rwx extlinux.conf
+ sudo cat << EOF >> extlinux.conf
+  LABEL Pine64 0X64 Nuttx
+         KERNEL ../ImageNuttx
+         FDT ../bl808-pine64-ox64.dtb
+         APPEND root=PARTLABEL=rootfs rootwait rw rootfstype=ext4 console=ttyS0,2000000 loglevel=8 earlycon=sbi
+ EOF
