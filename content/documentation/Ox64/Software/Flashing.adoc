@@ -93,22 +93,24 @@ Open a new terminal window to run the DevCube flasher.
  cd ~/Downloads/ox64/devcube
  ./BLDevCube-ubuntu
 
-Select chip [BL808], press Finish, switch to [MCU] tab and set:
+Select chip [BL808], press Finisha and set for BOTH tabs [MCU] and [IOT]. When you switch between tabs double check these common setting.
 
- M0 Group[group0], Image Address [0x58000000], [PATH to m0_lowload_bl808_m0.bin]
- D0 Group[group0], Image Address [0x58100000], [PATH to d0_lowload_bl808_d0.bin]
  Interface: UART
  Port/SN: /dev/ttyACM1 (make sure you don't use /dev/ttyACM0, it's used by the minicom console)
  Uart rate 2000000 (set a lower rate to avoid errors, i.e. 230400)
  UART TX is physical pin 1/GPIO 14.
  UART RX is physical pin 2/GPIO 15.
+
+In the [MCU] tab set also:
+
+ M0 Group[group0], Image Address [0x58000000], [PATH to m0_lowload_bl808_m0.bin]
+ D0 Group[group0], Image Address [0x58100000], [PATH to d0_lowload_bl808_d0.bin]
  Click 'Create & Download' and wait until it's done
 
-Switch to the [IOT] tab, enable 'Single Download and set:
+In the [IOT] tab set also:
 
+ Enable 'Single Download'
  Image Address [0x800000], [PATH to bl808-firmware.bin]
- Port/SN: /dev/ttyACM1 (make sure you don't use ACM0, it's used by minicom console)
- Uart rate 2000000 (set a lower rate to avoid errors, i.e. 230400)
  Click 'Create & Download' again and wait until it's done
  Close DevCube
 
