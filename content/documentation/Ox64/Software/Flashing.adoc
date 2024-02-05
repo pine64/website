@@ -211,7 +211,7 @@ Mount the image, copy boot and rootfs to the partitions. You need also to make s
  sudo mount /dev/sdb2 /mnt/nuttx_boot_sd/
  sudo scp -r ~/Downloads/ox64/nuttx/ImageNuttx /mnt/nuttx_boot_sd
 
-Edit `/extlinux/extlinux.conf` to get a new Nuttx boot option.
+Edit `/extlinux/extlinux.conf` to add a new Nuttx boot option.
  sudo nano /mnt/nuttx_boot_sd/extlinux/extlinux.conf
  +LABEL Pine64 0X64 Nuttx
  +        KERNEL ../ImageNuttx
@@ -223,7 +223,7 @@ Edit `/extlinux/extlinux.conf` to get a new Nuttx boot option.
  sudo mount /dev/sdb3 /mnt/nuttx_rootfs_sd/
  sudo scp -r ~/Downloads/ox64/nuttx/ImageNuttx /mnt/nuttx_rootfs_sd/boot
 
-Edit `/extlinux/extlinux.conf` to get a new Nuttx boot option.
+Edit `/extlinux/extlinux.conf` to add a new Nuttx boot option.
  sudo nano /mnt/nuttx_rootfs_sd/boot/extlinux/extlinux.conf
  +LABEL Pine64 0X64 Nuttx
  +        KERNEL ../ImageNuttx
