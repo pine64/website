@@ -22,18 +22,30 @@ Start a terminal session and set the working directory to download some files.
  wget https://github.com/Kris-Sekula/Pine64_Ox64_SBC/blob/main/uart/picoprobe.uf2
 
  cd ~/Downloads/ox64
- mkdir ox64/devcube
- cd ~/Downloads/ox64/devcube
- wget https://dev.bouffalolab.com/media/upload/download/BouffaloLabDevCube-v1.8.3.zip
- sha256sum BouffaloLabDevCube-v1.8.3.zip
- unzip BouffaloLabDevCube-v1.8.3.zip
- chmod u+x BLDevCube-ubuntu
-
- cd ~/Downloads/ox64
  mkdir openbouffalo
  cd ~/Downloads/ox64/openbouffalo
  wget https://github.com/openbouffalo/buildroot_bouffalo/releases/download/v1.0.1/bl808-linux-pine64_ox64_full_defconfig.tar.gz
  tar -xvzf bl808-linux-pine64_ox64_full_defconfig.tar.gz
+
+ cd ~/Downloads/ox64
+ mkdir ox64/devcube
+ cd ~/Downloads/ox64/devcube
+ wget https://dev.bouffalolab.com/media/upload/download/BouffaloLabDevCube-v1.8.8.zip
+ unzip BouffaloLabDevCube-v1.8.8.zip
+ chmod u+x BLDevCube-ubuntu
+
+If you are not creating a combined image (see below) you may need an older version of the DevCube.
+In that case, download v1.8.3 from one of the mirrors below:
+
+* https://openbouffalo.org/static-assets/bldevcube/BouffaloLabDevCube-v1.8.3.zip
+* https://hachyderm.io/@mkroman/110787218805897192 > https://pub.rwx.im/~mk/bouffalolab/BouffaloLabDevCube-v1.8.3.zip
+* https://we.tl/t-eJWShQJ4iF
+* https://cdn.discordapp.com/attachments/771032441971802142/1145565853962735639/BouffaloLabDevCube-v1.8.3.zip
+
+Verify that your copy of `BouffaloLabDevCube-v1.8.3.zip` matches the hashes below:
+
+* SHA1: `0f2619e87d946f936f63ae97b0efd674357b1166`
+* SHA256: `e6e6db316359da40d29971a1889d41c9e97d5b1ff1a8636e9e6960b6ff960913`
 
 You'll need the following files to flash the BL808 SoC (M0 core, D0 core, excluding only Low Power core) and the SD card.
 
@@ -147,6 +159,10 @@ Next, set up some environment variables to save typing them out later:
 
  PORT=/dev/ttyACM1 # this will depend on which serial adapter you use
  BAUD=115200       # safe value for macOS, if using Linux set to 2000000 for faster flashing
+
+Change directory to the location of your image files:
+
+ cd ~/Downloads/ox64/buildrot/output/images
 
 Finally, flash the Ox64. If you created a **combined image** then run the following command:
 
