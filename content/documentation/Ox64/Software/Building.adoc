@@ -49,7 +49,7 @@ Initiate the build process, but make sure first that your `PATH` variable contai
 Check you got required file for flashing in the `buildroot/output/images` directory.
 
  cd ~/Downloads/ox64/buildroot/output/images
- ls | less *.img *808*.bin
+ ls | less *808*.bin *.img
 
 Expected files:
 
@@ -58,4 +58,4 @@ Expected files:
 * bl808-firmware.bin
 * sdcard.img
 
-** openbouffalo-bl808.bin # combined image file (see link:Flashing[]#optional_create_a_combined_soc_image)
+** openbouffalo-bl808.bin # combined image file (see link:Flashing#optional_create_a_combined_soc_image[])
