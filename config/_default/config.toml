@@ -60,6 +60,7 @@ paginate = 9
 [security.exec]
   allow = ["^asciidoctor$"]
 
+
 # Docs menu
 [menu]
   [[menu.right]]
