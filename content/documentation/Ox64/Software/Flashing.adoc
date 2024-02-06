@@ -42,7 +42,7 @@ You'll need the following files to flash the BL808 SoC (M0 core, D0 core, exclud
  bl808-firmware.bin - Runs on D0 multimedia core and contains opensbi, uboot dtb files
  sdcard.img - Runs on SD card and contain the rootfs
 
-One option is to combine m0/d0:lowload and bl808-firmware.bin toghether. See below...
+One option is to combine M0/D0 lowload and `bl808-firmware.bin` files. See below.
 
 == Establish serial communication from PC to Ox64 using Pi Pico
 
@@ -56,7 +56,7 @@ Set the Raspberry Pi Pico board into programming mode.
 * Apply power by plugging the USB cable to PC
 * Release the BootSel button
 
-''Note: you could also ground pin28 to TP6 while powering.''
+NOTE: You could also ground pin28 to TP6 while powering.
 
 Copy `picoprobe.uf2` file into the new device `/media/<user>/RPI-RP2`.
 
@@ -88,7 +88,7 @@ Set the Ox64 board into programming mode.
 
 Close `minicom`. 
 
-=== BLdevCube flashing method
+=== BLDevCube flashing method
 
 Open a new terminal window to run the DevCube flasher.
 
@@ -117,14 +117,14 @@ Switch to the [IOT] tab and set
  Close DevCube
 
 === CLI flashing method
-For those who do not want to use the DevCube, BouffaloLab provides open-source flashing packages `bflb-iot-tool` and `bflb-mcu-tool`. One option is to set up a Python virtual environment as follows. 
+For those who do not want to use the DevCube, BouffaloLab provides open-source flashing packages `bflb-iot-tool` and `bflb-mcu-tool`.
 
-First, install `bflb-iot-tool` using your preferred method of managing PIP packages. 
+First, install `bflb-iot-tool` using your preferred method of managing PIP packages. One option is to set up a Python virtual environment as follows.
 
  sudo apt install virtualenv python3-virtualenv python3.11-venv
  python3 -m venv ~/ox64_venv
  . ~/ox64_venv/bin/activate
- pip install bflb-iot-tool ''# we are *not* using bflb-mcu-tool''
+ pip install bflb-iot-tool # we are *not* using bflb-mcu-tool
 
 NOTE: Each time you open a new terminal window you will need to re-run `. ~/ox64_venv/bin/activate` to reactivate the virtual environment.
 
@@ -138,8 +138,8 @@ Regarding flashing process you can combine `m0/d0_lowload and bl808-firmware.bin
 
 Next, put Ox64 in programming mode (press the BOOT button when first applying power) and flash the BL808.
 
- PORT=/dev/ttyACM1 ''# this will depend on which serial adapter you use''
- BAUD=115200       ''# safe value for macOS, if using Linux set to 2000000 for faster flashing''
+ PORT=/dev/ttyACM1 # this will depend on which serial adapter you use
+ BAUD=115200       # safe value for macOS, if using Linux set to 2000000 for faster flashing
  cd ~/Downloads/ox64/buildroot/output/images
  bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x0 --firmware openbouffalo-bl808.bin  --single
 
