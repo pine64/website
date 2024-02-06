@@ -188,6 +188,7 @@ If you get permission errors when running any of the commands above, you may nee
 Insert microSD card into PC, locate its device file (`/dev/sdb`, for example), erase the start of the card and proceed to flashing.
 
  cd ~/Downloads/ox64/buildroot/output/images
+ sudo dd if=/dev/zero of=/dev/sdb count=1 bs=32768 
  sudo dd if=sdcard.img of=/dev/sdb bs=1M status=progress conv=fsync
 
 == Booting for the first time
