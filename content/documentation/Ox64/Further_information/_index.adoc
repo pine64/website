@@ -9,9 +9,8 @@ menu:
     weight: 4
 ---
 
-* link:Board_Features[Board Features]
 * link:Compatible_UARTs[Compatible UARTs]
 * link:Datasheets[]
 * link:Resources[]
-* link:Schematics_and_certifications[]
+* link:Schematics_and_certifications[Schematics and certifications]
 * link:SoC_and_Memory_Specification[SoC and Memory Specification]
