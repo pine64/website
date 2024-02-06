@@ -233,3 +233,5 @@ Do some cleaning
  sudo umount /mnt/* && sudo rm -r /mnt/*
  sudo umount /media/* && sudo rm -r /media/*
  sudo losetup -D
+
+Enjoy your Nuttx booting option!
