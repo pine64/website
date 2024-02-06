@@ -210,7 +210,8 @@ Mount the `sdcard.img` image, copy `boot` and `rootfs`. Add `ImageNuttx` and edi
  sudo mount /dev/sdb2 /mnt/nuttx_boot_sd/
  sudo scp -r ~/Downloads/ox64/nuttx/ImageNuttx /mnt/nuttx_boot_sd
 
- sudo nano /mnt/nuttx_boot_sd/extlinux/extlinux.conf
+ cd /mnt/nuttx_boot_sd/extlinux
+ sudo nano extlinux.conf
  # add following lines, without the `+` character
  +LABEL Pine64 0X64 Nuttx
  +        KERNEL ../ImageNuttx
@@ -222,7 +223,8 @@ Mount the `sdcard.img` image, copy `boot` and `rootfs`. Add `ImageNuttx` and edi
  sudo mount /dev/sdb3 /mnt/nuttx_rootfs_sd/
  sudo scp -r ~/Downloads/ox64/nuttx/ImageNuttx /mnt/nuttx_rootfs_sd/boot
 
- sudo nano /mnt/nuttx_rootfs_sd/boot/extlinux/extlinux.conf
+ cd /mnt/nuttx_rootfs_sd/boot/extlinux
+ sudo nano linux.conf
  # add following lines, without the `+` character
  +LABEL Pine64 0X64 Nuttx
  +        KERNEL ../ImageNuttx
