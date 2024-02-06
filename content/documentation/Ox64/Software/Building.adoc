@@ -58,4 +58,4 @@ Expected files:
 * bl808-firmware.bin
 * sdcard.img
 
-** openbouffalo-bl808.bin # combined image file (see link:Flashing#optional_create_a_combined_soc_image[])
+** openbouffalo-bl808.bin # combined image file (see link:Flashing#optional_create_a_combined_soc_image[Flashing] chapter)
