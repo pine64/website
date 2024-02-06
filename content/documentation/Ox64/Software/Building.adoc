@@ -53,9 +53,9 @@ Check you got required file for flashing in the `buildroot/output/images` direct
 
 Expected files:
 
-* sdcard.img
-* bl808-firmware.bin
 * m0_lowload_bl808_m0.bin
 * d0_lowload_bl808_d0.bin
+* bl808-firmware.bin
+* sdcard.img
 
-** openbouffalo-bl808.bin # combined image file (see below...)
+** openbouffalo-bl808.bin # combined image file (see https://pine64.org/documentation/Ox64/Software/Flashing/#optional_create_a_combined_soc_image)
