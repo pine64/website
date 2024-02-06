@@ -171,8 +171,7 @@ Re-apply power to the Ox64 and enjoy the booting!
 
 == Adding Nuttx RTOS
 
-Get Nuttx image from lupyen's github page and add to the microSD card.
-More info on building on https://nuttx.apache.org/docs/latest/platforms/risc-v/bl808/boards/ox64/index.html.
+Get Nuttx image from lupyen's github page. More info on building on https://nuttx.apache.org/docs/latest/platforms/risc-v/bl808/boards/ox64/index.html.
 
  cd ~/Downloads/ox64
  mkdir nuttx
@@ -180,7 +179,7 @@ More info on building on https://nuttx.apache.org/docs/latest/platforms/risc-v/b
  wget https://github.com/lupyuen2/wip-pinephone-nuttx/releases/download/bl808d-1/Image
  sudo mv Image ImageNuttx
 
-If necessary wipe beginning of the microSD card.
+Wipe beginning of the microSD card.
 
  sudo dd if=/dev/zero of=/dev/sdb count=1 bs=32768 status=progress
 
@@ -201,7 +200,7 @@ Partition the microSD card.
   size=+, name="extra", attrs="RequiredPartition,LegacyBIOSBootable"
  EOF
 
-Mount the image, copy boot and rootfs to the partitions. You need also to make some changes on some files.
+Mount the `sdcard.img` image, copy `boot` and `rootfs`. Add `ImageNuttx` and edit `/extlinux/extlinux.conf` to add a new Nuttx boot option.
 
  cd ~/Downloads/ox64/buildroot/output/images
  sudo losetup -P /dev/loop1 sdcard.img
@@ -211,8 +210,8 @@ Mount the image, copy boot and rootfs to the partitions. You need also to make s
  sudo mount /dev/sdb2 /mnt/nuttx_boot_sd/
  sudo scp -r ~/Downloads/ox64/nuttx/ImageNuttx /mnt/nuttx_boot_sd
 
-Edit `/extlinux/extlinux.conf` to add a new Nuttx boot option.
  sudo nano /mnt/nuttx_boot_sd/extlinux/extlinux.conf
+ # add following lines, without the `+` character
  +LABEL Pine64 0X64 Nuttx
  +        KERNEL ../ImageNuttx
  +        FDT ../bl808-pine64-ox64.dtb
@@ -223,8 +222,8 @@ Edit `/extlinux/extlinux.conf` to add a new Nuttx boot option.
  sudo mount /dev/sdb3 /mnt/nuttx_rootfs_sd/
  sudo scp -r ~/Downloads/ox64/nuttx/ImageNuttx /mnt/nuttx_rootfs_sd/boot
 
-Edit `/extlinux/extlinux.conf` to add a new Nuttx boot option.
  sudo nano /mnt/nuttx_rootfs_sd/boot/extlinux/extlinux.conf
+ # add following lines, without the `+` character
  +LABEL Pine64 0X64 Nuttx
  +        KERNEL ../ImageNuttx
  +        FDT ../bl808-pine64-ox64.dtb
