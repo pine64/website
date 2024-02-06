@@ -230,8 +230,9 @@ Mount the `sdcard.img` image, copy `boot` and `rootfs`. Add `ImageNuttx` and edi
  +        APPEND root=PARTLABEL=rootfs rootwait rw rootfstype=ext4 console=ttyS0,2000000 loglevel=8 earlycon=sbi
 
 Do some cleaning
+
  sudo umount /mnt/* && sudo rm -r /mnt/*
  sudo umount /media/* && sudo rm -r /media/*
  sudo losetup -D
 
-Enjoy your Nuttx booting option!
+Enjoy your new Nuttx booting option!
