@@ -111,13 +111,20 @@ Select chip [BL808], press Finish and set for EACH tabs [MCU] and [IOT]. When yo
  UART TX is physical pin 1/GPIO 14
  UART RX is physical pin 2/GPIO 15
 
-In the [MCU] tab set also
+If you created a **combined image** then you only need to use the [IOT] tab:
+
+ Enable 'Single Download'
+ Image Address [0x0], [PATH to openbouffalo-bl808.bin]
+ Click 'Create & Download' again and wait until it's done
+ Close DevCube
+
+Otherwise, start in the [MCU] tab:
 
  M0 Group[group0], Image Address [0x58000000], [PATH to m0_lowload_bl808_m0.bin]
  D0 Group[group0], Image Address [0x58100000], [PATH to d0_lowload_bl808_d0.bin]
  Click 'Create & Download' and wait until it's done
 
-Switch to the [IOT] tab and set
+Then, switch to the [IOT] tab and set:
 
  Enable 'Single Download'
  Image Address [0x800000], [PATH to bl808-firmware.bin]
