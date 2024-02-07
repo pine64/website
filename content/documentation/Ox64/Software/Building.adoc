@@ -46,4 +46,16 @@ Initiate the build process, but make sure first that your `PATH` variable contai
 
  make
 
-You will get the image files required for flashing in the `buildroot/output/images` directory.
+Check you got required file for flashing in the `buildroot/output/images` directory.
+
+ cd ~/Downloads/ox64/buildroot/output/images
+ ls | less *808*.bin *.img
+
+Expected files:
+
+* m0_lowload_bl808_m0.bin
+* d0_lowload_bl808_d0.bin
+* bl808-firmware.bin
+* sdcard.img
+
+** bl808-firmware-combo.bin # combined image file (see link:Flashing#optional_create_a_combined_soc_image[Flashing] chapter)
