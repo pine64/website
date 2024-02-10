@@ -1,15 +1,13 @@
 ---
-title: "Information, Schematics and Certifications"
+title: "Schematics and Certifications"
 draft: false
 menu:
   docs:
     title:
     parent: "PineBuds_Pro/Further_information"
-    identifier: "PineBuds_Pro/Further_information/Information,_Schematics_and_Certifications"
-    weight: 
+    identifier: "PineBuds_Pro/Further_information/Schematics_and_Certifications"
+    weight: 2
 ---
-
-The charging case's input power: DC 5V @ 0.5A USB Type-C
 
 Documents:
 
