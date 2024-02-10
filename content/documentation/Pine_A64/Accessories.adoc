@@ -17,4 +17,3 @@ Under link:/documentation/Unsorted/Accessories_Step_by_Step_Guides[Accessories S
 * Real Time Clock (RTC) battery holder
 * First and third party cases
 * Featured 3D printed cases (and more).
-

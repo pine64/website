@@ -24,10 +24,6 @@ It is likely that there will be a few frequencies that your carrier uses which a
 
 NOTE: Some providers may allow only certain known devices identified by their https://en.wikipedia.org/wiki/Type_Allocation_Code[Type Allocation Code].
 
-== List of tested carriers
-
-A list of tested carriers can be found in the wiki under https://wiki.pine64.org/wiki/PinePhone_Carrier_Support[Carrier support].
-
 == MMS workarounds
 
 These scripts allow partial MMS support on a link:/documentation/PinePhone[PinePhone] in distributions without working MMS support:

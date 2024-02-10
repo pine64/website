@@ -9,13 +9,11 @@ menu:
     weight: 
 ---
 
-== Camera Adjustments
-
-=== Focus
+== Focus
 
 The focus of the lens can be manually adjusted through rotation. Note that initially, the lens could be tight.
 
-=== Low light mode
+== Low light mode
 
 To get imagery in low-light conditions you can turn on the infrared LED's to light up the dark area and also enable the IR cut filter using the commands below. Note that these were performed on Armbian using the instructions from here [https://github.com/danielfullmer/pinecube-nixos#enablingdisabling-ir-cut-filter].
 
@@ -72,4 +70,6 @@ Image Processing Controls
 v4l2-ctl -d /dev/v4l-subdev* --set-ctrl contrast=255
 ```
 
-You can see which flags can be changed and which ones cannot by looking at the flags. The inactive flag indicates that it is currently disabled. Some of these flags are disabled when other flags are turned on. For example, the gain flag above is inactive because gain_automatic is enabled with a value of "1." Note that at the current time '''the auto_exposure flag is inverted, so a value of "0" means on, while "1" means off.''' Maybe the auto_exposure flag will get changed someday. You'll need to turn off auto_exposure (value=1) if you want to manually set the exposure flag.
+You can see which flags can be changed and which ones cannot by looking at the flags. The inactive flag indicates that it is currently disabled. Some of these flags are disabled when other flags are turned on. For example, the gain flag above is inactive because gain_automatic is enabled with a value of "1". 
+
+NOTE: At the current time the auto_exposure flag is inverted, so a value of "0" means on, while "1" means off. Maybe the auto_exposure flag will get changed someday. You'll need to turn off auto_exposure (value=1) if you want to manually set the exposure flag.

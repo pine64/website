@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinebook/Further_information"
     identifier: "Pinebook/Further_information/Other_resources"
-    weight: 
+    weight: 4
 ---
 
 * https://linux-sunxi.org/Pine_Pinebook[Linux Sunxi Wiki page on Pinebook]

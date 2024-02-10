@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineBuds_Pro"
     identifier: "PineBuds_Pro/Community_projects"
-    weight: 6
+    weight: 3
 ---
 
 The following community projects are currently being worked on:

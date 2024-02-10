@@ -60,36 +60,31 @@ paginate = 9
 [security.exec]
   allow = ["^asciidoctor$"]
 
+
 # Docs menu
 [menu]
   [[menu.right]]
     name = "Blog"
-    pre = ""
     url = "/blog/"
     weight = 1
   [[menu.right]]
     name = "Community"
-    pre = ""
     url = "/community/"
     weight = 2
   [[menu.right]]
     name = "Devices"
-    pre = ""
     url = "/devices/"
     weight = 3
   [[menu.right]]
     name = "Documentation"
-    pre = ""
     url = "/documentation/"
     weight = 4
   [[menu.right]]
     name = "Contests"
-    pre = ""
     url = "/contests/"
     weight = 5
   [[menu.right]]
     name = "Podcast"
-    pre = ""
     url = "/podcast/"
     weight = 6
 
@@ -97,7 +92,7 @@ paginate = 9
     name = "Store"
     post = "<svg xmlns='http://www.w3.org/2000/svg' width='22' height='18' fill='none' stroke='#000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='m6 9 6 6 6-6'/></svg>"
     url = "#"
-    weight = 7
+    weight = 0
     identifier = "store"
     [menu.additional.params]
       external = false

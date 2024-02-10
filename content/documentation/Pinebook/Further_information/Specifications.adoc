@@ -6,11 +6,22 @@ menu:
     title:
     parent: "Pinebook/Further_information"
     identifier: "Pinebook/Further_information/Specifications"
-    weight: 
+    weight: 1
 ---
 
-* Based on Allwinner A64
-image:/documentation/images/Allwinner_A64.jpg[right,title="right"]
+The Pinebook is based on the Allwinner A64.
+
+Dimensions: 
+
+* 299mm x 200mm x 12mm (WxDxH - 11″ Pinebook); 329mm x 220mm x 12mm (WxDxH - 14″ Pinebook)
+
+Weight:
+
+* 1.04Kg (11″ Pinebook); 1.26Kg (14″ Pinebook)
+
+Input Power:
+
+* DC 5V @ 3A
 
 CPU Architecture:
 

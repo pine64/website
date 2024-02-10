@@ -9,9 +9,6 @@ menu:
     weight: 
 ---
 
-image:/documentation/images/Allwinner_A64.jpg[right,title="right"]
-image:/documentation/images/Allwinner_R18.png[right,title="right"]
-
 The PINE A64-LTS is based on the Allwinner A64/R18. The R18 and A64 are identical SoCs but the is R18 committed for a 10 years supply by the vendor.
 
 == CPU Architecture

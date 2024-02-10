@@ -124,10 +124,9 @@ PineSAM is a new **P**inecil **S**ettings **A**nd **M**enus BLE app for the V2 f
 
 ![PineSAM](/blog/images/PineSAM-q2vqvxijyxgy0hgzear5sj41en75vv9nktgw897ol2.png "PineSAM")
 
-**The PineSAM application looks incredibly cool  
-**
+**The PineSAM application looks incredibly cool**
 
-SOQuartz patches for PCIe2, video output, gpu, HDMI sound were merged into mainline kernel 6.2. This is very good news not only for regular end-users but also corporate customers already using a SOQuartz or looking to pick up a SOQuartz for their particular use-case. We’ve seen a major increase in the interest in SOQuartz in recent months so I’m sure this piece of news will be well received. I should also mention that new releases for Quartz64 and SOQuartz are now available from [Manjaro](https://github.com/manjaro-arm/quartz64-a-images/releases) and [DietPi](https://dietpi.com/downloads/images/DietPi_SOQuartz-ARMv8-Bullseye.7z). Unfortunately I don’t have any experience with either build, so cannot report on how well the respective OSes perform - if you’ve had experience with either then make sure to share your thoughts in the comments.  
+SOQuartz patches for PCIe2, video output, gpu, HDMI sound were merged into mainline kernel 6.2. This is very good news not only for regular end-users but also corporate customers already using a SOQuartz or looking to pick up a SOQuartz for their particular use-case. We’ve seen a major increase in the interest in SOQuartz in recent months so I’m sure this piece of news will be well received. I should also mention that new releases for Quartz64 and SOQuartz are now available from [Manjaro](https://github.com/manjaro-arm/quartz64-a-images/releases) and [DietPi](https://dietpi.com/downloads/images/DietPi_SOQuartz-ARMv8-Bullseye.img.xz). Unfortunately I don’t have any experience with either build, so cannot report on how well the respective OSes perform - if you’ve had experience with either then make sure to share your thoughts in the comments.  
 
 ![](/blog/images/quantumworks-cluster-SOQuartzBLADE-1024x768.jpg)
 

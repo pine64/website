@@ -1,5 +1,5 @@
 ---
-title: "PineCube as a recorder for loud noises"
+title: "Recorder for loud noises"
 draft: false
 menu:
   docs:
@@ -11,6 +11,7 @@ menu:
 
 The link:/documentation/PineCube[PineCube] can be used as a recorder for loud noises. If you have a kernel that has the sound support (see the Sound Control section) then you can use it to make recordings when there is a noise above a certain threshold. The following script is a very simple example that uses the _alsa-utils_ and the _sox_ command to do this. You can use the *noise-stats.txt* file and some noise testing to figure out a good threshold for your camera.
 
+----
  #!/bin/bash
 
  # Directory where the sound recordings should go
@@ -32,4 +33,4 @@ The link:/documentation/PineCube[PineCube] can be used as a recorder for loud no
       rm -f /tmp/sample.wav
       echo "$ts $stats" >> noise-stats.txt
  done
-
+----

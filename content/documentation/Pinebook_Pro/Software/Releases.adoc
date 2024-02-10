@@ -203,7 +203,7 @@ DietPi is a lightweight, yet easy to setup and feature-rich Linux distribution, 
 
 Download:
 
-* https://dietpi.com/downloads/images/DietPi_PinebookPro-ARMv8-Bullseye.7z[Direct download from dietpi.com]
+* https://dietpi.com/downloads/images/DietPi_PinebookPro-ARMv8-Bullseye.img.xz[Direct download from dietpi.com]
 
 |===
 2+| Default credentials

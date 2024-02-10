@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineCube"
     identifier: "PineCube/Software"
-    weight: 
+    weight: 1
 ---
 
 * link:Mainlining_Efforts[]

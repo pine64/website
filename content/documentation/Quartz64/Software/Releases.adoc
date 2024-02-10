@@ -45,9 +45,9 @@ image:/documentation/images/dietpi.png[width=100]
 
 Download:
 
-* Quartz64 Model A: https://dietpi.com/downloads/images/DietPi_Quartz64A-ARMv8-Bullseye.7z[Direct download from dietpi.com]
-* Quartz64 Model B: https://dietpi.com/downloads/images/DietPi_Quartz64B-ARMv8-Bullseye.7z[Direct download from dietpi.com]
-* SOQuartz: https://dietpi.com/downloads/images/DietPi_SOQuartz-ARMv8-Bullseye.7z[Direct download from dietpi.com]
+* Quartz64 Model A: https://dietpi.com/downloads/images/DietPi_Quartz64A-ARMv8-Bullseye.img.xz[Direct download from dietpi.com]
+* Quartz64 Model B: https://dietpi.com/downloads/images/DietPi_Quartz64B-ARMv8-Bullseye.img.xz[Direct download from dietpi.com]
+* SOQuartz: https://dietpi.com/downloads/images/DietPi_SOQuartz-ARMv8-Bullseye.img.xz[Direct download from dietpi.com]
 
 |===
 2+| Default credentials

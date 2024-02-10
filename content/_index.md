@@ -29,7 +29,6 @@ We are available on Discord, IRC, Matrix and Telegram, in the Forum and on Reddi
 **[Join our community](/community/)**
 
 ![Multiple PinePhones with different operating systems.](/img/Pinephone_revisions.jpg)
-
 {{</ box >}}
 
 {{< box style="full themevlblue pad" >}}

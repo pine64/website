@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinebook/Further_information"
     identifier: "Pinebook/Further_information/Datasheets"
-    weight: 
+    weight: 2
 ---
 
 Allwinner A64 SoC:

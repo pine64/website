@@ -15,11 +15,8 @@ Input Power: DC 5V @ 2A, 3.7V Li-Ion battery connector, 3.5OD/1.35ID Barrel DC J
 
 Schematics:
 
-* https://wiki.pine64.org/images/7/7d/Pine64_Board_Connector.png[PINE A64 Connector Layout @courtesy of norm24]
-* https://wiki.pine64.org/images/d/da/Pine64_Connector.JPG[PINE A64 Connector List]
 * https://forum.pine64.org/showthread.php?tid=8058[a PDF mapping the pins from the A64 chip itself, to the gold-fingers on the SO-DIMM edge, to the multiple connectors on the baseboard and on the clusterboard, attached to this forum post.]
 * https://files.pine64.org/doc/Pine%20A64%20Schematic/Pine%20A64%20Pin%20Assignment%20160119.pdf[PINE A64 Pi-2/Eular/Ext Bus/Wifi Bus Connector Pin Assignment (Updated 15/Feb/2016)]
-* https://synfare.com/599N105E/hwdocs/pine64/index.html[Good documentation about PINE A64, A64+, and A64-LTS GPIO pins article] and https://web.archive.org/web/20190915051944 / https://synfare.com/599N105E/hwdocs/pine64/index.html[Archive.org link]
 
 Pine A64-LTS schematic:
 

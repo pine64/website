@@ -6,12 +6,10 @@ menu:
     title:
     parent: "PINE_H64_Model_A/Further_information"
     identifier: "PINE_H64_Model_A/Further_information/Mali-T720_driver"
-    weight: 
+    weight: 3
 ---
 
-Here is the good DRM powerpoint presentation by Free Electron: https://free-electrons.com/pub/conferences/2017/kr/ripard-drm/ripard-drm.pdf
-
-Here is the DRM video presentation by Free Electron: https://www.youtube.com/watch?v=LbDOCJcDRoo
+A good DRM PowerPoint presentation by Free Electron https://free-electrons.com/pub/conferences/2017/kr/ripard-drm/ripard-drm.pdf[here] and the DRM video presentation by Free Electron https://www.youtube.com/watch?v=LbDOCJcDRoo[here].
 
 32-bit Wayland MALI Driver:
 

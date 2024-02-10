@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineCube"
     identifier: "PineCube/Projects"
-    weight: 
+    weight: 80
 ---
 
 The following projects are documented here:

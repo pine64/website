@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineCube/Further_information"
     identifier: "PineCube/Further_information/Schematics_and_certifications"
-    weight: 
+    weight: 3
 ---
 
 PineCube mainboard schematic:
