@@ -59,5 +59,3 @@ Expected files:
 * sdcard.img
 
 ** bl808-firmware-combo.bin # combined image file (see link:Flashing#optional_create_a_combined_soc_image[Flashing] chapter)
-
-PLS REMOVE THIS LINE. BE PATIENT, THIS IS FIRST TIME I USE VSCODIUM, SORRY. patch3
