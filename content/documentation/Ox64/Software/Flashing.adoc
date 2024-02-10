@@ -60,10 +60,10 @@ Use the following commands to combine `m0_lowload_bl808_m0.bin`, `d0_lowload_bl8
 (e.g. when using DevCube v1.8.4+).
 
  cd ~/Downloads/ox64/buildroot/output/images
- fallocate -l 0x800000 openbouffalo-bl808.bin
- dd conv=notrunc if=m0_lowload_bl808_m0.bin of=openbouffalo-bl808.bin
- dd conv=notrunc if=d0_lowload_bl808_d0.bin of=openbouffalo-bl808.bin seek=$((0x100000))B
- cat bl808-firmware.bin >> openbouffalo-bl808.bin
+ fallocate -l 0x800000 bl808-firmware-combo.bin
+ dd conv=notrunc if=m0_lowload_bl808_m0.bin of=bl808-firmware-combo.bin
+ dd conv=notrunc if=d0_lowload_bl808_d0.bin of=bl808-firmware-combo.bin seek=$((0x100000))B
+ cat bl808-firmware.bin >> bl808-firmware-combo.bin
 
 == Establish serial communication from PC to Ox64 using Pi Pico
 
@@ -125,7 +125,7 @@ Select chip [BL808], press Finish and set for EACH tabs [MCU] and [IOT]. When yo
 If you created a **combined image** then you only need to use the [IOT] tab:
 
  Enable 'Single Download'
- Image Address [0x0], [PATH to openbouffalo-bl808.bin]
+ Image Address [0x0], [PATH to bl808-firmware-combo.bin]
  Click 'Create & Download' again and wait until it's done
  Close DevCube
 
@@ -166,7 +166,7 @@ Change directory to the location of your image files:
 Finally, flash the Ox64. If you created a **combined image** then run the following command:
 
  bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x0 \
-               --firmware openbouffalo-bl808.bin  --single
+               --firmware bl808-firmware-combo.bin --single
 
 Otherwise:
 
@@ -260,7 +260,7 @@ Mount the `sdcard.img` image, copy `boot` and `rootfs`. Add `ImageNuttx` and edi
  sudo scp -r ~/Downloads/ox64/nuttx/ImageNuttx /mnt/nuttx_rootfs_sd/boot
 
  cd /mnt/nuttx_rootfs_sd/boot/extlinux
- sudo nano linux.conf
+ sudo nano extlinux.conf
  # add following lines, without the `+` character
  +LABEL Pine64 0X64 Nuttx
  +        KERNEL ../ImageNuttx
