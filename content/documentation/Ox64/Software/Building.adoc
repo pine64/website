@@ -11,6 +11,7 @@ menu:
 
 Open the terminal and clone the upstream Buildroot repository and the Buildroot Bouffalo overlay repository:
 
+ mkdir -p ~/ox64
  cd ~/ox64
  git clone https://github.com/buildroot/buildroot
  git clone https://github.com/openbouffalo/buildroot_bouffalo
@@ -52,7 +53,7 @@ Buildroot will output to the `~/ox64/buildroot/output/images` directory. Check t
 
 Expected files:
 
-* m0_lowload_bl808_m0.bin
-* d0_lowload_bl808_d0.bin
-* bl808-firmware.bin
-* sdcard.img
+* `m0_lowload_bl808_m0.bin`
+* `d0_lowload_bl808_d0.bin`
+* `bl808-firmware.bin`
+* `sdcard.img`
