@@ -39,10 +39,11 @@ description: "PINE64 has a variety of different devices. Find out more!"
     {{< devices/device_box link="/devices/pinetab-v" img="/documentation/PineTab-V/Pinetabv_1.jpg" title="PineTab-V" text="" >}}
 {{</ flexbox >}}
 
-== Smartwatches
+== Wearables
 
 {{< flexbox >}}
     {{< devices/device_box link="/devices/pinetime" img="/devices/images/pinetime.png" title="PineTime" text="" >}}
+    {{< devices/device_box link="/devices/pinebuds_pro" img="/devices/images/pinebudspro.jpg" title="PineBuds Pro" text="" >}}
 {{</ flexbox >}}
 
 == Clusters and Compute Modules
