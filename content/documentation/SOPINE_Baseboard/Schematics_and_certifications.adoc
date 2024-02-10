@@ -6,7 +6,7 @@ menu:
     title:
     parent: "SOPINE_Baseboard"
     identifier: "SOPINE_Baseboard/Schematics_and_certifications"
-    weight: 
+    weight: 99
 ---
 
 SOPINE Model "A" Baseboard schematic and PCB board resources:

@@ -6,7 +6,7 @@ menu:
     title:
     parent: "SOEDGE_Baseboard"
     identifier: "SOEDGE_Baseboard/Features"
-    weight: 
+    weight: 1
 ---
 
 * link:Expansion_ports[Expansion ports]

@@ -6,7 +6,7 @@ menu:
     title:
     parent: "SOPINE_Baseboard"
     identifier: "SOPINE_Baseboard/Specifications"
-    weight: 
+    weight: 1
 ---
 
 * Gigabit Ethernet
