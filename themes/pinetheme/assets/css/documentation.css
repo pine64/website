@@ -1,13 +1,11 @@
 /* Documentation */
 #doc-container {
-    /* max-width: 80rem; */
     margin: 0 auto;
     padding: 1rem;
     display: flex;
     font-size: 1em;
     font-weight: 300;
     width: 1000px;
-
 }
 #doc-container h2 {
     border-bottom: 1px solid #ddd;
@@ -92,7 +90,7 @@
     max-width: 912px;
     flex-direction: column;
     padding: 1rem 0;
-    
+
     overflow-wrap: break-word;
     word-wrap: break-word;
     -ms-word-break: break-all;
@@ -128,11 +126,11 @@ div#doc-page pre {
     border: 1px solid #eaecf0;
     margin-bottom: 1em;
     font-family: monospace;
-    white-space: pre-wrap;       /* css-3 */
-    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-    white-space: -pre-wrap;      /* Opera 4-6 */
-    white-space: -o-pre-wrap;    /* Opera 7 */
-    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
 }
 div#doc-page pre code {
     padding: 0;
@@ -140,11 +138,11 @@ div#doc-page pre code {
     margin: 0;
     max-width: 100%;
     background-color: inherit;
-    white-space: pre-wrap;       /* css-3 */
-    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-    white-space: -pre-wrap;      /* Opera 4-6 */
-    white-space: -o-pre-wrap;    /* Opera 7 */
-    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
 }
 div#doc-page pre strong, div#doc-page code strong {
     font-family: monospace;
@@ -201,7 +199,6 @@ div#doc-page article {
 div#doc-page .ulist {
     padding-bottom: 1rem;
 }
-
 
 /* Table of contents */
 nav#TableOfContents {
