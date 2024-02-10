@@ -11,7 +11,6 @@ menu:
 
 * https://www.youtube.com/watch?v=czRtF-UNiEY[Ox64 SBC - Connecting, Flashing and Booting Linux! ($8 from Pine64)]: A short video on how to connect to the Ox64, flash and boot
 * https://www.youtube.com/watch?v=vPAk5sq_Ilc[#24.5 Ox64 Pine64 $8 Risc-V SBC - Programming and Booting Linux]: Another video that covers soldering pins, connecting via Pi Pico and flashing Linux and U-Boot
-* https://wiki.pine64.org/wiki/File:How_to_Run_Ox64.pdf[Step-by-step tutorial] for how to build, flash and run Ox64
 * https://gist.github.com/lupyuen/7a0c697b89abccda8e38b33dfe5ebaff[First batch of Ox64 won't appear as USB serial port]
 * https://gist.github.com/lupyuen/2087e9b3fb40aab5e0795bb02a265a3b[First batch of Ox64 tested OK with CH340C/G]
 * https://www.robertlipe.com/bl808-not-symmetric/ [First thoughts on the (a)symmetry of Bouffalo Labs BL808 as in Pine64 Ox64]
