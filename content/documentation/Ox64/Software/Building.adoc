@@ -49,7 +49,7 @@ Initiate the build process, but first make sure that your `PATH` variable contai
 Buildroot will output to the `~/ox64/buildroot/output/images` directory. Check that you have the required files for flashing:
 
  cd ~/Downloads/ox64/buildroot/output/images
- ls | less *808*.bin *.img
+ ls *808*.bin *.img
 
 Expected files:
 
