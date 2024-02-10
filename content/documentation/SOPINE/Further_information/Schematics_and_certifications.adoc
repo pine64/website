@@ -6,7 +6,7 @@ menu:
     title:
     parent: "SOPINE/Further_information"
     identifier: "SOPINE/Further_information/Schematics_and_certifications"
-    weight: 
+    weight: 2
 ---
 
 SOPINE module schematic:

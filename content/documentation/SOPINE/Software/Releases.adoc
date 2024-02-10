@@ -1,11 +1,11 @@
 ---
-title: "Software"
+title: "Releases"
 draft: false
 menu:
   docs:
     title:
-    parent: "SOPINE"
-    identifier: "SOPINE/Software"
+    parent: "SOPINE/Software"
+    identifier: "SOPINE/Software/Releases"
     weight: 1
 ---
 

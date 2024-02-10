@@ -6,7 +6,7 @@ menu:
     title:
     parent: "SOPINE/Further_information"
     identifier: "SOPINE/Further_information/Specification"
-    weight: 
+    weight: 1
 ---
 
 Based on the Allwinner A64

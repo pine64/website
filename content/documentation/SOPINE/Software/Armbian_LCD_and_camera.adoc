@@ -4,9 +4,9 @@ draft: false
 menu:
   docs:
     title:
-    parent: "SOPINE/Software_tricks"
-    identifier: "SOPINE/Software_tricks/Armbian_LCD_and_camera"
-    weight: 
+    parent: "SOPINE/Software"
+    identifier: "SOPINE/Software/Armbian_LCD_and_camera"
+    weight: 99
 ---
 
 Guide on how to get the camera and the LCD working on the link:/documentation/SOPINE[SOPINE] on Armbian.

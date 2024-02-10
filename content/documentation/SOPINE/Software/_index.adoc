@@ -1,12 +1,13 @@
 ---
-title: "Software tricks"
+title: "Software"
 draft: false
 menu:
   docs:
     title:
     parent: "SOPINE"
-    identifier: "SOPINE/Software_tricks"
-    weight: 
+    identifier: "SOPINE/Software"
+    weight: 1
 ---
 
+* link:Releases[Releases]
 * link:Armbian_LCD_and_camera[Armbian LCD and camera]
