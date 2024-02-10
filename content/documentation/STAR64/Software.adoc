@@ -11,5 +11,7 @@ menu:
 
 The releases are still in *alpha* state and are only fit for testing purposes.
 
-* https://github.com/Icenowy/linux/tree/star64-5.15/[Icenowy's Star64's Github Linux kernel source tree]
-
+* https://github.com/Fishwaldo/meta-pine64[A Set of Images built with Yocto for commandline, weston and plasma - Where possible, GPU/VPU acceleration is enabled.]
+* https://forum.pine64.org/showthread.php?tid=18276[Armbian]
+* https://sr.ht/~fgaz/nixos-star64/[NixOS], based on the https://github.com/NixOS/nixos-hardware/tree/master/pine64/star64[the nixos-hardware configuration]
+* https://www.hackster.io/lupyuen/rtos-on-a-risc-v-sbc-star64-jh7110-apache-nuttx-2a7429[Apache NuttX RTOS]

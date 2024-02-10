@@ -1,12 +1,12 @@
 ---
-title: "Further information"
+title: "Development"
 draft: false
 menu:
   docs:
     title:
     parent: "STAR64"
-    identifier: "STAR64/Further_information"
-    weight: 99
+    identifier: "STAR64/Development"
+    weight: 3
 ---
 
 * link:Datasheets[]
