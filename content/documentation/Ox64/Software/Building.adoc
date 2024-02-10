@@ -45,4 +45,14 @@ Initiate the build process, but first make sure that your `PATH` variable contai
 
  make
 
-You will get the image files required for flashing in the `~/ox64/buildroot/output/images` directory.
+Buildroot will output to the `~/ox64/buildroot/output/images` directory. Check that you have the required files for flashing:
+
+ cd ~/Downloads/ox64/buildroot/output/images
+ ls | less *808*.bin *.img
+
+Expected files:
+
+* m0_lowload_bl808_m0.bin
+* d0_lowload_bl808_d0.bin
+* bl808-firmware.bin
+* sdcard.img

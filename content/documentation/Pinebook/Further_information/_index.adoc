@@ -9,7 +9,7 @@ menu:
     weight: 6
 ---
 
-* link:Other_resources[Other resources]
+* link:Specifications[]
 * link:Datasheets[]
 * link:Schematics_and_certifications[Schematics and certifications]
-* link:Specifications[]
+* link:Other_resources[Other resources]

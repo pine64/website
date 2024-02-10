@@ -28,8 +28,3 @@ The APN settings are either located under `Settings > Mobile > Access Point Name
 === Plasma Mobile
 
 The APN settings are located under `Settings > Cellular Networks > SIM 0 > Modify APNs`. While this is an auto-detect button, some cell providers may be detected incorrectly. Additionally, the settings for MMS are located under `Spacebar > Settings > Multimedia Messages (MMS)`.
-
-== List of tested carrier APN settings
-
-A list of tested carrier APN settings can be found in the wiki under https://wiki.pine64.org/wiki/PinePhone_APN_Settings[APN settings].
-

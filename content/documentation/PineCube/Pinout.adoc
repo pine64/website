@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineCube"
     identifier: "PineCube/Pinout"
-    weight: 
+    weight: 2
 ---
 
 image:/documentation/images/PineCube_GPIO_Pinout.png[width=700]

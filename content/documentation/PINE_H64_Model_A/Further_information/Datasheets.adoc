@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PINE_H64_Model_A/Further_information"
     identifier: "PINE_H64_Model_A/Further_information/Datasheets"
-    weight: 
+    weight: 1
 ---
 
 Allwinner H6 SoC information:

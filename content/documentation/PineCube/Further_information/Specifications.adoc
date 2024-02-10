@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineCube/Further_information"
     identifier: "PineCube/Further_information/Specifications"
-    weight: 
+    weight: 1
 ---
 
 * *Dimensions:* 55mm x 51mm x 51.5mm

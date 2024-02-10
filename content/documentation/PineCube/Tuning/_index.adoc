@@ -6,8 +6,8 @@ menu:
     title:
     parent: "PineCube"
     identifier: "PineCube/Tuning"
-    weight: 
+    weight: 6
 ---
 
-* link:Sound_controls[Sound controls]
 * link:Camera[]
+* link:Sound_controls[Sound controls]

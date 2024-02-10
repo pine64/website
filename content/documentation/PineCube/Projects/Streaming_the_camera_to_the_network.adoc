@@ -1,5 +1,5 @@
 ---
-title: "PineCube: Streaming the camera to the network"
+title: "Streaming the camera to the network"
 draft: false
 menu:
   docs:
@@ -26,6 +26,7 @@ Create an hls directory to be shared in the existing tmpfs file system that is m
 Create an index.html and optionally a favicon.ico or even a set of icons, and then put the files into the /dev/shm/hls directory. An example index.html that works is available in the Getting Started section of the https://github.com/video-dev/hls.js/#getting-started[README] for https://github.com/video-dev/hls.js/[hls.js]. We recommend downloading the hls.js file and editing the example index.html to serve your local copy of it instead of fetching it from a CDN. This file provides HLS playback capabilities in browsers which don't natively support it (which is most browsers aside from the iPhone).
 
 In one terminal, run the camera capture pipeline:
+
 ```
 cd /dev/shm/hls/ &&
 media-ctl --set-v4l2 '"ov5640 1-003c":0[fmt:UYVY8_2X8/240x320@1/15]' &&
@@ -33,12 +34,14 @@ gst-launch-1.0 v4l2src ! video/x-raw,width=320,height=240,format=UYVY,framerate=
 ```
 
 Alternatively it is possible to capture at a higher resolution:
+
 ```
 media-ctl --set-v4l2 '"ov5640 1-003c":0[fmt:UYVY8_2X8/1920x1080@1/15]'
 cd /dev/shm/hls/ && gst-launch-1.0 v4l2src ! video/x-raw,width=1920,height=1080,format=UYVY,framerate=15/1 ! decodebin ! videoconvert ! video/x-raw,format=I420 ! clockoverlay ! timeoverlay valignment=bottom ! x264enc speed-preset=ultrafast tune=zerolatency ! mpegtsmux ! hlssink target-duration=1 playlist-length=2 max-files=3
 ```
 
 In another, run a simple single threaded webserver which will serve html, javascript, and HLS to web clients:
+
 ```
 cd /dev/shm/hls/ && python3 -m http.server
 ```
@@ -78,6 +81,7 @@ Build required v4l2 software:
  git clone --recursive https://github.com/mpromonet/v4l2rtspserver && cd v4l2rtspserver && cmake -D LIVE555URL=https://download.videolan.org/pub/contrib/live555/live.2020.08.19.tar.gz . && make && make install;
 
 Running the camera:
+
  media-ctl --set-v4l2 '"ov5640 1-003c":0[fmt:UYVY8_2X8/640x480@1/30]';
  modprobe v4l2loopback video_nr=10 debug=2;
  v4l2compress -fH264  -w -vv /dev/video0 /dev/video10 &
@@ -95,7 +99,7 @@ GStreamer's RTSP server isn't an element you can use with gst-launch, but rather
 
 After building gst-rtsp-launch (which is relatively simple on Ubuntu groovy; just `apt install libgstreamer1.0-dev libgstrtspserver-1.0-dev` first), you can read JPEG data directly from the camera and stream it via RTSP: `media-ctl --set-v4l2 '"ov5640 1-003c":0[fmt:JPEG_1X8/1280x720]' && gst-rtsp-launch 'v4l2src ! image/jpeg,width=1280,height=720 ! rtpjpegpay name=pay0'`
 
-This stream can be played using `vlc rtsp://pinecube.local:8554/video` or mpv, ffmpeg, gst-play-1.0, etc. If you increase the resolution to 1920x1080, mpv and gst-play can still play it, but VLC will complain `The total received frame size exceeds the client's buffer size (2000000).  73602 bytes of trailing data will be dropped! ` if you don't tell it to increase its buffer size with `--rtsp-frame-buffer-size=300000`.
+This stream can be played using `vlc rtsp://pinecube.local:8554/video` or mpv, ffmpeg, gst-play-1.0, etc. If you increase the resolution to 1920x1080, mpv and gst-play can still play it, but VLC will complain `The total received frame size exceeds the client's buffer size (2000000).  73602 bytes of trailing data will be dropped! ` if you don't tell it to increase its buffer size with `--rtsp-frame-buffer-size=300000`
 
 == gstreamer: h264 RTSP
 
@@ -128,6 +132,7 @@ This approach has the advantage of being relatively low latency (under a second)
 Gstreamer can almost do this by itself, as it has a multipartmux element which produces the headers which precede each frame. But sadly, despite various forum posts lamenting the lack of one over the last 12+ years, as of the end of the 50th year of the UNIX era (aka 2020), somehow nobody has yet gotten a webserver element merged in to gstreamer (which is necessary to produce the HTTP response, which is required for browsers other than firefox to play it). So, here is an absolutely minimal "webserver" which will get MJPEG displaying in a (single) browser.
 
 Create a file called `mjpeg-response.sh`:
+
  #! /bin/bash
  media-ctl --set-v4l2 '"ov5640 1-003c":0[fmt:JPEG_1X8/1920x1080]'
  b="--duct_tape_boundary"
@@ -165,4 +170,3 @@ Now that you have /dev/video10 hooked into the gstreamer pipeline you can then c
  vlc v4l2:///dev/video10
 
 Be sure to disconnect VLC before trying to use the virtual web camera with chromium. Launch chromium and go to a web conference like https://meet.jit.si[jitsi]. When it prompts you for the camera pick the "Dummy Video Device..." and it should be much like what you see in VLC. Note that Firefox isn't really working at this moment and the symptoms appear very similar to the problem with mpv/ffmpeg mentioned above, ie. when they connect to the camera they show only the first frame and then drop. It's unclear whether the bug is in gstreamer, v4l, or ffmpeg (or somewhere in these instructions).
-

@@ -188,7 +188,7 @@ image:/documentation/images/Boot-logo-dogbone.jpg[Dog bone by River M.]
 === Get Art
 
 * Boot logo art is art that you custom make or download from IronOS Meta. It displays when you initially power on the Pinecil (boot up).
-* Currently '''only''' older Pinecil V1 models which use DFU files can flash boot logo art. 
+* Currently only older Pinecil V1 models which use DFU files can flash boot logo art. 
 * Download and extract all the premade Boot logo art from this https://github.com/Ralim/IronOS-Meta/releases[pinecil.zip file here].
 * Note that for Pinecil V1, only the images with filename "dfu" will work, you can delete all other formats from the extracted zip.
 * Sample images of https://github.com/Ralim/IronOS-Meta/tree/main/Bootup%20Logos#logos-preview[premade free art].

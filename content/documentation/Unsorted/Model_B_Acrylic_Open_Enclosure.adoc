@@ -24,7 +24,7 @@ To install the SBC inside the case, stick the long screws into the SBC mounting 
 image:/documentation/images/Model_b_open_enclosure_top_cad.png[Top_view_of_the_plate,title="Top_view_of_the_plate"]
 image:/documentation/images/Model_B_Open_Enclosure_Top_Fan_Mount.jpeg[The assembled modified case with a Noctua NF-A4x10 5V PWM mounted to it. The SBC is mounted in the enclosure upside-down.,title="The assembled modified case with a Noctua NF-A4x10 5V PWM mounted to it. The SBC is mounted in the enclosure upside-down."]
 
-User:CounterPillow has created an alternate 3D-printable top plate which allows for the mounting of a 40mmx40mmx10mm fan. The STL and STEP files are available free of charge under https://wiki.pine64.org/wiki/File:Model_B_acrylic_case_top_plate_with_fan_cutout.zip, licensed as CC-BY 4.0.
+User:CounterPillow has created an alternate 3D-printable top plate which allows for the mounting of a 40mmx40mmx10mm fan. The STL and STEP files are available free of charge under https://wiki.pine64.org/wiki/File:Model_B_acrylic_case_top_plate_with_fan_cutout.zip[], licensed as CC-BY 4.0.
 
 A fan is mounted to it using self-tapping fan screws usually shipped with computer fans; put the fan on the underside of the plate, and screw in the self-tapping screws from the top side. You can either have the fan exhaust air through the top, or blow it onto the SoC's heatsink. The latter configuration appears to work better, but precise measurements haven't been made yet.
 

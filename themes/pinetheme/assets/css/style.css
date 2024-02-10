@@ -403,15 +403,15 @@ h1 {
     }
 }
 #header-notice {
-    background-color: #0069B5;
+    background-color: white;
     width: 100%;
     flex: 1;
 }
 #header-notice-text {
-    color: white;
+    color: #222;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 6px 8px;
+    padding: 6px 38px;
     font-weight: 400;
 }
 #header-notice-text p {
@@ -419,7 +419,7 @@ h1 {
     line-height: 1.2;
 }
 #header-notice-text a {
-    color: white;
+    color: #222;
     text-decoration: underline;
 }
 #main_menu { 

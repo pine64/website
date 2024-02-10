@@ -40,10 +40,10 @@ By using Tow-Boot:
 . The LED will turn blue if done successfully. This will only work if Tow-Boot is installed
 . When connecting the device to a computer via USB it will behave like an USB drive now
 . Check if the eMMC appears under `lsblk`, the output might look like the following: +
-`'''mmcblk2'''      179:0    0 115.2G  0 disk` +
+`mmcblk2      179:0    0 115.2G  0 disk` +
 `├─mmcblk2p1  179:1    0   122M  0 part /boot` +
 `└─mmcblk2p2  179:2    0 115.1G  0 part /` +
-Note: In this example, '''/dev/mmcblk2''' is the device, while ''mmcblk2p1'' and ''mmcblk2p2'' are partitions of the device. The downloaded images are images from full devices, which means that the full device (''mmcblk2'' in this example) needs to be flashed. Ignore the partitions!
+Note: In this example, **dev/mmcblk2** is the device, while ''mmcblk2p1'' and ''mmcblk2p2'' are partitions of the device. The downloaded images are images from full devices, which means that the full device (''mmcblk2'' in this example) needs to be flashed. Ignore the partitions!
 . *Important:* Typically the image will be compressed in an archive file to reduce the download size (such as _.gz_ or _.xz_). Extract the image from its archive file to get the file with the file extension _.img_
 . Flash the image file using `sudo dd if=*IMAGE.img* of=/dev/*DEVICE* bs=1M status=progress conv=fsync` (replace _IMAGE.img_ with the filename of the image you want to flash and make sure it has the file extension _.img_ and replace _DEVICE_ with the correct device from the _lsblk_ command)
 . Reboot the PinePhone Pro

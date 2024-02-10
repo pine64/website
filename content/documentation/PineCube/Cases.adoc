@@ -1,12 +1,12 @@
 ---
-title: "Case information"
+title: "Cases"
 draft: false
 menu:
   docs:
     title:
     parent: "PineCube"
-    identifier: "PineCube/Case_information"
-    weight: 
+    identifier: "PineCube/Cases"
+    weight: 3
 ---
 
 image:/documentation/images/PineCube_Case-1.jpg[]

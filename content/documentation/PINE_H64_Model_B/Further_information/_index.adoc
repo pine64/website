@@ -9,7 +9,6 @@ menu:
     weight: 
 ---
 
-* link:Mali-T720_driver[Mali-T720 driver]
 * link:Datasheets[]
-* link:Information,_Schematics_and_Certifications[Information, Schematics and Certifications]
-* link:SoC_and_Memory_Specification[SoC and Memory Specification]
+* link:Schematics_and_Certifications[Schematics and Certifications]
+* link:Mali-T720_driver[Mali-T720 driver]

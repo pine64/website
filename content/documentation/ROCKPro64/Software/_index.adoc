@@ -86,7 +86,7 @@ image:/documentation/images/dietpi.png[width=100]
 
 Download:
 
-* https://dietpi.com/downloads/images/DietPi_ROCKPro64-ARMv8-Bullseye.7z[Direct download from dietpi.com]
+* https://dietpi.com/downloads/images/DietPi_ROCKPro64-ARMv8-Bullseye.img.xz[Direct download from dietpi.com]
 
 |===
 2+| Default credentials
@@ -157,7 +157,7 @@ image:/documentation/images/omv.png[width=100]
 *OpenMediaVault* is the next generation network attached storage (NAS) solution, https://www.openmediavault.org/[click this link to OMV main page] to learn more. Forum thread concerning this release can be found https://forum.pine64.org/showthread.php?tid=6308[here]
 
 Download:
-{{Outdated release}}
+WARNING: Outdated release
 * Stretch 32bit (armhf): https://github.com/ayufan-rock64/linux-build/releases/download/0.8.3/stretch-openmediavault-rockpro64-0.8.3-1141-armhf.img.xz[Direct download from ayufan's github]
 * Stretch 64bit (aarch64): https://github.com/ayufan-rock64/linux-build/releases/download/0.8.3/stretch-openmediavault-rockpro64-0.8.3-1141-arm64.img.xz[Direct download from ayufan's github]
 
@@ -234,7 +234,7 @@ image:/documentation/images/retroarena.png[width=100]
 *Retro Arena* community build for microSD and eMMC boot. This is a BETA and therefore is not update-able nor supported, however bugs or issues are appreciated to be identified and shared via the issues tab on our GitHub so that we can address them in the future. The Roshambo Case support is baked in with one major caveat due to kernel limitation: You can power the unit off by the POWER switch and the RESET button works 100% however to power the unit on you will need to manually plug/unplug the power cord. This limitation will not be present in future releases. You can follow the ongoing discussion about Retro Arena on the https://forum.pine64.org/showthread.php?tid=7555[forum]
 
 Download:
-{{Outdated release}}
+WARNING: Outdated release
 * http://files.pine64.org/os/ROCKPro64/odroidretroarena/TheRA-RP64-BETA-0.8-FINAL.img.gz[Direct download from pine64.org]
 
 === SkiffOS
@@ -394,7 +394,7 @@ image:/documentation/images/chromium.jpg[width=100]
 The *Chromium OS* community build image for microSD card and eMMC module, version beta (R76). To learn more please visit the https://forum.pine64.org/showthread.php?tid=7659[forum].
 
 Download:
-{{Outdated release}}
+WARNING: Outdated release
 * https://github.com/ayufan-rock64/chromiumos-build/releases/
 
 NOTE: Flash the image to a microSD card or an eMMC module, for example using _dd_.
