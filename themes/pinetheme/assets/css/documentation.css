@@ -249,21 +249,21 @@ nav#TableOfContents ul ul{
 }
 #doc-page .admonitionblock.caution td.icon {
     background-color: #802392;
-    color: #fff;
+    color: white;
 }
 #doc-page .admonitionblock.important td.icon {
     background-color: #e40046;
-    color: #fff;
+    color: white;
 }
 #doc-page .admonitionblock.note td.icon {
     background-color: #2d7dd2;
-    color: #fff;
+    color: white;
 }
 #doc-page .admonitionblock.tip td.icon {
     background-color: #43b929;
-    color: #fff;
+    color: white;
 }
 #doc-page .admonitionblock.warning td.icon {
     background-color: #f70;
-    color: #fff;
+    color: white;
 }
