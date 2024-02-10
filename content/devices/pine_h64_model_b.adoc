@@ -78,5 +78,5 @@ Built-in 802.11ac WiFi and Bluetooth 4.1
 
 | link:/documentation/PINE_H64_Model_B/[PINE H64 Model B]
 
-| link:/documentation/PINE_H64_Model_B/Further_information/Information_Schematics_and_Certifications/[Information, Schematics and Certifications]
+| link:/documentation/PINE_H64_Model_B/Further_information/Schematics_and_Certifications/[Schematics and Certifications]
 |===

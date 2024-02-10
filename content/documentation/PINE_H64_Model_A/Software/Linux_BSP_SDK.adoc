@@ -4,9 +4,9 @@ draft: false
 menu:
   docs:
     title:
-    parent: "PINE_H64_Model_A/SDK"
-    identifier: "PINE_H64_Model_A/SDK/Linux_BSP_SDK"
-    weight: 
+    parent: "PINE_H64_Model_A/Software"
+    identifier: "PINE_H64_Model_A/Software/Linux_BSP_SDK"
+    weight: 99
 ---
 
 The Linux BSP Kernel version 4.9

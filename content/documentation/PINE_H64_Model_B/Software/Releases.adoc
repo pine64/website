@@ -1,12 +1,12 @@
 ---
-title: "Software Releases"
+title: "Releases"
 draft: false
 menu:
   docs:
     title:
-    parent: "PINE_H64_Model_B"
-    identifier: "PINE_H64_Model_B/Software_Releases"
-    weight: 
+    parent: "PINE_H64_Model_B/Software"
+    identifier: "PINE_H64_Model_B/Software/Releases"
+    weight: 2
 ---
 
 The following releases are for the PINE H64 Model B
@@ -40,8 +40,8 @@ image:/documentation/images/dietpi.png[width=100]
 
 Download:
 
-* https://dietpi.com/downloads/images/DietPi_PINEH64-ARMv8-Bullseye.7z[Debian 11 Bullseye] (supports the microSD card and eMMC, 4GB or more)
-* https://dietpi.com/downloads/images/DietPi_PINEH64-ARMv8-Bookworm.7z[Debian 12 Bookworm] (supports the microSD card and eMMC, 4GB or more)
+* https://dietpi.com/downloads/images/DietPi_PINEH64-ARMv8-Bullseye.img.xz[Debian 11 Bullseye] (supports the microSD card and eMMC, 4GB or more)
+* https://dietpi.com/downloads/images/DietPi_PINEH64-ARMv8-Bookworm.img.xz[Debian 12 Bookworm] (supports the microSD card and eMMC, 4GB or more)
 
 |===
 2+| Default credentials

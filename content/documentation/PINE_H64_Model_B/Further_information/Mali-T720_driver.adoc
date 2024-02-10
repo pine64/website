@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PINE_H64_Model_B/Further_information"
     identifier: "PINE_H64_Model_B/Further_information/Mali-T720_driver"
-    weight: 
+    weight: 3
 ---
 
 A good DRM PowerPoint presentation by Free Electron https://free-electrons.com/pub/conferences/2017/kr/ripard-drm/ripard-drm.pdf[here] and the DRM video presentation by Free Electron https://www.youtube.com/watch?v=LbDOCJcDRoo[here].
