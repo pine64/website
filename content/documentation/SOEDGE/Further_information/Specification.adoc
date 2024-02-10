@@ -9,8 +9,6 @@ menu:
     weight: 
 ---
 
-image:/documentation/images/RK1808_icon.png[right,title="right"]
-
 Based on the https://www.rock-chips.com/a/en/products/RK18_Series/2019/0529/989.html[Rockchip RK1808].
 
 == CPU Architecture

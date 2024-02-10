@@ -1,15 +1,15 @@
 ---
-title: "SOEDGE Software Releases"
+title: "Releases"
 draft: false
 menu:
   docs:
     title:
     parent: "SOEDGE"
-    identifier: "SOEDGE/Software"
-    weight: 
+    identifier: "SOEDGE/Releases"
+    weight: 1
 ---
 
-Releases for the link:/documentation/SOEDGE[SOEDGE].
+Releases for the SOEDGE.
 
 == Linux BSP
 

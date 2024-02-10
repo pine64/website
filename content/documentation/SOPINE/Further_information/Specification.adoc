@@ -9,9 +9,7 @@ menu:
     weight: 
 ---
 
-* Based on Allwinner A64
-
-image:/documentation/images/Allwinner_A64.jpg[]
+Based on the Allwinner A64
 
 == CPU Architecture
 
