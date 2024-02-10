@@ -1,16 +1,14 @@
 ---
-title: "Information, Schematics and Certifications"
+title: "Schematics and Certifications"
 draft: false
 menu:
   docs:
     title:
     parent: "PINE_H64_Model_A/Further_information"
-    identifier: "PINE_H64_Model_A/Further_information/Information,_Schematics_and_Certifications"
-    weight: 
+    identifier: "PINE_H64_Model_A/Further_information/Schematics_and_Certifications"
+    weight: 2
 ---
 
-* Board Dimensions: 133mm x 80mm x 19mm
-* Input Power: DC 5V @ 3A, 3.5mm OD/ 1.35mm ID DC jack connector, Euler connector
 * https://files.pine64.org/doc/Pine%20H64/Pine%20H64%20Port%20Assignment%20rev1.0.pdf[PINE H64 Pi-2/Euler/Ext Bus Connector Pin Assignment]
 
 PINE H64 Board Schematic:

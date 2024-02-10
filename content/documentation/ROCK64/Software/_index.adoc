@@ -118,8 +118,8 @@ image:/documentation/images/dietpi.png[width=100]
 
 Download:
 
-* https://dietpi.com/downloads/images/DietPi_ROCK64-ARMv8-Bullseye.7z[Debian 11 Bullseye] (supports the microSD card and eMMC, 4GB or more)
-* https://dietpi.com/downloads/images/DietPi_ROCK64-ARMv8-Bookworm.7z[Debian 12 Bookworm] (supports the microSD card and eMMC, 4GB or more)
+* https://dietpi.com/downloads/images/DietPi_ROCK64-ARMv8-Bullseye.img.xz[Debian 11 Bullseye] (supports the microSD card and eMMC, 4GB or more)
+* https://dietpi.com/downloads/images/DietPi_ROCK64-ARMv8-Bookworm.img.xz[Debian 12 Bookworm] (supports the microSD card and eMMC, 4GB or more)
 
 |===
 2+| Default credentials
@@ -169,7 +169,7 @@ image:/documentation/images/nems.jpg[width=100]
 
 WARNING: Only supports ROCK64 ver2 SBC
 
-{{Outdated release}}
+WARNING: Outdated release
 
 Download:
 
@@ -193,7 +193,7 @@ image:/documentation/images/nextcloudpi.png[width=100]
 
 Download:
 
-{{Outdated release}}
+WARNING: Outdated release
 
 * https://files.pine64.org/os/ROCK64/nextcloudplus/NextCloudPi_Rock64_03-10-19.img.xz[Direct download from pine64.org]
 

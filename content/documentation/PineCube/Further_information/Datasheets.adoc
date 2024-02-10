@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineCube/Further_information"
     identifier: "PineCube/Further_information/Datasheets"
-    weight: 
+    weight: 2
 ---
 
 Allwinner (Sochip) S3 SoC information:

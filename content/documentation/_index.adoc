@@ -42,7 +42,6 @@ link:PineTime[PineTime]
 | Laptops
 a|link:Pinebook[Pinebook] +
 link:Pinebook_Pro[Pinebook Pro] +
-link:Pinebook_Pro/Dock[Pinebook Pro Docking station]
 
 | Single-board computers
 a|link:Ox64[Ox64] +

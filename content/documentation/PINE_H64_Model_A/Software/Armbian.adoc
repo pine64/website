@@ -1,13 +1,15 @@
 ---
-title: "Armbian"
+title: "Releases"
 draft: false
 menu:
   docs:
     title:
     parent: "PINE_H64_Model_A/Software"
-    identifier: "PINE_H64_Model_A/Software/Armbian"
-    weight: 
+    identifier: "PINE_H64_Model_A/Software/Releases"
+    weight: 1
 ---
+
+== Armbian
 
 *Armbian* is a Linux distribution designed for ARM boards. They are usually Debian or Ubuntu flavored.
 

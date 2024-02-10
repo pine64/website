@@ -4,9 +4,9 @@ draft: false
 menu:
   docs:
     title:
-    parent: "PINE_H64_Model_B/SDK"
-    identifier: "PINE_H64_Model_B/SDK/Android_SDK"
-    weight: 
+    parent: "PINE_H64_Model_B/Software"
+    identifier: "PINE_H64_Model_B/Software/Android_SDK"
+    weight: 99
 ---
 
 Android Pie 9.0 SDK version 1.0

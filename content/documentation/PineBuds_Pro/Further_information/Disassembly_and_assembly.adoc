@@ -4,8 +4,8 @@ draft: false
 menu:
   docs:
     title:
-    parent: "PineBuds_Pro"
-    identifier: "PineBuds_Pro/Disassembly_and_assembly"
+    parent: "PineBuds_Pro/Further_information"
+    identifier: "PineBuds_Pro/Further_information/Disassembly_and_assembly"
     weight: 3
 ---
 

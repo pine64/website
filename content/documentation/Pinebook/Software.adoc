@@ -6,18 +6,18 @@ menu:
     title:
     parent: "Pinebook"
     identifier: "Pinebook/Software"
-    weight: 1
+    weight: 3
 ---
 
 This page contains a list of all available releases and tools for the link:/documentation/Pinebook[Pinebook].
 
-== Linux Image Releases
-
-Special thanks to the _Sunxi community_, _ayufan_ and _longsleep_ for their contributions.
+== Linux
 
 === AOSC
 
-image:/documentation/images/aosc.png[width=100]_*AOSC_OS*_is_a_general_purpose_Linux_distribution_that_strives_to_simplify_user_experience_and_improve_free_and open source software for day-to-day productivity. To learn more about AOSC, please visit the official https://aosc.io/[AOSC website].
+image:/documentation/images/aosc.png[width=100]
+
+*AOSC OS* is a general purpose Linux distribution that strives to simplify user experience and improve free and open source software for day-to-day productivity. To learn more about AOSC, please visit the official https://aosc.io/[AOSC website].
 
 Download:
 
@@ -37,9 +37,9 @@ image:/documentation/images/armbian.png[width=100]
 *Armbian* is a Linux distribution designed for ARM boards. They are usually Debian or Ubuntu flavored. To find out more about Armbian and available download options please visit the https://www.armbian.com/rock64/[Armbian ROCK64 site].
 
 |===
-|+ Compatibility
+3+|Compatibility
 
-| Pinebook 11.6″ |Pinebook 11.6" 1080p | Pinebook 14″
+| Pinebook 11.6″ |Pinebook 11.6" 1080p | Pinebook 14″
 
 | ✅ | ✅ | ✅
 
@@ -61,9 +61,9 @@ Download:
 *Debian* is an operating system and a distribution of Free Software. The forum thread for release can be found https://forum.pine64.org/showthread.php?tid=14341[here].
 
 |===
-|+ Compatibility
+3+|Compatibility
 
-| Pinebook 11.6″ |Pinebook 11.6" 1080p | Pinebook 14″
+| Pinebook 11.6″ |Pinebook 11.6" 1080p | Pinebook 14″
 
 | ✅ | ✅ | ✅
 
@@ -94,8 +94,8 @@ image:/documentation/images/dietpi.png[width=100]
 
 Download:
 
-* https://dietpi.com/downloads/images/DietPi_Pinebook-ARMv8-Bullseye.7z[Debian 11 Bullseye] (supports the microSD card and eMMC, 4GB or more)
-* https://dietpi.com/downloads/images/DietPi_Pinebook-ARMv8-Bookworm.7z[Debian 12 Bookworm] (supports the microSD card and eMMC, 4GB or more)
+* https://dietpi.com/downloads/images/DietPi_Pinebook-ARMv8-Bullseye.img.xz[Debian 11 Bullseye] (supports the microSD card and eMMC, 4GB or more)
+* https://dietpi.com/downloads/images/DietPi_Pinebook-ARMv8-Bookworm.img.xz[Debian 12 Bookworm] (supports the microSD card and eMMC, 4GB or more)
 
 |===
 2+| Default credentials
@@ -111,9 +111,9 @@ image:/documentation/images/Kali-logo.png[width=100]
 *Kali Linux* is an Advanced Penetration Testing Linux distribution used for Penetration Testing, Ethical Hacking and network security assessments.
 
 |===
-|+ Compatibility
+3+|Compatibility
 
-| Pinebook 11.6″ |Pinebook 11.6" 1080p | Pinebook 14″
+| Pinebook 11.6″ |Pinebook 11.6" 1080p | Pinebook 14″
 
 | ✅ | ✅ | ✅
 
@@ -137,9 +137,9 @@ image:/documentation/images/slackware.jpg[width=100]
 *Slackware* is a very old, interesting, convenient and easy distribution. Visit the project's website here (https://fail.pp.ua). You can follow the ongoing discussion about Slackware on the PINE64 forum (https://forum.pine64.org/showthread.php?tid=9439).
 
 |===
-|+ Compatibility
+3+|Compatibility
 
-| Pinebook 11.6″ |Pinebook 11.6" 1080p | Pinebook 14″
+| Pinebook 11.6″ |Pinebook 11.6" 1080p | Pinebook 14″
 
 | ❓ | ✅ | ❓
 
@@ -169,9 +169,9 @@ Download:
 * https://nycdn.netbsd.org/pub/arm/[Direct download latest release build from NetBSD by select 64bit - Pinebook]
 
 |===
-|+ Compatibility
+3+|Compatibility
 
-| Pinebook 11.6″ |Pinebook 11.6" 1080p | Pinebook 14″
+| Pinebook 11.6″ |Pinebook 11.6" 1080p | Pinebook 14″
 
 | ✅ | ❓ | ❓
 
@@ -194,7 +194,7 @@ image:/documentation/images/Puffy_mascot_openbsd.png[width=100]
 
 OpenBSD 6.6-snapshot, Community Build Image (FVWM2 WM). To learn more about OpenBSD please visit https://www.openbsd.org[OpenBSD main page]. If you need more information please ping: https://forum.pine64.org/member.php?action=profile&uid=12423.
 
-{{Outdated release}}
+WARNING: Outdated release
 
 Download:
 
@@ -219,7 +219,7 @@ image:/documentation/images/Android_logo_2019_(stacked).svg[width=100]
 
 Android 7.1 Community Build Image [microSD Boot] by ayufan. It only works on the 14.1" and 11.6" Pinebook, not applicable to 1080P 11.6' Pinebook. Special thanks to ayufan, Icenowy, lennyraposo, longsleep, lukasz, tkaiser, Xalius and PINE64 community contributors. Please use good random IO access performance microSD card such as the _Samsung EVO_ when trying out Android 7.1.
 
-{{Outdated release}}
+WARNING: Outdated release
 
 Download:
 
@@ -236,15 +236,15 @@ Notes:
 Rootable build, online update (OTA) only works when the build is not rooted. The LCD resolution is 1366 x 768.
 
 |===
-|+ Compatibility
+3+|Compatibility
 
-| Pinebook 11.6″ |Pinebook 11.6" 1080p | Pinebook 14″
+| Pinebook 11.6″ |Pinebook 11.6" 1080p | Pinebook 14″
 
 | ✅ | ❌ | ✅
 
 |===
 
-{{Outdated release}}
+WARNING: Outdated release
 
 Download:
 
@@ -259,15 +259,15 @@ Notes:
 Rootable build. The LCD resolution is 1920 x 1080.
 
 |===
-|+ Compatibility
+3+|Compatibility
 
-| Pinebook 11.6″ |Pinebook 11.6" 1080p | Pinebook 14″
+| Pinebook 11.6″ |Pinebook 11.6" 1080p | Pinebook 14″
 
 | ❌ | ✅ | ❌
 
 |===
 
-{{Outdated release}}
+WARNING: Outdated release
 
 Download:
 
@@ -282,15 +282,15 @@ Notes:
 Rootable build. The LCD resolution is 1920 x 1080. Please use an high performance microSD card for Android. Please ignore the warning message regarding an corrupted SD on the home screen in the upper left corner.
 
 |===
-|+ Compatibility
+3+|Compatibility
 
-| Pinebook 11.6″ |Pinebook 11.6" 1080p | Pinebook 14″
+| Pinebook 11.6″ |Pinebook 11.6" 1080p | Pinebook 14″
 
 | ❌ | ✅ | ❌
 
 |===
 
-{{Outdated release}}
+WARNING: Outdated release
 
 Download:
 
@@ -310,15 +310,15 @@ image:/documentation/images/e.png[width=100]
 /e/OS community build. To learn more about /e/OS, please visit the https://e.foundation/[official website].  Please check out https://medium.com/@edevelopers.blog/e-os-ports-for-the-pinebook-and-pinephone-596139c76479[this article] on the Pinebook /e/ build. For a thread discussion please visit the https://forum.pine64.org/showthread.php?tid=7954[PINE64 forum]
 
 |===
-|+ Compatibility
+3+|Compatibility
 
-| Pinebook 11.6″ |Pinebook 11.6" 1080p | Pinebook 14″
+| Pinebook 11.6″ |Pinebook 11.6" 1080p | Pinebook 14″
 
 | ❌ | ✅ | ❌
 
 |===
 
-{{Outdated release}}
+WARNING: Outdated release
 
 Download:
 
@@ -341,9 +341,9 @@ Download:
 * https://files.pine64.org/SDK/Pinebook/Pinebook_SDK_android6.0.tar.xz[Direct Download] from _pine64.org_ (15.92GB, MD5 of the Zip file _12362D0B63EBF29FC363A50A942346D5_)
 
 |===
-|+ Compatibility
+3+|Compatibility
 
-| Pinebook 11.6″ |Pinebook 11.6" 1080p | Pinebook 14″
+| Pinebook 11.6″ |Pinebook 11.6" 1080p | Pinebook 14″
 
 | ✅ | ❓ | ❓
 

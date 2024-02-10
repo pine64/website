@@ -1,16 +1,13 @@
 ---
-title: "Information, Schematics and Certifications"
+title: "Schematics and Certifications"
 draft: false
 menu:
   docs:
     title:
     parent: "PINE_H64_Model_B/Further_information"
-    identifier: "PINE_H64_Model_B/Further_information/Information,_Schematics_and_Certifications"
-    weight: 
+    identifier: "PINE_H64_Model_B/Further_information/Schematics_and_Certifications"
+    weight: 2
 ---
-
-* Board Dimensions: 85mm x 56mm x 18.8mm
-* Input Power: DC 5V @ 3A, 3.5mm OD/ 1.35mm ID DC jack connector
 
 * https://files.pine64.org/doc/Pine%20H64/Pine%20H64%20model%20B%20Port%20Assignment%20rev2.0.pdf[PINE H64 Model B Pi-2 Bus and EXP Bus Connector Pin Assignment]
 

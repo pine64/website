@@ -1,5 +1,5 @@
 ---
-title: "PineCube Armbian Notes"
+title: "Armbian Notes"
 draft: false
 menu:
   docs:

@@ -1,13 +1,15 @@
 ---
-title: "Armbian"
+title: "Releases"
 draft: false
 menu:
   docs:
     title:
     parent: "PineCube/Software"
-    identifier: "PineCube/Software/Armbian"
-    weight: 
+    identifier: "PineCube/Software/Releases"
+    weight: 1
 ---
+
+== Armbian
 
 image:/documentation/images/armbian.png[width=100]
 
@@ -21,3 +23,10 @@ Notes:
 
 * See link:/documentation/PineCube/Software/Armbian_notes[Armbian notes]
 
+== NixOS
+
+image:/documentation/images/NixOS.webp[width=100]
+
+*NixOS* is a Linux distribution built on top of the Nix package manager using declarative configuration to allow reliable system upgrades.
+
+* https://github.com/danielfullmer/pinecube-nixos[danielfullmer's Github]

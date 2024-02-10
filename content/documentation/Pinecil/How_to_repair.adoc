@@ -132,7 +132,7 @@ NOTE: For normal operation of the iron, omission of the copper ring in step #2 d
 . Always unplug Pinecil before swapping tips. Hot swapping is not a good idea, and for the V2 this could cause strange behavior as the V2 auto-detects tip resistance only on power-up or reboot.
 . Sometimes just disassembling and reassembling all parts back correctly and installing the 2 internal contacts with screws correctly also helps.
 . Poor contact could happen if the tips are not clean or brand new with factory residue or not making good contact with the internal clips inside the Pinecil. The two contacts inside might need to also be removed, wiped and reinstalled with the two screws (ensure the small metal tab on the clip sits into the small hole in the PCB).
-. See link:/documentation/Pinecil/Tips#how_to_check_new_tips?[Pinecil Tips]''' article for more details on testing.
+. See link:/documentation/Pinecil/Tips#how_to_check_new_tips?[Pinecil Tips] article for more details on testing.
 
 === Reverse Polarity Damage
 
@@ -238,7 +238,7 @@ WARNING: Do this at your own risk, read everything in this section and related/l
 
 image:/documentation/images/Pinecil-V1andV2.png[Pinecil V1 has blue rubber. Newer Pinecil V2 has green rubber & Bluetooth LE chip]
 
-. This modification is '''Not''' for the V2 (sold after Aug 1, 2022 with green thumb grip) as the V2 '''already''' has 24V DC barrel charger capability.
+. This modification is not for the V2 (sold after Aug 1, 2022 with green thumb grip) as the V2 already has 24V DC barrel charger capability.
 . If you have an older V1 model, then first upgrade to the newest link:/documentation/Pinecil#Firmware_&_Updates[firmware here] before starting this modification. The PD debug menu was added to the firmware in 2.17 and other important fixes came later. Access to the hidden PD debug menu is necessary to assist with this mod.
 . See Ralim's IronOS for how to use the hidden https://ralim.github.io/IronOS/DebugMenu/#pd-debug-menu[PD Debug here] and check if your version of Pinecil V1 could benefit from the modification.
 . If PD-Debug menu says "No VBUS", then stop here, you do not need the modification or any cut of the trace line, it will not benefit you because there is no connection to the VBUS already. If it says "w. Vbus" then continue. If you don't have a PD-Debug menu, then upgrade to the newest firmware first, see instructions above.
