@@ -9,9 +9,10 @@ menu:
     weight: 2
 ---
 
-Open the terminal and clone the primary Buildroot repository and the specific Buildroot Bouffalo repository:
+Open the terminal and clone the upstream Buildroot repository and the Buildroot Bouffalo overlay repository:
 
- cd ~/Downloads/ox64
+ mkdir -p ~/ox64
+ cd ~/ox64
  git clone https://github.com/buildroot/buildroot
  git clone https://github.com/openbouffalo/buildroot_bouffalo
 
@@ -21,12 +22,11 @@ Define an environment variable for the Buildroot Bouffalo overlay path:
 
 Change directory into the cloned Buildroot folder:
 
- cd ~/Downloads/ox64/buildroot
+ cd ~/ox64/buildroot
 
 Apply the default configuration for Pine64 Ox64:
 
  make BR2_EXTERNAL=$BR_BOUFFALO_OVERLAY_PATH pine64_ox64_defconfig
- # make clean # deletes all the already compiled object files
 
 Use the `menuconfig` tool to adjust the build settings:
 
@@ -42,20 +42,18 @@ Within `menuconfig`, configure the following:
 * Set `Target ABI` to `lp64d`
 * Under `Toolchain`, enable `Fortran support` and `OpenMP support`
 
-Initiate the build process, but make sure first that your `PATH` variable contains no spaces:
+Initiate the build process, but first make sure that your `PATH` variable contains no spaces:
 
  make
 
-Check you got required file for flashing in the `buildroot/output/images` directory.
+Buildroot will output to the `~/ox64/buildroot/output/images` directory. Check that you have the required files for flashing:
 
- cd ~/Downloads/ox64/buildroot/output/images
- ls | less *808*.bin *.img
+ cd ~/ox64/buildroot/output/images
+ ls *808*.bin *.img
 
 Expected files:
 
-* m0_lowload_bl808_m0.bin
-* d0_lowload_bl808_d0.bin
-* bl808-firmware.bin
-* sdcard.img
-
-** bl808-firmware-combo.bin # combined image file (see link:Flashing#optional_create_a_combined_soc_image[Flashing] chapter)
+* `m0_lowload_bl808_m0.bin`
+* `d0_lowload_bl808_d0.bin`
+* `bl808-firmware.bin`
+* `sdcard.img`
