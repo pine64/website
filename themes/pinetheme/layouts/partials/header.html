@@ -70,7 +70,7 @@
         <!-- Main menu -->
         <div id="main_menu">
             {{- $currentPage := . -}}
-            {{- range .Site.Menus.right -}}
+            {{- range .Site.Menus.right.ByWeight -}}
                 <!-- Menu item has subitems -->
                 {{ if .HasChildren }}
                     <div class="dropdown">
