@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-In this section we document a variety of ways to stream video to the network from the link:/documentation/PineCube[PineCube]. Unless specified otherwise, all of these examples have been tested on Ubuntu groovy (20.10). See https://github.com/ioerror/pinecube[this small project for the PineCube] for easy to use programs tuned for the PineCube.
+In this section we document a variety of ways to stream video to the network from the PineCube. Unless specified otherwise, all of these examples have been tested on Ubuntu groovy (20.10). See https://github.com/ioerror/pinecube[this small project for the PineCube] for easy to use programs tuned for the PineCube.
 
 In the examples which use h264, we are currently encoding using the x264 library which is not very fast on this CPU. The SoC in the PineCube does have a hardware h264 encoder, which the authors of these examples have so far not tried to use. It appears that https://github.com/gtalusan/gst-plugin-cedar might provide easy access to it, however. Please update this wiki if you find out how to use the hardware encoder! 
 

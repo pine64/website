@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-It's possible to use the link:/documentation/PineCube[PineCube] as an inside or outside security camera using https://motion-project.github.io/index.html[motion]. For outside, you'll need an enclosure with a transparent dome to protect from the weather. One suggestion is to mount the camera with the lens as close as possible to the dome to avoid reflection.
+It's possible to use the PineCube as an inside or outside security camera using https://motion-project.github.io/index.html[motion]. For outside, you'll need an enclosure with a transparent dome to protect from the weather. One suggestion is to mount the camera with the lens as close as possible to the dome to avoid reflection.
 
 The Motion package can be installed in a variety of Linux flavors. There's a package in the standard Ubuntu and Debian repositories and works with Armbian. It provides a very simple web interface for live viewing of the camera feed and also has motion trigger capabilities to store either still pictures or in later versions videos. Note that it is also possible to build hooks to automatically process or upload those recordings.
 
