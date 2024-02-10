@@ -43,7 +43,7 @@ image:/documentation/images/FreedomBox.jpg[]
 
 '''FreedomBox''' is a private server for non-experts: it lets you install and configure server applications with only a few clicks. For more information about FreedomBox, please visit http://www.freedombox.org.
 
-{{Outdated release}}
+WARNING: Outdated release
 
 Download:
 
@@ -73,7 +73,7 @@ image:/documentation/images/nems.jpg[]
 
 '''NEMS''' stands for "Nagios Enterprise Monitoring Server" and it is a modern pre-configured, customized and ready-to-deploy Nagios Core image designed to run on low-cost micro computers. To find out more on NEMS Linux, please visit their https://nemslinux.com/[site].
 
-{{Outdated release}}
+WARNING: Outdated release
 
 Download:
 

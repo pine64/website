@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinebook"
     identifier: "Pinebook/Variants"
-    weight: 3
+    weight: 2
 ---
 
 The following variants exist of the Pinebook:
