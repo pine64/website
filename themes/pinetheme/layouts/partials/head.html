@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="icon" type="image/x-icon" href="/img/logo_blue.svg">
-    <!--
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/css/syntax.css">
-    <link rel="stylesheet" type="text/css" href="/css/print.css">
-    <link rel="stylesheet" type="text/css" href="/css/slider.css">
-    -->
 
     {{- $style_style := resources.Get "/css/style.css" | minify | fingerprint -}}
     <link rel="stylesheet" href="{{ $style_style.Permalink }}"  integrity="{{ $style_style.Data.Integrity }}">
