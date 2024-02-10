@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineCube"
     identifier: "PineCube/Further_information"
-    weight: 
+    weight: 99
 ---
 
 * link:Datasheets[]
