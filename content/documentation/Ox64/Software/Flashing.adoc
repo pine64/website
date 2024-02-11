@@ -16,7 +16,7 @@ This page explains how to flash an Ox64 board and a microSD card to boot the sys
 You need a Linux machine, a Raspberry Pi Pico to act as a UART adapter, the Ox64 board, and a microSD card.
 
 First, download the Raspberry Pi Pico firmware that allows it to act as a serial adapter. You may skip this step if you are using your own serial adapter
-(however see the section link:#compatible_uarts[Compatible UARTs] and link:#using_a_serial_adapter_other_than_the_pico[Using a serial adapter other than the Pico]).
+(however see the page link:/documentation/Ox64/Further_information/Compatible_UARTs/[Compatible UARTs] and link:#using_a_serial_adapter_other_than_the_pico[Using a serial adapter other than the Pico]).
 
  mkdir -p ~/ox64/pico
  cd ~/ox64/pico
