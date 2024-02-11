@@ -6,16 +6,16 @@
 
     <link rel="icon" type="image/x-icon" href="/img/logo_blue.svg">
 
-    {{- $style_style := resources.Get "/css/style.css" | minify | fingerprint -}}
-    <link rel="stylesheet" href="{{ $style_style.Permalink }}"  integrity="{{ $style_style.Data.Integrity }}">
-    {{- $style_syntax := resources.Get "/css/syntax.css" | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $style_syntax.Permalink }}"  integrity="{{ $style_syntax.Data.Integrity }}">
-    {{- $style_print := resources.Get "/css/print.css" | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $style_print.Permalink }}"  integrity="{{ $style_print.Data.Integrity }}">
-    {{- $style_slider := resources.Get "/css/slider.css" | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $style_slider.Permalink }}"  integrity="{{ $style_slider.Data.Integrity }}">
-    {{- $style_docs := resources.Get "/css/documentation.css" | minify | fingerprint -}}
-    <link rel="stylesheet" href="{{ $style_docs.Permalink }}"  integrity="{{ $style_docs.Data.Integrity }}">
+    {{- $style_style := resources.Get "css/style.css" | minify | fingerprint -}}
+    <link rel="stylesheet" href="{{ $style_style.Permalink }}" integrity="{{ $style_style.Data.Integrity }}">
+    {{- $style_syntax := resources.Get "css/syntax.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style_syntax.Permalink }}" integrity="{{ $style_syntax.Data.Integrity }}">
+    {{- $style_print := resources.Get "css/print.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style_print.Permalink }}" integrity="{{ $style_print.Data.Integrity }}">
+    {{- $style_slider := resources.Get "css/slider.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style_slider.Permalink }}" integrity="{{ $style_slider.Data.Integrity }}">
+    {{- $style_docs := resources.Get "css/documentation.css" | minify | fingerprint -}}
+    <link rel="stylesheet" href="{{ $style_docs.Permalink }}" integrity="{{ $style_docs.Data.Integrity }}">
 
     {{ $title := print .Title " - " .Site.Title -}}
     {{- if .IsHome -}}{{- $title = .Site.Title -}}{{- end -}}
