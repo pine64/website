@@ -12,28 +12,24 @@ menu:
 This page explains how to flash an Ox64 board and a microSD card to boot the system.
 
 == Prepare the environment
+
 You need a Linux machine, a Raspberry Pi Pico to act as a UART adapter, the Ox64 board, and a microSD card.
 
-First, download the Raspberry Pi Pico firmware that allows it to act as a serial adapter.
-You may skip this step if you are using your own serial adapter.
-(But see link:/documentation/Ox64/Further_information/Compatible_UARTs/[Compatible_UARTs]
-and <<using_a_serial_adapter_other_than_the_pico>>.)
+First, download the Raspberry Pi Pico firmware that allows it to act as a serial adapter. You may skip this step if you are using your own serial adapter
+(however see link:/documentation/Ox64/Further_information/Compatible_UARTs/[Compatible_UARTs] and <<using_a_serial_adapter_other_than_the_pico>>).
 
  mkdir -p ~/ox64/pico
  cd ~/ox64/pico
  wget https://github.com/Kris-Sekula/Pine64_Ox64_SBC/raw/main/uart/picoprobe.uf2
 
-Next, download the Ox64 images from the latest OpenBouffalo release. You may skip this step if
-you built your own images as per the instructions in the
-link:/documentation/Ox64/Software/Building/[Building] section.
+Next, download the Ox64 images from the latest OpenBouffalo release. You may skip this step if you built your own images as per the instructions in the link:/documentation/Ox64/Software/Building/[Building] section.
 
  mkdir -p ~/ox64/openbouffalo
  cd ~/ox64/openbouffalo
  wget https://github.com/openbouffalo/buildroot_bouffalo/releases/download/v1.0.1/bl808-linux-pine64_ox64_full_defconfig.tar.gz
  tar -xvzf bl808-linux-pine64_ox64_full_defconfig.tar.gz
 
-NOTE: If you built your own images, substitute `~/ox64/openbouffalo` with
-`~/ox64/buildroot/output/images` in all instructions that follow.
+NOTE: If you built your own images, substitute `~/ox64/openbouffalo` with `~/ox64/buildroot/output/images` in all instructions that follow.
 
 In any case, verify that you have all the required image files:
 
@@ -42,8 +38,7 @@ In any case, verify that you have all the required image files:
 * `bl808-firmware.bin` -- OpenSBI and UBoot DTB files. Runs on the D0 core.
 * `sdcard.img` -- Kernel and root filesystem. Runs on the D0 core.
 
-Next, download the latest DevCube flashing tool from BouffaloLab's website. You may skip this
-step if you are using the <<cli_flashing_method>>.
+Next, download the latest DevCube flashing tool from BouffaloLab's website. You may skip this step if you are using the <<cli_flashing_method>>.
 
  mkdir -p ~/ox64/devcube
  cd ~/ox64/devcube
@@ -51,8 +46,7 @@ step if you are using the <<cli_flashing_method>>.
  unzip BouffaloLabDevCube-v1.8.8.zip
  chmod u+x BLDevCube-ubuntu
 
-If you are not creating a <<optional_create_a_combined_soc_image, combined image>> you may need
-an older version of the DevCube. In that case, download v1.8.3 from one of the mirrors below:
+If you are not creating a <<optional_create_a_combined_soc_image, combined image>> you may need an older version of the DevCube. In that case, download v1.8.3 from one of the mirrors below:
 
 * https://openbouffalo.org/static-assets/bldevcube/BouffaloLabDevCube-v1.8.3.zip
 * https://hachyderm.io/@mkroman/110787218805897192 > https://pub.rwx.im/~mk/bouffalolab/BouffaloLabDevCube-v1.8.3.zip
@@ -65,9 +59,7 @@ Verify that your copy of `BouffaloLabDevCube-v1.8.3.zip` matches the hashes belo
 * SHA256: `e6e6db316359da40d29971a1889d41c9e97d5b1ff1a8636e9e6960b6ff960913`
 
 == Optional: create a combined SoC image
-Use the following commands to combine `m0_lowload_bl808_m0.bin`, `d0_lowload_bl808_d0.bin`, and
-`bl808-firmware.bin` into a single image. This is mainly useful for troubleshooting
-(e.g. when using DevCube v1.8.4+).
+Use the following commands to combine `m0_lowload_bl808_m0.bin`, `d0_lowload_bl808_d0.bin`, and `bl808-firmware.bin` into a single image. This is mainly useful for troubleshooting (e. g. when using DevCube v1.8.4 or later).
 
 ----
 cd ~/ox64/openbouffalo
@@ -86,8 +78,7 @@ Put the Raspberry Pi Pico board into programming mode.
 * Apply power by plugging the USB cable to PC
 * Release the BootSel button
 
-NOTE: As an alternative to pressing the BootSel button, you can also connect the probe point `TP6`
-(located on the bottom of the Pico board) to any ground point (e.g. pin 28).
+NOTE: As an alternative to pressing the BootSel button, you can also connect the probe point `TP6` (located on the bottom of the Pico board) to any ground point (e.g. pin 28).
 
 Copy `picoprobe.uf2` file into the new device `/media/<user>/RPI-RP2`.
 
@@ -114,14 +105,12 @@ Next, connect the Ox64 board to the Pico according to the following wiring diagr
 
 [NOTE]
 ====
-With the Pico flashed and wired as per the instructions above, we have access to two of the
-Ox64's UART connections at the same time.
+With the Pico flashed and wired as per the instructions above, we have access to two of the Ox64's UART connections at the same time.
 
 * `/dev/ttyACM0` connects to the D0 core's (i.e. Linux's) serial console
 * `/dev/ttyACM1` is used for flashing (but also connects to the M0 core's serial console)
 
-This configuration eliminates the need to switch the physical connections to the Ox64 board
-between flashing and testing the system.
+This configuration eliminates the need to switch the physical connections to the Ox64 board between flashing and testing the system.
 ====
 
 == Flashing the Ox64
@@ -138,8 +127,7 @@ Open a new terminal window to run the DevCube flasher.
  cd ~/ox64/devcube
  ./BLDevCube-ubuntu
 
-Select chip [BL808], press Finish, and configure BOTH the [MCU] and [IOT] tabs as follows.
-When you switch between tabs double check that they still match the settings below.
+Select chip [BL808], press Finish, and configure BOTH the [MCU] and [IOT] tabs as follows. When you switch between tabs double check that they still match the settings below.
 
  Interface: UART
  Port/SN: /dev/ttyACM1 (make sure you don't use /dev/ttyACM0, it's used by the minicom console)
@@ -223,21 +211,15 @@ Insert the microSD card into your Ox64 and open a UART connection to the Ox64 bo
 
  minicom -b 2000000 -D /dev/ttyACM0
 
-Re-apply power to the Ox64 and you will see Linux booting up. When prompted, log in
-as `root` with no password.
+Re-apply power to the Ox64 and you will see Linux booting up. When prompted, log in as `root` with no password.
 
 
 == Appendix
 
 === Using a serial adapter other than the Pico
-If you are using one of the
-link:/documentation/Ox64/Further_information/Compatible_UARTs/[supported UART adapters]
-that isn't the Pico, you will only have one serial interface available to you. For the purposes
-of this guide, let's say it is `/dev/ttyUSB0`.
+If you are using one of the link:/documentation/Ox64/Further_information/Compatible_UARTs/[supported UART adapters] that isn't the Pico, you will only have one serial interface available to you. For the purposes of this guide, let's say it is `/dev/ttyUSB0`.
 
-In addition, you will need a way of powering your Ox64. If your serial adapter has a 5V line,
-you can connect it to VBUS (pin 40). Otherwise, you can connect either the micro-B or the
-USB-C port on the Ox64 to any 5V power supply.
+In addition, you will need a way of powering your Ox64. If your serial adapter has a 5V line, you can connect it to VBUS (pin 40). Otherwise, you can connect either the micro-B or the USB-C port on the Ox64 to any 5V power supply.
 
 Refer to the pinout image below. Connect your UART adapter as follows:
 
@@ -245,8 +227,7 @@ Refer to the pinout image below. Connect your UART adapter as follows:
 * TX -> UART0_RX / GPIO15 / pin 2
 * GND -> any ground (e.g. pin 3)
 
-Then, follow the instructions in <<flashing_the_ox64>> and <<flashing_the_microsd_card>>, but
-replace all occurrences of `/dev/ttyACM1` with `/dev/ttyUSB0`.
+Then, follow the instructions in <<flashing_the_ox64>> and <<flashing_the_microsd_card>>, but replace all occurrences of `/dev/ttyACM1` with `/dev/ttyUSB0`.
 
 Next, power off the Ox64 and re-connect your UART adapter as follows:
 
@@ -254,8 +235,7 @@ Next, power off the Ox64 and re-connect your UART adapter as follows:
 * TX -> RXD / GPIO17 / pin 31
 * GND -> any ground (e.g. pin 33)
 
-Then, follow the instructions in <<booting_for_the_first_time>>, but replace all occurrences of
-`/dev/ttyACM0` with `/dev/ttyUSB0`. You should now have a working Linux system.
+Then, follow the instructions in <<booting_for_the_first_time>>, but replace all occurrences of `/dev/ttyACM0` with `/dev/ttyUSB0`. You should now have a working Linux system.
 
 image:/documentation/Ox64/images/ox64_pinout.png[Pinout of the production version,title="Pinout of the production version", 300]
 
@@ -272,58 +252,72 @@ Wipe beginning of the microSD card.
 
  sudo dd if=/dev/zero of=/dev/sdb count=1 bs=32768 status=progress
 
-Before removing partitions, if you need to remove also left signatures, use gParted and format each partition "cleared". Than remove all partitions with gParted.
+Before removing partitions, if you need to remove also left signatures, use gParted and format each partition "cleared". Than remove all partitions with GParted.
 
  sudo wipefs /dev/sdb # shows current signatures
  sudo wipefs --all --force /dev/sdb # erase current signatures
 
 Partition the microSD card.
 
- sudo sfdisk /dev/sdb --wipe always <<EOF
-  label: gpt
-  first-lba: 34
-  table-length: 8
-  start=34, size=2097152, type=linuxswap, name="swap"
-  size=210MB, name="boot", attrs="RequiredPartition,LegacyBIOSBootable"
-  size=537MB, name="rootfs", attrs="RequiredPartition,LegacyBIOSBootable"
-  size=+, name="extra", attrs="RequiredPartition,LegacyBIOSBootable"
- EOF
+----
+sudo sfdisk /dev/sdb --wipe always <<EOF
+ label: gpt
+ first-lba: 34
+ table-length: 8
+ start=34, size=2097152, type=linuxswap, name="swap"
+ size=210MB, name="boot", attrs="RequiredPartition,LegacyBIOSBootable"
+ size=537MB, name="rootfs", attrs="RequiredPartition,LegacyBIOSBootable"
+ size=+, name="extra", attrs="RequiredPartition,LegacyBIOSBootable"
+EOF
+----
 
 Mount the `sdcard.img` image, copy `boot` and `rootfs`. Add `ImageNuttx` and edit `/extlinux/extlinux.conf` to add a new Nuttx boot option.
 
- cd ~/ox64/openbouffalo
- sudo losetup -P /dev/loop1 sdcard.img
+----
+cd ~/ox64/openbouffalo
+sudo losetup -P /dev/loop1 sdcard.img
 
- sudo dd if=/dev/loop1p2 of=/dev/sdb2 bs=1M status=progress conv=fsync
- sudo mkdir /mnt/nuttx_boot_sd
- sudo mount /dev/sdb2 /mnt/nuttx_boot_sd/
- sudo scp -r ~/ox64/nuttx/ImageNuttx /mnt/nuttx_boot_sd
+sudo dd if=/dev/loop1p2 of=/dev/sdb2 bs=1M status=progress conv=fsync
+sudo mkdir /mnt/nuttx_boot_sd
+sudo mount /dev/sdb2 /mnt/nuttx_boot_sd/
+sudo scp -r ~/ox64/nuttx/ImageNuttx /mnt/nuttx_boot_sd
 
- cd /mnt/nuttx_boot_sd/extlinux
- sudo nano extlinux.conf
- # add following lines, without the `+` character
- +LABEL Pine64 0X64 Nuttx
- +        KERNEL ../ImageNuttx
- +        FDT ../bl808-pine64-ox64.dtb
- +        APPEND root=PARTLABEL=rootfs rootwait rw rootfstype=ext4 console=ttyS0,2000000 loglevel=8 earlycon=sbi
+cd /mnt/nuttx_boot_sd/extlinux
+sudo nano extlinux.conf
+----
 
- sudo dd if=/dev/loop1p3 of=/dev/sdb3 bs=1M status=progress conv=fsync
- sudo mkdir /mnt/nuttx_rootfs_sd
- sudo mount /dev/sdb3 /mnt/nuttx_rootfs_sd/
- sudo scp -r ~/ox64/nuttx/ImageNuttx /mnt/nuttx_rootfs_sd/boot
+Add following lines, without the `+` character:
 
- cd /mnt/nuttx_rootfs_sd/boot/extlinux
- sudo nano extlinux.conf
- # add following lines, without the `+` character
- +LABEL Pine64 0X64 Nuttx
- +        KERNEL ../ImageNuttx
- +        FDT ../bl808-pine64-ox64.dtb
- +        APPEND root=PARTLABEL=rootfs rootwait rw rootfstype=ext4 console=ttyS0,2000000 loglevel=8 earlycon=sbi
+----
++LABEL Pine64 0X64 Nuttx
++        KERNEL ../ImageNuttx
++        FDT ../bl808-pine64-ox64.dtb
++        APPEND root=PARTLABEL=rootfs rootwait rw rootfstype=ext4 console=ttyS0,2000000 loglevel=8 earlycon=sbi
+
+sudo dd if=/dev/loop1p3 of=/dev/sdb3 bs=1M status=progress conv=fsync
+sudo mkdir /mnt/nuttx_rootfs_sd
+sudo mount /dev/sdb3 /mnt/nuttx_rootfs_sd/
+sudo scp -r ~/ox64/nuttx/ImageNuttx /mnt/nuttx_rootfs_sd/boot
+
+cd /mnt/nuttx_rootfs_sd/boot/extlinux
+sudo nano extlinux.conf
+----
+
+Add following lines, without the `+` character:
+
+----
++LABEL Pine64 0X64 Nuttx
++        KERNEL ../ImageNuttx
++        FDT ../bl808-pine64-ox64.dtb
++        APPEND root=PARTLABEL=rootfs rootwait rw rootfstype=ext4 console=ttyS0,2000000 loglevel=8 earlycon=sbi
+----
 
 Do some cleaning
 
- sudo umount /mnt/* && sudo rm -r /mnt/*
- sudo umount /media/* && sudo rm -r /media/*
- sudo losetup -D
+----
+sudo umount /mnt/* && sudo rm -r /mnt/*
+sudo umount /media/* && sudo rm -r /media/*
+sudo losetup -D
+----
 
 Enjoy your new Nuttx booting option!
