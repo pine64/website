@@ -15,8 +15,7 @@ This page explains how to flash an Ox64 board and a microSD card to boot the sys
 
 You need a Linux machine, a Raspberry Pi Pico to act as a UART adapter, the Ox64 board, and a microSD card.
 
-First, download the Raspberry Pi Pico firmware that allows it to act as a serial adapter. You may skip this step if you are using your own serial adapter
-(however see the page link:/documentation/Ox64/Further_information/Compatible_UARTs/[Compatible UARTs] and link:#using_a_serial_adapter_other_than_the_pico[Using a serial adapter other than the Pico]).
+First, download the Raspberry Pi Pico firmware that allows it to act as a serial adapter. You may skip this step if you are using your own serial adapter (however see the page link:/documentation/Ox64/Further_information/Compatible_UARTs/[Compatible UARTs] and link:#using_a_serial_adapter_other_than_the_pico[Using a serial adapter other than the Pico]).
 
  mkdir -p ~/ox64/pico
  cd ~/ox64/pico
@@ -115,6 +114,7 @@ This configuration eliminates the need to switch the physical connections to the
 ====
 
 == Flashing the Ox64
+
 Put the Ox64 into programming mode:
 
 * Press the BOOT button
@@ -155,6 +155,7 @@ Then, switch to the [IOT] tab and set:
  Close DevCube
 
 === CLI flashing method
+
 For those who do not want to use the DevCube, BouffaloLab provides open-source flashing packages `bflb-iot-tool` and `bflb-mcu-tool`.
 
 First, install `bflb-iot-tool` using your preferred method of managing PIP packages. One option is to set up a Python virtual environment as follows.
@@ -198,7 +199,6 @@ bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --
 
 If you get permission errors when running any of the commands above, you may need to add your user to the `dialout` group. Running the commands as `root` is not recommended since this will make `bflb-iot-tool` create root-owned files in your home directory.
 
-
 == Flashing the microSD card
 
 Insert the microSD card into your PC, locate its device file (`/dev/sdb`, for example), and write the image:
@@ -213,7 +213,6 @@ Insert the microSD card into your Ox64 and open a UART connection to the Ox64 bo
  minicom -b 2000000 -D /dev/ttyACM0
 
 Re-apply power to the Ox64 and you will see Linux booting up. When prompted, log in as `root` with no password.
-
 
 == Appendix
 
@@ -241,12 +240,9 @@ Then, follow the instructions in <<booting_for_the_first_time>>, but replace all
 image:/documentation/Ox64/images/ox64_pinout.png[Ox64 pinout,title="Ox64 pinout", 300]
 
 === Adding Nuttx RTOS
-In this section, we will set up our Ox64 to dual-boot both Linux and the NuttX
-real-time operating system. For more information see the
-https://nuttx.apache.org/docs/latest/platforms/risc-v/bl808/boards/ox64/index.html[official documentation].
+In this section, we will set up our Ox64 to dual-boot both Linux and the NuttX real-time operating system. For more information see the https://nuttx.apache.org/docs/latest/platforms/risc-v/bl808/boards/ox64/index.html[official documentation].
 
-First, write the normal Linux image to the SD card if you have not done so already.
-For the purposes of this guide we will assume the SD card's device file is `/dev/sdb`.
+First, write the normal Linux image to the SD card if you have not done so already. For the purposes of this guide we will assume the SD card's device file is `/dev/sdb`.
 
 ----
 sudo dd if=~/ox64/openbouffalo/sdcard.img of=/dev/sdb bs=1M conv=fsync status=progress
