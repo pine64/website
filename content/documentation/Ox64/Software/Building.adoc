@@ -57,3 +57,5 @@ Expected files:
 * `d0_lowload_bl808_d0.bin`
 * `bl808-firmware.bin`
 * `sdcard.img`
+
+TEST
