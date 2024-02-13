@@ -4,7 +4,7 @@
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" type="image/x-icon" href="/img/logo_blue.svg">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
 
     {{- $style_style := resources.Get "css/style.css" | minify | fingerprint -}}
     <link rel="stylesheet" href="{{ $style_style.Permalink }}" integrity="{{ $style_style.Data.Integrity }}">
