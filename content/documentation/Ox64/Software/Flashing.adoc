@@ -103,7 +103,7 @@ Next, connect the Ox64 board to the Pico according to the following wiring diagr
  gnd_pin38            <->  gnd_pin38/3    
  vbus5v_pin40         <->  vbus5v_pin40
 
-image:/documentation/Ox64/images/ox64_serial_pipico.png[Ox64 serial PiPico,title="Ox64 serial PiPico", 300]
+image:/documentation/Ox64/images/ox64_serial_pipico.png[Ox64 serial PiPico,title="Ox64 serial PiPico", 600]
 
 [NOTE]
 ====
