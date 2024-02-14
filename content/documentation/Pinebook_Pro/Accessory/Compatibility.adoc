@@ -1,6 +1,6 @@
 ---
 title: "Hardware Accessory Compatibility"
-draft: false
+draft: true
 menu:
   docs:
     title:

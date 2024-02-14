@@ -51,19 +51,15 @@ menu:
 
 == Fasteners/Screws
 
-image:/documentation/images/Pinecil-Thumb-Screws-02.png[ Thumb Screws,title=" Thumb Screws",width=200]
+image:/documentation/images/Pinecil-Thumb-Screws-02.png[Thumb Screws,title=" Thumb Screws",width=200]
 
 * Originals screws are Phillips (https://www.reddit.com/r/PINE64official/comments/tatf5l/comment/ig4r92v/?context=3[source]): two M2x3mm at the front, and one M2x4mm is the ground screw near the `*[-]*` minus button.
 * The bottom-front screw only holds the handle together and does not touch the tip, hence is a shorter m2x 3mm.
 * _Thumb screws_ are popular upgrades: an _M2 x 4mm_ thumb screw could replace both the front screen-side Tip holder screw and the ground screw in the rear of the handle.
 * It was found that an M2x3mm thumb screw for the tip is a hair _too short_, and just grazes the Tip and the longer _m2 x 4mm is better on top_.
-* https://www.aliexpress.com/item/3256803069568247.html[Stainless Steel, smaller thumb screw, get M2x4mm]
-* https://www.aliexpress.us/item/3256804077282767.html[Black, smaller thumb screw get M2x4mm]
-* Wider head https://www.aliexpress.com/item/3256801293488521.html[(1) Thumb screw], https://www.aliexpress.com/item/2255799966445780.html[(2) Thumb screw]
-* Many Assorted https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220817084841&isPremium=y&SearchText=thumb+screw+m2+stainless+steel+4mm[M2x4mm screw Options]
+// * https://www.aliexpress.com/item/3256803069568247.html[Stainless Steel, smaller thumb screw, get M2x4mm]
+// * https://www.aliexpress.us/item/3256804077282767.html[Black, smaller thumb screw get M2x4mm]
+// * Wider head https://www.aliexpress.com/item/3256801293488521.html[(1) Thumb screw], https://www.aliexpress.com/item/2255799966445780.html[(2) Thumb screw]
+// * Many Assorted https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220817084841&isPremium=y&SearchText=thumb+screw+m2+stainless+steel+4mm[M2x4mm screw Options]
 
-NOTE: If the screw is too long (https://www.aliexpress.com/item/3256804364574103.html[i.e., 5mm]) a metal file can be used lightly to shorten it a small amount. Stainless steel is recommended as the softer aluminum screws could mushroom as you tighten down the tip screw too much or over time.
-
-* If you just want to swap out the stock Phillips screws for Hex key/Allen type get (2) m2x4mm & (1) m2x3mm:
-** https://www.aliexpress.com/item/2261799962114486.html[(1) Hex socket screw], https://www.aliexpress.com/item/2255800794906149.html[(2) Hex socket screw] and https://www.aliexpress.us/item/2261799953187569.html[(3) Hex cap screw]
-
+NOTE: If the screw is too long (for example with a length of 5mm) a metal file can be used lightly to shorten it a small amount. Stainless steel is recommended as the softer aluminum screws could mushroom as you tighten down the tip screw too much or over time.

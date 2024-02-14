@@ -51,34 +51,24 @@ This is a very small list compared to all the possible chargers that work, and n
 
 === USB-C Cables
 
-* Silicone USB-C cables are recommended if possible, they are more flexible and heat resistance. They do not melt or smoke if touched briefly with an iron compared with most other cords.
-* These work with USB-C 20V chargers and have been tested with Pinecil.
-** https://pine64.com/product/usb-type-c-to-usb-type-c-silicone-power-charging-cable-1-5-meter-length/[silicone, 1-cable, PINE64]
-** https://www.amazon.com/dp/B096XWD2HG/[silicone, 2-pack cables, Inter9er]
-** https://www.aliexpress.us/item/3256803495408504.html[silicone, Baseus]
-** https://www.amazon.com/dp/B093GFBD2M[silicone, Anker]
-* EPR PD 3.1 USB-C cables (240W, 48V, 5A), needed for 28V, 140W PD3.1 chargers. Backwards compatible for all lower USB-C devices/chargers.
-** There are no silicone 240W cables available yet. The below cables have been tested to work, but are not silicone.
-** https://www.amazon.com/dp/B0B18R4T14[certified 240W+Low speed data] Club 3D (slower USB 2.0 480mb/ps data speed = 0.48G speed)
-** https://www.inter9ers.com/promotions[certified 240W/40Gbps], coupon $25 off, highest USB-IF data speed, 40Gbps, USB 4 Gen3
-** Note: if the Amazon promo is expired, or if from the EU or another country outside the US, scroll all the way to the bottom of page, and click on PayPal to buy directly.
+Silicone USB-C cables are recommended if possible, they are more flexible and heat resistance. They do not melt or smoke if touched briefly with an iron compared with most other cords.
 
 === USB-C Charger
 
 ==== Should I get a GaN type Charger?
 
-* Sure, if there are two PD65 20V chargers that are similar in price, and one is GaN, this is generally a https://www.kensington.com/news/docking-connectivity-blog/5-reasons-why-you-should-make-the-switch-to-gallium-nitride-gan-over-silicon-devices/#:~:text=GaN%20devices%20have%20lower%20cooling,costs%20than%20silicon%2Dbased%20devices[good chioce].
+* Sure, if there are two PD65 20V chargers that are similar in price, and one is GaN, this is generally a good chioce.
 * Older style chargers could become dangerously hot, whereas GaN can stay cooler, even in a smaller size.
-* If the GaN charger senses a potentially dangerous condition, i.e., overcurrent spikes, the chips are designed to go into a cycle-by-cycle sleep state, protecting the device. https://www.ti.com/lit/an/snoaa15/snoaa15.pdf?ts=1677349470127&ref_url=https%253A%252F%252Fwww.google.com%252F[Over current protection in GAN].
+* If the GaN charger senses a potentially dangerous condition, i.e., overcurrent spikes, the chips are designed to go into a cycle-by-cycle sleep state, protecting the device. https://www.ti.com/lit/an/snoaa15/snoaa15.pdf[Over current protection in GAN].
 * The https://pine64.com/product/pinepower-65w-gan-2c1a-charger-with-international-plugs/[PinePower Portable PD65] is GAN II (2nd generation GaN).
 * Will Pinecil work with regular USB-C PD 65w 20V-3.25A chargers also? Yes, as long as it supports PD (power delivery protocol).
 
 ==== EPR PD3.1, 140W Chargers
 
-. https://www.aliexpress.us/item/3256804615629078.html[Voltme 140W, 28V max]
-. https://www.aliexpress.us/item/3256804637111674.html[Rocoren 140W, 28V max]
-. https://www.apple.com/shop/product/MLYU3AM/A/140w-usb-c-power-adapter[Apple 140W 28V]
-. https://a.co/d/bEeltLE[Anker 737 Power Bank] (only EPR battery on the market presently).
+. Voltme 140W, 28V max
+. Rocoren 140W, 28V max
+. Apple 140W 28V
+. Anker 737 Power Bank (only EPR battery on the market presently).
 
 NOTE: a PD3.1 240W cable needs to be purchased if you want the full 28V performance. EPR PD3.1 chargers are backwards compatible and work for all USB-C devices. They do up to 28V on PD3.1 devices,e.g, Pinecil V2, and will do 20V and less for older USB-C devices that don't need as much power. Lower cables will also work but then the charger will only deliver a max of 20V.
 

@@ -1,6 +1,6 @@
 ---
 title: "Cases, Stands, Supplies"
-draft: false
+draft: true
 menu:
   docs:
     title:
@@ -14,7 +14,6 @@ The article contains information about cases, holders/stands, 3D-models, and sup
 == Cases and bags
 
 * https://a.co/d/hjFRpzK[EVA Shockproof Case]
-* https://www.aliexpress.com/item/1005002553816919.html[Zippered Case]
 * https://a.co/d/i6QoxKl[Aluminum hard case w/foam] (check size before ordering if multiple listed).
 * https://a.co/d/gAYy8fG[Aluminum poker case w/foam]
 * Soft Bag https://a.co/d/48PjOwZ[Molle IFAK/EDC]: look for bags that can fully open like a sandwich when unzipped which allows tools to be easily seen and retrieved. Bags that only partially unzip make it harder to find tools without dumping out the whole bag.
@@ -40,30 +39,3 @@ The article contains information about cases, holders/stands, 3D-models, and sup
 * https://www.thingiverse.com/thing:4734830[T12 tip adapter for outside tip holding]
 * https://www.printables.com/model/97073-pinecil-mosfet-saver-for-t12-tips[T12 tip adaptor] to protect the internal Mosfet in Pinecil.
 * https://github.com/kohkohwastaken/3D-Models/tree/main/Pine64[3D models of Pinecil]  by kohkoh
-
-== Pictures
-
-3D Models:
-
-image:/documentation/images/3D-Pinecil-handle-white-02.jpg[width=400]
-
-=== Soldering supplies
-
-* https://www.aliexpress.us/item/2251832826887062.html[Brass w/Rosin] - Brass Wool with hard rosin in the bottom for tip cleaning. Twirl the tip in the brass wool often during soldering to keep the tip clean. Lower the temperature and dip lower into the hard rosin when you need a deeper cleaning.
-* Tip Refresher/tinner: https://www.aliexpress.us/item/2251832764094798.html[Mechanic MCN-20 lead-solder version], or the https://www.aliexpress.us/item/2251832803171199.html[Lead-free version] (use when the tip is very dirty and solder is not sticking to it).
-* https://a.co/d/cLELK10[ESD Tweezers with case], budget set.
-* https://www.youtube.com/watch?v=3SNKflKhCUo[Soldering mat, silicone].
-* Flux https://amtechdirect.com/collections/tf-v3[NC-559-V3 from amtechdirect] comes in a paste or syringe. There is a lot of fake Amtech online. Amtech is made in the USA and sold by 2 different companies. Many reports of cheap Aliexpress fake fluxes that simply do not work, ymmv.
-* Flux https://www.aliexpress.us/item/2255799906019322.html[Relife RL-422-IM] Halogen-free, low cost alternative.
-* Flux syringe https://a.co/d/2OFijCQ[ Chip Quik SMD291]
-* https://a.co/d/g01udsS[Solder Wick, variety pack]: helps remove solder. First add flux to the area and also to the solder wick itself to add in removal of old solder.
-* Weller https://a.co/d/ilor7wI[Lead-Free Solder here]: sample of 3 common useful sizes (0.3mm,0.5mm,0.8mm), handy for small carry case.
-* Solder: first decide if you want to use No-lead or leaded. Leaded is easier to work with at lower temperatures. No-lead is used now by all manufacturers of electronics per ROHS. Depending on the work being done different sizes might be needed, for example, 0.3mm for small work, 0.5mm for pins, and larger 0.8mm+ for thicker wires. One could make due with smaller solder by folding a piece in half and twisting it to make it thicker. See the video below to help compare types.
-
-Videos comparing expensive and budget flux and solder (includes links to items).
-
-. https://www.youtube.com/watch?v=iKDAmY9Rdag
-. https://www.youtube.com/watch?v=zZ9wxs6xuYU
-
-* Fume Fan: this removes flux smoke from the air. Work near an open window and soldering outside also helps. Set up a work area where the air and smoke is being sucked away. Many videos showing how to make a fume fan for soldering.
-
