@@ -17,9 +17,9 @@ WARNING: Please note that following these instructions comes at your own risk. W
 
 === Components
 
-* *An ATX breakout board*, see e.g. https://www.aliexpress.com/wholesale?catId=0&initiative_id=AS_20221205104830&SearchText=atx+breakout+board&spm=a2g0o.home.1000002.0[this AliExpress search]. Get one with fuses. For extra safety, replace the fuses with your own trusted ones once you get it.
+* *An ATX breakout board*. Get one with fuses. For extra safety, replace the fuses with your own trusted ones once you get it.
 * *Some 24 AWG or thicker copper wire*, 0.5m of length at most, go thicker if you want to use longer wire. Also go thicker if you're using copper-coated aluminium.
-* *A 2.1mm ID/5.5mm OD barrel jack connector*, see e.g. https://www.digikey.com/en/products/filter/barrel-connectors/power-connectors/435?s=N4IgjCBcoEwBxVAYygMwIYBsDOBTANCAPZQDaIAzHAOxwAMdIAuoQA4AuUIAyuwE4BLAHYBzEAF9CYAJwBWGIhApIGHAWJkQcegpYgOXXoNESpcgCyLlqvIRKRyYGObrTGeg5B79hY8f6A[this digikey search]
+* *A 2.1mm ID/5.5mm OD barrel jack connector*
 
 === Tools
 
