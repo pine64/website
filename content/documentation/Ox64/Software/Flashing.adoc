@@ -80,12 +80,15 @@ Download the Ox64 images from the latest OpenBouffalo release. You may skip this
  cd ~/ox64/openbouffalo
  wget https://github.com/openbouffalo/buildroot_bouffalo/releases/download/v1.0.1/bl808-linux-pine64_ox64_full_defconfig.tar.gz
  tar -xvzf bl808-linux-pine64_ox64_full_defconfig.tar.gz
+ cd ~/ox64/openbouffalo/firmware
+ xz -v -d -k sdcard-pine64_ox64_full_defconfig.img.xz
+ mv sdcard-pine64_ox64_full_defconfig.img sdcard.img
 
 === Optional: create a combined SoC image
 
 Use the following commands to combine `m0_lowload_bl808_m0.bin`, `d0_lowload_bl808_d0.bin`, and `bl808-firmware.bin` into a single image. This is mainly useful for troubleshooting (e. g. when using DevCube v1.8.4 or later).
 
- cd ~/ox64/openbouffalo
+ cd ~/ox64/openbouffalo/firmware
 
  fallocate -l 0x800000 bl808-combined.bin
  dd conv=notrunc if=m0_lowload_bl808_m0.bin of=bl808-combined.bin
@@ -94,7 +97,7 @@ Use the following commands to combine `m0_lowload_bl808_m0.bin`, `d0_lowload_bl8
 
 Check that you have the required files for flashing
 
- cd ~/ox64/openbouffalo
+ cd ~/ox64/openbouffalo/firmware
  ls *808*.bin *.img
 
 Expected files:
@@ -159,7 +162,7 @@ Set up some environment variables to save typing them out later:
 
 Change directory to the location of your image files:
 
- cd ~/ox64/openbouffalo # for github's downloaded prebuilt images
+ cd ~/ox64/openbouffalo/firmware # for github's downloaded prebuilt images
  or
  cd ~/ox64/buildroot/output/images # for built images
 
@@ -212,7 +215,7 @@ Then, switch to the [IOT] tab and set:
 
 Insert the microSD card into your PC, locate its device file (`/dev/sdb`, for example), and write the image:
 
- cd ~/ox64/openbouffalo # for github's downloaded prebuilt images
+ cd ~/ox64/openbouffalo/firmware # for github's downloaded prebuilt images
  or
  cd ~/ox64/buildroot/output/images # for built images
  sudo dd if=sdcard.img of=/dev/sdb bs=1M status=progress conv=fsync
@@ -231,7 +234,7 @@ In this section, we will set up our Ox64 to dual-boot both Linux and the NuttX r
 
 First, write the normal Linux image to the SD card if you have not done so already. For the purposes of this guide we will assume the SD card's device file is `/dev/sdb`.
 
- cd ~/ox64/openbouffalo # for github's downloaded prebuilt images
+ cd ~/ox64/openbouffalo/firmware # for github's downloaded prebuilt images
  or
  cd ~/ox64/buildroot/output/images # for built images
  sudo dd if=/sdcard.img of=/dev/sdb bs=1M conv=fsync status=progress
