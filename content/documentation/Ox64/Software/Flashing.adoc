@@ -130,7 +130,7 @@ Download the latest DevCube flashing tool from BouffaloLab's website.
  mkdir -p ~/ox64/devcube
  cd ~/ox64/devcube
  wget https://dev.bouffalolab.com/media/upload/download/BouffaloLabDevCube-v1.8.9.zip
- unzip BouffaloLabDevCube-v1.8.8.zip
+ unzip BouffaloLabDevCube-v1.8.9.zip
  chmod u+x BLDevCube-ubuntu
 
 If you are not creating a <<optional_create_a_combined_soc_image, combined image>> you may need an older version of the DevCube. In that case, download v1.8.3 from one of the mirrors below:
