@@ -24,7 +24,8 @@ Put the Raspberry Pi Pico board into programming mode.
 * Press the BootSel button
 * Apply power by plugging the USB cable to PC
 * Release the BootSel button
-* As an alternative to pressing the BootSel button, you can also connect the probe point `TP6` (located on the bottom of the Pico board) to any ground point (e.g. pin 28).
+
+NOTE: As an alternative to pressing the BootSel button, you can also connect the probe point `TP6` (located on the bottom of the Pico board) to any ground point (e.g. pin 28).
 
 Copy `picoprobe.uf2` file into the new device `/media/<user>/RPI-RP2`.
 
