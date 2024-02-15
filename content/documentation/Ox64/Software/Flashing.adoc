@@ -245,6 +245,8 @@ Run the following command to re-read the partition tables. Re-inserting the SD c
 
 Download the NuttX image:
 
+ mkdir -p ~/ox64/nuttx
+ cd ~/ox64/nuttx
  wget -O ImageNuttx https://github.com/lupyuen2/wip-pinephone-nuttx/releases/download/bl808d-1/Image
 
 Mount the boot partition and make the required modifications:
