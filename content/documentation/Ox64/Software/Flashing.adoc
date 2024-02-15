@@ -235,7 +235,7 @@ Open an other terminal window to connects to the M0 core’s serial console (`/d
 Re-apply power to the Ox64.
 
 
- On `ttyACM0` console you will see Linux booting up. When prompted, log in as `root` with no password. In case card is missing or empty, you'll get `Card did not respond to voltage select! : -110` error.
+On `ttyACM0` console you will see Linux booting up. When prompted, log in as `root` with no password. In case card is missing or empty, you'll get `Card did not respond to voltage select! : -110` error.
 
 On `ttACM1` console you'll see following log, until the sytem in not fully loaded:
 
