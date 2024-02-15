@@ -215,7 +215,7 @@ Then, switch to the [IOT] tab and set:
 
 Insert the microSD card into your PC, locate its device file (`/dev/sdb`, for example), and write the image:
 
- cd ~/ox64/openbouffalo # for downloaded prebuilt images
+ cd ~/ox64/openbouffalo # for github's downloaded prebuilt images
  or
  cd ~/ox64/buildroot/output/images # for built images
  sudo dd if=sdcard.img of=/dev/sdb bs=1M status=progress conv=fsync
@@ -234,9 +234,10 @@ In this section, we will set up our Ox64 to dual-boot both Linux and the NuttX r
 
 First, write the normal Linux image to the SD card if you have not done so already. For the purposes of this guide we will assume the SD card's device file is `/dev/sdb`.
 
- sudo dd if=~/ox64/openbouffalo/sdcard.img of=/dev/sdb bs=1M conv=fsync status=progress
- or 
- sudo dd if=~/ox64/buildroot/output/images/sdcard.img of=/dev/sdb bs=1M conv=fsync status=progress
+ cd ~/ox64/openbouffalo # for github's downloaded prebuilt images
+ or
+ cd ~/ox64/buildroot/output/images # for built images
+ sudo dd if=/sdcard.img of=/dev/sdb bs=1M conv=fsync status=progress
 
 Run the following command to re-read the partition tables. Re-inserting the SD card works too.
 
