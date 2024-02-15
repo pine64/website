@@ -129,7 +129,7 @@ Download the latest DevCube flashing tool from BouffaloLab's website.
 
  mkdir -p ~/ox64/devcube
  cd ~/ox64/devcube
- wget https://dev.bouffalolab.com/media/upload/download/BouffaloLabDevCube-v1.8.8.zip
+ wget https://dev.bouffalolab.com/media/upload/download/BouffaloLabDevCube-v1.8.9.zip
  unzip BouffaloLabDevCube-v1.8.8.zip
  chmod u+x BLDevCube-ubuntu
 
