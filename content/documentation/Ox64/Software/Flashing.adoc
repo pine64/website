@@ -222,11 +222,29 @@ Insert the microSD card into your PC, locate its device file (`/dev/sdb`, for ex
 
 == Booting for the first time
 
-Insert the microSD card into your Ox64 and open a UART connection to the Ox64 board:
+Insert the microSD card into your Ox64 and open a UART connection to the Ox64 board. As mentioned, Raspberry Pi Pico allow two UART console at the same time, without swithcing connection to D0 and M0 core.  
+
+Open a terminal window to connects to the D0 core’s (i.e. Linux’s) serial console:
 
  minicom -b 2000000 -D /dev/ttyACM0
 
-Re-apply power to the Ox64 and you will see Linux booting up. When prompted, log in as `root` with no password.
+Open an other terminal window to connects to the M0 core’s serial console (`/dev/ttyACM1` is also used for flashing)
+
+ minicom -b 2000000 -D /dev/ttyACM1
+
+Re-apply power to the Ox64.
+
+
+ On `ttyACM0` console you will see Linux booting up. When prompted, log in as `root` with no password. In case card is missing or empty, you'll get `Card did not respond to voltage select! : -110` error.
+
+On `ttACM1` console you'll see following log, until the sytem in not fully loaded:
+
+ [I][MBOX] Mailbox IRQ Stats:
+ [I][MBOX] Peripheral SDH (33): 0
+ [I][MBOX] Peripheral GPIO (60): 0
+ [I][MBOX] Unhandled Interupts: 0 Unhandled Signals 0
+
+Once the system is running you'll be able to manage the M0 multimedia core, i.e. wifi settings, etc.. When prompted, digit `help` to see available commands.
 
 === Appendix: adding Nuttx RTOS
 
