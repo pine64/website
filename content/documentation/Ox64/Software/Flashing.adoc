@@ -257,8 +257,9 @@ First, write the normal Linux image to the SD card if you have not done so alrea
  cd ~/ox64/buildroot/output/images # for built images
  sudo dd if=/sdcard.img of=/dev/sdb bs=1M conv=fsync status=progress
 
-Run the following command to re-read the partition tables. Re-inserting the SD card works too.
+Run the following commands to re-read the partition tables. Re-inserting the SD card works too.
 
+ sudo umount /media/*/*
  sudo blockdev --rereadpt /dev/sdb
 
 Download the NuttX image:
