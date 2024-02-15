@@ -59,7 +59,7 @@ Refer to the pinout image below. Connect your UART adapter as follows:
 * TX -> UART0_RX / GPIO15 / pin 2
 * GND -> any ground (e.g. pin 3)
 
-image:/documentation/Ox64/images/ox64_pinout.png[Ox64 pinout,title="Ox64 pinout", 300]
+Then, follow the instructions in <<flashing_the_ox64>> and <<flashing_the_microsd_card>>, but replace all occurrences of `/dev/ttyACM1` with `/dev/ttyUSB0`.
 
 Next, power off the Ox64 and re-connect your UART adapter as follows:
 
@@ -67,7 +67,11 @@ Next, power off the Ox64 and re-connect your UART adapter as follows:
 * TX -> RXD / GPIO17 / pin 31
 * GND -> any ground (e.g. pin 33)
 
-== Downloading flashing files
+Then, follow the instructions in <<booting_for_the_first_time>>, but replace all occurrences of `/dev/ttyACM0` with `/dev/ttyUSB0`. You should now have a working Linux system.
+
+image:/documentation/Ox64/images/ox64_pinout.png[Ox64 pinout,title="Ox64 pinout", 300]
+
+== Optional: downloading flashing files
 
 Download the Ox64 images from the latest OpenBouffalo release. You may skip this step if you built your own images as per the instructions in the link:/documentation/Ox64/Software/Building/[Building] section.
 
