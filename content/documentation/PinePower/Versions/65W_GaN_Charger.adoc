@@ -94,3 +94,8 @@ USB-C2 + USB-A combined
 
 _TBA_
 
+== Certifications
+
+* https://files.pine64.org/doc/cert/65W%20PinePower%20FCC-SDO%20Certificate-LCSA110222005E.pdf[65W PinePower GaN Charger FCC Certificate]
+* https://files.pine64.org/doc/cert/65W%20PinePower%20GaN%20Charger%20CE%20EMC%20Certificate-LCSA110222003E.pdf[65W PinePower GaN Charger CE EMC Certificate]
+* https://files.pine64.org/doc/cert/65W%20PinePower%20GaN%20Charger%20CE%20LVD%20Certificate-LCSA110222004S.pdf[65W PinePower GaN Charger CE LVD Certificate]
