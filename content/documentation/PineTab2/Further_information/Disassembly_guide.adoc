@@ -12,4 +12,4 @@ menu:
 PineTab2 disassembly guide:
 
 * https://wiki.pine64.org/wiki/File:PineTab2_display_panel_disassembly_guide.pdf[File:PineTab2 display panel disassembly guide.pdf]
-* Note: this is a very delicate operation esp. around the corners of the screen. Several (even experienced) users ended up damaging the screen.
+* Note: this is a very delicate operation, especially around the corners of the screen. Several even experienced users damaged their screen when disassembling the device.
