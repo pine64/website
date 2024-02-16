@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-image:/documentation/images/Rock64.jpg[The ROCK64,title="The ROCK64",width=400]
+image:/documentation/ROCK64/images/Rock64.jpg[The ROCK64,title="The ROCK64",width=400]
 
 The *ROCK64* is a credit-card size 4K60P HDR Media Board Computer powered by Rockchip RK3328 Quad-Core ARM Cortex A53 64-Bit Processor and supports up to 4GB 1866MHz LPDDR3 memory. It provides an eMMC module socket, MicroSD Card slot, Pi-2 Bus, Pi-P5+ Bus, USB 3.0, and many other peripheral interfaces for makers to integrate with sensors and other devices.
 
@@ -55,6 +55,8 @@ OS build Installation Guide and tools:
 
 == Upstreaming Status
 
+WARNING: The data presented in this section requires updating.
+
 [cols="1,1,1,2,2"]
 |===
 | Function 2+| Status | Component | Notes
@@ -94,8 +96,7 @@ OS build Installation Guide and tools:
 
 == SoC and Memory Specification
 
-* Based on https://www.rock-chips.com/a/en/products/RK33_Series/2017/0118/829.html[Rockchip RK3328]
-image:/documentation/images/Rockchip_RK3328.png[right,title="right"]
+Based on https://www.rock-chips.com/a/en/products/RK33_Series/2017/0118/829.html[Rockchip RK3328]
 
 === CPU Architecture
 
@@ -271,7 +272,7 @@ Remote control button mapping:
 
 == Enclosures
 
-image:/documentation/images/Rock64-Al-Case1-1.jpg[width=100]
+image:/documentation/ROCK64/images/Rock64-Al-Case1-1.jpg[width=100]
 
 The ROCK64 fits in three officially sold cases.
 
@@ -289,7 +290,7 @@ The solution is to completely power down your ROCK64, also removing its power so
 
 === Power button doesn't do anything on a short press (Linux)
 
-Make sure the `rk805_pwrkey` module is loaded, e.g. with `lsmod | grep rk805_pwrkey`. If it doesn't show up, do a `modprobe rk805_pwrkey` as root. To make this persistent, create a `99-rk805_pwrkey.conf` in `/etc/modules-load.d/` with the content `rk805_pwrkey`
+Make sure the `rk805_pwrkey` module is loaded, e.g. with `lsmod | grep rk805_pwrkey`. The module auto loading of `rk805_pwrkey` was fixed in the following upstream kernels: v6.0/v5.15.66/v5.10.142/v5.4.213/v4.19.258/v4.14.293 so there should be no requirement for fixes with those kernels or newer. If it doesn't show up, do a `modprobe rk805_pwrkey` as root. To make this persistent, create a `99-rk805_pwrkey.conf` in `/etc/modules-load.d/` with the content `rk805_pwrkey`
 
 If it still doesn't work, make sure your init system is actually listening to the button press. With systemd, check `/etc/systemd/logind.conf` and make sure it's either all commented out (uses defaults) or contains something like `HandlePowerKey=poweroff`. You can change the short press action by setting `HandlePowerKey` to one of "ignore", "poweroff", "reboot", "halt", "kexec", "suspend", "hibernate", "hybrid-sleep", "suspend-then-hibernate", or "lock".
 

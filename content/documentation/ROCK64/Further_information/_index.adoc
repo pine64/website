@@ -10,4 +10,4 @@ menu:
 ---
 
 * link:Other_resources[Other resources]
-* link:MAC_address[MAC address]
+* link:Premium_aluminum_casing[Premium aluminum casing]

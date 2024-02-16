@@ -1,11 +1,11 @@
 ---
-title: "ROCK64 MAC Address"
+title: "MAC Address"
 draft: false
 menu:
   docs:
     title:
-    parent: "ROCK64/Further_information"
-    identifier: "ROCK64/Further_information/MAC_address"
+    parent: "ROCK64/Software"
+    identifier: "ROCK64/Software/MAC_address"
     weight: 
 ---
 
