@@ -43,8 +43,6 @@ NOTE: The factory image is flashed to a microSD card and it will overwrite the e
 * https://forum.pine64.org/showthread.php?tid=18313[screen rotated 90°, workaround possible]
 * https://github.com/ScottFreeCode/Pine64-Arch/tree/master/PKGBUILDS/pine64/alsa-ucm-pinetab2[HP/Speaker switching via Alsa UCM]
 
-
-
 === Buildroot
 
 Buildroot is a simple, efficient and easy-to-use tool to generate embedded Linux systems through cross-compilation.
@@ -61,11 +59,9 @@ LuneOS is one of the original multi-tasking OS-es that runs on Linux. Based on H
 
 ==== Download
 
-"Stable":
-https://github.com/webOS-ports/luneos-releases/releases/
+Stable: https://github.com/webOS-ports/luneos-releases/releases/
 
-"Testing":
-https://github.com/webOS-ports/luneos-testing/releases/
+Testing: https://github.com/webOS-ports/luneos-testing/releases/
 
 NOTE: U-Boot is required to boot the images. If you have the factory image installed and updated to the latest version, you can boot Mobian from an SD card without installing U-Boot.
 
@@ -99,6 +95,7 @@ NOTE: U-Boot is required to boot the images. If you have the factory image insta
 |===
 
 ==== Notes
+
 * The development is work in progress. Mobian's support for the PineTab2 is maintained by https://salsa.debian.org/julianfairfax[Julian]. The Mobian wiki can be found https://wiki.mobian-project.org/[here].
 * In order to connect to the device using SSH/SCP, you need to install SSH on the device. You can do this by executing the following in a shell: "sudo apt-get install ssh", afterwards you can connect via SSH/SCP using the PineTab2's IP address on port 22.
 * When installing Mobian with full disk encryption and booting with the keyboard case connected, you will have to touch the screen or press a key to show the decryption screen. This is an https://gitlab.com/postmarketOS/osk-sdl/-/issues/148[upstream issue].
@@ -133,15 +130,12 @@ After rebooting, there will be a new user account.
 
 Note that booting can take a while, and does not show anything on the screen. After about 18 seconds the keyboard backlight turns on, then it's about 30 seconds until the first text appears on the screen, and another 10 seconds before the session manager shows up.
 
-
 |===
 2+| Default credentials
 
 | Default user
 | `pinetab2`/`changeme`
 |===
-
-
 
 === postmarketOS
 
@@ -177,8 +171,6 @@ Foundational to the distribution is https://pacstall.dev[Pacstall], a Debian-bas
 
 https://discord.gg/reSvc8Ztk3[Discord] - https://matrix.to/#/#rolling-rhino-remix:matrix.org[Matrix] - https://github.com/rhino-linux[GitHub] - https://rhinolinux.org/wiki.html[Wiki]
 
-
-
 === Ubuntu Touch
 
 A Mobile Version of the Ubuntu Operating System made and maintained by the UBports Community. The port is currently maintained by Oren Klopfer (oklopfer).
@@ -190,7 +182,6 @@ The bootloader (u-boot) comes pre-flashed in the port. Installation just require
 https://gitlab.com/ook37/pinephone-pro-debos/-/releases[UBports 20.04 PineTab2 Latest Releases]
 
 https://devices.ubuntu-touch.io/device/pinetab2/release/focal[UBports PineTab2 Device Info]
-
 
 |===
 2+| Default credentials
