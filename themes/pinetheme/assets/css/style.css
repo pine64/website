@@ -805,6 +805,12 @@ table td {
   -webkit-hyphens: auto;
   hyphens: auto;
 }
+table td.halign-right {
+    text-align: right;
+}
+table td.halign-center {
+    text-align: center;
+}
 thead {
     background-color: #ececec;
     margin-bottom: 0;

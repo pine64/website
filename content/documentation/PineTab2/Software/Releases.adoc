@@ -13,7 +13,7 @@ This page contains a list of all available releases and tools for the PineTab2 i
 
 == Factory releases
 
-The PineTab2 ships with ''Danctnix Arch Linux ARM''. The factory image can be found here:
+The PineTab2 ships with _Danctnix Arch Linux ARM_. The factory image can be found here:
 
 * https://echo.danctnix.org:7269/danctnix-factory-image-20230527.img.xz (1.5 GB)
 
@@ -47,7 +47,7 @@ NOTE: The factory image is flashed to a microSD card and it will overwrite the e
 
 Buildroot is a simple, efficient and easy-to-use tool to generate embedded Linux systems through cross-compilation.
 
-An external tree for the PINE64 PineTab2 is developed and maintained by ''Danct12'' (same developer behind the PineTab2 port of ''Arch Linux ARM'').
+An external tree for the PINE64 PineTab2 is developed and maintained by _Danct12_ (same developer behind the PineTab2 port of _Arch Linux ARM_).
 
 ==== Download
 

@@ -9,9 +9,7 @@ menu:
     weight: 
 ---
 
-* Based on https://www.rock-chips.com/a/en/products/RK35_Series/2021/0113/1274.html[Rockchip RK3566]
-
-image:/documentation/images/RK3566_icon.png[right,title="right"]
+The SOQuartz is based on the https://www.rock-chips.com/a/en/products/RK35_Series/2021/0113/1274.html[Rockchip RK3566].
 
 == CPU Architecture
 
@@ -50,3 +48,18 @@ image:/documentation/images/RK3566_icon.png[right,title="right"]
 * 10/100/1000Mbps Ethernet
 * WiFi 802.11 b/g/n/ac with Bluetooth 5.0
 
+== Displays / Cameras
+
+* 1x HDMI
+* 2x DSI
+* 1x eDP (Instead of HDMI1)
+* 1x LVDS (not available when dual-mode DSI)
+* 1x CSI 4-line
+
+== Connectivity
+
+* 1x Ethernet (1Gbit)
+* 1x USB 2.0 OTG
+* 1x SD Card (SD)
+* 1x PCIe 1-Line
+* 28x GPIO (TBD)

@@ -62,7 +62,7 @@ LibreELEC is a "Just enough OS" Linux distribution combining the Kodi media cent
 
 Download:
 
-* https://test.libreelec.tv/[Pine A64+ build direct download from Libreelec nightly] (look for ''LibreELEC-A64.arm-...-nightly-xxxxxxxx-xxxxxxx-pine64-lts.img.gz'')
+* https://test.libreelec.tv/[Pine A64+ build direct download from Libreelec nightly] (look for _LibreELEC-A64.arm-...-nightly-xxxxxxxx-xxxxxxx-pine64-lts.img.gz_)
 
 Notes:
 
@@ -77,8 +77,8 @@ WARNING: Outdated release
 
 Download:
 
-* http://files.pine64.org/os/SOPINE/nems/NEMS_v1.5-SOPine-Build1.zip[Direct download from pine64.org] (supports the microSD card, 16GB or more, MD5 of the xz file is ''5ad0d684296d50b4c1fcbac6db205ae0'')
-* https://nemslinux.com/download/nagios-for-pine64.php[Download torrent seed from NEMS Linux] (supports the microSD card, 16GB or more, MD5 of the xz file is ''6e2088922c5d197db8b8ba3057120389'')
+* http://files.pine64.org/os/SOPINE/nems/NEMS_v1.5-SOPine-Build1.zip[Direct download from pine64.org] (supports the microSD card, 16GB or more, MD5 of the xz file is _5ad0d684296d50b4c1fcbac6db205ae0_)
+* https://nemslinux.com/download/nagios-for-pine64.php[Download torrent seed from NEMS Linux] (supports the microSD card, 16GB or more, MD5 of the xz file is _6e2088922c5d197db8b8ba3057120389_)
 
 Info:The installation guide can be found https://docs.nemslinux.com/installation[here].
 
@@ -111,7 +111,7 @@ OpenWRT community build for microSD boot. The OpenWrt Project is a Linux operati
 
 Download:
 
-* https://downloads.lede-project.org/snapshots/targets/sunxi/cortexa53/[Direct download] (look for ''pine64_sopine-baseboard-ext4-sdcard.img.gz'' and ''pine64_sopine-baseboard-squashfs-sdcard.img.gz'')
+* https://downloads.lede-project.org/snapshots/targets/sunxi/cortexa53/[Direct download] (look for _pine64_sopine-baseboard-ext4-sdcard.img.gz_ and _pine64_sopine-baseboard-squashfs-sdcard.img.gz_)
 
 Notes:
 
@@ -133,7 +133,7 @@ NetBSD is a free, fast, secure, and highly portable Unix-like Open Source operat
 
 Download:
 
-* http://www.armbsd.org/arm/[Direct download] (select ''PINE A64-LTS / SoPine with baseboard'')
+* http://www.armbsd.org/arm/[Direct download] (select _PINE A64-LTS / SoPine with baseboard_)
 
 |===
 2+| Default credentials
@@ -153,11 +153,11 @@ Linux BSP Kernel 4.9
 
 Download:
 
-* http://files.pine64.org/SDK/PINE-A64/PINE-A64_lichee_BSP4.9.tar.xz[Direct Download] from ''pine64.org'' (5.40GB, MD5 of the TAR-GZip ''7736e3c4d50c021144d125cc4ee047a4'')
+* http://files.pine64.org/SDK/PINE-A64/PINE-A64_lichee_BSP4.9.tar.xz[Direct Download] from _pine64.org_ (5.40GB, MD5 of the TAR-GZip _7736e3c4d50c021144d125cc4ee047a4_)
 
 == Android SDK
 Android Oreo (v8.1)
 
 Download:
 
-* http://files.pine64.org/SDK/PINE-A64/PINE-A64_SDK_android8.1.tar.xz[Direct Download] from ''pine64.org'' (24.94GB, MD5 of the TAR-Gzip ''b0394af324c70ce28067e52cd7bc0c87'')
+* http://files.pine64.org/SDK/PINE-A64/PINE-A64_SDK_android8.1.tar.xz[Direct Download] from _pine64.org_ (24.94GB, MD5 of the TAR-Gzip _b0394af324c70ce28067e52cd7bc0c87_)

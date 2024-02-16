@@ -1,0 +1,14 @@
+---
+title: "Introduction"
+draft: false
+menu:
+  docs:
+    title:
+    parent: 
+    identifier: "Introduction"
+    weight: 
+---
+
+* link:Where_to_report_bugs[Where to report bugs]
+* link:How_to_contribute[How to contribute]
+* link:Getting_started[Getting started]

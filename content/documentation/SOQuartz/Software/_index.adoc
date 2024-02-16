@@ -6,7 +6,7 @@ menu:
     title:
     parent: "SOQuartz"
     identifier: "SOQuartz/Software"
-    weight: 
+    weight: 1
 ---
 
 * link:Releases[]
