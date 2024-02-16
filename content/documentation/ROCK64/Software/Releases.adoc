@@ -1,12 +1,12 @@
 ---
-title: "Software"
+title: "Releases"
 draft: false
 menu:
   docs:
     title:
     parent: "ROCK64/Software"
     identifier: "ROCK64/Software/Releases"
-    weight: 
+    weight: 1
 ---
 
 This page contains a list of all available releases for the link:/documentation/ROCK64[ROCK64], as well as links to other resources.
