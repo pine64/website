@@ -6,7 +6,7 @@ menu:
     title:
     parent: "ROCK64"
     identifier: "ROCK64/Software"
-    weight: 
+    weight: 2
 ---
 
 * link:Releases[Releases]
