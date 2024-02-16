@@ -55,7 +55,31 @@ An external tree for the PINE64 PineTab2 is developed and maintained by ''Danct1
 
 * The repository and build instructions can be found https://github.com/Danct12/buildroot_pinetab2[here].
 
+=== LuneOS
 
+LuneOS is one of the original multi-tasking OS-es that runs on Linux. Based on HP/Palm's webOS, merged with latest technology stack from LG called webOS OSE (a derivative of what LG uses on their Smart TV's), software such as Qt6, Maliit, PulseAudio, Wayland and makes use of the Yocto build system.
+
+==== Download
+
+"Stable":
+https://github.com/webOS-ports/luneos-releases/releases/
+
+"Testing":
+https://github.com/webOS-ports/luneos-testing/releases/
+
+NOTE: U-Boot is required to boot the images. If you have the factory image installed and updated to the latest version, you can boot Mobian from an SD card without installing U-Boot.
+
+|===
+2+| Default credentials
+
+| Default user
+| `root` (no password)
+|===
+
+==== Notes
+* The development is work in progress, but all hardware that's supported by the kernel should work (WiFi/BT included). Camera's aren't working, similar to all other distros due to lack of drivers.
+* In order to connect to the device using SSH/SCP, you simply can connect to the device's IP address on port 5522. 
+* Teams can be reached via https://t.me/luneos_dev[Telegram] or http://web.libera.chat/#webos-ports[Libera IRC #webos-ports]
 
 === Mobian
 
