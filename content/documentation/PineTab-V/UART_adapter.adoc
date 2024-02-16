@@ -1,19 +1,21 @@
 ---
-title: "Tutorials"
+title: "UART adapter"
 draft: false
 menu:
   docs:
     title:
     parent: "PineTab-V"
-    identifier: "PineTab-V/Tutorials"
-    weight:
+    identifier: "PineTab-V/UART_adapter"
+    weight: 4
 ---
+
+The UART serves as a console for early boot and kernel messages, and also offers access to a root shell in the factory test image. 
 
 == Connecting the UART adapter
 
-image:/documentation/PineTab-V/PineTab2_USB_UARTv2.jpg[UART Adapter,title="UART Adapter",width=450]
+image:/documentation/PineTab-V/images/PineTab2_USB_UARTv2.jpg[UART Adapter,title="UART Adapter",width=450]
 
-The UART serves as a console for early boot and kernel messages, and also offers access to a root shell in the factory test image. The UART adapter allows access to the UART through the USB 2.0 Type-C port:
+The UART adapter allows access to the UART through the USB 2.0 Type-C port:
 
 * Insert the UART adapter face-up in the USB 2.0 Type-C port (the USB port furthest from the power button).
 * Connect a USB cable from another computer to the port on the adapter marked "DEBUG". The green LED on the adapter should light up. The other adapter port can be connected to USB power if you don't want to run the tablet on its battery.
