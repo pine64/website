@@ -297,7 +297,7 @@ On `ttACM1` console you'll see following log, until the sytem in not fully loade
 Once the system is running you'll be able to manage the M0 multimedia core, i.e. wifi settings, etc.. When prompted, digit `help` to see available commands.
 
 === Connecting Ox64 to your router AP
-Sice the Ox64 wifi scan doesn't always work properly, run the connection command from D0/Linux on /dev/ttyACM0 serial console:
+Since the Ox64 wifi scan doesn't always work properly, run the connection command from D0/Linux on /dev/ttyACM0 serial console:
 
  blctl connect_ap YourAP YourPassword
 
@@ -306,9 +306,6 @@ Wait for it to connect (if you're already watching the M0 on /dev/ttyACM1 serial
  udhcpc -i bleth0
  
 Move your Ox64 right next to your router; the chip antenna on the board isn't very good.
-
-
-
 
 === Appendix: adding Nuttx RTOS
 
