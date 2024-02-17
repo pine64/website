@@ -1,6 +1,6 @@
 ---
 title: "Obtaining a Development Board"
-draft: false
+draft: true # NOT PUBLISHED
 menu:
   docs:
     title:
@@ -9,5 +9,4 @@ menu:
     weight: 1
 ---
 
-Request/Register: https://preorder.pine64.org/#/quartzpro64[https://preorder.pine64.org/$$#$$/quartzpro64]
-
+Register for a preorder:  https://preorder.pine64.org/#/quartzpro64[https://preorder.pine64.org/#/quartzpro64]

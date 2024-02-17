@@ -1,6 +1,6 @@
 ---
 title: "Cases, Stands, Supplies"
-draft: true
+draft: true # NOT PUBLISHED
 menu:
   docs:
     title:

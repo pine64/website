@@ -15,7 +15,7 @@ Use the https://gitlab.com/pine64-org/quartz-bsp/rkdeveloptool[PINE64 fork of rk
 
 Connect a USB-C cable to the "DEBUG PORT" USB-C port, and a second to the "DOWNLOAD" USB-C port. Cable direction for the latter matters, so if it doesn't show up after entering download mode, try rotating the USB-C connector to the other side.
 
-Interrupt the boot by mashing Ctrl+C very quickly on the serial comms, then type `download` to enter rockusb download mode.
+To enter rockusb mode, interrupt the boot by holding the "V+/REC" on-board button or mashing Ctrl+C very quickly on the serial comms, then type `download`.
 
  $ rkdeveloptool list
 
@@ -143,26 +143,3 @@ Unplug the download USB-C cable once done.
 Put the SD card in the board. Reset it. You can now boot and your rootfs on eMMC will be mounted and contains an ALARM userland.
 
 To update kernels or the device tree, just shut down the board, take out the SD card, write a new kernel or dtb to it, and plug it back in. No more need for rkdeveloptool, yay.
-
-== Using neg2led's kernel branch
-
-IMPORTANT: *Note:* Boot hangs have been observed with latest code in this branch. Try to revert back to commit https://github.com/neggles/linux-quartz64/commit/01f523af0fce727a0e0a37029bbb2d45626d209a[arm64: dts: rockchip: rk3588: add pine64 quartzpro64 board] then retest.
-
-If you use the linux-quartz64 branch from neg2led's kernel fork (see Resources for a link). The uSD card reader is working and you can use a partition on it for the root FS. This will eliminate the need to use rkdeveloptool.
-
-Create the additionnal partition:
-
- # parted -s /dev/sdX mkpart root ext4 544MiB 4GiB
-
-Mount it:
-
- # mount /dev/sda4 /mnt/sdcardroot
-
-Extract the ALARM rootfs tarball in there:
-
- # bsdtar -xpf ArchLinuxARM-aarch64-latest.tar.gz -C /mnt/sdcardroot    # notice that this is run as root
-
-Find the right device your SD card will be (by booting neg2led's kernel once and looking at the boot log). Then modify "root=" from extlinux/extlinux.conf, for example:
-
- root=/dev/mmcblk1p5
-

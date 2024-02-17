@@ -1,7 +1,7 @@
 ---
 title: "Meet the community"
 date: ""
-draft: true
+draft: true # NOT PUBLISHED
 ---
 
 ## The founder

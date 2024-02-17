@@ -13,10 +13,10 @@ image:/documentation/images/Quartzpro64_soc_and_ram_resized.jpeg[The SoC and RAM
 
 == General
 
-* RK3588 SoC (8 cores: 4x A76@2.4GHz + 4x A55@1.8GHz)
+* RK3588 SoC (8 cores: 4x A76 at 2.4&nbsp;GHz + 4x A55 at 1.8&nbsp;GHz)
 * Mali G610MC4 GPU (4x Valhalla cores)
-* 16 GB LPDDR4X (SK hynix)
-* 64 GB eMMC (Foresee, soldered)
+* 16&nbsp;GB of LPDDR4X (SK hynix)
+* 64&nbsp;GB eMMC (Foresee, soldered)
 * 1x USB-C (with video-alt mode)
 * 1x USB-C (FTDI debug UART, FT232RL)
 * 1x USB 3.0
@@ -26,17 +26,17 @@ image:/documentation/images/Quartzpro64_soc_and_ram_resized.jpeg[The SoC and RAM
 * 1x PCIe 3.0 slot (open-ended)
 * 1x SD / TF card slot
 * 2x SATA ports
-* 2x Gigabit ethernet (1x from SoC, 1x on PCIe, RTL8211F, RTL8111HS)
-* 1x WiFi & BT Module (AMPAK Tech AP6275PR3)
+* 2x Gigabit Ethernet (1x from SoC, 1x on PCIe, RTL8211F, RTL8111HS)
+* 1x Wi-Fi & Bluetooth module (AMPAK Tech AP6275PR3)
 * 2x SMA Antenna
 * 2x MIPI DPHY
 * 1x MIPI D/C PHY
 * 1x MIPI CSI
-* 1x Fan header
-* 1x RTC battery socket (looks like an LR44, TODO: check this info)
+* 1x PWM Fan header (four pins)
+* 1x RTC battery socket (CR1220, 3&nbsp;V, see QuartzPro64 board schematics PDF, page 21)
 * 1x MIC (soldered)
-* 1x audio output 3.5mm jack
-* Power in via DC 12V
+* 1x audio output 3.5&nbsp;mm jack
+* DC 12&nbsp;V power input
 
 == Cooler
 
@@ -100,17 +100,17 @@ screen /dev/ttyUSB0 1500000
 
 == Mounting Holes
 
-Can't be bothered to take a precise measurement of all the holes right now, just use https://www.ebay.com/sch/i.html?kw=pc%20standoff%20kit[some PC standoffs] and have the board sit on your desk, it's a dev board after all.
+Mounting holes are 3&nbsp;mm in diameter, so standard standoffs can be used, preferably the 2.5&nbsp;mm variant. See also the PCB layout PDF files, linked in the  link:/documentation/QuartzPro64/Resources#documentation[documentation section of the Resources page].
 
-See the PCB layout PDF files, linked in the link:/documentation/QuartzPro64/Documentation[Documentation] section.
+The height from the bottom of the PCB to the top of the USB ports as the tallest components is 18&nbsp;mm, which can be used as a data point for selecting the suitable standoff length to place some acrylic top cover over the board. However, that doesn't account for the heatsink that needs to be mounted on the RK3588 SoC, for which a suitable rectangular hole can be cut in the top cover.
 
 == Storage
 
 image:/documentation/images/Quartzpro64_emmc_resized.jpeg[The eMMC on the dev board,title="The eMMC on the dev board",width=200]
 
-* Soldered on 64 GB FORESEE eMMC chip, it comes pre-flashed with some Android (you'll even get a brief bit of HDMI output)
-* microSD card slot
-* 2x SATA 3.0 (molex power connector for it not populated, but easy to remedy)
+* Soldered 64&nbsp;GB FORESEE eMMC chip, which comes pre-flashed with some Android build
+* One microSD card slot
+* Two SATA 3.0 ports (standard Molex power connector is not populated)
 
 == Power
 
