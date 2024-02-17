@@ -721,6 +721,7 @@ button.rounded:hover {
     margin: 14px;
     object-fit: contain;
     max-width: 80% !important;
+    max-height: 200px;
 }
 .device_box h3 {
     padding: 12px 10px 12px 10px;
