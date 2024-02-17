@@ -13,7 +13,7 @@ This page explains how to flash an Ox64 board and a microSD card to boot the sys
 
 == Preparing serial UART adapter Raspberry Pi Pico
 
-First, download the Raspberry Pi Pico firmware that allows it to act as a serial adapter. 
+First, download the Raspberry Pi Pico firmware that allows it to act as a serial UART adapter. 
 
  mkdir -p ~/ox64/pico
  cd ~/ox64/pico
@@ -33,13 +33,13 @@ Copy `picoprobe.uf2` file into the new device `/media/<user>/RPI-RP2`.
 
 Next, connect the Ox64 board to the Pico according to the following wiring diagram:
 
- OX64                      PI PICO
- uart0_Tx_GPIO14_pin1 <->  uart0_Rx_pin17
- uart0_Rx_GPIO15_pin2 <->  uart0_Tx_pin16
- Rxd_GPIO17_pin31     <->  uart1_Tx_pin6
- Txd_GPIO16_pin32     <->  uart1_Rx_pin7 
- gnd_pin38            <->  gnd_pin38/3    
- vbus5v_pin40         <->  vbus5v_pin40
+ OX64                      PI PICO         /dev/tty
+ uart0_Tx_GPIO14_pin1 <->  uart0_Rx_pin17  ACM1 for flashing
+ uart0_Rx_GPIO15_pin2 <->  uart0_Tx_pin16  ACM1 for flashing
+ Rxd_GPIO17_pin31     <->  uart1_Tx_pin6   ACM0 for serial console
+ Txd_GPIO16_pin32     <->  uart1_Rx_pin7   ACM0 for serial console
+ gnd_pin38            <->  gnd_pin38/3     
+ vbus5v_pin40         <->  vbus5v_pin40     
 
 With the Pico flashed and wired as per the instructions above, we have access to two of the Ox64's UART connections at the same time. This configuration eliminates the need to switch the physical connections for flashing or testing the system.
 
@@ -50,7 +50,59 @@ Espected result:
 * `/dev/ttyACM0` connects to the D0 core's (i.e. Linux's) serial console
 * `/dev/ttyACM1` is used for flashing (but also connects to the M0 core's serial console)
 
-=== Optional: preparing a serial adapter other than the Raspberry Pi Pico
+
+=== Optional: preparing serial UART adapter Stm32f103c8t6
+
+To program Stm32f103c8t6, knows as Bluepill, you'll need a TTL serial adpter like FTDI Ft232rl board.
+
+Download `Bluepill Serial Monster` firmware from r2axz's github repository that allows it to act as a serial UART adapter. More infos on https://github.com/r2axz/bluepill-serial-monster
+
+ cd ~/ox64
+ mkdir -p stm32f103c8t6
+ cd ~/ox64/stm32f103c8t6
+ wget https://github.com/r2axz/bluepill-serial-monster/releases/download/v2.6.4/bluepill-serial-monster.hex
+ sudo apt install stm32flash
+
+Put the Stm32f103c8t6 board into programming mode:
+
+ * Set boot jumpers for booting from rom: Boot0=1, Boot1=0.
+ * Connect it to a USB-Serial adapter (i.e Ft232rl) with A9 to Rx, A10 to Tx, GND to GND, 3v3 to Vcc.
+ * Apply power by plugging the USB cable to PC. Press the Reset button.
+
+Check the USB-serial adapter (i.e Ft232rl) to be expected on /dev/ttyUSB0
+
+ ls /dev/ttyUSB0
+
+Upload the firmware:
+
+ cd ~/ox64/stm32f103c8t6
+ stm32flash -w  bluepill-serial-monster.hex /dev/ttyUSB0
+ 
+After upload, set boot jumpers for boot from flash: Boot0=0, Boot1=0.
+Remove USB-serial adapter
+
+Re-connect Stm32f103c8t6 to usb.
+
+After flashing, verify that you have two serial interfaces (when the STM32f103c8t6 is connected to your PC):
+
+ ls /dev/ttyACM*
+
+Expected result:
+ /dev/ttyACM0
+ /dev/ttyACM1
+ /dev/ttyACM2
+
+Next, connect the Ox64 board to the Stm32f103c8t6 according to the following wiring diagram:
+
+ OX64                      STM32         /dev/tty
+ uart0_Tx_GPIO14_pin1 <->  uart0_Rx_A3   ACM1 for flashing
+ uart0_Rx_GPIO15_pin2 <->  uart0_Tx_A2   ACM1 for flashing
+ Rxd_GPIO17_pin31     <->  uart1_Tx_A9   ACM0 for serial console
+ Txd_GPIO16_pin32     <->  uart1_Rx_A10  ACM0 for serial console
+ gnd_pin38            <->  GND
+ vbus5v_pin40         <->  5V
+
+=== Optional: preparing a serial adapter other than the Raspberry Pi Pico or Stm32f103c8t6
 
 If you are using one of the link:/documentation/Ox64/Further_information/Compatible_UARTs/[supported UART adapters] that isn't the Raspberry Pi Pico, you will only have one serial interface available to you. For the purposes of this guide, let's say it is `/dev/ttyUSB0`. In addition, you will need a way of powering your Ox64. If your serial adapter has a 5V line, you can connect it to VBUS (pin 40). Otherwise, you can connect either the micro-B or the USB-C port on the Ox64 to any 5V power supply.
 
@@ -118,10 +170,8 @@ Install `bflb-iot-tool` using your preferred method of managing PIP packages. On
 
  sudo apt install python3-venv
  python3 -m venv ~/ox64_venv
- . ~/ox64_venv/bin/activate
+ . ~/ox64_venv/bin/activate # remember to re-run command for each new terminal window
  pip install bflb-iot-tool # we are *not* using bflb-mcu-tool
-
-NOTE: Each time you open a new terminal window you will need to re-run `. ~/ox64_venv/bin/activate` to reactivate the virtual environment.
 
 ==== Optional: DevCube installation
 
@@ -159,6 +209,7 @@ Set up some environment variables to save typing them out later:
 
  PORT=/dev/ttyACM1 # or /dev/ttyUSB0, this will depend on which serial adapter you use
  BAUD=230400       # safe value for macOS, if using Linux set to 2000000 for faster flashing
+ . ~/ox64_venv/bin/activate # make sure the virtual environment is active
 
 Change directory to the location of your image files:
 
