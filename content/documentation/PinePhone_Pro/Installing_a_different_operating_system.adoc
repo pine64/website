@@ -21,8 +21,9 @@ To install an image to the microSD card:
 * Using _dd_: On the device you're flashing the microSD card from, find the correct device under `lsblk` and then flash the image to the microSD card using `sudo dd if=*IMAGE.img* of=/dev/*[DEVICE]* bs=1M status=progress conv=fsync`. Make sure the target is the whole microSD card and not its first partition (_sdc1_ or _mmcblk0p1_ are wrong!).
 * Using _bmaptool_: Make sure to select the correct device using `lsblk`. Then run bmaptool with the correct device: Download the _IMAGE.xz_ and the _IMAGE.bmap_ files, then run `bmaptool copy --bmap *IMAGE.bmap* *IMAGE.xz* /dev/*[DEVICE]*`. This takes around 2.5 minutes to flash a 4 GB file.
 * Using _a graphical tool_: A graphical tool such as Gnome Disks under Linux or Etcher under Windows may also be used.
-. Insert the microSD card into the top slot of the PinePhone Pro. Make sure the microSD card is inserted all the way and that the notch of the right side of the microSD card is not visible anymore, see link::File:Pinephone slots.png[here].
+. Insert the microSD card into the top slot of the PinePhone Pro
 . Boot the device using the following method:
+* On the *Explorer Edition ordered after November 2023* boot the phone without any further action.
 * On the *Explorer Edition ordered after July 2022* hold the _volume down key_ while booting.
 * On the *Explorer Edition ordered between January and July 2022* hold the _RE_ button underneath the back cover while booting (or use the _volume down key_ if you flashed _Tow-Boot_).
 * On the *Developer Edition (sold to selected developers only)* apply the bypass by shorting the testing pads while booting according to the datasheet (or use the _volume down key_ if you flashed _Tow-Boot_).
@@ -31,7 +32,7 @@ Details regarding the boot order can be found in the link:/documentation/PinePho
 
 == Flashing to the eMMC
 
-Flashing to the eMMC can either be done using _Tow-Boot*s USB Mass Storage mode (see link:/documentation/PinePhone_Pro/Software/Boot_order/[Boot order] if you are unsure if the device comes with Tow-Bot pre-installed) or by booting an operating system from the microSD (see the section link:/documentation/PinePhone_Pro#Flashing_to_microSD_card[Flashing to microSD card]) and by writing to the eMMC directly from there:
+Flashing to the eMMC (the internal memory of the PinePhone Pro) can either be done using _Tow-Boot_'s USB Mass Storage mode (see link:/documentation/PinePhone_Pro/Software/Boot_order/[Boot order] if you are unsure if the device comes with Tow-Bot pre-installed) or by booting an operating system from the microSD (see the section link:/documentation/PinePhone_Pro#Flashing_to_microSD_card[Flashing to microSD card]) and by writing to the eMMC directly from there:
 
 By using Tow-Boot:
 

@@ -114,15 +114,13 @@ Manjaro is a user-friendly Linux distribution based on the independently develop
 
 image:/documentation/images/Debian-logo.png[width=100]
 
-An unofficial https://www.debian.org[Debian] build for ARM64 running with Phosh (developed by Purism, uses Wayland instead of Xorg).
-The base system is pure Debian, with only the GUI applications and a few others (ModemManager, WiFi chip firmware) being built from modified sources (as well as the kernel and u-boot).
-Current version is Debian Bookworm.
+An unofficial https://www.debian.org[Debian] build for ARM64 running with Phosh. The current version of the base Debian system is Debian Bookworm. See the installation instructions https://wiki.debian.org/InstallingDebianOn/PINE64/PinePhonePro[here]. If you have questions about Mobian, please ask them in the https://matrix.to/#/#mobian:matrix.org[Mobian Matrix room].
 
 === Download
 
 https://images.mobian.org/pinephonepro/[Images]
 
-NOTE: Tow-Boot required to be able to boot the images, see https://wiki.mobian-project.org/doku.php?id&#61;install-linux[here]!
+NOTE: Tow-Boot required to be able to boot the images, see https://tow-boot.org/devices/pine64-pinephonePro.html[here]!
 
 |===
 2+| Default credentials
@@ -133,7 +131,7 @@ NOTE: Tow-Boot required to be able to boot the images, see https://wiki.mobian-p
 
 === Notes
 
-The development is work in progress. See https://gitlab.com/mobian1/devices/pinephonepro-support[pinephonepro-support] for further information. The Mobian wiki can be found https://wiki.mobian-project.org/[here].
+The development is work in progress. The Mobian wiki can be found https://wiki.mobian-project.org/[here].
 
 In order to connect to the device using SSH/SCP via WiFi, you need to install SSH on the device. You can do this by executing the following in a shell: "sudo apt-get install ssh", afterwards you can connect via SSH/SCP via WiFi using the PinePhonePro's IP address on port 22.
 
