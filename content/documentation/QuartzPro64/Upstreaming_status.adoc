@@ -9,6 +9,9 @@ menu:
     weight: 2
 ---
 
+* Upstream Linux kernel DT: https://github.com/torvalds/linux/blob/master/arch/arm64/boot/dts/rockchip/rk3588-quartzpro64.dts
+* Upstream U-Boot DT: https://github.com/u-boot/u-boot/blob/master/arch/arm/dts/rk3588-quartzpro64-u-boot.dtsi
+
 [%header, cols="1,1,1,1,1"]
 |===
 | Function
@@ -76,9 +79,9 @@ h| 3D Acceleration
 |
 
 h| CRU
-2+| In review^https://patchwork.kernel.org/project/linux-rockchip/list/?series=686346[Source]^
+2+| Linux Mainline
 | `clk-rk3588`
-|
+| As of 6.2^https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=f1c506d152ff235ad621d3c25d061cb16da67214[Source]^
 
 h| MMC
 2+| Linux Mainline
@@ -152,9 +155,9 @@ h| NPU
 |
 
 h| USB 2.0
-2+| ?
-| `?`
-|
+2+| In review^https://patchwork.kernel.org/project/linux-rockchip/list/?series=749871[Source]^
+| `phy-rockchip-inno-usb2`
+| Might have more factors than just the PHY
 
 h| USB 3.0
 2+| ?
@@ -164,7 +167,7 @@ h| USB 3.0
 h| SATA
 2+| Linux Mainline
 | `ahci-dwc`
-| Just needs the compatible added to the bindings
+| Just needs the compatible added to the bindings, done https://patchwork.kernel.org/project/linux-rockchip/list/?series=749876[here]
 
 h| Thermal
 2+| In review^https://patchwork.kernel.org/project/linux-rockchip/list/?series=687619[Source]^
@@ -185,5 +188,15 @@ h| RTC
 2+| Linux Mainline
 | `hym8563`
 | Should only need DT work (see https://patchwork.kernel.org/project/linux-rockchip/list/?series=736799[here] for an example)
+
+h| OTP
+2+| In review^https://patchwork.kernel.org/project/linux-rockchip/list/?series=744118[Source]^
+| `rockchip-otp`	
+|
+
+h| SARADC
+2+| In review^https://patchwork.kernel.org/project/linux-rockchip/list/?series=748188[Source]^
+| `rockchip_saradc`
+|
 |===
 
