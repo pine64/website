@@ -71,4 +71,3 @@ See link:/documentation/Quartz64/How-Tos/Using_a_battery[Model A: Using a batter
 == Connecting a MIPI-DSI display
 
 See link:/documentation/Quartz64/How-Tos/Connecting_a_MIPI-DSI_display[Connecting a MIPI-DSI display].
-

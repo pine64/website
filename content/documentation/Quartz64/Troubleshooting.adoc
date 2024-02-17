@@ -13,6 +13,8 @@ menu:
 
 If there is no battery plugged into the board, the jumper labelled "ON/OFF_BATT" must be in place. If this is set wrong, stability issues such as failures to boot will occur.
 
+NOTE: This affects only Model A
+
 == No Ethernet Connectivity
 
 Make sure the kernel is built with `CONFIG_MOTORCOMM_PHY` set to `y`. Building it as a module (`m`) and then relying on module auto-loading is unlikely to work, because if the generic PHY driver is built in it will bind to the PHY first, unless you include the motorcomm module in your initramfs.
@@ -29,7 +31,7 @@ An alternate solution may be to place plastic spacers with a smaller outer diame
 
 == No GPU Acceleration with Debian "Bullseye" Userland
 
-Debian Bullseye ships a Mesa version that is too old to contain the required patches for the RK356x SoC's GPU. You can (at your own risk) https://wiki.debian.org/DebianTesting[use the current Debian Testing version ], called "Bookworm".
+Debian Bullseye ships a Mesa version that is too old to contain the required patches for the RK356x SoC's GPU. Upgrade to Bookworm.
 
 == Wireless Connectivity Doesn't Work
 
