@@ -301,7 +301,7 @@ Since the Ox64 wifi scan doesn't always work properly, run the connection comman
 
  blctl connect_ap YourAP YourPassword
 
-Wait for it to connect (if you're already watching the M0 on /dev/ttyACM1 serial console it should tell you there), then:
+Wait for it to connect (if you're already watching the M0 on /dev/ttyACM1 serial console it should tell you there), then run command still from /dev/ttyACM0 serial console:
 
  udhcpc -i bleth0
  
