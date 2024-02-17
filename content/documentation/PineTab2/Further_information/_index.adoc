@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-image:PPineTab2-pcb.jpg[PineTab2 Board,title="PineTab2 Board",width=450]
+image:/documentation/PineTab2/images/PPineTab2-pcb.jpg[PineTab2 Board,title="PineTab2 Board",width=450]
 
 * link:Certifications[]
 * link:Datasheets[]

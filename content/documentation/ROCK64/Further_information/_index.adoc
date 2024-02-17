@@ -6,8 +6,8 @@ menu:
     title:
     parent: "ROCK64"
     identifier: "ROCK64/Further_information"
-    weight: 
+    weight: 99
 ---
 
 * link:Other_resources[Other resources]
-* link:MAC_address[MAC address]
+* link:Premium_aluminum_casing[Premium aluminum casing]

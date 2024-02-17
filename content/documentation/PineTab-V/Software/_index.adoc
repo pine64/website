@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineTab-V"
     identifier: "PineTab-V/Software"
-    weight: 1
+    weight: 3
 ---
 
 * link:Software_state[Software state]

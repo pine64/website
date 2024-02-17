@@ -37,8 +37,8 @@ menu:
 | GNSS/GPS
 | http://static.abstore.pl/design/accounts/soyter/img/dokumentacje/quectel_eg25-g.pdf[Quectel EG25-G]
 
-| <s>3 Axis Magnetometer</s>
-| <s>https://www.st.com/en/mems-and-sensors/lis3mdl.html[ST LIS3MDL]</s> *_Note:*_ The _AF8133J_ is used instead.
+| 3 Axis Magnetometer
+| AF8133J
 
 | Geo Magnetic Sensor
 | http://www.voltafield.com/products01.html[Voltafield AF8133J]

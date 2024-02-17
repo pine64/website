@@ -6,11 +6,11 @@ menu:
     title:
     parent: "PineTab-V"
     identifier: "PineTab-V/Features"
-    weight:
+    weight: 1
 ---
 
-image:/documentation/PineTab-V/Pinetabv_2.jpg[Front- and backside of the PineTab-V,title="Front- and backside of the PineTab-V",width=250]
-image:/documentation/PineTab-V/Pinetabv_3.jpg[Backside of the PineTab-V,title="Backside of the PineTab-V",width=250]
+image:/documentation/PineTab-V/images/Pinetabv_2.jpg[Front- and backside of the PineTab-V,title="Front- and backside of the PineTab-V",width=250]
+image:/documentation/PineTab-V/images/Pinetabv_3.jpg[Backside of the PineTab-V,title="Backside of the PineTab-V",width=250]
 
 Chassis:
 

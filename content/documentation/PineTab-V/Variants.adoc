@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineTab-V"
     identifier: "PineTab-V/Variants"
-    weight:
+    weight: 2
 ---
 
 There are currently two variants of the PineTab-V:

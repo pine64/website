@@ -1,0 +1,14 @@
+---
+title: "Baseboards"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "SOQuartz"
+    identifier: "SOQuartz/Baseboards"
+    weight: 4
+---
+
+* link:Blade[]
+* link:Model-A[]
+* link:Various_CM4_carrier_boards[Various CM4 carrier boards]

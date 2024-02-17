@@ -13,7 +13,7 @@ The PineTab will automatically boot from microSD if a bootable card is inserted.
 
 == Arch Linux ARM
 
-image:/documentation/images/Archlinux-logo.png[]
+image:/documentation/images/Archlinux-logo.png[width=100]
 
 Unofficial *Arch Linux ARM* with Phosh as the UI selection, maintained by the DanctNIX community.
 
@@ -23,7 +23,7 @@ Download:
 
 == Manjaro ARM
 
-image:/documentation/images/Manjaro-logo.svg[]
+image:/documentation/images/Manjaro-logo.svg[width=100]
 
 *Manjaro* is a Linux based alternative operating system with no adverts or licensing fees, it respects user privacy and gives them full control over their hardware. The PineTab "Early Adopter" edition is currently the only device supported by Manjaro ARM.
 
@@ -36,17 +36,24 @@ Both Beta releases and weekly unstable builds for Phosh and Plasma Mobile can be
 
 == Mobian
 
-image:/documentation/images/Debian-logo.png[]
+image:/documentation/images/Debian-logo.png[width=100]
 
-*Mobian* is a project providing Debian images for mobile devices.
+*Mobian* is an unofficial https://www.debian.org[Debian] build for ARM64 running with Phosh. The current version of the base Debian system is Debian Bookworm. See the installation instructions https://wiki.debian.org/InstallingDebianOn/PINE64/PineTab[here]. If you have questions about Mobian, please ask them in the https://matrix.to/#/#mobian:matrix.org[Mobian Matrix room].
 
 Download:
 
 * PineTab images can be downloaded https://images.mobian.org/pinetab/[here]. The password is *1234*
 
+|===
+2+| Account credentials
+
+| Default user
+| `mobian/1234`
+|===
+
 == postmarketOS
 
-image:/documentation/images/PostmarketOS_logo.png[]
+image:/documentation/images/PostmarketOS_logo.png[width=100]
 
 *postmarketOS* extends https://www.alpinelinux.org/[Alpine Linux] to run on smartphones and other mobile devices.
 
@@ -61,11 +68,36 @@ Getting postmarketOS for the PineTab:
 
 * https://postmarketos.org/download/[Download page]
 * https://wiki.postmarketos.org/wiki/PINE64_PineTab_(pine64-pinetab)#Installation[Flashing instructions]
-* Power users may also create their own image with the distribution's install and development tool `pmbootstrap`
+* Power users may also create their own image with the distribution's install and development tool _pmbootstrap_
+
+== Rhino Linux
+
+image:/documentation/images/Rhino-linux-logo.png[width=100]
+
+*Rhino Linux* is an Ubuntu-based distribution that uses the rolling-release model by tracking the `devel` branch of repositories. The port is currently maintained by Oren Klopfer (oklopfer).
+
+The bootloader (U-Boot) comes pre-flashed in the port. Installation just requires flashing the `.img.xz` to an SD or the eMMC.
+
+Download:
+
+https://rhinolinux.org/download.html[Rhino Linux Downloads] (select Pine64 on the dropdown)
+
+|===
+2+| Account credentials
+
+| Default user
+| `rhino/1234`
+|===
+
+Notes:
+
+Foundational to the distribution is https://pacstall.dev[Pacstall], a Debian-based user repository inspired by the AUR. Additionally, RL comes with https://rhinolinux.org/unicorn/[Unicorn], a custom modified version of XFCE with various modernizations and improvements, including auto-rotation for mobile devices.
+
+https://discord.gg/reSvc8Ztk3[Discord] - https://matrix.to/#/#rolling-rhino-remix:matrix.org[Matrix] - https://github.com/rhino-linux[GitHub] - https://rhinolinux.org/wiki.html[Wiki]
 
 == Sailfish OS
 
-image:/documentation/images/SailfishOS_logo.png[]
+image:/documentation/images/SailfishOS_logo.png[width=100]
 
 You can get *SailfishOS* on your with the flash-it script, which will write an image on a SD card. https://github.com/sailfish-on-dontbeevil/flash-it
 
@@ -75,26 +107,31 @@ http://forum.pine64.org/showthread.php?tid=11850
 
 Many things are still broken but Bluetooth, Audio, Rotation and Keyboard are working.
 
-== UBPorts
+== Ubuntu Touch
 
-image:/documentation/images/Ubports-logo.png[]
+image:/documentation/images/Ubports-logo.png[width=100]
 
-The *UBPorts Ubuntu Touch* is what was preinstalled on the PineTab Early Adopters batch.
+*Ubuntu Touch* is a mobile version of the Ubuntu distribution made and maintained by the UBports community. The port is currently maintained by Oren Klopfer (oklopfer).
 
-It can update itself in System Settings, and also a jenkins daily build can be downloaded at this updated address for the latest daily image:
+The bootloader (U-Boot) comes pre-flashed in the port. Installation just requires flashing the the `.img.xz` file to an SD or the eMMC.
 
-https://ci.ubports.com/job/rootfs/job/rootfs-pinetab-systemimage/
+Download:
 
-The last stable builds are also listed and appear to be updated every few weeks.
+https://gitlab.com/ook37/pinephone-pro-debos/-/releases[UBports 20.04 PineTab Latest Releases]
+https://devices.ubuntu-touch.io/device/pinetab/release/focal[UBports PineTab Device Info]
 
-It should be noted that as of 20th January the latest stable/release candidate and development builds  still lacked Bluetooth, Rotation and had the same issues with online accounts etc
+|===
+2+| Account credentials
 
-Online accounts access have a fix for Google accounts here https://github.com/rubencarneiro/account-plugins/releases
+| Default user 
+| Set during boot
 
-There are however significant updates to the original PineTab image (without the issues above)
+| root
+| `phablet/1234`
+|===
 
-The old image appears to be deprecated here
-https://ci.ubports.com/job/rootfs/job/rootfs-pinetab/[here]
+Notes:
 
-In the event that WiFi fails to connect, the USB port can be used with an appropriate dongle to connect for internet using ethernet cable.
+Scroll down to the middle of https://gitlab.com/ook37/pinephone-pro-debos/[the GitLab project page], or directly here https://devices.ubuntu-touch.io/device/pinetab/release/focal/#deviceOverview[at the UBports website] to see which features work.
 
+Contributions and bug reports can be made at the https://gitlab.com/ook37/pinephone-pro-debos/[UBports PineTab GitLab page]. See https://ubports.com/foundation/sponsors[UBports website] for how to donate.

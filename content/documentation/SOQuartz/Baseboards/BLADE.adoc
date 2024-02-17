@@ -1,15 +1,15 @@
 ---
-title: "BLADE Baseboard Features"
+title: "SOQuartz BLADE Baseboard"
 draft: false
 menu:
   docs:
     title:
-    parent: "SOQuartz"
-    identifier: "SOQuartz/BLADE_Baseboard_Features"
+    parent: "SOQuartz/Baseboards"
+    identifier: "SOQuartz/Baseboards/BLADE"
     weight: 
 ---
 
-image:/documentation/images/SOQuartz_BLADE_Dimension.jpg[SOQuartz BLADE Baseboard,title="SOQuartz BLADE Baseboard",width=400]
+image:/documentation/SOQuartz/images/SOQuartz_BLADE_Dimension.jpg[SOQuartz BLADE Baseboard,title="SOQuartz BLADE Baseboard",width=400]
 
 * SOQuartz BLADE Baseboard Dimensions: 200mm x 40mm x 15mm
 * Input Power:

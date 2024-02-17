@@ -9,7 +9,7 @@ menu:
     weight: 1
 ---
 
-image:/documentation/images/ROCK64_sideimg.jpg[The ROCK64 and a size comparison,title="The ROCK64 and a size comparison",width=400]
+image:/documentation/ROCK64/images/ROCK64_sideimg.jpg[The ROCK64 and a size comparison,title="The ROCK64 and a size comparison",width=400]
 
 == Video
 
@@ -40,6 +40,12 @@ image:/documentation/images/ROCK64_sideimg.jpg[The ROCK64 and a size comparison,
 * 128Mbit (16MB) on-board SPI flash memory (empty by default) - bootable? Usually accessible as a http://linux-mtd.infradead.org/doc/general.html[Linux MTD] device at `/dev/mtd0`
 * 1 USB3.0 Dedicated Host port
 * 2 USB2.0 Dedicated Host port (top one is USB-OTG)
+
+image:/documentation/ROCK64/images/Rock64-emmc-disable-jumper.png[width=400, title="Position of the two-pin header for disabling the optionally installed eMMC module (highlighted in red)"] 
+
+Position of the two-pin header for disabling the optionally installed eMMC module (highlighted in red)
+
+Optionally installed eMMC module can be disabled by placing a jumper onto the two pins on the separate two-pin header, located near one of the mounting holes and two side-mounted buttons.  See the picture in this section, in which this two-pin header is highlighted in red.
 
 == Expansion Ports
 

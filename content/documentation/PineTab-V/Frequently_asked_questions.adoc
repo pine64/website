@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineTab-V"
     identifier: "PineTab-V/Frequently_asked_questions"
-    weight:
+    weight: 5
 ---
 
 _What is the Performance of the PineTab2 compared to the PineTab-V?_

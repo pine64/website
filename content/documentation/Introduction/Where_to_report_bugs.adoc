@@ -4,8 +4,8 @@ draft: false
 menu:
   docs:
     title:
-    parent: "General"
-    identifier: "General/Where_to_report_bugs"
+    parent: "Introduction"
+    identifier: "Introduction/Where_to_report_bugs"
     weight: 
 ---
 

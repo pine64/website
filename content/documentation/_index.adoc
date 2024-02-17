@@ -83,6 +83,6 @@ link:Pinedio[Pinedio]
 
 == Helpful information
 
-* link:General/Getting_started[Getting started]: Basic information on setting up and handling PINE64 devices, such as how to write (flash) OS images to microSD cards and eMMC modules
-* link:General/How_to_contribute[How to contribute]: Information about how to contribute to different partner projects
-* link:General/Where_to_report_bugs[Where to report bugs]: Information about how to report bugs
+* link:Introduction/Getting_started[Getting started]: Basic information on setting up and handling PINE64 devices, such as how to write (flash) OS images to microSD cards and eMMC modules
+* link:Introduction/How_to_contribute[How to contribute]: Information about how to contribute to different partner projects
+* link:Introduction/Where_to_report_bugs[Where to report bugs]: Information about how to report bugs

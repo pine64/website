@@ -13,13 +13,13 @@ This page contains a list of all available releases and tools for the [[PineTab-
 
 == Factory releases ==
 
-The PineTab-V ships with ''Factory Test Code''. The factory test reference source code can be found here:
+The PineTab-V ships with _Factory Test Code_. The factory test reference source code can be found here:
 
-* https://files.pine64.org/SDK/PineTab-V/PineTab-V_factorytestcode_SDK-20230725.tar.gz[PineTab-V_factorytestcode_SDK-20230725.tar.gz] from ''pine64.org'' (8.36GB, MD5 of the TAR-GZip file: ''3e35e2760d82155b024f7601ac2b1275'')
+* https://files.pine64.org/SDK/PineTab-V/PineTab-V_factorytestcode_SDK-20230725.tar.gz[PineTab-V_factorytestcode_SDK-20230725.tar.gz] from _pine64.org_ (8.36GB, MD5 of the TAR-GZip file: _3e35e2760d82155b024f7601ac2b1275_)
 
 Community releases:
 
-* https://pine64.my-ho.st:8443/pinetabv/factoryimage/[sdcard.img] pre-built image from the community member Fishwaldo derived from the factory SDK. Note: Use ''dd'' to write it to microSD card or the eMMC.
+* https://pine64.my-ho.st:8443/pinetabv/factoryimage/[sdcard.img] pre-built image from the community member Fishwaldo derived from the factory SDK. Note: Use _dd_ to write it to microSD card or the eMMC.
 
 == Linux ==
 
@@ -46,4 +46,4 @@ A KDE Plasma Yocto Image from the community member Fishwaldo. Based on the Star6
 |===
 
 ==== Notes
-* Use ''dd'' or ''Balena Etcher'' to copy to a microSD card and then insert the microSD card into your PineTab-V and boot
+* Use _dd_ or _Balena Etcher_ to copy to a microSD card and then insert the microSD card into your PineTab-V and boot

@@ -4,8 +4,8 @@ draft: false
 menu:
   docs:
     title:
-    parent: "General"
-    identifier: "General/Getting_started"
+    parent: "Introduction"
+    identifier: "Introduction/Getting_started"
     weight: 
 ---
 

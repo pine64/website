@@ -97,3 +97,7 @@ Some remarks:
 * The 65W PD USB-C port is controlled by a http://www.hynetek.com/product/pdController/HUSB339/document/HUSB339_DS_EN_V1.2.pdf[HUSB339] controller, paired with a GOFORD G16 MOSFET.
 * The other ports have a http://www.lshchip.com/pdf/Deep-pool/NDP1360KC_EN_Rev1.1.pdf[NDP1360KC] as final power converter.
 
+== Certifications
+
+* https://files.pine64.org/doc/cert/120W%20Desktop%20PinePower%20FCC%20Certificate-DL-20221129012C.pdf[120W PinePower Desktop Power Supply FCC Certificate]
+* https://files.pine64.org/doc/cert/120W%20Desktop%20PinePower%20CE%20EMC%20Certificate-DL-20221129011C.pdf[120W PinePower Desktop Power Supply CE EMC Certificate]
