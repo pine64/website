@@ -50,7 +50,6 @@ Espected result:
 * `/dev/ttyACM0` connects to the D0 core's (i.e. Linux's) serial console
 * `/dev/ttyACM1` is used for flashing (but also connects to the M0 core's serial console)
 
-
 === Optional: preparing serial UART adapter Stm32f103c8t6
 
 To program Stm32f103c8t6, knows as Bluepill, you'll need a TTL serial adpter like FTDI Ft232rl board.
