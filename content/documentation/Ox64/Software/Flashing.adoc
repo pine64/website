@@ -285,7 +285,6 @@ Open an other terminal window to connects to the M0 core’s serial console (`/d
 
 Re-apply power to the Ox64.
 
-
 On `ttyACM0` console you will see Linux booting up. When prompted, log in as `root` with no password. In case card is missing or empty, you'll get `Card did not respond to voltage select! : -110` error.
 
 On `ttACM1` console you'll see following log, until the sytem in not fully loaded:
@@ -296,6 +295,20 @@ On `ttACM1` console you'll see following log, until the sytem in not fully loade
  [I][MBOX] Unhandled Interupts: 0 Unhandled Signals 0
 
 Once the system is running you'll be able to manage the M0 multimedia core, i.e. wifi settings, etc.. When prompted, digit `help` to see available commands.
+
+=== Connecting Ox64 to your router AP
+Sice the Ox64 wifi scan doesn't always work properly, run the connection command from D0/Linux on /dev/ttyACM0 serial console:
+
+ blctl connect_ap YourAP YourPassword
+
+Wait for it to connect (if you're already watching the M0 on /dev/ttyACM1 serial console it should tell you there), then:
+
+ udhcpc -i bleth0
+ 
+Move your Ox64 right next to your router; the chip antenna on the board isn't very good.
+
+
+
 
 === Appendix: adding Nuttx RTOS
 
