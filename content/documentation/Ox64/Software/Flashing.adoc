@@ -69,11 +69,11 @@ Put the Raspberry Pi Pico board into programming mode.
 
 NOTE: As an alternative to pressing the BootSel button, you can also connect the probe point `TP6` (located on the bottom of the Pico board) to any ground point (e.g. pin 28).
 
-The Pico will now appear as a USB mass storage device. Copy the `UF2` file to program it:
+The Pico will now appear as a USB mass storage device. Copy the `UF2` file to program it.
 
  cp ~/ox64/pico/picoprobe.uf2 /media/<user>/RPI-RP2
 
-Next, connect the Ox64 board to the Pico according to the following wiring diagram:
+Next, connect the Ox64 board to the Pico according to the following wiring diagram.
 
  OX64                      PI PICO         /dev/tty
  uart0_Tx_GPIO14_pin1 <->  uart0_Rx_pin17  ACM1 for flashing
@@ -85,7 +85,7 @@ Next, connect the Ox64 board to the Pico according to the following wiring diagr
 
 With the Pico flashed and wired as per the instructions above, we have access to two of the Ox64's UART connections at the same time. This configuration eliminates the need to switch the physical connections for flashing or testing the system.
 
-Reconnect the Pico to your computer's USB port and verify that we have access to all the serial ports we need:
+Reconnect the Pico to your computer's USB port and verify that we have access to all the serial ports we need.
 
  ls /dev/ttyACM*
 
@@ -100,14 +100,14 @@ The Bluepill is an affordable STM32 development board, based on the STM32F103C8T
 
 NOTE: The one catch is that you already need a serial adapter in order to program your Bluepill board. The good news is that you serial adapter does **not** have to be one from from the link:/documentation/Ox64/Further_information/Compatible_UARTs/[Compatible_UARTs] list. If you own an SWD-capable debugger (ST-Link, J-link, etc.), you can use that for programming the Bluepill as well.
 
-Download the https://github.com/r2axz/bluepill-serial-monster[Bluepill Serial Monster] firmware:
+Download the https://github.com/r2axz/bluepill-serial-monster[Bluepill Serial Monster] firmware.
 
  mkdir -p ~/ox64/bluepill
  cd ~/ox64/bluepill
  wget https://github.com/r2axz/bluepill-serial-monster/releases/download/v2.6.4/bluepill-serial-monster.hex
  sudo apt install stm32flash
 
-Put the Bluepill into programming mode:
+Put the Bluepill into programming mode.
 
  * Set boot jumpers for booting from rom: Boot0=1, Boot1=0.
  * Connect it to a USB-Serial adapter with A9 to Rx, A10 to Tx, GND to GND, 3v3 to Vcc.
@@ -120,7 +120,7 @@ Upload the firmware. Replace `/dev/ttyUSB0` with the device path of your USB ser
  
 After upload, set boot jumpers for boot from flash: Boot0=0, Boot1=0. Remove the USB serial adapter.
 
-Next, connect the Ox64 board to the Bluepill according to the following wiring diagram:
+Next, connect the Ox64 board to the Bluepill according to the following wiring diagram.
 
  OX64                      Bluepill      /dev/tty
  uart0_Tx_GPIO14_pin1 <->  uart0_Rx_A3   ACM1 for flashing
@@ -132,7 +132,7 @@ Next, connect the Ox64 board to the Bluepill according to the following wiring d
 
 With the Bluepill flashed and wired as per the instructions above, we have access to two of the Ox64's UART connections at the same time. This configuration eliminates the need to switch the physical connections for flashing or testing the system.
 
-Connect the Bluepill to your computer's USB port and verify that we have access to all the serial ports we need:
+Connect the Bluepill to your computer's USB port and verify that we have access to all the serial ports we need.
 
  ls /dev/ttyACM*
 
@@ -148,7 +148,7 @@ Check that you serial adapter is on the link:/documentation/Ox64/Further_informa
 
 In addition, you will need a way of powering your Ox64. If your serial adapter has a 5V line, you can connect it to VBUS (pin 40). Otherwise, you can connect either the micro-B or the USB-C port on the Ox64 to any 5V power supply.
 
-Refer to the pinout image below. Connect your UART adapter as follows:
+Refer to the pinout image below. Connect your UART adapter as follows.
 
 * RX -> UART0_TX / GPIO14 / pin 1
 * TX -> UART0_RX / GPIO15 / pin 2
@@ -156,7 +156,7 @@ Refer to the pinout image below. Connect your UART adapter as follows:
 
 Proceed with the instructions in the sections that follow, up to and including <<flashing_the_ox64>> and <<flashing_the_microsd_card>>, but replace all occurrences of `/dev/ttyACM1` with `/dev/ttyUSB0`.
 
-Next, power off the Ox64 and re-connect your UART adapter as follows:
+Next, power off the Ox64 and re-connect your UART adapter as follows.
 
 * RX -> TXD / GPIO16 / pin 32
 * TX -> RXD / GPIO17 / pin 31
@@ -194,21 +194,21 @@ Download the latest DevCube flashing tool from BouffaloLab's website.
  unzip BouffaloLabDevCube-v1.8.9.zip
  chmod u+x BLDevCube-ubuntu
 
-If you did not create a <<optional_create_a_combined_soc_image, combined image>> you may need an older version of the DevCube. In that case, download v1.8.3 from one of the mirrors below:
+If you did not create a <<optional_create_a_combined_soc_image, combined image>> you may need an older version of the DevCube. In that case, download v1.8.3 from one of the mirrors below.
 
 * https://openbouffalo.org/static-assets/bldevcube/BouffaloLabDevCube-v1.8.3.zip
 * https://hachyderm.io/@mkroman/110787218805897192[] > https://pub.rwx.im/~mk/bouffalolab/BouffaloLabDevCube-v1.8.3.zip
 * https://we.tl/t-eJWShQJ4iF
 * https://cdn.discordapp.com/attachments/771032441971802142/1145565853962735639/BouffaloLabDevCube-v1.8.3.zip
 
-Verify that your copy of `BouffaloLabDevCube-v1.8.3.zip` matches the hashes below:
+Verify that your copy of `BouffaloLabDevCube-v1.8.3.zip` matches the hashes below.
 
 * SHA1: `0f2619e87d946f936f63ae97b0efd674357b1166`
 * SHA256: `e6e6db316359da40d29971a1889d41c9e97d5b1ff1a8636e9e6960b6ff960913`
 
 == Flashing the Ox64
 
-Put the Ox64 into programming mode:
+Put the Ox64 into programming mode.
 
 * Press the BOOT button
 * Apply power or re-plug the USB cable
@@ -216,23 +216,23 @@ Put the Ox64 into programming mode:
 
 === CLI flashing method
 
-Set up some environment variables to save typing them out later:
+Set up some environment variables to save typing them out later.
 
  PORT=/dev/ttyACM1 # or /dev/ttyUSB0, this will depend on which serial adapter you use
  BAUD=230400       # safe value for macOS, if using Linux set to 2000000 for faster flashing
 
-Change directory to the location of your image files:
+Change directory to the location of your image files.
 
  cd ~/ox64/openbouffalo/firmware # if you downloaded pre-built images
  # or
  cd ~/ox64/buildroot/output/images # if you built your own images
 
-Finally, flash the Ox64. If you created a **combined image** then run the following command:
+Finally, flash the Ox64. If you created a **combined image** then run the command below.
 
  bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x0 \
                --firmware bl808-combined.bin --single
 
-Otherwise:
+Otherwise, run the following commands.
 
  bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x0 \
                --firmware m0_lowload_bl808_m0.bin --single
@@ -258,20 +258,20 @@ Select chip [BL808], press Finish, and configure BOTH the [MCU] and [IOT] tabs a
  Port/SN: /dev/ttyACM1 or /dev/ttyUSB0 (make sure you don't use /dev/ttyACM0, it's used by the minicom console)
  Uart rate 230400 (safe value for macOS, if using Linux set to 2000000 for faster flashing)
 
-If you created a **combined image** then you only need to use the [IOT] tab:
+If you created a **combined image** then you only need to use the [IOT] tab.
 
  Enable 'Single Download'
  Image Address [0x0], [PATH to bl808-combined.bin]
  Click 'Create & Download' and wait until it's done
  Close DevCube
 
-Otherwise, start in the [MCU] tab:
+Otherwise, start in the [MCU] tab.
 
  M0 Group[group0], Image Address [0x58000000], [PATH to m0_lowload_bl808_m0.bin]
  D0 Group[group0], Image Address [0x58100000], [PATH to d0_lowload_bl808_d0.bin]
  Click 'Create & Download' and wait until it's done
 
-Then, switch to the [IOT] tab and set:
+Then, switch to the [IOT] tab.
 
  Enable 'Single Download'
  Image Address [0x800000], [PATH to bl808-firmware.bin]
@@ -280,7 +280,7 @@ Then, switch to the [IOT] tab and set:
 
 == Flashing the microSD card
 
-Insert the microSD card into your PC, locate its device file (`/dev/sdb`, for example), and write the image:
+Insert the microSD card into your PC, locate its device file (`/dev/sdb`, for example), and write the image.
 
  cd ~/ox64/openbouffalo/firmware # if you downloaded pre-built images
  # or
@@ -291,19 +291,19 @@ Insert the microSD card into your PC, locate its device file (`/dev/sdb`, for ex
 
 Power off your Ox64 and insert the microSD card.
 
-Open a terminal window to connect to the D0 core’s (i.e. Linux’s) serial console:
+Open a terminal window to connect to the D0 core’s (i.e. Linux’s) serial console.
 
  minicom -b 2000000 -D /dev/ttyACM0
 
-If you are using a Pico or Bluepill as your serial interface, open another terminal window to to monitor the M0 core’s serial console (reminder: `/dev/ttyACM1` is the same port we previously used for flashing):
+If you are using a Pico or Bluepill as your serial interface, open another terminal window to to monitor the M0 core’s serial console (reminder: `/dev/ttyACM1` is the same port we previously used for flashing).
 
  minicom -b 2000000 -D /dev/ttyACM1
 
 Re-apply power to the Ox64.
 
-On `ttyACM0` console you will see Linux booting up. When prompted, log in as `root` with no password. In case card is missing or empty, you'll get `Card did not respond to voltage select! : -110` error.
+On the `ttyACM0` console you will see Linux booting up. When prompted, log in as `root` with no password. In case card is missing or empty, you'll get `Card did not respond to voltage select! : -110` error.
 
-On `ttACM1` console you'll see following log, until the sytem is fully loaded:
+On the `ttACM1` console you'll see following log, until the sytem is fully loaded.
 
  [I][MBOX] Mailbox IRQ Stats:
  [I][MBOX] Peripheral SDH (33): 0
@@ -313,11 +313,11 @@ On `ttACM1` console you'll see following log, until the sytem is fully loaded:
 Once the system is running you'll be able to manage the M0 multimedia core, i.e. wifi settings, etc. When prompted, type `help` to see available commands.
 
 === Connecting the Ox64 to your WiFi netowrk
-The simplest way to connect is to run the following command from the Linux console (i.e. `/dev/ttyACM0`):
+The simplest way to connect is to run the following command from the Linux console (i.e. `/dev/ttyACM0`).
 
  blctl connect_ap YourSSID YourPassword
 
-Wait for it to connect (if you're already watching the M0 console on `/dev/ttyACM1` it should tell you there), then run the following command from the Linux console:
+Wait for it to connect (if you're already watching the M0 console on `/dev/ttyACM1` it should tell you there), then run the following command from the Linux console.
 
  udhcpc -i bleth0
  
@@ -342,13 +342,13 @@ Run the following command to re-read the partition tables. Re-inserting the SD c
 
  sudo blockdev --rereadpt /dev/sdb
 
-Download the NuttX image:
+Download the NuttX image.
 
  mkdir -p ~/ox64/nuttx
  cd ~/ox64/nuttx
  wget -O ImageNuttx https://github.com/lupyuen2/wip-pinephone-nuttx/releases/download/bl808d-1/Image
 
-Mount the boot partition and make the required modifications:
+Mount the boot partition and make the required modifications.
 
  sudo mount /dev/sdb2 /mnt
  sudo cp ImageNuttx /mnt/
@@ -362,7 +362,7 @@ Mount the boot partition and make the required modifications:
 
  sudo umount /mnt
 
-Mount the rootfs and make the required modifications:
+Mount the rootfs and make the required modifications.
 
  sudo mount /dev/sdb3 /mnt
  sudo cp ImageNuttx /mnt/boot/
