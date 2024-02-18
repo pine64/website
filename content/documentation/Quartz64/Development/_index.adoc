@@ -26,7 +26,7 @@ This page documents the current status of software support for the link:/documen
 .3+h| Video Output
 2+|Linux Mainline
 | `rockchipdrm/VOP2`
-| As of 5.19-rc1^https://git.kernel.org/linus/604be85547ce4d61b89292d2f9a78c721b778c16[Source]^,Also featured in Phoronix Article^link:https://www.phoronix.com/scan.php?page=news_item&px=Rockchip-VOP2-Linux-5.19[Source]^
+| As of 5.19-rc1^https://git.kernel.org/linus/604be85547ce4d61b89292d2f9a78c721b778c16[Source]^,Also featured in Phoronix Article^link:https://www.phoronix.com/scan.php?page=news_item&px=Rockchip-VOP2-Linux-5.19[Source]^, 4k@30 support and other improvements in 6.4-rc1^https://git.kernel.org/linus/83b61f817f43ed67572d1e241c9f552e0a8bfff4[Source]]^
 |
 
 2+| Needs porting
@@ -50,7 +50,7 @@ h| 3D Acceleration
 |Linux Mainline
 .3+|GStreamer only, no ffmpeg^link:https://patchwork.ffmpeg.org/project/ffmpeg/list/?series=2898[Source]^
 | `hantro` using `v4l2-requests`
-| VDPU121 handling 1080p H.263, MPEG-1, MPEG-2, VP8 and H.264. Mainline as of 5.19^link:https://git.kernel.org/linus/5f6bfab6da6531238e899fdf29efd6d0185adc3e[Source]^
+| VDPU121 handling 1080p MPEG-2, VP8 and H.264. Mainline as of 5.19^link:https://git.kernel.org/linus/5f6bfab6da6531238e899fdf29efd6d0185adc3e[Source]^
 |
 
 | Needs writing
@@ -116,9 +116,9 @@ h| 3D Acceleration
 |
 |
 
-2+| In progress
+2+| Merged
 | `U-Boot`
-| link:#Mainline_U-Boot_Work[See below]
+| link:#Mainline_U-Boot_Work[See below]. Quartz64 and SOQuartz as of v2023.10-rc2^https://source.denx.de/u-boot/u-boot/-/commit/4e619e8d4fd68095bc665a78f2651d8e478a4534[Source]^
 |
 
 2+| In progress^link:https://github.com/jaredmcneill/quartz64_uefi[Source]^
@@ -237,9 +237,9 @@ h| Combo PHY
 |
 
 h| RGA
-2+| Needs fixing
+2+| Linux Mainline; Could be improved
 | `rockchip-rga`
-| User:CounterPillow experimentally enabled it^link:https://gist.github.com/CounterPillow/6bea809f15ada7ddd3a3d7a4994fdc4e[Source]^ in the device tree and ran gstreamer's v4l2convert through it to test, resulting in a completely garbled output.
+| As of 6.5^https://git.kernel.org/linus/0c3391f8bb06b744df521651534cd99e3d77e0a8[Source]^. Note that there's still a '4GB' problem and it's implementations has room for improvements (to put it midly ^https://lore.kernel.org/all/20230522102953.GB23678@pengutronix.de/[Source]^ and ^https://lore.kernel.org/all/b404dc20-c460-ac3f-6659-8be7a7d32bfe@arm.com/[Source]^)
 |
 
 h| Fan Controller
@@ -262,7 +262,7 @@ h| Fan Controller
 h| NPU
 2+| Needs writing
 |
-| Downstream version is a closed source SDK. Major undertaking to reimplement this as Linux does not (yet) appear to have a generic architecture for neural accelerators.
+| Downstream version is a closed source SDK and https://github.com/dieselnutjob/kernel-rk3566/tree/linux-4.19.210/drivers/rknpu[open source kernel module rknpu]. Major undertaking to reimplement this as Linux does not (yet) appear to have a generic architecture for neural accelerators.
 |
 
 h| Crypto
@@ -272,7 +272,7 @@ h| Crypto
 |
 
 h| TRNG
-2+| In review^link:https://patchwork.kernel.org/project/linux-rockchip/list/?series=699813[Source]^
+2+| In review^link:https://patchwork.kernel.org/project/linux-rockchip/list/?series=699813&archive=both[Source]^
 | `rockchip-rng`
 |
 |
@@ -280,11 +280,11 @@ h| TRNG
 .2+h| Wi-Fi
 2+| Needs porting
 | `bes2600`
-|
+| A downstream driver is available but it makes use of some custom Rockchip interfaces and is designed for older kernels, plans are being made to port it to DKMS.
 | PineTab 2
 
 2+| Linux Mainline
-|
+| `brcmfmac`
 |
 | Quartz64 Model B
 |===
@@ -314,6 +314,9 @@ According to pgwipeout, I/O device performance is within expected ranges now.
 ** JPEG (it's pretty bad)
 * Battery
 * GPU
+* Video Output
+** HDMI
+** DSI
 * Audio
 ** Analog audio works
 ** SPDIF works
@@ -327,12 +330,12 @@ According to pgwipeout, I/O device performance is within expected ranges now.
 ** User:CounterPillow noticed some weirdness with NVMe devices disconnecting during heavy write operations, likely down due to power draw on one of the rails as the same sustained bandwidth could be achieved with a different PCIe device with no issue.
 * SDMMC1 (Wi-Fi) &mdash; AP6256 working, BL602 needs some work to make it flash firmware
 * https://developer.arm.com/architectures/system-architectures/system-components/arm-generic-interrupt-controller[GIC] &mdash; needs errata published by Rockchip to get upstream to add device-specific workarounds ^link:https://lore.kernel.org/linux-rockchip/CAMdYzYrQ5f-mv_VmTq_CRf9tR=\j3mwRpKHNLmPFgCF9whsGFRw@mail.gmail.com/[link]^
-* Video Output &mdash; only at 1920x1080p60 and nothing else, very buggy and rough around more than just the edges
 
 === Confirmed Broken
 
-* USB 3.0 (applies to Model A only) &mdash; only works with very short cables and depends on the device. This is due to a hardware design issue relating to the coupling capacitors needed for SATA, which shares the same lines as USB 3.0.
-** Hardware design changes have been suggested to engineers, it's in their hands now.
+* [.line-through]#USB 3.0 (applies to Model A only) &mdash; only works with very short cables and depends on the device. This is due to a hardware design issue relating to the coupling capacitors needed for SATA, which shares the same lines as USB 3.0.#
+** [.line-through]#Hardware design changes have been suggested to engineers, it's in their hands now.#
+** Fixed in newer revisions by leaving SATA unpopulated
 * RGA &mdash; only works with memory &le; 4 GiB, because Rockchip didn't make the address registers larger. Oopsie.
 
 === Needs Testing
@@ -341,7 +344,6 @@ According to pgwipeout, I/O device performance is within expected ranges now.
 * Microphone Input
 * CSI &mdash; needs CIF driver
 * eDP &mdash; needs PHY driver and controller driver
-* DSI
 
 == TODO
 
@@ -353,28 +355,20 @@ The https://gitlab.com/pine64-org/quartz-bsp/linux-next/-/tree/rk356x-ebc-dev[dr
 
 The RK3566 comes with an integrated RISC-V microcontroller (MCU). It communicates with the A55 host through the Mailbox system driven by the rockchip-mailbox driver. Since this MCU would be quite useful for things such as low power standby mode, investigating how it can be turned on and have firmware flashed to it should greatly enhance the power saving features of the PineNote.
 
+The user liamur https://github.com/liamhays/rk3566-mcu[did some investigation] into the MCU and found that it is disabled by TF-A on suspend, and doesn't reside in a low-power part of the RK3566 anyway. It does however have access to most of the chip and could be used as (for example) a real-time coprocessor.
+
 === Mainline U-Boot Work
 
-Currently, mainline U-Boot does not have support for the RK3566 SoC used on the Quartz64. That's why we currently use the "downstream" Rockchip U-Boot, which is based on an old version of U-Boot and contains vendor specific patches that have not undergone the same level of code review as they'd have done had they been submitted upstream.
+We currently use the "downstream" Rockchip U-Boot, which is based on an old version of U-Boot and contains vendor specific patches that have not undergone the same level of code review as they'd have done had they been submitted upstream.
 
-While the lack of ATF sources means that using mainline U-Boot would still require the use of Rockchip provided binaries for the firmware, the mainline U-Boot works needs to be done eventually anyway, and even with Rockchip blobs, a more modern version of U-Boot will be much nicer to use.
+While the lack of ATF sources means that using mainline U-Boot would still require the use of Rockchip provided binaries for the firmware, even with Rockchip blobs, a more modern version of U-Boot will be much nicer to use.
 
-Someone needs to get on the task of investigating what minimally needs to be ported to get the board booting with mainline U-Boot, port those changes, and submit them for review.
+Mainline U-Boot contains good enough support for the RK3566 SoC used on the Quartz64 as of v2023.07 and have support for Quartz64 and SOQuartz as of v2023.10-rc2. Drivers for https://patchwork.ozlabs.org/cover/1841800/[ethernet GMAC] and https://patchwork.ozlabs.org/patch/1817295/[Motorcomm PHY] are supported as of v2024.01-rc1.
 
-==== Things that need to be done
+==== Things that could be done
 
 This list is non-exhaustive as we don't exactly know how much is missing
 
-* Bring the kernel's Quartz64 DTSes into the tree (CounterPillow did this https://github.com/CounterPillow/u-boot-quartz64/commits/mainline-ish-2[in his tree])
-* Write `defconfig`s based on `evb-rk3568_defconfig` (CounterPillow did this https://github.com/CounterPillow/u-boot-quartz64/commits/mainline-ish-2[in his tree])
-* Write a mainline-able patch for the https://github.com/CounterPillow/u-boot-quartz64/commit/ba33172a36f298641f51a5e6b855c3e89e3f5d3e[DWMCI_PWREN hack]
-
-Stretch Goals:
-
-* Port the Naneng Combo PHY driver to u-boot so we can SATA, USB 3 and PCIe boot
-* Look into SPI
-* Port the Motorcomm PHY driver to u-boot for networking?
-** Only needed for Model A, RTL8211 on Model B is already supported in mainline u-boot
 * Port a basic VOP2 driver to get a framebuffer from u-boot
 
 ==== List of Useful Resources for this Task
@@ -420,7 +414,7 @@ User:CounterPillow has experimentally ported stuff, but it's currently not worki
 * `CONFIG_ROCKCHIP_DW_HDMI`
 ** HDMI PHY
 * `CONFIG_PHY_ROCKCHIP_INNO_DSIDPHY`
-** MIPI DSI DPHY (note: requires in-review patches linked in status table)
+** MIPI DSI DPHY
 * `CONFIG_ROCKCHIP_VOP2`
 ** Video output
 * `CONFIG_ARCH_ROCKCHIP`
@@ -436,7 +430,7 @@ User:CounterPillow has experimentally ported stuff, but it's currently not worki
 * `CONFIG_MFD_RK808`
 ** Various things relating to the RK817 chip
 * `CONFIG_CHARGER_RK817`
-** RK817 charger (note: requires in-review patches linked in status table)
+** RK817 charger
 * `CONFIG_REGULATOR_RK808`
 ** Voltage regulators
 * `CONFIG_ROCKCHIP_PM_DOMAINS`
@@ -504,8 +498,8 @@ The RK3566 boot ROM will search for a valid ID BLOCK in the following order on t
 
 * SPI NOR flash
 * SPI NAND flash
-* SD-Card
 * eMMC
+* SD-Card
 
 If this fails, the boot ROM will initialize the USB0 port and wait for a connection from the Rockchip
 flash/boot tools.
@@ -517,6 +511,3 @@ As per pgwipeout's https://gitlab.com/pine64-org/quartz-bsp/u-boot/-/commit/12d1
 * Make a partition named `uboot` as partition number 1 at 8 MiB to 16 MiB
 * `dd if=idblock.bin of=/dev/_<mmc/sd>_ seek=64`
 * `dd if=uboot.img of=/dev/_<mmc/sd>_1`
-
-==== BSP Image Layout
-

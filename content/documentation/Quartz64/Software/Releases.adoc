@@ -41,13 +41,13 @@ Notes:
 
 image:/documentation/images/dietpi.png[width=100]
 
-*DietPi* is a lightweight, yet easy to setup and feature-rich Linux distribution, based on _Debian_. To find out more about DietPi, please visit the https://dietpi.com/docs/[official documentation]. Discuss the Quartz64 build(s) on the https://forum.pine64.org/showthread.php?tid=17601[PINE64 forum thread].
+*DietPi* is a lightweight, yet easy to setup and feature-rich Linux distribution, based on _Debian_. To find out more about DietPi, please visit the https://dietpi.com/docs/[official documentation]. Discuss the Quartz64 builds on the https://forum.pine64.org/showthread.php?tid=17601[PINE64 forum thread].
 
 Download:
 
-* Quartz64 Model A: https://dietpi.com/downloads/images/DietPi_Quartz64A-ARMv8-Bullseye.img.xz[Direct download from dietpi.com]
-* Quartz64 Model B: https://dietpi.com/downloads/images/DietPi_Quartz64B-ARMv8-Bullseye.img.xz[Direct download from dietpi.com]
-* SOQuartz: https://dietpi.com/downloads/images/DietPi_SOQuartz-ARMv8-Bullseye.img.xz[Direct download from dietpi.com]
+* Quartz64 Model A: https://dietpi.com/downloads/images/DietPi_Quartz64A-ARMv8-Bookworm.img.xz[Direct download from dietpi.com]
+* Quartz64 Model B: https://dietpi.com/downloads/images/DietPi_Quartz64B-ARMv8-Bookworm.img.xz[Direct download from dietpi.com]
+* SOQuartz: https://dietpi.com/downloads/images/DietPi_SOQuartz-ARMv8-Bookworm.img.xz[Direct download from dietpi.com]
 
 |===
 2+| Default credentials
@@ -92,24 +92,6 @@ Notes:
 
 * This image can be written to a supported device, such as the eMMC interface, any USB storage device, NVMe, and PCIe AHCI SATA are all supported with builds after 2022-01-15.
 * Currently this can not be shared with the EDK2 port, ie, microSD for EDK2 and some other media for NetBSD.
-
-=== pgwipeout's Quartz64 CI
-
-pgwipeout provides continuously rebuilt set of images for Quartz64 devices which includes a Debian installer and a buildroot rescue environment. It is aimed at advanced users who generally know their way around a Linux system, and as a baseline for whether something is working or not. Works on both SD cards and eMMC, uses pgwipeout's patched kernel. Kernels aren't auto-updated on the installed system, so the user manually has to do this by mounting the actual correct boot partition.
-
-Download:
-
-* https://gitlab.com/pgwipeout/quartz64_ci/-/pipelines (Click the three dots on the right, download the merge-job archive.)
-
-Notes:
-
-For Quartz64 Model A, flash _rk3566-quartz64-a.dtb.img.xz_. On Linux, you can for example do this as follows, assuming your target device is _/dev/sdX_:
-
- sudo -i; xzcat /path/to/rk3566-quartz64-a.dtb.img.xz > /dev/sdX
-
-For Quartz64 Model B, use _rk3566-quartz64-b.dtb.img.xz_ instead.
-
-For line by line instructions to boot Quartz64 CI on a microSD card and use it to install Debian onto an eMMC follow these instructions link:/documentation/Quartz64/Software/Installing_Debian[Installing Debian]
 
 === Plebian
 

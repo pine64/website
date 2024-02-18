@@ -9,6 +9,4 @@ menu:
     weight: 2
 ---
 
-== Software
-
-Under link:/documentation/Quartz64/Software/Releases[Releases] you will find a complete list of currently supported operating system images, which work with the Quartz64, as well as other related software.
+{{< children >}}
