@@ -60,7 +60,7 @@ Built-in 802.11 b/g/n WiFi with Bluetooth: 4.0
 
 6000mAh battery
 
-3.5″ barrel power (5V 3A) port
+2.5mm barrel power (5V 3A) port
 
 Multiple expansion boards for LTE, LoRa and SATA SSD
 
