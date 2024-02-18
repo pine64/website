@@ -106,5 +106,5 @@ USB ports:
 * 1 x USB 3.0 Type-C OTG Port, 5Gbps, (includes laptop charging function), is not bootable
 * Note that high power USB devices may not work reliably on a PBP. Or they may draw enough power to drain the battery even when the PBP is plugged into A.C. One alternative is externally powered USB devices.
 
-Headphone jack switchable to UART console mux circuit
+Headphone jack switchable to UART serial console mux circuit
 

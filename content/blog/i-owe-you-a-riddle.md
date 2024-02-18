@@ -19,7 +19,7 @@ images:
 
 In the [November Community Update](https://www.pine64.org/2020/11/15/november-update-kde-pinephone-ce-and-a-peek-into-the-future/) I promised you a riddle concerning the naming of our upcoming range of RK3566 Single Board Computers.
 
-The person to **solve the riddle first will receive the first board** straight from the production line. Leave your guess in the comments section.  
+The person to **solve the riddle first will receive the first board** straight from the production line. Leave your guess in the comments section.
 
 If no one guesses correctly by then Monday, December 21, when the blog comments will get turned off due to the website being overhauled, then we'll continue this community challenge on the forums. I'll edit this post with a forum link if need be.
 

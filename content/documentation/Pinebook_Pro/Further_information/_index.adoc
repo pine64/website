@@ -9,8 +9,4 @@ menu:
     weight: 
 ---
 
-* link:Other_resources[Other resources]
-* link:Specifications[]
-* link:Case_dimensions_and_data[Case dimensions and data]
-* link:Datasheets[]
-* link:Schematics_and_certifications[Schematics and certifications]
+{{< children >}}

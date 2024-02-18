@@ -30,6 +30,8 @@ The screws are small and should only be finger tight. Too much force will strip 
 
 A basic 3D model to print replacement standoffs for the back cover screws is https://www.thingiverse.com/thing:4226648[available on Thingiverse], until the official drawings or 3D models are made available.
 
+Many units come with the hinges too stiff from the factory. You can tell if it affects your device by carefully observing if operating the lid on a fully assembled notebook flexes the case. This repeated flexing can lead to plastic and metal fatigue and eventually broken parts. Consider carefully using a flat screwdriver or similar object to unbend the hinges a bit by wedging it into the slot (requires the display part to be fully detached from the main body).
+
 == Display disassembly
 
 It is not recommended to adjust the position of the lid when the bottom cover is removed, because the bottom cover provides structural strength, so the lid should be open fully as the first step, before starting any disassembly of the laptop. After opening the lid, remove the bottom cover by following the instruction found in the section above. Alternatively, you can keep the lid closed and remove the screws that hold the hinges to the main laptop body, as described in link:#Caring_for_the_PineBook_Pro[Pinebook Service Step by Step Guides].

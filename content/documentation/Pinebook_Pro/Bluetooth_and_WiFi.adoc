@@ -29,13 +29,15 @@ Since the Bluetooth transceiver shares both its spectrum and antenna with 2.4 GH
 
 Wi-Fi on the Pinebook Pro is capable of reaching a maximum data transfer rate of approximately 433 megabits per second, using one spatial stream. The transceiver does not support multiple spatial streams or 160-MHz channel bandwidths.
 
-The Wi-Fi transceiver supports the lower thirteen standard channels on the 2.4 GHz band, using a bandwidth of 20 MHz. At least twenty-four channels are supported on the 5 GHz band, spanning frequencies from 5180 to 5320 MHz, 5500 to 5720 MHz, and 5745 to 5825 MHz, with bandwidths of 20, 40, or 80 MHz.
+The Wi-Fi transceiver supports the lower thirteen standard channels on the 2.4 GHz band, using a bandwidth of 20 MHz. At least twenty-four channels are supported on the 5 GHz band, spanning frequencies from 5180 to 5320 MHz, 5500 to 5720 MHz, and 5745 to 5825 MHz, with bandwidths of 20, 40, or 80 MHz. This might vary depending on the country you specify in the wireless settings, see `iw reg get; iw list`.
 
 Maximum reception sensitivity for both bands is approximately -92 dBm. The receiver can tolerate input intensities of no more than -20 dBm on the 2.4 GHz band, and no more than -30 dBm on the 5 GHz band. Maximum transmission power is approximately +15 dBm for either band, falling further to approximately +10 dBm at higher data transfer rates on the 5 GHz band.
 
 With current available drivers and firmware, the Wi-Fi interface supports infrastructure, ad-hoc, and access-point modes with satisfactory reliability. Monitor mode is not presently supported. Wi-Fi Direct features may be available, but it is unclear how to make use of them under Linux.
 
-Be aware that Linux userspace utilities, such as `iw`, may report inaccurate information about the capabilities of wireless devices. Parameter values derived from vendor datasheets, or direct testing, should be preferred to the outputs of hardware-querying tools.
+Be aware that Linux userspace utilities, such as _iw_, may report inaccurate information about the capabilities of wireless devices. Parameter values derived from vendor datasheets, or direct testing, should be preferred to the outputs of hardware-querying tools. That said, if a certain feature is not reported by _iw_ it means the currently running kernel driver plus firmware combination doesn't support it, even when the hardware is capable.
+
+WPA3 PSK support should be possible with _iwd_ but not _wpa_supplicant_, see https://github.com/raspberrypi/linux/issues/4718#issuecomment-1279951709[this ticket] for details.
 
 == Bluetooth Capabilities
 

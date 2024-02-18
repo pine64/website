@@ -525,7 +525,7 @@ Instructions:
 . Execute it: `./flash-it.sh`
 . Follow the instructions. Some commands in the script require root permissions (for example: mounting and flashing the SD card).
 
-When asked where to flash, type 'raw' and it will build the image on your computer. Otherwise define the path */dev/[...]*.  to flash to card or internal emmc.
+When asked where to flash, type 'raw' and it will build the image on your computer. Otherwise define the path */dev/[...]*. to flash to card or internal emmc.
 
 *username/password*
 
@@ -627,7 +627,7 @@ image:/documentation/images/Ubports-logo.png[width=100]
 
 A Mobile Version of the Ubuntu Operating System made and maintained by the UBports Community. The port is currently maintained by Oren Klopfer (oklopfer).
 	
-NOTE: Tow-Boot is required for installing the latest version of Ubuntu Touch (20.04) on the PinePhone. Instructions for installing Tow-Boot to the PinePhone can be found https://tow-boot.org/devices/pine64-pinephoneA64.html[here].  
+NOTE: Tow-Boot is required for installing the latest version of Ubuntu Touch (20.04) on the PinePhone. Instructions for installing Tow-Boot to the PinePhone can be found https://tow-boot.org/devices/pine64-pinephoneA64.html[here]. 
 	
 Installation instructions can be found at https://ubports.com/en/blog/ubports-news-1/post/pinephone-and-pinephone-pro-3889[this UBports post]. After Tow-Boot has been installed to your device, Ubuntu Touch installation just requires flashing the _.img.xz_ to an SD or the eMMC.
 

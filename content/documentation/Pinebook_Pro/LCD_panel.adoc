@@ -19,8 +19,3 @@ menu:
 * 63% sRGB coverage
 * 6-bit color
 * 30-pin eDP connection
-
-Some people have tested hardware video decode using the following:
-
- ffmpeg -benchmark -c:v h264_rkmpp -i file.mp4 -f null -
-

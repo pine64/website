@@ -40,7 +40,7 @@ Download:
 Notes:
 
 * If you have any difficulties please visit our https://forum.armbian.com[forum] or come chat with us on https://docs.armbian.com/Community_IRC/[IRC / Discord]
-* As of April 2023, Armbian only has Ubuntu images pre-made.  However, using their tools to create a Debian image from scratch takes little expertise and results in an image that can be burned onto a USB stick or SD card.  Their installer can then install it onto internal eMMC, including a working bootloader.
+* As of April 2023, Armbian only has Ubuntu images pre-made. However, using their tools to create a Debian image from scratch takes little expertise and results in an image that can be burned onto a USB stick or SD card. Their installer can then install it onto internal eMMC, including a working bootloader.
 
 === Twister OS
 
@@ -203,7 +203,7 @@ DietPi is a lightweight, yet easy to setup and feature-rich Linux distribution, 
 
 Download:
 
-* https://dietpi.com/downloads/images/DietPi_PinebookPro-ARMv8-Bullseye.img.xz[Direct download from dietpi.com]
+* https://dietpi.com/downloads/images/DietPi_PinebookPro-ARMv8-Bookworm.img.xz[Direct download from dietpi.com]
 
 |===
 2+| Default credentials
@@ -353,7 +353,7 @@ image:/documentation/images/Debian-logo.png[width=100]
 
 https://d-i.debian.org/daily-images/arm64/daily/netboot/SD-card-images/[The relevant files are built daily here] and may sometimes be unavailable if the build system is having issues. The "README.concatenateable_images" file provides instructions on how to combine the partition.img.gz file with the firmware.pinebook-pro.rk3399.img.gz file in order to create a DD-able image.
 
-The official images are *not* recommended yet until the display begins working consistently and the installer properly installs the bootloader.  Building a Debian-based image via the Armbian builder on the other hand seems to work with no changes.  Previously the best tool was link:/documentation/Pinebook_Pro/Software/Debian_installer[Daniel Thompson's Debian Installer] , but unfortunately as of April 2023 some of the upstream kernel sources this tool used seem to no longer exist.
+The official images are *not* recommended yet until the display begins working consistently and the installer properly installs the bootloader. Building a Debian-based image via the Armbian builder on the other hand seems to work with no changes. Previously the best tool was link:/documentation/Pinebook_Pro/Software/Debian_installer[Daniel Thompson's Debian Installer], but unfortunately as of April 2023 some of the upstream kernel sources this tool used seem to no longer exist.
 
 === Gentoo
 
@@ -363,9 +363,7 @@ There is a script that prepares a Gentoo arm64 stage 3 tarball for the Pinebook 
 
 *Word to the wise*
 
-Currently, following the instructions on the Pinebook pro gentoo github page will *not* result in a functional system. Therefore it is neccesary to follow the instructions given here. Please bear in mind that the Pinebook pro's six arm cores and 4gb of ram are extremely anemic. For example, emerging the package net-libs/webkit-gtk in order to build the minimalist web-browser "surf", a process which takes eighty minutes on an intel core i5-8250U with 8gb of ram, required eight hours of compile time,
-Basic installation alone can take 24 hours of compillation, dozens of reboots, and hours of troubleshooting. After that, even installing firefox would take 17 hours.
-Now that that's out of the way, we may begin the installation.
+Currently, following the instructions on the Pinebook pro gentoo github page will *not* result in a functional system. Therefore it is neccesary to follow the instructions given here. Please bear in mind that the Pinebook pro's six arm cores and 4gb of ram are extremely anemic. For example, emerging the package net-libs/webkit-gtk in order to build the minimalist web-browser "surf", a process which takes eighty minutes on an intel core i5-8250U with 8gb of ram, required eight hours of compile time, Basic installation alone can take 24 hours of compillation, dozens of reboots, and hours of troubleshooting. After that, even installing firefox would take 17 hours. Now that that's out of the way, we may begin the installation.
 
 *Preparing the bootloader*
 
@@ -392,6 +390,7 @@ Let the device on which you intend to install gentoo be refered to hereafter as 
 Note: don't just copy these commands|You should substitute <gentoo> for mmcblk2 for the internal eMMC flash storage.
 
 Note that the first block of the boot partition is block 62500. Delete all partitions, but *do not* re-format the disk. Create a new boot partition starting at 62500, and as it's size select "+1GB". Create a new swap partition. fdisk will try to start it at the beginning of the volume (before the boot partition) Instead, when it prompts you for the starting position, enter in the end sector of the boot partition. It should then tell you that this is within an existing partition, and recommend a slightly higher value. Press enter, and give for the size of the partition any value greater than "+4gb". You need this much ram to be able to suspend your system, and emerge large packages. Don't be stingey - you still have SD cards. I reccomend "+8gb".
+
 Finally, add a root partition starting at the end sector of the swap partition, and use the rest of the disk for it. That should be 50-60 GB depending on the size of your swap and boot partitions.
 
 Lastly, press "t" to set the type of each partition. You may set partition 1 to type 6, 2 to type 82, and 3 to type 83.

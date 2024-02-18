@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-Connecting to the ROCKPro64 single-board computer serial interface can sometimes be tricky, as the lack of buffering can cause the Uboot-SPL to stop functioning due to  transient voltage spikes during startup.  This simple circuit allows a user to hot-plug their serial connection at any time, or can be left attached full time.
+Connecting to the ROCKPro64 single-board computer serial interface can sometimes be tricky, as the lack of buffering can cause the Uboot-SPL to stop functioning due to  transient voltage spikes during startup. This simple circuit allows a user to hot-plug their serial connection at any time, or can be left attached full time.
 
 WARNING: Please note that following these instructions comes at your own risk. While best efforts have been made to write reliable, safe instructions, the author cannot be held liable for the quality of procured components or the assembly job of the person following the instructions, and the damages caused by either of these not being up to par.
 
@@ -17,7 +17,7 @@ WARNING: Please note that following these instructions comes at your own risk. W
 
 === Components
 
-You may have some or all of these in your junk/parts drawer.  They're all common value, and easily recovered from scrap circuit-boards.
+You may have some or all of these in your junk/parts drawer. They're all common value, and easily recovered from scrap circuit-boards.
 
 * *3"x4" perf board*, will be used for construction of the circuit
 * *misc breakout board wires*, or any random copper wire that works, I used ribbon cable from an old floppy harness.
@@ -26,7 +26,7 @@ You may have some or all of these in your junk/parts drawer.  They're all common
 * *Transistors*, 1 (one) NPN-type, 2n2222 or equivalent;  and  1 (one) PNP-type, 2n2907 or equivalent
 * *Resistors*, 3 (three) 4.7k&Omega; 1/4-watt;   and 2 (two)  10k&Omega; 1/4-watt
 
-* *Serial interface jack*,  3-pin TRS audio jack works well, as does RJ45 or DB9.  You only need, and use, 3 pins though.
+* *Serial interface jack*,  3-pin TRS audio jack works well, as does RJ45 or DB9. You only need, and use, 3 pins though.
 * *Double-sided sticky tape*,  at least 1"x1", to mount the perf board to your case.
 
 === Tools

@@ -19,7 +19,7 @@ I've been enjoying building countless projects around these boards : web servers
 
 A new trend has recently appeared in the SBC world : the PCIe slot! The RaspberryPi 4 Compute Module exposes it via the [IO board](https://www.raspberrypi.com/products/compute-module-4-io-board/), and the [Pine64](https://www.pine64.org/) [RockPro64](https://www.pine64.org/rockpro64/) is equipped with a PCIe 4x open-ended slot directly on the board.
 
-I haven't had the opportunity to get hold of one of these boards, but I'm lucky enough to have a [Quartz64 model A](https://www.pine64.org/quartz64a/) on hands.  
+I haven't had the opportunity to get hold of one of these boards, but I'm lucky enough to have a [Quartz64 model A](https://www.pine64.org/quartz64a/) on hands. 
 The Quartz64 is based on the Rockchip RK3566 running @1.8Ghz. My board is equipped with 8GB of RAM. It also has Gigabit ethernet, 1 SATA connector, USB3, and of course, the PCIe port.
 
 I experimented a bit with the PCIe interface by testing a couple of PCIe boards I had on hands at that time : the [SATA controller board from Pine64](https://pine64.com/product/pcie-to-dual-sata-iii-interface-card/) and an Intel 4x GBe board : they worked out of the box! Awesome, isn't it?
@@ -119,8 +119,8 @@ As the PCIe controller is not supported yet in the default kernel (`linux-rc`, c
 
 ## PCIe and DTS
 
-The proof that the support for the board is still pretty new is that at first, the filesystem on the SSD would corrupt as soon as I copied big files (> 4GB) on the disk.  
-This was apparently caused by an issue with the memory allocation for the SATA driver. With the help of the folks in [the chat room dedicated to the Quartz64](https://wiki.pine64.org/wiki/Main_Page?title=Main_Page#Chat_Platforms), we were able to patch the DTS/DTB files to work around this issue.  
+The proof that the support for the board is still pretty new is that at first, the filesystem on the SSD would corrupt as soon as I copied big files (> 4GB) on the disk. 
+This was apparently caused by an issue with the memory allocation for the SATA driver. With the help of the folks in [the chat room dedicated to the Quartz64](https://wiki.pine64.org/wiki/Main_Page?title=Main_Page#Chat_Platforms), we were able to patch the DTS/DTB files to work around this issue. 
 Those patches are not applied yet in newer manjaro images so I'll provide these patches here. Use them at your own risks, of course! Neither I or the original author of those patches will be responsible for any issue that could occur when using those files!
 
 - [0001-arm64-dts-rockchip-enable-rk356x-proper-msi-support-1.patch](https://gist.github.com/JF002/c0167cfe8cb90126e78fc064c346659e#file-0001-arm64-dts-rockchip-enable-rk356x-proper-msi-support-1-patch)
@@ -133,7 +133,7 @@ Linux 5.19 should bring support for the PCIe controller on the Quartz64 and appl
 
 ZFS is very trendy right now, and I wanted to do some experiments with this very popular filesystem. Unfortunately, ZFS is not included in the Linux kernel. So you have to build the kernel module manually. ArchLinux and Manjaro provide the package in the AUR so the installation was not that difficult.
 
-It worked quite well until ManjaroARM updated the kernel to a newer version that is not yet supported by the ZFS driver.  
+It worked quite well until ManjaroARM updated the kernel to a newer version that is not yet supported by the ZFS driver. 
 As I said earlier, the support for the Quartz64 is under heavy development, and Manjaro integrates bleeding edge versions of the kernel to provide the most up-to-date experience.
 
 The Linux kernel is so bleeding edge that the ZFS module was not updated yet when I installed the new kernel on my setup, and it broke my shiny new ZFS filesystem.
@@ -162,7 +162,7 @@ A screenshot is better than a thousand words!
 
 As soon as I showcased my project, a lot of people asked about the performances of this setup. So here are a few numbers!
 
-You'll quickly notice that those are not the performances you were hoping for.  
+You'll quickly notice that those are not the performances you were hoping for. 
 But in my opinion, knowing that everything worked nearly out of the box, those numbers are already quite great. And we'll probably see those performances increase as the support for the board and the CPU improves in the near future!
 
 ## Benchmarks with `dd`

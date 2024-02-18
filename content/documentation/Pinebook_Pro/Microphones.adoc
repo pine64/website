@@ -13,7 +13,10 @@ While it has been said that some Pinebook Pro units contain only one microphone 
 
 The wires leading to both microphones connect to the mainboard with a small white plastic connector, located directly adjacent to the ribbon cable attachment point for the keyboard interface.
 
-*Microphones not working?*
+== Built-in microphones not working
 
-If pavucontrol input doesn't show microphone activity try changing the link:/documentation/Pinebook_Pro#Privacy_Switches[privacy switches]. If the switches are in the correct place and microphone input isn't working you can run `alsamixer` from the command line, hit _F6_ and select the _es8316_, hit F4 to get to the capture screen, select the bar labeled ADC, increase the gain to 0dB, change the audio profile in pavucontrol to another one with input. Additionally you may want to modify ADC PGA to get the levels to where you want them. If that still hasn't fixed it you may want to check that the microphone connector is plugged in (see the section Technical Reference).
+If pavucontrol input doesn't show microphone activity try changing the privacy switches. If the switches are in the correct place and microphone input isn't working you can run `alsamixer` from the command line, hit F6 and select the `es8316`, hit F4 to get to the capture screen, select the bar labeled ADC, increase the gain to 0&nbsp;dB, change the audio profile in pavucontrol to another one with input. Additionally you may want to modify ADC PGA to get the levels to where you want them. If that still hasn't fixed it you may want to check that the microphone connector is plugged in.
 
+== External wired microphone not working
+
+If you connect a headset with a microphone, you might need to open `alsamixer`, change card to `es8316`, and change option `Differential Mux` from `lin1-rin1` to `lin2-rin2`.

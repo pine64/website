@@ -350,7 +350,7 @@ The output should look similar to:
          line   1:   "dio_busy"       unused   input  active-high
          line   2:  "dio_reset"       unused  output  active-high
 
-The gpiochip# might be different.  The driver exposes the Pinedio with the gpio name "pinedio", developers should use this name to interact with the gpiochip because the gpiochip# of the device is likely to be different from one system to the next, or depending on the order devices are initialized.
+The gpiochip# might be different. The driver exposes the Pinedio with the gpio name "pinedio", developers should use this name to interact with the gpiochip because the gpiochip# of the device is likely to be different from one system to the next, or depending on the order devices are initialized.
 
 === Driver for the SX1262 LoRa module
 

@@ -61,6 +61,6 @@ Camera sensor:
 
 Lithium battery:
 
-* https://files.pine64.org/doc/datasheet/pinebook/PL5267103P-3.7V-10000mAh-1S2P58-9-W101-7P正向-11.6.pdf[10000mAH Lithium Battery Specification for 11.6″ model]
-* https://files.pine64.org/doc/datasheet/pinebook/40110175P%203.8V%2010000mAh规格书-14.pdf[10000mAH Lithium Battery Specification for 14″ model]
+* https://files.pine64.org/doc/datasheet/pinebook/PL5267103P-3.7V-10000mAh-1S2P58-9-W101-7P正向-11.6.pdf[10000 mAH Lithium Battery Specification for 11.6″ model]
+* https://files.pine64.org/doc/datasheet/pinebook/40110175P%203.8V%2010000mAh规格书-14.pdf[10000 mAH Lithium Battery Specification for 14″ model]
 

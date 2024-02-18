@@ -114,7 +114,7 @@ Some quick notes:
 
 === Tianocore EDK II port by jmcneill
 
-This (as of 2021-12-30) is a work in progress to enable UEFI enabled systems, and is able to bring up SD, eMMC, USB, PCIe with SATA and NVMe, HDMI, thermal sensors, TRNG, as well as general Cortex A-55 features.  Known to work with NetBSD -current, and the ESXi Arm fling version 1.8.
+This (as of 2021-12-30) is a work in progress to enable UEFI enabled systems, and is able to bring up SD, eMMC, USB, PCIe with SATA and NVMe, HDMI, thermal sensors, TRNG, as well as general Cortex A-55 features. Known to work with NetBSD -current, and the ESXi Arm fling version 1.8.
 
 Download:
 

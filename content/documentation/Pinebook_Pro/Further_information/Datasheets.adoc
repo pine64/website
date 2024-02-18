@@ -40,6 +40,7 @@ Wireless and Bluetooth information:
 Audio codec:
 
 * http://www.everest-semi.com/pdf/ES8316%20PB.pdf[Everest ES8316 Audio Codec Datasheet]
+* https://forum.pine64.org/attachment.php?aid=1935[Everest ES8316 User Guide with register-level description]
 
 LCD panel:
 
@@ -68,7 +69,8 @@ Battery-related information:
 
 * Battery charging IC: https://www.ti.com/lit/ds/symlink/bq24171.pdf?ts=1607068456825&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FBQ24171[Texas Instruments BQ24171 Datasheet]
 * Battery monitoring IC: https://cdn.datasheetspdf.com/pdf-down/C/W/2/CW2015-Cellwise.pdf[Cellwise CW2015 Datasheet]
-* https://files.pine64.org/doc/datasheet/pinebook/40110175P%203.8V%2010000mAh规格书-14.pdf[10000mAH Lithium Battery Specification]
+* https://files.pine64.org/doc/datasheet/pinebook/40110175P%203.8V%2010000mAh规格书-14.pdf[10000 mAH Lithium Battery Specification]
+* Later batches come with 9600 mAh / 36.48 Wh model WYC40110175P battery
 
 Power path device:
 

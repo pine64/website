@@ -30,7 +30,7 @@ If you are having trouble using 2 fingers to scroll or emulate the click of a mo
 
 == Firmware
 
-The touchpad controller is connected to the keyboard controller. All touchpad events go through the keyboard controller and it's software, then to the keyboard controller's USB port. Note that the touchpad does have separate firmware (which has to be written through the keyboard controller). The touchpad vendor's firmware binary can be flashed from userspace using the following open source command-line utility:
+The touchpad controller is connected to the keyboard controller. All touchpad events go through the keyboard controller and its software, then to the keyboard controller's USB port. Note that the touchpad does have separate firmware (which has to be written through the keyboard controller). The touchpad vendor's firmware binary can be flashed from userspace using the following open source command-line utility:
 
 * Kamil Trzciński's https://github.com/ayufan-rock64/pinebook-pro-keyboard-updater[pinebook-pro-keyboard-updater].
 
@@ -40,38 +40,48 @@ Naturally, forks have begun to appear:
 
 * Dragan Simic's https://github.com/dragan-simic/pinebook-pro-keyboard-updater[fork]. This one has recently delivered a much improved firmware from the vendor one, which greatly improves the control of the cursor (see this https://forum.pine64.org/showthread.php?tid=14531[thread] for discussion). Before installing this update, consider resetting to the defaults any configuration of your touchpad.
 
-*Every Pinebook Pro produced before September 2021 should have its keyboard and touchpad firmware updated.*
+*All Pinebook Pros shipped from the factory have the old buggy version installed so consider updating the keyboard and touchpad firmware with the latest fixes from Dragan.*
 
-WARNING: DO NOT update the touchpad firmware before checking which keyboard IC your Pinebook Pro has. Some Pinebook Pro were delivered with a _SH61F83_ instead of a _SH68F83_. The SH61F83 can only be written 8 times, this will render the keyboard and touchpad unusable if this limit is reached when step 1 (see below) is flashed. See https://reddit.com/r/PINE64official/comments/loq4db/very_disappointed/[Reddit SH61F83 thread]. The keyboard IC corresponds to _U23_ on the link:#Pinebook_Pro_Schematics_and_Certifications[top layer silkscreen of the main board]. It is located under the keyboard flat flexible cable.
+WARNING: DO NOT update the touchpad firmware before checking which keyboard IC your Pinebook Pro has. Some Pinebook Pro were delivered with a _SH61F83_ instead of a _SH68F83_. The SH61F83 can only be written 8 times, this will render the keyboard and touchpad unusable if this limit is reached when step 1 (see below) is flashed. See https://reddit.com/r/PINE64official/comments/loq4db/very_disappointed/[Reddit SH61F83 thread]. The keyboard IC corresponds to _U23_ on the link:#Pinebook_Pro_Schematics_and_Certifications[top layer silkscreen of the main board]. It is located under the keyboard flat flexible cable. All the PBPs from the post-pandemic batches have _SH61F83_ but TL Lim claimed they can be flashed just the same. No updated datasheet or a statement from the MCU vendor was provided though, so proceed at your own risk. Experience shows flashing those works for at least one time.
 
 Before updating _any_ firmware, your Pinebook Pro should be either fully charged or, preferably, running from mains. This utility will be writing data to chips on the keyboard and touchpad, so a loss of power during any stage of the update can result in irrecoverable damage to your touchpad or keyboard.
 
 The scripts ought to work on all operating systems available for the Pinebook Pro. Some operating systems may however, require installation of relevant dependencies. The instructions below assume a Debian desktop. To install these dependencies, newer Pinebook Pro models that come with Manjaro will require a different command.
 
-There are two keyboard versions of the Pinebook Pro: ISO and ANSI. You need to know which model you have prior to running the updater.
-Firmware update steps for both models are listed below.
+There are two keyboard versions of the Pinebook Pro: ISO (vertical Enter key) and ANSI (horizontal Enter key). You need to know which model you have prior to running the updater.
 
-*TODO* Explain how one can know which keyboard model he has.
+Firmware update steps for both models are listed below.
 
 What you will need:
 
-* Connection to internet for getting dependencies, either through WIFI or wired ethernet (USB dongle).
+* Connection to internet for getting dependencies, either through Wi-Fi or wired ethernet (USB dongle).
 * Your Pinebook Pro fully charged or running from mains power.
-* An external USB keyboard and mouse (or access to the Pinebook Pro via SSH. Please note that for some configurations, the SSH service might not be available without first having logged in once. In this case, you will definitely want at least an external keyboard).
+* An external USB keyboard and mouse (or access to the Pinebook Pro via SSH. Please note that for some configurations, the SSH service might not be available without first having logged in once. In this case, you will definitely want at least an external keyboard or UART serial console).
 
 === ISO Model
 
 From the terminal command line:
 
- git clone https://github.com/ayufan-rock64/pinebook-pro-keyboard-updater
+Debian-based distributions:
+
+ git clone https://github.com/dragan-simic/pinebook-pro-keyboard-updater
  cd pinebook-pro-keyboard-updater
  sudo apt-get install build-essential libusb-1.0-0-dev xxd
  make
 
+Arch-based distributions (note: https://www.garron.me/en/bits/build-essential-arch-linux.html[build-essential], https://aur.archlinux.org/packages/xxd-standalone[xxd] are named differently. Arch linux https://bbs.archlinux.org/viewtopic.php?id=44950[does not split its packages] as foo and foo-dev):
+
+ git clone https://github.com/dragan-simic/pinebook-pro-keyboard-updater
+ cd pinebook-pro-keyboard-updater
+ sudo pacman -Syu base-devel xxd-standalone libusb
+ make
+
+The next steps are identical for both Debian and Arch distros.
+
 Step 1
 
  cd pinebook-pro-keyboard-updater
- sudo ./updater step-1 iso
+ sudo ./updater step-1
  sudo poweroff # do not use 'reboot'
 
 Step 2 (after booting)
@@ -82,19 +92,30 @@ Step 2 (after booting)
 
 === ANSI Model
 
-IMPORTANT: 
+NOTE: Running step 1 on the ANSI keyboard model will make the keyboard and touchpad inaccessible until step 2 is run, so an external keyboard must be connected to complete the update on this model!
 
 From the terminal command line:
 
- git clone https://github.com/ayufan-rock64/pinebook-pro-keyboard-updater
+Debian-based distributions:
+
+ git clone https://github.com/dragan-simic/pinebook-pro-keyboard-updater
  cd pinebook-pro-keyboard-updater
  sudo apt-get install build-essential libusb-1.0-0-dev xxd
  make
 
+Arch-based distributions (note: https://www.garron.me/en/bits/build-essential-arch-linux.html[build-essential], https://aur.archlinux.org/packages/xxd-standalone[xxd] are named differently. Arch linux https://bbs.archlinux.org/viewtopic.php?id=44950[does not split its packages] as foo and foo-dev):
+
+ git clone https://github.com/dragan-simic/pinebook-pro-keyboard-updater
+ cd pinebook-pro-keyboard-updater
+ sudo pacman -Syu base-devel xxd-standalone libusb
+ make
+	
+The next steps are identical for both Debian and Arch distros.
+
 Step 1
 
  cd pinebook-pro-keyboard-updater
- sudo ./updater step-1 ansi
+ sudo ./updater step-1
  sudo poweroff # do not use 'reboot'
 
 Step 2 (after booting)
@@ -117,11 +138,13 @@ Step 3: *ANSI* (after booting)
 
  sudo ./updater flash-kb firmware/default_ansi.hex
 
-== X-Windows Configuration
+== X Window System Configuration
 
 NOTE: Before making adjustments, consider updating the firmware. Reset your adjustments before updating the firmware, so that your adjustments do not interfere with new functionality.
 
-Some forum members have found that an adjustment to X-Windows will allow finer motion in the touchpad. If you use the _Synaptic_ mouse/touchpad driver, use this command to make the change live:
+When using X.Org display server the touchpad can be handled either by _libinput_ or _synaptic_ input drivers. The former allows to have shared configuration for both X.Org and Wayland but the latter provides more tunables (e.g. configurable edge scrolling, circular scrolling, mapping of multi-touch events to mouse buttons etc.).
+
+Some forum members have found that an adjustment to X11 will allow finer motion in the touchpad. If you use the _synaptic_ mouse/touchpad driver, use this command to make the change live:
 
  synclient MinSpeed=0.2
 
@@ -159,18 +182,10 @@ The right mouse click is emulated by tapping with two fingers on the touchpad. I
 
  synclient MaxTapTime=250
 
-Some users may encounter an issue with the mouse jumping when typing when using libinput driver (has not been test with synaptic) due to their hand hitting the touchpad which can be fixed by updating the X.Org settings to disable it while typing. One can disable the touchpad while typing by setting the below option in the X.Org config simliar to the previous example.
+Some users may encounter an issue with the mouse jumping when typing when using libinput driver due to their hand hitting the touchpad which can be fixed by updating the X.Org settings to disable it while typing. One can disable the touchpad while typing by setting the below option in the X.Org config simliar to the previous example.
 
          Option "DisableWhileTyping" "on"
 
-The setting can be verified by using the xinput command to first list the devices and then listing the properties for the touchpad device. Exact commands to check this have been omitted for save of brevity. If DisableWhileTyping is shown enabled but does not appear to be working the issue may be due to the fact that the keyboard is connected to a USB bus which causes it to be seen as a external keyboard. To resolve this one can add the config below which sets the keyboard to internal to ensure the DisableWhileTyping works properly.
+The setting can be verified by using the xinput command to first list the devices and then listing the properties for the touchpad device. Exact commands to check this have been omitted for save of brevity. If DisableWhileTyping is shown enabled but does not appear to be working the issue may be due to the fact that the keyboard is connected to a USB bus which causes it to be seen as a external keyboard. Make sure you have libinput version 1.19.0 or later installed as it includes the necessary quirk.
 
-You will need to edit */etc/libinput/local-overrides.quirks* and add the following lines:
-
- [Serial Keyboards]
- MatchUdevType=keyboard
- MatchBus=usb
- AttrKeyboardIntegration=internal
-
-Once X11 is restarted the new setting should now take effect and you will no longer be able to use the touchpad while typing which will mostly eliminate the mouse jumping issue.
-
+Synaptic driver users can add _syndaemon_ to their X11 session for the same effect.

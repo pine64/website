@@ -9,8 +9,6 @@ menu:
     weight: 
 ---
 
-== Information
-
 * This is an image creator and Debian installer that runs from an existing Linux OS and installs Debian Bullseye
 ** Installer can configure an encrypted rootfs and provides a choice of desktops, including the default Debian desktop based on Gnome 3
 ** Strict adoption of upstream Debian packages (with exception of kernel and bootloaders) in order to provide a clean upgrade path as Bullseye matures

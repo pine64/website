@@ -87,7 +87,7 @@ We have started going through developer pre-orders for the QuartzPro64. Allocati
 
 **Final QuartzPro64 PCBA**
 
-Lastly, I wish to address the PINE64 EU store’s launch delay. For the past month I’ve been cutting through layers upon layers of red tape - as it turns out, it is one thing to ship to the EU and a whole different thing to have permanent representation here. Since the situation is ongoing I will refrain from discussing the specifics at this time - what I will say is that I have now gotten a lawyer to help the process along. I hope that all outstanding legal paperwork can be sorted out in the next 2-3 weeks. As always, I’ll keep you posted on the PINE64 EU’s [Twitter](https://twitter.com/pine64eu) and [Mastodon](https://fosstodon.org/@pine64eu).  
+Lastly, I wish to address the PINE64 EU store’s launch delay. For the past month I’ve been cutting through layers upon layers of red tape - as it turns out, it is one thing to ship to the EU and a whole different thing to have permanent representation here. Since the situation is ongoing I will refrain from discussing the specifics at this time - what I will say is that I have now gotten a lawyer to help the process along. I hope that all outstanding legal paperwork can be sorted out in the next 2-3 weeks. As always, I’ll keep you posted on the PINE64 EU’s [Twitter](https://twitter.com/pine64eu) and [Mastodon](https://fosstodon.org/@pine64eu). 
 
 ## Quartz64 & SOQuartz
 
@@ -181,7 +181,7 @@ I will also create a couple of new pages in the PINE64 Wiki that will provide ev
 
 The first PineSound development boards have already been allocated, and I got some hands-on time with both the board and PineBuds prototype earlier this month. There isn’t much I can say about the PineSound dev board that I haven’t already said in [last month’s update](https://www.pine64.org/2022/04/15/april-update-no-more-unicorns/), but I wanted to share my experience with the PineBuds. Consider this a first look. Before I get into it, I want to make it clear that it will take (yet undetermined) time before the buds become available, and much will change between now and then. I also won’t write about the feel of the plastic, since this prototype was CNCd (yeah, I didn’t know you can CNC plastic either), and in all likelihood, the final version will end up feeling nothing like this. The buds themselves are nice, really small, and light. They are not the smallest buds I’ve ever seen, but they are certainly among the smaller ones I’ve tried (and I’ve tried quite a few - I’m a bit of a connoisseur). The default tuning sounds good, offering a pleasant V-shaped curve. I wanted to underline this because the V sound signature isn’t something I particularly enjoy. Obviously, a major draw of the PineBuds is that you’ll be able to flash the internal EQ with any sound signature, and I’m certain someone will create a ‘flat’ sound signature for the Buds. 
 
-We’ve gone through a few iterations of renders, trying to figure out how we want the PineBuds to look. I am sharing some ideas below - there is no guarantee they will look like this, these are just some ideas.  
+We’ve gone through a few iterations of renders, trying to figure out how we want the PineBuds to look. I am sharing some ideas below - there is no guarantee they will look like this, these are just some ideas.
 
 ![](/blog/images/PineBuds-render-2.jpg) ![](/blog/images/PineBuds-render.jpg)
 

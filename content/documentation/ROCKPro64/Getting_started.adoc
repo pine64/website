@@ -13,7 +13,7 @@ This section gives important information to get the board up and running.
 
 == Video Playback
 
-Hardware video acceleration is supported in recent kernels and user needs only to install the relevant Mesa packages/ports, specifically the Mesa DRI drivers for Mali GPUs (Midgard/Bifrost).  One can confirm via software glxinfo, or having the library file such as .../lib/dri/panfrost_dri.so.
+Hardware video acceleration is supported in recent kernels and user needs only to install the relevant Mesa packages/ports, specifically the Mesa DRI drivers for Mali GPUs (Midgard/Bifrost). One can confirm via software glxinfo, or having the library file such as .../lib/dri/panfrost_dri.so.
 
 Ayufan has some old documentation on https://github.com/ayufan-rock64/linux-build/blob/master/recipes/video-playback.md[video playback here.] For your ROCKPro64 the install should be
 

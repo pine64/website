@@ -141,7 +141,7 @@ Note that booting can take a while, and does not show anything on the screen. Af
 
 postmarketOS extends https://www.alpinelinux.org/[Alpine Linux] to run on smartphones and other mobile devices.
 
-It offers various user interfaces (Phosh, Plasma Mobile, Sxmo, Plasma Desktop, Gnome 3, Kodi, XFCE4 and more). As of writing, this distro is currently in testing and no official releases are available for download.  Instead, users will need to create their own image with the distribution's install and development tool `pmbootstrap`.
+It offers various user interfaces (Phosh, Plasma Mobile, Sxmo, Plasma Desktop, Gnome 3, Kodi, XFCE4 and more). As of writing, this distro is currently in testing and no official releases are available for download. Instead, users will need to create their own image with the distribution's install and development tool `pmbootstrap`.
 
 ==== Download
 * https://wiki.postmarketos.org/wiki/PINE64_PineTab_2_(pine64-pinetab2)[Pinetab2 Device Page]

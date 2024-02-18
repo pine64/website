@@ -9,7 +9,7 @@ images:
   - "logochallenge.png"
 ---
 
-As everyone might have noticed, the beta website received a preliminary logo as part of the rebrand. In this challenge, everyone is invited to improve the current PINE64 community logo and to provide their ideas. The draft logo is intended to act as an inspiration for ideas in which present design can be improved.  <!--more-->
+As everyone might have noticed, the beta website received a preliminary logo as part of the rebrand. In this challenge, everyone is invited to improve the current PINE64 community logo and to provide their ideas. The draft logo is intended to act as an inspiration for ideas in which present design can be improved. <!--more-->
 
 The current logo of the PINE64 community is less than optimal. Here it is: 
 
