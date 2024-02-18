@@ -27,9 +27,10 @@ Connect PinePhone Pro to a Linux machine, start a ssh connection and download in
 
 If necessary wipe the microSD card
 
- sudo dd if=/dev/zero of=/dev/sdb count=1 bs=32768 status=progress # quick way i.e. # 32GB SDcard (30989615104bytes/32768dim=1volta)
- sudo dd if=/dev/zero of=/dev/sdb count=945728 bs=32768 status=progress # slow way i.e. # 32GB SDcard (30989615104bytes/32768dim=945728volte)
- sudo dd if=/dev/zero of=/dev/sdb count=15271040 bs=4096 status=progress # 63GB SDcard (62550179840bytes/512dim=122168320volte)
+ sudo dd if=/dev/zero of=/dev/sdb status=progress bs=32768 count=1 # quick way erasing
+ sudo dd if=/dev/zero of=/dev/sdb status=progress bs=32768 count=945728 # 32 GB
+ sudo dd if=/dev/zero of=/dev/sdb status=progress bs=32768 count=1908880 # 64 GB
+ sudo dd if=/dev/zero of=/dev/sdb status=progress bs=32768 count=3872000 # 128 GB
 
 Before removing partitions, if you need to remove also left signatures, use GParted and format each partition "cleared". Than remove all partitions with GParted.
 
@@ -93,7 +94,7 @@ Mount the image, copy rootfs and bootfs to the partition. You need also to make 
  sudo mv /mnt/archlinuxsd/boot/boot.scr /mnt/archlinuxsd/boot/boot.scrORIG
  sudo mkdir /mnt/archlinuxsd/boot/extlinux && sudo chmod a=rwx /mnt/archlinuxsd/boot/extlinux && sudo chmod a=rwx /mnt/archlinuxsd/etc/fstab
 
- sudo cat << EOF > /mnt/archlinuxsd/boot/extlinux/extlinux.conf
+ sudo tee /mnt/archlinuxsd/boot/extlinux/extlinux.conf <<EOF
   #/boot/extlinux/extlinux.conf
   MENU TITLE Pinephone Pro Boot Menu
   LABEL l0
@@ -104,7 +105,7 @@ Mount the image, copy rootfs and bootfs to the partition. You need also to make 
   APPEND root=PARTLABEL=ALARM console=ttyS2,115200 console=tty0 loglevel=4 rw rootwait
  EOF
 
- sudo cat << EOF > /mnt/archlinuxsd/etc/fstab
+ sudo tee /mnt/archlinuxsd/etc/fstab <<EOF
   # <file system> <dir> <type> <options> <dump> <pass>
   PARTLABEL=ALARM	/         	ext4      	rw,relatime	0 1
  EOF
@@ -126,7 +127,7 @@ Download, decompress, mount the image. Copy rootfs and bootfs to the partition. 
  sudo mv /mnt/manjarosd/boot/boot.scr /mnt/manjarosd/boot/boot.scrORIG
  sudo mkdir /mnt/manjarosd/boot/extlinux && sudo chmod a=rwx /mnt/manjarosd/boot/extlinux && sudo chmod a=rwx /mnt/manjarosd/etc/fstab
 
- sudo cat << EOF > /mnt/manjarosd/boot/extlinux/extlinux.conf
+ sudo tee /mnt/manjarosd/boot/extlinux/extlinux.conf <<EOF
   #/boot/extlinux/extlinux.conf
   MENU TITLE Pinephone Pro Boot Menu
   LABEL l0
@@ -137,7 +138,7 @@ Download, decompress, mount the image. Copy rootfs and bootfs to the partition. 
   APPEND root=PARTLABEL=MANJARO console=ttyS2,115200 console=tty0 loglevel=4 rw rootwait
  EOF
 
- sudo cat << EOF > /mnt/manjarosd/etc/fstab
+ sudo tee /mnt/manjarosd/etc/fstab <<EOF
   # <file system> <dir> <type> <options> <dump> <pass>
   PARTLABEL=MANJARO   /   ext4     defaults    0   1
  EOF
@@ -158,7 +159,7 @@ Download, decompress, mount the image. Copy rootfs and bootfs to the partition. 
  sudo scp -r /mnt/mobian/boot/* /mnt/mobiansd/boot
  sudo chmod a=rwx /mnt/mobiansd/boot/extlinux && sudo chmod a=rwx /mnt/mobiansd/etc/fstab
 
- sudo cat << EOF > /mnt/mobiansd/etc/fstab
+ sudo tee /mnt/mobiansd/etc/fstab <<EOF
   # <file system> <dir> <type> <options> <dump> <pass>
   PARTLABEL=MOBIAN	/	ext4	defaults,x-systemd.growfs	0	1
  EOF
@@ -218,7 +219,7 @@ Download, decompress, mount the image. Copy rootfs and bootfs to the partition. 
  sudo scp -r /mnt/postmarketos/boot/* /mnt/postmarketossd/boot
  sudo mkdir /mnt/postmarketossd/boot/extlinux && sudo chmod a=rwx /mnt/postmarketossd/boot/extlinux && sudo chmod a=rwx /mnt/postmarketossd/etc/fstab
 
- sudo cat << EOF > /mnt/postmarketossd/boot/extlinux/extlinux.conf
+ sudo tee /mnt/postmarketossd/boot/extlinux/extlinux.conf <<EOF
   #/boot/extlinux/extlinux.conf
   default l0
   menu title U-Boot menu
@@ -232,7 +233,7 @@ Download, decompress, mount the image. Copy rootfs and bootfs to the partition. 
   APPEND root=PARTLABEL=PMOS console=ttyS2,115200 console=tty0 loglevel=4 rw rootwait
  EOF
 
- sudo cat << EOF > /mnt/postmarketossd/etc/fstab
+ sudo tee /mnt/postmarketossd/etc/fstab <<EOF
   # <file system> <mount point> <type> <options> <dump> <pass>
   PARTLABEL=PMOS / ext4 defaults 0 0
  EOF
@@ -255,7 +256,7 @@ Download, decompress, mount the image. Copy rootfs and bootfs to the partition. 
  # sudo chmod a=rwx /mnt/ubuntutouchsd/boot/extlinux
  sudo chmod a=rwx /mnt/ubuntutouchsd/boot/extlinux/extlinux.conf
 
- sudo cat << EOF > /mnt/ubuntutouchsd/etc/fstab
+ sudo tee /mnt/ubuntutouchsd/etc/fstab <<EOF
   # <file system> <dir> <type> <options> <dump> <pass>
   PARTLABEL=UT	/	ext4	defaults	0	1
   EOF
