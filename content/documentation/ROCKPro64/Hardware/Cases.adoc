@@ -1,13 +1,19 @@
 ---
-title: "The NAS Case"
+title: "Cases"
 draft: false
 menu:
   docs:
     title:
-    parent: "ROCKPro64/Further_information"
-    identifier: "ROCKPro64/Further_information/The_NAS_Case"
+    parent: "ROCKPro64/Hardware"
+    identifier: "ROCKPro64/Hardware/Cases"
     weight: 
 ---
+
+== Acrylic Open Enclosure
+
+* https://pine64.com/product/pine-a64-rockpro64-acrylic-open-enclosure[Acrylic enclosure]
+
+== NAS case
 
 image:/documentation/images/NASCaseMain.png[Front View of the PINE64 NAS Case for the ROCKPro64,title="Front View of the PINE64 NAS Case for the ROCKPro64"]
 

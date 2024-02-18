@@ -6,48 +6,52 @@
     {{ if eq .RelPermalink "/documentation/"}}
         <h3>Table of contents</h3>
         {{ .TableOfContents }}
-    {{ end }}
+    {{ else }}
 
-    <!-- Categories -->
-    {{ range .Site.Menus.docs }}
+        <!-- Backlink -->
+        <a class='sidebar-nav-backlink' href="/documentation/">← Back to the device selection</a><br><br>
 
-        <!-- Displays only current category -->
-        {{if or ($currentPage.IsMenuCurrent "docs" .) ($currentPage.HasMenuCurrent "docs" .) }} 
-            <!-- Hide "Main Page"-->
-            {{if ne .URL "/documentation/" }}
-                <a class='sidebar-nav-item' href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
-                <br> 
-                <hr>
+        <!-- Categories -->
+        {{ range .Site.Menus.docs }}
 
-                <br>
-            {{end}}
+            <!-- Displays only current category -->
+            {{if or ($currentPage.IsMenuCurrent "docs" .) ($currentPage.HasMenuCurrent "docs" .) }} 
+                <!-- Hide "Main Page"-->
+                {{if ne .URL "/documentation/" }}
+                    <a class='sidebar-nav-item' href="{{ .URL }}">{{ .Name }}</a>
+                    <br> 
+                    <hr>
 
-        {{end}}
-
-        
-        {{ if and .HasChildren (or ($currentPage.IsMenuCurrent "docs" .) ($currentPage.HasMenuCurrent "docs" .)) }}
-
-            <ul>
-
-            <!-- Children -->
-            {{ range .Children }}
-            
-                <li><a class='sidebar-nav-subitem {{if $currentPage.IsMenuCurrent "docs" .}}active{{end}}' href='{{.URL}}'>{{ .Title }}</a></li>
-
-                {{ if .HasChildren }}
-                    <ul>
-
-                    <!-- Children-Children -->
-                    {{ range .Children }}
-                        <li class="doc_subitem"><a class='sidebar-nav-subsubitem {{if $currentPage.IsMenuCurrent "docs" .}}active{{end}}' href='{{.URL}}'>{{ .Title }}</a></li>
-                    {{ end }}
-
-
-                    </ul>
+                    <br>
                 {{end}}
+
             {{end}}
 
-            </ul>
-        {{end}}
+            
+            {{ if and .HasChildren (or ($currentPage.IsMenuCurrent "docs" .) ($currentPage.HasMenuCurrent "docs" .)) }}
+
+                <ul>
+
+                <!-- Children -->
+                {{ range .Children }}
+                
+                    <li><a class='sidebar-nav-subitem {{if $currentPage.IsMenuCurrent "docs" .}}active{{end}}' href='{{.URL}}'>{{ .Title }}</a></li>
+
+                    {{ if .HasChildren }}
+                        <ul>
+
+                        <!-- Children-Children -->
+                        {{ range .Children }}
+                            <li class="doc_subitem"><a class='sidebar-nav-subsubitem {{if $currentPage.IsMenuCurrent "docs" .}}active{{end}}' href='{{.URL}}'>{{ .Title }}</a></li>
+                        {{ end }}
+
+
+                        </ul>
+                    {{end}}
+                {{end}}
+
+                </ul>
+            {{end}}
+        {{ end }}
     {{ end }}
 </nav>

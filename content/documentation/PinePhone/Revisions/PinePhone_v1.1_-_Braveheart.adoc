@@ -83,7 +83,7 @@ The EG25G's Ring Indicator (RI) pin is currently routed to GPIO pin PB2. The A64
 
 === Excess power usage while driving VBUS
 
-_Resolved in v1.2 by connecting PL9 and **VBUS_CTRL** on the ANX7688 to **N_VBUSEN** on the PMIC._ A [[PinePhone 1.1 VBUS power usage Hardware Fix | crude hardware workaround]] is also possible.
+_Resolved in v1.2 by connecting PL9 and **VBUS_CTRL** on the ANX7688 to **N_VBUSEN** on the PMIC._ A crude hardware workaround is also possible, see _PinePhone 1.1 VBUS power usage Hardware Fix_.
 
 The **N_VBUSEN/DRIVEVBUS** input on the  AXP803 PMIC, labeled **USB-DRVVBUS** on the schematic, is not connected to the USB OTG boost regulator enable input, because R1300 is marked "NC". This prevents the AXP803 from automatically detecting when the USB port is being powered from the battery. Thus, the PMIC continues to draw power from the USB port, and this doubles the drain on the battery (since the whole phone is being powered by the USB OTG boost regulator). This could be fixed by populating R1300.
 

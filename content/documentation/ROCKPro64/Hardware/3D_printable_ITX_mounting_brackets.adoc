@@ -4,8 +4,8 @@ draft: false
 menu:
   docs:
     title:
-    parent: "ROCKPro64/Further_information"
-    identifier: "ROCKPro64/Further_information/3D_printable_ITX_mounting_brackets"
+    parent: "ROCKPro64/Hardware"
+    identifier: "ROCKPro64/Hardware/3D_printable_ITX_mounting_brackets"
     weight: 
 ---
 

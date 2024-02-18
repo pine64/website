@@ -57,8 +57,8 @@ image:/documentation/images/Debian-logo.png[width=100]
 
 Download:
 
-* https://deb.debian.org/debian/dists/bullseye/main/installer-arm64/current/images/netboot/SD-card-images/[Debian 11 Bullseye] (recommended)
-* https://deb.debian.org/debian/dists/bookworm/main/installer-arm64/current/images/netboot/SD-card-images/[Debian 12 Bookworm]
+* https://deb.debian.org/debian/dists/bullseye/main/installer-arm64/current/images/netboot/SD-card-images/[Debian 11 Bullseye]
+* https://deb.debian.org/debian/dists/bookworm/main/installer-arm64/current/images/netboot/SD-card-images/[Debian 12 Bookworm] (recommended)
 * https://d-i.debian.org/daily-images/arm64/[Daily netboot images]
 
 Instructions:
@@ -75,8 +75,8 @@ Instructions:
 Notes:
 
 * An Ethernet connection is required for the above installer
-* Remember to leave some space before your first partition for u-boot|You can do this by creating a 32M size unused partition at the start of the device.
-* See the link:/documentation/ROCKPro64#No_Video_or_GPU_Acceleration_on_Debian[troubleshooting section] if you encounter issues with GPU acceleration.
+* Remember to leave some space before your first partition for u-boot! You can do this by creating a 32M size unused partition at the start of the device.
+* See the link:/documentation/ROCKPro64/Troubleshooting[troubleshooting section] if you encounter issues with GPU acceleration.
 
 === DietPi
 
@@ -86,7 +86,7 @@ image:/documentation/images/dietpi.png[width=100]
 
 Download:
 
-* https://dietpi.com/downloads/images/DietPi_ROCKPro64-ARMv8-Bullseye.img.xz[Direct download from dietpi.com]
+* https://dietpi.com/downloads/images/DietPi_ROCKPro64-ARMv8-Bookworm.img.xz[Direct download from dietpi.com]
 
 |===
 2+| Default credentials

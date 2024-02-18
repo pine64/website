@@ -11,7 +11,7 @@ menu:
 
 This page details a hardware fix for an issue that affects some early link:/documentation/PinePhone#Hardware_revisions[v1.1 Braveheart] units (fixed since link:/documentation/PinePhone/Revisions/PinePhone_v1.2[1.2 community edition] included).
 
-The issue was [[PinePhone_v1.1_-_Braveheart#Excess_power_usage_while_driving_VBUS | originally reported here]] by megi.
+The issue was _PinePhone_v1.1_-_Braveheart#Excess_power_usage_while_driving_VBUS_ by megi.
 
 TODO: Add more pictures and schematics, better reference the fix origin and tradeofs, remove TODOs/FIXMEs.
 

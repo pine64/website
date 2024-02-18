@@ -11,7 +11,7 @@ menu:
 
 Making your own image/installation of Linux for SOQuartz is relatively easy, as all major components are mainlined. You will need:
 
-* A build of mainline U-Boot &ge; v2023.10, see [[Quartz64 Building U-Boot]]. Flash this to sector 64 (sector size 512, so byte 32768) of your image for SD or eMMC. It's prudent to "protect" it by making a small (~16MiB) partition at this offset.
+* A build of mainline U-Boot &ge; v2023.10. Flash this to sector 64 (sector size 512, so byte 32768) of your image for SD or eMMC. It's prudent to "protect" it by making a small (~16MiB) partition at this offset.
 * A https://www.kernel.org/[mainline Linux kernel] &ge; v6.2. See link:/documentation/Quartz64/Development/#linux_kernel_config_options[Quartz64/Development#Linux Kernel Config Options] for the device specific kernel configuration options.
 * The root filesystem of the distribution of your choice. This can be on the same filesystem as your kernel and device tree if using _extlinux.conf_.
 
