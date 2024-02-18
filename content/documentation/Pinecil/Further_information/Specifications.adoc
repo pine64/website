@@ -18,7 +18,7 @@ menu:
 * *Platform:* Ralim's IronOS build
 * *Display:* OLED White Color Monochrome Display 0.69" 96x16 pixels
 * *Chipset:* Bouffalo BL-706
-* *CPU:* 32-bit RV32IMAFC RISC-V “SiFive E24 Core” @ 144 MHz
+* *CPU:* 32-bit RV32IMAFC RISC-V "SiFive E24 Core" @ 144 MHz
 * *Memory:*
 ** 192KB Internal ROM
 ** 132KB SRAM System
@@ -39,7 +39,7 @@ menu:
 * *Dimensions:* 170mm with solder tip or 98mm without solder tip x 12.8mm x 16.2mm
 * *Weight:* 30g with solder tip, 20g without solder tip
 * *Display:* 0.67" QUG 9616TSWCG02 96x16 Monochrome Matrix display
-* *CPU:* GD32VF103TB 32-bit RV32IMAC RISC-V “Bumblebee Core” @ 108 MHz
+* *CPU:* GD32VF103TB 32-bit RV32IMAC RISC-V "Bumblebee Core" @ 108 MHz
 * *Memory:*
 ** 128KB Flash
 ** 32KB SRAM

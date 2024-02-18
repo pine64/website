@@ -186,7 +186,6 @@ Old (pre 1.4) InfiniTime firmware had an issue where Bluetooth connectivity some
 
 The fix was to soft-reset the watch, by holding the PineTime button for ~8 seconds until the PineCone logo appears.
 
-== I'm stuck. How can I get help?
+== Does PineTime have an audible beeper or speaker?
 
-Chat with the PineTime Community on link:/documentation/PineTime#Community[Matrix / Discord / Telegram / IRC] (They are bridged into a single chatroom)
-
+No, but in practice the vibration component is a substitute for use with alerts.

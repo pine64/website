@@ -13,7 +13,7 @@ image:/documentation/images/BL602_Block_Diagram.jpg[]
 
 CPU:
 
-* 32-bit RV32IMAFC RISC-V “SiFive E24 Core”
+* 32-bit RV32IMAFC RISC-V "SiFive E24 Core"
 * https://www.sifive.com/cores/e24[SiFive E24 Core information]
 
 Memory:

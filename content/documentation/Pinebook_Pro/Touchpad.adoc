@@ -14,7 +14,7 @@ Documentation for the touchpad can be found in link:#Datasheets_for_Components_a
 * 2 actuating buttons.
 * multi-touch functionality.
 * A matte finish that your finger can slide along easily.
-* A reasonable size (96mm × 64mm; diagonal: 115.378mm or 4.542”).
+* A reasonable size (96 mm × 64 mm; diagonal: 115.378 mm or 4.542 inches).
 
 == Troubleshooting
 
@@ -24,9 +24,8 @@ If you are having trouble using 2 fingers to scroll or emulate the click of a mo
 * Keep your 2 fingers spread apart rather than close together.
 * Individual programs might need to be configured specially.
 *. For smooth scrolling and gestures under X-Windows, _Firefox_ should be launched with with the following environment variable assignment:
-
-::: `MOZ_USE_XINPUT2=1`
-
++
+`MOZ_USE_XINPUT2=1`
 * Experiment with other settings, via link:#X-Windows_Configuration[X-Windows Configuration] or some other system preferences. For example, you could disable double-finger scrolling, and instead enable scrolling by sliding one finger along the edge of the touchpad.
 
 == Firmware

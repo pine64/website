@@ -9,15 +9,13 @@ menu:
     weight: 
 ---
 
-== PineTimeStyle Watchface
-
 PineTimeStyle is a watchface created for Infinitime and has been included since version 1.3 of Infinitime.
 
 It is based on https://www.dantilden.com/projects/timestyle/[TimeStyle for Pebble by Dan Tilden] with permission.
 
-image:/documentation/images/PineTimeStyle-Watchface.png[PineTimeStyle Watchface,title="PineTimeStyle Watchface"]
+image:/documentation/PineTime/images/InfiniSim_Watchface.png[PineTimeStyle Watchface,title="PineTimeStyle Watchface"]
 
-=== Layout
+== Layout
 
 The time is displayed on the left in either 12 or 24h format depending on the system setting. An indicator will appear in the bottom left corner if 12h is selected.
 
@@ -29,11 +27,11 @@ The current date is displayed in the middle, and at the bottom there is a small 
 
 Since version 1.4 of Infinitime, a color picker is available for PineTimeStyle. As of version 1.11, an addition page of customisation has been added which allows the user to customise the sidebar. These settings can be accessed by long pressing on the watchface which will display two buttons, one with a palette icon to access the color settings, one with a cog icon for the sidebar options.
 
-image:/documentation/images/PineTimeStyle-Settings-1.11.png[PineTimeStyle Settings Button,title="PineTimeStyle Settings Button"]
+image:/documentation/PineTime/images/InfiniSim_Settings.png[PineTimeStyle Settings Button,title="PineTimeStyle Settings Button"]
 
 === The color picker
 
-image:/documentation/images/PineTimeStyle-Settings.png[PineTimeStyle Color Settings Interface,title="PineTimeStyle Color Settings Interface"]
+image:/documentation/PineTime/images/InfiniSim_Color.png[PineTimeStyle Color Settings Interface,title="PineTimeStyle Color Settings Interface"]
 
 There are 3 pairs of buttons with left and right arrows which scroll through 17 standard colors. The top pair changes the time text color, middle for the sidebar color and bottom for the time background color.
 
@@ -41,7 +39,10 @@ There is also a 'Rnd' button which randomises all colors, a 'Rst' button which r
 
 === The sidebar settings
 
-image:/documentation/images/PineTimeStyle-SidebarSettings.png[PineTimeStyle Sidebar Settings,title="PineTimeStyle Sidebar Settings"]
+image:/documentation/PineTime/images/InfiniSim_SidebarSettings.png[PineTimeStyle Sidebar Settings,title="PineTimeStyle Sidebar Settings"]
 
-The sidebar settings currently only has one option, for the step gauge style. By pressing the 'Steps style' button you can toggle between 3 options, the original full gauge, a half size gauge plus seconds display, or a numerical step count display. The image above shows the half gauge plus seconds. Further options will be added in the future!
+As of Infinitime version 1.13, there are 2 options available in the sidebar settings page - Steps style and Weather.
 
+By pressing the 'Steps style' button you can toggle between 3 options, the original full gauge, a half size gauge plus seconds display, or a numerical step count display. The second button, Weather, enables or disables this function. When no weather data is available a ban icon will be displayed with 2 dashes below, and when weather data is available the current temperature plus an icon showing conditions based on the cloud cover and precipitation amount.
+
+To learn more about the sending weather data to the watch, see link:/documentation/PineTime/Software/InfiniTime_weather[InfiniTime weather]

@@ -209,12 +209,12 @@ J901:
 J1000:
 
 * T03-1025-FG01 27-pin connector to the rear camera.
-* Note: The schematic says “GC2035-200W”, which is a mistake because the rear camera is the OmniVision http://files.pine64.org/doc/datasheet/pinephone/OV5640_datasheet.pdf[OV6540].
+* Note: The schematic says "GC2035-200W", which is a mistake because the rear camera is the OmniVision http://files.pine64.org/doc/datasheet/pinephone/OV5640_datasheet.pdf[OV6540].
 
 J1001:
 
 * T03-1025-FG01 27-pin connector to the front camera.
-* Note: The schematic says “GC2035-200W”, which is a mistake because the rear camera is the GalaxyCore http://files.pine64.org/doc/datasheet/pinephone/GC2145%20CSP%20DataSheet%20release%20V1.0_20131201.pdf[GC2145], not the GalaxyCore https://g2g9w6w7.stackpathcdn.com/pdf-down/G/C/2/GC2035-GalaxyCore.pdf[GC2035].
+* Note: The schematic says "GC2035-200W", which is a mistake because the rear camera is the GalaxyCore http://files.pine64.org/doc/datasheet/pinephone/GC2145%20CSP%20DataSheet%20release%20V1.0_20131201.pdf[GC2145], not the GalaxyCore https://g2g9w6w7.stackpathcdn.com/pdf-down/G/C/2/GC2035-GalaxyCore.pdf[GC2035].
 
 U1000:
 
@@ -276,7 +276,7 @@ U1203:
 U1204:
 
 * Bosch Sensortek https://datasheet.lcsc.com/szlcsc/1912111437_Bosch-Sensortec-BMI120_C437657.pdf[BMI120] 3-axis gyroscope and accelerometer, LGA-14 2.5x3.0x0.83 mm
-* Note: Listed as “NC/BMI120”, where “NC” probably means “not connected”, so there may be circuits in the PCB for the part, but it is not placed on the board. This is probably an alternative to the TDK InvenSense MPU6050, in case it isn't available or costs too much.
+* Note: Listed as "NC/BMI120", where "NC" probably means "not connected", so there may be circuits in the PCB for the part, but it is not placed on the board. This is probably an alternative to the TDK InvenSense MPU6050, in case it isn't available or costs too much.
 
 Q1200:
 
@@ -301,7 +301,7 @@ J1300:
 U1304:
 
 * Analogix https://www.analogix.com/en/system/files/AA-002281-PB-6-ANX7688_Product_Brief_0.pdf[ANX7688] HDMI to USB-C bridge with MUX, converts HDMI 2.0 to DisplayPort Alternate Mode, USB-C Power Delivery (PD), BGA-64.
-* Note 1: The schematic lists this part as “ANX7688S”, but it is unclear what the “S” at the end stands for.
+* Note 1: The schematic lists this part as "ANX7688S", but it is unclear what the "S" at the end stands for.
 * Note 2: xnux.eu provides https://xnux.eu/devices/feature/anx7688.html[more info] on the ANX7688, including flashing the firmware.
 
 U1300:

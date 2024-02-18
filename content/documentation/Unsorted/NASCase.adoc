@@ -23,7 +23,7 @@ The NAS Case can house the following components:
 
 * A ROCKPro64 Single Board Computer (SBC) with a tall, mid-size or slim/ no heatsink
 * A PCIe to dual SATA adapter or a different low-profile PCIe card, e.g. an NVMe adapter
-* Either two 3.5” OR two 2.5” HDDs / SSDs; combination of any two sized drives is accepted
+* Either two 3.5 inches OR t incheso 2.5 inches HDDs / SSDs; combination of any two sized drives is accepted
 * A 80mm fan with a Ph 2-Pin connector
 * Up to three SMA antennas, two of which can be attached to the WiFi/ BT module
 
@@ -33,7 +33,7 @@ When you purchase the NAS Case from the PINE store the following items are shipp
 
 * The NAS Case itself, which consists of a top and a bottom half as well as an internal HDD SSD mount.
 * Two SATA cables
-* A custom power cable capable of powering two  2.5” or 3.5” HDDs /SSDs
+* A custom power cable capable of powering two  2.5 inches  inchesr 3.5 inches HDDs /SSDs
 * The required screws, fittings and a LED relay
 
 == What other bare-minimum things do I need for a NAS build?
@@ -47,7 +47,7 @@ With the exception of HDDs/SSDs, everything you need for a complete build can be
 * A ROCKPro64 2GB or 4GB board
 * A 12V 5A power supply
 * A PCIe to dual SATA adapter: https://forum.pine64.org/showthread.php?tid=6932[*WARNING*, the SATA adapter from PINE64 store is low-quality and] https://forum.pine64.org/showthread.php?tid=6511[will not function well with two SATA HDD].
-* One or two 2.5”/ 3.5” HDDs (not sold in the PINE store).
+* One or two 2.5 inche inches/ 3.5 inches HDDs (not sold in the PINE store).
 * A class 10 micro SD card and/or eMMC module.
 
 You can purchase all the aforementioned items in the https://www.pine64.org/?post_type=product[PINE64 store]
@@ -126,11 +126,11 @@ Have the cables hang outside the case or to the side for now so that they do not
 
 image:/documentation/images/Bracket_Orientation.png[Bracket Orientation in the NAS Case,title="Bracket Orientation in the NAS Case",width=300]
 
-The next step is to install HDDs/ SSDs into their holding bracket; 2.5” drives need to be installed at the very bottom of the bracket while 3.5” drives are at the top of the the bracket.
+The next step is to install HDDs/ SSDs into their holding bracket; 2.5 inches drives need to be installed at the very bottom of the bracket whi inchese 3.5 inches drives are at the top of the the bracket.
 
-For 2.5” drives make sure that the drives are oriented up and their SATA and power ports face the front of the NAS Case.
+For 2.5 inches drives make sure that the drives are oriented up and their SATA and power ports face the front of the NAS Case.
 
-For 3.5” HDDs, make sure they are oriented up and their SATA and power ports face the right side of the NAS Case (towards the fan mounting location).
+For 3.5 inches HDDs, make sure they are oriented up and their SATA and power ports face the right side of the NAS Case (towards the fan mounting location).
 
 Each drive you mount in the holding bracket requires 4x screws which come supplied in the see-through bag. Make sure the drives are held in place firmly but do not over-tighten the screws.
 
@@ -158,15 +158,15 @@ image:/documentation/images/TopViewAssembly.png[Top view of a complete NAS Case 
 
 Installing the HDD/SSD bracket into the case and wiring it up is the last step before closing up the case.
 
-Place the bracket with the disks installed (from step 4) into the case. The bracket should line up with the guiding bolts and screw holes at the bottom of the case. The section of the bracket that holds 3.5” HDDs needs to face the left side of the case (when viewed from front) and should overhang the ROCKPro64 board slightly. The 3.5” SATA and power ports should face the right side of the case - where the fan mounts, while 2.5” SATA and power ports should face the front of the case.
+Place the bracket with the disks installed (from step 4) into the case. The bracket should line up with the guiding bolts and screw holes at the bottom of the case. The section of the bracket that holds 3.5 inches HDDs needs to face the left side of the case (when viewed from front) and should overhang the ROCKPro64 board slightly. T inchese 3.5 inches SATA and power ports should face the right side of the case - where the fan mount inches, while 2.5 inches SATA and power ports should face the front of the case.
 
 With the bracket aligned, flip the bottom of the case over while holding the bracket in place. Screw it into place using 4x Phillips head screws that came included with the NAS Case.
 
 The last thing remaining before the NAS Case can be screwed shut is routing SATA and power cables:
 
-For 3.5” HDDs we suggest routing power and SATA cables underneath the drives, where 2.5” HDDs/SSDs would otherwise reside.
+For 3.5 inches HDDs we suggest routing power and SATA cables underneath the drives, whe inchese 2.5 inches HDDs/SSDs would otherwise reside.
 
-For 2.5” disks you have plenty of routing options as there is much space available. The most obvious route is straight over the disks, where the 3.5” HDDs would reside.
+For 2.5 inches disks you have plenty of routing options as there is much space available. The most obvious route is straight over the disks, where t inchese 3.5 inches HDDs would reside.
 
 === Step 7. Closing the NAS Case and Powering On your NAS
 
