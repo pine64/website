@@ -9,7 +9,7 @@ menu:
     weight: 2
 ---
 
-This page contains a list of all available releases and tools for the [[PineTab-V]] in alphabetical order. 
+This page contains a list of all available releases and tools for the PineTab-V in alphabetical order. 
 
 == Factory releases ==
 
