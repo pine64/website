@@ -35,8 +35,8 @@ description: "PINE64 has a variety of different devices. Find out more!"
     {{< devices/device_box link="/devices/pinephone" img="/devices/images/pinephone.jpg" title="PinePhone" text="" >}}
     {{< devices/device_box link="/devices/pinenote" img="/devices/images/pinenote.jpg" title="PineNote" text="" >}}
     {{< devices/device_box link="/devices/pinetab" img="/devices/images/pinetab.jpg" title="PineTab" text="" >}}
-    {{< devices/device_box link="/devices/pinetab2" img="/documentation/images/PineTab2_Front.jpg" title="PineTab2" text="" >}}
-    {{< devices/device_box link="/devices/pinetab-v" img="/documentation/PineTab-V/Pinetabv_1.jpg" title="PineTab-V" text="" >}}
+    {{< devices/device_box link="/devices/pinetab2" img="/documentation/PineTab2/images/PineTab2_Front.jpg" title="PineTab2" text="" >}}
+    {{< devices/device_box link="/devices/pinetab-v" img="/documentation/PineTab-V/images/Pinetabv_1.jpg" title="PineTab-V" text="" >}}
 {{</ flexbox >}}
 
 == Wearables
@@ -54,7 +54,7 @@ description: "PINE64 has a variety of different devices. Find out more!"
     {{< devices/device_box link="/devices/soedge" img="/devices/images/soedge.png" title="SOEDGE" text="" >}}
     {{< devices/device_box link="/devices/soedge_baseboard" img="/devices/images/soedge_baseboard.png" title="SOEDGE Baseboard" text="" >}}
     {{< devices/device_box link="/devices/sopine_clusterboard" img="/devices/images/sopine_clusterboard.jpg" title="SOPINE Clusterboard" text="" >}}
-    {{< devices/device_box link="/devices/soquartz" img="/documentation/images/SOQuartz_module-1s.jpg" title="SOQuartz" text="" >}}
+    {{< devices/device_box link="/devices/soquartz" img="/documentation/SOQuartz/images/SOQuartz_module-1s.jpg" title="SOQuartz" text="" >}}
 {{</ flexbox >}}
 
 == IP Cameras

@@ -9,8 +9,4 @@ menu:
     weight: 
 ---
 
-* link:External_links[External links]
-* link:Press[]
-* link:Datasheets,_schematics_and_certifications[Datasheets, schematics and certifications]
-* link:Components[]
-* link:Specifications[]
+{{< children >}}

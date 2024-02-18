@@ -6,9 +6,11 @@ cover:
   image: "/devices/images/pinephone_pro.png"
 images:
   - "/devices/images/pinephone_pro.png"
+aliases:
+- /pinephonepro
 ---
 
-Meet the PinePhone Pro, our flagship smartphone and the best way to experience mainline Linux on a mobile device
+Meet the PinePhone Pro, our flagship smartphone and the best way to experience mainline Linux on a mobile device.
 
 == Features and Specifications
 
@@ -116,6 +118,10 @@ UART via audio jack
 
 | link:/documentation/PinePhone_Pro/Further_information/Datasheets_schematics_and_certifications/[Datasheets, schematics and certifications]
 |===
+
+== Introduction video
+
+{{< youtube id="wP2-6Z74W44" >}}
 
 == What’s inside?
 
