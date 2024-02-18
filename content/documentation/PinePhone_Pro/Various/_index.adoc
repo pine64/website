@@ -11,3 +11,4 @@ menu:
 
 * link:Software_state[Software state]
 * link:Development[]
+* link:Multi-distribution_image[Multi-distribution image]
