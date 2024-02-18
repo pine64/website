@@ -49,19 +49,20 @@ Initiate the build process, but first make sure that your `PATH` variable contai
 Buildroot will output to the `~/ox64/buildroot/output/images` directory. 
 
 
-=== Optional: create a combined SoC image
+== Optional: create a combined SoC image
 
 Use the following commands to combine `m0_lowload_bl808_m0.bin`, `d0_lowload_bl808_d0.bin`, and `bl808-firmware.bin` into a single image. This is mainly useful for troubleshooting (e. g. when using DevCube v1.8.4 or later for flashing process).
 
- cd ~/ox64/buildroot/output/images
+----
+cd ~/ox64/buildroot/output/images
 
- fallocate -l 0x800000 bl808-combined.bin
- dd conv=notrunc if=m0_lowload_bl808_m0.bin of=bl808-combined.bin
- dd conv=notrunc if=d0_lowload_bl808_d0.bin of=bl808-combined.bin seek=$((0x100000))B
- cat bl808-firmware.bin >> bl808-combined.bin
+fallocate -l 0x800000 bl808-combined.bin
+dd conv=notrunc if=m0_lowload_bl808_m0.bin of=bl808-combined.bin
+dd conv=notrunc if=d0_lowload_bl808_d0.bin of=bl808-combined.bin seek=$((0x100000))B
+cat bl808-firmware.bin >> bl808-combined.bin
+----
 
-
-=== Check that you have the required files for flashing
+== Check that you have the required files for flashing
 
  cd ~/ox64/buildroot/output/images
  ls *808*.bin *.img
@@ -72,4 +73,4 @@ Expected files:
 * `m0_lowload_bl808_m0.bin`
 * `d0_lowload_bl808_d0.bin`
 * `bl808-firmware.bin`
-* `bl808-combined.bin` # optional
+* `bl808-combined.bin` (if you created the combined image)
