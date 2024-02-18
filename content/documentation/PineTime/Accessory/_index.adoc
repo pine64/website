@@ -6,8 +6,7 @@ menu:
     title:
     parent: "PineTime"
     identifier: "PineTime/Accessory"
-    weight: 
+    weight: 2
 ---
 
-* link:Cases[]
-* link:Watch_band[Watch band]
+{{< children >}}

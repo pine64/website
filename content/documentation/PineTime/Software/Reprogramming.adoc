@@ -4,9 +4,9 @@ draft: false
 menu:
   docs:
     title:
-    parent: "PineTime"
-    identifier: "PineTime/Reprogramming"
-    weight: 
+    parent: "PineTime/Software"
+    identifier: "PineTime/Software/Reprogramming"
+    weight:
 ---
 
 == Introduction

@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineTime"
     identifier: "PineTime/FAQ"
-    weight: 
+    weight: 6
 ---
 
 == Does PineTime run Linux?
