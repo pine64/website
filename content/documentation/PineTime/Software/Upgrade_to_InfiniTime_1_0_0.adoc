@@ -59,7 +59,7 @@ https://youtu.be/nAaaC7D5sVo[Video showing how to start the update]
 
 ==== NRFConnect (not recommended)
 
-*The app is closed source and versions after 4.24.3 don't work with the PineTime.  We recommend you use GadgetBridge instead.*
+*The app is closed source and versions after 4.24.3 don't work with the PineTime. We recommend you use GadgetBridge instead.*
 
 . Download the aforementioned file to your phone.
 . Open NRFConnect

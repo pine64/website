@@ -99,7 +99,7 @@ GStreamer's RTSP server isn't an element you can use with gst-launch, but rather
 
 After building gst-rtsp-launch (which is relatively simple on Ubuntu groovy; just `apt install libgstreamer1.0-dev libgstrtspserver-1.0-dev` first), you can read JPEG data directly from the camera and stream it via RTSP: `media-ctl --set-v4l2 '"ov5640 1-003c":0[fmt:JPEG_1X8/1280x720]' && gst-rtsp-launch 'v4l2src ! image/jpeg,width=1280,height=720 ! rtpjpegpay name=pay0'`
 
-This stream can be played using `vlc rtsp://pinecube.local:8554/video` or mpv, ffmpeg, gst-play-1.0, etc. If you increase the resolution to 1920x1080, mpv and gst-play can still play it, but VLC will complain `The total received frame size exceeds the client's buffer size (2000000).  73602 bytes of trailing data will be dropped! ` if you don't tell it to increase its buffer size with `--rtsp-frame-buffer-size=300000`
+This stream can be played using `vlc rtsp://pinecube.local:8554/video` or mpv, ffmpeg, gst-play-1.0, etc. If you increase the resolution to 1920x1080, mpv and gst-play can still play it, but VLC will complain `The total received frame size exceeds the client's buffer size (2000000). 73602 bytes of trailing data will be dropped! ` if you don't tell it to increase its buffer size with `--rtsp-frame-buffer-size=300000`
 
 == gstreamer: h264 RTSP
 

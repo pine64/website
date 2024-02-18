@@ -48,8 +48,8 @@ Getting started with Linux
 * Oliver Smith's blog: https://ollieparanoid.github.io/post/postmarketOS/[postmarketOS: Aiming for a 10 year life-cycle for smartphones]
 * postmarketOS blog: https://postmarketos.org/blog/2017/09/03/100-days-of-postmarketos/[100 days of postmarketOS]
 * Getting started with the PinePhone
-* PINE64 Wiki: https://wiki.pine64.org/wiki/Project_Anakin[Project Anakin]
-* PINE64 Wiki: https://wiki.pine64.org/wiki/PinePhone_v1.0_-_Dev[PinePhone v1.0 - Dev]
+* PINE64 docs: link:/documentation/PinePhone/Revisions/Project_Anakin/[Project Anakin]
+* PINE64 docs: link:/documentation/PinePhone/Revisions/Project_Dont_be_evil/[PinePhone v1.0 - Dev]
 * Martijn Braam: https://www.youtube.com/watch?v=VyeD1sfQNoM[Putting together the PinePhone prototype]
 * App Development
 * https://blog.brixit.nl/apps/[Martijn's apps]

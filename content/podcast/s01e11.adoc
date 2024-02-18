@@ -68,7 +68,7 @@ BTW: There's a project that tries to recreate the Windows Phone Live Tile experi
 === Quartz64
 
 * PINE64 store: https://pine64.com/product-category/quartz64/?v=0446c16e2e66[Quartz64]
-* https://wiki.pine64.org/wiki/Quartz64_Development[Quartz64 Software support status]
+* Docs: link:/documentation/Quartz64/[Quartz64]
 
 === PinePhone: Keyboard accessory news
 

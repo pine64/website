@@ -115,6 +115,7 @@ First, run `rkdeveloptool list-partitions` to print out your PineNote's partitio
 The stock PineNote has a fairly standard https://source.android.com/docs/core/architecture/partitions[Android partition setup]:
 
 
+[cols="1,2,1,4"]
 |===
 | Number | Name | Size | Purpose
 

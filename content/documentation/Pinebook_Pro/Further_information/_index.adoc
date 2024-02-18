@@ -6,11 +6,7 @@ menu:
     title:
     parent: "Pinebook_Pro"
     identifier: "Pinebook_Pro/Further_information"
-    weight: 
+    weight: 99
 ---
 
-* link:Other_resources[Other resources]
-* link:Specifications[]
-* link:Case_dimensions_and_data[Case dimensions and data]
-* link:Datasheets[]
-* link:Schematics_and_certifications[Schematics and certifications]
+{{< children >}}

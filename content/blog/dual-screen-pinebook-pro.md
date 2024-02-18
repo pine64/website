@@ -121,7 +121,7 @@ In my case, I already have the 5V 5A DC power supply on hand (a spare for LED li
 
 ![](/blog/images/Pinecil-1-1024x512.jpg)
 
-**Soldering A Custom Adapter:** Using my [Pinecil](https://www.pine64.org/pinecil/) for the first time to create my own 3D-printed Barrel to USB adapter.  
+**Soldering A Custom Adapter:** Using my [Pinecil](https://www.pine64.org/pinecil/) for the first time to create my own 3D-printed Barrel to USB adapter.
   
 After this simple project, I officially LOVE the Pinecil!
 
@@ -167,9 +167,6 @@ Thanks for reading, and remember, if you're not having fun, you're doing it wron
 
 ## About The Author
 
-[Robbie Ferguson](https://twitter.com/robbieferguson) is the host of [Category5 Technology TV](https://category5.tv/).  
-He enjoys creating fun but approachable tech projects  
-that can be accomplished by people with varying levels  
-of skill and experience.
+[Robbie Ferguson](https://twitter.com/robbieferguson) is the host of [Category5 Technology TV](https://category5.tv/). He enjoys creating fun but approachable tech projects that can be accomplished by people with varying levels of skill and experience.
 
 Subscribe to [his YouTube channel](https://www.youtube.com/LinuxTechShow/) for more content.

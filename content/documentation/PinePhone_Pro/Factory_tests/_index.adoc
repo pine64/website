@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PinePhone_Pro"
     identifier: "PinePhone_Pro/Factory_tests"
-    weight: 
+    weight: 96
 ---
 
 * link:Factory_test_battery_charging[Factory test battery charging]

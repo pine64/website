@@ -307,7 +307,7 @@ Notes:
 
 image:/documentation/images/e.png[width=100]
 
-/e/OS community build. To learn more about /e/OS, please visit the https://e.foundation/[official website].  Please check out https://medium.com/@edevelopers.blog/e-os-ports-for-the-pinebook-and-pinephone-596139c76479[this article] on the Pinebook /e/ build. For a thread discussion please visit the https://forum.pine64.org/showthread.php?tid=7954[PINE64 forum]
+/e/OS community build. To learn more about /e/OS, please visit the https://e.foundation/[official website]. Please check out https://medium.com/@edevelopers.blog/e-os-ports-for-the-pinebook-and-pinephone-596139c76479[this article] on the Pinebook /e/ build. For a thread discussion please visit the https://forum.pine64.org/showthread.php?tid=7954[PINE64 forum]
 
 |===
 3+|Compatibility

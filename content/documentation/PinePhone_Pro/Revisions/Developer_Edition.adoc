@@ -41,7 +41,7 @@ This is optional and only if you want to test out the AOSP test image.
 
 === Backing up the factory AOSP
 
-It may be a good idea to create an image of the eMMC in case you want to flash it back.  Free up at least 117GB of disk space.  Install `adb`.
+It may be a good idea to create an image of the eMMC in case you want to flash it back. Free up at least 117GB of disk space. Install `adb`.
 
 `adb root && adb pull /dev/block/mmcblk1 ~/pinephonepro-factory-AOSP.img`
 

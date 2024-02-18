@@ -4,16 +4,16 @@ draft: false
 menu:
   docs:
     title:
-    parent: "Pinebook_Pro"
-    identifier: "Pinebook_Pro/Using the optional NVMe adapter"
+    parent: "Pinebook_Pro/Guides"
+    identifier: "Pinebook_Pro/Guides/Using the optional NVMe adapter"
     weight: 
 ---
+	
+The optional NVMe adapter allows the use of M.2 SSDs that support the NVMe standard (SATA is not supported).  The adapter supports *M* and *M*+*B* keyed devices, in both 2242 and 2280 physical sizes, which are the most commonly available. In addition, 2230 and 2260 sizes are also supported, though NVMe devices that use those sizes are rare.
 
-The optional NVMe adapter allows the use of M.2 cards that support the NVMe standard, (but not SATA standard). The optional NVMe M.2 adapter supports *M* & *M*+*B* keyed devices, in both 2242 & 2280 physical sizes, the most common ones available. In addition, 2230 & 2260 are also supported, though NVMe devices that use those sizes are rare.
+Make sure to read the notes in link:/documentation/Pinebook_Pro/Accessory/Compatibility[Accessory compatibility] before selecting an M.2 SSD for your Pinebook Pro, because there are certain limitations.  Once you have fitted and tested your NVMe drive, please consider adding a note to that page  
 
-Once you have fitted and tested your NVMe drive, please add a note to this page link:/documentation/Pinebook_Pro/Accessory/Compatibility[Accessory compatibility] to help build a list of tried and tested devices.
-
-Please see link:/documentation/Pinebook_Pro/Troubleshooting#nvme_ssd_issues[a separate section] that describes reported issues with the NVMe drives in PineBook Pro.
+Please see link:/documentation/Pinebook_Pro/Troubleshooting#nvme_ssd_issues[a separate section]  that describes reported issues with the NVMe drives in Pinebook Pro.
 
 == Installing the adapter
 

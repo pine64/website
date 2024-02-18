@@ -47,7 +47,7 @@ System Memory:
 
 Battery:
 
-* Lithium Polymer Battery (10,000mAH)
+* Lithium Polymer Battery (10,000 mAh; 9,600 mAh in later batches)
 
 Video:
 

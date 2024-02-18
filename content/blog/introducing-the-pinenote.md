@@ -147,13 +147,9 @@ Before I wrap this section up I wanted to ask: what other back cases would you l
 
 ### PinePhone: Software
 
-_This section of the update was written by partner project developers and community contributors:_ [_Alfred_](https://twitter.com/fredldotme) _(UBports),_ [_Dylan_](https://twitter.com/DylanVanAssche) _(postmarketOS),_ [_Peter_](https://twitter.com/linmobblog) _(aka LinMob, the former PineTalk host and LINMOBapps maintainer),_ [_Chris_](https://gitlab.com/kop316/) _( aka. kop316, working on MMS and Visual Voicemail functionality) and_ [_Brian_](https://mastodon.online/@BrianA) _(aka. 33YN2, PINE64 moderator and community_ _contributor).  
-_
+This section of the update was written by partner project developers and community contributors:_ [_Alfred_](https://twitter.com/fredldotme) _(UBports),_ [_Dylan_](https://twitter.com/DylanVanAssche) _(postmarketOS),_ [_Peter_](https://twitter.com/linmobblog) _(aka LinMob, the former PineTalk host and LINMOBapps maintainer),_ [_Chris_](https://gitlab.com/kop316/) _(aka. kop316, working on MMS and Visual Voicemail functionality_) and [_Brian_](https://mastodon.online/@BrianA) _(aka. 33YN2, PINE64 moderator and community contributor)_.
 
-_Images and videos by authors / projects.  
-_
-
-\---------
+_Images and videos by authors / projects._
 
 [**Alfred**](https://twitter.com/fredldotme)**:** Let me start with Mirclient support. Ubuntu Touch on the PinePhone has always used Wayland for displaying app contents.This was quick to do for an initial bringup and the right step for future developments, but meant that certain functionality needed deep thought and reimplementation to allow the same experience across all supported types of devices and GPU driver stacks.
 
@@ -183,7 +179,7 @@ I added support with two applications: Visual Voicemail Daemon ([VVMd](https://g
 
 **A demo of Visual Voicemail on the PinePhone**
 
-Right now, Visual Voicemail on the Pinephone is confirmed to work on T-Mobile USA, T-Mobile USA MVNOs (Mobile Virtual Network Operator) , and AT&T USA. If you want to keep up with the development (or help out), feel free to join the Matrix Room (#opensourcemms:matrix.org) or the IRC channel (#opensourcemms on OFTC), which is bridged to Matrix. 
+Right now, Visual Voicemail on the Pinephone is confirmed to work on T-Mobile USA, T-Mobile USA MVNOs (Mobile Virtual Network Operator), and AT&T USA. If you want to keep up with the development (or help out), feel free to join the Matrix Room (#opensourcemms:matrix.org) or the IRC channel (#opensourcemms on OFTC), which is bridged to Matrix. 
 
 [**Peter**](https://twitter.com/linmobblog)**:** [LINMOBapps](https://linmobapps.frama.io) now lists more than 300 apps for Linux smartphones now. Note that not all apps are packaged for your distribution, nor are they all what you would consider feature-complete. Also, the current technical implementation of the app list does not perform particularly well on the PinePhone (the performance is actually getting worse with every additional app), which is why I am looking to replace it with another solution. You can follow, join and help out the development on [GitHub](https://github.com/linuxphoneapps/) or wait for an early alpha version of the new implementation, which should be out later this month on [alpha.linux phone apps.org](about:blank).
 

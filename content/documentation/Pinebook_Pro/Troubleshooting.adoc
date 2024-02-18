@@ -6,16 +6,8 @@ menu:
     title:
     parent: "Pinebook_Pro"
     identifier: "Pinebook_Pro/Troubleshooting"
-    weight: 
+    weight: 5
 ---
-
-== Useful Links
-
-link:/documentation/Pinebook_Pro[Back to the main Pinebook Pro page]
-
-link:/documentation/Pinebook_Pro/Accessory/Compatibility[Hardware Compatibility page]
-
-link:/documentation/Pinebook_Pro/Software/Releases[Software releases]
 
 == Tips, tricks and other information for troubleshooting your Pinebook Pro
 
@@ -103,6 +95,7 @@ Your Pinebook Pro should now sleep properly when the lid is closed.
 ** Can't connect to any network, but the network manager software sees the WiFi device, (so it has not been disabled by the Privacy Switch)
 ** Very limited range, meaning you can make a connection if the Pinebook Pro is next to the WiFi router. But not the next room.
 ** Unreliable connections, that are also limited by range.
+* Every once in a great while, the kernel will just fail to detect the wifi hardware (symptom: `ip link`` shows no wlan0). Only solution found so far is to hard-reset the machine (complete power-off then on again).
 
 === Bluetooth issues
 
@@ -112,7 +105,7 @@ Your Pinebook Pro should now sleep properly when the lid is closed.
 
 == Sound issues
 
-* Many reports of no sound are due to the OS, incorrect settings, or other software problems (eg. PulseAudio). So first test to see if it is a software or hardware problem, by trying another OS via SD card.  (For example, if Debian is installed on the eMMC, try Ubuntu on SD.)
+* Many reports of no sound are due to the OS, incorrect settings, or other software problems (eg. PulseAudio). So first test to see if it is a software or hardware problem, by trying another OS via SD card. (For example, if Debian is installed on the eMMC, try Ubuntu on SD.)
 * If you cannot get sound from the headphone jack, but can get sound from the speakers, then the headphone / UART console switch may be set to the UART mode. You can open the back and check the position of the switch. If set to UART mode, switch it to headphone mode. See the parts layout for the location and correct position of the switch.
 * When using the USB C alternate DisplayPort mode, it is possible that the audio has been re-directed through this path. If your monitor has speakers, see if they work.
 * See https://gitlab.manjaro.org/manjaro-arm/packages/community/pinebookpro-post-install/blob/master/asound.state[manjaro-arm/pinebookpro-post-install /var/lib/alsa/asound.state] for some ALSA tweaks.
@@ -120,13 +113,15 @@ Your Pinebook Pro should now sleep properly when the lid is closed.
 * Serveral users have reported that one internal speaker had reversed polarity. Thus, sound from the speakers is like an echo effect.
 ** There is a software fix using alsamixer and then enable either "R invert" or "L invert", however, now the headphones have incorrect audio.
 ** The permanent fix is to re-wire one speaker, though this requires soldering small wires.
-* Sound playback may be affected by the "mirroring" between the right and left channels, which results in distorted sound image.  The root cause is the https://linux.die.net/man/1/alsamixer[ALSA mixer] setting named "DAC Stereo Enhancement", which needs to be changed to 0% to fix this issue.  Please see https://forum.pine64.org/showthread.php?tid=12631&pid=87372#pid87372[this forum post] for further information.
+* Sound playback may be affected by the "mirroring" between the right and left channels, which results in distorted sound image. The root cause is the https://linux.die.net/man/1/alsamixer[ALSA mixer] setting named "DAC Stereo Enhancement", which needs to be changed to 0% to fix this issue. Please see https://forum.pine64.org/showthread.php?tid=12631&pid=87372#pid87372[this forum post] for further information.
 
 == NVMe SSD issues
 
-Many PineBook Pro users have reported issues with NVMe SSD drives, including random Linux lockups and crashes.  Some of these issues are related to the https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=712fa1777207[RK3399's errata] that disables Gen2 (5&nbsp;GT/s) speed for the PCI Express link used by the NVMe SSD, reducing it down to Gen1 speed (2.5&nbsp;GT/s).  However, Linux distributions that use Linux kernels older than version 5.12 still configure the PCI Express link to run at Gen2 speed, which requires https://forum.pine64.org/showthread.php?tid=11683[manual reconfiguration] to Gen1 speed in case system instability is experienced.  See also this https://patchwork.kernel.org/project/linux-rockchip/patch/20200423150510.6216-1-pgwipeout@gmail.com/[related discussion]. This issue does not affect distributions with recent (newer than May 2021) kernels such as Manjaro ARM which seem to work with no modifications.
+Many Pinebook Pro users have reported issues with M.2 NVMe SSD drives, including random Linux lockups and crashes. Some of these issues are related to the https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=712fa1777207[RK3399's errata] that disables Gen2 (5&nbsp;GT/s) speed for the PCI Express link used by the NVMe SSD, reducing it down to Gen1 speed (2.5&nbsp;GT/s). However, Linux distributions that use Linux kernels older than version 5.12 still configure the PCI Express link to run at Gen2 speed, which requires https://forum.pine64.org/showthread.php?tid=11683[manual reconfiguration] to Gen1 speed in case system instability is experienced. See also this https://patchwork.kernel.org/project/linux-rockchip/patch/20200423150510.6216-1-pgwipeout@gmail.com/[related discussion]. This issue does not affect distributions with recent (newer than May 2021) kernels such as Manjaro ARM which seem to work with no modifications.
 
-Some PineBook Pro users have reported issues with the default settings for the APST (Autonomous Powe State Transition) power saving, which cause an NVMe drive to disappear from the system or lock up after a certain period of time.  Please see https://forum.pine64.org/showthread.php?tid=11337&pid=87711#pid87711[this forum thread] for further information.
+Some Pinebook Pro users have reported issues with the default settings for the APST (Autonomous Powe State Transition) power saving, which cause an NVMe drive to disappear from the system or lock up after a certain period of time. Please see https://forum.pine64.org/showthread.php?tid=11337&pid=87711#pid87711[this forum thread] for further information.
+
+The output of the 3.3&nbsp;V regulator inside the Pinebook Pro, which powers the M.2 SSD, becomes very noisy when the battery voltage drops below 3.9&nbsp;V or so. This is a hardware issue of the Pinebook Pro that cannot be corrected without extensive hardware modifications, and it causes many M.2 SSDs to lock up under load and cause operating system crashes. The real trouble is that for some M.2 SSDs it takes a couple of hours of heavy I/O to lock up under these conditions, which may make them appear to be working reliably, while they eventually fail.
 
 == Keyboard and trackpad
 
@@ -142,11 +137,11 @@ If this return the following error:
 
 Or some other similar error, you will need to install the command. It can most likely be found in your distro's repository.
 
-You may substitute some other value for 20 -- this number denoting the time in milliseconds during which successive, duplicate key-presses will be rejected -- with any value of your choice. If you are still receiving duplicates, consider increasing the number -- perhaps by half. If you are consistently writing "aple", try decreasing this number -- perhaps by 25%.
+You may substitute some other value for 20 - this number denoting the time in milliseconds during which successive, duplicate key-presses will be rejected - with any value of your choice. If you are still receiving duplicates, consider increasing the number - perhaps by half. If you are consistently writing "aple", try decreasing this number - perhaps by 25%.
 
 === Keys not registering / missing keys when typing
 
-This issue occurs when your thumb or edge of the palm makes contact with left or right tip of the trackpad when you type. This is due to the palm rejection firmware being too forceful.  Instead of only disabling the trackpad, so your cursor does not move all over the screen, it disables both the trackpad and the keyboard.
+This issue occurs when your thumb or edge of the palm makes contact with left or right tip of the trackpad when you type. This is due to the palm rejection firmware being too forceful. Instead of only disabling the trackpad, so your cursor does not move all over the screen, it disables both the trackpad and the keyboard.
 
 Using Fn+F7 to disable the touchpad will keep it from also disabling the keyboard.
 

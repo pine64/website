@@ -4,8 +4,8 @@ draft: false
 menu:
   docs:
     title:
-    parent: "Pinebook_Pro"
-    identifier: "Pinebook_Pro/Disassembly_and_Reassembly"
+    parent: "Pinebook_Pro/Guides"
+    identifier: "Pinebook_Pro/Guides/Disassembly_and_Reassembly"
     weight: 
 ---
 
@@ -29,6 +29,8 @@ During reassembly, make sure that the back-screw standoffs are in place and seat
 The screws are small and should only be finger tight. Too much force will strip the threads. If after installing screws the back cover plate has not seated properly on one side (which may be caused by the aforementioned misseating of the speakers), open the display and hold the base on either side of the keyboard and gently flex the base with both hands in opposing directions. Once the side pops further in, then recheck the screws on that side. If it does not pop back in, re-open the machine and check for misseated components.
 
 A basic 3D model to print replacement standoffs for the back cover screws is https://www.thingiverse.com/thing:4226648[available on Thingiverse], until the official drawings or 3D models are made available.
+
+Many units come with the hinges too stiff from the factory. You can tell if it affects your device by carefully observing if operating the lid on a fully assembled notebook flexes the case. This repeated flexing can lead to plastic and metal fatigue and eventually broken parts. Consider carefully using a flat screwdriver or similar object to unbend the hinges a bit by wedging it into the slot (requires the display part to be fully detached from the main body).
 
 == Display disassembly
 

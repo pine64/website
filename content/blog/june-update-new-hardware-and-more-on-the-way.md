@@ -180,7 +180,7 @@ _New release of Plasma Mobile 5.22 \[by [Brian (33YN2)](https://mastodon.online/
 
 Plasma Mobile has seen tremendous progress for the current 5.22 release, and there is a lot still yet to come in Plasma 5.23. As outlined by the [Plasma Mobile June blog post](https://www.plasma-mobile.org/2021/06/10/plasma-mobile-update-june/), a new audio overlay that allows fined tuned control of per-application audio (including the microphone input volume) has landed for next update in October, and there have also been lots of new homescreen improvements such as multiple home screen pages and the groundwork for customizable home screen support. Lots of bug fixes have also landed, with lots more to come in 5.23.
 
-There has also been a lot of work that has gone into the growing list of applications for Plasma Mobile. Two new plasma mobile applications have arrived such as the Mastodon client app called Tokodon, and the new podcast app called Kasts. Also notable is that back in march a YouTube music app called AudioTube, and a YouTube app called Plasmatube were also created. Work is also being done on a Plasma Mobile email client, though that is still very early in development.  
+There has also been a lot of work that has gone into the growing list of applications for Plasma Mobile. Two new plasma mobile applications have arrived such as the Mastodon client app called Tokodon, and the new podcast app called Kasts. Also notable is that back in march a YouTube music app called AudioTube, and a YouTube app called Plasmatube were also created. Work is also being done on a Plasma Mobile email client, though that is still very early in development.
 
 ![](/blog/images/audio-osd-465x930.png)
 

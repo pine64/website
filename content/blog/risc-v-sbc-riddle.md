@@ -54,7 +54,7 @@ Was this strive to mend  
 
 It lay waste to the Roman rule
 
-_**\***The winner will receive the first production version of the SBC. Prototype devices destined for developers will ship first.  
+_**\***The winner will receive the first production version of the SBC. Prototype devices destined for developers will ship first. 
 _
 
 _The Pine Store cannot ship to countries under international embargo (North Korea, Iran, etc.,)_.

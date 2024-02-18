@@ -23,6 +23,7 @@ You can go to the Void Linux https://voidlinux.org/download/[download page], sel
 How to check integrity of the downloaded file is explained on the same page.
 
 Or use the following instructions (on Debian):
+
  $ wget https://repo-default.voidlinux.org/live/current/void-aarch64-musl-ROOTFS-20221001.tar.xz
  $ wget https://repo-default.voidlinux.org/live/current/sha256sum.{txt,sig}
  $ wget https://github.com/void-linux/void-packages/raw/master/srcpkgs/void-release-keys/files/void-release-20221001.pub
@@ -34,6 +35,7 @@ Or use the following instructions (on Debian):
 === Extracting and configuring the root filesystem
 
 ==== Extracting the root filesystem
+
  tar -xpf void-aarch64-musl-ROOTFS-20221001.tar.xz -C /mnt
 
 ==== Kernel

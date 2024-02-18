@@ -89,7 +89,7 @@ NOTE: For normal operation of the iron, omission of the copper ring in step #2 d
 === Common Questions
 
 . *Temperature is flickering wildly*: 
-* Most likely just need to clean whole cartridge/tip with IPA (https://github.com/Ralim/IronOS/issues/1601[reference issue]). See link:#poor_contact_fix[Poor Contact Fix here]].  
+* Most likely just need to clean whole cartridge/tip with IPA (https://github.com/Ralim/IronOS/issues/1601[reference issue]). See link:#poor_contact_fix[Poor Contact Fix here]]. 
 * If it's jumping wildly after reaching set temperature, this is also caused by using a low amp/volt charger that is below the 3amp minimum required for Pinecil (per manufacturer rating), upgrading to a 3.25amp/20V USB-C charger often fixes this (https://github.com/Ralim/IronOS/issues/1644[reference issue]).
 * Some people might see a random spike while idle. Solution: update firmware, there are some ADC timing adjustments in IronOS 2.21+; it's a good idea to keep your firmware updated to newest stable release (https://github.com/Ralim/IronOS/issues/1485[reference issue]). This fix is included in 2.21+ release.
 . *I see No Tip connected symbol randomly on new Pinecil*: tip is installed and it heats up, but randomly I get no tip symbol. See #1 above, it is most likely the same reason, dirty contacts on the back of the cartridge/tip. follow the same instructions for link:#Poor_Contact_Fix[Poor Contact Fix here]. https://github.com/Ralim/IronOS/issues/1601[Reference ticket on Github].

@@ -37,7 +37,7 @@ In the fifth episode of PineTalk, Ezra and Peter discuss a few aspects of the la
 
 === PineCube as a Web Cam
 
-* Chris McGee https://twitter.com/seeteegee/status/1373293206155231235[has been enabling] the PineCube for use as a web cam and shared his findings on the https://wiki.pine64.org/wiki/PineCube#virtual_web_camera%3A_gstreamer.2C_mjpeg.2C_udp_rtp_unicast[PINE64 Wiki]
+* Chris McGee https://twitter.com/seeteegee/status/1373293206155231235[has been enabling] the PineCube for use as a web cam and shared his findings on the link:/documentation/PineCube/Projects/Webcam/[PINE64 doc page]
 
 === Component Shortage
 
@@ -55,7 +55,7 @@ In the fifth episode of PineTalk, Ezra and Peter discuss a few aspects of the la
 * https://fosstodon.org/@linmob/105935048605018559[Mastodon thread]
 * https://pine64.com/product/rockpro64-premium-aluminum-casing/?v=0446c16e2e66[ROCKPro64 PREMIUM ALUMINUM CASING]
 * https://www.zdnet.com/product/hp-elite-x3-lap-dock/[HP Elite X3 Lap Dock (ZDNet Review)]
-* Pine64 Wiki: https://wiki.pine64.org/wiki/ROCKPro64_Software_Release[ROCKPro64]
+* Pine64 docs: link:/documentation/ROCKPro64/Software/Releases/[ROCKPro64]
 * https://twisteros.com/twisterarmbian.html[Twister OS Armbian]
 
 == Listener Questions

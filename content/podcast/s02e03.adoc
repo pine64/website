@@ -20,7 +20,7 @@ Links:
 * https://nitter.net/salva_lieb/status/1460035543983611905#m
 * https://gitlab.com/postmarketOS/megapixels/-/tags/1.4.0
 * https://fosstodon.org/@tuxdevices/107291616567947744
-* https://wiki.pine64.org/wiki/Overclocking
+* link:/documentation/General/Overclocking/[]
 
 Music from Bensound.com and Zed (@itismezed)
 

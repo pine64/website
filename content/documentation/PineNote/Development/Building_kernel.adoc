@@ -87,7 +87,7 @@ NOTE: If you frequently update your system with _pacman -Syu_, you will end up u
 == Next steps
 
 === Configuring the driver
-The driver has several options that can improve performance. These can be read about https://github.com/m-weigand/mw_pinenote_misc/tree/main/rockchip_ebc/patches#new-features-as-of-2022august08[here].  `rockchip_ebc.bw_mode=1 rockchip_ebc.default_waveform=1 rockchip_ebc.refresh_threshold=30 rockchip_ebc.auto_refresh=1` may be used to make the image lower quality, but much faster to update. The auto_refresh setting is also essential to clear ghosting which will otherwise accrue on screen. The _APPEND_ line in the *extlinux.conf* might be added to make sure they are applied on boot.
+The driver has several options that can improve performance. These can be read about https://github.com/m-weigand/mw_pinenote_misc/tree/main/rockchip_ebc/patches#new-features-as-of-2022august08[here]. `rockchip_ebc.bw_mode=1 rockchip_ebc.default_waveform=1 rockchip_ebc.refresh_threshold=30 rockchip_ebc.auto_refresh=1` may be used to make the image lower quality, but much faster to update. The auto_refresh setting is also essential to clear ghosting which will otherwise accrue on screen. The _APPEND_ line in the *extlinux.conf* might be added to make sure they are applied on boot.
 
 === Fixing suspend
 

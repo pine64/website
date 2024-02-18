@@ -23,7 +23,7 @@ You will need the following to get started with using your link:/documentation/P
 ** *Pinebook* and *ROCK64*: Power Supply (PSU) with 3.5mm OD/1.5mm ID barrel DC Jack. Please make sure to use a PSU rated at +5V @3A.
 * MicroSD card (Recommend: 8GB or higher capacity, 10MB/s or faster speed)
 * HDMI cable (unless you wish to run https://en.wikipedia.org/wiki/Headless_computer[headless] / without a screen)
-** For , Android and Remix OS supports 720p and 1080p, while Linux supports a https://github.com/longsleep/sunxi-disp-tool#available-hdmi-output-names[wider range of resolutions].
+** For, Android and Remix OS supports 720p and 1080p, while Linux supports a https://github.com/longsleep/sunxi-disp-tool#available-hdmi-output-names[wider range of resolutions].
 * Input device(s) such as: keyboard, mouse, remote, pointer, etc.
 
 == Step-by-Step Instructions for Flashing MicroSD Cards

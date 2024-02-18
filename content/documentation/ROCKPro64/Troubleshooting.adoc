@@ -24,7 +24,7 @@ update-initramfs -u -k $(uname -r)
 
 == PCIe probe failures on Linux kernel boot
 
-While booting the Linux kernel, you might experience PCIe probe failures, which render the attached PCIe device inaccessible.  The https://lore.kernel.org/all/20230509153912.515218-1-vincenzopalazzodev@gmail.com/["drivers: pci: introduce configurable delay for Rockchip PCIe bus scan"] thread on the Linux kernel mailing list (LKML) discusses this issue and proposes a fix.
+While booting the Linux kernel, you might experience PCIe probe failures, which render the attached PCIe device inaccessible. The https://lore.kernel.org/all/20230509153912.515218-1-vincenzopalazzodev@gmail.com/["drivers: pci: introduce configurable delay for Rockchip PCIe bus scan"] thread on the Linux kernel mailing list (LKML) discusses this issue and proposes a fix.
 
 Manjaro ARM applies the following patches to the kernel package, which fix the issue:
 

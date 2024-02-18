@@ -11,6 +11,8 @@ menu:
 
 The PinePhone Pro is PINE64’s second smartphone and a successor to the original PinePhone. It does not, however, replace the original PinePhone. It should also not be considered a second generation PinePhone; it is a higher-end device, with much better specs, aimed at those who wish to daily-drive a open system stack. Achieving this goal will, however, take time as the software and overall smartphone software ecosystem needs to mature.
 
+{{< youtube id="wP2-6Z74W44" >}}
+
 == State of the software
 
 See the page link:/documentation/PinePhone_Pro/Various/Software_state[software state]

@@ -11,7 +11,7 @@ menu:
 
 == PINE64 position on alternative firmware
 
-PINE64 ships the PinePhone with a stock version of the Quectel EG25-G modem's firmware. Some administrative regions, in the EU and Asia in particular, require the entirety of the modem's firmware to be licensed. Therefore, the PinePhone cannot ship with an unlicensed firmware, and the PINE64 project cannot, officially encourage its userbase to use alternative modem firmware.  
+PINE64 ships the PinePhone with a stock version of the Quectel EG25-G modem's firmware. Some administrative regions, in the EU and Asia in particular, require the entirety of the modem's firmware to be licensed. Therefore, the PinePhone cannot ship with an unlicensed firmware, and the PINE64 project cannot, officially encourage its userbase to use alternative modem firmware.
 
 == Quectel EG25-G Modem
 

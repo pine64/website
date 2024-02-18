@@ -4,28 +4,28 @@ draft: false
 menu:
   docs:
     title:
-    parent: "Pinebook_Pro"
-    identifier: "Pinebook_Pro/Internal_layout"
+    parent: "Pinebook_Pro/Features"
+    identifier: "Pinebook_Pro/Features/Internal_layout"
     weight: 
 ---
 
-=== Main chips
+== Main chips
 
 * RK3399 system-on-chip (1)
 * LPDDR4 SDRAM (21)
 * SPI NOR flash memory (29)
-* eMMC flash memory (26)
+* eMMC flash memory module (26; Note: Some datasheets indicate a low supported number of mating cycles.)
 * WiFi/BT module (27)
 
-=== Mainboard Switches and Buttons
+== Mainboard Switches and Buttons
 
-There are two switches on the main board: disabling the eMMC (24), and enabling UART (9) via headphone jack.
+There are two switches on the main board: disabling the eMMC module (24), and enabling serial console UART (9) via headphone jack.
 
 The Reset and Recovery buttons (28): the reset button performs an immediate reset of the laptop. The Recovery button is used to place the device in maskrom mode. This mode allows flashing eMMC using Rockchip tools (e.g. rkflashtools).
 
 image:/documentation/images/PBPL_S.jpg[width=500]
 
-=== Key Internal Parts
+== Key Internal Parts
 
 [cols="1,1,1,1"]
 |===
@@ -59,7 +59,7 @@ image:/documentation/images/PBPL_S.jpg[width=500]
 | Component | Optional NVMe SSD adapter
 
 |scope=row | 9
-| Switch | UART/Audio switch - outputs UART via headphone jack
+| Switch | UART/Audio switch - enables serial console UART via headphone jack
 
 |scope=row | 10
 | Socket | Power bridge socket
@@ -80,7 +80,7 @@ image:/documentation/images/PBPL_S.jpg[width=500]
 | Socket | MicroSD card slot
 
 |scope=row | 16
-| Socket | Headphone / UART jack
+| Socket | Headphone / serial console UART jack
 
 |scope=row | 17
 | Socket | USB 2.0 Type A
@@ -134,7 +134,7 @@ image:/documentation/images/PBPL_S.jpg[width=500]
 | Socket | USB 3.0 Type C
 |===
 
-=== Smallboard detailed picture
+== Smallboard detailed picture
 
 image:/documentation/images/Pinebook_pro_smallboard.jpg[width=600]
 

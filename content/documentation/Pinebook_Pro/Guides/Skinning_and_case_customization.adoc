@@ -4,8 +4,8 @@ draft: false
 menu:
   docs:
     title:
-    parent: "Pinebook_Pro"
-    identifier: "Pinebook_Pro/Skinning_and_case_customization"
+    parent: "Pinebook_Pro/Guides"
+    identifier: "Pinebook_Pro/Guides/Skinning_and_case_customization"
     weight: 
 ---
 

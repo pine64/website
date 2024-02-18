@@ -45,7 +45,7 @@ https://twitter.com/EnderNightLord/status/1377381624610889732["Burning out is on
 * Martijn Braam: https://blog.brixit.nl/do-you-really-want-linux-phones/[Do you really want Linux phones]
 ** https://postmarketos.org/[postmarketOS]
 ** https://blog.brixit.nl/apps/[Martijn's apps]
-** https://wiki.pine64.org/index.php?title=PinePhone_Software_Releases[PinePhone distributions]
+** link:/documentation/PinePhone/Software/Releases/[PinePhone distributions]
 
 == Community engagement 😀
 === April Fools

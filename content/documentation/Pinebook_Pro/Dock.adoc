@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinebook_Pro"
     identifier: "Pinebook_Pro/Dock"
-    weight: 
+    weight: 3
 ---
 
 The *Pinebook Pro USB-C Docking Deck* can be used to extend the link:/documentation/Pinebook_Pro[Pinebook Pro] with additional functionality. It is custom designed for both, physical dimensions and ports, to compliment the Pinebook Pro laptop. It has been tested on several disparate platforms and seems to be fully compatible with Android, Windows, ChromeOS, and GNU/Linux. It may be compatible with Apple systems, but this has yet to be documented.
@@ -15,8 +15,9 @@ The *Pinebook Pro USB-C Docking Deck* can be used to extend the link:/documentat
 
 List of ports available on docking station:
 
+* USB-C Charging Port x1
 * USB 3.0 Ports x3
-* USB-C Ports 3x
+* USB-C 2.0 Ports x2
 * 4K @ 30fps HDMI x1
 * 1080P VGA x1
 * Gigabit Ethernet networking port x 1
@@ -45,6 +46,8 @@ Note that the machine lacks USB-C video. Using android version 11. Video and Eth
 
 Using Manjaro ARM minimal with dwm. Video out, USB, and SD card readers all work. Did not test Ethernet or audio jack. 8/10.
 
+Using devuan ARM & debian ARM, xfce4. Did not test Video out. USB and SD card readers work. Ethernet is working at full speed. The Docking Deck is able to negotiate USB-C 9V 1.6A and convert to 5V 2.5A for the PBP. No charging issues; the PBP makes some noise, but that isn't the docking deck's fault. Audio out is working. Note that adding another audio device obviates the need for the audio device default to be restored on reboot, which did not work on xfce4. 9/10.
+
 *PinePhone Pro Explorer Edition*
 
 With Mobian: jack, Ethernet, SD-card readers, USB-A and -C, VGA fully works, HDMI lacks sound output. Video-out works fully on Mobian. 9/10
@@ -70,7 +73,7 @@ Please note:
 
 === Unable to output to external display
 
-Unplug the dock cable turn 180 degrees reinsert in new orientation.  (Sometimes works for charging the laptop too.)
+Unplug the dock cable turn 180 degrees reinsert in new orientation. (Sometimes works for charging the laptop too.)
 
 == Components
 

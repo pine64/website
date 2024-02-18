@@ -6,9 +6,11 @@ cover:
   image: "/devices/images/pinephone_pro.png"
 images:
   - "/devices/images/pinephone_pro.png"
+aliases:
+- /pinephonepro
 ---
 
-Meet the PinePhone Pro, our flagship smartphone and the best way to experience mainline Linux on a mobile device
+Meet the PinePhone Pro, our flagship smartphone and the best way to experience mainline Linux on a mobile device.
 
 == Features and Specifications
 
@@ -117,6 +119,10 @@ UART via audio jack
 | link:/documentation/PinePhone_Pro/Further_information/Datasheets_schematics_and_certifications/[Datasheets, schematics and certifications]
 |===
 
+== Introduction video
+
+{{< youtube id="wP2-6Z74W44" >}}
+
 == What’s inside?
 
 We learned a lot from working on the original PinePhone. Over the past two years we painstakingly collected and analyzed your feedback and explored all avenues for hardware improvements. The PinePhone Pro is the end result of this journey. It is powered by a Rockchip hexa-core SoC operating at 1.5GHz, and ships paired with 4GB of dual-channel LPDDR4 RAM as well as 128GB of internal eMMC flash storage. It features a high-fidelity 13MP main camera sensor and a 5MP front-facing camera.
@@ -215,7 +221,7 @@ The PinePhone Pro is as open as the original PinePhone. Read more here.
  
 === Will PinePhone Pro’s production be affected by global component shortages?    
 
-It is highly likely that production will be affected by global component shortages at some stage, but it is very difficult for us to determine the degree, given how hard it is to foresee how the situation will unfold in the coming months. Our website features an inventory availability, stock and shipping status page updated on a regular basis.     
+It is highly likely that production will be affected by global component shortages at some stage, but it is very difficult for us to determine the degree, given how hard it is to foresee how the situation will unfold in the coming months. Our website features an inventory availability, stock and shipping status page updated on a regular basis. 
 
 === How repairable is the PinePhone Pro?
 

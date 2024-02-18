@@ -6,7 +6,8 @@ menu:
     title:
     parent: "PinePhone_Pro"
     identifier: "PinePhone_Pro/Revisions"
-    weight: 
+    weight: 97
 ---
 
 * link:Developer_Edition[Developer Edition]
+* Explorer Edition

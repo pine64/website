@@ -4,8 +4,8 @@ draft: false
 menu:
   docs:
     title:
-    parent: "Pinebook_Pro"
-    identifier: "Pinebook_Pro/Additional_hardware"
+    parent: "Pinebook_Pro/Features"
+    identifier: "Pinebook_Pro/Features/Additional_hardware"
     weight: 
 ---
 
@@ -13,7 +13,8 @@ Hardware that is not part of the SoC.
 
 == Battery
 
-* Lithium Polymer Battery (10,000 mAH)
+* Lithium Polymer Battery (10,000 mAh; 9,600 mAh in later batches)
+* Monitored by CW2015 which only measures the current voltage; reported state (charging/discharging), capacity (State-Of-Charge), remaining runtime and current are (poor) estimates
 
 == Display
 
@@ -52,7 +53,7 @@ There is a magnet to detect when the laptop lid is closed, so action can be take
 * Four PCIe lanes, which can not be bifurcated, but can be used with one- or two-lane NVMe cards
 * *M* keyed, though *M*+*B* keyed devices will work too
 * Maximum length for M.2 card is 80mm (M.2 2280). The following sizes will also work: 2230, 2242, 2260
-* Power: 2.5 W continuous, 8.25 W peak momentary
+* Power: 2.5 W (continuous)
 * Does not support SATA M.2 cards
 * Does not support USB M.2 cards
 

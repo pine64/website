@@ -97,7 +97,7 @@ echo 'append earlycon=uart8250,mmio32,0xfe660000 console=ttyS2,1500000n8 root=/d
 cp /mnt/mmcblk0p5/kernel-modules.tar.gz /mnt/mmcblk1p5/root/
 ```
 
-The following lines (upto adding the boot partition to fstab) are optional.  Debian will boot just fine if the boot partition isn't in fstab and you may prefer to manually mount it when you want to change the kernel:-
+The following lines (upto adding the boot partition to fstab) are optional. Debian will boot just fine if the boot partition isn't in fstab and you may prefer to manually mount it when you want to change the kernel:-
 
 `blkid /dev/mmcblk1p4`
 
