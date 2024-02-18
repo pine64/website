@@ -70,7 +70,7 @@ A rust-based dbus service is being https://github.com/m-weigand/pinenote_dbus_se
 
 ==== Xournal++
 
-Works well. The development version and unrelease 1.2 version offers repainting-related optimisations and supports PDF highlighting as well as links. To remove artefacts from the eraser set the eraser cursor's visibility to Never via Preferences -> Stylus -> Eraser Visibility.
+Works well. Version 1.2 version offers repainting-related optimisations and supports PDF highlighting as well as links. To remove artefacts from the eraser set the eraser cursor's visibility to Never via Preferences -> Stylus -> Eraser Visibility. Also, disable GTK3 intertial scroll via Preferences -> Touchscreen -> Touch Scrolling -> Disable GTK's built-in intertial scroll, as this interferes with Xournal++'s internal touch event handling.
 
 Xournal++ uses anti-aliasing and interpolation, which do not work well for the A1 waveform. Mitigations include using either dithering or black-and-white mode in the ebc driver. https://gitlab.com/hrdl/pinenote-shared/-/blob/main/patches/xournalpp/0001-Disable-anti-aliasing-and-use-NEAREST-interpolation-.patch is an outdated patch that used to work well without changing the bw mode.
 
@@ -95,3 +95,8 @@ See https://github.com/0cc4m/pinenote-misc#firefox-hardware-acceleration[0ccam's
 ==== syncthing
 High contrast theme can be found https://github.com/MichiMolle/syncthing-eink[here].
 
+=== Games
+	
+==== Generating crosswords 
+	
+There are some scripts https://git.sr.ht/~scott__/pinenote_crossword_utilities[here] for generating crosswords for the Pinenote from IPUZ files. 

@@ -1,6 +1,6 @@
 ---
 title: "Project"
-draft: false
+draft: true
 menu:
   docs:
     title:

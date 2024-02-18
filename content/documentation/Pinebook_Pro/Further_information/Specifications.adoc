@@ -9,9 +9,7 @@ menu:
     weight: 
 ---
 
-image:/documentation/images/Rockchip_RK3399.png[]
-
-* Based on Rockchip RK3399
+Based on Rockchip RK3399
 
 == CPU Architecture
 

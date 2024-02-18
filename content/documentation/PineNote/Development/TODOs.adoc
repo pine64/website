@@ -12,6 +12,12 @@ menu:
 == Kernel/driver TODOs
 These exist, but they haven't been written down yet.
 
+== Artifacting
+
+There is some artifacting with the current driver that has been difficult to diagnose and resolve. The github issue tracking this is here: https://github.com/PNDeb/pinenote-debian-image/issues/47
+
+Some members of the community have been considering hiring an e-ink professional to consult on this issue. The thought is to hire someone with expertise in developing drivers for e-ink displays to provide advice and pointers, not to do the actual work (because that's expensive).
+
 == Userspace TODOs
 
 The TODOs in this space are organized around what functionality they enable. A table of the important functions that a user may want in the PineNote and a status are listed below:

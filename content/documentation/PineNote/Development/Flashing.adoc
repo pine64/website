@@ -13,87 +13,222 @@ menu:
 
 NOTE: These instructions are directed towards experienced developers only!
 
-This page contains information on flashing software to the link:/documentation/PineNote[PineNote].
+This page contains information on flashing software to the PineNote.
 
-Currently, software can be flashed using rkdeveloptool or from the factory Android installation (UART shell, adb, or fastboot).
+The general process is as follows:
+
+. Take a backup of all important data on the PineNote
+. Modify the partition layout to make space for your desired Linux distribution
+. Instantiate a root filesystem (rootfs) in the new partition space
+. Install your Linux distribution to the boot partition
+. Modify the boot process to boot the Linux distribution by default
+
+There are multiple possible methods of executing these steps, and this page attempts to document all of them.
+
+You can use:
+
+. `rkdeveloptool`, a command line utility for modifying https://en.wikipedia.org/wiki/Rockchip[Rockchip] devices over USB
+. The link:/documentation/PineNote/Development/UART[UART] shell
+. https://en.wikipedia.org/wiki/Android_Debug_Bridge[Android Debug Bridge]
+. https://en.wikipedia.org/wiki/Fastboot[Fastboot]
+
+== Getting rkdeveloptool
+
+Most flashing operations on the PineNote are done through `rkdeveloptool`, a command line utility built on libusb. PINE64 maintains its own fork https://gitlab.com/pine64-org/quartz-bsp/rkdeveloptool[here] that you will need to get. The repo's README contains a list of dependencies (libusb 1.0) and instructions for building the tool.
+
+Installing (not just building) `rkdeveloptool` will configure PAM to elevate privileges where necessary on your system; you can configure this manually as follows:
+
+----
+sudo cp 99-rk-rockusb.rules /etc/udev/rules.d/
+sudo udevadm control --reload
+----
+
+== Entering Maskrom/Rockusb mode
+
+Interfacing with the PineNote over USB using `rkdeveloptool` requires first booting the PineNote into http://opensource.rock-chips.com/wiki_Rockusb[an alternative operating mode] called Maskrom or Rockusb mode.
+
+=== Possible methods
+
+There are three possible methods of entering Maskrom/Rockusb mode:
+
+==== Hardware magnet switch
+
+. Connect the PineNote to your computer via USB and boot the PineNote into Android
+. Locate & identify the small circular marking on the back of the PineNote, in the top right quadrant; have the PineNote pen close at hand, or any other small magnet
+. Hold the PineNote power button to bring up the reboot/shutdown menu; select reboot, then place the PineNote face down with the "eraser" end of the pen (or your magnet) resting on the small circular marking
+
+==== U-Boot terminal
+
+This method requires a link:/documentation/PineNote/Development/UART#usb_passthrough[UART dongle with passthrough] allowing simultaneous UART & USB connections.
+
+It is nice because you can easily switch back & forth between U-Boot and Rockusb without having to physically manipulate the PineNote or its connectors; this is especially helpful when trying to develop U-Boot.
+
+. Connect to the PineNote via UART and USB simultaneously
+. Interrupt the U-Boot startup using `ctrl+c` sent over UART
+. In the U-Boot terminal over UART, run `rockusb 0 mmc 0`
+
+The UART terminal should print `RKUSB` then a spinner will appear. You can exit back to the U-Boot terminal by sending `ctrl+c` again.
+
+==== Shorting test points
+
+If the bootloader is broken/corrupted, you cannot get to Maskrom without opening up the device (it can be opened using spudger and a bit of patience).
+
+Once inside, short TP1301 (GND) and TP1302 (eMMC_D0/FLASH_D0) with a small tweezers, this is how it looks on board view (credit to Caleb):
+
+image:/documentation/PineNote/images/PineNote_Maskrom_TP.png[width=500px]
+
+=== Success
+
+No matter what approach you take, you can tell whether you succeeded by running the `lsusb` command on your computer:
+
+* If you find the entry `2207:0018 Fuzhou Rockchip Electronics Company rk3566_eink` in the list, the process did not succeed; reboot and retry
+* The entry `2207:350a Fuzhou Rockchip Electronics Company` will occur if you detach then reattach the USB-C cable while the PineNote is in Maskrom/Rockusb mode; `rkdeveloptool` won't work and you will have to do a hard reboot (hold down power button for 30 seconds to shutdown)
+* If you find the entry `2207:350a Fuzhou Rockchip Electronics Company USB download gadget` then the process succeeded
+
+You can also look at the output of the `rkdeveloptool list` command:
+
+* If this prints out `No devices in rockusb mode found` the process did not succeed; reboot and retry
+* If this prints out `DevNo=1 Vid=0x2207,Pid=0x350a,LocationID=305 Maskrom` then you probably detached/reattached the USB-C cable while in Maskrom/Rockusb mode and `rkdeveloptool` won't work; perform a hard reboot to fix
+* If this prints out `DevNo=1 Vid=0x2207,Pid=0x350a,LocationID=303 Loader` then the process succeeded
+
+=== Exiting
+
+You can boot the PineNote back into its normal mode of operation by powercycling the PineNote with its hardware power switch, or running the `rkdeveloptool reboot` command. If you used the magnetic switch method be sure to remove the pen/magnet before rebooting.
 
 == Backup
 
-NOTE: A backup of the content of the internal eMMC before anything gets messed is *mandatory*.
+A backup of the content of the internal eMMC before anything gets messed up is '''mandatory'''.
 
-Especially the _waveform_ partition contains data *unique* to your PineNote and is a prime candidate for backup.
+Especially the ''waveform'' partition contains data '''unique''' to your PineNote and is a prime candidate for backup.
 
-But other partitions like U-Boot (need for any operation of the device) or the un-partitioned space at the beginning containing the GPT partition table (and presumably the VCOM setting for the e-ink display and maybe device mac addresses) contains data you may wish to backup.
+Other partitions like U-Boot (need for any operation of the device) or the un-partitioned space at the beginning containing the GPT partition table (and presumably the VCOM setting for the e-ink display and maybe device mac addresses) contain data you may also wish to backup.
 
-Depending of your personal level of data hoarder you may want to backup more than this or even just everything (the large _userdata_ partition is supposed to be able to be repopulated as empty space by Android)
+Depending of your personal level of data hoarder you may want to backup more than this or even just everything (the large ''userdata'' partition is supposed to be able to be repopulated as empty space by Android)
 
 In any case it is easier to restore/extract data from a backup than not having one if you need one.
 
-=== Manually using rkdeveloptool
+This process was developed by Dorian Rudolph, originally described https://github.com/DorianRudolph/pinenotes[here].
 
-Dorian has some nice https://github.com/DorianRudolph/pinenotes[notes regarding the PineNote]
+=== List partitions
 
-Don't forget to install a patched U-Boo for reading beyond 32MB and to respect the 2GB limit/bug of the current rkdeveloptool as per his notes
+First, run `rkdeveloptool list-partitions` to print out your PineNote's partitions to get an idea of what you're dealing with.
+The stock PineNote has a fairly standard https://source.android.com/docs/core/architecture/partitions[Android partition setup]:
 
-Build rkdeveloptool:
 
- git clone https://gitlab.com/pine64-org/quartz-bsp/rkdeveloptool.git
- cd rkdeveloptool
- mkdir build
- cd build
- cmake ..
+|===
+| Number | Name | Size | Purpose
 
-Download mode
-Enter the download mode by placing the pen as pictured below. A magnet placed where the pen's cap is should also work (haven't tried). I guess the dot on the case also indicates the position of the sensor.
+| 0
+|  uboot
+|  4 MB
+|  The https://en.wikipedia.org/wiki/Das_U-Boot[U-Boot] embedded systems bootloader
 
-placing pen on the back
+| 1
+|  trust
+|  4 MB
+|  Secrets that can be encrypted with a key stored in the https://en.wikipedia.org/wiki/Trusted_Platform_Module[TPM]
 
-`lsusb` should now recognize the PineNote as:
+| 2
+|  waveform
+|  2 MB
+|  Important files controlling the e-ink screen's state changes
 
- 2207:350a Fuzhou Rockchip Electronics Company USB download gadget
+| 3
+|  misc
+|  4 MB
+|  Data used by the recovery partition
 
-List partitions:
+| 4
+|  dtbo
+|  4 MB
+|  https://en.wikipedia.org/wiki/Devicetree[Device Tree Blob for Overlay], files describing the PineNote's hardware configuration
 
- > rkdeveloptool list-partitions                   
- #   LBA start (sectors)  LBA end (sectors)  Size (bytes)       Name             
- 00                16384              24575       4194304       uboot
- 01                24576              32767       4194304       trust
- 02                32768              36863       2097152       waveform
- 03                36864              45055       4194304       misc
- 04                45056              53247       4194304       dtbo
- 05                53248              55295       1048576       vbmeta
- 06                55296             137215      41943040       boot
- 07               137216             145407       4194304       security
- 08               145408             407551     134217728       recovery
- 09               407552            1193983     402653184       backup
- 10              1193984            3291135    1073741824       cache
- 11              3291136            3323903      16777216       metadata
- 12              3323904            9697279    3263168512       super
- 13              9697280            9730047      16777216       logo
- 14              9730048            9861119      67108864       device
- 15              9861120          241827775  118766927872       userdata
+| 5
+|  vbmeta
+|  1 MB
+|  Data required for https://android.googlesource.com/platform/external/avb/+/master/README.md[verified boot]
 
-WARNING: this process is very new! Proceed at your own risk.
+| 6
+|  boot
+|  42 MB
+|  The kernel image & ramdisk to boot
+
+| 7
+|  security
+|  4 MB
+|  
+
+| 8
+|  recovery
+|  134 MB
+|  The recovery image, booted during Android updates
+
+| 9
+|  backup
+|  400 MB
+|  
+
+| 10
+|  cache
+|  1 GB
+|  Stores temporary data; can be used to install a minimal Linux distribution!
+
+| 11
+|  metadata
+|  17 MB
+|  Used for disk encryption
+
+| 12
+|  super
+|  3.25 GB
+|  Android itself is installed here
+
+| 13
+|  logo
+|  17 MB
+|  Splash image displayed during boot
+
+| 14
+|  device
+|  67 MB
+|  
+
+| 15
+|  userdata
+|  119 GB
+|  The big one; user-installed Android apps and files live here
+|===
+
+=== Patch U-Boot
+
+Before we can back up our partitions, we have a problem to solve. The version of U-Boot installed on the stock PineNote contains a bug where it can't dump partitions beyond 32 MB (above that limit all bytes in the dump are just `0xCC`), meaning the PineNote must be flashed with a fixed version of U-Boot before it is possible to take a backup of the larger partitions. It is possible to extract and modify the U-Boot image from your PineNote if you're interested in some light reverse-engineering (following Dorian's notes), or you can simply download a patched U-Boot image directly https://github.com/DorianRudolph/pinenotes/blob/main/static/uboot_patched.img[here].
+
+Once you've acquired a patched U-Boot image, run:
+
+. `rkdeveloptool read-partition uboot uboot_backup.img`
+. `rkdeveloptool write-partition uboot uboot_patched.img`
+. `rkdeveloptool reboot`
+
+=== Taking the backup
+
+With U-Boot patched, you can back up every partition except for super and userdata; run:
+
+`rkdeveloptool read-partition partition_name partition_name_backup.img`
+
+Unfortunately the super and userdata partitions run into a second limitation preventing dumping partitions larger than 2 GB, this time originating in `rkdeveloptool` itself. This means if you have a large number of documents in the Android userdata partition they might not all make it into the backup. If you don't have many documents (or don't care about losing them) this should not be a problem. If you do have a lot of documents, workarounds include:
+
+* A possible patch written by Thomas exists https://github.com/tpwrules/nixos-pinenote/blob/96d2c9158edb9da59afcb952cc864fada18382f9/nix/rkdeveloptool/0001-fix-large-dumps.patch[here] but has not yet been upstreamed; consider investigating how to get the patch tested & upstreamed, or just apply it to your own local copy of `rkdeveloptool`
+* Use https://github.com/talpadk/pinenote-backup[this] Python script written by Visti Andresen (talpadk) to automatically backup your entire partition by splitting reads into 2 GB chunks
 
 See https://github.com/m-weigand/pinenote-debian-recipes/releases/tag/v0.1[instructions on this artifact]. It will instruct you on extracting the rootfs into an empty ext4 partition. This can be done from Linux or Android. Further instructions on building your own rootfs https://github.com/m-weigand/pinenote-debian-recipes[can be found here].
 
-=== Automated backup using a script and rkdeveloptool
-
-https://github.com/talpadk/pinenote-backup[pinenote-backup] is a python script for detecting the partitions and automating the backup of partitions or the whole disk.
-
-It also requires a patched u-boot but automatically handles the 2GB limit by splitting up larger reads into smaller ones
-
-=== Using the factory Android installation
-
-TODO
-
 === Using a user installed Linux
 
-A Linux installed to the cache partition should be able to easily backup everything over WiFi or to a USB stick/disk using _dd_.
+A Linux installed to the cache partition should be able to easily backup everything over WiFi or to a USB stick/disk using ''dd''.
 
 However the user would need to backup the cache partition themself (if they want that).
 
-And more importantly they would only be getting the backup _after_ they started playing with the content of the eMMC.
+And more importantly they would only be getting the backup ''after'' they started playing with the content of the eMMC.
 
 == Side-by-side setup
 
@@ -101,50 +236,23 @@ It is possible to set up a partition for mainline development without disturbing
 
 === Without Repartitioning
 
-The recommended partition for this is **mmcblk0p11** aka **/cache**. It is large and already formatted as **ext4**, so it is readable from U-Boot. Here are some general steps:
+The recommended partition for this is _mmcblk0p11_ aka _/cache_. It is large and already formatted as _ext4_, so it is readable from U-Boot. Here are some general steps:
 
-. From the UART or adb shell, set up your chroot in **/cache**. I used the Alpine Linux rootfs tarball.
-. Copy in your kernel and DTB, using for example **scp** or **wget** inside the chroot.
+. From the UART or adb shell, set up your chroot in _/cache_. I used the Alpine Linux rootfs tarball.
+. Copy in your kernel and DTB, using for example _scp_ or _wget_ inside the chroot.
 . Finally, create and boot an `extlinux.conf` as described below.
 
 === With Repartitioning
 
-It is possible to shrink the **userdata** partition, and create a new partition at the end for use with mainline Linux. This provides much more space than **cache**. However, because **userdata** is formatted with **f2fs**, and that filesystem cannot be shrunk, resizing the partition requires wiping **userdata**.
+It is possible to shrink the _userdata_ partition, and create a new partition at the end for use with mainline Linux. This provides much more space than _cache_. However, because _userdata_ is formatted with _f2fs_, and that filesystem cannot be shrunk, resizing the partition requires wiping _userdata_.
 
 . Back up any necessary files from userdata
-. Boot to a mainline kernel from **mmcblk0p11**, either using that partition as rootfs (see above), or using an initramfs with repartitioning tools
-. Modify the partition table with your favorite tool, e.g. **fdisk**, **gdisk**, or **parted**
-. Reboot into **fastboot** and wipe **userdata**.
+. Boot to a mainline kernel from _mmcblk0p11_, either using that partition as rootfs (see above), or using an initramfs with repartitioning tools
+. Modify the partition table with your favorite tool, e.g. _fdisk_, _gdisk_, or _parted_
+. Reboot into _fastboot_ and wipe _userdata_.
 . Reboot into Android, where you can now chroot in and install your favorite distribution to the new partition.
 
 == Using rkdeveloptool
-
-rkdeveloptool is a command line utility built on libusb.
-
-=== Downloading and Building rkdeveloptool
-
-PINE64 develops https://gitlab.com/pine64-org/quartz-bsp/rkdeveloptool[its own updated fork of rkdeveloptool on GitLab].
-
-You will need to have libusb 1.0, its development headers and scdoc installed.
-
-```
-git clone https://gitlab.com/pine64-org/quartz-bsp/rkdeveloptool.git
-cd rkdeveloptool
-mkdir build
-cd build
-cmake ..
-```
-
-This sets up all the build files. You can then compile with `make` inside the build directory.
-
-After you're done, you'll likely also need to install the udev rules, or else your user won't have permission to access the USB devices:
-
-```
-sudo cp 99-rk-rockusb.rules /etc/udev/rules.d/
-sudo udevadm control --reload
-```
-
-Copying the udev rules is also performed automatically when you `make install`.
 
 === Building Downstream U-Boot
 
@@ -152,21 +260,21 @@ While in maskrom mode, we need to have a u-boot to download onto the device for 
 
 You also need to install Python and pyelftools.
 
-Note that rkbin is a &gt;5GB download! This will take some time to clone and process the deltas.
+NOTE: The rkbin is a &gt;5GB download! This will take some time to clone and process the deltas.
 
-```
+----
 git clone -b quartz64 https://gitlab.com/pgwipeout/u-boot-rockchip.git
 git clone -b rkbin https://github.com/JeffyCN/rockchip_mirrors.git rkbin
 cd u-boot-rockchip
-. If using Arch Linux, export CROSS_COMPILE=aarch64-linux-gnu-
+# If using Arch Linux, export CROSS_COMPILE=aarch64-linux-gnu-
 export CROSS_COMPILE=aarch64-none-linux-gnu-
 make rk3566-quartz64_defconfig
 ./make.sh
-```
+----
 
 In the current version (current as of 2022-01-02), there might have to be made a change to one line to get a clean compilation:
 
-```
+----
 diff --git a/lib/avb/libavb/avb_slot_verify.c b/lib/avb/libavb/avb_slot_verify.c
 index 123701fc3b..64a1ce6450 100644
 --- a/lib/avb/libavb/avb_slot_verify.c
@@ -180,91 +288,43 @@ index 123701fc3b..64a1ce6450 100644
    uint64_t image_size;
    size_t expected_digest_len = 0;
    uint8_t expected_digest_buf[AVB_SHA512_DIGEST_SIZE];
-```
+----
 
 For systems where the global python executable points to python2, compilation fails with an error related to pyelftools not being installed (even if it is). To fix this:
 
-```
+----
 diff --git a/make.sh b/make.sh
 index 2bba05b4e4..cfe5b0afd5 100755
 --- a/make.sh
 +++ b/make.sh
 @@ -758,7 +758,7 @@ function pack_fit_image()
         fi
-
+ 
         if [ "${ARM64_TRUSTZONE}" == "y" ]; then
--               if !python -c "import elftools" ; then
-+               if !python3 -c "import elftools" ; then
+-               if ! python -c "import elftools" ; then
++               if ! python3 -c "import elftools" ; then
                         echo "ERROR: No python 'pyelftools', please: pip install pyelftools"
                         exit 1
                 fi
-```
+----
 
-=== Entering Maskrom/Rockusb Mode
-
-There are three ways to get into Maskrom/Rockusb mode:
-
-====  The easy way
-
-. Flip the device around so that the display faces down
-. Lay the pen on the right side, with its tip pointing towards the speaker grill, and its magnet pointing towards the upper right corner of the label on the back (or place the magnetic cap from the pen on the spot marked on the back).
-. Turn the device on and wait for it to show up in `lsusb`. It should now be in Loader mode, according to `rkdeveloptool list-devices` (note that _Loader_ here indicates U-Boot's Rockusb; separately, booting with an erased eMMC displays _Maskrom_ (not _Loader_) from the RK3566).
-. Unplug the device and plug it back in. It should now be in Rockusb mode.
-
-This can be a bit fiddly to get right and may need a few tries.
-
-==== The u-boot way
-
-. Interrupt the u-boot startup using _ctrl-c_ (while attached using an UART dongle)
-. While in u-boot use the command `rockusb 0 mmc 0` to start Rockusb mode.
-
-One benefit from this is, that if you have an UART dongle that allows to simultaneous having an UART and USB connection, there is no need to plug and unplug cables and flipping the PineNote around and placing magnets.
-
-This is especially helpful when changing back and forth between U-Boot and Rockusb, for instance when trying to develop u-boot.
-
-==== Shorting test points
-
-If the bootloader is broken/corrupted, you cannot get to Maskrom without opening up the device (it can be opened using spudger and a bit of patience).
-
-Once inside, short TP1301 (GND) and TP1302 (eMMC_D0/FLASH_D0) with a small tweezers, this is how it looks on board view (credit to Caleb):
-
-image:/documentation/images/PineNote_Maskrom_TP.png[width=500]
-
-Then plug the device to the computer and if you see the device with VID=2207/PID=350a then it should be in Maskrom mode, you can verify by typing `rkdeveloptool list-devices`.
-
- Jan 07 15:04:13 melttower kernel: usb 1-14: New USB device found, idVendor=2207, idProduct=350a, bcdDevice= 1.00
-Jan 07 15:04:13 melttower kernel: usb 1-14: New USB device strings: Mfr=0, Product=0, SerialNumber=0
-
-$ rkdeveloptool list-devices
-DevNo=1 Vid=0x2207,Pid=0x350a,LocationID=10e    Maskrom
-
-If nothing shows up, you can try to hold down the power button for 5 seconds and then try again.
-
-=== Running rkdeveloptool
-
-First, you'll want to make sure the device you've connected is in maskrom mode:
-
- ./rkdeveloptool list
-
-It should output something like "_DevNo=1 Vid=0x2207,Pid=0x350a,LocationID=202 Maskrom_". If it doesn't, see link:/documentation/PineNote/Development#Entering_Maskrom_Mode[PineNote Development].
-
-You can now download u-boot onto it:
+You can now download u-boot onto the PineNote:
 
  ./rkdeveloptool boot ../u-boot-rockchip/rk356x_spl_loader_v1.08.111.bin
 
-This should output "_Downloading bootloader succeeded_".
+This should output "''Downloading bootloader succeeded''".
 
 We can now verify that this worked using e.g. the "read flash info" command:
 
  ./rkdeveloptool read-flash-info
 
-IMPORTANT: *TODO:* Section needs to be finished
+NOTE: Section needs to be finished
 
 === Creating a mainline boot image
 
 You can create a filesystem image that replaces the Android boot or recovery partition by doing roughly the following:
 
-. Erase boot and dtbo with rkdeveloptool or fastboot (back them up first!)
+. Erase boot and dtbo with rkdeveloptool or fastboot (back them up first!!!)
 . Create an ext2 partition image and mount it (fallocate, mkfs.ext2)
 . Build your mainline kernel
 . Copy the kernel, dtb and an initramfs to the root of the mounted image (use any old postmarketOS initramfs)
@@ -273,8 +333,7 @@ You can create a filesystem image that replaces the Android boot or recovery par
 
 == Using fastboot
 
-Follow the steps for link:/documentation/PineNote/Development/Flashing#Creating_a_mainline_boot_image[Creating a mainline boot image], but instead of flashing it with _rkdeveloptool_, use _fastboot_. You can enter fastboot in either of two ways:
+Follow the steps for link:#creating_a_mainline_boot_image[Creating a mainline boot image], but instead of flashing it with ''rkdeveloptool'', use ''fastboot''. You can enter fastboot in either of two ways:
 
 * Use "reboot bootloader" from adb or a UART console or
 * get a U-Boot prompt and run `fastboot usb 0`.
-
