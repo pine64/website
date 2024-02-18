@@ -301,9 +301,9 @@ If you are using a Pico or Bluepill as your serial interface, open another termi
 
 Re-apply power to the Ox64.
 
-On the `ttyACM0` console you will see Linux booting up. When prompted, log in as `root` with no password. In case card is missing or empty, you'll get `Card did not respond to voltage select! : -110` error.
+On the `ttyACM0` console you will see Linux booting up. When prompted, log in as `root` with no password. In case the SD card is missing or empty, you'll get a `Card did not respond to voltage select! : -110` error.
 
-On the `ttACM1` console you'll see following log, until the sytem is fully loaded.
+On the `ttyACM1` console you'll see following log, until the sytem is fully loaded.
 
  [I][MBOX] Mailbox IRQ Stats:
  [I][MBOX] Peripheral SDH (33): 0
@@ -317,7 +317,7 @@ The simplest way to connect is to run the following command from the Linux conso
 
  blctl connect_ap YourSSID YourPassword
 
-Wait for it to connect (if you're already watching the M0 console on `/dev/ttyACM1` it should tell you there), then run the following command from the Linux console.
+Wait for it to connect (if you're monitoring the M0 console on `/dev/ttyACM1` it should tell you when it's done), then run the following command from the Linux console.
 
  udhcpc -i bleth0
  
@@ -353,7 +353,7 @@ Mount the boot partition and make the required modifications.
  sudo mount /dev/sdb2 /mnt
  sudo cp ImageNuttx /mnt/
 
- cat <<EOF | sudo tee -a /mnt/extlinux/extlinux.conf
+ sudo tee -a /mnt/extlinux/extlinux.conf <<EOF
  LABEL Pine64 0X64 Nuttx
         KERNEL ../ImageNuttx
         FDT ../bl808-pine64-ox64.dtb
@@ -367,7 +367,7 @@ Mount the rootfs and make the required modifications.
  sudo mount /dev/sdb3 /mnt
  sudo cp ImageNuttx /mnt/boot/
 
- cat <<EOF | sudo tee -a /mnt/boot/extlinux/extlinux.conf
+ sudo tee -a /mnt/boot/extlinux/extlinux.conf <<EOF
  LABEL Pine64 0X64 Nuttx
         KERNEL ../ImageNuttx
         FDT ../bl808-pine64-ox64.dtb
