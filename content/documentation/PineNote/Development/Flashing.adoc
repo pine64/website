@@ -272,6 +272,8 @@ make rk3566-quartz64_defconfig
 ./make.sh
 ----
 
+[quote]
+____
 In the current version (current as of 2022-01-02), there might have to be made a change to one line to get a clean compilation:
 
 ----
@@ -307,6 +309,7 @@ index 2bba05b4e4..cfe5b0afd5 100755
                         exit 1
                 fi
 ----
+____
 
 You can now download u-boot onto the PineNote:
 
