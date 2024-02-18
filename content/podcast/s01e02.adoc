@@ -27,8 +27,8 @@ In the second episode of the PineTalk Ezra and Peter talk about to Dalton Durst,
 * https://daltondur.st/[Dalton Durst] is the Development Manager of the https://ubports.com/[UBports project], which picked up https://ubuntu-touch.io/[Ubuntu Touch] when Canonical decided to discontinue it.
 * Context: https://ubuntu.com/blog/growing-ubuntu-for-cloud-and-iot-rather-than-phone-and-convergence[Canonicals announcement to discontinue Unity 8 development (and thus Ubuntu for Devices/Ubuntu Touch)]
 * PinePhone Prototypes and related hardware:
-** https://wiki.pine64.org/index.php?title=Project_Anakin[Project Anakin]
-** https://wiki.pine64.org/wiki/Project_Don%27t_be_evil[Project Don’t be evil]
+** link:/documentation/PinePhone/Revisions/Project_Anakin/[Project Anakin]
+** link:/documentation/PinePhone/Revisions/Project_Dont_be_evil/[Project Don’t be evil]
 ** https://pine64.com/product/pine64-air-mouse-with-keyboard/?v=0446c16e2e66[Airmouse]
 * How to help:
 ** Translations: https://docs.ubports.com/en/latest/

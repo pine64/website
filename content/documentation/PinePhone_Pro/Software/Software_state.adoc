@@ -4,8 +4,8 @@ draft: false
 menu:
   docs:
     title:
-    parent: "PinePhone_Pro/Various"
-    identifier: "PinePhone_Pro/Various/Software_state"
+    parent: "PinePhone_Pro/Software"
+    identifier: "PinePhone_Pro/Software/Software_state"
     weight: 
 ---
 
@@ -98,7 +98,7 @@ TIP: The software is *written by the community*, any contributions towards the c
 
 | `WiFi`
 2+| Working
-| WiFi is expected to work. Some remaining tasks, such as "monitor mode" (hint: likely not supported by the hardware). *Note:* Proprietary firmware
+| WiFi is expected to work. The firmware does not support monitor mode and package injection. *Note:* Proprietary firmware
 
 | `Bluetooth`
 2+| WIP

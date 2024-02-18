@@ -44,7 +44,7 @@ In the seventh episode of PineTalk, the special treat is placed at the end of th
 === Listener Questions
 
 * https://social.librem.one/@leimon[@leimon] asks: What would be your top three recommendations of which OS to run on it and why?
-** PINE64 Wiki: https://wiki.pine64.org/index.php?title=PinePhone_Software_Releases[PinePhone Software Releases]
+** PINE64 docs: link:/documentation/PinePhone/Software/Releases/[PinePhone Software Releases]
 
 * Anonymous (who prefers to remain private) asked via email:
 ** Is the PinePhone convergence bar meant to be used only when the phone is fully charged and without the bar plugged into a power source? Or is it okay to plug the convergence bar into a power source when the phone is docked?

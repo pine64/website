@@ -82,8 +82,8 @@ https://www.pine64.org/2021/05/15/may-update-connection-established/[PINE64 Comm
 
 ==== LoraWAN
 
-* https://wiki.pine64.org/wiki/Pinedio[PINE64 Pinedio]
-* Partnership with RAK Wireless: https://wiki.pine64.org/wiki/Pinedio[Let's make MiRAKles happen]
+* link:/documentation/Pinedio/[PINE64 Pinedio]
+* Partnership with RAK Wireless: link:/documentation/Pinedio/[Let's make MiRAKles happen]
 
 ==== Our Opinions On LoRaWAN
 

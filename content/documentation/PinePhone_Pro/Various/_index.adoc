@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PinePhone_Pro"
     identifier: "PinePhone_Pro/Various"
-    weight: 
+    weight: 98
 ---
 
 * link:Software_state[Software state]

@@ -61,7 +61,7 @@ Peter:
 
 ==== Quartz64!
 
-* https://wiki.pine64.org/wiki/Quartz64_Development[Quartz64 Development Status]
+* Docs: link:/documentation/Quartz64/[Quartz64]
 
 ==== PineDio
 
@@ -84,7 +84,7 @@ China, Open Harmony OS and plans for PP Pro, see https://mastodon.social/@Ravlyx
 
 Current state of PinePhone distributions, see https://social.tchncs.de/@cybercow/106563105463331531[here].
 
-* PINE64 Wiki: https://wiki.pine64.org/index.php?title=PinePhone_Software_Releases[PinePhone Software Releases]
+* PINE64 docs: link:/documentation/PinePhone/Software/Releases/[PinePhone Software Releases]
 
 Hypothetical Sxmo Distributions, see https://twitter.com/oilythangs/status/1409341525125865478[here].
 
