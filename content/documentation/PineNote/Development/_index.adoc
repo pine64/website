@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineNote"
     identifier: "PineNote/Development"
-    weight: 
+    weight: 5
 ---
 
 This article seeks to provide general mainline Linux development information for the link:/documentation/PineNote[PineNote].

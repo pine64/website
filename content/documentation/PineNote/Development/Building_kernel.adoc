@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineNote/Development"
     identifier: "PineNote/Development/Building_kernel"
-    weight: 
+    weight: 1
 ---
 
 This page contains information on how to build a linux kernel for the PineNote.

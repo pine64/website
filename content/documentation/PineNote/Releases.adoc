@@ -1,12 +1,12 @@
 ---
-title: "Software Releases"
+title: "Releases"
 draft: false
 menu:
   docs:
     title:
     parent: "PineNote"
     identifier: "PineNote/Releases"
-    weight: 3
+    weight: 4
 ---
 
 This page contains a list of all available operating systems for the link:/documentation/PineNote[PineNote] in alphabetical order.

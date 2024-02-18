@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineNote/Development"
     identifier: "PineNote/Development/Flashing"
-    weight: 
+    weight: 2
 ---
 
 {{% docs/construction %}}
@@ -97,13 +97,13 @@ You can boot the PineNote back into its normal mode of operation by powercycling
 
 == Backup
 
-A backup of the content of the internal eMMC before anything gets messed up is '''mandatory'''.
+A backup of the content of the internal eMMC before anything gets messed up is **mandatory**.
 
-Especially the ''waveform'' partition contains data '''unique''' to your PineNote and is a prime candidate for backup.
+Especially the _waveform_ partition contains data **unique** to your PineNote and is a prime candidate for backup.
 
 Other partitions like U-Boot (need for any operation of the device) or the un-partitioned space at the beginning containing the GPT partition table (and presumably the VCOM setting for the e-ink display and maybe device mac addresses) contain data you may also wish to backup.
 
-Depending of your personal level of data hoarder you may want to backup more than this or even just everything (the large ''userdata'' partition is supposed to be able to be repopulated as empty space by Android)
+Depending of your personal level of data hoarder you may want to backup more than this or even just everything (the large _userdata_ partition is supposed to be able to be repopulated as empty space by Android)
 
 In any case it is easier to restore/extract data from a backup than not having one if you need one.
 
@@ -224,11 +224,11 @@ See https://github.com/m-weigand/pinenote-debian-recipes/releases/tag/v0.1[instr
 
 === Using a user installed Linux
 
-A Linux installed to the cache partition should be able to easily backup everything over WiFi or to a USB stick/disk using ''dd''.
+A Linux installed to the cache partition should be able to easily backup everything over WiFi or to a USB stick/disk using _dd_.
 
 However the user would need to backup the cache partition themself (if they want that).
 
-And more importantly they would only be getting the backup ''after'' they started playing with the content of the eMMC.
+And more importantly they would only be getting the backup _after_ they started playing with the content of the eMMC.
 
 == Side-by-side setup
 
@@ -315,7 +315,7 @@ You can now download u-boot onto the PineNote:
 
  ./rkdeveloptool boot ../u-boot-rockchip/rk356x_spl_loader_v1.08.111.bin
 
-This should output "''Downloading bootloader succeeded''".
+This should output "_Downloading bootloader succeeded_".
 
 We can now verify that this worked using e.g. the "read flash info" command:
 
@@ -336,7 +336,7 @@ You can create a filesystem image that replaces the Android boot or recovery par
 
 == Using fastboot
 
-Follow the steps for link:#creating_a_mainline_boot_image[Creating a mainline boot image], but instead of flashing it with ''rkdeveloptool'', use ''fastboot''. You can enter fastboot in either of two ways:
+Follow the steps for link:#creating_a_mainline_boot_image[Creating a mainline boot image], but instead of flashing it with _rkdeveloptool_, use _fastboot_. You can enter fastboot in either of two ways:
 
 * Use "reboot bootloader" from adb or a UART console or
 * get a U-Boot prompt and run `fastboot usb 0`.

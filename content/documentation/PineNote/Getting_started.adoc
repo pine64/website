@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineNote"
     identifier: "PineNote/Getting_started"
-    weight: 
+    weight: 2
 ---
 
 {{% docs/construction %}}
@@ -59,7 +59,7 @@ As of July 2022, the Pinenote ships with the following items in the box:
 * USB-c to micro-b cable (for stylus)
 * UART dongle
 
-== "Table of Contents" for Linux installation pages
+== Linux installation pages
 
 === Building the Kernel
 

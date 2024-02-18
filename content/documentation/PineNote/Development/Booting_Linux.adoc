@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineNote/Development"
     identifier: "PineNote/Development/Booting_Linux"
-    weight: 
+    weight: 3
 ---
 
 To boot Linux, the stock U-Boot has to be patched.

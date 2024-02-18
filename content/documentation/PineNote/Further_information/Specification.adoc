@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineNote/Further_information"
     identifier: "PineNote/Further_information/Specification"
-    weight: 
+    weight: 1
 ---
 
 image:/documentation/images/PineNote_Pen_function.jpg[width=300]

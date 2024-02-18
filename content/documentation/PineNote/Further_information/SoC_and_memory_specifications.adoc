@@ -6,12 +6,10 @@ menu:
     title:
     parent: "PineNote/Further_information"
     identifier: "PineNote/Further_information/SoC_and_memory_specifications"
-    weight: 
+    weight: 2
 ---
 
-* Based on https://www.rock-chips.com/a/en/products/RK35_Series/2021/0113/1274.html[Rockchip RK3566]
-
-image:/documentation/images/RK3566_icon.png[right,title="right"]
+The PineNote is based on the https://www.rock-chips.com/a/en/products/RK35_Series/2021/0113/1274.html[Rockchip RK3566].
 
 == CPU Architecture
 

@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineNote/Development"
     identifier: "PineNote/Development/UART"
-    weight: 
+    weight: 4
 ---
 
 image::/documentation/PineNote/images/Pinenote-uart-dongle.jpeg[Basic non-stock PineNote UART dongle,title="Basic non-stock PineNote UART dongle",width=400]

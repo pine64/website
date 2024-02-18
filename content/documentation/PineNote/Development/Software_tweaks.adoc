@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineNote/Development"
     identifier: "PineNote/Development/Software_tweaks"
-    weight: 
+    weight: 99
 ---
 
 == Fixing Bluetooth

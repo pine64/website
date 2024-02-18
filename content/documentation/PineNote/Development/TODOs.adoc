@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineNote/Development"
     identifier: "PineNote/Development/TODOs"
-    weight: 
+    weight: 5
 ---
 
 == Kernel/driver TODOs

@@ -6,11 +6,7 @@ menu:
     title:
     parent: "PineNote"
     identifier: "PineNote/Further_information"
-    weight: 
+    weight: 99
 ---
 
-* link:Resources[]
-* link:Datasheets[]
-* link:Schematics_and_certifications[Schematics and certifications]
-* link:SoC_and_memory_specifications[SoC and memory specifications]
-* link:Specification[]
+{{< children >}}

@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineNote/Development"
     identifier: "PineNote/Development/Apps"
-    weight: 
+    weight: 6
 ---
 
 This page lists applications and tweaks for the link:/documentation/PineNote[PineNote].

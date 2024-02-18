@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineNote"
     identifier: "PineNote/Development_efforts"
-    weight: 2
+    weight: 3
 ---
 
 The following page discusses the development efforts for the PineNote:

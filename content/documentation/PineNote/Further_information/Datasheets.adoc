@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineNote/Further_information"
     identifier: "PineNote/Further_information/Datasheets"
-    weight: 
+    weight: 4
 ---
 
 Rockchip RK3566 SoC information:

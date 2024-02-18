@@ -6,10 +6,10 @@ menu:
     title:
     parent: "PineNote/Further_information"
     identifier: "PineNote/Further_information/Schematics_and_certifications"
-    weight: 
+    weight: 3
 ---
 
-=== PineNote Developer kit version
+== PineNote Developer kit version
 
 Version v1.2 is the PineNote production version that was sold through the Pines64 store
 
