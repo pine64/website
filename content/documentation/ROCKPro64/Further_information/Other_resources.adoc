@@ -14,6 +14,10 @@ menu:
 * https://github.com/rockchip-linux[Rockchip Linux GitHub Repo]
 * http://opensource.rock-chips.com/[Rockchip Open Source Wiki]
 * ExplainingComputers have a video review https://www.youtube.com/watch?v=CeoNHGFN_30[of the RockPro64 here, including linux first boot.]
-* link:/documentation/ROCKPro64/Software/Installing_Arch_Linux_ARM[Installing Arch Linux ARM]
-* link:/documentation/ROCKPro64/Powering_from_an_ATX_supply[Powering from an ATX supply]
 
+== Useful articles and blog posts
+
+If you want to dive in to the ecosystem, here's a short list of various articles and blog posts that can help you set up your soft- or hardware development environment.
+
+* https://stikonas.eu/wordpress/2019/09/15/blobless-boot-with-rockpro64/[Blobless boot with RockPro64 by Andrius Štikonas]
+* https://marcin.juszkiewicz.com.pl/2020/06/17/ebbr-on-rockpro64/[EBBR on RockPro64 by Marcin Juszkiewicz]

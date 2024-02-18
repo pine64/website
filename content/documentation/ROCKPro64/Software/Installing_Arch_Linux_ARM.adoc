@@ -35,7 +35,7 @@ Next, export the path to your compiled BL31 in the shell you'll build u-boot in.
 
  $ export BL3/path/to/arm-trusted-firmware/build/rk3399/release/bl31/bl31.elf
 
-Build U-Boot:
+Build U-Boot (you may need to install additional packages to successfully compile, such as `bc`, `python-pyelftools`, or `swig`):
 
  $ make mrproper
  $ make rockpro64-rk3399_defconfig

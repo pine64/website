@@ -6,8 +6,7 @@ menu:
     title:
     parent: "PineTime"
     identifier: "PineTime/Flashing"
-    weight: 
+    weight: 3
 ---
 
-* link:External_flash_partitioning[External flash partitioning]
-* link:SD_MCUBoot[SD MCUBoot]
+{{< children >}}

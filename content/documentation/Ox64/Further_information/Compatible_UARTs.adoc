@@ -19,6 +19,6 @@ The below devices have been tested and verified as working:
 * Stand-alone CP2102 dongle works at 115200 baud. Brand used was HiLetgo.
 * STM32F401 BlackPill - running the https://github.com/blackmagic-debug/blackmagic/tree/main/src/platforms/blackpillv2[Black Magic Debug] firmware
 * STM32F103C8T6 BluePill - running Black Magic Debug.
+* STM32F103C8T6 BluePill - running link:/documentation/Ox64/Software/Flashing/#optional_preparing_serial_uart_adapter_stm32f103c8t6[BluePill Serial Monster] 
 * Some UART adapters based on the FT232H (note that the FT232RL does not work, and neither does the Pine 64 JTAG)
 * Some CH340G based adapters work and some don't.
-

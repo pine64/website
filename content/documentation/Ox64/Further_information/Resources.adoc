@@ -27,6 +27,9 @@ Ox64 BL808 RISC-V SBC articles by https://lupyuen.codeberg.page/[Lup Yuen LEE]:
 * https://lupyuen.codeberg.page/articles/plic3.html[Fixing the UART Interrupt and Platform-Level Interrupt Controller]
 * https://www.hackster.io/lupyuen/8-risc-v-sbc-on-a-real-time-operating-system-ox64-nuttx-474358[$8 RISC-V SBC on a Real-Time Operating System: Ox64 + NuttX]
 * https://lupyuen.codeberg.page/articles/nim.html[Nim on a Real-Time Operating System: Apache NuttX RTOS + Ox64 BL808 SBC]
+* https://lupyuen.codeberg.page/articles/tinyemu2.html[Emulate Ox64 BL808 in the Web Browser: Experiments with TinyEMU RISC-V Emulator and Apache NuttX RTOS]
+* https://lupyuen.codeberg.page/articles/tinyemu3.html[Automated Testing with Ox64 BL808 Emulator (Apache NuttX RTOS)]
+* https://lupyuen.codeberg.page/articles/quickjs.html[QuickJS JavaScript Engine on a Real-Time Operating System (Apache NuttX RTOS)]
 
 Git repositories:
 

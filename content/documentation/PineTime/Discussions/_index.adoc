@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineTime"
     identifier: "PineTime/Discussions"
-    weight: 
+    weight: 8
 ---
 
-* link:Bootloader_improvements[Bootloader improvements]
+{{< children >}}

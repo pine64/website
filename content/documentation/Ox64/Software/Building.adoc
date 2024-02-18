@@ -48,7 +48,6 @@ Initiate the build process, but first make sure that your `PATH` variable contai
 
 Buildroot will output to the `~/ox64/buildroot/output/images` directory. 
 
-
 == Optional: create a combined SoC image
 
 Use the following commands to combine `m0_lowload_bl808_m0.bin`, `d0_lowload_bl808_d0.bin`, and `bl808-firmware.bin` into a single image. This is mainly useful for troubleshooting (e. g. when using DevCube v1.8.4 or later for flashing process).

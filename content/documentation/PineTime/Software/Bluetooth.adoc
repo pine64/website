@@ -4,8 +4,8 @@ draft: false
 menu:
   docs:
     title:
-    parent: "PineTime"
-    identifier: "PineTime/Bluetooth"
+    parent: "PineTime/Software"
+    identifier: "PineTime/Software/Bluetooth"
     weight: 
 ---
 

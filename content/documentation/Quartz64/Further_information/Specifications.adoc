@@ -57,7 +57,7 @@ image:/documentation/images/RK3566_icon.png[right,title="right"]
 * USB
 ** Model A: 2 USB 2.0 host ports, 1 USB 2.0 OTG port, 1 USB 3.0 host port
 ** Model B: 1 USB 2.0 host port, 1 USB 2.0 OTG port, 1 USB 3.0 host port
-* one native SATA 3.0 6Gb/s Port (only on model A, shared with USB 3.0 host port)
+* one native SATA 3.0 6Gb/s Port (only on model A, shared with USB 3.0 host port) (removed in newer revisions due to electrical signalling issues it caused)
 * optional eMMC module from 8GB up to 128GB
 * 64 Mbit (8 MByte) SPI flash (Model B only), part number *25Q64DWZPIG* in the schematic
 

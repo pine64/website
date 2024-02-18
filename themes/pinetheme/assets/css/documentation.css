@@ -56,6 +56,10 @@
     border-left: 1px solid #fafafa;
     margin-left: 10px;
 }
+#doc-nav .sidebar-nav-backlink {
+    font-weight: 500;
+    padding: 6px 4px;
+}
 #doc-nav .sidebar-nav-item {
     font-weight: 500;
     padding: 6px 4px;

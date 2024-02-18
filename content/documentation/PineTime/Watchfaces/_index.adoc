@@ -6,8 +6,7 @@ menu:
     title:
     parent: "PineTime"
     identifier: "PineTime/Watchfaces"
-    weight: 
+    weight: 4
 ---
 
-* link:Custom_watchface[Custom watchface]
-* link:PineTimeStyle[]
+{{< children >}}

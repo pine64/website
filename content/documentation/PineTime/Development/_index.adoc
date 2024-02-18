@@ -6,16 +6,7 @@ menu:
     title:
     parent: "PineTime"
     identifier: "PineTime/Development"
-    weight: 
+    weight: 7
 ---
 
-
-link:Available_firmware_and_projects[Available firmware and projects]
-
-link:Compatibility[Compatibility]
-
-link:Hardware_wishlist[Hardware wishlist]
-
-link:Reprogramming[Reprogramming]
-
-link:Write_battery-friendly_software[Write battery-friendly software]
+{{< children >}}

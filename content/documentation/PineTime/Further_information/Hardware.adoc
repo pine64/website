@@ -97,7 +97,7 @@ Reset
 * Device address: 0x15
 * Frequency: from 10Khz to 400Khz
 
-NOTE: The controller go to sleep when no event is detected. In sleep mode, the controller does not communicate on the I²C bus (it appears disconnected). So, for the communication to work, you need to tap on the screen so that the chip wakes-up.
+NOTE: The controller goes to sleep when no event is detected. In sleep mode, the controller does not communicate on the I²C bus (it appears disconnected). So, for the communication to work, you need to tap on the screen so that the chip wakes-up.
 
 NOTE: The I²C bus, also known as TWI bus has known issues, make sure to write your TWI driver with timeouts.
 
@@ -252,8 +252,6 @@ Devices shipped after July 2021 use a Bosch BMA425 accelerometer.
 * P0.08: Interrupt
 
 I²C Device address: 0x18
-
-
 
 == Reducing power consumption
 

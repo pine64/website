@@ -6,11 +6,7 @@ menu:
     title:
     parent: "PineTime"
     identifier: "PineTime/Further_information"
-    weight: 
+    weight: 99
 ---
 
-* link:Datasheets,_schematics_and_certifications[Datasheets, schematics and certifications]
-* link:Hardware[]
-* link:Specifications[]
-* link:Equivalents[]
-* link:Devkit_wiring[Devkit wiring]
+{{< children >}}
