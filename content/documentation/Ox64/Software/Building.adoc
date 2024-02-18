@@ -9,30 +9,30 @@ menu:
     weight: 2
 ---
 
-Open the terminal and clone the upstream Buildroot repository and the Buildroot Bouffalo overlay repository:
+Open the terminal and clone the upstream Buildroot repository and the Buildroot Bouffalo overlay repository.
 
  mkdir -p ~/ox64
  cd ~/ox64
  git clone https://github.com/buildroot/buildroot
  git clone https://github.com/openbouffalo/buildroot_bouffalo
 
-Define an environment variable for the Buildroot Bouffalo overlay path:
+Define an environment variable for the Buildroot Bouffalo overlay path.
 
  export BR_BOUFFALO_OVERLAY_PATH=$(pwd)/buildroot_bouffalo
 
-Change directory into the cloned Buildroot folder:
+Change directory into the cloned Buildroot folder.
 
  cd ~/ox64/buildroot
 
-Apply the default configuration for Pine64 Ox64:
+Apply the default configuration for Pine64 Ox64.
 
  make BR2_EXTERNAL=$BR_BOUFFALO_OVERLAY_PATH pine64_ox64_defconfig
 
-Use the `menuconfig` tool to adjust the build settings:
+Use the `menuconfig` tool to adjust the build settings.
 
  make menuconfig
 
-Within `menuconfig`, configure the following:
+Within `menuconfig`, configure the following.
 
 * Navigate to `Target Options`
 * Enable `Integer Multiplication and Division (M)`
@@ -42,7 +42,7 @@ Within `menuconfig`, configure the following:
 * Set `Target ABI` to `lp64d`
 * Under `Toolchain`, enable `Fortran support` and `OpenMP support`
 
-Initiate the build process, but first make sure that your `PATH` variable contains no spaces:
+Initiate the build process, but first make sure that your `PATH` variable contains no spaces.
 
  make
 
@@ -72,4 +72,4 @@ Expected files:
 * `m0_lowload_bl808_m0.bin`
 * `d0_lowload_bl808_d0.bin`
 * `bl808-firmware.bin`
-* `bl808-combined.bin` # optional
+* `bl808-combined.bin` (if you created the combined image)
