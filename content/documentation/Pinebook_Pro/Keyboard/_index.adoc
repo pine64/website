@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinebook_Pro"
     identifier: "Pinebook_Pro/Keyboard/"
-    weight: 
+    weight: 96
 ---
 
 The Pinebook Pro is available in two keyboard configurations: ISO and ANSI. Both the keyboard and touchpad in the Pinebook Pro use the USB 2.0 protocol and show up as such in xinput. The keyboard features function (Fn) keys in the F-key row, which include display brightness controls, sound volume, touchpad lock, and other functionality. There is also a custom PINE64 logo key that functions as Menu/Super key. It has also a secondary functionality for setting the privacy switches.

@@ -4,8 +4,8 @@ draft: false
 menu:
   docs:
     title:
-    parent: "Pinebook_Pro"
-    identifier: "Pinebook_Pro/Disassembly_and_Reassembly"
+    parent: "Pinebook_Pro/Guides"
+    identifier: "Pinebook_Pro/Guides/Disassembly_and_Reassembly"
     weight: 
 ---
 

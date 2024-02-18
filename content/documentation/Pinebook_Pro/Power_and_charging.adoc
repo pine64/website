@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinebook_Pro"
     identifier: "Pinebook_Pro/Power_and_charging"
-    weight: 
+    weight: 4
 ---
 
 The Pinebook Pro external power and charging circuity is quite rudimentary, and hence quirky. This article aims to explain all the fine points so that the behaviour could be understood and dealt with.

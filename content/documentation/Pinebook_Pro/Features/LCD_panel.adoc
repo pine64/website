@@ -4,8 +4,8 @@ draft: false
 menu:
   docs:
     title:
-    parent: "Pinebook_Pro"
-    identifier: "Pinebook_Pro/LCD_panel"
+    parent: "Pinebook_Pro/Features"
+    identifier: "Pinebook_Pro/Features/LCD_panel"
     weight: 
 ---
 

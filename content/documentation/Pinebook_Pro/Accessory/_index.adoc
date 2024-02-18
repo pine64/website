@@ -1,6 +1,6 @@
 ---
 title: "Accessory"
-draft: false
+draft: true # Not published
 menu:
   docs:
     title:

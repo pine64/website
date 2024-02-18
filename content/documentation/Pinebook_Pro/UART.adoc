@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinebook_Pro"
     identifier: "Pinebook_Pro/UART"
-    weight: 
+    weight: 6
 ---
 
 image::/documentation/images/PinePhone_Serial_Cable.png[title="This shows signals from the Pinebook Pro's point of view, so connect the adapter's RX to ring 1, and TX to the tip. See also the link:https://files.pine64.org/doc/pinebook/guide/Pinebook_Earphone_Serial_Console_Developer_Guide.pdf[Pine64 official document] describing this.",width=400]

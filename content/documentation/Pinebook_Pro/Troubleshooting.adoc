@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinebook_Pro"
     identifier: "Pinebook_Pro/Troubleshooting"
-    weight: 
+    weight: 5
 ---
 
 == Tips, tricks and other information for troubleshooting your Pinebook Pro
