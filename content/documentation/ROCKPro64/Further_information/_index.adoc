@@ -6,13 +6,7 @@ menu:
     title:
     parent: "ROCKPro64"
     identifier: "ROCKPro64/Further_information"
-    weight: 
+    weight: 99
 ---
 
-* link:Other_resources[Other resources]
-* link:Useful_Articles_and_Blog_Posts[Useful Articles and Blog Posts]
-* link:Datasheets[]
-* link:Schematics_and_certifications[Schematics and certifications]
-* link:3D_printable_ITX_mounting_brackets[3D printable ITX mounting brackets]
-* link:The_NAS_Case[The NAS Case]
-* link:Serial_buffer_circuit[Serial buffer circuit]
+{{< children >}}

@@ -4,8 +4,8 @@ draft: false
 menu:
   docs:
     title:
-    parent: "ROCKPro64/Further_information"
-    identifier: "ROCKPro64/Further_information/The_NAS_Case"
+    parent: "ROCKPro64/Hardware"
+    identifier: "ROCKPro64/Hardware/The_NAS_Case"
     weight: 
 ---
 

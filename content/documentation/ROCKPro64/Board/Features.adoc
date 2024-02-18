@@ -13,8 +13,7 @@ This section outlines the most important characteristics of the board and its co
 
 == SoC and Memory Specification
 
-* Based on Rockchip RK3399
-image:/documentation/images/Rockchip_RK3399.png[right,title="right"]
+The ROCKPro64 is based on the Rockchip RK3399.
 
 === CPU Architecture
 
@@ -93,16 +92,16 @@ image:/documentation/images/Rockchip_RK3399.png[right,title="right"]
 
 == Storage
 
-* microSD - bootable, support SDHC and SDXC, storage up to 256GB
-* eMMC - bootable (optional eMMC Module)
-* 1 USB3.0 Host port
-* 1 USB type C OTG port with DP output
-* 2 USB2.0 Dedicated Host ports
+* microSD - bootable, supports SDHC and SDXC
+* eMMC - bootable (optional eMMC module)
+* 1x USB 3.0 host port
+* 1x USB Type-C OTG port with alternate mode DP output  
+* 2x USB 2.0 dedicated host port
 
 == Expansion Ports
 
-* 2x20 pins "Pi2" GPIO Header
-* PCIe 2.1 (4 full-duplex lanes with 20Gbps) x4 open ended port
+* 2x20 pins "Pi2" GPIO header
+* PCI Express 2.1 x4 (four full-duplex lanes) open-ended port, https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=712fa1777207[limited] to the Gen1 speed
 
 === GPIO Pins
 
@@ -239,6 +238,7 @@ The conversion table at right is also available as a https://gist.github.com/Cou
 
 == Working Features
 
+[cols="2,1,1,1,1,2,2,2"]
 |===
 | Feature/Option | Android | Android Version | Linux | Linux Version | Test/Verify Steps | Notes | Product Link
 
@@ -249,7 +249,7 @@ The conversion table at right is also available as a https://gist.github.com/Cou
 |
 |
 | Maybe https://github.com/avafinger/pine64-touchscreen[this] will help get this working?
-| https://pine64.com/?product=7-lcd-touch-screen-panel[7″ LCD Touch Screen Panel]
+| https://pine64.com/?product=7-lcd-touch-screen-panel[7-inch LCD Touch Screen Panel]
 
 | Wireless
 ROCKPro64 2×2 MIMO Dual Band WiFi 802.11AC / Bluetooth 4.2 Module (old)
@@ -258,8 +258,8 @@ ROCKPro64 1x1 Dual Band WiFi 802.11AC / Bluetooth 5.0 Module (new)
 |
 | No/Yes*
 |
-| For the "new" ROCKPro64 WIFI module: Verified with Manjaro ARM (kernel 6.2.5). A config file ("firmware file") is needed at `/lib/firmware/brcm/brcmfmac43455-sdio.txt`. See here for the file contents and details: https://askubuntu.com/a/1211986.
-| In 0.7.9 Ayufan linux releases this is deliberately disabled for stability reasons. After testing for a few hours, on Manjaro ARM (kernel 6.2.5), there haven't been stability issues found (WiFi stayed connected). On a 5GHz network (802.11AC), it was tested to be possible to get about 120Mbps using the "new" ROCKPro64 WIFI module.
+| For the "new" ROCKPro64 WIFI module: Verified with Manjaro ARM (kernel 6.2.5). A config file ("firmware file") is needed at `/lib/firmware/brcm/brcmfmac43455-sdio.txt`.
+| In 0.7.9 Ayufan linux releases this is deliberately disabled for stability reasons. On Manjaro ARM (kernel 6.2.5), WIFI seems to be stable with the firmware file. On a 5GHz network (802.11AC), it is possible to get about 120Mbps using the "new" ROCKPro64 WIFI module.
 | https://store.pine64.org/product/rockpro64-1x1-dual-band-wifi-802-11acbluetooth-5-0-module[ROCKPro64 1x1 Dual Band WiFi 802.11AC / Bluetooth 5.0 Module]
 
 | USB OTG
@@ -358,8 +358,8 @@ ROCKPro64 1x1 Dual Band WiFi 802.11AC / Bluetooth 5.0 Module (new)
 | N/A
 |
 | N/A
-| Ventilation does not exist, thus requires manual changes to add venting. Case should be modified to account power adapter not being centered in cut holes. Opening the case once close without modifying it first is near impossible without special tools. Graphene heatsink is included and does well for Linux but not Android.
-| https://pine64.com/?product=rockpro64-playbox-enclosure
+| Ventilation does not exist, thus requires manual changes to add venting. Case should be modified to account power adapter not being centered in cut holes. Opening the case once close without modifying it first is nearly impossible without special tools. Graphene heatsink is included and does well for Linux but not Android.
+| https://pine64.com/?product=rockpro64-playbox-enclosure[ROCKPro64 Playbox Enclosure]
 
 | ROCKPro64 30mm Tall Profile Heatsink
 | N/A
@@ -368,7 +368,7 @@ ROCKPro64 1x1 Dual Band WiFi 802.11AC / Bluetooth 5.0 Module (new)
 |
 | N/A
 |
-| https://store.pine64.org/?product=rockpro64-heatsink
+| https://store.pine64.org/?product=rockpro64-heatsink[ROCKPro64 30&nbsp;mm Tall-Profile Heatsink]
 
 | ROCKPro64 20mm Mid Profile Heatsink
 | N/A
@@ -377,7 +377,7 @@ ROCKPro64 1x1 Dual Band WiFi 802.11AC / Bluetooth 5.0 Module (new)
 |
 | N/A
 |
-| https://pine64.com/?product=rockpro64-20mm-mid-profile-heatsink
+| https://pine64.com/?product=rockpro64-20mm-mid-profile-heatsink[ROCKPro64 20&nbsp;mm Mid-Profile Heatsink]
 
 | Fan For ROCKPro64 20mm Mid Profile Heatsink
 | N/A
@@ -386,7 +386,7 @@ ROCKPro64 1x1 Dual Band WiFi 802.11AC / Bluetooth 5.0 Module (new)
 |
 | N/A
 | You might want to use https://github.com/tuxd3v/fanctl[fanctl] to control the fan while keeping your CPU cool
-| https://pine64.com/?product=fan-for-rockpro64-20mm-mid-profile-heatsink
+| https://pine64.com/?product=fan-for-rockpro64-20mm-mid-profile-heatsink[Fan For ROCKPro64 20&nbsp;mm Mid-Profile Heatsink]
 
 | HDMI output 4K@60Hz
 |
@@ -397,13 +397,13 @@ ROCKPro64 1x1 Dual Band WiFi 802.11AC / Bluetooth 5.0 Module (new)
 |
 |
 
-| PCIe 2.1
+| PCI Express 2.1
 |
 |
 |
 |
 |
-|
+| The PCI Express interface of the RK3399 https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=712fa1777207[is limited] to the Gen1 speed. As a result, some installed PCI Express devices may operate with degraded performance, such as M.2 SSDs that support fewer than four PCI Express lanes, installed using an adapter like https://pine64.com/product/rockpro64-pci-e-x4-to-m-2-ngff-nvme-ssd-interface-card/[this one].
 |
 
 | Real Time Clock (RTC) battery backup
@@ -413,7 +413,7 @@ ROCKPro64 1x1 Dual Band WiFi 802.11AC / Bluetooth 5.0 Module (new)
 |
 |
 |
-| https://store.pine64.org/?product=rtc-backup-battery-cr-battery
+| https://pine64.com/product/rtc-backup-battery-holder-cr-2032/[RTC Backup Battery Holder CR2032]
 
 | Boot from USB/PXE
 |

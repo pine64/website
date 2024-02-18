@@ -34,6 +34,7 @@ The Recover button (28, SW900): used to enter maskrom mode.
 
 == Connectors, Sockets and Headers
 
+[cols="1,1,1,1,2"]
 |===
 |Diagram | Schematic designator | Silkscreen label | Number of pins | Description
 
@@ -57,7 +58,7 @@ The Recover button (28, SW900): used to enter maskrom mode.
 
 | -  | CON16 | GND PWR RST GND | 4 | Power & reset, unpopulated header near Headphone jack
 
-| 14 | U29   | EMMC | 34 | eMMC connector
+| 14 | U29   | EMMC | 34 | eMMC connector (Note: Some datasheets indicate a low supported number of mating cycles.)
 
 | 14* | J13  |  | 13 | TF-card, a.k.a. microSD (* under 14 on the bottom side)
 
