@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-This article explains how to install megi's rk2aw pre-loader, U-Boot to SPI and a multi-distribution image to the microSD card. Further instructions regarding rk2aw can be found on link://xff.cz/kernels/bootloaders-2024.04/ppp/rk2aw/INSTALL[megi's website]. Please note that pre-loader and userspace utility to flash it are free, but not open-source.
+This article explains how to install megi's rk2aw pre-loader, U-Boot to SPI and a multi-distribution image to the microSD card. Further instructions regarding rk2aw can be found on link:https://xff.cz/kernels/bootloaders-2024.04/ppp/rk2aw/INSTALL[megi's website]. Please note that pre-loader and userspace utility to flash it are free, but not open-source.
 
 == Flash rk2Aw pre-loader to SPI
 
@@ -327,7 +327,7 @@ Any time a distribution update rebuilds the initramfs it is necessary to delete 
 
 In case you want to reinstall only one distribution, the easy way is to delete and recreate requested partition using GParted GUI.
 
-If device doesn't start, connect a compatible link:/product/pinebook-pinephone-pinetab-serial-console[serial cable] to headphone jack, switch off microswitch 6 and start a serial console to further investigate.
+If device doesn't start, connect a compatible link:https://pine64.com/product/pinebook-pinephone-pinetab-serial-console[serial cable] to headphone jack, switch off microswitch 6 and start a serial console to further investigate.
 
  ls /dev/ttyUSB* # check usb device from linux machine
  minicom -b 1500000 -D /dev/ttyUSB0
