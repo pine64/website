@@ -16,3 +16,5 @@ The installation instructions can be found here:
 
 * link:/documentation/PinePhone/Installation/Installation_to_the_microSD_card[Installation to the microSD card]
 * link:/documentation/PinePhone/Installation/Installation_to_the_eMMC[Installation to the eMMC]
+
+The releases for the PinePhone can be found under link:/documentation/PinePhone/Software/Releases[Releases].
