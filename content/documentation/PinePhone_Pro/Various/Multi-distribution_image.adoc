@@ -182,7 +182,7 @@ Download, decompress and mount the image. Copy rootfs and bootfs to the partitio
   append root=partlabel=MOBIAN console=ttyS2,115200 console=tty0 loglevel=7 rw rootwait
   #append root=UUID=b282b619-c9b7-4c15-9c3d-2005b35d5999 consoleblank=0 loglevel=7 ro quiet splash plymouth.ignore-serial>
 
-sudo tee /mnt/mobiansd/etc/fstab <<EOF
+ sudo tee /mnt/mobiansd/etc/fstab <<EOF
   #<file system>   <dir> <type> <options>                 <dump> <pass>
   partlabel=MOBIAN /     ext4   defaults,x-systemd.growfs	0      1
  EOF
