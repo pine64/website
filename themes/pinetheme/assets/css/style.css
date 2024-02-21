@@ -806,10 +806,10 @@ table td {
   -webkit-hyphens: auto;
   hyphens: auto;
 }
-table td.halign-right {
+table td.halign-right, table th.halign-right {
     text-align: right;
 }
-table td.halign-center {
+table td.halign-center, table th.halign-center {
     text-align: center;
 }
 thead {
