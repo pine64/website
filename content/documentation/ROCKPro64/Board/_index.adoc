@@ -9,5 +9,4 @@ menu:
     weight: 2
 ---
 
-* link:Features[]
-* link:Layout[]
+{{< children >}}
