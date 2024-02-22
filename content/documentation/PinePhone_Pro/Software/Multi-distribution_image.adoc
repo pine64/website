@@ -41,6 +41,7 @@ Zero-write the microSD card
  sudo dd if=/dev/zero of=/dev/sdb status=progress bs=32768 count=945728 # 32 GB
  sudo dd if=/dev/zero of=/dev/sdb status=progress bs=32768 count=1908880 # 64 GB
  sudo dd if=/dev/zero of=/dev/sdb status=progress bs=32768 count=3872000 # 128 GB
+ sudo dd if=/dev/zero of=/dev/sdc status=progress bs=32768 count=3776000 # 124 GB eMMC specific
 
 === Partition the microSD card
 Note: A minimum capacity of 64 GB for the microSD card is recommended for 5 distributions.
