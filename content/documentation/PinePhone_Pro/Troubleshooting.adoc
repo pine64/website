@@ -37,11 +37,11 @@ The device should now be able to boot from the boot medium again. If that is not
 
 The PinePhone Pro won't be able to boot if the installation on the SPI flash, the eMMC or the microSD card got corrupted. To boot a working operating system:
 
-* Prepare a microSD card as explained in the section link:/documentation/PinePhone_Pro#flashing_to_microSD_card[Flashing to microSD card]
+* Prepare a microSD card as explained in the section link:/documentation/PinePhone_Pro/Installing_a_different_operating_system[Flashing to microSD card]
 * Remove any USB-C cable or device or add-on case from the PinePhone Pro
 * Make sure the device is powered off by shortly removing the battery for a second
 * Insert the microSD card into the top slot of the PinePhone Pro. Make sure the microSD card is inserted all the way and that the notch of the right side of the microSD card is not visible anymore.
-* Power on the device (bypassing the SPI and eMMC might be required, see link:/documentation/PinePhone_Pro#boot_order[Boot order])
+* Power on the device (bypassing the SPI and eMMC might be required, see link:/documentation/PinePhone_Pro/Software/Boot_order[Boot order])
 
 The device should now boot from the microSD card. If the phone does not boot from the microSD card the microSD card was flashed with an incompatible image or the battery got drained as explained above.
 
