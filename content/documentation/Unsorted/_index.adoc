@@ -9,21 +9,4 @@ menu:
     weight: 
 ---
 
-* link:Wifi_remote_i2c[Wifi remote i2c]
-* link:U-Boot[]
-* link:Supported_displays[Supported displays]
-* link:RK3399_boot_sequence[RK3399 boot sequence]
-* link:RK3566_EBC_reverse-engineering[RK3566 EBC reverse-engineering]
-* link:PineModems[]
-* link:PhoenixCard[]
-* link:POT[]
-* link:Overclocking[]
-* link:NASCase[]
-* link:Mali_driver[Mali driver]
-* link:Mainline_Hardware_Encoding[Mainline Hardware Encoding]
-* link:Mainline_Hardware_Decoding[Mainline Hardware Decoding]
-* link:Cross-compiling[]
-* link:Android_SDK_for_RK3566[Android SDK for RK3566]
-* link:Accessories_Step_by_Step_Guides[Accessories Step by Step Guides]
-* link:Model_B_Acrylic_Open_Enclosure[Model B Acrylic Open Enclosure]
-* link:Model_A_Acrylic_Open_Enclosure[Model A Acrylic Open Enclosure]
+{{< children >}}

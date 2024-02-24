@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-Two Android SDKs are available from Pine64 for RK3566 devices:-
+Two Android SDKs are available from Pine64 for RK3566 devices:
 
 == QUARTZ64_SDK_android11
 

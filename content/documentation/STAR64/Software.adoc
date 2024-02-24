@@ -11,7 +11,23 @@ menu:
 
 The releases are still in *alpha* state and are only fit for testing purposes.
 
-* https://github.com/Fishwaldo/meta-pine64[A Set of Images built with Yocto for commandline, weston and plasma - Where possible, GPU/VPU acceleration is enabled.]
-* https://forum.pine64.org/showthread.php?tid=18276[Armbian]
-* https://sr.ht/~fgaz/nixos-star64/[NixOS], based on the https://github.com/NixOS/nixos-hardware/tree/master/pine64/star64[the nixos-hardware configuration]
-* https://www.hackster.io/lupyuen/rtos-on-a-risc-v-sbc-star64-jh7110-apache-nuttx-2a7429[Apache NuttX RTOS]
+== Apache NuttX RTOS
+
+* link:https://www.hackster.io/lupyuen/rtos-on-a-risc-v-sbc-star64-jh7110-apache-nuttx-2a7429[Apache NuttX RTOS]
+
+== Armbian
+
+* link:https://www.armbian.com/star64/[STAR64] on _armbian.com_
+* link:https://forum.pine64.org/showthread.php?tid=18276[Armbian forum thread] on _forum.pine64.org_
+
+== Fishwaldo images
+
+* link:https://github.com/Fishwaldo/meta-pine64[A Set of Images built with Yocto for commandline, weston and plasma]
+
+Notes:
+
+* Where possible, GPU/VPU acceleration is enabled.
+
+== NixOS
+
+* link:https://sr.ht/~fgaz/nixos-star64/[NixOS], based on the link:https://github.com/NixOS/nixos-hardware/tree/master/pine64/star64[the nixos-hardware configuration]
