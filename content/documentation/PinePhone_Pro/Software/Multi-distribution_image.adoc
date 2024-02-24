@@ -4,8 +4,8 @@ draft: false
 menu:
   docs:
     title:
-    parent: "PinePhone_Pro/Variuos"
-    identifier: "PinePhone_Pro/Variuos/Multi-distribution_image"
+    parent: "PinePhone_Pro/Various"
+    identifier: "PinePhone_Pro/Various/Multi-distribution_image"
     weight: 
 ---
 
