@@ -4,8 +4,8 @@ draft: false
 menu:
   docs:
     title:
-    parent: "Unsorted"
-    identifier: "Unsorted/U-Boot"
+    parent: "General"
+    identifier: "General/U-Boot"
     weight: 
 ---
 

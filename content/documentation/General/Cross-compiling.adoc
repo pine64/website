@@ -4,8 +4,8 @@ draft: false
 menu:
   docs:
     title:
-    parent: "Unsorted"
-    identifier: "Unsorted/Cross-compiling"
+    parent: "General"
+    identifier: "General/Cross-compiling"
     weight: 
 ---
 

@@ -4,8 +4,8 @@ draft: false
 menu:
   docs:
     title:
-    parent: "Unsorted"
-    identifier: "Unsorted/RK3399_boot_sequence"
+    parent: "General"
+    identifier: "General/RK3399_boot_sequence"
     weight: 
 ---
 

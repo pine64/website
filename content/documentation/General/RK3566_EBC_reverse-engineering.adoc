@@ -4,8 +4,8 @@ draft: true # NOT PUBLISHED
 menu:
   docs:
     title:
-    parent: "Unsorted"
-    identifier: "Unsorted/RK3566_EBC_reverse-engineering"
+    parent: "General"
+    identifier: "General/RK3566_EBC_reverse-engineering"
     weight: 
 ---
 
