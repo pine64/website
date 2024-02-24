@@ -8,3 +8,5 @@ menu:
     identifier: "General"
     weight: 
 ---
+
+{{< children >}}

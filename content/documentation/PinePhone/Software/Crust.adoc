@@ -15,7 +15,7 @@ Crust improves battery life and thermal performance by implementing a deep sleep
 
 For this to work, Crust runs outside the main CPU and DRAM, on a dedicated always-on microprocessor called a System Control Processor (SCP). Crust is designed to run on a specific SCP implementation, Allwinner's AR100.
 
-To build crust manually with U-Boot you can find instructions link:/documentation/Unsorted/U-Boot[Here].
+To build crust manually with U-Boot you can find instructions link:/documentation/General/U-Boot[Here].
 
 == RTC wakeups
 

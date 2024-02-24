@@ -235,7 +235,7 @@ Notes:
 
 == Mali Driver
 
-For the Mali driver see link:/documentation/Unsorted/Mali_driver[Mali Driver].
+For the Mali driver see link:/documentation/General/Mali_driver[Mali Driver].
 
 == Errata for ver1.1 and ver1.2 board
 

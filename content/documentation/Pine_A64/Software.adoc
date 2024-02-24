@@ -290,7 +290,6 @@ Android Oreo (v8.1)
 
 == Other resources
 
-* link:/documentation/Unsorted/Mali_driver[Mali Driver]
 * https://files.pine64.org/tools/allwinner/PhoenixCard4_1_3.zip[Allwinner PhoenixCard Bootable SD-Card Creator]
 * https://files.pine64.org/tools/allwinner/DragonFace.zip[Allwinner DragonFace software that will let you edit and modify A64 Stock Android Build PhoenixCard image]
 

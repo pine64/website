@@ -1,11 +1,11 @@
 ---
-title: "Unsorted"
+title: "Cases"
 draft: false
 menu:
   docs:
     title:
-    parent: "Unsorted"
-    identifier: "Unsorted"
+    parent: "Accessories"
+    identifier: "Accessories/Cases"
     weight: 
 ---
 

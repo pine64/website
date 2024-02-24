@@ -33,7 +33,7 @@ To use Serial Console you will a need operating system that supports it on your 
 
 [WARNING]
 ==== 
-Do not connect RxD (pin 10) until the U-Boot SPL is running (see link:/documentation/Unsorted/RK3399_boot_sequence[RK3399 boot sequence]) or the SPL will not start.
+Do not connect RxD (pin 10) until the U-Boot SPL is running (see link:/documentation/General/RK3399_boot_sequence[RK3399 boot sequence]) or the SPL will not start.
 
 To avoid this issue, a simple link:/documentation/ROCKPro64/Further_information/Serial_buffer_circuit[Serial Buffer Circuit] can be installed between the RockPro64 and the serial adapter.
 ==== 

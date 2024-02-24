@@ -4,8 +4,8 @@ draft: false
 menu:
   docs:
     title:
-    parent: "Unsorted"
-    identifier: "Unsorted/Mainline_Hardware_Encoding"
+    parent: "General"
+    identifier: "General/Mainline_Hardware_Encoding"
     weight: 
 ---
 
@@ -69,8 +69,3 @@ This example converts an input MP4 file to an output VP8-inside-MKV file with a 
 Alternatively, you can encode in variable bitrate mode with a target bitrate given in bits per second. Do note that Hantro doesn't seem to do target bitrates below 2 mbit/s. In this example, the file is transcoded at a target bitrate of 3 megabits per second.
 
  gst-launch-1.0 filesrc location=input.mp4 ! qtdemux name=demux demux.video_0 ! decodebin ! videoconvert ! v4l2slvp8enc bitrate=3000000 ! queue ! matroskamux ! filesink location=output.mkv
-
-== See Also
-
-* link:/documentation/Unsorted/Mainline_Hardware_Decoding[Mainline Hardware Decoding]
-

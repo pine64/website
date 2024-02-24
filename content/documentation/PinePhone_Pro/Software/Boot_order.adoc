@@ -19,7 +19,7 @@ The RK3399S processor in the PinePhone Pro searches for the bootloader (such as 
 
 To temporarily boot from an inserted *microSD card* do the following:
 
-* On the *Explorer Edition ordered after November 2023* the microSD card is first in boot order due to using _rk2aw_ instead of _Tow-Boot_, see https://xnux.eu/rk2aw/[here].
+* On the *Explorer Edition ordered after November 2023* the microSD card is first in boot order due to using _rk2aw_ instead of _Tow-Boot_, see https://xnux.eu/rk2aw/[here]. A boot menu can be opened by holding _power_ at boot for not too long.
 
 * On the *Explorer Edition ordered after July 2022* hold the _volume down key_ while powering on the device. The batches bought after July 2022 come with _Tow-Boot_ flashed to the SPI, which offers additional functionality over _U-Boot_ as bootloader.
 
