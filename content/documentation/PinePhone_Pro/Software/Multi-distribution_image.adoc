@@ -9,13 +9,11 @@ menu:
     weight: 
 ---
 
-This article explains how to install megi's rk2aw pre-loader, U-Boot to SPI and a multi-distribution image to the microSD card.
+This article explains how to install a multi-distribution image to the microSD card.
 
-Rk2aw pre-loader program can change apparent boot ROM bootloader load order from original and inflexible "SPI NOR flash -> eMMC -> microSD card" to "microSD card -> eMMC -> SPI NOR flash" and to implement robust, seamless A/B bootloader updates in SPI NOR flash with user selectable fallback (via a pre-boot menu). Since the 2024feb15 version also the microSD card, like the eMMC, is exposed to USB and can be mounted as device. This can save wearing of the microSD slot and of the backcover under heavy testing condition of different distributions. Further instructions regarding rk2aw can be found on link:https://xff.cz/kernels/bootloaders-2024.04/ppp/rk2aw/INSTALL[megi's website]. Please note that pre-loader and userspace utility to flash it are free, but not open-source. rk2aw is distributed under MIT licens, Copyright (c) 2023 Ondrej Jirman <megi@xff.cz>
+== Prerequisit: rk2aw pre-loader on SPI
 
-== Flash rk2Aw pre-loader to SPI
-
-Connect PinePhone Pro to a Linux machine (USB cable or wifi connection is fine). Make sure phone's ssh server is up and running, and find the target IP address. Start a ssh connection from PC and download from the web the pre-loader installer to flash into the phone's SPI.
+In case your Pinephone Pro doesn't have rk2aw pre-loader you must first istall it. Connect PinePhone Pro to a Linux machine (USB cable or wifi connection is fine). Make sure phone's ssh server is up and running, and find the target IP address. Start a ssh connection from PC and download from the web the pre-loader installer to flash into the phone's SPI.
 
  sudo systemctl enable --now sshd # on phone's terminal window
  ip address # on phone's terminal window
