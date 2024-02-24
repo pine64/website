@@ -58,6 +58,10 @@ hr {
 #content > div {
     max-width: 1200px;
 }
+#content ul{
+    padding-left: 2rem;
+    padding-bottom: 10px;
+}
 /* Full width content */
 .full {
     flex: 1 1 100% !important;
