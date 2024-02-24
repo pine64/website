@@ -63,7 +63,7 @@ h| 3D Acceleration
 | VDPU720 handling JPEG, User:CounterPillow is working on this
 |
 
-.5+h| link:/documentation/Unsorted/Mainline_Hardware_Encoding[Video Encode]
+.5+h| link:/documentation/General/Mainline_Hardware_Encoding[Video Encode]
 | Linux Mainline
 | GStreamer only
 | JPEG on VEPU121
@@ -227,7 +227,7 @@ h| USB 2.0
 h| e-Ink
 2+| In review (RFC)^link:https://lore.kernel.org/linux-rockchip/20220413221916.50995-1-samuel@sholland.org/T/[Source]^
 | `rockchip-ebc`
-| A DRM driver is available https://github.com/smaeul/linux/commits/rk35/ebc-drm-v5[here]; also see link:/documentation/Unsorted/RK3566_EBC_reverse-engineering[RK3566 EBC Reverse-Engineering]
+| A DRM driver is available https://github.com/smaeul/linux/commits/rk35/ebc-drm-v5[here]; also see link:/documentation/General/RK3566_EBC_reverse-engineering[RK3566 EBC Reverse-Engineering]
 |
 
 h| Combo PHY
@@ -349,7 +349,7 @@ According to pgwipeout, I/O device performance is within expected ranges now.
 
 === ebc-dev Reverse Engineering and Development
 
-The https://gitlab.com/pine64-org/quartz-bsp/linux-next/-/tree/rk356x-ebc-dev[driver for the eInk panel] needs to both be reverse engineered and then rewritten as C. In its current form, it is mostly an assembly dump produced by gcc with debug symbols. See link:/documentation/Unsorted/RK3566_EBC_reverse-engineering[RK3566 EBC Reverse-Engineering] for details.
+The https://gitlab.com/pine64-org/quartz-bsp/linux-next/-/tree/rk356x-ebc-dev[driver for the eInk panel] needs to both be reverse engineered and then rewritten as C. In its current form, it is mostly an assembly dump produced by gcc with debug symbols. See link:/documentation/General/RK3566_EBC_reverse-engineering[RK3566 EBC Reverse-Engineering] for details.
 
 === Investigate MCU
 

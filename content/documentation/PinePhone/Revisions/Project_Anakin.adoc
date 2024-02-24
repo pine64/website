@@ -38,7 +38,7 @@ image:/documentation/images/Anakin_kit_3.jpg[]
 
 == Accessories Step-by-Step Guides
 
-Under link:/documentation/Unsorted/Accessories_Step_by_Step_Guides['Guides for PINE A64(+) accessories'] you can find instructions and guides concerning:
+Under link:/documentation/Accessories/Accessories_Step_by_Step_Guides['Guides for PINE A64(+) accessories'] you can find instructions and guides concerning:
 
 * Playbox Enclosure
 * Bluetooth and WiFi module

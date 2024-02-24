@@ -13,7 +13,7 @@ image:/documentation/images/Pbp_emmc_disable_sw.jpg[The PineBook Pro eMMC module
 
 == Boot sequence details
 
-The RK3399's mask 32KB ROM boot code looks for the next stage of code at byte off-set 32768, (sector 64 if using 512 byte sectors). This is where U-Boot code would reside on any media that is bootable, link:/documentation/Unsorted/RK3399_boot_sequence[RK3399 boot sequence]
+The RK3399's mask 32KB ROM boot code looks for the next stage of code at byte off-set 32768, (sector 64 if using 512 byte sectors). This is where U-Boot code would reside on any media that is bootable, link:/documentation/General/RK3399_boot_sequence[RK3399 boot sequence]
 
 == Boot devices
 

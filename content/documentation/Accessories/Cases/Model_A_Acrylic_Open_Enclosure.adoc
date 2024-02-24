@@ -4,8 +4,8 @@ draft: false
 menu:
   docs:
     title:
-    parent: "Unsorted"
-    identifier: "Unsorted/Model_A_Acrylic_Open_Enclosure"
+    parent: "Accessories/Cases"
+    identifier: "Accessories/Cases/Model_A_Acrylic_Open_Enclosure"
     weight: 
 ---
 

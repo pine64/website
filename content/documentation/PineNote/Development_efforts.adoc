@@ -20,7 +20,7 @@ The following page discusses the development efforts for the PineNote:
 
 === Linux Kernel
 
-* link:/documentation/Unsorted/RK3566_EBC_reverse-engineering[RK3566 EBC Reverse-Engineering] for the EBC (eInk Panel) driver.
+* link:/documentation/General/RK3566_EBC_reverse-engineering[RK3566 EBC Reverse-Engineering] for the EBC (eInk Panel) driver.
 * link:/documentation/PineNote/Development/Building_kernel[PineNote Development/Building Kernel]
 * BSP Linux SDK version 4.19 for the PineNote and link:/documentation/Quartz64[Quartz64 Model A]:
 ** http://files.pine64.org/SDK/Quartz64/QUARTZ64-model-A_BSP%20Linux.tar.gz[Direct download] from _pine64.org_ (32.67GB, MD5 of the TAR-GZip file _24554419aec29700add97167a3a4c9ed_)
@@ -52,7 +52,7 @@ Download:
 
 Notes:
 
-* View link:/documentation/Unsorted/Android_SDK_for_RK3566[Android SDK for RK3566] for more information how to compile an image for the PineNote using this SDK
+* View link:/documentation/General/Android_SDK_for_RK3566[Android SDK for RK3566] for more information how to compile an image for the PineNote using this SDK
 
 === Related
 

@@ -13,7 +13,7 @@ The following section contains notes regarding compatible bootloaders with the P
 
 == U-Boot
 
-The pre-installed operating system on the PinePhone Pro Explorer Edition, if sold prior to the end of July of 2022, is using link:/documentation/Unsorted/U-Boot[U-Boot] as default bootloader. Batches sold after July of 2022 are using _Tow-Boot_
+The pre-installed operating system on the PinePhone Pro Explorer Edition, if sold prior to the end of July of 2022, is using link:/documentation/General/U-Boot[U-Boot] as default bootloader. Batches sold after July of 2022 are using _Tow-Boot_
 
 == Tow-Boot
 

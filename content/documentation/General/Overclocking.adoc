@@ -115,7 +115,7 @@ It is possible that by reverse engineering the DRAM driver from Allwinner that a
 
 Setting the DRAM clock is accomplished by modifying pinephone_defconfig in U-Boot (https://gitlab.com/pine64-org/u-boot/-/blob/crust/configs/pinephone_defconfig)
 
-You can find simple instructions on doing so here: link:/documentation/Unsorted/U-Boot[U-Boot]
+You can find simple instructions on doing so here: link:/documentation/General/U-Boot[U-Boot]
 
 === VPU
 
