@@ -30,6 +30,7 @@ Ox64 BL808 RISC-V SBC articles by https://lupyuen.codeberg.page/[Lup Yuen LEE]:
 * https://lupyuen.codeberg.page/articles/tinyemu2.html[Emulate Ox64 BL808 in the Web Browser: Experiments with TinyEMU RISC-V Emulator and Apache NuttX RTOS]
 * https://lupyuen.codeberg.page/articles/tinyemu3.html[Automated Testing with Ox64 BL808 Emulator (Apache NuttX RTOS)]
 * https://lupyuen.codeberg.page/articles/quickjs.html[QuickJS JavaScript Engine on a Real-Time Operating System (Apache NuttX RTOS)]
+* https://lupyuen.codeberg.page/articles/quickjs2.html[Coding Ox64 BL808 SBC the Drag-n-Drop Way]
 
 Git repositories:
 
