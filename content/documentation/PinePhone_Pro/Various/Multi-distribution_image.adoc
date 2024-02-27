@@ -132,7 +132,7 @@ Replace VALUES according the needed distribution.
  menu title Pinephone Pro Boot Menu
  label l0
  menu label $PARTNAME
-
+ #
  #uncomment for ARCH, MANJARO
  #fdt /boot/dtbs/rockchip/rk3399-pinephone-pro.dtb
  #initrd /boot/initramfs-linux.img
