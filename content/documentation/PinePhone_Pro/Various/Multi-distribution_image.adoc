@@ -166,7 +166,7 @@ Replace VALUES according the needed distribution.
  #initrd /boot/initramfs-extra
  #
  #uncomment for ARCH, MANJARO, MOBIAN, PMOS
- #append root=PARTLABEL=$PARTNAME console=ttyS2,115200 console=tty0 loglevel=7 ro rootwait
+ #append root=PARTLABEL=$PARTNAME console=ttyS2,115200 console=tty0 loglevel=7 rw rootwait
  #
  #uncomment for UT
  #linux /boot/vmlinuz-6.5.0-okpine-ut
@@ -179,7 +179,6 @@ Replace VALUES according the needed distribution.
  #<file system>      <dir> <type> <options>                 <dump> <pass>
  #uncomment for ARCH
  #PARTLABEL=$PARTNAME /     ext4   rw,relatime               0      1
- #PARTLABEL=$PARTNAME /boot vfat   rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro 0 2 
  #
  #uncomment for MANJARO
  #PARTLABEL=MANJARO /   ext4     defaults    0   1
