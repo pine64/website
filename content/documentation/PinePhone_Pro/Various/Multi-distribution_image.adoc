@@ -26,7 +26,7 @@ Make sure phone’s ssh server is up and running.
 
  mkdir -p ~/rk2aw
  cd ~/rk2aw
- curl -O https://xff.cz/kernels/bootloaders-2024.04/ppp.tar.gz # get rk2aw installer
+ wget https://xff.cz/kernels/bootloaders-2024.04/ppp.tar.gz # get rk2aw installer
  tar -xvzf ppp.tar.gz -C ~/rk2aw
  cd ~/rk2aw/ppp
  sudo ./spinor-flash-initial-setup.sh
@@ -50,16 +50,17 @@ Zero-write the SD card
 
 === Partition the SD card
 
+ PARTSIZE=16G # adjust depending on SD card size
  sudo sfdisk /dev/sdb --wipe always <<EOF
   label: gpt
   first-lba: 64
   table-length: 8
   attrs=RequiredPartition, type=D7B1F817-AA75-2F4F-830D-84818A145370, start=64, size=32704, name="empty"
-  attrs="RequiredPartition,LegacyBIOSBootable", size=16G, name="ARCH"
-  attrs="RequiredPartition,LegacyBIOSBootable", size=16G, name="MANJARO"
-  attrs="RequiredPartition,LegacyBIOSBootable", size=16G, name="MOBIAN"
-  attrs="RequiredPartition,LegacyBIOSBootable", size=16G, name="PMOS"
-  attrs="RequiredPartition,LegacyBIOSBootable", size=16G, name="UT"
+  attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="ARCH"
+  attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="MANJARO"
+  attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="MOBIAN"
+  attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="PMOS"
+  attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="UT"
   attrs="RequiredPartition,LegacyBIOSBootable", size=+, name="extra"
  EOF
 
@@ -90,6 +91,17 @@ Expected result
  The partition table has been altered.
  Calling ioctl() to re-read partition table.
  Syncing disks.
+
+=== Optional: write bootloader in front of first sectors
+
+ cd ~/rk2aw/ppp
+ sudo dd if=ppp/foss/u-boot-rockchip.bin of=/dev/sdb bs=512 seek=64
+ sudo sync
+
+Test regular behaviour removing the U-Boot bootloader from SPI
+
+ rk2aw-spi-flasher --erase-all --rk2aw rk2aw/debug.img.spi
+ sudo reboot
 
 === Building partition for each linux distribution
 
