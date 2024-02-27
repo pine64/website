@@ -108,7 +108,7 @@ If you removed bootloader from PinePhone Pro's SPI, write U-Boot on first sector
 
 === Building partition for each linux distribution
 
-Download, decompress and mount the distribution image on your linux machine. Copy root filesystem and boot to specific partition. Replace/create `/boot/extlinux/extlinux.conf` and `/etc/fstab` files. Make sure you use an updated image from link:/documentation/PinePhone_Pro/Software/Releases[relases download link] for each distribution.
+Download, decompress and mount the distribution image on your linux machine. Copy root filesystem and boot to specific partition. Replace/create `/boot/extlinux/extlinux.conf` and `/etc/fstab` files. Make sure you use an updated image from link:/documentation/PinePhone_Pro/Software/Releases[relases download link] for each distribution. This guide has been tested with following images:
 
  https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20230925/archlinux-pinephone-pro-phosh-20230925.img.xz
  https://github.com/manjaro-pinephone/phosh/releases/download/beta37/Manjaro-ARM-phosh-pinephonepro-beta37.img.xz
