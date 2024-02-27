@@ -116,8 +116,7 @@ Download, decompress and mount the distribution image on your linux machine. Cop
  https://images.postmarketos.org/bpo/v23.12/pine64-pinephonepro/phosh/20240221-0448/20240221-0448-postmarketOS-v23.12-phosh-22.3-pine64-pinephonepro.img.xz
  # https://ci.ubports.com/job/focal-hybris-rootfs-arm64/job/master/lastSuccessfulBuild/artifact/ubuntu-touch-pinephone-pro-img-arm64.raw.xz # actually this distribution doesn't work on multi-distro image
 
-
-Replace VALUES according the needed distribution. IMAGE to replace with real distro file name.
+Replace VALUES according the updated distribution and real file name.
 
  DISTROURL=https://ci.ubports.com/job/focal-hybris-rootfs-arm64/job/master/lastSuccessfulBuild/artifact/ubuntu-touch-pinephone-pro-img-arm64.raw.xz
  PARTNAME=UT
