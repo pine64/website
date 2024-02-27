@@ -63,7 +63,7 @@ Zero-write the SD card
   attrs="RequiredPartition,LegacyBIOSBootable", size=+, name="extra"
  EOF
 
-NOTE: Make sure you will use correct partition `name` into `PARTNAME` and `PARTNUMBER` during building. _Actually Ubuntu Touch and ArchLinux are not working into multi-distro configuration_.
+NOTE: Make sure you will use correct partition `name` into `PARTNAME` and `PARTNUMBER` during building. _Actually Ubuntu Touch is not working into multi-distro configuration_.
 
 NOTE: A minimum capacity of 64 GB for the SD card is recommended for 5 distributions.
 
