@@ -117,7 +117,7 @@ Download, decompress and mount the distribution image on your linux machine. Cop
  # https://ci.ubports.com/job/focal-hybris-rootfs-arm64/job/master/lastSuccessfulBuild/artifact/ubuntu-touch-pinephone-pro-img-arm64.raw.xz # actually this distribution doesn't work on multi-distro image
 
 
-Replace VALUES according the needed distribution. IMAGE to replace with real distro name.
+Replace VALUES according the needed distribution. IMAGE to replace with real distro file name.
 
  DISTROURL=https://ci.ubports.com/job/focal-hybris-rootfs-arm64/job/master/lastSuccessfulBuild/artifact/ubuntu-touch-pinephone-pro-img-arm64.raw.xz
  PARTNAME=UT
