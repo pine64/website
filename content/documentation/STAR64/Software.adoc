@@ -31,3 +31,9 @@ Notes:
 == NixOS
 
 * link:https://sr.ht/~fgaz/nixos-star64/[NixOS], based on the link:https://github.com/NixOS/nixos-hardware/tree/master/pine64/star64[the nixos-hardware configuration]
+
+== DietPi
+
+* link:https://dietpi.com/#download[Star64 image] on _dietpi.com_, with Linux 6.1 based on link:https://github.com/starfive-tech/linux/tree/JH7110_VisionFive2_6.1.y_devel[StarFive VisionFive 2 kernel sources], rebased on latest link:https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/?h=linux-6.1.y[mainline kernel], with Star64 support from link:https://github.com/Fishwaldo/Star64_linux[Fishwaldo's kernel sources] and own configuration.
+* link:https://dietpi.com/downloads/images/testing/DietPi_Star64-RISC-V-Sid.img.xz[Direct image download]
+* link:https://github.com/MichaIng/linux/tree/6.1-star64[DietPi Star64 kernel sources] on GitHub
