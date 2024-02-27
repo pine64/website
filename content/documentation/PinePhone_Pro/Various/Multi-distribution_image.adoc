@@ -23,7 +23,7 @@ Make sure phone’s ssh server is up and running.
  ip address # phone's ip address
  whoami # user name
 
- ssh <user>@<phoneip> # start ssh connection from linux machine
+ ssh USER@PHONEIP # start ssh connection from linux machine
 
  mkdir -p ~/rk2aw
  cd ~/rk2aw
