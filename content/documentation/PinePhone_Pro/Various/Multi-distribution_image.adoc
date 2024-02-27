@@ -263,7 +263,7 @@ In example:
 
 To find exact LABEL, UUID, PARTLABEL, PARTUUID names open a terminal window.
 
- ssh <user>@<phoneip>
+ ssh USER@PHONEIP
  sudo blkid
 
 Any time a distribution update rebuilds the initramfs it is necessary to delete `/boot/boot.scr` again to keep the rk2aw menu clean.
