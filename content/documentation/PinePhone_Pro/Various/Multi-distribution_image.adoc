@@ -9,57 +9,68 @@ menu:
     weight: 
 ---
 
-This article explains how to install megi's rk2aw pre-loader, U-Boot to SPI and a multi-distribution image to the microSD card. Further instructions regarding rk2aw can be found on link:https://xff.cz/kernels/bootloaders-2024.04/ppp/rk2aw/INSTALL[megi's website]. Please note that pre-loader and userspace utility to flash it are free, but not open-source.
+This article explains how to install a multiple linux distribution enviroment on your PinePhone Pro that is bootable from SD card.
 
-== Flash rk2Aw pre-loader to SPI
+=== Pre-requisite: rk2aw on SPI flash
+Make sure your phone has link:/documentation/PinePhone_Pro/Software/Bootloaders/#rk2aw[rk2aw bootloader] on SPI flash. For older PinePhone Pro editions you can install it on your own, using terminal CLI from the device's stock sofware or throught a ssh connection from a linux machine via USB cable or WiFi.
 
-Connect PinePhone Pro to a Linux machine (USB cable or wifi connection is fine). Make sure phone's ssh server is up and running, and find the target IP address. Start a ssh connection from PC and download from the web the pre-loader installer to flash into the phone's SPI.
+Please note that this pre-loader and the userspace utility to flash it are free, but not open-source. 
 
- sudo systemctl enable --now sshd # on phone's terminal window
- ip address # on phone's terminal window
+Make sure phone’s ssh server is up and running.
 
- mkdir -p ~/ppp # on pc's terminal window from now on
- cd ~/ppp
- ssh <user>@<phoneip>
- curl -O https://xff.cz/kernels/bootloaders-2024.04/ppp.tar.gz
- tar -xvzf ppp.tar.gz -C ~/ppp
- # scp -r ~/ppp <user>@<phoneip>:~/Downloads # as option when direct download is not possible
+ sudo systemctl enable --now sshd # from phone's terminal window
+ ip address # phone's ip address
+ whoami # user name
+
+ ssh <user>@<phoneip> # start ssh connection from linux machine
+
+ mkdir -p ~/rk2aw
+ cd ~/rk2aw
+ curl -O https://xff.cz/kernels/bootloaders-2024.04/ppp.tar.gz # get rk2aw installer
+ tar -xvzf ppp.tar.gz -C ~/rk2aw
+ cd ~/rk2aw/ppp
  sudo ./spinor-flash-initial-setup.sh
+ sudo rm -r  ~/rk2aw
 
-== Build multi-distro on the microSD card
+Further instructions can be found on link:https://xff.cz/kernels/bootloaders-2024.04/ppp/rk2aw/INSTALL[author's website].
 
-If your microSD card in not empty, first get rid of any left signature. Use GParted GUI to format `cleared` each partition, than remove all partitions. Next open terminal window an wipe the content.
+== Build multi-distro SD card
+
+Insert SD card into your linux machine. Make sure there are no left signatures or partitions. Format `cleared` any partition using GParted GUI. Than open terminal window to wipe any content.
 
  sudo wipefs /dev/sdb # shows current signatures
  sudo wipefs --all --force /dev/sdb # erase current signatures
 
-Zero-write the microSD card
+Zero-write the SD card
 
  sudo dd if=/dev/zero of=/dev/sdb status=progress bs=32768 count=1 # quick way erasing
  sudo dd if=/dev/zero of=/dev/sdb status=progress bs=32768 count=945728 # 32 GB
  sudo dd if=/dev/zero of=/dev/sdb status=progress bs=32768 count=1908880 # 64 GB
  sudo dd if=/dev/zero of=/dev/sdb status=progress bs=32768 count=3872000 # 128 GB
 
-=== Partition the microSD card
-Note: A minimum capacity of 64 GB for the microSD card is recommended for 5 distributions.
+=== Partition the SD card
 
  sudo sfdisk /dev/sdb --wipe always <<EOF
   label: gpt
   first-lba: 64
   table-length: 8
-  attrs=RequiredPartition, type=D7B1F817-AA75-2F4F-830D-84818A145370, start=64, size=32704, name="loader"
-  attrs="RequiredPartition,LegacyBIOSBootable", size=11G, name="ALARM"
-  attrs="RequiredPartition,LegacyBIOSBootable", size=11G, name="MANJARO"
-  attrs="RequiredPartition,LegacyBIOSBootable", size=11G, name="MOBIAN"
-  attrs="RequiredPartition,LegacyBIOSBootable", size=11G, name="PMOS"
-  attrs="RequiredPartition,LegacyBIOSBootable", size=11G, name="UT"
+  attrs=RequiredPartition, type=D7B1F817-AA75-2F4F-830D-84818A145370, start=64, size=32704, name="empty"
+  attrs="RequiredPartition,LegacyBIOSBootable", size=16G, name="ARCH"
+  attrs="RequiredPartition,LegacyBIOSBootable", size=16G, name="MANJARO"
+  attrs="RequiredPartition,LegacyBIOSBootable", size=16G, name="MOBIAN"
+  attrs="RequiredPartition,LegacyBIOSBootable", size=16G, name="PMOS"
+  attrs="RequiredPartition,LegacyBIOSBootable", size=16G, name="UT"
   attrs="RequiredPartition,LegacyBIOSBootable", size=+, name="extra"
  EOF
+
+NOTE: Make sure you will use correct partition `name` into `PARTNAME` and `PARTNUMBER` during building. _Actually Ubuntu Touch and ArchLinux are not working into multi-distro configuration_.
+
+NOTE: A minimum capacity of 64 GB for the SD card is recommended for 5 distributions.
 
 Expected result
 
  Checking that no-one is using this disk right now ... OK
- Disk /dev/sdb: 58.25 GiB, 62550179840 bytes, 122168320 sectors
+ Disk /dev/sdb: 118.16 GiB, 126877696000 bytes, 247808000 sectors
  Disk model: SD Card Reader  
  Units: sectors of 1 * 512 = 512 bytes
  Sector size (logical/physical): 512 bytes / 512 bytes
@@ -67,132 +78,130 @@ Expected result
  >>> Script header accepted.
  New situation:
  Disklabel type: gpt
- Disk identifier: F71BFBA6-D2C3-4C20-8079-1401B10C724C
+ Disk identifier: A012E9D0-B4EB-4677-926F-D93AE4C696FA
   Device    Start       End  Sectors   Size Type
   sdb1         64     32767    32704   16M  unknown
-  sdb2      32768  23101439 23068672   11G  Linux fs
-  sdb3   23101440  46170111 23068672   11G  Linux fs
-  sdb4   46170112  69238783 23068672   11G  Linux fs
-  sdb5   69238784  92307455 23068672   11G  Linux fs
-  sdb6   92307456 115376127 23068672   11G  Linux fs
-  sdb7  115376128 122167295  6791168  3.2G  Linux fs
+  sdb2      32768  33587199 33554432   16G  Linux fs
+  sdb3   33587200  67141631 33554432   16G  Linux fs
+  sdb4   67141632 100696063 33554432   16G  Linux fs
+  sdb5  100696064 134250495 33554432   16G  Linux fs
+  sdb6  134250496 167804927 33554432   16G  Linux fs
+  sdb7  167804928 247805951 80001024 38.1G  Linux fs
  The partition table has been altered.
  Calling ioctl() to re-read partition table.
  Syncing disks.
 
-=== Build Arch Linux partition
+=== Building partition for each linux distribution
 
-Download, decompress and mount the image. Copy rootfs and bootfs to the partition. Edit/replace some files.
+Download, decompress and mount the distribution image. Copy root filesystem and boot to specific partition. Replace/create `/boot/extlinux/extlinux.conf` and `/etc/fstab` files. Make sure you use an updated image from link:/documentation/PinePhone_Pro/Software/Releases[relases download link] for each distribution.
 
+ https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20230925/archlinux-pinephone-pro-phosh-20230925.img.xz
+ https://github.com/manjaro-pinephone/phosh/releases/download/beta37/Manjaro-ARM-phosh-pinephonepro-beta37.img.xz
+ https://images.mobian.org/pinephonepro/weekly/mobian-pinephonepro-phosh-20240121.img.xz
+ https://images.postmarketos.org/bpo/v23.12/pine64-pinephonepro/phosh/20240221-0448/20240221-0448-postmarketOS-v23.12-phosh-22.3-pine64-pinephonepro.img.xz
+ # https://ci.ubports.com/job/focal-hybris-rootfs-arm64/job/master/lastSuccessfulBuild/artifact/ubuntu-touch-pinephone-pro-img-arm64.raw.xz # actually this distribution doesn't work on multi-distro image
+
+
+Replace VALUES according the needed distribution.
+
+ DISTROURL=https://ci.ubports.com/job/focal-hybris-rootfs-arm64/job/master/lastSuccessfulBuild/artifact/ubuntu-touch-pinephone-pro-img-arm64.raw.xz
+ PARTNAME=UT
+ PARTNUMBER=6
+
+ mkdir -p ~/ppp/distros
  cd ~/ppp/distros
- wget https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20230925/archlinux-pinephone-pro-phosh-20230925.img.xz
- xz -v -d -k archlinux-pinephone-pro-phosh-20230925.img.xz
- mv archlinux-pinephone-pro-phosh-20230925.img archlinux.img
- sudo losetup -P /dev/loop2 archlinux.img
- sudo mkdir /mnt/archlinux /mnt/archlinux/boot /mnt/archlinux/root /mnt/archlinuxsd
- sudo mount /dev/loop2p1 /mnt/archlinux/boot/
- sudo mount /dev/loop2p2 /mnt/archlinux/root/
+ wget $DISTROURL
+ xz -v -d -k <compressed_distro_image>.*.xz
+ mv <distro_image>.img $PARTNAME.img
 
- sudo dd if=/dev/loop2p2 of=/dev/sdb2 bs=1M status=progress conv=fsync
- sudo mount /dev/sdb2 /mnt/archlinuxsd/
- sudo scp -r /mnt/archlinux/boot/* /mnt/archlinuxsd/boot
- sudo mv /mnt/archlinuxsd/boot/boot.scr /mnt/archlinuxsd/boot/boot.scrORIG
- sudo mkdir /mnt/archlinuxsd/boot/extlinux
- sudo chmod a=rwx /mnt/archlinuxsd/boot/extlinux
- sudo chmod a=rwx /mnt/archlinuxsd/etc/fstab
+ sudo losetup -P /dev/loop0 $PARTNAME.img
+ sudo mkdir -p /mnt/$PARTNAME/boot /mnt/$PARTNAME/root /mnt/$PARTNAME/sd
+ sudo mount /dev/loop0p1 /mnt/$PARTNAME/boot/ # use loop0p2 for UT
+ sudo mount /dev/loop0p2 /mnt/$PARTNAME/root/ # use loop0p3 for UT
 
- sudo tee /mnt/archlinuxsd/boot/extlinux/extlinux.conf <<EOF
-  #/boot/extlinux/extlinux.conf
-  menu title Pinephone Pro Boot Menu
-  label l0
-  menu label ALARM
-  fdt /boot/dtbs/rockchip/rk3399-pinephone-pro.dtb
-  kernel /boot/Image.gz
-  initrd /boot/initramfs-linux.img
-  append root=partlabel=ALARM console=ttyS2,115200 console=tty0 loglevel=7 rw rootwait
+ sudo dd if=/dev/loop0p2 of=/dev/sdb$PARTNUMBER bs=1M status=progress conv=fsync # use loop0p3 for UT
+ sudo mount /dev/sdb$PARTNUMBER /mnt/$PARTNAME/sd/
+ sudo scp -r /mnt/$PARTNAME/boot/* /mnt/$PARTNAME/sd/boot
+ # sudo mv /mnt/$PARTNAME/sd/boot/boot.scr /mnt/$PARTNAME/sd/boot/boot.scrORIG # rename if present
+ sudo mkdir -p /mnt/$PARTNAME/sd/boot/extlinux
+ # sudo mv /mnt/$PARTNAME/sd/boot/extlinux/extlinux.conf /mnt/$PARTNAME/sd/boot/extlinux/extlinux.confORIG # rename if present
+ # sudo mv /mnt/$PARTNAME/sd/etc/fstab /mnt/$PARTNAME/sd/etc/fstabORIG # rename
+
+ sudo tee /mnt/$PARTNAME/sd/boot/extlinux/extlinux.conf <<EOF
+ #/boot/extlinux/extlinux.conf
+ menu title Pinephone Pro Boot Menu
+ label l0
+ menu label $PARTNAME
+
+ #uncomment for ARCH, MANJARO
+ #fdt /boot/dtbs/rockchip/rk3399-pinephone-pro.dtb
+ #initrd /boot/initramfs-linux.img
+ #
+ #uncomment for ARCH
+ #kernel /boot/Image.gz
+ #
+ #uncomment for MANJARO
+ #kernel /boot/Image
+ #
+ #uncomment for MOBIAN
+ #linux /boot/vmlinuz-6.6-rockchip
+ #initrd /boot/initrd.img-6.6-rockchip
+ #fdtdir /boot/dtb-6.6-rockchip/
+ #
+ #uncomment for PMOS
+ #fdtdir /boot/dtbs-pine64-pinephonepro/
+ #linux /boot/vmlinuz
+ #initrd /boot/initramfs-extra
+ #
+ #uncomment for ARCH, MANJARO, MOBIAN, PMOS
+ #append root=PARTLABEL=$PARTNAME console=ttyS2,115200 console=tty0 loglevel=7 ro rootwait
+ #
+ #uncomment for UT
+ #linux /boot/vmlinuz-6.5.0-okpine-ut
+ #initrd /boot/initrd.img-6.5.0-okpine-ut
+ #fdtdir /boot/dtb-6.5.0-okpine-ut/	
+ #append root=PARTLABEL=$PARTNAME console=ttyS2,115200 consoleblank=0 loglevel=7 systempart=/dev/disk/by-partlabel/system datapart=/dev/disk/by-partlabel/userdata security=apparmor splash plymouth.ignore-serial-consoles vt.global_cursor_default=0
  EOF
 
- sudo tee /mnt/archlinuxsd/etc/fstab <<EOF
-  #<file system>  <dir> <type> <options>   <dump> <pass>
-  partlabel=ALARM /     ext4   rw,relatime 0      1
+ sudo tee /mnt/$PARTNAME/sd/etc/fstab <<EOF
+ #<file system>      <dir> <type> <options>                 <dump> <pass>
+ #uncomment for ARCH
+ #PARTLABEL=$PARTNAME /     ext4   rw,relatime               0      1
+ #PARTLABEL=$PARTNAME /boot vfat   rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro 0 2 
+ #
+ #uncomment for MANJARO
+ #PARTLABEL=MANJARO /   ext4     defaults    0   1
+ #
+ #uncomment for MOBIAN
+ #PARTLABEL=$PARTNAME /     ext4   defaults,x-systemd.growfs 0      1
+ #PARTLABEL=$PARTNAME /boot ext4   defaults,x-systemd.growfs 0      2  
+ #
+ #uncomment for PMOS
+ #PARTLABEL=$PARTNAME /     ext4  defaults 0 0
+ #PARTLABEL=$PARTNAME /boot fat32 defaults 0 0
+ #
+ #uncomment for UT
+ #PARTLABEL=$PARTNAME /         ext4 defaults 0 1
+ #PARTLABEL=$PARTNAME /boot     ext4 defaults 0 2
+ #PARTLABEL=$PARTNAME /userdata ext4 defaults 0 2
  EOF
 
-=== Build Manjaro partition
+=== Unmount, detach all building images and resize partition.
 
-Download, decompress and mount the image. Copy rootfs and bootfs to the partition. Edit/replace some files.
+ sudo umount /mnt/$PARTNAME/*
+ sudo rm -r /mnt/$PARTNAME
+ sudo losetup -D
 
- cd ~/ppp/distros
- wget https://github.com/manjaro-pinephone/phosh/releases/download/beta37/Manjaro-ARM-phosh-pinephonepro-beta37.img.xz
- xz -v -d -k Manjaro-ARM-phosh-pinephonepro-beta37.img.xz
- mv Manjaro-ARM-phosh-pinephonepro-beta37.img manjaro.img
- sudo losetup -P /dev/loop3 manjaro.img
- sudo mkdir /mnt/manjaro /mnt/manjaro/boot /mnt/manjaro/root /mnt/manjarosd
- sudo mount /dev/loop3p1 /mnt/manjaro/boot/
- sudo mount /dev/loop3p2 /mnt/manjaro/root/
+On first boot, if it doesn't happen automatically, you can manually resize each image to fill his entire partition using GParted GUI software or running command.
 
- sudo dd if=/dev/loop3p2 of=/dev/sdb3 bs=1M status=progress conv=fsync
- sudo mount /dev/sdb3 /mnt/manjarosd/
- sudo scp -r /mnt/manjaro/boot/* /mnt/manjarosd/boot
- sudo mv /mnt/manjarosd/boot/boot.scr /mnt/manjarosd/boot/boot.scrORIG
- sudo mkdir /mnt/manjarosd/boot/extlinux
- sudo chmod a=rwx /mnt/manjarosd/boot/extlinux
- sudo chmod a=rwx /mnt/manjarosd/etc/fstab
+ sudo e2fsck -f /dev/sdb$PARTNUMBER
+ sudo resize2fs /dev/sdb$PARTNUMBER
 
- sudo tee /mnt/manjarosd/boot/extlinux/extlinux.conf <<EOF
-  #/boot/extlinux/extlinux.conf
-  mwenu title Pinephone Pro Boot Menu
-  label l0
-  menu label MANJARO
-  fdt /boot/dtbs/rockchip/rk3399-pinephone-pro.dtb
-  kernel /boot/Image
-  initrd /boot/initramfs-linux.img
-  append root=partlabel=MANJARO console=ttyS2,115200 console=tty0 loglevel=7 rw rootwait
- EOF
+Repeat the building process for each needed distribution.
 
- sudo tee /mnt/manjarosd/etc/fstab <<EOF
-  #<file system>    <dir> <type> <options> <dump> <pass>
-  partlabel=MANJARO /     ext4   defaults  0      1
- EOF
+=== Build PostmarketOS image
 
-=== Build Mobian partition
-
-Download, decompress and mount the image. Copy rootfs and bootfs to the partition. Edit/replace some files.
-
- cd ~/ppp/distros
- wget https://images.mobian.org/pinephonepro/weekly/mobian-pinephonepro-phosh-20240121.img.xz
- xz -v -d -k mobian-pinephonepro-phosh-20240121.img.xz
- mv mobian-pinephonepro-phosh-20240121.img mobian.img
- sudo losetup -P /dev/loop4 mobian.img
- sudo mkdir /mnt/mobian /mnt/mobian/boot /mnt/mobian/root /mnt/mobiansd
- sudo mount /dev/loop4p1 /mnt/mobian/boot/
- sudo mount /dev/loop4p2 /mnt/mobian/root/
-
- sudo dd if=/dev/loop4p2 of=/dev/sdb4 bs=1M status=progress conv=fsync
- sudo mount /dev/sdb4 /mnt/mobiansd/
- sudo scp -r /mnt/mobian/boot/* /mnt/mobiansd/boot
- sudo chmod a=rwx /mnt/mobiansd/boot/extlinux
- sudo chmod a=rwx /mnt/mobiansd/etc/fstab
-
- sudo nano /mnt/mobiansd/boot/extlinux/extlinux.conf # modify content as following
-  ## /boot/extlinux/extlinux.conf file
-  menu label MOBIAN
-  linux /boot/vmlinuz-6.6-rockchip
-  initrd /boot/initrd.img-6.6-rockchip
-  fdtdir /boot/dtb-6.6-rockchip/
-  append root=partlabel=MOBIAN console=ttyS2,115200 console=tty0 loglevel=7 rw rootwait
-  #append root=UUID=b282b619-c9b7-4c15-9c3d-2005b35d5999 consoleblank=0 loglevel=7 ro quiet splash plymouth.ignore-serial>
-
- sudo tee /mnt/mobiansd/etc/fstab <<EOF
-  #<file system>   <dir> <type> <options>                 <dump> <pass>
-  partlabel=MOBIAN /     ext4   defaults,x-systemd.growfs	0      1
- EOF
-
-To save and close terminal window digit: `Ctrl+X` to save, `Yes`, `Enter`.
-
-=== Build PostmarketOS partition
-
-Download, decompress and mount the image. Copy rootfs and bootfs to the partition. Edit/replace some files.
-Optionally you can use bootstrap to generate distro image. Make sure you install pmbootstrap before building image.
+You can optionally use bootstrap to generate distro image, instead of direct download. Make sure you install pmbootstrap before building image.
 
  git clone --depth=1 https://git.sr.ht/~postmarketos/pmbootstrap
  mkdir -p ~/.local/bin
@@ -219,88 +228,6 @@ Build PostmarketOS image via pmbootstrap
  pmbootstrap pull
  pmbootstrap install --sdcard=/dev/loop0
  pmbootstrap shutdown # remember to deactivare chroot after the image creation
-
-In you don't build PMOS image on your own, download, decompress and mount the image. Copy rootfs and bootfs to the partition. Edit/replace some files.
-
- cd ~/ppp/distros
- # wget https://images.postmarketos.org/bpo/v23.12/pine64-pinephonepro/phosh/20240214-0437/20240214-0437-postmarketOS-v23.12-phosh-22.3-pine64-pinephonepro.img.xz
- # xz -v -d -k 20240214-0437-postmarketOS-v23.12-phosh-22.3-pine64-pinephonepro.img.xz
- # mv 20240214-0437-postmarketOS-v23.12-phosh-22.3-pine64-pinephonepro.img postmarketos.img
- sudo losetup -P /dev/loop5 postmarketos.img
- sudo mkdir /mnt/postmarketos /mnt/postmarketos/boot /mnt/postmarketos/root /mnt/postmarketossd
- sudo mount /dev/loop5p1 /mnt/postmarketos/boot/
- sudo mount /dev/loop5p2 /mnt/postmarketos/root/
-
- sudo dd if=/dev/loop5p2 of=/dev/sdb5 bs=1M status=progress conv=fsync
- sudo mount /dev/sdb5 /mnt/postmarketossd/
- sudo scp -r /mnt/postmarketos/boot/* /mnt/postmarketossd/boot
- sudo mkdir /mnt/postmarketossd/boot/extlinux
- sudo chmod a=rwx /mnt/postmarketossd/boot/extlinux
- sudo chmod a=rwx /mnt/postmarketossd/etc/fstab
-
- sudo tee /mnt/postmarketossd/boot/extlinux/extlinux.conf <<EOF
-  #/boot/extlinux/extlinux.conf
-  default l0
-  menu title U-Boot menu
-  prompt 0
-  timeout 10
-  label l0
-  menu label PMOS
-  linux /boot/vmlinuz
-  initrd /boot/initramfs-extra
-  fdtdir /boot/dtbs-pine64-pinephonepro/
-  append root=partlabel=PMOS console=ttyS2,115200 console=tty0 loglevel=7 rw rootwait
- EOF
-
- sudo tee /mnt/postmarketossd/etc/fstab <<EOF
-  #<file system> <mount point> <type> <options> <dump> <pass>
-  partlabel=PMOS /             ext4   defaults  0      0
- EOF
-
-=== Build Ubuntu Touch partition
-
-Download, decompress and mount the image. Copy rootfs and bootfs to the partition. Edit/replace some files.
-
- cd ~/ppp/distros
- wget https://ci.ubports.com/job/focal-hybris-rootfs-arm64/job/master/lastSuccessfulBuild/artifact/ubuntu-touch-pinephone-pro-img-arm64.raw.xz
- xz -v -d -k ubuntu-touch-pinephone-pro-img-arm64.raw.xz
- mv ubuntu-touch-pinephone-pro-img-arm64.raw ubuntu.raw
- sudo losetup -P /dev/loop6 ubuntu.raw
- sudo mkdir /mnt/ubuntutouch /mnt/ubuntutouch/boot /mnt/ubuntutouch/root /mnt/ubuntutouchsd
- sudo mount /dev/loop6p2 /mnt/ubuntutouch/boot/
- sudo mount /dev/loop6p3 /mnt/ubuntutouch/root/
-
- sudo dd if=/dev/loop6p3 of=/dev/sdb6 bs=1M status=progress conv=fsync
- sudo mount /dev/sdb6 /mnt/ubuntutouchsd/
- sudo scp -r /mnt/ubuntutouch/boot/* /mnt/ubuntutouchsd/boot
- sudo chmod a=rwx /mnt/ubuntutouchsd/etc/fstab
- sudo chmod a=rwx /mnt/ubuntutouchsd/boot/extlinux
- 
- sudo nano /mnt/ubuntutouchsd/boot/extlinux/extlinux.conf # modify content as following
-  ## /boot/extlinux/extlinux.conf file
-  menu label UT
-  linux /boot/vmlinuz-6.5.0-okpine-ut
-  initrd /boot/initrd.img-6.5.0-okpine-ut
-  fdtdir /boot/dtb-6.5.0-okpine-ut/rockchip/
-  #append root=UUID=9f3cfee6-e7ed-4d4a-bfeb-e54ef502cec7 console=ttyS2,115200n8 consoleblank=0 loglevel=7 ro splash plymouth.ignore-serial-consoles vt.global_cursor_default=0
-  append root=partlabel=UT console=ttyS2,115200 console=tty0 loglevel=7 rw rootwait
-
- sudo tee /mnt/ubuntutouchsd/etc/fstab <<EOF
-  #<file system> <dir> <type> <options> <dump> <pass>
-  partlabel=UT   /     ext4   defaults  0      1
- EOF
-
-=== Unmount and detach all images
-
- sudo losetup -D
- sudo umount /mnt/*/*
- sudo umount /mnt/*
- sudo umount /media/*/*
- sudo umount /media/*
- sudo rm -r /mnt/*/*
- sudo rm -r /mnt/*
- sudo sudo rm -r /media/*/*
- sudo sudo rm -r /media/*
  
 == Switching on device
 
@@ -321,7 +248,10 @@ In example:
 
 == Troubleshooting
 
-On first boot, if it doesn't happen automatically, you can manually resize each image to fill his entire partition using GParted GUI software or running `sudo resize2fs` into terminal window.
+To find exact LABEL, UUID, PARTLABEL, PARTUUID names open a terminal window.
+
+ ssh <user>@<phoneip>
+ sudo blkid
 
 Any time a distribution update rebuilds the initramfs it is necessary to delete `/boot/boot.scr` again to keep the rk2aw menu clean.
 
