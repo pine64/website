@@ -96,8 +96,9 @@ Expected result
  Calling ioctl() to re-read partition table.
  Syncing disks.
 
-If you removed bootloader from PinePhone Pro's SPI, write U-Boot on fisrt sectors of SD card.
+If you removed bootloader from PinePhone Pro's SPI, write U-Boot on first sectors of SD card.
 
+ cd ~/rk2aw/ppp/rk2aw
  sudo dd if=ppp/foss/u-boot-rockchip.bin of=/dev/sdb bs=512 seek=64
  sudo sync
 
