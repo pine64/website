@@ -55,6 +55,7 @@ Zero-write the SD card
 === Partition the SD card
 
  PARTSIZE=16G # adjust depending on SD card size
+ 
  sudo sfdisk /dev/sdb --wipe always <<EOF
   label: gpt
   first-lba: 64
