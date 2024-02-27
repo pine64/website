@@ -16,10 +16,10 @@ Make sure your phone has link:/documentation/PinePhone_Pro/Software/Bootloaders/
 
 Please note that this pre-loader and the userspace utility to flash it are free, but not open-source. 
 
-Make sure phone’s ssh server is up and running.
+Open a terminal window on you PinePhone Pro and make sure phone’s ssh server is up and running.
 
- sudo apt install ssh
- sudo systemctl enable --now sshd # from phone's terminal window
+ sudo apt install ssh # from phone's terminal window
+ sudo systemctl enable --now sshd
  ip address # phone's ip address
  whoami # user name
 
