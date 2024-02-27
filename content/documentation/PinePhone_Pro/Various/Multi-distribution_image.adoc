@@ -30,7 +30,6 @@ Make sure phone’s ssh server is up and running.
  tar -xvzf ppp.tar.gz -C ~/rk2aw
  cd ~/rk2aw/ppp
  sudo ./spinor-flash-initial-setup.sh
- sudo rm -r  ~/rk2aw
 
 Further instructions can be found on link:https://xff.cz/kernels/bootloaders-2024.04/ppp/rk2aw/INSTALL[author's website].
 
@@ -95,11 +94,17 @@ Expected result
 === Optional: write bootloader in front of first sectors
 
  cd ~/rk2aw/ppp
- sudo dd if=ppp/foss/u-boot-rockchip.bin of=/dev/sdb bs=512 seek=64
+ sudo dd if=foss/u-boot-rockchip.bin of=/dev/sdb bs=512 seek=64
  sudo sync
 
-Test regular behaviour removing the U-Boot bootloader from SPI
+To test that this is working as intended, you can run the following on your PinePhone Pro to remove the U-Boot in SPI:
 
+ ssh <user>@<phoneip> # start ssh connection from linux machine
+ mkdir -p ~/rk2aw
+ cd ~/rk2aw
+ wget https://xff.cz/kernels/bootloaders-2024.04/ppp.tar.gz # get rk2aw installer
+ tar -xvzf ppp.tar.gz -C ~/rk2aw
+ cd ~/rk2aw/ppp/rk2aw
  rk2aw-spi-flasher --erase-all --rk2aw rk2aw/debug.img.spi
  sudo reboot
 
