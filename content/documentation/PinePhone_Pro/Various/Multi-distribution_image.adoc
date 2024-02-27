@@ -9,9 +9,9 @@ menu:
     weight: 
 ---
 
-This article explains how to install a multiple linux distribution enviroment on your PinePhone Pro that is bootable from SD card.
+This article explains how to install a multiple linux distribution enviroment on your PinePhone Pro that is bootable from microSD card.
 
-=== Pre-requisite: rk2aw on SPI flash
+== Pre-requisite: rk2aw on SPI flash
 Make sure your phone has link:/documentation/PinePhone_Pro/Software/Bootloaders/#rk2aw[rk2aw bootloader] on SPI flash. For older PinePhone Pro editions you can install it on your own, using terminal CLI from the device's stock sofware or throught a ssh connection from a linux machine via USB cable or WiFi.
 
 Please note that this pre-loader and the userspace utility to flash it are free, but not open-source. 
@@ -32,32 +32,34 @@ Make sure phone’s ssh server is up and running.
  cd ~/rk2aw/ppp
  sudo ./spinor-flash-initial-setup.sh
 
-You can optionally remove bootloader in SPI and flash U-Boot in front of first sectors of your SD card
+You can optionally remove bootloader in SPI and flash U-Boot in front of first sectors of your microSD card
 
  cd ~/rk2aw/ppp/rk2aw
  sudo ./rk2aw-spi-flasher --erase-all --rk2aw debug.img.spi
 
 Further instructions can be found on link:https://xff.cz/kernels/bootloaders-2024.04/ppp/rk2aw/INSTALL[author's website].
 
-== Build multi-distro SD card
+== Build multi-distro microSD card
 
-Insert SD card into your linux machine. Make sure there are no left signatures or partitions. Format `cleared` any partition using GParted GUI. Than open terminal window to wipe any content.
+Insert microSD card into your linux machine. Make sure there are no left signatures or partitions. Format `cleared` any partition using GParted GUI. Than open terminal window to wipe any content.
 
- sudo wipefs /dev/sdb # shows current signatures
- sudo wipefs --all --force /dev/sdb # erase current signatures
-
-Zero-write the SD card
-
- sudo dd if=/dev/zero of=/dev/sdb status=progress bs=32768 count=1 # quick way erasing
- sudo dd if=/dev/zero of=/dev/sdb status=progress bs=32768 count=945728 # 32 GB
- sudo dd if=/dev/zero of=/dev/sdb status=progress bs=32768 count=1908880 # 64 GB
- sudo dd if=/dev/zero of=/dev/sdb status=progress bs=32768 count=3872000 # 128 GB
-
-=== Partition the SD card
-
- PARTSIZE=16G # adjust depending on SD card size
+ lsblk # shows the [DEVICE] name 
  
- sudo sfdisk /dev/sdb --wipe always <<EOF
+ sudo wipefs /dev/[DEVICE] # shows current signatures
+ sudo wipefs --all --force /dev/[DEVICE] # erase current signatures
+
+Zero-write the microSD card
+
+ sudo dd if=/dev/zero of=/dev/[DEVICE] status=progress bs=32768 count=1 # quick way erasing
+ sudo dd if=/dev/zero of=/dev/[DEVICE] status=progress bs=32768 count=945728 # 32 GB
+ sudo dd if=/dev/zero of=/dev/[DEVICE] status=progress bs=32768 count=1908880 # 64 GB
+ sudo dd if=/dev/zero of=/dev/[DEVICE] status=progress bs=32768 count=3872000 # 128 GB
+
+=== Partition the microSD card
+
+ PARTSIZE=16G # adjust depending on microSD card size
+ 
+ sudo sfdisk /dev/[DEVICE] --wipe always <<EOF
   label: gpt
   first-lba: 64
   table-length: 8
@@ -72,13 +74,13 @@ Zero-write the SD card
 
 NOTE: Make sure you will use correct partition `name` into `PARTNAME` and `PARTNUMBER` during building. _Actually Ubuntu Touch is not working into multi-distro configuration_.
 
-NOTE: A minimum capacity of 64 GB for the SD card is recommended for 5 distributions.
+NOTE: A minimum capacity of 64 GB for the microSD card is recommended for 5 distributions.
 
 Expected result
 
  Checking that no-one is using this disk right now ... OK
  Disk /dev/sdb: 118.16 GiB, 126877696000 bytes, 247808000 sectors
- Disk model: SD Card Reader  
+ Disk model: microSD card Reader  
  Units: sectors of 1 * 512 = 512 bytes
  Sector size (logical/physical): 512 bytes / 512 bytes
  I/O size (minimum/optimal): 512 bytes / 512 bytes
@@ -98,10 +100,10 @@ Expected result
  Calling ioctl() to re-read partition table.
  Syncing disks.
 
-If you removed bootloader from PinePhone Pro's SPI, write U-Boot on first sectors of SD card.
+If you removed bootloader from PinePhone Pro's SPI, write U-Boot on first sectors of microSD card.
 
  cd ~/rk2aw/ppp/rk2aw
- sudo dd if=ppp/foss/u-boot-rockchip.bin of=/dev/sdb bs=512 seek=64
+ sudo dd if=ppp/foss/u-boot-rockchip.bin of=/dev/[DEVICE] bs=512 seek=64
  sudo sync
 
 === Building partition for each linux distribution
@@ -115,7 +117,7 @@ Download, decompress and mount the distribution image on your linux machine. Cop
  # https://ci.ubports.com/job/focal-hybris-rootfs-arm64/job/master/lastSuccessfulBuild/artifact/ubuntu-touch-pinephone-pro-img-arm64.raw.xz # actually this distribution doesn't work on multi-distro image
 
 
-Replace VALUES according the needed distribution.
+Replace VALUES according the needed distribution. IMAGE to replace with real distro name.
 
  DISTROURL=https://ci.ubports.com/job/focal-hybris-rootfs-arm64/job/master/lastSuccessfulBuild/artifact/ubuntu-touch-pinephone-pro-img-arm64.raw.xz
  PARTNAME=UT
@@ -124,16 +126,16 @@ Replace VALUES according the needed distribution.
  mkdir -p ~/ppp/distros
  cd ~/ppp/distros
  wget $DISTROURL
- xz -v -d -k <compressed_distro_image>.*.xz
- mv <distro_image>.img $PARTNAME.img
+ xz -v -d -k IMAGE.*.xz
+ mv IMAGE.img $PARTNAME.img
 
  sudo losetup -P /dev/loop0 $PARTNAME.img
  sudo mkdir -p /mnt/$PARTNAME/boot /mnt/$PARTNAME/root /mnt/$PARTNAME/sd
  sudo mount /dev/loop0p1 /mnt/$PARTNAME/boot/ # use loop0p2 for UT
  sudo mount /dev/loop0p2 /mnt/$PARTNAME/root/ # use loop0p3 for UT
 
- sudo dd if=/dev/loop0p2 of=/dev/sdb$PARTNUMBER bs=1M status=progress conv=fsync # use loop0p3 for UT
- sudo mount /dev/sdb$PARTNUMBER /mnt/$PARTNAME/sd/
+ sudo dd if=/dev/loop0p2 of=/dev/[DEVICE]$PARTNUMBER bs=1M status=progress conv=fsync # use loop0p3 for UT
+ sudo mount /dev/[DEVICE]$PARTNUMBER /mnt/$PARTNAME/sd/
  sudo scp -r /mnt/$PARTNAME/boot/* /mnt/$PARTNAME/sd/boot
  # sudo mv /mnt/$PARTNAME/sd/boot/boot.scr /mnt/$PARTNAME/sd/boot/boot.scrORIG # rename if present
  sudo mkdir -p /mnt/$PARTNAME/sd/boot/extlinux
@@ -206,8 +208,8 @@ Replace VALUES according the needed distribution.
 
 On first boot, if it doesn't happen automatically, you can manually resize each image to fill his entire partition using GParted GUI software or running command.
 
- sudo e2fsck -f /dev/sdb$PARTNUMBER
- sudo resize2fs /dev/sdb$PARTNUMBER
+ sudo e2fsck -f /dev/[DEVICE]$PARTNUMBER
+ sudo resize2fs /dev/[DEVICE]$PARTNUMBER
 
 Repeat the building process for each needed distribution.
 
