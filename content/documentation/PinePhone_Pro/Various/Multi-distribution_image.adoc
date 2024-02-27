@@ -178,25 +178,25 @@ Replace VALUES according the updated distribution and real file name.
  EOF
 
  sudo tee /mnt/$PARTNAME/sd/etc/fstab <<EOF
- #<file system>      <dir> <type> <options>                 <dump> <pass>
+ #<file system>         <dir>      <type> <options>                  <dump> <pass>
  #uncomment for ARCH
- #PARTLABEL=$PARTNAME /     ext4   rw,relatime               0      1
+ #PARTLABEL=$PARTNAME   /          ext4   rw,relatime                0      1
  #
  #uncomment for MANJARO
- #PARTLABEL=MANJARO /   ext4     defaults    0   1
+ #PARTLABEL=MANJARO     /          ext4   defaults                   0      1
  #
  #uncomment for MOBIAN
- #PARTLABEL=$PARTNAME /     ext4   defaults,x-systemd.growfs 0      1
- #PARTLABEL=$PARTNAME /boot ext4   defaults,x-systemd.growfs 0      2  
+ #PARTLABEL=$PARTNAME   /          ext4   defaults,x-systemd.growfs  0      1
+ #PARTLABEL=$PARTNAME   /boot      ext4   defaults,x-systemd.growfs  0      2  
  #
  #uncomment for PMOS
- #PARTLABEL=$PARTNAME /     ext4  defaults 0 0
- #PARTLABEL=$PARTNAME /boot fat32 defaults 0 0
+ #PARTLABEL=$PARTNAME   /          ext4   defaults                   0      0
+ #PARTLABEL=$PARTNAME   /boot      fat32  defaults                   0      0
  #
  #uncomment for UT
- #PARTLABEL=$PARTNAME /         ext4 defaults 0 1
- #PARTLABEL=$PARTNAME /boot     ext4 defaults 0 2
- #PARTLABEL=$PARTNAME /userdata ext4 defaults 0 2
+ #PARTLABEL=$PARTNAME   /          ext4   defaults                   0      1
+ #PARTLABEL=$PARTNAME   /boot      ext4   defaults                   0      2
+ #PARTLABEL=$PARTNAME   /userdata  ext4   defaults                   0      2
  EOF
 
 === Unmount, detach all building images and resize partition.
