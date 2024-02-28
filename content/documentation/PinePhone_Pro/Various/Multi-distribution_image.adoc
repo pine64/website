@@ -46,9 +46,7 @@ Insert microSD card into your linux machine. Make sure there are no left signatu
 Zero-write the microSD card
 
  sudo dd if=/dev/zero of=/dev/[DEVICE] status=progress bs=32768 count=1 # quick way erasing
- sudo dd if=/dev/zero of=/dev/[DEVICE] status=progress bs=32768 count=945728 # 32 GB
- sudo dd if=/dev/zero of=/dev/[DEVICE] status=progress bs=32768 count=1908880 # 64 GB
- sudo dd if=/dev/zero of=/dev/[DEVICE] status=progress bs=32768 count=3872000 # 128 GB
+ sudo dd if=/dev/zero of=/dev/[DEVICE] status=progress bs=32768 count=$(expr $(lsblk -bno SIZE /dev/[DEVICE] | head -1) \/ 32768) # full erase
 
 === Partition the microSD card
 
