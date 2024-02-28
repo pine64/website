@@ -95,6 +95,7 @@ Expected result
 
 === Install U-Boot to the microSD card
 
+ cd ~/rk2aw
  sudo dd if=ppp/foss/u-boot-rockchip.bin of=/dev/[DEVICE] bs=512 seek=64
  sudo sync
 
