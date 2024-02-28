@@ -14,17 +14,18 @@ This article explains how to install a multiple linux distribution enviroment on
 == Pre-requisite: rk2aw on SPI flash
 Make sure your phone has link:/documentation/PinePhone_Pro/Software/Bootloaders/#rk2aw[rk2aw bootloader] on SPI flash. For older PinePhone Pro editions you can install it on your own, using terminal CLI from the device's stock sofware or throught a ssh connection from a linux machine via USB cable or WiFi.
 
-Please note that this pre-loader and the userspace utility to flash it are free, but not open-source. 
+Please note that this pre-loader and the userspace utility to flash it are free, but not open-source. rk2aw is licensed under MIT license and Copyright 2023 Ondřej Jirman <megi@xff.cz>
 
 Open a terminal window on you PinePhone Pro and make sure phone’s ssh server is up and running.
 
- sudo apt install ssh # from phone's terminal window
+ sudo apt install ssh
  sudo systemctl enable --now sshd
  ip address # phone's ip address
  whoami # user name
 
- ssh USER@PHONEIP # start ssh connection from linux machine
+Open terminal window on your linux machine
 
+ ssh USER@PHONEIP # start ssh connection
  mkdir -p ~/rk2aw
  cd ~/rk2aw
  curl -O https://xff.cz/kernels/bootloaders-2024.04/ppp.tar.gz
@@ -102,7 +103,7 @@ Expected result
 
 === Building partition for each linux distribution
 
-Download, decompress and mount the distribution image on your linux machine. Copy root filesystem and boot to specific partition. Replace/create `/boot/extlinux/extlinux.conf` and `/etc/fstab` files. Make sure you use an updated image from link:/documentation/PinePhone_Pro/Software/Releases[relases download link] for each distribution. This guide has been tested with following images:
+Download, decompress and mount the distribution image on your linux machine. Copy root filesystem and boot to needed partition. Replace/create `/boot/extlinux/extlinux.conf` and `/etc/fstab` files. Make sure you use an updated image from link:/documentation/PinePhone_Pro/Software/Releases[relases download link] for each distribution. This guide has been tested with following images:
 
  https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20230925/archlinux-pinephone-pro-phosh-20230925.img.xz
  https://github.com/manjaro-pinephone/phosh/releases/download/beta37/Manjaro-ARM-phosh-pinephonepro-beta37.img.xz
@@ -112,9 +113,9 @@ Download, decompress and mount the distribution image on your linux machine. Cop
 
 Replace VALUES according the updated distribution and real file name.
 
- DISTROURL=https://ci.ubports.com/job/focal-hybris-rootfs-arm64/job/master/lastSuccessfulBuild/artifact/ubuntu-touch-pinephone-pro-img-arm64.raw.xz
- PARTNAME=UT
- PARTNUMBER=6
+ DISTROURL=IMAGE_URL_ADDRESS
+ PARTNAME=ARCH
+ PARTNUMBER=2
 
  mkdir -p ~/ppp/distros
  cd ~/ppp/distros
