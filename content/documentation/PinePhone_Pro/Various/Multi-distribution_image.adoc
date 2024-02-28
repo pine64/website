@@ -32,10 +32,10 @@ Open a terminal window on you PinePhone Pro and make sure phone’s ssh server i
  cd ~/rk2aw/ppp
  sudo ./spinor-flash-initial-setup.sh
 
-You can optionally remove bootloader in SPI and flash U-Boot in front of first sectors of your microSD card
+You can optionally remove bootloader in SPI and flash U-Boot in front of first sectors of your microSD card. This step is not reccomended, and is mentioned just for experimetal purposes.
 
- cd ~/rk2aw/ppp/rk2aw
- sudo ./rk2aw-spi-flasher --erase-all --rk2aw debug.img.spi
+ #cd ~/rk2aw/ppp/rk2aw
+ #sudo ./rk2aw-spi-flasher --erase-all --rk2aw debug.img.spi
 
 Further instructions can be found on link:https://xff.cz/kernels/bootloaders-2024.04/ppp/rk2aw/INSTALL[author's website].
 
@@ -100,11 +100,11 @@ Expected result
  Calling ioctl() to re-read partition table.
  Syncing disks.
 
-If you removed bootloader from PinePhone Pro's SPI, write U-Boot on first sectors of microSD card.
+If you removed bootloader (as per experimetal purposes) from PinePhone Pro's SPI, write U-Boot on first sectors of microSD card.
 
- cd ~/rk2aw/ppp/rk2aw
- sudo dd if=ppp/foss/u-boot-rockchip.bin of=/dev/[DEVICE] bs=512 seek=64
- sudo sync
+ #cd ~/rk2aw/ppp/rk2aw
+ #sudo dd if=ppp/foss/u-boot-rockchip.bin of=/dev/[DEVICE] bs=512 seek=64
+ #sudo sync
 
 === Building partition for each linux distribution
 
