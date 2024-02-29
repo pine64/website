@@ -66,7 +66,7 @@ Zero-write the microSD card
   attrs="RequiredPartition,LegacyBIOSBootable", size=+, name="extra"
  EOF
 
-NOTE: Make sure you will use correct partition `name` into `PARTNAME` and `PARTNUMBER` during building. _Actually Ubuntu Touch is not working into multi-distro configuration_.
+NOTE: Make sure you will use correct partition `name` into `PARTNAME` and `PARTNUMBER` during building.
 
 NOTE: A minimum capacity of 64 GB for the microSD card is recommended for 5 distributions.
 
@@ -110,6 +110,8 @@ Download, decompress and mount the distribution image on your linux machine. Cop
  https://images.mobian.org/pinephonepro/weekly/mobian-pinephonepro-phosh-20240121.img.xz
  https://images.postmarketos.org/bpo/v23.12/pine64-pinephonepro/phosh/20240221-0448/20240221-0448-postmarketOS-v23.12-phosh-22.3-pine64-pinephonepro.img.xz
  # https://ci.ubports.com/job/focal-hybris-rootfs-arm64/job/master/lastSuccessfulBuild/artifact/ubuntu-touch-pinephone-pro-img-arm64.raw.xz # actually this distribution doesn't work on multi-distro image
+
+NOTE: _Actually Ubuntu Touch is not working into multi-distro configuration_.
 
 Replace VALUES according the updated distribution and real file name.
 
