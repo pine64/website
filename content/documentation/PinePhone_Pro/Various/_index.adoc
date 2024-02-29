@@ -9,6 +9,6 @@ menu:
     weight: 98
 ---
 
-* link:Software_state[Software state]
 * link:Development[]
 * link:Multi-distribution_image[Multi-distribution image]
+* link:Replacement_earpieces[]
