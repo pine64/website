@@ -12,7 +12,8 @@ menu:
 This article explains how to install a multiple linux distribution enviroment on your PinePhone Pro that is bootable from microSD card.
 
 == Pre-requisite: rk2aw on SPI flash
-Make sure your phone has link:/documentation/PinePhone_Pro/Software/Bootloaders/#rk2aw[rk2aw bootloader] on SPI flash. For older PinePhone Pro editions you can install it on your own, using terminal CLI from the device's stock sofware or throught a ssh connection from a linux machine via USB cable or WiFi.
+
+Make sure your phone has link:/documentation/PinePhone_Pro/Software/Bootloaders/#rk2aw[rk2aw bootloader] on SPI flash. For older PinePhone Pro editions you can install it on your own, using terminal CLI from the device's stock sofware or throught a SSH connection from a Linux machine via USB cable or Wi-Fi.
 
 Please note that this pre-loader and the userspace utility to flash it are free, but not open-source. rk2aw is licensed under MIT license and Copyright 2023 Ondřej Jirman <megi@xff.cz>
 
@@ -33,11 +34,11 @@ Open terminal window on your linux machine
  cd ~/rk2aw/ppp
  sudo ./spinor-flash-initial-setup.sh
 
-Further instructions can be found on link:https://xff.cz/kernels/bootloaders-2024.04/ppp/rk2aw/INSTALL[author's website].
+Further instructions can be found on the link:https://xff.cz/kernels/bootloaders-2024.04/ppp/rk2aw/INSTALL[author's website].
 
 == Build multi-distro microSD card
 
-Insert microSD card into your linux machine. Make sure there are no left signatures or partitions. Format `cleared` any partition using GParted GUI. Than open terminal window to wipe any content.
+Insert microSD card into the Linux computer. Make sure there are no signatures or partitions left. Format cleared any partition using GParted GUI. Than open terminal window to wipe any content.
 
  lsblk # shows the [DEVICE] name 
  
@@ -105,15 +106,13 @@ Expected result
 
 Download, decompress and mount the distribution image on your linux machine. Copy root filesystem and boot to needed partition. Replace/create `/boot/extlinux/extlinux.conf` and `/etc/fstab` files. Make sure you use an updated image from link:/documentation/PinePhone_Pro/Software/Releases[relases download link] for each distribution. This guide has been tested with following images:
 
- https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20230925/archlinux-pinephone-pro-phosh-20230925.img.xz
- https://github.com/manjaro-pinephone/phosh/releases/download/beta37/Manjaro-ARM-phosh-pinephonepro-beta37.img.xz
- https://images.mobian.org/pinephonepro/weekly/mobian-pinephonepro-phosh-20240121.img.xz
- https://images.postmarketos.org/bpo/v23.12/pine64-pinephonepro/phosh/20240221-0448/20240221-0448-postmarketOS-v23.12-phosh-22.3-pine64-pinephonepro.img.xz
- # https://ci.ubports.com/job/focal-hybris-rootfs-arm64/job/master/lastSuccessfulBuild/artifact/ubuntu-touch-pinephone-pro-img-arm64.raw.xz # actually this distribution doesn't work on multi-distro image
+* https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20230925/archlinux-pinephone-pro-phosh-20230925.img.xz
+* https://github.com/manjaro-pinephone/phosh/releases/download/beta37/Manjaro-ARM-phosh-pinephonepro-beta37.img.xz
+* https://images.mobian.org/pinephonepro/weekly/mobian-pinephonepro-phosh-20240121.img.xz
+* https://images.postmarketos.org/bpo/v23.12/pine64-pinephonepro/phosh/20240221-0448/20240221-0448-postmarketOS-v23.12-phosh-22.3-pine64-pinephonepro.img.xz
+* (https://ci.ubports.com/job/focal-hybris-rootfs-arm64/job/master/lastSuccessfulBuild/artifact/ubuntu-touch-pinephone-pro-img-arm64.raw.xz) Note: this distribution currently doesn't work on the multi-distro image
 
-NOTE: _Actually Ubuntu Touch is not working into multi-distro configuration_.
-
-Replace VALUES according the updated distribution and real file name.
+Replace the VALUES according the updated distribution and real file name:
 
  DISTROURL=IMAGE_URL_ADDRESS
  PARTNAME=ARCH
@@ -200,7 +199,7 @@ Replace VALUES according the updated distribution and real file name.
  sudo rm -r /mnt/$PARTNAME
  sudo losetup -D
 
-On first boot, if it doesn't happen automatically, you can manually resize each image to fill his entire partition using GParted GUI software or running command.
+On the first boot, if it doesn't happen automatically, you can manually resize each image to fill the entire partition using GParted GUI software or using the following commands:
 
  sudo e2fsck -f /dev/[DEVICE]$PARTNUMBER
  sudo resize2fs /dev/[DEVICE]$PARTNUMBER
@@ -239,33 +238,32 @@ Build PostmarketOS image via pmbootstrap
  
 == Switching on device
 
-According to megi's https://xnux.eu/rk2aw info, to operate your PinePhone Pro use power button and led feedback.
+According to megi's linkhttps://xnux.eu/rk2aw[rk2aw info], use the power button and LED feedback to operate the PinePhone Pro:
 
-* Plug in USB power cord. Led blinks: 0.5s on, 0.5s off. Battery is slowly charging.
-* Press shortly power button. Graphical menu appears, than just select the image to boot from.
-* Press longer power button, led starts to blinks rapidly. Release power button, led blinks N times each second according to the selected image.
+* Plug in USB power cord. The LED blinks: 0.5s on, 0.5s off. Battery is slowly charging.
+* Press shortly power button. The graphical menu appears, than just select the image to boot from.
+* Press longer power button, LED starts to blinks rapidly. Release the power button, LED blinks N times each second depending on the selected image.
 
-In example:
+For example:
 
-* Led blinks once each second and 1st image is selected;
-* Led blinks twice each second and 2nd image is seleted;
-* Led blinks triple each second and 3rd image is selected.
+* LED blinks once each second and 1st image is selected;
+* LED blinks twice each second and 2nd image is seleted;
+* LED blinks triple each second and 3rd image is selected.
 * Press shortly to move to next image.
 * Press longer to boot the selected image.
 * In case you hold the power button too long, the device is forced to power off.
 
 == Troubleshooting
 
-To find exact LABEL, UUID, PARTLABEL, PARTUUID names open a terminal window.
+To find the exact LABEL, UUID, PARTLABEL, PARTUUID names open a terminal window.
 
  ssh USER@PHONEIP
  sudo blkid
 
 Any time a distribution update rebuilds the initramfs it is necessary to delete `/boot/boot.scr` again to keep the rk2aw menu clean.
 
-In case you want to reinstall only one distribution, the easy way is to delete and recreate requested partition using GParted GUI.
+In case you want to reinstall only one distribution, the easy way is to delete and recreate the selected partition using the GParted GUI.
 
-If device doesn't start, connect a compatible link:https://pine64.com/product/pinebook-pinephone-pinetab-serial-console[serial cable] to headphone jack, switch off microswitch 6 and start a serial console to further investigate.
+If the device doesn't start, connect a compatible link:https://pine64.com/product/pinebook-pinephone-pinetab-serial-console[serial cable] to the headphone jack and a computer, switch off microswitch 6 and start a serial console to investigate further. Type `ls /dev/ttyUSB*` to find out the corresponding usb device from a Linux machine and then connect to it using for example _minicom_:
 
- ls /dev/ttyUSB* # check usb device from linux machine
- minicom -b 1500000 -D /dev/ttyUSB0
+ minicom -b 1500000 -D /dev/ttyUSB[x]
