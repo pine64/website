@@ -211,8 +211,8 @@ div.themeblogpreview {
 }
 div.themeblogpreview:hover {
     /*box-shadow: rgba(0, 105, 181, 0.4) 0px 8px 24px;*/
-    position: relative;
-    top: -10px;
+    transform: scale(1.02); 
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, .5);
 }
 div.themegradient1 {
     background: rgb(131,58,180);
