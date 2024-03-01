@@ -77,6 +77,10 @@ div.box h1 {
     margin-bottom: 0.6rem;
     font-size: 2rem;
 }
+div.box h2 {
+    margin-bottom: 0.6rem;
+    font-size: 1.3rem;
+}
 div.box img {
     max-width: 100%;
 }

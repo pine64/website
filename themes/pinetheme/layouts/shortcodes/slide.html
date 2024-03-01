@@ -11,13 +11,13 @@
     <div class="cr-center">
         <div class="cr-left">
             <div class="cr-img">
-                <img src="{{ $src }}">
+                <img src="{{ $src }}" alt="{{ $title | safeHTML }}">
             </div>
         </div>
         <div class="cr-right">
             <h1>{{ $title | safeHTML }}</h1>
 
-            <span>{{ $text | safeHTML  }}</span>
+            <span>{{ $text | safeHTML }}</span>
 
             <br><br><br>
             <a href="{{ $link }}">Learn more</a>

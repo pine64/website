@@ -1,6 +1,6 @@
 <div class='box {{ if .Get "style" }} {{ .Get "style" }}{{ end }}'>
     {{- if eq (.Get "type") "image" -}}
-        <img src='{{ .Get "link" }}' {{- if isset .Params "height" -}}height='{{- .Get "height" -}}'{{- end -}}{{- if isset .Params "width" -}}width='{{- .Get "width" -}}'{{- end -}}>
+        <img src='{{ .Get "link" }}' {{- if isset .Params "height" -}}height='{{- .Get "height" -}}'{{- end -}}{{- if isset .Params "width" -}}width='{{- .Get "width" -}}'{{- end -}} alt="An image in a box">
     {{- else -}}
         {{ if .Get "title" }}<h1>{{ .Get "title" | safeHTML }}</h1>{{- end -}}
 

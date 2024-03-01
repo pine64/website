@@ -8,18 +8,18 @@
         
         {{ range ( where .Site.RegularPages "Type" $type | first (.Get "amount") ) }}
             <div class="box f50 themeblogpreview l400 index_news">
-                <a href="{{ .RelPermalink }}">
+                <a href="{{ .RelPermalink }}" aria-label="A news box linking to a blog post">
                     {{if and (isset .Params.cover "image") (ne .Params.cover.image "") }}
                         <img src="/{{$type}}/images/{{ .Params.cover.image }}"/>
                     {{end}}
 
                     <div class="pad_s">
-                        <h3>{{ .Title }}</h3>
+                        <h2>{{ .Title }}</h2>
                         <p>{{ .Summary }}</p>
                         
                         <br>
                         <div>
-                          <a href="{{ .RelPermalink }}">Read more</a>
+                          <a href="{{ .RelPermalink }}" aria-label="Read more">Read more</a>
                         </div>
                     </div>
                 </a>
