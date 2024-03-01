@@ -22,7 +22,11 @@
     
     <title>{{ $title }}</title>
 
+    <!-- Meta_ Description -->
     <meta name="description" content="{{.Description | default .Site.Params.SiteDescription}}">
+    
+    <!-- CSP -->
+    <meta http-equiv="Content-Security-Policy" content="Content-Security-Policy: default-src 'self'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests">
 
     <!-- Open Graph template -->
     {{- template "_internal/opengraph.html" . -}}
