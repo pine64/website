@@ -9,22 +9,24 @@ menu:
     weight: 
 ---
 
-This article explains how to install a multiple linux distribution enviroment on your PinePhone Pro that is bootable from microSD card.
+This article explains how to install a multiple linux distribution enviroment on your PinePhone Pro that is bootable from a microSD card.
 
-== Pre-requisite: rk2aw on SPI flash
+== Install rk2aw
 
-Make sure your phone has link:/documentation/PinePhone_Pro/Software/Bootloaders/#rk2aw[rk2aw bootloader] on SPI flash. For older PinePhone Pro editions you can install it on your own, using terminal CLI from the device's stock sofware or throught a SSH connection from a Linux machine via USB cable or Wi-Fi.
+Make sure your phone has the link:/documentation/PinePhone_Pro/Software/Bootloaders/#rk2aw[rk2aw pre-loader] installed to SPI flash. PinePhone Pro models ordered after November 2023 are shipped with rk2aw pre-installed. Otherwise, follow the instructions in this section to install it.
 
-Please note that this pre-loader and the userspace utility to flash it are free, but not open-source. rk2aw is licensed under MIT license and Copyright 2023 Ondřej Jirman <megi@xff.cz>
+TIP: The multi-boot image _can_ function without rk2aw, but you may need to hold down the **RE** button during boot.
 
-Open a terminal window on you PinePhone Pro and make sure phone’s ssh server is up and running.
+Please note that rk2aw and the userspace utility to flash it are free, but not open-source. They are supplied to the end user in binary form under the MIT license.
+
+Open the terminal application on your PinePhone Pro's stock operating system and make sure the phone’s SSH server is up and running.
 
  sudo apt install ssh
  sudo systemctl enable --now sshd
  ip address # phone's ip address
  whoami # user name
 
-Open terminal window on your linux machine
+Open a terminal window on your Linux machine.
 
  ssh USER@PHONEIP # start ssh connection
  mkdir -p ~/rk2aw
@@ -97,10 +99,20 @@ Expected result
 
 === Install U-Boot to the microSD card
 
+Download the following U-Boot build. The source code can be found https://xff.cz/git/u-boot/tree/?h=ppp-2023.07[here].
+
  cd ~/rk2aw
+ curl -O https://xff.cz/kernels/bootloaders-2024.04/ppp.tar.gz
+ tar -xzf ppp.tar.gz
+
+NOTE: This is the same `ppp.tar.gz` from the <<install_rk2aw>> section; if you already have a copy of it on your Linux machine then you don't have to download it again.
+
+NOTE: If you are interested in building this U-Boot image yourself, you will need to copy the `ppp/foss/.config` file from the archive above to the root of your U-Boot source directory.
+
+Write the U-Boot image to the microSD card.
+
  sudo dd if=ppp/foss/u-boot-rockchip.bin of=/dev/[DEVICE] bs=512 seek=64
  sudo sync
-
 
 === Building partition for each linux distribution
 
