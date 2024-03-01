@@ -22,6 +22,8 @@
     
     <title>{{ $title }}</title>
 
+    <meta name="description" content="{{.Description | default .Site.Params.SiteDescription}}">
+
     <!-- Open Graph template -->
     {{- template "_internal/opengraph.html" . -}}
 
