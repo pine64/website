@@ -1,0 +1,37 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # Set a branch to deploy
+  pull_request:
+
+jobs:
+  build-site:
+    runs-on: ubuntu-22.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true # Incase we subrepo stuff in
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Install deps
+        run: sudo apt-get update && sudo apt-get install -y asciidoctor
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.119.0"
+          extended: true
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Upload output artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: website-build.zip
+          path: ./public
+          if-no-files-found: error
