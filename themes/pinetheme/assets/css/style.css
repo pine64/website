@@ -995,3 +995,9 @@ button.podcast:hover {
     font-weight: 300;
     margin-top: 0.6rem;
 }
+#footer-line {
+    max-width: 80rem;
+    background-color: #999;
+    height: 1px;
+    flex-grow: 1;
+}
