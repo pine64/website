@@ -10,7 +10,7 @@
             <div class="box f50 themeblogpreview l400 index_news">
                 <a href="{{ .RelPermalink }}" aria-label="A news box linking to a blog post">
                     {{if and (isset .Params.cover "image") (ne .Params.cover.image "") }}
-                        <img src="/{{$type}}/images/{{ .Params.cover.image }}"/>
+                        <img src="/{{$type}}/images/{{ .Params.cover.image }}" alt="Image of the post {{ .Title }}">
                     {{end}}
 
                     <div class="pad_s">
