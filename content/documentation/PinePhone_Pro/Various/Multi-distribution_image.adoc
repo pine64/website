@@ -225,12 +225,12 @@ You can optionally use bootstrap to generate distro image, instead of direct dow
  git clone --depth=1 https://git.sr.ht/~postmarketos/pmbootstrap
  mkdir -p ~/.local/bin
  ln -s "$PWD/pmbootstrap/pmbootstrap.py" ~/.local/bin/pmbootstrap
- source ~/.profile # remember to update your environment
  pmbootstrap --version # if this returns error see next command
 
- sudo tee -a ~/.profile <<EOF
+ tee -a ~/.profile <<EOF
   PATH="$HOME/.local/bin:$PATH"
  EOF
+ source ~/.profile # remember to update your environment
 
 Start creating 2 GB empty image file, format and mount it.
 
