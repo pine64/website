@@ -101,7 +101,7 @@ Expected result
 
 Download the following U-Boot build. The source code can be found https://xff.cz/git/u-boot/tree/?h=ppp-2023.07[here].
 
- cd ~/rk2aw
+ mkdir -p ~/u-boot && cd ~/u-boot
  curl -O https://xff.cz/kernels/bootloaders-2024.04/ppp.tar.gz
  tar -xzf ppp.tar.gz
 
@@ -225,12 +225,12 @@ You can optionally use bootstrap to generate distro image on your Linux computer
  git clone --depth=1 https://git.sr.ht/~postmarketos/pmbootstrap
  mkdir -p ~/.local/bin
  ln -s "$PWD/pmbootstrap/pmbootstrap.py" ~/.local/bin/pmbootstrap
- source ~/.profile # remember to update your environment
  pmbootstrap --version # if this returns error see next command
 
- sudo tee -a ~/.profile <<EOF
+ tee -a ~/.profile <<EOF
   PATH="$HOME/.local/bin:$PATH"
  EOF
+ source ~/.profile # remember to update your environment
 
 Start creating 2 GB empty image file, format and mount it.
 
@@ -246,7 +246,7 @@ Build PostmarketOS image via pmbootstrap
  pmbootstrap status
  pmbootstrap pull
  pmbootstrap install --sdcard=/dev/loop0
- pmbootstrap shutdown # remember to deactivare chroot after the image creation
+ pmbootstrap shutdown # remember to deactivate chroot after the image creation
  
 == Switching on device
 
