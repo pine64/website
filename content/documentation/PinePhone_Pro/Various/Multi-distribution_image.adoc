@@ -124,7 +124,7 @@ Download, decompress and mount the distribution image on your Linux computer. Co
 * https://images.postmarketos.org/bpo/v23.12/pine64-pinephonepro/phosh/20240221-0448/20240221-0448-postmarketOS-v23.12-phosh-22.3-pine64-pinephonepro.img.xz
 * (https://ci.ubports.com/job/focal-hybris-rootfs-arm64/job/master/lastSuccessfulBuild/artifact/ubuntu-touch-pinephone-pro-img-arm64.raw.xz) Note: this distribution currently doesn't work on the multi-distro image
 
-Replace the VALUES according the updated distribution and real file name.
+Replace the VALUES according the updated distribution and real file name:
 
  DISTROURL=image_url_address
  PARTNAME=ARCH
@@ -211,7 +211,7 @@ Replace the VALUES according the updated distribution and real file name.
  sudo rm -r /mnt/$PARTNAME
  sudo losetup -D
 
-On the first boot, if it doesn't happen automatically, you can manually resize each image to fill the entire partition using GParted GUI software or using the CLI.
+On the first boot, if it doesn't happen automatically, you can manually resize each image to fill the entire partition using GParted GUI software or using the CLI:
 
  sudo e2fsck -f /dev/[DEVICE]$PARTNUMBER
  sudo resize2fs /dev/[DEVICE]$PARTNUMBER
@@ -250,7 +250,7 @@ Build PostmarketOS image via pmbootstrap
  
 == Switching on device
 
-According to megi's link:https://xnux.eu/rk2aw[rk2aw info], use the power button and LED feedback to operate the PinePhone Pro.
+According to megi's link:https://xnux.eu/rk2aw[rk2aw info], use the power button and LED feedback to operate the PinePhone Pro:
 
 * Plug in USB power cord. The LED blinks: 0.5s on, 0.5s off. Battery is slowly charging.
 * Press shortly power button. The graphical menu appears, than just select the image to boot from.
@@ -276,7 +276,7 @@ Any time a distribution update rebuilds the initramfs it is necessary to delete 
 
 In case you want to reinstall only one distribution, the easy way is to delete and recreate the selected partition using the GParted GUI.
 
-If the device doesn't start, connect a compatible link:https://pine64.com/product/pinebook-pinephone-pinetab-serial-console[serial cable] to the headphone jack and a computer, switch off microswitch 6 and start a serial console to investigate further. Find out the corresponding usb device from the CLI and then connect to it using for example _minicom_.
+If the device doesn't start, connect a compatible link:https://pine64.com/product/pinebook-pinephone-pinetab-serial-console[serial cable] to the headphone jack and a computer, switch off microswitch 6 and start a serial console to investigate further. Find out the corresponding usb device from the CLI and then connect to it using for example _minicom_:
 
  ls /dev/ttyUSB*
  minicom -b 1500000 -D /dev/ttyUSB[x]
