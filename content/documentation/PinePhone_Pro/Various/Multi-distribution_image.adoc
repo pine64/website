@@ -101,7 +101,7 @@ Expected result
 
 Download the following U-Boot build. The source code can be found https://xff.cz/git/u-boot/tree/?h=ppp-2023.07[here].
 
- cd ~/rk2aw
+ mkdir -p ~/u-boot && cd ~/u-boot
  curl -O https://xff.cz/kernels/bootloaders-2024.04/ppp.tar.gz
  tar -xzf ppp.tar.gz
 
