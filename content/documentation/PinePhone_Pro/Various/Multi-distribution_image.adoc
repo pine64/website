@@ -9,9 +9,11 @@ menu:
     weight: 
 ---
 
+:toc:
+
 This article explains how to install a multiple linux distribution enviroment on your PinePhone Pro that is bootable from a microSD card.
 
-== Install rk2aw
+== Installing rk2aw
 
 Make sure your phone has the link:/documentation/PinePhone_Pro/Software/Bootloaders/#rk2aw[rk2aw pre-loader] installed to SPI flash. PinePhone Pro models ordered after November 2023 are shipped with rk2aw pre-installed. Otherwise, follow the instructions in this section to install it.
 
@@ -31,7 +33,7 @@ sudo ./spinor-flash-initial-setup.sh
 
 Further instructions can be found on the link:https://xff.cz/kernels/bootloaders-2024.04/ppp/rk2aw/INSTALL[author's website].
 
-== Build the multi-distribution microSD card
+== Building
 
 Insert microSD card into the Linux computer. Find out the device name using the command `lsblk` and then make sure there are no signatures or partitions left with the command `sudo wipefs /dev/*[DEVICE]*`, where *[DEVICE]* is the name of the device displayed in the _lsblk_ command. To erase all signatures, type `sudo wipefs --all --force /dev/*[DEVICE]*`.
 
@@ -40,7 +42,7 @@ Overwrite the microSD card with zeroes by either overwriting the first sectors w
 . `sudo dd if=/dev/zero of=/dev/**[DEVICE]** status=progress bs=32768 count=1`
 . `sudo dd if=/dev/zero of=/dev/**[DEVICE]** status=progress bs=32768 count=$(expr $(lsblk -bno SIZE /dev/[DEVICE] | head -1) \/ 32768)`
 
-=== Partition the microSD card
+=== Partitioning
 
 Set the _PARTSIZE_ variable to the size of your microSD card. A minimum capacity of 64 GB for the microSD card is recommended for 5 distributions.
 
@@ -93,7 +95,7 @@ Calling ioctl() to re-read partition table.
 Syncing disks.
 ----
 
-=== Install U-Boot to the microSD card
+=== Install U-Boot
 
 Download the following U-Boot build (the source code of the build can be on link:https://xff.cz/git/u-boot/tree/?h=ppp-2023.07[xff.cz]):
 
@@ -113,7 +115,7 @@ sudo dd if=ppp/foss/u-boot-rockchip.bin of=/dev/*[DEVICE]* bs=512 seek=64 status
 
 If you are interested in building this U-Boot image yourself, you will need to copy the `ppp/foss/.config` file from the archive above to the root of your U-Boot source directory.
 
-=== Building the partitions
+=== Build the partitions
 
 Download, decompress and mount the distribution image on your Linux computer. Copy root filesystem and boot to needed partition. Replace/create `/boot/extlinux/extlinux.conf` and `/etc/fstab` files. Make sure you use an updated image from link:/documentation/PinePhone_Pro/Software/Releases[relases download link] for each distribution. This guide has been tested with following images:
 
@@ -216,28 +218,7 @@ sudo tee /mnt/$PARTNAME/sd/etc/fstab <<EOF
 EOF
 ----
 
-=== Unmount and detach all building images
-
-To unmount and deatch all building images, run:
-
-----
-sudo umount /mnt/$PARTNAME/*
-sudo rm -r /mnt/$PARTNAME
-sudo losetup -D
-----
-
-=== Resize the partitions
-
-On the first boot, if it doesn't happen automatically, you can manually resize each image to fill the entire partition using GParted GUI software or using the CLI:
-
-----
-sudo e2fsck -f /dev/[DEVICE]$PARTNUMBER
-sudo resize2fs /dev/[DEVICE]$PARTNUMBER
-----
-
-Repeat the building process for each needed distribution.
-
-=== Build PostmarketOS image
+==== Build PostmarketOS image
 
 You can optionally use link:https://wiki.postmarketos.org/wiki/Pmbootstrap[pmbootstrap] to generate the distribution image on your Linux computer, instead of downloading a pre-made image. Make sure you install pmbootstrap before building the image.
 
@@ -260,7 +241,28 @@ pmbootstrap pull
 pmbootstrap install --sdcard=/dev/[LOOP-DEVICE]
 pmbootstrap shutdown
 ----
- 
+
+=== Unmount and detach
+
+To unmount and deatch all building images, run:
+
+----
+sudo umount /mnt/$PARTNAME/*
+sudo rm -r /mnt/$PARTNAME
+sudo losetup -D
+----
+
+== Resizing the partitions
+
+On the first boot, if it doesn't happen automatically, you can manually resize each image to fill the entire partition using GParted GUI software or using the CLI:
+
+----
+sudo e2fsck -f /dev/[DEVICE]$PARTNUMBER
+sudo resize2fs /dev/[DEVICE]$PARTNUMBER
+----
+
+Repeat the building process for each needed distribution.
+
 == Usage
 
 According to megi's link:https://xnux.eu/rk2aw[rk2aw info], use the power button and LED feedback to operate the PinePhone Pro:
