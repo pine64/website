@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PinePhone_Pro/Software"
     identifier: "PinePhone_Pro/Software/Software_state"
-    weight: 
+    weight: 3
 ---
 
 Presently the PinePhone Pro Explorer Edition is aimed at *Linux developers with an extensive knowledge of embedded systems and/or experience with mobile Linux*. It will take time for all the PinePhone Pro’s functionality to reach software parity with the original PinePhone and for mobile operating systems, in more general, to reach a higher degree of maturity.

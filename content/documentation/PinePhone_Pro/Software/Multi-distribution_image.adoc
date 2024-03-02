@@ -4,9 +4,9 @@ draft: false
 menu:
   docs:
     title:
-    parent: "PinePhone_Pro/Various"
-    identifier: "PinePhone_Pro/Various/Multi-distribution_image"
-    weight: 
+    parent: "PinePhone_Pro/Software"
+    identifier: "PinePhone_Pro/Software/Multi-distribution_image"
+    weight: 99
 ---
 
 :toc:
