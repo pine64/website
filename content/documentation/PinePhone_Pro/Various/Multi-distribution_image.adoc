@@ -26,7 +26,7 @@ Open the terminal application on your PinePhone Pro's stock operating system and
  ip address # phone's ip address
  whoami # user name
 
-Open a terminal window on your Linux machine.
+Open a terminal window on your Linux computer.
 
  ssh USER@PHONEIP # start ssh connection
  mkdir -p ~/rk2aw
@@ -42,7 +42,7 @@ Further instructions can be found on the link:https://xff.cz/kernels/bootloaders
 
 Insert microSD card into the Linux computer. Make sure there are no signatures or partitions left. Format cleared any partition using GParted GUI. Than open terminal window to wipe any content.
 
- lsblk # shows the [DEVICE] name 
+ lsblk # shows the device name 
  
  sudo wipefs /dev/[DEVICE] # shows current signatures
  sudo wipefs --all --force /dev/[DEVICE] # erase current signatures
@@ -105,7 +105,7 @@ Download the following U-Boot build. The source code can be found https://xff.cz
  curl -O https://xff.cz/kernels/bootloaders-2024.04/ppp.tar.gz
  tar -xzf ppp.tar.gz
 
-NOTE: This is the same `ppp.tar.gz` from the <<install_rk2aw>> section; if you already have a copy of it on your Linux machine then you don't have to download it again.
+NOTE: This is the same `ppp.tar.gz` from the <<install_rk2aw>> section; if you already have a copy of it on your Linux computer then you don't have to download it again.
 
 NOTE: If you are interested in building this U-Boot image yourself, you will need to copy the `ppp/foss/.config` file from the archive above to the root of your U-Boot source directory.
 
@@ -116,7 +116,7 @@ Write the U-Boot image to the microSD card.
 
 === Building partition for each linux distribution
 
-Download, decompress and mount the distribution image on your linux machine. Copy root filesystem and boot to needed partition. Replace/create `/boot/extlinux/extlinux.conf` and `/etc/fstab` files. Make sure you use an updated image from link:/documentation/PinePhone_Pro/Software/Releases[relases download link] for each distribution. This guide has been tested with following images:
+Download, decompress and mount the distribution image on your Linux computer. Copy root filesystem and boot to needed partition. Replace/create `/boot/extlinux/extlinux.conf` and `/etc/fstab` files. Make sure you use an updated image from link:/documentation/PinePhone_Pro/Software/Releases[relases download link] for each distribution. This guide has been tested with following images:
 
 * https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20230925/archlinux-pinephone-pro-phosh-20230925.img.xz
 * https://github.com/manjaro-pinephone/phosh/releases/download/beta37/Manjaro-ARM-phosh-pinephonepro-beta37.img.xz
@@ -124,9 +124,9 @@ Download, decompress and mount the distribution image on your linux machine. Cop
 * https://images.postmarketos.org/bpo/v23.12/pine64-pinephonepro/phosh/20240221-0448/20240221-0448-postmarketOS-v23.12-phosh-22.3-pine64-pinephonepro.img.xz
 * (https://ci.ubports.com/job/focal-hybris-rootfs-arm64/job/master/lastSuccessfulBuild/artifact/ubuntu-touch-pinephone-pro-img-arm64.raw.xz) Note: this distribution currently doesn't work on the multi-distro image
 
-Replace the VALUES according the updated distribution and real file name:
+Replace the VALUES according the updated distribution and real file name.
 
- DISTROURL=IMAGE_URL_ADDRESS
+ DISTROURL=image_url_address
  PARTNAME=ARCH
  PARTNUMBER=2
 
@@ -211,7 +211,7 @@ Replace the VALUES according the updated distribution and real file name:
  sudo rm -r /mnt/$PARTNAME
  sudo losetup -D
 
-On the first boot, if it doesn't happen automatically, you can manually resize each image to fill the entire partition using GParted GUI software or using the following commands:
+On the first boot, if it doesn't happen automatically, you can manually resize each image to fill the entire partition using GParted GUI software or using the CLI.
 
  sudo e2fsck -f /dev/[DEVICE]$PARTNUMBER
  sudo resize2fs /dev/[DEVICE]$PARTNUMBER
@@ -220,7 +220,7 @@ Repeat the building process for each needed distribution.
 
 === Build PostmarketOS image
 
-You can optionally use bootstrap to generate distro image, instead of direct download. Make sure you install pmbootstrap before building image.
+You can optionally use bootstrap to generate distro image on your Linux computer, instead of direct download. Make sure you install pmbootstrap before building image.
 
  git clone --depth=1 https://git.sr.ht/~postmarketos/pmbootstrap
  mkdir -p ~/.local/bin
@@ -250,7 +250,7 @@ Build PostmarketOS image via pmbootstrap
  
 == Switching on device
 
-According to megi's linkhttps://xnux.eu/rk2aw[rk2aw info], use the power button and LED feedback to operate the PinePhone Pro:
+According to megi's link:https://xnux.eu/rk2aw[rk2aw info], use the power button and LED feedback to operate the PinePhone Pro.
 
 * Plug in USB power cord. The LED blinks: 0.5s on, 0.5s off. Battery is slowly charging.
 * Press shortly power button. The graphical menu appears, than just select the image to boot from.
@@ -276,6 +276,6 @@ Any time a distribution update rebuilds the initramfs it is necessary to delete 
 
 In case you want to reinstall only one distribution, the easy way is to delete and recreate the selected partition using the GParted GUI.
 
-If the device doesn't start, connect a compatible link:https://pine64.com/product/pinebook-pinephone-pinetab-serial-console[serial cable] to the headphone jack and a computer, switch off microswitch 6 and start a serial console to investigate further. Type `ls /dev/ttyUSB*` to find out the corresponding usb device from a Linux machine and then connect to it using for example _minicom_:
+If the device doesn't start, connect a compatible link:https://pine64.com/product/pinebook-pinephone-pinetab-serial-console[serial cable] to the headphone jack and a computer, switch off microswitch 6 and start a serial console to investigate further. Type `ls /dev/ttyUSB*` to find out the corresponding usb device from the CLI and then connect to it using for example _minicom_:
 
  minicom -b 1500000 -D /dev/ttyUSB[x]
