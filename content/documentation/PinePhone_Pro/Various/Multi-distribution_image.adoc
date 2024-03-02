@@ -105,7 +105,7 @@ Download the following U-Boot build. The source code can be found https://xff.cz
  curl -O https://xff.cz/kernels/bootloaders-2024.04/ppp.tar.gz
  tar -xzf ppp.tar.gz
 
-NOTE: This is the same `ppp.tar.gz` from the <<install_rk2aw>> section; if you already have a copy of it on your Linux computer then you don't have to download it again.
+NOTE: This is the same `ppp.tar.gz` from the <<install_rk2aw>> section; if you already have a copy of it on your computer then you don't have to download it again.
 
 NOTE: If you are interested in building this U-Boot image yourself, you will need to copy the `ppp/foss/.config` file from the archive above to the root of your U-Boot source directory.
 
