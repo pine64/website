@@ -246,11 +246,11 @@ Build PostmarketOS image via pmbootstrap
  pmbootstrap status
  pmbootstrap pull
  pmbootstrap install --sdcard=/dev/loop0
- pmbootstrap shutdown # remember to deactivare chroot after the image creation
+ pmbootstrap shutdown # remember to deactivate chroot after the image creation
  
 == Switching on device
 
-According to megi's linkhttps://xnux.eu/rk2aw[rk2aw info], use the power button and LED feedback to operate the PinePhone Pro:
+According to megi's link:https://xnux.eu/rk2aw[rk2aw info], use the power button and LED feedback to operate the PinePhone Pro:
 
 * Plug in USB power cord. The LED blinks: 0.5s on, 0.5s off. Battery is slowly charging.
 * Press shortly power button. The graphical menu appears, than just select the image to boot from.
