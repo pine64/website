@@ -276,6 +276,7 @@ Any time a distribution update rebuilds the initramfs it is necessary to delete 
 
 In case you want to reinstall only one distribution, the easy way is to delete and recreate the selected partition using the GParted GUI.
 
-If the device doesn't start, connect a compatible link:https://pine64.com/product/pinebook-pinephone-pinetab-serial-console[serial cable] to the headphone jack and a computer, switch off microswitch 6 and start a serial console to investigate further. Type `ls /dev/ttyUSB*` to find out the corresponding usb device from the CLI and then connect to it using for example _minicom_:
+If the device doesn't start, connect a compatible link:https://pine64.com/product/pinebook-pinephone-pinetab-serial-console[serial cable] to the headphone jack and a computer, switch off microswitch 6 and start a serial console to investigate further. Find out the corresponding usb device from the CLI and then connect to it using for example _minicom_.
 
+ ls /dev/ttyUSB*
  minicom -b 1500000 -D /dev/ttyUSB[x]
