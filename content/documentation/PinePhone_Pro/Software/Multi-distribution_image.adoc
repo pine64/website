@@ -36,11 +36,11 @@ Further instructions can be found on the link:https://xff.cz/kernels/bootloaders
 == Setting variables
 During processes of partitioning target device or building the image, everytime you open a new terminal window, make sure needed `$VARIABLES` are properly defined:
 
-`DISTROURL= is the image downloading URL address of Linux distribution, in example **DISTROURL=https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20230925/archlinux-pinephone-pro-phosh-20230925.img.xz**`
-`DEVICE= is the name of the device displayed in the **lsblk** command, in example **DEVICE=sdb**`
-`PARTSIZE= is the capacity of each partition, in example **PARTSIZE=16G**`
-`PARTNAME= is the name of partition/distribution, in example **PARTNAME=ARCH**`
-`PARTNUMBER= is the number of partition/distribution, in example **PARTNUMBER=2**`
+`DISTROURL is the image downloading URL address of Linux distribution, in example **DISTROURL=https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20230925/archlinux-pinephone-pro-phosh-20230925.img.xz**`
+`DEVICE is the name of the device displayed in the **lsblk** command, in example **DEVICE=sdb**`
+`PARTSIZE is the capacity of each partition, in example **PARTSIZE=16G**`
+`PARTNAME is the name of partition/distribution, in example **PARTNAME=ARCH**`
+`PARTNUMBER is the number of partition/distribution, in example **PARTNUMBER=2**`
 
 This guide has been tested with following images:
 
