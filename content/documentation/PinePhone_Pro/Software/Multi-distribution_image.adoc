@@ -123,7 +123,7 @@ If you are interested in building this U-Boot image yourself, you will need to c
 
 === Build the partitions
 
-Download, decompress and mount the distribution image on your Linux computer. Copy root filesystem and boot to needed partition. Replace/create `/boot/extlinux/extlinux.conf` and `/etc/fstab` files. Make sure you use an updated image from link:/documentation/PinePhone_Pro/Software/Releases[relases download link] for each distribution. 
+Download, decompress and mount the distribution image on your Linux computer. Copy root filesystem and boot to needed partition. Make sure you use an updated image from link:/documentation/PinePhone_Pro/Software/Releases[relases download link] for each distribution.
 
 ----
 mkdir -p ~/ppp/distros
@@ -146,6 +146,8 @@ sudo mount /dev/$DEVICE$PARTNUMBER /mnt/$PARTNAME/device/
 sudo scp -r /mnt/$PARTNAME/boot/* /mnt/$PARTNAME/device/boot
 # sudo mv /mnt/$PARTNAME/device/boot/boot.scr /mnt/$PARTNAME/device/boot/boot.scrORIG # rename if present
 ----
+
+Replace/create `/boot/extlinux/extlinux.conf` and `/etc/fstab` files:
 
 ----
 sudo mkdir -p /mnt/$PARTNAME/device/boot/extlinux
