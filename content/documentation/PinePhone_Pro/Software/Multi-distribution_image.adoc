@@ -135,23 +135,23 @@ mv IMAGE.img $PARTNAME.img
 
 ----
 sudo losetup -P /dev/loop0 $PARTNAME.img
-sudo mkdir -p /mnt/$PARTNAME/boot /mnt/$PARTNAME/root /mnt/$PARTNAME/sd
-sudo mount /dev/loop0p1 /mnt/$PARTNAME/boot/ # use loop0p2 for UT
-sudo mount /dev/loop0p2 /mnt/$PARTNAME/root/ # use loop0p3 for UT
+sudo mkdir -p /mnt/$PARTNAME/boot /mnt/$PARTNAME/root /mnt/$PARTNAME/device
+sudo mount /dev/loop0p1 /mnt/$PARTNAME/boot/
+sudo mount /dev/loop0p2 /mnt/$PARTNAME/root/
 ----
 
 ----
-sudo dd if=/dev/loop0p2 of=/dev/$DEVICE$PARTNUMBER bs=1M status=progress conv=fsync # use loop0p3 for UT
-sudo mount /dev/$DEVICE$PARTNUMBER /mnt/$PARTNAME/sd/
-sudo scp -r /mnt/$PARTNAME/boot/* /mnt/$PARTNAME/sd/boot
-# sudo mv /mnt/$PARTNAME/sd/boot/boot.scr /mnt/$PARTNAME/sd/boot/boot.scrORIG # rename if present
+sudo dd if=/dev/loop0p2 of=/dev/$DEVICE$PARTNUMBER bs=1M status=progress conv=fsync
+sudo mount /dev/$DEVICE$PARTNUMBER /mnt/$PARTNAME/device/
+sudo scp -r /mnt/$PARTNAME/boot/* /mnt/$PARTNAME/device/boot
+# sudo mv /mnt/$PARTNAME/device/boot/boot.scr /mnt/$PARTNAME/device/boot/boot.scrORIG # rename if present
 ----
 
 ----
-sudo mkdir -p /mnt/$PARTNAME/sd/boot/extlinux
-# sudo mv /mnt/$PARTNAME/sd/boot/extlinux/extlinux.conf /mnt/$PARTNAME/sd/boot/extlinux/extlinux.confORIG # rename if present
+sudo mkdir -p /mnt/$PARTNAME/device/boot/extlinux
+# sudo mv /mnt/$PARTNAME/device/boot/extlinux/extlinux.conf /mnt/$PARTNAME/device/boot/extlinux/extlinux.confORIG # rename if present
 
-sudo tee /mnt/$PARTNAME/sd/boot/extlinux/extlinux.conf <<EOF
+sudo tee /mnt/$PARTNAME/device/boot/extlinux/extlinux.conf <<EOF
 #/boot/extlinux/extlinux.conf
 menu title Pinephone Pro Boot Menu
 label l0
@@ -183,9 +183,9 @@ EOF
 ----
 
 ----
-sudo mv /mnt/$PARTNAME/sd/etc/fstab /mnt/$PARTNAME/sd/etc/fstabORIG # rename
+sudo mv /mnt/$PARTNAME/device/etc/fstab /mnt/$PARTNAME/device/etc/fstabORIG # rename
 
-sudo tee /mnt/$PARTNAME/sd/etc/fstab <<EOF
+sudo tee /mnt/$PARTNAME/device/etc/fstab <<EOF
 #<file system>         <dir>      <type> <options>                  <dump> <pass>
 
 #uncomment next line for ARCH
