@@ -51,7 +51,7 @@ This guide has been tested with following images:
 
 == Building
 
-Connect your PinePhone Pro to a Linux computer and press power button on. From the graphical menu select `eMMC over USB` or `SD over USB` to expose the device to your Linux computer. Find out the device name using the command `lsblk` and then make sure there are no signatures or partitions left with the command `sudo wipefs /dev/$DEVICE`. To erase all signatures, type `sudo wipefs --all --force /dev/$DEVICE`.
+Connect your PinePhone Pro to a Linux computer and press power button on. From the graphical menu select `eMMC over USB` or `SD over USB` to expose the device to your Linux computer. Make sure there are no signatures or partitions left with the command `sudo wipefs /dev/$DEVICE`. To erase all signatures, type `sudo wipefs --all --force /dev/$DEVICE`.
 
 Overwrite the device with zeroes by either overwriting the first sectors with zeroes (command 1) or the whole device (command 2): 
 
