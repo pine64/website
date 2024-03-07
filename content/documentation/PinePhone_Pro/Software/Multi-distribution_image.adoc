@@ -11,7 +11,7 @@ menu:
 
 :toc:
 
-This article explains how to install a multiple linux distribution enviroment on your PinePhone Pro that is bootable from a microSD card.
+This article explains how to install a multiple linux distribution enviroment on your PinePhone Pro that is bootable both from the eMMC internal memory or a microSD card.
 
 == Installing rk2aw
 
@@ -19,7 +19,7 @@ Make sure your phone has the link:/documentation/PinePhone_Pro/Software/Bootload
 
 TIP: The multi-boot image _can_ function without rk2aw, but you may need to hold down the **RE** button during boot to disable the SPI flash memory.
 
-Make sure the phone’s SSH server is up and running. On the PinePhone Pro's stock operating system. Then Connect to your phone from your Linux computer using SSH:
+Make sure the phone’s link:/documentation/PinePhone_Pro/Software/Multi-distribution_image/#troubleshooting[SSH server] is up and running on the PinePhone Pro's stock operating system. Then Connect to your phone from your Linux computer using SSH:
 
 ----
 ssh USER@PHONEIP
@@ -33,29 +33,37 @@ sudo ./spinor-flash-initial-setup.sh
 
 Further instructions can be found on the link:https://xff.cz/kernels/bootloaders-2024.04/ppp/rk2aw/INSTALL[author's website].
 
+== Setting variables
+During processes of partitioning target device or building the image, everytime you open a new terminal window, make sure needed `$VARIABLES` are properly defined:
+
+`DISTROURL is the image downloading URL address of Linux distribution, in example **DISTROURL=https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20230925/archlinux-pinephone-pro-phosh-20230925.img.xz**`
+`DEVICE is the name of the device displayed in the **lsblk** command, in example **DEVICE=sdb**`
+`PARTSIZE is the capacity of each partition, in example **PARTSIZE=16G**`
+`PARTNAME is the name of partition/distribution, in example **PARTNAME=ARCH**`
+`PARTNUMBER is the number of partition/distribution, in example **PARTNUMBER=2**`
+
+This guide has been tested with following images:
+
+* https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20230925/archlinux-pinephone-pro-phosh-20230925.img.xz
+* https://github.com/manjaro-pinephone/phosh/releases/download/beta37/Manjaro-ARM-phosh-pinephonepro-beta37.img.xz
+* https://images.mobian.org/pinephonepro/weekly/mobian-pinephonepro-phosh-20240121.img.xz
+* https://images.postmarketos.org/bpo/v23.12/pine64-pinephonepro/phosh/20240221-0448/20240221-0448-postmarketOS-v23.12-phosh-22.3-pine64-pinephonepro.img.xz
+
 == Building
 
-Insert microSD card into the Linux computer. Find out the device name using the command `lsblk` and then make sure there are no signatures or partitions left with the command `sudo wipefs /dev/*[DEVICE]*`, where *[DEVICE]* is the name of the device displayed in the _lsblk_ command. To erase all signatures, type `sudo wipefs --all --force /dev/*[DEVICE]*`.
+Connect your PinePhone Pro to a Linux computer and press power button on. From the graphical menu select `eMMC over USB` or `SD over USB` to expose the device to your computer. Make sure there are no signatures or partitions left with the command `sudo wipefs /dev/$DEVICE`. To erase all signatures, type `sudo wipefs --all --force /dev/$DEVICE`.
 
-Overwrite the microSD card with zeroes by either overwriting the first sectors with zeroes (command 1) or the whole device (command 2): 
+Overwrite the device with zeroes by either overwriting the first sectors with zeroes (command 1) or the whole device (command 2): 
 
-. `sudo dd if=/dev/zero of=/dev/**[DEVICE]** status=progress bs=32768 count=1`
-. `sudo dd if=/dev/zero of=/dev/**[DEVICE]** status=progress bs=32768 count=$(expr $(lsblk -bno SIZE /dev/[DEVICE] | head -1) \/ 32768)`
+. `sudo dd if=/dev/zero of=/dev/$DEVICE status=progress bs=32768 count=1`
+. `sudo dd if=/dev/zero of=/dev/$DEVICE status=progress bs=32768 count=$(expr $(lsblk -bno SIZE /dev/$DEVICE | head -1) \/ 32768)`
 
 === Partitioning
 
-Set the _PARTSIZE_ variable to the size of your microSD card. A minimum capacity of 64 GB for the microSD card is recommended for 5 distributions.
-
-For example for a microSD card with 16 GB, set:
+Partition the device for the multiple distributions:
 
 ----
-PARTSIZE=16G
-----
-
-Then partition the microSD card for the multiple distributions (make sure to replace _[DEVICE]_ with the correct device):
-
-----
-sudo sfdisk /dev/[DEVICE] --wipe always <<EOF
+sudo sfdisk /dev/$DEVICE --wipe always <<EOF
  label: gpt
  first-lba: 64
  table-length: 8
@@ -64,7 +72,6 @@ sudo sfdisk /dev/[DEVICE] --wipe always <<EOF
  attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="MANJARO"
  attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="MOBIAN"
  attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="PMOS"
- attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="UT"
  attrs="RequiredPartition,LegacyBIOSBootable", size=+, name="extra"
 EOF
 ----
@@ -88,7 +95,6 @@ Disk identifier: A012E9D0-B4EB-4677-926F-D93AE4C696FA
  sdb3   33587200  67141631 33554432   16G  Linux fs
  sdb4   67141632 100696063 33554432   16G  Linux fs
  sdb5  100696064 134250495 33554432   16G  Linux fs
- sdb6  134250496 167804927 33554432   16G  Linux fs
  sdb7  167804928 247805951 80001024 38.1G  Linux fs
 The partition table has been altered.
 Calling ioctl() to re-read partition table.
@@ -107,31 +113,17 @@ tar -xzf ppp.tar.gz
 
 NOTE: This is the same `ppp.tar.gz` from the <<install_rk2aw>> section; if you already have a copy of it on your computer then you don't have to download it again.
 
-Then write the U-Boot image to the microSD card using the following command, where *[DEVICE]* has to be replaced with the name of the microSD card as displayed under _lsblk_:
+Then write the U-Boot image to the device using the following command:
 
 ----
-sudo dd if=ppp/foss/u-boot-rockchip.bin of=/dev/*[DEVICE]* bs=512 seek=64 status=progress conv=fsync
+sudo dd if=ppp/foss/u-boot-rockchip.bin of=/dev/$DEVICE bs=512 seek=64 status=progress conv=fsync
 ----
 
 If you are interested in building this U-Boot image yourself, you will need to copy the `ppp/foss/.config` file from the archive above to the root of your U-Boot source directory.
 
 === Build the partitions
 
-Download, decompress and mount the distribution image on your Linux computer. Copy root filesystem and boot to needed partition. Replace/create `/boot/extlinux/extlinux.conf` and `/etc/fstab` files. Make sure you use an updated image from link:/documentation/PinePhone_Pro/Software/Releases[relases download link] for each distribution. This guide has been tested with following images:
-
-* https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20230925/archlinux-pinephone-pro-phosh-20230925.img.xz
-* https://github.com/manjaro-pinephone/phosh/releases/download/beta37/Manjaro-ARM-phosh-pinephonepro-beta37.img.xz
-* https://images.mobian.org/pinephonepro/weekly/mobian-pinephonepro-phosh-20240121.img.xz
-* https://images.postmarketos.org/bpo/v23.12/pine64-pinephonepro/phosh/20240221-0448/20240221-0448-postmarketOS-v23.12-phosh-22.3-pine64-pinephonepro.img.xz
-* (https://ci.ubports.com/job/focal-hybris-rootfs-arm64/job/master/lastSuccessfulBuild/artifact/ubuntu-touch-pinephone-pro-img-arm64.raw.xz) Note: this distribution currently doesn't work on the multi-distro image
-
-Replace the VALUES according the updated distribution and real file name:
-
-----
-DISTROURL=image_url_address
-PARTNAME=ARCH
-PARTNUMBER=2
-----
+Download, decompress and mount the distribution image on your Linux computer. Copy root filesystem and boot to needed partition. Make sure you use an updated image from link:/documentation/PinePhone_Pro/Software/Releases[relases download link] for each distribution.
 
 ----
 mkdir -p ~/ppp/distros
@@ -143,78 +135,73 @@ mv IMAGE.img $PARTNAME.img
 
 ----
 sudo losetup -P /dev/loop0 $PARTNAME.img
-sudo mkdir -p /mnt/$PARTNAME/boot /mnt/$PARTNAME/root /mnt/$PARTNAME/sd
-sudo mount /dev/loop0p1 /mnt/$PARTNAME/boot/ # use loop0p2 for UT
-sudo mount /dev/loop0p2 /mnt/$PARTNAME/root/ # use loop0p3 for UT
+sudo mkdir -p /mnt/$PARTNAME/boot /mnt/$PARTNAME/root /mnt/$PARTNAME/device
+sudo mount /dev/loop0p1 /mnt/$PARTNAME/boot/
+sudo mount /dev/loop0p2 /mnt/$PARTNAME/root/
 ----
 
 ----
-sudo dd if=/dev/loop0p2 of=/dev/[DEVICE]$PARTNUMBER bs=1M status=progress conv=fsync # use loop0p3 for UT
-sudo mount /dev/[DEVICE]$PARTNUMBER /mnt/$PARTNAME/sd/
-sudo scp -r /mnt/$PARTNAME/boot/* /mnt/$PARTNAME/sd/boot
-# sudo mv /mnt/$PARTNAME/sd/boot/boot.scr /mnt/$PARTNAME/sd/boot/boot.scrORIG # rename if present
-sudo mkdir -p /mnt/$PARTNAME/sd/boot/extlinux
-# sudo mv /mnt/$PARTNAME/sd/boot/extlinux/extlinux.conf /mnt/$PARTNAME/sd/boot/extlinux/extlinux.confORIG # rename if present
-# sudo mv /mnt/$PARTNAME/sd/etc/fstab /mnt/$PARTNAME/sd/etc/fstabORIG # rename
+sudo dd if=/dev/loop0p2 of=/dev/$DEVICE$PARTNUMBER bs=1M status=progress conv=fsync
+sudo mount /dev/$DEVICE$PARTNUMBER /mnt/$PARTNAME/device/
+sudo scp -r /mnt/$PARTNAME/boot/* /mnt/$PARTNAME/device/boot
+# sudo mv /mnt/$PARTNAME/device/boot/boot.scr /mnt/$PARTNAME/device/boot/boot.scrORIG # rename if present
 ----
 
+Replace/create `/boot/extlinux/extlinux.conf` and `/etc/fstab` files:
+
 ----
-sudo tee /mnt/$PARTNAME/sd/boot/extlinux/extlinux.conf <<EOF
+sudo mkdir -p /mnt/$PARTNAME/device/boot/extlinux
+# sudo mv /mnt/$PARTNAME/device/boot/extlinux/extlinux.conf /mnt/$PARTNAME/device/boot/extlinux/extlinux.confORIG # rename if present
+
+sudo tee /mnt/$PARTNAME/device/boot/extlinux/extlinux.conf <<EOF
 #/boot/extlinux/extlinux.conf
 menu title Pinephone Pro Boot Menu
 label l0
 menu label $PARTNAME
 
-#uncomment for ARCH, MANJARO
+#uncomment next 3 lines for ARCH
 #fdt /boot/dtbs/rockchip/rk3399-pinephone-pro.dtb
 #initrd /boot/initramfs-linux.img
-
-#uncomment for ARCH
 #kernel /boot/Image.gz
 
-#uncomment for MANJARO
+#uncomment next 3 lines for MANJARO
+#fdt /boot/dtbs/rockchip/rk3399-pinephone-pro.dtb
+#initrd /boot/initramfs-linux.img
 #kernel /boot/Image
 
-#uncomment for MOBIAN
+#uncomment next 3 lines for MOBIAN
 #linux /boot/vmlinuz-6.6-rockchip
 #initrd /boot/initrd.img-6.6-rockchip
 #fdtdir /boot/dtb-6.6-rockchip/
 
-#uncomment for PMOS
+#uncomment next 3 lines for PMOS
 #fdtdir /boot/dtbs-pine64-pinephonepro/
 #linux /boot/vmlinuz
 #initrd /boot/initramfs-extra
 
-#uncomment for ARCH, MANJARO, MOBIAN, PMOS
-#append root=PARTLABEL=$PARTNAME console=ttyS2,115200 console=tty0 loglevel=7 rw rootwait
+append root=PARTLABEL=$PARTNAME console=ttyS2,115200 console=tty0 loglevel=7 rw rootwait
 
-#uncomment for UT
-#linux /boot/vmlinuz-6.5.0-okpine-ut
-#initrd /boot/initrd.img-6.5.0-okpine-ut
-#fdtdir /boot/dtb-6.5.0-okpine-ut/	
-#append root=PARTLABEL=$PARTNAME console=ttyS2,115200 consoleblank=0 loglevel=7 systempart=/dev/disk/by-partlabel/system datapart=/dev/disk/by-partlabel/userdata security=apparmor splash plymouth.ignore-serial-consoles vt.global_cursor_default=0
 EOF
 ----
 
 ----
-sudo tee /mnt/$PARTNAME/sd/etc/fstab <<EOF
+sudo mv /mnt/$PARTNAME/device/etc/fstab /mnt/$PARTNAME/device/etc/fstabORIG # rename
+
+sudo tee /mnt/$PARTNAME/device/etc/fstab <<EOF
 #<file system>         <dir>      <type> <options>                  <dump> <pass>
-#uncomment for ARCH
+
+#uncomment next line for ARCH
 #PARTLABEL=$PARTNAME   /          ext4   rw,relatime                0      1
 
-#uncomment for MANJARO
+#uncomment next line for MANJARO
 #PARTLABEL=MANJARO     /          ext4   defaults                   0      1
 
-#uncomment for MOBIAN
+#uncomment next line for MOBIAN
 #PARTLABEL=$PARTNAME   /          ext4   defaults,x-systemd.growfs  0      1
 
-#uncomment for PMOS
+#uncomment next line for PMOS
 #PARTLABEL=$PARTNAME   /          ext4   defaults                   0      0
 
-#uncomment for UT
-#PARTLABEL=$PARTNAME   /          ext4   defaults                   0      1
-#PARTLABEL=$PARTNAME   /boot      ext4   defaults                   0      2
-#PARTLABEL=$PARTNAME   /userdata  ext4   defaults                   0      2
 EOF
 ----
 
@@ -257,28 +244,11 @@ sudo losetup -D
 On the first boot, if it doesn't happen automatically, you can manually resize each image to fill the entire partition using GParted GUI software or using the CLI:
 
 ----
-sudo e2fsck -f /dev/[DEVICE]$PARTNUMBER
-sudo resize2fs /dev/[DEVICE]$PARTNUMBER
+sudo e2fsck -f /dev/$DEVICE$PARTNUMBER
+sudo resize2fs /dev/$DEVICE$PARTNUMBER
 ----
 
 Repeat the building process for each needed distribution.
-
-== Usage
-
-According to megi's link:https://xnux.eu/rk2aw[rk2aw info], use the power button and LED feedback to operate the PinePhone Pro:
-
-* Plug in USB power cord. The LED blinks: 0.5s on, 0.5s off. Battery is slowly charging.
-* Press shortly power button. The graphical menu appears, than just select the image to boot from.
-* Press longer power button, LED starts to blinks rapidly. Release the power button, LED blinks N times each second depending on the selected image.
-
-For example:
-
-* LED blinks once each second and 1st image is selected;
-* LED blinks twice each second and 2nd image is seleted;
-* LED blinks triple each second and 3rd image is selected.
-* Press shortly to move to next image.
-* Press longer to boot the selected image.
-* In case you hold the power button too long, the device is forced to power off.
 
 == Troubleshooting
 
@@ -289,3 +259,10 @@ Any time a distribution update rebuilds the initramfs it is necessary to delete 
 In case you want to reinstall only one distribution, the easy way is to delete and recreate the selected partition using the GParted GUI.
 
 If the device doesn't start, connect a compatible link:https://pine64.com/product/pinebook-pinephone-pinetab-serial-console[serial cable] to the headphone jack and a computer, switch off microswitch 6 and start a serial console to investigate further. Find out the corresponding USB device using `ls /dev/ttyUSB*` and then connect to it with for example _minicom_ using the command `minicom -b 1500000 -D /dev/ttyUSB**[...]**`, where *[...]* is the number of the USB device.
+
+In case the SSH server on your PinePhone Pro’s stock operating system is not available, you can install and/or start the service:
+
+ sudo apt install ssh
+ sudo systemctl enable --now sshd
+ ip address # shows phone's ip address
+ whoami # shows user name
