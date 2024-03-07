@@ -14,16 +14,4 @@ The PinePhone will automatically boot from microSD if a bootable card is inserte
 
 == Software releases
 
-The link:/documentation/PinePhone/Software/Operating_systems[Operating systems] page has a complete list of currently supported phone-optimized Operating System images that work with the PinePhone as well as other related software information. As soon as more patches get mainlined and distributions ship with the updated kernel, they will also be able to run unmodified on the device. To update any installed operating system please see link:/documentation/PinePhone/Software/Updating_instructions[Update instructions].
-
-== Installation instructions
-
-For instructions on how to install the operating systems to the eMMC or SD card see link:/documentation/PinePhone/Installation_instructions[Installation instructions].
-
-Relevant subsections of the article for installing operating systems to the PinePhone are:
-
-* link:/documentation/PinePhone/Installation_instructions#Boot_priority[Boot priority]
-* link:/documentation/PinePhone/Installation_instructions#Installation_to_the_microSD[Installation to the microSD]
-* link:/documentation/PinePhone/Installation_instructions#Installation_to_the_eMMC[Installation to the eMMC]
-* link:/documentation/PinePhone/Installation_instructions#Resize_partition_to_fit_disk_space[Resize partition to fit disk space]
-* link:/documentation/PinePhone/Installation_instructions#Reuse_SD_card_for_data_storage_on_system_booting_from_eMMC[Reuse SD card for data storage on system booting from eMMC]
+The link:/documentation/PinePhone/Software/Releases[Releases] page has a complete list of currently supported phone-optimized Operating System images that work with the PinePhone as well as other related software information. As soon as more patches get mainlined and distributions ship with the updated kernel, they will also be able to run unmodified on the device. To update any installed operating system please see link:/documentation/PinePhone/Software/Updating_instructions[Update instructions].

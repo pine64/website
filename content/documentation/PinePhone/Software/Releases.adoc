@@ -46,36 +46,6 @@ Get both stable and test builds at https://github.com/dreemurrs-embedded/Pine64-
 * There are _archmobile_ chat rooms on Matrix (https://matrix.to/#/#archmobile:kde.org[#archmobile:kde.org]) and Telegram (https://t.me/archmobile[@archmobile]).
 * Feel free to send us https://github.com/dreemurrs-embedded/Pine64-Arch/pulls[pull requests] and reports https://github.com/dreemurrs-embedded/Pine64-Arch/issues[issues] on https://github.com/dreemurrs-embedded/Pine64-Arch[GitHub].
 
-=== ExpidusOS
-
-A fork of https://voidlinux.org[Void Linux] with a custom fork of XFCE called https://github.com/ExpidusOS/genesis[Gensis] as the default desktop environment, developed by https://midstall.com/[Midstall Software].
-
-* https://expidusos.com[ExpidusOS official website]
-* https://wiki.expidusos.com/index.php/Main_Page[ExpidusOS Wiki]
-* https://discord.gg/GVfBF2w[Midstall Software Discord server]
-* GitHub: https://github.com/ExpidusOS[ExpidusOS]
-
-==== Download
-
-Check the https://expidusos.com/download[download page] for that latest version, or the https://build.expidusos.com/[image file list] for all versions, look for the filename that starts with "pinephone".
-
-|===
-2+| Default credentials
-
-|Default user
-| `expidus/expidus`
-|===
-
-==== Notes
-
-What works, what does not work:
-
-* The ExpidusOS Wiki has a page detailing https://wiki.expidusos.com/index.php/Device:PinePhone[supported features].
-
-How to contribute and report defects:
-
-* Join the https://discord.gg/GVfBF2w[Discord server] or corresponding repo at GitHub (https://github.com/orgs/ExpidusOS/repositories[repo list]).
-
 === Fedora
 
 image:/documentation/images/Fedora1.png[width=100]
@@ -203,8 +173,7 @@ In order to connect to the device using SSH/SCP via WiFi: You can simply connect
 
 image:/documentation/images/Maemoleste-logo.png[width=100]
 
-https://en.wikipedia.org/wiki/Maemo[Maemo] is a trimmed-down version of Debian for mobile devices,
-originally a collaboration between Nokia and many open source projects (the http://maemo.org/intro/[Maemo community]) before Nokia abandoned it. The more well-known devices Maemo supports are the OpenMoko and N900. The community now takes full responsibility in developing fully open source Maemo for a variety of mobile devices. You may be interested to learn more about the features in their https://leste.maemo.org/Leste_FAQ[Maemo Leste FAQ].
+Maemo is a trimmed-down version of Debian for mobile devices, originally a collaboration between Nokia and many open source projects (the http://maemo.org/intro/[Maemo community]) before Nokia abandoned it. The more well-known devices Maemo supports are the OpenMoko and N900. The community now takes full responsibility in developing fully open source Maemo for a variety of mobile devices. You may be interested to learn more about the features in their https://leste.maemo.org/Leste_FAQ[Maemo Leste FAQ].
 
 Maemo 8 "Leste" is an ARM64 port of https://devuan.org/[Devuan] (Debian without systemd) and runs the mainline Linux kernel.
 The default user interface stack is https://en.wikipedia.org/wiki/Hildon[Hildon], https://en.wikipedia.org/wiki/X.Org_Server[Xorg], https://en.wikipedia.org/wiki/Matchbox_(window_manager)[Matchbox WM], and https://en.wikipedia.org/wiki/GTK[GTK].
