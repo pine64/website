@@ -48,7 +48,7 @@ This guide has been tested with following images:
 * https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20230925/archlinux-pinephone-pro-phosh-20230925.img.xz
 * https://github.com/manjaro-pinephone/phosh/releases/download/beta37/Manjaro-ARM-phosh-pinephonepro-beta37.img.xz
 * https://images.mobian.org/pinephonepro/weekly/mobian-rockchip-phosh-20240303.img.xz
-  https://images.postmarketos.org/bpo/v23.12/pine64-pinephonepro/phosh/20240306-0437/20240306-0437-postmarketOS-v23.12-phosh-22.3-pine64-pinephonepro.img.xz
+* https://images.postmarketos.org/bpo/v23.12/pine64-pinephonepro/phosh/20240306-0437/20240306-0437-postmarketOS-v23.12-phosh-22.3-pine64-pinephonepro.img.xz
 
 == Building
 
