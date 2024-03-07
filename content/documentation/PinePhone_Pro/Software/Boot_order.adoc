@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PinePhone_Pro/Software"
     identifier: "PinePhone_Pro/Software/Boot_order"
-    weight: 
+    weight: 1
 ---
 
 The RK3399S processor in the PinePhone Pro searches for the bootloader (such as _U-Boot_ or _Tow-Boot_) in the following order:
