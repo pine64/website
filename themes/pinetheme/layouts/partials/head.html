@@ -23,7 +23,7 @@
     <title>{{ $title }}</title>
 
     <!-- Meta_ Description -->
-    <meta name="description" content="{{.Description | default .Site.Params.SiteDescription}}">
+    <meta name="description" content="{{ if .Params.summary }}{{ .Params.summary }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}{{ end }}"/>
 
     <!-- CSP -->
     <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'">-->

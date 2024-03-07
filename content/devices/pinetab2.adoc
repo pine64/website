@@ -3,9 +3,9 @@ title: "PineTab2"
 categories: 
   - "Tablets"
 cover: 
-  image: "/documentation/images/PineTab2_Front.jpg"
+  image: "/devices/images/PineTab2_Front.jpg"
 images:
-  - "/documentation/images/PineTab2_Front.jpg"
+  - "/devices/images/PineTab2_Front.jpg"
 ---
 
 == The PineTab2

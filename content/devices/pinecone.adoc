@@ -3,9 +3,9 @@ title: "PineCone"
 categories: 
   - ""
 cover: 
-  image: "/documentation/images/Pine64_BL602_EVB_photo-3-small.jpg"
+  image: "/devices/images/Pine64_BL602_EVB_photo-3-small.jpg"
 images:
-  - "/documentation/images/Pine64_BL602_EVB_photo-3-small.jpg"
+  - "/devices/images/Pine64_BL602_EVB_photo-3-small.jpg"
 ---
 
 == The PineCone: A board to blob-Free WiFi & BLE

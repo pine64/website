@@ -1,11 +1,12 @@
 ---
+draft: true # REMOVE
 title: ""
 categories: 
   - ""
 cover: 
-  image: "images/"
+  image: "/devices/images/"
 images:
-  - "images/"
+  - "/devices/images/"
 ---
 
 == 

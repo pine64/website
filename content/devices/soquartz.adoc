@@ -3,9 +3,9 @@ title: "SOQuartz"
 categories: 
   - "SBCs"
 cover: 
-  image: "/documentation/images/SOQuartz_module-1s.jpg"
+  image: "/devices/images/SOQuartz_module-1s.jpg"
 images:
-  - "/documentation/images/SOQuartz_module-1s.jpg"
+  - "/devices/images/SOQuartz_module-1s.jpg"
 ---
 
 == The SOQuartz
