@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PinePhone_Pro/Software"
     identifier: "PinePhone_Pro/Software/Bootloaders"
-    weight: 
+    weight: 4
 ---
 
 The following section contains notes regarding compatible bootloaders with the PinePhone Pro.
