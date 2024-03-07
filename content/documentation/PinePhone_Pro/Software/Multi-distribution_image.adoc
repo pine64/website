@@ -195,7 +195,7 @@ sudo tee /mnt/$PARTNAME/device/etc/fstab <<EOF
 #PARTLABEL=$PARTNAME   /          ext4   rw,relatime                0      1
 
 #uncomment next line for MANJARO
-#PARTLABEL=MANJARO     /          ext4   defaults                   0      1
+#PARTLABEL=$PARTNAME     /          ext4   defaults                   0      1
 
 #uncomment next line for MOBIAN
 #PARTLABEL=$PARTNAME   /          ext4   defaults,x-systemd.growfs  0      1
