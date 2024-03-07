@@ -231,7 +231,7 @@ Finally, flash the Ox64. If you created a **combined image** then run the comman
 
  bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x0 --firmware bl808-combined.bin --single
 
-Otherwise, run the following commands.
+Otherwise, run the following commands:
 
  bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x0 --firmware m0_lowload_bl808_m0.bin --single
 
@@ -254,20 +254,20 @@ Select chip [BL808], press Finish, and configure BOTH the [MCU] and [IOT] tabs a
  Port/SN: /dev/ttyACM1 or /dev/ttyUSB0 (make sure you don't use /dev/ttyACM0, it's used by the minicom console)
  Uart rate 230400 (safe value for macOS, if using Linux set to 2000000 for faster flashing)
 
-If you created a **combined image** then you only need to use the [IOT] tab.
+If you created a **combined image** then you only need to use the [IOT] tab:
 
  Enable 'Single Download'
  Image Address [0x0], [PATH to bl808-combined.bin]
  Click 'Create & Download' and wait until it's done
  Close DevCube
 
-Otherwise, start in the [MCU] tab.
+Otherwise, start in the [MCU] tab:
 
  M0 Group[group0], Image Address [0x58000000], [PATH to m0_lowload_bl808_m0.bin]
  D0 Group[group0], Image Address [0x58100000], [PATH to d0_lowload_bl808_d0.bin]
  Click 'Create & Download' and wait until it's done
 
-Then, switch to the [IOT] tab.
+Then, switch to the [IOT] tab:
 
  Enable 'Single Download'
  Image Address [0x800000], [PATH to bl808-firmware.bin]
@@ -276,12 +276,12 @@ Then, switch to the [IOT] tab.
 
 == Flashing the microSD card
 
-Insert the microSD card into your PC, locate its device file (`/dev/sdb`, for example), and write the image:
+Insert the microSD card into your PC, locate its device file `/dev/[DEVICE]` and write the image:
 
  cd ~/ox64/openbouffalo/firmware # if you downloaded pre-built images
  # or
  cd ~/ox64/buildroot/output/images # if you built your own images
- sudo dd if=sdcard.img of=/dev/sdb bs=1M status=progress conv=fsync
+ sudo dd if=sdcard.img of=/dev/[DEVICE]] bs=1M status=progress conv=fsync
 
 == Booting for the first time
 
