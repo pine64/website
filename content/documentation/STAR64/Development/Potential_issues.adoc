@@ -9,7 +9,7 @@ menu:
     weight: 2
 ---
 
-If you get the following error in u-boot (or your 8Gb board is only detected as 4Gb) the possible problem is a empty, or corrupt eeprom:
+If you get the following error in U-Boot (or your 8 GB board is only detected as 4 GB) the possible cause is an empty or corrupted EEPROM:
  
 ----
 Not a StarFive EEPROM data format - magic error
@@ -32,7 +32,7 @@ E0: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 F0: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
 ----
 
-Then from within u-boot execute the following commands:
+To address this, execute the following commands from within U-Boot:
 
 ----
 mac initialize
@@ -42,8 +42,8 @@ mac write_eeprom
 
 Set ProductID to either:
 
-* For 8Gb Models: STAR64V1-2310-D008E000-01234567
-* for 4Gb Models: STAR64V1-2310-D004E000-01234567
+* For 8 GB Models: STAR64V1-2310-D008E000-01234567
+* for 4 GB Models: STAR64V1-2310-D004E000-01234567
  
 You can replace the last 8 digits with a random number if you wish. 
 
