@@ -17,7 +17,7 @@ This article explains how to install a multiple linux distribution enviroment on
 
 Make sure your phone has the link:/documentation/PinePhone_Pro/Software/Bootloaders/#rk2aw[rk2aw pre-loader] installed to SPI flash. PinePhone Pro models ordered after November 2023 are shipped with rk2aw pre-installed. Otherwise, follow the instructions in this section to install it.
 
-TIP: The multi-boot image _can_ function without rk2aw, but you may need to hold down the **RE** button during boot to disable the SPI flash memory.
+TIP: The multi-boot image _can_ function without rk2aw, but you may need to hold down the **RE** button during boot to force the phone to boot from microSD card by disabling the SPI flash memory and the eMMC.
 
 Make sure the phone’s SSH server is up and running on the PinePhone Pro's stock operating system. Then Connect to your phone from your Linux computer using SSH:
 
