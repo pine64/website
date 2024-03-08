@@ -272,6 +272,20 @@ Scroll down to the middle of https://gitlab.com/ook37/pinephone-pro-debos/[the G
 	
 Contributions and bug reports can be made at the https://gitlab.com/ook37/pinephone-pro-debos/[UBports PinePhone Pro GitLab page]. See https://ubports.com/foundation/sponsors[UBports website] for how to donate.
 
+== Multi-distribution image
+
+WARNING: Work in progress; updating the distributions via their respective package managers may break the system.
+
+A PinePhone Pro analogue of the link:/documentation/PinePhone/Software/Releases/#multi_distro_demo_image[PinePhone multi-distro demo image]. This image allows the user to switch between multiple Linux distributions without having to swap microSD cards.
+
+=== Download
+
+Clone https://github.com/Pavlos1/ppp-multi-image[this git repository] and follow the instructions in the README to create a bootable microSD card.
+
+=== Notes
+
+The shell script in the repository above was derived from link:/documentation/PinePhone_Pro/Software/Multi-distribution_image/[these instructions].
+
 == Various DPA Images
 
 Multiple versions of unofficial images of various Debian-based distributions by the user DPA. They also contain some of DPA's own software.
