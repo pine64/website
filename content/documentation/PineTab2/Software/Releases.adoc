@@ -13,7 +13,11 @@ This page contains a list of all available releases and tools for the PineTab2 i
 
 == Factory releases
 
-The PineTab2 ships with _Danctnix Arch Linux ARM_. The factory image can be found here:
+The PineTab2 ships with _Danctnix Arch Linux ARM_. The latest factory image can be found here:
+
+* https://echo.danctnix.org:7269/danctnix-factory-image-20240307.img.xz (2.1 GB)
+
+The original, older factory image can be found here:
 
 * https://echo.danctnix.org:7269/danctnix-factory-image-20230527.img.xz (1.5 GB)
 
@@ -27,7 +31,7 @@ NOTE: The factory image is flashed to a microSD card and it will overwrite the e
 
 ==== Download
 
-* https://echo.danctnix.org:7269/danctnix-factory-image-20230527.img.xz
+* https://echo.danctnix.org:7269/danctnix-factory-image-20240307.img.xz
 
 |===
 2+| Default credentials
@@ -38,10 +42,32 @@ NOTE: The factory image is flashed to a microSD card and it will overwrite the e
 
 ==== Notes
 
-* Currently ships without a Wi-Fi and Bluetooth driver
-* https://wiki.archlinux.org/title/SDDM#KDE_Plasma_Wayland_hangs_on_shutdown_and_reboot[system hangs on reboot/shutdown] (SDDM bug, workaround possible)
-* https://forum.pine64.org/showthread.php?tid=18313[screen rotated 90°, workaround possible]
-* https://github.com/ScottFreeCode/Pine64-Arch/tree/master/PKGBUILDS/pine64/alsa-ucm-pinetab2[HP/Speaker switching via Alsa UCM]
+* The latest version ships with Wi-Fi and Bluetooth drivers disabled, because these are unstable. The drivers can be manually enabled from the command line:
+
+Run this command to enable Wi-Fi for a single session (until the next time you reboot your PineTab): 
+
+ $ sudo modprobe bes2600
+
+Run the following commands to enable Wi-Fi automatically at every boot:
+
+ $ sudo -i
+ > echo bes2600 | sudo tee /etc/modules-load.d/bes2600.conf
+ > exit
+
+Run the following commands to enable Bluetooth for a single session (until the next time you reboot your PineTab) https://www.reddit.com/r/PINE64official/comments/1akjlwu/tutorial_wifi_and_bluetooth_on_pinetab_2/[(source)]:
+
+ $ sudo pacman -S bluez-deprecated-tools
+ > sudo -i
+ > echo ifname:bt cmd:BT_ON > /dev/bes2600
+ > rfkill unblock bluetooth
+ > hciattach -s 1500000 /dev/ttyS1 any 1500000 flow nosleep
+ > hciconfig hci0 up
+ > exit
+ > sudo systemctl enable bluetooth
+
+* The original factory image did not ship with Wi-Fi and Bluetooth drivers. If your PineTab is still on an older kernel version (check `uname -a`, it should show 6.6.13 or newer), you can update the kernel using `pacman -Syu` and a supported Wi-Fi dongle, or flash the latest version of the factory image.
+* System hangs on reboot/shutdown (Wi-Fi / Bluetooth driver bug, only happens when the driver is enabled)
+* https://github.com/ScottFreeCode/Pine64-Arch/tree/master/PKGBUILDS/pine64/alsa-ucm-pinetab2[HP/Speaker switching via Alsa UCM] - _Unsure if this is fixed or not_
 
 === Buildroot
 
