@@ -148,7 +148,7 @@ sudo scp -r /mnt/$PARTNAME/boot/* /mnt/$PARTNAME/device/boot
 # sudo mv /mnt/$PARTNAME/device/boot/boot.scr /mnt/$PARTNAME/device/boot/boot.scrORIG # rename if present
 ----
 
-Replace/create `/boot/extlinux/extlinux.conf` and `/etc/fstab` files:
+Replace/create `/boot/extlinux/extlinux.conf`, making sure you remove `#` comment for needed distribution:
 
 ----
 sudo mkdir -p /mnt/$PARTNAME/device/boot/extlinux
@@ -184,6 +184,8 @@ append root=PARTLABEL=$PARTNAME console=ttyS2,115200 console=tty0 loglevel=7 rw 
 
 EOF
 ----
+
+Replace/create `/etc/fstab`, making sure you remove `#` comment for needed distribution:
 
 ----
 sudo mv /mnt/$PARTNAME/device/etc/fstab /mnt/$PARTNAME/device/etc/fstabORIG # rename
