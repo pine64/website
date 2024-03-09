@@ -98,7 +98,7 @@ Expected result:
 
 The Bluepill is an affordable STM32 development board, based on the STM32F103C8T6 chip. We can program it to act as a USB serial adapter, just like we did with the Raspberry Pi Pico.
 
-NOTE: The one catch is that you already need a serial adapter in order to program your Bluepill board. The good news is that you serial adapter does **not** have to be one from from the link:/documentation/Ox64/Further_information/Compatible_UARTs/[Compatible_UARTs] list. If you own an SWD-capable debugger (ST-Link, J-link, etc.) or a generic TTL to USB converter like FT232RL, you can use that for programming the Bluepill as well.
+NOTE: The one catch is that you already need a serial adapter in order to program your Bluepill board. The good news is that you serial adapter does **not** have to be one from from the link:/documentation/Ox64/Further_information/Compatible_UARTs/[Compatible_UARTs] list. The programming has been tested with a TTL to USB converter FT232RL. If you own an SWD-capable debugger (ST-Link, J-link, etc.), you can use that for programming the Bluepill as well.
 
 Download the https://github.com/r2axz/bluepill-serial-monster[Bluepill Serial Monster] firmware:
 
