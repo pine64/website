@@ -40,8 +40,10 @@ During processes of partitioning target device or building the image, everytime 
 `DISTROURL is the image downloading URL address of Linux distribution, in example **DISTROURL=https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20240308/archlinux-pinephone-pro-phosh-20240308.img.xz**`
 `DEVICE is the name of the device displayed in the **lsblk** command, in example **DEVICE=sdb**`
 `PARTSIZE is the capacity of each partition, in example **PARTSIZE=11GiB**`
-`MENUNAME is the name of partition/distribution, in example **MENUNAME=ARCH**`
+`PARTNAME is the name of partition/distribution, in example **PARTNAME=ppp-multi-image-arch**`
+`MENUNAME is the name of graphical boot menu item, in example **MENUNAME=ARCH**`
 `PARTNUMBER is the number of partition/distribution, in example **PARTNUMBER=2**`
+
 
 This guide has been tested with following images:
 
@@ -182,7 +184,7 @@ menu label $MENUNAME
 #linux /boot/vmlinuz
 #initrd /boot/initramfs-extra
 
-append root=PARTLABEL=[NAME-OF-PARTITIONING] console=ttyS2,115200 console=tty0 loglevel=7 rw rootwait
+append root=PARTLABEL=$PARTNAME console=ttyS2,115200 console=tty0 loglevel=7 rw rootwait
 
 EOF
 ----
@@ -196,16 +198,16 @@ sudo tee /mnt/$PARTNAME/device/etc/fstab <<EOF
 #<file system>         <dir>      <type> <options>                  <dump> <pass>
 
 #uncomment next line for ARCH
-#PARTLABE=[NAME-OF-PARTITIONING]   /          ext4   rw,relatime                0      1
+#PARTLABEL$PARTNAME   /          ext4   rw,relatime                0      1
 
 #uncomment next line for MANJARO
-#PARTLABEL=[NAME-OF-PARTITIONING]     /          ext4   defaults                   0      1
+#PARTLABEL=$PARTNAME     /          ext4   defaults                   0      1
 
 #uncomment next line for MOBIAN
-#PARTLABEL=[NAME-OF-PARTITIONING]   /          ext4   defaults,x-systemd.growfs  0      1
+#PARTLABE=$PARTNAME /          ext4   defaults,x-systemd.growfs  0      1
 
 #uncomment next line for PMOS
-#PARTLABEL=[NAME-OF-PARTITIONING]   /          ext4   defaults                   0      0
+#PARTLABEL=$PARTNAME   /          ext4   defaults                   0      0
 
 EOF
 ----
