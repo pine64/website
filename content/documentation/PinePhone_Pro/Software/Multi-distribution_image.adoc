@@ -198,13 +198,13 @@ sudo tee /mnt/$PARTNAME/device/etc/fstab <<EOF
 #<file system>         <dir>      <type> <options>                  <dump> <pass>
 
 #uncomment next line for ARCH
-#PARTLABEL$PARTNAME   /          ext4   rw,relatime                0      1
+#PARTLABEL=$PARTNAME   /          ext4   rw,relatime                0      1
 
 #uncomment next line for MANJARO
 #PARTLABEL=$PARTNAME     /          ext4   defaults                   0      1
 
 #uncomment next line for MOBIAN
-#PARTLABE=$PARTNAME /          ext4   defaults,x-systemd.growfs  0      1
+#PARTLABEL=$PARTNAME /          ext4   defaults,x-systemd.growfs  0      1
 
 #uncomment next line for PMOS
 #PARTLABEL=$PARTNAME   /          ext4   defaults                   0      0
