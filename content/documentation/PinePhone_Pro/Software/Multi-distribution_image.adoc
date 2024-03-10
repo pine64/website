@@ -49,8 +49,8 @@ Every time you open a new terminal window, `$VARIABLES` values must be adapted, 
 
  DEVICE=sdb
  DISTROURL=https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20240308/archlinux-pinephone-pro-phosh-20240308.img.xz
- MENUNAME=arch
- PARTNAME=ppp-multi-image-$MENUNAME
+ MENUNAME=ARCH
+ PARTNAME=ppp-multi-image-${MENUNAME,,}
  PARTNUMBER=2
  PARTSIZE=11GiB
  WORKDIR=~/ppp
