@@ -229,15 +229,19 @@ Change directory to the location of your image files:
 
 Finally, flash the Ox64. If you created a **combined image** then run the command below:
 
- bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x0 --firmware bl808-combined.bin --single
+ bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x0 \
+               --firmware bl808-combined.bin --single
 
 Otherwise, run the following commands:
 
- bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x0 --firmware m0_lowload_bl808_m0.bin --single
+ bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x0 \
+               --firmware m0_lowload_bl808_m0.bin --single
 
- bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x100000 --firmware d0_lowload_bl808_d0.bin --single
+ bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x100000 \
+               --firmware d0_lowload_bl808_d0.bin --single
 
- bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x800000 --firmware bl808-firmware.bin --single
+ bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x800000 \
+               --firmware bl808-firmware.bin --single
 
 If you get permission errors when running any of the commands above, you may need to add your user to the `dialout` group. Running the commands as `root` is not recommended since this will make `bflb-iot-tool` create root-owned files in your home directory.
 
