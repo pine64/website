@@ -61,6 +61,7 @@ This guide has been tested with following images:
 * https://github.com/manjaro-pinephone/phosh/releases/download/beta37/Manjaro-ARM-phosh-pinephonepro-beta37.img.xz
 * https://images.mobian.org/pinephonepro/weekly/mobian-rockchip-phosh-20240303.img.xz
 * https://images.postmarketos.org/bpo/v23.12/pine64-pinephonepro/phosh/20240306-0437/20240306-0437-postmarketOS-v23.12-phosh-22.3-pine64-pinephonepro.img.xz
+* https://gitlab.com/sailfishos-porters-ci/dont_be_evil-ci/-/jobs/artifacts/master/download?job=pinephonepro-rootfs
 
 == Building
 
@@ -146,12 +147,24 @@ Download and decompress each distribution image on your Linux computer, making s
 ----
 mkdir -p $WORKDIR/distros
 cd $WORKDIR/distros
-wget $DISTROURL
+wget $DISTROURL 
 xz -v -d -k IMAGE.*.xz
 mv IMAGE.img $PARTNAME.img
 ----
 
-Mount the image:
+Only for Sailfish distribution, use an adatped command to download and decompress the image:
+
+----
+mkdir -p $WORKDIR/distros
+cd $WORKDIR/distros
+wget $DISTROURL -O artifacts.zip
+unzip artifacts.zip
+mv pinephonepro/*/sfe-pinephonepro*.tar.bz2 sailfish.tar.bz2
+mkdir -p $WORKDIR/distros/sailfishfs
+sudo tar -xvf sailfish.tar.bz2 -C sailfishfs/ > /dev/null
+----
+
+Mount the image for needed distribution, excluding Sailfish image:
 
 ----
 cd $WORKDIR/distros
@@ -161,13 +174,28 @@ sudo mount /dev/loop0p1 /mnt/$PARTNAME/boot/
 sudo mount /dev/loop0p2 /mnt/$PARTNAME/root/
 ----
 
-Copy `rootfs` and `boot` content. Remame `/boot/boot.scr` to keep graphical menu clean:
+Only for Sailfish distribution, you ought to copy the extracted files directly into the device:
+
+----
+#sudo mkfs.ext4 -F /dev/$DEVICE$PARTNUMBER # optional
+sudo mkdir -p /mnt/$PARTNAME/device
+sudo mount /dev/$DEVICE$PARTNUMBER /mnt/$PARTNAME/device
+sudo scp -r $WORKDIR/distros/sailfishfs/* /mnt/$PARTNAME/device
+----
+
+For all other distributions copy `rootfs` and `boot` content:
 
 ----
 sudo dd if=/dev/loop0p2 of=/dev/$DEVICE$PARTNUMBER bs=1M status=progress conv=fsync
 sudo mount /dev/$DEVICE$PARTNUMBER /mnt/$PARTNAME/device/
 sudo scp -r /mnt/$PARTNAME/boot/* /mnt/$PARTNAME/device/boot
+----
+
+Remame `/boot/boot.scr` to keep graphical menu clean:
+
+----
 [ ! -f /mnt/$PARTNAME/device/boot/boot.scr ] || sudo mv /mnt/$PARTNAME/device/boot/boot.scr /mnt/$PARTNAME/device/boot/boot.scrORIG # rename if exist
+[ ! -f /mnt/$PARTNAME/device/boot/boot.pinephonepro.scr ] || sudo mv /mnt/$PARTNAME/device/boot/boot.pinephonepro.scr /mnt/$PARTNAME/device/boot/boot.pinephonepro.scrORIG # rename if exist
 ----
 
 Rename original and write the new `/boot/extlinux/extlinux.conf` file, making sure you remove `#` comment for needed distribution:
@@ -202,6 +230,10 @@ menu label $MENUNAME
 #linux /boot/vmlinuz
 #initrd /boot/initramfs-extra
 
+#uncomment next 2 lines for SAILFISH
+#fdt /boot/rockchip/rk3399-pinephone-pro.dtb
+#kernel /boot/Image
+
 append root=PARTLABEL=$PARTNAME console=ttyS2,115200 console=tty0 loglevel=7 rw rootwait
 
 EOF
@@ -226,6 +258,15 @@ sudo tee /mnt/$PARTNAME/device/etc/fstab <<EOF
 
 #uncomment next line for PMOS
 #PARTLABEL=$PARTNAME   /          ext4   defaults                   0      0
+
+#uncomment next 7 lines for SAILFISH
+#PARTLABEL=p$PARTNAME   /          ext4   rw,noatime                0      1
+#devtmpfs   /dev      devtmpfs  nosuid               0 0
+#devpts     /dev/pts  devpts  gid=5,mode=620         0 0
+#tmpfs      /dev/shm  tmpfs   noexec,nosuid,nodev    0 0
+#proc       /proc     proc    defaults         0 0
+#sysfs      /sys      sysfs   defaults         0 0
+#tmpfs      /tmp      tmpfs   nosuid,nodev           0 0
 
 EOF
 ----
