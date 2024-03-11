@@ -7,7 +7,7 @@ cover:
 images:
   - "/devices/images/pinephone_pro.png"
 aliases:
-- /pinephonepro
+  - /pinephonepro # Used in the trailer
 ---
 
 Meet the PinePhone Pro, our flagship smartphone and the best way to experience mainline Linux on a mobile device.
