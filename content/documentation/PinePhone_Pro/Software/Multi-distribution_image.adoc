@@ -260,7 +260,7 @@ sudo tee /mnt/$PARTNAME/device/etc/fstab <<EOF
 #PARTLABEL=$PARTNAME   /          ext4   defaults                   0      0
 
 #uncomment next 7 lines for SAILFISH
-#PARTLABEL=p$PARTNAME   /          ext4   rw,noatime                0      1
+#PARTLABEL=$PARTNAME   /          ext4   rw,noatime                0      1
 #devtmpfs   /dev      devtmpfs  nosuid               0 0
 #devpts     /dev/pts  devpts  gid=5,mode=620         0 0
 #tmpfs      /dev/shm  tmpfs   noexec,nosuid,nodev    0 0
