@@ -330,7 +330,7 @@ WARNING: It is not sure if these are the correct pins to use|
 |===
 | CH341 Pin | CH341A Name | Function   | GPIO Name  | GPIO Configuration | SX1262 connection
 
-|  7        | INT#        | IRQ        | dio_irq    | Output             | DIO1 (IRQ)     
+|  7        | INT#        | IRQ        | dio_irq    | Input              | DIO1 (IRQ)     
 
 |  8        | SLCT        | BUSY       | dio_busy   | Input              | BUSY           
 
