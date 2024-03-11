@@ -6,6 +6,8 @@ cover:
   image: "/devices/images/pinephone.jpg"
 images:
   - "/devices/images/pinephone.jpg"
+aliases:
+  - /pinephone
 ---
 
 == An Open Source Smartphone Supported by All Major Linux Phone Projects
