@@ -12,9 +12,9 @@ aliases:
 
 == An Open Source Smartphone Supported by All Major Linux Phone Projects
 
-Perhaps you’re in a line of work where security is a must, or a hard-core Linux enthusiast, or perhaps you’ve just got enough of Android and iOS and you’re ready for something else – the PinePhone may be the next Phone for you. Powered by the same quad-core ARM Cortex A53 64-Bit SoC used in our popular PINE A64 Single Board Computer, the PinePhone runs mainline Linux as well as anything else you’ll get it to run. 
+The *PinePhone* is a smartphone that empowers users with control over the device. It is capable of running mainline Linux, features hardware privacy switches, and is designed for open-source enthusiasts. Powered by the same quad-core ARM Cortex A53 64-Bit SoC used in our popular PINE A64 Single Board Computer, the PinePhone runs mainline Linux as well as anything else you’ll get it to run. 
 
-The purpose of the PinePhone isn’t only to deliver a functioning Linux phone to end-users, but also to actively create a market for such a device, as well as to support existing and well established Linux-on-Phone projects. All major Linux Phone-oriented projects, as well as other FOSS OSes, are represented on the PinePhone and developers work together on our platform to bring support to this community-driven device.
+The purpose of the PinePhone isn’t only to deliver a functioning Linux phone to end-users, but also to actively create a market for such a device, as well as to support existing and well established Linux-on-Phone projects. All major Linux Phone-oriented projects, as well as other free and open source operating systems, are represented on the PinePhone and developers work together on our platform to bring support to this community-driven device.
 
 == Features and Specifications
 
