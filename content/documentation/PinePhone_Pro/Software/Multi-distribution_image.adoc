@@ -35,20 +35,33 @@ Further instructions can be found on the link:https://xff.cz/kernels/bootloaders
 
 == Setting variables
 
-During processes of partitioning target device or building the image, everytime you open a new terminal window, make sure needed `$VARIABLES` are properly defined:
+During processes of partitioning target device or building the image, make sure needed `$VARIABLES` are properly defined:
 
-`DISTROURL is the image downloading URL address of Linux distribution, in example **DISTROURL=https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20230925/archlinux-pinephone-pro-phosh-20230925.img.xz**`
-`DEVICE is the name of the device displayed in the **lsblk** command, in example **DEVICE=sdb**`
-`PARTSIZE is the capacity of each partition, in example **PARTSIZE=16G**`
-`PARTNAME is the name of partition/distribution, in example **PARTNAME=ARCH**`
-`PARTNUMBER is the number of partition/distribution, in example **PARTNUMBER=2**`
+ DEVICE=[…​], where […​] is the device name from the `lsblk` command
+ DISTROURL is the image downloading URL address of Linux distribution
+ MENUNAME is the name of graphical boot menu item
+ PARTNAME is the name of partition/distribution
+ PARTNUMBER is the number of partition/distribution
+ PARTSIZE is the GiB capacity of each partition
+ WORKDIR is the working directory path on your computer
+
+Every time you open a new terminal window, `$VARIABLES` values must be adapted, in example:
+
+ DEVICE=sdb
+ DISTROURL=https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20240308/archlinux-pinephone-pro-phosh-20240308.img.xz
+ MENUNAME=ARCH
+ PARTNAME=ppp-multi-image-${MENUNAME,,}
+ PARTNUMBER=2
+ PARTSIZE=11GiB
+ WORKDIR=~/ppp
 
 This guide has been tested with following images:
 
-* https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20230925/archlinux-pinephone-pro-phosh-20230925.img.xz
+* https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20240308/archlinux-pinephone-pro-phosh-20240308.img.xz
 * https://github.com/manjaro-pinephone/phosh/releases/download/beta37/Manjaro-ARM-phosh-pinephonepro-beta37.img.xz
-* https://images.mobian.org/pinephonepro/weekly/mobian-pinephonepro-phosh-20240121.img.xz
-* https://images.postmarketos.org/bpo/v23.12/pine64-pinephonepro/phosh/20240221-0448/20240221-0448-postmarketOS-v23.12-phosh-22.3-pine64-pinephonepro.img.xz
+* https://images.mobian.org/pinephonepro/weekly/mobian-rockchip-phosh-20240310.img.xz
+* https://images.postmarketos.org/bpo/v23.12/pine64-pinephonepro/phosh/20240306-0437/20240306-0437-postmarketOS-v23.12-phosh-22.3-pine64-pinephonepro.img.xz
+* https://gitlab.com/sailfishos-porters-ci/dont_be_evil-ci/-/jobs/artifacts/master/download?job=pinephonepro-rootfs
 
 == Building
 
@@ -69,10 +82,12 @@ sudo sfdisk /dev/$DEVICE --wipe always <<EOF
  first-lba: 64
  table-length: 8
  attrs=RequiredPartition, type=D7B1F817-AA75-2F4F-830D-84818A145370, start=64, size=32704, name="uboot_raw"
- attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="ARCH"
- attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="MANJARO"
- attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="MOBIAN"
- attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="PMOS"
+ attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="ppp-multi-image-arch"
+ attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="ppp-multi-image-manjaro"
+ attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="ppp-multi-image-mobian"
+ attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="ppp-multi-image-pmos"
+ attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="ppp-multi-image-sailfish"
+ attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="ppp-multi-image-ut"
  attrs="RequiredPartition,LegacyBIOSBootable", size=+, name="extra"
 EOF
 ----
@@ -91,12 +106,14 @@ New situation:
 Disklabel type: gpt
 Disk identifier: A012E9D0-B4EB-4677-926F-D93AE4C696FA
  Device    Start       End  Sectors   Size Type
- sdb1         64     32767    32704   16M  unknown
- sdb2      32768  33587199 33554432   16G  Linux fs
- sdb3   33587200  67141631 33554432   16G  Linux fs
- sdb4   67141632 100696063 33554432   16G  Linux fs
- sdb5  100696064 134250495 33554432   16G  Linux fs
- sdb7  167804928 247805951 80001024 38.1G  Linux fs
+ sdb1         64     32767     32704   16M unknown
+ sdb2      32768  23101439  23068672   11G Linux fs
+ sdb3   23101440  46170111  23068672   11G Linux fs
+ sdb4   46170112  69238783  23068672   11G Linux fs
+ sdb5   69238784  92307455  23068672   11G Linux fs
+ sdb6   92307456 115376127  23068672   11G Linux fs
+ sdb7  115376128 138444799  23068672   11G Linux fs
+ sdb8  138444800 247805951 109361152 52.1G Linux fs
 The partition table has been altered.
 Calling ioctl() to re-read partition table.
 Syncing disks.
@@ -107,7 +124,8 @@ Syncing disks.
 Download the following U-Boot build (the source code of the build can be on link:https://xff.cz/git/u-boot/tree/?h=ppp-2023.07[xff.cz]):
 
 ----
-cd ~/rk2aw
+mkdir -p $WORKDIR/rk2aw
+cd $WORKDIR/rk2aw
 curl -O https://xff.cz/kernels/bootloaders-2024.04/ppp.tar.gz
 tar -xzf ppp.tar.gz
 ----
@@ -117,48 +135,80 @@ NOTE: This is the same `ppp.tar.gz` from the <<install_rk2aw>> section; if you a
 Then write the U-Boot image to the device using the following command:
 
 ----
-sudo dd if=ppp/foss/u-boot-rockchip.bin of=/dev/$DEVICE bs=512 seek=64 status=progress conv=fsync
+sudo dd if=$WORKDIR/rk2aw/ppp/foss/u-boot-rockchip.bin of=/dev/$DEVICE bs=512 seek=64 status=progress conv=fsync
 ----
 
 If you are interested in building this U-Boot image yourself, you will need to copy the `ppp/foss/.config` file from the archive above to the root of your U-Boot source directory.
 
 === Build the partitions
 
-Download, decompress and mount the distribution image on your Linux computer. Copy root filesystem and boot to needed partition. Make sure you use an updated image from link:/documentation/PinePhone_Pro/Software/Releases[relases download link] for each distribution.
+Download and decompress each distribution image on your Linux computer, making sure you use an updated file from relases download link:/documentation/PinePhone_Pro/Software/Releases[relases download link].
 
 ----
-mkdir -p ~/ppp/distros
-cd ~/ppp/distros
-wget $DISTROURL
+mkdir -p $WORKDIR/distros
+cd $WORKDIR/distros
+wget $DISTROURL 
 xz -v -d -k IMAGE.*.xz
 mv IMAGE.img $PARTNAME.img
 ----
 
+Only for Sailfish distribution, use an adatped command to download and decompress the image:
+
 ----
+mkdir -p $WORKDIR/distros
+cd $WORKDIR/distros
+wget $DISTROURL -O artifacts.zip
+unzip artifacts.zip
+mv pinephonepro/*/sfe-pinephonepro*.tar.bz2 sailfish.tar.bz2
+mkdir -p $WORKDIR/distros/sailfishfs
+sudo tar -xvf sailfish.tar.bz2 -C sailfishfs/ > /dev/null
+----
+
+Mount the image for needed distribution, excluding Sailfish image:
+
+----
+cd $WORKDIR/distros
 sudo losetup -P /dev/loop0 $PARTNAME.img
 sudo mkdir -p /mnt/$PARTNAME/boot /mnt/$PARTNAME/root /mnt/$PARTNAME/device
 sudo mount /dev/loop0p1 /mnt/$PARTNAME/boot/
 sudo mount /dev/loop0p2 /mnt/$PARTNAME/root/
 ----
 
+Only for Sailfish distribution, you ought to copy the extracted files directly into the device:
+
+----
+#sudo mkfs.ext4 -F /dev/$DEVICE$PARTNUMBER # optional
+sudo mkdir -p /mnt/$PARTNAME/device
+sudo mount /dev/$DEVICE$PARTNUMBER /mnt/$PARTNAME/device
+sudo scp -r $WORKDIR/distros/sailfishfs/* /mnt/$PARTNAME/device
+----
+
+For all other distributions copy `rootfs` and `boot` content:
+
 ----
 sudo dd if=/dev/loop0p2 of=/dev/$DEVICE$PARTNUMBER bs=1M status=progress conv=fsync
 sudo mount /dev/$DEVICE$PARTNUMBER /mnt/$PARTNAME/device/
 sudo scp -r /mnt/$PARTNAME/boot/* /mnt/$PARTNAME/device/boot
-# sudo mv /mnt/$PARTNAME/device/boot/boot.scr /mnt/$PARTNAME/device/boot/boot.scrORIG # rename if present
 ----
 
-Replace/create `/boot/extlinux/extlinux.conf` and `/etc/fstab` files:
+Remame `/boot/boot.scr` to keep graphical menu clean:
+
+----
+[ ! -f /mnt/$PARTNAME/device/boot/boot.scr ] || sudo mv /mnt/$PARTNAME/device/boot/boot.scr /mnt/$PARTNAME/device/boot/boot.scrORIG # rename if exist
+[ ! -f /mnt/$PARTNAME/device/boot/boot.pinephonepro.scr ] || sudo mv /mnt/$PARTNAME/device/boot/boot.pinephonepro.scr /mnt/$PARTNAME/device/boot/boot.pinephonepro.scrORIG # rename if exist
+----
+
+Rename original and write the new `/boot/extlinux/extlinux.conf` file, making sure you remove `#` comment for needed distribution:
 
 ----
 sudo mkdir -p /mnt/$PARTNAME/device/boot/extlinux
-# sudo mv /mnt/$PARTNAME/device/boot/extlinux/extlinux.conf /mnt/$PARTNAME/device/boot/extlinux/extlinux.confORIG # rename if present
+[ ! -f /mnt/$PARTNAME/device/boot/extlinux/extlinux.conf ] || sudo mv /mnt/$PARTNAME/device/boot/extlinux/extlinux.conf /mnt/$PARTNAME/device/boot/extlinux/extlinux.confORIG # rename if exist
 
 sudo tee /mnt/$PARTNAME/device/boot/extlinux/extlinux.conf <<EOF
 #/boot/extlinux/extlinux.conf
 menu title Pinephone Pro Boot Menu
 label l0
-menu label $PARTNAME
+menu label $MENUNAME
 
 #uncomment next 3 lines for ARCH
 #fdt /boot/dtbs/rockchip/rk3399-pinephone-pro.dtb
@@ -180,10 +230,16 @@ menu label $PARTNAME
 #linux /boot/vmlinuz
 #initrd /boot/initramfs-extra
 
+#uncomment next 2 lines for SAILFISH
+#fdt /boot/rockchip/rk3399-pinephone-pro.dtb
+#kernel /boot/Image
+
 append root=PARTLABEL=$PARTNAME console=ttyS2,115200 console=tty0 loglevel=7 rw rootwait
 
 EOF
 ----
+
+Rename original and write the new `/etc/fstab` file, making sure you remove `#` comment for needed distribution:
 
 ----
 sudo mv /mnt/$PARTNAME/device/etc/fstab /mnt/$PARTNAME/device/etc/fstabORIG # rename
@@ -195,13 +251,22 @@ sudo tee /mnt/$PARTNAME/device/etc/fstab <<EOF
 #PARTLABEL=$PARTNAME   /          ext4   rw,relatime                0      1
 
 #uncomment next line for MANJARO
-#PARTLABEL=MANJARO     /          ext4   defaults                   0      1
+#PARTLABEL=$PARTNAME     /          ext4   defaults                   0      1
 
 #uncomment next line for MOBIAN
-#PARTLABEL=$PARTNAME   /          ext4   defaults,x-systemd.growfs  0      1
+#PARTLABEL=$PARTNAME /          ext4   defaults,x-systemd.growfs  0      1
 
 #uncomment next line for PMOS
 #PARTLABEL=$PARTNAME   /          ext4   defaults                   0      0
+
+#uncomment next 7 lines for SAILFISH
+#PARTLABEL=$PARTNAME   /          ext4   rw,noatime                0      1
+#devtmpfs   /dev      devtmpfs  nosuid               0 0
+#devpts     /dev/pts  devpts  gid=5,mode=620         0 0
+#tmpfs      /dev/shm  tmpfs   noexec,nosuid,nodev    0 0
+#proc       /proc     proc    defaults         0 0
+#sysfs      /sys      sysfs   defaults         0 0
+#tmpfs      /tmp      tmpfs   nosuid,nodev           0 0
 
 EOF
 ----
