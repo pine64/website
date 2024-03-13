@@ -21,3 +21,4 @@ Affiliates of the Pine Store:
 |[Breadstick Innovations](https://shop.breadstick.ca/products/pinecil-solder-iron)                  |Canada (ships worldwide)       |
 |[Blinky Parts](https://shop.blinkyparts.com/en/Soldering-Iron/)                                    |Germany (ships worldwide)      |
 |[Keeb Supply](https://keeb.supply/search?q=Pine)                                                   |Germany (ships to EU)          |
+|[Oomipood](https://www.oomipood.ee/brand_pine_store_pte_ltd)                                       |Estonia (ships to EU)          |
