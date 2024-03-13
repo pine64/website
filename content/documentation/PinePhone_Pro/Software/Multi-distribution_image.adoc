@@ -21,6 +21,7 @@ TIP: The multi-boot image _can_ function without rk2aw, but you may need to hold
 
 Make sure the phone’s SSH server is up and running on the PinePhone Pro's stock operating system. Then Connect to your phone from your Linux computer using SSH:
 
+[source,shell]
 ----
 ssh USER@PHONEIP
 mkdir -p ~/rk2aw
@@ -37,23 +38,29 @@ Further instructions can be found on the link:https://xff.cz/kernels/bootloaders
 
 During processes of partitioning target device or building the image, make sure needed `$VARIABLES` are properly defined:
 
- DEVICE=[…​], where […​] is the device name from the `lsblk` command
- DISTROURL is the image downloading URL address of Linux distribution
- MENUNAME is the name of graphical boot menu item
- PARTNAME is the name of partition/distribution
- PARTNUMBER is the number of partition/distribution
- PARTSIZE is the GiB capacity of each partition
- WORKDIR is the working directory path on your computer
+[subs="quotes"]
+----
+DEVICE=[…​], where […​] is the device name from the lsblk command
+DISTROURL is the image downloading URL address of Linux distribution
+MENUNAME is the name of graphical boot menu item
+PARTNAME is the name of partition/distribution
+PARTNUMBER is the number of partition/distribution
+PARTSIZE is the GiB capacity of each partition
+WORKDIR is the working directory path on your computer
+----
 
 Every time you open a new terminal window, `$VARIABLES` values must be adapted, in example:
 
- DEVICE=sdb
- DISTROURL=https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20240308/archlinux-pinephone-pro-phosh-20240308.img.xz
- MENUNAME=ARCH
- PARTNAME=ppp-multi-image-${MENUNAME,,}
- PARTNUMBER=2
- PARTSIZE=11GiB
- WORKDIR=~/ppp
+[source,shell]
+----
+DEVICE=sdb
+DISTROURL=https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20240308/archlinux-pinephone-pro-phosh-20240308.img.xz
+MENUNAME=ARCH
+PARTNAME=ppp-multi-image-${MENUNAME,,}
+PARTNUMBER=2
+PARTSIZE=11GiB
+WORKDIR=~/ppp
+----
 
 This guide has been tested with following images:
 
@@ -76,6 +83,7 @@ Overwrite the device with zeroes by either overwriting the first sectors with ze
 
 Partition the device for the multiple distributions:
 
+[source,shell]
 ----
 sudo sfdisk /dev/$DEVICE --wipe always <<EOF
  label: gpt
@@ -94,6 +102,7 @@ EOF
 
 Expected results:
 
+[source,shell]
 ----
 Checking that no-one is using this disk right now ... OK
 Disk /dev/sd[...]: 118.16 GiB, 126877696000 bytes, 247808000 sectors
@@ -123,6 +132,7 @@ Syncing disks.
 
 Download the following U-Boot build (the source code of the build can be on link:https://xff.cz/git/u-boot/tree/?h=ppp-2023.07[xff.cz]):
 
+[source,shell]
 ----
 mkdir -p $WORKDIR/rk2aw
 cd $WORKDIR/rk2aw
@@ -134,6 +144,7 @@ NOTE: This is the same `ppp.tar.gz` from the <<install_rk2aw>> section; if you a
 
 Then write the U-Boot image to the device using the following command:
 
+[source,shell]
 ----
 sudo dd if=$WORKDIR/rk2aw/ppp/foss/u-boot-rockchip.bin of=/dev/$DEVICE bs=512 seek=64 status=progress conv=fsync
 ----
@@ -144,6 +155,7 @@ If you are interested in building this U-Boot image yourself, you will need to c
 
 Download and decompress each distribution image on your Linux computer, making sure you use an updated file from relases download link:/documentation/PinePhone_Pro/Software/Releases[relases download link].
 
+[source,shell]
 ----
 mkdir -p $WORKDIR/distros
 cd $WORKDIR/distros
@@ -154,6 +166,7 @@ mv IMAGE.img $PARTNAME.img
 
 Only for Sailfish distribution, use an adatped command to download and decompress the image:
 
+[source,shell]
 ----
 mkdir -p $WORKDIR/distros
 cd $WORKDIR/distros
@@ -166,6 +179,7 @@ sudo tar -xvf sailfish.tar.bz2 -C sailfishfs/ > /dev/null
 
 Mount the image for needed distribution, excluding Sailfish image:
 
+[source,shell]
 ----
 cd $WORKDIR/distros
 sudo losetup -P /dev/loop0 $PARTNAME.img
@@ -176,6 +190,7 @@ sudo mount /dev/loop0p2 /mnt/$PARTNAME/root/
 
 Only for Sailfish distribution, you ought to copy the extracted files directly into the device:
 
+[source,shell]
 ----
 #sudo mkfs.ext4 -F /dev/$DEVICE$PARTNUMBER # optional
 sudo mkdir -p /mnt/$PARTNAME/device
@@ -185,6 +200,7 @@ sudo scp -r $WORKDIR/distros/sailfishfs/* /mnt/$PARTNAME/device
 
 For all other distributions copy `rootfs` and `boot` content:
 
+[source,shell]
 ----
 sudo dd if=/dev/loop0p2 of=/dev/$DEVICE$PARTNUMBER bs=1M status=progress conv=fsync
 sudo mount /dev/$DEVICE$PARTNUMBER /mnt/$PARTNAME/device/
@@ -193,6 +209,7 @@ sudo scp -r /mnt/$PARTNAME/boot/* /mnt/$PARTNAME/device/boot
 
 Remame `/boot/boot.scr` to keep graphical menu clean:
 
+[source,shell]
 ----
 [ ! -f /mnt/$PARTNAME/device/boot/boot.scr ] || sudo mv /mnt/$PARTNAME/device/boot/boot.scr /mnt/$PARTNAME/device/boot/boot.scrORIG # rename if exist
 [ ! -f /mnt/$PARTNAME/device/boot/boot.pinephonepro.scr ] || sudo mv /mnt/$PARTNAME/device/boot/boot.pinephonepro.scr /mnt/$PARTNAME/device/boot/boot.pinephonepro.scrORIG # rename if exist
@@ -200,6 +217,7 @@ Remame `/boot/boot.scr` to keep graphical menu clean:
 
 Rename original and write the new `/boot/extlinux/extlinux.conf` file, making sure you remove `#` comment for needed distribution:
 
+[source,shell]
 ----
 sudo mkdir -p /mnt/$PARTNAME/device/boot/extlinux
 [ ! -f /mnt/$PARTNAME/device/boot/extlinux/extlinux.conf ] || sudo mv /mnt/$PARTNAME/device/boot/extlinux/extlinux.conf /mnt/$PARTNAME/device/boot/extlinux/extlinux.confORIG # rename if exist
@@ -241,6 +259,7 @@ EOF
 
 Rename original and write the new `/etc/fstab` file, making sure you remove `#` comment for needed distribution:
 
+[source,shell]
 ----
 sudo mv /mnt/$PARTNAME/device/etc/fstab /mnt/$PARTNAME/device/etc/fstabORIG # rename
 
@@ -277,6 +296,7 @@ You can optionally use link:https://wiki.postmarketos.org/wiki/Pmbootstrap[pmboo
 
 Start creating 2 GB empty image file, format and mount it.
 
+[source,shell]
 ----
 sudo su
 dd if=/dev/zero of=postmarketos.img bs=1 count=0 seek=2G status=progress && sync
@@ -287,6 +307,7 @@ exit
 
 Build the PostmarketOS image via pmbootstrap:
 
+[source,shell]
 ----
 pmbootstrap init
 pmbootstrap status
@@ -299,6 +320,7 @@ pmbootstrap shutdown
 
 To unmount and deatch all building images, run:
 
+[source,shell]
 ----
 sudo umount /mnt/$PARTNAME/*
 sudo rm -r /mnt/$PARTNAME
@@ -309,6 +331,7 @@ sudo losetup -D
 
 On the first boot, if it doesn't happen automatically, you can manually resize each image to fill the entire partition using GParted GUI software or using the CLI:
 
+[source,shell]
 ----
 sudo e2fsck -f /dev/$DEVICE$PARTNUMBER
 sudo resize2fs /dev/$DEVICE$PARTNUMBER

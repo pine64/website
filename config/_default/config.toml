@@ -41,7 +41,7 @@ paginate = 9
     lineNumbersInTable = true
     noClasses = true
     noHl = false
-    style = 'monokai'
+    style = 'autumn'
     tabWidth = 4
 
 [permalinks]
@@ -56,6 +56,9 @@ paginate = 9
   images = ['/img/opengraph_main.png']
   [params.social]
     twitter = 'thepine64'
+
+
+
 
 [security.exec]
   allow = ["^asciidoctor$"]

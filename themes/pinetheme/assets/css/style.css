@@ -1,10 +1,11 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: Roboto, sans-serif;
 }
+
 body {
     background-color: #fff;
+    font-family: Roboto, sans-serif;
 }
 
 :root {
@@ -298,16 +299,23 @@ div.olist{
    margin: 0 48px;
 }
 pre {
-    padding: 1rem;
-    background-color: #f8f9fa;
-    border: 1px solid #eaecf0;
+    padding: 0.3rem;
+    color: #f8f8f2;
+    font-family: source code pro, lucida console, monospace;
+    font-size: 16px;
+    background-color: #1B1D1E;
+    /*border: 1px solid #eaecf0;*/
     margin-bottom: 1rem;
-    font-family: monospace;
-    white-space: pre-wrap;       /* css-3 */
-    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-    white-space: -pre-wrap;      /* Opera 4-6 */
-    white-space: -o-pre-wrap;    /* Opera 7 */
-    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    /*font-family: monospace;*/
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+code {
+    font-weight: 400;
+    font-family: source code pro, lucida console, monospace;
 }
 
 code, .cl {

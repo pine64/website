@@ -124,6 +124,7 @@ div#doc-page code {
     font-family: monospace;
     display: inline-block;
 }
+/* See style.css
 div#doc-page pre {
     padding: 1em;
     background-color: #f8f9fa;
@@ -136,6 +137,7 @@ div#doc-page pre {
     white-space: -o-pre-wrap;
     word-wrap: break-word;
 }
+*/
 div#doc-page pre code {
     padding: 0;
     border: none;
