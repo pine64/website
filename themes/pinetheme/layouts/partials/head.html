@@ -7,7 +7,7 @@
     <link rel="icon" type="image/x-icon" href="/img/favicon.png">
 
     <!-- Stylesheets -->
-    <!-- General style-->
+    <!-- General style -->
     {{- $style_style := resources.Get "css/style.css" | minify | fingerprint -}}
     <link rel="stylesheet" href="{{ $style_style.Permalink }}" integrity="{{ $style_style.Data.Integrity }}">
     <!-- Simplified print style -->
@@ -19,8 +19,8 @@
     <!-- Documentation -->
     {{- $style_docs := resources.Get "css/documentation.css" | minify | fingerprint -}}
     <link rel="stylesheet" href="{{ $style_docs.Permalink }}" integrity="{{ $style_docs.Data.Integrity }}">
-    <!-- Syntax highlighting: molokai -->
-    {{- $style_syntax := resources.Get "css/molokai.css" | minify | fingerprint }}
+    <!-- Syntax highlighting -->
+    {{- $style_syntax := resources.Get "css/pastie.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style_syntax.Permalink }}" integrity="{{ $style_syntax.Data.Integrity }}">
 
     {{ $title := print .Title " - " .Site.Title -}}

@@ -299,12 +299,13 @@ div.olist{
    margin: 0 48px;
 }
 pre {
-    padding: 0.3rem;
-    color: #f8f8f2;
+    padding: 0.6rem;
+    color: #444;
     font-family: source code pro, lucida console, monospace;
     font-size: 16px;
-    background-color: #1B1D1E;
-    /*border: 1px solid #eaecf0;*/
+    font-weight: 400;
+    background-color: #fff;
+    border: 1px solid #eaecf0;
     margin-bottom: 1rem;
     /*font-family: monospace;*/
     white-space: pre-wrap;
@@ -313,13 +314,15 @@ pre {
     white-space: -o-pre-wrap;
     word-wrap: break-word;
 }
-code {
+code, .cl {
     font-weight: 400;
     font-family: source code pro, lucida console, monospace;
+    font-family: monospace;
 }
 
-code, .cl {
-    font-family: monospace;
+/* Prevent the "$ " part in rouge: console from being selected */
+.gp, .w {
+    user-select: none;
 }
 
 /* Headlines */
