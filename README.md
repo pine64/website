@@ -28,8 +28,8 @@ Install *Hugo* as explained under https://gohugo.io/installation/.
 
 You may need to install also *Hugo* extra modules.
 
-* Debian: `* sudo apt install asciidoctor`
-* Debian: `* sudo apt install ruby-rouge`
+* Debian: `sudo apt install asciidoctor`
+* Debian: `sudo apt install ruby-rouge`
 
 ### Preview the website
 
