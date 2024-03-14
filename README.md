@@ -26,6 +26,10 @@ Install *Hugo* as explained under https://gohugo.io/installation/.
 * MacOS: See [here](https://gohugo.io/installation/macos/)
 * BSD: See [here](https://gohugo.io/installation/bsd/)
 
+You may need to install also *Hugo* extra modules.
+
+* Debian: `* sudo apt install asciidoctor`
+* Debian: `* sudo apt install ruby-rouge`
 
 ### Preview the website
 
