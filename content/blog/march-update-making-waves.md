@@ -56,7 +56,7 @@ I am hoping that we will be able to post another update soon once the hardware i
 
 #### We need a name!
 
-As you might have noticed, there is no name for this product, so we're reaching out to the community for suggestions! Share your name ideas on [Reddit]() and [Mastodon]() (NOTE: Links will be added in a moment). In the next update, we'll select the best one, and the author will receive a free unit!
+As you might have noticed, there is no name for this product, so we're reaching out to the community for suggestions! Share your name ideas on [Reddit](https://www.reddit.com/r/PINE64official/comments/1bh6dn2/march_update_making_waves/) and [Mastodon](https://fosstodon.org/deck/@PINE64/112112723757342384). In the next update, we'll select the best one, and the author will receive a free unit!
 
 ### It's been a while... Allwinner
 
@@ -286,7 +286,7 @@ Monthly updates were an essential part of the community for a very long time, so
 
 ### Let's do an Q&A
 
-As it has been a very long period without any updates, along with proper community engagement, we have decided to organize a Q&A! The community is free to ask any question that they may have! As in previous times, we will be using Discord Stage to host the Q&A, which will be streamed to YouTube and (hopefully) PeerTube. But this time, the place for asking the questions will be on Reddit and Mastodon. When we used Discord, Telegram and IRC for questions, there were many duplicates, it was hard add reply to the questions (like a link to stream with timestamp) and it was impossible to sort through. So before asking any questions, please take look if your question has been asked alread, and up-vote questions you would like to be answered! So see you there at 22th March 2024 at 7:00 PM CET (10:00 AM PST, 1:00 PM EST). You can ask questions here on [Reddit]() and [Mastodon]() (NOTE: Links will be added in a moment).
+As it has been a very long period without any updates, along with proper community engagement, we have decided to organize a Q&A! The community is free to ask any question that they may have! As in previous times, we will be using Discord Stage to host the Q&A, which will be streamed to YouTube and (hopefully) PeerTube. But this time, the place for asking the questions will be on Reddit and Mastodon. When we used Discord, Telegram and IRC for questions, there were many duplicates, it was hard add reply to the questions (like a link to stream with timestamp) and it was impossible to sort through. So before asking any questions, please take look if your question has been asked already, and up-vote questions you would like to be answered! So see you there at 22th March 2024 at 7:00 PM CET (10:00 AM PST, 1:00 PM EST). You can ask questions here on [Reddit](https://www.reddit.com/r/PINE64official/comments/1bh6dtq/pine64_quarterly_community_qa_2024_q1_ask_your/) and [Mastodon](https://fosstodon.org/deck/@PINE64/112112732034587306).
 
 
 
