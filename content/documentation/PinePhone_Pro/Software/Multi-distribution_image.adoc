@@ -72,13 +72,33 @@ This guide has been tested with following images:
 
 == Building
 
-Connect your PinePhone Pro to a Linux computer and press power button on. From the graphical menu select _eMMC over USB_ or _SD over USB_ to expose the device to your computer. Make sure there are no signatures or partitions left with the command `sudo wipefs /dev/$DEVICE`. To erase all signatures, type `sudo wipefs --all --force /dev/$DEVICE`.
+Connect your PinePhone Pro to a Linux computer and press power button on. From the graphical menu select _eMMC over USB_ or _SD over USB_ to expose the device to your computer. 
 
-Overwrite the device with zeroes by either overwriting the first sectors with zeroes (command 1) or the whole device (command 2): 
+Make sure there are no signatures or partitions left with the command:
+
+[source,console]
+----
+$ sudo wipefs /dev/$DEVICE
+----
+
+To erase all signatures, type:
+
+[source,console]
+----
+$ sudo wipefs --all --force /dev/$DEVICE
+----
+
+Clean the device by overwriting the first sectors with zeroes:
 
 [source,console]
 ----
 $ sudo dd if=/dev/zero of=/dev/$DEVICE status=progress bs=32768 count=1
+----
+
+Optionally you can zeroes the whole device:
+
+[source,console]
+----
 $ sudo dd if=/dev/zero of=/dev/$DEVICE status=progress bs=32768 count=$(expr $(lsblk -bno SIZE /dev/$DEVICE | head -1) \/ 32768)
 ----
 
@@ -191,7 +211,7 @@ $ sudo mount /dev/$DEVICE$PARTNUMBER /mnt/$PARTNAME/device/
 $ sudo scp -r /mnt/$PARTNAME/boot/* /mnt/$PARTNAME/device/boot
 ----
 
-==== sailfishOS
+==== SailfishOS
 
 These distribution needs different commands. Download and decompress the image:
 
@@ -216,7 +236,9 @@ $ sudo mount /dev/$DEVICE$PARTNUMBER /mnt/$PARTNAME/device
 $ sudo rsync -avz --progress $WORKDIR/distros/sailfishos/ /mnt/$PARTNAME/device
 ----
 
-==== For all the distributions you also need some adjustments on `boot.scr`, `extlinux.conf` and `fstab` files:
+==== All distributions
+
+You also need some adjustments on `boot.scr`, `extlinux.conf` and `fstab` files.
 
 Remame `/boot/boot*.scr`, if exists, to keep graphical menu clean:
 
@@ -352,7 +374,7 @@ $ sudo losetup -D
 
 == Resizing the partitions
 
-On the first boot, if it doesn't happen automatically, you can manually resize each image to fill the entire partition using GParted GUI software or using the CLI. Please note that Sailfish doesn't need any resizing.
+On the first boot, if it doesn't happen automatically, you can manually resize each image to fill the entire partition using GParted GUI software or using the CLI. Please note that SailfishOS doesn't need any resizing.
 
 [source,console]
 ----
