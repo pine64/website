@@ -32,7 +32,7 @@ td p {
 }
 h2, h3, h4, h5, h6 {
     color: var(--blue);
-    padding: 0.8rem 0 0.6rem 0;
+    padding: 12px 0 12px 0;
     font-weight: 400;
 }
 h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -74,14 +74,6 @@ div.box {
     text-align: left;
     min-width: 240px;
 }
-div.box h1 {
-    margin-bottom: 0.6rem;
-    font-size: 2rem;
-}
-div.box h2 {
-    margin-bottom: 0.6rem;
-    font-size: 1.3rem;
-}
 div.box img {
     max-width: 100%;
 }
@@ -101,7 +93,6 @@ time {
 }
 .pad_s h3 {
     padding-top: 0;
-    margin-bottom: 10px;
 }
 .gap {
     column-gap: 30px;
@@ -317,8 +308,9 @@ h1 {
     font-size: 2rem;
     padding-bottom: 20px;
 }
-
-
+h2 {
+    font-size: 1.3rem;
+}
 #header {
     display: flex;
     justify-content: center;
@@ -624,6 +616,12 @@ button.rounded:hover {
         display: block;
         max-width: 100%;
     }
+}
+div.authors {
+    margin: -8px 0 12px 6px;
+    color: #555;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 /* Devices */
