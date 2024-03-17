@@ -19,5 +19,14 @@
     #doc-breadcrumbs {
         display:none;
     }
-
+    #doc-container {
+        flex-direction: column;
+    }
+    #doc-nav nav.sidebar-nav {
+        max-height: 250px;
+    }
+    #doc-page {
+        min-width: none;
+        width: 100% !important;
+    }
 }

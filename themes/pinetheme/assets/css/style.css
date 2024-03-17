@@ -304,20 +304,7 @@ pre {
     font-family: source code pro, lucida console, monospace;
     font-size: 16px;
     font-weight: 400;
-    background-color: #fff;
-    border: 1px solid #eaecf0;
-    margin-bottom: 1rem;
-    /*font-family: monospace;*/
-    white-space: pre-wrap;
-    white-space: -moz-pre-wrap;
-    white-space: -pre-wrap;
-    white-space: -o-pre-wrap;
-    word-wrap: break-word;
-}
-code, .cl {
-    font-weight: 400;
-    font-family: source code pro, lucida console, monospace;
-    font-family: monospace;
+    background-color: none;
 }
 
 /* Prevent the "$ " part in rouge: console from being selected */
@@ -404,9 +391,11 @@ h1 {
     width: 22px;
 }
 #header-container #additional {
-    flex-grow: 1;
     min-width: 100px;
     margin: 16px 10px 10px 30px;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
 }
 @media screen and (max-width: 1000px){
     #header-container {
@@ -467,8 +456,7 @@ h1 {
 .dropdown-items {
     display: none;
     position: absolute;
-    margin-top: 8px;
-    padding-right: 8px;
+    margin-top: 28px;
     z-index: 1;
     background-color: white;
     border: 1px solid #ddd;
@@ -486,7 +474,7 @@ h1 {
     border-top: none;
     font-weight: 500;
 }
-.dropdown-toggle:checked ~ .dropdown-items {
+.dropdown-toggle:checked ~ .dropdown-items, .dropdown-toggle:hover ~ .dropdown-items {
     display: flex;
     flex-direction: column;
     overflow: visible;

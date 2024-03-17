@@ -13,15 +13,14 @@ cd website-main
 
 ### Get Hugo
 
-Install *Hugo* as explained under https://gohugo.io/installation/.
+Install *Hugo* as explained under https://gohugo.io/installation/, as well as [Asciidoctor](https://asciidoctor.org/) and [Rouge](https://github.com/rouge-ruby/rouge):
 
-* Arch Linux: `sudo pacman -S hugo`
-* Debian: `sudo apt install hugo`
-* Fedora: `sudo dnf install hugo`
-* Gentoo: `sudo emerge --ask www-apps/hugo` (SASS/SCSS support not required)
-* NixOS: `nix-shell -p hugo` (to temporarily test it in a nix-shell)
-* openSUSE: `sudo zypper install hugo`
-* Solus: `sudo eopkg install hugo`
+* Arch Linux: `sudo pacman -S hugo asciidoctor ruby-rouge`
+* Debian: `sudo apt install hugo asciidoctor ruby-rouge`
+* Fedora: `sudo dnf install hugo rubygem-asciidoctor rubygem-rouge`
+* Gentoo: `sudo emerge --ask www-apps/hugo dev-ruby/asciidoctor dev-ruby/rouge` (SASS/SCSS support not required)
+* NixOS: `nix-shell -p hugo asciidoctor rubyPackages.rouge` (to temporarily test it in a nix-shell)
+* openSUSE: `sudo zypper install hugo rubygem-asciidoctor rubygem-rouge`
 * Windows: See [here](https://gohugo.io/installation/windows/)
 * MacOS: See [here](https://gohugo.io/installation/macos/)
 * BSD: See [here](https://gohugo.io/installation/bsd/)
@@ -49,7 +48,6 @@ The html pages can be generated to the *public* folder using:
 ```bash
 hugo
 ```
-
 
 ## Site structure
 
