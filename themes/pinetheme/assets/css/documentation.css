@@ -89,6 +89,11 @@
         min-width: none;
         width: 100% !important;
     }
+    #doc-nav {
+        padding: 1rem 0;
+        width: 100%;
+        max-width: unset;
+    }  
 }
 
 #doc-page {
