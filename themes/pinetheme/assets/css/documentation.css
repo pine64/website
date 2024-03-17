@@ -119,15 +119,25 @@ div#doc-page h1 {
     margin-bottom: 1em;
 }
 div#doc-page code {
-    background-color: #f8f9fa;
-    border: 1px solid #eaecf0;
     font-family: source code pro, lucida console, monospace;
     display: inline-block;
     overflow: scroll;
     font-weight: 400;
     max-width: 98%;
-    vertical-align: bottom;
+    vertical-align: top;
     padding: 0 4px;
+}
+div#doc-page p code {
+    background-color: #f8f9fa;
+    border: 1px solid #eaecf0;
+    line-height: 1.3;
+}
+div#doc-page pre {
+    background-color: #f8f9fa;
+    outline: 1px solid #eaecf0;
+}
+div#doc-page td pre {
+    outline: none;
 }
 .linenotable {
     border: none;
