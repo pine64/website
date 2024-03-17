@@ -207,7 +207,7 @@ We are hoping that support for the Rockchip ISP and H.264 driver will land soon 
 
 ## PineNote
 
-*Authors: Ralim*
+{{< credits "Authors: Ralim" >}}
 
 Please note that this section is written by _Ralim_. I am **not** a staff member of Pine64, but I want to represent the state of the Pinenote as best to my knowledge.  
 During FOSDEM the current state of the Pinenote was available for people to interact with (and also to show the device does exist).
