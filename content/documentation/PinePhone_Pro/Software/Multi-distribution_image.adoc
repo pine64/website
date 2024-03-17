@@ -238,9 +238,9 @@ $ sudo rsync -avz --progress $WORKDIR/distros/sailfishos/ /mnt/$PARTNAME/device
 
 ==== All distributions
 
-You also need some adjustments on `boot.scr`, `extlinux.conf` and `fstab` files.
+You also need some adjustments on _boot.scr_, _extlinux.conf_ and _fstab_ files.
 
-Remame `/boot/boot*.scr`, if exists, to keep graphical menu clean:
+Remame _/boot/boot*.scr_, if exists, to keep graphical menu clean:
 
 [source,console]
 ----
@@ -295,14 +295,14 @@ append root=PARTLABEL=$PARTNAME console=ttyS2,115200 console=tty0 loglevel=7 rw 
 EOF
 ----
 
-Rename the original fstab file:
+Rename the original _/etc/fstab_ file:
 
 [source,console]
 ----
 $ sudo mv /mnt/$PARTNAME/device/etc/fstab /mnt/$PARTNAME/device/etc/fstab.bk
 ----
 
-Then write the new `/etc/fstab` file, making sure you remove `#` comment for selected distribution:
+Then write the new _/etc/fstab_ file, making sure you remove `#` comment for selected distribution:
 
 [source,shell]
 ----
