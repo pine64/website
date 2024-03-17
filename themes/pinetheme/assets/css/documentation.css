@@ -131,9 +131,12 @@ div#doc-page code {
 .linenotable pre {
     padding: 0;
 }
-table.linenotable tbody tr td {
+table.linenotable tr td {
     padding-top: 0;
     padding-bottom: 0;
+}
+td.linenos.gl {
+    user-select: none;
 }
 div#doc-page pre strong, div#doc-page code strong {
     font-weight: 600;
