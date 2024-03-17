@@ -17,43 +17,50 @@ This article explains how to install a multiple linux distribution enviroment on
 
 Make sure your phone has the link:/documentation/PinePhone_Pro/Software/Bootloaders/#rk2aw[rk2aw pre-loader] installed to SPI flash. PinePhone Pro models ordered after November 2023 are shipped with rk2aw pre-installed. Otherwise, follow the instructions in this section to install it.
 
-TIP: The multi-boot image _can_ function without rk2aw, but you may need to hold down the **RE** button during boot to force the phone to boot from microSD card by disabling the SPI flash memory and the eMMC.
+TIP: The multi-boot image _can_ function without rk2aw, but you may need to hold down the _RE_ button during boot to force the phone to boot from microSD card by disabling the SPI flash memory and the eMMC.
 
 Make sure the phone’s SSH server is up and running on the PinePhone Pro's stock operating system. Then Connect to your phone from your Linux computer using SSH:
 
+[source,console]
 ----
-ssh USER@PHONEIP
-mkdir -p ~/rk2aw
-cd ~/rk2aw
-curl -O https://xff.cz/kernels/bootloaders-2024.04/ppp.tar.gz
-tar -xvzf ppp.tar.gz -C ~/rk2aw
-cd ~/rk2aw/ppp
-sudo ./spinor-flash-initial-setup.sh
+$ ssh USER@PHONEIP
+$ mkdir -p ~/rk2aw
+$ cd ~/rk2aw
+$ curl -O https://xff.cz/kernels/bootloaders-2024.04/ppp.tar.gz
+$ tar -xvzf ppp.tar.gz -C ~/rk2aw
+$ cd ~/rk2aw/ppp
+$ sudo ./spinor-flash-initial-setup.sh
 ----
 
 Further instructions can be found on the link:https://xff.cz/kernels/bootloaders-2024.04/ppp/rk2aw/INSTALL[author's website].
 
 == Setting variables
 
-During processes of partitioning target device or building the image, make sure needed `$VARIABLES` are properly defined:
+During processes of partitioning target device or building the image, make sure the needed variables are properly defined:
 
- DEVICE=[…​], where […​] is the device name from the `lsblk` command
- DISTROURL is the image downloading URL address of Linux distribution
- MENUNAME is the name of graphical boot menu item
- PARTNAME is the name of partition/distribution
- PARTNUMBER is the number of partition/distribution
- PARTSIZE is the GiB capacity of each partition
- WORKDIR is the working directory path on your computer
+[TIP]
+====
+_DEVICE_ is the device name from the lsblk command +
+_DISTROURL_ is the image downloading URL address of Linux distribution +
+_MENUNAME_ is the name of graphical boot menu item +
+_PARTNAME_ is the name of partition/distribution +
+_PARTNUMBER_ is the number of partition/distribution +
+_PARTSIZE_ is the GiB capacity of each partition +
+_WORKDIR_ is the working directory path on your computer +
+====
 
-Every time you open a new terminal window, `$VARIABLES` values must be adapted, in example:
+Each time you open a new terminal window, the values of the variables must be adapted, for example:
 
- DEVICE=sdb
- DISTROURL=https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20240308/archlinux-pinephone-pro-phosh-20240308.img.xz
- MENUNAME=ARCH
- PARTNAME=ppp-multi-image-${MENUNAME,,}
- PARTNUMBER=2
- PARTSIZE=11GiB
- WORKDIR=~/ppp
+[source,shell]
+----
+DEVICE=sdb
+DISTROURL=https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20240308/archlinux-pinephone-pro-phosh-20240308.img.xz
+MENUNAME=ARCH
+PARTNAME=ppp-multi-image-${MENUNAME,,}
+PARTNUMBER=2
+PARTSIZE=11GiB
+WORKDIR=~/ppp
+----
 
 This guide has been tested with following images:
 
@@ -65,7 +72,7 @@ This guide has been tested with following images:
 
 == Building
 
-Connect your PinePhone Pro to a Linux computer and press power button on. From the graphical menu select `eMMC over USB` or `SD over USB` to expose the device to your computer. Make sure there are no signatures or partitions left with the command `sudo wipefs /dev/$DEVICE`. To erase all signatures, type `sudo wipefs --all --force /dev/$DEVICE`.
+Connect your PinePhone Pro to a Linux computer and press power button on. From the graphical menu select _eMMC over USB_ or _SD over USB_ to expose the device to your computer. Make sure there are no signatures or partitions left with the command `sudo wipefs /dev/$DEVICE`. To erase all signatures, type `sudo wipefs --all --force /dev/$DEVICE`.
 
 Overwrite the device with zeroes by either overwriting the first sectors with zeroes (command 1) or the whole device (command 2): 
 
@@ -76,24 +83,26 @@ Overwrite the device with zeroes by either overwriting the first sectors with ze
 
 Partition the device for the multiple distributions:
 
+[source,shell]
 ----
-sudo sfdisk /dev/$DEVICE --wipe always <<EOF
- label: gpt
- first-lba: 64
- table-length: 8
- attrs=RequiredPartition, type=D7B1F817-AA75-2F4F-830D-84818A145370, start=64, size=32704, name="uboot_raw"
- attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="ppp-multi-image-arch"
- attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="ppp-multi-image-manjaro"
- attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="ppp-multi-image-mobian"
- attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="ppp-multi-image-pmos"
- attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="ppp-multi-image-sailfish"
- attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="ppp-multi-image-ut"
- attrs="RequiredPartition,LegacyBIOSBootable", size=+, name="extra"
+$ sudo sfdisk /dev/$DEVICE --wipe always <<EOF
+label: gpt
+first-lba: 64
+table-length: 8
+attrs=RequiredPartition, type=D7B1F817-AA75-2F4F-830D-84818A145370, start=64, size=32704, name="uboot_raw"
+attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="ppp-multi-image-arch"
+attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="ppp-multi-image-manjaro"
+attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="ppp-multi-image-mobian"
+attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="ppp-multi-image-pmos"
+attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="ppp-multi-image-sailfish"
+attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="ppp-multi-image-ut"
+attrs="RequiredPartition,LegacyBIOSBootable", size=+, name="extra"
 EOF
 ----
 
 Expected results:
 
+[source,console]
 ----
 Checking that no-one is using this disk right now ... OK
 Disk /dev/sd[...]: 118.16 GiB, 126877696000 bytes, 247808000 sectors
@@ -123,19 +132,21 @@ Syncing disks.
 
 Download the following U-Boot build (the source code of the build can be on link:https://xff.cz/git/u-boot/tree/?h=ppp-2023.07[xff.cz]):
 
+[source,console]
 ----
-mkdir -p $WORKDIR/rk2aw
-cd $WORKDIR/rk2aw
-curl -O https://xff.cz/kernels/bootloaders-2024.04/ppp.tar.gz
-tar -xzf ppp.tar.gz
+$ mkdir -p $WORKDIR/rk2aw
+$ cd $WORKDIR/rk2aw
+$ curl -O https://xff.cz/kernels/bootloaders-2024.04/ppp.tar.gz
+$ tar -xzf ppp.tar.gz
 ----
 
 NOTE: This is the same `ppp.tar.gz` from the <<install_rk2aw>> section; if you already have a copy of it on your computer then you don't have to download it again.
 
 Then write the U-Boot image to the device using the following command:
 
+[source,console]
 ----
-sudo dd if=$WORKDIR/rk2aw/ppp/foss/u-boot-rockchip.bin of=/dev/$DEVICE bs=512 seek=64 status=progress conv=fsync
+$ sudo dd if=$WORKDIR/rk2aw/ppp/foss/u-boot-rockchip.bin of=/dev/$DEVICE bs=512 seek=64 status=progress conv=fsync
 ----
 
 If you are interested in building this U-Boot image yourself, you will need to copy the `ppp/foss/.config` file from the archive above to the root of your U-Boot source directory.
@@ -144,67 +155,79 @@ If you are interested in building this U-Boot image yourself, you will need to c
 
 Download and decompress each distribution image on your Linux computer, making sure you use an updated file from relases download link:/documentation/PinePhone_Pro/Software/Releases[relases download link].
 
+[source,console]
 ----
-mkdir -p $WORKDIR/distros
-cd $WORKDIR/distros
-wget $DISTROURL 
-xz -v -d -k IMAGE.*.xz
-mv IMAGE.img $PARTNAME.img
-----
-
-Only for Sailfish distribution, use an adatped command to download and decompress the image:
-
-----
-mkdir -p $WORKDIR/distros
-cd $WORKDIR/distros
-wget $DISTROURL -O artifacts.zip
-unzip artifacts.zip
-mv pinephonepro/*/sfe-pinephonepro*.tar.bz2 sailfish.tar.bz2
-mkdir -p $WORKDIR/distros/sailfishfs
-sudo tar -xvf sailfish.tar.bz2 -C sailfishfs/ > /dev/null
+$ mkdir -p $WORKDIR/distros
+$ cd $WORKDIR/distros
+$ wget $DISTROURL 
+$ xz -v -d -k IMAGE.*.xz
+$ mv IMAGE.img $PARTNAME.img
 ----
 
-Mount the image for needed distribution, excluding Sailfish image:
+Only for Sailfish distribution, use an adapted command to download and decompress the image:
 
+[source,console]
 ----
-cd $WORKDIR/distros
-sudo losetup -P /dev/loop0 $PARTNAME.img
-sudo mkdir -p /mnt/$PARTNAME/boot /mnt/$PARTNAME/root /mnt/$PARTNAME/device
-sudo mount /dev/loop0p1 /mnt/$PARTNAME/boot/
-sudo mount /dev/loop0p2 /mnt/$PARTNAME/root/
+$ mkdir -p $WORKDIR/distros
+$ cd $WORKDIR/distros
+$ wget $DISTROURL -O artifacts.zip
+$ unzip artifacts.zip
+$ mv pinephonepro/*/sfe-pinephonepro*.tar.bz2 sailfish.tar.bz2
+$ mkdir -p $WORKDIR/distros/sailfishfs
+$ tar -xvf sailfish.tar.bz2 -C sailfishfs/ > /dev/null
+----
+
+Mount the image for the selected distribution, excluding Sailfish image:
+
+[source,console]
+----
+$ cd $WORKDIR/distros
+$ sudo losetup -P /dev/loop0 $PARTNAME.img
+$ sudo mkdir -p /mnt/$PARTNAME/boot /mnt/$PARTNAME/root /mnt/$PARTNAME/device
+$ sudo mount /dev/loop0p1 /mnt/$PARTNAME/boot/
+$ sudo mount /dev/loop0p2 /mnt/$PARTNAME/root/
 ----
 
 Only for Sailfish distribution, you ought to copy the extracted files directly into the device:
 
+[source,console]
 ----
-#sudo mkfs.ext4 -F /dev/$DEVICE$PARTNUMBER # optional
-sudo mkdir -p /mnt/$PARTNAME/device
-sudo mount /dev/$DEVICE$PARTNUMBER /mnt/$PARTNAME/device
-sudo scp -r $WORKDIR/distros/sailfishfs/* /mnt/$PARTNAME/device
+$ #sudo mkfs.ext4 -F /dev/$DEVICE$PARTNUMBER # optional
+$ sudo mkdir -p /mnt/$PARTNAME/device
+$ sudo mount /dev/$DEVICE$PARTNUMBER /mnt/$PARTNAME/device
+$ sudo scp -r $WORKDIR/distros/sailfishfs/* /mnt/$PARTNAME/device
 ----
 
 For all other distributions copy `rootfs` and `boot` content:
 
+[source,console]
 ----
-sudo dd if=/dev/loop0p2 of=/dev/$DEVICE$PARTNUMBER bs=1M status=progress conv=fsync
-sudo mount /dev/$DEVICE$PARTNUMBER /mnt/$PARTNAME/device/
-sudo scp -r /mnt/$PARTNAME/boot/* /mnt/$PARTNAME/device/boot
-----
-
-Remame `/boot/boot.scr` to keep graphical menu clean:
-
-----
-[ ! -f /mnt/$PARTNAME/device/boot/boot.scr ] || sudo mv /mnt/$PARTNAME/device/boot/boot.scr /mnt/$PARTNAME/device/boot/boot.scrORIG # rename if exist
-[ ! -f /mnt/$PARTNAME/device/boot/boot.pinephonepro.scr ] || sudo mv /mnt/$PARTNAME/device/boot/boot.pinephonepro.scr /mnt/$PARTNAME/device/boot/boot.pinephonepro.scrORIG # rename if exist
+$ sudo dd if=/dev/loop0p2 of=/dev/$DEVICE$PARTNUMBER bs=1M status=progress conv=fsync
+$ sudo mount /dev/$DEVICE$PARTNUMBER /mnt/$PARTNAME/device/
+$ sudo scp -r /mnt/$PARTNAME/boot/* /mnt/$PARTNAME/device/boot
 ----
 
-Rename original and write the new `/boot/extlinux/extlinux.conf` file, making sure you remove `#` comment for needed distribution:
+Remame the _/boot/boot.scr_ file to keep the graphical menu clean:
 
+[source,console]
 ----
-sudo mkdir -p /mnt/$PARTNAME/device/boot/extlinux
-[ ! -f /mnt/$PARTNAME/device/boot/extlinux/extlinux.conf ] || sudo mv /mnt/$PARTNAME/device/boot/extlinux/extlinux.conf /mnt/$PARTNAME/device/boot/extlinux/extlinux.confORIG # rename if exist
+$ [ ! -f /mnt/$PARTNAME/device/boot/boot.scr ] || sudo mv /mnt/$PARTNAME/device/boot/boot.scr /mnt/$PARTNAME/device/boot/boot.scr.bk # rename if exist
+$ [ ! -f /mnt/$PARTNAME/device/boot/boot.pinephonepro.scr ] || sudo mv /mnt/$PARTNAME/device/boot/boot.pinephonepro.scr /mnt/$PARTNAME/device/boot/boot.pinephonepro.scr.bk # rename if exist
+----
 
-sudo tee /mnt/$PARTNAME/device/boot/extlinux/extlinux.conf <<EOF
+Rename the original _/boot/extlinux/extlinux.conf_ file
+
+[source,console]
+----
+$ sudo mkdir -p /mnt/$PARTNAME/device/boot/extlinux
+$ [ ! -f /mnt/$PARTNAME/device/boot/extlinux/extlinux.conf ] || sudo mv /mnt/$PARTNAME/device/boot/extlinux/extlinux.conf /mnt/$PARTNAME/device/boot/extlinux/extlinux.conf.bk # rename if exist
+----
+
+Then write the new _/boot/extlinux/extlinux.conf_ file, making sure you remove `#` comment for the selected distributions:
+
+[source,shell]
+----
+$ sudo tee /mnt/$PARTNAME/device/boot/extlinux/extlinux.conf <<EOF
 #/boot/extlinux/extlinux.conf
 menu title Pinephone Pro Boot Menu
 label l0
@@ -239,12 +262,18 @@ append root=PARTLABEL=$PARTNAME console=ttyS2,115200 console=tty0 loglevel=7 rw 
 EOF
 ----
 
-Rename original and write the new `/etc/fstab` file, making sure you remove `#` comment for needed distribution:
+Rename the original fstab file:
 
+[source,console]
 ----
-sudo mv /mnt/$PARTNAME/device/etc/fstab /mnt/$PARTNAME/device/etc/fstabORIG # rename
+$ sudo mv /mnt/$PARTNAME/device/etc/fstab /mnt/$PARTNAME/device/etc/fstab.bk
+----
 
-sudo tee /mnt/$PARTNAME/device/etc/fstab <<EOF
+Then write the new `/etc/fstab` file, making sure you remove `#` comment for needed distribution:
+
+[source,shell]
+----
+$ sudo tee /mnt/$PARTNAME/device/etc/fstab <<EOF
 #<file system>         <dir>      <type> <options>                  <dump> <pass>
 
 #uncomment next line for ARCH
@@ -271,47 +300,51 @@ sudo tee /mnt/$PARTNAME/device/etc/fstab <<EOF
 EOF
 ----
 
-==== Build PostmarketOS image
+==== Build the postmarketOS image
 
 You can optionally use link:https://wiki.postmarketos.org/wiki/Pmbootstrap[pmbootstrap] to generate the distribution image on your Linux computer, instead of downloading a pre-made image. Make sure you install pmbootstrap before building the image.
 
 Start creating 2 GB empty image file, format and mount it.
 
+[source,console]
 ----
-sudo su
-dd if=/dev/zero of=postmarketos.img bs=1 count=0 seek=2G status=progress && sync
-mkfs.ext4 postmarketos.img
-losetup -P /dev/loop0 postmarketos.img
-exit
+$ sudo su
+# dd if=/dev/zero of=postmarketos.img bs=1 count=0 seek=2G status=progress && sync
+# mkfs.ext4 postmarketos.img
+# losetup -P /dev/loop0 postmarketos.img
+# exit
 ----
 
-Build the PostmarketOS image via pmbootstrap:
+Build the postmarketOS image via pmbootstrap:
 
+[source,console]
 ----
-pmbootstrap init
-pmbootstrap status
-pmbootstrap pull
-pmbootstrap install --sdcard=/dev/[LOOP-DEVICE]
-pmbootstrap shutdown
+$ pmbootstrap init
+$ pmbootstrap status
+$ pmbootstrap pull
+$ pmbootstrap install --sdcard=/dev/[LOOP-DEVICE]
+$ pmbootstrap shutdown
 ----
 
 === Unmount and detach
 
 To unmount and deatch all building images, run:
 
+[source,console]
 ----
-sudo umount /mnt/$PARTNAME/*
-sudo rm -r /mnt/$PARTNAME
-sudo losetup -D
+$ sudo umount /mnt/$PARTNAME/*
+$ sudo rm -r /mnt/$PARTNAME
+$ sudo losetup -D
 ----
 
 == Resizing the partitions
 
 On the first boot, if it doesn't happen automatically, you can manually resize each image to fill the entire partition using GParted GUI software or using the CLI:
 
+[source,console]
 ----
-sudo e2fsck -f /dev/$DEVICE$PARTNUMBER
-sudo resize2fs /dev/$DEVICE$PARTNUMBER
+$ sudo e2fsck -f /dev/$DEVICE$PARTNUMBER
+$ sudo resize2fs /dev/$DEVICE$PARTNUMBER
 ----
 
 Repeat the building process for each needed distribution.
