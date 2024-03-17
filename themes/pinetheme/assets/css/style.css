@@ -617,6 +617,12 @@ button.rounded:hover {
         max-width: 100%;
     }
 }
+div.authors {
+    margin: -8px 0 12px 6px;
+    color: #555;
+    font-weight: 400;
+    font-size: 14px;
+}
 
 /* Devices */
 .headerbox {
