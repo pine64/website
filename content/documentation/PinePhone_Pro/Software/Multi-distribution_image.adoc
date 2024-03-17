@@ -388,7 +388,7 @@ Repeat the building process for each needed distribution.
 
 To find the exact _LABEL_, _UUID_, _PARTLABEL_ and _PARTUUID_ names, open a terminal window on the phone and use the command `blkid`.
 
-Any time a distribution update rebuilds the initramfs it is necessary to delete `/boot/boot.scr` again to keep the rk2aw menu clean.
+Any time a distribution update rebuilds the initramfs it is necessary to delete _/boot/boot.scr_ again to keep the rk2aw menu clean.
 
 In case you want to reinstall only one distribution, the easy way is to delete and recreate the selected partition using the GParted GUI.
 
