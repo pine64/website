@@ -88,3 +88,8 @@ description: "PINE64 has a variety of different devices. Find out more!"
 {{< flexbox >}}
     {{< devices/device_box link="/devices/pinenut" img="/devices/images/pinenut.jpg" title="PineNut" text="" >}}
 {{</ flexbox >}}
+
+== Smart home
+{{< flexbox >}}
+    {{< devices/device_box link="/devices/pinevox" img="/documentation/PineVox/images/pinevox.jpg" title="PineVox" text="" >}}
+{{</ flexbox >}}

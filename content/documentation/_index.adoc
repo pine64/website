@@ -78,6 +78,9 @@ a|link:Pinecil[Pinecil]
 | Makerspace
 a|link:PineCone[PineCone] +
 link:Pinedio[Pinedio]
+
+| Smart home
+a|link:PineVox[PineVox]
 |===
 
 
