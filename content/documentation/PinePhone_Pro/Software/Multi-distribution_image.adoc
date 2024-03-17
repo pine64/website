@@ -76,10 +76,10 @@ Connect your PinePhone Pro to a Linux computer and press power button on. From t
 
 Overwrite the device with zeroes by either overwriting the first sectors with zeroes (command 1) or the whole device (command 2): 
 
-[source,shell]
+[source,console]
 ----
-1 sudo dd if=/dev/zero of=/dev/$DEVICE status=progress bs=32768 count=1
-2 sudo dd if=/dev/zero of=/dev/$DEVICE status=progress bs=32768 count=$(expr $(lsblk -bno SIZE /dev/$DEVICE | head -1) \/ 32768)
+$ sudo dd if=/dev/zero of=/dev/$DEVICE status=progress bs=32768 count=1
+$ sudo dd if=/dev/zero of=/dev/$DEVICE status=progress bs=32768 count=$(expr $(lsblk -bno SIZE /dev/$DEVICE | head -1) \/ 32768)
 ----
 
 === Partitioning
@@ -158,9 +158,9 @@ If you are interested in building this U-Boot image yourself, you will need to c
 
 Make sure you download an updated file from link:/documentation/PinePhone_Pro/Software/Releases[relases download link].
 
-==== Arch, Manjaro, Mobian, postmarketOS distributions need following steps.
+==== Arch, Manjaro, Mobian, postmarketOS
 
-Download and decompress the image:
+For these distributions, download and decompress the image:
 
 [source,console]
 ----
@@ -171,7 +171,7 @@ $ xz -v -d -k IMAGE.*.xz
 $ mv IMAGE.img $PARTNAME.img
 ----
 
-Mount the image for the selected distribution:
+Mount the image:
 
 [source,console]
 ----
@@ -182,7 +182,7 @@ $ sudo mount /dev/loop0p1 /mnt/$PARTNAME/boot/
 $ sudo mount /dev/loop0p2 /mnt/$PARTNAME/root/
 ----
 
-Copy `rootfs` and `boot` content:
+Copy `rootfs` and `boot` contents:
 
 [source,console]
 ----
@@ -191,9 +191,9 @@ $ sudo mount /dev/$DEVICE$PARTNUMBER /mnt/$PARTNAME/device/
 $ sudo scp -r /mnt/$PARTNAME/boot/* /mnt/$PARTNAME/device/boot
 ----
 
-==== SailfishOS distribution needs different commands.
+==== sailfishOS
 
-Download and decompress the image:
+These distribution needs different commands. Download and decompress the image:
 
 [source,console]
 ----
@@ -206,7 +206,7 @@ $ mkdir -p $WORKDIR/distros/sailfishos
 $ tar -xvf sailfish.tar.bz2 -C sailfishos/ > /dev/null
 ----
 
-Copy the extracted files directly into the device:
+Copy the extracted files directly onto the device:
 
 [source,console]
 ----
@@ -352,7 +352,7 @@ $ sudo losetup -D
 
 == Resizing the partitions
 
-On the first boot, if it doesn't happen automatically, you can manually resize each image to fill the entire partition using GParted GUI software or using the CLI. Pls note that Sailfish doesn't need any resizing.
+On the first boot, if it doesn't happen automatically, you can manually resize each image to fill the entire partition using GParted GUI software or using the CLI. Please note that Sailfish doesn't need any resizing.
 
 [source,console]
 ----
