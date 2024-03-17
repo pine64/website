@@ -121,7 +121,7 @@ div#doc-page h1 {
 div#doc-page code {
     font-family: source code pro, lucida console, monospace;
     display: inline-block;
-    overflow-x: scroll;
+    overflow-x: auto;
     font-weight: 400;
     max-width: 98%;
     vertical-align: top;
