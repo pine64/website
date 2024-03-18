@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PinePhone_Pro/Software"
     identifier: "PinePhone_Pro/Software/Releases"
-    weight: 2
+    weight: 4
 ---
 
 This page contains a list of all available releases and tools for the link:/documentation/PinePhone_Pro[PinePhone Pro].

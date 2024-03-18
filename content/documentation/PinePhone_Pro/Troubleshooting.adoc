@@ -45,3 +45,6 @@ The PinePhone Pro won't be able to boot if the installation on the SPI flash, th
 
 The device should now boot from the microSD card. If the phone does not boot from the microSD card the microSD card was flashed with an incompatible image or the battery got drained as explained above.
 
+== Further investigation
+
+Connect a compatible link:https://pine64.com/product/pinebook-pinephone-pinetab-serial-console[serial cable] to the headphone jack and a computer, switch off microswitch 6 and start a serial console to investigate further. Find out the corresponding USB device using `ls /dev/ttyUSB*` and then connect to it with for example _minicom_ using the command `minicom -b 1500000 -D /dev/ttyUSB**[...]**`, where *[...]* is the number of the USB device.

@@ -4,9 +4,9 @@ draft: false
 menu:
   docs:
     title:
-    parent: "PinePhone_Pro/Software"
-    identifier: "PinePhone_Pro/Software/Software_state"
-    weight: 3
+    parent: "PinePhone_Pro"
+    identifier: "PinePhone_Pro/Software_state"
+    weight: 5
 ---
 
 Presently the PinePhone Pro Explorer Edition is aimed at *Linux developers with an extensive knowledge of embedded systems and/or experience with mobile Linux*. It will take time for all the PinePhone Pro’s functionality to reach software parity with the original PinePhone and for mobile operating systems, in more general, to reach a higher degree of maturity.
@@ -29,15 +29,15 @@ TIP: The software is *written by the community*, any contributions towards the c
 .3+| Bootloader
 | `Bootloader`
 2+| Critical bugs
-| Some critical software bugs currently not fixed yet: A drained battery causes U-Boot to bootloop (cause is known and currently being worked on);^link:/documentation/PinePhone_Pro/Troubleshooting/#_the_battery_is_fully_drained[Report]^. *Note:* Tow-Boot is now pre-installed on the SPI from the factory - issues need verification to be issues with Tow-Boot.
+| Some critical software bugs currently not fixed yet: A drained battery causes U-Boot to bootloop (cause is known and currently being worked on);^link:/documentation/PinePhone_Pro/Troubleshooting/#_the_battery_is_fully_drained[Report]^.
 
 | `SPI`
 2+| Implemented
-| Devices bought after end of July 2022 come with Tow-Boot flashed to the SPI memory, making it considerably easier to flash the device and boot from microSD card.
+| Devices bought after November 2023 come with the rk2aw pre-loader flashed to the SPI memory, making it considerably easier to flash the device and boot from microSD card.
 
 | `Boot GUI`
-2+| Not implemented
-| Currently there is no graphical boot selection implemented^https://tow-boot.org/[Possibly planned]^
+2+| Implemented
+| Currently the rk2aw pre-loader presents a graphical menu to boot from selected device.
 
 .3+| Operating System
 | `Stability`

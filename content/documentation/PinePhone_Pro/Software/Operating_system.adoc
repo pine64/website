@@ -1,11 +1,11 @@
 ---
-title: "Installing a different operating system"
+title: "Operating system"
 draft: false
 menu:
   docs:
     title:
-    parent: "PinePhone_Pro"
-    identifier: "PinePhone_Pro/Installing_a_different_operating_system"
+    parent: "PinePhone_Pro/Software"
+    identifier: "PinePhone_Pro/Software/Operating_system"
     weight: 3
 ---
 

@@ -6,33 +6,16 @@ menu:
     title:
     parent: "PinePhone_Pro/Software"
     identifier: "PinePhone_Pro/Software/Multi-distribution_image"
-    weight: 99
+    weight: 5
 ---
 
 :toc:
 
 This article explains how to install a multiple linux distribution enviroment on your PinePhone Pro. According to the flashed device you will be able to boot from the eMMC internal memory or from a microSD card.
 
-== Installing rk2aw
+== Pre-requisite rk2aw
 
-Make sure your phone has the link:/documentation/PinePhone_Pro/Software/Bootloaders/#rk2aw[rk2aw pre-loader] installed to SPI flash. PinePhone Pro models ordered after November 2023 are shipped with rk2aw pre-installed. Otherwise, follow the instructions in this section to install it.
-
-TIP: The multi-boot image _can_ function without rk2aw, but you may need to hold down the _RE_ button during boot to force the phone to boot from microSD card by disabling the SPI flash memory and the eMMC.
-
-Make sure the phone’s SSH server is up and running on the PinePhone Pro's stock operating system. Then Connect to your phone from your Linux computer using SSH:
-
-[source,console]
-----
-$ ssh USER@PHONEIP
-$ mkdir -p ~/rk2aw
-$ cd ~/rk2aw
-$ curl -O https://xff.cz/kernels/bootloaders-2024.04/ppp.tar.gz
-$ tar -xvzf ppp.tar.gz -C ~/rk2aw
-$ cd ~/rk2aw/ppp
-$ sudo ./spinor-flash-initial-setup.sh
-----
-
-Further instructions can be found on the link:https://xff.cz/kernels/bootloaders-2024.04/ppp/rk2aw/INSTALL[author's website].
+Make sure your phone has the link:/documentation/PinePhone_Pro/Software/Bootloaders/#install_rk2aw[rk2aw pre-loader] installed to SPI flash.
 
 == Setting variables
 
@@ -72,7 +55,7 @@ This guide has been tested with following images:
 
 == Building
 
-Connect your PinePhone Pro to a Linux computer and press power button on. From the graphical menu select _eMMC over USB_ or _SD over USB_ to expose the device to your computer. 
+Connect your PinePhone Pro to a Linux computer and press power button on. The pre-loader rk2aw will show a graphical menu. Select _eMMC over USB_ or _SD over USB_ to expose the device to your computer. 
 
 Make sure there are no signatures or partitions left with the command:
 
@@ -153,26 +136,7 @@ Syncing disks.
 
 === Install U-Boot
 
-Download the following U-Boot build (the source code of the build can be on link:https://xff.cz/git/u-boot/tree/?h=ppp-2023.07[xff.cz]):
-
-[source,console]
-----
-$ mkdir -p $WORKDIR/rk2aw
-$ cd $WORKDIR/rk2aw
-$ curl -O https://xff.cz/kernels/bootloaders-2024.04/ppp.tar.gz
-$ tar -xzf ppp.tar.gz
-----
-
-NOTE: This is the same `ppp.tar.gz` from the <<install_rk2aw>> section; if you already have a copy of it on your computer then you don't have to download it again.
-
-Then write the U-Boot image to the device using the following command:
-
-[source,console]
-----
-$ sudo dd if=$WORKDIR/rk2aw/ppp/foss/u-boot-rockchip.bin of=/dev/$DEVICE bs=512 seek=64 status=progress conv=fsync
-----
-
-If you are interested in building this U-Boot image yourself, you will need to copy the `ppp/foss/.config` file from the archive above to the root of your U-Boot source directory.
+Your phone needs the link:/documentation/PinePhone_Pro/Software/Bootloaders/#install_u_boot[U-Boot bootloader] installed on the first sectors of the device.
 
 === Build the partitions
 
@@ -384,7 +348,7 @@ $ sudo resize2fs /dev/$DEVICE$PARTNUMBER
 
 Repeat the building process for each needed distribution.
 
-== Troubleshooting
+== Final notes
 
 To find the exact _LABEL_, _UUID_, _PARTLABEL_ and _PARTUUID_ names, open a terminal window on the phone and use the command `blkid`.
 
@@ -392,4 +356,4 @@ Any time a distribution update rebuilds the initramfs it is necessary to delete 
 
 In case you want to reinstall only one distribution, the easy way is to delete and recreate the selected partition using the GParted GUI.
 
-If the device doesn't start, connect a compatible link:https://pine64.com/product/pinebook-pinephone-pinetab-serial-console[serial cable] to the headphone jack and a computer, switch off microswitch 6 and start a serial console to investigate further. Find out the corresponding USB device using `ls /dev/ttyUSB*` and then connect to it with for example _minicom_ using the command `minicom -b 1500000 -D /dev/ttyUSB**[...]**`, where *[...]* is the number of the USB device.
+Refer to link:/documentation/PinePhone_Pro/Troubleshooting[Troubleshooting] to get more help.
