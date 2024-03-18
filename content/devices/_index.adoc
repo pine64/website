@@ -32,7 +32,7 @@ description: "PINE64 has a variety of different devices. Find out more!"
 
 {{< flexbox >}}
     {{< devices/device_box link="/devices/pinephone_pro" img="/devices/images/pinephone_pro.png" title="PinePhone Pro" text="" >}}
-    {{< devices/device_box link="/devices/pinephone" img="/devices/images/pinephone.jpg" title="PinePhone" text="" >}}
+    {{< devices/device_box link="/devices/pinephone" img="/devices/images/pinephone.png" title="PinePhone" text="" >}}
     {{< devices/device_box link="/devices/pinenote" img="/devices/images/pinenote.jpg" title="PineNote" text="" >}}
     {{< devices/device_box link="/devices/pinetab" img="/devices/images/pinetab.jpg" title="PineTab" text="" >}}
     {{< devices/device_box link="/devices/pinetab2" img="/documentation/PineTab2/images/PineTab2_Front.jpg" title="PineTab2" text="" >}}
