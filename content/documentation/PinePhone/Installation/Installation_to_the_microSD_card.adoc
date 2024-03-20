@@ -14,11 +14,10 @@ For this installation method you need a *microSD card*, a *microSD card reader* 
 
 To install an image to the microSD card:
 
-. Download your chosen image from link:/documentation/PinePhone/Software/Operating_systems[Operating systems] for the regular *PinePhone* and link:/documentation/PinePhone_Pro/Software/Releases[Releases] for the *PinePhone Pro*
+. Download your chosen image from link:/documentation/PinePhone/Software/Releases[Releases] for the regular *PinePhone* (not compatible with the PinePhone Pro).
 . Extract the compressed file
 . Write (_flash_) the image to your microSD card, see the isntructions below
 . Plug microSD card into phone (make sure to use the top slot, not the bottom slot)
-. *On the PinePhone Pro*: The eMMC might have to be overruled to boot from the microSD card, see link:/documentation/PinePhone_Pro#Boot_order[PinePhone Pro]
 . Boot up the phone
 
 image:/documentation/images/Pinephone_slots.png[The microSD belongs in the upper slot, the micro-SIM in the lower slot.,title="The microSD belongs in the upper slot, the micro-SIM in the lower slot.",width=600]
