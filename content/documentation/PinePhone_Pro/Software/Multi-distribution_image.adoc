@@ -11,20 +11,28 @@ menu:
 
 :toc:
 
-This article explains how to install a multiple linux distribution enviroment on your PinePhone Pro. According to the flashed device you will be able to boot from the eMMC internal memory or from a microSD card.
+This article explains how to install a multiple linux distribution environment on your PinePhone Pro. You can choose to install this environment to the phone's internal eMMC memory or to a microSD card.
 
 [id=rk2aw]
 == Installing rk2aw
 
-Make sure your phone has the link:/documentation/PinePhone_Pro/Software/Bootloaders/#rk2aw[rk2aw pre-loader] installed to SPI flash. PinePhone Pro models ordered after November 2023 are shipped with rk2aw pre-installed. Otherwise, follow the instructions in this section to install it.
+Make sure your phone has the link:/documentation/PinePhone_Pro/Software/Bootloaders/#rk2aw[rk2aw pre-loader] installed to its SPI flash memory. PinePhone Pro models ordered after November 2023 are shipped with rk2aw pre-installed. Otherwise, follow the instructions in this section to install it.
 
-TIP: The multi-boot image _can_ function without rk2aw, but you may need to hold down the _RE_ button during boot to force the phone to boot from microSD card by disabling the SPI flash memory and the eMMC.
+[TIP]
+====
+The multi-boot image _can_ function without rk2aw, but you will need to make sure the correct <<uboot,bootloader>> is started by your phone's SoC.
 
-Make sure the phone’s SSH server is up and running on the PinePhone Pro's stock operating system. Then Connect to your phone from your Linux computer using SSH:
+If you are installing to a microSD card, then either:
 
+. Ensure that the phone's SPI flash and eMMC are empty, or
+. Hold down the _RE_ button during boot to force the phone to boot from the microSD card by disabling the SPI flash and the eMMC.
+
+If you are installing to the eMMC, make sure the SPI flash is empty.
+====
+
+Boot up the PinePhone Pro's stock operating system and start a shell session. You can do this either by opening the terminal emulator app, or by enabling the SSH service and logging in from a PC on the same network. Then execute the following commands (from the phone's shell):
 [source,console]
 ----
-$ ssh USER@PHONEIP
 $ mkdir -p ~/rk2aw
 $ cd ~/rk2aw
 $ curl -O https://xff.cz/kernels/bootloaders-2024.04/ppp.tar.gz
@@ -37,7 +45,7 @@ Further instructions can be found on the link:https://xff.cz/kernels/bootloaders
 
 == Setting variables
 
-During processes of partitioning target device or building the image, make sure the needed variables are properly defined:
+During the processes of partitioning the target device or building the image, make sure the following variables are properly defined:
 
 [TIP]
 ====
@@ -152,9 +160,10 @@ Calling ioctl() to re-read partition table.
 Syncing disks.
 ----
 
+[id=uboot]
 === Install U-Boot
 
-Download the following U-Boot build (the source code of the build can be on link:https://xff.cz/git/u-boot/tree/?h=ppp-2023.07[xff.cz]):
+In order to display the graphical distribution selector when the phone boots, we need to install a custom version of the U-Boot bootloader. Download the following U-Boot build (the source code for this build can also be downloaded from link:https://xff.cz/git/u-boot/tree/?h=ppp-2023.07[xff.cz]):
 
 [source,console]
 ----
