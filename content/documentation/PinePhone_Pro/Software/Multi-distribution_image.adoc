@@ -13,14 +13,14 @@ menu:
 
 This article explains how to install a multiple linux distribution environment on your PinePhone Pro. You can choose to install this environment to the phone's internal eMMC memory or to a microSD card.
 
-[id=rk2aw]
+[#rk2aw]
 == Installing rk2aw
 
 Make sure your phone has the link:/documentation/PinePhone_Pro/Software/Bootloaders/#rk2aw[rk2aw pre-loader] installed to its SPI flash memory. PinePhone Pro models ordered after November 2023 are shipped with rk2aw pre-installed. Otherwise, follow the instructions in this section to install it.
 
 [TIP]
 ====
-The multi-boot image _can_ function without rk2aw, but you will need to make sure the correct <<uboot,bootloader>> is started by your phone's SoC.
+The multi-boot image _can_ function without rk2aw, but you will need to make sure the correct link:#uboot[bootloader] is started by your phone's SoC.
 
 If you are installing to a microSD card, then either:
 
@@ -31,6 +31,7 @@ If you are installing to the eMMC, make sure the SPI flash is empty.
 ====
 
 Boot up the PinePhone Pro's stock operating system and start a shell session. You can do this either by opening the terminal emulator app, or by enabling the SSH service and logging in from a PC on the same network. Then execute the following commands (from the phone's shell):
+
 [source,console]
 ----
 $ mkdir -p ~/rk2aw
@@ -160,7 +161,7 @@ Calling ioctl() to re-read partition table.
 Syncing disks.
 ----
 
-[id=uboot]
+[#uboot]
 === Install U-Boot
 
 In order to display the graphical distribution selector when the phone boots, we need to install a custom version of the U-Boot bootloader. Download the following U-Boot build (the source code for this build can also be downloaded from link:https://xff.cz/git/u-boot/tree/?h=ppp-2023.07[xff.cz]):
@@ -173,7 +174,7 @@ $ curl -O https://xff.cz/kernels/bootloaders-2024.04/ppp.tar.gz
 $ tar -xzf ppp.tar.gz
 ----
 
-NOTE: This is the same `ppp.tar.gz` from the <<rk2aw>> section; if you already have a copy of it on your computer then you don't have to download it again.
+NOTE: This is the same `ppp.tar.gz` from the link:#rk2aw[rk2aw section]; if you already have a copy of it on your computer then you don't have to download it again.
 
 Then write the U-Boot image to the device using the following command:
 
