@@ -33,4 +33,4 @@ NOTE: The bootloader uses its own boot order for loading the kernel and other co
 
 == Boot from microSD card permanently
 
-The bootloader (such as _U-Boot_) resides in the free space in front of the first partition. Wiping the bootloader from the eMMC to make the PinePhone Pro boot from microSD card can be done using `sudo dd if&#61;/dev/zero of&#61;/dev/mmcblk2 seek&#61;64 count&#61;400 conv&#61;fsync`. Formatting the drive or deleting the partition table is not sufficient to wipe the bootloader.
+The bootloader (such as _U-Boot_) resides in the free space in front of the first partition. Wiping the bootloader from the eMMC to make the PinePhone Pro boot from microSD card can be done using `sudo dd if&#61;/dev/zero of&#61;/dev/mmcblk2 seek&#61;64 count&#61;400 conv&#61;fsync`. Formatting the drive or deleting the partition table is not sufficient to wipe the bootloader. 
