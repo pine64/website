@@ -6,11 +6,7 @@ menu:
     title:
     parent: "PinePhone"
     identifier: "PinePhone/Hardware_fixes_and_mods"
-    weight: 
+    weight: 96
 ---
 
-* link:Mods[]
-* link:Hardware_issues[Hardware issues]
-* link:PinePhone_1.2b_R1318_backlight_Hardware_Fix[PinePhone 1.2b R1318 backlight Hardware Fix]
-* link:PinePhone_1.2_VCONN_Hardware_Fix[PinePhone 1.2 VCONN Hardware Fix]
-* link:PinePhone_1.1_VBUS_power_usage_Hardware_Fix[PinePhone 1.1 VBUS power usage Hardware Fix]
+{{< children >}}

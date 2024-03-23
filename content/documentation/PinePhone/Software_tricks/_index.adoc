@@ -6,10 +6,7 @@ menu:
     title:
     parent: "PinePhone"
     identifier: "PinePhone/Software_tricks"
-    weight: 
+    weight: 97
 ---
 
-* link:Thermal_tweaks[Thermal tweaks]
-* link:Security[]
-* link:Power_management[Power management]
-* link:MMS_with_Matrix[MMS with Matrix]
+{{< children >}}

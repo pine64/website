@@ -35,14 +35,18 @@
                 <!-- Children -->
                 {{ range .Children }}
                 
-                    <li><a class='sidebar-nav-subitem {{if $currentPage.IsMenuCurrent "docs" .}}active{{end}}' href='{{.URL}}'>{{ .Title }}</a></li>
+                    {{ if not .Page.Params.hidden }}
+                        <li><a class='sidebar-nav-subitem {{if $currentPage.IsMenuCurrent "docs" .}}active{{end}}' href='{{.URL}}'>{{ .Title }}</a></li>
+                    {{ end }}
 
                     {{ if .HasChildren }}
                         <ul>
 
                         <!-- Children-Children -->
                         {{ range .Children }}
-                            <li class="doc_subitem"><a class='sidebar-nav-subsubitem {{if $currentPage.IsMenuCurrent "docs" .}}active{{end}}' href='{{.URL}}'>{{ .Title }}</a></li>
+                            {{ if not .Page.Params.hidden }}
+                                <li class="doc_subitem"><a class='sidebar-nav-subsubitem {{if $currentPage.IsMenuCurrent "docs" .}}active{{end}}' href='{{.URL}}'>{{ .Title }}</a></li>
+                            {{ end }}
                         {{ end }}
 
 

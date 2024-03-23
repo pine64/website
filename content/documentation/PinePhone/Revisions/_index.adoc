@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PinePhone"
     identifier: "PinePhone/Revisions"
-    weight: 
+    weight: 98
 ---
 
 image:/documentation/images/Pinephone_revisions.png[The history of the PinePhone CEs,title="The history of the PinePhone CEs",width=400]

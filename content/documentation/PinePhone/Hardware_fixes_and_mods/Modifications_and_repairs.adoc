@@ -1,6 +1,7 @@
 ---
 title: "Modifications and repairs"
 draft: false
+hidden: true
 menu:
   docs:
     title:

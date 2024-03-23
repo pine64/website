@@ -1,11 +1,10 @@
 <div class="ulist">
+{{ $sortedPages := sort .Page.Pages ".Params.menu.docs.weight" "asc" }}
 <ul>
-{{ range .Page.Pages }}
-    <li>
-        <p><a href="{{ .RelPermalink }}">{{ .Name }}</a></p>
-    </li>
-{{ end }}
+    {{ range $sortedPages }}
+        <li>
+            <p><a href="{{ .RelPermalink }}">{{ .Name }}</a></p>
+        </li>
+    {{ end }}
 </ul>
 </div>
-
-<!-- TODO: Change this to menu-based search (because of weight order) -->

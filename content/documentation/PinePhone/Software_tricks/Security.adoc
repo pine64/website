@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PinePhone/Software_tricks"
     identifier: "PinePhone/Software_tricks/Security"
-    weight: 
+    weight: 1
 ---
 
 {{% docs/construction %}}
