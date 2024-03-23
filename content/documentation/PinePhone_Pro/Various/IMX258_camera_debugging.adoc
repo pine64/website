@@ -1,6 +1,6 @@
 ---
 title: "IMX258 Camera Debugging"
-draft: false # page seems to break rendering
+draft: true # page seems to break rendering
 menu:
   docs:
     title:
