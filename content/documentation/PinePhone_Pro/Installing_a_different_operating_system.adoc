@@ -32,6 +32,8 @@ Details regarding the boot order can be found in the link:/documentation/PinePho
 
 == Flashing to the eMMC
 
+WARNING: Since November 2023 the PinePhone Pro has ships with u-boot installed to the emmc, where it will be overwritten when flashing a new image. Many common distributions don't include a bootloader, so it is necessary to install one (such as link:/documentation/PinePhone_Pro/Software/Bootloaders/#tow-boot[Tow-Boot]) in order to get the phone to boot.
+
 Flashing to the eMMC (the internal memory of the PinePhone Pro) can either be done using _Tow-Boot_'s USB Mass Storage mode (see link:/documentation/PinePhone_Pro/Software/Boot_order/[Boot order] if you are unsure if the device comes with Tow-Bot pre-installed) or by booting an operating system from the microSD (see the section link:/documentation/PinePhone_Pro#Flashing_to_microSD_card[Flashing to microSD card]) and by writing to the eMMC directly from there:
 
 By using Tow-Boot:
