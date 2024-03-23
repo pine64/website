@@ -13,16 +13,12 @@ The PinePhone Pro is PINE64’s second smartphone and a successor to the origina
 
 {{< youtube id="wP2-6Z74W44" >}}
 
-== State of the software
-
-See the page link:/documentation/PinePhone_Pro/Various/Software_state[software state]
-
 == Editions and revisions
 
 Similarly to the original PinePhone, various PinePhone Pro editions are planned, the first of which is the Developer Edition (aimed at developers, as the name entails) followed by the Explorer Edition, which is aimed at early adopters.
 
 * link:/documentation/PinePhone_Pro/Revisions/Developer_Edition[Developer Edition]
-* PinePhone Pro Explorer Edition
+* Explorer Edition
 
 == Help and support
 

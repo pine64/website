@@ -1,0 +1,12 @@
+---
+title: "Hardware"
+draft: false
+menu:
+  docs:
+    title:
+    parent: "PinePhone_Pro"
+    identifier: "PinePhone_Pro/Hardware"
+    weight: 97
+---
+
+{{< children >}}

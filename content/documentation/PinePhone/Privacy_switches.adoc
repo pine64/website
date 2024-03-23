@@ -15,10 +15,7 @@ The PinePhone features six switches that can be used to configure its hardware. 
 
 [cols="1,1,1,1"]
 |===
-|Number
-|Name
-|Explanation
-|Description
+| Number | Name | Explanation | Description
 
 | 1
 | Modem
