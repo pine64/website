@@ -41,6 +41,8 @@ If you are installing to a microSD card, then either:
 If you are installing to the eMMC, make sure the SPI flash is empty.
 ====
 
+Further instructions can be found on the link:https://xff.cz/kernels/bootloaders-2024.04/ppp/rk2aw/INSTALL[author's website].
+
 [#variables]
 == Setting variables
 
