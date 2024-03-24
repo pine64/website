@@ -171,9 +171,7 @@ Calling ioctl() to re-read partition table.
 Syncing disks.
 ----
 
-Further instructions can be found on the link:https://xff.cz/kernels/bootloaders-2024.04/ppp/rk2aw/INSTALL[author's website].
-
-[#u_boot]
+[#uboot]
 == Install U-Boot
 
 In order to display the graphical distribution selector when the phone boots, we need to install a custom version of the U-Boot bootloader in the first sectors of the flashed device.
