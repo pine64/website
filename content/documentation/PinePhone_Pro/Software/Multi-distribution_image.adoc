@@ -400,6 +400,7 @@ On the first boot, if it doesn't happen automatically, you can manually resize e
 
 [source,console]
 ----
+$ sudo e2label /dev/$DEVICE$PARTNUMBER ${MENUNAME,,}
 $ sudo e2fsck -f /dev/$DEVICE$PARTNUMBER
 $ sudo resize2fs /dev/$DEVICE$PARTNUMBER
 ----
