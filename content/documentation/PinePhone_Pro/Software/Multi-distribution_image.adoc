@@ -199,7 +199,7 @@ If you are interested in building this U-Boot image yourself, you will need to c
 [#building]
 == Build the partitions
 
-Make sure you download an updated file from link:/documentation/PinePhone_Pro/Software/Releases[relases page] and set properly the link:#variables[needed variables]:
+Make sure you download an updated file from link:/documentation/PinePhone_Pro/Software/Releases[relases page] and set properly the link:#variables[needed variables].
 
 === Arch, Manjaro, Mobian, postmarketOS
 
