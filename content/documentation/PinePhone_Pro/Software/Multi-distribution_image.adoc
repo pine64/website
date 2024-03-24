@@ -87,8 +87,8 @@ This guide has been tested with following images:
 
 * https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20240308/archlinux-pinephone-pro-phosh-20240308.img.xz
 * https://github.com/manjaro-pinephone/phosh/releases/download/beta37/Manjaro-ARM-phosh-pinephonepro-beta37.img.xz
-* https://images.mobian.org/pinephonepro/weekly/mobian-rockchip-phosh-20240310.img.xz
-* https://images.postmarketos.org/bpo/v23.12/pine64-pinephonepro/phosh/20240306-0437/20240306-0437-postmarketOS-v23.12-phosh-22.3-pine64-pinephonepro.img.xz
+* https://images.mobian.org/pinephonepro/weekly/mobian-rockchip-phosh-20240324.img.xz
+* https://images.postmarketos.org/bpo/v23.12/pine64-pinephonepro/phosh/20240320-0453/20240320-0453-postmarketOS-v23.12-phosh-22.3-pine64-pinephonepro.img.xz
 * https://gitlab.com/sailfishos-porters-ci/dont_be_evil-ci/-/jobs/artifacts/master/download?job=pinephonepro-rootfs
 * https://ci.ubports.com/job/focal-hybris-rootfs-arm64/job/master/lastSuccessfulBuild/artifact/ubuntu-touch-pinephone-pro-img-arm64.raw.xz # not working since new partition schema of latest releases
 
