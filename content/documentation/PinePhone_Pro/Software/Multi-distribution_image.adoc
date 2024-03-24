@@ -404,7 +404,7 @@ $ sudo e2fsck -f /dev/$DEVICE$PARTNUMBER
 $ sudo resize2fs /dev/$DEVICE$PARTNUMBER
 ----
 
-WARNING: Repeat the link:#building[building process] for each needed distribution, adapting link:#variables[needed variables].
+NOTE: Repeat the link:#building[building process] for each needed distribution, adapting link:#variables[needed variables].
 
 == Follow-up notes
 
