@@ -26,7 +26,8 @@ $ mkdir -p ~/rk2aw
 $ cd ~/rk2aw
 $ curl -O https://xff.cz/kernels/bootloaders-2024.04/ppp.tar.gz
 $ tar -xvzf ppp.tar.gz -C ~/rk2aw
-$ sudo ./ppp/spinor-flash-initial-setup.sh
+$ cd ~/rk2aw/ppp
+$ sudo ./spinor-flash-initial-setup.sh
 ----
 
 [TIP]
