@@ -56,14 +56,13 @@ Start a shell sessions to find the target device with `lsblk` command.
 [TIP]
 ====
 General variables +
-_WORKDIR_ is the working directory path on your computer +
 _DEVICE_ is the device name from the lsblk command +
-_PARTSIZE_ is the GiB capacity of each partition/distribution +
 _PARTATTR_ are the attributes of each partition/distribution +
+_PARTSIZE_ is the GiB capacity of each partition/distribution +
+_WORKDIR_ is the working directory path on your computer +
 
 Distribution-specific variables +
 _DISTROURL_ is the image downloading URL address of Linux distribution +
-_PARTNUMBER_ is the number of partition/distribution +
 _MENUNAME_ is the name of graphical boot menu item +
 _PARTNAME_ is the name of partition/distribution +
 ====
@@ -78,7 +77,6 @@ PARTSIZE=11GiB
 PARTATTR=RequiredPartition,LegacyBIOSBootable
 
 DISTROURL=https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20240308/archlinux-pinephone-pro-phosh-20240308.img.xz
-PARTNUMBER=2
 MENUNAME=ARCH
 PARTNAME=ppp-multi-image-${MENUNAME,,}
 ----
@@ -90,7 +88,7 @@ This guide has been tested with following images:
 * https://images.mobian.org/pinephonepro/weekly/mobian-rockchip-phosh-20240324.img.xz
 * https://images.postmarketos.org/bpo/v23.12/pine64-pinephonepro/phosh/20240320-0453/20240320-0453-postmarketOS-v23.12-phosh-22.3-pine64-pinephonepro.img.xz
 * https://gitlab.com/sailfishos-porters-ci/dont_be_evil-ci/-/jobs/artifacts/master/download?job=pinephonepro-rootfs
-* https://ci.ubports.com/job/focal-hybris-rootfs-arm64/job/master/lastSuccessfulBuild/artifact/ubuntu-touch-pinephone-pro-img-arm64.raw.xz # not working since new partition schema of latest releases
+* https://ci.ubports.com/job/focal-hybris-rootfs-arm64/job/master/lastSuccessfulBuild/artifact/ubuntu-touch-pinephone-pro-img-arm64.raw.xz
 
 == Erase the device
 
@@ -132,7 +130,7 @@ Partition the device for the multiple distributions:
 $ sudo sfdisk /dev/$DEVICE --wipe always <<EOF
 label: gpt
 first-lba: 64
-table-length: 8
+table-length: 10
 attrs=RequiredPartition, type=D7B1F817-AA75-2F4F-830D-84818A145370, start=64, size=32704, name="uboot_raw"
 attrs="$PARTATTR", size=$PARTSIZE, name="ppp-multi-image-arch"
 attrs="$PARTATTR", size=$PARTSIZE, name="ppp-multi-image-manjaro"
@@ -140,6 +138,7 @@ attrs="$PARTATTR", size=$PARTSIZE, name="ppp-multi-image-mobian"
 attrs="$PARTATTR", size=$PARTSIZE, name="ppp-multi-image-pmos"
 attrs="$PARTATTR", size=$PARTSIZE, name="ppp-multi-image-sailfish"
 attrs="$PARTATTR", size=$PARTSIZE, name="ppp-multi-image-ut"
+attrs="$PARTATTR", size=$PARTSIZE, name="ppp-multi-image-ut-data"
 attrs="$PARTATTR", size=+, name="extra"
 EOF
 ----
@@ -166,7 +165,8 @@ Disk identifier: A012E9D0-B4EB-4677-926F-D93AE4C696FA
  sdb5   69238784  92307455  23068672   11G Linux fs
  sdb6   92307456 115376127  23068672   11G Linux fs
  sdb7  115376128 138444799  23068672   11G Linux fs
- sdb8  138444800 247805951 109361152 52.1G Linux fs
+ sdb8  138444800 161513471  23068672   11G Linux fs
+ sdb9  161513472 247805951 86292480  41.1G Linux fs
 The partition table has been altered.
 Calling ioctl() to re-read partition table.
 Syncing disks.
@@ -230,8 +230,8 @@ Copy `rootfs` and `boot` contents:
 
 [source,console]
 ----
-$ sudo dd if=/dev/loop0p2 of=/dev/$DEVICE$PARTNUMBER bs=1M status=progress conv=fsync
-$ sudo mount /dev/$DEVICE$PARTNUMBER /mnt/$PARTNAME/device/
+$ sudo dd if=/dev/loop0p2 of=/dev/disk/by-partlabel/$PARTNAME bs=1M status=progress conv=fsync
+$ sudo mount /dev/disk/by-partlabel/$PARTNAME /mnt/$PARTNAME/device/
 $ sudo scp -r /mnt/$PARTNAME/boot/* /mnt/$PARTNAME/device/boot
 ----
 
@@ -250,14 +250,50 @@ $ mkdir -p $WORKDIR/distros/sailfishos
 $ tar -xvf sailfish.tar.bz2 -C sailfishos/ > /dev/null
 ----
 
-Copy the extracted files directly onto the device:
+Format the partition and copy the extracted files directly onto the device:
 
 [source,console]
 ----
-$ sudo mkfs.ext4 -F /dev/$DEVICE$PARTNUMBER
+$ sudo mkfs.ext4 -F /dev/disk/by-partlabel/$PARTNAME
 $ sudo mkdir -p /mnt/$PARTNAME/device
-$ sudo mount /dev/$DEVICE$PARTNUMBER /mnt/$PARTNAME/device
+$ sudo mount /dev/disk/by-partlabel/$PARTNAME /mnt/$PARTNAME/device
 $ sudo rsync -avz --progress $WORKDIR/distros/sailfishos/ /mnt/$PARTNAME/device
+----
+
+=== Ubuntu Touch
+
+For this distribution, download and decompress the image:
+
+[source,console]
+----
+$ mkdir -p $WORKDIR/distros
+$ cd $WORKDIR/distros
+$ wget $DISTROURL 
+$ xz -v -d -k IMAGE.*.xz
+$ mv IMAGE.raw $PARTNAME.img
+----
+
+Mount the image:
+
+[source,console]
+----
+$ cd $WORKDIR/distros
+$ sudo losetup -P /dev/loop0 $PARTNAME.img
+$ sudo mkdir -p /mnt/$PARTNAME/boot /mnt/$PARTNAME/system /mnt/$PARTNAME/userdata /mnt/$PARTNAME/device
+$ sudo mount /dev/loop0p2 /mnt/$PARTNAME/boot/
+$ sudo mount /dev/loop0p3 /mnt/$PARTNAME/system/
+$ #sudo mount /dev/loop0p4 /mnt/$PARTNAME/userdata/
+----
+
+Create the `userdata` partition and copy `system` and `boot` contents:
+
+[source,console]
+----
+$ sudo mkfs.ext4 -F /dev/disk/by-partlabel/$PARTNAME-data
+$ sudo e2label /dev/disk/by-partlabel/$PARTNAME-data ${MENUNAME,,}-data
+$ sudo dd if=/dev/loop0p3 of=/dev/disk/by-partlabel/$PARTNAME bs=1M status=progress conv=fsync
+$ sudo mount /dev/disk/by-partlabel/$PARTNAME /mnt/$PARTNAME/device/
+$ sudo scp -r /mnt/$PARTNAME/boot/* /mnt/$PARTNAME/device/boot
 ----
 
 === All distributions
@@ -314,7 +350,16 @@ menu label $MENUNAME
 #fdt /boot/rockchip/rk3399-pinephone-pro.dtb
 #kernel /boot/Image
 
-append root=PARTLABEL=$PARTNAME console=ttyS2,115200 console=tty0 loglevel=7 rw rootwait
+#uncomment next 3 lines for UT
+#linux /boot/vmlinuz-6.5.0-okpine-ut
+#initrd /boot/initrd.img-6.5.0-okpine-ut
+#fdtdir /boot/dtb-6.5.0-okpine-ut/
+
+#uncomment next line for all distros, excluding UT
+#append root=PARTLABEL=$PARTNAME console=ttyS2,115200 console=tty0 loglevel=7 rw rootwait
+
+#uncomment next line for UT
+#append root=PARTLABEL=$PARTNAME console=ttyS2,115200 console=tty loglevel=7 systempart=/dev/disk/by-partlabel/$PARTNAME datapart=/dev/disk/by-partlabel/$PARTNAME-data security=apparmor rw rootwait
 
 EOF
 ----
@@ -354,6 +399,11 @@ $ sudo tee /mnt/$PARTNAME/device/etc/fstab <<EOF
 #sysfs      /sys      sysfs   defaults         0 0
 #tmpfs      /tmp      tmpfs   nosuid,nodev           0 0
 
+#uncomment next 3 lines for UT
+#PARTLABEL=$PARTNAME	/	ext4	defaults	0	1
+#PARTLABEL=$PARTNAME	/boot	ext4	defaults	0	2
+#PARTLABEL=$PARTNAME-data	/userdata	ext4	defaults	0	2
+
 EOF
 ----
 
@@ -374,7 +424,7 @@ $ sudo su
 # exit
 ----
 
-Than build the image using _pmbootstrap_
+Then build the image using _pmbootstrap_
 
 [source,console]
 ----
@@ -400,9 +450,9 @@ On the first boot, if it doesn't happen automatically, you can manually resize e
 
 [source,console]
 ----
-$ sudo e2label /dev/$DEVICE$PARTNUMBER ${MENUNAME,,}
-$ sudo e2fsck -f /dev/$DEVICE$PARTNUMBER
-$ sudo resize2fs /dev/$DEVICE$PARTNUMBER
+$ sudo e2label /dev/disk/by-partlabel/$PARTNAME ${MENUNAME,,}
+$ sudo e2fsck -f /dev/disk/by-partlabel/$PARTNAME
+$ sudo resize2fs /dev/disk/by-partlabel/$PARTNAME
 ----
 
 IMPORTANT: Repeat the link:#building[building process] for each needed distribution, adapting link:#variables[needed variables].
