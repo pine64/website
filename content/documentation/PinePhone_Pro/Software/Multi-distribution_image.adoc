@@ -56,10 +56,10 @@ Start a shell sessions to find the target device with `lsblk` command.
 [TIP]
 ====
 General variables +
-_WORKDIR_ is the working directory path on your computer +
 _DEVICE_ is the device name from the lsblk command +
-_PARTSIZE_ is the GiB capacity of each partition/distribution +
 _PARTATTR_ are the attributes of each partition/distribution +
+_PARTSIZE_ is the GiB capacity of each partition/distribution +
+_WORKDIR_ is the working directory path on your computer +
 
 Distribution-specific variables +
 _DISTROURL_ is the image downloading URL address of Linux distribution +
@@ -424,7 +424,7 @@ $ sudo su
 # exit
 ----
 
-Than build the image using _pmbootstrap_
+Then build the image using _pmbootstrap_
 
 [source,console]
 ----
