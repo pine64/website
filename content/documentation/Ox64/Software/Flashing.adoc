@@ -400,7 +400,7 @@ For more information on using the `blctl` command, see https://github.com/bouffa
 
 In this section, we will set up our Ox64 to dual-boot both Linux and the NuttX real-time operating system. For more information see the https://nuttx.apache.org/docs/latest/platforms/risc-v/bl808/boards/ox64/index.html[official documentation].
 
-First, write the normal Linux image to the SD card if you have not done so already. Find the correct device under `lsblk`:
+First, write the normal Linux image to the SD card if you have not done so already. You can find the correct device under `lsblk`:
 
 [source,console]
 ----
