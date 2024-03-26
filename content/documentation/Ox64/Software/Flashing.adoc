@@ -184,8 +184,7 @@ Refer to the pinout image below. Connect your UART adapter as follows:
 * TX -> UART0_RX / GPIO15 / pin 2
 * GND -> any ground (e.g. pin 3)
 
-Proceed with the instructions in the sections that follow, up to and including <<flashing_the_ox64>> and <<flashing_the_microsd_card>>, 
-finding the correct device path to your serial adapter under `ls /dev/ttyUSB*`.
+Proceed with the instructions in the sections that follow, up to and including <<flashing_the_ox64>> and <<flashing_the_microsd_card>>, finding the correct device path to your serial adapter under `ls /dev/ttyUSB*`.
 
 Next, power off the Ox64 and re-connect your UART adapter as follows:
 
