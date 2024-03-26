@@ -137,12 +137,12 @@ Put the Bluepill into programming mode:
  * Connect it to a USB-Serial adapter with A9 to Rx, A10 to Tx, GND to GND, 3v3 to Vcc.
  * Apply power by plugging the USB cable to PC. Press the Reset button.
 
-Upload the firmware. Replace `/dev/ttyUSB0` with the device path of your USB serial adapter:
+Find the correct device using `ls /dev/ttyUSB*` and upload the firmware:
 
 [source,console]
 ----
 $ cd ~/ox64/bluepill
-$ stm32flash -w  bluepill-serial-monster.hex /dev/ttyUSB0
+$ stm32flash -w  bluepill-serial-monster.hex /dev/tty[DEVICE]
 ----
  
 After upload, set boot jumpers for boot from flash: Boot0=0, Boot1=0. Remove the USB serial adapter.
@@ -174,7 +174,7 @@ Expected result:
 
 === Option 3: Generic UART adapter
 
-Check that you serial adapter is on the link:/documentation/Ox64/Further_information/Compatible_UARTs/[Compatible_UARTs] list. You will (most likely) only have one serial interface available to you. For the purposes of this guide, let's say it is `/dev/ttyUSB0`.
+Check that you serial adapter is on the link:/documentation/Ox64/Further_information/Compatible_UARTs/[Compatible_UARTs] list. You will (most likely) only have one serial interface available to you.
 
 In addition, you will need a way of powering your Ox64. If your serial adapter has a 5V line, you can connect it to VBUS (pin 40). Otherwise, you can connect either the micro-B or the USB-C port on the Ox64 to any 5V power supply.
 
@@ -184,7 +184,8 @@ Refer to the pinout image below. Connect your UART adapter as follows:
 * TX -> UART0_RX / GPIO15 / pin 2
 * GND -> any ground (e.g. pin 3)
 
-Proceed with the instructions in the sections that follow, up to and including <<flashing_the_ox64>> and <<flashing_the_microsd_card>>, but replace all occurrences of `/dev/ttyACM1` with `/dev/ttyUSB0`.
+Proceed with the instructions in the sections that follow, up to and including <<flashing_the_ox64>> and <<flashing_the_microsd_card>>, 
+finding the correct device path to your serial adapter under `ls /dev/ttyUSB*`.
 
 Next, power off the Ox64 and re-connect your UART adapter as follows:
 
@@ -192,7 +193,7 @@ Next, power off the Ox64 and re-connect your UART adapter as follows:
 * TX -> RXD / GPIO17 / pin 31
 * GND -> any ground (e.g. pin 33)
 
-Then, follow the instructions in <<booting_for_the_first_time>>, but replace all occurrences of `/dev/ttyACM0` with `/dev/ttyUSB0`. You should then have a working Linux system.
+Then, follow the instructions in <<booting_for_the_first_time>>, finding the correct device path to your serial adapter under `ls /dev/ttyUSB*`. You should then have a working Linux system.
 
 image:/documentation/Ox64/images/ox64_pinout.png[Ox64 pinout,title="Ox64 pinout", 300]
 
@@ -252,12 +253,12 @@ Put the Ox64 into programming mode:
 
 === CLI flashing method
 
-Set up some environment variables to save typing them out later:
+Set up some environment variables to save typing them out later. Find the correct device path to your serial adapter under `ls /dev/ttyUSB*` or `ls /dev/ttyACM*`:
 
 [source,console]
 ----
-$ PORT=/dev/ttyACM1 # or /dev/ttyUSB0, this will depend on which serial adapter you use
-$ BAUD=230400       # safe value for macOS, if using Linux set to 2000000 for faster flashing
+$ PORT=/dev/tty[DEVICE]
+$ BAUD=230400  # safe value for macOS, set 2000000 for faster flashing on Linux
 ----
 
 Change directory to the location of your image files:
@@ -291,7 +292,7 @@ $ bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD 
 $               --firmware bl808-firmware.bin --single
 ----
 
-If you get permission errors when running any of the commands above, you may need to add your user to the `dialout` group. Running the commands as `root` is not recommended since this will make `bflb-iot-tool` create root-owned files in your home directory.
+If you get permission errors when running any of the commands above, you may need to add your user to the `dialout` group using `sudo usermod -a -G dialout $USER`. Running the commands as `root` is not recommended since this will make `bflb-iot-tool` create root-owned files in your home directory.
 
 === BLDevCube flashing method
 
@@ -307,8 +308,8 @@ Select chip [BL808], press Finish, and configure BOTH the [MCU] and [IOT] tabs a
 
 ----
  Interface: UART
- Port/SN: /dev/ttyACM1 or /dev/ttyUSB0 (make sure you don't use /dev/ttyACM0, it's used by the minicom console)
- Uart rate 230400 (safe value for macOS, if using Linux set to 2000000 for faster flashing)
+ Port/SN: /dev/ttyACM1 or /dev/ttyUSB0 (/dev/ttyACM0 it's already used by the minicom console)
+ Uart rate 230400 (safe value for macOS, set 2000000 for faster flashing on Linux)
 ----
 
 If you created a **combined image** then you only need to use the [IOT] tab:
@@ -333,7 +334,7 @@ Then, switch to the [IOT] tab:
 
 == Flashing the microSD card
 
-Insert the microSD card into your PC, locate its device file `/dev/[DEVICE]` and write the image:
+Insert the microSD card into your PC, locate its device under `lsblk` and write the image:
 
 [source,console]
 ----
@@ -400,7 +401,7 @@ For more information on using the `blctl` command, see https://github.com/bouffa
 
 In this section, we will set up our Ox64 to dual-boot both Linux and the NuttX real-time operating system. For more information see the https://nuttx.apache.org/docs/latest/platforms/risc-v/bl808/boards/ox64/index.html[official documentation].
 
-First, write the normal Linux image to the SD card if you have not done so already. Make sure to set proper [DEVICE] name in the following cod, in example `/dev/sdb`:
+First, write the normal Linux image to the SD card if you have not done so already. Find the correct device under `lsblk`:
 
 [source,console]
 ----
