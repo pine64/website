@@ -9,6 +9,8 @@ menu:
     weight: 3
 ---
 
+:toc:
+
 This page explains how to flash an Ox64 board and a microSD card to boot the system. You will need a Linux computer, a serial UART adapter, the Ox64 board, and a microSD card.
 
 == Prepare images for flashing
@@ -273,22 +275,22 @@ Finally, flash the Ox64. If you created a **combined image** then run the comman
 
 [source,console]
 ----
-$ bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x0 \
-$               --firmware bl808-combined.bin --single
+$ bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD \
+>               --addr 0x0 --firmware bl808-combined.bin --single
 ----
 
 Otherwise, run the following commands:
 
 [source,console]
 ----
-$ bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x0 \
-$               --firmware m0_lowload_bl808_m0.bin --single
+$ bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD \
+>               --addr 0x0 --firmware m0_lowload_bl808_m0.bin --single
 
-$ bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x100000 \
-$               --firmware d0_lowload_bl808_d0.bin --single
+$ bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD \
+>               --addr 0x100000 --firmware d0_lowload_bl808_d0.bin --single
 
-$ bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD --addr 0x800000 \
-$               --firmware bl808-firmware.bin --single
+$ bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD \
+>               --addr 0x800000 --firmware bl808-firmware.bin --single
 ----
 
 If you get permission errors when running any of the commands above, you may need to add your user to the `dialout` group. Running the commands as `root` is not recommended since this will make `bflb-iot-tool` create root-owned files in your home directory.
@@ -375,7 +377,7 @@ On the `ttyACM1` console you'll see following log, until the sytem is fully load
 
 Once the system is running you'll be able to manage the M0 multimedia core, i.e. wifi settings, etc. When prompted, type `help` to see available commands.
 
-=== Connecting the Ox64 to your WiFi netowrk
+=== Connecting the Ox64 to your WiFi network
 The simplest way to connect is to run the following command from the Linux console (i.e. `/dev/ttyACM0`):
 
 [source,console]
