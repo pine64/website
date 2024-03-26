@@ -174,7 +174,7 @@ Expected result:
 
 === Option 3: Generic UART adapter
 
-Check that you serial adapter is on the link:/documentation/Ox64/Further_information/Compatible_UARTs/[Compatible_UARTs] list. You will (most likely) only have one serial interface available to you.
+Check that your serial adapter is on the link:/documentation/Ox64/Further_information/Compatible_UARTs/[Compatible_UARTs] list. You will (most likely) only have one serial interface available to you.
 
 In addition, you will need a way of powering your Ox64. If your serial adapter has a 5V line, you can connect it to VBUS (pin 40). Otherwise, you can connect either the micro-B or the USB-C port on the Ox64 to any 5V power supply.
 
