@@ -76,14 +76,14 @@ DEVICE=sdb
 PARTSIZE=11GiB
 PARTATTR=RequiredPartition,LegacyBIOSBootable
 
-DISTROURL=https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20240308/archlinux-pinephone-pro-phosh-20240308.img.xz
+DISTROURL=https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20240326/archlinux-pinephone-pro-phosh-20240326.img.xz
 MENUNAME=ARCH
 PARTNAME=ppp-multi-image-${MENUNAME,,}
 ----
 
 This guide has been tested with following images:
 
-* https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20240308/archlinux-pinephone-pro-phosh-20240308.img.xz
+* https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20240326/archlinux-pinephone-pro-phosh-20240326.img.xz
 * https://github.com/manjaro-pinephone/phosh/releases/download/beta37/Manjaro-ARM-phosh-pinephonepro-beta37.img.xz
 * https://images.mobian.org/pinephonepro/weekly/mobian-rockchip-phosh-20240324.img.xz
 * https://images.postmarketos.org/bpo/v23.12/pine64-pinephonepro/phosh/20240320-0453/20240320-0453-postmarketOS-v23.12-phosh-22.3-pine64-pinephonepro.img.xz
@@ -323,8 +323,12 @@ Then write the new _/boot/extlinux/extlinux.conf_ file, making sure you remove `
 $ sudo tee /mnt/$PARTNAME/device/boot/extlinux/extlinux.conf <<EOF
 #/boot/extlinux/extlinux.conf
 menu title Pinephone Pro Boot Menu
-label l0
+timeout 50
+label ${MENUNAME,,}
 menu label $MENUNAME
+
+#uncomment next line for timed default-selected distro
+#default ${MENUNAME,,}
 
 #uncomment next 3 lines for ARCH
 #fdt /boot/dtbs/rockchip/rk3399-pinephone-pro.dtb
