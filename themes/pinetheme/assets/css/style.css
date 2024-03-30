@@ -454,6 +454,8 @@ h2 {
     border: 1px solid #ddd;
     border-bottom-right-radius: 10px;
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    overflow: visible;
+    flex-direction: column;
 }
 .dropdown-item:hover {
     color: #0069B5;
@@ -468,8 +470,9 @@ h2 {
 }
 .dropdown-toggle:checked ~ .dropdown-items, .dropdown-toggle:hover ~ .dropdown-items {
     display: flex;
-    flex-direction: column;
-    overflow: visible;
+}
+.dropdown-items:hover {
+    display: flex;
 }
 
 @media screen and (max-width: 1000px){
