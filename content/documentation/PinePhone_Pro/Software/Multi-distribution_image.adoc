@@ -103,7 +103,7 @@ To erase all signatures, type:
 
 [source,console]
 ----
-$ sudo wipefs --all --force /dev/$DEVICE
+$ sudo wipefs --all --force /dev/$DEVICE*
 ----
 
 Clean the device by overwriting the first sectors with zeroes:
