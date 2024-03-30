@@ -323,12 +323,13 @@ Then write the new _/boot/extlinux/extlinux.conf_ file, making sure you remove `
 $ sudo tee /mnt/$PARTNAME/device/boot/extlinux/extlinux.conf <<EOF
 #/boot/extlinux/extlinux.conf
 menu title Pinephone Pro Boot Menu
-timeout 50
-label ${MENUNAME,,}
-menu label $MENUNAME
 
 #uncomment next line for timed default-selected distro
 #default ${MENUNAME,,}
+
+timeout 50
+label ${MENUNAME,,}
+menu label $MENUNAME
 
 #uncomment next 3 lines for ARCH
 #fdt /boot/dtbs/rockchip/rk3399-pinephone-pro.dtb
