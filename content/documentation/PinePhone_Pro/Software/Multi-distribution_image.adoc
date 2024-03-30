@@ -11,24 +11,12 @@ menu:
 
 :toc:
 
-This article explains how to install a multiple linux distribution environment on your PinePhone Pro. You can choose to install this environment to the phone's internal eMMC memory or to a microSD card.
+This article explains how to install a multiple linux distribution environment on your PinePhone Pro. You can choose to install this environment to the phone's internal eMMC memory or to a microSD card. These instructions also integrate with the link:/documentation/PinePhone_Pro/Software/Releases/#multi_distribution_image[multi-distribution image] releases page section.
 
 [#rk2aw]
-== Installing rk2aw
+== Install rk2aw
 
 Make sure your phone has the link:/documentation/PinePhone_Pro/Software/Bootloaders/#rk2aw[rk2aw pre-loader] installed to its SPI flash memory. PinePhone Pro models ordered after November 2023 are shipped with rk2aw pre-installed. Otherwise, follow the instructions in this section to install it.
-
-[TIP]
-====
-The multi-boot image _can_ function without rk2aw, but you will need to make sure the correct link:#uboot[bootloader] is started by your phone's SoC.
-
-If you are installing to a microSD card, then either:
-
-. Ensure that the phone's SPI flash and eMMC are empty, or
-. Hold down the _RE_ button during boot to force the phone to boot from the microSD card by disabling the SPI flash and the eMMC.
-
-If you are installing to the eMMC, make sure the SPI flash is empty.
-====
 
 Boot up the PinePhone Pro's stock operating system and start a shell session. You can do this either by opening the terminal emulator app, or by enabling the SSH service and logging in from a PC on the same network. Then execute the following commands (from the phone's shell):
 
@@ -42,47 +30,67 @@ $ cd ~/rk2aw/ppp
 $ sudo ./spinor-flash-initial-setup.sh
 ----
 
+[TIP]
+====
+The multi-boot image _can_ function without rk2aw, but you will need to make sure the correct link:#uboot[bootloader] is started by your phone's SoC.
+
+If you are installing to a microSD card, then either:
+
+. Ensure that the phone's SPI flash and eMMC are empty, or
+. Hold down the _RE_ button during boot to force the phone to boot from the microSD card by disabling the SPI flash and the eMMC.
+
+If you are installing to the eMMC, make sure the SPI flash is empty.
+====
+
 Further instructions can be found on the link:https://xff.cz/kernels/bootloaders-2024.04/ppp/rk2aw/INSTALL[author's website].
 
+[#variables]
 == Setting variables
 
-During the processes of partitioning the target device or building the image, make sure the following variables are properly defined:
+During the processes of link:#partitioning[partitioning] the target device, link:#building[building] the image or installing the link:#u_boot[bootloader], make sure the variables are properly defined.
+
+Connect your PinePhone Pro to a Linux computer, with the stock USB cable. Press power button on. From the graphical menu select _eMMC over USB_ or _SD over USB_ to expose the device to your computer. You can optionally flash microSD directly into your computer's slot, if available. 
+
+Start a shell sessions to find the target device with `lsblk` command.
 
 [TIP]
 ====
+General variables +
 _DEVICE_ is the device name from the lsblk command +
+_PARTATTR_ are the attributes of each partition/distribution +
+_PARTSIZE_ is the GiB capacity of each partition/distribution +
+_WORKDIR_ is the working directory path on your computer +
+
+Distribution-specific variables +
 _DISTROURL_ is the image downloading URL address of Linux distribution +
 _MENUNAME_ is the name of graphical boot menu item +
 _PARTNAME_ is the name of partition/distribution +
-_PARTNUMBER_ is the number of partition/distribution +
-_PARTSIZE_ is the GiB capacity of each partition +
-_WORKDIR_ is the working directory path on your computer +
 ====
 
 Each time you open a new terminal window, the values of the variables must be adapted, for example:
 
 [source,shell]
 ----
+WORKDIR=~/ppp
 DEVICE=sdb
+PARTSIZE=11GiB
+PARTATTR=RequiredPartition,LegacyBIOSBootable
+
 DISTROURL=https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20240308/archlinux-pinephone-pro-phosh-20240308.img.xz
 MENUNAME=ARCH
 PARTNAME=ppp-multi-image-${MENUNAME,,}
-PARTNUMBER=2
-PARTSIZE=11GiB
-WORKDIR=~/ppp
 ----
 
 This guide has been tested with following images:
 
 * https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20240308/archlinux-pinephone-pro-phosh-20240308.img.xz
 * https://github.com/manjaro-pinephone/phosh/releases/download/beta37/Manjaro-ARM-phosh-pinephonepro-beta37.img.xz
-* https://images.mobian.org/pinephonepro/weekly/mobian-rockchip-phosh-20240310.img.xz
-* https://images.postmarketos.org/bpo/v23.12/pine64-pinephonepro/phosh/20240306-0437/20240306-0437-postmarketOS-v23.12-phosh-22.3-pine64-pinephonepro.img.xz
+* https://images.mobian.org/pinephonepro/weekly/mobian-rockchip-phosh-20240324.img.xz
+* https://images.postmarketos.org/bpo/v23.12/pine64-pinephonepro/phosh/20240320-0453/20240320-0453-postmarketOS-v23.12-phosh-22.3-pine64-pinephonepro.img.xz
 * https://gitlab.com/sailfishos-porters-ci/dont_be_evil-ci/-/jobs/artifacts/master/download?job=pinephonepro-rootfs
+* https://ci.ubports.com/job/focal-hybris-rootfs-arm64/job/master/lastSuccessfulBuild/artifact/ubuntu-touch-pinephone-pro-img-arm64.raw.xz
 
-== Building
-
-Connect your PinePhone Pro to a Linux computer and press power button on. From the graphical menu select _eMMC over USB_ or _SD over USB_ to expose the device to your computer. 
+== Erase the device
 
 Make sure there are no signatures or partitions left with the command:
 
@@ -112,7 +120,8 @@ Optionally you can zeroes the whole device:
 $ sudo dd if=/dev/zero of=/dev/$DEVICE status=progress bs=32768 count=$(expr $(lsblk -bno SIZE /dev/$DEVICE | head -1) \/ 32768)
 ----
 
-=== Partitioning
+[#partitioning]
+== Partitioning
 
 Partition the device for the multiple distributions:
 
@@ -121,15 +130,16 @@ Partition the device for the multiple distributions:
 $ sudo sfdisk /dev/$DEVICE --wipe always <<EOF
 label: gpt
 first-lba: 64
-table-length: 8
+table-length: 10
 attrs=RequiredPartition, type=D7B1F817-AA75-2F4F-830D-84818A145370, start=64, size=32704, name="uboot_raw"
-attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="ppp-multi-image-arch"
-attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="ppp-multi-image-manjaro"
-attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="ppp-multi-image-mobian"
-attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="ppp-multi-image-pmos"
-attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="ppp-multi-image-sailfish"
-attrs="RequiredPartition,LegacyBIOSBootable", size=$PARTSIZE, name="ppp-multi-image-ut"
-attrs="RequiredPartition,LegacyBIOSBootable", size=+, name="extra"
+attrs="$PARTATTR", size=$PARTSIZE, name="ppp-multi-image-arch"
+attrs="$PARTATTR", size=$PARTSIZE, name="ppp-multi-image-manjaro"
+attrs="$PARTATTR", size=$PARTSIZE, name="ppp-multi-image-mobian"
+attrs="$PARTATTR", size=$PARTSIZE, name="ppp-multi-image-pmos"
+attrs="$PARTATTR", size=$PARTSIZE, name="ppp-multi-image-sailfish"
+attrs="$PARTATTR", size=$PARTSIZE, name="ppp-multi-image-ut"
+attrs="$PARTATTR", size=$PARTSIZE, name="ppp-multi-image-ut-data"
+attrs="$PARTATTR", size=+, name="extra"
 EOF
 ----
 
@@ -155,26 +165,27 @@ Disk identifier: A012E9D0-B4EB-4677-926F-D93AE4C696FA
  sdb5   69238784  92307455  23068672   11G Linux fs
  sdb6   92307456 115376127  23068672   11G Linux fs
  sdb7  115376128 138444799  23068672   11G Linux fs
- sdb8  138444800 247805951 109361152 52.1G Linux fs
+ sdb8  138444800 161513471  23068672   11G Linux fs
+ sdb9  161513472 247805951 86292480  41.1G Linux fs
 The partition table has been altered.
 Calling ioctl() to re-read partition table.
 Syncing disks.
 ----
 
 [#uboot]
-=== Install U-Boot
+== Install U-Boot
 
-In order to display the graphical distribution selector when the phone boots, we need to install a custom version of the U-Boot bootloader. Download the following U-Boot build (the source code for this build can also be downloaded from link:https://xff.cz/git/u-boot/tree/?h=ppp-2023.07[xff.cz]):
+In order to display the graphical distribution selector when the phone boots, we need to install a custom version of the U-Boot bootloader in the first sectors of the flashed device.
+
+Download the following U-Boot build (the source code for this build can also be downloaded from link:https://xff.cz/git/u-boot/tree/?h=ppp-2023.07[xff.cz]):
 
 [source,console]
 ----
 $ mkdir -p $WORKDIR/rk2aw
 $ cd $WORKDIR/rk2aw
 $ curl -O https://xff.cz/kernels/bootloaders-2024.04/ppp.tar.gz
-$ tar -xzf ppp.tar.gz
+$ tar -xvzf ppp.tar.gz -C $WORKDIR/rk2aw
 ----
-
-NOTE: This is the same `ppp.tar.gz` from the link:#rk2aw[rk2aw section]; if you already have a copy of it on your computer then you don't have to download it again.
 
 Then write the U-Boot image to the device using the following command:
 
@@ -183,13 +194,15 @@ Then write the U-Boot image to the device using the following command:
 $ sudo dd if=$WORKDIR/rk2aw/ppp/foss/u-boot-rockchip.bin of=/dev/$DEVICE bs=512 seek=64 status=progress conv=fsync
 ----
 
+NOTE: This is the same `ppp.tar.gz` from the link:#rk2aw[rk2aw section]; if you already have a copy of it on your computer then you don't have to download it again. +
 If you are interested in building this U-Boot image yourself, you will need to copy the `ppp/foss/.config` file from the archive above to the root of your U-Boot source directory.
 
-=== Build the partitions
+[#building]
+== Build the partitions
 
-Make sure you download an updated file from link:/documentation/PinePhone_Pro/Software/Releases[relases download link].
+Make sure you download an updated file from link:/documentation/PinePhone_Pro/Software/Releases[relases page] and set properly the link:#variables[needed variables].
 
-==== Arch, Manjaro, Mobian, postmarketOS
+=== Arch, Manjaro, Mobian, postmarketOS
 
 For these distributions, download and decompress the image:
 
@@ -217,14 +230,14 @@ Copy `rootfs` and `boot` contents:
 
 [source,console]
 ----
-$ sudo dd if=/dev/loop0p2 of=/dev/$DEVICE$PARTNUMBER bs=1M status=progress conv=fsync
-$ sudo mount /dev/$DEVICE$PARTNUMBER /mnt/$PARTNAME/device/
+$ sudo dd if=/dev/loop0p2 of=/dev/disk/by-partlabel/$PARTNAME bs=1M status=progress conv=fsync
+$ sudo mount /dev/disk/by-partlabel/$PARTNAME /mnt/$PARTNAME/device/
 $ sudo scp -r /mnt/$PARTNAME/boot/* /mnt/$PARTNAME/device/boot
 ----
 
-==== SailfishOS
+=== SailfishOS
 
-These distribution needs different commands. Download and decompress the image:
+This distribution needs different commands. Download and decompress the image:
 
 [source,console]
 ----
@@ -237,17 +250,53 @@ $ mkdir -p $WORKDIR/distros/sailfishos
 $ tar -xvf sailfish.tar.bz2 -C sailfishos/ > /dev/null
 ----
 
-Copy the extracted files directly onto the device:
+Format the partition and copy the extracted files directly onto the device:
 
 [source,console]
 ----
-$ sudo mkfs.ext4 -F /dev/$DEVICE$PARTNUMBER
+$ sudo mkfs.ext4 -F /dev/disk/by-partlabel/$PARTNAME
 $ sudo mkdir -p /mnt/$PARTNAME/device
-$ sudo mount /dev/$DEVICE$PARTNUMBER /mnt/$PARTNAME/device
+$ sudo mount /dev/disk/by-partlabel/$PARTNAME /mnt/$PARTNAME/device
 $ sudo rsync -avz --progress $WORKDIR/distros/sailfishos/ /mnt/$PARTNAME/device
 ----
 
-==== All distributions
+=== Ubuntu Touch
+
+For this distribution, download and decompress the image:
+
+[source,console]
+----
+$ mkdir -p $WORKDIR/distros
+$ cd $WORKDIR/distros
+$ wget $DISTROURL 
+$ xz -v -d -k IMAGE.*.xz
+$ mv IMAGE.raw $PARTNAME.img
+----
+
+Mount the image:
+
+[source,console]
+----
+$ cd $WORKDIR/distros
+$ sudo losetup -P /dev/loop0 $PARTNAME.img
+$ sudo mkdir -p /mnt/$PARTNAME/boot /mnt/$PARTNAME/system /mnt/$PARTNAME/userdata /mnt/$PARTNAME/device
+$ sudo mount /dev/loop0p2 /mnt/$PARTNAME/boot/
+$ sudo mount /dev/loop0p3 /mnt/$PARTNAME/system/
+$ #sudo mount /dev/loop0p4 /mnt/$PARTNAME/userdata/
+----
+
+Create the `userdata` partition and copy `system` and `boot` contents:
+
+[source,console]
+----
+$ sudo mkfs.ext4 -F /dev/disk/by-partlabel/$PARTNAME-data
+$ sudo e2label /dev/disk/by-partlabel/$PARTNAME-data ${MENUNAME,,}-data
+$ sudo dd if=/dev/loop0p3 of=/dev/disk/by-partlabel/$PARTNAME bs=1M status=progress conv=fsync
+$ sudo mount /dev/disk/by-partlabel/$PARTNAME /mnt/$PARTNAME/device/
+$ sudo scp -r /mnt/$PARTNAME/boot/* /mnt/$PARTNAME/device/boot
+----
+
+=== All distributions
 
 You also need some adjustments on _boot.scr_, _extlinux.conf_ and _fstab_ files.
 
@@ -301,7 +350,16 @@ menu label $MENUNAME
 #fdt /boot/rockchip/rk3399-pinephone-pro.dtb
 #kernel /boot/Image
 
-append root=PARTLABEL=$PARTNAME console=ttyS2,115200 console=tty0 loglevel=7 rw rootwait
+#uncomment next 3 lines for UT
+#linux /boot/vmlinuz-6.5.0-okpine-ut
+#initrd /boot/initrd.img-6.5.0-okpine-ut
+#fdtdir /boot/dtb-6.5.0-okpine-ut/
+
+#uncomment next line for all distros, excluding UT
+#append root=PARTLABEL=$PARTNAME console=ttyS2,115200 console=tty0 loglevel=7 rw rootwait
+
+#uncomment next line for UT
+#append root=PARTLABEL=$PARTNAME console=ttyS2,115200 console=tty loglevel=7 systempart=/dev/disk/by-partlabel/$PARTNAME datapart=/dev/disk/by-partlabel/$PARTNAME-data security=apparmor rw rootwait
 
 EOF
 ----
@@ -341,6 +399,11 @@ $ sudo tee /mnt/$PARTNAME/device/etc/fstab <<EOF
 #sysfs      /sys      sysfs   defaults         0 0
 #tmpfs      /tmp      tmpfs   nosuid,nodev           0 0
 
+#uncomment next 3 lines for UT
+#PARTLABEL=$PARTNAME	/	ext4	defaults	0	1
+#PARTLABEL=$PARTNAME	/boot	ext4	defaults	0	2
+#PARTLABEL=$PARTNAME-data	/userdata	ext4	defaults	0	2
+
 EOF
 ----
 
@@ -361,7 +424,7 @@ $ sudo su
 # exit
 ----
 
-Build the postmarketOS image via pmbootstrap:
+Then build the image using _pmbootstrap_
 
 [source,console]
 ----
@@ -372,7 +435,7 @@ $ pmbootstrap install --sdcard=/dev/[LOOP-DEVICE]
 $ pmbootstrap shutdown
 ----
 
-=== Unmount and detach
+=== Unmount, detach and resize
 
 To unmount and deatch all building images, run:
 
@@ -383,24 +446,23 @@ $ sudo rm -r /mnt/$PARTNAME
 $ sudo losetup -D
 ----
 
-== Resizing the partitions
-
 On the first boot, if it doesn't happen automatically, you can manually resize each image to fill the entire partition using GParted GUI software or using the CLI. Please note that SailfishOS doesn't need any resizing.
 
 [source,console]
 ----
-$ sudo e2fsck -f /dev/$DEVICE$PARTNUMBER
-$ sudo resize2fs /dev/$DEVICE$PARTNUMBER
+$ sudo e2label /dev/disk/by-partlabel/$PARTNAME ${MENUNAME,,}
+$ sudo e2fsck -f /dev/disk/by-partlabel/$PARTNAME
+$ sudo resize2fs /dev/disk/by-partlabel/$PARTNAME
 ----
 
-Repeat the building process for each needed distribution.
+IMPORTANT: Repeat the link:#building[building process] for each needed distribution, adapting link:#variables[needed variables].
 
-== Troubleshooting
-
-To find the exact _LABEL_, _UUID_, _PARTLABEL_ and _PARTUUID_ names, open a terminal window on the phone and use the command `blkid`.
+== Follow-up notes
 
 Any time a distribution update rebuilds the initramfs it is necessary to delete _/boot/boot.scr_ again to keep the rk2aw menu clean.
 
 In case you want to reinstall only one distribution, the easy way is to delete and recreate the selected partition using the GParted GUI.
 
 If the device doesn't start, connect a compatible link:https://pine64.com/product/pinebook-pinephone-pinetab-serial-console[serial cable] to the headphone jack and a computer, switch off microswitch 6 and start a serial console to investigate further. Find out the corresponding USB device using `ls /dev/ttyUSB*` and then connect to it with for example _minicom_ using the command `minicom -b 1500000 -D /dev/ttyUSB**[...]**`, where *[...]* is the number of the USB device.
+
+To find the exact _LABEL_, _UUID_, _PARTLABEL_ and _PARTUUID_ names, open a terminal window on the phone and use the command `blkid`.

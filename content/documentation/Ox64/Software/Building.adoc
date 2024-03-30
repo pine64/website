@@ -11,26 +11,41 @@ menu:
 
 Start the buinding process cloning both the upstream Buildroot repository and the Buildroot Bouffalo overlay repository:
 
- mkdir -p ~/ox64
- cd ~/ox64
- git clone https://github.com/buildroot/buildroot
- git clone https://github.com/openbouffalo/buildroot_bouffalo
+[source,console]
+----
+ $ mkdir -p ~/ox64
+ $ cd ~/ox64
+ $ git clone https://github.com/buildroot/buildroot
+ $ git clone https://github.com/openbouffalo/buildroot_bouffalo
+----
 
 Define an environment variable for the Buildroot Bouffalo overlay path:
 
- export BR_BOUFFALO_OVERLAY_PATH=$(pwd)/buildroot_bouffalo
+[source,console]
+----
+$ export BR_BOUFFALO_OVERLAY_PATH=$(pwd)/buildroot_bouffalo
+----
 
 Change directory into the cloned Buildroot folder:
 
- cd ~/ox64/buildroot
+[source,console]
+----
+$ cd ~/ox64/buildroot
+----
 
 Apply the default configuration for Pine64 Ox64:
 
- make BR2_EXTERNAL=$BR_BOUFFALO_OVERLAY_PATH pine64_ox64_defconfig
+[source,console]
+----
+$ make BR2_EXTERNAL=$BR_BOUFFALO_OVERLAY_PATH pine64_ox64_defconfig
+----
 
 Use the `menuconfig` tool to adjust the build settings:
 
- make menuconfig
+[source,console]
+----
+$ make menuconfig
+----
 
 Within `menuconfig`, configure the following:
 
@@ -44,6 +59,9 @@ Within `menuconfig`, configure the following:
 
 Initiate the build process, but first make sure that your `PATH` variable contains no spaces:
 
- make
+[source,console]
+----
+$ make
+----
 
 Buildroot will output to the `~/ox64/buildroot/output/images` directory.
