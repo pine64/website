@@ -926,7 +926,6 @@ button.podcast:hover {
     z-index: 0;
     position: relative;
 }
-
 .yt_overlay_content{
     position: absolute;
     z-index: 2;
