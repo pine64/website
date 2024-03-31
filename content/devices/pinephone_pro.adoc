@@ -14,7 +14,7 @@ Meet the PinePhone Pro, our flagship smartphone and the best way to experience m
 
 //== Introduction video
 
-//{{< youtube id="wP2-6Z74W44" >}}
+//< youtube id="wP2-6Z74W44" >
 
 == Features and Specifications
 
