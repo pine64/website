@@ -106,7 +106,7 @@ Partition the device for the multiple distributions:
 
 [source,shell]
 ----
-$ sudo sfdisk "/dev/$DEV" --wipe always <<EOF
+$ sudo sfdisk /dev/$DEV --wipe always <<EOF
 label: gpt
 first-lba: 64
 table-length: 10
@@ -126,7 +126,7 @@ Returned string:
 
 [source]
 ----
-sudo sfdisk "/dev/$DEV" --wipe always <<EOF
+sudo sfdisk /dev/$DEV --wipe always <<EOF
 label: gpt
 first-lba: 64
 table-length: 10
