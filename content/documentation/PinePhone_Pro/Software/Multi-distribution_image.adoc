@@ -117,7 +117,7 @@ for name in "${!NameUrl[@]}"; do
   printf '%s\n' "attrs=\"$ATTR\", size=$SIZE, name=\"$BASE-${name}\""
 done | sort
 )
-attrs="$ATTR", size=$SIZE name="$BASE-ut-data"
+attrs="$ATTR", size=$SIZE, name="$BASE-ut-data"
 attrs="$ATTR", size=+, name="extra"
 EOF
 ----
@@ -137,7 +137,7 @@ attrs="RequiredPartition,LegacyBIOSBootable", size=11GiB, name="ppp-multi-image-
 attrs="RequiredPartition,LegacyBIOSBootable", size=11GiB, name="ppp-multi-image-pmos"
 attrs="RequiredPartition,LegacyBIOSBootable", size=11GiB, name="ppp-multi-image-sailfish"
 attrs="RequiredPartition,LegacyBIOSBootable", size=11GiB, name="ppp-multi-image-ut"
-attrs="RequiredPartition,LegacyBIOSBootable", size=11GiB name="ppp-multi-image-ut-data"
+attrs="RequiredPartition,LegacyBIOSBootable", size=11GiB, name="ppp-multi-image-ut-data"
 attrs="RequiredPartition,LegacyBIOSBootable", size=+, name="extra"
 EOF
 ----
