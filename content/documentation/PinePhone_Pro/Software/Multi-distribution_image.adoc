@@ -27,7 +27,7 @@ _SIZE_ is the GiB capacity of each partition/distribution +
 _NameUrl_ is the Key:Value of distribution name and relative URL download address
 ====
 
-This guide has been tested with 6 Linux distribution on a 128 GiB microSD card, and following variables:
+This guide has been tested with 6 Linux distributions on a 128 GiB microSD card, and following variables:
 
 [source,console]
 ----
