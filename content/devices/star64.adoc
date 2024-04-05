@@ -8,11 +8,11 @@ images:
   - "/devices/images/star64.png"
 ---
 
-== The powerful Quartz64 Model A
+== A star among the single-board computers
 
-The Quartz64 Model A is a single-board computer featuring the Rockchip RK3566 SoC. This SoC combines a quad-core, ARM Cortex-A55 CPU with a Mali-G52-2EE GPU. It is capable of driving a single 4K display at 60fps and the GPU uses the open source Panfrost driver. It also has the benefit of running very cool, even without a heatsink and under a sustained load. This SBC is equipped with 8GB LPDDR4 system memory, an optional eMMC module (up to 128GB) and microSD slot for booting. The board is equipped with a PCIe x1 open ended slot, 1x USB 3.0 type C Host port, 3x USB 2.0 Host, Gigabit Ethernet, MiPi DSI interface, e-ink interface, eDP interface, touch Panel interface, MiPi CSI interface, as well as many other peripheral device interface such as UART, SPI, I2C, for makers to integrate with sensors and other peripherals.
+The **STAR64** Model A single-board computer features the StarFive JH-7110 SoC. This SoC combines a quad-core SiFive U74 RISC-V 64bit CPU with an IM BXE-4-32-G52-2EE GPU. It is equipped with 8GB LPDDR4 system memory, onboard 128Mb QSPI NOR Flash, an optional eMMC module (up to 128 GB) and a microSD slot for booting. The board is equipped with a dual band Wi-Fi and Bluetooth with a flex antenna, a PCIe x1 open ended slot, 1x USB 3.0 type A Host, 3x USB 2.0 Host, dual Gigabit Ethernet port, MiPi DSI interface, touch Panel interface, MiPi CSI interface, as well as many other peripheral device interface such as UART, SPI, I2C, for makers to integrate with sensors and other peripherals.
 
-The Quartz64 is a powerful and versatile platform that will serve PINE64 community for years to come, also as a basis for future non-Pro PINE64 devices.
+The Star64 is a new RISC-V platform that will serve PINE64 community for years to come.
 
 == Documentation
 
