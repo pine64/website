@@ -190,7 +190,7 @@ NOTE: If you are interested in building this U-Boot image yourself, you will nee
 [#building]
 == Build the partitions
 
-Make sure you download an updated file from link:/documentation/PinePhone_Pro/Software/Releases[relases page] and set properly the link:#variables[needed variables].
+Make sure you download an updated file from link:/documentation/PinePhone_Pro/Software/Releases[relases page]. You will need to build each partition one by one, setting properly the link:#variables[variables] and using specific commands according the selected distribution. When you reach the link:#building_repeat[building repeat advice], come back to this point and build the next distribution.
 
 === Arch, Manjaro, Mobian, postmarketOS
 
@@ -347,7 +347,7 @@ menu label $NAME
 ## uncomment next line for all distros, excluding UT
 #append root=PARTLABEL=$BASE-$NAME console=ttyS2,115200 console=tty0 loglevel=7 rw rootwait
 
-## uncomment next line for UT
+## uncomment next line for UT only
 #append root=PARTLABEL=$BASE-$NAME console=ttyS2,115200 console=tty loglevel=7 systempart=/dev/disk/by-partlabel/$BASE-$NAME datapart=/dev/disk/by-partlabel/$BASE-$NAME-data security=apparmor rw rootwait
 
 EOF
@@ -411,7 +411,8 @@ $ sudo e2fsck -f /dev/disk/by-partlabel/$BASE-$NAME
 $ sudo resize2fs /dev/disk/by-partlabel/$BASE-$NAME
 ----
 
-IMPORTANT: Repeat the link:#building[building process] for each needed distribution, adapting link:#variables[needed variables].
+[#building_repeat]
+IMPORTANT: Repeat the link:#building[building process] for the next distribution, adapting link:#variables[needed variables].
 
 == Follow-up notes
 
