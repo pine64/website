@@ -123,7 +123,7 @@ The Bluepill is an affordable STM32 development board, based on the STM32F103C8T
 
 [NOTE]
 ====
-The one catch is that you already need a serial adapter in order to program your Bluepill board. The good news is that you serial adapter does **not** have to be one from from the link:/documentation/Ox64/Further_information/Compatible_UARTs/[Compatible_UARTs] list. These programming instructions have been tested with a FT232RL adapter (which, notably, is listed as _not_ supported on that list).
+The one catch is that you already need a serial adapter in order to program your Bluepill board. The good news is that you serial adapter does **not** have to be one from from the link:/documentation/Ox64/Further_information/Compatible_UARTs/[Compatible UARTs] list. These programming instructions have been tested with a FT232RL adapter (which, notably, is listed as _not_ supported on that list).
 
 If you own an SWD-capable debugger (ST-Link, J-link, etc.) you can use that for programming the Bluepill as well, although instead of `stm32flash` you would be using https://openocd.org/[openocd] or other suitable software.
 ====
@@ -145,7 +145,7 @@ Put the Bluepill into programming mode:
  * Connect it to a USB-Serial adapter with A9 to Rx, A10 to Tx, GND to GND, 3v3 to Vcc.
  * Apply power by plugging the USB cable to PC. Press the Reset button.
 
-Find the USB serial adapter's device path with `ls /dev/ttyUSB* /dev/ttyACM*` (or similar), and upload the firmware:
+Find your USB serial adapter's device path with `ls /dev/ttyUSB* /dev/ttyACM*` (or similar); for the rest of this section we will refer to it as `/dev/tty[DEVICE]`. Upload the firmware:
 
 [source,console]
 ----
@@ -183,7 +183,11 @@ Expected result:
 
 === Option 3: Generic UART adapter
 
-Check that your serial adapter is on the link:/documentation/Ox64/Further_information/Compatible_UARTs/[Compatible_UARTs] list. You will also need a way of powering your Ox64. If your serial adapter has a 5V line, you can connect it to VBUS (pin 40). Otherwise, you can connect either the micro-B or the USB-C port on the Ox64 to any 5V power supply.
+Check that your serial adapter is on the link:/documentation/Ox64/Further_information/Compatible_UARTs/[Compatible UARTs] list. You will (most likely) only have one serial interface available to you; unlike the previous options you will be using this same serial interface for both flashing and testing the system.
+
+Find its device path with `ls /dev/ttyUSB* /dev/ttyACM*` (or similar); for the rest of this section we will refer to it as `/dev/tty[DEVICE]`.
+
+You will also need a way of powering your Ox64. If your serial adapter has a 5V line, you can connect it to VBUS (pin 40). Otherwise, you can connect either the micro-B or the USB-C port on the Ox64 to any 5V power supply.
 
 WARNING: Your serial adapter must use 3.3V logic levels.
 
@@ -193,7 +197,7 @@ Refer to the pinout image below. Connect your UART adapter as follows:
 * TX -> UART0_RX / GPIO15 / pin 2
 * GND -> any ground (e.g. pin 3)
 
-Proceed with the instructions in the sections that follow, up to and including <<flashing_the_ox64>> and <<flashing_the_microsd_card>>.
+Proceed with the instructions in the sections that follow, up to and including <<flashing_the_ox64>> and <<flashing_the_microsd_card>>, but replace all occurrences of `/dev/ttyACM1` with `/dev/tty[DEVICE]`.
 
 Next, power off the Ox64 and re-connect your UART adapter as follows:
 
@@ -201,7 +205,7 @@ Next, power off the Ox64 and re-connect your UART adapter as follows:
 * TX -> RXD / GPIO17 / pin 31
 * GND -> any ground (e.g. pin 33)
 
-Then, follow the instructions in <<booting_for_the_first_time>>. You should then have a working Linux system.
+Then, follow the instructions in <<booting_for_the_first_time>>, but replace all occurrences of `/dev/ttyACM0` with `/dev/tty[DEVICE]`. You should then have a working Linux system.
 
 image:/documentation/Ox64/images/ox64_pinout.png[Ox64 pinout,title="Ox64 pinout", 300]
 
@@ -259,15 +263,13 @@ Put the Ox64 into programming mode:
 * Apply power or re-plug the USB cable
 * Release the BOOT button
 
-For the remainder of this section, replace all occurrences of `/dev/tty[DEVICE]` with the serial port that will be used for _flashing_. If you are using a Pico or Bluepill as your serial adapter, this will be `/dev/ttyACM1`. If you are using a generic serial adapter, find its device path with `ls /dev/ttyUSB* /dev/ttyACM*` or similar.
-
 === CLI flashing method
 
 Set up some environment variables to save typing them out later:
 
 [source,console]
 ----
-$ PORT=/dev/tty[DEVICE]
+$ PORT=/dev/ttyACM1
 $ BAUD=230400  # safe value for macOS, set to 2000000 for faster flashing on Linux
 ----
 
@@ -322,7 +324,7 @@ Select chip [BL808], press Finish, and configure BOTH the [MCU] and [IOT] tabs a
 |UART
 
 |Port/SN
-|`/dev/tty[DEVICE]`
+|`/dev/ttyACM1`
 
 |UART rate
 |230400 (safe value for macOS, set to 2000000 for faster flashing on Linux)
@@ -365,11 +367,11 @@ $ sudo dd if=sdcard.img of=/dev/[DEVICE] bs=1M status=progress conv=fsync
 
 Power off your Ox64 and insert the microSD card.
 
-Open a terminal window to connect to the D0 core’s (i.e. Linux’s) serial console. If you are using a Pico or Bluepill as your serial adapter, this will be `/dev/ttyACM0`. If you are using a generic serial adapter, use the same `/dev/tty[DEVICE]` file as you did in the flashing section:
+Open a terminal window to connect to the D0 core’s (i.e. Linux’s) serial console:
 
 [source,console]
 ----
-$ minicom -b 2000000 -D /dev/tty[DEVICE]
+$ minicom -b 2000000 -D /dev/ttyACM0
 ----
 
 If you are using a Pico or Bluepill as your serial adapter, open another terminal window to to monitor the M0 core’s serial console (reminder: `/dev/ttyACM1` is the same port we previously used for flashing):
@@ -381,9 +383,9 @@ $ minicom -b 2000000 -D /dev/ttyACM1
 
 Re-apply power to the Ox64.
 
-On the main (D0) console you will see Linux booting up. When prompted, log in as `root` with no password. In case the SD card is missing or empty, you'll get a `Card did not respond to voltage select! : -110` error.
+On the main/D0 console (`/dev/ttyACM0`) you will see Linux booting up. When prompted, log in as `root` with no password. In case the SD card is missing or empty, you'll get a `Card did not respond to voltage select! : -110` error.
 
-On the M0 console you'll see following messages until the sytem is fully loaded:
+On the M0 console (`/dev/ttyACM1`) you'll see following messages until the sytem is fully loaded:
 
  [I][MBOX] Mailbox IRQ Stats:
  [I][MBOX] Peripheral SDH (33): 0
@@ -393,11 +395,11 @@ On the M0 console you'll see following messages until the sytem is fully loaded:
 Once the system is running, the "MBOX" logs will abruptly disappear and you'll be able to manage the M0 multimedia core, i.e. wifi settings, etc. When prompted, type `help` to see available commands.
 
 === Connecting the Ox64 to your WiFi network
-The simplest way to connect is to run the following command from the Linux console:
+The simplest way to connect is to run the following command from the Linux console (i.e. `/dev/ttyACM0`):
 
 [source,console]
 ----
-$ blctl connect_ap [YourSSID] [YourPassword]
+$ blctl connect_ap <YourSSID> <YourPassword>
 ----
 
 Wait for it to connect (if you're monitoring the M0 console on `/dev/ttyACM1` it should tell you when it's done), then run the following command from the Linux console:
