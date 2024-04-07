@@ -347,7 +347,7 @@ menu label $NAME
 ## uncomment next line for all distros, excluding UT
 #append root=PARTLABEL=$BASE-$NAME console=ttyS2,115200 console=tty0 loglevel=7 rw rootwait
 
-## uncomment next line for UT
+## uncomment next line for UT only
 #append root=PARTLABEL=$BASE-$NAME console=ttyS2,115200 console=tty loglevel=7 systempart=/dev/disk/by-partlabel/$BASE-$NAME datapart=/dev/disk/by-partlabel/$BASE-$NAME-data security=apparmor rw rootwait
 
 EOF
