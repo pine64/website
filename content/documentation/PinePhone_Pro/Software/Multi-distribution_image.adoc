@@ -190,7 +190,7 @@ NOTE: If you are interested in building this U-Boot image yourself, you will nee
 [#building]
 == Build the partitions
 
-Make sure you download an updated file from link:/documentation/PinePhone_Pro/Software/Releases[relases page]. You will need to build each partition one by one, setting properly the link:#variables[variables] and using specific commands according the selected ditribution. When you reach the link:#building_repeat[building repeat advice], come back and build the next distribution.
+Make sure you download an updated file from link:/documentation/PinePhone_Pro/Software/Releases[relases page]. You will need to build each partition one by one, setting properly the link:#variables[variables] and using specific commands according the selected distribution. When you reach the link:#building_repeat[building repeat advice], come back and build the next distribution.
 
 === Arch, Manjaro, Mobian, postmarketOS
 
