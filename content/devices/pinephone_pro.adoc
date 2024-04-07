@@ -12,6 +12,10 @@ aliases:
 
 Meet the PinePhone Pro, our flagship smartphone and the best way to experience mainline Linux on a mobile device.
 
+//== Introduction video
+
+//< youtube id="wP2-6Z74W44" >
+
 == Features and Specifications
 
 [cols="1,1"]
@@ -119,10 +123,6 @@ UART via audio jack
 | link:/documentation/PinePhone_Pro/Further_information/Datasheets_schematics_and_certifications/[Datasheets, schematics and certifications]
 |===
 
-== Introduction video
-
-{{< youtube id="wP2-6Z74W44" >}}
-
 == What’s inside?
 
 We learned a lot from working on the original PinePhone. Over the past two years we painstakingly collected and analyzed your feedback and explored all avenues for hardware improvements. The PinePhone Pro is the end result of this journey. It is powered by a Rockchip hexa-core SoC operating at 1.5GHz, and ships paired with 4GB of dual-channel LPDDR4 RAM as well as 128GB of internal eMMC flash storage. It features a high-fidelity 13MP main camera sensor and a 5MP front-facing camera.
@@ -154,13 +154,15 @@ We’re not in the business of selling empty promises – a much faster mainline
 
 If you depend on proprietary mainstream mobile messenger applications, banking applications, use loyalty or travel apps, consume DRM media, or play mobile video games on your fruit or Android smartphone, then the PinePhone Pro is likely not for you.
 
+////
+// TODO: This section to be reworked as its language is too marketing-like
 
 == How’s the performance?
 
 Tasks such as opening applications, browsing the internet, interacting with the user interface or watching videos are on par with recent mid-range Android smartphones. Many of you will also be happy to hear that native Linux games as well as popular retro game emulators work great on the PinePhone Pro – be it SuperTuxKart, PSP, or Dreamcast emulation, you’ll be in for a treat. 
 
 When docked and connected to an external monitor and keyboard and mouse, the PinePhone Pro performs well when surfing the web, using the terminal or an office suite, watching 1080p videos, and even in light photo editing. The perfect pocketable Linux computer on the go.
-
+////
 
 == What does it run? 
 

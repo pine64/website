@@ -19,12 +19,12 @@ WARNING: Using an aftermarket battery with a higher capacity is done at own risk
 
 The battery terminals, from the nearest to the battery edge to the nearest to the middle of battery, are as follows:
 
-[cols="1,1,1,1,1"]
+[cols="1,1,1,1"]
 |===
-|  | +ve
-|  | thermistor
-|  | -ve
-|  | not connected
+| +ve
+| thermistor
+| -ve
+| not connected
 |===
 
 The battery includes a protection circuit that isolates it in a number of fault conditions, including if it is discharged too far. The fully discharged battery can be recharged by connecting the phone to a charger with a sufficient output. Once it has charged sufficiently you will be able to boot the phone.
