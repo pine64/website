@@ -37,15 +37,15 @@ $ ATTR=RequiredPartition,LegacyBIOSBootable
 $ SIZE=11GiB
 
 $ declare -A NameUrl
-NameUrl[uboot]=https://xff.cz/kernels/bootloaders-2024.04/ppp.tar.gz
-#NameUrl[uboot]=https://megous.com/dl/tmp/ppp.tar.gz # test build
-NameUrl[arch]=https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20240326/archlinux-pinephone-pro-phosh-20240326.img.xz
-NameUrl[manjaro]=https://github.com/manjaro-pinephone/phosh/releases/download/beta37/Manjaro-ARM-phosh-pinephonepro-beta37.img.xz
-NameUrl[mobian]=https://images.mobian.org/pinephonepro/weekly/mobian-rockchip-phosh-20240324.img.xz
-NameUrl[pmos]=https://images.postmarketos.org/bpo/v23.12/pine64-pinephonepro/phosh/20240403-0443/20240403-0443-postmarketOS-v23.12-phosh-22.3-pine64-pinephonepro.img.xz
-NameUrl[sailfish]=https://gitlab.com/sailfishos-porters-ci/dont_be_evil-ci/-/jobs/artifacts/master/download?job=pinephonepro-rootfs
-NameUrl[ut]=https://ci.ubports.com/job/focal-hybris-rootfs-arm64/job/master/lastSuccessfulBuild/artifact/ubuntu-touch-pinephone-pro-img-arm64.raw.xz
-NameUrl[extra]=
+$ NameUrl[uboot]=https://xff.cz/kernels/bootloaders-2024.04/ppp.tar.gz
+$ #NameUrl[uboot]=https://megous.com/dl/tmp/ppp.tar.gz # test build
+$ NameUrl[arch]=https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20240326/$ archlinux-pinephone-pro-phosh-20240326.img.xz
+$ NameUrl[manjaro]=https://github.com/manjaro-pinephone/phosh/releases/download/beta37/Manjaro-ARM-phosh-pinephonepro-beta37.img.xz
+$ NameUrl[mobian]=https://images.mobian.org/pinephonepro/weekly/mobian-rockchip-phosh-20240324.img.xz
+$ NameUrl[pmos]=https://images.postmarketos.org/bpo/v23.12/pine64-pinephonepro/phosh/20240403-0443/20240403-0443-postmarketOS-v23.12-phosh-22.3-pine64-pinephonepro.img.xz
+$ NameUrl[sailfish]=https://gitlab.com/sailfishos-porters-ci/dont_be_evil-ci/-/jobs/artifacts/master/download?job=pinephonepro-rootfs
+$ NameUrl[ut]=https://ci.ubports.com/job/focal-hybris-rootfs-arm64/job/master/lastSuccessfulBuild/artifact/ubuntu-touch-pinephone-pro-img-arm64.raw.xz
+$ NameUrl[extra]=
 ----
 
 [#rk2aw]
@@ -59,7 +59,7 @@ Boot up the PinePhone Pro's stock operating system and start a shell session. Yo
 ----
 $ curl -O https://xff.cz/kernels/bootloaders-2024.04/ppp.tar.gz
 $ tar -xvzf ppp.tar.gz
-$ cd /ppp
+$ cd ppp
 $ sudo ./spinor-flash-initial-setup.sh
 ----
 
@@ -174,7 +174,9 @@ Syncing disks.
 [#uboot]
 == Install U-Boot
 
-This is the same `ppp.tar.gz` from the link:#rk2aw[rk2aw section]; if you already have a copy of it on your computer then you don't have to download it again. Otherwise, download it and write the `u-boot-rockchip.bin` file in the first sectors of the device, in order to display the graphical distribution selector when the phone boots.
+In order to display the graphical distribution selector when the phone boots, we need to install a custom version of the U-Boot bootloader.
+
+First, use the following commands to download the required U-Boot image. Note that we are downloading the same _ppp.tar.gz_ archive as we did in the link:#rk2aw[rk2aw section]; if you already have a copy of this archive on your computer, you may skip the download and simply extract its contents into `~/$BASE/downloads/`.
 
 [source,console]
 ----
@@ -182,10 +184,21 @@ $ NAME=uboot
 $ mkdir -p ~/$BASE/downloads && cd ~/$BASE/downloads
 $ wget ${NameUrl[$NAME]}
 $ tar -xvzf $(basename "${NameUrl[$NAME]}")
+----
+
+Then, use the following command to install the U-Boot image to the correct location on the microSD/eMMC:
+
+[source,console]
+----
 $ sudo dd if=ppp/foss/u-boot-rockchip.bin of=/dev/$DEV bs=512 seek=64 status=progress conv=fsync
 ----
 
-NOTE: If you are interested in building this U-Boot image yourself, you will need to copy the `ppp/foss/.config` file from the archive above to the root of your U-Boot source directory. The source code for this build can also be downloaded from link:https://xff.cz/git/u-boot/tree/?h=ppp-2023.07[xff.cz]
+[TIP]
+====
+If you are interested in building this U-Boot image yourself, you can download the source code from link:https://xff.cz/git/u-boot/tree/?h=ppp-2023.07[xff.cz]. However, you will still need a copy of _ppp.tar.gz_ since it contains the U-Boot build configuration file (`ppp/foss/.config`).
+
+Copy this file to the root of your U-Boot source directory, keeping the name `.config`. You can then use `make` to initiate the build process.
+====
 
 [#building]
 == Build the partitions
