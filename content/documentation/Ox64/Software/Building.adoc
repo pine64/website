@@ -49,15 +49,15 @@ $ make menuconfig
 
 Within `menuconfig`, configure the following:
 
-* Navigate to `Target Options`
+* Select `Target Options`
 * Enable `Integer Multiplication and Division (M)`
-* Enable `Atomic Instructions (A)`
+* Enable `Atomic Instructions (A)` using space key
 * Enable `Single-precision Floating-point (F)`
 * Enable `Double-precision Floating-point (D)`
-* Set `Target ABI` to `lp64d`
-* Under `Toolchain`, enable `Fortran support` and `OpenMP support`
+* Select `Target ABI`, set it to `lp64d` and `press Exit`
+* Select `Toolchain`, enable `Fortran support`, enable `OpenMP support`, and Save & Exit
 
-Initiate the build process, but first make sure that your `PATH` variable contains no spaces:
+Initiate the build process, but first make sure that your `PATH` variable contains no spaces. For Archlinux distrubution you may also need to install extra-packages with `sudo pacman -S cpio rsync bc`.
 
 [source,console]
 ----
