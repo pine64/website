@@ -261,13 +261,24 @@ You have a choice of flashing software:
 
 === CLI packages installation
 
-Install `bflb-iot-tool` using your preferred method of managing PIP packages. One option is to set up a Python virtual environment as follows:
+Install `bflb-iot-tool` using your preferred method of managing PIP packages. One option is to set up a Python virtual environment as follows for Debian-based systems:
 
 [source,console]
 ----
 $ sudo apt install python3-venv
 $ python3 -m venv ~/ox64_venv
 $ . ~/ox64_venv/bin/activate
+$ pip install bflb-iot-tool # we are *not* using bflb-mcu-tool
+----
+
+In case you're on Archlinux systems, slightly adapt the commands:
+
+[source,console]
+----
+$ sudo pacman -S python
+$ python -m venv ~/ox64_venv
+$ . ~/ox64_venv/bin/activate
+$ pip install setuptools
 $ pip install bflb-iot-tool # we are *not* using bflb-mcu-tool
 ----
 
@@ -361,7 +372,6 @@ $ ./BLDevCube-ubuntu
 
 Select chip [BL808], press Finish, and configure BOTH the [MCU] and [IOT] tabs as follows. When you switch between tabs double check that they still match the settings below:
 
-
 [cols="~,~"]
 |===
 |Interface
@@ -393,6 +403,24 @@ Then, switch to the [IOT] tab:
 * Image Address [0x800000], [PATH to bl808-firmware.bin]
 * Click 'Create & Download' again and wait until it's done
 * Close DevCube
+
+== Erasing the microSD card
+
+Make sure there are no signatures or partitions left, and overwrite the first sectors with zeroes. You can find the target device under `lsblk` command.
+
+[source,console]
+----
+$ sudo wipefs /dev/[DEVICE]
+$ sudo wipefs --all --force /dev/[DEVICE]*
+$ sudo dd if=/dev/zero of=/dev/[DEVICE] status=progress bs=32768 count=1
+----
+
+Optionally you can zeroes the whole device:
+
+[source,console]
+----
+$ sudo dd if=/dev/zero of=/dev/[DEVICE] status=progress bs=32768 count=$(expr $(lsblk -bno SIZE /dev/[DEVICE] | head -1) \/ 32768)
+----
 
 == Flashing the microSD card
 
