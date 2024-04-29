@@ -271,7 +271,7 @@ $ . ~/ox64_venv/bin/activate
 $ pip install bflb-iot-tool # we are *not* using bflb-mcu-tool
 ----
 
-In case you're on Archlinux systems, slightly adapt the commands:
+In case you're on a system with Arch Linux, slightly adapt the commands:
 
 [source,console]
 ----
