@@ -276,7 +276,6 @@ In case you're on a system with Arch Linux, slightly adapt the commands:
 [source,console]
 ----
 $ sudo pacman -S python-pipenv
-$ sudo pacman -S python-setuptools
 $ pipenv install bflb-iot-tool # install CLI flash tool
 $ pipenv shell # activate virtual enviroment
 ----
