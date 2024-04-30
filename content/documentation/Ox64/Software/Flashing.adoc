@@ -275,14 +275,14 @@ In case you're on a system with Arch Linux, slightly adapt the commands:
 
 [source,console]
 ----
-$ sudo pacman -S python
-$ python -m venv ~/ox64_venv
-$ . ~/ox64_venv/bin/activate
-$ pip install setuptools
-$ pip install bflb-iot-tool # we are *not* using bflb-mcu-tool
+sudo pacman -S python-pipenv
+sudo pacman -S python-setuptools
+pipenv install bflb-iot-tool # install CLI flash tool
+pipenv shell # activate virtual enviroment
+bflb-iot-tool --help # check info
 ----
 
-NOTE: Each time you open a new terminal window you will need to re-run `. ~/ox64_venv/bin/activate` to reactivate the virtual environment.
+NOTE: Each time you open a new terminal window you will need to re-run `. ~/ox64_venv/bin/activate` on Debian-based or `pipenv shell` on Archlinux systems to reactivate the virtual environment.
 
 === DevCube installation
 
