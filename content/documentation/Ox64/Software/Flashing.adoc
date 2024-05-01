@@ -347,7 +347,7 @@ Finally, flash the Ox64. If you created a link:#optional_create_a_combined_soc_i
 
 [source,console]
 ----
-$ sudo bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD \
+$ bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD \
 >               --addr 0x0 --firmware bl808-combined.bin --single
 ----
 
@@ -355,13 +355,13 @@ Otherwise, run the following commands:
 
 [source,console]
 ----
-$ sudo bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD \
+$ bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD \
 >               --addr 0x0 --firmware m0_lowload_bl808_m0.bin --single
 
-$ sudo bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD \
+$ bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD \
 >               --addr 0x100000 --firmware d0_lowload_bl808_d0.bin --single
 
-$ sudo bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD \
+$ bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD \
 >               --addr 0x800000 --firmware bl808-firmware.bin --single
 ----
 
@@ -450,14 +450,14 @@ Open a terminal window to connect to the D0 core’s (i.e. Linux’s) serial con
 
 [source,console]
 ----
-$ sudo minicom -b 2000000 -D /dev/ttyACM0
+$ minicom -b 2000000 -D /dev/ttyACM0
 ----
 
 If you are using a Pico or Bluepill as your serial adapter, open another terminal window to to monitor the M0 core’s serial console (reminder: `/dev/ttyACM1` is the same port we previously used for flashing):
 
 [source,console]
 ----
-$ sudo minicom -b 2000000 -D /dev/ttyACM1
+$ minicom -b 2000000 -D /dev/ttyACM1
 ----
 
 Re-apply power to the Ox64.
