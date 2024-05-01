@@ -52,16 +52,16 @@ $ cd ~/ox64/openbouffalo/firmware # if you downloaded pre-built images
  # or
 $ cd ~/ox64/buildroot/output/images # if you built your own images
 
-$ ls *808*.bin *.img
+$ ls -1 *808*.bin *.img
 ----
 
 Expected files:
 
-* `sdcard.img` -- Kernel and root filesystem. Runs on the D0 core.
-* `m0_lowload_bl808_m0.bin` -- Startup code for the M0 core.
-* `d0_lowload_bl808_d0.bin` -- Startup code for the D0 core.
+* `bl808-combined.bin` -- If you created the combined image.
 * `bl808-firmware.bin` -- OpenSBI and UBoot DTB files. Runs on the D0 core.
-* `bl808-combined.bin` -- if you created the combined image
+* `d0_lowload_bl808_d0.bin` -- Startup code for the D0 core.
+* `m0_lowload_bl808_m0.bin` -- Startup code for the M0 core.
+* `sdcard.img` -- Kernel and root filesystem. Runs on the D0 core.
 
 == Set up your UART adapter
 
@@ -146,10 +146,28 @@ The Bluepill is an affordable STM32 development board, based on the STM32F103C8T
 ====
 The one catch is that you already need a serial adapter in order to program your Bluepill board. The good news is that you serial adapter does **not** have to be one from from the link:/documentation/Ox64/Further_information/Compatible_UARTs/[Compatible UARTs] list. These programming instructions have been tested with a FT232RL adapter (which, notably, is listed as _not_ supported on that list).
 
-If you own an SWD-capable debugger (ST-Link, J-link, etc.) you can use that for programming the Bluepill as well, although instead of `stm32flash` you would be using https://openocd.org/[openocd] or other suitable software.
+If you own an SWD-capable debugger (ST-Link, J-link, etc.) you can use that for programming the Bluepill as well, although instead of `stm32flash` console command you would be using https://openocd.org/[openocd] or other suitable software.
 ====
 
 WARNING: Your serial adapter must use 3.3V logic levels.
+
+Install software to flash Bluepill. For Debian-based systems just install package from repository:
+
+[source,console]
+----
+$ sudo apt install stm32flash
+----
+
+For Arch Linux systems, use the AUR repository:
+
+[source,console]
+----
+$ mkdir -p ~/ox64/bluepill
+$ cd ~/ox64/bluepill
+$ git clone https://aur.archlinux.org/stm32flash.git
+$ cd ~/ox64/bluepill/stm32flash
+$ makepkg -si
+----
 
 Download the https://github.com/r2axz/bluepill-serial-monster[Bluepill Serial Monster] firmware:
 
@@ -170,9 +188,8 @@ Find your USB serial adapter's device path with `ls /dev/ttyUSB* /dev/ttyACM*` (
 
 [source,console]
 ----
-$ sudo apt install stm32flash
 $ cd ~/ox64/bluepill
-$ stm32flash -w  bluepill-serial-monster.hex /dev/tty[DEVICE]
+$ sudo stm32flash -w bluepill-serial-monster.hex /dev/tty[DEVICE]
 ----
  
 After upload, set boot jumpers for boot from flash: Boot0=0, Boot1=0. Disconnect the USB serial adapter from both the PC and Bluepill board.
@@ -259,20 +276,6 @@ You have a choice of flashing software:
 * DevCube: GUI-based closed source flashing tool
 * CLI (`bflb-iot-tool`): command line open source flashing tool
 
-=== CLI packages installation
-
-Install `bflb-iot-tool` using your preferred method of managing PIP packages. One option is to set up a Python virtual environment as follows:
-
-[source,console]
-----
-$ sudo apt install python3-venv
-$ python3 -m venv ~/ox64_venv
-$ . ~/ox64_venv/bin/activate
-$ pip install bflb-iot-tool # we are *not* using bflb-mcu-tool
-----
-
-NOTE: Each time you open a new terminal window you will need to re-run `. ~/ox64_venv/bin/activate` to reactivate the virtual environment.
-
 === DevCube installation
 
 Download the latest DevCube flashing tool from BouffaloLab's website:
@@ -298,6 +301,26 @@ Verify that your copy of `BouffaloLabDevCube-v1.8.3.zip` matches the hashes belo
 * SHA1: `0f2619e87d946f936f63ae97b0efd674357b1166`
 * SHA256: `e6e6db316359da40d29971a1889d41c9e97d5b1ff1a8636e9e6960b6ff960913`
 
+=== CLI packages installation
+
+Install `bflb-iot-tool` using your preferred method of managing PIP packages. One option is to set up a Python virtual environment as follows:
+
+[source,console]
+----
+$ sudo apt install pipenv # for Debian-based systems
+ # or
+$ sudo pacman -S python-pipenv # for Arch Linux systems
+
+$ cd ~/ox64/
+$ pipenv install setuptools # install prerequisite of CLI flash tool
+$ pipenv install bflb-iot-tool # install CLI flash tool
+$ pipenv shell # activate virtual environment
+$ # bflb-iot-tool --help # return info about the tool
+
+----
+
+NOTE: Each time you open a new terminal window you will need to `cd ~/ox64/` and re-run `pipenv shell` to reactivate the virtual environment.
+
 == Flashing the Ox64
 
 Put the Ox64 into programming mode:
@@ -312,24 +335,19 @@ Set up some environment variables to save typing them out later:
 
 [source,console]
 ----
-$ PORT=/dev/ttyACM1
-$ BAUD=230400  # safe value for macOS, set to 2000000 for faster flashing on Linux
-----
-
-Change directory to the location of your image files:
-
-[source,console]
-----
 $ cd ~/ox64/openbouffalo/firmware # if you downloaded pre-built images
  # or
 $ cd ~/ox64/buildroot/output/images # if you built your own images
+
+$ PORT=/dev/ttyACM1
+$ BAUD=230400  # safe value for macOS, set to 2000000 for faster flashing on Linux
 ----
 
 Finally, flash the Ox64. If you created a link:#optional_create_a_combined_soc_image[combined image] then run the command below:
 
 [source,console]
 ----
-$ bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD \
+$ sudo bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD \
 >               --addr 0x0 --firmware bl808-combined.bin --single
 ----
 
@@ -337,17 +355,17 @@ Otherwise, run the following commands:
 
 [source,console]
 ----
-$ bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD \
+$ sudo bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD \
 >               --addr 0x0 --firmware m0_lowload_bl808_m0.bin --single
 
-$ bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD \
+$ sudo bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD \
 >               --addr 0x100000 --firmware d0_lowload_bl808_d0.bin --single
 
-$ bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD \
+$ sudo bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD \
 >               --addr 0x800000 --firmware bl808-firmware.bin --single
 ----
 
-If you get permission errors when running any of the commands above, you may need to add your user to the `dialout` group, using `sudo usermod -a -G dialout $USER`. Running the commands as `root` is not recommended since this will make `bflb-iot-tool` create root-owned files in your home directory.
+If you get permission errors when running any of the commands above, you may need to add your user to the communication group (`dialout` for Debian or `uucp` for Arch Linux), using `sudo usermod -a -G [communication_gruop] $USER` and re-login. Running the commands as `root` is not recommended since this will make `bflb-iot-tool` create root-owned files in your home directory. You can now run `exit` from virtual environment.
 
 === BLDevCube flashing method
 
@@ -360,7 +378,6 @@ $ ./BLDevCube-ubuntu
 ----
 
 Select chip [BL808], press Finish, and configure BOTH the [MCU] and [IOT] tabs as follows. When you switch between tabs double check that they still match the settings below:
-
 
 [cols="~,~"]
 |===
@@ -394,6 +411,24 @@ Then, switch to the [IOT] tab:
 * Click 'Create & Download' again and wait until it's done
 * Close DevCube
 
+== Erasing the microSD card
+
+Make sure there are no signatures or partitions left, and overwrite the first sectors with zeroes. You can find the target device under `lsblk` command.
+
+[source,console]
+----
+$ sudo wipefs /dev/[DEVICE]
+$ sudo wipefs --all --force /dev/[DEVICE]*
+$ sudo dd if=/dev/zero of=/dev/[DEVICE] status=progress bs=32768 count=1
+----
+
+Optionally you can zeroes the whole device:
+
+[source,console]
+----
+$ sudo dd if=/dev/zero of=/dev/[DEVICE] status=progress bs=32768 count=$(expr $(lsblk -bno SIZE /dev/[DEVICE] | head -1) \/ 32768)
+----
+
 == Flashing the microSD card
 
 Insert the microSD card into your PC, locate its device under `lsblk` and write the image:
@@ -415,14 +450,14 @@ Open a terminal window to connect to the D0 core’s (i.e. Linux’s) serial con
 
 [source,console]
 ----
-$ minicom -b 2000000 -D /dev/ttyACM0
+$ sudo minicom -b 2000000 -D /dev/ttyACM0
 ----
 
 If you are using a Pico or Bluepill as your serial adapter, open another terminal window to to monitor the M0 core’s serial console (reminder: `/dev/ttyACM1` is the same port we previously used for flashing):
 
 [source,console]
 ----
-$ minicom -b 2000000 -D /dev/ttyACM1
+$ sudo minicom -b 2000000 -D /dev/ttyACM1
 ----
 
 Re-apply power to the Ox64.
