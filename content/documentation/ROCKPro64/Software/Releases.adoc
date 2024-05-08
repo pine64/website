@@ -144,7 +144,7 @@ Download:
 
 image:/documentation/images/NixOS.webp[width=100]
 
-*NixOS* is a Linux distribution built on top of the Nix package manager using declarative configuration to allow reliable system upgrades. More information can be found on the https://nixos.wiki/wiki/NixOS_on_ARM/PINE64_ROCKPro64[NixOS wiki].
+*NixOS* is a Linux distribution built on top of the Nix package manager using declarative configuration to allow reliable system upgrades. More information can be found on the https://wiki.nixos.org/wiki/NixOS_on_ARM/PINE64_ROCKPro64[NixOS wiki].
 
 Download:
 
