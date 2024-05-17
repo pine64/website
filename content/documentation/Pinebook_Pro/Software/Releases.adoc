@@ -527,7 +527,7 @@ You can follow the ongoing discussion about NixOS on the https://forum.pine64.or
 
 *Installation*
 
-* This is instructions to install NixOS on the Pinebook Pro: https://nixos.wiki/wiki/NixOS_on_ARM/PINE64_Pinebook_Pro
+* This is instructions to install NixOS on the Pinebook Pro: https://wiki.nixos.org/wiki/NixOS_on_ARM/PINE64_Pinebook_Pro
 * Please pull the latest https://github.com/samueldr/wip-pinebook-pro[samueldr's repository ] from the project's GitHub.
 
 === SkiffOS
