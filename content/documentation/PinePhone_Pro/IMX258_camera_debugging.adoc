@@ -4,8 +4,8 @@ draft: true # page seems to break rendering
 menu:
   docs:
     title:
-    parent: "PinePhone_Pro/Various"
-    identifier: "PinePhone_Pro/Various/IMX258_camera_debugging"
+    parent: "PinePhone_Pro"
+    identifier: "PinePhone_Pro/IMX258_camera_debugging"
     weight: 
 ---
 

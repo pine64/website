@@ -4,9 +4,11 @@ draft: false
 menu:
   docs:
     title:
-    parent: "PinePhone_Pro/Various"
-    identifier: "PinePhone_Pro/Various/Development"
-    weight: 
+    parent: "PinePhone_Pro"
+    identifier: "PinePhone_Pro/Development"
+    weight: 98
+aliases:
+  - /documentation/PinePhone_Pro/Various/Development/
 ---
 
 This page documents the current status of software support for the link:/documentation/PinePhone_Pro[PinePhone Pro], and provides links to resources to help prospective contributors get started.
