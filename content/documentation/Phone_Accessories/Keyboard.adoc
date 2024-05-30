@@ -106,7 +106,7 @@ In *Sxmo* disabling the keyboard is not required, as the keyboard will only show
 
 The keyboard features a default layout (pictured below) created and agreed upon by the community. The keyboard layout can be altered using software as well as by physically repositioning keycaps. All keycaps, with the _exception_ of space and return keys, can be easily and safely relocated for alternative layouts corresponding to software settings.
 
-image:/documentation/Ppkb_layout2.png[The keyboard layout how the keys were originally intended]
+image:/documentation/images/Ppkb_layout2.png[The keyboard layout how the keys were originally intended]
 
 == Keyboard firmware
 
