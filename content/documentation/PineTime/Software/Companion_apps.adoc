@@ -14,6 +14,7 @@ Here are some companion apps:
 
 * https://www.gadgetbridge.org[Gadgetbridge] (Android >= 4.4) - Companion mobile app, supports updating firmware/bootloader, send notifications, etc.
 * https://openrepos.net/content/piggz/amazfish[Amazfish] (SailfishOS and Linux) - Companion mobile and desktop app, supports updating firmware/bootloader, send notifications, etc.
+* https://github.com/azymohliad/watchmate[Watchmate] (Linux)
 * https://github.com/alexr4535/siglo[Siglo] (Linux) - Companion desktop app.
 * https://github.com/ZephyrLabs/PinetimeFlasher[PinetimeFlasher] (Windows) - Companion desktop app, only supports flashing firmware.
 * https://apps.apple.com/us/app/nrf-connect-for-mobile/id1054362403[nRFConnect] (iOS) - Only supports flashing firmware. The app is closed source and versions after 4.24.3 don't work for the PineTime anymore
