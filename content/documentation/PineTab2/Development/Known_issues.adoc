@@ -15,7 +15,7 @@ menu:
 
 == Wi-Fi and Bluetooth
 
-* The https://gitlab.com/TuxThePenguin0/bes2600[BES2600 Wi-Fi driver] needs major cleanup and bugfixing (at the moment it often causes system crashes). This is a priority, but for now, you can USB tether a phone or use a supported WI-FI dongle. There are at least two code releases available, with two respective/non-interchangeable firmware versions.
+* The https://gitlab.com/TuxThePenguin0/bes2600[BES2600 Wi-Fi driver] needs major cleanup and bugfixing (at the moment it often causes system crashes). This is a priority, but for now, you can USB tether a phone or use a supported WI-FI dongle. There are at least two code releases available, with two respective/non-interchangeable firmware versions. Kernel 6.9.2-danctnix1-1-pinetab2 has a somewhat working WiFi driver.
 * The BES2600 Bluetooth driver needs to be implemented.
 * Hardware bugs - the power and reset circuitry is not properly implemented in the circuitry, so hard reset of the chip (in the theoretical case it freezes) is impossible without power cycling the whole board.
 
