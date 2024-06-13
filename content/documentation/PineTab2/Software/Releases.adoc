@@ -23,6 +23,8 @@ The original, older factory image can be found here:
 
 NOTE: The factory image is flashed to a microSD card and it will overwrite the eMMC installation after booting.
 
+NOTE: Wi-Fi not working? See below under Arch Linux ARM how to fix it
+
 == Linux
 
 === Arch Linux ARM
@@ -42,17 +44,40 @@ NOTE: The factory image is flashed to a microSD card and it will overwrite the e
 
 ==== Notes
 
-* The latest version ships with Wi-Fi and Bluetooth drivers disabled, because these are unstable. The drivers can be manually enabled from the command line:
+===== Wi-Fi
 
-Run this command to enable Wi-Fi for a single session (until the next time you reboot your PineTab): 
+Wi-Fi or Bluetooth drivers were not available at launch. These have been added later on, but were disabled by default, since kernel 6.6.13-danctnix1. The wifi driver is enabled by default since kernel 6.9.2-danctnix1.
+
+The original factory image ships with an older kernel, thus has no Wi-Fi and Bluetooth drivers.
+
+The latest factory image ships with a kernel which has Wi-Fi and Bluetooth drivers, but they are disabled by default.
+
+If Wi-Fi is not working for you, verify your current kernel version with this command:
+
+ $ uname -a
+
+Depending on the version reported, you'll either need to do the following:
+
+If on a kernel version older than 6.6.13-danctnix1:
+
+* Connect a __supported__ USB wifi dongle and update your system, or reflash the latest factory image (see link above)
+
+If on a kernel version between 6.6.13 and 6.9.2:
+
+* Enable the driver manually once, and then update your system:
 
  $ sudo modprobe bes2600
+ # You can now connect to wifi.
+ $ sudo pacman -Syu
+ > sudo reboot
 
-Run the following commands to enable Wi-Fi automatically at every boot:
+===== Bluetooth
 
- $ sudo -i
- > echo bes2600 | sudo tee /etc/modules-load.d/bes2600.conf
- > exit
+__The following information may not work with the latest kernel (version 6.9)__
+
+Bluetooth is still disabled by default, because the drivers are unstable.
+
+Make sure your kernel is version 6.6.13 or newer.
 
 Run the following commands to enable Bluetooth for a single session (until the next time you reboot your PineTab) https://www.reddit.com/r/PINE64official/comments/1akjlwu/tutorial_wifi_and_bluetooth_on_pinetab_2/[(source)]:
 
@@ -65,8 +90,8 @@ Run the following commands to enable Bluetooth for a single session (until the n
  > exit
  > sudo systemctl enable bluetooth
 
-* The original factory image did not ship with Wi-Fi and Bluetooth drivers. If your PineTab is still on an older kernel version (check `uname -a`, it should show 6.6.13 or newer), you can update the kernel using `pacman -Syu` and a supported Wi-Fi dongle, or flash the latest version of the factory image.
-* System hangs on reboot/shutdown (Wi-Fi / Bluetooth driver bug, only happens when the driver is enabled)
+===== Other issues 
+
 * https://github.com/ScottFreeCode/Pine64-Arch/tree/master/PKGBUILDS/pine64/alsa-ucm-pinetab2[HP/Speaker switching via Alsa UCM] - _Unsure if this is fixed or not_
 
 === Buildroot
