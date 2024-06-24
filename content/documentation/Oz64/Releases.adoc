@@ -11,7 +11,7 @@ menu:
 
 == Sources
 
-There is a community effort to bring updated kernels, peripherals and buildroot - Lots of communication happening in the #oz64-nutcracker channel. 
+There is a community effort to bring updated kernels, peripherals and buildroot - Lots of communication happening in the #ox64-nutcracker channel, see link:/community/[Community]. 
 
 * https://github.com/lupyuen2/wip-nuttx/releases/download/sg2000-1/Image[Nuttx Released Image] by Lup Yuen
 
