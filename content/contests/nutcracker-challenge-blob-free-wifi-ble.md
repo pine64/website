@@ -7,6 +7,8 @@ cover:
   image: "Nutcracker.png"
 images:
   - "Nutcracker.png"
+aliases:
+  - "/2020/10/28/nutcracker-challenge-blob-free-wifi-ble/"
 ---
 
 Nutcracker challenge: Working towards blob-free WiFi and BLE. Get your EVB now free. <!--more-->
