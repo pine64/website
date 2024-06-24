@@ -175,13 +175,3 @@ Notes:
 * For Windows OS environment please install the https://files.pine64.org/os/Quartz64/android/DriverAssitant_v5.1.1.zip[DriverAssistant v5.11] driver first
 * The OTG port located at top USB 2.0 port on top of USB 3.0 port, needs USB type A to type A cable.
 * Please allow 3-5 minutes boot up time on first time for initialization
-
-==== Android 11 eink SDK
-
-This the *Android 11 eink SDK* build for 10.3" e-ink panels on the Quartz64 Model A.
-
-Download:
-
-* http://files.pine64.org/SDK/Quartz64/QUARTZ64-model-A_eink.android11_SDK.tar.gz[Direct download] from _pine64.org_ (72.88GB, MD5 of the TAR-GZip file _293a550584298de4fb95ceae18103672_, build 20210604)
-* Just the boot blobs (<1MB): https://wiki.pine64.org/wiki/File:Rk35-blobs.tar.gz
-

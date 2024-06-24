@@ -544,31 +544,6 @@ image:/documentation/images/Android_logo_2019_(stacked).svg[width=100]
 
 === Android 7.1.2
 
-*Stock for DD method [eMMC Boot] [20180809]*
-* Use 'dd' to write the image to the eMMC module using the USB-to-eMMC adapter module and boot. Using https://www.balena.io/etcher/[Etcher] or another specialized SD writing tool is preferred.
-* Please allow 3-5 minutes boot up time on first time for initialization
-* This build supports PINE64 7" LCD panel with tablet UI (not Android TV)
-* http://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20180809_stock_android_7.1_emmcboot.img.gz[Direct download from pine64.org]
-** MD5 (XZ file): 00F194017557017C2588724686E90CEA
-** File Size: 498MB
-
-*Stock for RK Flash tool [eMMC Boot] [20180809]*
-* Please unzip first and then using Android tool to flash in
-* The OTG port located at USB type-C connector, needs USB type A to type C cable.
-* Please allow 3-5 minutes boot up time on first time for initialization
-* This build supports PINE64 7" LCD panel with tablet UI (not Android TV)
-* http://files.pine64.org/os/ROCKPro64/android/ROCKPro64_20180809_stock_android_7.1_emmcboot.img.gz[Direct download from pine64.org]
-** MD5 (XZ file): 197A9905B48441D8655E7542F4643FE9
-** File Size: 483MB
-
-*Stock for DD method [microSD Boot] [20180920]*
-* Use 'dd' to write the image to the eMMC module using the USB-to-eMMC adapter module and boot. Using https://www.balena.io/etcher/[Etcher] or another specialized SD writing tool is preferred.
-* Please allow 3-5 minutes boot up time on first time for initialization
-* This build supports PINE64 7" LCD panel with tablet UI (not Android TV)
-* http://files.pine64.org/os/ROCKPro64/android/ROCKPro64_20180920_stock_android_7.1_sdboot.img.gz[Direct download from pine64.org]
-** MD5 (XZ file): CE39642A379B357BB3E4BC80ACA2E0CE
-** File Size: 765MB
-
 *Stock for DD method [eMMC Boot] [20180518]*
 * Use 'dd' to write the image to the eMMC module using the USB-to-eMMC adapter module and boot. Using https://www.balena.io/etcher/[Etcher] or another specialized SD writing tool is preferred.
 * Please allow 3-5 minutes boot up time on first time for initialization
@@ -585,14 +560,6 @@ image:/documentation/images/Android_logo_2019_(stacked).svg[width=100]
 * http://files.pine64.org/os/ROCKPro64/android/ROCKPro64_20180518_stock_android_7.1_emmcboot.img.xz[Direct download from pine64.org]
 ** MD5 (XZ file): 90C1991DADAE13ADC94E927F171F8920
 ** File Size: 342MB
-
-*Stock for install from SDcard to eMMC [microSD Boot] [20180921]*
-* Use 'dd' to write the image to the eMMC module using the USB-to-eMMC adapter module and boot. Using https://www.balena.io/etcher/[Etcher] or another specialized SD writing tool is preferred.
-* Please allow 3-5 minutes boot up time on first time for initialization
-* This build supports PINE64 7" LCD panel with tablet UI (not Android TV)
-* http://files.pine64.org/os/ROCKPro64/android/ROCKPro64_20180921_stock_android_7.1_sdboot.img.xz[Direct download from pine64.org]
-** MD5 (XZ file): c6900e82a1d6ef397dcac241f76f43c9
-** File Size: 350MB
 
 === Android SDK
 

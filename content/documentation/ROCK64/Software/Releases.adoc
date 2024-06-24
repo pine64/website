@@ -204,9 +204,9 @@ Download:
 
 WARNING: Outdated release
 
-* https://files.pine64.org/os/ROCK64/nextcloudplus/NextCloudPi_Rock64_03-10-19.img.xz[Direct download from pine64.org]
+* https://files.pine64.org/os/ROCK64/nextcloudplus/NextCloudPi_Rock64_08-01-19.img.gz[Direct download from pine64.org]
 
-NOTE: The MD5 hash of the .xz file is _1432c8b8082696f38770004b3cb5ac1e_
+NOTE: The MD5 hash of the .gz file is _2d3eb799e99a3bb90d5aa7731baf27c6_
 
 |===
 2+| Default credentials
@@ -225,13 +225,13 @@ Download:
 
 * https://github.com/ayufan-rock64/linux-build/releases/[Releases on ayufan's github]
 * https://files.pine64.org/os/ROCK64/omv/jessie-openmediavault-rock64-0.5.15-136-armhf_sd2emmc.img.xz[Direct download from pine64.org (32 bit armhf)]
-
-NOTE: The MD5 hash of the .xz file is _7E423EF9146EA15403E7D1B4EA30594A_
-
-Notes:
-
-* Shorting the eMMC PIN with a jumper as shown on the 1st image of https://files.pine64.org/doc/rock64/guide/ROCK64_Installing_Android_To_eMMC.pdf[Guide to install stock Android build to eMMC module]. After power ON the box for 2-3 second, quickly remove the jumper. After boot, it will prompt for confirmation 'Y' to start writing the new image to the eMMC. Then follow the instructions on the screen
-* There's a bug with eMMC in the "Stable" version of openmediavault linked from the wiki page. In order to use eMMC, please you need to be on the latest (pre-release) version which is linked here https://github.com/ayufan-rock64/linux-build/releases
+* https://files.pine64.org/os/ROCK64/omv/stretch-openmediavault-rock64-0.9.14-1159-arm64.img.xz[Direct download from pine64.org (64 bit arm64)]
+	
+NOTE: The MD5 hash of the .xz file is _474c2a5aac8874fd188404c8e04e53e8_
+	
+* https://files.pine64.org/os/ROCK64/omv/stretch-openmediavault-rock64-0.9.14-1159-armhf.img.xz[Direct download from pine64.org (32 bit armhf)]
+	
+NOTE: The MD5 hash of the .xz file is _bf5d2ea2bc7a5623ba958ed358a80c2a_
 
 |===
 2+| Default credentials
@@ -450,32 +450,9 @@ Notes:
 
 * See link:/documentation/ROCK64/Further_information/MAC_address[MAC address] on how to set the MAC address.
 
-=== Android 7.x
-
-The Android 7.1.2 stock image for microSD boot (rooted), build 20171204.
-
-Download:
-
-* https://files.pine64.org/os/ROCK64/android/rock64_20171204_stock_android_7.1.2_rooted_sdboot.img.xz[Direct download] from _pine64.org_ (544MB)
-
-NOTE: The MD5 hash of the .xz file is _56520ED3DB6E587DA140AD314A055EB2_
-
-Notes:
-
-* Write the image to a microSD card using _dd_ and boot it.
-* Please allow 10-15 minutes on first boot for initialization
-* Has USB 3.0 patches
-* Enable the _Real Time Clock support_ for the _Popcorn Hour Transformer_
-
 === Android TV 7.x eMMC
 
 The *Android TV 7.1* community build image by ayufan.
-
-Download image (microSD card to eMMC):
-
-* https://files.pine64.org/os/ROCK64/android/android-7.1-rock-64-rock64_atv-v0.3.4-r86-raw_sd2emmc.img.xz[Direct download] from _pine64.org_ (716MB, MD5 of the .xz file _6FD1FA4BE87EC2D4E0862F66541BC6F0_)
-
-NOTE: Write the image to microSD card, for example using _dd_. Shorting the eMMC PIN with a jumper as shown on the first image of the https://files.pine64.org/doc/rock64/guide/ROCK64_Installing_Android_To_eMMC.pdf[guide to install stock Android build to eMMC module]. After power ON the box for 2-3 second, quickly remove the jumper. After boot, it will prompt for confirmation 'Y' to start writing the new image to the eMMC. Then follow the instructions on the screen.
 
 Download image (eMMC):
 
@@ -503,7 +480,7 @@ The *Android P SDK* (v9.0).
 
 Download:
 
-* https://files.pine64.org//SDK/ROCK64/ROCK64_SDK_android9.0.tar.gz[Direct Download] from _pine64.org_ (104.34GB)
+* https://files.pine64.org/SDK/ROCK64/ROCK64_SDK_android9.0.tar.gz[Direct Download] from _pine64.org_ (104.34GB)
 
 NOTE: The MD5 hash of the TAR-GZip file is _1EAC08942E238293E3AF11C7890DF307_
 

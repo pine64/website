@@ -45,6 +45,7 @@ link:Pinebook_Pro[Pinebook Pro] +
 
 | Single-board computers
 a|link:Ox64[Ox64] +
+link:Oz64[Oz64] +
 link:STAR64[STAR64] +
 link:Quartz64[Quartz64] +
 link:QuartzPro64[QuartzPro64] +

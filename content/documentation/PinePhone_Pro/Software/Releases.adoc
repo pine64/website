@@ -9,7 +9,31 @@ menu:
     weight: 3
 ---
 
+:toc:
+:toclevels: 1
+
 This page contains a list of all available releases and tools for the link:/documentation/PinePhone_Pro[PinePhone Pro].
+
+== Factory builds
+
+These are two operating system builds that was preloaded in the factory with testing utility.
+
+Download the build, extract the image and dd it to a 8 GB or larger microSD card, then insert it into the PinePhonePro. Press "RES" button for two seconds when power up, follows on screen instruction and apply the build from microSD card to eMMC. 
+
+[cols="1,1,1,1"]
+|===
+| Distribution | Download Link | File Size | MD5
+
+| Sailfish with RK2AW
+| https://files.pine64.org/os/PinePhonePro/ppp-factory-image-20231118.img.gz[ppp-factory-image-20231118.img.gz]
+| 447MB
+| _4e31e0a6b0999e3e3df45f86a7dc9c33_
+
+| Manjaro with Tow-Boot
+| https://files.pine64.org/os/PinePhonePro/Manjaro-ARM-plasma-mobile-pinephonepro-factory-20211212.img.xz[Manjaro-ARM-plasma-mobile-pinephonepro-factory-20211212.img.xz]
+| 1.37GB
+| _b82ba02287c1699b14fed403ce485b44_
+|===
 
 == Arch Linux ARM
 

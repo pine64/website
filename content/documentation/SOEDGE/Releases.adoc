@@ -17,7 +17,7 @@ Releases for the SOEDGE.
 
 Download:
 
-* https://files.pine64.org//os/SOEdge/stock/SOEdge_linux_v1.1.img.gz[SOEdge_linux_v1.1.img.gz] from _pine64.org_, MD5 (GZip file): 636ebeb66d6d0fc0929397d541b0ce83, size: 119MB
+* https://files.pine64.org/os/SOEdge/stock/SOEdge_linux_v1.1.img.gz[SOEdge_linux_v1.1.img.gz] from _pine64.org_, MD5 (GZip file): 636ebeb66d6d0fc0929397d541b0ce83, size: 119MB
 
 Notes:
 

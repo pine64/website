@@ -25,5 +25,5 @@ Flash back factory default firmware using Windows based utility:
 
 == SDK
 
-* https://files.pine64.org//SDK/PineBudsPro/PineBudsPro_SDK-20221128.7z[PineBuds Pro "Little Whale" SDK date:20221128]
+* https://files.pine64.org/SDK/PineBudsPro/PineBudsPro_SDK-20221128.7z[PineBuds Pro "Little Whale" SDK date:20221128]
 
