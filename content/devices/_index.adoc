@@ -9,6 +9,7 @@ description: "PINE64 has a variety of different devices. Find out more!"
 
 {{< flexbox >}}
     {{< devices/device_box link="/devices/ox64/" img="/img/start/ox64.png" title="Ox64" text="" >}}
+    {{< devices/device_box link="/devices/oz64/" img="/devices/images/oz64.jpg" title="Oz64" text="" >}}
     {{< devices/device_box link="/devices/star64" img="/devices/images/star64.png" title="STAR64" text="" >}}
     {{< devices/device_box link="/devices/pine_a64" img="/devices/images/pine_a64.jpg" title="PINE A64 (+)" text="" >}}
     {{< devices/device_box link="/devices/pine_a64-lts" img="/devices/images/pine_a64-lts.jpg" title="PINE A64-LTS" text="" >}}
