@@ -19,7 +19,7 @@ Weather data must be sent to the watch via a companion app. Currently, https://g
 ITD is the easiest option as the feature simply needs enabling in the config file with a location specified. It uses data from MET.no and provides one hour of data at a time.
 
 === Gadgetbridge ===
-Gadgetbridge is slightly more difficult to set up as it requires a separate app to fetch the weather data. Details are available on the https://codeberg.org/Freeyourgadget/Gadgetbridge/wiki/Weather[Gadgetbridge wiki].
+Gadgetbridge is slightly more difficult to set up as it requires a separate app to fetch the weather data. Details are available on the https://gadgetbridge.org/basics/features/weather/[Gadgetbridge website].
 
 == Displaying weather data ==
 
