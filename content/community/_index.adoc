@@ -17,7 +17,7 @@ There are a wide range of communication protocols to choose from.
 
 PINE64 has a large and very active community. Community discussion takes place on a variety of chat platforms, which are all bridged together so the messages sent via one platform are sent to all other platforms automatically. The other networks and their users are represented by P64ProtocolBot.
 
-> **NOTE:** Please read link:/community/Rules/[PINE64 Community Rules and Code of Conduct].
+Please read link:/community/Rules/[PINE64 Community Rules and Code of Conduct].
 
 The community chat platforms are the following:
 
@@ -115,7 +115,7 @@ The community chat platforms are the following:
 | https://t.me/pinecube[@pinecube]
 | #cube
 
-| Nutcracker, Ox64
+| Nutcracker, Ox64, Oz64
 | https://matrix.to/#/#pine64-nutcracker:matrix.org[#pine64-nutcracker:matrix.org]
 | https://t.me/joinchat/Kmi2S0nOsT240emHk-aO6g[Nutcracker]
 | #nutcracker
