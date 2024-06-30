@@ -54,11 +54,10 @@ An (unofficial) vanilla Fedora rawhide build for aarch64 with megi's kernel and 
 It aims to eventually be an upstream part of the Fedora project, rather than a phone-specific distribution.
 
 * Forum discussion: https://forum.pine64.org/showthread.php?tid=9347[Fedora + Phosh for PinePhone]
-* GitHub: https://github.com/nikhiljha/pp-fedora-sdsetup[nikhiljha/pp-fedora-sdsetup]
+* GitLab: https://gitlab.com/fedora/sigs/mobility[Fedora Mobility SIG]
 
 ==== Download
 
-* https://github.com/nikhiljha/pp-fedora-sdsetup/releases[Flashable images]
 * https://github.com/nikhiljha/pp-fedora-sdsetup[         Build scripts]
 * https://copr.fedorainfracloud.org/coprs/njha/mobile/[   Packages (Fedora COPR)]
 
@@ -66,9 +65,6 @@ There is also an FTP server with images build every night @ ftp://pine.warpspeed
 
 |===
 2+| Default credentials
-
-|GitHub images
-| `pine/123456`
 
 |Nightly images (via FTP)
 | `pine/1111`
@@ -78,7 +74,7 @@ There is also an FTP server with images build every night @ ftp://pine.warpspeed
 
 WiFi, Bluetooth, SMS, Data, Calls all work|There are still a few bugs though, and https://xnux.eu/devices/pine64-pinephone.html#toc-feature-driver-support-matrix[some features don't have driver support yet] on any PinePhone distribution.
 
-Please send your bug reports to https://github.com/nikhiljha/pp-fedora-sdsetup/issues[the project's issue tracker]. Be sure to include logs if applicable|Send us pull requests on https://github.com/nikhiljha/pp-fedora-sdsetup/pulls[Github].
+Please send your bug reports to https://github.com/nikhiljha/pp-fedora-sdsetup/issues[the project's issue tracker]. Be sure to include logs if applicable|Send us pull requests on https://gitlab.com/groups/fedora/sigs/mobility/-/issues[GitLab].
 
 === Gentoo
 
