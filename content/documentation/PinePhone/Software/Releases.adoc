@@ -58,8 +58,8 @@ It aims to eventually be an upstream part of the Fedora project, rather than a p
 
 ==== Download
 
-* https://github.com/nikhiljha/pp-fedora-sdsetup[         Build scripts]
-* https://copr.fedorainfracloud.org/coprs/njha/mobile/[   Packages (Fedora COPR)]
+* https://github.com/nikhiljha/pp-fedora-sdsetup[Build scripts]
+* https://copr.fedorainfracloud.org/coprs/njha/mobile/[Packages (Fedora COPR)]
 
 There is also an FTP server with images build every night @ ftp://pine.warpspeed.dk/nightly/pinephone/ (Mount this with something like Nautilus)
 
@@ -196,10 +196,7 @@ Most discussion occurs at  [ircs://irc.libera.chat:6697/#maemo-leste `#maemo-les
 
 All other contact information is listed on the https://leste.maemo.org/Main_Page[main page] of the Maemo wiki.
 
-Submit https://github.com/maemo-leste/bugtracker/issues[bug reports] on github.
-To track known issues, you may use these search terms:
-https://github.com/maemo-leste/bugtracker/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+pinephone[pinephone],
-https://github.com/maemo-leste/bugtracker/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+pine64[pine64].
+Submit https://github.com/maemo-leste/bugtracker/issues[bug reports] on GitHub. To track known issues, you may use these search terms: https://github.com/maemo-leste/bugtracker/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+pinephone[pinephone] and https://github.com/maemo-leste/bugtracker/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+pine64[pine64].
 
 === Manjaro ARM
 
