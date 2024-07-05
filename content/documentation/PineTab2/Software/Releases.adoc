@@ -15,15 +15,18 @@ This page contains a list of all available releases and tools for the PineTab2 i
 
 The PineTab2 ships with _Danctnix Arch Linux ARM_. The latest factory image can be found here:
 
-* https://echo.danctnix.org:7269/danctnix-factory-image-20240307.img.xz (2.1 GB)
-
-The original, older factory image can be found here:
-
-* https://echo.danctnix.org:7269/danctnix-factory-image-20230527.img.xz (1.5 GB)
+* https://echo.danctnix.org:7269/factory_images/pinetab2/20240625/danctnix-factory-image-20240625.img.xz (2.2 GB)
 
 NOTE: The factory image is flashed to a microSD card and it will overwrite the eMMC installation after booting.
 
-NOTE: Wi-Fi not working? See below under Arch Linux ARM how to fix it
+
+=== Older versions
+
+* https://echo.danctnix.org:7269/factory_images/pinetab2/20240307/danctnix-factory-image-20240307.img.xz (2.1 GB)
+* https://echo.danctnix.org:7269/factory_images/pinetab2/20230527/danctnix-factory-image-20230527.img.xz (1.5 GB)
+
+NOTE: Older versions ship without Wi-Fi drivers. See below under Arch Linux ARM how to fix it
+
 
 == Linux
 
@@ -33,7 +36,7 @@ NOTE: Wi-Fi not working? See below under Arch Linux ARM how to fix it
 
 ==== Download
 
-* https://echo.danctnix.org:7269/danctnix-factory-image-20240307.img.xz
+* https://echo.danctnix.org:7269/factory_images/pinetab2/20240625/danctnix-factory-image-20240625.img.xz (2.2 GB)
 
 |===
 2+| Default credentials
@@ -48,9 +51,9 @@ NOTE: Wi-Fi not working? See below under Arch Linux ARM how to fix it
 
 Wi-Fi or Bluetooth drivers were not available at launch. These have been added later on, but were disabled by default, since kernel 6.6.13-danctnix1. The wifi driver is enabled by default since kernel 6.9.2-danctnix1.
 
-The original factory image ships with an older kernel, thus has no Wi-Fi and Bluetooth drivers.
-
-The latest factory image ships with a kernel which has Wi-Fi and Bluetooth drivers, but they are disabled by default.
+* The latest factory image (20240625) ships with a kernel which has Wi-Fi drivers enabled by default.
+* The factory image 20240307 ships with a kernel which has Wi-Fi and Bluetooth drivers, but they are disabled by default.
+* The oldest factory image (20230527) ships with a kernel which has no Wi-Fi and Bluetooth drivers.
 
 If Wi-Fi is not working for you, verify your current kernel version with this command:
 
