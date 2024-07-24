@@ -15,7 +15,7 @@ This page contains a list of all available releases and tools for the link:/docu
 
 NOTE: Some releases may not have a good setup for the backlight at low brightness. If configured too low, the backlight shuts down completely, but the screen is still displayed and usable in bright front-light.
 
-See link:/documentation/PinePhone/Installation_instructions[Installation instructions] on how to install the operating systems. Please see link:/documentation/PinePhone/Software/Updating_instructions[Update instructions] for how to update the phone.
+See link:/documentation/PinePhone/Installation/[Installation instructions] on how to install the operating systems. Please see link:/documentation/PinePhone/Software/Updating_instructions[Update instructions] for how to update the phone.
 
 == Software Releases
 
