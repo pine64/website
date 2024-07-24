@@ -8,6 +8,8 @@ menu:
     parent: "PinePhone"
     identifier: "PinePhone/Installation"
     weight: 3
+aliases:
+  - /documentation/PinePhone/Installation_instructions
 ---
 
 To learn more about the pboot priority on the PinePhone, click on link:/documentation/PinePhone/Installation/Boot_priority[boot priority].
