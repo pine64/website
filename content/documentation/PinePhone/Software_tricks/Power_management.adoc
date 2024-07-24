@@ -1,6 +1,7 @@
 ---
 title: "Power Management"
 draft: false
+hidden: true
 menu:
   docs:
     title:
@@ -17,11 +18,7 @@ The data on this page is based on the the link:/documentation/PinePhone/Revision
 
 [cols="1,1,1,1,1"]
 |===
-|Name/GPIO
-|Output Voltage
-|Can disable at runtime?
-|Can disable in suspend?
-|Consumers (internal/external separated by semicolon)
+|Name/GPIO | Output Voltage | Can disable at runtime? | Can disable in suspend? | Consumers (internal/external separated by semicolon)
 
 | DCDC1
 | 3.3V
@@ -191,7 +188,7 @@ The data on this page is based on the the link:/documentation/PinePhone/Revision
 ==== ANX7688
 
 . Move ANX7688 AVDD33 (the chip input only, not the other things connected to 3v3) and ANX7688 I2C Level Shift (3.3V side) from DLD01 to DCDC1, and ANX7688 VCONN_EN Disable Pull-up (R1355 and R1366) from DLDO1 to ANX1.8V
-. <strike>Move ANX7688 ANX1.8V from GPIO1-LDO to ALDO2</strike>
+. [.line-through]#Move ANX7688 ANX1.8V from GPIO1-LDO to ALDO2#
 . Move ANX7688 ANX-V1.0 Regulator Enable (R1352) from DLDO1 to a GPIO
 
 These are all medium priority.
@@ -202,9 +199,11 @@ The result of these changes would be that:
 . GPIO1-LDO only needs to be powered when a USB cable is detected, and is enough to power the rest of the chip (except HDMI)
 . DLDO1 only needs to be enabled if the display pipeline or sensors are active, even if a USB cable is plugged in
 
+////
 ==== Sensors
 
 . This may or may not be a good idea, so it's a very weak suggestion: Swap the VDD and LEDA inputs of the STK3311-A sensor, moving VDD to DLDO1 and LEDA to GPIO0-LDO. The sensor VDD needs to match the I2C voltage, and the LED driver should be on a separate power supply from the sensors. There is some concern, because GPIO0-LDO has a 100mA limit, but the proximity sensor should work properly at the lowest LED drive current (12.5mA).
+////
 
 === Assignments after Suggested Changes
 
@@ -212,11 +211,7 @@ Note: Only regulators that were modified are included here.
 
 [cols="1,1,1,1,1"]
 |===
-|Name/GPIO
-|Output Voltage
-|Can disable at runtime?
-|Can disable in suspend?
-|Consumers (internal/external separated by semicolon)
+|Name/GPIO|Output Voltage|Can disable at runtime?|Can disable in suspend?|Consumers (internal/external separated by semicolon)
 
 | DCDC1
 | 3.3V
@@ -264,12 +259,7 @@ Note: Only regulators that were modified are included here.
 Note: only pins relevant to power management are included in this table.
 
 |===
-|Pin
-|Signal Name
-|Description
-|Direction (as modem)
-|Needed in suspend?
-|Connected to
+|Pin|Signal Name|Description|Direction (as modem)|Needed in suspend?|Connected to
 
 | 1
 | **WAKEUP_IN**
@@ -332,11 +322,7 @@ Note: only pins relevant to power management are included in this table.
 
 [cols="1,1,1,1,1"]
 |===
-|Pin
-|Signal Name
-|Description
-|Direction
-|Needed in suspend?
+|Pin|Signal Name|Description|Direction|Needed in suspend?
 
 | PL0
 | **PMU-SCK**
@@ -431,14 +417,14 @@ Note: only pins relevant to power management are included in this table.
 . Connect the modem **PWRKEY** to PB3 only, not **STATUS** or DCDC1 (depopulate R1526). _bugfix_
 . Connect the modem **STATUS** to PH9. This is an open-drain signal, so it needs a pull-up on the A64 side. _bugfix_
 . Disconnect the modem I2C. The level shifter can be repurposed for the next change (modem debug UART).
-. <strike>Connect the modem debug UART TX/RX to PD0-1.</strike>
-. <strike>Move the modem main UART TX/RX to PD2-3. Motor and CSI reset that are currently at PD2-3 would need to be moved elsewhere.</strike>
+. [.line-through]#Connect the modem debug UART TX/RX to PD0-1.#
+. [.line-through]#Move the modem main UART TX/RX to PD2-3. Motor and CSI reset that are currently at PD2-3 would need to be moved elsewhere.#
 . Connect both AXP803 **USB-DRVVBUS** (populate R1300) and ANX7688 **VBUS_CTRL** to **DRVVBUS** (in addition to PD6).
-.. <strike>Connecting to ANX7688 **VBUS_CTRL** would need a level shift to 1.8V.</strike>
+.. [.line-through]#Connecting to ANX7688 **VBUS_CTRL** would need a level shift to 1.8V.#
 .. Alternatively, swap PL9 and PD6, so the level shift is not necessary, since PL9 is already a 1.8V logic level.
-.. <strike>Alternatively, do not connect ANX7688 **VBUS_CTRL**, and at least populate R1300 to connect AXP803 **USB-DRVVBUS**.</strike>
+.. [.line-through]#Alternatively, do not connect ANX7688 **VBUS_CTRL**, and at least populate R1300 to connect AXP803 **USB-DRVVBUS**.#
 . Reorient the transistors for **ANX_POWER** (PD10) and **ANX_RESET** (PL9) so they do not invert their input, and (more importantly) produce a low-level output by default. (Since PL9 is already at 1.8V, it may no longer need a transistor.)
-. <strike>Remove the transistors inverting **VCONN1_EN** and **VCONN2_EN**, and use a pull-up to **DVDD1V8** (that is really already present) instead of the pull-up to **3V3**.</strike>
+. [.line-through]#Remove the transistors inverting **VCONN1_EN** and **VCONN2_EN**, and use a pull-up to **DVDD1V8** (that is really already present) instead of the pull-up to **3V3**.#
 
 *Note:*
 Changes 1-7 and 11 are high priority.

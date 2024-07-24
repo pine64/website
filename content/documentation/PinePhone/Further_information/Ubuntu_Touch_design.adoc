@@ -1,6 +1,6 @@
 ---
 title: "Ubuntu Touch design"
-draft: false
+draft: true # UNPUBLISHED
 menu:
   docs:
     title:
@@ -41,6 +41,7 @@ So first, UniversalSuperBox chat log:
  UniversalSuperBox: Data stores all of the writable data on the system.
 
 Unaddressed part:
+
  UniversalSuperBox: The system is set up on boot by the initramfs at https://github.com/ubports/initramfs-tools-ubuntu-touch/tree/xenial_-_edge_-_pine.
  UniversalSuperBox: Specifically, look at the halium script in the scripts folder
  UniversalSuperBox: I know it's called halium. It is not exclusively for halium.
