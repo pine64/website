@@ -37,7 +37,7 @@ image:/documentation/images/Multimeter_measuring_Short_Tip.png[Short Tip 6.2 Ω,
 image:/documentation/images/CleanTip-Cartridge-Contacts.jpg[Clean contacts with IPA]
 	
 . Then install the cartridge/tip, re-install the screw on top, and heat the tip a few times to 350 °C for a couple minutes.
-. If you don't have a multimeter, then after you initially heat the tips a few times to 350 °C. Then change the temperature to the link:documentation/Pinecil/Guides_to_soldering#what_temperature_should_i_use?[correct range] for the solder you purchased and check if it melts solder (add a little solder to the tip end also before storing it).
+. If you don't have a multimeter, then after you initially heat the tips a few times to 350 °C. Then change the temperature to the link:/documentation/Pinecil/Guides_to_soldering#what_temperature_should_i_use?[correct range] for the solder you purchased and check if it melts solder (add a little solder to the tip end also before storing it).
 . If you have a multimeter (dmm) and have an issue with the cartridge/tip, then you can measure when the tip is cold (room temperature and unused a couple hours). Set dmm to ohms and the correct range, and measure the 2 silver contacts on the rear white end.
 . Warning: warm tips change the measurements (measure only when cold and unused for a couple hours).
 * Short tips could be ~6.2-6.5 ohms

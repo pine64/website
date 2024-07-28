@@ -594,7 +594,7 @@ ROCKPro64 related files
 == Miscellaneous tools
 
 * http://files.pine64.org/doc/rock64/tools/DriverAssitant_v4.5.zip[Windows ADB driver package]
-* link:/documentation/ROCK64/Further_information/MAC_address[MAC address]
+* link:/documentation/ROCK64/Software/MAC_address[MAC address]
 * http://files.pine64.org/doc/rock64/guide/ROCK64_Installing_Android_To_eMMC.pdf[Guide to install stock Android build to eMMC module]
 * http://files.pine64.org/doc/rock64/tools/SD_Firmware_Tool._v1.46.zip[Tools to burn Android build into a bootable microSD card]
 * http://files.pine64.org/doc/rock64/tools/AndroidTool_Release_v2.38.zip[Tools that allows developer flash image into eMMC's Loader/Parameter/Misc/Kernal/Boot/Recovery/System/Backup partition]

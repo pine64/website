@@ -81,9 +81,9 @@ The PineFlash is a GUI updater it's an all-in one app that downloads firmware an
 
 * Must have newer Pinecil V2 model (green thumb grip).
 * First, update firmware to *Ralim's IronOS 2.21* or higher. 2.21 is the first stable release that has BLE support built-in for Pinecil V2.
-* Get the https://github.com/builder555/PineSAM[PineSAM app here] or try https://joric.github.io/pinecil/[Joric's BLE website here]. These BLE apps are also listed in [[Pinecil#Development_Projects| Development Projects]]
-* https://joric.github.io/pinecil/[Joric's BLE API] may be the easiest to get started with as it does not require anything to be installed. It runs off Chromium based browsers (since they are capable of BLE GATT) and shows a graph of Temperature/Watts (MacOS/iPhone and firefox don't work bc they do not have BLE GATT). Hint: some Chromium browsers like Vivaldi, may need to check `chrome://flags/ ` and enable bluetooth options.
-* https://github.com/builder555/PineSAM[PineSAM] is BLE Settings and Menus and will run on any major OS. It allows change of all settings, and can be controlled from Mac, Linux, Windows, iPhone, Android and more; needs python script running as back end. For easy phone connection just open a browser address http://<ipaddress of PC running script>:8080/ (see PineSAM website for details)
+* Get the https://github.com/builder555/PineSAM[PineSAM app here] or try https://joric.github.io/pinecil/[Joric's BLE website here]. These BLE apps are also listed in link:/documentation/Pinecil/Development_projects[Development projects]
+* https://joric.github.io/pinecil/[Joric's BLE API] may be the easiest to get started with as it does not require anything to be installed. It runs off Chromium based browsers (since they are capable of BLE GATT) and shows a graph of Temperature/Watts (MacOS/iPhone and firefox don't work bc they do not have BLE GATT). Hint: some Chromium browsers like Vivaldi, may need to check `chrome://flags/` and enable bluetooth options.
+* https://github.com/builder555/PineSAM[PineSAM] is BLE Settings and Menus and will run on any major OS. It allows change of all settings, and can be controlled from Mac, Linux, Windows, iPhone, Android and more; needs python script running as back end. For easy phone connection just open a browser address `\http://<ipaddress of PC running script>:8080/` (see PineSAM website for details)
 
 == Update V2: Linux and Mac
 

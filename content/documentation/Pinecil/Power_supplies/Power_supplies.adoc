@@ -78,26 +78,26 @@ image:/documentation/images/USB_C_PD_shared_watts_charger.jpg[width=400]
 
 . https://pine64.com/product-category/pinepower/[PD120w PinePower Desktop w/Grounded 3-pin plug]
 . https://pine64.com/product/pinepower-65w-gan-2c1a-charger-with-international-plugs/[PD65w GAN II Pinepower Portable Travel charger] (PD@20V)
-. https://www.amazon.com/dp/B09GK6QY1K[Cirtek 65W charger 3-port]
-. https://a.co/4RLyqzN[65W 3-port charger]
-. https://a.co/d/5Ai1McE[EfaithFix PD65W, 3-port]
-. https://a.co/1mhjg35[Ultra-thin Portable PD65w]
+. Cirtek 65W charger 3-port
+. Etre Jeune 65W 3-port charger
+. EfaithFix PD65W, 3-port
+. TREBLEET Ultra-thin Portable PD65w
 * small flat, full 20V PD65W charger, works well with Pinecil
 * it may not as durable as bigger chargers as it has no thick insulation around it.
-. https://www.amazon.com/Charger-HTC-PowerIQ-Foldable-Charging/dp/B09F6HF28L[HTC PD65W, 3-port black]
-. https://www.amazon.com/HTC-Charger-Compact-Foldable-MacBook/dp/B09J83YZ8M[HTC PD65W, 3-port, white]
-. https://www.amazon.com/gp/product/B087MD5MYH[Amazon Basics 65W One-Port GaN USB-C PD 3.0]
+. HTC PD65W, 3-port black
+. HTC PD65W, 3-port, white
+. Amazon Basics 65W One-Port GaN USB-C PD 3.0
 
 === Battery Power bank
 
-. https://www.amazon.com/Anker-PowerCore-Portable-Charger-Compatible/dp/B09VPHVT2Z[Anker 737 28V-140W EPR] (must use EPR-PD 3.1 240W cable if you want the full 28V, otherwise it will provide a lower PD20V)
-. http://beta.blitzwolf.com/-p-15.html[Blitzwolf BW-P1 10400mAh QC2]
-. https://www.bestbuy.com/site/insignia-80w-26800-mah-portable-charger-for-most-usb-c-laptops-black/6419522.p?skuId=6419522[Insignia 80W 26,800mAh NS-PWLB80]
-. https://www.amazon.de/gp/product/B07KRLRCDJ/[Intenso 7332330 Powerbank PD 10000 - External Battery PowerDelivery & QuickCharge3] - 10000mAh Powerbank, the Pinecil shows 12V and about 17W when heating up, using USB C PD (Red Silicone Pinecil cable)
+. Anker 737 28V-140W EPR (must use EPR-PD 3.1 240W cable if you want the full 28V, otherwise it will provide a lower PD20V)
+. Blitzwolf BW-P1 10400mAh QC2
+. Insignia 80W 26,800mAh NS-PWLB80
+. Intenso 7332330 Powerbank PD 10000 - External Battery PowerDelivery & QuickCharge3 - 10000mAh Powerbank, the Pinecil shows 12V and about 17W when heating up, using USB C PD (Red Silicone Pinecil cable)
 . Marbero M87 30W PD 3.0
-. https://www.amazon.co.uk/Charmast-23800mAh-Delivery-Portable-Compatible/dp/B08ML1PHB2[Charmast C2032 65W Power Bank], maximum power at 20V is only available from the IN/OUT USB-C port, the OUT USB-C port delivers only 12V.
+. Charmast C2032 65W Power Bank, maximum power at 20V is only available from the IN/OUT USB-C port, the OUT USB-C port delivers only 12V.
 . Baseus BiPow 10000mAh 18W PD&QC3.0
-. https://www.amazon.de/dp/B0B7438Q2Z[INIU Power Bank 65 W 25000 mAh] - Make sure to use the 65W port
+. INIU Power Bank 65 W 25000 mAh - Make sure to use the 65W port
 
 === DC Barrel Power
 

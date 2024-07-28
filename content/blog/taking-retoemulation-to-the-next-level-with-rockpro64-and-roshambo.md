@@ -48,7 +48,7 @@ It's more powerful than a Rock64, and far more powerful than a Raspberry Pi 3B+.
 
 ![](/blog/images/ROCKPro64-SBC.jpg)
 
-You can buy one [here](https://store.pine64.org/?product=rockpro64-2gb-single-board-computer)
+You can buy one [here at pine64.com](https://pine64.com/product-category/rockpro64/)
 
 The RockPro64 comes in two flavors, a 2gb and 4gb version. The RoshamboPro Gaming kit for $99 will include the 2gb version, which should be all that's required.
 

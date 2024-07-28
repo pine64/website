@@ -87,7 +87,7 @@ The RockPro64 boot sequence has been documented https://github.com/sigmaris/u-bo
 
 == OTG Mode
 
-You can boot your ROCKPro64 into OTG mode with the use of the Recover button (see switch 28 under link:/documentation/ROCKPro64/Layout#Switches[Layout#Switches]). Note that there are 2 OTG ports on your ROCKPro64: the type-C USB 3 socket is definitely one. From the schematic it appears the USB 3 (type A) socket is the other, but this has yet to be confirmed.
+You can boot your ROCKPro64 into OTG mode with the use of the Recover button (see switch 28 under link:/documentation/ROCKPro64/Board/Layout#Switches[Layout#Switches]). Note that there are 2 OTG ports on your ROCKPro64: the type-C USB 3 socket is definitely one. From the schematic it appears the USB 3 (type A) socket is the other, but this has yet to be confirmed.
 
 The method is to power off the board. Then push and hold the Recover button and push and release the Power button.
 
@@ -96,9 +96,9 @@ The method is to power off the board. Then push and hold the Recover button and 
 
 == NVMe Drives
 
-Please be aware that https://pine64.com/product/rockpro64-pci-e-x4-to-m-2-ngff-nvme-ssd-interface-card[the PINE64 SSD interface card] is intended for use with NVMe devices. These can be identified by the fact they have a single (Key M) notch, e.g. https://www.wdc.com/content/dam/wdc/website/products/family/wd-black-pcie-ssd/wdfWDBlackSSD_PCIe_img1.jpg.imgw.500.500.jpg[the WD Black devices.]
+Please be aware that https://pine64.com/product/rockpro64-pci-e-x4-to-m-2-ngff-nvme-ssd-interface-card[the PINE64 SSD interface card] is intended for use with NVMe devices. These can be identified by the fact they have a single (Key M) notch, e. g. the _WD Black_ devices.
 
-While M2/NGFF SATA devices (with a Key B notch, typically have Key M as well) will physically fit, they will not work. e.g. https://www.wdc.com/content/dam/wdc/website/products/personal/internal_storage/wd_blue_3d_nand_sata_ssd/blue3d_product-overview.jpg.imgw.1000.1000.jpg[WD Blue devices.]
+While M2/NGFF SATA devices (with a Key B notch, typically have Key M as well) will physically fit, they will not work. e. g. _WD Blue_ devices.
 
 == SATA Drives
 

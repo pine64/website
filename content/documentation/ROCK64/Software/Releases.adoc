@@ -448,7 +448,7 @@ NOTE: Please unzip first and then using Android tool to flash in. Has USB 3.0 pa
 
 Notes:
 
-* See link:/documentation/ROCK64/Further_information/MAC_address[MAC address] on how to set the MAC address.
+* See link:/documentation/ROCK64/Software/MAC_address[MAC address] on how to set the MAC address.
 
 === Android TV 7.x eMMC
 
@@ -463,7 +463,7 @@ NOTE: For eMMC flash-all image, please unzip first and then use Android tool to 
 Notes:
 
 * Please allow 5 minutes boot up time on first time for initialization
-* See link:/documentation/ROCK64/Further_information/MAC_address[MAC address] on how to set the MAC address.
+* See link:/documentation/ROCK64/Software/MAC_address[MAC address] on how to set the MAC address.
 * https://github.com/ayufan-rock64/android-7.1/releases/tag/0.3.4[Release notes on ayufan Android 7.1 github]
 
 === Android TV 7.x

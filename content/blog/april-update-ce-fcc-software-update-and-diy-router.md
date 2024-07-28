@@ -98,7 +98,7 @@ In terms of New releases, [NixOS is now available](https://mobile.nixos.org/news
 
 **It's all about choice**
 
-Before moving on to the next segment, I’d also like to mention that the revised schematics for the v1.2 PCBA in the UBports CE PinePhones will be available in the Wiki once the new boards pass all required tests later this month. I know a lot of _Braveheart_ owners also ask about availability of the v1.2 PCBA revision in the store - the answer to this is ‘yes’, it will eventually be available in the [spare-parts store section](https://store.pine64.org/?product_cat=pinephone-spare-parts), but we really do not see a point in getting a newer PCBA as v1.1 will be supported forever.
+Before moving on to the next segment, I’d also like to mention that the revised schematics for the v1.2 PCBA in the UBports CE PinePhones will be available in the Wiki once the new boards pass all required tests later this month. I know a lot of _Braveheart_ owners also ask about availability of the v1.2 PCBA revision in the store - the answer to this is ‘yes’, it will eventually be available in the [spare-parts store section](https://pine64.com/product-category/pinephone-spare-parts/), but we really do not see a point in getting a newer PCBA as v1.1 will be supported forever.
 
 #### Pinebook Pro
 

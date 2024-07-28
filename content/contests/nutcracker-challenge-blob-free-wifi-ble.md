@@ -21,6 +21,9 @@ So, what is the challenge then? To achieve blob-free BL602 for the open source c
 
 If you want to get in on the action and to receive a BL602 evaluation board (EVB) - which we have codenamed **PineCone** - with the BL602 shipped to you, here are the steps to follow: 
 
+**Unfortunately, the challenge already ended.**
+
+<!--
 The following also works:
 
 **Step 1:** Register or login to github.com
@@ -34,5 +37,6 @@ The following also works:
 **Step 5**: We will reach out to you via email for your shipping details
 
 **Step 6:** Wait to receive the PineCone (EVB with BL602)! 
+-->
 
 Anyone can participate in this _Nutcracker_ campaign but we only have a limited amount (approx 1000 pcs) of EVBs available, so if many people choose to take part then we’ll have to prioritise the kits based on a common-sense first-come-first-served basis. Let’s do this!

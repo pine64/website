@@ -22,7 +22,7 @@ In practice, this means that at different times during this move key parts of th
 
 I'll do my best to give you a heads-up when portions of the system are scheduled to go down for maintenance on [Twitter](https://twitter.com/thepine64) and [Mastodon](https://fosstodon.org/@PINE64). I'll also issue notices in the [news section](https://forum.pine64.org/forumdisplay.php?fid=2) of the forums.
 
-Lastly, I'd like to note that the [PINE store](https://store.pine64.org/) and [ticket filing system](http://support.pine64.org), as well as our info and support emails will remain operational though the entire server move.
+Lastly, I'd like to note that the [PINE store](https://pine64.com/) and [ticket filing system](http://support.pine64.org), as well as our info and support emails will remain operational though the entire server move.
 
 Thank you in advance for your patience.
 

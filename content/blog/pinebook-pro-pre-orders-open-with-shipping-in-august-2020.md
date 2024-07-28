@@ -22,4 +22,4 @@ In case you missed it, we've had some [big announcements](https://www.pine64.org
 
 Have a lovely day and a great start to the week!
 
-[Go to store](https://store.pine64.org/product-category/pinebook/)
+[Go to store](https://pine64.com/product-category/laptops/)

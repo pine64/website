@@ -48,8 +48,17 @@ The Hall Effect Sensor (HES) is an optional end user installed sensor that activ
 
 == Images
 
-image:/documentation/images/Hall-Effect-Sensor01.jpg[Before install, location at U14]
-image:/documentation/images/Hall-effect-sensor02.jpg[After install]
-image:/documentation/images/Hall-effect-sensor01.jpg[Only needs small amount of solder]
-image:/documentation/images/Hall-effect-sensor03.jpg[Kapton tape/protect the 3 Via holes above 3-pin side,title="Kapton tape/protect the 3 Via holes above 3-pin side"]
-image:/documentation/images/NTC-temp-Sensor.jpg[Kapton tape/protect the NTC sensor on opposite side of V2 (V1 does not have this),title="Kapton tape/protect the NTC sensor on opposite side of V2 (V1 does not have this)"]
+Before installation, location at U14:
+image:/documentation/Pinecil/images/hall_effect_1.jpg[]
+
+After installation:
+image:/documentation/Pinecil/images/hall_effect_2.jpg[]
+
+Only needs small amount of solder:
+image:/documentation/Pinecil/images/hall_effect_3.jpg[]
+
+Kapton tape/protect the 3 Via holes above 3-pin side,title="Kapton tape/protect the 3 Via holes above 3-pin side":
+image:/documentation/Pinecil/images/hall_effect_4.jpg[]
+
+Kapton tape/protect the NTC sensor on opposite side of V2 (V1 does not have this):
+image:/documentation/Pinecil/images/NTC-temp-Sensor.jpg[]

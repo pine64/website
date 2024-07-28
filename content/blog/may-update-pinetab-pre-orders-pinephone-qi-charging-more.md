@@ -141,7 +141,7 @@ We have also begun exploring creating a battery case for the PinePhone. Although
 
 One other hardware-related topic I wish to briefly touch on concerns the optional PinePhone keyboard, which [we announced](https://www.pine64.org/2019/12/05/december-update-thank-you-for-2019/) a couple months ago. Long story short, presently isn’t the right time for us to take on this challenge - molding for the keyboard is very expensive and face-to-face communication with the vendor is currently impossible due to the closed borders. Investing effort and money into this endeavour at present time, when we cannot evaluate the hardware’s progress remotely, would be a risk that we’re not willing to take. So instead we’ll focus on other hardware and peripherals, and revisit the PinePhone keyboard concept when these uncertain times come to an end. It will happen, I assure you, but not now.   
 
-The last topic in this section I wish to discuss regards support for individual PinePhone developers and smaller projects. We have been thinking about this internally over the past couple of months and arrived at the conclusion that it will be very difficult for us to run full-blown campaigns, such as the current one for UBports, for smaller projects. Here is our solution: we will sell custom back-covers for smaller projects featuring their logos in the store. We will charge $15 for such a cover, out of which we will donate $10 to the project. The regular [plain cover](https://store.pine64.org/?product=pinephone-back-cover), already available in the store for $5, will obviously remain an option to those who just want a replacement back for their phone. We hope that this will help smaller projects have a chance to grow and thrive.  
+The last topic in this section I wish to discuss regards support for individual PinePhone developers and smaller projects. We have been thinking about this internally over the past couple of months and arrived at the conclusion that it will be very difficult for us to run full-blown campaigns, such as the current one for UBports, for smaller projects. Here is our solution: we will sell custom back-covers for smaller projects featuring their logos in the store. We will charge $15 for such a cover, out of which we will donate $10 to the project. The regular [plain cover](https://pine64.com/product/pinephone-back-cover/), already available in the store for $5, will obviously remain an option to those who just want a replacement back for their phone. We hope that this will help smaller projects have a chance to grow and thrive.  
 
 #### Pinebook Pro 
 
@@ -157,11 +157,11 @@ On the subject of software, the single most important release for the Pinebook P
 
 ![](/blog/images/PRO-KEYBOARD_ANSI-01.jpg) ![](/blog/images/PinebookPro-ISO-Keyboard-1.jpg)
 
-**Both ANSI and ISO keyboards are available in the Pinebook (Pro) [spare parts](https://store.pine64.org/?product_cat=pinebook-spare-parts) section**
+**Both ANSI and ISO keyboards are available in the Pinebook Pro [spare parts](https://pine64.com/product-category/pinebook-pro-spare-parts/) section**
 
 In hardware news, we’ve now settled on our Pinebook Pro USB-C docking station I/O connectivity and the general form-factor of the dock. I’d like to thank all of you for offering your suggestions and feedback in the comment section regarding the dock - we’ve taken your suggestions onboard. The dock will be attached to - or slid under - the bottom of the Pinebook Pro chassis, with all I/O facing towards the back of the laptop. The docking station will offer 3x full size (A) USB 3.0 ports, a Gigabit Ethernet port, full-sized and micro SD card slots, as well as both a digital video and a VGA output. The dock will also be capable of delivering power to the Pinebook Pro via the USB-C connection and it itself will be powered using a USB-C PD cable. We are currently waiting for the final design of the dock, and I hope to be able to show you photos of it next month. 
 
-Lastly, spare parts for the Pinebook Pro are now also [available in the PINE Store](https://store.pine64.org/?product_cat=pinebook-spare-parts). Both ANSI and ISO keyboard segments are available for backorder as we await for these spare units to arrive to us from the Pinebook Pro factory. 
+Lastly, spare parts for the Pinebook Pro are now also [available in the PINE Store](https://pine64.com/product-category/pinebook-pro-spare-parts/). Both ANSI and ISO keyboard segments are available for backorder as we await for these spare units to arrive to us from the Pinebook Pro factory. 
 
 #### Pinebook 
 

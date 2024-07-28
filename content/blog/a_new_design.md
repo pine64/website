@@ -15,7 +15,7 @@ images:
 
 ![](/blog/images/rebrand_large.png) 
 
-As it was teased with the March update and the December blog post of last year, there is a community website redesign being worked on. Launched at https://beta.pine64.org/ we're proud to give a very early insight of what the redesign currently looks like.
+As it was teased with the March update and the December blog post of last year, there is a community website redesign being worked on. Launched at `beta.pine64.org` we're proud to give a very early insight of what the redesign currently looks like.
 
 To give a warning in advance, in this preview of the redesign, you will find a lot of unfinished parts, run into issues and maybe there are things you liked at the old (current) page more. That's what the beta launch is for. While the old website was run on Wordpress and maintained by a handful of people, the idea of the new community website redesign after being started as a project of a single person is, that everyone can contribute to the community website. That's why the redesign is launched early: to gather feedback, to gather ideas and to involve everyone interested in contributing so that there will be a nicely working website available later.
 

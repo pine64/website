@@ -9,9 +9,9 @@ menu:
     weight: 
 ---
 
-image:/documentation/images/Model_a_acrylic_case_with_pine_a64.jpg[A Pine A64 mounted in the "Model A" Acrylic Open Enclosure. The text on the top is "PINE64" nowadays.,title="A Pine A64 mounted in the "Model A" Acrylic Open Enclosure. The text on the top is "PINE64" nowadays."]
-
 The *"Model A" Acrylic Open Enclosure* is a case for "Model A" sized single-board computers (Pine A64, ROCKPro64, Quartz64 Model A) sold by PINE64, available from https://pine64.com/product/pine-a64-rockpro64-acrylic-open-enclosure/[the official store].
+
+image:/documentation/images/Model_a_acrylic_case_with_pine_a64.jpg[A Pine A64 mounted in the "Model A" Acrylic Open Enclosure. The text on the top is "PINE64" nowadays.,title="A Pine A64 mounted in the "Model A" Acrylic Open Enclosure. The text on the top is "PINE64" nowadays."]
 
 == Installation
 

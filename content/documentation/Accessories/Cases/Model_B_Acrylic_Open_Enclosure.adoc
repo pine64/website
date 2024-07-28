@@ -9,9 +9,9 @@ menu:
     weight: 
 ---
 
-image:/documentation/images/ROCK64_acrylic_open_enclosure.jpg[A_ROCK64_mounted_in_the_case,_the_correct_way.,title="A_ROCK64_mounted_in_the_case,_the correct way."]
-
 The *"Model B" Acrylic Open Enclosure* is a case for "Model B" sized single-board computers sold by PINE64, available from https://pine64.com/product/model-b-acrylic-open-enclosure/[the official store].
+
+image:/documentation/ROCK64/images/ROCK64_acrylic_open_enclosure.jpg[A_ROCK64_mounted_in_the_case,_the_correct_way.,title="A_ROCK64_mounted_in_the_case,_the correct way."]
 
 == Installation
 

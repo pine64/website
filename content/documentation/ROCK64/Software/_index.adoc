@@ -18,7 +18,6 @@ OS build Installation Guide and tools:
 * https://files.pine64.org/doc/rock64/tools/SD_Firmware_Tool._v1.46.zip[Tools to burn Android build into a bootable microSD card]
 * https://files.pine64.org/doc/rock64/tools/AndroidTool_Release_v2.38.zip[Tools that allows developer flash image into eMMC's Loader/Parameter/Misc/Kernal/Boot/Recovery/System/Backup partition]
 * https://files.pine64.org/doc/rock64/tools/DriverAssitant_v4.5.zip[Windows ADB driver package]
-* link:/documentation/ROCK64/Further_information/MAC_address[MAC address]
 
 [cols="1,1,1,1"]
 |===

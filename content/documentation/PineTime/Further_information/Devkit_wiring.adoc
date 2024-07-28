@@ -35,7 +35,7 @@ image:/documentation/images/PineTime_SWD_location.jpg[width=400]
 
 == Pogo Pins connection
 
-*https://store.pine64.org/product/pinetime-pogopin-jig[PineTime Pogo Pins]* are spring-loaded pins with diamond-shaped tips.
+The https://pine64.com/product/pinetime-pogopin-jig/[PineTime Pogo Pins] are spring-loaded pins with diamond-shaped tips.
 
 image:/documentation/images/PineTime_pogo_tip.jpg[width=400]
 

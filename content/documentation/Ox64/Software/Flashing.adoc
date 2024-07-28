@@ -294,7 +294,7 @@ If you did not create a link:#optional_create_a_combined_soc_image[combined imag
 * https://openbouffalo.org/static-assets/bldevcube/BouffaloLabDevCube-v1.8.3.zip
 * https://hachyderm.io/@mkroman/110787218805897192[] > https://pub.rwx.im/~mk/bouffalolab/BouffaloLabDevCube-v1.8.3.zip
 * https://we.tl/t-eJWShQJ4iF
-* https://cdn.discordapp.com/attachments/771032441971802142/1145565853962735639/BouffaloLabDevCube-v1.8.3.zip
+* BouffaloLabDevCube-v1.8.3.zip
 
 Verify that your copy of `BouffaloLabDevCube-v1.8.3.zip` matches the hashes below:
 

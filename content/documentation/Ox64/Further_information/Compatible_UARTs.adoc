@@ -17,7 +17,7 @@ The below devices have been tested and verified as working:
 * Compiled binary for Pi Pico and connectivity diagram is https://github.com/Kris-Sekula/Pine64_Ox64_SBC/tree/main/uart[here]
 * ESP32 with CP210x - bridge the EN pin to ground to disable the ESP32 itself, and then connect the TX on the esp32 to 14 on the Ox64 and RX to pin 15. Note that only baud rate 115200 works, and this doesn't seem to work for everyone)
 * Stand-alone CP2102 dongle works at 115200 baud. Brand used was HiLetgo.
-* STM32F401 BlackPill - running the https://github.com/blackmagic-debug/blackmagic/tree/main/src/platforms/blackpillv2[Black Magic Debug] firmware
+* STM32F401 BlackPill - running the Black Magic Debug firmware
 * STM32F103C8T6 BluePill - running Black Magic Debug.
 * STM32F103C8T6 BluePill - running link:/documentation/Ox64/Software/Flashing/#optional_preparing_serial_uart_adapter_stm32f103c8t6[BluePill Serial Monster] 
 * Some UART adapters based on the FT232H (note that the FT232RL does not work, and neither does the Pine 64 JTAG)

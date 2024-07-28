@@ -1,6 +1,6 @@
 ---
 title: "RK3566 EBC Reverse-Engineering"
-draft: true # NOT PUBLISHED
+draft: false
 menu:
   docs:
     title:
