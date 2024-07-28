@@ -12,7 +12,7 @@ menu:
 Bouffalo BL808 SoC information:
 
 * https://raw.githubusercontent.com/bouffalolab/bl_docs/main/BL808_DS/en/BL808_DS_1.2_en.pdf[Bouffalo Lab BL808 SoC Datasheet]
-* https://raw.githubusercontent.com/bouffalolab/bl_docs/main/BL808_RM/en/BL808_RM_en_1.2.pdf[Bouffalo Lab BL808 SoC Reference Manual]
+* https://files.pine64.org/doc/datasheet/ox64/BL808_RM_en_1.0(open).pdf[Bouffalo Lab BL808 SoC Reference Manual]
 
 SPI NOR Flash information:
 
