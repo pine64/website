@@ -28,16 +28,16 @@ TIP: The software is *written by the community*, any contributions towards the c
 
 .3+| Bootloader
 | `Bootloader`
-2+| Critical bugs
-| Some critical software bugs currently not fixed yet: A drained battery causes U-Boot to bootloop (cause is known and currently being worked on);^link:/documentation/PinePhone_Pro/Troubleshooting/#_the_battery_is_fully_drained[Report]^. *Note:* Tow-Boot is now pre-installed on the SPI from the factory - issues need verification to be issues with Tow-Boot.
+2+| Working
+| 
 
 | `SPI`
-2+| Implemented
-| Devices bought after end of July 2022 come with Tow-Boot flashed to the SPI memory, making it considerably easier to flash the device and boot from microSD card.
+2+| Working
+| Devices bought after July 2022 come with Tow-Boot or rk2aw flashed to the SPI memory
 
 | `Boot GUI`
-2+| Not implemented
-| Currently there is no graphical boot selection implemented^https://tow-boot.org/[Possibly planned]^
+2+| Working
+| Implemented with _rk2aw_
 
 .3+| Operating System
 | `Stability`
@@ -46,20 +46,20 @@ TIP: The software is *written by the community*, any contributions towards the c
 
 | `Suspend`
 2+| Experimental
-| Audio is often higher pitched after waking up from suspend due to a bug, make sure to update your system^https://github.com/dreemurrs-embedded/Pine64-Arch/issues/381[Report]^^https://gitlab.manjaro.org/manjaro-arm/packages/core/linux-pinephonepro/-/issues/3[Report]^
+| Audio is often higher pitched after waking up from suspend due to a bug, make sure to update your system^https://github.com/dreemurrs-embedded/Pine64-Arch/issues/381[Report];^ ^https://gitlab.manjaro.org/manjaro-arm/packages/core/linux-pinephonepro/-/issues/3[Report]^
 
 | `Updates`
 2+| WIP
-| The pre-flashed and outdated operating system on the eMMC often gets corrupted after updating^https://forum.pine64.org/showthread.php?tid=15950[Example]^; Pacman database lock preventing updates^https://wiki.archlinux.org/title/pacman#%22Failed_to_init_transaction_(unable_to_lock_database)%22_error[Solution]^; Keyring bug^[Solution is to run "pinephonepro-post-install" script as root]^
+| The pre-flashed and outdated operating system on the eMMC often gets corrupted after updating^https://forum.pine64.org/showthread.php?tid=15950[Example]^; Pacman database lock preventing updates^https://wiki.archlinux.org/title/pacman#%22Failed_to_init_transaction_(unable_to_lock_database)%22_error[Solution]^; Keyring bug (solution is to run "pinephonepro-post-install" script as root).
 
 .5+| Modem
 | `General`
 2+| WIP
-| https://github.com/Biktorgj/pinephone_modem_sdk[Alternative firmware]; Slow wakeup^https://gitlab.com/mobian1/devices/eg25-manager/-/issues/34[Report]^; Some carriers blocking specific TANs in their network^link:/documentation/PinePhone/Modem/Carrier_support[Carrier support]^; *Note:* Proprietary firmware
+| https://github.com/Biktorgj/pinephone_modem_sdk[Alternative firmware]; Slow wakeup^https://gitlab.com/mobian1/devices/eg25-manager/-/issues/34[Report]^; Some carriers blocking specific TANs in their network^link:/documentation/PinePhone/Modem/Carrier_support[Carrier{sp}support]^; *Note:* Proprietary firmware
 
 | `Phone`
 2+| WIP
-| The modem connection crashes frequently, which can lead to missed calls^https://gitlab.com/mobian1/devices/eg25-manager/-/issues/34#note_984212350[Report]^^https://github.com/Biktorgj/pinephone_modem_sdk[Alternative firmware]^; Slow wakeup^https://gitlab.com/mobian1/devices/eg25-manager/-/issues/34[Report]^; bad call audio quality^https://gitlab.manjaro.org/manjaro-arm/issues/pinephone/phosh/-/issues/249[Report]^; Audio is often higher pitched after waking up from suspend due to a bug^https://github.com/dreemurrs-embedded/Pine64-Arch/issues/381[Report]^^https://gitlab.manjaro.org/manjaro-arm/packages/core/linux-pinephonepro/-/issues/3[Report]^
+| The modem connection crashes frequently, which can lead to missed calls^https://gitlab.com/mobian1/devices/eg25-manager/-/issues/34#note_984212350[Report];^ ^https://github.com/Biktorgj/pinephone_modem_sdk[Alternative{sp}firmware]^; Slow wakeup^https://gitlab.com/mobian1/devices/eg25-manager/-/issues/34[Report]^; bad call audio quality^https://gitlab.manjaro.org/manjaro-arm/issues/pinephone/phosh/-/issues/249[Report]^; Audio is often higher pitched after waking up from suspend due to a bug^https://github.com/dreemurrs-embedded/Pine64-Arch/issues/381[Report];^ ^https://gitlab.manjaro.org/manjaro-arm/packages/core/linux-pinephonepro/-/issues/3[Report]^
 
 | `SMS`
 2+| Working
@@ -85,12 +85,12 @@ TIP: The software is *written by the community*, any contributions towards the c
 | `Rear camera`
 | Not working
 | WIP
-| Camera work-in-progress with DTS fix^[Citation]^; userspace still needs to do some catching up^link:/documentation/PinePhone_Pro/Various/IMX258_camera_debugging[debugging article]^; Green image tint^[Citation]^
+| Camera work-in-progress with DTS fix^[Citation]^; userspace still needs to do some catching up^link:/documentation/PinePhone_Pro/Various/IMX258_camera_debugging[debugging{sp}article]^; Green image tint^[Citation]^
 
 | `Front camera`
 | Not working
 | WIP
-| Camera work-in-progress with DTS fix^[Citation]^; userspace still needs to do some catching up^link:/documentation/PinePhone_Pro/Various/IMX258_camera_debugging[debugging article]^; Green image tint^[Citation]^
+| Camera work-in-progress with DTS fix^[Citation]^; userspace still needs to do some catching up^link:/documentation/PinePhone_Pro/Various/IMX258_camera_debugging[debugging{sp}article]^; Green image tint^[Citation]^
 
 | `Camera flash`
 2+| Critical issues
@@ -106,7 +106,7 @@ TIP: The software is *written by the community*, any contributions towards the c
 
 | `GNSS/GPS`
 2+| WIP
-| aGPS to be implemented^link:/documentation/PinePhone/Modem/#gps_gnss[See original PinePhone article]^; long loading times to get a GPS fix^[Citation]^; No preinstalled application^[Citation]^
+| aGPS to be implemented^link:/documentation/PinePhone/Modem/#gps_gnss[PinePhone{sp}docs]^; long loading times to get a GPS fix^[Citation]^; No preinstalled application^[Citation]^
 
 | `Sensors`
 2+| WIP
