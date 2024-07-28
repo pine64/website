@@ -6,6 +6,8 @@ cover:
   image: "/devices/images/rockpro64.jpg"
 images:
   - "/devices/images/rockpro64.jpg"
+aliases:
+  - /rockpro64
 ---
 
 == ROCKPro64: A 64-bit Hexa-Core SBC with PCIe, USB 3.0, USB-C and Gigabit Ethernet Featuring up-to 4GB of LDDDR4 RAM

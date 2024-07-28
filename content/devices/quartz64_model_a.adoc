@@ -6,6 +6,8 @@ cover:
   image: "/devices/images/quartz64_model_a.jpg"
 images:
   - "/devices/images/quartz64_model_a.jpg"
+aliases:
+  - /quartz64a
 ---
 
 == Quartz64 Model A: A 64-bit Quad Core SBC with USB 3.0, Gigabit Ethernet, PCIe x4, and up to 8GBs of LPDD4 RAM

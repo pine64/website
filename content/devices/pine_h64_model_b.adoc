@@ -6,6 +6,8 @@ cover:
   image: "/devices/images/pine_h64_ver_b.jpg"
 images:
   - "/devices/images/pine_h64_ver_b.jpg"
+aliases:
+  - /pine-h64-ver-b
 ---
 
 == PINE H64 Model B Single Board Computer Featuring USB 3.0 and Gigabit Ethernet

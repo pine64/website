@@ -3,6 +3,8 @@ title: "Welcome to the PINE64 community!"
 date: 
 draft: false
 description:
+aliases:
+  - /web-irc/ # from pine64.com
 ---
 
 *PINE64* is a community-driven company focused on creating high-quality, low-cost ARM devices and, more recently, RISC-V devices for individuals and businesses around the globe. PINE64 made its debut with the link:/documentation/Pine_A64[PINE A64] single-board computer, which successfully launched on Kickstarter in 2015. PINE64 has since released a multitude of other devices, including both development boards and end-user devices.

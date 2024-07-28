@@ -6,6 +6,8 @@ cover:
   image: "/devices/images/pinebook.jpg"
 images:
   - "/devices/images/pinebook.jpg"
+aliases:
+  - /pinebook
 ---
 
 == A Thin and Light Open Source ARM 64-bit Notebook for Tinkering

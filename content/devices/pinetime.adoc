@@ -6,6 +6,8 @@ cover:
   image: "/devices/images/pinetime.png"
 images:
   - "/devices/images/pinetime.png"
+aliases:
+  - /pinetime
 ---
 
 == An Open Source Smartwatch For Your Favorite Devices. Low Cost, High Fidelity.

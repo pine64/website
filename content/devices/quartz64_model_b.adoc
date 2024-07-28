@@ -6,6 +6,8 @@ cover:
   image: "/devices/images/quartz64_model_b.png"
 images:
   - "/devices/images/quartz64_model_b.png"
+aliases:
+  - /quartz64b
 ---
 
 == Quartz64 Model B: A 64-bit Quad Core SBC with M.2, USB 3.0, Gigabit Ethernet, Integrated Wi-Fi/BT, and up to 8GB of LPDDR4 RAM
