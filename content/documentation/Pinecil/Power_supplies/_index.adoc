@@ -9,5 +9,4 @@ menu:
     weight: 5
 ---
 
-* link:Power_supplies_and_watts[Power supplies and watts]
-* link:Power_supplies[Power supplies]
+{{< children >}}

@@ -9,5 +9,4 @@ menu:
     weight: 4
 ---
 
-* link:Mainline_Linux[Mainline Linux]
-* link:Disassembly[]
+{{< children >}}

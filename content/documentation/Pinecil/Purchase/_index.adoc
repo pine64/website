@@ -9,5 +9,4 @@ menu:
     weight: 
 ---
 
-* link:Where_to_buy[Where to buy]
-* link:Shipping_and_tracking[Shipping and tracking]
+{{< children >}}

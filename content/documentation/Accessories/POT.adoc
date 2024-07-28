@@ -198,7 +198,7 @@ DC Jack socket (suitable for 4.0mm X 1.7mm DC Jack) for system power input
 UART Port connector ready for on chip programming using USB/UART Programming/Console Adapter (PMPROG01)
 2pcs of XH 5pin 2.54 mm pitch connector to allow daisy chain of multiple I2C sensor
 ```
-Further Detail info on the module can be found at link:/documentation/Unsorted/Wifi_remote_i2c[WiFi Remote I2c Quick Start Guide] wiki page
+Further Detail info on the module can be found at link:/documentation/Accessories/Wifi_remote_i2c[WiFi Remote I2c Quick Start Guide] wiki page
 
 === Related Specification and Document
 

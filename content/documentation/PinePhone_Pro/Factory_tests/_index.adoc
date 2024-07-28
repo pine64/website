@@ -9,5 +9,4 @@ menu:
     weight: 96
 ---
 
-* link:Factory_test_battery_charging[Factory test battery charging]
-* link:Factory_test_hardware_checking[Factory test hardware checking]
+{{< children >}}

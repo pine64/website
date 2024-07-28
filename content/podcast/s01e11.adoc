@@ -63,7 +63,7 @@ BTW: There's a project that tries to recreate the Windows Phone Live Tile experi
 
 === Housekeeping
 
-* https://www.pine64.org/gettings-started/[Getting started]
+* link:/documentation/Introduction/Getting_started/[Getting started]
 
 === Quartz64
 

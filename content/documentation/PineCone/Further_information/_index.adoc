@@ -9,11 +9,4 @@ menu:
     weight: 
 ---
 
-* link:Articles_and_blogs[Articles and blogs]
-* link:Development_efforts[Development efforts]
-* link:Datasheets[]
-* link:Pinenut-12S_Module_information[Pinenut-12S Module information]
-* link:Pinenut-01S_Module_information_and_schematics[Pinenut-01S Module information and schematics]
-* link:PineCone_BL602_EVB_information_and_schematics[PineCone BL602 EVB information and schematics]
-* link:Pine64_USB_JTAG_Adapter_information_and_schematics[Pine64 USB JTAG Adapter information and schematics]
-* link:BL602_specifications[BL602 specifications]
+{{< children >}}

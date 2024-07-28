@@ -9,6 +9,4 @@ menu:
     weight: 2
 ---
 
-* link:Releases[Releases]
-* link:Linux_BSP_SDK[Linux BSP SDK]
-* link:Android_SDK[Android SDK]
+{{< children >}}

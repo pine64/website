@@ -73,7 +73,7 @@ Instructions:
 ** For Mac: `gzcat firmware.pine64_plus.img.gz partition.img.gz > complete_image.img`
 * Write the image to your boot device:
 ** For Linux: `dd if=complete_image.img of=your_chosen_boot_device bs=4M`
-** For Mac: see link:/documentation/General/Getting_started[Getting started]
+** For Mac: see link:/documentation/Introduction/Getting_started[Getting started]
 
 Notes:
 
@@ -180,7 +180,7 @@ Notes:
 
 === openSUSE
 
-image:/documentation/images/Opensuse-distribution.png[width=100]
+image:/documentation/images/opensuse-distribution.png[width=100]
 
 *openSUSE* is a free and open source RPM-based Linux distribution developed by the openSUSE project. More details can be found under https://en.opensuse.org/HCL:Pine64.
 

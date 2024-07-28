@@ -128,7 +128,7 @@ Finally, the keyboard’s open firmware worked out of the box on my Manjaro Plas
 
 ## SOQuartz
 
-I already spent much time on the SOQuartz and two of its hostboards in [last month’s follow-up](https://www.pine64.org/2021/10/29/october-update-follow-up/) post, so in this section I’ll be focusing on a new hostboard for the module - the Blade. If you missed the announcement of SOQuartz’s launch, please read the previous blog entry. The Blade hostboard is designed to fit into a 1U server rack and, in a sense, brings the legacy of the [SOPine and SOEdge Clusterboard](https://www.pine64.org/clusterboard/) to the next generation of PINE64 modules. More than a dozen Blade hostboards can be housed in a standard server rack, making any cluster compute project highly scalable depending on set requirements. Using the hostboard, new modules can also be easily added ad-hoc to the cluster setup. 
+I already spent much time on the SOQuartz and two of its hostboards in [last month’s follow-up](https://www.pine64.org/2021/10/29/october-update-follow-up/) post, so in this section I’ll be focusing on a new hostboard for the module - the Blade. If you missed the announcement of SOQuartz’s launch, please read the previous blog entry. The Blade hostboard is designed to fit into a 1U server rack and, in a sense, brings the legacy of the [SOPine and SOEdge Clusterboard](https://www.pine64.org/Clusterboard/) to the next generation of PINE64 modules. More than a dozen Blade hostboards can be housed in a standard server rack, making any cluster compute project highly scalable depending on set requirements. Using the hostboard, new modules can also be easily added ad-hoc to the cluster setup. 
 
 ![](/blog/images/Soquartz-blade.jpg)
 

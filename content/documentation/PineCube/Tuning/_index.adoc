@@ -9,5 +9,4 @@ menu:
     weight: 6
 ---
 
-* link:Camera[]
-* link:Sound_controls[Sound controls]
+{{< children >}}

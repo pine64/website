@@ -16,9 +16,7 @@ The PinePhone (and PinePhone Pro) is compatible with the official add-on cases, 
 * link:/documentation/Phone_Accessories/[Accessories]
 * link:/documentation/Phone_Accessories/Keyboard[Keyboard]
 
-== PinePhone Accessories
-
-See link:/documentation/Phone_Accessories/Hardware_accessory_compatibility[Hardware accessory compatibility] for a list of devices working with the PinePhone (depending on their OS support).
+== USB
 
 The USB-C can be used to power the device, and offers USB2 host and OTG capabilities, and also can make use of the USB-C capability to integrate HDMI signals. Some USB-C hubs are available that offer power throughput, USB connection, an HDMI port and Ethernet connection.
 

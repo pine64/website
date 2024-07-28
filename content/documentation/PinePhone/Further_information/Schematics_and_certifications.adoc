@@ -18,7 +18,7 @@ PinePhone mainboard schematic:
 * https://files.pine64.org/doc/PinePhone/PinePhone%20Schematic%20v1.1%2020191031.pdf["Braveheart" PinePhone mainboard Schematic ver 1.1]
 * https://files.pine64.org/doc/PinePhone/PinePhone%20mainboard%20top%20placement%20v1.1%2020191031.pdf["Braveheart" PinePhone mainboard component top placement drawing ver 1.1]
 * https://files.pine64.org/doc/PinePhone/PinePhone%20mainboard%20bottom%20placement%20v1.1%2020191031.pdf["Braveheart" PinePhone mainboard component bottom placement drawing ver 1.1]
-* link:/documentation/PinePhone/Further_information/Components_list[Components list]
+* link:/documentation/PinePhone/Further_information/Components[Components list]
 
 PinePhone USB-C small board schematic:
 

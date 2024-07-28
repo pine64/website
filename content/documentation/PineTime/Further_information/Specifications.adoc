@@ -20,7 +20,7 @@ menu:
 * *System on Chip:* Nordic Semiconductor nRF52832
 * *Flash:* 512KB with additional 4MB SPI NOR
 * *RAM:* 64KB
-* *Bluetooth:* link:/documentation/PineTime/Bluetooth[5.0 (including Bluetooth Low Energy)]
+* *Bluetooth:* link:/documentation/PineTime/Software/Bluetooth[5.0 (including Bluetooth Low Energy)]
 * *Sensors:* Accelerometer, Heart rate sensor
 * *Feedback:* Vibration motor
 * *Battery:* 170-180mAh 3.8V LiPo

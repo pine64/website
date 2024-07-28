@@ -66,7 +66,7 @@ This section includes discussions and their results regarding hardware changes a
 
 The following topics have resolved:
 
-* link:/documentation/PineNote/Hardware_Changes/Closed_Case_UART[PineNote/Hardware Changes/Closed Case UART]
+* link:/documentation/PineNote/Further_information/Closed_Case_UART[PineNote/Hardware Changes/Closed Case UART]
 * *Could the USB-C port support USB 3.1 5Gbps?* Yes and no. The RK3566 only has a host-mode 5Gbps controller, meaning it can only negotiate such a high data rate with a device such as a flash drive. When the RK3566 is acting as a device, it only supports 480Mbps transfer rates. The hardware required to switch between these modes would raise the PineNote's price unreasonably. Therefore, the USB-C port will remain at USB 2.0 speeds for Host and Device mode.
 * *Could the USB-C port output DisplayPort?* Yes and no. The hardware required to support such a feature would raise the PineNote's price unreasonably. Therefore, DisplayPort output will not be possible through the USB-C port.
 * *Where is the microSD card slot?* The case design of the PineNote is fixed, making physical changes like adding a microSD card slot would raise the cost unreasonably.

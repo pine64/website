@@ -48,7 +48,7 @@ The eMMC can be overwritten by booting an image from the microSD card and overwr
 
 This installation method is *recommended*.
 
-. Boot an operating system link:/documentation/PinePhone_Pro#Flashing_to_microSD_card[from the microSD card]. If there is already a bootloader on the eMMC installed see the section link:/documentation/PinePhone_Pro#Boot_order[Boot order] to bypass it.
+. Boot an operating system link:/documentation/PinePhone_Pro/Software/Installation/Installation_to_the_microSD_card/[from the microSD card]. If there is already a bootloader on the eMMC installed see the section link:/documentation/PinePhone_Pro/Software/Boot_order/[Boot order] to bypass it.
 . Download or copy the desired image to the microSD card as file
 . Check if the eMMC appears under `lsblk`. If it doesn't appear in the output of the command, the eMMC wasn't initialized due to applying the above explained bypass method for a too long time during the boot
 . *Important:* Typically the image will be compressed in an archive file to reduce the download size (such as _.gz_ or _.xz_). Extract the image from its archive file to get the file with the file extension _.img_.

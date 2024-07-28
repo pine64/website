@@ -9,6 +9,4 @@ menu:
     weight: 2
 ---
 
-* link:Installation_instructions[Installation instructions]
-* link:Releases[Releases]
-* link:Tutorials_and_FAQ[Tutorials and FAQ]
+{{< children >}}

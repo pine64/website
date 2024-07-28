@@ -1,6 +1,7 @@
 ---
 title: "Crust"
-draft: true # NOT PUBLISHED
+draft: false
+hidden: true
 menu:
   docs:
     title:

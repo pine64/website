@@ -9,6 +9,4 @@ menu:
     weight: 
 ---
 
-* link:Datasheets[]
-* link:Schematics_and_Certifications[Schematics and Certifications]
-* link:Mali-T720_driver[Mali-T720 driver]
+{{< children >}}

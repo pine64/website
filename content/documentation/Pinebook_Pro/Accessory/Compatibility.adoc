@@ -1,6 +1,6 @@
 ---
 title: "Hardware Accessory Compatibility"
-draft: true # NOT PUBLISHED
+draft: false
 menu:
   docs:
     title:
@@ -216,7 +216,7 @@ Please see link:/documentation/Pinebook_Pro/Troubleshooting#NVMe_SSD_issues[a se
 | 2280 | WD PC SN530 | 256GB | SDBPNPZ-256G-1002 | good | Works on AC power with defaults settings, but causes kernel panics on battery, unlesss limited to PS 1 that fixes this. a| * APSTE enabled by default +
 * PS 0: 3.5W +
 * PS 1: 2.4W +
-* PS 2: 1.9W | No. Fixed by systemd script, see link:/documentation/Pinebook_Pro/Using-the-optional-NVMe-adapter/[Post NVMe install power limiting].
+* PS 2: 1.9W | No. Fixed by systemd script, see link:/documentation/Pinebook_Pro/Guides/Using-the-optional-NVMe-adapter/[Post NVMe install power limiting].
 
 | 2280 | WD PC SN730 | 512GB | SDBPNTY-512G-1032 | good | No touchpad issues. Works after latest updates. a| * APST enabled by default +
 * PS 0: 5.50W +

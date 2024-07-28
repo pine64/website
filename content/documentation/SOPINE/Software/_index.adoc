@@ -9,5 +9,4 @@ menu:
     weight: 1
 ---
 
-* link:Releases[Releases]
-* link:Armbian_LCD_and_camera[Armbian LCD and camera]
+{{< children >}}

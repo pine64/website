@@ -10,7 +10,7 @@ menu:
     weight: 
 ---
 
-This page details a hardware fix for an issue that was found on early PinePhone hardware revisions (see link:/documentation/PinePhone#Hardware_revisions[PinePhone] for an overview of the different revisions) and has been fixed since the 1.2a hardware revision.
+This page details a hardware fix for an issue that was found on early PinePhone hardware revisions (see link:/documentation/PinePhone/Revisions/[PinePhone] for an overview of the different revisions) and has been fixed since the 1.2a hardware revision.
 
 The issue was _PinePhone_v1.1_-_Braveheart#USB-C_CC_pins_are_pulled_to_the_GND_by_AW3512_.28VCONN_switches.29_when_VCONN_is_off_ by megi.
 

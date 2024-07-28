@@ -49,9 +49,9 @@ To connect PineTime Pogo Pins to PineTime's SWD Port:
 
 . To orientate the pins, stick a piece of *Sticky Tape* to the Pogo Pins as shown above. The Sticky Tape should point *away from PineTime's Battery*. Orientation is important. You may damage PineTime with the incorrect orientation!
 . With the Battery at left and Sticky Tape pointing right, the SWD Pins will be arranged left to right as: *SWDIO, SWDCLK, 3.3V, GND*
-. Connect the other end of the Pogo Pins to the Jumper Cable that's bundled with PineTime. Connect the Jumper Cable to ST-Link v2 or JLink: SWDIO, SWDCLK, 3.3V, GND. See link:/documentation/PineTime/Reprogramming[Reprogramming the PineTime]
+. Connect the other end of the Pogo Pins to the Jumper Cable that's bundled with PineTime. Connect the Jumper Cable to ST-Link v2 or JLink: SWDIO, SWDCLK, 3.3V, GND. See link:/documentation/PineTime/Software/Reprogramming/[Reprogramming the PineTime]
 . With the *Sticky Tape pointing right* (away from the Battery), tap and hold the Pogo Pins firmly on PineTime's SWD Port. *But not too hard* because the PCB or screen may break. Stabilise the Pogo Pins with your pinky finger as shown above.
-. PineTime should light up and reboot when the Pogo Pins are connected. You may flash and debug PineTime now. See link:/documentation/PineTime/Reprogramming[Reprogramming the PineTime]
+. PineTime should light up and reboot when the Pogo Pins are connected. You may flash and debug PineTime now. See link:/documentation/PineTime/Software/Reprogramming/[Reprogramming the PineTime]
 
 The tips of the Pogo Pins will partially penetrate the SWD holes like this. Don't force them in!
 

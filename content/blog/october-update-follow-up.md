@@ -26,7 +26,7 @@ Happy Halloween! As promised earlier this month, here is the follow-up to the [O
 
 ## Housekeeping 
 
-PineTalk discussed the PinePhone Pro in last week's episode. At the time of writing, it is the most listened-to episode of our community-run podcast, and there is a reason for it - it is a very good episode. I encourage you to [have a listen](https://www.pine64.org/pinetalk/).  
+PineTalk discussed the PinePhone Pro in last week's episode. At the time of writing, it is the most listened-to episode of our community-run podcast, and there is a reason for it - it is a very good episode. I encourage you to [have a listen](https://www.pine64.org/podcast/).  
 
 Earlier this week we had a guest post about the creation of the [_Meet the PinePhone Pro_](https://youtu.be/wP2-6Z74W44) announcement trailer. If you’re interested in learning how the trailer was made, and which software was used during its production, then I invite you to [have a read](https://www.pine64.org/2021/10/27/how-meet-the-pinephone-pro-was-made/). 
 

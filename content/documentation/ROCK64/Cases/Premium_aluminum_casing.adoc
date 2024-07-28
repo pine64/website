@@ -4,8 +4,8 @@ draft: false
 menu:
   docs:
     title:
-    parent: "ROCK64/Further_information"
-    identifier: "ROCK64/Further_information/Premium_aluminium_casing"
+    parent: "ROCK64/Cases"
+    identifier: "ROCK64/Cases/Premium_aluminum_casing"
     weight: 
 ---
 

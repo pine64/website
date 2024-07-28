@@ -175,7 +175,7 @@ There was a project by Danct12 which allowed the user to select different operat
 This can be the result of at least one situation:
 
 . The eMMC installation became corrupt or otherwise unbootable
-. An SD card is present but not bootable (consider link:/documentation/PinePhone#detailed_usage_instructions[PinePhone])
+. An SD card is present but not bootable (consider link:/documentation/PinePhone/Troubleshooting[PinePhone Troubleshooting])
 
 If there is an installation of Manjaro on both the eMMC & an SD card, the SD card will always boot first on the device. Try taking the SD card out and booting the installation that is on the eMMC. If the problem persists, it is likely there is an issue with both installations and you will need to reinstall your distribution. You may also want to check with your distribution's maintainers if boot issues are a common problem in a recent update.
 
@@ -199,7 +199,7 @@ This is caused by corruption on the userdata partition. Normally this should be 
 
 ==== The PinePhone does not boot
 
-Most operating systems on the PinePhone do not boot if the battery is not connected or if it is fully drained. If you received a new PinePhone make sure to remove the battery isolator as explained under link:/documentation/PinePhone#first_time_installation[PinePhone].
+Most operating systems on the PinePhone do not boot if the battery is not connected or if it is fully drained. If you received a new PinePhone make sure to remove the battery isolator as explained under link:/documentation/PinePhone/Getting_started[PinePhone Getting started].
 
 If you removed the battery isolator and the battery contacts are intact, the battery is either fully drained or there is no valid OS (or a corrupted OS or bootloader) installed on the eMMC or the SD card. Make sure to charge the phone with a compatible charger (500 mAh is not enough for modern phones), as well as the installation instruction under link:/documentation/PinePhone/Installation_instructions[Installation instructions]. If the OS got corrupted it is highly recommend to simply reflash.
 
@@ -210,7 +210,7 @@ image:/documentation/images/Pinephone_backside.png[The microSD belongs in the up
 
 ==== Can I install a different OS on my Community Edition?
 
-Yes|While all the Community Edition PinePhones come with an OS preinstalled, you are free to use any OS on the integrated storage (the eMMC) or an SD card, see link:/documentation/PinePhone/Installation_instructions[Installation instructions] and link:/documentation/PinePhone/Software/Operating_systems[Operating systems] on how to install them.
+Yes|While all the Community Edition PinePhones come with an OS preinstalled, you are free to use any OS on the integrated storage (the eMMC) or an SD card, see link:/documentation/PinePhone/Installation_instructions[Installation instructions] and link:/documentation/PinePhone/Software/Releases[Operating systems] on how to install them.
 
 === Other
 
@@ -325,8 +325,3 @@ Currently the PinePhone battery is known to be compatible with replacement batte
 ==== Will PINE64 sell other add-ons made for the PinePhone?
 
 Yes, currently there is a keyboard case https://forum.pine64.org/showthread.php?tid=8537&pid=55396#pid55396[with similarities to the Psion 5] which includes an internal battery, and a https://www.pine64.org/2020/05/15/may-update-pinetab-pre-orders-pinephone-qi-charging-more/[Qi wireless charging] add-on planned, both of which PINE64 intends to directly sell. There is the potential for future add-ons such as a game pad, however that is currently just an idea and not in any way planned.
-
-==== Which 3rd party hardware can connect to my PinePhone?
-
-See link:/documentation/Phone_Accessories/Hardware_accessory_compatibility[Hardware accessory compatibility].
-

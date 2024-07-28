@@ -14,7 +14,7 @@ Vector images and pictures of the link:/documentation/PinePhone[PinePhone] and l
 == PinePhone Pro
 
 image:/documentation/images/Pinephone_airplane.png[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
-image:/documentation/images/Pinephone_unbranded.png[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
+image:/documentation/images/pinephone_unbranded.png[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
 image:/documentation/images/Pinephone_table.png[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
 image:/documentation/images/Pinephone_killswitches.png[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
 image:/documentation/images/Pinephone_convergence.png[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]

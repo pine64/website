@@ -34,7 +34,7 @@ If you have a Sealed PineTime, flash only tested PineTime Firmware to your PineT
 
 There is a lot of different software for flashing. Check out link:/documentation/PineTime/Development[Development] page for a list of companion software.
 
-Also see link:/documentation/PineTime/Reprogramming[this page to see various methods of reprogramming the devkit PineTime the wired way].
+Also see link:/documentation/PineTime/Software/Reprogramming/[this page to see various methods of reprogramming the devkit PineTime the wired way].
 
 Remember to validate the firmware after flashing: Swipe up to show the menu, tap the checkmark icon, tap "Validate".
 
@@ -62,7 +62,7 @@ The back cover of the PineTime devkit is exposed so that you can flash and debug
 
 == What hardware should I use to flash code to the PineTime?
 
-There are several ways you can do this, check out link:/documentation/PineTime/Reprogramming[Reprogramming the PineTime]
+There are several ways you can do this, check out link:/documentation/PineTime/Software/Reprogramming/[Reprogramming the PineTime]
 
 == How do I connect the PineTime to a programmer?
 
@@ -158,7 +158,7 @@ Please use https://xpack.github.io/openocd[xPack OpenOCD] with PineTime. Other v
 
 PineTime watches shipped before 20 Sep 2020 have flash protection enabled.
 
-The flash protection can be removed using multiple different methods. If you don't have anything except the PineTime, not even a Raspberry Pi, then you have to order a programmer online: you can use a J-Link, CMSIS-DAP dongle and various other programmers. See link:/documentation/PineTime/Reprogramming[this page to see various methods of reprogramming the PineTime].
+The flash protection can be removed using multiple different methods. If you don't have anything except the PineTime, not even a Raspberry Pi, then you have to order a programmer online: you can use a J-Link, CMSIS-DAP dongle and various other programmers. See link:/documentation/PineTime/Software/Reprogramming/[this page to see various methods of reprogramming the PineTime].
 
 If your PineTime was shipped after 20 Sep 2020, you don't need to remove flash protection. They are shipped with flash protection disabled. You can flash and debug PineTime right away with ST-Link, JLink and Raspberry Pi.
 

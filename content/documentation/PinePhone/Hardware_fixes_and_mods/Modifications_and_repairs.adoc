@@ -52,7 +52,7 @@ and executing as root ("sudo su") on the phone:
 
 ==== Method 2
 
-Booting a factory test image will automatically flash the ANX7688 chip. See link:/documentation/PinePhone/Software/Operating_systems#Factory_Test_OS[Factory Test OS] for such an image.
+Booting a factory test image will automatically flash the ANX7688 chip. See link:/documentation/PinePhone/Software/Releases#Factory_Test_OS[Factory Test OS] for such an image.
 
 == Replacing the screen
 

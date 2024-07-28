@@ -16,10 +16,10 @@ tags:
 cover: 
   image: "Header.jpg"
 images:
-  - "/blog/images/Header.jpg"
+  - "/blog/images/header_with_pinephone.jpg"
 ---
 
-![](/blog/images/Header.jpg)
+![](/blog/images/header_with_pinephone.jpg)
 
 **Nemo Mobile and Ubuntu Touch on the PinePhone at FOSDEM 2020**
 
@@ -68,7 +68,7 @@ As for the production and availability of the HardROCK64 and SOEdge AI module an
 
 There is plenty of good news, but let us start with the bad. The bad news is that we need to postpone the production of the RK3399 upgrade kit for the original Pinebook once again. Don’t worry, we’re not shelving it, we’re just prioritizing other things - such as the newly announced HardROCK64 and SOEdge - due to the limited manufacturing capacity (caused by the aforementioned pandemic in China). Having already postponed the release of the upgrade kit thrice now, I rather not promise something for a fourth time. Instead I’ll say: it's in the works, and as soon as I know something with a high degree of certainty I’ll make sure to let you all know. 
 
-On to better news. We now have a solution to the original NVMe adapter problems, where the adapter with an NVMe SSD would not fit properly in the laptop chassis. The solution was surprisingly simple, but required us to manufacture a custom holder for the SSD. I apologize for not keeping you up-to-date on the status of this solution; I didn’t post anything on the subject because I had no insight into the process. If you have the original NVMe adapter for the Pinebook Pro, please send an email to [info@pine64.org](https://www.pine64.org/info@pine64.org) with the following in the subject field: 
+On to better news. We now have a solution to the original NVMe adapter problems, where the adapter with an NVMe SSD would not fit properly in the laptop chassis. The solution was surprisingly simple, but required us to manufacture a custom holder for the SSD. I apologize for not keeping you up-to-date on the status of this solution; I didn’t post anything on the subject because I had no insight into the process. If you have the original NVMe adapter for the Pinebook Pro, please send an email to `info@pine64.org` with the following in the subject field: 
 
 **_Subject: New PBP NVMe adapter holder \[original order number\]_**
 

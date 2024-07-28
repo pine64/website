@@ -9,14 +9,4 @@ menu:
     weight: 
 ---
 
-* link:External_links[External links]
-* link:Resources[]
-* link:Datasheets[]
-* link:Schematics_and_certifications[Schematics and certifications]
-* link:Modifications_and_repairs[Modifications and repairs]
-* link:Components[]
-* link:Specifications[]
-* link:Components_list[Components list]
-* link:Ubuntu_Touch_design[Ubuntu Touch design]
-* link:Sensors_and_navigation[Sensors and navigation]
-* link:Press[]
+{{< children >}}

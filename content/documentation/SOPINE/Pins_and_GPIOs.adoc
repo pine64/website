@@ -865,7 +865,7 @@ For Edge Finger view, see:
 | USB0-DM | USB0-DM | USB | B22 | A I/O | USB 0 Data Negative
 
 |174
-| GPIO0-link:/documentation/SOPINE/GPIO_alternate_functions_table#LDO[LDO] | GPIO0 | POWER | ? | P | 3.3V@100mA from LDO for Capacitive Touch Screen I2C interface as pull-up and other purposes with low power consumption
+| GPIO0-LDO | GPIO0 | POWER | ? | P | 3.3V@100mA from LDO for Capacitive Touch Screen I2C interface as pull-up and other purposes with low power consumption
 
 |175
 | CHG_LED | CHGLED | OTHER | 53 | O | Charger status indication

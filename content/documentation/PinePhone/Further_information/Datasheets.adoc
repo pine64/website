@@ -76,5 +76,5 @@ Case information:
 
 Other components:
 
-* See the link:/documentation/PinePhone/Further_information/Components_list[Component List]
+* See the link:/documentation/PinePhone/Further_information/Components[Component List]
 

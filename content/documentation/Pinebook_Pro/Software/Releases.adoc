@@ -13,7 +13,7 @@ This page contains a list of all available releases and tools for the link:/docu
 
 == Linux OS Image Releases
 
-For information on how to install these images onto your device, please see the link:/documentation/General/Getting_started[Getting started] Page, which includes information on writing images to the device eMMC or an SD card
+For information on how to install these images onto your device, please see the link:/documentation/Introduction/Getting_started[Getting started] Page, which includes information on writing images to the device eMMC or an SD card
 
 === Manjaro ARM
 

@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-The phone ships with a protective plastic sticker between the battery and the phone to protect the device from turning on during shipping. You need to gently open the back cover, then remove the battery and finally remove the sticker and check that the pins aren't bent. Note: If the battery is stuck inside the phone, the mid screw in the lower part of the midframe needs to be slightly loosened, see link:/documentation/PinePhone/FAQ#The_battery_is_stuck_inside_the_phone[here].
+The phone ships with a protective plastic sticker between the battery and the phone to protect the device from turning on during shipping. You need to gently open the back cover, then remove the battery and finally remove the sticker and check that the pins aren't bent. Note: If the battery is stuck inside the phone, the mid screw in the lower part of the midframe needs to be slightly loosened, see link:/documentation/PinePhone/FAQ#the_battery_is_stuck_inside_the_phone[here].
 
 NOTE: The EG25-G modem and the RTL8723CS WiFi and Bluetooth do not work without a battery and with a drained battery, even when enough power is supplied to the PinePhone via the USB Type-C port. Most operating systems won't boot without a battery or with a drained battery.
 

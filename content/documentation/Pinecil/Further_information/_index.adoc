@@ -9,8 +9,4 @@ menu:
     weight: 
 ---
 
-* link:Pinecil_in_the_Media[Pinecil in the Media]
-* link:History_of_hardware_changes[History of hardware changes]
-* link:Certifications[]
-* link:Specifications[]
-* link:Pictures[]
+{{< children >}}

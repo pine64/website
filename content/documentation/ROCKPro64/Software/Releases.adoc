@@ -70,7 +70,7 @@ Instructions:
 ** For Mac: `gzcat firmware.rockpro64-rk3399.img.gz partition.img.gz > complete_image.img`
 * Write the image to your boot device:
 ** For Linux: `dd if=complete_image.img of=your_chosen_boot_device bs=4M`
-** For Mac: see link:/documentation/General/Getting_started[Getting started]
+** For Mac: see link:/documentation/Introduction/Getting_started[Getting started]
 
 Notes:
 

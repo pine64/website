@@ -57,12 +57,12 @@ See link:/documentation/PineNote/Development/Apps#Gnome[here].
 
 === Sway Configurations
 
-See link:/documentation/wiki/PineNote/Development/Apps#Sway[here].
+See link:/documentation/PineNote/Development/Apps#Sway[here].
 
 == Documentation TODOs
 
 * Pin Mesa Packages so they don't update when we upgrade other packages
-** Add the information near step 5 link:/documentation/PineNote/Development/Building_Kernel#Steps_to_build[here].
+** Add the information near step 5 link:/documentation/PineNote/Development/Building_kernel#Steps_to_build[here].
 * Control the backlight
 * Building alacritty correctly
 * Force a screen refresh?
@@ -112,7 +112,7 @@ This table is a draft for the documentation development page:
 
 | `Bluetooth`
 2+| Works, audio stutters
-| link:/documentation/PineNote/Development/Building_Kernel#Fixing_Bluetooth[Switching the driver] provides stable connections for keyboards, but audio still stutters. Trying to fix this link:/documentation/PineNote/Development/Software_Tweaks#Preliminary_fix_for_stuttering_bluetooth_audio[here].
+| link:/documentation/PineNote/Development/Building_kernel#Fixing_Bluetooth[Switching the driver] provides stable connections for keyboards, but audio still stutters. Trying to fix this link:/documentation/PineNote/Development/Software_tweaks#Preliminary_fix_for_stuttering_bluetooth_audio[here].
 
 | `Sensors`
 2+| Unsure

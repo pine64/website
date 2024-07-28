@@ -22,9 +22,9 @@ If you have an old Manjaro installation then it will have the wrong repositories
 === New from the factory - Pinebook Pro won't boot / power on
 
 * Some Pinebook Pros came from the factory with the eMMC switch in the disabled position. It should be switched towards the back / hinge to enable the eMMC.
-* The eMMC may have come loose during shipment. link:/documentation/Pinebook_Pro#Accessing_the_Internals_-_Disassembly_and_Reassembly[Open the back] and verify that the eMMC is firmly seated.
+* The eMMC may have come loose during shipment. link:/documentation/Pinebook_Pro/Guides/Disassembly_and_Reassembly[Open the back] and verify that the eMMC is firmly seated.
 * You may want to try unplugging the SD card daughterboard ribbon cable and see if it powers on (remove the battery and peel off a bit of the tape before unplugging it to avoid damage). If it does, try reseating it on both sides. It might have come loose during shipping.
-* It's possible that your eMMC is empty from the factory. Simply create a bootable link:/documentation/Pinebook_Pro#Pinebook_Pro_images[SD card] and see if your Pinebook Pro link:/documentation/Pinebook_Pro#Boot_sequence_details[Getting started].
+* It's possible that your eMMC is empty from the factory. Simply create a bootable link:/documentation/Pinebook_Pro/Software/Releases[SD card] and see if your Pinebook Pro link:/documentation/Pinebook_Pro/Troubleshooting[Getting started].
 
 === Pinebook Pro will not power on after toggling the eMMC enable/disable switch
 

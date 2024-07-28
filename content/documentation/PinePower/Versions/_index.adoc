@@ -9,5 +9,4 @@ menu:
     weight: 
 ---
 
-* link:120W_Desktop_Power_Supply[120W Desktop Power Supply]
-* link:65W_GaN_Charger[65W GaN Charger]
+{{< children >}}

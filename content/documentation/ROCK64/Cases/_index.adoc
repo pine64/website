@@ -1,11 +1,11 @@
 ---
-title: "Enclosures"
+title: "Cases"
 draft: false
 menu:
   docs:
     title:
     parent: "ROCK64"
-    identifier: "ROCK64/Enclosures"
+    identifier: "ROCK64/Cases"
     weight: 5
 ---
 
@@ -15,4 +15,4 @@ The ROCK64 fits in three officially sold cases.
 
 * "Model B" Acrylic Open Enclosure, https://pine64.com/product/model-b-acrylic-open-enclosure/[Store]
 * "Model B" Aluminum Waterproof Enclosure, https://pine64.com/product/model-b-aluminum-waterproof-enclosure/[Store]
-* link:/documentation/ROCK64/Premium_aluminium_casing[Premium Aluminium Casing], https://pine64.com/product/model-b-premium-aluminum-casing/?v=0446c16e2e66[Store]
+* link:/documentation/ROCK64/Cases/Premium_aluminum_casing[Premium Aluminium Casing], https://pine64.com/product/model-b-premium-aluminum-casing/?v=0446c16e2e66[Store]

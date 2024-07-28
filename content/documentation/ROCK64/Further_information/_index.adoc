@@ -9,5 +9,4 @@ menu:
     weight: 99
 ---
 
-* link:Other_resources[Other resources]
-* link:Premium_aluminum_casing[Premium aluminum casing]
+{{< children >}}

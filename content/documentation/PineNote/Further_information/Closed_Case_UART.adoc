@@ -26,7 +26,8 @@ Recent PINE64 devices have included a hardware UART connected to their 3.5mm TRR
 We decided to ask the PineNote product team to explore USB-C Debug Accessory Mode, where the product changes the USB-C port's personality when both CC1 and CC2 are pulled high. In normal usage, either CC1 or CC2 will be floating since these are the connector rotation pins. When both are detected, there is a very good chance that a debug harness is connected.
 
 This decision requires the PineNote motherboard to be able to detect an AND condition between CC1 and CC2 and connect one of the SOC's UARTs to pins on the USB-C connector. In all other cases, the UART should be disconnected. It also requires the PINE64 Store ship a simple one-sided (no magical flipping here, sorry) connector board which breaks out USB 2.0 and UART.
-IRC logs of this discussion can be found at link:/documentation/PineNote/Hardware_Changes/2021-08-15[PineNote/Hardware Changes/Closed Case UART/2021-08-15].
+
+// IRC logs of this discussion can be found at link:/documentation/PineNote/Hardware_Changes/2021-08-15[PineNote/Hardware Changes/Closed Case UART/2021-08-15].
 
 === August 16-18, 2021
 

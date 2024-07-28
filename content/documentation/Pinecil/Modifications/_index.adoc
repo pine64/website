@@ -9,5 +9,4 @@ menu:
     weight: 
 ---
 
-* link:Optional_advanced_modifications[Optional advanced modifications]
-* link:Hall_effect_sensor[Hall effect sensor]
+{{< children >}}

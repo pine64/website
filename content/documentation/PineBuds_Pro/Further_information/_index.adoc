@@ -9,7 +9,4 @@ menu:
     weight: 4
 ---
 
-* link:Datasheets[Datasheets]
-* link:Information,_Schematics_and_Certifications[Schematics and Certifications]
-* link:Disassembly_and_assembly[Disassembly and assembly]
-* link:Cleaning[Cleaning]
+{{< children >}}

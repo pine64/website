@@ -17,4 +17,4 @@ To keep track of what, how and why things work like they do across the different
 
 == Compatibility with companions apps and Bluetooth communication
 
-There are a lot of different firmware running on the Pinetime that implement different BLE APIs (for example for time synchronization and notifications). Companion apps must be able to differentiate between different firmware and forks of the same firmware. See link:/documentation/PineTime/Bluetooth[Bluetooth].
+There are a lot of different firmware running on the Pinetime that implement different BLE APIs (for example for time synchronization and notifications). Companion apps must be able to differentiate between different firmware and forks of the same firmware. See link:/documentation/PineTime/Software/Bluetooth[Bluetooth].

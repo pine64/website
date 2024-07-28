@@ -23,7 +23,7 @@ A PineNote UART dongle enables you to:
 
 Since the PineNote is an embedded system, interfacing with it during boot is more complicated than with an ordinary computer. The UART dongle enables you to do this.
 
-The PineNote factory firmware runs UART at a baud rate of 1500000 bps, 8 data bits, 1 stop bit, no parity and no flow control. The process by which the PineNote design was modified to include closed-case UART is documented link:/documentation/PineNote/Hardware_Changes/Closed_Case_UART[here].
+The PineNote factory firmware runs UART at a baud rate of 1500000 bps, 8 data bits, 1 stop bit, no parity and no flow control. The process by which the PineNote design was modified to include closed-case UART is documented link:/documentation/PineNote/Further_information/Closed_Case_UART[here].
 
 == Stock dongle
 

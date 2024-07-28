@@ -9,9 +9,4 @@ menu:
     weight: 
 ---
 
-* link:Other_resources[Other resources]
-* link:Pine_A64_POT[Pine A64 POT]
-* link:Heat_sinks[Heat sinks]
-* link:Datasheets[]
-* link:Schematics_and_certifications[Schematics and certifications]
-* link:SoC_and_Memory_Specification[SoC and Memory Specification]
+{{< children >}}

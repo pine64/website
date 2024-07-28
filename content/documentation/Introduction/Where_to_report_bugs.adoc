@@ -22,7 +22,6 @@ Issues with the PinePhone and the PinePhone Pro can be reported on the following
 === Operating Systems and Distributions
 
 * Arch Linux ARM (DanctNIX): https://github.com/dreemurrs-embedded/Pine64-Arch/issues?q=is%3Aissue
-* ExpidusOS: https://github.com/orgs/ExpidusOS/repositories
 * Fedora: https://github.com/nikhiljha/pp-fedora-sdsetup/issues?q=is%3Aissue
 * Gentoo: On the bug tracker of the corresponding unofficial overlay
 * GloDroid: https://github.com/GloDroid/glodroid_manifest/issues?q=is%3Aissue

@@ -37,7 +37,7 @@ Then insert the microSD card into the PineTab2.
 
 [NOTE]
 ====
-image:/documentation/PineTab2/PineTab2_USB_UARTv2.jpg[The UART adapter,title="The UART adapter",width=450]
+image:/documentation/PineTab2/images/PineTab2_USB_UARTv2.jpg[The UART adapter,title="The UART adapter",width=450]
 
 Using the USB UART adapter can be required in some cases as explained in the info box about the boot order. The adapter is shipped with the PineTab2 in the box which is also containing the charging cable. The switch to disable the eMMC and SPI is located on the top right of the image.
 ====

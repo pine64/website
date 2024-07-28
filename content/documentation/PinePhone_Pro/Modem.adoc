@@ -136,7 +136,7 @@ The modem will automatically reboot after the update process is done. The boot p
 
 == Firmware modifications
 
-See link:/documentation/PineModems[PineModems] for more information regarding modem bootloader unlocking, building a custom modem firmware and modem recovery.
+See link:/documentation/General/PineModems[PineModems] for more information regarding modem bootloader unlocking, building a custom modem firmware and modem recovery.
 
 == GPS / GNSS
 

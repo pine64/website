@@ -15,7 +15,7 @@ The following article contains a selection of common ways to contribute to the c
 
 Reporting issues is a great way to contribute (if done correctly). The software projects are using bug trackers to keep track of bugs and to link patches or changes with these bug reports.
 
-See the article link:/documentation/General/Where_to_report_bugs[where to report bugs] to find out where you can report bugs.
+See the article link:/documentation/Introduction/Where_to_report_bugs[where to report bugs] to find out where you can report bugs.
 
 == Contributing code
 

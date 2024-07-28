@@ -9,6 +9,4 @@ menu:
     weight: 2
 ---
 
-* link:Releases[]
-* link:Building[]
-* link:Flashing[]
+{{< children >}}

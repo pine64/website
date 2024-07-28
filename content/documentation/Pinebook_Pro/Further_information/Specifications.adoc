@@ -79,7 +79,7 @@ Storage Memory:
 
 SPI flash:
 
-* link:/documentation/Pinebook_Pro/SPI[SPI]
+* link:/documentation/Pinebook_Pro/Features/SPI[SPI]
 * 128Mbit / 16MByte
 * 1 bit interface
 * Bootable, (first boot device, ahead of eMMC & SD card)

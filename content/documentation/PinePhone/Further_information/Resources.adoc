@@ -9,13 +9,6 @@ menu:
     weight: 
 ---
 
-The following articles contain more specific information:
-
-* link:/documentation/PinePhone/Accessibility[Accessibility]
-* link:/documentation/PinePhone/Software_tricks/Power_management[Power management]
-* link:/documentation/PinePhone/Software_tricks/Security[Security]
-* link:/documentation/PinePhone/Further_information/Ubuntu_Touch_design[Ubuntu Touch design]
-
 The following resources have been made available by Ondřej Jirman, a developer for the Pinephone:
 
 * https://xnux.eu/howtos/pine64-pinephone-getting-started.html[Getting started with PinePhone Hardware]

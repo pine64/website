@@ -9,4 +9,4 @@ menu:
     weight: 
 ---
 
-* link:Compatibility[]
+{{< children >}}

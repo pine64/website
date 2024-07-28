@@ -9,9 +9,7 @@ menu:
     weight: 
 ---
 
-* Based on Allwinner A64
-
-image:/documentation/images/Allwinner_A64.jpg[right,title="right"]
+The Pine A64 is based on the _Allwinner A64_.
 
 == CPU Architecture
 

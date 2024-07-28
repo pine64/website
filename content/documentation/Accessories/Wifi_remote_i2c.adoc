@@ -4,8 +4,8 @@ draft: false
 menu:
   docs:
     title:
-    parent: "Unsorted"
-    identifier: "Unsorted/Wifi_remote_i2c"
+    parent: "Accessories"
+    identifier: "Accessories/Wifi_remote_i2c"
     weight: 
 ---
 
@@ -57,7 +57,7 @@ Press Config Mode button to go into configuration mode
 
 === Setup the PineWifiServer
 
-* link:/documentation/Unsorted/Wifi_remote_i2c#download[Download the PineWifiServer from the Download Section]
+* link:/documentation/Accessories/Wifi_remote_i2c#download[Download the PineWifiServer from the Download Section]
 * Copy PineWifiServer xxxxxxxx.gz  into your PineA64 with linux on it. (where xxxxxxxx is the version number)
 * Unzip the file using gunzip.
 * Add Execution flag on both of the file by
@@ -77,7 +77,7 @@ image:/documentation/images/Wr_putty_login.JPG[PineWifiServer Login Screen,title
 
 === Running the WifiAppDemo
 
-* link:/documentation/Unsorted/Wifi_remote_i2c#download[Download the PineWifiServer from the Download Section]
+* link:/documentation/Accessories/Wifi_remote_i2c#download[Download the PineWifiServer from the Download Section]
 * Copy WifiAppDemo xxxxxxxx.gz into your same PineA64 board that currently running with PineWifiServer. (where xxxxxxxx is the version number)
 * Unzip both of the file using gunzip.
 * Add Execution flag on both of the file by
@@ -113,7 +113,7 @@ Place the jumper J2 on USB/UART Programming/Console Adapter (PMPROG01) to 5V out
 
 === Software Setup
 
-* Download the firmware from the link:/documentation/Unsorted/Wifi_remote_i2c#Download[download section] and unzip the file.
+* Download the firmware from the link:/documentation/Accessories/Wifi_remote_i2c#download[download section] and unzip the file.
 * Download the windows Python base Flash Download Tools by Espressif from http://espressif.com/en/products/hardware/esp8266ex/resources[Espressif website].
 * Setup the ESP Flash Download tools according to the screen short.
 

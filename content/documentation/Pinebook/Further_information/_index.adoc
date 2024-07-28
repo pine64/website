@@ -9,7 +9,4 @@ menu:
     weight: 6
 ---
 
-* link:Specifications[]
-* link:Datasheets[]
-* link:Schematics_and_certifications[Schematics and certifications]
-* link:Other_resources[Other resources]
+{{< children >}}

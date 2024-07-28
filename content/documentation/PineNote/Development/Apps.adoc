@@ -38,7 +38,7 @@ https://www.youtube.com/watch?v=ZCLyJfbzbrU[Here is a video] showing the perform
 
 ==== Getting touch + pen working on sway
 
-If you notice that touching the screen works, but when you use the pen the mouse coordinates are inverted, don't worry! We can fix it! Set `rockchip_ebc.panel_reflection=0` on boot (see link:/documentation/PineNote/Development/Building_Kernel#Configuring_the_driver[this page] for more info). Add the following line to your sway config:
+If you notice that touching the screen works, but when you use the pen the mouse coordinates are inverted, don't worry! We can fix it! Set `rockchip_ebc.panel_reflection=0` on boot (see link:/documentation/PineNote/Development/Building_kernel#Configuring_the_driver[this page] for more info). Add the following line to your sway config:
 
  # This line rotates the mouse input by 180 degrees. See https://wayland.freedesktop.org/libinput/doc/1.11.3/absolute_axes.html
  input "type:table_tool" calibration_matrix -1 0 1 0 -1 1

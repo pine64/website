@@ -9,4 +9,4 @@ menu:
     weight: 
 ---
 
-* link:Premium_aluminium_case[Premium aluminium case]
+{{< children >}}

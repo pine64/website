@@ -670,7 +670,7 @@ Information about how to compile the firmware is included on the https://github.
 
 ==== Installing the new firmware
 
-A holistic guide on how to install different firmware using various hardware programmers is available here: link:/documentation/PineTime/Reprogramming[Reprogramming the PineTime].
+A holistic guide on how to install different firmware using various hardware programmers is available here: link:/documentation/PineTime/Software/Reprogramming/[Reprogramming the PineTime].
 
 If you would like to install the firmware by OTA/DFU, you can follow these steps:
 

@@ -12,7 +12,7 @@ menu:
 {{% docs/construction %}}
 
 This page contains hints on setting up cellular network connectivity for specific carriers.
-For more general information, see the carrier support section of link:/documentation/PinePhone#Modem[PinePhone]. For the APN settings see link:/documentation/PinePhone/Modem/APN_settings[APN settings].
+For more general information, see the carrier support section of link:/documentation/PinePhone/Modem[PinePhone]. For the APN settings see link:/documentation/PinePhone/Modem/APN_settings[APN settings].
 
 == Check compatibility
 

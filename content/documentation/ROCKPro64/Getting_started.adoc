@@ -87,7 +87,7 @@ The RockPro64 boot sequence has been documented https://github.com/sigmaris/u-bo
 
 == OTG Mode
 
-You can boot your ROCKPro64 into OTG mode with the use of the Recover button (see switch 28 under link:/documentation/ROCKPro64/Board/Layout#Switches[Layout#Switches]). Note that there are 2 OTG ports on your ROCKPro64: the type-C USB 3 socket is definitely one. From the schematic it appears the USB 3 (type A) socket is the other, but this has yet to be confirmed.
+You can boot your ROCKPro64 into OTG mode with the use of the Recover button (see switch 28 under link:/documentation/ROCKPro64/Board/Layout#switches[Layout#Switches]). Note that there are 2 OTG ports on your ROCKPro64: the type-C USB 3 socket is definitely one. From the schematic it appears the USB 3 (type A) socket is the other, but this has yet to be confirmed.
 
 The method is to power off the board. Then push and hold the Recover button and push and release the Power button.
 

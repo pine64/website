@@ -44,7 +44,7 @@ Download:
 Notes:
 
 * Please unzip first and then using Rockchip tool to flash in
-* link:/documentation/General/Getting_started#Flashing_to_eMMC_using_Rockchip_Tools_.28Rock64_Only.29[Guide to flashing eMMC using Rockchip Tools]
+* link:/documentation/Introduction/Getting_started#flashing_to_emmc_using_rockchip_tools_rock64_only[Guide to flashing eMMC using Rockchip Tools]
 
 === BSP Linux ver 1.1 Build as USB Stick application from SDK
 
@@ -55,7 +55,7 @@ Download:
 Notes:
 
 * Please unzip first and then using Rockchip tool to flash in
-* link:/documentation/General/Getting_started#Flashing_to_eMMC_using_Rockchip_Tools_.28Rock64_Only.29[Guide to flashing eMMC using Rockchip Tools]
+* link:/documentation/Introduction/Getting_started#flashing_to_emmc_using_rockchip_tools_rock64_only[Guide to flashing eMMC using Rockchip Tools]
 
 === BSP Linux ver 1.1 Build from SDK
 
@@ -66,7 +66,7 @@ Download:
 Notes:
 
 * Please unzip first and then using Rockchip tool to flash in
-* link:/documentation/General/Getting_started#Flashing_to_eMMC_using_Rockchip_Tools_.28Rock64_Only.29[Guide to flashing eMMC using Rockchip Tools]
+* link:/documentation/Introduction/Getting_started#flashing_to_emmc_using_rockchip_tools_rock64_only[Guide to flashing eMMC using Rockchip Tools]
 
 === BSP Linux ver 1.1 Build as USB Stick application from SDK
 
@@ -77,7 +77,7 @@ Download:
 Notes:
 
 * Please unzip first and then using Rockchip tool to flash in
-* link:/documentation/General/Getting_started#Flashing_to_eMMC_using_Rockchip_Tools_.28Rock64_Only.29[Guide to flashing eMMC using Rockchip Tools]
+* link:/documentation/Introduction/Getting_started#flashing_to_emmc_using_rockchip_tools_rock64_only[Guide to flashing eMMC using Rockchip Tools]
 
 == Linux BSP SDK
 

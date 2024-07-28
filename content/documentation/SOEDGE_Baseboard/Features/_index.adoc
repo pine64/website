@@ -9,6 +9,4 @@ menu:
     weight: 1
 ---
 
-* link:Expansion_ports[Expansion ports]
-* link:Storage[]
-* link:Network[]
+{{< children >}}

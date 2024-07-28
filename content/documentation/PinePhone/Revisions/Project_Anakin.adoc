@@ -50,9 +50,6 @@ Under link:/documentation/Accessories/Accessories_Step_by_Step_Guides['Guides fo
 * Based on Allwinner A64/R18
 * R18 and A64 are identical SoC but R18 committed for 10 years supply by vendor.
 
-image:/documentation/images/Allwinner_A64.jpg[]
-image:/documentation/images/Allwinner_R18.png[]
-
 === CPU Architecture
 
 * https://www.arm.com/products/processors/cortex-a/cortex-a53-processor.php[Quad-core ARM Cortex-A53 Processor@1152Mhz]

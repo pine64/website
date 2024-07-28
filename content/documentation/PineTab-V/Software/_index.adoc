@@ -9,5 +9,4 @@ menu:
     weight: 3
 ---
 
-* link:Software_state[Software state]
-* link:Releases[]
+{{< children >}}

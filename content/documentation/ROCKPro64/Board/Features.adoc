@@ -135,7 +135,7 @@ ROCKPro64 1x1 Dual Band WiFi 802.11AC / Bluetooth 5.0 Module (new)
 |
 |
 | Configure ip on usb0: ifconfig usb0 169.169.222.222 and run iperf, you should likely see about 200-300MB/s
-| link:/documentation/ROCKPro64#OTG_mode[ROCKPro64]
+| link:/documentation/ROCKPro64/Getting_started/#otg_mode[ROCKPro64]
 |
 
 | USB Mass Storage USB2/USB3

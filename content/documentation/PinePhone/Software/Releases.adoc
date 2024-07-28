@@ -48,7 +48,7 @@ Get both stable and test builds at https://github.com/dreemurrs-embedded/Pine64-
 
 === Fedora
 
-image:/documentation/images/Fedora1.png[width=100]
+image:/documentation/images/fedora1.png[width=100]
 
 An (unofficial) vanilla Fedora rawhide build for aarch64 with megi's kernel and https://copr.fedorainfracloud.org/coprs/njha/mobile/packages/[some additional packages] to tie it all together.
 It aims to eventually be an upstream part of the Fedora project, rather than a phone-specific distribution.
@@ -620,7 +620,7 @@ There are software tools, that can be booted on the PinePhone.
 
 === JumpDrive
 
-JumpDrive can be used to flash the eMMC (and the microSD card), see link:/documentation/PinePhone/Installation_instructions#Using_JumpDrive[Installation instructions].
+JumpDrive can be used to flash the eMMC (and the microSD card), see link:/documentation/PinePhone/Installation/Installation_to_the_eMMC/#using_jumpdrive[Installation instructions].
 
 See https://github.com/dreemurrs-embedded/Jumpdrive/releases for the latest image.
 Make sure to download the "PinePhone" image and to unpack the archive before flashing.

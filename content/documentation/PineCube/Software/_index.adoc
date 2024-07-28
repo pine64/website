@@ -9,8 +9,4 @@ menu:
     weight: 1
 ---
 
-* link:Mainlining_Efforts[]
-* link:Buildroot[]
-* link:NixOS[]
-* link:Armbian[]
-* link:Armbian_notes[Armbian notes]
+{{< children >}}

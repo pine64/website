@@ -9,5 +9,4 @@ menu:
     weight: 2
 ---
 
-* link:Armbian[]
-* link:Linux_BSP_SDK[Linux BSP SDK]
+{{< children >}}

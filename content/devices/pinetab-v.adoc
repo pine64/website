@@ -20,5 +20,5 @@ The PineTab-V is PINE64’s first RISC-V tablet. It is based on the JH7110 64-bi
 
 | link:/documentation/PineTab-V/[PineTab-V]
 
-| link:/documentation/PineTab-V/Schematics_and_certifications/[Schematics and certifications]
+| link:/documentation/PineTab-V/Further_information/[Schematics and certifications]
 |===

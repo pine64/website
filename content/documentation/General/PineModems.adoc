@@ -4,8 +4,8 @@ draft: false
 menu:
   docs:
     title:
-    parent: "Unsorted"
-    identifier: "Unsorted/PineModems"
+    parent: "General"
+    identifier: "General/PineModems"
     weight: 
 ---
 
@@ -173,7 +173,7 @@ Once in EDL mode, open a terminal, navigate to the root directory of the recover
 * If you use an ARM64 distribution (most likely): `sudo ./qfirehose -f ./` or `sudo ./qfirehose_arm64 -f ./`
 * If you use an ARMHF (32 bit) distribution: `sudo ./qfirehose_armhf -f ./`
 
-It will reboot the modem after finished. After about 30 seconds, it will get back up and running. To check the firmware version after that, use an AT command `AT+QGMR` like at link:/documentation/PinePhone#Firmware_update[PinePhone].
+It will reboot the modem after finished. After about 30 seconds, it will get back up and running. To check the firmware version after that, use an AT command `AT+QGMR` like at link:/documentation/PinePhone/Modem/#firmware_update[PinePhone].
 
 === Bootloader unlocking
 

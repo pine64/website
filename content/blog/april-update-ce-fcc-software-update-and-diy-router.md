@@ -18,10 +18,10 @@ tags:
 cover: 
   image: "header.jpg"
 images:
-  - "/blog/images/header.jpg"
+  - "/blog/images/header_with_pinephone_and_pinebookpro.jpg"
 ---
 
-![](/blog/images/header.jpg)
+![](/blog/images/header_with_pinephone_and_pinebookpro.jpg)
 
 I hope and trust this update finds everyone well. Production in China is picking up pace and we expect to start shipping the Pinebook Pro with Manjaro and PinePhone UBports Community edition next month. I am happy to report that, for the time being, everything is proceeding  smoothly and we’re on track to ship devices in accordance with our original plans. Still, I encourage you to sign up to this blog to stay up-to-date on shipping information since anything can happen in the next 30 days. 
 
