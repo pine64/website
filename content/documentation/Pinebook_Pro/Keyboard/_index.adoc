@@ -13,9 +13,9 @@ The Pinebook Pro is available in two keyboard configurations: ISO and ANSI. Both
 
 The keyboard firmware binary can be flashed from userspace using the provided open source utility.
 
-WARNING: DO NOT update the keyboard firmware before checking which keyboard IC your Pinebook Pro has. Some Pinebook Pro were delivered with a _SH61F83_ instead of a _SH68F83_. The SH61F83 can only be written 8 times, this will render the keyboard and touchpad unusable if this limit is reached when step 1 is flashed, see the https://reddit.com/r/PINE64official/comments/loq4db/very_disappointed/[Reddit SH61F83 thread]. The keyboard IC corresponds to _U23_ on the link:#Pinebook_Pro_Schematics_and_Certifications[top layer silkscreen of the main board]. It is located under the keyboard flat flexible cable.
+WARNING: DO NOT update the keyboard firmware before checking which keyboard IC your Pinebook Pro has. Some Pinebook Pro were delivered with a _SH61F83_ instead of a _SH68F83_. The SH61F83 can only be written 8 times, this will render the keyboard and touchpad unusable if this limit is reached when step 1 is flashed, see the https://reddit.com/r/PINE64official/comments/loq4db/very_disappointed/[Reddit SH61F83 thread]. The keyboard IC corresponds to _U23_ on the link:/documentation/Pinebook_Pro/Further_information/Schematics_and_certifications/[top layer silkscreen of the main board]. It is located under the keyboard flat flexible cable.
 
-Documentation for the keyboard can be found in link:#Datasheets_for_Components_and_Peripherals[Datasheets for Components and Peripherals] and details regarding the assembly can be found under link:/documentation/Pinebook_Pro/Keyboard/Assembly[Keyboard assembly].
+Documentation for the keyboard can be found in link:/documentation/Pinebook_Pro/Further_information/Datasheets/[Datasheets for Components and Peripherals] and details regarding the assembly can be found under link:/documentation/Pinebook_Pro/Keyboard/Assembly[Keyboard assembly].
 
 == Typing special characters
 

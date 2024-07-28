@@ -14,7 +14,7 @@ Prep tasks:
 . *Clean new cartridges/tips with 99% isopropyl alcohol (IPA)* to remove factory residue before installing (avoid strange behavior from poor electric contact). If you have none, try to at least wipe down the new cartridge with a clean towel especially the 2 contacts at the rear white end (do not use water, as it could get into the small white seam line).
 . Do not bend the two tiny https://pine64.com/product/pinecil-copper-clips/[internal contacts], they are thin spring metal and may break.
 . Only use one port, USB-C or the DC barrel, but Never both at the same time. Damage will occur to PC/Laptop/Pinecil!
-. If using a DC barrel brick for power, do not use more than 24V for Pinecil V2 and not more than 21V for Pinecil V1 (a link:/documentation/Pinecil/How_to_repair#Pinecil_V1,_24V_Mod[special end-user modification] is possible for V1 which allows it to use up to 24V safely).
+. If using a DC barrel brick for power, do not use more than 24V for Pinecil V2 and not more than 21V for Pinecil V1 (a link:/documentation/Pinecil/How_to_repair/#pinecil_v1_24v_mod[special end-user modification] is possible for V1 which allows it to use up to 24V safely).
 
 Upon receipt, or buying a used Pinecil, one may want to check the following:
 
@@ -27,7 +27,7 @@ Upon receipt, or buying a used Pinecil, one may want to check the following:
 * Check both orientations of the USB-C cable (try to flip it if one way doesn't work).
 . Check for new firmware updates, see the firmware section.
 * Note: do not connect the DC barrel at the same time as a USB-C cable. Pinecil was designed to only have one cable plugged in at a time. You could damage/break the PC and Pinecil doing this.
-* V1 and V2 used different flasher apps to load firmware onto the Pinecil, see the link:#Firmware_&_Updates[Firmware section].
+* V1 and V2 used different flasher apps to load firmware onto the Pinecil, see the link:/documentation/Pinecil/Firmware/[Firmware section].
 * Updating firmware requires a _data_ capable USB cable connected to a PC/laptop.
 . Check that both buttons work
 * `[-]` to enter menu or decrease temperature, long press `[-]` to get the software version info or to turn off heating
@@ -42,7 +42,7 @@ Upon receipt, or buying a used Pinecil, one may want to check the following:
 . Check that the tip is clean & wipe it down with a dry towel or IPA (uniformly silver at the front, with no pitting or texture).
 * Some tips come pre-dipped in solder for protection and may look odd. Heat them up then wipe clean on a soldering sponge or brass wool and inspect.
 * Heat up the tips a few times to 350°C for a couple minutes to check that they are working and melting solder.
-* See link:#Pinecil_Tips[Pinecil Tips] and link:#Guides_to_Soldering_&_Maintenance[Guides to Soldering & Maintenance] for soldering advice.
+* See link:/documentation/Pinecil/Tips/[Pinecil Tips] and link:/documentation/Pinecil/Guides_to_soldering/[Guides to Soldering & Maintenance] for soldering advice.
 * Re-tin the tip before storing is advised to prevent oxidation.
 . Check that it heats up with an installed tip, and stops increasing when it reaches the set point.
 * This may draw up to ~3A, make sure the link:/documentation/Pinecil/Power_supplies/Power_supplies[power supply] can provide a minimum of 3amps or more.

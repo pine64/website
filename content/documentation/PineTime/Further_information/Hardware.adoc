@@ -300,7 +300,7 @@ Here are some current consumption statistics (current consumed in addition to th
 	
 |BUTTON_OUT left high
 |0.04mA
-|See link:#Button[Button] for how to avoid this.
+|See link:#button[Button] for how to avoid this.
 
 |SPI flash sleep mode
 |0.014mA

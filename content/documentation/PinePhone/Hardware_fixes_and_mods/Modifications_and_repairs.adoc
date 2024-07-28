@@ -52,11 +52,11 @@ and executing as root ("sudo su") on the phone:
 
 ==== Method 2
 
-Booting a factory test image will automatically flash the ANX7688 chip. See link:/documentation/PinePhone/Software/Releases#Factory_Test_OS[Factory Test OS] for such an image.
+Booting a factory test image will automatically flash the ANX7688 chip. See link:/documentation/PinePhone/Software/Releases/#hardware_test_build[Factory Test OS] for such an image.
 
 == Replacing the screen
 
-Before attempting to replace the screen be sure to review the section on link:#Swapping_in_a_new_mainboard_revision[replacing the mainboard] since that will get you most of the way there. Be aware that the replacement screen is actually the entire front frame of the phone and there are components that will need to be swapped from your old screen.
+Before attempting to replace the screen be sure to review the section on link:/documentation/PinePhone/Hardware_fixes_and_mods/Modifications_and_repairs/#replacing_the_mainboard[replacing the mainboard] since that will get you most of the way there. Be aware that the replacement screen is actually the entire front frame of the phone and there are components that will need to be swapped from your old screen.
 
 * Make sure you have a precision screwdriver set that has the correct size Philips tip. The screws are very small and the heads can easily be stripped if the screwdriver is not correct - if you feel your screwdriver slipping, stop what you are doing and try one that is a better fit. A magnetized screwdriver will help in not losing screws, as will a magnetic parts holder to keep them in while working.
 * There are a number of components and cables as well as the insulator sheet under the battery that are glued in place. A hair dryer will loosen the glue and make them much easier to remove. You may want to order extra cables along with the screen just in case.

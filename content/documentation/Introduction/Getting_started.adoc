@@ -36,9 +36,9 @@ The process of flashing PINE64 OS images to micro SD on your Windows, Linux or O
 
 Please refer to the relevant section below for instructions on how to image your microSD card:
 
-* link:#Imaging_microSD_on_Windows_7/8/8.1/10[Imaging microSD on Windows 7/8/8.1/10]
-* link:#Imaging_microSD_on_Apple_OSX[Imaging microSD on Apple OSX]
-* link:#Imaging_microSD_on_Linux[Imaging microSD on Linux]
+* link:#imaging_microsd_on_windows_788_110[Imaging microSD on Windows 7/8/8.1/10]
+* link:#imaging_microsd_on_macos[Imaging microSD on macOS]
+* link:#imaging_microsd_on_linux[Imaging microSD on Linux]
 
 Having successfully imaged your microSD card, insert it into the microSD slot.
 

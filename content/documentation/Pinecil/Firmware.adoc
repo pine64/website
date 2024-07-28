@@ -39,7 +39,7 @@ Both V1 and V2 connect to the PC/laptop and enter the Flash mode the same way fo
 . Long hold the `[-]` button _before plugging_ the USB-C cable into the back of the Pinecil. Keep holding down the `[-]` for ~10-15 seconds after plugging in the cable, then release the button.
 . Screen should be black/empty which means Pinecil is in Flashing Mode. If you have issues, try again, do not plug the USB-C cable into Pinecil until you first press & hold the `[-]` button. Flip the cable over or try another port/cable/PC if you still have issues.
 . Unlike irons from other brands, Pinecil will *not* show in the PC as a USB data drive. On Windows, you will hear a single beep when connected in flash mode.
-. Then use one of the flasher methods below based on the OS you have in order to flash new firmware (link:#Update_V1[older V1 instructions are lower down here]).
+. Then use one of the flasher methods below based on the OS you have in order to flash new firmware (link:/documentation/Pinecil/Firmware/#update_v1[older V1 instructions are lower down here]).
 
 == Update V2: Windows
 
@@ -55,7 +55,7 @@ The PineFlash is a GUI updater it's an all-in one app that downloads firmware an
 === Option 2: Blisp
 
 . Blisp is a CLI (command line interface or terminal) and needs a program like the Powershell, which is already installed on most Windows PCs. For using Blisp only a couple basic terminal commands are needed, such as `cd` to change directories (folders).
-. If you prefer to use "command" terminal over Powershell, see instructions for Command in link:/documentation/Pinecil/Firmware#Troubleshoot_V2_Flashing[Troubleshooting and then skip to #8 here]
+. If you prefer to use "command" terminal over Powershell, see instructions for Command in link:/documentation/Pinecil/Firmware/#troubleshoot_v2_flashing[Troubleshooting and then skip to #8 here]
 . Can install newest Powershell https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3[from here].
 . Rick click and run Powershell as administrator.
 . Enter this command `C:\> Set-ExecutionPolicy RemoteSigned` to enable powershell permissions. It only needs to be done one time and should persist on reboots.
@@ -66,7 +66,7 @@ The PineFlash is a GUI updater it's an all-in one app that downloads firmware an
 . Right click on all zip files > properties, and check "Unblock" if present to unblock them, then extract the Blisp zip and the Pinecilv2 zip https://github.com/builder555/PineSAM/discussions/106#discussion-4960445[screenshot of Unblock here]. If you don't see "Unblock" then keep going.
 . From the Pinecilv2 folder you extracted above, copy the `Pinecilv2_EN.bin` (English) file into the Blisp folder (same place as the Blisp.exe). Other languages are available, substitute the `Pinecil_EN.bin` file for the language file desired (follow 2-letter international language code). The Pinecil Zip can now be deleted, only the single BIN file in the language you want is used.
 . Run powershell as administrator.
-. Now, connect the Pinecil V2 to the PC: hold down the [-] *Before* plugging the cable to the back of Pinecil. See (link:#Flash_Mode[Flash Mode section for details]).
+. Now, connect the Pinecil V2 to the PC: hold down the [-] *Before* plugging the cable to the back of Pinecil. See (link:/documentation/Pinecil/Firmware/#flash_mode[Flash Mode section for details]).
 . Screen on Pinecil should be black/empty before proceeding; it means you are in the correct Flash mode. If you are curious, it will connect as a PORT COM device in Device Manager. If your screen is not black, then repeat the connect to PC above. If necessary, change cables or ports, or try a different PC/laptop.
 . Use `cd` to change to the Blisp folder (location of blisp.exe and Pinecil_EN.bin).
 .. `#example change to location of blisp folder`
@@ -75,7 +75,7 @@ The PineFlash is a GUI updater it's an all-in one app that downloads firmware an
 .. Type the `.\` (dot and slash) or it will fail to find the files!
 .. `.\blisp.exe write -c bl70x --reset .\Pinecilv2_EN.bin`
 . After update, unplug and reboot it, then hold down `[-]` for ~3 seconds to see the new version.
-. See link:#Troubleshoot_V2_Flashing[troubleshooting] down below if it does not flash.
+. See link:/documentation/Pinecil/Firmware/#troubleshoot_v2_flashing[troubleshooting] down below if it does not flash.
 
 == Bluetooth (BLE) Apps
 
@@ -112,8 +112,8 @@ This is a CLI that runs in a terminal console. Get the latest zip file for Linux
  sudo ./blisp write -c bl70x --reset Pinecilv2_EN.bin
 
 . After a successful update, unplug and reboot it, then hold down `[-]` for ~2 seconds to see the new version.
-. See link:#Troubleshooting_V2_Flashing[troubleshooting] down below if it does not flash.
-. To use V2 with BLE Apps, see link:#Bluetooth_(BLE)_Apps[here].
+. See link:/documentation/Pinecil/Firmware/#troubleshoot_v2_flashing[troubleshooting] down below if it does not flash.
+. To use V2 with BLE Apps, see link:/documentation/Pinecil/Firmware/#bluetooth_ble_apps[here].
 
 == Troubleshoot V2 Flashing
 

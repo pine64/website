@@ -118,7 +118,7 @@ h| 3D Acceleration
 
 2+| Merged
 | `U-Boot`
-| link:#Mainline_U-Boot_Work[See below]. Quartz64 and SOQuartz as of v2023.10-rc2^https://source.denx.de/u-boot/u-boot/-/commit/4e619e8d4fd68095bc665a78f2651d8e478a4534[Source]^
+| link:#mainline_u_boot_work[See below]. Quartz64 and SOQuartz as of v2023.10-rc2^https://source.denx.de/u-boot/u-boot/-/commit/4e619e8d4fd68095bc665a78f2651d8e478a4534[Source]^
 |
 
 2+| In progress^link:https://github.com/jaredmcneill/quartz64_uefi[Source]^

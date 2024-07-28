@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-Documentation for the touchpad can be found in link:#Datasheets_for_Components_and_Peripherals[Datasheets for Components and Peripherals]. It is the only component of the Pinebook Pro held in place with strong adhesive tape. Here are some of its features:
+Documentation for the touchpad can be found in link:/documentation/Pinebook_Pro/Further_information/Datasheets/[Datasheets for Components and Peripherals]. It is the only component of the Pinebook Pro held in place with strong adhesive tape. Here are some of its features:
 
 * 2 actuating buttons.
 * multi-touch functionality.
@@ -26,7 +26,7 @@ If you are having trouble using 2 fingers to scroll or emulate the click of a mo
 *. For smooth scrolling and gestures under X-Windows, _Firefox_ should be launched with with the following environment variable assignment:
 +
 `MOZ_USE_XINPUT2=1`
-* Experiment with other settings, via link:#X-Windows_Configuration[X-Windows Configuration] or some other system preferences. For example, you could disable double-finger scrolling, and instead enable scrolling by sliding one finger along the edge of the touchpad.
+* Experiment with other settings, via X-Windows Configuration or some other system preferences. For example, you could disable double-finger scrolling, and instead enable scrolling by sliding one finger along the edge of the touchpad.
 
 == Firmware
 
@@ -42,7 +42,7 @@ Naturally, forks have begun to appear:
 
 *All Pinebook Pros shipped from the factory have the old buggy version installed so consider updating the keyboard and touchpad firmware with the latest fixes from Dragan.*
 
-WARNING: DO NOT update the touchpad firmware before checking which keyboard IC your Pinebook Pro has. Some Pinebook Pro were delivered with a _SH61F83_ instead of a _SH68F83_. The SH61F83 can only be written 8 times, this will render the keyboard and touchpad unusable if this limit is reached when step 1 (see below) is flashed. See https://reddit.com/r/PINE64official/comments/loq4db/very_disappointed/[Reddit SH61F83 thread]. The keyboard IC corresponds to _U23_ on the link:#Pinebook_Pro_Schematics_and_Certifications[top layer silkscreen of the main board]. It is located under the keyboard flat flexible cable. All the PBPs from the post-pandemic batches have _SH61F83_ but TL Lim claimed they can be flashed just the same. No updated datasheet or a statement from the MCU vendor was provided though, so proceed at your own risk. Experience shows flashing those works for at least one time.
+WARNING: DO NOT update the touchpad firmware before checking which keyboard IC your Pinebook Pro has. Some Pinebook Pro were delivered with a _SH61F83_ instead of a _SH68F83_. The SH61F83 can only be written 8 times, this will render the keyboard and touchpad unusable if this limit is reached when step 1 (see below) is flashed. See https://reddit.com/r/PINE64official/comments/loq4db/very_disappointed/[Reddit SH61F83 thread]. The keyboard IC corresponds to _U23_ on the link:/documentation/Pinebook_Pro/Further_information/Schematics_and_certifications/[top layer silkscreen of the main board]. It is located under the keyboard flat flexible cable. All the PBPs from the post-pandemic batches have _SH61F83_ but TL Lim claimed they can be flashed just the same. No updated datasheet or a statement from the MCU vendor was provided though, so proceed at your own risk. Experience shows flashing those works for at least one time.
 
 Before updating _any_ firmware, your Pinebook Pro should be either fully charged or, preferably, running from mains. This utility will be writing data to chips on the keyboard and touchpad, so a loss of power during any stage of the update can result in irrecoverable damage to your touchpad or keyboard.
 

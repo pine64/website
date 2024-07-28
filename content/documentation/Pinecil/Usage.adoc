@@ -27,7 +27,7 @@ Do not try to bend the two https://pine64.com/product/pinecil-copper-clips/[inte
 *2. Supply power*: the USB-C port, connected to any supply, is enough power to show the display screen, but not necessarily enough to heat the tip.
 
 . USB port at 5 volts (i.e., laptop) shows _DC Low_, this is enough for https://ralim.github.io/IronOS/#getting-started[firmware updates] and to view the menu, but not to run the soldering iron.
-. See link:#Power_Supplies_and_Watts[Power section] for details on power options. link:#QC_Chargers[QC 12V phone chargers will not work, too weak]
+. See link:/documentation/Pinecil/Power_supplies/[Power section] for details on power options. QC 12V phone chargers will not work, as they are too weak.
 
 *3. Heat the tip*: plug Pinecil into an appropriate link:/documentation/Pinecil/Power_supplies/Power_supplies[power supply].
 
@@ -40,7 +40,7 @@ Do not try to bend the two https://pine64.com/product/pinecil-copper-clips/[inte
 *4. Using the Settings Menu*:
 
 . To check the firmware version, hold down the `*[-]*` button. It will display something like "v2.19.A3BBABC 13-07-22". This is the firmware number and release date, the date is July 13, 2022 in the example.
-. Clicking `*[-]*` when heat is off steps through main categories menus to control a variety of settings, see link:#Getting_Started_with_the_Menu[Getting started with menus section].
+. Clicking `*[-]*` when heat is off steps through main categories menus to control a variety of settings, see link:/documentation/Pinecil/Usage/#getting_started_with_the_menu[Getting started with menus section].
 . Clicking `*[-]*` also returns to the regular display of temperature and supply voltage (this view varies if you activate detailed idle). At other times it may show power draw.
 . Click `*[-]*` to scroll to the the main menu section desired (i.e., User Interface). Then click `*[+]*` button to change various internal settings. Then click `*[-]*` again to go to the next item in the sub-menu.
 

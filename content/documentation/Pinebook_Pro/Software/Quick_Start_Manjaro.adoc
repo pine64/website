@@ -13,4 +13,4 @@ When you first get your Pinebook Pro and boot it up for the first time, it'll co
 
 On first boot, it will ask for certain information such as your timezone location, keyboard layout, username, password, and hostname. Most of these should be self-explanatory. Note that the hostname it asks for should be thought of as the "codename" of your machine, and if you don't know what it's about, you can make something up (use a single word, all lower case, no punctuation, e.g. "pbpro").
 
-After you're on the desktop, be sure to update it as soon as possible and reboot after updates are finished installing. If nothing appears when you click on the Networking icon in your system tray to connect to your Wi-Fi, ensure the Wi-Fi link:#Privacy_Switches[privacy switch] is not disabled.
+After you're on the desktop, be sure to update it as soon as possible and reboot after updates are finished installing. If nothing appears when you click on the Networking icon in your system tray to connect to your Wi-Fi, ensure the Wi-Fi link:/documentation/Pinebook_Pro/Keyboard/#privacy_switches[privacy switch] is not disabled.

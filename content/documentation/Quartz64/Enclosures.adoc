@@ -17,7 +17,7 @@ All enclosures that fit the ROCKPro64 should fit the Quartz64 Model "A", as the 
 
 * link:/documentation/Accessories/Cases/Model_A_Acrylic_Open_Enclosure[Model A Acrylic Open Enclosure] - but see the troubleshooting section below.
 * link:/documentation/Quartz64/Accessories/Premium_aluminium_case[RockPro64 Premium Aluminium Case]
-* link:/documentation/ROCKPro64#3D_printable_ITX_mounting_brackets[ROCKPro64] (Not an enclosure but allows to mount the board in an ATX/ITX case)
+* link:/documentation/ROCKPro64/Hardware/3D_printable_ITX_mounting_brackets/[ROCKPro64] (Not an enclosure but allows to mount the board in an ATX/ITX case)
 
 == Model "B"
 

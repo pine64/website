@@ -15,7 +15,7 @@ This article seeks to provide general mainline Linux development information for
 
 === Status
 
-The following table aims to provide a list of kernel modules required for running the PineNote. It also aims at listing repositories of work in progress. While some overlap with the Quartz64 module list (link:/documentation/Quartz64/Development#Upstreaming_Status[Development]) is expected, only modules relevant to the PineNote hardware should be listed here.
+The following table aims to provide a list of kernel modules required for running the PineNote. It also aims at listing repositories of work in progress. While some overlap with the Quartz64 module list (link:/documentation/Quartz64/Development#upstreaming_status[Development]) is expected, only modules relevant to the PineNote hardware should be listed here.
 
 [cols="2,1,1,2,6"]
 |===

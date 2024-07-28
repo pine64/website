@@ -84,7 +84,7 @@ Notes:
 * Installer offers automatic partitioning and full-disk encryption (LUKS), but only manual partitioning with a single ext4 partition has been confirmed to work.
 * Bootloader must be installed separately after installation, before rebooting.
 * WiFi driver kernel module must be provided during installation, or a USB network adapter used. (Android USB tethering works, with network driver `rndis_host`).
-* See also: Debian Netboot installer on the 1080P Pinebook under link:/documentation/Pinebook_Pro/Software/Releases#Debian[Software releases]
+* See also: Debian Netboot installer on the 1080P Pinebook under link:/documentation/Pinebook_Pro/Software/Releases#debian[Software releases]
 
 === DietPi
 

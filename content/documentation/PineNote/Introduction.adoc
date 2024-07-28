@@ -11,7 +11,7 @@ menu:
 
 == State of the software
 
-The PineNote is based on the in 2021 released Rockchip RK3566 SoC. The upstreaming status of the SoC functionality can be found on the link:/documentation/Quartz64/Development#upstreaming_status[Quartz64 development] documentation page of the Quartz64 single-board computer using the same SoC. In the link:/documentation/PineNote/Development#Kernel_modules_/_mainlining_status[PineNote development] documentation page you'll find the items specific for the PineNote.
+The PineNote is based on the in 2021 released Rockchip RK3566 SoC. The upstreaming status of the SoC functionality can be found on the link:/documentation/Quartz64/Development#upstreaming_status[Quartz64 development] documentation page of the Quartz64 single-board computer using the same SoC. In the link:/documentation/PineNote/Development/#mainline_development[PineNote development] documentation page you'll find the items specific for the PineNote.
 
 The early adopter's batch of the PineNote is aimed solely at early adopters - more specifically, the units are solely intended to find their way into the hands of users with extensive Linux experience. If you’re looking to buy a PineNote in the first batch, you must expect to write software for it, not to write notes on it. The software shipping from the factory for the first batch will not be suitable for taking notes, reading e-books, or writing your dissertation. It may not even boot to a graphical environment.
 

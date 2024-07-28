@@ -1,11 +1,11 @@
 ---
-title: "Power supplies and watts"
+title: "Watts"
 draft: false
 menu:
   docs:
     title:
     parent: "Pinecil/Power_supplies"
-    identifier: "Pinecil/Power_supplies/Power_supplies_and_watts"
+    identifier: "Pinecil/Power_supplies/Watts"
     weight: 
 ---
 
