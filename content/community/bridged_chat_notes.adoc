@@ -32,9 +32,9 @@ In the bridged community chat that spans across Discord, Matrix, Element, and IR
 
 Editing messages may lead to repeated broadcasts across platforms. To maintain clarity and prevent confusion, refrain from editing your messages after they have been sent.
 
-=== Be cautious with Discord’s reply function
+=== Be cautious with the Discord and Matrix reply function
 
-While Discord allows users to reply directly to specific messages, this feature does not translate to other platforms. When responding to messages, avoid using Discord’s reply function, as it does not display properly on Matrix, Element, or IRC.
+While Discord and Matrix allows users to reply directly to specific messages, this feature does not translate to other platforms. When responding to messages, avoid using Discord and Matrix reply function, as it does not display properly on the other platforms.
 
 Instead mention the name of the user you are replying to in your message.
 
