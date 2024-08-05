@@ -150,17 +150,17 @@ _In addition to mounting etcd for kubeadm and mon/mgr data on the NVMe drives, i
 
 Browsing the official reddit I came across a pretty awesome looking Pinecil case and I believe that it is an evolution of an already existing case that I featured in a Newsflash section a few months ago. This one, however, from what I can tell is built more rugged and holds more gear: there is space for the USB-C cable, an integrated soldering iron holder which uses a bearing (super cool), space for two additional tips and the thingy to clean the iron. If you happen to have a 3D printer and are looking for a next project this one should be high up on your list. The STL files can be found [here](https://www.printables.com/model/345083-rugged-multipart-pinecilts100ts80-case-v2).  
 
-![](https://www.pine64.org/wp-content/uploads/2023/02/Rugged-Case-for-Pinecil-1024x771.webp)
+![abc](/blog/images/Rugged-Case-for-Pinecil-1024x771.webp)
 
-**Rugged Pinecil case by [Piotr Strog](https://www.printables.com/social/48409-pjotrstrog/about)**
+*Rugged Pinecil case by [Piotr Strog](https://www.printables.com/social/48409-pjotrstrog/about)*
 
 For those of you who already own a pair of PineBuds Pro and have experienced issues with ANC in the left earbud - I’ve been told at FOSDEM that reflashing the stock firmware fixes the problem. This has been confirmed independently by a number of people at this point so can be considered an established fix. Instructions concerning flashing the firmware and all other pertinent information can be [found on the Wiki](https://wiki.pine64.org/wiki/PineBuds_Pro#Firmwares). As a side-note, work on the open firmware for the PineBuds Pro is steaming ahead and I’ve been told that it sounds great, so consider giving that a go if you don’t need ANC (which is still WIP on the open firmware)- it can be downloaded from [here](https://github.com/pine64/OpenPineBuds).  
 
 Someone created a USB-C charger for the PineTime. While I can’t necessarily see a reason for substituting the existing cradle for one which accepts USB-C, this is certainly a very cool project from a repairability perspective. That is to say, if your cradle breaks for whatever reason there now is a proof of concept for how one would go about creating a substitute charging solution. Check out the original post and discussion [here](https://www.reddit.com/r/pinetime/comments/yte659/ive_made_a_usbc_charger_for_the_pinetime/). 
 
-![](https://www.pine64.org/wp-content/uploads/2023/02/USB-C-charger-for-PineTime-1024x768.webp)
+![](/blog/images/USB-C-charger-for-PineTime-1024x768.webp)
 
-**Not sure what I make of this one - but it is undeniably cool - image by reddit user** [**PleasentEnd7990**](https://www.reddit.com/user/Pleasant-End7990/)
+*Not sure what I make of this one - but it is undeniably cool - image by reddit user [PleasentEnd7990](https://www.reddit.com/user/Pleasant-End7990/)*
 
 The OX64 has now been on the market for two months and it already is one of the best selling PINE64 devices. Who would have believed that an inexpensive Linux-capable RISC-V board would garner so much interest? Some early adopters have however complained that the OS flashing process is unclear and undocumented. One of the early adopters going by the handle [Platima Tinkers](https://www.youtube.com/@PlatimaTinkers) has thankfully put in the effort to document the process in the form of a video. The 15 minute-long video is truly great and gives anyone already owning or interested in getting the Ox64 a crash-course in getting it up-and-running. I am including the video below for your benefit.
 

@@ -116,7 +116,8 @@ There is no dedicated PinePhone section in this month’s community update - ins
 
 Reddit [user delipunch](https://www.reddit.com/user/delipunch/) shared a cool Pinebook Pro mod, in which they replaced the default passive cooling solution used in the Pinebook Pro with a Peltier module. For those who do not know, the Peltier module achieves cooling by running current through a thermocouple rather than moving air or liquid over a surface to dissipate heat. Prior to the mod, with all cores under full load, the Pinebook Pro would throttle at 75\*C, but with the new cooling solution it doesn’t. This is a very cool mod and while it does look rather complex, and thus unlikely as something many of us could attempt, I’m sure there are some in the community with the technical know-how who will attempt to replicate it.
 
-![](https://www.pine64.org/wp-content/uploads/2023/04/pltier-cooling-PBP.webp) ![](https://www.pine64.org/wp-content/uploads/2023/04/Peltier-cooling-PBP-2-results.webp)
+![](/blog/images/pltier-cooling-PBP.webp)
+![](/blog/images/Peltier-cooling-PBP-2-results.webp)
 
 **Peltier module in the Pinebook Pro does appear to help with SoC throttling under full load**
 

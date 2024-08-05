@@ -107,7 +107,7 @@ Another mod that has completely blown my mind is a custom PCB for the PinePhone 
 
 The Roshambo retro-game console case capable of housing PINE64 SBCs will be making its appearance in the Pine Store in the coming weeks. If you’re into retrogaming, then the Roshambo case features fully functional on/ off and reset switches, a SATA disc connector, and IO pass-through. You can also pick up a pair or matching controllers and a 128GB SSD that imitates a cart. 
 
-![](https://www.pine64.org/wp-content/uploads/2022/11/Roshambo-01_large.webp) ![](/blog/images/roshambo-02.jpg)
+![](/blog/images/Roshambo-01_large.webp) ![](/blog/images/roshambo-02.jpg)
 
 **I can attest that these SSD carts and the controllers are really cool**
 

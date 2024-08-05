@@ -94,9 +94,7 @@ Because we have always avoided increasing the price point of PINE64 devices, we 
 
 I’d like to put the spotlight on a few Pinebook Pro releases. For starters, we’re happy to announce OpenMandriva Lx 4.2, a Linux distribution using the package manager urpmi which installs .rpm binaries. This will be available for download shortly from the project’s [sourceforge repository](https://sourceforge.net/projects/openmandriva/files/release/4.2/). It ships with KDE Plasma desktop environment and offers a wide range of default apps to get you going. Please visit [OpenMandriva’s website](https://www.openmandriva.org/#omfooter) for more information about the distribution.  
 
-https://dev.pine64.org/wp-content/uploads/2021/01/FreeBSD.mp4
-
-**FreeBSD on the Pinebook Pro via [SleepWalker on Twitter](https://twitter.com/S199pWa1k9r/status/1346180912577454082)**
+See [*FreeBSD on the Pinebook Pro*](/blog/images/FreeBSD.mp4) via [*SleepWalker* on Twitter](https://twitter.com/S199pWa1k9r/status/1346180912577454082)
 
 I am also certain that many of you who have been waiting for a new FreeBSD OS image for the Pinebook Pro will be thrilled to hear that a recently released preview image (FreeBSD 13) fixes a keyboard issue that plagued the system on the Pinebook Pro. My knowledge about FreeBSD is highly limited, so rather than me trying to convey the current state of development I strongly suggest you [read through the thread](https://forums.freebsd.org/threads/freebsd-desktop-for-pinebook-pro.78269/) on FreeBSD’s forum prior to downloading the image. From what I gathered, the thread includes instructions on enabling audio and enabling external networking cards. The first entry in the thread includes the download link. 
 
