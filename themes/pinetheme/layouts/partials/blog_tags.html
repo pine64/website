@@ -1,9 +1,3 @@
 <div class="blog-tags">
-    {{ with .Params.tags }}
-    <i data-feather="tag"></i>
-    {{ range . }}
-    {{ $href := print (absURL "tags/") (urlize .) }}
-    <a class="btn btn-sm btn-outline-dark tag-btn" href="{{ $href }}">{{ . }}</a>
-    {{ end }}
-    {{ end }}
+    {{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $href := print (absURL "tags/") (urlize .) }}<a class="btn btn-sm btn-outline-dark tag-btn" href="{{ $href }}">{{ $e }}</a>{{ end }}
 </div>

@@ -573,7 +573,7 @@ button.rounded:hover {
     max-width: 100%;
     padding: 10px 0;
 }
-.blog ul{
+.blog ul {
     padding-left: 2rem;
 }
 .blog > p > img {
@@ -589,6 +589,9 @@ button.rounded:hover {
     width: 100%;
     margin-top: 20px;
 }
+.blog-date {
+    padding: 0 0 10px 0;
+}
 .blog-title {
     display: flex; 
 }
@@ -596,19 +599,27 @@ button.rounded:hover {
     /*text-transform: uppercase;*/
     display: flex; 
     flex-wrap: wrap;
-    justify-content: right;
-    margin: auto 0;
-    max-width: 300px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.blog-hr {
+    margin: 40px 0;
+}
+.blog-tags:before{
+    content: '#';
+    color: #555;
+    font-weight: 900;
+    position: relative;
+    top: -5px;
+    padding-right: 5px;
 }
 .blog-tags a {
-    background-color: #52ADD2;
-    border-radius: 0.5rem;
-    padding: 0.1rem 0.2rem;
-    color: white;
-    margin: 0.2rem 0.2rem;
+    color: #555;
+    margin: 0.2rem;
 }
 .blog-tags a:hover {
-    background-color: #2868B0;
+    border-bottom: 4px solid #013F85;
 }
 @media screen and (max-width: 1100px){
     .blog-header {

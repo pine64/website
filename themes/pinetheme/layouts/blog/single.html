@@ -3,15 +3,37 @@
     <div class="box rows pad blog">
         <a href="/blog/" class="backlink"><img src = "/img/arrow_left.svg" width="14" alt="Backlink to all blog posts">All blog posts</a><br><br>
         <div class="blog-header">
+
+            <div class="blog-date">{{ partial "blog_date.html" . }}
+                <i>
+                {{ if .Params.authors }}
+                    by
+                    {{ range $i, $e := .Params.authors }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}
+                {{ end }}
+                </i>
+            </div>
             
             <div class="blog-title"><h1>{{ .Title }}</h1></div>
-            {{ partial "blog_tags.html" . }}
-        </div>
-        <div class="box">
-            {{ partial "blog_date.html" . }}
+            
         </div>
 
         {{ .Content }}
+
+        {{ if .Params.tags }}
+            <hr class="blog-hr">
+
+            {{ partial "blog_tags.html" . }}
+
+            <hr class="blog-hr">
+
+            {{ partial "related.html" . }}
+        {{end}}
+
+        <hr class="blog-hr">
+
+        <div class="blog-comments">
+        </div>
+
     </div>
 </div>
 {{ end }}
