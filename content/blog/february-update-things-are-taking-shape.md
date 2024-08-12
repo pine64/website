@@ -150,7 +150,7 @@ _In addition to mounting etcd for kubeadm and mon/mgr data on the NVMe drives, i
 
 Browsing the official reddit I came across a pretty awesome looking Pinecil case and I believe that it is an evolution of an already existing case that I featured in a Newsflash section a few months ago. This one, however, from what I can tell is built more rugged and holds more gear: there is space for the USB-C cable, an integrated soldering iron holder which uses a bearing (super cool), space for two additional tips and the thingy to clean the iron. If you happen to have a 3D printer and are looking for a next project this one should be high up on your list. The STL files can be found [here](https://www.printables.com/model/345083-rugged-multipart-pinecilts100ts80-case-v2).  
 
-![abc](/blog/images/Rugged-Case-for-Pinecil-1024x771.webp)
+![](/blog/images/Rugged-Case-for-Pinecil-1024x771.webp)
 
 *Rugged Pinecil case by [Piotr Strog](https://www.printables.com/social/48409-pjotrstrog/about)*
 
