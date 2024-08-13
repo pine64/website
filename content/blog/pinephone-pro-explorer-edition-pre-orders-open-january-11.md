@@ -1,7 +1,8 @@
 ---
 title: "PinePhone Pro Explorer Edition pre-orders open January 11"
 date: "2022-01-11"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "pinephone-pro"
 tags: 
   - "news"

@@ -1,7 +1,8 @@
 ---
 title: "December update: a year in review"
 date: "2021-12-15"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "cube"
   - "news"
   - "pine64-community"

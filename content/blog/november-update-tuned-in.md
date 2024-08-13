@@ -1,6 +1,7 @@
 ---
 title: "November Update: Tune(d) in"
 date: "2022-11-15"
+authors: ["Lukasz Erecinski"]
 categories: 
   - "community"
   - "ox64"

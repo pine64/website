@@ -1,7 +1,8 @@
 ---
 title: "PinePhone UBports Community Edition Pre-Orders Now Open"
 date: "2020-04-02"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "community"
   - "news"
   - "pinephone"

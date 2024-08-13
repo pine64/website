@@ -1,7 +1,8 @@
 ---
 title: "Help us help others"
 date: "2021-04-03"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "community"
 tags: 
   - "digital-gap"

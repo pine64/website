@@ -1,7 +1,8 @@
 ---
 title: "How \"Meet the PinePhone Pro\" was made"
 date: "2021-10-27"
-categories: 
+authors: ["Vincent the Cat"]
+categories:
   - "community"
   - "pinephone-pro"
 tags: 

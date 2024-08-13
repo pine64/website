@@ -1,7 +1,8 @@
 ---
 title: "December Update: The Longest One Yet"
 date: "2020-12-15"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "community"
   - "cube"
   - "news"

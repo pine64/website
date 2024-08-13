@@ -1,7 +1,8 @@
 ---
 title: "Pine Store Community Pricing & Online Retail Stores"
 date: "2020-12-02"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "community"
 tags: 
   - "pine-store"

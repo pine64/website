@@ -1,7 +1,8 @@
 ---
 title: "Pinebook Pro pre-orders open with shipping in August 2020."
 date: "2020-07-20"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "news"
   - "pinebook-pro"
 tags: 

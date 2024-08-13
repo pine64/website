@@ -1,7 +1,8 @@
 ---
 title: "I owe you a riddle"
 date: "2020-12-18"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "community"
 cover: 
   image: "RK3566-RIDDLE.png"

@@ -1,7 +1,8 @@
 ---
 title: "FOSDEM 2020 and Hardware Announcements"
 date: "2020-02-03"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "community"
   - "cube"
   - "hardrock64"

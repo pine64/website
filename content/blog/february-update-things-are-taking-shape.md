@@ -1,6 +1,7 @@
 ---
 title: "February update: things are taking shape"
 date: "2023-03-01"
+authors: ["Lukasz Erecinski"]
 categories: 
   - "community"
   - "pinebuds"

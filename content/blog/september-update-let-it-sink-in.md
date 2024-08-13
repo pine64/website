@@ -1,7 +1,8 @@
 ---
 title: "September Update: Let it sink in..."
 date: "2020-09-15"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "community"
   - "cube"
   - "news"

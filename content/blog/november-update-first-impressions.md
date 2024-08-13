@@ -1,7 +1,8 @@
 ---
 title: "November update: first impressions"
 date: "2021-11-15"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "cluster"
   - "community"
   - "news"

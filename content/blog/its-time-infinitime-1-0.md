@@ -1,7 +1,8 @@
 ---
 title: "It's Time: InfiniTime 1.0"
 date: "2021-04-22"
-categories: 
+authors: ["JF"]
+categories:
   - "pinetime"
 tags: 
   - "community"

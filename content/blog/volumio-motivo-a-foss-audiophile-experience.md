@@ -1,7 +1,8 @@
 ---
 title: "Volumio Motivo: a FOSS Audiophile Experience"
 date: "2019-06-10"
-categories: 
+authors: ["Andre"]
+categories:
   - "entertainment"
   - "sopine"
 tags: 

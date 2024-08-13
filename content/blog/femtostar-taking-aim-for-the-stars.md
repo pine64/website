@@ -1,7 +1,8 @@
 ---
 title: "FemtoStar: taking aim for the stars"
 date: "2021-05-19"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "community"
 cover: 
   image: "TakingAimForTheStars.jpg"

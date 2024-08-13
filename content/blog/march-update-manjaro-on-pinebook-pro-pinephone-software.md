@@ -1,7 +1,8 @@
 ---
 title: "March Update: Manjaro on Pinebook Pro & PinePhone Software"
 date: "2020-03-15"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "digital-divide"
   - "pinebook-pro"
   - "pinephone"

@@ -1,6 +1,7 @@
 ---
 title: "December Update: Merry Christmas and Happy New PineTab"
 date: "2022-12-15"
+authors: ["Lukasz Erecinski"]
 categories: 
   - "community"
   - "news"

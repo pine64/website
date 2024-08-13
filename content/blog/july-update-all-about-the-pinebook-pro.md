@@ -1,7 +1,8 @@
 ---
 title: "July Update: All about the Pinebook Pro"
 date: "2019-07-05"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "news"
   - "pinebook-pro"
 tags: 

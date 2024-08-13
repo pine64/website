@@ -1,7 +1,8 @@
 ---
 title: "October Update: PineTime, Delays and Shipping News"
 date: "2019-10-05"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "pinebook-pro"
   - "pinephone"
   - "pinetime"

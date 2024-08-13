@@ -1,7 +1,8 @@
 ---
 title: "August update: getting into a rhythm and not slowing down"
 date: "2020-08-15"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "news"
   - "pinebook-pro"
   - "pinecil"

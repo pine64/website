@@ -1,7 +1,8 @@
 ---
 title: "KDE Community Edition is now available"
 date: "2020-12-01"
-categories: 
+authors: []
+categories:
   - "news"
   - "pinephone"
 tags: 

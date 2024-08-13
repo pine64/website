@@ -1,7 +1,8 @@
 ---
 title: "A response to Martijn's blog"
 date: "2022-08-18"
-categories: 
+authors: ["Marek Kraus"]
+categories:
   - "community"
   - "news"
   - "pine64-community"

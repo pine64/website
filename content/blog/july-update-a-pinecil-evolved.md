@@ -1,7 +1,8 @@
 ---
 title: "July Update: A Pinecil Evolved"
 date: "2022-07-28"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "pinecil"
   - "pinesound"
   - "pinetime"

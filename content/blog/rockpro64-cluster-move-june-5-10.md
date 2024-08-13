@@ -1,7 +1,8 @@
 ---
 title: "ROCKPro64 Cluster Move June 5-10"
 date: "2020-06-05"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "community"
   - "news"
 tags: 

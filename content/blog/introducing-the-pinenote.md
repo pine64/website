@@ -1,7 +1,8 @@
 ---
 title: "Introducing the PineNote"
 date: "2021-08-15"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "community"
   - "pinebook-pro"
   - "pinedio"

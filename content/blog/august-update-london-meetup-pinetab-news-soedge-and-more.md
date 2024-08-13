@@ -1,7 +1,8 @@
 ---
 title: "August Update: London Meetup, PineTab News, SOEdge and More!"
 date: "2019-08-05"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "news"
   - "pinephone"
   - "pinetab"

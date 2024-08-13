@@ -1,7 +1,8 @@
 ---
 title: "All about the PineTab (Update)"
 date: "2020-07-24"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "news"
   - "pinetab"
 tags: 

@@ -1,7 +1,8 @@
 ---
 title: "November Update: Brave Heart, Pinebook Pro reception and more"
 date: "2019-11-05"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "community"
   - "news"
   - "pinebook-pro"

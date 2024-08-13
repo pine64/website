@@ -1,7 +1,8 @@
 ---
 title: "Introducing the PineBuds and PinePod. Seriously."
 date: "2022-04-01"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "news"
   - "pinebuds"
   - "pinepod"

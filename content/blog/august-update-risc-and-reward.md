@@ -1,7 +1,8 @@
 ---
 title: "August update: RISC and reward"
 date: "2022-08-28"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "community"
   - "news"
   - "pinebuds"

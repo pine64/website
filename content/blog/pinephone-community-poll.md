@@ -1,7 +1,8 @@
 ---
 title: "PinePhone community poll"
 date: "2021-12-29"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "pinephone"
   - "pinephone-pro"
 tags: 

@@ -1,7 +1,8 @@
 ---
 title: "We are KDE patrons"
 date: "2021-06-02"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "community"
   - "news"
 tags: 

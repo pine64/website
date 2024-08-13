@@ -1,7 +1,8 @@
 ---
 title: "My DIY low-power 6 SSD NAS based on the Quartz64 ARM board"
 date: "2022-06-03"
-categories: 
+authors: ["JF"]
+categories:
   - "news"
   - "quartz64"
 tags: 

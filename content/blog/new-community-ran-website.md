@@ -1,7 +1,8 @@
 ---
 title: "New Community Ran Website!"
 date: "2019-04-30"
-categories: 
+authors: []
+categories:
   - "news"
   - "pine64-community"
 tags: 

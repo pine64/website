@@ -1,7 +1,8 @@
 ---
 title: "PinePhones Start Shipping - All You Need To Know"
 date: "2020-01-15"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "pinebook-pro"
   - "pinephone"
   - "pinetab"

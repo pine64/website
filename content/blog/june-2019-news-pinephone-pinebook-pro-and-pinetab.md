@@ -1,7 +1,8 @@
 ---
 title: "June 2019 News: PinePhone, Pinebook Pro and PineTab"
 date: "2019-06-06"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "news"
   - "pinebook-pro"
   - "pinephone"

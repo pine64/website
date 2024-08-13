@@ -1,7 +1,8 @@
 ---
 title: "July Update: biggest update in months!"
 date: "2020-07-15"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "cube"
   - "news"
   - "pinebook-pro"

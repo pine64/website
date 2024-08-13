@@ -1,7 +1,8 @@
 ---
 title: "February Update: Show and Tell"
 date: "2021-02-15"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "news"
   - "pinebook-pro"
   - "pinephone"

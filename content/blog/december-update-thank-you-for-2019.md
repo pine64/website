@@ -1,7 +1,8 @@
 ---
 title: "December Update: Thank You For 2019!"
 date: "2019-12-05"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "news"
   - "pine64-community"
   - "pinebook-pro"

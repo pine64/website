@@ -1,7 +1,8 @@
 ---
 title: "October Update: Introducing the PinePhone Pro"
 date: "2021-10-15"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "news"
   - "pinenote"
   - "pinephone"

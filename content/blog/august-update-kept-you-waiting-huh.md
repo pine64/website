@@ -1,6 +1,7 @@
 ---
 title: "August Update: Kept You Waiting, Huh?"
 date: "2023-08-15"
+authors: ["Marek Kraus"]
 categories: 
   - "community"
   - "news"

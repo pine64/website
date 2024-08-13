@@ -1,7 +1,8 @@
 ---
 title: "July update: community developers portal"
 date: "2021-07-15"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "community"
   - "news"
   - "pinedio"

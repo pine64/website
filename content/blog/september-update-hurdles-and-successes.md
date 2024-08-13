@@ -1,7 +1,8 @@
 ---
 title: "September update: Hurdles and Successes"
 date: "2021-09-15"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "community"
   - "cube"
   - "news"

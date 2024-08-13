@@ -1,7 +1,8 @@
 ---
 title: "June Update: postmarketOS CE PinePhone, Shipping & PINE64 Cluster"
 date: "2020-06-15"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "community"
   - "news"
   - "pinephone"

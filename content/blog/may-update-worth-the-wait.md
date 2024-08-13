@@ -1,7 +1,8 @@
 ---
 title: "May Update: Worth The Wait"
 date: "2022-05-31"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "news"
   - "pinebook-pro"
   - "pinebuds"

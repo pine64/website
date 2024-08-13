@@ -1,6 +1,7 @@
 ---
 title: "Quick update: What’s going on?"
 date: "2023-08-12"
+authors: ["Marek Kraus"]
 categories: 
   - "news"
   - "pine64-community"

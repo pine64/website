@@ -1,7 +1,8 @@
 ---
 title: "Let's make MiRAKles happen"
 date: "2021-05-06"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "community"
   - "lora"
   - "news"

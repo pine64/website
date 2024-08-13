@@ -1,7 +1,8 @@
 ---
 title: "September Update: The PinePhone is real & shipping soon"
 date: "2019-09-05"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "news"
   - "pinebook-pro"
   - "pinephone"

@@ -1,7 +1,8 @@
 ---
 title: "January Update: More News"
 date: "2022-01-15"
-categories: 
+authors: ["33YN2"]
+categories:
   - "news"
   - "pinedio"
   - "pinenote"

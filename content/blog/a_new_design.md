@@ -1,6 +1,7 @@
 ---
 title: "A new design"
 date: "2023-04-13"
+authors: ["Vincent the Cat"]
 categories: 
   - "community"
   - "news"

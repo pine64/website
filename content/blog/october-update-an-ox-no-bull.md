@@ -1,7 +1,8 @@
 ---
 title: "October update: An Ox, no bull"
 date: "2022-10-15"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "community"
   - "news"
   - "ox64"

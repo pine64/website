@@ -1,7 +1,8 @@
 ---
 title: "May 2019 News"
 date: "2019-05-06"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "news"
   - "pinebook-pro"
   - "pinephone"

@@ -1,7 +1,8 @@
 ---
 title: "January Update: Happy New Gear!"
 date: "2021-01-15"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "community"
   - "news"
   - "pine64-community"

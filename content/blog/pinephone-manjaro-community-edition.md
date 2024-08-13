@@ -1,7 +1,8 @@
 ---
 title: "PinePhone Manjaro Community Edition"
 date: "2020-08-31"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "news"
   - "pinephone"
 tags: 

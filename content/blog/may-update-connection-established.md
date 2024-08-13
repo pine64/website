@@ -1,7 +1,8 @@
 ---
 title: "May Update: Connection Established"
 date: "2021-05-15"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "community"
   - "lora"
   - "news"

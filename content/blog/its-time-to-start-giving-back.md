@@ -1,7 +1,8 @@
 ---
 title: "Its time to start giving back"
 date: "2019-08-19"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "community"
   - "digital-divide"
   - "sustainable-foss"

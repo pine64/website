@@ -1,7 +1,8 @@
 ---
 title: "March Update: Introducing the QuartzPro64"
 date: "2022-03-15"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "news"
   - "pinephone"
   - "pinephone-pro"

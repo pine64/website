@@ -1,7 +1,8 @@
 ---
 title: "Setting the Record Straight:  PinePhone Misconceptions"
 date: "2020-01-24"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "pinephone"
 tags: 
   - "pinephone"

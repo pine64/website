@@ -1,7 +1,8 @@
 ---
 title: "Invitation to Play Along"
 date: "2020-07-29"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "pinephone"
 tags: 
   - "pine64"

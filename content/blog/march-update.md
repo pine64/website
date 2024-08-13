@@ -1,7 +1,8 @@
 ---
 title: "March Update: Status Report"
 date: "2021-03-15"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "community"
   - "pinebook-pro"
   - "pinephone"

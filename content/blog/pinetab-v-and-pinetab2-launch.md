@@ -1,6 +1,7 @@
 ---
 title: "PineTab-V and PineTab2 launch"
 date: "2023-04-10"
+authors: ["Lukasz Erecinski"]
 categories: 
   - "news"
   - "pinetab"

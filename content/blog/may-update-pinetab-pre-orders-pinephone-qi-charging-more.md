@@ -1,7 +1,8 @@
 ---
 title: "May Update: PineTab pre-orders, PinePhone Qi charging & more!"
 date: "2020-05-15"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "news"
   - "pinebook-pro"
   - "pinephone"

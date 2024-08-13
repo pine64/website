@@ -1,7 +1,8 @@
 ---
 title: "Forum Update"
 date: "2019-05-22"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "community"
   - "news"
 tags: 

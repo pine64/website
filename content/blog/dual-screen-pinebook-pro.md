@@ -1,7 +1,8 @@
 ---
 title: "The Dual-Screen Pinebook Pro"
 date: "2021-03-19"
-categories: 
+authors: ["Robbie Ferguson"]
+categories:
   - "pinebook-pro"
   - "pinecil"
 tags: 

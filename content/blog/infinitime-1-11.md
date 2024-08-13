@@ -1,6 +1,7 @@
 ---
 title: "InfiniTime 1.11"
 date: "2022-10-18"
+authors: ["JF"]
 categories: 
   - "pinetime"
 tags: 

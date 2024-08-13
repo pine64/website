@@ -1,7 +1,8 @@
 ---
 title: "February update: chat with the machine"
 date: "2022-02-15"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "news"
 tags: 
   - "modem"

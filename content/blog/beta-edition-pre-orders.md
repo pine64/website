@@ -1,7 +1,8 @@
 ---
 title: "Beta Edition Pre-Orders"
 date: "2021-03-19"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "pinephone"
 tags: 
   - "pinephone"

@@ -1,7 +1,8 @@
 ---
 title: "PinePhone community poll results"
 date: "2022-01-31"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "news"
   - "pinephone"
 tags: 

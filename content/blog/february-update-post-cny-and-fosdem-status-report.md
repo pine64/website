@@ -1,7 +1,8 @@
 ---
 title: "February Update: Post CNY and FOSDEM Status Report"
 date: "2020-02-15"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "community"
   - "hardrock64"
   - "news"

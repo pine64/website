@@ -1,6 +1,7 @@
 ---
 title: "March Update: Tablet Bonanza!"
 date: "2023-04-01"
+authors: ["Lukasz Erecinski"]
 categories: 
   - "community"
   - "pinebook-pro"

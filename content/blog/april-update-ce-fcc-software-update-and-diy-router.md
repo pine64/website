@@ -1,7 +1,8 @@
 ---
 title: "April Update: CE & FCC, Software Update and DIY Router?"
 date: "2020-04-15"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "news"
   - "pine64-community"
   - "pinebook-pro"

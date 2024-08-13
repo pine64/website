@@ -1,7 +1,8 @@
 ---
 title: "Mobian Community Edition"
 date: "2021-01-17"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "pinephone"
 tags: 
   - "pinephone"

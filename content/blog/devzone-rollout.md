@@ -1,7 +1,8 @@
 ---
 title: "DevZone rollout"
 date: "2021-08-23"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "pine64-community"
 tags: 
   - "community"

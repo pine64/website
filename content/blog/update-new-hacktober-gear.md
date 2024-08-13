@@ -1,7 +1,8 @@
 ---
 title: "Update: new hacktober gear"
 date: "2020-10-15"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "community"
   - "cube"
   - "news"

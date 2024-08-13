@@ -1,7 +1,8 @@
 ---
 title: "The end of Community Editions"
 date: "2021-02-02"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "community"
   - "pinephone"
 tags: 

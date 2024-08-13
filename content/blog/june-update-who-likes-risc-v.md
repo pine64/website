@@ -1,7 +1,8 @@
 ---
 title: "June Update: Who likes RISC-V?"
 date: "2022-06-28"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "pinebook-pro"
   - "pinenote"
   - "pinephone"

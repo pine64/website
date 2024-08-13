@@ -1,7 +1,8 @@
 ---
 title: "October Update Follow-up"
 date: "2021-10-29"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "news"
   - "pinecil"
   - "pinedio"

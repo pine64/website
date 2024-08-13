@@ -1,7 +1,8 @@
 ---
 title: "Happy New Year, the keyboard and cases are here!"
 date: "2021-12-31"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "pinephone"
   - "pinephone-pro"
 tags: 

@@ -1,7 +1,8 @@
 ---
 title: "April update: no more unicorns"
 date: "2022-04-15"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "news"
   - "pinedio"
   - "pinephone"

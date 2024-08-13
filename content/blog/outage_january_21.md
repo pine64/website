@@ -1,6 +1,7 @@
 ---
 title: "Outage January 21st"
 date: "2024-01-21"
+authors: ["Vincent the Cat"]
 cover: 
   image: "construction.jpg"
 images:

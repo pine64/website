@@ -1,7 +1,8 @@
 ---
 title: "Cluster build log: Moving to temporary cluster"
 date: "2021-09-01"
-categories: 
+authors: ["Marek Kraus"]
+categories:
   - "cluster"
   - "community"
   - "rockpro64"

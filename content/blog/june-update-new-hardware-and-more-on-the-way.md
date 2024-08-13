@@ -1,7 +1,8 @@
 ---
 title: "June update: new hardware and more on the way"
 date: "2021-06-15"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "community"
   - "lora"
   - "news"

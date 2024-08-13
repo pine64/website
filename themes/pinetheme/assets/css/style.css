@@ -584,10 +584,19 @@ button.rounded:hover {
     width: 100%;
 }
 .blog-header {
-    display: flex;
-    justify-content: space-between;
+
     width: 100%;
     margin-top: 20px;
+}
+@media screen and (max-width: 1100px){
+    .blog-header {
+        display: block; 
+        float: left;
+    }
+    .blog-tags {
+        display: block;
+        max-width: 100%;
+    }
 }
 .blog-date {
     padding: 0 0 10px 0;
@@ -621,16 +630,7 @@ button.rounded:hover {
 .blog-tags a:hover {
     border-bottom: 4px solid #013F85;
 }
-@media screen and (max-width: 1100px){
-    .blog-header {
-        display: block; 
-        float: left;
-    }
-    .blog-tags {
-        display: block;
-        max-width: 100%;
-    }
-}
+
 div.credits {
     margin: -8px 0 12px 6px;
     color: #555;

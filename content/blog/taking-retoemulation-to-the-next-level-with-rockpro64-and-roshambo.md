@@ -1,7 +1,8 @@
 ---
 title: "Taking RetroEmulation to the next level with RockPro64 and Roshambo"
 date: "2019-05-13"
-categories: 
+authors: ["JimmyRustles"]
+categories:
   - "rock64"
   - "gaming"
   - "news"

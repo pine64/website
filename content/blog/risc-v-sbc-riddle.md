@@ -1,7 +1,8 @@
 ---
 title: "RISC-V SBC Riddle"
 date: "2021-03-09"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "community"
   - "risc-v"
 tags: 

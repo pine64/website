@@ -1,7 +1,8 @@
 ---
 title: "Welcome New Community Members!"
 date: "2020-05-28"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "community"
   - "pinebook-pro"
   - "pinephone"

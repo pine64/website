@@ -1,7 +1,8 @@
 ---
 title: "April Update: New Developments"
 date: "2021-04-15"
-categories: 
+authors: ["Lukasz Erecinski"]
+categories:
   - "community"
   - "news"
   - "pinecil"
