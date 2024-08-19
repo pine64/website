@@ -9,35 +9,32 @@ menu:
     weight: 3
 ---
 
-There is a number of things that can prevent the PINE A64(+) board from booting up properly. The most common culprits of a failed boot are (to find out more click http://forum.pine64.org/showthread.php?tid=514[here]):
+There is a number of things that can prevent the board from booting up properly. The most common culprits of a failed boot are:
 
 * Subpar or counterfeit microSD card
 * Subpar Power Supply
 * High resistance (thin) or a very long microUSB cable
-* Failed imaging of the microSD card (refer to  the respective ‘imaging microSD card section)
+* Failed imaging of the microSD card
 
-Make sure to have the newest version of the OS image your are running. On Linux, you can update the kernel and uboot using scripts located in the following directory: /usr/local/sbin
+NOTE: Make sure to have the newest version of the operating system and the bootloader installed.
 
-* To navigate to the directory type (in terminal): _cd /usr/local/sbin_
-* You list all the available scripts by typing (in terminal): _ls_
-* To run the script required update script run the following command: _sudo ./update_script.sh_ (substitute the relevant update script for update_script)
+To find out more, visit the http://forum.pine64.org/showthread.php?tid=514[PINE64 forum thread].
 
-*Supported Screen Resolutions*
+== Supported screen resolutions
 
-The pine supports a number of video resolutions under Linux, however RemixOS and Android images currently only support *720p* and *1080p*. Linux supports a wider range of resolutions (see all resolutions supported on Linux https://github.com/longsleep/sunxi-disp-tool#available-hdmi-output-names[here]). If the native resolution of your monitor or TV is not compatible with the PINE A64(+) then you will be unable to get a video to work with your screen.
+The board supports a number of video resolutions under Linux, however RemixOS and Android images currently only support 720p and 1080p. Linux supports a wider range of resolutions (see all resolutions supported on Linux https://github.com/longsleep/sunxi-disp-tool#available-hdmi-output-names[here]). If the native resolution of your monitor or TV is not compatible with the board you will be unable to get video output working with your screen.
 
-*Troubleshooting Step by Step*
+== Steps
 
 Follow these steps to determine the cause of your problem:
 
 * Check your PSU and barrel cable ratings
-* Download and image a base image of Linux
-* Plug in Power and Ethernet into your Board
-* Watch Ethernet port LED activity
-* Check your router for SOPINE IP
-* Attempt to ssh into the SOPINE from your computer
+* Download and install a base image of Linux
+* Plug in _power_ and _ethernet_ into your Board
+* Confirm activity on the ethernet port LED
+* Find out the IP of the SOPINE on the router interface
+* Try to connect to the running SOPINE from your computer using SSH
 
-If neither of the above mentioned scenarios fits the problem you are facing, please consult this thread (thanks to Ghost for compiling the list): http://forum.pine64.org/showthread.php?tid=680
+== Notes
 
-If you cannot find a solution to your problem you can submit a ticket at: https://support.pine64.org/
-
+If neither of the above mentioned scenarios fits the problem you are facing, please consult the http://forum.pine64.org/showthread.php?tid=680[PINE64 forum thread from user _Ghost_]. 
