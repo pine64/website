@@ -566,6 +566,10 @@ button.rounded:hover {
 .backlink:hover {
     color: #222;
 }
+.blog pre {
+    white-space: wrap;
+}
+
 .blog p img {
     display: block;
     margin-left: auto;
@@ -573,7 +577,7 @@ button.rounded:hover {
     max-width: 100%;
     padding: 10px 0;
 }
-.blog ul {
+.blog ul, ol {
     padding-left: 2rem;
 }
 .blog > p > img {
