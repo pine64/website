@@ -9,6 +9,8 @@ menu:
     weight: 1
 ---
 
+:toc:
+
 This page contains a list of all available releases and tools for the link:/documentation/ROCKPro64[ROCKPro64] in alphabetical order.
 
 == Linux
@@ -227,15 +229,6 @@ Download:
 {{Template:Outdated release}}
 * https://github.com/mrfixit2001/recalbox_rockpro64/releases[download] release from mrfixit2001 github.
 
-=== Retro Arena
-
-image:/documentation/images/retroarena.png[width=100]
-
-*Retro Arena* community build for microSD and eMMC boot. This is a BETA and therefore is not update-able nor supported, however bugs or issues are appreciated to be identified and shared via the issues tab on our GitHub so that we can address them in the future. The Roshambo Case support is baked in with one major caveat due to kernel limitation: You can power the unit off by the POWER switch and the RESET button works 100% however to power the unit on you will need to manually plug/unplug the power cord. This limitation will not be present in future releases. You can follow the ongoing discussion about Retro Arena on the https://forum.pine64.org/showthread.php?tid=7555[forum]
-
-Download:
-WARNING: Outdated release
-* http://files.pine64.org/os/ROCKPro64/odroidretroarena/TheRA-RP64-BETA-0.8-FINAL.img.gz[Direct download from pine64.org]
 
 === SkiffOS
 

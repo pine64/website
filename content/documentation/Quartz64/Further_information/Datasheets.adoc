@@ -54,7 +54,8 @@ Ethernet PHY information:
 
 Wi-Fi/BT module info:
 
-* https://files.pine64.org/doc/datasheet/rockpro64/AW-CM256SM_DS_DF_V1.9_STD.pdf[Azurewave CM256SM 11AC Wi-Fi + Bluetooth5.0 Datasheet]
+* https://files.pine64.org/doc/datasheet/rockpro64/AW-CM256SM_DS_DF_V1.9_STD.pdf[Azurewave CM256SM 11AC Wi-Fi + Bluetooth 5.0 datasheet for model A and B]
+* https://files.pine64.org/doc/datasheet/quartz64/AIC8800DC%20Datasheet%20v1.0.pdf[AICSemi AIC8800DC 11AX Wi-Fi + Bluetooth 5.2 datasheet for model "Zero"]
 
 IR LED:
 

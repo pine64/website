@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-=== Model "A"
+== Model "A"
 
 Model "A" Baseboard Dimensions: 133mm x 80mm x 19mm
 
@@ -26,7 +26,7 @@ Certifications:
 * https://files.pine64.org/doc/cert/Quartz64%20Model-A%20CE%20certification-S21051101701001.pdf[Quartz64 model-A CE Certificate]
 * https://files.pine64.org/doc/cert/Quartz64%20Model-A%20FCC%20certification-S21051101702001.pdf[Quartz64 model-A FCC Certificate]
 
-=== Model "B"
+== Model "B"
 
 Model "B" Baseboard Dimensions: 85mm x 56mm x 18.8mm
 
@@ -39,3 +39,14 @@ Quartz64 Model "B" SBC Schematic and PCB Board Resource:
 * Please note that v1.2 and V1.3 schematic and component placement are identical, just some component value changed.
 * Note: Model B uses a Molex PicoBlade compatible connector for the RTC battery. The Pine64 Backup Battery Holders come with a JST PH type connector. To use the Pine64 RTC Backup Battery Holder, the connector on the battery holder will need to be modified with a PicoBlade type connector.
 
+== Model "Zero"
+
+Model "Zero" Baseboard Dimensions: 85mm x 56mm x 18.8mm
+
+Input Power: DC 5V @ 3A 3.5mmOD/1.35mmID center-positive Barrel DC Jack connector
+
+Quartz64 Model "Zero" SBC Schematic and PCB Board Resource:
+
+* https://files.pine64.org/doc/quartz64/Quartz64-ZERO_Schematic_v01_20240428.pdf[Quartz64 Model "Zero" SBC Schematic ver 1.0 20240428 PDF file]
+* https://files.pine64.org/doc/quartz64/Quartz64-ZERO_Component_Placement_Top_v01_20240428.pdf[Quartz64 Model "Zero" SBC PCB Component placement (top side) PDF file]
+* https://files.pine64.org/doc/quartz64/Quartz64-ZERO_Component_Placement_Bottom_v01_20240428.pdf[Quartz64 Model "Zero" SBC PCB Component placement (bottom side) PDF file]
