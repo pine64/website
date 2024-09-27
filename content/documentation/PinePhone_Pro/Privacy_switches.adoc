@@ -13,11 +13,9 @@ image:/documentation/images/PinePhone_Kill_Interruptors_de_Maquinari_del_PinePho
 
 The PinePhone features six switches that can be used to configure its hardware. They are numbered 1-6, with switch 1 located nearest to the modem. Their "on" position is toward the top of the phone.
 
-[cols="1,1,1"]
+[cols="^1,^2,4"]
 |===
-|Number
-|Name
-|Description
+|Number|Name|Description
 
 | 1
 | Modem
