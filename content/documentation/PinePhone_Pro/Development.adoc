@@ -11,11 +11,9 @@ aliases:
   - /documentation/PinePhone_Pro/Various/Development/
 ---
 
-This page documents the current status of software support for the link:/documentation/PinePhone_Pro[PinePhone Pro], and provides links to resources to help prospective contributors get started.
+This page documents development processes and provides links to resources to help prospective contributors get started. For an overview of the current software state see link:/documentation/PinePhone_Pro/Software/Software_state/[software state].
 
-== Overview
-
-=== Upstreaming Status
+== Upstreaming status
 
 |===
 | Function | Status | Component | Notes
@@ -31,64 +29,8 @@ This page documents the current status of software support for the link:/documen
 | Support in https://gitlab.com/mobian1/devices/eg25-manager and Megi's kernel.
 |===
 
-== Current Status
 
-The following sections give an overview over the current status of different parts of the phone. Some parts are waiting on a driver to be written or ported, others only need various adjustments.
-
-=== Working
-
-==== Kernel
-
-There's no canonical location for Pinephone Pro Linux kernel development, because Pinephone Pro DT is not mainline, yet. https://xff.cz/git/linux/log/?h=orange-pi-5.16[megi's kernel tree] is the most complete one, as of November 2021.
-
-https://mainline.space/ tracks mainlining kernels for various phones.
-
-==== Firmware
-
-ATF? Likely working due to reuse of Pinebook Pro SoC?
-
-==== Display
-
-Working.
-
-==== Sound
-
-Working.
-
-==== Modem
-
-Working.
-
-* Megi's orange-pi branches: https://megous.com/git/linux.
-* https://gitlab.com/mobian1/devices/eg25-manager
-
-==== Sensors
-
-Working.
-
-==== Bluetooth
-
-Working.
-
-==== Suspend
-
-Working.
-
-=== Not working
-
-=== Unknown
-
-==== Front camera
-
-OV8858 camera. Unknown.
-
-Datasheet: https://cdn.datasheetspdf.com/pdf-down/O/V/8/OV8858-OmniVision.pdf
-
-==== Back camera
-
-Sony IMX258. Support unknown.
-
-== Levinboot Based Kernel Development Image
+== Levinboot-based kernel development image
 
 This guide will help you get a comfortable environment for testing your kernel builds on Pinephone Pro. It assumes you either already know how to build or cross-build a Linux kernel for arm64, or if you have a way to get a pre-built kernel from somewhere. For a quick test that your setup works, you can use https://xff.cz/kernels/[megi's pre-built kernels].
 
@@ -153,9 +95,7 @@ dd if=payload.img of=/dev/disk/by-partlabel/sd-lpayload1 bs=4M oflag=direct
 
 5) Repeat steps 3 and 4 if you want either more kernel payloads, or more Linux distributions on the same uSD card. I recommend having at least some module-less working kernel in `sd-payload3` and perhaps a small userspace in `sd-rootfs1` with a pre-configured WiFi connection, that will allow you to always quickly recover if your development kernel fails to boot, just by pressing volume up key during boot and updating the the kernel in one of the primary payload partitions over WiFi.
 
-== Development discussion
+== Resources
 
-Most of the discussion happens in #pinedev channel on https://www.pine64.org/web-irc/[Pine64 IRC server].
-
-See https://xnux.eu/log/ too.
+* See link:https://xnux.eu/log/[megi's PinePhone Development Log]
 
