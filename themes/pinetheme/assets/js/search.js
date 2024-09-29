@@ -3,12 +3,11 @@ var fuseOptions = {
     shouldSort: true,
     includeMatches: true,
     includeScore: true,
-    tokenize: true,
     location: 0,
     distance: 100,
     minMatchCharLength: 1,
     keys: [
-        {name: "title", weight: 0.65},
+        {name: "title", weight: 0.85},
         {name: "contents", weight: 0.5},
         {name: "tags", weight: 0.08},
         {name: "categories", weight: 0.05}
@@ -83,6 +82,7 @@ function populateResults(results) {
 
         var output = render(templateDefinition, {
             key: key,
+            location: value.item.permalink.split('//')[1].split('/').slice(1, -2).join(' / ').replace(/_/g, ' '),
             title: value.item.title,
             link: value.item.permalink,
             tags: tags,
