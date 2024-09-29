@@ -1,6 +1,8 @@
 ---
 title: "Community"
 description: PINE64 is a community-driven company focused on creating high-quality, low-cost ARM devices and, more recently, RISC-V devices for individuals and businesses around the globe.
+images:
+  - "/community/community_banner.png"
 aliases:
   - /web-irc/ # from pine64.com
 ---
