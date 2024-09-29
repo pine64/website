@@ -9,6 +9,8 @@ menu:
     weight: 2
 ---
 
+:toc:
+
 This page contains a list of all available releases and tools for the PineTab2 in alphabetical order. 
 
 == Factory releases
@@ -18,6 +20,8 @@ The PineTab2 ships with _Danctnix Arch Linux ARM_. The latest factory image can 
 * https://echo.danctnix.org:7269/factory_images/pinetab2/20240625/danctnix-factory-image-20240625.img.xz (2.2 GB)
 
 NOTE: The factory image is flashed to a microSD card and it will overwrite the eMMC installation after booting.
+
+NOTE: Notice that the last two images (20240307 and 20240625) don't use the keyboard but the volume and power buttons for navigation
 
 
 === Older versions
@@ -36,7 +40,8 @@ NOTE: Older versions ship without Wi-Fi drivers. See below under Arch Linux ARM 
 
 ==== Download
 
-* https://echo.danctnix.org:7269/factory_images/pinetab2/20240625/danctnix-factory-image-20240625.img.xz (2.2 GB)
+* SD-card boot: https://github.com/dreemurrs-embedded/Pine64-Arch/releases
+* Factory flash image: https://echo.danctnix.org:7269/factory_images/pinetab2/20240625/danctnix-factory-image-20240625.img.xz (2.2 GB)
 
 |===
 2+| Default credentials
@@ -47,55 +52,8 @@ NOTE: Older versions ship without Wi-Fi drivers. See below under Arch Linux ARM 
 
 ==== Notes
 
-===== Wi-Fi
-
-Wi-Fi or Bluetooth drivers were not available at launch. These have been added later on, but were disabled by default, since kernel 6.6.13-danctnix1. The wifi driver is enabled by default since kernel 6.9.2-danctnix1.
-
-* The latest factory image (20240625) ships with a kernel which has Wi-Fi drivers enabled by default.
-* The factory image 20240307 ships with a kernel which has Wi-Fi and Bluetooth drivers, but they are disabled by default.
-* The oldest factory image (20230527) ships with a kernel which has no Wi-Fi and Bluetooth drivers.
-
-If Wi-Fi is not working for you, verify your current kernel version with this command:
-
- $ uname -a
-
-Depending on the version reported, you'll either need to do the following:
-
-If on a kernel version older than 6.6.13-danctnix1:
-
-* Connect a __supported__ USB wifi dongle and update your system, or reflash the latest factory image (see link above)
-
-If on a kernel version between 6.6.13 and 6.9.2:
-
-* Enable the driver manually once, and then update your system:
-
- $ sudo modprobe bes2600
- # You can now connect to wifi.
- $ sudo pacman -Syu
- > sudo reboot
-
-===== Bluetooth
-
-__The following information may not work with the latest kernel (version 6.9)__
-
-Bluetooth is still disabled by default, because the drivers are unstable.
-
-Make sure your kernel is version 6.6.13 or newer.
-
-Run the following commands to enable Bluetooth for a single session (until the next time you reboot your PineTab) https://www.reddit.com/r/PINE64official/comments/1akjlwu/tutorial_wifi_and_bluetooth_on_pinetab_2/[(source)]:
-
- $ sudo pacman -S bluez-deprecated-tools
- > sudo -i
- > echo ifname:bt cmd:BT_ON > /dev/bes2600
- > rfkill unblock bluetooth
- > hciattach -s 1500000 /dev/ttyS1 any 1500000 flow nosleep
- > hciconfig hci0 up
- > exit
- > sudo systemctl enable bluetooth
-
-===== Other issues 
-
-* https://github.com/ScottFreeCode/Pine64-Arch/tree/master/PKGBUILDS/pine64/alsa-ucm-pinetab2[HP/Speaker switching via Alsa UCM] - _Unsure if this is fixed or not_
+* Currently ships without Bluetooth driver, and Wifi driver is unstable.
+* Shutdown / Reboot sometimes hangs (but not always), this is caused by the Wifi driver.
 
 === Buildroot
 
