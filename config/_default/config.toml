@@ -16,6 +16,9 @@ disablePathToLower = true
 # Required if you want to render robots.txt template
 enableRobotsTXT = true
 
+# Deprecated command for old Hugo installation
+paginate = 9
+
 # Pagination for the blog posts (x posts per page)
 [pagination]
   disableAliases = false
