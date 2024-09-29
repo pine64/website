@@ -8,11 +8,8 @@ aliases:
 ---
 
 {{< box style="themewhite pad" >}}
-
-{{< box style="pad_s blueshadow" type="image" link="/img/slider_index_1.jpg" width="350" >}}{{</ box >}}
-
+  {{< box style="pad_s blueshadow" type="image" link="/img/slider_index_1.jpg" width="380" >}}{{</ box >}}
   {{< box style="pad f50 rows" title="" content="markdown" >}}
-
 **Welcome to the PINE64 community!**
 
 _PINE64_ has a large, diverse and active community, and offers a variety of resources for hobbyists and businesses to successfully leverage various PINE64 products.
@@ -22,13 +19,19 @@ To become connected and involved with the community, please see the channel list
 {{</ box >}}
 
 
-_PINE64_ is a community-driven company focused on creating high-quality, low-cost ARM devices and, more recently, RISC-V devices for individuals and businesses around the globe. PINE64 made its debut with the link:/documentation/Pine_A64[PINE A64] single-board computer, which successfully launched on Kickstarter in 2015. PINE64 has since released a multitude of other devices, including both development boards and end-user devices.
 
-For information about PINE64 branding, including the usage of the PINE64 logo in non-commercial and other applications, please read the link:Brand_and_logo[article about our brand and logo].
+{{< box style="themewhite pad" >}}
+  {{< box style="pad f50 rows" title="" content="markdown" >}}
+_PINE64_ is a community-driven company focused on creating high-quality, low-cost ARM devices and, more recently, RISC-V devices for individuals and businesses around the globe. PINE64 made its debut with the [PINE A64](/documentation/Pine_A64) single-board computer, which successfully launched on Kickstarter in 2015. PINE64 has since released a multitude of other devices, including both development boards and end-user devices.
 
-The most important asset we have at our disposal is our community. We foster an active, friendly and large community of developers, contributors and end-users like yourself. Across our various community-ran chats and forums there are tens of thousands of people willing to help with any issues you may encounter. 
+For information about PINE64 branding, including the usage of the PINE64 logo in non-commercial and other applications, please read the [article about our brand and logo](Brand_and_logo).
 
-There are a wide range of communication protocols to choose from.
+The most important asset we have at our disposal is our community. We foster an active, friendly and large community of developers, contributors and end-users like yourself. Across our various community-ran chats and forums there are tens of thousands of people willing to help with any issues you may encounter. There are a wide range of communication protocols to choose from.
+  {{</ box >}}
+
+  {{< box style="pad_s blueshadow" type="image" link="/img/philosophy.png" width="200" >}}{{</ box >}}
+{{</ box >}}
+
 
 == Chat platforms
 

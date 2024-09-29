@@ -2,7 +2,7 @@
 <html lang="en">
     {{ partial "head.html" . }}
     <body>
-        {{- partial "header.html" . -}}
+        {{- partialCached "header.html" . .Section -}}
         <div id="content">
         {{- block "main" . }}{{- end }}
         </div>

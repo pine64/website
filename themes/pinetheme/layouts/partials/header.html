@@ -55,9 +55,10 @@
         <!-- Main menu -->
         <div id="main_menu">
             {{- $currentPage := . -}}
+            {{ $section := .Site.GetPage $currentPage.Section }}
             {{- range .Site.Menus.right.ByWeight -}}
                 <a class='nav-link
-                {{- if or (or ($currentPage.IsMenuCurrent "right" .) ($currentPage.HasMenuCurrent "right" .)) (strings.Contains $currentPage .URL ) }} active{{end -}}
+                {{- if $section.IsMenuCurrent "right" .}} active{{end -}}
                 {{- if eq .Params.external true }} external{{end -}}
                 ' href="{{ .URL }}" 
                 {{- if eq .Params.external true }} target="_blank" rel="noopener noreferrer"{{ end -}}>

@@ -27,7 +27,7 @@
 
                     <div class="box rows pad_s">
                         <h3>{{ .Title }}</h3>
-                            <p>{{ .Summary }}</p>
+                            <p>{{ .Summary | strings.Truncate 300 | plainify}}</p>
                         {{ partial "blog_date.html" . }}
                     </div>
                 </a>

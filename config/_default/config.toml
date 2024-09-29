@@ -71,33 +71,33 @@ enableRobotsTXT = true
 [menu]
   [[menu.right]]
     name = "Blog"
-    url = "/blog/"
+    pageref = "/blog/"
     weight = 1
   [[menu.right]]
     name = "Community"
-    url = "/community/"
+    pageref = "/community/"
     weight = 2
   [[menu.right]]
     name = "Devices"
-    url = "/devices/"
+    pageref = "/devices/"
     weight = 3
   [[menu.right]]
     name = "Documentation"
-    url = "/documentation/"
+    pageref = "/documentation/"
     weight = 4
   [[menu.right]]
     name = "Contests"
-    url = "/contests/"
+    pageref = "/contests/"
     weight = 5
   [[menu.right]]
     name = "Podcast"
-    url = "/podcast/"
+    pageref = "/podcast/"
     weight = 6
 
   [[menu.additional]]
     name = "Store"
     post = "<svg xmlns='http://www.w3.org/2000/svg' width='22' height='18' fill='none' stroke='#000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='m6 9 6 6 6-6'/></svg>"
-    url = "#"
+    pageref = "#"
     weight = 0
     identifier = "store"
     [menu.additional.params]
@@ -120,7 +120,7 @@ enableRobotsTXT = true
       external = true
   [[menu.additional]]
     name = "Affiliates"
-    url = "/affiliates/"
+    pageref = "/affiliates/"
     parent = "store"
     weight = 3
     identifier = ""

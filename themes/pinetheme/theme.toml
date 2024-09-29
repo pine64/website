@@ -3,12 +3,12 @@
 
 name = "Pinetheme"
 license = "CC0"
-licenselink = "https://github.com/???/yourtheme/blob/master/LICENSE"
+licenselink = "https://creativecommons.org/publicdomain/zero/1.0/legalcode"
 description = ""
-homepage = "http://pine64.org/"
+homepage = "https://pine64.org/"
 tags = []
 features = []
-min_version = "0.41.0"
+min_version = "0.59.1"
 
 [author]
   name = ""
