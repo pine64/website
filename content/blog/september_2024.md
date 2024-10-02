@@ -33,59 +33,25 @@ We'd also like to thank you for your patience, it's been difficult with a most o
 
 Thanks!
 
-
 ![](/blog/images/September_Update_Check_Your_Notes.png)
 
-## Table of Contents
+{{< toc >}}
 
-- [Updates](#updates)
-  - [New products announcements](#new-products-announcements)
-    - [StarPro64](#starpro64)
-    - [Oz64](#oz64)
-    - [Quartz64-Zero](#quartz64-zero)
-  - [PineNote](#pinenote)
-    - [Operating System Progress](#operating-system-progress)
-      - [Mobian](#mobian)
-      - [PostmarketOS](#postmarketos)
-    - [Call For Contributors!](#call-for-contributors)
-  - [PinePhone Pro](#pinephone-pro)
-  - [PinePhone](#pinephone)
-  - [Pinecil / IronOS](#pinecil--ironos)
-    - [Stability](#stability)
-    - [Timer weirdness](#timer-weirdness)
-    - [New Screen Driving / GUI Handling](#new-screen-driving--gui-handling)
-    - [New from Ralim](#new-from-ralim)
-  - [Quartz64/RK3568](#quartz64rk3568)
-  - [PineTime](#pinetime)
-    - [PineStore announcement: small hardware change](#pinestore-announcement-small-hardware-change)
-    - [InfiniLink](#infinilink)
-    - [Blog posts about the PineTime](#blog-posts-about-the-pinetime)
-    - [Rework of ITD](#rework-of-itd)
-    - [Flatpak package for Amazfish](#flatpak-package-for-amazfish)
-    - [PineTime integration in MyGnuHealth](#pinetime-integration-in-mygnuhealth)
-    - [The super-power of open source](#the-super-power-of-open-source)
-    - [InfiniEmu](#infiniemu)
-    - [InfiniTime Status](#infinitime-status)
-  - [PineDio](#pinedio)
-- [Community Updates](#community-updates)
-  - [Infrastructure and Moderation](#infrastructure-and-moderation)
-  - [Lomiri on PostmarketOS](#lomiri-on-postmarketos)
-  - [GTK4 inspired watchface](#gtk4-inspired-watchface)
-  - [Want to contribute to the next community update ?](#want-to-contribute-to-the-next-community-update-)
- 
-# Updates
+----
 
-## New products announcements
+## Updates
 
-### StarPro64
+### New products announcements
 
-{{< credits "Lukasz" >}}
+#### StarPro64
+
+{{< credits "Author: Lukasz" >}}
 
 ![starpro64](/blog/images/September_2024/starpro64_1.jpg)
 
 ![starpro64](/blog/images/September_2024/starpro64_2.jpg)
 
-The PINE64 project and PineStore have been committed to bringing more devices based on the RISC-V architecture since three years ago. Since 2021, several devices including the Pinecil —PINE64's most popular hardware— have adopted this architecture. While the Ox64 may have been the first Linux-capable single-board computer (SBC) technically, the first full-fledged PINE64 RISC-V SBC was the Star64, which laid the foundation for the PINETAB-V tablet introduced last year alongside its ARM sibling, the PineTab2. Although significant development is still needed for the JH7110, interest in the platform and RISC-V development in general remain strong, with new releases from projects like DietPi and NuttX.
+The PINE64 project and PineStore have been committed to bringing more devices based on the RISC-V architecture since three years ago. Since 2021, several devices including the Pinecil — PINE64's most popular hardware — have adopted this architecture. While the Ox64 may have been the first Linux-capable single-board computer (SBC) technically, the first full-fledged PINE64 RISC-V SBC was the Star64, which laid the foundation for the PINETAB-V tablet introduced last year alongside its ARM sibling, the PineTab2. Although significant development is still needed for the JH7110, interest in the platform and RISC-V development in general remain strong, with new releases from projects like DietPi and NuttX.
 
 However, PINE64 and PineStore's commitment to the RISC-V platform goes far beyond existing products. As a testament to this, we are thrilled to introduce you to the newest RISC-V family member in the PINE64 hardware line-up – the StarPro64. Following the convention of more capable hardware in the PINE64 catalog, the StarPro64 boasts a more powerful system-on-chip (SoC) at its core than its non-Pro older sibling. It is based on the EIC7700X, an upgraded version of the EIC7700. The CPU speed has been increased from 1.4 GHz to 1.8 GHz, while the NPU performance has been boosted from 13.3 TOPS to 19.95 TOPS.
 
@@ -93,13 +59,13 @@ The StarPro64 uses the model-A board format, seen in earlier products such as th
 
 The StarPro64 will be available in three memory configurations: 8GB, 16GB, or 32GB of LPDDR5 RAM. While a firm availability date has not yet been provided yet, it is expected to reach the PineStore sooner rather than later. The first prototype, featuring 32GB of RAM, arrived in late September and we’re pleased with how it turned out. If the early evaluation board passes testing, developers will start receiving their units in the coming weeks. While we’re keen to get production going so you can get your hands on a unit, we’ll patiently wait for developer feedback - positive feedback from the community will lead to full-scale production.
 
-The StarPro64, and more specifically the Eswin EIC7700 SoC, is an exciting platform that may become a foundation for future devices. PINE64 hopes that the development and enthusiast community will embrace this SoC and the StarPro64, as it could be a gateway to a range of affordable RISC-V devices that many of us are eager to see. For instance, you can even connect a PinePhone Pro LCD and touch panel to the StarPro64—pretty cool, right? For those interested in a deeper dive into the SoC, I encourage you to check out a detailed article on [CNX Software](https://www.cnx-software.com/2024/06/19/eswin-eic7700x-quad-core-risc-v-soc-embeds-19-95-tops-npu-for-edge-ai-vision-applications/).
+The StarPro64, and more specifically the Eswin EIC7700 SoC, is an exciting platform that may become a foundation for future devices. PINE64 hopes that the development and enthusiast community will embrace this SoC and the StarPro64, as it could be a gateway to a range of affordable RISC-V devices that many of us are eager to see. For instance, you can even connect a PinePhone Pro LCD and touch panel to the StarPro64 — pretty cool, right? For those interested in a deeper dive into the SoC, I encourage you to check out a detailed article on [CNX Software](https://www.cnx-software.com/2024/06/19/eswin-eic7700x-quad-core-risc-v-soc-embeds-19-95-tops-npu-for-edge-ai-vision-applications/).
 
 The StarPro64 board PCB has already been sent out for fabrication along with the prototyping board back in September.
 
-### Oz64
+#### Oz64
 
-{{< credits "Lukasz" >}}
+{{< credits "Author: Lukasz" >}}
 
 ![oz64](/blog/images/September_2024/oz64.png)
 
@@ -107,9 +73,9 @@ The StarPro64 is, however, not the only SBC introduced this month. The [Oz64](/d
 
 The Oz64 is expected to be available in the next few weeks or months.
 
-### Quartz64-Zero
+#### Quartz64-Zero
 
-{{< credits "Lukasz" >}}
+{{< credits "Author: Lukasz" >}}
 
 Following the two RISC-V centered SBCs there is also an announcement pertaining to our Arm Quartz64 device-line. 
 The Quartz64-Zero is a lower cost version of the Quartz64 that is based on the RK3566T (Quad A55 @1.6Gh) and comes with 1GB memory. 
@@ -122,7 +88,7 @@ The Quartz64-Zero is already available for $15 on [the store](https://pine64.com
 
 
 
-## PineNote
+### PineNote
 
 {{< credits "Authors: Ralim, CarbonatedCaffeine" >}}
 
@@ -136,7 +102,7 @@ This is excellent as it also moves the target audience from _developers_ to ever
 
 The hardware of the PineNote has taken some feedback from the early developer units, we are aiming to have the old pen replaced by a passive (no charging) unit that still features the same buttons. 
 
-### Operating System Progress
+#### Operating System Progress
 
 Currently the PineNote firmware is being developed by [Maximillian](https://github.com/m-weigand) and is [based on Debian](https://github.com/PNDeb/pinenote-debian-image/releases/tag/trixie-v20240513_v2).
 
@@ -148,34 +114,33 @@ The images are using the Gnome desktop and includes some extensions specific to 
 
 If you currently own a PineNote, you can find these images [here](https://github.com/PNDeb/pinenote-debian-image/releases/tag/trixie-v20240513_v2). If you have time, any testing and feedback on these will be valuable.
 
-#### Mobian
+##### Mobian
 
 [Julian Fairfax](https://github.com/julianfairfax/images-build) has created an initial port of Mobian for the PineNote. It currently boots, but it isn't as usable as it could be using Phosh. It's a good starting point. 
 
-#### PostmarketOS
+##### PostmarketOS
 
 "There were also attempts to port PostmarketOS to the Pinenote. The current state needs to be tested:" 
 https://wiki.postmarketos.org/wiki/PINE64_PineNote_(pine64-pinenote)
 
-### Call For Contributors!
+#### Call For Contributors!
 
 We need help getting the Debian image into best shape for the release.
 
-* **Issues: https://github.com/PNDeb/pinenote-debian-image/issues**
-
+* Issues: https://github.com/PNDeb/pinenote-debian-image/issues
 * Nice videos would be very appreciated
 * Join/ask in the PineNote chat if you are willing to help!
 
-## PinePhone Pro
+### PinePhone Pro
 
-{{< credits "Authors: CarbonatedCaffeine" >}}
+{{< credits "Author: CarbonatedCaffeine" >}}
 
 The PinePhone Pro switched its default operating system from Manjaro at the end of 2023 to Adam Piggz's port of Sailfish. There have been a number of updates since the PinePhone Pro was mentioned in a community update. 
 
 During the end of 2023 commits were made to add [functionality to wake the phone using the modems RI pin](https://github.com/sailfish-on-dontbeevil/kernel-adaptation-pinephonepro/commit/e9130550b833bb69c98c80176f1f3dcb3d35e33e). In addition to [adding the config to support usage of Waydroid](https://github.com/sailfish-on-dontbeevil/kernel-adaptation-pinephonepro/commit/da9996ad5077924abe5e0d84a505ad9ba2debbc7). 
 Then recently in early 2024 Adam [fixed call audio routing](https://github.com/sailfish-on-dontbeevil/droid-config-pinephone/commit/4cb2796e56063cb04d0493c1afeee87abe4a997e). 
 
-## PinePhone
+### PinePhone
 
 {{< credits "Authors: JF, CarbonatedCaffeine" >}}
 
@@ -186,20 +151,20 @@ Good news for PinePhone users!
 
 Another patch added a mount-matrix for the accelerometer into mainline, which fixes inverted accelerometer behavior. 
 
-## Pinecil / IronOS
+### Pinecil / IronOS
 
-{{< credits "Authors: Ralim" >}}
+{{< credits "Author: Ralim" >}}
 
 1. Stability
 2. Timer weirdness
 3. BLE quirks
 4. New screen driving / GUI handling
 
-### Stability
+#### Stability
 
 IronOS has had a rather slow development cycle on my side of things due to lack of time. The community around the project has been helping immensely however, which has kept things going. One aspect of this for the Pinecilv2 is that the newer release and onwards should have improved stability for the temperature regulation.
 
-### Timer weirdness
+#### Timer weirdness
 
 There is a bit of a trifecta of issues going on that caused some of the temperature issues; the timer hardware in the BL702 chip being used _occasionally_ doesn't trigger an interrupt. This causes things to go out of whack as the temperature sensing and the tip drive get out of sync. In the prior release these were occurring fairly frequently but after adjusting some of the timer settings they were reduced.
 
@@ -207,18 +172,18 @@ When investigating this, one of the issues uncovered was that it _appears_ to be
 
 The newer IronOS software detects when this has occurred and recovers more gracefully, so there shouldn't be any real impact to tip temperature.
 
-### New Screen Driving / GUI Handling
+#### New Screen Driving / GUI Handling
 
 In additional news, this will not effect any users, but the entire UI rendering code has been updated. The code is moving to being a non-blocking style of rendering to allow separating any logic around what is going on from drawing the display.
 The goal is that this will allow for full bluetooth remote control of the device if desired (will be Opt-In of course due to safety). This could be used for other devices to be used as a larger display, and using them to start/stop the device.
 
-### New from Ralim
+#### New from Ralim
 
-{{< credits "Authors: Ralim" >}}
+{{< credits "Author: Ralim" >}}
 
 While I do not have much to say about things I've been working on _yet_ I do want to note that there are projects that I'm working with Pine Store to see if they are viable. Nothing concrete yet as still unsure on financial & technical viability yet but some things are taking shape.
 
-## Quartz64/RK3568
+### Quartz64/RK3568
 
 A few patches from [dsimic](https://github.com/dragan-simic) are now merged in Linus' tree:
 
@@ -243,16 +208,15 @@ the SoC
 lower limits for the GPU OPP voltage ranges, using the most conservative
 values (i.e. the highest per-OPP voltages) found in the vendor kernel source
   
-## PineTime
+### PineTime
 
-{{< credits "Authors: JF" >}}
-
+{{< credits "Author: JF" >}}
 
 When I'm browsing the web or reading chat rooms, I often come across interesting posts and messages: a new version of a PineTime related project, a nice blog post or social media post, a new idea, etc.
 
 I'm happy to share in this post some of the links and information I've curated over the last few months!
 
-### PineStore announcement: small hardware change
+#### PineStore announcement: small hardware change
 
 TL informed us recently that the SPI flash memory chip installed in the PineTime (XTX XT25F32B) is EoL (End Of Life) and that it will be replaced by another chip (BY25Q32ESWIG) for the next production batch of the PineTime.
 
@@ -264,7 +228,7 @@ I've already provided these versions to the factory so they can start producting
 
 I strongly suggest developers from other PineTime firmware to check if their code need some changes to support this new hardware revision!
 
-### InfiniLink
+#### InfiniLink
 
 [InfiniLink, the companion app for iOS](https://github.com/InfiniTimeOrg/InfiniLink) made a lot of progress since [Liam](https://github.com/liamcharger) took over the project a few months ago.
 
@@ -276,7 +240,7 @@ InfiniLink 1.0.2 is available on [the App Store](https://apps.apple.com/us/app/i
 
 Liam told me he doesn't have specific plans in mind for the future, but definitely would like to create a macOS app that runs on both Apple Silicon and Intel Macs. To be continued !
 
-### Blog posts about the PineTime
+#### Blog posts about the PineTime
 
 While browsing the web, I sometimes happen to find blog posts about PineTime and its ecosystem. Here are the posts that I would like to mention.
 
@@ -284,7 +248,7 @@ The [first one titled "Programmable watches"](https://decentnet.github.io/blog/2
 
 In [second one titled "Fun with PineTime Smart Watch"](https://wrily.foad.me.uk/fun-with-pinetime-smart-watch) Julian reflects on the idea to use the PineTime as a fun and educative way to introduce children to programming and to FOSS ideas. He also provides many ideas of customizations and applications  in which children can participate.
 
-### Rework of ITD
+#### Rework of ITD
 
 [Elara](https://gitea.elara.ws/Elara6331) applied a complete rewrite of the InfiniTime abstraction layer in [ITD](https://gitea.elara.ws/Elara6331/itd). It's based on a different [Bluetooth library](https://github.com/tinygo-org/bluetooth) and allowed to integrate the new weather functionality. This rewrite will also allow to make ITD cross-platform in the future.
 
@@ -292,7 +256,7 @@ In [second one titled "Fun with PineTime Smart Watch"](https://wrily.foad.me.uk/
 
 Let me also take the opportunity to mention that Elara [accepts donations on Liberapay for their work on ITD and many other FOSS projects](https://liberapay.com/Elara6331/)!
 
-### Flatpak package for Amazfish
+#### Flatpak package for Amazfish
 
 [Jozef](https://fosstodon.org/@jmlich), a great contributor to InfiniTime and Amazfish (among other projects) created [a Flatpak package for Amazfish](https://fosstodon.org/@jmlich/112303505737990399). This will make the installation of this Linux companion app much easier for many users!
 
@@ -300,7 +264,7 @@ The package is available on [Flathub](https://flathub.org/apps/uk.co.piggz.amazf
 
 ![amazfish](/blog/images/September_2024/amazfish.png)
 
-### PineTime integration in MyGnuHealth
+#### PineTime integration in MyGnuHealth
 
 [MyGNUHealth](https://codeberg.org/gnuhealth/mygnuhealth) is a Personal Health Record (PHR), an application that records and stores the health data and other information related to the care of a patient. MyGNUHealth is open source (GPL) and respects the freedom and privacy of the individual.
 
@@ -308,15 +272,13 @@ The package is available on [Flathub](https://flathub.org/apps/uk.co.piggz.amazf
 
 ![mygnuhealth](/blog/images/September_2024/mygnuhealth.png)
 
-### The super-power of open source
+#### The super-power of open source
 
 What is open source? Why does it matter? Those are easy questions, but I honestly have a hard time answering them, especially in English which is not my first language.
 
 Julian (the author of one of the blog post mentioned above) sent the following message in the [PineTime chat room](/community/#chat_platforms) which provides a very simple yet accurate answer to them by describing the *super power* of open source:
 
-```
-Having the power to customize is the super-power of open source and I want to be able to demonstrate that to everyone who sees the watch. (And I think we should work on making customization easier, so everyone can do it.) Awesome to be standing on the shoulders of those who made this possible. Thank you!
-```
+  _"Having the power to customize is the super-power of open source and I want to be able to demonstrate that to everyone who sees the watch. (And I think we should work on making customization easier, so everyone can do it.) Awesome to be standing on the shoulders of those who made this possible. Thank you!"_
 
 I think this is a really nice way to define the open source philosophy: users are empowered to customize the software they are using!
 
@@ -328,7 +290,7 @@ In this case, the customization consists in adding the owner name ("pine time") 
 
 Feel free to have a look at [his repo](https://lab.trax.im/gentle/infinitime/-/commits/show-owner-name/) and [his website](https://julian.foad.me.uk/). Thanks Julian for the kind words and for reminding us why open source is important!
 
-### InfiniEmu
+#### InfiniEmu
 
 [Felipe](https://github.com/pipe01) introduced [InfiniEmu](https://github.com/pipe01/InfiniEmu) a few weeks ago. InfiniEmu *emulates an ARM Cortex M4 CPU capable of running InfiniTime*.
 
@@ -348,7 +310,7 @@ To my knowledge, InfiniEmu is the 2nd project that allows running InfiniTime on 
 
 On the other hands, InfiniEmu emulates the whole hardware so that it runs the very same binary file than the PineTime (it does not need to be rebuilt to target the x86 architecture, for example).  
 
-### InfiniTime Status
+#### InfiniTime Status
 
 Core developers of InfiniTime are quite busy with their private life, family, work on other projects right now, which is probably the main reason why InfiniTime haven't released a new version these last few months. But don't worry, they are still working on the project, reviewing [pull-requests](https://github.com/InfiniTimeOrg/InfiniTime/pulls) and fixing [bugs](https://github.com/InfiniTimeOrg/InfiniTime/issues)!
 
@@ -364,9 +326,9 @@ All those required changes are now integrated in InfiniTime. So now, all we have
 
 Stay tuned for InfiniTime 1.15. ;-)
 
-## PineDio
+### PineDio
 
-{{< credits "Authors: CarbonatedCaffeine" >}}
+{{< credits "Author: CarbonatedCaffeine" >}}
 
 Pine64 has a line of LoRa boards under the "PineDio" name which unfortunately launched at a bad time as the Meshtastic project was in it's infancy at that point around 2020-2021. Now it has become a much bigger project and we have interest in improving support for the PineDio USB adapter on Meshtastic. 
 
@@ -374,23 +336,23 @@ We are looking for people interested in Meshtastic and LoRa to help with the Pin
 
 If you're interested please come visit the [Pine64 LoRa channels](https://pine64.org/community/) or join the [Meshtastic Discord server](https://discord.com/invite/ktMAKGBnBs). 
 
-# Community Updates
+## Community Updates
 
-## Infrastructure and Moderation
+### Infrastructure and Moderation
 
 For a while now, our community manager Gamiee has been taking on the work of keeping all of the community servers an services up and running as well as trying to moderate the online chat's. Due to increased his day-job workload he is handing over the mantle of the community moderation to some others of the community. Namely our new community committee who are slowly transitioning to help look after the community. Gamiee will continue to look after the infrastructure of the Pine64 website and services. 
 
-## Lomiri on PostmarketOS
+### Lomiri on PostmarketOS
 
-{{< credits "Authors: CarbonatedCaffeine" >}}
+{{< credits "Author: CarbonatedCaffeine" >}}
 
 ![lomiri](/blog/images/September_2024/lomiri.jpg)
 
 Community member [Blume](https://github.com/RoseBlume) has been building PostmarketOS images with Lomiri for various devices like the PinePhone and PineTab and would appreciate feedback and testing. You can find his images [here](https://github.com/RoseBlume/PostmarketOS-Lomiri-Images).
 
-## GTK4 inspired watchface
+### GTK4 inspired watchface
 
-{{< credits "Authors: CarbonatedCaffeine" >}}
+{{< credits "Author: CarbonatedCaffeine" >}}
 
 ![gtkwatchface](/blog/images/September_2024/gtkwatchface.png)
 
@@ -398,7 +360,7 @@ Community member [M​orsMortium](https://codeberg.org/MorsMortium) designed and
 
 You can check it out [here](https://codeberg.org/MorsMortium/GTKWatchFace) along with instructions on installing it on your PineTime in the README. Contributors welcome!
 
-## Want to contribute to the next community update ?
+### Want to contribute to the next community update?
 
 Do you have a cool project that you're working on you'd like to be mentioned? Is there something you're interested in that you'd like to write about related to Pine64? Something we'll be doing going forward is a spotlight for projects within the Pine64 community. If you're interested please contact us!
 

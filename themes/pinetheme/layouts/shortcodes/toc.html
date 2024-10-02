@@ -1,0 +1,6 @@
+<h2>Table of contents</h2>
+
+{{ $tocStartLevel := default 2 .Page.Params.toc_start_level }}
+{{ $tocEndLevel := default 9 .Page.Params.toc_end_level }}
+{{ $tocOrdered := default false .Page.Params.toc_ordered }}
+{{ .Page.Fragments.ToHTML $tocStartLevel $tocEndLevel $tocOrdered | safeHTML }}

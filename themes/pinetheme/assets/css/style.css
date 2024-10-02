@@ -41,6 +41,9 @@ h2 a, h3 a, h4 a, h5 a, h6 a {
 .imageblock {
     margin-bottom: 1.6rem;
 }
+ul, li, ol {
+    list-style-position: inside;
+}
 
 hr {
     height: 1px;
@@ -78,7 +81,6 @@ div.box img {
     max-width: 100%;
 }
 div.box ul{
-    padding-left: 2rem;
     padding-bottom: 10px;
 }
 
@@ -611,9 +613,6 @@ button.rounded:hover {
     max-width: 100%;
     padding: 10px 0;
 }
-.blog ul, ol {
-    padding-left: 2rem;
-}
 .blog > p > img {
     max-height: 670px;
 }
@@ -622,9 +621,11 @@ button.rounded:hover {
     width: 100%;
 }
 .blog-header {
-
     width: 100%;
     margin-top: 20px;
+}
+.blog ul, ol {
+    padding-left: 1rem;
 }
 @media screen and (max-width: 1100px){
     .blog-header {
@@ -878,6 +879,27 @@ thead {
 tbody {
     background-color: #f8f8f8;
     margin-bottom: 0;
+}
+
+
+/* Table of contents */
+nav#TableOfContents {
+    margin-bottom: 14px;
+}
+nav#TableOfContents ul {
+    padding-bottom: 0 !important;
+}
+nav#TableOfContents ol {
+    list-style: inside decimal;
+}
+nav#TableOfContents ul li, ol li {
+    padding: 4px 4px;
+}
+nav#TableOfContents ul li ul li {
+    font-weight: 300 !important;
+}
+nav#TableOfContents ul ul, ol ol {
+    padding-left: 1.4em;
 }
 
 /* Podcast page */

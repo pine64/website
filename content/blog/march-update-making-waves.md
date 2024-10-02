@@ -66,7 +66,7 @@ So in the upcoming months, the Pine Store plans to manufacture and sell new Yuzu
 
 ## IronOS
 
-{{< credits "Authors: Ralim" >}}
+{{< credits "Author: Ralim" >}}
 
 Hello,
 
@@ -120,7 +120,7 @@ For those of us (myself included) that love to integrate everything into Home As
 
 ## PineTime
 
-{{< credits "Authors: JF002" >}}
+{{< credits "Author: JF002" >}}
 
 As always, FOSDEM was a nice opportunity to meet with community members, users and contributors of the PineTime project.
 And just by looking at the number of people proudly wearing their PineTime on their wrist, I can safely say that the PineTime project is still very popular, more than 3 years after it was created!
@@ -184,7 +184,7 @@ The font rendering on the display is very nice, it features very smooth scrollin
 
 ## Pinetab 2
 
-{{< credits "Authors: Caffeine" >}}
+{{< credits "Author: Caffeine" >}}
 
 For this month’s community update I talked to Danct12 from the Danctnix project concerning the current state of the device.
 
@@ -208,7 +208,7 @@ We are hoping that support for the Rockchip ISP and H.264 driver will land soon 
 
 ## PineNote
 
-{{< credits "Authors: Ralim" >}}
+{{< credits "Author: Ralim" >}}
 
 Please note that this section is written by _Ralim_. I am **not** a staff member of Pine64, but I want to represent the state of the Pinenote as best to my knowledge.  
 During FOSDEM the current state of the Pinenote was available for people to interact with (and also to show the device does exist).
@@ -220,7 +220,7 @@ Currently more testing is desired to help find remaining bugs and resolve first-
 
 ## What exactly happened with the cluster
 
-{{< credits "Authors: gamiee" >}}
+{{< credits "Author: gamiee" >}}
 
 On the 20th of January 2024 at 10:30 PM CET, most of the DB based services went down and started throwing errors when attempting to connect to the MySQL databases. 
 After some analysis, all of the nodes in the cluster had failed, making the rootfs mount as read-only. In the current cluster setup every node has its rootfs mounted over the network, this leads to one likely culpret, that something had gone wrong with the storage node. 
@@ -281,7 +281,7 @@ In the following months, we will start work on the software side, which will be 
 
 ## Future of community updates
 
-{{< credits "Authors: gamiee" >}}
+{{< credits "Author: gamiee" >}}
 
 Monthly updates were an essential part of the community for a very long time, so not having them was indeed very damaging. That's why it was priority #1 on our topics to discuss at FOSDEM 2024. Thankfully, we have a new plan with getting updates released again. We still aren't sure if it will still be on a monthly basis like it used to be, but it will be periodically released. Not only that, we are planning on improving community engagement and moderation. We will explain our plan further in following updates.
 

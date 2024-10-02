@@ -209,26 +209,6 @@ div#doc-page .ulist {
     padding-bottom: 1rem;
 }
 
-/* Table of contents */
-nav#TableOfContents {
-    margin-bottom: 14px;
-}
-nav#TableOfContents ul {
-    list-style-type: none;
-}
-nav#TableOfContents ul li{
-    font-weight: 500;
-    box-decoration-break: clone;
-    padding: 4px 4px;
-}
-nav#TableOfContents ul li ul li {
-    font-weight: 300 !important;
-    box-decoration-break: clone;
-}
-nav#TableOfContents ul ul{
-    padding-left: 1em;
-}
-
 /* Admonition */
 #doc-page .admonitionblock {
     margin: 1.4rem 1rem 1rem 1rem;
