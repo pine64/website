@@ -606,6 +606,13 @@ button.rounded:hover {
 .backlink:hover {
     color: #222;
 }
+
+.blog {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
 .blog pre {
     white-space: wrap;
 }
@@ -1074,4 +1081,16 @@ button.podcast:hover {
     background-color: #999;
     height: 1px;
     flex-grow: 1;
+}
+@media screen and (max-width: 1000px){
+    #footer {
+        min-width: unset;
+    }
+    #footer .box {
+        display: block;
+        min-width: unset;
+    }
+    #footer .cols {
+        padding: 0 1em;
+    }
 }
