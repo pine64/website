@@ -353,7 +353,7 @@ For a while now, our community manager Gamiee has been taking on the work of kee
 
 Community member [Blume](https://github.com/RoseBlume) has been building PostmarketOS images with Lomiri for various devices like the PinePhone and PineTab and would appreciate feedback and testing. You can find his images [here](https://github.com/RoseBlume/PostmarketOS-Lomiri-Images).
 
-### GTK4 inspired watchface
+### GTK3 inspired watchface
 
 {{< credits "Author: CarbonatedCaffeine" >}}
 
