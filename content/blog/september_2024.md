@@ -359,7 +359,7 @@ Community member [Blume](https://github.com/RoseBlume) has been building Postmar
 
 ![gtkwatchface](/blog/images/September_2024/gtkwatchface.png)
 
-Community member [M​orsMortium](https://codeberg.org/MorsMortium) designed and created a series of watchfaces inspired by the GTK4 interface style. It includes widgets for the weather along with days of the week and numbered battery status among the rest.
+Community member [M​orsMortium](https://codeberg.org/MorsMortium) designed and created a series of watchfaces inspired by the GTK3 interface style. It includes widgets for the weather along with days of the week and numbered battery status among the rest.
 
 You can check it out [here](https://codeberg.org/MorsMortium/GTKWatchFace) along with instructions on installing it on your PineTime in the README. Contributors welcome!
 
