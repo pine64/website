@@ -86,8 +86,6 @@ All Quartz64 software options should work right out-of-the box on this board wit
 
 The Quartz64-Zero is already available for $15 on [the store](https://pine64.com/product/quartz64-zero-single-board-computer/).
 
-
-
 ### PineNote
 
 {{< credits "Authors: Ralim, CarbonatedCaffeine" >}}
@@ -130,6 +128,11 @@ We need help getting the Debian image into best shape for the release.
 * Issues: https://github.com/PNDeb/pinenote-debian-image/issues
 * Nice videos would be very appreciated
 * Join/ask in the PineNote chat if you are willing to help!
+
+### PineTab V
+The PineTab V is returning for another production batch in October similar to the PineNote, there are no changes from the original batch.
+
+The device will be in stock around mid/late October. An announcement will be made when it drops in the store.
 
 ### PinePhone Pro
 
