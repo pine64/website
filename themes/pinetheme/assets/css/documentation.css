@@ -20,7 +20,9 @@
     justify-content: space-between;
     display: flex;
 }
-
+#doc-breadcrumbs ul {
+    padding-left: 0 !important;
+}
 #doc-breadcrumbs-icon{
     position: relative;
     top: 2pt;
@@ -51,6 +53,9 @@
     top:0;
     max-height: 100vh;
     overflow-x: auto;
+}
+#doc-nav .sidebar-nav ul {
+    padding-left: 0 !important;
 }
 #doc-nav .sidebar-nav > ul > ul {
     border-left: 1px solid #fafafa;

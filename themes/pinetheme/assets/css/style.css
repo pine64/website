@@ -46,7 +46,10 @@ ul, li, ol {
 }
 ul li p, ol li p {
     display: inline;
-} 
+}
+ul, ol {
+    padding-left: 1rem;
+}
  
 
 hr {
@@ -635,9 +638,6 @@ button.rounded:hover {
     width: 100%;
     margin-top: 20px;
 }
-.blog ul, ol {
-    padding-left: 1rem;
-}
 @media screen and (max-width: 1100px){
     .blog-header {
         display: block; 
@@ -897,8 +897,11 @@ tbody {
 nav#TableOfContents {
     margin-bottom: 14px;
 }
-nav#TableOfContents ul {
+nav#TableOfContents ul, li{
     padding-bottom: 0 !important;
+}
+nav#TableOfContents > ul, li{
+    padding-left: 0 !important;
 }
 nav#TableOfContents ol {
     list-style: inside decimal;
