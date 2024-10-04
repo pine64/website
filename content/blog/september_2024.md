@@ -82,7 +82,7 @@ The Quartz64-Zero is a lower cost version of the Quartz64 that is based on the R
 
 ![quartz64-zero](/blog/images/September_2024/quartz64-zero.jpg)
 
-All Quartz64 software options should work right out-of-the box on this board without any major optimizations. Noteworthily, the PCIe port on the Quart64-Zero is the same as the one on the Raspberry Pi 5. As such the PineStore sees this low-cost board as suitable for commercial project applications and guarantees the availability of the board until at least 2028. It is hence an LTS board. 
+All Quartz64 software options should work right out-of-the box on this board without any major optimizations. Noteworthily, the PCIe port on the Quartz64-Zero is the same as the one on the Raspberry Pi 5. As such the PineStore sees this low-cost board as suitable for commercial project applications and guarantees the availability of the board until at least 2028. It is hence an LTS board. 
 
 The Quartz64-Zero is already available for $15 on [the store](https://pine64.com/product/quartz64-zero-single-board-computer/).
 

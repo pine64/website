@@ -19,7 +19,7 @@ description: "PINE64 has a variety of different devices. Find out more!"
     {{< devices/device_box link="/devices/pine_h64_model_b" img="/devices/images/pine_h64_ver_b.jpg" title="PINE H64 Model B" text="" >}}
     {{< devices/device_box link="/devices/quartz64_model_a" img="/devices/images/quartz64_model_a.jpg" title="Quartz64 Model A" text="" >}}
     {{< devices/device_box link="/devices/quartz64_model_b" img="/devices/images/quartz64_model_b.png" title="Quartz64 Model B" text="" >}}
-    {{< devices/device_box link="/devices/quartz64_zero" img="/devices/images/Quartz64-Zero.jpg" title="Quartz64 Zero" text="" >}}
+    {{< devices/device_box link="/devices/quartz64-zero" img="/devices/images/Quartz64-Zero.jpg" title="Quartz64-Zero" text="" >}}
     {{< devices/device_box link="/devices/quartzpro64" img="/documentation/images/Quartzpro64_whole_board_top_resized.jpeg" title="QuartzPro64" text="" >}}
 {{</ flexbox >}}
 
