@@ -79,33 +79,33 @@ paginate = 9
 [menu]
   [[menu.right]]
     name = "Blog"
-    pageref = "/blog/"
+    pageRef = "/blog/"
     weight = 1
   [[menu.right]]
     name = "Community"
-    pageref = "/community/"
+    pageRef = "/community/"
     weight = 2
   [[menu.right]]
     name = "Devices"
-    pageref = "/devices/"
+    pageRef = "/devices/"
     weight = 3
   [[menu.right]]
     name = "Documentation"
-    pageref = "/documentation/"
+    pageRef = "/documentation/"
     weight = 4
   [[menu.right]]
     name = "Contests"
-    pageref = "/contests/"
+    pageRef = "/contests/"
     weight = 5
   [[menu.right]]
     name = "Podcast"
-    pageref = "/podcast/"
+    pageRef = "/podcast/"
     weight = 6
 
   [[menu.additional]]
     name = "Store"
     post = "<svg xmlns='http://www.w3.org/2000/svg' width='22' height='18' fill='none' stroke='#000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='m6 9 6 6 6-6'/></svg>"
-    pageref = "#"
+    pageRef = "#"
     weight = 0
     identifier = "store"
     [menu.additional.params]
@@ -128,9 +128,9 @@ paginate = 9
       external = true
   [[menu.additional]]
     name = "Affiliates"
-    pageref = "/affiliates/"
+    pageRef = "/affiliates"
     parent = "store"
     weight = 3
     identifier = ""
     [menu.additional.params]
-      external = true
+      external = false
