@@ -67,12 +67,13 @@ paginate = 9
   [params.social]
     twitter = 'thepine64'
 
-
-
-
 [security.exec]
   allow = ["^asciidoctor$"]
 
+# Allow HTML inside markdown (e. g. for br in tables)
+[markup.goldmark]
+    [markup.goldmark.renderer]
+    unsafe = true 
 
 # Docs menu
 [menu]

@@ -736,6 +736,7 @@ div.credits {
 .devices table {
     border: none;
     border-spacing: 0;
+    line-height: 2;
 }
 .devices tbody {
     background-color: white;
