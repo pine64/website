@@ -86,8 +86,6 @@ All Quartz64 software options should work right out-of-the box on this board wit
 
 The Quartz64-Zero is already available for $15 on [the store](https://pine64.com/product/quartz64-zero-single-board-computer/).
 
-
-
 ### PineNote
 
 {{< credits "Authors: Ralim, CarbonatedCaffeine" >}}
@@ -130,6 +128,11 @@ We need help getting the Debian image into best shape for the release.
 * Issues: https://github.com/PNDeb/pinenote-debian-image/issues
 * Nice videos would be very appreciated
 * Join/ask in the PineNote chat if you are willing to help!
+
+### PineTab V
+The PineTab V is returning for another production batch in October similar to the PineNote, there are no changes from the original batch.
+
+The device will be in stock around mid/late October. An announcement will be made when it drops in the store.
 
 ### PinePhone Pro
 
@@ -350,13 +353,13 @@ For a while now, our community manager Gamiee has been taking on the work of kee
 
 Community member [Blume](https://github.com/RoseBlume) has been building PostmarketOS images with Lomiri for various devices like the PinePhone and PineTab and would appreciate feedback and testing. You can find his images [here](https://github.com/RoseBlume/PostmarketOS-Lomiri-Images).
 
-### GTK4 inspired watchface
+### GTK3 inspired watchface
 
 {{< credits "Author: CarbonatedCaffeine" >}}
 
 ![gtkwatchface](/blog/images/September_2024/gtkwatchface.png)
 
-Community member [M​orsMortium](https://codeberg.org/MorsMortium) designed and created a series of watchfaces inspired by the GTK4 interface style. It includes widgets for the weather along with days of the week and numbered battery status among the rest.
+Community member [M​orsMortium](https://codeberg.org/MorsMortium) designed and created a series of watchfaces inspired by the GTK3 interface style. It includes widgets for the weather along with days of the week and numbered battery status among the rest.
 
 You can check it out [here](https://codeberg.org/MorsMortium/GTKWatchFace) along with instructions on installing it on your PineTime in the README. Contributors welcome!
 
