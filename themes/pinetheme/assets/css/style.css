@@ -316,13 +316,6 @@ ul.pagination li.active a, ul.pagination li a:hover{
     color: #0069B5;
 }
 
-div.ulist{
-    padding-left: 2rem;
-}
-div.olist{
-    padding-left: 2rem;
-}
-
 /* Paragraph and section margins */
 .paragraph .right {
     float: right;
