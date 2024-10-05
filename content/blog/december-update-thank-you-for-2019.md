@@ -113,9 +113,7 @@ The last but certainly not the least important subject I wish to discuss is soft
 
 Before I wrap this section up I feel it necessary to underline that despite the truly excellent software progress in recent weeks, the PinePhone is not yet ready to be a daily driver. I am writing this in the hope of preventing people from developing a false impression that the _Brave Heart_ phones can run feature-complete OSs at this point in time. This is still very much a work-in-progress project as of December 2019, and various aspects of the software needs time to be properly implemented into the respective OSs. The fact that all key functionality has been worked out doesn’t automatically mean that each and single OS will be able to implement these features on-the-fly into their systems in a matter of weeks. Such implementations takes time and effort. In other words, if you’re getting a _Brave Heart_ edition phone -- have the mindset of a tester and contributor rather than an end-user. This should already be apparent to you from previous blog-posts, but I just wanted to spell it out. In turn, by March 2020 you will be the first to have a fully functional mainline Linux phone that you’ll be happy to show off to others. 
 
-<iframe title="First PinePhone Call by PINE64" width="640" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?visual=false&amp;url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F722547577&amp;show_artwork=true&amp;maxwidth=640&amp;maxheight=960&amp;dnt=1&amp;auto_play=false&amp;buying=true&amp;liking=true&amp;download=true&amp;sharing=true&amp;show_comments=true&amp;show_playcount=true&amp;show_user=true&amp;color"></iframe>
-
- ![](/blog/images/PINE64-family.jpg)
+![](/blog/images/PINE64-family.jpg)
 
 **Happy family ;)**
 

@@ -212,9 +212,9 @@ But still, many people were asking for the heart rate sensor in InfiniTime, and 
 
 **Heart rate measuring in-app (left) and displayed on watchface (right)**
 
-I teased the Navigation app in the last community update. I'm happy to announce that it's now released! This app, written by [Adam](https://twitter.com/adampigg) works in conjunction with [Amazfish](https://github.com/piggz/harbour-amazfish) and [PureMaps](https://github.com/rinigus/pure-maps), and InfiniTime displays the navigation instructions from PureMaps when it's connected to Amazfish. Best of all, these apps run on many Linux devices, such as the Pinebook Pro and the Pinephone !
+I teased the Navigation app in the last community update. I'm happy to announce that it's now released! This app, written by [Adam](https://twitter.com/adampigg) works in conjunction with [Amazfish](https://github.com/piggz/harbour-amazfish) and [PureMaps](https://github.com/rinigus/pure-maps), and InfiniTime displays the navigation instructions from PureMaps when it's connected to Amazfish. Best of all, these apps run on many Linux devices, such as the Pinebook Pro and the Pinephone!
 
-<iframe width="660" height="815" sandbox="allow-same-origin allow-scripts allow-popups" src="https://video.codingfield.com/videos/embed/1fd64ff8-5a5b-48d9-b7f8-298df0dc383e" frameborder="0" allowfullscreen></iframe>
+See the [video here](https://video.codingfield.com/videos/embed/1fd64ff8-5a5b-48d9-b7f8-298df0dc383e).
 
 **Navigation instructions displayed on the PineTime**
 

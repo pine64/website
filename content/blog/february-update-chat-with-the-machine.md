@@ -142,7 +142,7 @@ It took a long time to debug the firmware update process of the modem, since it 
 
 I [described the whole process on my blog](https://dylanvanassche.be/blog/2022/pinephone-modem-upgrade/) and invite you to have a read.
 
-<iframe title="Updating Pine64 PinePhone modem firmware with fwupd" src="https://tube.tchncs.de/videos/embed/a39ea96e-864d-45bf-a6a5-b9ace8df7df6" allowfullscreen sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="615" frameborder="0"></iframe>
+See [Updating Pine64 PinePhone modem firmware with fwupd](https://tube.tchncs.de/videos/embed/a39ea96e-864d-45bf-a6a5-b9ace8df7df6).
 
 **Demo of the modem's firmware being flashed**
 
@@ -226,9 +226,7 @@ Unfortunately this kit is not yet available in the Pine Store as we still had a 
 
 I’ve just sent the first version of the firmware to the production team. Now, I’m waiting for feedback and I’ll eventually do some changes and improvements if needed.
 
-Here’s a video showing that firmware in action:
-
-<iframe width="560" height="615" sandbox="allow-same-origin allow-scripts allow-popups" src="https://video.codingfield.com/videos/embed/ab40f429-18d0-4827-b2b3-123f74ab8d09" frameborder="0" allowfullscreen></iframe>
+Here’s a video showing that firmware in action: https://video.codingfield.com/videos/embed/ab40f429-18d0-4827-b2b3-123f74ab8d09
 
 Once this firmware will be ready, PINE64 will be able to start the production of the PineDio STACK. 
 

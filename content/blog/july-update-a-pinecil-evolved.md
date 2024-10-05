@@ -203,7 +203,7 @@ Of course, we have also added some features that will please our beloved users. 
 
 Here's a video I shot when testing this new feature on my devkit using the PinePhonePro:
 
-<iframe title="Work in progress : testing notification dismiss" src="https://video.codingfield.com/videos/embed/bab9b8d2-d4cd-4942-bdf2-495197741171" allowfullscreen sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="515" frameborder="0"></iframe>
+See [Work in progress: testing notification dismiss](https://video.codingfield.com/videos/embed/bab9b8d2-d4cd-4942-bdf2-495197741171).
 
 **Testing notification dismiss from a PinePhone Pro with keyboard case**
 
@@ -227,7 +227,7 @@ In such cases, some developers decide to maintain a fork of InfiniTime with thei
 
 Speaking of memory usage, I'm currently working on improving the situation by leveraging the additional 4MB of external flash memory available on the PineTime hardware. [My work](https://github.com/InfiniTimeOrg/InfiniTime/issues/321#issuecomment-1133959435) is still in the "proof of concept" state, but shows very good results. The goal here is to store data that needs a lot of space (mainly pictures and fonts) in this external memory to free some space in the internal memory. I've recently demonstrated [a build](https://github.com/InfiniTimeOrg/InfiniTime/pull/1226) with the [G7710](https://github.com/InfiniTimeOrg/InfiniTime/pull/1122) and the [Infineat](https://github.com/InfiniTimeOrg/InfiniTime/pull/1024) watchfaces where pictures and fonts are stored in the external memory. There is a slight impact on the performances and display speed, but it opens the road to many new apps and watchfaces in the future!
 
-<iframe title="Work in progress : test background image and font loading from external flash memory" src="https://video.codingfield.com/videos/embed/d6ccf261-df2e-45cc-b852-b73c23680e8e" allowfullscreen sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="515" frameborder="0"></iframe>
+See [Work in progress: test background image and font loading from external flash memory](https://video.codingfield.com/videos/embed/d6ccf261-df2e-45cc-b852-b73c23680e8e).
 
 **Testing background image and font loading from external flash memory**
 

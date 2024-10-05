@@ -218,7 +218,7 @@ I would like to thank xan-m for their work on InfiniLink. Xan-m created the whol
 
 On my end, I'm working on porting InfiniTime to the STACK. This is quite easy as the display and touch panel are exactly the same as the one on the PineTime. I think InfiniTime will be a nice starting point to experiment with the STACK hardware: the RISC-V MCU (BL604), the LoRa radio, the GPS and secure module on the add-on board, etc. As you can see on the video below, the display driver is now functional and even works a bit faster than on the PineTime. It can go even faster when more memory is dedicated to the display driver.
 
-<iframe width="560" height="615" sandbox="allow-same-origin allow-scripts allow-popups" src="https://video.codingfield.com/videos/embed/7b08f712-350e-4df2-985a-06ce46828bbf" frameborder="0" allowfullscreen></iframe>
+See the [video here](https://video.codingfield.com/videos/embed/7b08f712-350e-4df2-985a-06ce46828bbf).
 
 **InfiniTime now runs on the PineDio STACK - here's a quick comparison to the PineTime**
 

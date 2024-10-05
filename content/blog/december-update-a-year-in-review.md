@@ -270,7 +270,7 @@ Did you know that Pine64 is also working on a LoRa backplate for the Pinephone? 
 
 These last few weeks I worked on bringing this backplate up and running, and succeeded in receiving LoRa messages from other LoRa devices. This is still mostly a work in progress, but it clearly shows that the integration of LoRa in a mobile phone running Linux is possible and, indeed, already functional! For those interested in the technical details, I documented everything in this series of 3 articles: [_First look at the LoRa backplate_](https://codingfield.com/blog/2021-11/first-look-at-lora-pinephone-backplate/), [_Flashing the LoRa backplate_](https://codingfield.com/blog/2021-11/flash-the-lora-pinephone-backplate/) and [_A driver for the LoRa backplate_](https://codingfield.com/blog/2021-11/a-driver-for-the-pinephone-lora-backplate/).
 
-<iframe width="560" height="815" sandbox="allow-same-origin allow-scripts allow-popups" src="https://video.codingfield.com/videos/embed/6d713488-5469-442c-a40e-961daa3d9636" frameborder="0" allowfullscreen></iframe>
+See the [video here](https://video.codingfield.com/videos/embed/6d713488-5469-442c-a40e-961daa3d9636)
 
 **Receiving LoRa messages on the PinePhone with PineDio back case**
 

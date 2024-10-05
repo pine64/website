@@ -179,7 +179,7 @@ The community is very active and is creating [pull-requests](https://github.com/
 
 This month, I’m happy to announce that _InfiniSim_, the InfiniTime simulator, is now its own [dedicated project](https://github.com/InfiniTimeOrg/InfiniSim). [NeroBurner](https://github.com/NeroBurner), the author of InfiniSim, joined the team to develop and maintain the project under the [InfiniTime organization](https://github.com/InfiniTimeOrg) on GitHub. We worked together to create the project and to ensure that all the InfiniTime code modifications needed were applied to support the simulator. InfiniSim allows everyone and anyone to run the whole InfiniTime UI on their computer. It even runs on the PinePhone Pro!
 
-<iframe width="560" height="560" sandbox="allow-same-origin allow-scripts allow-popups" src="https://video.codingfield.com/videos/embed/f75c378e-bb0e-4b01-965a-64466c40ee36" frameborder="0" allowfullscreen></iframe>
+See the [video here](https://video.codingfield.com/videos/embed/f75c378e-bb0e-4b01-965a-64466c40ee36).
 
 **InfiniSim running on the PinePhone Pro**
 

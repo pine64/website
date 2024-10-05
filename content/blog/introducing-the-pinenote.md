@@ -168,7 +168,7 @@ Ubuntu Touch 20.04 images should be available for the PinePhone soon and users w
 
 I revived the BlueZ backend in the OBEX daemon to access the Evolution Data Server phonebook of the PinePhone (Phosh UI only) and submitted some patches upstream which will be [available in the next BlueZ release](https://patchwork.kernel.org/project/bluetooth/list/?series=520361&state=*). After applying these patches, your PinePhone can synchronize your contacts with any Bluetooth handsfree kit which can be found in cars!
 
-<iframe width="560" height="615" sandbox="allow-same-origin allow-scripts allow-popups" title="Address book synchronization over Bluetooth on the Pine64 PinePhone running Phosh" src="https://tube.tchncs.de/videos/embed/e6663f96-3703-4886-aeff-7a79b3c2c8ac" frameborder="0" allowfullscreen></iframe>
+See [Address book synchronization over Bluetooth on the Pine64 PinePhone running Phosh](https://tube.tchncs.de/videos/embed/e6663f96-3703-4886-aeff-7a79b3c2c8ac).
 
 **Car handsfree working with the PinePhone, how cool is that?**
 

@@ -141,7 +141,7 @@ Mobile Linux has gained support for [Bluetooth HFP](https://www.bluetooth.com/sp
 
 Bluetooth HFP devices. This includes accepting, rejecting, hanging up calls. Some devices can also display the current network operator, service status, phone battery level, etc. This is also implemented by this patch series. [postmarketOS](https://postmarketos.org) users will soon benefit from my patches. A detailed [explanation can be found on my blog](https://dylanvanassche.be/blog/2022/bluetooth-hfp-linux-mobile/).
 
-<iframe title="Enhanced Bluetooth HFP support in ModemManager &amp; PulseAudio" src="https://tube.tchncs.de/videos/embed/fc79ddac-40ba-4206-b14b-007667fe6af1" allowfullscreen sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="515" frameborder="0"></iframe>
+See [Enhanced Bluetooth HFP support in ModemManager & PulseAudio](https://tube.tchncs.de/videos/embed/fc79ddac-40ba-4206-b14b-007667fe6af1).
 
 **Bluetooth HFP demo - via Dylan**
 

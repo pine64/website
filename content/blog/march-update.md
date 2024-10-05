@@ -171,7 +171,7 @@ Let me explain. The bootloader is a very critical piece of software that is run 
 
 Upgrading the bootloader is also a critical operation as there is no fallback in the event an error occurs during the upgrade. From the feedback I received until now, it looks like everything is working well and that it's fairly safe to apply the update. You just need to [read and apply the instructions](https://github.com/JF002/pinetime-mcuboot-bootloader/blob/339224cf5ed21f4e8b2d22eaeab9869120f7f752/docs/howToUpdate.md) carefully.
 
-<iframe width="560" height="515" sandbox="allow-same-origin allow-scripts allow-popups" src="https://video.codingfield.com/videos/embed/831077c5-16f3-47b4-9b2b-c4bbfecc6529" frameborder="0" allowfullscreen></iframe>
+See the [video here](https://video.codingfield.com/videos/embed/831077c5-16f3-47b4-9b2b-c4bbfecc6529).
 
 **Video of the new bootloader**
 
@@ -199,7 +199,7 @@ You can [try this web application online](https://hubmartin.github.io/WebBLEWatc
 
 I'm really amazed by all the work the community achieved this month, and I look forward to seeing what we'll accomplish next month!
 
-<iframe width="560" height="515" sandbox="allow-same-origin allow-scripts allow-popups" src="https://video.codingfield.com/videos/embed/f7bffb3d-a6a1-43c4-8f01-f4aeff4adf9e" frameborder="0" allowfullscreen></iframe>
+See the [video here](https://video.codingfield.com/videos/embed/f7bffb3d-a6a1-43c4-8f01-f4aeff4adf9e).
 
 **A look at PineTime InfiniTime functionality**
 
