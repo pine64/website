@@ -130,7 +130,13 @@ We need help getting the Debian image into best shape for the release.
 * Join/ask in the PineNote chat if you are willing to help!
 
 ### PineTab V
-The PineTab V is returning for another production batch in October similar to the PineNote, there are no changes from the original batch.
+The PineTab V is returning for another production batch in October similar to the PineNote.
+
+In this new batch, there are some notable hardware revision changes. 
+ - An accelerometer was added to the device
+ - Resolved slow charging while the device is turned off
+ - A LED status indicator light has been added to the device
+ - Added a proper PineTab V ID in the EEPROM
 
 The device will be in stock around mid/late October. An announcement will be made when it drops in the store.
 
