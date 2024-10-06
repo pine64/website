@@ -182,29 +182,32 @@ I had to chance to talk with [Ayke](https://github.com/aykevl), this author of t
 
 The font rendering on the display is very nice, it features very smooth scrolling animation, supports display rotation, and allow a month long battery life, which is absolutely amazing!
 
-## Pinetab 2
+## PineTab2
 
 {{< credits "Author: Caffeine" >}}
 
 For this month’s community update I talked to Danct12 from the Danctnix project concerning the current state of the device.
 
 ### Hardware/software status
+
 * At this stage the camera is nonfunctional due to support for Rockchips ISP (Image Signal Processor) not being in mainline yet.
 * There is no USB-PD driver yet.
 * A new BES Wi-Fi/Bluetooth driver is now included in the kernel.
 * H.264 video encoding/decoding driver isn’t in the kernel yet.
 
-Since the last update on the Pinetab 2, Danct has been planning to send a new updated Arch image to the factory along with starting work on a first-time setup screen which will allow users to set a user and password.  
+Since the last update on the PineTab2, Danct has been planning to send a new updated Arch image to the factory along with starting work on a first-time setup screen which will allow users to set a user and password.  
 
 Also, for current users of Danctnix/Arch Arm, an issue has been discovered with the pacman db lock file which has been stopping users from updating their system using Discover. If you are are having trouble with using Discover to update your system, try deleting `/var/lib/PackageKit/alpm/db.lck`. 
 
 ### Wifi/Bluetooth driver
+
 BES have been working on an improved driver for Wi-Fi and Bluetooth stability. It is currently in the kernel, but is disabled by default. **PLEASE NOTE**: At this stage the driver is in beta, it cannot handle sleep/suspend modes and will hang if you do not turn Wi-Fi off before shutting down. Proceed with **CAUTION**.
 
 You can enable the beta driver by typing `sudo modprobe bes2600` in your terminal. If you wish to turn off the driver again you can use `sudo modprobe -r bes2600`.
 
 ### Conclusion
-We are hoping that support for the Rockchip ISP and H.264 driver will land soon and we’re glad to see the situation with the Wi-Fi driver is improving. Overall, the Pinetab 2 is shaping up to be a solid device in the Pine64 hardware lineup.
+
+We are hoping that support for the Rockchip ISP and H.264 driver will land soon and we’re glad to see the situation with the Wi-Fi driver is improving. Overall, the PineTab2 is shaping up to be a solid device in the Pine64 hardware lineup.
 
 ## PineNote
 

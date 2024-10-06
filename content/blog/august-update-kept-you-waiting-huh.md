@@ -93,7 +93,7 @@ hugo server
 
 First up, long-time contributor megi [has released rk2aw](https://xnux.eu/rk2aw/), a sort of bootloader for your bootloader on Rockchip-based platforms. Instead of having to deal with the default boot order of SPI to eMMC to SD, rk2aw sits in your SPI flash and changes the order to prefer the SD card for booting from first, which is more tinkerer-friendly. Additionally, a simple LED flashing and button interface allows the user to choose which storage device the bootloader should be loaded from. The software also comes with some nifty additional features, like suppressing power-on when the PinePhone Pro is plugged in.
 
-Of PINE64's devices, rk2aw supports the PinePhone Pro, Pinebook Pro, PineTab 2, QuartzPro64, Quartz64 Model A and ROCKPro64, though it can theoretically be made to work on any RK3399/RK3566/RK3588-based device.
+Of PINE64's devices, rk2aw supports the PinePhone Pro, Pinebook Pro, PineTab2, QuartzPro64, Quartz64 Model A and ROCKPro64, though it can theoretically be made to work on any RK3399/RK3566/RK3588-based device.
 
 ### Progress on the PineTab2 and PineTab-V
 

@@ -53,7 +53,7 @@ N.B. Comments on the blog post need to be in English and follow our [Community R
     - Salvador showcased old-school PC games running on the Pinebook Pro in BOX86; this included UnrealTournament 1999 - one of my favorite games
     - Jedikaal has written up instructions on how to run Klipper - a popular 3D printing firmware - on the og Pine A64
 - PineTab-V
-    - PineTab-V launches at the same time as the PineTab 2 - on April 11th
+    - PineTab-V launches at the same time as the PineTab2 - on April 11th
     - Powered by unicorns and candyfloss 
     - Unicorn syncs seamlessly with pen and features intercompatible with both PineTab2 and PineTab-V
     - V…ery good section - must read 
@@ -150,7 +150,7 @@ Much of this month’s section on the PineTab2 has been written by CounterPillow
 
 **DanctNix Arch PineTab2 build in action**
 
-I chatted briefly with Danct12 earlier this week and he wishes for you to know that the PineTab 2 software is still a work-in-progress, so you should always check for updates as things are likely to progress even quicker once people get their hands on the hardware. If you have any questions concerning the build and current status of the software then you are welcome to join the #archlinux-pinephone:kde.org channel on Matrix or [@archmobile](https://t.me/archmobile) on Telegram. Danct12 also wanted me to let you know that the Wi-Fi is disabled on the PineTab2 by default due to driver stability issues, so you'll have to run modprobe bes2600 to get it working. Now, the second, and perhaps the most important thing I wanted to write before CounterPIllow shares their insight is that the PineTab2 will be available on April 11th… bundled the unicorn with a mic on its head, of course.  
+I chatted briefly with Danct12 earlier this week and he wishes for you to know that the PineTab2 software is still a work-in-progress, so you should always check for updates as things are likely to progress even quicker once people get their hands on the hardware. If you have any questions concerning the build and current status of the software then you are welcome to join the #archlinux-pinephone:kde.org channel on Matrix or [@archmobile](https://t.me/archmobile) on Telegram. Danct12 also wanted me to let you know that the Wi-Fi is disabled on the PineTab2 by default due to driver stability issues, so you'll have to run modprobe bes2600 to get it working. Now, the second, and perhaps the most important thing I wanted to write before CounterPIllow shares their insight is that the PineTab2 will be available on April 11th… bundled the unicorn with a mic on its head, of course.  
 
 \[**Quick note:** I have taken the liberty to edit CounterPillow’s contribution for style solely - none of the written contents were altered. CounterPillow’s section starts below.\]
 
