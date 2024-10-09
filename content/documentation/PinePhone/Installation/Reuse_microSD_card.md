@@ -19,10 +19,10 @@ This can be done as follows on any Linux system:
 to check the device of your microSD card – as an example lets assume it is /dev/mmcblk0
 then
 
-`sudo dd if=/dev/zero of=/dev/**[DEVICE]** bs=8k seek=1 count=4`
+`sudo dd if=/dev/zero of=/dev/[DEVICE] bs=8k seek=1 count=4`
 
 will clear the relevant sectors of your card.
 
 Since Danctnix (arch) switched to a gpt partition table from mbr in May of 2022 it installs u-boot at an offset of 128k instead of 8k, which means this command must be used instead
 
-`sudo dd if=/dev/zero of=/dev/**[DEVICE]** bs=32k seek=4 count=1`
+`sudo dd if=/dev/zero of=/dev/[DEVICE] bs=32k seek=4 count=1`

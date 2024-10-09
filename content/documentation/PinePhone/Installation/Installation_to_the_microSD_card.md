@@ -58,7 +58,7 @@ For flashing the microSD card, the command _dd_ can be used as well.
 
 Make sure to select the correct device using `lsblk`. Then run _dd_ with the selected device:
 
-`sudo dd if=**IMAGE.img** of=/dev/**[DEVICE]** bs=1M status=progress conv=fsync`
+`sudo dd if=IMAGE.img of=/dev/[DEVICE] bs=1M status=progress conv=fsync`
 
 {{< admonition type="note" >}}
  The image needs to be written to the whole device, not to partition 1. Make sure you’re NOT selecting _/dev/sda1_ or _/dev/mmcblk0p1_ as target.
@@ -70,7 +70,7 @@ Make sure to select the correct device using `lsblk`. Then run bmaptool with the
 
 Download the _IMAGE.xz_ and the _IMAGE.bmap_ files, then run:
 
-`bmaptool copy --bmap **IMAGE.bmap** **IMAGE.xz** /dev/**[DEVICE]**`
+`bmaptool copy --bmap IMAGE.bmap IMAGE.xz /dev/[DEVICE]`
 
 This takes around 2.5 minutes to flash a 4 Gb file.
 

@@ -322,7 +322,7 @@ The following creates a bootable image from an existing Void Linux installation:
 ** create a rootfs via _mkrootfs.sh_: `sh mkrootfs.sh -o void-aarch64-muls-ROOTFS-yyyymmdd.tar.xz`
 ** `sh mkplatformfs.sh rockpro64 void-aarch64-muls-ROOTFS-yyyymmdd.tar.xz`
 ** `sh mkimage.sh -s 7GiB void-rockpro64-PLATFORMFS-yyyymmdd.tar.xz`
-* write image to sdcard or eMMC: `dd if=*IMAGE-FILENAME* of=*DEVICENAME* bs=2M`
+* write image to sdcard or eMMC: `dd if=IMAGE-FILENAME of=DEVICENAME bs=2M`
 * If _mkplatformfs.sh_ errors with _ROCKPro64 not supported_, install _xbps-src_ from https://github.com/void-linux/void-packages and build the ROCKPro64 package.
 * Tip:  write a new U-Boot to the image if you see on the serial console the boot-up stalls:
 ** get the two U-Boot files from https://pkgs.org/download/u-boot-rockpro64[pkgs.org], the aarch64 files:

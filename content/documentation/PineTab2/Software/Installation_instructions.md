@@ -26,8 +26,8 @@ Graphical applications:
 
 Command-line tools:
 
-* **cp**: `sudo cp **IMAGE.img** /dev/**[DEVICE]**`
-* **dd**: `sudo dd if=**IMAGE.img** of=/dev/**[DEVICE]** bs=1M status=progress conv=fsync`
+* **cp**: `sudo cp IMAGE.img /dev/[DEVICE]`
+* **dd**: `sudo dd if=IMAGE.img of=/dev/[DEVICE] bs=1M status=progress conv=fsync`
 
 {{< admonition type="note" >}}
  Make sure to replace **IMAGE.img** and **[DEVICE]** with the filename of the image (double check if it is decompressed and has the file extension _.img_) and the device name. You can use the command `lsblk` to find the device name. Make sure to flash to the whole device instead of partition 1 and that you’re NOT selecting _/dev/sda1_ or _/dev/mmcblk0p1_ as target. Be very careful to select the correct device, as the tools can overwrite your data when the wrong device is selected.

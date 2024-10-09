@@ -28,8 +28,8 @@ To install an image to the microSD card:
 1. Download a compatible image from [Releases](/documentation/PinePhone_Pro/Software/Releases).
 2. **Important:** Typically the image will be compressed in an archive file to reduce the download size (such as _.gz_ or _.xz_). Extract the image from its archive file to get the file with the file extension _.img_.
 3. Write the image to your microSD card using your favorite method, examples:
-   * Using _dd_: On the device you’re flashing the microSD card from, find the correct device under `lsblk` and then flash the image to the microSD card using `sudo dd if=**IMAGE.img** of=/dev/**[DEVICE]** bs=1M status=progress conv=fsync` and make sure the target is the whole microSD card and not its first partition, _sdc1_ or _mmcblk0p1_ are wrong!
-   * Using _bmaptool_: Make sure to select the correct device using `lsblk`. Then run bmaptool with the correct device: Download the _IMAGE.xz_ and the _IMAGE.bmap_ files, then run `bmaptool copy --bmap **IMAGE.bmap** **IMAGE.xz** /dev/**[DEVICE]**`. This takes around 2.5 minutes to flash a 4 GB file.
+   * Using _dd_: On the device you’re flashing the microSD card from, find the correct device under `lsblk` and then flash the image to the microSD card using `sudo dd if=IMAGE.img of=/dev/[DEVICE] bs=1M status=progress conv=fsync` and make sure the target is the whole microSD card and not its first partition, _sdc1_ or _mmcblk0p1_ are wrong!
+   * Using _bmaptool_: Make sure to select the correct device using `lsblk`. Then run bmaptool with the correct device: Download the _IMAGE.xz_ and the _IMAGE.bmap_ files, then run `bmaptool copy --bmap IMAGE.bmap IMAGE.xz /dev/[DEVICE]`. This takes around 2.5 minutes to flash a 4 GB file.
    * Using _a graphical tool_: A graphical tool such as Gnome Disks under Linux or Etcher under Windows may also be used.
 4. Insert the microSD card into the top slot of the PinePhone Pro
 5. Boot the device using the following method:
@@ -56,7 +56,7 @@ This installation method is **recommended**.
 2. Download or copy the desired image to the microSD card as file
 3. Check if the eMMC appears under `lsblk`. If it doesn’t appear in the output of the command, the eMMC wasn’t initialized due to applying the above explained bypass method for a too long time during the boot
 4. **Important:** Typically the image will be compressed in an archive file to reduce the download size (such as _.gz_ or _.xz_). Extract the image from its archive file to get the file with the file extension _.img_.
-5. Flash the image file using `sudo dd if=**IMAGE.img** of=/dev/mmcblk2 bs=1M status=progress conv=fsync` (replace _IMAGE.img_ with the filename of the image you want to flash and make sure it has the file extension _.img_).
+5. Flash the image file using `sudo dd if=IMAGE.img of=/dev/mmcblk2 bs=1M status=progress conv=fsync` (replace _IMAGE.img_ with the filename of the image you want to flash and make sure it has the file extension _.img_).
 6. Reboot the PinePhone Pro
 
 ### By using Tow-Boot
@@ -74,7 +74,7 @@ This installation method is **not recommended**, as the USB connection can be un
 `mmcblk2      179:0    0 115.2G  0 disk`\
 `├─mmcblk2p1  179:1    0   122M  0 part /boot`\
 `└─mmcblk2p2  179:2    0 115.1G  0 part /`\
-Note: In this example, ***dev/mmcblk2*** is the device, while _mmcblk2p1_ and _mmcblk2p2_ are partitions of the device. The downloaded images are images from full devices, which means that the full device (_mmcblk2_ in this example) needs to be flashed. Ignore the partitions!
+Note: In this example, **/dev/mmcblk2** is the device, while _mmcblk2p1_ and _mmcblk2p2_ are partitions of the device. The downloaded images are images from full devices, which means that the full device (_mmcblk2_ in this example) needs to be flashed. Ignore the partitions!
 7. **Important:** Typically the image will be compressed in an archive file to reduce the download size (such as _.gz_ or _.xz_). Extract the image from its archive file to get the file with the file extension _.img_
-8. Flash the image file using `sudo dd if=**IMAGE.img** of=/dev/**DEVICE** bs=1M status=progress conv=fsync` (replace _IMAGE.img_ with the filename of the image you want to flash and make sure it has the file extension _.img_ and replace _DEVICE_ with the correct device from the _lsblk_ command)
+8. Flash the image file using `sudo dd if=IMAGE.img of=/dev/DEVICE bs=1M status=progress conv=fsync` (replace _IMAGE.img_ with the filename of the image you want to flash and make sure it has the file extension _.img_ and replace _DEVICE_ with the correct device from the _lsblk_ command)
 9. Reboot the PinePhone Pro

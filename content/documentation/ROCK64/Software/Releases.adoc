@@ -315,7 +315,7 @@ Flashing the distribution to the eMMC:
 * Copy the image file to micro SD by using SFTP. The image file must have the _.img_ file extension.
 * After finish copy the file, power off the board and add eMMC module to the board
 * Boot the board, run below command for flashing to eMMC module
-* Run `sudo dd if=*[IMAGE]* of=/dev/*[DEVICE]* bs=10M` (example: _sudo dd if=slack-current-aarch64-xfce_08May18-4.4.126-rock64-build-20180508.img of=/dev/mmcblk1 bs=10M_).
+* Run `sudo dd if=[IMAGE] of=/dev/[DEVICE] bs=10M` (example: _sudo dd if=slack-current-aarch64-xfce_08May18-4.4.126-rock64-build-20180508.img of=/dev/mmcblk1 bs=10M_).
 * then edit these two files in eMMC module:
 ** `mount /dev/mmcblk1p1 /media`
 ** `echo "rootdev=/dev/mmcblk1p1" >> /media/boot/uEnv.txt`

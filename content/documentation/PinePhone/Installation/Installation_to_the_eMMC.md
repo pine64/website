@@ -18,7 +18,7 @@ The internal memory of the PinePhone (eMMC) can be flashed using multiple differ
 2. Insert microSD card and boot the phone
 3. Download the desired OS' image on the booted OS or transfer it to the microSD card
 4. Extract the image file if it is archived
-5. Flash the image file to eMMC using `dd if=**IMAGE.img** of=/dev/**mmcblkX** bs=1M status=progress conv=fsync` where X is the number label of the eMMC (of the disk, not the partition!). Use the command `lsblk` to check your devices: typically with the current kernel the microSD card is _/dev/mmcblk0_ and the eMMC is _/dev/mmcblk2_ but as always with _dd_ be extremely cautious to get the devices correct.
+5. Flash the image file to eMMC using `dd if=IMAGE.img of=/dev/mmcblkX bs=1M status=progress conv=fsync` where X is the number label of the eMMC (of the disk, not the partition!). Use the command `lsblk` to check your devices: typically with the current kernel the microSD card is _/dev/mmcblk0_ and the eMMC is _/dev/mmcblk2_ but as always with _dd_ be extremely cautious to get the devices correct.
 6. Turn off phone, remove microSD card and then turn on the phone.
 
 ## Using JumpDrive

@@ -53,7 +53,7 @@ menu:
 
 ![Thumb Screws](/documentation/images/Pinecil-Thumb-Screws-02.png)
 
-* Originals screws are Phillips ([source](https://www.reddit.com/r/PINE64official/comments/tatf5l/comment/ig4r92v/?context=3)): two M2x3mm at the front, and one M2x4mm is the ground screw near the `**[-]**` minus button.
+* Originals screws are Phillips ([source](https://www.reddit.com/r/PINE64official/comments/tatf5l/comment/ig4r92v/?context=3)): two M2x3mm at the front, and one M2x4mm is the ground screw near the **[-]** minus button.
 * The bottom-front screw only holds the handle together and does not touch the tip, hence is a shorter m2x 3mm.
 * _Thumb screws_ are popular upgrades: an _M2 x 4mm_ thumb screw could replace both the front screen-side Tip holder screw and the ground screw in the rear of the handle.
 * It was found that an M2x3mm thumb screw for the tip is a hair _too short_, and just grazes the Tip and the longer _m2 x 4mm is better on top_.

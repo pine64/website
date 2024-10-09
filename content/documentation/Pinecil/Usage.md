@@ -32,18 +32,18 @@ Do not try to bend the two [internal contacts](https://pine64.com/product/pineci
 
 **3. Heat the tip**: plug Pinecil into an appropriate [power supply](/documentation/Pinecil/Power_supplies/Power_supplies).
 
-1. Clicking `**[+]**` starts the tip heating.
+1. Clicking **[+]** starts the tip heating.
 2. The detailed display option shows power draw, current temperature, supply voltage, and time until sleep mode starts.
-3. Adjust the target temperature with further clicks of `**[+]**` and `**[-]**` buttons.
-4. Wait a few seconds for the regular display to return, then hold down `**[-]**` for a moment to turn the heat off.
+3. Adjust the target temperature with further clicks of **[+]** and **[-]** buttons.
+4. Wait a few seconds for the regular display to return, then hold down **[-]** for a moment to turn the heat off.
 5. You can observe the temperature measurement go up and down. Certain settings involve holding down both buttons (see [GitHub IronOS for details on firmware](https://ralim.github.io/IronOS/) settings).
 
 **4. Using the Settings Menu**:
 
-1. To check the firmware version, hold down the `**[-]**` button. It will display something like "v2.19.A3BBABC 13-07-22". This is the firmware number and release date, the date is July 13, 2022 in the example.
-2. Clicking `**[-]**` when heat is off steps through main categories menus to control a variety of settings, see [Getting started with menus section](/documentation/Pinecil/Usage/#getting_started_with_the_menu).
-3. Clicking `**[-]**` also returns to the regular display of temperature and supply voltage (this view varies if you activate detailed idle). At other times it may show power draw.
-4. Click `**[-]**` to scroll to the the main menu section desired (i.e., User Interface). Then click `**[+]**` button to change various internal settings. Then click `**[-]**` again to go to the next item in the sub-menu.
+1. To check the firmware version, hold down the **[-]** button. It will display something like "v2.19.A3BBABC 13-07-22". This is the firmware number and release date, the date is July 13, 2022 in the example.
+2. Clicking **[-]** when heat is off steps through main categories menus to control a variety of settings, see [Getting started with menus section](/documentation/Pinecil/Usage/#getting_started_with_the_menu).
+3. Clicking **[-]** also returns to the regular display of temperature and supply voltage (this view varies if you activate detailed idle). At other times it may show power draw.
+4. Click **[-]** to scroll to the the main menu section desired (i.e., User Interface). Then click **[+]** button to change various internal settings. Then click **[-]** again to go to the next item in the sub-menu.
 
 **5. Important notes**:
 
