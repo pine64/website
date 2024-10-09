@@ -22,7 +22,7 @@ menu:
 
 === Step to create the SD-Card
 
-  image:/documentation/images/PCard_Main.jpg[width=750]
+image:/documentation/images/PCard_Main.jpg[width=750]
 
 . Extract the PhonixCard-xx.rar file into an empty directory.
 . Navigate into the directory where you installed PhoenixCard and start PhoenixCard.exe.

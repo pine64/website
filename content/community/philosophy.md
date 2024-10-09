@@ -4,7 +4,7 @@ date:
 draft: false
 ---
 
-**`None of us is as smart as all of us` - Ken H. Blanchard**
+***`None of us is as smart as all of us` – Ken H. Blanchard***
 
 At the core of our philosophy is the notion that PINE64 is a community platform. A simplistic point of view, often offered up and referenced online, is that ‘PINE64 does hardware while the community does the software’. While this depiction is not inaccurate, it is also a gross oversimplification. The fact that PINE64 is community driven doesn’t simply entail a one-way reliance on the community or partner projects for software support; it means that the community gets to actively shape the devices, as well as the social platform, of PINE64 from the ground up. The goal is to deliver ARM64 devices that you really wish to engage with and a platform that you want to be a part of. As such, the community – PINE64 – and the Pine Store company are interlocked and intertwined, but separate entities.
 

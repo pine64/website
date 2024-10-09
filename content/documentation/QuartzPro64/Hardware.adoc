@@ -49,6 +49,7 @@ RK3588 is slightly (<1mm?) taller than the DRAM chips, use a thick enough therma
 Plug in the USB-C port labelled "**DEBUG PORT**" on the QP64 board to another computer with a USB-A-to-C cable.
 
 It will show up as a FT232 USB Serial adapter in `lsusb`:
+
 ```
 $ lsusb
 [...]
