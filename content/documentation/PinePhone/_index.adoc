@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-image:/documentation/images/PinePhone_Beta_Edition.png[Rendering of the PinePhone Beta Edition,title="Rendering of the PinePhone Beta Edition",width=400]
+{{< figure src="/documentation/images/PinePhone_Beta_Edition.png" title="Rendering of the PinePhone Beta Edition" width="400" >}}
 
 The *PinePhone* is a smartphone created by PINE64. It is capable of running mainline Linux and is supported by many partner projects.
 

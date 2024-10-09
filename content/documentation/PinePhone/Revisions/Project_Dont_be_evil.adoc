@@ -10,7 +10,7 @@ menu:
     weight: 
 ---
 
-image:/documentation/images/Qee3ovj.jpg[]
+{{< figure src="/documentation/images/Qee3ovj.jpg" >}}
 
 The Project *Don't be evil* is the phase two of _PINE64's_ smartphone, the link:/documentation/PinePhone[PinePhone] Development Kit. Project Don't be evil is an actual smartphone developer kit for the PINE64 Smartphone dubbed "PinePhone". It is used in the early stages of development as a starting point for affiliated projects.
 
@@ -20,8 +20,8 @@ The PinePhone development has been broken down into three distinct phases:
 * Second phase - purpose-built development kit code named "Don't be evil" and introduced at FOSDEM 2019
 * Lastly, the third phase which is the PinePhone itself - scheduled to be prototype released in Q3 2019 and BTO batch released with mobile OS parents in Q4 2019 (pending on software development).
 
-image:/documentation/images/Qsud2Gt.jpg[]
-image:/documentation/images/Martijnpocket.jpg[]
+{{< figure src="/documentation/images/Qsud2Gt.jpg" >}}
+{{< figure src="/documentation/images/Martijnpocket.jpg" >}}
 
 == Baseboard and SOPine Module Information, and Schematics
 
@@ -168,7 +168,7 @@ Some these OS images labelled as *beta or nightly builds* which means they are o
 
 === postmarketOS
 
-image:/documentation/images/PostmarketOS_logo.png[width=100]
+{{< figure src="/documentation/images/PostmarketOS_logo.png" width="100" >}}
 
 Download:
 
@@ -187,7 +187,7 @@ Notes:
 
 === Sailfish OS
 
-image:/documentation/images/SailfishOS_logo.png[width=100]
+{{< figure src="/documentation/images/SailfishOS_logo.png" width="100" >}}
 
 The Sailfish OS image is build on Gitlab CI, the latest image can be installed using our https://raw.githubusercontent.com/sailfish-on-dontbeevil/flash-it/master/flash-it.sh[flashing script] written in Bash.
 
@@ -207,7 +207,7 @@ Notes:
 
 === Maemo Leste
 
-image:/documentation/images/Maemoleste-logo.png[width=100]
+{{< figure src="/documentation/images/Maemoleste-logo.png" width="100" >}}
 
 Download:
 
@@ -220,7 +220,7 @@ Notes:
 
 === LuneOS
 
-image:/documentation/images/Luneos-logo-256.png[width=100]
+{{< figure src="/documentation/images/Luneos-logo-256.png" width="100" >}}
 
 Download:
 
@@ -239,23 +239,23 @@ For the Mali driver see link:/documentation/General/Mali_driver[Mali Driver].
 
 . Please DON'T insert micro SIM card to dev kit board micro SIM card slot, the SIM data, VPP, and GND signal have been misplaced. A miciPCIe adapter with sim card holder 9shown as below photo) will be provide to developers to correct this mistake.
 
-image:/documentation/images/MiniPCIe_with_sim_slot_adapter.png[width=200]
+{{< figure src="/documentation/images/MiniPCIe_with_sim_slot_adapter.png" width="200" >}}
 
 . The PinePhone dev kit doesn't charge due to VBUS on SOPine module is not connected. Please connect R9688 solder pads with 0 ohm resistor or using thin wire bridge up the solder pads. Location shows as below:
 
-image:/documentation/images/PinePhone_VBUS_charging_small.png[width=200]
+{{< figure src="/documentation/images/PinePhone_VBUS_charging_small.png" width="200" >}}
 
 . The SOPINE's SPI NOR flash storage and the devkit's camera flash (heh) share the same GPIO pins. The flash storage may not be used.
 
-image:/documentation/images/SOPINE-SPI-Flash.png[width=200]
+{{< figure src="/documentation/images/SOPINE-SPI-Flash.png" width="200" >}}
 
 . On the camera flash GPIO conflict, the new assignment of GPIO PB3 pin for SGM3140 FLASH_EN and GPIP PD7 for FLASH_TRIGOUT. Please note that PD7 is also LCD_ID pin which may not be used.
 
 Images:
 
-image:/documentation/images/GPIO_PB3_location.jpg[GPIO_PB3_location,title="GPIO_PB3_location"]
-image:/documentation/images/U54_SGM3140_FLASH_EN_pin_location.jpg[width=314]
-image:/documentation/images/Flash_GPIO_Reassigned.jpg[Flash GPIOs Reassigned wiring,title="Flash GPIOs Reassigned wiring"]
+{{< figure src="/documentation/images/GPIO_PB3_location.jpg" title="GPIO_PB3_location" >}}
+{{< figure src="/documentation/images/U54_SGM3140_FLASH_EN_pin_location.jpg" width="314" >}}
+{{< figure src="/documentation/images/Flash_GPIO_Reassigned.jpg" title="Flash GPIOs Reassigned wiring" >}}
 
 == Other Resources
 

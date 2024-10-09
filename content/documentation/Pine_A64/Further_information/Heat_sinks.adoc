@@ -11,5 +11,5 @@ menu:
 
 Overclocking requires heat sinks:
 
-image:/documentation/Pine_A64/images/pine_a64_heatsink.png[Position of the heat sinks,title="Position of the heat sinks",width=500]
+{{< figure src="/documentation/Pine_A64/images/pine_a64_heatsink.png" title="Position of the heat sinks" width="500" >}}
 

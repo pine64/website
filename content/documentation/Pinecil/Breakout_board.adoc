@@ -20,7 +20,7 @@ The Pinecil Break out board has these features:
 
 Photos:
 
-image:/documentation/images/Pinecil_breakout_top.jpg[Top_view,title="Top_view"]
-image:/documentation/images/Pinecil_breakout_bottom.jpg[Bottom_view,title="Bottom_view"]
-image:/documentation/images/UART-pinecil-breakout-board-testing30.png[ UART Debugging,title=" UART Debugging"]
+{{< figure src="/documentation/images/Pinecil_breakout_top.jpg" title="Top_view" >}}
+{{< figure src="/documentation/images/Pinecil_breakout_bottom.jpg" title="Bottom_view" >}}
+{{< figure src="/documentation/images/UART-pinecil-breakout-board-testing30.png" title=" UART Debugging" >}}
 

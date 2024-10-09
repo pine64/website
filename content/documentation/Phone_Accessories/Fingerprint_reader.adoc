@@ -11,7 +11,7 @@ menu:
 
 Store page: https://pine64.com/product/pinephone-pinephone-pro-fingerprint-reader-add-on-case/[pine64.com]
 
-image:/documentation/images/PinePhone-FP-Addon.jpg[width=250]
+{{< figure src="/documentation/images/PinePhone-FP-Addon.jpg" width="250" >}}
 
 Uses the pogo pins to interface a high quality fingerprint sensor, which uses open firmware for it's i2c bridge, and can also be used for gesture navigation thanks to it's ability to detect directional swipes.
 

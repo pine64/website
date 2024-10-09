@@ -140,26 +140,26 @@ Pinecil requires a center-positive DC power supply which most are, but some are 
 
 IMPORTANT: *Check the polarity* of the DC barrel plug before plugging in a random charger. Incorrect polarity will break the Pinecil. The https://www.youtube.com/watch?v=5DBTNplNTfA[video here] shows how to check.
 
-image:/documentation/images/AC_adaptor_polarity.png[width=400]
+{{< figure src="/documentation/images/AC_adaptor_polarity.png" width="400" >}}
 
-image:/documentation/images/Nintendo-center-negative.png[width=300]
+{{< figure src="/documentation/images/Nintendo-center-negative.png" width="300" >}}
 
 Reference the article on [[Pinecil_Power_Supplies#DC_Barrel_Power| DC barrel chargers here]], (i.e., laptop bricks) for appropriate USB-C and DC chargers that will work with the Pinecil.
 
 == Images
 
-image:/documentation/images/PCP-Top-side-screen.jpg[Screen side: V2 on top, V1 below]
-image:/documentation/images/PCP-Bottom-Side.jpg[Pinecone side: V2 on top, V1 below]
-image:/documentation/images/Pinecil_v2_MOSFET.JPG[MOSFET V2,title="MOSFET V2"]
-image:/documentation/images/FUSB302-V2-02.JPG[width=302]
-image:/documentation/images/Pinecil_LDOandOP-Amp.png[_LDO_and_OP-Amp,title="_LDO_and_OP-Amp"]
-image:/documentation/images/Under_OLED_screen01.png[ Under the OLED screen, V2,title=" Under the OLED screen, V2"]
+{{< figure src="/documentation/images/PCP-Top-side-screen.jpg" title="Screen side: V2 on top, V1 below" >}}
+{{< figure src="/documentation/images/PCP-Bottom-Side.jpg" title="Pinecone side: V2 on top, V1 below" >}}
+{{< figure src="/documentation/images/Pinecil_v2_MOSFET.JPG" title="MOSFET V2" >}}
+{{< figure src="/documentation/images/FUSB302-V2-02.JPG" width="302" >}}
+{{< figure src="/documentation/images/Pinecil_LDOandOP-Amp.png" title="_LDO_and_OP-Amp" >}}
+{{< figure src="/documentation/images/Under_OLED_screen01.png" title=" Under the OLED screen, V2" >}}
 
 == Pinecil V1, 24V Mod
 
 WARNING: Do this at your own risk, read everything in this section and related/linked articles, and go to the Pinecil community chat if you desire advice. An incorrect cut of the trace could render the Pinecil non-working.
 
-image:/documentation/images/Pinecil-V1andV2.png[Pinecil V1 has blue rubber. Newer Pinecil V2 has green rubber & Bluetooth LE chip]
+{{< figure src="/documentation/images/Pinecil-V1andV2.png" title="Pinecil V1 has blue rubber. Newer Pinecil V2 has green rubber & Bluetooth LE chip" >}}
 
 . This modification is not for the V2 (sold after Aug 1, 2022 with green thumb grip) as the V2 already has 24V DC barrel charger capability.
 . If you have an older V1 model, then first upgrade to the newest link:/documentation/Pinecil/Firmware/[firmware here] before starting this modification. The PD debug menu was added to the firmware in 2.17 and other important fixes came later. Access to the hidden PD debug menu is necessary to assist with this mod.
@@ -169,7 +169,7 @@ image:/documentation/images/Pinecil-V1andV2.png[Pinecil V1 has blue rubber. Newe
 . See the February 2022 https://www.pine64.org/2022/02/15/february-update-chat-with-the-machine/[Community update here]. The photo is incorrect in the article. It is _not_ a before and after photo.
 * Photo shows two separate PCBs of Pinecil V1 made at different times; therefore, the trace is cut in a slightly different location depending on which one it looks like.
 * The PCB with 2 small via holes and is harder to cut in the correct location to avoid damaging the holes. This is called the "whalecil" in community chat (looks like a whale).
-image:/documentation/images/Pinecil_V1_24V_Mod.png[width=400]
+{{< figure src="/documentation/images/Pinecil_V1_24V_Mod.png" width="400" >}}
  PCB 1 style (left photo) is easier to cut the trace. Cut all the way across the trace and deep enough to cut the copper contact. PCB 2 style (right photo) is harder because the trace has to be cut without damaging the 2 via holes.
 . Don't plug in 24V until you first check with a USB-C PD charger that PD debug says *No VBUS* which means the mod is complete. If it still says *W. Vbus*, then the connection still exist. Cut a little deeper and clean the cut with some IPA (isopropyl alcohol) to remove any copper dust, dry it and check again. Taking a macro photo with a phone helps to examine the cut.
 If a USB-C charger is not available, often a phone with a USB-C port is a PD type, and can be used like a charger to plug in and check the PD debug messages (unfortunately, a PC port is not normally "PD" and won't give proper PD Debug).

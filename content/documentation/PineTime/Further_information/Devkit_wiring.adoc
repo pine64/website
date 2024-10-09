@@ -31,17 +31,17 @@ The devkits have exposed SWD pins for flashing and debugging.
 
 The pinout is:
 
-image:/documentation/images/PineTime_SWD_location.jpg[width=400]
+{{< figure src="/documentation/images/PineTime_SWD_location.jpg" width="400" >}}
 
 == Pogo Pins connection
 
 The https://pine64.com/product/pinetime-pogopin-jig/[PineTime Pogo Pins] are spring-loaded pins with diamond-shaped tips.
 
-image:/documentation/images/PineTime_pogo_tip.jpg[width=400]
+{{< figure src="/documentation/images/PineTime_pogo_tip.jpg" width="400" >}}
 
 The Pogo Pins are meant to be connected temporarily to PineTime's SWD port for firmware flashing and simple firmware debugging.
 
-image:/documentation/images/PineTime_pogo_stlink.jpg[width=400]
+{{< figure src="/documentation/images/PineTime_pogo_stlink.jpg" width="400" >}}
 
 The other end of the Pogo Pins connects to ST-Link v2 or JLink for flashing and debugging. (ST-Link v2 is shown in the background)
 
@@ -55,13 +55,13 @@ To connect PineTime Pogo Pins to PineTime's SWD Port:
 
 The tips of the Pogo Pins will partially penetrate the SWD holes like this. Don't force them in!
 
-image:/documentation/images/PineTime_pogo_swd.jpg[width=400]
+{{< figure src="/documentation/images/PineTime_pogo_swd.jpg" width="400" >}}
 
 == Soldered wires example
 
 Before attempting this, make sure you have a good soldering iron, some magnification and you haven't set your iron too high. If you haven't ever before soldered things this small, you really really do not want to start out on something this dense, small and thus fragile.
 
-image:/documentation/images/PineTime_soldered_wires.jpg[width=400]
+{{< figure src="/documentation/images/PineTime_soldered_wires.jpg" width="400" >}}
 
 == Raspberry Pi connection
 

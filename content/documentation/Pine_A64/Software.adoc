@@ -17,7 +17,7 @@ NOTE: The images for the PINE A64 and PINE A64+ are *not compatible with the PIN
 
 === AOSC
 
-image:/documentation/images/aosc.png[width=100]
+{{< figure src="/documentation/images/aosc.png" width="100" >}}
 
 *AOSC OS* is a general purpose Linux distribution that strives to simplify user experience and improve free and open source software for day-to-day productivity. To learn more about AOSC, please visit the official https://aosc.io/[AOSC website].
 
@@ -34,7 +34,7 @@ Download:
 
 === Arch Linux ARM
 	
-image:/documentation/images/Archlinux-logo.png[width=100]
+{{< figure src="/documentation/images/Archlinux-logo.png" width="100" >}}
 
 *Arch Linux ARM* is a distribution of Linux for ARM computers.
 
@@ -44,7 +44,7 @@ Installation:
 
 === Armbian
 
-image:/documentation/images/armbian.png[width=100]
+{{< figure src="/documentation/images/armbian.png" width="100" >}}
 
 *Armbian* is a Linux distribution designed for ARM boards. They are usually Debian or Ubuntu flavored.
 
@@ -54,7 +54,7 @@ Download:
 
 === Debian
 
-image:/documentation/images/Debian-logo.png[width=100]
+{{< figure src="/documentation/images/Debian-logo.png" width="100" >}}
 
 *Debian* is an operating system and a distribution of free software. See the forum thread https://forum.pine64.org/showthread.php?tid=9744[here].
 
@@ -81,7 +81,7 @@ Notes:
 
 === DietPi
 
-image:/documentation/images/dietpi.png[width=100]
+{{< figure src="/documentation/images/dietpi.png" width="100" >}}
 
 *DietPi* is a lightweight yet easy to setup and feature-rich Linux distribution, based on Debian. To find out more about DietPi, please visit the https://dietpi.com/docs/[official documentation]. Discuss the PINE A64 build on the https://forum.pine64.org/showthread.php?tid=12513[PINE64 forum thread].
 
@@ -99,7 +99,7 @@ Download:
 
 === FreedomBox
 
-image:/documentation/images/FreedomBox.jpg[width=100]
+{{< figure src="/documentation/images/FreedomBox.jpg" width="100" >}}
 
 *FreedomBox* is a private server for non-experts: it lets you install and configure server applications with only a few clicks. For more information about FreedomBox, please visit http://www.freedombox.org.
 
@@ -117,7 +117,7 @@ Notes:
 
 === LibreELEC
 
-image:/documentation/images/libreelec.jpg[width=100]
+{{< figure src="/documentation/images/libreelec.jpg" width="100" >}}
 
 *LibreELEC* is a "Just enough OS" Linux distribution combining the Kodi media center with an operating system.
 
@@ -132,7 +132,7 @@ Notes:
 
 === motionEyeOS
 
-image:/documentation/images/motioneyeos.png[width=100]
+{{< figure src="/documentation/images/motioneyeos.png" width="100" >}}
 
 *motionEyeOS* is a Linux distribution that turns a single-board computer into a video surveillance system. The OS is based on BuildRoot and uses motion as a backend and motionEye for the frontend. Visit the https://github.com/ccrisan/motioneyeos/releases/[motionEyeOS GitHub] and its https://github.com/ccrisan/motioneyeos/wiki[GitHub Wiki] for more information
 
@@ -156,7 +156,7 @@ Notes:
 
 === NEMS Linux
 
-image:/documentation/images/nems.jpg[width=100]
+{{< figure src="/documentation/images/nems.jpg" width="100" >}}
 
 *NEMS* stands for "Nagios Enterprise Monitoring Server" and it is a modern pre-configured, customized and ready-to-deploy Nagios Core image designed to run on low-cost micro computers. To find out more on NEMS Linux, please visit their https://nemslinux.com/[site].
 
@@ -180,7 +180,7 @@ Notes:
 
 === openSUSE
 
-image:/documentation/images/opensuse-distribution.png[width=100]
+{{< figure src="/documentation/images/opensuse-distribution.png" width="100" >}}
 
 *openSUSE* is a free and open source RPM-based Linux distribution developed by the openSUSE project. More details can be found under https://en.opensuse.org/HCL:Pine64.
 
@@ -191,7 +191,7 @@ Download:
 
 === OpenWRT
 
-image:/documentation/images/Openwrt_logo_square.png[width=100]
+{{< figure src="/documentation/images/Openwrt_logo_square.png" width="100" >}}
 
 The *OpenWrt* Project is a Linux operating system targeting embedded devices.
 
@@ -215,7 +215,7 @@ Notes:
 
 === NetBSD
 
-image:/documentation/images/netbsd.png[width=100]
+{{< figure src="/documentation/images/netbsd.png" width="100" >}}
 
 *NetBSD* is a free, fast, secure, and highly portable Unix-like Open Source operating system. To learn more about NetBSD please visit https://www.netbsd.org/[NetBSD main page].
 
@@ -237,7 +237,7 @@ Notes:
 
 == Windows 10 IoT
 
-image:/documentation/images/win10iot.png[width=100]
+{{< figure src="/documentation/images/win10iot.png" width="100" >}}
 
 Download:
 

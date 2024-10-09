@@ -30,11 +30,11 @@ TIP: The keys might be removable without taking the keyboard out of the frame, t
 
 To remove a key, first push it all the way in, slide it upwards slightly, and lift the top half of the key, this should dislodge the upper half of the scissor mechanism, this step can be tricky, the keys were designed to be assembled once and never removed again.
 
-image:/documentation/images/pinebookpro_keyboard_key-half-removed.jpg[width=400]
+{{< figure src="/documentation/images/pinebookpro_keyboard_key-half-removed.jpg" width="400" >}}
 
 Next you can just slide the key down slightly, this will dislodge the lower half of the scissor mechanism and the key should come completely off the keyboard.
 
-image:/documentation/images/pinebookpro_keyboard_key-removed.jpg[width=400]
+{{< figure src="/documentation/images/pinebookpro_keyboard_key-removed.jpg" width="400" >}}
 
 Re-attaching a key can be quite fiddly since the mechanism stays attached to the key rather than the keyboard like older scissor designs.
 
@@ -42,7 +42,7 @@ The assembly process is the same as disassembly, just reversed, but you have to 
 
 Note that if a key mechanism is damaged, pressing in the upper corners of the key will cause it to dislodge and fall off the keyboard.
 
-image:/documentation/images/pinebookpro_keyboard_key.jpg[width=400]
+{{< figure src="/documentation/images/pinebookpro_keyboard_key.jpg" width="400" >}}
 
 Damaged keys might look like this, note that the pin on the lower right side of the mechanism is slightly deformed and the latch on the upper half of the mechanism is bowed out slightly and cracked.
 This is enough damage to cause the key to pop out when pressed in the upper corners.

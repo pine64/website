@@ -18,7 +18,7 @@ Peripheral On Top (POT)
 
 == USB/UART Programming/Console Adapter (PMPROG01)
 
-image:/documentation/images/USB_Prog.JPG[]
+{{< figure src="/documentation/images/USB_Prog.JPG" >}}
 
 === Feature
 
@@ -43,17 +43,17 @@ https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx[Virtual
 
 https://www.silabs.com/products/mcu/Pages/USBXpress.aspx[USBXpress Driver]
 
-image:/documentation/images/PMPROG01_Rev2_USB_Serial_Programmer-4.jpg[]
+{{< figure src="/documentation/images/PMPROG01_Rev2_USB_Serial_Programmer-4.jpg" >}}
 
-image:/documentation/images/PMPROG01_Rev2_USB_Serial_Programmer-1.jpg[]
+{{< figure src="/documentation/images/PMPROG01_Rev2_USB_Serial_Programmer-1.jpg" >}}
 
-image:/documentation/images/PMPROG01_Rev2_USB_Serial_Programmer-3.jpg[]
+{{< figure src="/documentation/images/PMPROG01_Rev2_USB_Serial_Programmer-3.jpg" >}}
 
-image:/documentation/images/PMWF01A_Wifi_Remote_IO_Rev3-1.jpg[]
+{{< figure src="/documentation/images/PMWF01A_Wifi_Remote_IO_Rev3-1.jpg" >}}
 
 == POT: Veroboard (PMVRB01)
 
-image:/documentation/images/PMVRB01_board_layout.JPG[]
+{{< figure src="/documentation/images/PMVRB01_board_layout.JPG" >}}
 
 === Feature
 
@@ -66,17 +66,17 @@ On board 4pcs of Tact switch
 On board XH5 2.54mm pitch connector for UART0 allow easy connection to USB/UART adapter for console access
 ```
 
-image:/documentation/images/PMVRB01_POT_Veroboard_Rev1-5.jpg[]
+{{< figure src="/documentation/images/PMVRB01_POT_Veroboard_Rev1-5.jpg" >}}
 
-image:/documentation/images/PMVRB01_POT_Veroboard_Rev1-3B.png[]
+{{< figure src="/documentation/images/PMVRB01_POT_Veroboard_Rev1-3B.png" >}}
 
-image:/documentation/images/PMVRB01_POT_Veroboard_Rev1-2B.png[] POT Veroboard on Pine A64
+{{< figure src="/documentation/images/PMVRB01_POT_Veroboard_Rev1-2B.png" >}} POT Veroboard on Pine A64
 
-image:/documentation/images/PMVRB01_POT_Veroboard_Rev1-1B.png[] POT Veroboard 2 board stack on top of Pine A64
+{{< figure src="/documentation/images/PMVRB01_POT_Veroboard_Rev1-1B.png" >}} POT Veroboard 2 board stack on top of Pine A64
 
 == POT: Multi I2C Bus (PMI2C01)
 
-image:/documentation/images/PMI2C01_Board_Layout.JPG[]
+{{< figure src="/documentation/images/PMI2C01_Board_Layout.JPG" >}}
 
 === Feature
 
@@ -108,19 +108,19 @@ https://wiki.pine64.org/images/d/d8/EnableI2cPullup.tar.gz[Program to Enable I2c
 
 https://pine.myggns.com/bozon/index.php?f=157836a20d7b7e[Multi I2c Bus Schematic]
 
-image:/documentation/images/PMI2C01_I2C_Board_Rev1-1.jpg[]
+{{< figure src="/documentation/images/PMI2C01_I2C_Board_Rev1-1.jpg" >}}
 
-image:/documentation/images/PMI2C01_I2C_Board_Rev1-2.jpg[]
+{{< figure src="/documentation/images/PMI2C01_I2C_Board_Rev1-2.jpg" >}}
 
-image:/documentation/images/PMI2C01_I2C_Board_Rev1-3.jpg[]
+{{< figure src="/documentation/images/PMI2C01_I2C_Board_Rev1-3.jpg" >}}
 
-image:/documentation/images/PMVRB01_POT_Veroboard_Rev1-4.jpg[]
+{{< figure src="/documentation/images/PMVRB01_POT_Veroboard_Rev1-4.jpg" >}}
 
 == POT: Shield Adapter (PMARD01)
 
-image:/documentation/images/PMARD01_Shield_Adpater_POT.JPG[]
+{{< figure src="/documentation/images/PMARD01_Shield_Adpater_POT.JPG" >}}
 
-image:/documentation/images/PMARD01_Arduino_Pin_Mapping.JPG[]
+{{< figure src="/documentation/images/PMARD01_Arduino_Pin_Mapping.JPG" >}}
 
 ```
 Adapter for Arduino Shield
@@ -135,7 +135,7 @@ https:/ / https://www.maximintegrated.com/en/products/analog/data-converters/ana
 
 == I2C Device: Humidity and Temperature Sensor (PMSDP01)
 
-image:/documentation/images/PMSDO01_Dew_Point_Sensor.JPG[]
+{{< figure src="/documentation/images/PMSDO01_Dew_Point_Sensor.JPG" >}}
 
 === Feature
 
@@ -152,11 +152,11 @@ On board 3.3V regulator
 
 https://www.silabs.com/Support%20Documents/TechnicalDocs/Si7021-A20.pdf[Si7021-A20 Datasheet]
 
-image:/documentation/images/PMSDO01_Dew_Point_Sensor_Rev1-1.jpg[]
+{{< figure src="/documentation/images/PMSDO01_Dew_Point_Sensor_Rev1-1.jpg" >}}
 
 == I2C Device: Ambient Light Sensor (PMSAL01)
 
-image:/documentation/images/PMSAL01_Light_Sensor.JPG[]
+{{< figure src="/documentation/images/PMSAL01_Light_Sensor.JPG" >}}
 
 === Feature
 
@@ -175,13 +175,13 @@ On board 3.3V regulator
 
 https://ams.com/eng/content/download/250094/975485/file/TSL2560_Datasheet_EN_v1.pdf[TSL2561T Datasheet]
 
-image:/documentation/images/PMSAL01_Light_Sensor_Rev1-1.jpg[]
+{{< figure src="/documentation/images/PMSAL01_Light_Sensor_Rev1-1.jpg" >}}
 
-image:/documentation/images/PMSAL01_Light_Sensor_Rev1-2.jpg[]
+{{< figure src="/documentation/images/PMSAL01_Light_Sensor_Rev1-2.jpg" >}}
 
 == WiFi Remote I2C (PMWF01A)
 
-image:/documentation/images/PMWF01A.JPG[]
+{{< figure src="/documentation/images/PMWF01A.JPG" >}}
 
 === Feature
 
@@ -208,23 +208,23 @@ https://drive.google.com/file/d/0B0cEs0lxTtL3SDdCcWd0LVI2bk0/view?usp=sharing[ES
 
 https://bbs.espressif.com/[ESP8266 forum]
 
-image:/documentation/images/PMWF01A_Wifi_Remote_IO_Rev3-2.jpg[]
+{{< figure src="/documentation/images/PMWF01A_Wifi_Remote_IO_Rev3-2.jpg" >}}
 
-image:/documentation/images/PMWF01A_Wifi_Remote_IO_Rev3-3.jpg[]
+{{< figure src="/documentation/images/PMWF01A_Wifi_Remote_IO_Rev3-3.jpg" >}}
 
-image:/documentation/images/PMWF01A_Wifi_Remote_IO_Rev3-4.jpg[]
+{{< figure src="/documentation/images/PMWF01A_Wifi_Remote_IO_Rev3-4.jpg" >}}
 
-image:/documentation/images/PMWF01A_Wifi_Remote_IO_Rev3-5.jpg[]
+{{< figure src="/documentation/images/PMWF01A_Wifi_Remote_IO_Rev3-5.jpg" >}}
 
 == Inter Connection Wire
 
-image:/documentation/images/I2c_Cable_Connection.JPG[]
+{{< figure src="/documentation/images/I2c_Cable_Connection.JPG" >}}
 
-image:/documentation/images/W5T4-01-15_UART_Programming_Console_Cable.JPG[]
+{{< figure src="/documentation/images/W5T4-01-15_UART_Programming_Console_Cable.JPG" >}}
 
-image:/documentation/images/W5T4-02-15_5Way_to_4Way_I2C_Cable.JPG[]
+{{< figure src="/documentation/images/W5T4-02-15_5Way_to_4Way_I2C_Cable.JPG" >}}
 
-image:/documentation/images/W4T4-03-15_4Way_I2C_Cable.JPG[]
+{{< figure src="/documentation/images/W4T4-03-15_4Way_I2C_Cable.JPG" >}}
 
-image:/documentation/images/W5T5-04-15_5Way_I2C_Cable.JPG[]
+{{< figure src="/documentation/images/W5T5-04-15_5Way_I2C_Cable.JPG" >}}
 

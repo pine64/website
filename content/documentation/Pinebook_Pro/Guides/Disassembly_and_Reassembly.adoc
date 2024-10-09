@@ -9,10 +9,10 @@ menu:
     weight: 
 ---
 
-image:/documentation/images/Standoffs.png[Pinebook Screw stand-offs correct placement and location,title="Pinebook Screw stand-offs correct placement and location",width=400]
+{{< figure src="/documentation/images/Standoffs.png" title="Pinebook Screw stand-offs correct placement and location" width="400" >}}
 
-image:/documentation/images/Hinges_cover_removed_1.jpeg[Hinge_area_of_the_Pinebook_Pro_lid_with_the_cover_removed,title="Hinge_area_of_the_Pinebook_Pro_lid_with the cover removed",width=300]
-image:/documentation/images/Hinges_cover_removed_2.jpeg[Close-up of a Pinebook Pro lid hinge,title="Close-up of a Pinebook Pro lid hinge",width=300]
+{{< figure src="/documentation/images/Hinges_cover_removed_1.jpeg" title="Hinge_area_of_the_Pinebook_Pro_lid_with the cover removed" width="300" >}}
+{{< figure src="/documentation/images/Hinges_cover_removed_2.jpeg" title="Close-up of a Pinebook Pro lid hinge" width="300" >}}
 
 There are a few *mandatory* precautions to be taken:
 
@@ -20,7 +20,7 @@ There are a few *mandatory* precautions to be taken:
 * When removing the back cover plate, *do not, under any circumstances, slide your fingertips between the metal shell and the plastic frame!* The back cover plate edges are sharp, and when combined with the pressure and movement generated from, specifically, attempting to slide the tips of your fingers along the bottom edge of the plate along the lid-hinge, they *will* slice open the tips of your fingers like a knife.
 * When removing the back cover plate, use care to avoid damaging the speakers. They can be stuck to the back cover with double-sided tape, and the thin wires are very delicate. Newer Pinebook Pro laptops (as of the May 2021 batch, and perhaps earlier) seem to lack the double-sided tape to the rear cover, instead opting for tape or glue that makes them stick to the front cover. Nevertheless, be gentle when removing the back cover.
 
-image:/documentation/images/PinebookProScrewGuide.png[Pinebook Pro external screws (this particular unit has suffered damage on screw (4)L),title="Pinebook Pro external screws (this particular unit has suffered damage on screw (4)L)",width=400]
+{{< figure src="/documentation/images/PinebookProScrewGuide.png" title="Pinebook Pro external screws (this particular unit has suffered damage on screw (4)L)" width="400" >}}
 
 When disassembling the laptop make sure that it is powered off and folded closed. To remove the bottom cover of the Pinebook Pro, first remove the ten (10) Phillips head screws that hold the bottom section of the laptop in place. There are four (4) short screws along the front edge, and six (6) long screws along the 3 remaining sides. Remove the cover from the back where the hinges are situated by lifting it up and away from the rest of the chassis. The aluminum case is held on only by screws. There are no plastic snaps, and the shell should pull away without any effort. If you experience any resistance at all stop and ensure all ten (10) screws are accounted for.
 

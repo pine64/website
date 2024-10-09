@@ -9,8 +9,8 @@ menu:
     weight: 1
 ---
 
-image:/documentation/images/PineNote_Pen_function.jpg[width=300]
-image:/documentation/images/PineNote_Cover-1.jpg[width=300]
+{{< figure src="/documentation/images/PineNote_Pen_function.jpg" width="300" >}}
+{{< figure src="/documentation/images/PineNote_Cover-1.jpg" width="300" >}}
 
 == General Information
 

@@ -13,7 +13,7 @@ The link:/documentation/Quartz64[Quartz64 Model A] allows for it to be powered f
 
 == Pin-out
 
-image:/documentation/images/Quartz64_Model_A_VBAT_Connector_Pinout.png[right,title="right"]
+{{< figure src="/documentation/images/Quartz64_Model_A_VBAT_Connector_Pinout.png" title="right" >}}
 
 The pins on the board are a JST PH-3 compatible header labelled _+VBAT-_. As one might guess, the positive wire should be towards the +, and the ground wire towards -. The center pin of the connector is for a temperature probe.
 
@@ -67,7 +67,7 @@ Not all parts of the board can be supplied from the battery. When you use batter
 * All USB ports except for the black one
 * Black USB port's VBUS (the one above the USB 3.0 port) will go through a 22ms brownout to approximately VCC_SYS - 0.6V voltage, before the RK817 BOOST regulator kicks in. This will likely cause the connected USB device to reset or have its internal state corrupted.
 
-image:/documentation/images/Quartz_64_Model_A_VBUS_Brownout.png[width=640]
+{{< figure src="/documentation/images/Quartz_64_Model_A_VBUS_Brownout.png" width="640" >}}
 
 === Software
 

@@ -13,8 +13,8 @@ menu:
 
 Note: Other irons only care if they can solder. The Pinecil is held to an additional standard; how well can it meet the needs of the open source community as a RISC-V development tool. It includes hardware features not found on other soldering irons such as BLE Bluetooth in the V2 in order to support FOSS community feature requests for both fun and science.
 
-image:/documentation/images/Pinecil_GraphicGreenRISCV.png[width=500]
+{{< figure src="/documentation/images/Pinecil_GraphicGreenRISCV.png" width="500" >}}
 
-image:/documentation/images/Pinecilv2-1.jpg[Pinecil_V2,_launched_Aug_2,_2022,title="Pinecil_V2,_launched_Aug_2,_2022",width=300]
-image:/documentation/images/Pinecilv2-2-transparent-background.png[ Pinecil V2, side view,title=" Pinecil V2, side view",width=300]
+{{< figure src="/documentation/images/Pinecilv2-1.jpg" title="Pinecil_V2,_launched_Aug_2,_2022" width="300" >}}
+{{< figure src="/documentation/images/Pinecilv2-2-transparent-background.png" title=" Pinecil V2, side view" width="300" >}}
 

@@ -17,7 +17,7 @@ For information on how to install these images onto your device, please see the 
 
 === Manjaro ARM
 
-image:/documentation/images/Manjaro-logo.svg[width=100]
+{{< figure src="/documentation/images/Manjaro-logo.svg" width="100" >}}
 
 The Manjaro project offers a mainline kernel with patches and modules to support the Pinebook Pro hardware. To learn more about Manjaro please visit https://forum.manjaro.org/c/arm/[Manjaro Forum]. You can follow the ongoing discussion about Manjaro on the https://forum.pine64.org/showthread.php?tid=8207[PINE64 forum].
 All images boot from both SD card and the internal eMMC module.
@@ -29,7 +29,7 @@ Download:
 
 === Armbian
 
-image:/documentation/images/armbian.png[width=100]
+{{< figure src="/documentation/images/armbian.png" width="100" >}}
 
 Armbian is a base operating system platform for single board computers (_SBCs_) that other projects can trust to build upon. It is a lightweight Debian or Ubuntu based Linux distribution specialized for ARM development boards. Each system is compiled, assembled and optimized by the Armbian Build Tools. It has powerful build and software development tools to make custom builds and a vibrant community.
 
@@ -44,7 +44,7 @@ Notes:
 
 === Twister OS
 
-image:/documentation/images/Twister_OS.png[width=100]
+{{< figure src="/documentation/images/Twister_OS.png" width="100" >}}
 
 Twister OS Armbian-Reforged with Xfce. It boots from microSD card and from eMMC. For more information on Twister OS, please visit this https://twisteros.com/[official site]. You can follow the ongoing discussion about Twister OS on the https://forum.pine64.org/showthread.php?tid=12192[PINE64 forum].
 
@@ -67,7 +67,7 @@ Get the latest image here: https://twisteros.com/twisterarmbian.html[Direct down
 
 === Fedora
 
-image:/documentation/images/fedora1.png[width=100]
+{{< figure src="/documentation/images/fedora1.png" width="100" >}}
 
 Fedora Linux is a Linux distribution developed by the Fedora Project. It creates an innovative, free, and open source platform for hardware, clouds, and containers that enables software developers and community members to build tailored solutions for their users.
 
@@ -81,7 +81,7 @@ Notes:
 
 === Arch Linux ARM
 
-image:/documentation/images/Archlinux-logo.png[width=100]
+{{< figure src="/documentation/images/Archlinux-logo.png" width="100" >}}
 
 ==== Official Installation
 
@@ -115,7 +115,7 @@ The default Arch Linux ARM user credentials.
 
 === postmarketOS
 
-image:/documentation/images/PostmarketOS_logo.png[width=100]
+{{< figure src="/documentation/images/PostmarketOS_logo.png" width="100" >}}
 
 Official postmarketOS stable builds are available for the Pinebook Pro with the following interfaces:
 
@@ -144,7 +144,7 @@ The installer images allows setting up an encrypted installation on SD or eMMC.
 
 === Kali Linux
 
-image:/documentation/images/Kali-logo.png[width=100]
+{{< figure src="/documentation/images/Kali-logo.png" width="100" >}}
 
 Official pre-built OS images of Kali Linux for the Pinebook Pro featuring all tools you'd expect from the distribution. It boots from microSD card and from eMMC.
 
@@ -163,7 +163,7 @@ Get the latest image here: https://www.offensive-security.com/kali-linux-arm-ima
 
 === R-Cade
 
-image:/documentation/images/RCadeLogo.jpg[width=100]
+{{< figure src="/documentation/images/RCadeLogo.jpg" width="100" >}}
 
 Retro Center's R-Cade [USB / microSD / eMMC Boot]
 
@@ -183,7 +183,7 @@ Retro Center's R-Cade [USB / microSD / eMMC Boot]
 
 === Q4OS
 
-image:/documentation/images/q4os.png[width=100]
+{{< figure src="/documentation/images/q4os.png" width="100" >}}
 
 Q4OS is advertised as a 'fast and powerful operating system based on the latest technologies while offering highly productive desktop environment'. It boots from microSD card and from eMMC. To learn more please visit the https://forum.pine64.org/showthread.php?tid=8385[PINE64 forum] or official https://q4os.org/index.html[Q4OS website].
 
@@ -197,7 +197,7 @@ User account and password are created on first run.
 
 === DietPi
 
-image:/documentation/images/dietpi.png[width=100]
+{{< figure src="/documentation/images/dietpi.png" width="100" >}}
 
 DietPi is a lightweight, yet easy to setup and feature-rich Linux distribution, based on Debian. To find out more about DietPi, please visit the https://dietpi.com/docs/[official documentation]. Discuss the Pinebook Pro build on the https://forum.pine64.org/showthread.php?tid=14061[PINE64 forum thread].
 
@@ -214,7 +214,7 @@ Download:
 
 === openSUSE
 
-image:/documentation/images/opensuse-distribution.png[width=100]
+{{< figure src="/documentation/images/opensuse-distribution.png" width="100" >}}
 
 *Download location*
 
@@ -245,7 +245,7 @@ https://fydeos.io/download/device/pinebook-pro
 
 === Void Linux
 
-image:/documentation/images/void_bg.png[width=100]
+{{< figure src="/documentation/images/void_bg.png" width="100" >}}
 
 ==== Images
 
@@ -281,7 +281,7 @@ You can also manually install Void from a rootfs tarball: link:/documentation/Pi
 
 === NetBSD
 
-image:/documentation/images/netbsd.png[width=100]
+{{< figure src="/documentation/images/netbsd.png" width="100" >}}
 
 The image boots from microSD card and from eMMC. To learn more about NetBSD please visit https://www.netbsd.org/[NetBSD main page]
 
@@ -303,7 +303,7 @@ Instructions concerning enabling SSH can be found https://www.netbsd.org/docs/gu
 
 === OpenBSD
 
-image:/documentation/images/Puffy_mascot_openbsd.png[width=100]
+{{< figure src="/documentation/images/Puffy_mascot_openbsd.png" width="100" >}}
 
 The image boots from microSD card and from eMMC. To learn more about OpenBSD, please visit https://www.openbsd.org/[OpenBSD main page]
 
@@ -315,7 +315,7 @@ ARM64 images, (including support for Pinebook Pro), can be found here https://ww
 
 === Manjaro ARM
 
-image:/documentation/images/Manjaro-logo.svg[width=100]
+{{< figure src="/documentation/images/Manjaro-logo.svg" width="100" >}}
 
 The https://gitlab.manjaro.org/manjaro-arm/applications/manjaro-arm-installer[manjaro-arm-installer] script is intended to install Manjaro ARM directly to SD/eMMC cards without the need for images (including LXQT, Mate & CuboCore editions, as well as full disk encryption).
 
@@ -323,7 +323,7 @@ Running on a Linux x86 computer, it can install Manjaro ARM directly to an empty
 
 === Armbian
 
-image:/documentation/images/armbian.png[width=100]
+{{< figure src="/documentation/images/armbian.png" width="100" >}}
 
 You can use the https://github.com/armbian/build[Armbian Builder] to generate your own Armbian images of various types.
 
@@ -342,7 +342,7 @@ The builder supports building any version of Debian and any version of Ubuntu wi
 
 === Debian
 
-image:/documentation/images/Debian-logo.png[width=100]
+{{< figure src="/documentation/images/Debian-logo.png" width="100" >}}
 
 * Uses only the upstream kernel and firmware without special patches
 * Display doesn't always work properly on first boot of installer, usually fixed after a couple tries
@@ -357,7 +357,7 @@ The official images are *not* recommended yet until the display begins working c
 
 === Gentoo
 
-image:/documentation/images/GentooLogo.png[width=100]
+{{< figure src="/documentation/images/GentooLogo.png" width="100" >}}
 
 There is a script that prepares a Gentoo arm64 stage 3 tarball for the Pinebook Pro. Unfortunately, this script is not currently functional, and requires extensive troubleshooting to make work. New instructions are currently being created and will be available here.
 
@@ -510,7 +510,7 @@ Now you should reboot the machine and see if it boots into gentoo. If it does: c
 
 === Kali Linux
 
-image:/documentation/images/Kali-logo.png[width=100]
+{{< figure src="/documentation/images/Kali-logo.png" width="100" >}}
 
 There is a script to create official Kali Linux OS images for the Pinebook Pro. The script carries out the build process in entirety and is Pinebook Pro specific.
 
@@ -521,7 +521,7 @@ There is a script to create official Kali Linux OS images for the Pinebook Pro. 
 
 === NixOS
 
-image:/documentation/images/NixOS.webp[width=100]
+{{< figure src="/documentation/images/NixOS.webp" width="100" >}}
 
 You can follow the ongoing discussion about NixOS on the https://forum.pine64.org/showthread.php?tid=10524[PINE64 forum]. There is a good chance we will see Tier 1 support for aarch64, including the Pinebook Pro, in 2021 (see https://github.com/NixOS/rfcs/pull/87).
 
@@ -532,7 +532,7 @@ You can follow the ongoing discussion about NixOS on the https://forum.pine64.or
 
 === SkiffOS
 
-image:/documentation/images/SkiffOS-Icon-1.png[width=100]
+{{< figure src="/documentation/images/SkiffOS-Icon-1.png" width="100" >}}
 
 *Installation*
 
@@ -544,7 +544,7 @@ image:/documentation/images/SkiffOS-Icon-1.png[width=100]
 
 === Slackware
 
-image:/documentation/images/slackware.jpg[width=100]
+{{< figure src="/documentation/images/slackware.jpg" width="100" >}}
 
 https://arm.slackware.com/[Slackware] is the world's oldest actively developed Linux distribution, providing a modern user land (applications) and Linux Kernel, within a more classic Unix Operating System environment.
 

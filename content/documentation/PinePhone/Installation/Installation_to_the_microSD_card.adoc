@@ -20,7 +20,7 @@ To install an image to the microSD card:
 . Plug microSD card into phone (make sure to use the top slot, not the bottom slot)
 . Boot up the phone
 
-image:/documentation/images/Pinephone_slots.png[The microSD belongs in the upper slot, the micro-SIM in the lower slot.,title="The microSD belongs in the upper slot, the micro-SIM in the lower slot.",width=600]
+{{< figure src="/documentation/images/Pinephone_slots.png" title="The microSD belongs in the upper slot, the micro-SIM in the lower slot." width="600" >}}
 
 == Using Balena Etcher
 
@@ -30,7 +30,7 @@ Download and install the application: https://etcher.balena.io/#download-etcher
 
 Then start it and click the button _Flash from file_:
 
-image:../Etcher1.png[width=600]
+{{< figure src="../Etcher1.png" width="600" >}}
 
 Select the downloaded image and make sure that you downloaded the correct one. Images for the PinePhone and the PinePhone Pro are _'not compatible_' with each other. Images for the PinePhone typically have the word "PinePhone" in the filename, while images for the PinePhone Pro typically have "PinePhone Pro" in their filename.
 
@@ -38,13 +38,13 @@ NOTE: At this the image file does not have to be extracted from the archive form
 
 Then click on _Select target_:
 
-image:../Etcher3.png[width=600]
+{{< figure src="../Etcher3.png" width="600" >}}
 
 NOTE: Make sure to select the correct target by comparing the name and the disk capacity with the label on the microSD card.
 
 Then click on _Flash!_:
 
-image:../Etcher4.png[width=600]
+{{< figure src="../Etcher4.png" width="600" >}}
 
 That's it!
 

@@ -9,7 +9,7 @@ menu:
     weight: 98
 ---
 
-image:/documentation/images/Pinephone_revisions.png[The history of the PinePhone CEs,title="The history of the PinePhone CEs",width=400]
+{{< figure src="/documentation/images/Pinephone_revisions.png" title="The history of the PinePhone CEs" width="400" >}}
 
 The following are all hardware revisions of the PinePhone that have existed, ordered by the time of their releases:
 

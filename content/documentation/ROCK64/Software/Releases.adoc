@@ -15,7 +15,7 @@ This page contains a list of all available releases for the link:/documentation/
 
 === AOSC
 
-image:/documentation/images/aosc.png[width=100]
+{{< figure src="/documentation/images/aosc.png" width="100" >}}
 
 *AOSC OS* is a general purpose Linux distribution that strives to simplify user experience and improve free and open source software for day-to-day productivity. To learn more about AOSC, please visit the official https://aosc.io/[AOSC website].
 
@@ -32,7 +32,7 @@ Download:
 
 === Arch Linux ARM
 
-image:/documentation/images/Archlinux-logo.png[width=100]
+{{< figure src="/documentation/images/Archlinux-logo.png" width="100" >}}
 Official *Arch Linux ARM* release.
 
 Installation:
@@ -41,7 +41,7 @@ Installation:
 
 === Armbian
 
-image:/documentation/images/armbian.png[width=100]
+{{< figure src="/documentation/images/armbian.png" width="100" >}}
 
 *Armbian* is a Linux distribution designed for ARM boards. They are usually Debian or Ubuntu flavored.
 
@@ -52,7 +52,7 @@ Download:
 
 === ayufan's Linux releases
 
-image:/documentation/images/penguin.png[width=100]
+{{< figure src="/documentation/images/penguin.png" width="100" >}}
 
 The community member _ayufan_ offers multiple ROCK64 Linux releases based on Debian and Ubuntu. The forum thread for release can be found https://forum.pine64.org/showthread.php?tid=6309[here].
 
@@ -71,7 +71,7 @@ NOTE: Make sure to download images for the _ROCK64_.
 
 === Debian
 
-image:/documentation/images/Debian-logo.png[width=100]
+{{< figure src="/documentation/images/Debian-logo.png" width="100" >}}
 
 *Debian* is an operating system and a distribution of Free Software.
 
@@ -104,7 +104,7 @@ Notes:
 
 === Debian by mrfixit2001
 
-image:/documentation/images/Debian-logo.png[width=100]
+{{< figure src="/documentation/images/Debian-logo.png" width="100" >}}
 
 Mrfixit2001's minimal *Debian* build. Version 190514 onward support Rock64-v3 board
 
@@ -121,7 +121,7 @@ Download:
 
 === DietPi
 
-image:/documentation/images/dietpi.png[width=100]
+{{< figure src="/documentation/images/dietpi.png" width="100" >}}
 
 *DietPi* is a lightweight yet easy to setup and feature-rich Linux distribution, based on Debian. To find out more about DietPi, please visit the https://dietpi.com/docs/[official documentation]. Discuss the ROCK64 build on the https://forum.pine64.org/showthread.php?tid=12514[PINE64 forum thread].
 
@@ -139,7 +139,7 @@ Download:
 
 === Lakka
 
-image:/documentation/images/lakka.png[width=100]
+{{< figure src="/documentation/images/lakka.png" width="100" >}}
 
 *Lakka* is a lightweight Linux distribution that transforms a small computer into a full blown retrogaming console. Visit https://forum.pine64.org/showthread.php?tid=5354[PINE64 forum] for more information about the Lakka release.
 
@@ -149,7 +149,7 @@ Download:
 
 === LibreELEC
 
-image:/documentation/images/libreelec.jpg[width=100]
+{{< figure src="/documentation/images/libreelec.jpg" width="100" >}}
 
 *LibreELEC* is a "Just enough OS" Linux distribution combining the Kodi media center with an operating system.
 
@@ -160,7 +160,7 @@ Download:
 
 === Manjaro ARM
 
-image:/documentation/images/Manjaro-logo.svg[width=100]
+{{< figure src="/documentation/images/Manjaro-logo.svg" width="100" >}}
 
 *Manjaro* is a user-friendly Linux distribution based on the independently developed Arch operating system. Manjaro editions for Rock64 are available directly from Manjaro. To learn more about Manjaro please visit the https://forum.manjaro.org/tags/manjaroarm[Manjaro Forum].
 
@@ -172,7 +172,7 @@ Download:
 
 === NEMS Linux
 
-image:/documentation/images/nems.jpg[width=100]
+{{< figure src="/documentation/images/nems.jpg" width="100" >}}
 
 *NEMS* stands for "Nagios Enterprise Monitoring Server" and it is a modern pre-configured, customized and ready-to-deploy Nagios Core image designed to run on low-cost micro computers. To find out more on NEMS Linux, please visit their https://nemslinux.com/[site].
 
@@ -196,7 +196,7 @@ NOTE: The installation guide can be found https://docs.nemslinux.com/installatio
 
 === NextCloudPi
 
-image:/documentation/images/nextcloudpi.png[width=100]
+{{< figure src="/documentation/images/nextcloudpi.png" width="100" >}}
 
 *NextCloudPi* comes not only with NextCloud preinstalled, but also with management tools for backups, SSL certificates, SAMBA, enhanced security and more. Visit the project's https://nextcloudpi.com[website]. You can follow the ongoing discussion about NextCloudPi on the https://forum.pine64.org/showthread.php?tid=6047[PINE64 forum].
 
@@ -217,7 +217,7 @@ NOTE: The MD5 hash of the .gz file is _2d3eb799e99a3bb90d5aa7731baf27c6_
 
 === OpenMediaVault
 
-image:/documentation/images/omv.png[width=100]
+{{< figure src="/documentation/images/omv.png" width="100" >}}
 
 *Openmediavault* is the next generation network attached storage (NAS) solution. The forum thread concerning this release can be found https://forum.pine64.org/showthread.php?tid=6309[here].
 
@@ -248,7 +248,7 @@ NOTE: The MD5 hash of the .xz file is _bf5d2ea2bc7a5623ba958ed358a80c2a_
 
 === Recalbox
 
-image:/documentation/images/RB.png[width=100]
+{{< figure src="/documentation/images/RB.png" width="100" >}}
 
 *Recalbox* is a free and open-source operating system created for the emulation and preservation for retro games. Recalbox allows you to re-play a variety of videogame consoles and platforms in your living room with ease. To find out more about Recalbox and available tweaks to the installation please visit the https://forum.pine64.org/showthread.php?tid=7111[PINE64 forum thread]. Visit the project's https://www.recalbox.com/[website] for more details.
 
@@ -260,7 +260,7 @@ Download:
 
 === R-Cade
 
-image:/documentation/images/RCadeLogo.jpg[width=100]
+{{< figure src="/documentation/images/RCadeLogo.jpg" width="100" >}}
 
 Retro Center's *R-Cade*, the 4K Media Center Arcade. https://www.retro-center.com/about-r-cade/[RCade] Features 100+ retro-gaming systems, a lightweight web browser, and full 4K UHD media playback.
 
@@ -270,7 +270,7 @@ Download:
 
 === Slackware
 
-image:/documentation/images/slackware.jpg[width=100]
+{{< figure src="/documentation/images/slackware.jpg" width="100" >}}
 
 *Slackware* is a very old, interesting, convenient and easy distribution. Visit the project's website here (https://fail.pp.ua). You can follow the ongoing discussion about Slackware on the PINE64 forum (https://forum.pine64.org/showthread.php?tid=5868)
 
@@ -304,7 +304,7 @@ Flashing the distribution to the eMMC:
 
 === FreeBSD
 
-image:/documentation/images/Freebsd_Logo.png[width=100]
+{{< figure src="/documentation/images/Freebsd_Logo.png" width="100" >}}
 
 *FreeBSD* is an operating system used to power modern servers, desktops, and embedded platforms. The https://wiki.freebsd.org/arm/RockChip#Rock64[RockChip FreeBSD page] has instructions for installing FreeBSD. Version 13.0 and greater include prebuilt images.
 
@@ -324,7 +324,7 @@ Download:
 
 === NetBSD
 
-image:/documentation/images/netbsd.png[width=100]
+{{< figure src="/documentation/images/netbsd.png" width="100" >}}
 
 *NetBSD* is a free, fast, secure, and highly portable Unix-like Open Source operating system. To learn more about NetBSD please visit https://www.netbsd.org/[NetBSD main page].
 
@@ -345,13 +345,13 @@ Notes:
 
 === OpenBSD
 
-image:/documentation/images/Puffy_mascot_openbsd.png[width=100]
+{{< figure src="/documentation/images/Puffy_mascot_openbsd.png" width="100" >}}
 
 *OpenBSD* is a security-focused, free and open-source, Unix-like operating system based on the Berkeley Software Distribution. You can install OpenBSD on your Rock64 by following https://github.com/krjdev/rock64_openbsd[these instructions].
 
 == Android
 
-image:/documentation/images/Android_logo_2019_(stacked).svg[width=100]
+{{< figure src="/documentation/images/Android_logo_2019_(stacked).svg" width="100" >}}
 
 === Android TV 9.x eMMC (No Google Play)
 

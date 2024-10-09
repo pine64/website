@@ -33,7 +33,7 @@ After swapping the mainboard the phone won't boot as there is no OS on the repla
 
 A video tutorial by _Martijn Braam_ can be found here (or alternatively a video tutorial by user _brigadan_ with additional notes about the camera swap and proximity sensor isolator https://www.youtube.com/watch?v=J3AJEF7akkw[here]):
 
-image:/documentation/images/Pinephone_martijn_pcb_replacement.png[width=600]
+{{< figure src="/documentation/images/Pinephone_martijn_pcb_replacement.png" width="600" >}}
 
 === Flashing the ANX firmware
 

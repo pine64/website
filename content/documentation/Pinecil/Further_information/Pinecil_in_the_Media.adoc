@@ -14,7 +14,7 @@ menu:
 * https://www.reddit.com/r/PINE64official/comments/xk9vxu/most_interesting_man_in_the_world_i_dont_always/[Most interesting man]
 * Science Pinecil
 
-image:/documentation/images/Science-pinecil-v2-01.png[]
+{{< figure src="/documentation/images/Science-pinecil-v2-01.png" >}}
 
 == Videos
 

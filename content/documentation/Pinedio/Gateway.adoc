@@ -50,10 +50,10 @@ Pin 10 = RX
 
 == Pictures
 
-image:/documentation/images/Blog-april-InsideLoRaGateway.jpg[]
-image:/documentation/images/Blog-april-InsideLoRaGateway2.jpeg[]
-image:/documentation/images/Discord-lora-gateway-20210413_143615.jpg[]
-image:/documentation/images/Discord-lora-gateway-20210413_1435271.jpg[]
+{{< figure src="/documentation/images/Blog-april-InsideLoRaGateway.jpg" >}}
+{{< figure src="/documentation/images/Blog-april-InsideLoRaGateway2.jpeg" >}}
+{{< figure src="/documentation/images/Discord-lora-gateway-20210413_143615.jpg" >}}
+{{< figure src="/documentation/images/Discord-lora-gateway-20210413_1435271.jpg" >}}
 
 == Operating systems
 

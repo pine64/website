@@ -18,7 +18,7 @@ Album of damage caused by reverse current: https://imgur.com/a/dJsp5wD
 Until the cause of this is determined, it is recommended NOT to use the wireless charging add-on.
 ==== 
 
-image:/documentation/images/PinePhone-Wireless-charger.jpg[width=250]
+{{< figure src="/documentation/images/PinePhone-Wireless-charger.jpg" width="250" >}}
 
 Uses the pogo pins to supply Qi Wireless and Wireless Power Consortium compatible charging. No software required.
 

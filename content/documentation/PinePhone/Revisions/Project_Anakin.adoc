@@ -32,10 +32,10 @@ The Anakin kit consists of following components:
 * Lithium Ion Battery case (note: battery not included, can accommodate 1-3 pieces of 18650 size Lithium Ion batter. In general, one is good enough)
 * Quectel EC20 R2.1 LTE Module (note: The SIM tray design not distinguish polarity well and all reverse slot in)
 
-image:/documentation/images/Anakin_kit_1.jpg[]
-image:/documentation/images/Anakin_kit_2.jpg[]
-image:/documentation/images/Anakin_kit_4.jpg[]
-image:/documentation/images/Anakin_kit_3.jpg[]
+{{< figure src="/documentation/images/Anakin_kit_1.jpg" >}}
+{{< figure src="/documentation/images/Anakin_kit_2.jpg" >}}
+{{< figure src="/documentation/images/Anakin_kit_4.jpg" >}}
+{{< figure src="/documentation/images/Anakin_kit_3.jpg" >}}
 
 == Accessories Step-by-Step Guides
 
@@ -168,7 +168,7 @@ Connector information:
 * https://files.pine64.org/doc/datasheet/pine64/ePH.pdf[2.0mm PH Type connector specification use in Lithium Battery (VBAT) port and RTC Battery port]
 * https://files.pine64.org/doc/datasheet/pine64/0.5FPC%20Front%20Open%20Connector%20H=1.5.pdf[0.5mm Pitch cover type FPC connector specification use in DSI port, TP port and CSI port]
 
-image:/documentation/images/QUECTEL_EC20_Dongle-small.jpg[right,title="right"]
+{{< figure src="/documentation/images/QUECTEL_EC20_Dongle-small.jpg" title="right" >}}
 
 LTE module information:
 

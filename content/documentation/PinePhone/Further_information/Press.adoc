@@ -13,22 +13,22 @@ Vector images and pictures of the link:/documentation/PinePhone[PinePhone] and l
 
 == PinePhone Pro
 
-image:/documentation/images/Pinephone_airplane.png[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
-image:/documentation/images/pinephone_unbranded.png[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
-image:/documentation/images/Pinephone_table.png[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
-image:/documentation/images/Pinephone_killswitches.png[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
-image:/documentation/images/Pinephone_convergence.png[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
-image:/documentation/images/Pinephone_revisions.png[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
-image:/documentation/images/Pinephone_box1.png[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
-image:/documentation/images/Pinephone_box2.png[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
-image:/documentation/images/Pinephone_double.png[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
-image:/documentation/images/Pinephone_double2.png[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
-image:/documentation/images/Pinephone_features.png[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
+{{< figure src="/documentation/images/Pinephone_airplane.png" title="Author: Funeral, License: CC0" >}}
+{{< figure src="/documentation/images/pinephone_unbranded.png" title="Author: Funeral, License: CC0" >}}
+{{< figure src="/documentation/images/Pinephone_table.png" title="Author: Funeral, License: CC0" >}}
+{{< figure src="/documentation/images/Pinephone_killswitches.png" title="Author: Funeral, License: CC0" >}}
+{{< figure src="/documentation/images/Pinephone_convergence.png" title="Author: Funeral, License: CC0" >}}
+{{< figure src="/documentation/images/Pinephone_revisions.png" title="Author: Funeral, License: CC0" >}}
+{{< figure src="/documentation/images/Pinephone_box1.png" title="Author: Funeral, License: CC0" >}}
+{{< figure src="/documentation/images/Pinephone_box2.png" title="Author: Funeral, License: CC0" >}}
+{{< figure src="/documentation/images/Pinephone_double.png" title="Author: Funeral, License: CC0" >}}
+{{< figure src="/documentation/images/Pinephone_double2.png" title="Author: Funeral, License: CC0" >}}
+{{< figure src="/documentation/images/Pinephone_features.png" title="Author: Funeral, License: CC0" >}}
 
 == PinePhone
 
-image:/documentation/images/PinePhone_Beta_Edition.png[Beta Edition. Author: Funeral, License: CC0,title="Beta Edition. Author: Funeral, License: CC0"]
-image:/documentation/images/pinephone_unbranded.png[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
+{{< figure src="/documentation/images/PinePhone_Beta_Edition.png" title="Beta Edition. Author: Funeral, License: CC0" >}}
+{{< figure src="/documentation/images/pinephone_unbranded.png" title="Author: Funeral, License: CC0" >}}
 
 == 3D model
 
@@ -38,45 +38,45 @@ The 3D model can be used for a wide variety of purposes, for example for product
 
 Example rendering:
 
-image:/documentation/images/Pinephone_rendering_example.png[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
-image:/documentation/images/Pinephone_rendering.png[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
+{{< figure src="/documentation/images/Pinephone_rendering_example.png" title="Author: Funeral, License: CC0" >}}
+{{< figure src="/documentation/images/Pinephone_rendering.png" title="Author: Funeral, License: CC0" >}}
 
 New template:
 
-image:/documentation/images/Pinephone_rendering_blank_new.png[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
+{{< figure src="/documentation/images/Pinephone_rendering_blank_new.png" title="Author: Funeral, License: CC0" >}}
 
 Old template:
 
-image:/documentation/images/Pinephone_rendering_blank.png[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
+{{< figure src="/documentation/images/Pinephone_rendering_blank.png" title="Author: Funeral, License: CC0" >}}
 
 == Lockscreen template
 
 For renderings you can use and modify this template:
 
-image:/documentation/images/Phosh_lockscreen.png[Version_with_black_background._Author: Funeral, License: CC0.,title="Version_with_black_background._Author: Funeral, License: CC0.]
-image:/documentation/images/Phosh_lockscreen_blank.png[Version_with_no_background._Author: Funeral, License: CC0.,title="Version_with_no_background._Author: Funeral, License: CC0.]
+{{< figure src="/documentation/images/Phosh_lockscreen.png" title="Version with black background. Author: Funeral, License: CC0." >}}
+{{< figure src="/documentation/images/Phosh_lockscreen_blank.png" title="Version with no background. Author: Funeral, License: CC0." >}}
 
 == Manual and Instructions
 
-image:/documentation/images/PinePhoneSides.svg[Author: Jedi2light, License: CC BY 4.0,title="Author: Jedi2light, License: CC BY 4.0"]
+{{< figure src="/documentation/images/PinePhoneSides.svg" title="Author: Jedi2light, License: CC BY 4.0" >}}
 
-image:/documentation/images/PinePhone_Vector.svg[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
+{{< figure src="/documentation/images/PinePhone_Vector.svg" title="Author: Funeral, License: CC0" >}}
 
-image:/documentation/images/Pinephone_warning.png[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
+{{< figure src="/documentation/images/Pinephone_warning.png" title="Author: Funeral, License: CC0" >}}
 
-image:/documentation/images/Pinephone_drawing1.svg[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
-image:/documentation/images/Pinephone_drawing2.svg[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
-image:/documentation/images/Pinephone_drawing3.svg[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
+{{< figure src="/documentation/images/Pinephone_drawing1.svg" title="Author: Funeral, License: CC0" >}}
+{{< figure src="/documentation/images/Pinephone_drawing2.svg" title="Author: Funeral, License: CC0" >}}
+{{< figure src="/documentation/images/Pinephone_drawing3.svg" title="Author: Funeral, License: CC0" >}}
 
-image:/documentation/images/Pinephone_drawing1_manual.svg[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
-image:/documentation/images/Pinephone_drawing2_manual.svg[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
-image:/documentation/images/Pinephone_drawing3_manual.svg[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
+{{< figure src="/documentation/images/Pinephone_drawing1_manual.svg" title="Author: Funeral, License: CC0" >}}
+{{< figure src="/documentation/images/Pinephone_drawing2_manual.svg" title="Author: Funeral, License: CC0" >}}
+{{< figure src="/documentation/images/Pinephone_drawing3_manual.svg" title="Author: Funeral, License: CC0" >}}
 
-image:/documentation/images/Pinephone_slots.png[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
+{{< figure src="/documentation/images/Pinephone_slots.png" title="Author: Funeral, License: CC0" >}}
 
-image:/documentation/images/Pinephone_backside.png[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
+{{< figure src="/documentation/images/Pinephone_backside.png" title="Author: Funeral, License: CC0" >}}
 
-image:/documentation/images/Pinephone_pogo.png[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
+{{< figure src="/documentation/images/Pinephone_pogo.png" title="Author: Funeral, License: CC0" >}}
 
-image:/documentation/images/PinePhone_Serial_Cable.png[Author: Funeral, License: CC0,title="Author: Funeral, License: CC0"]
+{{< figure src="/documentation/images/PinePhone_Serial_Cable.png" title="Author: Funeral, License: CC0" >}}
 

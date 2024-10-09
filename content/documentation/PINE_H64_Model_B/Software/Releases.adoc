@@ -15,7 +15,7 @@ The following releases are for the PINE H64 Model B
 
 === Armbian
 
-image:/documentation/images/armbian.png[width=100]
+{{< figure src="/documentation/images/armbian.png" width="100" >}}
 
 *Armbian* is a Linux distribution designed for ARM boards. They are usually Debian or Ubuntu flavored.
 
@@ -25,7 +25,7 @@ Download:
 
 === Manjaro ARM
 
-image:/documentation/images/Manjaro-logo.svg[width=100]
+{{< figure src="/documentation/images/Manjaro-logo.svg" width="100" >}}
 
 *Manjaro* is a user-friendly Linux distribution based on the independently developed Arch operating system. To learn more about Manjaro please visit the https://forum.manjaro.org/tags/manjaroarm[Manjaro Forum].
 Download:
@@ -34,7 +34,7 @@ Download:
 
 === DietPi
 
-image:/documentation/images/dietpi.png[width=100]
+{{< figure src="/documentation/images/dietpi.png" width="100" >}}
 
 *DietPi* is a lightweight yet easy to setup and feature-rich Linux distribution, based on Debian. To find out more about DietPi, please visit the https://dietpi.com/docs/[official documentation]. Discuss the PINE H64 build on the https://forum.pine64.org/showthread.php?tid=12531[PINE64 forum thread].
 
@@ -52,7 +52,7 @@ Download:
 
 === LibreELEC
 
-image:/documentation/images/libreelec.jpg[width=100]
+{{< figure src="/documentation/images/libreelec.jpg" width="100" >}}
 
 *LibreELEC* is a "Just enough OS" Linux distribution combining the Kodi media center with an operating system.
 
@@ -68,7 +68,7 @@ Notes:
 
 === FreeBSD
 
-image:/documentation/images/FreeBSD.jpeg[width=100]
+{{< figure src="/documentation/images/FreeBSD.jpeg" width="100" >}}
 
 *FreeBSD* is an operating system used to power modern servers, desktops, and embedded platforms. To learn more about FreeBSD, please visit https://www.FreeBSD.org/[FreeBSD main page].
 
@@ -82,7 +82,7 @@ Notes:
 
 === NetBSD
 
-image:/documentation/images/netbsd.png[width=100]
+{{< figure src="/documentation/images/netbsd.png" width="100" >}}
 
 *NetBSD* is a free, fast, secure, and highly portable Unix-like Open Source operating system. To learn more about NetBSD please visit https://www.netbsd.org/[NetBSD main page].
 

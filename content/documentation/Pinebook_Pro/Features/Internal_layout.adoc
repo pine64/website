@@ -23,7 +23,7 @@ There are two switches on the main board: disabling the eMMC module (24), and en
 
 The Reset and Recovery buttons (28): the reset button performs an immediate reset of the laptop. The Recovery button is used to place the device in maskrom mode. This mode allows flashing eMMC using Rockchip tools (e.g. rkflashtools).
 
-image:/documentation/images/PBPL_S.jpg[width=500]
+{{< figure src="/documentation/images/PBPL_S.jpg" width="500" >}}
 
 == Key Internal Parts
 
@@ -136,5 +136,5 @@ image:/documentation/images/PBPL_S.jpg[width=500]
 
 == Smallboard detailed picture
 
-image:/documentation/images/Pinebook_pro_smallboard.jpg[width=600]
+{{< figure src="/documentation/images/Pinebook_pro_smallboard.jpg" width="600" >}}
 

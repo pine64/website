@@ -75,7 +75,7 @@ If the bootloader is broken/corrupted, you cannot get to Maskrom without opening
 
 Once inside, short TP1301 (GND) and TP1302 (eMMC_D0/FLASH_D0) with a small tweezers, this is how it looks on board view (credit to Caleb):
 
-image:/documentation/PineNote/images/PineNote_Maskrom_TP.png[width=500px]
+{{< figure src="/documentation/PineNote/images/PineNote_Maskrom_TP.png" width="500px" >}}
 
 === Success
 

@@ -52,7 +52,7 @@ WARNING: **When removing the large RF shield found on the mainboard, to be able 
 . Disconnect all boot devices, i.e. eMMC, microSD card and USB.
 . Locate SPI flash (component number 29 on https://wiki.pine64.org/images/4/45/PBPL_S.jpg[this photo of the Pinebook Pro internals]).
 . Connect your Pinebook Pro with USB-C to USB-A cable to second machine (Pinebook Pro on the USB-C side)
-. Short pins CLK and VSS (see chip diagram to the right for the names of pins). This can be done with a pair of tweezers when short on tools. image:/documentation/images/Spi.png[right,title="right"]
+. Short pins CLK and VSS (see chip diagram to the right for the names of pins). This can be done with a pair of tweezers when short on tools. {{< figure src="/documentation/images/Spi.png" title="right" >}}
 . Power on the Pinebook Pro.
 . Press the reset button (component number 28).
 . Check if there is new output from `journalctl` program.

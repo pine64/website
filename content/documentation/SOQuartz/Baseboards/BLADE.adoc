@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-image:/documentation/SOQuartz/images/SOQuartz_BLADE_Dimension.jpg[SOQuartz BLADE Baseboard,title="SOQuartz BLADE Baseboard",width=400]
+{{< figure src="/documentation/SOQuartz/images/SOQuartz_BLADE_Dimension.jpg" title="SOQuartz BLADE Baseboard" width="400" >}}
 
 * SOQuartz BLADE Baseboard Dimensions: 200mm x 40mm x 15mm
 * Input Power:

@@ -9,7 +9,7 @@ menu:
     weight: 5
 ---
 
-image:/documentation/ROCK64/images/Rock64-Al-Case1-1.jpg[width=400]
+{{< figure src="/documentation/ROCK64/images/Rock64-Al-Case1-1.jpg" width="400" >}}
 
 The ROCK64 fits in three officially sold cases.
 

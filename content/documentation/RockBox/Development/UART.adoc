@@ -9,7 +9,7 @@ menu:
     weight: 3
 ---
 
-image:/documentation/RockBox/images/rockbox_internals.jpg[Internals of the RockBox with the UART contacts visible on the bottom right,title="Internals of the RockBox with the UART contacts visible on the bottom right",width=400]
+{{< figure src="/documentation/RockBox/images/rockbox_internals.jpg" title="Internals of the RockBox with the UART contacts visible on the bottom right" width="400" >}}
 
 A serial console can be connected to the RockBox to retrieve the UART boot logs. A device such as a USB to TTL converter can be used to connect the RockBox. Simply set the USB device to 3.3 volts and connect GND to the GND connector on the mainboard, RTX to TX and TXD to RX. The fourth unlabelled contact on the mainboard should not be connected. 
 

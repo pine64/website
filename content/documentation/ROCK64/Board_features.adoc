@@ -9,7 +9,7 @@ menu:
     weight: 1
 ---
 
-image:/documentation/ROCK64/images/ROCK64_sideimg.jpg[The ROCK64 and a size comparison,title="The ROCK64 and a size comparison",width=400]
+{{< figure src="/documentation/ROCK64/images/ROCK64_sideimg.jpg" title="The ROCK64 and a size comparison" width="400" >}}
 
 == Video
 
@@ -41,7 +41,7 @@ image:/documentation/ROCK64/images/ROCK64_sideimg.jpg[The ROCK64 and a size comp
 * 1 USB3.0 Dedicated Host port
 * 2 USB2.0 Dedicated Host port (top one is USB-OTG)
 
-image:/documentation/ROCK64/images/Rock64-emmc-disable-jumper.png[width=400, title="Position of the two-pin header for disabling the optionally installed eMMC module (highlighted in red)"] 
+{{< figure src="/documentation/ROCK64/images/Rock64-emmc-disable-jumper.png" title="Position of the two-pin header for disabling the optionally installed eMMC module (highlighted in red)" width="400">}} 
 
 Position of the two-pin header for disabling the optionally installed eMMC module (highlighted in red)
 

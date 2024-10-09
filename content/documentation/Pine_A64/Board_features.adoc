@@ -13,7 +13,7 @@ menu:
 
 Board Dimensions: 133mm x 80mm x 19mm
 
-image:/documentation/Pine_A64/images/pine_a64_labels.png[Board layout,title="Board layout",width=500]
+{{< figure src="/documentation/Pine_A64/images/pine_a64_labels.png" title="Board layout" width="500" >}}
 
 [cols="1,1"]
 |===

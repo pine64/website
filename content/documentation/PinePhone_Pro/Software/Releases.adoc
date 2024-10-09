@@ -37,7 +37,7 @@ Download the build, extract the image and dd it to a 8 GB or larger microSD card
 
 == Arch Linux ARM
 
-image:/documentation/images/Archlinux-logo.png[width=100]
+{{< figure src="/documentation/images/Archlinux-logo.png" width="100" >}}
 
 (Unofficial) Arch Linux ARM with choice of Phosh UI, Plasma Mobile, sxmo or barebones.
 Currently being maintained by the https://danctnix.org/[DanctNIX] community (GitHub: https://github.com/DanctNIX/danctnix[danctnix], https://github.com/dreemurrs-embedded[dreemurrs-embedded]).
@@ -64,7 +64,7 @@ A re-image of the above Arch image providing a Btrfs root partitioning has been 
 
 == Gentoo
 
-image:/documentation/images/GentooLogo.png[width=100]
+{{< figure src="/documentation/images/GentooLogo.png" width="100" >}}
 
 There are unofficial Gentoo overlays with ebuilds for the PinePhone Pro. There are no images - the image must be built manually, including picking the kernel, bootloader and the desired desktop environment. The ARM64 version of Gentoo has to be selected. The PinePhone Pro will not boot with P-Boot but will boot with U-Boot, there is an ebuild for it.
 
@@ -94,7 +94,7 @@ Project status https://github.com/GloDroidCommunity/pine64-pinephonepro/issues/1
 
 == LuneOS
 
-image:/documentation/images/Luneos-logo-256.png[width=100]
+{{< figure src="/documentation/images/Luneos-logo-256.png" width="100" >}}
 
 LuneOS is one of the original multi-tasking OS-es that runs on Linux. Based on HP/Palm's webOS, merged with latest technology stack from LG called webOS OSE (a derivative of what LG uses on their Smart TV's), software such as Qt5 and makes use of the Yocto build system.
 
@@ -115,7 +115,7 @@ In order to connect to the device using SSH/SCP via WiFi: You can simply connect
 
 == Manjaro ARM
 
-image:/documentation/images/Manjaro-logo.svg[width=100]
+{{< figure src="/documentation/images/Manjaro-logo.svg" width="100" >}}
 
 Manjaro is a user-friendly Linux distribution based on the independently developed Arch operating system with the Plasma Mobile and Phosh desktop environment.
 
@@ -136,7 +136,7 @@ Manjaro is a user-friendly Linux distribution based on the independently develop
 
 == Mobian
 
-image:/documentation/images/Debian-logo.png[width=100]
+{{< figure src="/documentation/images/Debian-logo.png" width="100" >}}
 
 An unofficial https://www.debian.org[Debian] build for ARM64 running with Phosh. The current version of the base Debian system is Debian Bookworm. See the installation instructions https://wiki.debian.org/InstallingDebianOn/PINE64/PinePhonePro[here]. If you have questions about Mobian, please ask them in the https://matrix.to/#/#mobian:matrix.org[Mobian Matrix room].
 
@@ -161,7 +161,7 @@ In order to connect to the device using SSH/SCP via WiFi, you need to install SS
 
 == Kali Linux
 
-image:/documentation/images/Kali-logo.png[width=200]
+{{< figure src="/documentation/images/Kali-logo.png" width="200" >}}
 
 The official Kali Nethunter images for PinePhone and PinePhone Pro have been released now. Get https://github.com/Shubhamvis98/nethunter-pinephone[Nethunter App] for your PinePhone's Kali Linux.
 
@@ -182,7 +182,7 @@ The official Kali Nethunter images for PinePhone and PinePhone Pro have been rel
 
 == Nemo Mobile
 
-image:/documentation/images/nemo_mobile.png[width=100]
+{{< figure src="/documentation/images/nemo_mobile.png" width="100" >}}
 
 Nemo Mobile is the open source build of Sailfish OS with a open source UI called http://nemomobile.net/glacier-home/[Glacier], http://nemomobile.net/pages/Hello_manjaro/[based on Manjaro].
 
@@ -206,7 +206,7 @@ The website of the Nemo Mobile UX Team can be found https://nemomobile.net/[here
 
 == NixOS
 
-image:/documentation/images/NixOS.webp[width=100]
+{{< figure src="/documentation/images/NixOS.webp" width="100" >}}
 
 NixOS is a Linux distribution built on top of the Nix package manager using declarative configuration to allow reliable system upgrades.
 
@@ -220,7 +220,7 @@ WIP. See https://github.com/NixOS/mobile-nixos/issues/440
 
 == postmarketOS
 
-image:/documentation/images/PostmarketOS_logo.png[width=100]
+{{< figure src="/documentation/images/PostmarketOS_logo.png" width="100" >}}
 
 postmarketOS extends https://www.alpinelinux.org/[Alpine Linux] to run on smartphones and other mobile devices.
 It offers various user interfaces (Phosh, Plasma Mobile, Sxmo, Plasma Desktop, Gnome 3, Kodi, XFCE4, [...]).

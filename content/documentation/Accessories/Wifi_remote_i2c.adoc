@@ -9,12 +9,12 @@ menu:
     weight: 
 ---
 
-image:/documentation/images/PMWF01A_Description.jpg[PMWF01A: Wifi Remote I2c Module,title="PMWF01A: Wifi Remote I2c Module"]
+{{< figure src="/documentation/images/PMWF01A_Description.jpg" title="PMWF01A: Wifi Remote I2c Module" >}}
 
 == Quick Start Guide
 
 === Hardware Setup
-image:/documentation/images/PMWF01A_Wifi_Remote_IO_Rev3-1.jpg[Hardware Setup,title="Hardware Setup"]
+{{< figure src="/documentation/images/PMWF01A_Wifi_Remote_IO_Rev3-1.jpg" title="Hardware Setup" >}}
 
 * Make sure that the driver for USB/UART Programming/Console Adapter (PMPROG01) is properly install and the PC is detected it as Comm Port.
 * The USB/UART Bridge is base on http://www.silabs.com/products/interface/usb-bridges/classic-usb-bridges/Pages/usb-to-uart-bridge.aspx[Silicon Lab CP2012 chipset].
@@ -22,14 +22,14 @@ image:/documentation/images/PMWF01A_Wifi_Remote_IO_Rev3-1.jpg[Hardware Setup,tit
 * Connect the USB/UART Programming/Console Adapter (PMPROG01) to the Wifi Remote I2c Device.
 * You can power-up the WiFI Remote I2c module through the USB Bus for configuration and programming.
 
-image:/documentation/images/Wr_USB_Adpt_5v.jpg[width=100]
+{{< figure src="/documentation/images/Wr_USB_Adpt_5v.jpg" width="100" >}}
 
 Place the jumper J2 on USB/UART Programming/Console Adapter (PMPROG01) to 5V output selection.
 
 === Setting Configuration
 
-image:/documentation/images/Wr_Termite2.JPG[Termite Setup Screen,title="Termite Setup Screen"]
-image:/documentation/images/Wr_cfghelp_scr.JPG[Help Command,title="Help Command"]
+{{< figure src="/documentation/images/Wr_Termite2.JPG" title="Termite Setup Screen" >}}
+{{< figure src="/documentation/images/Wr_cfghelp_scr.JPG" title="Help Command" >}}
 
 * For windows system, you can use terminal emulator program Termite to configure the device.
 * Termite can be downloaded at http://www.compuphase.com/software_termite.htm[CompuPhase Website ]
@@ -37,7 +37,7 @@ image:/documentation/images/Wr_cfghelp_scr.JPG[Help Command,title="Help Command"
 * Follow the setting according to the setup screen capture. (57600Baud 8-N-1)
 * Once Termite configuration is done, press 'OK' to save the setting.
 * On the Wifi Remote I2c Device, Press the configuration button to allow the device to go into configuration mode.
-image:/documentation/images/Wr_Config_Mode_Sw.jpg[]
+{{< figure src="/documentation/images/Wr_Config_Mode_Sw.jpg" >}}
 Press Config Mode button to go into configuration mode
 
 * Type 'help' to show the command available for configuration.
@@ -68,7 +68,7 @@ Press Config Mode button to go into configuration mode
 * To login into the server, telnet into localhost port 10000
   telnet localhost 10000
 
-image:/documentation/images/Wr_putty_login.JPG[PineWifiServer Login Screen,title="PineWifiServer Login Screen"]
+{{< figure src="/documentation/images/Wr_putty_login.JPG" title="PineWifiServer Login Screen" >}}
 
 * To show current connect Wifi Remote I2c type 'list' in small capital letter.
 * To see all available command, type 'help'.
@@ -89,18 +89,18 @@ image:/documentation/images/Wr_putty_login.JPG[PineWifiServer Login Screen,title
   ./WifiAppDemo
 * The Application will connect the PineWifiServer currently running in the localhost.
 
-image:/documentation/images/Wr_demo_application.JPG[]
+{{< figure src="/documentation/images/Wr_demo_application.JPG" >}}
 
 Example of screen shot with WifiAppDemo polling multiple Wifi Remote I2c with Ambient Light Sensor and Humidity/Temperature Sensor connected on it. The speed for each round of polling is 1 second per poll.
 
 == Firmware Upgrade
 
 === Hardware Setup
-image:/documentation/images/Wr_Programming_Mode_Jumper.jpg[width=100]
+{{< figure src="/documentation/images/Wr_Programming_Mode_Jumper.jpg" width="100" >}}
 
 Short Jumper S2 on the WiFI Remote I2c module (before power up the board) to allow the board to go in to firmware programming mode.
 
-image:/documentation/images/PMWF01A_Wifi_Remote_IO_Rev3-1.jpg[Hardware Setup,title="Hardware Setup"]
+{{< figure src="/documentation/images/PMWF01A_Wifi_Remote_IO_Rev3-1.jpg" title="Hardware Setup" >}}
 
 * Make sure that the driver for USB/UART Programming/Console Adapter (PMPROG01) is properly install and the PC is detected it as Comm Port.
 * The USB/UART Bridge is base on http://www.silabs.com/products/interface/usb-bridges/classic-usb-bridges/Pages/usb-to-uart-bridge.aspx[Silicon Lab CP2012 chipset].
@@ -108,7 +108,7 @@ image:/documentation/images/PMWF01A_Wifi_Remote_IO_Rev3-1.jpg[Hardware Setup,tit
 * Connect the USB/UART Programming/Console Adapter (PMPROG01) to the Wifi Remote I2c Device.
 * You can power-up the WiFI Remote I2c module through the USB Bus for configuration and programming.
 
-image:/documentation/images/Wr_USB_Adpt_5v.jpg[width=100]
+{{< figure src="/documentation/images/Wr_USB_Adpt_5v.jpg" width="100" >}}
 Place the jumper J2 on USB/UART Programming/Console Adapter (PMPROG01) to 5V output selection.
 
 === Software Setup
@@ -117,7 +117,7 @@ Place the jumper J2 on USB/UART Programming/Console Adapter (PMPROG01) to 5V out
 * Download the windows Python base Flash Download Tools by Espressif from http://espressif.com/en/products/hardware/esp8266ex/resources[Espressif website].
 * Setup the ESP Flash Download tools according to the screen short.
 
-image:/documentation/images/Esp_prog_tool.JPG[width=400]
+{{< figure src="/documentation/images/Esp_prog_tool.JPG" width="400" >}}
 
 * Make sure that the firmware address is set correctly. Baud rate is set to 115200baud and Com Port is set according to the Virtual Com Port of your PC.
 * Once the ESP Flash Download tool and hardware is setup properly, press the 'Start' button to start the firmware uploading process.
@@ -134,7 +134,7 @@ image:/documentation/images/Esp_prog_tool.JPG[width=400]
 
 == I/O Pin Out
 
-image:/documentation/images/IO_Pin.JPG[]
+{{< figure src="/documentation/images/IO_Pin.JPG" >}}
 
 == Download
 

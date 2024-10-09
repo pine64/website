@@ -9,9 +9,9 @@ menu:
     weight: 
 ---
 
-image:/documentation/images/ROCKPro64v21REAR.jpg[width=400]
-image:/documentation/images/FLIR_20220619_125451_686.jpg[width=230]
-image:/documentation/images/ROCKPro64_annotated.jpg[width=500]
+{{< figure src="/documentation/images/ROCKPro64v21REAR.jpg" width="400" >}}
+{{< figure src="/documentation/images/FLIR_20220619_125451_686.jpg" width="230" >}}
+{{< figure src="/documentation/images/ROCKPro64_annotated.jpg" width="500" >}}
 
 == Main Chips
 

@@ -60,5 +60,5 @@ You may have some or all of these in your junk/parts drawer. They're all common 
 
 == Circuit
 
-image:/documentation/images/RockPro64-serial-buffer.png[]
+{{< figure src="/documentation/images/RockPro64-serial-buffer.png" >}}
 

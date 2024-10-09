@@ -13,7 +13,7 @@ NOTE: The images are provided by the PINE64 community, not by Pine Store Ltd. Mo
 
 == DietPi
 
-image:/documentation/images/dietpi.png[width=100]
+{{< figure src="/documentation/images/dietpi.png" width="100" >}}
 
 **DietPi** is a lightweight, yet easy to setup and feature-rich Linux distribution, based on _Debian_. To find out more about DietPi, please visit the https://dietpi.com/docs/[official documentation]. Discuss the Quartz64 builds on the https://forum.pine64.org/showthread.php?tid=17601[PINE64 forum thread].
 
@@ -31,7 +31,7 @@ Download:
 
 == Manjaro ARM
 
-image:/documentation/images/Manjaro-logo.svg[width=100]
+{{< figure src="/documentation/images/Manjaro-logo.svg" width="100" >}}
 
 Manjaro ARM is a user friendly rolling release distribution, based on Arch Linux ARM.
 
@@ -51,7 +51,7 @@ For headless installation, simply enter "root" at the login: prompt and complete
 
 == Plebian
 
-image:/documentation/images/Plebian-logo.svg[width=100]
+{{< figure src="/documentation/images/Plebian-logo.svg" width="100" >}}
 
 Plebian stands for **P**INE64 **L**ive D**ebian** and aims to be a fairly vanilla live Debian image for Quartz64 and SOQuartz devices, based on Debian Bookworm. It supports both of PINE64's officially released SOQuartz base boards.
 

@@ -13,7 +13,7 @@ The PineTab will automatically boot from microSD if a bootable card is inserted.
 
 == Arch Linux ARM
 
-image:/documentation/images/Archlinux-logo.png[width=100]
+{{< figure src="/documentation/images/Archlinux-logo.png" width="100" >}}
 
 Unofficial *Arch Linux ARM* with Phosh as the UI selection, maintained by the DanctNIX community.
 
@@ -23,7 +23,7 @@ Download:
 
 == Manjaro ARM
 
-image:/documentation/images/Manjaro-logo.svg[width=100]
+{{< figure src="/documentation/images/Manjaro-logo.svg" width="100" >}}
 
 *Manjaro* is a Linux based alternative operating system with no adverts or licensing fees, it respects user privacy and gives them full control over their hardware. The PineTab "Early Adopter" edition is currently the only device supported by Manjaro ARM.
 
@@ -36,7 +36,7 @@ Both Beta releases and weekly unstable builds for Phosh and Plasma Mobile can be
 
 == Mobian
 
-image:/documentation/images/Debian-logo.png[width=100]
+{{< figure src="/documentation/images/Debian-logo.png" width="100" >}}
 
 *Mobian* is an unofficial https://www.debian.org[Debian] build for ARM64 running with Phosh. The current version of the base Debian system is Debian Bookworm. See the installation instructions https://wiki.debian.org/InstallingDebianOn/PINE64/PineTab[here]. If you have questions about Mobian, please ask them in the https://matrix.to/#/#mobian:matrix.org[Mobian Matrix room].
 
@@ -53,7 +53,7 @@ Download:
 
 == postmarketOS
 
-image:/documentation/images/PostmarketOS_logo.png[width=100]
+{{< figure src="/documentation/images/PostmarketOS_logo.png" width="100" >}}
 
 *postmarketOS* extends https://www.alpinelinux.org/[Alpine Linux] to run on smartphones and other mobile devices.
 
@@ -72,7 +72,7 @@ Getting postmarketOS for the PineTab:
 
 == Rhino Linux
 
-image:/documentation/images/Rhino-linux-logo.png[width=100]
+{{< figure src="/documentation/images/Rhino-linux-logo.png" width="100" >}}
 
 *Rhino Linux* is an Ubuntu-based distribution that uses the rolling-release model by tracking the `devel` branch of repositories. The port is currently maintained by Oren Klopfer (oklopfer).
 
@@ -97,7 +97,7 @@ https://discord.gg/reSvc8Ztk3[Discord] - https://matrix.to/#/#rolling-rhino-remi
 
 == Sailfish OS
 
-image:/documentation/images/SailfishOS_logo.png[width=100]
+{{< figure src="/documentation/images/SailfishOS_logo.png" width="100" >}}
 
 You can get *SailfishOS* on your with the flash-it script, which will write an image on a SD card. https://github.com/sailfish-on-dontbeevil/flash-it
 
@@ -109,7 +109,7 @@ Many things are still broken but Bluetooth, Audio, Rotation and Keyboard are wor
 
 == Ubuntu Touch
 
-image:/documentation/images/Ubports-logo.png[width=100]
+{{< figure src="/documentation/images/Ubports-logo.png" width="100" >}}
 
 *Ubuntu Touch* is a mobile version of the Ubuntu distribution made and maintained by the UBports community. The port is currently maintained by Oren Klopfer (oklopfer).
 

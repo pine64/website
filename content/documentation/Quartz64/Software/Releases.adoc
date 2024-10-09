@@ -21,7 +21,7 @@ IMPORTANT: *Note:* The images are provided by the community, not by PINE64. Most
 
 === Armbian
 
-image:/documentation/images/armbian.png[width=100]
+{{< figure src="/documentation/images/armbian.png" width="100" >}}
 
 *Armbian* is a base operating system platform for single board computers
 
@@ -41,7 +41,7 @@ Notes:
 
 === DietPi
 
-image:/documentation/images/dietpi.png[width=100]
+{{< figure src="/documentation/images/dietpi.png" width="100" >}}
 
 *DietPi* is a lightweight, yet easy to setup and feature-rich Linux distribution, based on _Debian_. To find out more about DietPi, please visit the https://dietpi.com/docs/[official documentation]. Discuss the Quartz64 builds on the https://forum.pine64.org/showthread.php?tid=17601[PINE64 forum thread].
 
@@ -60,7 +60,7 @@ Download:
 
 === Manjaro ARM
 
-image:/documentation/images/Manjaro-logo.svg[width=100]
+{{< figure src="/documentation/images/Manjaro-logo.svg" width="100" >}}
 
 *Manjaro ARM* is a user friendly rolling release distribution, based on Arch Linux ARM.
 

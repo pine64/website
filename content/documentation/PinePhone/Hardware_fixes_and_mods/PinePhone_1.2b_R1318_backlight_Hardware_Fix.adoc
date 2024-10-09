@@ -30,7 +30,7 @@ When connecting a VBUS powered device to the affected devices, like USB-C docks 
 The fix of the issue is to remove the R1318 resistor.
 
 A detailed instruction will follow here.
-image:/documentation/images/Pinephone-pcb-r1318.png[R1318 location on the board,title="R1318 location on the board",width=400]
+{{< figure src="/documentation/images/Pinephone-pcb-r1318.png" title="R1318 location on the board" width="400" >}}
 
 == Sources and tutorials
 

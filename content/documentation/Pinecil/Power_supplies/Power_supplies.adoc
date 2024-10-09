@@ -74,7 +74,7 @@ NOTE: a PD3.1 240W cable needs to be purchased if you want the full 28V performa
 
 ==== PD3.0 65w 20V Chargers
 
-image:/documentation/images/USB_C_PD_shared_watts_charger.jpg[width=400]
+{{< figure src="/documentation/images/USB_C_PD_shared_watts_charger.jpg" width="400" >}}
 
 . https://pine64.com/product-category/pinepower/[PD120w PinePower Desktop w/Grounded 3-pin plug]
 . https://pine64.com/product/pinepower-65w-gan-2c1a-charger-with-international-plugs/[PD65w GAN II Pinepower Portable Travel charger] (PD@20V)
@@ -103,9 +103,9 @@ image:/documentation/images/USB_C_PD_shared_watts_charger.jpg[width=400]
 
 IMPORTANT: *Check the polarity* of the DC Barrel plug before plugging in a random charger or it could break the Pinecil.
 
-image:/documentation/images/AC_adaptor_polarity.png[width=350]
+{{< figure src="/documentation/images/AC_adaptor_polarity.png" width="350" >}}
 
-image:/documentation/images/Nintendo-center-negative.png[width=350]
+{{< figure src="/documentation/images/Nintendo-center-negative.png" width="350" >}}
 
 === DC Laptop Brick
 
@@ -120,7 +120,7 @@ image:/documentation/images/Nintendo-center-negative.png[width=350]
 
 === Tool Batteries 18V-21V
 
-image:/documentation/images/Power_Wheel_Adapters_for_18-21V_Tool_Batteries.png[width=475]
+{{< figure src="/documentation/images/Power_Wheel_Adapters_for_18-21V_Tool_Batteries.png" width="475" >}}
 
 https://a.co/bo626Nk[Power-Wheels adapter link] with Ryobi battery
 

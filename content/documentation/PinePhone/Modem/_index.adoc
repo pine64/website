@@ -153,7 +153,7 @@ As with most smartphones, the PinePhone has a small antenna and has difficulty g
 
 Basic testing of GNSS reception can be done by using the AT command interface (_/dev/ttyUSB2_) from a terminal program like _minicom_ and the data output interface (_/dev/ttyUSB1_) to feed NMEA data into gpsmon or some other program that can parse standard NMEA sentences.
 
-image:/documentation/images/Gpsmon_eg25g.png[gpsmon decoding GPS data from _/dev/ttyUSB1_,title="gpsmon decoding GPS data from _/dev/ttyUSB1_",width=400]
+{{< figure src="/documentation/images/Gpsmon_eg25g.png" title="gpsmon decoding GPS data from _/dev/ttyUSB1_" width="400" >}}
 
 To check if GNSS data output is enabled, you can
 

@@ -21,7 +21,7 @@ All the end-nodes use the SX1262 chip.
 
 == Pictures
 
-image:/documentation/images/Blog-april-USB-LoRa-1024x655.jpg[]
-image:/documentation/images/Blog-april-LoRa-something-839x1024.jpg[]
-image:/documentation/images/Discord_20210421_lora_usb_closeup.jpg[]
+{{< figure src="/documentation/images/Blog-april-USB-LoRa-1024x655.jpg" >}}
+{{< figure src="/documentation/images/Blog-april-LoRa-something-839x1024.jpg" >}}
+{{< figure src="/documentation/images/Discord_20210421_lora_usb_closeup.jpg" >}}
 

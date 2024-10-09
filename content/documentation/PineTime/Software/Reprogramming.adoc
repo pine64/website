@@ -143,7 +143,7 @@ Connect PineTime SWD Pins to ST-Link v2 as follows:
 |3.3V
 |===
 
-image:/documentation/images/pinetime-stlink.jpg[width=400]
+{{< figure src="/documentation/images/pinetime-stlink.jpg" width="400" >}}
 
 Note that only the bottom row of pins on ST-Link are used.
 

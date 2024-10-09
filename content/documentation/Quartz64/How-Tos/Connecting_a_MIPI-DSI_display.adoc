@@ -19,7 +19,7 @@ When connecting the display, please make sure the board is powered off and unplu
 
 === Model A
 
-image:/documentation/images/Quartz64-model-a-dsi.jpg[]
+{{< figure src="/documentation/images/Quartz64-model-a-dsi.jpg" >}}
 
 To connect the hardware, lift up the dark flap of the part marked with "DSI" in red in the above picture. Then, insert the flat flex cable with the contacts pointing down (and the blue backing pointing up). In the same fashion, connect the thinner touch panel controller cable to the port marked with "TP" in blue.
 

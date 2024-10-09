@@ -15,7 +15,7 @@ menu:
 
 == NAS case
 
-image:/documentation/images/NASCaseMain.png[Front View of the PINE64 NAS Case for the ROCKPro64,title="Front View of the PINE64 NAS Case for the ROCKPro64"]
+{{< figure src="/documentation/images/NASCaseMain.png" title="Front View of the PINE64 NAS Case for the ROCKPro64" >}}
 
 Please link:/documentation/Accessories/Cases/NASCase[follow this this link] for *detailed instructions on how to assemble the ROCKPro64 NAS Case*.
 

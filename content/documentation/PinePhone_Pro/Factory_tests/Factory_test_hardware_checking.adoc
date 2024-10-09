@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-image:/documentation/images/PPP_Abdroid_Test_Utility-5.jpg[width=400]
+{{< figure src="/documentation/images/PPP_Abdroid_Test_Utility-5.jpg" width="400" >}}
 
 Please note that this Android build solely for PinePhone Pro hardware checking purpose and solely used by the support team. This is NOT a general release build.
 
@@ -23,7 +23,7 @@ Instructions:
 * Insert battery, press the RE button (bypass SPI and eMMC boot) underneath the back cover while plugging in the USB-C power. After 3 seconds release the RE button.
 * When powering up, a battery icon screen will show up blow, press power key for two seconds, then the Rockchip logo screen shows up.
 
-image:/documentation/images/PPP_Abdroid_Test_Utility-1.jpg[width=300]
+{{< figure src="/documentation/images/PPP_Abdroid_Test_Utility-1.jpg" width="300" >}}
 
 * Wait for the home screen, double tap on the test app icon (mark red circuit) and this will bring up the factory test screen. Please note that the SD test is disabled due in this is SD boot build.
 * After running a particular test function, please snapshot the test result and pass it back to support team
@@ -34,5 +34,5 @@ Notes:
 * When perform GPS test, the first result may fail and please ignore this false message.
 * For light sensing test, please have a light shine to the PinePhone Pro when performing the test.
 
-image:/documentation/images/PPP_Abdroid_Test_Utility-4.jpg[width=300]
+{{< figure src="/documentation/images/PPP_Abdroid_Test_Utility-4.jpg" width="300" >}}
 

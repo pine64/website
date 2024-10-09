@@ -34,7 +34,7 @@ My goals are:
 
 Pinetime Devkit0 is using a nRF52832-QFAA MCU with 512kB flash and a https://datasheet.lcsc.com/szlcsc/2005251035_XTX-XT25F32BSOIGU-S_C558851.pdf[XT25F32B SPI NOR external flash] with 4096kB.
 
-image:/documentation/images/MemoryMap.png[]
+{{< figure src="/documentation/images/MemoryMap.png" >}}
 
 Internal flash (512Kb):
 
@@ -95,7 +95,7 @@ In order to simplify the code, the graphics will be stored into the bootloader c
 
 === Bootloader workflow
 
-image:/documentation/images/PineTimeBootloaderWorkflow.png[]
+{{< figure src="/documentation/images/PineTimeBootloaderWorkflow.png" >}}
 
 === Upgrade & Reloader
 

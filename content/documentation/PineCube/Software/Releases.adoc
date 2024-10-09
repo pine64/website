@@ -11,7 +11,7 @@ menu:
 
 == Armbian
 
-image:/documentation/images/armbian.png[width=100]
+{{< figure src="/documentation/images/armbian.png" width="100" >}}
 
 *Armbian* is a Linux distribution designed for ARM boards. They are usually Debian or Ubuntu flavored.
 
@@ -25,7 +25,7 @@ Notes:
 
 == NixOS
 
-image:/documentation/images/NixOS.webp[width=100]
+{{< figure src="/documentation/images/NixOS.webp" width="100" >}}
 
 *NixOS* is a Linux distribution built on top of the Nix package manager using declarative configuration to allow reliable system upgrades.
 

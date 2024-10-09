@@ -11,11 +11,11 @@ menu:
 
 * Based on https://www.starfivetech.com/en/site/soc[StarFive JH7110]
 
-image:/documentation/images/StarFive.jpg[]
-image:/documentation/images/JH7110_Block_Diagram.png[width=800]
+{{< figure src="/documentation/images/StarFive.jpg" >}}
+{{< figure src="/documentation/images/JH7110_Block_Diagram.png" width="800" >}}
 
 == CPU Architecture
-image:/documentation/images/SiFive.jpg[width=200]
+{{< figure src="/documentation/images/SiFive.jpg" width="200" >}}
 
 * https://www.sifive.com/cores/u74[Quad-core U74 up to 1.5GHz CPU]
 * Fully compliant with the RISC-V ISA specification
@@ -29,7 +29,7 @@ image:/documentation/images/SiFive.jpg[width=200]
 * 32-bit RISC-V CPU core (E24) for real time control, support RV32IMFC RISC-V ISA
 
 == GPU Architecture
-image:/documentation/images/imgtech.png[width=200]
+{{< figure src="/documentation/images/imgtech.png" width="200" >}}
 
 * https://www.imaginationtech.com/product/img-bxe-4-32-mc4/[Imagination Technology BXE-4-32 up to 600Mhz GPU]
 * Support OpenCL 3.0

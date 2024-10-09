@@ -15,7 +15,7 @@ This article is about updating/flashing the link:/documentation/Pinecil[Pinecil]
 
 TIP: Pinecil is designed to use *only 1 power port* at any time. Only the USB-C cable should be plugged in during firmware updates. Never attempt to use both rear ports at the same time or the PC and Pinecil will be damaged.
 
-image:/documentation/images/Pinecil-V1andV2.png[right,title="right",width=400]
+{{< figure src="/documentation/images/Pinecil-V1andV2.png" title="right" width="400" >}}
 
 The firmware that comes with the Pinecil is https://ralim.github.io/IronOS/[open source Ralim's IronOS]. It's a good idea to check for updates regularly as development is very active and there may be enhancements or bug fixes.
 
@@ -144,7 +144,7 @@ This is a CLI that runs in a terminal console. Get the latest zip file for Linux
 
 == Update V1
 
-image:/documentation/images/Pinecil-V1andV2.png[right,title="right",width=400]
+{{< figure src="/documentation/images/Pinecil-V1andV2.png" title="right" width="400" >}}
 
 . Pinecil V1 uses a *.dfu file type for firmware. The newer Pinecil V2 only uses *.bin firmware type files.
 . Pinecil V1 models were sold until July 2022 and then discontinued.
@@ -183,7 +183,7 @@ IMPORTANT: Do not use the DC barrel jack while updating firmware or you may dest
 
 == Boot Logo Art
 
-image:/documentation/images/Boot-logo-dogbone.jpg[Dog bone by River M.]
+{{< figure src="/documentation/images/Boot-logo-dogbone.jpg" title="Dog bone by River M." >}}
 
 === Get Art
 
@@ -195,7 +195,7 @@ image:/documentation/images/Boot-logo-dogbone.jpg[Dog bone by River M.]
 * To make custom art, https://github.com/Ralim/IronOS-Meta[follow instructions here].
 * Some art is animated: the very small file size limit for boot logos prevents too many frames from being possible.
 
-image:/documentation/images/IronOS.gif[]
+{{< figure src="/documentation/images/IronOS.gif" >}}
 
 === Install
 	

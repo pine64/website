@@ -52,7 +52,7 @@ Labels are considered as "elemental" parts that make up a screen's Text-based UI
 
 let's observe something small like the word "BPM" near the bottom of the watch face.
 
-image:/documentation/images/PineTimeCustom-1.png[width=200]
+{{< figure src="/documentation/images/PineTimeCustom-1.png" width="200" >}}
 
 If we take a look at the source file of the watchface, (a.k.a. the clock.cpp file) we can observe that these particular lines are what attributes to the word "BPM" being displayed.
 
@@ -203,7 +203,7 @@ NOTE: When making the custom array, don't forget to leave an empty "" as the fir
 
 The locational placement in LVGL is done on a Cartesian plane, where each object can have dynamic origin placement, and the Y-axis is inverted. So going down is done with a positive Y-axis value and not negative as it is by default.
 
-image:/documentation/images/LVGL_coord_system.png[LVGL coord system,title="LVGL coord system",width=200]
+{{< figure src="/documentation/images/LVGL_coord_system.png" title="LVGL coord system" width="200" >}}
 
 The position of the various objects in WatchFaceDigital.cpp are set by the line,
 

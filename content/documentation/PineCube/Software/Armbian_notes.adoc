@@ -37,7 +37,7 @@ After this you can either use the Arduino IDE and it's Serial monitor after sele
 
 `screen /dev/ttyACM0 115200`
 
-image:/documentation/images/ArduinoSerialPinecube.jpg[width=400]
+{{< figure src="/documentation/images/ArduinoSerialPinecube.jpg" width="400" >}}
 
 == Serial connection using pinephone/pinebook pro serial debugging cable
 

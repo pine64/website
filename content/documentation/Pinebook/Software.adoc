@@ -15,7 +15,7 @@ This page contains a list of all available releases and tools for the link:/docu
 
 === AOSC
 
-image:/documentation/images/aosc.png[width=100]
+{{< figure src="/documentation/images/aosc.png" width="100" >}}
 
 *AOSC OS* is a general purpose Linux distribution that strives to simplify user experience and improve free and open source software for day-to-day productivity. To learn more about AOSC, please visit the official https://aosc.io/[AOSC website].
 
@@ -32,7 +32,7 @@ Download:
 
 === Armbian
 
-image:/documentation/images/armbian.png[width=100]
+{{< figure src="/documentation/images/armbian.png" width="100" >}}
 
 *Armbian* is a Linux distribution designed for ARM boards. They are usually Debian or Ubuntu flavored. To find out more about Armbian and available download options please visit the https://www.armbian.com/rock64/[Armbian ROCK64 site].
 
@@ -88,7 +88,7 @@ Notes:
 
 === DietPi
 
-image:/documentation/images/dietpi.png[width=100]
+{{< figure src="/documentation/images/dietpi.png" width="100" >}}
 
 *DietPi* is a lightweight yet easy to setup and feature-rich Linux distribution, based on Debian. To find out more about DietPi, please visit the https://dietpi.com/docs/[official documentation]. Discuss the ROCK64 build on the https://forum.pine64.org/showthread.php?tid=12512[PINE64 forum thread].
 
@@ -106,7 +106,7 @@ Download:
 
 === Kali
 
-image:/documentation/images/Kali-logo.png[width=100]
+{{< figure src="/documentation/images/Kali-logo.png" width="100" >}}
 
 *Kali Linux* is an Advanced Penetration Testing Linux distribution used for Penetration Testing, Ethical Hacking and network security assessments.
 
@@ -132,7 +132,7 @@ Download:
 
 === Slackware
 
-image:/documentation/images/slackware.jpg[width=100]
+{{< figure src="/documentation/images/slackware.jpg" width="100" >}}
 
 *Slackware* is a very old, interesting, convenient and easy distribution. Visit the project's website here (https://fail.pp.ua). You can follow the ongoing discussion about Slackware on the PINE64 forum (https://forum.pine64.org/showthread.php?tid=9439).
 
@@ -160,7 +160,7 @@ Download:
 
 === NetBSD
 
-image:/documentation/images/netbsd.png[width=100]
+{{< figure src="/documentation/images/netbsd.png" width="100" >}}
 
 NetBSD community build. To learn more about NetBSD please visit the https://www.netbsd.org/[NetBSD main page].
 
@@ -190,7 +190,7 @@ Notes:
 
 === OpenBSD
 
-image:/documentation/images/Puffy_mascot_openbsd.png[width=100]
+{{< figure src="/documentation/images/Puffy_mascot_openbsd.png" width="100" >}}
 
 OpenBSD 6.6-snapshot, Community Build Image (FVWM2 WM). To learn more about OpenBSD please visit https://www.openbsd.org[OpenBSD main page]. If you need more information please ping: https://forum.pine64.org/member.php?action=profile&uid=12423.
 
@@ -213,7 +213,7 @@ Download:
 
 == Android Image Releases
 
-image:/documentation/images/Android_logo_2019_(stacked).svg[width=100]
+{{< figure src="/documentation/images/Android_logo_2019_(stacked).svg" width="100" >}}
 
 === Android 7.x
 
@@ -305,7 +305,7 @@ Notes:
 
 === /e/
 
-image:/documentation/images/e.png[width=100]
+{{< figure src="/documentation/images/e.png" width="100" >}}
 
 /e/OS community build. To learn more about /e/OS, please visit the https://e.foundation/[official website]. Please check out https://medium.com/@edevelopers.blog/e-os-ports-for-the-pinebook-and-pinephone-596139c76479[this article] on the Pinebook /e/ build. For a thread discussion please visit the https://forum.pine64.org/showthread.php?tid=7954[PINE64 forum]
 

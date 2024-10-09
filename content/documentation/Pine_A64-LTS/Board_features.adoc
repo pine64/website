@@ -9,8 +9,8 @@ menu:
     weight: 1
 ---
 
-image:/documentation/images/PINEA64_LTS_board_front.jpg[width=400]
-image:/documentation/images/PINEA64_LTS_board_back.jpg[width=400]
+{{< figure src="/documentation/images/PINEA64_LTS_board_front.jpg" width="400" >}}
+{{< figure src="/documentation/images/PINEA64_LTS_board_back.jpg" width="400" >}}
 
 == Layout
 

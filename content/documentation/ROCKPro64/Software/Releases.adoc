@@ -16,7 +16,7 @@ This page contains a list of all available releases and tools for the link:/docu
 == Linux
 
 === AOSC
-image:/documentation/images/aosc.png[width=100]
+{{< figure src="/documentation/images/aosc.png" width="100" >}}
 
 *AOSC OS* is a general purpose Linux distribution that strives to simplify user experience and improve free and open source software for day-to-day productivity. Originally AnthonOS (an OpenSUSE derivative built with SUSE Studio), then remade as a Debian derivative with customized KDE 4 UI and CJK support. To learn more about AOSC, please visit the official https://aosc.io/[AOSC website]
 
@@ -33,7 +33,7 @@ Download:
 
 === Armbian
 
-image:/documentation/images/armbian.png[width=100]
+{{< figure src="/documentation/images/armbian.png" width="100" >}}
 
 *Armbian* is a Linux distribution designed for ARM boards. They are usually Debian or Ubuntu flavored. To find out more about Armbian and available options please visit their https://www.armbian.com/rockpro64/[site]. If you are booting from a Micro SD card, then both Linux kernel versions will work. If you are trying to boot from an eMMC module then the 4.4.y will work, but the newer 5.10.y will not.
 
@@ -43,7 +43,7 @@ Download:
 
 === Batocera Linux
 
-image:/documentation/images/batocera.png[width=100]
+{{< figure src="/documentation/images/batocera.png" width="100" >}}
 
 *Batocera Linux* is an open-source and completely free retro-gaming distribution that can be copied to a USB stick or an SD card with the aim of turning any computer/nano computer into a gaming console during a game or permanently. Visit the project's website here (https://batocera.org/). You can follow the ongoing discussion about batocera.linux on the PINE64 forum (https://forum.pine64.org/showthread.php?tid=7084)
 
@@ -53,7 +53,7 @@ Download:
 
 === Debian
 
-image:/documentation/images/Debian-logo.png[width=100]
+{{< figure src="/documentation/images/Debian-logo.png" width="100" >}}
 
 *Debian* is an operating system and a distribution of free software. See the forum thread https://forum.pine64.org/showthread.php?tid=9744[here].
 
@@ -82,7 +82,7 @@ Notes:
 
 === DietPi
 
-image:/documentation/images/dietpi.png[width=100]
+{{< figure src="/documentation/images/dietpi.png" width="100" >}}
 
 *DietPi* is a lightweight, yet easy to setup and feature-rich Linux distribution, based on Debian. To find out more about DietPi, please visit the https://dietpi.com/docs/[official documentation]. Discuss the ROCKPro64 build on the https://forum.pine64.org/showthread.php?tid=12532[PINE64 forum thread].
 
@@ -99,7 +99,7 @@ Download:
 
 === LibreELEC
 
-image:/documentation/images/libreelec.jpg[width=100]
+{{< figure src="/documentation/images/libreelec.jpg" width="100" >}}
 *LibreELEC* is a lightweight 'Just enough OS' Linux distribution purpose-built for Kodi on current and popular mediacentre hardware.
 
 Download:
@@ -110,7 +110,7 @@ NOTE: Unzip and flash the image to a microSD card or eMMC module, for example us
 
 === Manjaro ARM
 
-image:/documentation/images/Manjaro-logo.svg[width=100]
+{{< figure src="/documentation/images/Manjaro-logo.svg" width="100" >}}
 
 *Manjaro* is a user-friendly Linux distribution based on the independently developed Arch operating system. To learn more about Manjaro please visit https://forum.manjaro.org/c/arm/releases/102[Manjaro forum].
 
@@ -127,7 +127,7 @@ Notes:
 
 === Nems Linux
 
-image:/documentation/images/nems.jpg[width=100]
+{{< figure src="/documentation/images/nems.jpg" width="100" >}}
 
 *NEMS* stands for _Nagios Enterprise Monitoring Server_ and it is a modern pre-configured, customized and ready-to-deploy Nagios Core image designed to run on low-cost micro computers. To find out more about NEMS on the PINE64 and available tweaks to the installation please visit the https://forum.pine64.org/showthread.php?tid=7306[PINE64 forum thread].
 
@@ -144,7 +144,7 @@ Download:
 
 === NixOS
 
-image:/documentation/images/NixOS.webp[width=100]
+{{< figure src="/documentation/images/NixOS.webp" width="100" >}}
 
 *NixOS* is a Linux distribution built on top of the Nix package manager using declarative configuration to allow reliable system upgrades. More information can be found on the https://wiki.nixos.org/wiki/NixOS_on_ARM/PINE64_ROCKPro64[NixOS wiki].
 
@@ -154,7 +154,7 @@ Download:
 
 === OpenMediaVault
 
-image:/documentation/images/omv.png[width=100]
+{{< figure src="/documentation/images/omv.png" width="100" >}}
 
 *OpenMediaVault* is the next generation network attached storage (NAS) solution, https://www.openmediavault.org/[click this link to OMV main page] to learn more. Forum thread concerning this release can be found https://forum.pine64.org/showthread.php?tid=6308[here]
 
@@ -183,7 +183,7 @@ Notes:
 
 === OpenWrt
 
-image:/documentation/images/Openwrt_logo_square.png[width=100]
+{{< figure src="/documentation/images/Openwrt_logo_square.png" width="100" >}}
 
 *OpenWrt* ​is a highly extensible ​GNU/​Linux ​distribution for embedded devices ​(typically wireless routers). Unlike many other distributions for these routers, OpenWrt ​is built from the ground up to be a full-featured, easily modifiable operating system for your router. In practice, this means that you can have all the features you need with none of the bloat, powered by a Linux kernel ​that's more recent than most other distributions.
 
@@ -193,7 +193,7 @@ Download:
 
 === postmarketOS
 
-image:/documentation/images/PostmarketOS_logo.png[width=100]
+{{< figure src="/documentation/images/PostmarketOS_logo.png" width="100" >}}
 
 postmarketOS extends https://www.alpinelinux.org/[Alpine Linux] to run on smartphones and other devices.
 At the time of writing, the only user interface provided through prebuilt images for the ROCKPro64 is https://plasma-bigscreen.org/[Plasma Bigscreen].
@@ -211,7 +211,7 @@ Download:
 
 === R-Cade
 
-image:/documentation/images/RCadeLogo.jpg[width=100]
+{{< figure src="/documentation/images/RCadeLogo.jpg" width="100" >}}
 
 Retro Center's *R-Cade*, the 4K Media Center Arcade. https://www.retro-center.com/about-r-cade/[RCade] Features 100+ retro-gaming systems, a lightweight web browser, and full 4K UHD media playback.
 
@@ -221,7 +221,7 @@ Download:
 
 === Recalbox
 
-image:/documentation/images/RB.png[width=100]
+{{< figure src="/documentation/images/RB.png" width="100" >}}
 
 *Recalbox* allows you to re-play a variety of videogame consoles and platforms in your living room, with ease|Visit the project's website here (https://www.recalbox.com/). You can follow the ongoing discussion about Recalbox on the PINE64 forum (https://forum.pine64.org/showthread.php?tid=7194)
 
@@ -232,7 +232,7 @@ Download:
 
 === SkiffOS
 
-image:/documentation/images/SkiffOS-Icon-1.png[width=100]_Minimal_cross-compiled_OS_optimized_for_hosting_distributions_in_Docker_containers._Provides_the_reliability_of_firmware_with_the_ease-of-use of package managers. Uses the http://buildroot.org[Buildroot] cross-compilation tool for support for all Pine64 boards.
+{{< figure src="/documentation/images/SkiffOS-Icon-1.png" width="100]_Minimal_cross-compiled_OS_optimized_for_hosting_distributions_in_Docker_containers._Provides_the_reliability_of_firmware_with_the_ease-of-use of package managers. Uses the http://buildroot.org[Buildroot" >}} cross-compilation tool for support for all Pine64 boards.
 
 Use configuration packages to configure the distribution:
 
@@ -249,7 +249,7 @@ Download:
 
 === Slackware
 
-image:/documentation/images/slackware.jpg[width=100]
+{{< figure src="/documentation/images/slackware.jpg" width="100" >}}
 
 *Slackware* is the world's oldest actively developed Linux distribution, providing a modern user land (applications) and Linux Kernel, within a more classic Unix Operating System environment.
 
@@ -288,7 +288,7 @@ Flashing the distribution to the eMMC:
 
 === Twister OS
 
-image:/documentation/images/Twister_OS.png[width=100]
+{{< figure src="/documentation/images/Twister_OS.png" width="100" >}}
 
 *Twister OS* brings a desktop computing experience for SBCs, right out-of-the-box. Including themes, applications, tools, and optimizations to get the most out of your SBC. For more information on Twister OS, please visit the https://twisteros.com/[official site]. You can follow the ongoing discussion about Twister OS on the PINE64 forum (https://forum.pine64.org/showthread.php?tid=12192).
 
@@ -333,7 +333,7 @@ The following creates a bootable image from an existing Void Linux installation:
 == BSD Images
 
 === FreeBSD
-image:/documentation/images/Freebsd_Logo.png[width=100]
+{{< figure src="/documentation/images/Freebsd_Logo.png" width="100" >}}
 
 *FreeBSD* is an operating system used to power modern servers, desktops, and embedded platforms. The https://wiki.freebsd.org/arm/RockChip#RockPro64[RockChip FreeBSD page] has instructions for installing FreeBSD. Version 13.0 and greater include prebuilt images.
 
@@ -357,7 +357,7 @@ Notes:
 
 === NetBSD
 
-image:/documentation/images/netbsd.png[width=100]_*NetBSD*_is_a_free,_fast,_secure,_and_highly_portable_Unix-like_Open_Source_operating_system._To_learn_more_about NetBSD please visit https://www.netbsd.org/[NetBSD main page]
+{{< figure src="/documentation/images/netbsd.png" width="100]_*NetBSD*_is_a_free,_fast,_secure,_and_highly_portable_Unix-like_Open_Source_operating_system._To_learn_more_about NetBSD please visit https://www.netbsd.org/[NetBSD main page" >}}
 
 Download:
 
@@ -376,13 +376,13 @@ Notes:
 
 === OpenBSD
 
-image:/documentation/images/Puffy_mascot_openbsd.png[width=100]
+{{< figure src="/documentation/images/Puffy_mascot_openbsd.png" width="100" >}}
 
 *OpenBSD* is a security-focused, free and open-source, Unix-like operating system based on the Berkeley Software Distribution. Official instruction to get OpenBSD on ROCKPro64 is https://www.openbsd.org/arm64.html[here], and blogs on installation https://github.com/jasperla/openbsd-rockpro64[is here] and https://bsandro.tech/posts/openbsd-7.1-on-pine64-rockpro64/[here]. Forum discussion is https://forum.pine64.org/forumdisplay.php?fid=109[here].
 
 == Chromium OS
 
-image:/documentation/images/chromium.jpg[width=100]
+{{< figure src="/documentation/images/chromium.jpg" width="100" >}}
 
 The *Chromium OS* community build image for microSD card and eMMC module, version beta (R76). To learn more please visit the https://forum.pine64.org/showthread.php?tid=7659[forum].
 
@@ -394,7 +394,7 @@ NOTE: Flash the image to a microSD card or an eMMC module, for example using _dd
 
 == Android
 
-image:/documentation/images/Android_logo_2019_(stacked).svg[width=100]
+{{< figure src="/documentation/images/Android_logo_2019_(stacked).svg" width="100" >}}
 
 === Android 9.0.0
 

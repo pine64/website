@@ -9,8 +9,8 @@ menu:
     weight: 
 ---
 
-image:/documentation/images/Flash-reloader-mcuboot.jpg[Flashing_`reloader-mcuboot.zip`,title="Flashing_`reloader-mcuboot.zip`",width=600]
-image:/documentation/images/Flash-micropython.jpg[Flashing `micropython.zip`,title="Flashing `micropython.zip`",width=400]
+{{< figure src="/documentation/images/Flash-reloader-mcuboot.jpg" title="Flashing_`reloader-mcuboot.zip`" width="600" >}}
+{{< figure src="/documentation/images/Flash-micropython.jpg" title="Flashing `micropython.zip`" width="400" >}}
 
 == Introduction
 
@@ -45,8 +45,8 @@ All the zips you need can be found from the https://wasp-os.readthedocs.io/en/la
 
 == Wasp-os to InfiniTime
 
-image:/documentation/images/Flash-reloader-infinitime-recovery.jpg[Flashing_`reloader-infinitime-recovery-0.14.1.zip.zip`,title="Flashing_`reloader-infinitime-recovery-0.14.1.zip.zip`",width=500]
-image:/documentation/images/Flash-infinitime.jpg[Flashing `pinetime-mcuboot-app-dfu-1.1.0.zip.zip`,title="Flashing `pinetime-mcuboot-app-dfu-1.1.0.zip.zip`",width=600]
+{{< figure src="/documentation/images/Flash-reloader-infinitime-recovery.jpg" title="Flashing_`reloader-infinitime-recovery-0.14.1.zip.zip`" width="500" >}}
+{{< figure src="/documentation/images/Flash-infinitime.jpg" title="Flashing `pinetime-mcuboot-app-dfu-1.1.0.zip.zip`" width="600" >}}
 
 The `reloader-factory.zip` was broken in the original wasp-os 0.4 but was fixed in wasp-os 0.4.1. However the Infinitime binaries are outdated the 0.4 release and I do not recommend flashing these. Older InfiniTime versions have flaky BLE which makes upgrading from there very unreliable.
 

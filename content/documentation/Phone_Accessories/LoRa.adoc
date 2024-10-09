@@ -11,7 +11,7 @@ menu:
 
 Store page: https://pine64.com/product/pinephone-pinephone-pro-pindio-lora-add-on-case/[pine64.com]
 
-image:/documentation/images/PP_LoRa.jpg[width=250]
+{{< figure src="/documentation/images/PP_LoRa.jpg" width="250" >}}
 
 Uses the pogo pins to interface a Semtech SX1262 LoRa module with the PinePhone (Pro).
 

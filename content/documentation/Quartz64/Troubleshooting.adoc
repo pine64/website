@@ -25,7 +25,7 @@ Note: Starting with https://salsa.debian.org/kernel-team/linux/-/merge_requests/
 
 The Quartz64 does not really fit onto the bottom plate of the link:/documentation//Accessories/Cases/Model_A_Acrylic_Open_Enclosure[Model A Acrylic Open Enclosure]. This is because the "Mic" connector at the bottom of the board interferes with one of the posts. A workaround is to find out which post that is (you have a 50% chance of guessing it right, accounting for rotating the board) and then filing away the corner of the post pointing inwards by a few millimeters.
 
-image:/documentation/images/Quartz64-audio-jack-spacer-issue.jpg[width=400]
+{{< figure src="/documentation/images/Quartz64-audio-jack-spacer-issue.jpg" width="400" >}}
 
 An alternate solution may be to place plastic spacers with a smaller outer diameter in between the acrylic bottom plate posts and the SBC board.
 

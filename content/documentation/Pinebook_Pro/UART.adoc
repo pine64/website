@@ -9,7 +9,7 @@ menu:
     weight: 6
 ---
 
-image::/documentation/images/PinePhone_Serial_Cable.png[title="This shows signals from the Pinebook Pro's point of view, so connect the adapter's RX to ring 1, and TX to the tip. See also the link:https://files.pine64.org/doc/pinebook/guide/Pinebook_Earphone_Serial_Console_Developer_Guide.pdf[Pine64 official document] describing this.",width=400]
+{{< figure src="/documentation/images/PinePhone_Serial_Cable.png" title="This shows signals from the Pinebook Pro's point of view, so connect the adapter's RX to ring 1, and TX to the tip. See also the link:https://files.pine64.org/doc/pinebook/guide/Pinebook_Earphone_Serial_Console_Developer_Guide.pdf[Pine64 official document] describing this." width="400" >}}
 
 Serial console UART is enabled by flipping the UART switch to the ON position (item 9). To do so, you need to remove the Pinebook Pro's bottom cover by following the disassembly and reassembly guidelines. The OFF position is towards the touchpad, while the ON position is towards the display hinges.
 

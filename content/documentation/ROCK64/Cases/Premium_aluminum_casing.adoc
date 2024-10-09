@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-image:/documentation/ROCK64/images/Rock64-Al-Case1-1.jpg[The case, fully assembled with a ROCK64 inside of it,title="The case, fully assembled with a ROCK64 inside of it"]
+{{< figure src="/documentation/ROCK64/images/Rock64-Al-Case1-1.jpg" title="The case, fully assembled with a ROCK64 inside of it" >}}
 
 The *ROCK64 Premium Aluminum Casing* is an aluminum case for the link:/documentation/ROCK64[ROCK64] single-board computer sold by Pine64 through their https://pine64.com/product/model-b-premium-aluminum-casing/?v=0446c16e2e66[official store]. It includes an integrated heat spreader with an included thermal pad that allows the SoC to sink its generated heat into the metal case.
 
@@ -35,13 +35,13 @@ Some cases may not allow the ROCK64 IO to snugly fit into its predestined cutout
 
 === Plastic Pegs for PWR and RST Buttons
 
-image:/documentation/ROCK64/images/Button_peg_cad.png[FreeCAD displaying the peg. Bottom part goes inside the case.,title="FreeCAD displaying the peg. Bottom part goes inside the case."]
+{{< figure src="/documentation/ROCK64/images/Button_peg_cad.png" title="FreeCAD displaying the peg. Bottom part goes inside the case." >}}
 
 If you are tired of using a pen or a toothpick to push the buttons, there are https://wiki.pine64.org/wiki/File:Button.zip[3d-printable plastic pegs you can download] and print yourself. Recommended material is PLA, excellent results can be obtained using a 0.25mm nozzle, though slightly larger sizes should work fine as well.
 
 To use the pegs, open your case and remove the ROCK64 from within. Be sure to pull out the light guide and rubber plug to remove it, or else it will catch on them. Once it is removed, turn your bottom half of the case such that the holes for PWR and RST are pointing towards the floor, and drop the pegs into the holes from inside the case, so that the lip prevents them from falling through. Hold them in position with your finger, turn the case the right side up again, and reinstall your ROCK64.
 
-image:/documentation/ROCK64/images/ROCK64_Aluminum_Casing_Plastic_Peg_Mod_Photo.jpeg[Plastic Pegs in their place,title="Plastic Pegs in their place"]
+{{< figure src="/documentation/ROCK64/images/ROCK64_Aluminum_Casing_Plastic_Peg_Mod_Photo.jpeg" title="Plastic Pegs in their place" >}}
 
 You should now have buttons that can be pressed from outside the case without any utensils.
 

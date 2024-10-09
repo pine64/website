@@ -9,7 +9,7 @@ menu:
     weight: 
 ---
 
-image:/documentation/images/PBP.jpg[Pinebook Pro running Debian with MATE,title="Pinebook Pro running Debian with MATE",width=400]
+{{< figure src="/documentation/images/PBP.jpg" title="Pinebook Pro running Debian with MATE" width="400" >}}
 
 The *Pinebook Pro* is a Linux and *BSD ARM laptop from PINE64. It is built to be a compelling alternative to mid-ranged Chromebooks that people convert into Linux laptops.
 
