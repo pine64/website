@@ -261,3 +261,10 @@ div#doc-page .ulist {
     background-color: #f70;
     color: white;
 }
+
+
+#doc-page figcaption h4 {
+    color: #585858;
+    font-weight: 300;
+    font-style: italic;
+}

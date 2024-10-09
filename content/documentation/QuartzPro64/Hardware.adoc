@@ -59,6 +59,7 @@ Bus 005 Device 027: ID 0403:6001 Future Technology Devices International, Ltd FT
 Baud rate is 1.5 mbauds or 1500000.
 
 Ensure you have the driver module loaded:
+
 ```
 . modprobe ftdi_sio
 . lsmod | grep ftdi_sio
@@ -68,6 +69,7 @@ usbcore               290816  7 ftdi_sio,usbserial,xhci_hcd,usbhid,usbkbd,usbmou
 ```
 
 If the above is not working, check the required driver is supported by your kernel, using one of the following commands:
+
 ```
 $ zgrep FTDI_SIO /proc/config.gz
 CONFIG_USB_SERIAL_FTDI_SIO=m
@@ -76,6 +78,7 @@ CONFIG_USB_SERIAL_FTDI_SIO=m
 ```
 
 Using the `dmesg` command, you should see something like the following:
+
 ```
 [24784.535804] usb 5-3: new full-speed USB device number 3 using xhci_hcd
 [24784.710714] usb 5-3: New USB device found, idVendor=0403, idProduct=6001, bcdDevice= 6.00
