@@ -1,0 +1,8 @@
+{{ $type := .Get "type" }}
+
+<div class="admonition admonition-{{$type}}">
+    <blockquote>
+        <p class="title" style="text-transform: uppercase;">{{$type}}</p>
+<p>{{ .Inner | markdownify }}</p>
+    </blockquote>
+</div>

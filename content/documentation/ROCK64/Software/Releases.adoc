@@ -60,7 +60,9 @@ Download:
 
 * https://github.com/ayufan-rock64/linux-build/releases (supports the microSD card and eMMC)
 
-NOTE: Make sure to download images for the _ROCK64_.
+{{< admonition type="note" >}}
+ Make sure to download images for the _ROCK64_.
+{{< /admonition >}}
 
 |===
 2+| Default credentials
@@ -164,7 +166,9 @@ Download:
 
 *Manjaro* is a user-friendly Linux distribution based on the independently developed Arch operating system. Manjaro editions for Rock64 are available directly from Manjaro. To learn more about Manjaro please visit the https://forum.manjaro.org/tags/manjaroarm[Manjaro Forum].
 
-NOTE: Only supports ROCK64 version 2 SBC!
+{{< admonition type="note" >}}
+ Only supports ROCK64 version 2 SBC!
+{{< /admonition >}}
 
 Download:
 
@@ -176,16 +180,22 @@ Download:
 
 *NEMS* stands for "Nagios Enterprise Monitoring Server" and it is a modern pre-configured, customized and ready-to-deploy Nagios Core image designed to run on low-cost micro computers. To find out more on NEMS Linux, please visit their https://nemslinux.com/[site].
 
-WARNING: Only supports ROCK64 ver2 SBC
+{{< admonition type="warning" >}}
+ Only supports ROCK64 ver2 SBC
+{{< /admonition >}}
 
-WARNING: Outdated release
+{{< admonition type="warning" >}}
+ Outdated release
+{{< /admonition >}}
 
 Download:
 
 * https://nemslinux.com/download/nagios-for-pine64.php[Download torrent seed from NEMS Linux] (supports the microSD card, 16GB or more, MD5 of the xz file is _6e2088922c5d197db8b8ba3057120389_)
 * https://files.pine64.org/os/ROCK64/nems/NEMS_v1.5-Rock64-Build2.zip[Direct download from pine64.org] (supports the microSD card, 16GB or more, MD5 of the xz file is _6e2088922c5d197db8b8ba3057120389_)
 
-NOTE: The installation guide can be found https://docs.nemslinux.com/installation[here].
+{{< admonition type="note" >}}
+ The installation guide can be found https://docs.nemslinux.com/installation[here].
+{{< /admonition >}}
 
 |===
 2+| Default credentials
@@ -202,11 +212,15 @@ NOTE: The installation guide can be found https://docs.nemslinux.com/installatio
 
 Download:
 
-WARNING: Outdated release
+{{< admonition type="warning" >}}
+ Outdated release
+{{< /admonition >}}
 
 * https://files.pine64.org/os/ROCK64/nextcloudplus/NextCloudPi_Rock64_08-01-19.img.gz[Direct download from pine64.org]
 
-NOTE: The MD5 hash of the .gz file is _2d3eb799e99a3bb90d5aa7731baf27c6_
+{{< admonition type="note" >}}
+ The MD5 hash of the .gz file is _2d3eb799e99a3bb90d5aa7731baf27c6_
+{{< /admonition >}}
 
 |===
 2+| Default credentials
@@ -227,11 +241,15 @@ Download:
 * https://files.pine64.org/os/ROCK64/omv/jessie-openmediavault-rock64-0.5.15-136-armhf_sd2emmc.img.xz[Direct download from pine64.org (32 bit armhf)]
 * https://files.pine64.org/os/ROCK64/omv/stretch-openmediavault-rock64-0.9.14-1159-arm64.img.xz[Direct download from pine64.org (64 bit arm64)]
 	
-NOTE: The MD5 hash of the .xz file is _474c2a5aac8874fd188404c8e04e53e8_
+{{< admonition type="note" >}}
+ The MD5 hash of the .xz file is _474c2a5aac8874fd188404c8e04e53e8_
+{{< /admonition >}}
 	
 * https://files.pine64.org/os/ROCK64/omv/stretch-openmediavault-rock64-0.9.14-1159-armhf.img.xz[Direct download from pine64.org (32 bit armhf)]
 	
-NOTE: The MD5 hash of the .xz file is _bf5d2ea2bc7a5623ba958ed358a80c2a_
+{{< admonition type="note" >}}
+ The MD5 hash of the .xz file is _bf5d2ea2bc7a5623ba958ed358a80c2a_
+{{< /admonition >}}
 
 |===
 2+| Default credentials
@@ -252,7 +270,9 @@ NOTE: The MD5 hash of the .xz file is _bf5d2ea2bc7a5623ba958ed358a80c2a_
 
 *Recalbox* is a free and open-source operating system created for the emulation and preservation for retro games. Recalbox allows you to re-play a variety of videogame consoles and platforms in your living room with ease. To find out more about Recalbox and available tweaks to the installation please visit the https://forum.pine64.org/showthread.php?tid=7111[PINE64 forum thread]. Visit the project's https://www.recalbox.com/[website] for more details.
 
-NOTE: Only supports ROCK64 ver2 SBC
+{{< admonition type="note" >}}
+ Only supports ROCK64 ver2 SBC
+{{< /admonition >}}
 
 Download:
 
@@ -274,7 +294,9 @@ Download:
 
 *Slackware* is a very old, interesting, convenient and easy distribution. Visit the project's website here (https://fail.pp.ua). You can follow the ongoing discussion about Slackware on the PINE64 forum (https://forum.pine64.org/showthread.php?tid=5868)
 
-NOTE: This Slackware build using the ZST compression algorithm, please visit the https://github.com/facebook/zstd[ZST GitHub site] for a decompression utility.
+{{< admonition type="note" >}}
+ This Slackware build using the ZST compression algorithm, please visit the https://github.com/facebook/zstd[ZST GitHub site] for a decompression utility.
+{{< /admonition >}}
 
 Download:
 
@@ -374,7 +396,9 @@ Image downloads (for Rockchip Tool):
 * https://files.pine64.org/os/ROCK64/android/ROCK64_20190617_stock_android_9.0_emmcboot.img.gz[Stock image] from _pine64.org_ (544MB, MD5 of the Gzip file _9B717263E7749A732C8B5C7D7D59C5C6_, build 20190617)
 * https://files.pine64.org/os/ROCK64/android/ROCK64_20190618_stock_rooted_android_9.0_emmcboot.img.gz[Rooted image] from _pine64.org_ (544MB, MD5 of the Gzip file _FC5F80C3A939AD0F8DCE5B85F22D20A1_, build 20190618)
 
-NOTE: See the guide to flashing eMMC using Rockchip Tools. Please unzip the file first and then use Rockchip tool to flash it. The OTG port located at top USB 2.0 port and it needs USB type A to type A cable.
+{{< admonition type="note" >}}
+ See the guide to flashing eMMC using Rockchip Tools. Please unzip the file first and then use Rockchip tool to flash it. The OTG port located at top USB 2.0 port and it needs USB type A to type A cable.
+{{< /admonition >}}
 
 Notes:
 
@@ -391,13 +415,17 @@ Image downloads (for direct flashing):
 * https://files.pine64.org/os/ROCK64/android/ROCK64_dd_20190621_stock_rooted_android_9.0_sdboot-32GB.img.gz[Image for 32GB microSD cards] from _pine64.org_ (574MB, MD5 of the Gzip file _C68DC5D96F1C546B96EC690CE7BFE910_, build 20190621)
 * https://files.pine64.org/os/ROCK64/android/ROCK64_dd_20190621_stock_rooted_android_9.0_sdboot-64GB.img.gz[Image for 64GB microSD cards] from _pine64.org_ (707MB, MD5 of the Gzip file _4EFC87B4CEE4C7655618DCA95EF7DD0D_, build 20190621)
 
-NOTE: Flash the file to the microSD card, for example using _dd_.
+{{< admonition type="note" >}}
+ Flash the file to the microSD card, for example using _dd_.
+{{< /admonition >}}
 
 Image downloads (for Rockchip SDDisk Tool):
 
 * https://files.pine64.org/os/ROCK64/android/ROCK64_20190621_stock_rooted_android_9.0_sdboot.img.gz[Direct download] from _pine64.org_ (539MB, MD5 of the Gzip file _EE00D309745F842213E21B2F1E20C510_, build 20190621)
 
-NOTE: Please unzip first and then using Android tool to flash it. Allow 3-5 minutes boot up time on first boot for initialization. The Rockchip SDDisk Tool ver. 1.57 can be found https://files.pine64.org/os/ROCK64/android/SDDiskTool_v1.57.zip[here].
+{{< admonition type="note" >}}
+ Please unzip first and then using Android tool to flash it. Allow 3-5 minutes boot up time on first boot for initialization. The Rockchip SDDisk Tool ver. 1.57 can be found https://files.pine64.org/os/ROCK64/android/SDDiskTool_v1.57.zip[here].
+{{< /admonition >}}
 
 === Android 8.x TV eMMC (preinstalled Google Play Store)
 
@@ -407,13 +435,17 @@ Image downloads (for direct flashing to the eMMC module):
 
 * https://files.pine64.org/os/ROCK64/android/rock64_20180606_stock_android_8.1_emmcboot.img.xz[Direct download] from _pine64.org_ (561MB, MD5 of the .xz file _C05846B89A6483DA911CEA604627524F_, build 20180606)
 
-NOTE: Please allow 10-15 minutes boot up time on first boot for initialization.
+{{< admonition type="note" >}}
+ Please allow 10-15 minutes boot up time on first boot for initialization.
+{{< /admonition >}}
 
 Image downloads (for Rockchip Tool):
 
 * https://files.pine64.org/os/ROCK64/android/rock64_android8.1_emmc_boot_v1.1.zip[Direct download] from _pine64.org_ (752MB, MD5 of the .xz file _9738F060D2F62A83637797363D2B38C9_, build 20180606)
 
-NOTE: See the page about how to flash the eMMC using Rockchip Tools. Please unzip the file first and then use Rockchip tool to flash it. The OTG port located at top USB 2.0 port and it needs USB type A to type A cable.
+{{< admonition type="note" >}}
+ See the page about how to flash the eMMC using Rockchip Tools. Please unzip the file first and then use Rockchip tool to flash it. The OTG port located at top USB 2.0 port and it needs USB type A to type A cable.
+{{< /admonition >}}
 
 === Android 8.x TV
 
@@ -423,7 +455,9 @@ Download:
 
 * https://files.pine64.org/os/ROCK64/android/rock64_20180623_stock_android_8.1_sdboot.img.xz[Direct download] from _pine64.org_ (575MB, supports the microSD card)
 
-NOTE: The MD5 hash of the .xz file is _85372A568C114ADE7CD9632CEBA193E9_
+{{< admonition type="note" >}}
+ The MD5 hash of the .xz file is _85372A568C114ADE7CD9632CEBA193E9_
+{{< /admonition >}}
 
 Notes:
 
@@ -438,13 +472,17 @@ Download image (microSD card to eMMC):
 
 * https://files.pine64.org/os/ROCK64/android/rock64_20171204_stock_android_7.1.2_rooted_sd2emmc.img.xz[Direct download] from _pine64.org_ (558MB, MD5 of the .xz file _43443467DFCAEDE767556843EB4D6707_)
 
-NOTE: DD image to a microSD card. Shorting the eMMC PIN with a jumper as shown on the first image of the https://files.pine64.org/doc/rock64/guide/ROCK64_Installing_Android_To_eMMC.pdf[guide to install stock Android build to eMMC module]. After power ON the box for 2-3 second, quickly remove the jumper, then it will start writing the new image to the eMMC. Please allow around 1 minute of boot up time before UI is presented via HDMI. Please allow 10-15 minutes boot up time on first boot for initialization. Has USB 3.0 patches. Enable _Real Time Clock support_ for _Popcorn Hour Transformer_.
+{{< admonition type="note" >}}
+ DD image to a microSD card. Shorting the eMMC PIN with a jumper as shown on the first image of the https://files.pine64.org/doc/rock64/guide/ROCK64_Installing_Android_To_eMMC.pdf[guide to install stock Android build to eMMC module]. After power ON the box for 2-3 second, quickly remove the jumper, then it will start writing the new image to the eMMC. Please allow around 1 minute of boot up time before UI is presented via HDMI. Please allow 10-15 minutes boot up time on first boot for initialization. Has USB 3.0 patches. Enable _Real Time Clock support_ for _Popcorn Hour Transformer_.
+{{< /admonition >}}
 
 Download image (eMMC boot):
 
 * https://files.pine64.org/os/ROCK64/android/rock64_20171204_stock_android_7.1.2_rooted_emmc.img.xz[Direct download] from _pine64.org_ (544MB, MD5 of the .xz file _7C831F9E6B4311A3B3D4743FBBB628D0_)
 
-NOTE: Please unzip first and then using Android tool to flash in. Has USB 3.0 patches. Enable _Real Time Clock support_ for _Popcorn Hour Transformer_.
+{{< admonition type="note" >}}
+ Please unzip first and then using Android tool to flash in. Has USB 3.0 patches. Enable _Real Time Clock support_ for _Popcorn Hour Transformer_.
+{{< /admonition >}}
 
 Notes:
 
@@ -458,7 +496,9 @@ Download image (eMMC):
 
 * https://github.com/ayufan-rock64/android-7.1/releases/latest[Direct download latest release build from ayufan github and look for android-7.1-rock-64-rock64_atv-x.x.x-xx-update.zip]
 
-NOTE: For eMMC flash-all image, please unzip first and then use Android tool to flash in
+{{< admonition type="note" >}}
+ For eMMC flash-all image, please unzip first and then use Android tool to flash in
+{{< /admonition >}}
 
 Notes:
 
@@ -482,5 +522,7 @@ Download:
 
 * https://files.pine64.org/SDK/ROCK64/ROCK64_SDK_android9.0.tar.gz[Direct Download] from _pine64.org_ (104.34GB)
 
-NOTE: The MD5 hash of the TAR-GZip file is _1EAC08942E238293E3AF11C7890DF307_
+{{< admonition type="note" >}}
+ The MD5 hash of the TAR-GZip file is _1EAC08942E238293E3AF11C7890DF307_
+{{< /admonition >}}
 

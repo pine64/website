@@ -325,7 +325,9 @@ The driver uses following CH341A pins for the SPI interface.
 
 The driver uses the following GPIO configuration.
 
-WARNING: It is not sure if these are the correct pins to use|
+{{< admonition type="warning" >}}
+ It is not sure if these are the correct pins to use|
+{{< /admonition >}}
 
 |===
 | CH341 Pin | CH341A Name | Function   | GPIO Name  | GPIO Configuration | SX1262 connection

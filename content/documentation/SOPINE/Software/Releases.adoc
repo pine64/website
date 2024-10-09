@@ -43,7 +43,9 @@ Download:
 
 FreedomBox is a private server for non-experts: it lets you install and configure server applications with only a few clicks. For more information about FreedomBox, please visit http://www.freedombox.org.
 
-WARNING: Outdated release
+{{< admonition type="warning" >}}
+ Outdated release
+{{< /admonition >}}
 
 Download:
 
@@ -73,14 +75,18 @@ Notes:
 
 NEMS stands for "Nagios Enterprise Monitoring Server" and it is a modern pre-configured, customized and ready-to-deploy Nagios Core image designed to run on low-cost micro computers. To find out more on NEMS Linux, please visit their https://nemslinux.com/[site].
 
-WARNING: Outdated release
+{{< admonition type="warning" >}}
+ Outdated release
+{{< /admonition >}}
 
 Download:
 
 * http://files.pine64.org/os/SOPINE/nems/NEMS_v1.5-SOPine-Build1.zip[Direct download from pine64.org] (supports the microSD card, 16GB or more, MD5 of the xz file is _5ad0d684296d50b4c1fcbac6db205ae0_)
 * https://nemslinux.com/download/nagios-for-pine64.php[Download torrent seed from NEMS Linux] (supports the microSD card, 16GB or more, MD5 of the xz file is _6e2088922c5d197db8b8ba3057120389_)
 
-Info:The installation guide can be found https://docs.nemslinux.com/installation[here].
+{{% admonition type="info" %}}
+The installation guide can be found https://docs.nemslinux.com/installation[here].
+{{% /admonition %}}
 
 |===
 2+| Default credentials

@@ -11,7 +11,9 @@ menu:
 
 This page contains a list of all available software releases and other resources for the PINE A64 and PINE A64+.
 
-NOTE: The images for the PINE A64 and PINE A64+ are *not compatible with the PINE A64-LTS* due to LPDDR3 memory configuration. For PINE A64-LTS releases, please see the link:/documentation/SOPINE/Software[Software].
+{{< admonition type="note" >}}
+ The images for the PINE A64 and PINE A64+ are *not compatible with the PINE A64-LTS* due to LPDDR3 memory configuration. For PINE A64-LTS releases, please see the link:/documentation/SOPINE/Software[Software].
+{{< /admonition >}}
 
 == Linux
 
@@ -160,7 +162,9 @@ Notes:
 
 *NEMS* stands for "Nagios Enterprise Monitoring Server" and it is a modern pre-configured, customized and ready-to-deploy Nagios Core image designed to run on low-cost micro computers. To find out more on NEMS Linux, please visit their https://nemslinux.com/[site].
 
-WARNING: Outdated release
+{{< admonition type="warning" >}}
+ Outdated release
+{{< /admonition >}}
 
 Download:
 

@@ -19,9 +19,13 @@ The PineTab2 ships with _Danctnix Arch Linux ARM_. The latest factory image can 
 
 * https://echo.danctnix.org:7269/factory_images/pinetab2/20240625/danctnix-factory-image-20240625.img.xz (2.2 GB)
 
-NOTE: The factory image is flashed to a microSD card and it will overwrite the eMMC installation after booting.
+{{< admonition type="note" >}}
+ The factory image is flashed to a microSD card and it will overwrite the eMMC installation after booting.
+{{< /admonition >}}
 
-NOTE: Notice that the last two images (20240307 and 20240625) don't use the keyboard but the volume and power buttons for navigation
+{{< admonition type="note" >}}
+ Notice that the last two images (20240307 and 20240625) don't use the keyboard but the volume and power buttons for navigation
+{{< /admonition >}}
 
 
 === Older versions
@@ -29,7 +33,9 @@ NOTE: Notice that the last two images (20240307 and 20240625) don't use the keyb
 * https://echo.danctnix.org:7269/factory_images/pinetab2/20240307/danctnix-factory-image-20240307.img.xz (2.1 GB)
 * https://echo.danctnix.org:7269/factory_images/pinetab2/20230527/danctnix-factory-image-20230527.img.xz (1.5 GB)
 
-NOTE: Older versions ship without Wi-Fi drivers. See below under Arch Linux ARM how to fix it
+{{< admonition type="note" >}}
+ Older versions ship without Wi-Fi drivers. See below under Arch Linux ARM how to fix it
+{{< /admonition >}}
 
 
 == Linux
@@ -75,7 +81,9 @@ Stable: https://github.com/webOS-ports/luneos-releases/releases/
 
 Testing: https://github.com/webOS-ports/luneos-testing/releases/
 
-NOTE: U-Boot is required to boot the images. If you have the factory image installed and updated to the latest version, you can boot Mobian from an SD card without installing U-Boot.
+{{< admonition type="note" >}}
+ U-Boot is required to boot the images. If you have the factory image installed and updated to the latest version, you can boot Mobian from an SD card without installing U-Boot.
+{{< /admonition >}}
 
 |===
 2+| Default credentials
@@ -97,7 +105,9 @@ An unofficial https://www.debian.org[Debian] build for ARM64 running with Phosh.
 
 * https://images.mobian.org/pinetab2/[Images]
 
-NOTE: U-Boot is required to boot the images. If you have the factory image installed and updated to the latest version, you can boot Mobian from an SD card without installing U-Boot.
+{{< admonition type="note" >}}
+ U-Boot is required to boot the images. If you have the factory image installed and updated to the latest version, you can boot Mobian from an SD card without installing U-Boot.
+{{< /admonition >}}
 
 |===
 2+| Default credentials

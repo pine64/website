@@ -11,7 +11,9 @@ menu:
 
 {{% docs/construction %}}
 
-NOTE: These instructions are directed towards experienced developers only!
+{{< admonition type="note" >}}
+ These instructions are directed towards experienced developers only!
+{{< /admonition >}}
 
 This page contains information on flashing software to the PineNote.
 
@@ -261,7 +263,9 @@ While in maskrom mode, we need to have a u-boot to download onto the device for 
 
 You also need to install Python and pyelftools.
 
-NOTE: The rkbin is a &gt;5GB download! This will take some time to clone and process the deltas.
+{{< admonition type="note" >}}
+ The rkbin is a &gt;5GB download! This will take some time to clone and process the deltas.
+{{< /admonition >}}
 
 ----
 git clone -b quartz64 https://gitlab.com/pgwipeout/u-boot-rockchip.git
@@ -322,7 +326,9 @@ We can now verify that this worked using e.g. the "read flash info" command:
 
  ./rkdeveloptool read-flash-info
 
-NOTE: Section needs to be finished
+{{< admonition type="note" >}}
+ Section needs to be finished
+{{< /admonition >}}
 
 === Creating a mainline boot image
 

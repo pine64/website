@@ -106,7 +106,9 @@ Download:
 
 * https://libreelec.tv/downloads/rockchip/[Official LibreELEC build image] (look for PINE64 RockPro64-LibreELEC-RK3399.arm-x.x.x-rockpro64.img.gz, supports microSD card and the eMMC module of 8GB or more.)
 
-NOTE: Unzip and flash the image to a microSD card or eMMC module, for example using _dd_.
+{{< admonition type="note" >}}
+ Unzip and flash the image to a microSD card or eMMC module, for example using _dd_.
+{{< /admonition >}}
 
 === Manjaro ARM
 
@@ -159,7 +161,9 @@ Download:
 *OpenMediaVault* is the next generation network attached storage (NAS) solution, https://www.openmediavault.org/[click this link to OMV main page] to learn more. Forum thread concerning this release can be found https://forum.pine64.org/showthread.php?tid=6308[here]
 
 Download:
-WARNING: Outdated release
+{{< admonition type="warning" >}}
+ Outdated release
+{{< /admonition >}}
 * Stretch 32bit (armhf): https://github.com/ayufan-rock64/linux-build/releases/download/0.8.3/stretch-openmediavault-rockpro64-0.8.3-1141-armhf.img.xz[Direct download from ayufan's github]
 * Stretch 64bit (aarch64): https://github.com/ayufan-rock64/linux-build/releases/download/0.8.3/stretch-openmediavault-rockpro64-0.8.3-1141-arm64.img.xz[Direct download from ayufan's github]
 
@@ -296,7 +300,9 @@ Download:
 
 * https://twisteros.com/twisterarmbian.html[Twister OS Armbian-Reforged XFCE Desktop image] (2.8GB, supports the microSD card and eMMC modules with 16GB and more)
 
-NOTE: After flashing image with Etcher, edit /boot/armbianEnv.txt, replace the dtb name with rk3399-rockpro64.dtb.
+{{< admonition type="note" >}}
+ After flashing image with Etcher, edit /boot/armbianEnv.txt, replace the dtb name with rk3399-rockpro64.dtb.
+{{< /admonition >}}
 
 |===
 2+| Default credentials
@@ -387,10 +393,14 @@ Notes:
 The *Chromium OS* community build image for microSD card and eMMC module, version beta (R76). To learn more please visit the https://forum.pine64.org/showthread.php?tid=7659[forum].
 
 Download:
-WARNING: Outdated release
+{{< admonition type="warning" >}}
+ Outdated release
+{{< /admonition >}}
 * https://github.com/ayufan-rock64/chromiumos-build/releases/
 
-NOTE: Flash the image to a microSD card or an eMMC module, for example using _dd_.
+{{< admonition type="note" >}}
+ Flash the image to a microSD card or an eMMC module, for example using _dd_.
+{{< /admonition >}}
 
 == Android
 

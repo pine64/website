@@ -9,7 +9,9 @@ menu:
     weight: 
 ---
 
-WARNING: There is the possibility of damaging your equipment by overclocking. Do so at your own risk!
+{{< admonition type="warning" >}}
+ There is the possibility of damaging your equipment by overclocking. Do so at your own risk!
+{{< /admonition >}}
 
 TIP: This page is incomplete, you're welcome to improve it.
 
@@ -19,7 +21,9 @@ Overclocking is a way to get more performance out of the system by running it at
 
 == A64-based devices
 
-IMPORTANT: These instructions are targeting the PinePhone to simplify the explanation, however they can be used to also overclock other devices such as the Pinetab if you modify the proper DTB files.
+{{< admonition type="important" >}}
+ These instructions are targeting the PinePhone to simplify the explanation, however they can be used to also overclock other devices such as the Pinetab if you modify the proper DTB files.
+{{< /admonition >}}
 
 === Editing the PinePhone DTS
 
@@ -37,7 +41,9 @@ To convert back to DTB:
 
 Afterwards you can simply reboot and check with `sudo cat /sys/kernel/debug/clk/clk_summary` to see if the changes have correctly applied.
 
-IMPORTANT: In the future it is possible that someone may make a driver to adjust clockspeeds of the A64 from userspace (using a config file) without the need to recompile. However, currently the only way to overclock is to either compile your own kernel, or modify just the DTB (instructions above).
+{{< admonition type="important" >}}
+ In the future it is possible that someone may make a driver to adjust clockspeeds of the A64 from userspace (using a config file) without the need to recompile. However, currently the only way to overclock is to either compile your own kernel, or modify just the DTB (instructions above).
+{{< /admonition >}}
 
 === GPU
 
@@ -49,7 +55,9 @@ The `assigned-clock-rates` line should be set to `432000000`, this means that th
 
 Save the DTS file, and recompile the DTB. In order to check if the overclock was successfully applied you can run: `sudo cat /sys/kernel/debug/clk/clk_summary`.
 
-IMPORTANT: The file may be slightly different and you may need to enter the values as hexadecimals
+{{< admonition type="important" >}}
+ The file may be slightly different and you may need to enter the values as hexadecimals
+{{< /admonition >}}
 
 TIP: The GPU appears to run stable overclocked to 540 Mhz, however more testing with a wider group of devices is needed.
 
@@ -95,13 +103,17 @@ The table above contains measurements created in postmarketOS (SWMO/SXMO - postm
 |===
 The table above shows the valid voltages provided by the AXP803 PMIC on DCDC2 (used to power the cores). For example, setting the voltage to 0.60V is valid, but setting it to 1.23V is not. When overclocking, ensure that you only use valid voltages at each operation point (otherwise it will simply be dropped and ignored). You can use (after installing) cpupower to display all valid frequencies after boot.
 
-IMPORTANT: The user _somefoo_ was able to undervolt the PinePhone at each frequency operation point by at least -100mv. The A64 set to 1.152Ghz runs at 1.18v instead of the standard 1.3v, dropping the power usage by ~0.7w under full single threaded load|The silicon lottery will dictate how well you can undervolt.
+{{< admonition type="important" >}}
+ The user _somefoo_ was able to undervolt the PinePhone at each frequency operation point by at least -100mv. The A64 set to 1.152Ghz runs at 1.18v instead of the standard 1.3v, dropping the power usage by ~0.7w under full single threaded load|The silicon lottery will dictate how well you can undervolt.
+{{< /admonition >}}
 
 TIP: The exact voltages and frequencies that you can achieve will depend on your device. Make sure to run stress tests (such as _stress-ng_) to ensure stability.
 
 === DRAM
 
-WARNING: It is not recommended to exceed 667 MHz clockspeed on the DRAM. 648MHz is likely the upper limit.
+{{< admonition type="warning" >}}
+ It is not recommended to exceed 667 MHz clockspeed on the DRAM. 648MHz is likely the upper limit.
+{{< /admonition >}}
 
 TIP: Make sure to set your DRAM to a multiple of 24.
 
@@ -123,13 +135,17 @@ In order to allocate more VRAM for the GPU you can add `cma=256` to your kernel 
 
 In order to compile boot.scr you can run `mkimage -C none -A arm64 -T script -d boot.cmd boot.scr`
 
-IMPORTANT: You may not have a boot.cmd file in your boot directory and instead you may instead have a boot.txt
+{{< admonition type="important" >}}
+ You may not have a boot.cmd file in your boot directory and instead you may instead have a boot.txt
+{{< /admonition >}}
 
 === Cedrus
 
 Overclocking cedrus is achieved by modifying the kernel source code: https://elixir.bootlin.com/linux/latest/source/drivers/staging/media/sunxi/cedrus/cedrus.c#L507
 
-IMPORTANT: User _33yn2_ is not particularly sure if this makes any difference, or if it might in fact have a negative impact. Probably not worth messing with.
+{{< admonition type="important" >}}
+ User _33yn2_ is not particularly sure if this makes any difference, or if it might in fact have a negative impact. Probably not worth messing with.
+{{< /admonition >}}
 
 == RK3399-based devices
 

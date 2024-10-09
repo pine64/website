@@ -84,7 +84,9 @@ The issue is not present on the Community Edition. Due to a hardware bug, after 
 
 Some pre-made operating systems using megi's kernel limit the maximum amount of charge to roughly ~84% in the hope of prolonging the battery life, as repeatedly reaching the upper level of battery charge reduces the battery's lifetime (this is *not* a safety feature!). The same effect however also applies when repeatedly draining the battery to a low level - users are therefore advised to consider if that setting is reasonable depending on their usage. The setting can be overwritten via Sysfs, to let the battery fully charge (this can lower the replaceable battery's lifetime considerably depending on the charging behavior!):
 
-WARNING: The following instructions are directed towards expert-level users and developers!
+{{< admonition type="warning" >}}
+ The following instructions are directed towards expert-level users and developers!
+{{< /admonition >}}
 
 `echo 4350000 > /sys/class/power_supply/axp20x-battery/voltage_max_design`
 

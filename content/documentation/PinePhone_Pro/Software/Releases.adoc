@@ -76,7 +76,9 @@ The overlay can be found under https://github.com/stealthgun/gjdwebserver-overla
 
 See https://stealthgun.tweakblogs.net/blog/19830/gentoo-on-a-pinephone-pro for the documentation.
 
-NOTE: Please consider cross-compiling the software on the computer. Long compilation times and heat production can lead to a reduced lifespan of the phone.
+{{< admonition type="note" >}}
+ Please consider cross-compiling the software on the computer. Long compilation times and heat production can lead to a reduced lifespan of the phone.
+{{< /admonition >}}
 
 == GloDroid
 
@@ -144,7 +146,9 @@ An unofficial https://www.debian.org[Debian] build for ARM64 running with Phosh.
 
 https://images.mobian.org/pinephonepro/[Images]
 
-NOTE: Tow-Boot required to be able to boot the images, see https://tow-boot.org/devices/pine64-pinephonePro.html[here]!
+{{< admonition type="note" >}}
+ Tow-Boot required to be able to boot the images, see https://tow-boot.org/devices/pine64-pinephonePro.html[here]!
+{{< /admonition >}}
 
 |===
 2+| Default credentials
@@ -298,7 +302,9 @@ Contributions and bug reports can be made at the https://gitlab.com/ook37/pineph
 
 == Multi-distribution image
 
-WARNING: Work in progress; updating the distributions via their respective package managers may break the system.
+{{< admonition type="warning" >}}
+ Work in progress; updating the distributions via their respective package managers may break the system.
+{{< /admonition >}}
 
 A PinePhone Pro analogue of the link:/documentation/PinePhone/Software/Releases/#multi_distro_demo_image[PinePhone multi-distro demo image]. This image allows the user to switch between multiple Linux distributions without having to swap microSD cards.
 

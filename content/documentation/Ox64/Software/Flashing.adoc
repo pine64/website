@@ -84,7 +84,9 @@ Put the Raspberry Pi Pico board into programming mode:
 * Apply power by plugging the USB cable to PC
 * Release the BootSel button
 
-NOTE: As an alternative to pressing the BootSel button, you can also connect the probe point `TP6` (located on the bottom of the Pico board) to any ground point (e. g. pin 28).
+{{< admonition type="note" >}}
+As an alternative to pressing the BootSel button, you can also connect the probe point `TP6` (located on the bottom of the Pico board) to any ground point (e. g. pin 28).
+{{< /admonition >}}
 
 The Pico will now appear as a USB mass storage device. Copy the `UF2` file to program it:
 
@@ -149,7 +151,9 @@ The one catch is that you already need a serial adapter in order to program your
 If you own an SWD-capable debugger (ST-Link, J-link, etc.) you can use that for programming the Bluepill as well, although instead of `stm32flash` console command you would be using https://openocd.org/[openocd] or other suitable software.
 ====
 
-WARNING: Your serial adapter must use 3.3V logic levels.
+{{< admonition type="warning" >}}
+ Your serial adapter must use 3.3V logic levels.
+{{< /admonition >}}
 
 Install software to flash Bluepill. For Debian-based systems just install package from repository:
 
@@ -251,7 +255,9 @@ Find its device path with `ls /dev/ttyUSB* /dev/ttyACM*` (or similar); for the r
 
 You will also need a way of powering your Ox64. If your serial adapter has a 5V line, you can connect it to VBUS (pin 40). Otherwise, you can connect either the micro-B or the USB-C port on the Ox64 to any 5V power supply.
 
-WARNING: Your serial adapter must use 3.3V logic levels.
+{{< admonition type="warning" >}}
+ Your serial adapter must use 3.3V logic levels.
+{{< /admonition >}}
 
 Refer to the pinout image below. Connect your UART adapter as follows:
 
@@ -318,7 +324,9 @@ $ # bflb-iot-tool --help # return info about the tool
 
 ----
 
-NOTE: Each time you open a new terminal window you will need to `cd ~/ox64/` and re-run `pipenv shell` to reactivate the virtual environment.
+{{< admonition type="note" >}}
+ Each time you open a new terminal window you will need to `cd ~/ox64/` and re-run `pipenv shell` to reactivate the virtual environment.
+{{< /admonition >}}
 
 == Flashing the Ox64
 

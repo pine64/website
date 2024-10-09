@@ -9,7 +9,9 @@ menu:
     weight: 
 ---
 
-WARNING: The data presented in this section requires updating.
+{{< admonition type="warning" >}}
+ The data presented in this section requires updating.
+{{< /admonition >}}
 
 [cols="1,1,1,2,2"]
 |===

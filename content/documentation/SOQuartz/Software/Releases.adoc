@@ -9,7 +9,9 @@ menu:
     weight: 1
 ---
 
-NOTE: The images are provided by the PINE64 community, not by Pine Store Ltd. Most community projects currently aim at getting mainline Linux running on the board, not some vendor provided kernel that will never be receiving updates. A mainline-first approach allows for the boards to continue receiving important updates, such as security updates, for years to come, as well as have higher quality code in the kernel as it underwent independent review, but does mean that not all aspects of the hardware work right out of the gate.
+{{< admonition type="note" >}}
+ The images are provided by the PINE64 community, not by Pine Store Ltd. Most community projects currently aim at getting mainline Linux running on the board, not some vendor provided kernel that will never be receiving updates. A mainline-first approach allows for the boards to continue receiving important updates, such as security updates, for years to come, as well as have higher quality code in the kernel as it underwent independent review, but does mean that not all aspects of the hardware work right out of the gate.
+{{< /admonition >}}
 
 == DietPi
 

@@ -984,6 +984,48 @@ button.podcast:hover {
     }
 }
 
+/* Admonitions */
+.admonition {
+    padding: 1rem;
+    border-left: 1.5px solid;
+    background-color: #fcfcfc;
+    margin: 1.5rem 0;
+    color: #333333;
+}
+.admonition .title {
+    font-weight: 400;
+}
+.admonition-note {
+    background-color: #dfe7f8;
+    border-color: #3165cc;
+}
+.admonition-note .title {
+    color: #3165cc;
+}
+.admonition-warning {
+    background-color: #f8dfdf;
+    border-color: #cc3131;
+}
+.admonition-warning .title {
+    color: #cc3131;
+}
+.admonition-info {
+    background-color: #f8ecdf;
+    border-color: #e09f12;
+}
+.admonition-info .title {
+    color: #e09f12;
+}
+.admonition-important {
+    background-color: #f8ecdf;
+    border-color: #e09f12;
+}
+.admonition-important .title {
+    color: #e09f12;
+}
+
+
+
 /* Youtube partial */
 .video-container {
     position: relative;

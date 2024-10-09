@@ -194,7 +194,9 @@ Notes:
 
 OpenBSD 6.6-snapshot, Community Build Image (FVWM2 WM). To learn more about OpenBSD please visit https://www.openbsd.org[OpenBSD main page]. If you need more information please ping: https://forum.pine64.org/member.php?action=profile&uid=12423.
 
-WARNING: Outdated release
+{{< admonition type="warning" >}}
+ Outdated release
+{{< /admonition >}}
 
 Download:
 
@@ -219,7 +221,9 @@ Download:
 
 Android 7.1 Community Build Image [microSD Boot] by ayufan. It only works on the 14.1" and 11.6" Pinebook, not applicable to 1080P 11.6' Pinebook. Special thanks to ayufan, Icenowy, lennyraposo, longsleep, lukasz, tkaiser, Xalius and PINE64 community contributors. Please use good random IO access performance microSD card such as the _Samsung EVO_ when trying out Android 7.1.
 
-WARNING: Outdated release
+{{< admonition type="warning" >}}
+ Outdated release
+{{< /admonition >}}
 
 Download:
 
@@ -244,7 +248,9 @@ Rootable build, online update (OTA) only works when the build is not rooted. The
 
 |===
 
-WARNING: Outdated release
+{{< admonition type="warning" >}}
+ Outdated release
+{{< /admonition >}}
 
 Download:
 
@@ -267,7 +273,9 @@ Rootable build. The LCD resolution is 1920 x 1080.
 
 |===
 
-WARNING: Outdated release
+{{< admonition type="warning" >}}
+ Outdated release
+{{< /admonition >}}
 
 Download:
 
@@ -290,7 +298,9 @@ Rootable build. The LCD resolution is 1920 x 1080. Please use an high performanc
 
 |===
 
-WARNING: Outdated release
+{{< admonition type="warning" >}}
+ Outdated release
+{{< /admonition >}}
 
 Download:
 
@@ -318,7 +328,9 @@ Notes:
 
 |===
 
-WARNING: Outdated release
+{{< admonition type="warning" >}}
+ Outdated release
+{{< /admonition >}}
 
 Download:
 

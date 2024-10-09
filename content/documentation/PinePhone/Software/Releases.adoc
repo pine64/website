@@ -13,7 +13,9 @@ menu:
 
 This page contains a list of all available releases and tools for the link:/documentation/PinePhone[PinePhone] in alphabetical order.
 
-NOTE: Some releases may not have a good setup for the backlight at low brightness. If configured too low, the backlight shuts down completely, but the screen is still displayed and usable in bright front-light.
+{{< admonition type="note" >}}
+ Some releases may not have a good setup for the backlight at low brightness. If configured too low, the backlight shuts down completely, but the screen is still displayed and usable in bright front-light.
+{{< /admonition >}}
 
 See link:/documentation/PinePhone/Installation/[Installation instructions] on how to install the operating systems. Please see link:/documentation/PinePhone/Software/Updating_instructions[Update instructions] for how to update the phone.
 
@@ -98,7 +100,9 @@ The documentation can be found here:
 * https://wiki.gentoo.org/wiki/User:Dr41nU/PinePhone
 * https://wiki.gentoo.org/wiki/PinePhone (incomplete)
 
-NOTE: Please consider cross-compiling the software on the computer. Long compilation times and heat production can lead to a reduced lifespan of the phone.
+{{< admonition type="note" >}}
+ Please consider cross-compiling the software on the computer. Long compilation times and heat production can lead to a reduced lifespan of the phone.
+{{< /admonition >}}
 
 === GloDroid
 
@@ -236,7 +240,9 @@ Current version is Debian Bookworm.
 
 * https://images.mobian.org/pinephone/[Images]
 
-NOTE: Tow-Boot is required to be able to boot the images, see https://wiki.mobian-project.org/doku.php?id&#61;install-linux[here]!
+{{< admonition type="note" >}}
+ Tow-Boot is required to be able to boot the images, see https://wiki.mobian-project.org/doku.php?id&#61;install-linux[here]!
+{{< /admonition >}}
 
 |===
 2+| Default credentials
@@ -253,7 +259,9 @@ In order to connect to the device using SSH/SCP via WiFi, you need to install SS
 
 === Multi-distro demo image
 
-WARNING: This is a demo image for testing different operating systems before installing a regular image. Attempting to use this image productively is highly discouraged. The kernel is shared across the different operating systems and is not updated.
+{{< admonition type="warning" >}}
+ This is a demo image for testing different operating systems before installing a regular image. Attempting to use this image productively is highly discouraged. The kernel is shared across the different operating systems and is not updated.
+{{< /admonition >}}
 
 This image allow users to try many Linux distributions easily, without having to figure out how to flash them individually and juggle with many microSD cards. Also called megi's 15-in-1 multi boot image.
 
@@ -363,7 +371,9 @@ See https://www.openmandriva.org/en/news/article/openmandriva-lx-4-3-rc-availabl
 
 ==== Notes
 
-NOTE: This image is solely for testing purposes.
+{{< admonition type="note" >}}
+ This image is solely for testing purposes.
+{{< /admonition >}}
 
 === openSUSE
 
@@ -476,7 +486,9 @@ The Sailfish OS image is built on Gitlab CI. The latest image can be installed u
 
 The script downloads the image and bootloader from the CI, extracts everything and burns it onto the SD card.
 
-NOTE: The script will format and erase the SD card!
+{{< admonition type="note" >}}
+ The script will format and erase the SD card!
+{{< /admonition >}}
 
 Instructions:
 
@@ -589,7 +601,9 @@ Discussion: https://forum.pine64.org/showthread.php?tid=12181&highlight=slackwar
 
 A Mobile Version of the Ubuntu Operating System made and maintained by the UBports Community. The port is currently maintained by Oren Klopfer (oklopfer).
 	
-NOTE: Tow-Boot is required for installing the latest version of Ubuntu Touch (20.04) on the PinePhone. Instructions for installing Tow-Boot to the PinePhone can be found https://tow-boot.org/devices/pine64-pinephoneA64.html[here]. 
+{{< admonition type="note" >}}
+ Tow-Boot is required for installing the latest version of Ubuntu Touch (20.04) on the PinePhone. Instructions for installing Tow-Boot to the PinePhone can be found https://tow-boot.org/devices/pine64-pinephoneA64.html[here]. 
+{{< /admonition >}}
 	
 Installation instructions can be found at https://ubports.com/en/blog/ubports-news-1/post/pinephone-and-pinephone-pro-3889[this UBports post]. After Tow-Boot has been installed to your device, Ubuntu Touch installation just requires flashing the _.img.xz_ to an SD or the eMMC.
 
@@ -634,11 +648,15 @@ Make sure to download the image with pinephoneA64 in the name.
 
 == Hardware test build
 
-WARNING: The factorytest image for hardware testing appears to be no longer maintained.
+{{< admonition type="warning" >}}
+ The factorytest image for hardware testing appears to be no longer maintained.
+{{< /admonition >}}
 
 On the Braveheart model, there was a postmarketOS based basic Factory Test OS pre-installed on the eMMC. The developer Martijn Braam from postmarketOS has improved the functionality of the image considerably later. Since the 20200501 version, it is able to test all the hardware. It also includes functionality to install a new OS to the eMMC when using with an test image that includes that OS image. The downloadable image just does the hardware tests. Do not flash eMMC to test your device, just flash it to microSD and test from there. New versions are distributed as part of the postmarketOS distribution.
 
-NOTE: The magnetometer test will fail on the new Beta Edition, as the factory image wasn't updated for it yet.
+{{< admonition type="note" >}}
+ The magnetometer test will fail on the new Beta Edition, as the factory image wasn't updated for it yet.
+{{< /admonition >}}
 
 Links:
 
@@ -655,7 +673,9 @@ After power up or reboot, you may perform and complete the test routine, or appl
 
 All the download links below are direct download from pine64.org.
 
-WARNING: These images are for testing purposes only. If you are looking for an up-to-date image please select one from the
+{{< admonition type="warning" >}}
+ These images are for testing purposes only. If you are looking for an up-to-date image please select one from the
+{{< /admonition >}}
 software releases section instead.
 
 [cols="1,1,1,1"]
