@@ -848,7 +848,6 @@ table {
     margin-top: 1rem;
     margin-bottom: 1rem;
     border: 1px solid #dee2e6;
-    table-layout: fixed;
 }
 
 table td,
