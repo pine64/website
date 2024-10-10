@@ -69,7 +69,7 @@ TODO: i2cdev, linux-iio, support matrix
   * /dev/ttyUSB2: AT command interface
   * /dev/ttyUSB1: default NMEA data output
 * MPU6050:inv_mpu6050, inv_mpu6050_i2c, industrialio
- 
+ ```
 	iio:device2: mpu6050 (buffer capable)
 		9 channels found:
 			accel_x:  (input, index: 0, format: be:S16/16>>0)
@@ -134,9 +134,10 @@ TODO: i2cdev, linux-iio, support matrix
 				attr  0: data_available value: 0
 				attr  1: watermark value: 1
 		Current trigger: trigger1(mpu6050-dev2)
+```
 * LIS3MDL: st_sensors, st_sensors_i2c, st_magn, st_magn_i2c, industrialio
 
-
+```
 	iio:device1: lis3mdl (buffer capable)
 		4 channels found:
 			magn_x:  (input, index: 0, format: le:S16/16>>0)
@@ -163,6 +164,7 @@ TODO: i2cdev, linux-iio, support matrix
 				attr  0: data_available value: 0
 				attr  1: watermark value: 1
 		Current trigger: trigger0(lis3mdl-trigger)
+```
 
 ### Userspace services
 

@@ -21,15 +21,13 @@
                     <a class='sidebar-nav-item' href="{{ .URL }}">{{ .Name }}</a>
                     <br> 
                     <hr>
-
-                    <br>
                 {{end}}
 
             {{end}}
 
             
             {{ if and .HasChildren (or ($currentPage.IsMenuCurrent "docs" .) ($currentPage.HasMenuCurrent "docs" .)) }}
-
+            
                 <ul>
 
                 <!-- Children -->

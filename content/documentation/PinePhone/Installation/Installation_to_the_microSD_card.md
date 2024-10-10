@@ -30,7 +30,7 @@ Download and install the application: https://etcher.balena.io/#download-etcher
 
 Then start it and click the button _Flash from file_:
 
-{{< figure src="../Etcher1.png" width="600" >}}
+{{< figure src="/documentation/PinePhone/Installation/Etcher1.png" width="600" >}}
 
 Select the downloaded image and make sure that you downloaded the correct one. Images for the PinePhone and the PinePhone Pro are _'not compatible_' with each other. Images for the PinePhone typically have the word "PinePhone" in the filename, while images for the PinePhone Pro typically have "PinePhone Pro" in their filename.
 
@@ -40,7 +40,7 @@ Select the downloaded image and make sure that you downloaded the correct one. I
 
 Then click on _Select target_:
 
-{{< figure src="../Etcher3.png" width="600" >}}
+{{< figure src="/documentation/PinePhone/Installation/Etcher3.png" width="600" >}}
 
 {{< admonition type="note" >}}
  Make sure to select the correct target by comparing the name and the disk capacity with the label on the microSD card.
@@ -48,7 +48,7 @@ Then click on _Select target_:
 
 Then click on _Flash!_:
 
-{{< figure src="../Etcher4.png" width="600" >}}
+{{< figure src="/documentation/PinePhone/Installation/Etcher4.png" width="600" >}}
 
 That’s it!
 

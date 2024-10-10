@@ -6,7 +6,7 @@
                 {{ range .Ancestors.Reverse }}
 
                     <!-- Filter top level -->
-                    {{ if ne .Permalink .Site.BaseURL }}
+                    {{ if ne .Kind "home" }}
 
                     <a href="{{ .Permalink }}">{{ .LinkTitle }}</a> /
 
@@ -14,14 +14,14 @@
                 {{ end }}
 
                 <!-- Current -->
-                {{ .LinkTitle }}
+                {{ .Title }}
               
             </ul>
 
     </div>
     <div>
         <span class="editpage">
-            <a href="https://github.com/pine64/website/edit/main/content/{{ .File.Path }}">Edit&nbsp;page</a>
+            <a href="https://github.com/pine64/website/edit/main/content/{{ .File.Path }}" target="_blank">Edit&nbsp;page</a>
         </span>
     </div>
 </div>

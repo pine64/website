@@ -1,0 +1,39 @@
+{{ $parameter := .Get "section" }}
+
+{{ $currentPage := .Page }}
+{{ $section := .Site.GetPage "section" (printf "/documentation/%s/" $parameter) }}
+
+<hr>
+
+<br>
+{{ $section.Content }}
+
+{{ range $section.Pages.ByParam "menu.docs.weight"}}
+    {{ if (ne . $currentPage) }}
+        <br>
+        <h1 id="{{ anchorize (.Title) }}">
+            <a href="#{{ anchorize (.Title) }}">{{ .Title }}</a>
+        </h1>
+        {{ .Content }}
+
+        {{ $currentPage := .Page }}
+        {{ range $currentPage.Pages.ByParam "menu.docs.weight" }}
+            <h2 id="{{ anchorize (.Title) }}">
+                <a href="#{{ anchorize (.Title) }}">{{ .Title }}</a>
+            </h2>
+              
+
+            {{ .Content }}
+
+                {{ $currentPage := .Page }}
+                {{ range $currentPage.Pages.ByParam "menu.docs.weight" }}
+                    <h2 id="{{ anchorize (.Title) }}">
+                        <a href="#{{ anchorize (.Title) }}">{{ .Title }}</a>
+                    </h2>
+                    {{ .Content }}
+                {{ end }}
+        
+        {{ end }}
+
+    {{ end }}
+{{ end }}
