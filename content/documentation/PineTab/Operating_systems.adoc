@@ -36,9 +36,9 @@ Both Beta releases and weekly unstable builds for Phosh and Plasma Mobile can be
 
 == Mobian
 
-{{< figure src="/documentation/images/Debian-logo.png" width="100" >}}
+{{< figure src="/documentation/images/Mobian-logo.png" width="100" >}}
 
-*Mobian* is an unofficial https://www.debian.org[Debian] build for ARM64 running with Phosh. The current version of the base Debian system is Debian Bookworm. See the installation instructions https://wiki.debian.org/InstallingDebianOn/PINE64/PineTab[here]. If you have questions about Mobian, please ask them in the https://matrix.to/#/#mobian:matrix.org[Mobian Matrix room].
+A https://www.mobian.org[Mobian] build for ARM64 running with Phosh. The current version of the base Debian system is Debian Bookworm. See the installation instructions https://wiki.debian.org/InstallingDebianOn/PINE64/PineTab[here]. If you have questions about Mobian, please ask them in the https://matrix.to/#/#mobian:matrix.org[Mobian Matrix room].
 
 Download:
 

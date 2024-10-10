@@ -230,11 +230,10 @@ The installation of the stable images is strongly suggested. The dev images migh
 
 === Mobian
 
-{{< figure src="/documentation/images/Debian-logo.png" width="100" >}}
+{{< figure src="/documentation/images/Mobian-logo.png" width="100" >}}
 
-An unofficial https://www.debian.org[Debian] build for ARM64 running with Phosh (developed by Purism, uses Wayland instead of Xorg).
-The base system is pure Debian, with only the GUI applications and a few others (ModemManager, WiFi chip firmware) being built from modified sources (as well as the kernel and u-boot).
-Current version is Debian Bookworm.
+A https://www.mobian.org[Mobian] build for ARM64 running with Phosh (developed by Purism, uses Wayland instead of Xorg).
+The current version of the base Debian system is Debian Bookworm. Only the GUI applications and a few others (ModemManager, WiFi chip firmware) are built from modified sources (as well as the kernel and u-boot).
 
 ==== Download
 
