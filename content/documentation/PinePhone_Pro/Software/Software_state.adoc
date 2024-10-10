@@ -20,9 +20,9 @@ The following table lists the feature functionality status of the unaltered pre-
 * Matrix: https://app.element.io/#/room/#pinephone:matrix.org
 * Telegram: https://t.me/pinephone
 
-{{% admonition type="note" %}}
+{{< admonition type="note" >}}
 The software is *written by the community*, any contributions towards the community projects are greatly appreciated! Please see "link:/documentation/Introduction/How_to_contribute[How to Contribute]" to learn about how to contribute to the software projects and "link:/documentation/Introduction/Where_to_report_bugs[Where to Report Bugs]" to learn about where to report bugs.
-{{% /admonition %}}
+{{< /admonition >}}
 
 [cols="2,2,1,1,4"]
 |===
