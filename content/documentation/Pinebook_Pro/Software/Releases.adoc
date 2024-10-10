@@ -218,12 +218,11 @@ Download:
 
 *Download location*
 
-Get the latest openSUSE Tumbleweed images for Pinebook Pro here: https://en.opensuse.org/HCL:Pinebook-Pro-RK3399
+Get the latest openSUSE Tumbleweed images for Pinebook Pro here: https://en.opensuse.org/HCL:Pinebook-Pro-RK3399. Credits to https://bugzilla.opensuse.org/show_bug.cgi?id=1194491.
 
-Credits to [https://bugzilla.opensuse.org/show_bug.cgi?id=1194491]
-Step 1. Flash Tow-Boot[https://github.com/Tow-Boot/Tow-Boot] to SPI
-Step 2. Flash openSUSE image to sd card & insert it
-Step 3. When it loads grub, press e and add the following line:
+* Step 1. Flash https://github.com/Tow-Boot/Tow-Boot[Tow-Boot] to SPI
+* Step 2. Flash openSUSE image to sd card & insert it
+* Step 3. When it loads grub, press e and add the following line:
 
 devicetree /boot/dtb/rockchip/rk3399-pinebook-pro.dtb
 
