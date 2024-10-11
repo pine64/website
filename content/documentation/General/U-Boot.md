@@ -9,8 +9,9 @@ menu:
     weight: 
 ---
 
-**💡 TIP**\
+{{< admonition type="tip" >}}
 It is helpful to have a debugging serial cable for this.
+{{< /admonition >}}
 
 ## Building U-Boot manually
 
@@ -26,8 +27,9 @@ If you are using a different system such as Ubuntu, there are plenty of cross co
 
 ### Compilation
 
-**💡 TIP**\
+{{< admonition type="tip" >}}
 This guide is written with the PinePhone in mind. On other devices you will need to set a different platform variable and likely use a different U-Boot source with patches oriented towards your device.
+{{< /admonition >}}
 
 Note by default these instructions utilize all of your computers cores to compile thanks to the `-j` and `$(nproc)` parameters. If you wish to only use one core to compile, or change the number of cores used for example to only two cores, then you can either completely remove the `-j$(nproc)` parameter from the make commands, or just take off `$(nproc)` and add the number of threads you want used in it’s place: `-j4`
 
@@ -47,8 +49,9 @@ After the ATF is compiled clone u-boot and copy the bl31.bin file into the u-boo
     cp build/sun50i_a64/release/bl31.bin ../u-boot/
     cd ..
 
-**💡 TIP**\
+{{< admonition type="tip" >}}
 You cannot build [Crust](/documentation/PinePhone/Software/Crust) if you do not have the or1k musl toolchain installed. This toolchain is not usually available in distribution repositories and will have to be manually installed to the system. The following text will show a simple way to install the toolchain.
+{{< /admonition >}}
 
 Download the toolchain’s archive: https://musl.cc/or1k-linux-musl-cross.tgz
 
@@ -71,8 +74,9 @@ After you’ve completed that you can close out the terminal and reopen it and p
     cp build/scp/scp.bin ../u-boot/
     cd ..
 
-**💡 TIP**\
+{{< admonition type="tip" >}}
 If you do not wish to have [Crust](/documentation/PinePhone/Software/Crust) in your U-Boot build, then you can skip exporting SCP
+{{< /admonition >}}
 
     cd u-boot/
     git checkout crust
@@ -95,8 +99,9 @@ Once successfully compiled you can proceed to flash the device
 sudo dd if=u-boot-sunxi-with-spl.bin of=/dev/[CHANGE THIS] bs=1024 seek=8
 ```
 
-**💡 TIP**\
+{{< admonition type="tip" >}}
 If you are compiling U-Boot in order to overclock your DRAM you can check if it was successful by reading the values of /sys/kernel/debug/clk/clk_summary
+{{< /admonition >}}
 
 ## p-boot multi-bootloader
 

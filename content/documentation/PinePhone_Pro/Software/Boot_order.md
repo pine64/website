@@ -32,4 +32,4 @@ The RE button disables the SPI and the eMMC at the hardware level while the butt
 
 ## Boot from microSD card permanently
 
-The bootloader (such as _U-Boot_) resides in the free space in front of the first partition. Wiping the bootloader from the eMMC to make the PinePhone Pro boot from microSD card can be done using `sudo dd if&#61;/dev/zero of&#61;/dev/mmcblk2 seek&#61;64 count&#61;400 conv&#61;fsync`. Formatting the drive or deleting the partition table is not sufficient to wipe the bootloader.
+The bootloader (such as _U-Boot_) resides in the free space in front of the first partition. Wiping the bootloader from the eMMC to make the PinePhone Pro boot from microSD card can be done using `sudo dd if=/dev/zero of=/dev/mmcblk2 seek=64 count=400 conv=fsync`. Formatting the drive or deleting the partition table is not sufficient to wipe the bootloader.

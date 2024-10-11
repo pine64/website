@@ -14,8 +14,9 @@ menu:
 
 The mainboard can be replaced if it is faulty. The replacement board does not have an operating system pre-installed, to test if everything is working after swapping the mainboard a flashed microSD card is required.
 
-**💡 TIP**\
+{{< admonition type="tip" >}}
 Replacement boards come with an empty eMMC, which means that trying to boot from them looks like the board is faulty (no LEDs, no screen, no reaction of the phone). Please boot an operating System from a microSD card.
+{{< /admonition >}}
 
 Prior to replacing your PinePhone’s mainboard please read the steps outlined in bullet points below and watch the attached video.
 

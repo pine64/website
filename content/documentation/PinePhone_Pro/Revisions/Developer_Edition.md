@@ -56,8 +56,9 @@ In the factory test image, navigate to setting (gear icon) > at the very bottom 
 
 Please note: It is recommended to charge the device to at least 50% before proceeding with wiping the eMMC.
 
-**💡 TIP**\
+{{< admonition type="tip" >}}
 Note: You may have gotten a Chinese factory image; in the settings menu you can change the language to English by selecting the gray info icon (系统, one from bottom), then the first option (语言..), and again the first option (also 语言), then press +, English and drag it to the top of the list).
+{{< /admonition >}}
 
 Connect the phone to your computer and check `adb devices` in the terminal. The phone should be registered as attached. If the device doesn’t show you may want to try a different port or cable. Then enter `adb shell` followed by `su` to gain root access. At this point you can erase the eMMC installation:
 

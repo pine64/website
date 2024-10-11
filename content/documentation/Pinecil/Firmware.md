@@ -13,8 +13,9 @@ This article is about updating/flashing the [Pinecil](/documentation/Pinecil) fi
 
 ## Overview
 
-**💡 TIP**\
+{{< admonition type="tip" >}}
 Pinecil is designed to use **only 1 power port** at any time. Only the USB-C cable should be plugged in during firmware updates. Never attempt to use both rear ports at the same time or the PC and Pinecil will be damaged.
+{{< /admonition >}}
 
 {{< figure src="/documentation/images/Pinecil-V1andV2.png" title="right" width="400" >}}
 

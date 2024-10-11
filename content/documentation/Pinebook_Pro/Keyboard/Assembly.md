@@ -28,8 +28,9 @@ Older style scissor switches allowed you to just pull the keycap straight off th
 
 Keys can be relatively safely removed (however the mechanism can easily be damaged by someone who doesn’t know what they’re doing) when the keyboard assembly has been removed from the shell, however with the shell in place it blocks movement of the keys that is required to unhook the mechanism from the metal backplate.
 
-**💡 TIP**\
+{{< admonition type="tip" >}}
 The keys might be removable without taking the keyboard out of the frame, this needs more research
+{{< /admonition >}}
 
 To remove a key, first push it all the way in, slide it upwards slightly, and lift the top half of the key, this should dislodge the upper half of the scissor mechanism, this step can be tricky, the keys were designed to be assembled once and never removed again.
 

@@ -104,8 +104,9 @@ The custom firmware can be flashed using [fwupd](https://wiki.postmarketos.org/w
 
 ### Stock firmware
 
-**💡 TIP**\
+{{< admonition type="tip" >}}
 The following instructions are directed towards professional users. It is highly recommend to make sure the update process is not interrupted to prevent the modem from bricking.
+{{< /admonition >}}
 
 The stock modem firmware can be updated to a newer version if it is outdated. The firmware version can be checked using the following AT command (at the example of `atinout`, alternatively `minicom` can be used to communicate with the modem too):
 

@@ -13,11 +13,13 @@ To install a cluster it is important to know the IP addresses of each module, so
 
 Each module may be plugged into the Clusterboard individually or consecutively, which makes it easy to assign a hostname to each module separately. It is also possible to manually edit the hostname in the OS image of each module before the first boot.
 
-**💡 TIP**\
+{{< admonition type="tip" >}}
 The board has no hotplug functionality, so make sure you only plug/unplug the modules while the power is disconnected from the clusterboard.
+{{< /admonition >}}
 
-**💡 TIP**\
+{{< admonition type="tip" >}}
 No management features are available on the switch ship, so there is no VLAN support.
+{{< /admonition >}}
 
 ## Serial console
 
@@ -29,5 +31,6 @@ To boot use the serial console connect the pins to UART0 on the GPIO header and 
 
 The pinouts are available in [this forum thread](https://forum.pine64.org/showthread.php?tid=8058).
 
-**💡 TIP**\
+{{< admonition type="tip" >}}
 Do not connect the GND connector until the power is on as it can provide power and prevent the board from booting.
+{{< /admonition >}}

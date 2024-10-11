@@ -9,8 +9,9 @@ menu:
     weight: 
 ---
 
-**💡 TIP**\
+{{< admonition type="tip" >}}
 You can use Cheese to test the Camera functionality
+{{< /admonition >}}
 
 Streaming video resolutions supported, (uncompressed):
 

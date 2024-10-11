@@ -13,8 +13,9 @@ This article is about the available tips for the [Pinecil](/documentation/Pineci
 
 ## Pinecil Tips
 
-**💡 TIP**\
+{{< admonition type="tip" >}}
 Pay attention to the length! Pine Store sells two different lengths of tips.
+{{< /admonition >}}
 
 ### What kind of tips work?
 

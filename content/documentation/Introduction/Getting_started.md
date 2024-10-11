@@ -94,8 +94,9 @@ You will need the following utilities to get started with imaging the OS of your
 * A compression utility (used to unarchive the OS image). You may use [Keka](https://www.keka.io/en/).
 * A disk image utility (used to flash the .img to your SD card in GUI). You may use [ApplePi Baker v2](https://www.tweaking4all.com/software/macosx-software/applepi-baker-v2/#DownloadApplePiBaker) or [Etcher](https://etcher.io/).
 
-**💡 TIP**\
+{{< admonition type="tip" >}}
 Phoenix Card utility and images are NOT available on macOS.
+{{< /admonition >}}
 
 **Downloading and extracting OS image(s), insert the SD card**
 
@@ -152,8 +153,9 @@ You will need the following utilities to get started with imaging the OS of your
 * A compression Utility (used to unarchive the OS image). We recommend you use [Ark](https://apps.kde.org/en/ark).
 * A disk image utility (used to flash the .img to your SD card in GUI). We recommend you use [Etcher](https://etcher.io/) or the [GUI Disks utility](https://git.gnome.org/browse/gnome-disk-utility/) that ships with most popular distributions.
 
-**💡 TIP**\
+{{< admonition type="tip" >}}
 Phoenix Card utility and images are NOT available on Linux.
+{{< /admonition >}}
 
 **Downloading and extracting OS image(s)**
 
@@ -393,9 +395,7 @@ The board is now ready to boot from USB 2.0/3.0 storage.
 
 There are two ways of removing u-boot from SPI. You can either download **u-boot-flash-spi.img.xz** from [ayufan’s github](https://github.com/ayufan-rock64/linux-u-boot/releases) or use a script found on Linux OS images titled:**rock64_erase_spi_flash.sh**. Follow the instructions in the previous sub-sections for the chosen method of removing u-boot from SPI; the instructions are are identical, as the process of erasing u-boot is the exact opposite of flashing it.
 
-**💡 TIP**\
-You can also erase SPI manually.
-To do so, you need to download mtd-utils. on Debian or Ubuntu follow these instructions:
+You can also erase SPI manually. To do so, you need to download mtd-utils. on Debian or Ubuntu follow these instructions:
 
 `sudo apt-get install mtd-utils`
 

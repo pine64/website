@@ -29,8 +29,9 @@ By contributing code, for example as documented in the following project pages (
 
 Many community projects and developers are working on the software on their free time. Donating to community projects and developers is a great way to support these projects and developers developing the software for the devices. The following list is an exemplary selection to which projects and developers can be donated to (in alphabetical order):
 
-**💡 TIP**\
-The following list is not a comprehensive list and solely a selection of different community projects and developers, which can be supported. Any FOSS development effort is valuable and should be rewarded, please support your favorite developer(s) or project(s) even if not mentioned on the list Your name or project not on the list? 
+{{< admonition type="tip" >}}
+The following list is not a comprehensive list and solely a selection of different community projects and developers, which can be supported. Any FOSS development effort is valuable and should be rewarded, please support your favorite developer(s) or project(s) even if not mentioned on the list Your name or project not on the list?
+{{< /admonition >}}
 
 ### Community projects
 
