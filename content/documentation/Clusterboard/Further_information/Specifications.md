@@ -24,5 +24,6 @@ These are the Clusterboard specifications:
 
 Please note than only one power input may be used at once. The barrel-style jack is additionally protected by a built-in 15&nbsp;A polyfuse.
 
-**📌 NOTE**\
+{{< admonition type="note" >}}
 No batteries for RTC backup should be installed unless certain hardware modifications are applied to the Clusterboard. Internal circuitry of the Clusterboard and SOPINE modules will eventually attempt to charge the batteries, which will result in damage to the batteries and the Clusterboard. Keep in mind that rechargeable batteries cannot be used because there is no charging circuitry for them on the Clusterboard. Please see [this forum thread](https://forum.pine64.org/showthread.php?tid=5849&page=2) and [this article](https://ericdraken.com/a64-reset-problem/) for further information.
+{{< /admonition >}}

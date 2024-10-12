@@ -58,5 +58,6 @@ menu:
 * _Thumb screws_ are popular upgrades: an _M2 x 4mm_ thumb screw could replace both the front screen-side Tip holder screw and the ground screw in the rear of the handle.
 * It was found that an M2x3mm thumb screw for the tip is a hair _too short_, and just grazes the Tip and the longer _m2 x 4mm is better on top_.
 
-**📌 NOTE**\
+{{< admonition type="note" >}}
 If the screw is too long (for example with a length of 5mm) a metal file can be used lightly to shorten it a small amount. Stainless steel is recommended as the softer aluminum screws could mushroom as you tighten down the tip screw too much or over time.
+{{< /admonition >}}

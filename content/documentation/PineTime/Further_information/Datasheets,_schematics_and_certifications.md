@@ -14,8 +14,9 @@ menu:
 * [PineTime Schematic ver1.0a](https://files.pine64.org/doc/PineTime/PineTime%20Schematic-V1.0a-20191103.pdf)
 * [PineTime GPIO Port Assignment ver1.0](https://files.pine64.org/doc/PineTime/PineTime%20Port%20Assignment%20rev1.0.pdf)
 
-**📌 NOTE**\
+{{< admonition type="note" >}}
 The part number for the SPI FLASH in the schematic diagram is not correct, the PineTime features a larger external FLASH device, see below.
+{{< /admonition >}}
 
 ## Chip Datasheets
 
