@@ -138,9 +138,9 @@ Manjaro is a user-friendly Linux distribution based on the independently develop
 
 == Mobian
 
-{{< figure src="/documentation/images/Debian-logo.png" width="100" >}}
+{{< figure src="/documentation/images/Mobian-logo.png" width="100" >}}
 
-An unofficial https://www.debian.org[Debian] build for ARM64 running with Phosh. The current version of the base Debian system is Debian Bookworm. See the installation instructions https://wiki.debian.org/InstallingDebianOn/PINE64/PinePhonePro[here]. If you have questions about Mobian, please ask them in the https://matrix.to/#/#mobian:matrix.org[Mobian Matrix room].
+A https://www.mobian.org[Mobian] build for ARM64 running with Phosh. The current version of the base Debian system is Debian Bookworm. See the installation instructions https://wiki.debian.org/InstallingDebianOn/PINE64/PinePhonePro[here]. If you have questions about Mobian, please ask them in the https://matrix.to/#/#mobian:matrix.org[Mobian Matrix room].
 
 === Download
 
