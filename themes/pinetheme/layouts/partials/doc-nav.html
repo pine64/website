@@ -12,19 +12,23 @@
     {{ else if isset .Params "full_section" }}
 
         {{ $section := .Site.GetPage "section" (printf "/documentation/%s/" .Params.full_section) }}
-
+        
+        <h3>Table of contents</h3>
+        <ul>
         {{ range $section.Pages.ByParam "menu.docs.weight"}}
-            <ul>
+
             {{ if .TableOfContents }}
+
                 <li>
                     <strong>
                         <a href="#{{ .Title | anchorize }}">{{ .Title }}</a>
                     </strong>
                     {{ .TableOfContents }}
                 </li>
+                
             {{ end }}
-            </ul>
         {{ end }}
+        </ul>
 
     {{ else }}
 
