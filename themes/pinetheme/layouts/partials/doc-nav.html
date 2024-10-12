@@ -4,9 +4,28 @@
     {{ $currentPage := . }}
 
     <!-- If on the main page -->
-    {{ if eq .RelPermalink "/documentation/"}}
+    {{ if eq .RelPermalink "/documentation/" }}
         <h3>Table of contents</h3>
         {{ .TableOfContents }}
+
+    <!-- If on a full page -->
+    {{ else if isset .Params "full_section" }}
+
+        {{ $section := .Site.GetPage "section" (printf "/documentation/%s/" .Params.full_section) }}
+
+        {{ range $section.Pages.ByParam "menu.docs.weight"}}
+            <ul>
+            {{ if .TableOfContents }}
+                <li>
+                    <strong>
+                        <a href="#{{ .Title | anchorize }}">{{ .Title }}</a>
+                    </strong>
+                    {{ .TableOfContents }}
+                </li>
+            {{ end }}
+            </ul>
+        {{ end }}
+
     {{ else }}
 
         <!-- Backlink -->
@@ -28,37 +47,33 @@
 
             
             {{ if and .HasChildren (or ($currentPage.IsMenuCurrent "docs" .) ($currentPage.HasMenuCurrent "docs" .)) }}
-
-                <!-- Filter out _full pages -->
-                {{ if ne $pn "_full" }}
     
-                    <ul>
+                <ul>
 
-                    <!-- Children -->
-                    {{ range .Children }}
-                    
-                        {{ if not .Page.Params.hidden }}
-                            <li><a class='sidebar-nav-subitem {{if $currentPage.IsMenuCurrent "docs" .}}active{{end}}' href='{{.URL}}'>{{ .Title }}</a></li>
+                <!-- Children -->
+                {{ range .Children }}
+                
+                    {{ if not .Page.Params.hidden }}
+                        <li><a class='sidebar-nav-subitem {{if $currentPage.IsMenuCurrent "docs" .}}active{{end}}' href='{{.URL}}'>{{ .Title }}</a></li>
+                    {{ end }}
+
+                    {{ if .HasChildren }}
+                        <ul>
+
+                        <!-- Children-Children -->
+                        {{ range .Children }}
+                            {{ if not .Page.Params.hidden }}
+                                <li class="doc_subitem"><a class='sidebar-nav-subsubitem {{if $currentPage.IsMenuCurrent "docs" .}}active{{end}}' href='{{.URL}}'>{{ .Title }}</a></li>
+                            {{ end }}
                         {{ end }}
 
-                        {{ if .HasChildren }}
-                            <ul>
 
-                            <!-- Children-Children -->
-                            {{ range .Children }}
-                                {{ if not .Page.Params.hidden }}
-                                    <li class="doc_subitem"><a class='sidebar-nav-subsubitem {{if $currentPage.IsMenuCurrent "docs" .}}active{{end}}' href='{{.URL}}'>{{ .Title }}</a></li>
-                                {{ end }}
-                            {{ end }}
+                        </ul>
+                    {{ end }}
+                {{ end }}
 
-
-                            </ul>
-                        {{end}}
-                    {{end}}
-
-                    </ul>
-                {{end}}
-            {{end}}
+                </ul>
+            {{ end }}
         {{ end }}
     {{ end }}
 </nav>
