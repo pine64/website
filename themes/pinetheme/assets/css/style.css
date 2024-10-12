@@ -888,9 +888,7 @@ tbody {
 
 
 /* Table of contents */
-nav#TableOfContents {
-    margin-bottom: 14px;
-}
+
 nav#TableOfContents ul, li{
     padding-bottom: 0 !important;
 }

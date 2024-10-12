@@ -57,7 +57,7 @@
 #doc-nav .sidebar-nav ul {
     padding-left: 0 !important;
 }
-#doc-nav .sidebar-nav > ul > ul {
+#doc-nav .sidebar-nav ul ul {
     border-left: 1px solid #fafafa;
     margin-left: 10px;
 }

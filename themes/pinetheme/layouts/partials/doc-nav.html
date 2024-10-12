@@ -17,17 +17,15 @@
         <ul>
         {{ range $section.Pages.ByParam "menu.docs.weight"}}
 
-            {{ if .TableOfContents }}
-
-                <li>
-                    <strong>
-                        <a href="#{{ .Title | anchorize }}">{{ .Title }}</a>
-                    </strong>
-                    {{ .TableOfContents }}
-                </li>
-                
-            {{ end }}
+            <li>
+                <strong>
+                    <a class="sidebar-nav-subitem" href="#{{ .Title | anchorize }}">{{ .Title }}</a>
+                </strong> 
+                {{ .TableOfContents }}
+            </li>
+            
         {{ end }}
+    
         </ul>
 
     {{ else }}
