@@ -1,6 +1,5 @@
 ---
 title: "Contact"
-date: ""
 ---
 
 ## Get in touch with the community

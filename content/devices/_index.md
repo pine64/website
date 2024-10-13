@@ -1,6 +1,5 @@
 ---
 title: "Devices"
-date: 
 draft: false
 description: "PINE64 has a variety of different devices. Find out more!"
 ---

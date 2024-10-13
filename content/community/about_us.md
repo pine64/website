@@ -1,6 +1,5 @@
 ---
 title: "Meet the community"
-date: ""
 draft: true # NOT PUBLISHED
 ---
 

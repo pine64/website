@@ -1,6 +1,5 @@
 ---
 title: "Best practices for navigating the bridged community chat"
-date: 
 draft: false
 ---
 

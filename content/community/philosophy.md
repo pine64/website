@@ -1,6 +1,5 @@
 ---
 title: "Philosophy"
-date: 
 draft: false
 ---
 

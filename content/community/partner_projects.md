@@ -1,6 +1,5 @@
 ---
 title: "Partner projects"
-date: 
 draft: false
 ---
 
