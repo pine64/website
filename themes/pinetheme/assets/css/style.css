@@ -610,7 +610,7 @@ button.rounded:hover {
 }
 
 .blog pre {
-    white-space: wrap;
+    white-space: pre-wrap;
 }
 
 .blog p img {
