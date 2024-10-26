@@ -22,4 +22,5 @@ Affiliates of the Pine Store:
 |[Blinky Parts](https://shop.blinkyparts.com/en/Soldering-Iron/)                                    |Germany (ships worldwide)          |
 |[Keeb Supply](https://keeb.supply/search?q=Pine)                                                   |Germany (ships to EU)              |
 |[Oomipood](https://www.oomipood.ee/brand_pine_store_pte_ltd)                                       |Estonia (ships to EU)              |
-|[Laskakit](https://www.laskakit.cz/pine64/)                                                        |Czech Republic (ships to EU)       |
+|[Laskakit](https://www.laskakit.cz/pine64/)                                                        |Czechia (ships to EU)              |
+|[KEEBD.com](https://keebd.com/products/pinecil-smart-portable-soldering-iron)                      |Australia (ships worldwide)        |
