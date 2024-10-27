@@ -332,6 +332,7 @@ menu label $NAME
 #linux  /boot/vmlinuz-6.5.0-okpine-ut
 
 ## uncomment next line for all distros, excluding UT
+## since there is a bug related to wifi from wpa_supplicant in Archlinux add 'brcmfmac.feature_disable=0x82000' just before 'rw rootwait'
 #append root=PARTLABEL=$BASE-$NAME console=ttyS2,115200 console=tty0 loglevel=7 rw rootwait
 
 ## uncomment next line for UT only
