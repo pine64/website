@@ -9,20 +9,13 @@ menu:
     weight: 2
 ---
 
-|===
-2+| Default JTAG pins
-
-| GPIO Pin | JTAG Pin
-
-| GPIO17 | TDI
-
-| GPIO11 | TDO
-
-| GPIO12 | TMS
-
-| GPIO14 | TCK
-
-|===
+| Default JTAG pins | |
+| -------- | ------- |
+| GPIO Pin | JTAG Pin |
+| GPIO17 | TDI |
+| GPIO11 | TDO |
+| GPIO12 | TMS |
+| GPIO14 | TCK |
 
 BL602 multiplexes four GPIO pins to provide the familiar JTAG lines. See the accompanying table for the default pin mappings.
 
@@ -30,5 +23,5 @@ These are the default JTAG pins in use after a cold boot. However, many pieces o
 
 The MaskROM download mode that the BL602 enters when you tie GPIO8 high does *not* remap the default JTAG pins, and so you can and should use that mode while checking basic functionality of your JTAG adapter.
 
-Note that, just as software can remap the default JTAG pins to be something else, it can also remap other pins to be JTAG. Control over this is quite granular, with 5-6 candidate pins for each individual JTAG signal that can be mapped independently of one another. LEE Lup Yuen has written some https://lupyuen.github.io/articles/openocd#free-the-led-from-jtag-port[sample code] showing how to remap the JTAG pins so that your software can use the LED without giving up support for debugging.
+Note that, just as software can remap the default JTAG pins to be something else, it can also remap other pins to be JTAG. Control over this is quite granular, with 5-6 candidate pins for each individual JTAG signal that can be mapped independently of one another. LEE Lup Yuen has written some [sample code](https://lupyuen.github.io/articles/openocd#free-the-led-from-jtag-port) showing how to remap the JTAG pins so that your software can use the LED without giving up support for debugging.
 
