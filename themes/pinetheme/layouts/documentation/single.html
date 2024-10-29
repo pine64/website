@@ -14,10 +14,11 @@
                 <header>
                     <h1>{{.Title}}</h1>
                 </header>
+                
                 <!-- .TableOfContents -->
                 {{ partial "toc.html" . }}
 
-                <!-- ".Content" pulls from the markdown content of the corresponding _index.md -->
+                <!-- Content -->
                 {{.Content}}
             </article>
 

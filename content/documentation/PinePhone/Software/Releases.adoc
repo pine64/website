@@ -1,6 +1,7 @@
 ---
 title: "Releases"
 draft: false
+toc: true
 menu:
   docs:
     title:
@@ -10,6 +11,7 @@ menu:
 ---
 
 :toc:
+:toclevels: 1
 
 This page contains a list of all available releases and tools for the link:/documentation/PinePhone[PinePhone] in alphabetical order.
 

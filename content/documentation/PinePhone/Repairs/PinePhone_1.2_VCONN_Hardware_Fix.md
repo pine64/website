@@ -5,9 +5,11 @@ hidden: true
 menu:
   docs:
     title:
-    parent: "PinePhone/Hardware_fixes_and_mods"
-    identifier: "PinePhone/Hardware_fixes_and_mods/PinePhone_1.2_VCONN_Hardware_Fix"
-    weight: 
+    parent: "PinePhone/Repairs"
+    identifier: "PinePhone/Repairs/PinePhone_1.2_VCONN_Hardware_Fix"
+    weight:
+aliases:
+  - /documentation/PinePhone/Hardware_fixes_and_mods/PinePhone_1.2_VCONN_Hardware_Fix/
 ---
 
 This page details a hardware fix for an issue that was found on early PinePhone hardware revisions (see [PinePhone](/documentation/PinePhone/Revisions/) for an overview of the different revisions) and has been fixed since the 1.2a hardware revision.

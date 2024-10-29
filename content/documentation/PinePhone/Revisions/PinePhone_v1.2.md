@@ -46,13 +46,13 @@ PWM duty cycle for the lowest brightness of the backlight is also not very predi
 
 On PinePhone 1.0, this was not the case, PWM signal was directly fed to the CE pin of the regulator, and lowest brightness setting seems more stable. On the other hand, the lowest achievable brightness was brighter than on 1.1+.
 
-Additionally there is also another backlight issue, where the brightness is lower when connecting a VBUS powered device, https://xnux.eu/log/#022. See [PinePhone 1.2b R1318 backlight hardware fix](/documentation/PinePhone/Hardware_fixes_and_mods/PinePhone_1.2b_R1318_backlight_Hardware_Fix).
+Additionally there is also another backlight issue, where the brightness is lower when connecting a VBUS powered device, https://xnux.eu/log/#022. See [PinePhone 1.2b R1318 backlight hardware fix](/documentation/PinePhone/Repairs/PinePhone_1.2b_R1318_backlight_Hardware_Fix).
 
 ### USB
 
 The USB-C CC pins are pulled to the GND by AW3512 (VCONN switches) when VCONN is off. This issue prevents cable plug/orientation detection and USB-PD communication. ANX always sees cable as plugged even if none is plugged. There’s no SW workaround for automatic detection of cable plug or power role.
 
-The issue was was fixed with revision 1.2a. See [PinePhone 1.2 VCONN hardware fix](/documentation/PinePhone/Hardware_fixes_and_mods/PinePhone_1.2_VCONN_Hardware_Fix) for details and an instruction about how to do the hardware fix.
+The issue was was fixed with revision 1.2a. See [PinePhone 1.2 VCONN hardware fix](/documentation/PinePhone/Repairs/PinePhone_1.2_VCONN_Hardware_Fix) for details and an instruction about how to do the hardware fix.
 
 In SW this can only be worked around by manual selection of PinePhone’s data and power role by the user.
 

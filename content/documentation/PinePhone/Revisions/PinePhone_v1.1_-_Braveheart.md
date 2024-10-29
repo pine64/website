@@ -35,8 +35,8 @@ Braveheart is slightly different from the 1.0 revision of the Pinephone. These d
 
 Some of the known issues can be fixed with more or less involved hardware modifications:
 
-* VCONN mod: USB-C CC pins are pulled to GND, [removing small switches](/documentation/PinePhone/Hardware_fixes_and_mods/PinePhone_1.2_VCONN_Hardware_Fix) can make USB-OTG work. A proper fix is to replace those with another component.
-* PMIC mod / [PinePhone 1.1 VBUS power usage hardware fix](/documentation/PinePhone/Hardware_fixes_and_mods/PinePhone_1.1_VBUS_power_usage_Hardware_Fix) to lower power consumption, especially when the phone is powered off.
+* VCONN mod: USB-C CC pins are pulled to GND, [removing small switches](/documentation/PinePhone/Repairs/PinePhone_1.2_VCONN_Hardware_Fix) can make USB-OTG work. A proper fix is to replace those with another component.
+* PMIC mod / [PinePhone 1.1 VBUS power usage hardware fix](/documentation/PinePhone/Repairs/PinePhone_1.1_VBUS_power_usage_Hardware_Fix) to lower power consumption, especially when the phone is powered off.
 
 ## Known issues
 
@@ -167,7 +167,7 @@ HW workaround is desoldering U1305 and U1309 switches (BGA like packages). This 
 
 HW fix is to replace AW3512 with a variant of the chip that preserves the EN signal polarity and that doesn’t have the "quick discharge function" that ties the output to the GND via a 75 Ohm resistor when the switch is OFF. mozzwald used NCP334FCT2G as a replacement.
 
-This issue is also present on the PinePhone 1.2 (CE) version and was fixed with revision 1.2a. See the [workaround](/documentation/PinePhone/Hardware_fixes_and_mods/PinePhone_1.2_VCONN_Hardware_Fix) for affected revisions.
+This issue is also present on the PinePhone 1.2 (CE) version and was fixed with revision 1.2a. See the [workaround](/documentation/PinePhone/Repairs/PinePhone_1.2_VCONN_Hardware_Fix) for affected revisions.
 
 ### Pogo Pins supply 5v0, not 3v3
 

@@ -27,4 +27,4 @@ This page contains information and resources which are specific to the v1.2a rev
 
 ## Known issues
 
-The backlight issue of v1.2 is still present, see [PinePhone v1.2](/documentation/PinePhone/Revisions/PinePhone_v1.2#backlight). There is also another backlight issue, where the brightness is lower when connecting a VBUS powered device, https://xnux.eu/log/#022. See [PinePhone 1.2b R1318 backlight hardware fix](/documentation/PinePhone/Hardware_fixes_and_mods/PinePhone_1.2b_R1318_backlight_Hardware_Fix).
+The backlight issue of v1.2 is still present, see [PinePhone v1.2](/documentation/PinePhone/Revisions/PinePhone_v1.2#backlight). There is also another backlight issue, where the brightness is lower when connecting a VBUS powered device, https://xnux.eu/log/#022. See [PinePhone 1.2b R1318 backlight hardware fix](/documentation/PinePhone/Repairs/PinePhone_1.2b_R1318_backlight_Hardware_Fix).

@@ -5,9 +5,11 @@ hidden: true
 menu:
   docs:
     title:
-    parent: "PinePhone/Hardware_fixes_and_mods"
-    identifier: "PinePhone/Hardware_fixes_and_mods/PinePhone_1.1_VBUS_power_usage_Hardware_Fix"
-    weight: 
+    parent: "PinePhone/Repairs"
+    identifier: "PinePhone/Repairs/PinePhone_1.1_VBUS_power_usage_Hardware_Fix"
+    weight:
+aliases:
+  - /documentation/PinePhone/Hardware_fixes_and_mods/PinePhone_1.1_VBUS_power_usage_Hardware_Fix/
 ---
 
 This page details a hardware fix for an issue that affects some early [v1.1 Braveheart](/documentation/PinePhone/Revisions) units (fixed since [1.2 community edition](/documentation/PinePhone/Revisions/PinePhone_v1.2) included).
@@ -24,7 +26,7 @@ FIXME: confirm ["Project Don’t Be Evil" devkit](/documentation/PinePhone/Revis
 
 ## Disclaimer
 
-Though easier to perform than the [PinePhone 1.2 VCONN hardware fix](/documentation/PinePhone/Hardware_fixes_and_mods/PinePhone_1.2_VCONN_Hardware_Fix), this fix requires desoldering relatively small Surface Mount Technology (SMT) components, therefore some experience with soldering is recommended.
+Though easier to perform than the [PinePhone 1.2 VCONN hardware fix](/documentation/PinePhone/Repairs/PinePhone_1.2_VCONN_Hardware_Fix), this fix requires desoldering relatively small Surface Mount Technology (SMT) components, therefore some experience with soldering is recommended.
 
 ## Issue description
 

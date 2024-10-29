@@ -1,6 +1,7 @@
 ---
 title: "Releases"
 draft: false
+toc: true
 menu:
   docs:
     title:

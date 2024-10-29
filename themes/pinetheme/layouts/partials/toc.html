@@ -1,4 +1,4 @@
-{{ if and (ge (len .TableOfContents) 100) (ne .Params.toc "false") }}
+{{ if and (isset .Params "toc") (eq .Params.toc true) }}
 
     {{.TableOfContents}}
     <hr>

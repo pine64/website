@@ -2,6 +2,7 @@
 title: "Documentation"
 description: "The Documentation section provides comprehensive information and guidance for various PINE64 devices."
 draft: false
+toc: true
 menu:
   docs:
     title:
