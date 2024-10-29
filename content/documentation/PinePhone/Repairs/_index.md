@@ -142,7 +142,7 @@ Many issues with the USB-C side board can be fixed by replacing the [USB-C side 
 
 The microphone may stop working or occasionally stop working or give off static when power is plugged in.
 
-One possible fix is to User:Earboxer/Shim_U101|shim U101 (as seen on the [back side of the USB-C side board](https://files.pine64.org/doc/PinePhone/PinePhone%20USB-C%20small%20board%20bottom%20placement%20v1.0%2020190730.pdf)) with a piece of paper or cardboard.
+One possible fix is to shim U101 (as seen on the [back side of the USB-C side board](https://files.pine64.org/doc/PinePhone/PinePhone%20USB-C%20small%20board%20bottom%20placement%20v1.0%2020190730.pdf)) with a piece of paper or cardboard, see https://wiki.pine64.org/wiki/User:Earboxer/Shim_U101.
 
 #### Bottom speaker
 
