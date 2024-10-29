@@ -15,9 +15,8 @@ Please test as many things as you can find with your Pinebook Pro and share the 
 
 === NVMe SSD drives
 
-[NOTE]
-====
-**Please note that this list of compatible M.2 SSDs should be taken with a grain of salt.**
+{{< admonition type="note" >}}
+Please note that this list of compatible M.2 SSDs should be taken with a grain of salt.
 
 In more detail, the output of the 3.3&nbsp;V regulator inside the Pinebook Pro, which powers the M.2 SSD, becomes very noisy when the battery voltage drops below 3.9&nbsp;V or so. This is a hardware issue of the Pinebook Pro that cannot be corrected without extensive hardware modifications, and it causes many M.2 SSDs to lock up under load and cause operating system crashes. The real trouble is that for some M.2 SSDs it takes a couple of hours of heavy I/O to lock up under these conditions, which may make them appear to be working reliably, while they eventually fail.
 
@@ -26,7 +25,7 @@ To test an M.2 SSD properly in a Pinebook Pro, it needs to be put under heavy I/
 To sum it up, an M.2 SSD that qualifies to work reliably in the Pinebook Pro must both consume low amounts of power, 2.5&nbsp;W or less, and be tolerant of the noisy 3.3&nbsp;V power supply. The PINE64 community usually recommends https://www.intel.com/content/dam/www/public/us/en/documents/product-briefs/660p-series-brief.pdf[Intel 660p] M.2 SSDs, 512&nbsp;GB or 1&nbsp;TB variants, which reportedly work well and satisfy both criteria. The 2&nbsp;TB variant of the Intel 660p may be slightly more power hungry.
 
 Additionally, it's recommended to use an M.2 SSD that supports four PCI Express lanes, which the aforementioned Intel 660p models support. The PCI Express interface of the RK3399 https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=712fa1777207[is limited] to the Gen1 speed, which may cause degraded performance of M.2 SSDs that support fewer than four PCI Express lanes.
-====
+{{< /admonition >}}
 
 Only PCI Express M.2 drives can work, due to the available connectivity of the Pinebook Pro. Consequently, SATA or USB M.2 cards will not work.
 

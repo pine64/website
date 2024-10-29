@@ -52,10 +52,6 @@ paginate = 9
     noHl = false
     style = 'autumn'
     tabWidth = 4
-  [markup.tableOfContents]
-    endLevel = 9
-    ordered = false
-    startLevel = 2
 
 [permalinks]
   blog = '/:year/:month/:day/:filename/'
