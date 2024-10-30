@@ -2,7 +2,7 @@
 <!-- Previous section -->
 {{ with .NextInSection }}
     <div class="previous-post">
-        <a class="previous" href="{{ .Permalink }}">« {{.Title}}</a>
+        <a class="previous" href="{{ .RelPermalink }}">« {{.Title}}</a>
     </div>
 {{ else }}
     <div class="previous-post">
@@ -14,7 +14,7 @@
 {{ with .PrevInSection }}
 
     <div class="next-post">
-        <a class="next" href="{{ .Permalink }}">{{.Title}} »</a>
+        <a class="next" href="{{ .RelPermalink }}">{{.Title}} »</a>
     </div>
 {{ else }}
     {{ $parentPage := .Parent}}

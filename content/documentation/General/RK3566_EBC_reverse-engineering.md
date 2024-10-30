@@ -131,34 +131,34 @@ Use this if you want to manually look up dwarf symbols for some reason.
 
 This will produce a lot of output, but we’re mainly concerned with the start of the dump. We’ll find things like:
  
- &lt;2&gt;&lt;101f8&gt;: Abbrev Number: 0
- &lt;1&gt;&lt;101f9&gt;: Abbrev Number: 79 (DW_TAG_subprogram)
-    &lt;101fa&gt;   DW_AT_name        : (indirect string, offset: 0xa2b4): ebc_open
-    &lt;101fe&gt;   DW_AT_decl_file   : 1
-    &lt;101ff&gt;   DW_AT_decl_line   : 1377
-    &lt;10201&gt;   DW_AT_prototyped  : 1
-    &lt;10201&gt;   DW_AT_type        : &lt;0xc6&gt;
-    &lt;10205&gt;   DW_AT_low_pc      : 0x0
-    &lt;1020d&gt;   DW_AT_high_pc     : 0xc
-    &lt;10215&gt;   DW_AT_frame_base  : 1 byte block: 9c 	(DW_OP_call_frame_cfa)
-    &lt;10217&gt;   DW_AT_GNU_all_call_sites: 1
-    &lt;10217&gt;   DW_AT_sibling     : &lt;0x1023a&gt;
- &lt;2&gt;&lt;1021b&gt;: Abbrev Number: 88 (DW_TAG_formal_parameter)
-    &lt;1021c&gt;   DW_AT_name        : (indirect string, offset: 0x1153): inode
-    &lt;10220&gt;   DW_AT_decl_file   : 1
-    &lt;10221&gt;   DW_AT_decl_line   : 1377
-    &lt;10223&gt;   DW_AT_type        : &lt;0x1c54&gt;
-    &lt;10227&gt;   DW_AT_location    : 0xd63 (location list)
- &lt;2&gt;&lt;1022b&gt;: Abbrev Number: 106 (DW_TAG_formal_parameter)
-    &lt;1022c&gt;   DW_AT_name        : (indirect string, offset: 0x8b06): file
-    &lt;10230&gt;   DW_AT_decl_file   : 1
-    &lt;10231&gt;   DW_AT_decl_line   : 1377
-    &lt;10233&gt;   DW_AT_type        : &lt;0x551f&gt;
-    &lt;10237&gt;   DW_AT_location    : 1 byte block: 51 	(DW_OP_reg1 (x1))
+ <2><101f8>: Abbrev Number: 0
+ <1><101f9>: Abbrev Number: 79 (DW_TAG_subprogram)
+    <101fa>   DW_AT_name        : (indirect string, offset: 0xa2b4): ebc_open
+    <101fe>   DW_AT_decl_file   : 1
+    <101ff>   DW_AT_decl_line   : 1377
+    <10201>   DW_AT_prototyped  : 1
+    <10201>   DW_AT_type        : <0xc6>
+    <10205>   DW_AT_low_pc      : 0x0
+    <1020d>   DW_AT_high_pc     : 0xc
+    <10215>   DW_AT_frame_base  : 1 byte block: 9c 	(DW_OP_call_frame_cfa)
+    <10217>   DW_AT_GNU_all_call_sites: 1
+    <10217>   DW_AT_sibling     : <0x1023a>
+ <2><1021b>: Abbrev Number: 88 (DW_TAG_formal_parameter)
+    <1021c>   DW_AT_name        : (indirect string, offset: 0x1153): inode
+    <10220>   DW_AT_decl_file   : 1
+    <10221>   DW_AT_decl_line   : 1377
+    <10223>   DW_AT_type        : <0x1c54>
+    <10227>   DW_AT_location    : 0xd63 (location list)
+ <2><1022b>: Abbrev Number: 106 (DW_TAG_formal_parameter)
+    <1022c>   DW_AT_name        : (indirect string, offset: 0x8b06): file
+    <10230>   DW_AT_decl_file   : 1
+    <10231>   DW_AT_decl_line   : 1377
+    <10233>   DW_AT_type        : <0x551f>
+    <10237>   DW_AT_location    : 1 byte block: 51 	(DW_OP_reg1 (x1))
 
 This essentially tells us the full function signature of `ebc_open`:
 
-`DW_TAG_subprogram` tells us of a function, with `DW_AT_name` letting us know that this is `ebc_open`. `DW_AT_type` of `0xc6` let’s us know, once we jump to `&lt;c6&gt;`, that this function’s return type is a signed 32-bit integer.
+`DW_TAG_subprogram` tells us of a function, with `DW_AT_name` letting us know that this is `ebc_open`. `DW_AT_type` of `0xc6` let’s us know, once we jump to `<c6>`, that this function’s return type is a signed 32-bit integer.
 
 The `DW_TAG_formal_parameter` that follow tell us of each of the parameter the function takes. The first one is called `inode` and is of type `0x1c54`. Referencing what this type is, we find:
 

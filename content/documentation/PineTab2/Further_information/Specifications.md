@@ -38,7 +38,7 @@ menu:
   * 1x MicroHDMI
   * 1x 4 pole 3.5mm audio jack (microphone right) and headphone detection
   * 2x speakers + microphone (microphone left)
-  * 1x 5 pin (USB 2.0; &lt;=680mA) Pogo connector for keyboard
+  * 1x 5 pin (USB 2.0; <=680mA) Pogo connector for keyboard
   * (PCIe on PCB as a flat flex ribbon connector, no room for M.2 NVMe drives in case)
 * **Sensors:**
   * Accelerometer: Silan SC7A20

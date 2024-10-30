@@ -259,7 +259,7 @@ J1201:
 J1300:
 
 * OK-50F-04 40-pin connector
-* Note: This part is probably produced by Shenzhen Yaqi Technology Co., which is part of OCN in Taiwan, and uses the Archie brand name.&lt;
+* Note: This part is probably produced by Shenzhen Yaqi Technology Co., which is part of OCN in Taiwan, and uses the Archie brand name.<
 
 U1304:
 

@@ -25,7 +25,7 @@ We will now go into various ways one might go about getting a working battery.
 
 You will need:
 
-* an Engineer PA-20 ([Amazon Search](https://www.amazon.com/s?k=Engineer+Pa-20), [eBay Search](https://www.ebay.com/sch/i.html?kw=Engineer%20PA-20)) or Hozan P-707 ([Amazon Search](https://www.amazon.com/s?k=Hozan+P-707), [eBay Search](https://www.ebay.com/sch/i.html?kw=Hozan%20P-707)) or similar crimp tool (&lt;$80, good to have around anyway)
+* an Engineer PA-20 ([Amazon Search](https://www.amazon.com/s?k=Engineer+Pa-20), [eBay Search](https://www.ebay.com/sch/i.html?kw=Engineer%20PA-20)) or Hozan P-707 ([Amazon Search](https://www.amazon.com/s?k=Hozan+P-707), [eBay Search](https://www.ebay.com/sch/i.html?kw=Hozan%20P-707)) or similar crimp tool (<$80, good to have around anyway)
   * The Hozan P-707 is also comparatively good at crimping "Dupont"-style terminals, in case you find yourself doing that a lot, because it provides round crimping holes in addition to rectangular ones.
 * JST PHR-3 receptacles ([~$0.05 on digikey](https://www.digikey.com/en/products/detail/jst-sales-america-inc/PHR-3/527357))
 * 3&times; JST SPH-002T-P0.5L crimp terminals ([~$0.03 on digikey per terminal](https://www.digikey.com/en/products/detail/jst-sales-america-inc/SPH-002T-P0-5L/1300246))
@@ -77,29 +77,29 @@ For the battery to be correctly detected, you will need to edit the device tree 
 	// add this to root node (you may need to modify the values to fit your chosen battery)
 	battery: battery {
 		compatible = "simple-battery";
-		charge-full-design-microamp-hours = &lt;6400000>;
-		charge-term-current-microamp = &lt;200000>;
-		constant-charge-current-max-microamp = &lt;2000000>;
-		constant-charge-voltage-max-microvolt = &lt;4200000>;
-		factory-internal-resistance-micro-ohms = &lt;117000>;
-		voltage-max-design-microvolt = &lt;4200000>;
-		voltage-min-design-microvolt = &lt;3200000>;
+		charge-full-design-microamp-hours = <6400000>;
+		charge-term-current-microamp = <200000>;
+		constant-charge-current-max-microamp = <2000000>;
+		constant-charge-voltage-max-microvolt = <4200000>;
+		factory-internal-resistance-micro-ohms = <117000>;
+		voltage-max-design-microvolt = <4200000>;
+		voltage-min-design-microvolt = <3200000>;
 
-		ocv-capacity-celsius = &lt;20>;
-		ocv-capacity-table-0 =  &lt;4200000 100>, &lt;4054000 95>, &lt;3984000 90>, &lt;3926000 85>,
-					&lt;3874000 80>, &lt;3826000 75>, &lt;3783000 70>, &lt;3746000 65>,
-					&lt;3714000 60>, &lt;3683000 55>, &lt;3650000 50>, &lt;3628000 45>,
-					&lt;3612000 40>, &lt;3600000 35>, &lt;3587000 30>, &lt;3571000 25>,
-					&lt;3552000 20>, &lt;3525000 15>, &lt;3492000 10>, &lt;3446000 5>,
-					&lt;3400000 0>;
+		ocv-capacity-celsius = <20>;
+		ocv-capacity-table-0 =  <4200000 100>, <4054000 95>, <3984000 90>, <3926000 85>,
+					<3874000 80>, <3826000 75>, <3783000 70>, <3746000 65>,
+					<3714000 60>, <3683000 55>, <3650000 50>, <3628000 45>,
+					<3612000 40>, <3600000 35>, <3587000 30>, <3571000 25>,
+					<3552000 20>, <3525000 15>, <3492000 10>, <3446000 5>,
+					<3400000 0>;
 	};
 
 	// add this to &rk817 node
 	rk817_charger: charger {
-		monitored-battery = &lt;&battery>;
-		rockchip,resistor-sense-micro-ohms = &lt;10000>;
-		rockchip,sleep-enter-current-microamp = &lt;300000>;
-		rockchip,sleep-filter-current-microamp = &lt;100000>;
+		monitored-battery = <&battery>;
+		rockchip,resistor-sense-micro-ohms = <10000>;
+		rockchip,sleep-enter-current-microamp = <300000>;
+		rockchip,sleep-filter-current-microamp = <100000>;
 	};
 ```
 

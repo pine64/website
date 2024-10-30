@@ -42,7 +42,7 @@ menu:
 
 The board comes with two cooler mounts, a 4-hole mount that appears to be spaced 55x55mm apart, and the ~60mm diagonal "northbridge heatsink" mount the ROCKPro64 and Quartz64 Model A uses.
 
-RK3588 is slightly (&lt;1mm?) taller than the DRAM chips, use a thick enough thermal pad instead of thermal compound.
+RK3588 is slightly (<1mm?) taller than the DRAM chips, use a thick enough thermal pad instead of thermal compound.
 
 ## UART
 

@@ -28,7 +28,7 @@
 <!-- If $i_prev >= 0 -->
 {{ if and (ge $i_prev 0) (ne "/documentation/" .Parent.RelPermalink) }}
     <div class="previous-post">
-        <a class="previous" href="{{(index ($arr) $i_prev).Permalink}}">« {{(index ($arr) $i_prev).Title}}</a>
+        <a class="previous" href="{{(index ($arr) $i_prev).RelPermalink}}">« {{(index ($arr) $i_prev).Title}}</a>
     </div>
 {{ else }}
     <div class="previous-post">
@@ -43,7 +43,7 @@
     <!-- Check if the current page has subpages (for the "next" button) -->
     {{if gt (len (.Pages.ByParam "menu.docs.weight")) 0}}
         <div class="next-post">
-            <a class="next" href="{{(index ($arr2) 0).Permalink}}">{{(index ($arr2) 0).Title}} »</a>
+            <a class="next" href="{{(index ($arr2) 0).RelPermalink}}">{{(index ($arr2) 0).Title}} »</a>
         </div>
     <!-- Page has no subpages -->
     {{else}}
@@ -63,7 +63,7 @@
                 <!-- Check prevents jumping to next device when there are no subpages -->
                 {{if ne "/documentation/" .Parent.Parent.RelPermalink}}
                     <div class="next-post">
-                        <a class="next" href="{{(index ($arr3) $i_next).Permalink}}">{{(index ($arr3) $i_next).Title}} »</a>
+                        <a class="next" href="{{(index ($arr3) $i_next).RelPermalink}}">{{(index ($arr3) $i_next).Title}} »</a>
                     </div>
                 {{end}}
             <!-- Case: Last subsection-->
@@ -72,7 +72,7 @@
             {{end}}
         {{else}}
             <div class="next-post">
-                <a class="next" href="{{(index ($arr) $i_next).Permalink}}">{{(index ($arr) $i_next).Title}} »</a>
+                <a class="next" href="{{(index ($arr) $i_next).RelPermalink}}">{{(index ($arr) $i_next).Title}} »</a>
             </div>
         {{end}}
     {{end}}

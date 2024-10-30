@@ -8,7 +8,7 @@
                     <!-- Filter top level -->
                     {{ if ne .Kind "home" }}
 
-                    <a href="{{ .Permalink }}">{{ .LinkTitle }}</a> /
+                    <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a> /
 
                     {{ end }}
                 {{ end }}

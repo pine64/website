@@ -9,7 +9,7 @@
 
         <p>
         {{ with .OutputFormats.Get "rss" -}}
-        {{ printf `<a href="%s">RSS feed</a>` .Permalink | safeHTML }}
+        <a href="{{ .RelPermalink | safeHTML }}">RSS feed</a>
         {{ end -}}
         </p>
     </div>

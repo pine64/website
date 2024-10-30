@@ -21,7 +21,7 @@ Following a fix used for the Quartz Model A (which uses the same SoC as the Pine
 * Open `arch/arm64/boot/dts/rockchip/rk3566-pinenote.dtsi`
 * Go to line 939, "bluetooth", under the "uart1" section
 * Edit the two lines that read "device-wake-gpios" and "host-wake-gpios"; you want them to read "device-wakeup-gpios" and "host-wakeup-gpios" respectively
-* Add the following line to the end of the bluetooth section (under the vddio-supply line in my .dtsi): "max-speed = &lt;3000000>;"
+* Add the following line to the end of the bluetooth section (under the vddio-supply line in my .dtsi): "max-speed = <3000000>;"
 * Count your zeros, don’t forget your punctuation..
 
 **Caveats:**

@@ -19,4 +19,4 @@ Notes:
 
 * MD5 (TAR-GZip file): 77c2ff57ea3372fb04da7fb49e17d12b
 * File size: 79.00 GB
-* Just the boot blobs (&lt;1MB): https://wiki.pine64.org/wiki/File:Rk35-blobs.tar.gz
+* Just the boot blobs (<1MB): https://wiki.pine64.org/wiki/File:Rk35-blobs.tar.gz

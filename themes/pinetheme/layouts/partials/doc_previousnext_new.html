@@ -1,7 +1,7 @@
 {{ $pages := where site.RegularPages "Section" "documentation" }}
 {{ with $pages.ByWeight.Next . }}
-	<a title="Next page in {{ .Section }}" href="{{ .Permalink }}">{{.Title}}</a>
+	<a title="Next page in {{ .Section }}" href="{{ .RelPermalink }}">{{.Title}}</a>
 {{ end }}
 {{ with $pages.ByWeight.Prev . }}
-	<a title="Previous page in {{ .Section }}" href="{{ .Permalink }}">{{.Title}}</a>
+	<a title="Previous page in {{ .Section }}" href="{{ .RelPermalink }}">{{.Title}}</a>
 {{ end }}

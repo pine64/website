@@ -15,7 +15,7 @@ Serial console UART is enabled by flipping the UART switch to the ON position (i
 
 With the UART switch in the ON position, the console is relayed via the headset jack, on which the audio output is no longer available. Please ensure that you are using a 3.3&nbsp;V UART interface (such as the CH340, FTDI-232R, or PL2303, which are available in both 3.3&nbsp;V and 5&nbsp;V variants) to avoid damage to the RK3399 SoC. Older version of the serial console cable sold by the Pine Store used wrong voltage level and should not be used, see [this forum thread](https://forum.pine64.org/showthread.php?tid=9367) for further information. Recent version of the same cable uses the right voltage level, which can also be checked by measuring the voltage on the TX ring.
 
-Insert the USB plug of the cable into a USB port on the machine that you will use to monitor the Pinebook Pro’s serial console, ensuring that the audio jack of the serial cable is be fully inserted into the Pinebook Pro’s headphone port. Run &lt;code>lsusb&lt;/code> in a terminal and you should see a line similar to this:
+Insert the USB plug of the cable into a USB port on the machine that you will use to monitor the Pinebook Pro’s serial console, ensuring that the audio jack of the serial cable is be fully inserted into the Pinebook Pro’s headphone port. Run <code>lsusb</code> in a terminal and you should see a line similar to this:
 
     Bus 001 Device 058: ID 1a86:7523 QinHeng Electronics HL-340 USB-Serial adapter
 

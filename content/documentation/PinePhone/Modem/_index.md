@@ -19,7 +19,7 @@ To send AT commands to the modem under Linux, `minicom` or the often-preinstalle
 
 _atinout_ example:
 ```
-echo "AT+&lt;command here>" | sudo atinout - /dev/ttyUSB2 -
+echo "AT+<command here>" | sudo atinout - /dev/ttyUSB2 -
 ```
 
 _minicom_ example:

@@ -1,7 +1,7 @@
 <!-- Previous section -->
 {{if .NextInSection}}
     <div class="previous-post">
-        <a class="previous" href="{{ .NextInSection.Permalink }}">« {{.NextInSection.Title}}</a>
+        <a class="previous" href="{{ .NextInSection.RelPermalink }}">« {{.NextInSection.Title}}</a>
     </div>
 {{ else }}
     {{ with index .Pages 0 }}
@@ -14,6 +14,6 @@
 <!-- Next section -->
 {{if .PrevInSection}}
     <div class="next-post">
-        <a class="next" href="{{ .PrevInSection.Permalink }}">{{.PrevInSection.Title}} »</a>
+        <a class="next" href="{{ .PrevInSection.RelPermalink }}">{{.PrevInSection.Title}} »</a>
     </div>
 {{ end }}

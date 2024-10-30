@@ -23,4 +23,4 @@ You only need the 5A power supply for Model A if you plan on connecting hard dis
 
 ## How Much Power Does It Consume?
 
-For Model B, it’s &lt;2W in idle (powertop tunables not set), and &lt;5W under full CPU load (`stress-ng -c4`). Model A will be similar as it’s the same SoC.
+For Model B, it’s <2W in idle (powertop tunables not set), and <5W under full CPU load (`stress-ng -c4`). Model A will be similar as it’s the same SoC.

@@ -197,7 +197,7 @@ While in maskrom mode, we need to have a u-boot to download onto the device for 
 You also need to install Python and pyelftools.
 
 {{< admonition type="note" >}}
- The rkbin is a &gt;5GB download! This will take some time to clone and process the deltas.
+ The rkbin is a >5GB download! This will take some time to clone and process the deltas.
 {{< /admonition >}}
 
 ```

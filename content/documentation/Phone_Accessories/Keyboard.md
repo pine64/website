@@ -126,7 +126,7 @@ Much time and effort went into the development of this firmware. If you wish to 
 ### Firmware License
 
 ```
-Copyright (C) 2021 Ondřej Jirman &lt;megi@xff.cz>
+Copyright (C) 2021 Ondřej Jirman <megi@xff.cz>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

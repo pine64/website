@@ -11,7 +11,7 @@ menu:
 
 ## Key left of Z ( \ | )
 
-How to map the key next to Z to the symbols on \ and | (rather than &lt;>) ?
+How to map the key next to Z to the symbols on \ and | (rather than <>) ?
 
 Choose the alternative international US keyboard layout and variant. The name will depend on you desktop environment:
 

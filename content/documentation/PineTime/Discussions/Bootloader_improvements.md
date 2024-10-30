@@ -13,7 +13,7 @@ Discussion by the user JF:
 
 ## Request for comments
 
-In this page, I explain the changes and improvements I would like to implement to the MCUBoot bootloader to make it more reliable, and to allow bootloader upgrade and switch (mcuboot &lt;-> wasp-bootloader, for example).
+In this page, I explain the changes and improvements I would like to implement to the MCUBoot bootloader to make it more reliable, and to allow bootloader upgrade and switch (mcuboot <-> wasp-bootloader, for example).
 I try to explain why I made these choices too.
 
 Do not hesitate to edit this page and add a new section if you want to add any comment to these points (if you agree, disagree, want to try something else).

@@ -48,7 +48,7 @@ Download:
 * [Direct download](http://files.pine64.org/SDK/Quartz64/QUARTZ64-model-A_eink.android11_SDK.tar.gz) from _pine64.org_ (72.88GB, MD5 of the TAR-GZip file _293a550584298de4fb95ceae18103672_)
 * [Mirror by mwfc](https://tmp.mwfc.info/pinenote/QUARTZ64-model-A_eink.android11_SDK.tar.gz)
 * An unofficial torrent download provided by a community member of the BSP Linux and Android SDKs can be found [here](https://cdn.discordapp.com/attachments/870707390998282292/907726420204208148/pinenote.torrent) (100GB).
-* Just the boot blobs (&lt;1MB): https://wiki.pine64.org/wiki/File:Rk35-blobs.tar.gz
+* Just the boot blobs (<1MB): https://wiki.pine64.org/wiki/File:Rk35-blobs.tar.gz
 
 Notes:
 

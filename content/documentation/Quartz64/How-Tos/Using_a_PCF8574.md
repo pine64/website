@@ -137,7 +137,7 @@ Hook up SDA to pin number 3 of your board, and SCL to pin number 5. Connect GND 
 
 ## Using the GPIOs
 
-Upon booting your board with your modified device tree blob, you should have an additional ***/dev/gpiochip_&lt;n>_*** device, most likely ***/dev/gpiochip5***. You can verify this by running libgpiod’s `gpioinfo` utility, which should now show you an additional GPIO chip with only 8 lines.
+Upon booting your board with your modified device tree blob, you should have an additional ***/dev/gpiochip_<n>_*** device, most likely ***/dev/gpiochip5***. You can verify this by running libgpiod’s `gpioinfo` utility, which should now show you an additional GPIO chip with only 8 lines.
 
     gpiochip5 - 8 lines:
             line   0:      unnamed       unused   input  active-high

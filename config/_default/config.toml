@@ -6,12 +6,12 @@ theme = "pinetheme"
 # Blog post summary limit
 summaryLength = 30
 
+# Stylistic options
 pluralizelisttitles = "false"
-
-# Required to get well formatted code blocks
-pygmentsUseClasses = true
-pygmentsCodeFences = true
 disablePathToLower = true
+
+# Syntax highlighting in fenced code
+pygmentsCodeFences = true
 
 # Table of contents
 tableOfContents = true
@@ -37,11 +37,10 @@ paginate = 9
       idprefix = ''
       allow-uri-read = ""
       icons = "font"
-      source-highlighter = "rouge"
   [markup.highlight]
     anchorLineNos = false
     codeFences = true
-    guessSyntax = false
+    guessSyntax = true
     hl_Lines = ''
     hl_inline = false
     lineAnchors = ''
@@ -50,7 +49,7 @@ paginate = 9
     lineNumbersInTable = true
     noClasses = true
     noHl = false
-    style = 'autumn'
+    style = 'pastie'
     tabWidth = 4
 
 [permalinks]

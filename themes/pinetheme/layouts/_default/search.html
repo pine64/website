@@ -62,22 +62,24 @@
 
     <script id="search-result-template" type="text/x-js-template">
     <div id="summary-${key}">
-        <h3><a href="${link}">${location} / ${title}</a></h3>
+        <h2><a href="${link}">${title}</a></h2>
+        <small><h4><a href="${link}">${location}</a></h4></small>
         <p>${snippet}</p>
         <p>
             <small>
                 ${ isset tags }Tags: ${tags}<br>${ end }
             </small>
         </p>
+        <br><hr><br>
     </div>
     </script>
 
     {{- $js_fuse := resources.Get "js/fuse/fuse.min.js" | minify | fingerprint -}}
-    <script src='{{ $js_fuse.Permalink }}' integrity="{{ $js_fuse.Data.Integrity }}"></script>
+    <script src='{{ $js_fuse.RelPermalink }}' integrity="{{ $js_fuse.Data.Integrity }}"></script>
     {{- $js_mark := resources.Get "js/mark/mark.min.js" | minify | fingerprint -}}
-    <script src='{{ $js_mark.Permalink }}' integrity="{{ $js_mark.Data.Integrity }}"></script>
+    <script src='{{ $js_mark.RelPermalink }}' integrity="{{ $js_mark.Data.Integrity }}"></script>
     {{- $js_search := resources.Get "js/search.js" | minify | fingerprint -}}
-    <script src='{{ $js_search.Permalink }}' integrity="{{ $js_search.Data.Integrity }}"></script>
+    <script src='{{ $js_search.RelPermalink }}' integrity="{{ $js_search.Data.Integrity }}"></script>
 </div>
 
 {{ end }}

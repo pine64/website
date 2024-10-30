@@ -49,13 +49,13 @@ You may have some or all of these in your junk/parts drawer. They’re all commo
 ## Install
 
 * Mount your serial port
-  * Serial RX &lt;-> DCE RX (in)
-  * Serial TX &lt;-> DCE TX (out)
+  * Serial RX <-> DCE RX (in)
+  * Serial TX <-> DCE TX (out)
 * attach the header jumpers to their respectively labeled points on the various headers
-  * RP64 Ground  &lt;->  pi2bus-6
-  * RP64 RX (in) &lt;-> pi2bus-8
-  * RP64 TX (out) &lt;-> pi2bus-10
-  * RP64 3.3v &lt;-> pi2bus-1
+  * RP64 Ground  <->  pi2bus-6
+  * RP64 RX (in) <-> pi2bus-8
+  * RP64 TX (out) <-> pi2bus-10
+  * RP64 3.3v <-> pi2bus-1
 
 ## Circuit
 

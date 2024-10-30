@@ -82,7 +82,7 @@ function populateResults(results) {
 
         var output = render(templateDefinition, {
             key: key,
-            location: value.item.permalink.split('//')[1].split('/').slice(1, -2).join(' / ').replace(/_/g, ' '),
+            location: value.item.permalink,
             title: value.item.title,
             link: value.item.permalink,
             tags: tags,

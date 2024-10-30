@@ -44,4 +44,4 @@ If the eMMC module is enabled after boot from an SD card, you can detect this ch
     echo fe330000.mmc >/sys/bus/platform/drivers/sdhci-arasan/unbind
     echo fe330000.mmc >/sys/bus/platform/drivers/sdhci-arasan/bind
 
-(Note: with the device trees coming with older kernels (Linux &lt; 5.11), the device name may be fe330000.sdhci instead of fe330000.mmc)
+(Note: with the device trees coming with older kernels (Linux < 5.11), the device name may be fe330000.sdhci instead of fe330000.mmc)

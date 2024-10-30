@@ -8,7 +8,7 @@
 }
 #doc-container h2 {
     border-bottom: 1px solid #ddd;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 20px;
     padding: .2em 0;
 }
@@ -58,7 +58,7 @@
     padding-left: 0 !important;
 }
 #doc-nav .sidebar-nav ul ul {
-    border-left: 1px solid #fafafa;
+    border-left: 1px solid #e2e2e2;
     margin-left: 10px;
 }
 #doc-nav .sidebar-nav-backlink {
@@ -113,6 +113,10 @@
 article {
     min-height: 400px;
 }
+.toc_hr {
+    margin: 10px 0;
+    background-color: #ddd;
+}
 #doc-container img {
     max-width: 100%;
 }
@@ -120,8 +124,14 @@ article {
 div#doc-page h1 {
     color: var(--blue);
 }
-#doc-page article ol {
-    margin-bottom: 1em;
+#doc-page article ol, 
+#doc-page article ul {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+#doc-page article ol li, 
+#doc-page article ul li {
+    padding-bottom: 4px;
 }
 div#doc-page code {
     font-family: source code pro, lucida console, monospace;
@@ -159,7 +169,8 @@ table.linenotable tr td {
 td.linenos.gl {
     user-select: none;
 }
-div#doc-page pre strong, div#doc-page code strong {
+div#doc-page pre strong, 
+div#doc-page code strong {
     font-weight: 600;
 }
 div#doc-page .line-through {
@@ -212,6 +223,14 @@ div#doc-page article {
 }
 div#doc-page .ulist {
     padding-bottom: 1rem;
+}
+
+div#doc-page article > blockquote {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 8px;
+    padding-left: 8px;
+    border-left: 3px solid #ccc;
 }
 
 /* Admonition */

@@ -30,24 +30,36 @@ th p {
 td p {
     margin-bottom: 0;
 }
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--blue);
     padding: 12px 0 12px 0;
     font-weight: 400;
 }
-h2 a, h3 a, h4 a, h5 a, h6 a {
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
     color: var(--blue);
 }
 .imageblock {
     margin-bottom: 1.6rem;
 }
-ul, li, ol {
+ul,
+li,
+ol {
     list-style-position: inside;
 }
-ul li p, ol li p {
+ul li p,
+ol li p {
     display: inline;
 }
-ul, ol {
+ul,
+ol {
     padding-left: 1rem;
 }
  
@@ -335,7 +347,8 @@ pre {
 }
 
 /* Prevent the "$ " part in rouge: console from being selected */
-.gp, .w {
+.gp, 
+.w {
     user-select: none;
 }
 
@@ -366,7 +379,9 @@ h2 {
 #header-container #hamburger {
     margin: 20px;
 }
-#hamburger, input#hamburger_cb, .dropdown-toggle { 
+#hamburger, 
+input#hamburger_cb, 
+.dropdown-toggle { 
     display: none;
 }
 #header-container #logo {
@@ -533,7 +548,8 @@ h2 {
         width: 100%;
         padding: 14px 20px;
     }
-    #main_menu .nav-link:hover, #main_menu .nav-link.active  { 
+    #main_menu .nav-link:hover, 
+    #main_menu .nav-link.active  { 
         box-shadow: none;
         color: #2969B1;
         border: none;
@@ -738,12 +754,14 @@ div.credits {
     border-top: 1px solid #aaa;
     padding: 16px 12px 16px 12px;
 }
-.devices h2, .devices h2 a {
+.devices h2, 
+.devices h2 a {
     color: #4384da;
     font-size: 1.88rem;
     font-weight: 700;
 }
-.devices h3, .devices h3 a {
+.devices h3, 
+.devices h3 a {
     font-size: 1.5rem;
     font-weight: 400;
 }
@@ -870,10 +888,12 @@ table td {
   -webkit-hyphens: auto;
   hyphens: auto;
 }
-table td.halign-right, table th.halign-right {
+table td.halign-right, 
+table th.halign-right {
     text-align: right;
 }
-table td.halign-center, table th.halign-center {
+table td.halign-center, 
+table th.halign-center {
     text-align: center;
 }
 thead {
@@ -889,22 +909,31 @@ tbody {
 
 /* Table of contents */
 
-nav#TableOfContents ul, li{
+nav#TableOfContents ul, 
+nav#TableOfContents li {
     padding-bottom: 0 !important;
 }
-nav#TableOfContents > ul, li{
+nav#TableOfContents > ul, 
+nav#TableOfContents > li {
     padding-left: 0 !important;
 }
+nav#TableOfContents ul > li {
+    padding-left: 5px !important;
+    margin-left: 5px;
+}
+
 nav#TableOfContents ol {
     list-style: inside decimal;
 }
-nav#TableOfContents ul li, ol li {
+nav#TableOfContents ul li, 
+nav#TableOfContents ol li {
     padding: 4px 4px;
 }
-nav#TableOfContents ul li ul li {
-    font-weight: 300 !important;
+nav#TableOfContents {
+    font-weight: 400 !important;
 }
-nav#TableOfContents ul ul, ol ol {
+nav#TableOfContents ul ul, 
+nav#TableOfContents ol ol {
     padding-left: 1.4em;
 }
 
@@ -930,7 +959,8 @@ button.podcast:hover {
     background-color: #333;
     color: white;
 }
-.podcast_row a:hover > .podcast_desc h3, .podcast_row a:hover > .podcast_desc {
+.podcast_row a:hover > .podcast_desc h3,
+.podcast_row a:hover > .podcast_desc {
     color: #0069B5;
 }
 .podcast_desc {
@@ -940,7 +970,8 @@ button.podcast:hover {
     background-color: #333;
     color: white;
 }
-.podcast_preview:hover p, .podcast_preview:hover h3{
+.podcast_preview:hover p,
+.podcast_preview:hover h3{
     color: #0069B5;
 }
 @media screen and (max-width: 1000px){

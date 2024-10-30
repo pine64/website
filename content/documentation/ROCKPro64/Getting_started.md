@@ -41,9 +41,9 @@ To avoid this issue, a simple [Serial Buffer Circuit](/documentation/ROCKPro64/H
 
 In terms of connections you need to perform the following from your serial console-capable device e.g. Pine64’s Woodpecker available in store:
 
-* GND &lt;-> GND (pin 6)
-* RxD &lt;-> TxD (pin 8)
-* TxD &lt;-> RxD (pin 10)
+* GND <-> GND (pin 6)
+* RxD <-> TxD (pin 8)
+* TxD <-> RxD (pin 10)
 
 After the configuration of your preferred operating system you can connect to the serial console using any of these commands:
 
@@ -82,7 +82,7 @@ Background info and historic details of this usage [can be found here.](https://
 
 Always be prepared to recover from a broken SPI boot BEFORE flashing or you will end up with a broken boot.
 
-In general the recovery is killswitching SPI through shorting pins 23 &lt;-> 25 together and then loading u-boot from a storage device e.g. SD-card or eMMC where majority of GNU distributions e.g. Manjaro usually have u-boot packaged with the provided images.
+In general the recovery is killswitching SPI through shorting pins 23 <-> 25 together and then loading u-boot from a storage device e.g. SD-card or eMMC where majority of GNU distributions e.g. Manjaro usually have u-boot packaged with the provided images.
 
 Follow instructions in https://github.com/sigmaris/u-boot/wiki/Flashing-U-Boot-to-SPI#instructions-for-rockpro64
 

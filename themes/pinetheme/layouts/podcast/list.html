@@ -2,7 +2,7 @@
 
 <!-- Get the RSS feed URL -->
 {{ with .OutputFormats.Get "rss" -}}
-{{ $rss := .Permalink | safeHTML }}
+{{ $rss := .RelPermalink | safeHTML }}
 
 <div class="box full themelightblue">
     <div class="box pad">
