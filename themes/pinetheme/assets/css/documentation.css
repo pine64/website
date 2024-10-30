@@ -124,14 +124,21 @@ article {
 div#doc-page h1 {
     color: var(--blue);
 }
-#doc-page article ol, 
-#doc-page article ul {
+/* Margin for markdown lists */
+#doc-page article > ol, 
+#doc-page article > ul {
     margin-bottom: 10px;
     line-height: 1.5;
 }
-#doc-page article ol li, 
-#doc-page article ul li {
+#doc-page article > ol li, 
+#doc-page article > ul li {
     padding-bottom: 4px;
+}
+/* Margin for adoc lists */
+#doc-page article .ulist:not(.ulist .ulist):not(.olist .ulist),
+#doc-page article .olist:not(.olist .olist):not(.ulist .olist) {
+    margin-bottom: 10px;
+    line-height: 1.5;
 }
 div#doc-page code {
     font-family: source code pro, lucida console, monospace;
@@ -221,10 +228,6 @@ div#doc-page p{
 div#doc-page article {
     margin-bottom: 2em;
 }
-div#doc-page .ulist {
-    padding-bottom: 1rem;
-}
-
 div#doc-page article > blockquote {
     margin-top: 10px;
     margin-bottom: 10px;
