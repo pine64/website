@@ -126,7 +126,7 @@ Although both devices use a similar SoC, due to the thermal constraints imposed 
 
 The PinePhone Pro is as open as the original PinePhone. Read more here.
  
-=== Will PinePhone Pro’s production be affected by global component shortages?    
+### Will PinePhone Pro’s production be affected by global component shortages?    
 
 It is highly likely that production will be affected by global component shortages at some stage, but it is very difficult for us to determine the degree, given how hard it is to foresee how the situation will unfold in the coming months. Our website features an inventory availability, stock and shipping status page updated on a regular basis. 
 

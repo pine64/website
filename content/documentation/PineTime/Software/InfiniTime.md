@@ -211,7 +211,7 @@ Link: [Version 1.4.0 "Pink Grapefruit"](https://github.com/InfiniTimeOrg/InfiniT
 * Battery level improvements
 * Attempts to fix bootloop issue
  
-=== Version 1.5.0 "Huckleberry"
+### Version 1.5.0 "Huckleberry"
 
 Link: [Version 1.5.0 "Huckleberry"](https://github.com/InfiniTimeOrg/InfiniTime/releases/tag/1.5.0)
 
@@ -221,7 +221,7 @@ Link: [Version 1.5.0 "Huckleberry"](https://github.com/InfiniTimeOrg/InfiniTime/
 * BLE improvements
 * Battery level improvements
  
-=== Version 1.6.0 "Ice Apple"
+### Version 1.6.0 "Ice Apple"
 
 Link: [Version 1.6.0 "Ice Apple"](https://github.com/InfiniTimeOrg/InfiniTime/releases/tag/1.6.0)
 
@@ -242,7 +242,8 @@ Link: [Version 1.7.0 "Jackfruit"](https://github.com/InfiniTimeOrg/InfiniTime/re
 * Battery percentage reporting
 * Disabled Touch Controller error check
 * Paddle game bounds checking
-=== Version 1.7.1 ===
+
+### Version 1.7.1
 
 Link: [Version 1.7.1](https://github.com/InfiniTimeOrg/InfiniTime/releases/tag/1.7.1)
 

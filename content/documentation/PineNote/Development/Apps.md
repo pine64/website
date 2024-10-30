@@ -96,6 +96,6 @@ High contrast theme can be found [here](https://github.com/MichiMolle/syncthing-
 
 ### Games
 	
-==== Generating crosswords 
+#### Generating crosswords 
 	
 There are some scripts [here](https://git.sr.ht/~scott__/pinenote_crossword_utilities) for generating crosswords for the Pinenote from IPUZ files.

@@ -15,37 +15,12 @@ menu:
 
 The following table shows the current supported codecs for encoding for each SoC. Support for decoding is separate.
 
-! ===
-! scope="col" {{Diagonal split header! Codec! SoC}}
-! scope="col" !  RK3328
-! scope="col" !  RK3399
-! scope="col" !  RK3566
-! scope="col" !  RK3588
-
-! scope="row" !  JPEG
-!  !  N/A
-!  !  Yes
-!  !  Yes
-!  !  No
-
-! scope="row" !  VP8
-!  !  N/A
-!  !  In review^[https://lore.kernel.org/linux-rockchip/20230309125651.23911-1-andrzej.p@collabora.com/T/]^
-!  !  No
-!  !  No
-
-! scope="row" !  H.264/AVC
-!  !  No
-!  !  No
-!  !  No
-!  !  No
-
-! scope="row" !  H.265/HEVC
-!  !  No
-!  !  N/A
-!  !  No
-!  !  No
-! ===
+| | RK3328 | RK3399 | RK3566 | RK3588 |
+| -------- | ------- | ------- | ------- | ------- |
+| JPEG | N/A | Yes | Yes | No
+| VP8 | N/A | [In review](https://lore.kernel.org/linux-rockchip/20230309125651.23911-1-andrzej.p@collabora.com/T/) | No | No
+| H.264/AVC | No | No | No | No
+| H.265/HEVC | No | N/A | No | No
 
 ## Encoding With GStreamer
 

@@ -33,11 +33,11 @@ Forum member Bullet64 has documented [how to move rootfs to an NVMe disk.](https
 
 To use Serial Console you will a need operating system that supports it on your RockPro64, by default the serial console is provided for baud 9 600 which is far too slow for rockpro64 so consider using 1 500 000 (1.5Mbps) instead **IF** your serial console device supports it (many doesn’t which results in their inability to use the console).
 
-==== 
+{{< admonition type="warning" >}}
 Do not connect RxD (pin 10) until the U-Boot SPL is running (see [RK3399 boot sequence](/documentation/General/RK3399_boot_sequence)) or the SPL will not start.
 
 To avoid this issue, a simple [Serial Buffer Circuit](/documentation/ROCKPro64/Hardware/Serial_buffer_circuit) can be installed between the RockPro64 and the serial adapter.
-==== 
+{{< /admonition >}}
 
 In terms of connections you need to perform the following from your serial console-capable device e.g. Pine64’s Woodpecker available in store:
 

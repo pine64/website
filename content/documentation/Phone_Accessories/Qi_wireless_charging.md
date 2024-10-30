@@ -9,13 +9,13 @@ menu:
     weight: 6
 ---
 
-==== 
+{{< admonition type="warning" >}}
 Possible safety hazard: If the wireless charging chip fails for some reason, do not plug the phone in to charge via USB-C. Take the back case off first. It is possible that power gets fed into the chip, causing it to overheat, possibly causing damage to the phone and creating a fire-hazard.
 
 Album of damage caused by reverse current: https://imgur.com/a/dJsp5wD
 
 Until the cause of this is determined, it is recommended NOT to use the wireless charging add-on.
-==== 
+{{< /admonition >}}
 
 {{< figure src="/documentation/images/PinePhone-Wireless-charger.jpg" width="250" >}}
 
