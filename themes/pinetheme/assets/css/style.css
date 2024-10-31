@@ -1051,6 +1051,13 @@ button.podcast:hover {
 .admonition-important .title {
     color: #e09f12;
 }
+.admonition-construction {
+    background-color: #ffe685;
+    border-color: #9f7f00;
+}
+.admonition-construction .title {
+    color: #9f7f00;
+}
 
 
 
