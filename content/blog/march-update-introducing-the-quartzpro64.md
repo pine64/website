@@ -151,7 +151,7 @@ Battery capacity reporting for the keyboard case now works in the UI on the Pine
 
 {{< youtube id="oq9m3nn-02M" >}}
 
-**LibeELEC on the original PinePhone - original video by [Megi](http://xnux.eu/)**
+**LibeELEC on the original PinePhone - original video by [Megi](https://xnux.eu/)**
 
 Lastly, an alternative X86/X86-64 emulator for ARM64 called [Fex-EMU](https://github.com/FEX-Emu/FEX) (Compared to Box86/64 it aims to be faster), has seen major improvements leading towards the goal of getting full Proton and Steam compatibility. It is great to see further work being done in this space. And although it’s being mentioned here, this obviously not only benefits the PinePhone, but any ARM64 device out there!
 

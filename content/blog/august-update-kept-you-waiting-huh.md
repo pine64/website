@@ -66,9 +66,9 @@ Speaking of deadlines, this update didn't have a very long time in the proverbia
 
 ### Rework of the community website and logo
 
-If you missed the announcement, an initial rework of the community website was announced. The announcement blog post can be read exclusively on the new beta site: https://pine64.org/2023/04/13/a_new_design/
+If you missed the announcement, an initial rework of the community website was announced. The announcement blog post can be read [exclusively on the new beta site](/2023/04/13/a_new_design/).
 
-The overall idea of the reworked community website is to move away from a WordPress site and to open up the site to contributions from all community members. This is done by hosting the website on Git and by generating the contents using the blazing-fast framework *Hugo*. Large parts of the website are created from simple markdown files, which are easy to understand and to edit. Alongside the rework of the community website, there was also a challenge launched, which has the goal of improving the appearance of the community logo. The details can be read under https://pine64.org/contests/the-logo-challenge/. Bring in your best ideas if you haven't done so yet. Ideas are best submitted to https://github.com/pine64/website/issues/12.
+The overall idea of the reworked community website is to move away from a WordPress site and to open up the site to contributions from all community members. This is done by hosting the website on Git and by generating the contents using the blazing-fast framework *Hugo*. Large parts of the website are created from simple markdown files, which are easy to understand and to edit. Alongside the rework of the community website, there was also a challenge launched, which has the goal of improving the appearance of the community logo. The details can be read under [the logo challenge](/contests/the-logo-challenge/). Bring in your best ideas if you haven't done so yet. Ideas are best submitted to https://github.com/pine64/website/issues/12.
 
 Since the last blog post, there has been various improvements made to the beta community website. The improvements include changes to the style of various sites, improvements to the front site slider and inclusion of more slides, rewrite of pages as markdown files (such as the index page), creation of more board graphics and many more changes.
 

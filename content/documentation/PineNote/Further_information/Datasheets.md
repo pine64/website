@@ -41,7 +41,7 @@ WiFi/BT module information:
 
 G Sensor information:
 
-* [Silan SC7A20 3-Axis MEMS Accelerometer](http://www.silan.com.cn/en/product/details/47.html#app01)
+* [Silan SC7A20 3-Axis MEMS Accelerometer](https://www.silan.com.cn/en/product/details/47.html#app01)
 
 Audio Amplifier information:
 

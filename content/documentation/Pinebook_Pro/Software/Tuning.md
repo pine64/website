@@ -90,9 +90,9 @@ When you first get your Pinebook Pro, you should consider setting strong passwor
 * Press Alt-Ctrl-F7 to go back to the login screen and then login as the normal user
 * Open text terminal to fix login error: "Configured directory for incoming files does not exist":
 
-  ```console
-  $ blueman-services
-  ```
+```console
+$ blueman-services
+```
 
 Select "Transfer" tab and set "Incoming Folder" to yourself or if adduser is in the distributions, create an user with `sudo adduser $USER` (fill out variables as required), then add the user to the groups using `sudo adduser $USER $GROUP` by adding one group at a time.
 
@@ -150,38 +150,45 @@ The default boot splash picture can be replaced using the following instructions
 
 * Install _ImageMagick_ which will do the conversion
 
-  ```console
-  $ sudo apt-get install imagemagick
-  ```
+```console
+$ sudo apt-get install imagemagick
+```
+
 * Create a 1920 x 1080 picture. For the best results, use a PNG image (It supports lossless compression).
 * From the directory in which your new image is stored run the following commands
 * Convert your image to the bootsplash raw format using imagemagick convert.
 
-  ```console
-  $ convert yoursplashimage.png -separate +channel -swap 0,2 -combine -colorspace sRGB RGBO:splash.fb
-  ```
+```console
+$ convert yoursplashimage.png -separate +channel -swap 0,2 -combine -colorspace sRGB RGBO:splash.fb
+```
+
 * Create a backup copy of your current splash screen
 
-  ```console
-  $ sudo cp /usr/share/backgrounds/splash.fb /usr/share/backgrounds/splash_original.fb
-  ```
+```console
+$ sudo cp /usr/share/backgrounds/splash.fb /usr/share/backgrounds/splash_original.fb
+```
+
 * Copy your new splash screen into place
 
-  ```console
-  $ sudo cp splash.fb /usr/share/backgrounds/splash.fb
-  ```
+```console
+$ sudo cp splash.fb /usr/share/backgrounds/splash.fb
+```
+
 * Set the correct permissions on the splash.fb file
 
-  ```console
-  $ sudo chmod 644 /usr/share/backgrounds/splash.fb
-  ```
+```console
+$ sudo chmod 644 /usr/share/backgrounds/splash.fb
+```
+
 * If you do not want to see kernel console text messages, make sure you don’t have _Plymouth_ installed
 
 ### Watching Amazon Prime videos with Chromium
 
 When you create a new user, it will be necessary to launch the Chromium browswer with a specific user agent like below:
 
-    chromium-browser --user-agent="Mozilla/5.0 (X11; CrOS armv7l 6946.63.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+```console
+chromium-browser --user-agent="Mozilla/5.0 (X11; CrOS armv7l 6946.63.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+```
 
 There may be more tweaks needed.
 
@@ -193,24 +200,32 @@ By default, most Linux distributions have a boot screen with a picture. To see a
 
 * Backup and edit the U-Boot configuration file:
 
-      cp -p /etc/default/u-boot /etc/default/u-boot.`date +%Y%m%d`
-      chmod a-w /etc/default/u-boot.`date +%Y%m%d`
-      vi /etc/default/u-boot
+```console
+cp -p /etc/default/u-boot /etc/default/u-boot.`date +%Y%m%d`
+chmod a-w /etc/default/u-boot.`date +%Y%m%d`
+vi /etc/default/u-boot
+```
 
 Remove the _quiet_ and _splash_ parameters. Leave everything else alone.
 
 * Update the U-Boot configuration:
 
-      u-boot-update
+```console
+u-boot-update
+```
+
 * Test and verify you get what you think you should be seeing.
 
 #### Manjaro
 
 * Backup and edit the U-Boot configuration file:
 
-      cp -p /boot/extlinux/extlinux.conf /boot/extlinux/extlinux.conf.`date +%Y%m%d`
-      chmod a-w /boot/extlinux/extlinux.conf.`date +%Y%m%d`
-      vi /boot/extlinux/extlinux.conf
+```console
+cp -p /boot/extlinux/extlinux.conf /boot/extlinux/extlinux.conf.`date +%Y%m%d`
+chmod a-w /boot/extlinux/extlinux.conf.`date +%Y%m%d`
+vi /boot/extlinux/extlinux.conf
+```
+
 * Change **console=ttyS2,1500000** to **console=tty1**
 * Remove the **bootsplash.bootfile** option and it’s parameter.
 * You can add verbose logging by appending **ignore_loglevel** to the line where boot splash was.
@@ -248,21 +263,23 @@ However, do not change the resolution of the LCD screen, otherwise you may end u
 
 From the [official Debian image](https://github.com/mrfixit2001/updates_repo/blob/v1.8/pinebook/filesystem/default):
 
-    --disable-low-res-tiling \
-    --num-raster-threads=6 \
-    --profiler-timing=0 \
-    --disable-composited-antialiasing \
-    --test-type \
-    --show-component-extension-options \
-    --ignore-gpu-blacklist \
-    --use-gl=egl \
-    --ppapi-flash-path=/usr/lib/chromium-browser/pepper/libpepflashplayer.so \
-    --ppapi-flash-version=32.0.0.255 \
-    --enable-pinch \
-    --flag-switches-begin \
-    --enable-gpu-rasterization \
-    --enable-oop-rasterization \
-    --flag-switches-end
+```console
+--disable-low-res-tiling \
+--num-raster-threads=6 \
+--profiler-timing=0 \
+--disable-composited-antialiasing \
+--test-type \
+--show-component-extension-options \
+--ignore-gpu-blacklist \
+--use-gl=egl \
+--ppapi-flash-path=/usr/lib/chromium-browser/pepper/libpepflashplayer.so \
+--ppapi-flash-version=32.0.0.255 \
+--enable-pinch \
+--flag-switches-begin \
+--enable-gpu-rasterization \
+--enable-oop-rasterization \
+--flag-switches-end
+```
 
 Note that in some cases, this may also decrease performance substantially, as observed when using these flags on the Manjaro KDE desktop. Feel free to experiment to find what is smoothest for you personally.
 
@@ -273,7 +290,9 @@ Simply revert back to using GTK2, (how to do so is somewhat Linux distro-specifi
 
 Another solution may be to run gVim with
 
-    GDK_RENDERING=image
+```console
+GDK_RENDERING=image
+```
 
 environment variable set. It seems that this improves the performance by reverting back to software-only rendering.
 

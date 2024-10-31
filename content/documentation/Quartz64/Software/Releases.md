@@ -90,7 +90,7 @@ as well as minimal image without desktop.
 
 Download:
 
-* [NetBSD daily builds top level](http://nycdn.netbsd.org/pub/NetBSD-daily/HEAD/) from inside here, navigate to a date, and inside the images/ subdirectory are installable images. Use the one called "NetBSD-<version>-evbarm-aarch64-install.img.gz".
+* [NetBSD daily builds top level](https://nycdn.netbsd.org/pub/NetBSD-daily/HEAD/) from inside here, navigate to a date, and inside the images/ subdirectory are installable images. Use the one called "NetBSD-<version>-evbarm-aarch64-install.img.gz".
 
 Notes:
 
@@ -136,7 +136,7 @@ The *BSP Linux SDK ver 4.19_ for the Quartz64 Model A.
 
 Download:
 
-* [Direct download](http://files.pine64.org/SDK/Quartz64/QUARTZ64-model-A_BSP%20Linux.tar.gz) from _pine64.org_ (32.67GB, MD5 of the TAR-GZip file _24554419aec29700add97167a3a4c9ed_)
+* [Direct download](https://files.pine64.org/SDK/Quartz64/QUARTZ64-model-A_BSP%20Linux.tar.gz) from _pine64.org_ (32.67GB, MD5 of the TAR-GZip file _24554419aec29700add97167a3a4c9ed_)
 
 ## Android SDK
 
@@ -146,7 +146,7 @@ The **Android 11 SDK** for the Quartz64 Model A SBC.
 
 Download:
 
-* [Direct download](http://files.pine64.org/SDK/Quartz64/QUARTZ64_SDK_android11.tar.gz) from _pine64.org_ (79.00GB, MD5 of the TAR-GZip file _77c2ff57ea3372fb04da7fb49e17d12b_)
+* [Direct download](https://files.pine64.org/SDK/Quartz64/QUARTZ64_SDK_android11.tar.gz) from _pine64.org_ (79.00GB, MD5 of the TAR-GZip file _77c2ff57ea3372fb04da7fb49e17d12b_)
 * Just the boot blobs (<1MB): https://wiki.pine64.org/wiki/File:Rk35-blobs.tar.gz
 
 ### Android 11 Production Test Builds
@@ -188,7 +188,7 @@ The ***Android 13 SDK*** for the Quartz64 Model "Zero" SBC.
 
 Download:
 
-* [Direct download](http://files.pine64.org/SDK/Quartz64/Quartz64-Zero_Android13_SDK.tar.gz) from _pine64.org_ (111GB, MD5 of the TAR-GZip file _0cd965cf68145cc62876d50f320a715a_)
+* [Direct download](https://files.pine64.org/SDK/Quartz64/Quartz64-Zero_Android13_SDK.tar.gz) from _pine64.org_ (111GB, MD5 of the TAR-GZip file _0cd965cf68145cc62876d50f320a715a_)
 
 #### Android 13 Stock
 

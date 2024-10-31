@@ -42,7 +42,7 @@ I’d like to thank [JF](https://twitter.com/codingfield), [Alex](https://twitte
     - KDE turns 25! Happy birthday! 
     - Good job on the PinePhone Pro launch team!
 - **PinePhone Pro**
-    - PinePhone Pro announced - start by reading the [PinePhone Pro website](http://pine64.org/pinephonepro)
+    - PinePhone Pro announced - start by reading the [PinePhone Pro website](/devices/pinephone_pro/)
     - Features RK3399S SoC made by Rockchip for to the PinePhone Pro
     - Ships with 4GB LPDDR4, 128GB eMMC, Gorilla Glass 4™ IPS panel, 13MP main camera, USB 3.0 via USB-C, native video out via USB-C + countless improvements  
     - Pogo pins & privacy switches are present: the PinePhone Pro is compatible with the keyboard and back cases
@@ -79,7 +79,7 @@ Finally, I want to say thank you to our team for doing a great job on the PinePh
 
 This month I have the pleasure to introduce the newest member of the PINE64 family - the PinePhone Pro. It is a fast smartphone with premium features, built from the ground up to run mainline Linux operating systems. In anticipation of great interest in the nitty-gritty hardware details, we published a dedicated webpage complete with specifications, availability information, device renders and an extensive FAQ. I strongly suggest you go and read that prior to continuing with this section. Seriously, go read it first.
 
-**PinePhone Pro webpage:** [**https://pine64.org/pinephonepro**](https://pine64.org/pinephonepro)
+**PinePhone Pro webpage:** [**https://pine64.org/pinephonepro**](/devices/pinephone_pro/)
 
 Instead of reiterating the information on PinePhone Pro’s website, I’ll use this section of the community update to explain why we decided to introduce a more powerful smartphone and discuss some of the key design choices. 
 

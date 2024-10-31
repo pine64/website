@@ -20,7 +20,7 @@ There is a number of things that can prevent the board from booting up properly.
  Make sure to have the newest version of the operating system and the bootloader installed.
 {{< /admonition >}}
 
-To find out more, visit the [PINE64 forum thread](http://forum.pine64.org/showthread.php?tid=514).
+To find out more, visit the [PINE64 forum thread](https://forum.pine64.org/showthread.php?tid=514).
 
 ## Supported screen resolutions
 
@@ -39,4 +39,4 @@ Follow these steps to determine the cause of your problem:
 
 ## Notes
 
-If neither of the above mentioned scenarios fits the problem you are facing, please consult the [PINE64 forum thread from user _Ghost_](http://forum.pine64.org/showthread.php?tid=680).
+If neither of the above mentioned scenarios fits the problem you are facing, please consult the [PINE64 forum thread from user _Ghost_](https://forum.pine64.org/showthread.php?tid=680).

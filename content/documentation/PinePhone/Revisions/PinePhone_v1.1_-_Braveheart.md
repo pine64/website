@@ -16,7 +16,7 @@ This page contains resources which are exclusive to the 1.1 revision of the Pine
 
 ## Schematic
 
-[Hardware schematic](http://files.pine64.org/doc/PinePhone/PinePhone_Schematic_v1.1_20191031.pdf)
+[Hardware schematic](https://files.pine64.org/doc/PinePhone/PinePhone_Schematic_v1.1_20191031.pdf)
 
 ## Changes from 1.0
 

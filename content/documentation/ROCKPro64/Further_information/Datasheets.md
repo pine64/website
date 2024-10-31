@@ -12,8 +12,8 @@ menu:
 Rockchip RK3399 SoC information:
 
 * [Rockchip RK3399 SoC Brief](https://www.rock-chips.com/a/en/products/RK33_Series/2016/0419/758.html)
-* [Rockchip RK3399 Datasheet V2.1](http://opensource.rock-chips.com/images/d/d7/Rockchip_RK3399_Datasheet_V2.1-20200323.pdf)
-* [Rockchip RK3399 Technical Reference Manual part 1](http://opensource.rock-chips.com/images/e/ee/Rockchip_RK3399TRM_V1.4_Part1-20170408.pdf)
+* [Rockchip RK3399 Datasheet V2.1](https://opensource.rock-chips.com/images/d/d7/Rockchip_RK3399_Datasheet_V2.1-20200323.pdf)
+* [Rockchip RK3399 Technical Reference Manual part 1](https://opensource.rock-chips.com/images/e/ee/Rockchip_RK3399TRM_V1.4_Part1-20170408.pdf)
 * [Rockchip RK808 Datasheet V0.8](https://files.pine64.org/doc/datasheet/rockpro64/RK808%20datasheet%20V0.8.pdf)
 
 LPDDR4 (200 Balls) SDRAM:
@@ -40,7 +40,7 @@ Heatsink related info:
 
 Wireless related info:
 
-* AMPAK AP6256 11AC WiFi + Bluetooth5.0 Datasheet [(v. 1.3)](https://files.pine64.org/doc/datasheet/rockpro64/AP6256%20datasheet_V1.3_12202017.pdf) [(v. 1.7)](http://files.pine64.org/doc/datasheet/PinebookPro/AP6256%20datasheet_V1.7_12282018.pdf)
+* AMPAK AP6256 11AC WiFi + Bluetooth5.0 Datasheet [(v. 1.3)](https://files.pine64.org/doc/datasheet/rockpro64/AP6256%20datasheet_V1.3_12202017.pdf) [(v. 1.7)](https://files.pine64.org/doc/datasheet/PinebookPro/AP6256%20datasheet_V1.7_12282018.pdf)
 
 Ethernet related info:
 

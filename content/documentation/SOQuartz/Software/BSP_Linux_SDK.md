@@ -13,7 +13,7 @@ menu:
 
 Download:
 
-* [Direct Download from pine64.org](http://files.pine64.org/SDK/Quartz64/QUARTZ64-model-A_BSP%20Linux.tar.gz)
+* [Direct Download from pine64.org](https://files.pine64.org/SDK/Quartz64/QUARTZ64-model-A_BSP%20Linux.tar.gz)
 
 Notes:
 

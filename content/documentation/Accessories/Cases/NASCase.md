@@ -11,7 +11,7 @@ menu:
 
 The PINE64 NAS Case is intended for either a Network Attached Storage (NAS) or Desktop application, but it can also be used in a number of other server capacities. It is built from precision-cut and powder-coated aluminum. The physical dimensions are 232.4mm (Width) x 105.0mm (Height) x 145.2mm (Depth).
 
-An exploded view of the NAS Case, illustrating how all the components come together, can be found [here](http://files.pine64.org/doc/rockpro64/ROCKPro64%20NAS%20Case%20Exploded%20View%20Diagram.pdf). Please refer back to this PDF document during assembly to verify correct orientation of individual components.
+An exploded view of the NAS Case, illustrating how all the components come together, can be found [here](https://files.pine64.org/doc/rockpro64/ROCKPro64%20NAS%20Case%20Exploded%20View%20Diagram.pdf). Please refer back to this PDF document during assembly to verify correct orientation of individual components.
 
 {{< figure src="/documentation/images/NASCaseMain.png" title="Front View of the PINE64 NAS Case for the ROCKPro64" width="400" >}}
 
@@ -80,7 +80,7 @@ To download the latest OMV build OR one of the numerous available Linux Distribu
 
 ## Step-by-Step Assembly Instructions
 
-If you prefer a video tutorial or just want an overview of the process before you start [check out this instructional video](http://www.youtube.com/watch?v=_UeeklKo0Og).
+If you prefer a video tutorial or just want an overview of the process before you start [check out this instructional video](https://www.youtube.com/watch?v=_UeeklKo0Og).
 
 ### Step 1. Preparation of the NAS Case for Installation
 

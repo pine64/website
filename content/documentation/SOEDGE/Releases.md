@@ -39,7 +39,7 @@ Notes:
 
 Download:
 
-* [SOEdge_linux_v1.1.img.gz](http://files.pine64.org/os/SOEdge/stock/SOEdge_linux_v1.1.img.gz) from _pine64.org_, MD5 (TAR-GZip file): a6629f997ae2cae7d9d5324c4e942deda9, size: 119MB
+* [SOEdge_linux_v1.1.img.gz](https://files.pine64.org/os/SOEdge/stock/SOEdge_linux_v1.1.img.gz) from _pine64.org_, MD5 (TAR-GZip file): a6629f997ae2cae7d9d5324c4e942deda9, size: 119MB
 
 Notes:
 
@@ -50,7 +50,7 @@ Notes:
 
 Download:
 
-* [SOEdge_linux_usb_compute_stick.img.gz](http://files.pine64.org/os/SOEdge/stock/SOEdge_linux_usb_compute_stick.img.gz) from _pine64.org_, MD5 (GZip file): af6ac45995f7ddd9343a7052efffaf30, size: 47MB
+* [SOEdge_linux_usb_compute_stick.img.gz](https://files.pine64.org/os/SOEdge/stock/SOEdge_linux_usb_compute_stick.img.gz) from _pine64.org_, MD5 (GZip file): af6ac45995f7ddd9343a7052efffaf30, size: 47MB
 
 Notes:
 
@@ -61,7 +61,7 @@ Notes:
 
 Download:
 
-* [SOEdge_linux_v1.1.img.gz](http://files.pine64.org/os/SOEdge/stock/SOEdge_linux_v1.1.img.gz) from _pine64.org_, MD5 (TAR-GZip file): a6629f997ae2cae7d9d5324c4e942deda9, size: 119MB
+* [SOEdge_linux_v1.1.img.gz](https://files.pine64.org/os/SOEdge/stock/SOEdge_linux_v1.1.img.gz) from _pine64.org_, MD5 (TAR-GZip file): a6629f997ae2cae7d9d5324c4e942deda9, size: 119MB
 
 Notes:
 
@@ -72,7 +72,7 @@ Notes:
 
 Download:
 
-* [SOEdge_linux_usb_compute_stick.img.gz](http://files.pine64.org/os/SOEdge/stock/SOEdge_linux_usb_compute_stick.img.gz) from _pine64.org_, MD5 (GZip file): af6ac45995f7ddd9343a7052efffaf30, size: 47MB
+* [SOEdge_linux_usb_compute_stick.img.gz](https://files.pine64.org/os/SOEdge/stock/SOEdge_linux_usb_compute_stick.img.gz) from _pine64.org_, MD5 (GZip file): af6ac45995f7ddd9343a7052efffaf30, size: 47MB
 
 Notes:
 
@@ -81,6 +81,6 @@ Notes:
 
 ## Linux BSP SDK
 
-* [Linux BSP Kernel ver 1.1.7](http://files.pine64.org/SDK/SOEdge/rk1808_v1.1.7.tar.gz) from _pine64.org_, MD5 (TAR-GZip file): 47a81a990a644539f3a0e84034654f78, size: 17.42GB
+* [Linux BSP Kernel ver 1.1.7](https://files.pine64.org/SDK/SOEdge/rk1808_v1.1.7.tar.gz) from _pine64.org_, MD5 (TAR-GZip file): 47a81a990a644539f3a0e84034654f78, size: 17.42GB
 * [Full BSP SDK ver 1.1](https://files.pine64.org/SDK/SOEdge/SOEdge_RK-BSP_SDK_v1.1.tar.gz) from _pine64.org_, MD5 (TAR-GZip file): a66c92e52824762d7c0a63400d6342ea, size: 13.55GB
 * [Neural AI Stick BSP SDK ver 1.1](https://files.pine64.org/SDK/SOEdge/SOEdge_RK-BSP_USB_Dongle_SDK_v1.1.tar.gz) from _pine64.org_, MD5 (TAR-GZip file): 46f12441e8c35c06184681f355c89651, size: 9.65GB

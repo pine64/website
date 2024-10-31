@@ -40,7 +40,5 @@ menu:
 
 ## Related Reference
 
-* [Easily Create an Android Bootable SD Card for Allwinner A80 Devices with PhoenixCard Tool](http://www.cnx-software.com/2015/01/06/easily-create-an-androidlinux-bootable-sd-card-for-allwinner-a80-devices-with-phoenixcard-tool/)
-* [Boot from SD-Card or flash a ROM with PhonixCard](http://www.ondaforum.com/topic/2022-boot-from-sd-card-or-flash-a-rom-with-phonixcard/)
-* [How to upgrade tablet pc with Micro SD Card Tutorial](http://www.androidsoldier.com/2013/11/upgrading-method-android-tablet.html)
+* [Easily Create an Android Bootable SD Card for Allwinner A80 Devices with PhoenixCard Tool](https://www.cnx-software.com/2015/01/06/easily-create-an-androidlinux-bootable-sd-card-for-allwinner-a80-devices-with-phoenixcard-tool/)
 * [PhoenixCard Tutorial YouTube Video](https://www.youtube.com/watch?v=eKo82AUgbFM)

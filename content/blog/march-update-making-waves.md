@@ -40,7 +40,7 @@ The PineVox is a BL606P based home assistant smart speaker. Designed to help bui
 
 Currently a small number of developer seed units have been given out. Work is ongoing by Ralim & Gamiee to get a minimal firmware image ready to allow for demonstration and to prove all hardware fully functional etc. 
 
-More information on the unit should be available soon on our new [documentation page](https://pine64.org/documentation). Features of note include the hardware microphone kill switch, and the ability to debug the unit externally. The hardware microphone killswitch allows the software to mute the microphone but unmuting has to be performed using the button on the device. Muting the microphone disables the clock connection to the microphone, giving peace of mind that it really, really isnt listening to you.
+More information on the unit should be available soon on our new [documentation page](/documentation). Features of note include the hardware microphone kill switch, and the ability to debug the unit externally. The hardware microphone killswitch allows the software to mute the microphone but unmuting has to be performed using the button on the device. Muting the microphone disables the clock connection to the microphone, giving peace of mind that it really, really isnt listening to you.
 
 Giving users control of the smart devices in their home and allowing for _you_ to control the security is important, and we are working on the PineVox to help enable that future. 
 
@@ -228,7 +228,7 @@ Currently more testing is desired to help find remaining bugs and resolve first-
 On the 20th of January 2024 at 10:30 PM CET, most of the DB based services went down and started throwing errors when attempting to connect to the MySQL databases. 
 After some analysis, all of the nodes in the cluster had failed, making the rootfs mount as read-only. In the current cluster setup every node has its rootfs mounted over the network, this leads to one likely culpret, that something had gone wrong with the storage node. 
 I wasn't able to connect to the storage node, so I went to the datacentre where the cluster is hosted. Once on site, I found that the storage node's SSD (which hosts all of the data for the other nodes) had switched to read-only mode reporting issues about writing to SSD. 
-Thankfully as the [temporary cluster](https://pine64.org/2021/09/01/clusters-build-log-moving-to-temporary-cluster/) is only a small number of nodes, I took it home so I could recover the data.
+Thankfully as the [temporary cluster](/2021/09/01/clusters-build-log-moving-to-temporary-cluster/) is only a small number of nodes, I took it home so I could recover the data.
 Before the shutdown of remaining cluster nodes, I took a moment to make a screenshot of the main node's (gateway & firewall) uptime:
 
 ![Cluster main node uptime](/blog/images/2024-march-update/cluster-main-node-uptime.jpg)
@@ -272,7 +272,7 @@ We still plan to host our services on the cluster, but before that, we need to f
 
 ![Cluster photo](/blog/images/2024-march-update/cluster-photo.jpg)
 
-In September 2021, I wrote the [blog post](https://pine64.org/2021/09/01/clusters-build-log-moving-to-temporary-cluster/), about building the new "temporary cluster", and exchanging it with the "final one". I recommend reading the blog post, it explains a lot about the cluster and the reason we moved to the temporary cluster. In short, unfortunately, the cluster was deployed in a hurry, and things like power management for the nodes were not finished. For proper implementation, it would have been best to have had the cluster at my place, so a temporary cluster was built. (The temporary cluster was in the server housing until the failure)
+In September 2021, I wrote the [blog post](/2021/09/01/clusters-build-log-moving-to-temporary-cluster/), about building the new "temporary cluster", and exchanging it with the "final one". I recommend reading the blog post, it explains a lot about the cluster and the reason we moved to the temporary cluster. In short, unfortunately, the cluster was deployed in a hurry, and things like power management for the nodes were not finished. For proper implementation, it would have been best to have had the cluster at my place, so a temporary cluster was built. (The temporary cluster was in the server housing until the failure)
 
 Sadly, life got busy, and there was not a lot of progress on the cluster until 2023. Me and Ralimtek started working on a new PCB, which will serve as the "motherboard" of the cluster. This is for managing the power supply, communication with power management boards and a UART output logger for all nodes. For the first revision, this board was designed as a daughterboard for SOPine A64 Baseboard, the final version will be a PCB that will house a SOPine A64 module. A few weeks ago, I managed to assemble the daughterboard and perform some tests. Aside from some very minor issues, the board works pretty well!
 

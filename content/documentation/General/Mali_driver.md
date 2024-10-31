@@ -15,13 +15,13 @@ Here is the DRM video presentation by Free Electron: https://www.youtube.com/wat
 
 ## Wayland MALI Driver
 
-* [MALI-400 R6P2 Kernel Mode Setting binary download](http://files.pine64.org/doc/MALI/mali400-r6p2-01rel0-km-003.tar.7z) (1.86MB, MD5 _523276872A9A11D1831ACE42F95DBBB1_)
-* [MALI-400 R6P2 WAYLAND 64-bit binary driver and binary download](http://files.pine64.org/doc/MALI/mali400-r6p2-01rel0-um009-wayland.tar.bz2) (179KB, MD5 _1698E8C54BDC6FE0804699F545FFE793_)
+* [MALI-400 R6P2 Kernel Mode Setting binary download](https://files.pine64.org/doc/MALI/mali400-r6p2-01rel0-km-003.tar.7z) (1.86MB, MD5 _523276872A9A11D1831ACE42F95DBBB1_)
+* [MALI-400 R6P2 WAYLAND 64-bit binary driver and binary download](https://files.pine64.org/doc/MALI/mali400-r6p2-01rel0-um009-wayland.tar.bz2) (179KB, MD5 _1698E8C54BDC6FE0804699F545FFE793_)
 
 ## X11 MALI Driver
 
-* [MALI EULA document](http://files.pine64.org/doc/MALI/MALI%20EULA.pdf)
-* [MALI-400 64-bit binary driver and binary download](http://files.pine64.org/doc/MALI/x11_pine.tar.bz2) from _pine64.org_ (1.7MB, MD5 _4F56AE6FB793E7D946867942AF58FEAC_)
+* [MALI EULA document](https://files.pine64.org/doc/MALI/MALI%20EULA.pdf)
+* [MALI-400 64-bit binary driver and binary download](https://files.pine64.org/doc/MALI/x11_pine.tar.bz2) from _pine64.org_ (1.7MB, MD5 _4F56AE6FB793E7D946867942AF58FEAC_)
 
 ## X11 Notice
 

@@ -16,7 +16,7 @@ This page contains information and resources which are specific to the v1.2a rev
 
 ## Schematics
 
-* [Hardware schematic v1.2a](http://files.pine64.org/doc/PinePhone/PinePhone%20v1.2a%20Released%20Schematic.pdf) (2020-06-08, for the postmarketOS Community Edition)
+* [Hardware schematic v1.2a](https://files.pine64.org/doc/PinePhone/PinePhone%20v1.2a%20Released%20Schematic.pdf) (2020-06-08, for the postmarketOS Community Edition)
 
 ## Changes from v1.2
 

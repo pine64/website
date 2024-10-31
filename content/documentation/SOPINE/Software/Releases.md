@@ -38,7 +38,7 @@ Download:
 ### FreedomBox
 {{< figure src="/documentation/images/FreedomBox.jpg" >}}
 
-FreedomBox is a private server for non-experts: it lets you install and configure server applications with only a few clicks. For more information about FreedomBox, please visit http://www.freedombox.org.
+FreedomBox is a private server for non-experts: it lets you install and configure server applications with only a few clicks. For more information about FreedomBox, please visit https://www.freedombox.org.
 
 {{< admonition type="warning" >}}
  Outdated release
@@ -51,7 +51,7 @@ Download:
 Notes:
 
 * This is a headless build, not HDMI output.
-* Please plug-in Ethernet cable first before initial power up. After power up for 10 minutes, using browser and type in http://fredombox.local to setup. Browser may warms for unsecure site and please proceed with exception.
+* Please plug-in Ethernet cable first before initial power up. After power up for 10 minutes, using browser and type in https://fredombox.local to setup. Browser may warms for unsecure site and please proceed with exception.
 * Freedom Manual: https://wiki.debian.org/FreedomBox/Manual
 
 ### LibreELEC
@@ -78,7 +78,7 @@ NEMS stands for "Nagios Enterprise Monitoring Server" and it is a modern pre-con
 
 Download:
 
-* [Direct download from pine64.org](http://files.pine64.org/os/SOPINE/nems/NEMS_v1.5-SOPine-Build1.zip) (supports the microSD card, 16GB or more, MD5 of the xz file is _5ad0d684296d50b4c1fcbac6db205ae0_)
+* [Direct download from pine64.org](https://files.pine64.org/os/SOPINE/nems/NEMS_v1.5-SOPine-Build1.zip) (supports the microSD card, 16GB or more, MD5 of the xz file is _5ad0d684296d50b4c1fcbac6db205ae0_)
 * [Download torrent seed from NEMS Linux](https://nemslinux.com/download/nagios-for-pine64.php) (supports the microSD card, 16GB or more, MD5 of the xz file is _6e2088922c5d197db8b8ba3057120389_)
 
 {{< admonition type="info" >}}
@@ -130,7 +130,7 @@ NetBSD is a free, fast, secure, and highly portable Unix-like Open Source operat
 
 Download:
 
-* [Direct download](http://www.armbsd.org/arm/) (select _PINE A64-LTS / SoPine with baseboard_)
+* [Direct download](https://nycdn.netbsd.org/pub/arm/) (select _PINE A64-LTS / SoPine with baseboard_)
 
 | Default credentials | |
 | -------- | ------- |
@@ -147,11 +147,11 @@ Linux BSP Kernel 4.9
 
 Download:
 
-* [Direct Download](http://files.pine64.org/SDK/PINE-A64/PINE-A64_lichee_BSP4.9.tar.xz) from _pine64.org_ (5.40GB, MD5 of the TAR-GZip _7736e3c4d50c021144d125cc4ee047a4_)
+* [Direct Download](https://files.pine64.org/SDK/PINE-A64/PINE-A64_lichee_BSP4.9.tar.xz) from _pine64.org_ (5.40GB, MD5 of the TAR-GZip _7736e3c4d50c021144d125cc4ee047a4_)
 
 ## Android SDK
 Android Oreo (v8.1)
 
 Download:
 
-* [Direct Download](http://files.pine64.org/SDK/PINE-A64/PINE-A64_SDK_android8.1.tar.xz) from _pine64.org_ (24.94GB, MD5 of the TAR-Gzip _b0394af324c70ce28067e52cd7bc0c87_)
+* [Direct Download](https://files.pine64.org/SDK/PINE-A64/PINE-A64_SDK_android8.1.tar.xz) from _pine64.org_ (24.94GB, MD5 of the TAR-Gzip _b0394af324c70ce28067e52cd7bc0c87_)

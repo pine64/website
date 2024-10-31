@@ -23,7 +23,7 @@ The following page discusses the development efforts for the PineNote:
 * [RK3566 EBC Reverse-Engineering](/documentation/General/RK3566_EBC_reverse-engineering) for the EBC (eInk Panel) driver.
 * [PineNote Development/Building Kernel](/documentation/PineNote/Development/Building_kernel)
 * BSP Linux SDK version 4.19 for the PineNote and [Quartz64 Model A](/documentation/Quartz64):
-  * [Direct download](http://files.pine64.org/SDK/Quartz64/QUARTZ64-model-A_BSP%20Linux.tar.gz) from _pine64.org_ (32.67GB, MD5 of the TAR-GZip file _24554419aec29700add97167a3a4c9ed_)
+  * [Direct download](https://files.pine64.org/SDK/Quartz64/QUARTZ64-model-A_BSP%20Linux.tar.gz) from _pine64.org_ (32.67GB, MD5 of the TAR-GZip file _24554419aec29700add97167a3a4c9ed_)
   * [Mirror by mwfc](https://tmp.mwfc.info/pinenote/QUARTZ64-model-A_BSP%20Linux.tar.gz)
   * An unofficial torrent download provided by a community member of the BSP Linux and Android SDKs can be found [here](https://cdn.discordapp.com/attachments/870707390998282292/907726420204208148/pinenote.torrent) (100GB).
 
@@ -45,7 +45,7 @@ Android 11 e-ink SDK for the PineNote and Quartz64 Model A. This is the Android 
 
 Download:
 
-* [Direct download](http://files.pine64.org/SDK/Quartz64/QUARTZ64-model-A_eink.android11_SDK.tar.gz) from _pine64.org_ (72.88GB, MD5 of the TAR-GZip file _293a550584298de4fb95ceae18103672_)
+* [Direct download](https://files.pine64.org/SDK/Quartz64/QUARTZ64-model-A_eink.android11_SDK.tar.gz) from _pine64.org_ (72.88GB, MD5 of the TAR-GZip file _293a550584298de4fb95ceae18103672_)
 * [Mirror by mwfc](https://tmp.mwfc.info/pinenote/QUARTZ64-model-A_eink.android11_SDK.tar.gz)
 * An unofficial torrent download provided by a community member of the BSP Linux and Android SDKs can be found [here](https://cdn.discordapp.com/attachments/870707390998282292/907726420204208148/pinenote.torrent) (100GB).
 * Just the boot blobs (<1MB): https://wiki.pine64.org/wiki/File:Rk35-blobs.tar.gz
@@ -70,7 +70,7 @@ The following topics have resolved:
 * **Could the USB-C port support USB 3.1 5Gbps?** Yes and no. The RK3566 only has a host-mode 5Gbps controller, meaning it can only negotiate such a high data rate with a device such as a flash drive. When the RK3566 is acting as a device, it only supports 480Mbps transfer rates. The hardware required to switch between these modes would raise the PineNote’s price unreasonably. Therefore, the USB-C port will remain at USB 2.0 speeds for Host and Device mode.
 * **Could the USB-C port output DisplayPort?** Yes and no. The hardware required to support such a feature would raise the PineNote’s price unreasonably. Therefore, DisplayPort output will not be possible through the USB-C port.
 * **Where is the microSD card slot?** The case design of the PineNote is fixed, making physical changes like adding a microSD card slot would raise the cost unreasonably.
-* **How will I install software to the PineNote?** This is a hardware and software question. If the software on your PineNote is completely broken and cannot boot to a recoverable state, a Hall (magnet) sensor was fitted to the PineTab motherboard as U9009. This sensor is attached to SARADC_VIN0_KEY/RECOVERY on the RK3566. With the device powered off, and screen face down, holding a magnet over U9009 and plugging in a USB-C cable causes the device to boot into ["rockusb"](http://opensource.rock-chips.com/wiki_Rockusb) flash mode. With proper flashing software and drivers, it should be possible to load a new operating system using rockusb if the system is soft-bricked. Of course, software vendors will need to be more careful with flashing firmware and providing useful "recovery" options on this device due to this process’s relative difficulty to other PINE64 devices.
+* **How will I install software to the PineNote?** This is a hardware and software question. If the software on your PineNote is completely broken and cannot boot to a recoverable state, a Hall (magnet) sensor was fitted to the PineTab motherboard as U9009. This sensor is attached to SARADC_VIN0_KEY/RECOVERY on the RK3566. With the device powered off, and screen face down, holding a magnet over U9009 and plugging in a USB-C cable causes the device to boot into ["rockusb"](https://opensource.rock-chips.com/wiki_Rockusb) flash mode. With proper flashing software and drivers, it should be possible to load a new operating system using rockusb if the system is soft-bricked. Of course, software vendors will need to be more careful with flashing firmware and providing useful "recovery" options on this device due to this process’s relative difficulty to other PINE64 devices.
 
 ### Unresolved issues
 

@@ -16,7 +16,7 @@ This page contains information and resources which are specific to the UBports C
 
 ## Schematics
 
-* [Hardware schematic v1.2](http://files.pine64.org/doc/PinePhone/PinePhone%20v1.2%20Released%20Schematic.pdf) (2020-03-10, for the UBports Community Edition)
+* [Hardware schematic v1.2](https://files.pine64.org/doc/PinePhone/PinePhone%20v1.2%20Released%20Schematic.pdf) (2020-03-10, for the UBports Community Edition)
 
 ## Changes from v1.1
 

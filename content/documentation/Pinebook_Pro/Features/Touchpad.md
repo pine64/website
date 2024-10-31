@@ -25,7 +25,8 @@ If you are having trouble using 2 fingers to scroll or emulate the click of a mo
 * Individual programs might need to be configured specially.
 *. For smooth scrolling and gestures under X-Windows, _Firefox_ should be launched with with the following environment variable assignment:
 
-  `MOZ_USE_XINPUT2=1`
+`MOZ_USE_XINPUT2=1`
+
 * Experiment with other settings, via X-Windows Configuration or some other system preferences. For example, you could disable double-finger scrolling, and instead enable scrolling by sliding one finger along the edge of the touchpad.
 
 ## Firmware

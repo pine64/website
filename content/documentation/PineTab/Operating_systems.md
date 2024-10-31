@@ -97,7 +97,7 @@ You can get **SailfishOS** on your with the flash-it script, which will write an
 
 There is a forum discussion with further information.
 
-http://forum.pine64.org/showthread.php?tid=11850
+https://forum.pine64.org/showthread.php?tid=11850
 
 Many things are still broken but Bluetooth, Audio, Rotation and Keyboard are working.
 

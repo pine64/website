@@ -59,14 +59,14 @@ Note: The title of this schematic page should be changed from "LPDDR3 FPGA178" t
 
 DU1:
 
-* Artmem [ATL3A1632H12A](http://files.pine64.org/doc/datasheet/pinephone/ATL3A1632H12A_mobile_lpddr3_11x11.5_v1.0_1600.pdf) 2GB 800MHz LPDDR3-1600 SDRAM, FBGA-178 11.0x11.5x0.93 mm
+* Artmem [ATL3A1632H12A](https://files.pine64.org/doc/datasheet/pinephone/ATL3A1632H12A_mobile_lpddr3_11x11.5_v1.0_1600.pdf) 2GB 800MHz LPDDR3-1600 SDRAM, FBGA-178 11.0x11.5x0.93 mm
 * Note: RAM will be clocked slower, since the Allwinner A64 only supports up to 3GB DDR3-1333 (666.5MHz) and doesn’t specify the top supported LPDDR3 speed.
 
 ### P.5 CPU
 
 U1:
 
-* Allwinner [A64](http://files.pine64.org/doc/datasheet/pine64/A64_Datasheet_V1.1.pdf) 1.2Ghz 4x Cortex-A53, 64-bit, superscalar, 32KB instruction & 32KB data L1 cache per core, 512KB L2 shared cache, ARM Mali-400 MP2 (Utgard) GPU, HDMI 1.4 (up to 4K@30), USB 2.0 with OTG, MIPI CSI, 4 channels in/out, 24-bit, 8-48 KHz audio, video encode: H.264 1080p@60, video decode: H.265 4K@30, H.265 1080p@120, H.264, MPEG1/2/4 / VP8 / AVS / AVS+ 1080p@60, FBGA-396 15x15 mm
+* Allwinner [A64](https://files.pine64.org/doc/datasheet/pine64/A64_Datasheet_V1.1.pdf) 1.2Ghz 4x Cortex-A53, 64-bit, superscalar, 32KB instruction & 32KB data L1 cache per core, 512KB L2 shared cache, ARM Mali-400 MP2 (Utgard) GPU, HDMI 1.4 (up to 4K@30), USB 2.0 with OTG, MIPI CSI, 4 channels in/out, 24-bit, 8-48 KHz audio, video encode: H.264 1080p@60, video decode: H.265 4K@30, H.265 1080p@120, H.264, MPEG1/2/4 / VP8 / AVS / AVS+ 1080p@60, FBGA-396 15x15 mm
 * Note: Clocked at 1.152Ghz on the PinePhone.
 
 X501:
@@ -119,7 +119,7 @@ D600:
 
 U700:
 
-* Kimtigo [KM110SS0016GxA-DDD00WT](http://files.pine64.org/doc/datasheet/pinephone/Kimtigo_fbga153_16_32_64_eMMC_datasheet_v1.3.pdf) 16GB eMMC 5.1 TLC NAND Flash memory, FBGA-153 11.5×13.0×1.0 mm.
+* Kimtigo [KM110SS0016GxA-DDD00WT](https://files.pine64.org/doc/datasheet/pinephone/Kimtigo_fbga153_16_32_64_eMMC_datasheet_v1.3.pdf) 16GB eMMC 5.1 TLC NAND Flash memory, FBGA-153 11.5×13.0×1.0 mm.
 * Note 1: The schematic says the package is BGA-169, but the Kimtigo documentation says it is FBGA-153.
 * Note 2: The A64 only supports up to eMMC 5.0.
 * Note 3: The schematic lists the part as KM110SS0016GxA-DDD00WT, but [these photos](https://xnux.eu/devices/photos/pp-1.1.html) show that its variant, the KM111SS0016GxA-DDD00WT, is being used in the 16GB PinePhone.
@@ -173,12 +173,12 @@ J901:
 J1000:
 
 * T03-1025-FG01 27-pin connector to the rear camera.
-* Note: The schematic says "GC2035-200W", which is a mistake because the rear camera is the OmniVision [OV6540](http://files.pine64.org/doc/datasheet/pinephone/OV5640_datasheet.pdf).
+* Note: The schematic says "GC2035-200W", which is a mistake because the rear camera is the OmniVision [OV6540](https://files.pine64.org/doc/datasheet/pinephone/OV5640_datasheet.pdf).
 
 J1001:
 
 * T03-1025-FG01 27-pin connector to the front camera.
-* Note: The schematic says "GC2035-200W", which is a mistake because the rear camera is the GalaxyCore [GC2145](http://files.pine64.org/doc/datasheet/pinephone/GC2145%20CSP%20DataSheet%20release%20V1.0_20131201.pdf), not the GalaxyCore [GC2035](https://g2g9w6w7.stackpathcdn.com/pdf-down/G/C/2/GC2035-GalaxyCore.pdf).
+* Note: The schematic says "GC2035-200W", which is a mistake because the rear camera is the GalaxyCore [GC2145](https://files.pine64.org/doc/datasheet/pinephone/GC2145%20CSP%20DataSheet%20release%20V1.0_20131201.pdf), not the GalaxyCore [GC2035](https://g2g9w6w7.stackpathcdn.com/pdf-down/G/C/2/GC2035-GalaxyCore.pdf).
 
 U1000:
 
@@ -207,7 +207,7 @@ ED1100, ED1101, ED1102, ED1103:
 
 U1100:
 
-* Chipown [AP3127B025](http://www.datasheet39.com/download.php?id=924200) step-up DC/DC converter series, white LED backlight driver, 6-pin SOT-23-6L package.
+* Chipown [AP3127B025](https://www.datasheet39.com/download.php?id=924200) step-up DC/DC converter series, white LED backlight driver, 6-pin SOT-23-6L package.
 
 ### P.12 SENSORS/MT/KEY
 
@@ -300,7 +300,7 @@ X1300:
 
 U1400:
 
-* Realtek [RTL8723CS](http://files.pine64.org/doc/datasheet/pine64/RTL8723BS.pdf) 802.11 b/g/n, single-band (2.4 GHz), Bluetooth 4.0, with SDIO for WiFi and UART for Bluetooth, LGA-40 12x12x1.6 mm.
+* Realtek [RTL8723CS](https://files.pine64.org/doc/datasheet/pine64/RTL8723BS.pdf) 802.11 b/g/n, single-band (2.4 GHz), Bluetooth 4.0, with SDIO for WiFi and UART for Bluetooth, LGA-40 12x12x1.6 mm.
 
 X1400:
 
@@ -385,6 +385,6 @@ Source: [Amos Batto](https://forums.puri.sm/t/component-counts-in-the-librem-5-a
 
 * SGMICRO [SGM3140](http://www.sg-micro.com/uploads/soft/20190829/1567071622.pdf) 500mA buck/boost charge pump LED driver for camera flash and torch, TDFN-10 3x3x0.75 mm
 * Note: The [PinePhone page](/documentation/PinePhone/Further_information/Components/) lists the SGM3140, but the schematics contain the U1000: awinic AW3641EDNR, so it is unclear why the SGM3140 is needed.
-* Goodix [GT917S](http://files.pine64.org/doc/datasheet/pinephone/GT917S-Datasheet.pdf) touch controller
-* Sitronix [ST7703](http://files.pine64.org/doc/datasheet/pinephone/ST7703_DS_v01_20160128.pdf) MIPI LCD driver
+* Goodix [GT917S](https://files.pine64.org/doc/datasheet/pinephone/GT917S-Datasheet.pdf) touch controller
+* Sitronix [ST7703](https://files.pine64.org/doc/datasheet/pinephone/ST7703_DS_v01_20160128.pdf) MIPI LCD driver
 * Xingbangda [XBD599](https://lkml.org/lkml/2020/6/16/1654) 5.99″ IPS LCD, 720x1440 pixels, 16.7M colors, hardened glass

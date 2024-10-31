@@ -131,7 +131,7 @@ Speaking of OSs available for the Pinebook Pro, their number is steadily growing
 
 ![](/blog/images/Arch.jpeg)
 
-**Arch Linux on the Pinebook Pro via Screenshot via [@AndreVallestero](https://twitter.com/AndreVallestero) [http://github.com/AndreVallestero](https://t.co/FFNvdJNGi0?amp=1 "http://github.com/AndreVallestero")**
+**Arch Linux on the Pinebook Pro via Screenshot via [@AndreVallestero](https://twitter.com/AndreVallestero) [https://github.com/AndreVallestero](https://t.co/FFNvdJNGi0?amp=1 "https://github.com/AndreVallestero")**
 
 The past month has also seen a very important development on the hardware front. Namely,  problems with missing keypresses and an unwieldy trackpad have now been resolved and are a thing of the past. The firmware fix for both inputs has been delivered thanks to the hard work of a dedicated group of people: TL Lim, anarsoul, Xalius and ayufan. Everyone who has already gotten their Pinebook Pro should install the new trackpad and keyboard firmware. The firmware update can be performed from any Linux OS and process itself is very simple only requiring running two scripts between reboots. Please reference the [forum thread that describes the process in detail](https://forum.pine64.org/showthread.php?tid=8407) for more information. Future Pinebook Pros, starting with units shipped in December of 2019, will arrive with the new firmware pre-flashed.  
 

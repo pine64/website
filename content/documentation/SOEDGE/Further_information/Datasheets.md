@@ -11,7 +11,7 @@ menu:
 
 Rockchip RK1808 SoC information:
 
-* [Rockchip RK1808 ver 1.2 datasheet](http://opensource.rock-chips.com/images/4/43/Rockchip_RK1808_Datasheet_V1.2_20190527.pdf)
+* [Rockchip RK1808 ver 1.2 datasheet](https://opensource.rock-chips.com/images/4/43/Rockchip_RK1808_Datasheet_V1.2_20190527.pdf)
 * [Rockchip TK1808 Technical Reference Manual Part 1](https://files.pine64.org/doc/datasheet/SOEdge/Rockchip%20RK1808%20TRM%20Part1%20V1.2--20190826%20open%20source.pdf)
 
 Rockchip RK809 PMU (Power Management Unit) information:

@@ -17,7 +17,7 @@ menu:
   * [ROCKPro64 v2.1 Board Top Outline in PDF format](https://files.pine64.org/doc/rockpro64/RockPro64_v21_Boardoutline-top.pdf)
   * [ROCKPro64 v2.1 Board Bottom Outline in PDF format](https://files.pine64.org/doc/rockpro64/RockPro64_v21_Boardoutline-bottom.pdf)
 * [ROCKPro64 Schematic v2.0 (Pilot Production Release)](https://files.pine64.org/doc/rockpro64/rockpro64_v20-SCH.pdf)
-  * [ROCKPro64 v2.0 Board Top Silkscreen in PDF format](http://files.pine64.org/doc/rockpro64/Rockpro64-ver2.0-topsilk_ref.pdf) (contains component labels)
+  * [ROCKPro64 v2.0 Board Top Silkscreen in PDF format](https://files.pine64.org/doc/rockpro64/Rockpro64-ver2.0-topsilk_ref.pdf) (contains component labels)
   * [Engineering Change Notice for v2.0 to turn on 3.3V power on PCIe](https://files.pine64.org/doc/rockpro64/ROCKPRo64%20Engineering%20Change%20Notice%2020180628RP01.pdf)
 * [ROCKPro64 AP6359SA Wifi/BT Schematic](https://files.pine64.org/doc/rockpro64/rockpro64_wifi_ap6359SA.pdf)
 * [ROCKPro64 Pi-2 Pin assignment and definition](https://files.pine64.org/doc/rockpro64/Rockpro64%20Pi-2%20Connector%20ver0.2.png)

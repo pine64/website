@@ -149,11 +149,11 @@ Yes, use version 9-2020-q2-update of the [Arm Embedded Toolchain arm-none-eabi-g
 
 ## What is ARM Semihosting?
 
-We use the SWD (Single Wire Debug) protocol created by ARM for flashing and debugging PineTime’s nRF52832 microcontroller, which contains an ARM CPU. (SWD is derived from standard JTAG, but with fewer wires) With ARM CPUs you can trigger a software breakpoint, and allow the debugger (OpenOCD) to do something really nifty: Display a message, read console input, dump out a file, even read a file. That’s called ARM Semihosting. [More about ARM Semihosting](http://www.keil.com/support/man/docs/armcc/armcc_pge1358787046598.htm)
+We use the SWD (Single Wire Debug) protocol created by ARM for flashing and debugging PineTime’s nRF52832 microcontroller, which contains an ARM CPU. (SWD is derived from standard JTAG, but with fewer wires) With ARM CPUs you can trigger a software breakpoint, and allow the debugger (OpenOCD) to do something really nifty: Display a message, read console input, dump out a file, even read a file. That’s called ARM Semihosting. [More about ARM Semihosting](https://developer.arm.com/documentation/dui0375/g/What-is-Semihosting-/What-is-semihosting-)
 
 ## What is OpenOCD?
 
-OpenOCD is Open On-Chip Debugger. It’s the software that drives your microcontroller debugger/flasher. We need it for running any kind of flashing and debugging with Pi or ST-Link. gdb talks to OpenOCD for debugging firmware. gdb also works with VSCode for debugging firmware visually. [More about OpenOCD](http://openocd.org/doc-release/html/About.html#What-is-OpenOCD_003f)
+OpenOCD is Open On-Chip Debugger. It’s the software that drives your microcontroller debugger/flasher. We need it for running any kind of flashing and debugging with Pi or ST-Link. gdb talks to OpenOCD for debugging firmware. gdb also works with VSCode for debugging firmware visually. [More about OpenOCD](https://openocd.org/doc-release/html/About.html#What-is-OpenOCD_003f)
 
 Please use [xPack OpenOCD](https://xpack.github.io/openocd) with PineTime. Other versions of OpenOCD seem to have problems with PineTime.
 

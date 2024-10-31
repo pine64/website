@@ -69,7 +69,8 @@ TODO: i2cdev, linux-iio, support matrix
   * /dev/ttyUSB2: AT command interface
   * /dev/ttyUSB1: default NMEA data output
 * MPU6050:inv_mpu6050, inv_mpu6050_i2c, industrialio
- ```
+
+```
 	iio:device2: mpu6050 (buffer capable)
 		9 channels found:
 			accel_x:  (input, index: 0, format: be:S16/16>>0)

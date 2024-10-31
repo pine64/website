@@ -47,7 +47,7 @@ For more general information about Manjaro Linux distribution please see: 
 
 Manjaro is just one of many options at your disposal. The Pinebook Pro is able to run a vast number of other Linux and BSD operating systems, which can be booted from a SD card or installed to internal flash storage instead of Manjaro. For instance, you can boot Recalbox from SD (or USB) for recreation and retro gaming while keeping your full operating system on the Pinebook Pro’s internal flash storage. 
 
-You can find an [up-to-date list of available operating systems](https://wiki.pine64.org/index.php/Pinebook_Pro_Software_Release) on [PINE64 Wiki](http://wiki.pine64.org).  
+You can find an [up-to-date list of available operating systems](https://wiki.pine64.org/index.php/Pinebook_Pro_Software_Release) on [PINE64 Wiki](https://wiki.pine64.org).  
 
 The [Pinebook Pro sub-section](https://wiki.pine64.org/index.php/Pinebook_Pro) of the [PINE64 Wiki](https://wiki.pine64.org/index.php/Main_Page) also contains a wide variety of information concerning the laptop’s hardware, including: 
 
@@ -61,7 +61,8 @@ The greatest resource we have to offer, however, is our community. There are lit
 
 Here are your options:
 
-- [Forum](http://forum.pine64.org)
+- [Forum](- [Forum](https://forum.pine64.org)
+)
 - [Official Reddit](https://www.reddit.com/r/PINE64official/)
 - [IRC Webchat](https://www.pine64.org/web-irc/)
 - [Telegram](https://t.me/mtx_pinebook)
@@ -85,7 +86,7 @@ For general news and to follow ongoing development:
 
 Although this Community Edition ships with Ubuntu Touch, you can use many different mobile OSes on your device. Most if not all well established Linux-based systems are represented on the PinePhone so there are plenty of options to choose from. You can give any - or all - of them a risk-free spin by booting from a SD card. 
 
-You can find an [up-to-date list of operating systems](https://wiki.pine64.org/index.php/PinePhone_Software_Releases) on [PINE64 Wiki](http://wiki.pine64.org)
+You can find an [up-to-date list of operating systems](https://wiki.pine64.org/index.php/PinePhone_Software_Releases) on [PINE64 Wiki](https://wiki.pine64.org)
 
 The [PinePhone sub-section](https://wiki.pine64.org/index.php/PinePhone) of the Wiki is a valuable community maintained information hub which, amongst others, includes:
 

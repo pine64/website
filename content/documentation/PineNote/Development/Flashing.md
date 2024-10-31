@@ -47,7 +47,7 @@ sudo udevadm control --reload
 
 ## Entering Maskrom/Rockusb mode
 
-Interfacing with the PineNote over USB using `rkdeveloptool` requires first booting the PineNote into [an alternative operating mode](http://opensource.rock-chips.com/wiki_Rockusb) called Maskrom or Rockusb mode.
+Interfacing with the PineNote over USB using `rkdeveloptool` requires first booting the PineNote into [an alternative operating mode](https://opensource.rock-chips.com/wiki_Rockusb) called Maskrom or Rockusb mode.
 
 ### Possible methods
 

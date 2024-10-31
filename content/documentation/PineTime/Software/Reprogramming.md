@@ -67,7 +67,7 @@ Unlocking the device and erase the memory.
 
 ## OpenOCD
 
-OpenOCD, the Open On-Chip Debugger supports multiple different adapters. You can read more about it here: http://openocd.org/
+OpenOCD, the Open On-Chip Debugger supports multiple different adapters. You can read more about it here: https://openocd.org/
 
 ### Adapters
 

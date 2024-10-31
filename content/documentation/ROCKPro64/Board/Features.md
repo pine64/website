@@ -128,4 +128,4 @@ The ROCKPro64 is based on the Rockchip RK3399.
 | Real Time Clock (RTC) battery backup |  |  |  |  |  |  | [RTC Backup Battery Holder CR2032](https://pine64.com/product/rtc-backup-battery-holder-cr-2032/) |
 | Boot from USB/PXE |  |  |  |  |  |  |  |
 
-RockChip themselves have tables of supported features at 4.4 and mainline kernel versions [in their wiki here](http://opensource.rock-chips.com/wiki_Status_Matrix).
+RockChip themselves have tables of supported features at 4.4 and mainline kernel versions [in their wiki here](https://opensource.rock-chips.com/wiki_Status_Matrix).

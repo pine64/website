@@ -31,7 +31,9 @@ $ tar xf pine64-pinebookPro-2021.10-004.tar.xz
 
 Flash Tow-Boot to **/dev/sdb** (replace this with the device you actually intend to use).
 
-    # dd if=pine64-pinebookPro-2021.10-004/shared.disk-image.img of=/dev/sdb bs=1M oflag=direct,sync
+```console
+# dd if=pine64-pinebookPro-2021.10-004/shared.disk-image.img of=/dev/sdb bs=1M oflag=direct,sync
+```
 
 This creates the partition table for the device, with the first partition serving to protect Tow-Boot. Do not move or write to this partition.
 
@@ -39,14 +41,16 @@ This creates the partition table for the device, with the first partition servin
 
 Use `fdisk` to add partitions to **/dev/sdb**.
 
-    # fdisk /dev/sdb
+```console
+# fdisk /dev/sdb
+```
 
 Create the **/boot** partition.
 
 * Type **n** to create a new partition.
 * Press enter for partition number two.
 * Press enter for the default start sector.
-* Type **+256M** to make the new partition 256 MiB.
+* Type **+512M** to make the new partition with 512 MiB.
 
 Mark the **/boot** partition bootable.
 
@@ -69,28 +73,46 @@ Write the changes to disk.
 ### Formatting the partitions
 
 Format the **/boot** partition as a filesystem supported by your U-Boot. ext4 is recommended:
- # mkfs.ext4 /dev/sdb2
+
+```console
+# mkfs.ext4 /dev/sdb2
+```
 
 Format the root partition as any filesystem supported by Arch Linux ARM. btrfs for example:
- # mkfs.btrfs /dev/sdb3
+
+```console
+# mkfs.btrfs /dev/sdb3
+```
 
 ## Installing the root filesystem
 
 ### Mounting the partitions
-    # mount /dev/sdb3 /mnt
-    # mkdir /mnt/boot
-    # mount /dev/sdb2 /mnt/boot
+
+```console
+# mount /dev/sdb3 /mnt
+# mkdir /mnt/boot
+# mount /dev/sdb2 /mnt/boot
+```
 
 ### Downloading and verifying the rootfs tarball
 
 Download the tarball and its PGP signature.
- $ wget http://os.archlinuxarm.org/os/ArchLinuxARM-aarch64-latest.tar.gz{,.sig}
+
+```console
+$ wget http://os.archlinuxarm.org/os/ArchLinuxARM-aarch64-latest.tar.gz{,.sig}
+```
 
 Import the Arch Linux ARM signing key.
- $ gpg --keyserver keyserver.ubuntu.com --recv-keys 68B3537F39A313B3E574D06777193F152BDBE6A6
+
+```console
+$ gpg --keyserver keyserver.ubuntu.com --recv-keys 68B3537F39A313B3E574D06777193F152BDBE6A6
+```
 
 Verify the tarball’s authenticity.
- $ gpg --verify ArchLinuxARM-aarch64-latest.tar.gz.sig
+
+```console
+$ gpg --verify ArchLinuxARM-aarch64-latest.tar.gz.sig
+```
 
 Verifying the authenticity of the tarball protects you in two ways:
 
@@ -100,45 +122,57 @@ Verifying the authenticity of the tarball protects you in two ways:
 ### Extracting and configuring the root filesystem
 
 #### Extracting the root filesystem
-    # bsdtar -xpf ArchLinuxARM-aarch64-latest.tar.gz -C /mnt
+
+```console
+# bsdtar -xpf ArchLinuxARM-aarch64-latest.tar.gz -C /mnt
+```
 
 #### Editing fstab
 
 Find the partitions' UUIDs with `blkid`.
 
-    # blkid /dev/sdb3 /dev/sdb2
+```console
+# blkid /dev/sdb3 /dev/sdb2
+```
 
 Example output:
 
-    /dev/sdb3: UUID="c1ec9712-5c64-46da-852c-9d665416e8a6" UUID_SUB="90e5b654-6967-471a-9d35-8997488b1ba8" BLOCK_SIZE="4096" TYPE="btrfs" PARTUUID="885dd863-a550-2d47-89dd-f54fd6744ca5"
-    /dev/sdb2: UUID="21bbff3f-b82e-416e-93c8-e6d44c3daf82" BLOCK_SIZE="4096" TYPE="ext4" PARTUUID="be571200-1a56-5d4c-9a5b-88a5f36a295e"
+```console
+/dev/sdb3: UUID="c1ec9712-5c64-46da-852c-9d665416e8a6" UUID_SUB="90e5b654-6967-471a-9d35-8997488b1ba8" BLOCK_SIZE="4096" TYPE="btrfs" PARTUUID="885dd863-a550-2d47-89dd-f54fd6744ca5"
+/dev/sdb2: UUID="21bbff3f-b82e-416e-93c8-e6d44c3daf82" BLOCK_SIZE="4096" TYPE="ext4" PARTUUID="be571200-1a56-5d4c-9a5b-88a5f36a295e"
+```
 
 Add the following lines to **/mnt/etc/fstab**, substituting the example UUIDs with those you received from `blkid`.
 
-    UUID=c1ec9712-5c64-46da-852c-9d665416e8a6 /     btrfs defaults 0 1
-    UUID=21bbff3f-b82e-416e-93c8-e6d44c3daf82 /boot ext4  defaults 0 2
+```console
+UUID=c1ec9712-5c64-46da-852c-9d665416e8a6 /     btrfs defaults 0 1
+UUID=21bbff3f-b82e-416e-93c8-e6d44c3daf82 /boot ext4  defaults 0 2
+```
 
 #### Creating extlinux.conf
 
 Create a file **/mnt/boot/extlinux/extlinux.conf** with the following contents, replacing the example UUID with the one for **/dev/sdb3** from `blkid`.
- DEFAULT arch
- MENU TITLE Boot Menu
- PROMPT 0
- TIMEOUT 50
 
-    LABEL arch
-    MENU LABEL Arch Linux ARM
-    LINUX /Image
-    INITRD /initramfs-linux.img
-    FDT /dtbs/rockchip/rk3399-pinebook-pro.dtb
-    APPEND root=UUID=c1ec9712-5c64-46da-852c-9d665416e8a6 rw
+```console
+DEFAULT arch
+MENU TITLE Boot Menu
+PROMPT 0
+TIMEOUT 50
 
-    LABEL arch-fallback
-    MENU LABEL Arch Linux ARM with fallback initramfs
-    LINUX /Image
-    INITRD /initramfs-linux-fallback.img
-    FDT /dtbs/rockchip/rk3399-pinebook-pro.dtb
-    APPEND root=UUID=c1ec9712-5c64-46da-852c-9d665416e8a6 rw
+LABEL arch
+MENU LABEL Arch Linux ARM
+LINUX /Image
+INITRD /initramfs-linux.img
+FDT /dtbs/rockchip/rk3399-pinebook-pro.dtb
+APPEND root=UUID=c1ec9712-5c64-46da-852c-9d665416e8a6 rw
+
+LABEL arch-fallback
+MENU LABEL Arch Linux ARM with fallback initramfs
+LINUX /Image
+INITRD /initramfs-linux-fallback.img
+FDT /dtbs/rockchip/rk3399-pinebook-pro.dtb
+APPEND root=UUID=c1ec9712-5c64-46da-852c-9d665416e8a6 rw
+```
 
 ## Booting and finishing setup
 
@@ -146,12 +180,16 @@ Boot into Arch Linux ARM and log in as **root** with password **root**.
 
 Initialize the pacman keyring.
 
-    # pacman-key --init
-    # pacman-key --populate archlinuxarm
+```console
+# pacman-key --init
+# pacman-key --populate archlinuxarm
+```
 
 For security, change the default passwords for root and the default user **alarm**.
 
-    # passwd
-    # passwd alarm
+```console
+# passwd
+# passwd alarm
+```
 
-Congratulations, you have now installed Arch Linux ARM on your PineBook Pro!
+You have now installed Arch Linux ARM on your PineBook Pro.

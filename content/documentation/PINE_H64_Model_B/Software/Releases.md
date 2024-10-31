@@ -85,7 +85,7 @@ Notes:
 
 Download:
 
-* [Direct download latest release build from NetBSD by select PINE H64](http://www.armbsd.org/)
+* [Direct download latest release build from NetBSD by select PINE H64](https://nycdn.netbsd.org/pub/arm/)
 
 Notes:
 

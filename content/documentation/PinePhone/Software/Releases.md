@@ -164,7 +164,7 @@ The default user interface stack is [Hildon](https://en.wikipedia.org/wiki/Hildo
 
 #### Download
 
-* [Maemo Leste test builds](http://maedevu.maemo.org/images/pinephone/)
+* [Maemo Leste test builds](https://maedevu.maemo.org/images/pinephone/)
 
 There is also an [image builder](https://github.com/maemo-leste/image-builder), see the wiki for instructions on how to [build a custom image](https://leste.maemo.org/Image_Builder). For current status and instructions, please read their [PinePhone wiki page](https://leste.maemo.org/PinePhone).
 
@@ -250,8 +250,6 @@ This is also a good build for charging depleted battery. Just boot up this build
 For more info on this build, please visit its entry the "News" section of its [web page](https://xnux.eu/p-boot-demo/).
 
 * [Download torrent file from author's website](https://dl.xnux.eu/p-boot-multi-2022-01-26.torrent)
-* [Download img.zst from author's website](http://dl.xnux.eu/p-boot-multi-2022-01-26/) (speed limited to 512KiB/s)
-* [Download torrent and img.zst from discord user uxes' mirror](http://mirror.uxes.cz/dl.xnux.eu/)
 ** *File name:* multi.img.zst
 ** *SHA-256:* 39915b9d2aa2f33fd78552ac9a0e665c4aef97dd68a9f9a6c76f9fa2f0ac049e
 ** *File Size:* 6.9GiB
@@ -284,7 +282,7 @@ Also see [Installation instructions](/documentation/PinePhone/Installation_instr
 
 {{< figure src="/documentation/images/nemo_mobile.png" width="100" >}}
 
-Nemo Mobile is the open source build of Sailfish OS with a open source UI called [Glacier](http://nemomobile.net/glacier-home/), [based on Manjaro](http://nemomobile.net/pages/Hello_manjaro/).
+Nemo Mobile is the open source build of Sailfish OS with a open source UI called [Glacier](https://nemomobile.net/glacier-home/), [based on Manjaro](https://nemomobile.net/pages/Hello_manjaro/).
 
 #### Download
 
@@ -519,7 +517,7 @@ The boot-up OS is upgraded independently from the containers.
 
 #### Download
 
-* http://dl.fail.pp.ua/slackware/images/pinephone/
+* https://dl.irradium.org//slackware/images/pinephone/
 
 #### Notes
 

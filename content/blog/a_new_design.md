@@ -74,7 +74,7 @@ git clone https://github.com/pine64/website.git
 Then change the directory into the folder:
 
 ```
-cd website-main
+cd website
 ```
 
 And then preview the website using:
@@ -92,7 +92,7 @@ The complete process is explained in details under https://github.com/pine64/web
 The project is structured the following:
 
 ```
-website-main/
+website/
 ├── archetypes/
 │   └── default.md
 ├── assets/

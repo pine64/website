@@ -110,9 +110,11 @@ then, make the filesystem on it. CounterPillow went for ext4 because nobody has 
 $ mkfs.ext4 rootpart.bin
 ```
 
-Cool, now mount it:
+Now mount it:
 
-    # mount rootpart.bin /mnt/emmc-root
+```console
+# mount rootpart.bin /mnt/emmc-root
+```
 
 Now we’ll download the Arch Linux ARM generic rootfs tarball and go to town:
 

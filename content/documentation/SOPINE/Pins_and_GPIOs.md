@@ -13,7 +13,7 @@ menu:
 
 This is table of all available GPIOs on SOPine with their alternate functions. 
 
-For more information about GPIOs, check the [Allwinner A64 Datasheet](http://files.pine64.org/doc/datasheet/pine64/A64_Datasheet_V1.1.pdf) section _4.2 GPIO Multiplexing Functions_ and section _4.3 Detailed Pin/Signal Description_
+For more information about GPIOs, check the [Allwinner A64 Datasheet](https://files.pine64.org/doc/datasheet/pine64/A64_Datasheet_V1.1.pdf) section _4.2 GPIO Multiplexing Functions_ and section _4.3 Detailed Pin/Signal Description_
 
 | Pin name | Linux | SOPine Pin | Direction | Default Function | Default Pull | Function 2 | Function 3 | Function 4 | Function 5 | Function 6 | SOPine Name |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

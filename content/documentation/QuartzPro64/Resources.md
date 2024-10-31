@@ -11,7 +11,7 @@ menu:
 
 ## Kernel
 
-* [The linux-rockchip mailing list archives](http://lists.infradead.org/pipermail/linux-rockchip/)
+* [The linux-rockchip mailing list archives](https://lists.infradead.org/pipermail/linux-rockchip/)
 * [linux-rockchip patchwork](https://patchwork.kernel.org/project/linux-rockchip/list/)
 * [neggles / neg2led’s mainline kernel repository with patches picked from the mailing list](https://github.com/neg2led/linux-quartz64)
 * [Sebastian Reichel’s (SRE) rk3588 branch](https://git.kernel.org/pub/scm/linux/kernel/git/sre/linux-misc.git/log/?h=rk3588)

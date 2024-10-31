@@ -137,7 +137,7 @@ The big software news of this month is that the PinePhone is now capable of acce
 
 https://www.youtube.com/watch?v=BvmRV6IIGGo
 
-**Hardware accelerated video in Clapper - by [Brian Daniels](http://briandaniels.me/)**
+**Hardware accelerated video in Clapper - by [Brian Daniels](https://briandaniels.me/)**
 
 In other news, there is now an Arch Linux ARM OS image featuring Plasma Mobile; this is something that many users have been interested in seeing for quite some time. The image features the newest Plasma Mobile UI (5.22) and joins the existing selection of Phosh and barebones installations - it can be downloaded from [here](https://github.com/dreemurrs-embedded/Pine64-Arch/releases)! 
 

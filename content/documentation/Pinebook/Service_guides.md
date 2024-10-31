@@ -17,12 +17,12 @@ These are instruction guides for the disassembly:
 
 11.6″ Pinebook:
 
-* [Lithium Battery Pack Removal Guide](http://files.pine64.org/doc/pinebook/guide/Pinebook_11.6-Battery_Removal_Guide.pdf)
-* [LCD Panel Screen Removal Guide](http://files.pine64.org/doc/pinebook/guide/Pinebook_11.6-Screen_Removal_Guide.pdf)
-* [eMMC Module Removal Guide](http://files.pine64.org/doc/pinebook/guide/Pinebook_11.6-eMMC_Removal_Guide.pdf)
+* [Lithium Battery Pack Removal Guide](https://files.pine64.org/doc/pinebook/guide/Pinebook_11.6-Battery_Removal_Guide.pdf)
+* [LCD Panel Screen Removal Guide](https://files.pine64.org/doc/pinebook/guide/Pinebook_11.6-Screen_Removal_Guide.pdf)
+* [eMMC Module Removal Guide](https://files.pine64.org/doc/pinebook/guide/Pinebook_11.6-eMMC_Removal_Guide.pdf)
 
 14″ Pinebook:
 
-* [Lithium Battery Pack Removal Guide](http://files.pine64.org/doc/pinebook/guide/Pinebook_14-Battery_Removal_Guide.pdf)
-* [LCD Panel Screen Removal Guide](http://files.pine64.org/doc/pinebook/guide/Pinebook_14-Screen_Removal_Guide.pdf)
-* [eMMC Module Removal Removal Guide](http://files.pine64.org/doc/pinebook/guide/Pinebook_14-eMMC_Removal_Guide.pdf)
+* [Lithium Battery Pack Removal Guide](https://files.pine64.org/doc/pinebook/guide/Pinebook_14-Battery_Removal_Guide.pdf)
+* [LCD Panel Screen Removal Guide](https://files.pine64.org/doc/pinebook/guide/Pinebook_14-Screen_Removal_Guide.pdf)
+* [eMMC Module Removal Removal Guide](https://files.pine64.org/doc/pinebook/guide/Pinebook_14-eMMC_Removal_Guide.pdf)

@@ -27,8 +27,8 @@ When removing the large RF shield found on the mainboard, for example when short
 
 These are self-service instruction guides for the disassembly of the 14-inch Pinebook, but they still almost directly apply to the Pinebook Pro:
 
-* [Lithium Battery Pack Removal Guide](http://files.pine64.org/doc/pinebook/guide/Pinebook_14-Battery_Removal_Guide.pdf)
-* [LCD Panel Screen Removal Guide](http://files.pine64.org/doc/pinebook/guide/Pinebook_14-Screen_Removal_Guide.pdf)
-* [eMMC Module Removal Removal Guide](http://files.pine64.org/doc/pinebook/guide/Pinebook_14-eMMC_Removal_Guide.pdf)
+* [Lithium Battery Pack Removal Guide](https://files.pine64.org/doc/pinebook/guide/Pinebook_14-Battery_Removal_Guide.pdf)
+* [LCD Panel Screen Removal Guide](https://files.pine64.org/doc/pinebook/guide/Pinebook_14-Screen_Removal_Guide.pdf)
+* [eMMC Module Removal Removal Guide](https://files.pine64.org/doc/pinebook/guide/Pinebook_14-eMMC_Removal_Guide.pdf)
 
 Assembling it back requires the described steps to be performed in the reverse order.

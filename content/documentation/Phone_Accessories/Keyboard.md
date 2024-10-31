@@ -28,7 +28,7 @@ The keyboard case works with both the PinePhone and PinePhone Pro and features a
 You do not lose access to the PinePhone (Pro)’s USB-C port, speaker, microphone, or any external features, such as volume and lock buttons, with the keyboard attached. There is also a cut-out for the camera, torch, and headphone jack. The USB-C port on the keyboard is capable of powering both the keyboard and PinePhone (Pro) simultaneously. This means that you can plug in a USB-C charger into the keyboard to charge the keyboard’s internal battery, while the PinePhone (Pro) is charging via the internal connection between phone and keyboard.
 
 {{< admonition type="warning" >}}
- Do not plug in a charger into the keyboard and the phone at the same time. Using the USB-C port of the PinePhone (Pro) while a charger to is connected to the USB-C port of the keyboard is also discouraged for the same reason. Technical details regarding the issue can be found in the blog post of the developer _megi_ [here](http://xnux.eu/log/072.html), in [this](https://www.pine64.org/2022/05/31/may-update-worth-the-wait/) blog post and the safety section.
+ Do not plug in a charger into the keyboard and the phone at the same time. Using the USB-C port of the PinePhone (Pro) while a charger to is connected to the USB-C port of the keyboard is also discouraged for the same reason. Technical details regarding the issue can be found in the blog post of the developer _megi_ [here](https://xnux.eu/log/072.html), in [this](https://www.pine64.org/2022/05/31/may-update-worth-the-wait/) blog post and the safety section.
 {{< /admonition >}}
 
 Please keep in mind that the keyboard case transforms the PinePhone (Pro) into a PDA, which means that taking calls will likely prove awkward without a wired or wireless headset connected (try speakerphone button if available).
@@ -72,7 +72,7 @@ For any software issue please see the [Software support section](/documentation/
 
 ## Safety
 
-Do not plug in a charger into the keyboard and the phone at the same time. Doing so may result in damage or loss of the keyboard charging functionality. Using the USB-C port of the PinePhone (Pro) while a charger to is connected to the USB-C port of the keyboard is also discouraged for the same reason. Technical details regarding the issue can be found in the blog post of the developer _megi_ [here](http://xnux.eu/log/072.html) and [this](https://www.pine64.org/2022/05/31/may-update-worth-the-wait/) blog post.
+Do not plug in a charger into the keyboard and the phone at the same time. Doing so may result in damage or loss of the keyboard charging functionality. Using the USB-C port of the PinePhone (Pro) while a charger to is connected to the USB-C port of the keyboard is also discouraged for the same reason. Technical details regarding the issue can be found in the blog post of the developer _megi_ [here](https://xnux.eu/log/072.html) and [this](https://www.pine64.org/2022/05/31/may-update-worth-the-wait/) blog post.
 
 Please note: Only use mild isopropyl alcohol when wiping down the clamshell of the device. Stronger solutions may partially strip the coatings. Do not lube the keyboard with GPL 205G0 switch grease, it can cause problems with the key responsiveness and tactility.
 
@@ -138,7 +138,7 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 See GNU General Public License for more details.
 
-GNU General Public License http://www.gnu.org/licenses/
+GNU General Public License https://www.gnu.org/licenses/
 ```
 
 ## Hardware

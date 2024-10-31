@@ -31,8 +31,7 @@ Place the jumper J2 on USB/UART Programming/Console Adapter (PMPROG01) to 5V out
 {{< figure src="/documentation/images/Wr_Termite2.JPG" title="Termite Setup Screen" >}}
 {{< figure src="/documentation/images/Wr_cfghelp_scr.JPG" title="Help Command" >}}
 
-* For windows system, you can use terminal emulator program Termite to configure the device.
-* Termite can be downloaded at [CompuPhase Website ](http://www.compuphase.com/software_termite.htm)
+* For windows system, you can use terminal emulator program _Termite_ to configure the device.
 * Make sure the 'Port' setting is refer to the USB/UART Programming/Console Adapter (PMPROG01)'s Virtual Comm Port.
 * Follow the setting according to the setup screen capture. (57600Baud 8-N-1)
 * Once Termite configuration is done, press 'OK' to save the setting.
@@ -113,7 +112,7 @@ Place the jumper J2 on USB/UART Programming/Console Adapter (PMPROG01) to 5V out
 ### Software Setup
 
 * Download the firmware from the [download section](/documentation/Accessories/Wifi_remote_i2c#download) and unzip the file.
-* Download the windows Python base Flash Download Tools by Espressif from [Espressif website](http://espressif.com/en/products/hardware/esp8266ex/resources).
+* Download the windows Python base Flash Download Tools by Espressif from [Espressif website](https://espressif.com/en/products/hardware/esp8266ex/resources).
 * Setup the ESP Flash Download tools according to the screen short.
 
 {{< figure src="/documentation/images/Esp_prog_tool.JPG" width="400" >}}
@@ -139,19 +138,19 @@ Place the jumper J2 on USB/UART Programming/Console Adapter (PMPROG01) to 5V out
 
 ### Program/Driver
 * [Termite a simple RS232 terminal](http://www.compuphase.com/software_termite.htm)
-* [Flash Download Tools v2.4](http://espressif.com/en/products/hardware/esp8266ex/resources) Under Tools Section
+* [Flash Download Tools v2.4](https://espressif.com/en/products/hardware/esp8266ex/resources) Under Tools Section
 * [Silicon Lab CP2102 Virtual COM Port Driver](https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx)
-* [WifiAppDemo.gz](http://files.pine64.org/doc/POT/WifiAppDemo.gz)
-* [PineWifiServer.gz](http://files.pine64.org/doc/POT/PineWifiServer.gz)
-* [PMWF01A Firmware](http://files.pine64.org/doc/POT/PMWF01A%20Firmware.zip)
-* [PMWF01A Firmware Source](http://files.pine64.org/doc/POT/PMWF01A%20Firmware%20Source.zip)
-* [PineWifiRemoteI2c Server Source.tar.gz](http://files.pine64.org/doc/POT/PineWifiRemoteI2c%20Server%20Source.tar.gz)
+* [WifiAppDemo.gz](https://files.pine64.org/doc/POT/WifiAppDemo.gz)
+* [PineWifiServer.gz](https://files.pine64.org/doc/POT/PineWifiServer.gz)
+* [PMWF01A Firmware](https://files.pine64.org/doc/POT/PMWF01A%20Firmware.zip)
+* [PMWF01A Firmware Source](https://files.pine64.org/doc/POT/PMWF01A%20Firmware%20Source.zip)
+* [PineWifiRemoteI2c Server Source.tar.gz](https://files.pine64.org/doc/POT/PineWifiRemoteI2c%20Server%20Source.tar.gz)
 
 ### Datasheet/Related Information
 
 * [TE PCJ-105D3M Relay Datasheet](http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=PCJ_series_relay_data_sheet_E&DocType=DS&DocLang=EN)
 * [ESP8266 Datasheet](https://drive.google.com/file/d/0B0cEs0lxTtL3SDdCcWd0LVI2bk0/view?usp=sharing)
 * [ESP8266 forum](http://bbs.espressif.com/)
-* [ESP8266 Flash Download Tools, Please refer to the Tools section](http://espressif.com/en/products/hardware/esp8266ex/resources)
-* [ESP8266 Resources](http://espressif.com/en/products/hardware/esp8266ex/resources)
+* [ESP8266 Flash Download Tools, Please refer to the Tools section](https://espressif.com/en/products/hardware/esp8266ex/resources)
+* [ESP8266 Resources](https://espressif.com/en/products/hardware/esp8266ex/resources)
 * [CP2102 Datasheet](https://www.silabs.com/Support%20Documents/TechnicalDocs/CP2102-9.pdf)

@@ -93,7 +93,7 @@ If you want to learn more about RetroGaming on a RockPro64, Rock64, or even othe
 
 ### Useful Links and Resources
 
-[Subreddit: /r/sbcgaming](http://www.reddit.com/r/sbcgaming)
+[Subreddit: /r/sbcgaming](https://www.reddit.com/r/sbcgaming)
 
 [/r/sbcgaming Discord](https://discord.gg/5dSUjmk)
 

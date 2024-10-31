@@ -122,7 +122,7 @@ With that out of the way, I’m happy to announce that the **Brave Heart product
 
 ![](/blog/images/timer.png)
 
-**Timer on [main page](https://pine64.org) counting down to pre-orders  opening**
+**Timer on [main page](/) counting down to pre-orders  opening**
 
 So, what can _Brave Heart_ adopters look forward to and what should they be aware of? Let’s talk about the hardware first: the _Brave Heart_ PinePhones will, by and large, be identical to PinePhones produced in 2020 and onwards. This applies to the case molding, PCB, LCD assembly, cooling, as well as various other components making up the phones, including aesthetic ones. These are effectively considered ‘final’. That said, as I already mentioned, we will likely be further tweaking 2G antennas to improve reception of the respective bands and we reserve the right to fix any issues that may be uncovered in the hardware. We do not, however, deem it likely that any major issues will transpire or affect end-users. Still, keep in mind that this batch is called _Brave heart_ for a reason - we’re looking for those brave enough to be the first adopters of this hardware. If bravery is not in your nature, or this isn’t something you’re willing to take a risk on, then please sit this one out and wait until March 2020 to get your production unit. 
 
@@ -130,9 +130,9 @@ As for the software, I have nothing but good news to relay. It is my understandi
 
 Finishing off this already lengthy PinePhone section, I completely forgot to mention that _Brave Heart_ schematics and other associated documents have now been made available. I am linking them below for you to view and comment on: 
 
-- [PinePhone Brave Heart Schematic](http://files.pine64.org/doc/PinePhone/PinePhone_Schematic_v1.1_20191031.pdf)
-- [PinePhone Brave Heart Changes (vs prototype units)](http://files.pine64.org/doc/PinePhone/PinePhone_BraveHeart_edition_version_1.1_change_list.pdf)
-- [PinePhone Exploded Diagram of Brave Heart edition PinePhones](http://files.pine64.org/doc/PinePhone/PinePhone_Exploded_Diagram_ver_1.0.pdf)
+- [PinePhone Brave Heart Schematic](https://files.pine64.org/doc/PinePhone/PinePhone_Schematic_v1.1_20191031.pdf)
+- [PinePhone Brave Heart Changes (vs prototype units)](https://files.pine64.org/doc/PinePhone/PinePhone_BraveHeart_edition_version_1.1_change_list.pdf)
+- [PinePhone Exploded Diagram of Brave Heart edition PinePhones](https://files.pine64.org/doc/PinePhone/PinePhone_Exploded_Diagram_ver_1.0.pdf)
 
 #### PineTab
 

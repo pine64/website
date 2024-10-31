@@ -230,7 +230,7 @@ There are now a few documented ways,
 
 There are hopefully videos coming doing it the proper way, and so they can be linked here.
 
-After this the firmware for the power negotiation chip needs to be upgraded, this can be done by running the factory test image, version http://images.postmarketos.org/pinephone/pine64-pinephone-20200724-factorytest55.img.xz or higher. This will do the firmware flashing and respond with a message indicating the state. After this the phone is ready for its added functions.
+After this the firmware for the power negotiation chip needs to be upgraded, this can be done by running the factory test image, version https://images.postmarketos.org/pinephone/pine64-pinephone-20200724-factorytest55.img.xz or higher. This will do the firmware flashing and respond with a message indicating the state. After this the phone is ready for its added functions.
 ANX states:
 
 * No CC Fix - Fix not applied

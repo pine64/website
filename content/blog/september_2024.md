@@ -345,7 +345,7 @@ Pine64 has a line of LoRa boards under the "PineDio" name which unfortunately la
 
 We are looking for people interested in Meshtastic and LoRa to help with the PineDio USB Adapter as it needs a stable driver for users to easily use the device.
 
-If you're interested please come visit the [Pine64 LoRa channels](https://pine64.org/community/) or join the [Meshtastic Discord server](https://discord.com/invite/ktMAKGBnBs). 
+If you're interested please come visit the [Pine64 LoRa channels](/community/) or join the [Meshtastic Discord server](https://discord.com/invite/ktMAKGBnBs). 
 
 ## Community Updates
 

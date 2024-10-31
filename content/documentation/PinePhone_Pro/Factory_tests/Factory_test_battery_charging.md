@@ -15,7 +15,7 @@ Please note that this Android build solely for PinePhone Pro hardware checking p
 
 Download:
 
-* [Direct download](http://files.pine64.org/os/PinePhonePro/pinephone_pro_dd_android9_QC_Test_SDboot_20220215-8GB.img.gz) from _pine64.org_ (722MB, for 8GB microSD cards or bigger, MD5 of the GZip file _214e063c8205c1a98d44b2015a21bb5d_)
+* [Direct download](https://files.pine64.org/os/PinePhonePro/pinephone_pro_dd_android9_QC_Test_SDboot_20220215-8GB.img.gz) from _pine64.org_ (722MB, for 8GB microSD cards or bigger, MD5 of the GZip file _214e063c8205c1a98d44b2015a21bb5d_)
 
 Instructions:
 

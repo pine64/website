@@ -12,7 +12,7 @@ menu:
 * [ROCKPro64 Forum](https://forum.pine64.org/forumdisplay.php?fid=98)
 * [PINE64 shop](https://pine64.com/?post_type=product)
 * [Rockchip Linux GitHub Repo](https://github.com/rockchip-linux)
-* [Rockchip Open Source Wiki](http://opensource.rock-chips.com/)
+* [Rockchip Open Source Wiki](https://opensource.rock-chips.com/wiki_Main_Page)
 * ExplainingComputers have a video review [of the RockPro64 here, including linux first boot.](https://www.youtube.com/watch?v=CeoNHGFN_30)
 
 ## Useful articles and blog posts
