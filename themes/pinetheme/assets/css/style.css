@@ -76,6 +76,7 @@ hr {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    min-height: calc(100vh - 140px);
 }
 /* Default: 1200px content */
 #content > div {
