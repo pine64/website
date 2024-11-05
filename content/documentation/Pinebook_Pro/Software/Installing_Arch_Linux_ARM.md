@@ -50,7 +50,7 @@ Create the **/boot** partition.
 * Type **n** to create a new partition.
 * Press enter for partition number two.
 * Press enter for the default start sector.
-* Type **+512M** to make the new partition with 512 MiB.
+* Type **+512M** to make the new partition with 512 MB.
 
 Mark the **/boot** partition bootable.
 
