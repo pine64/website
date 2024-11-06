@@ -16,7 +16,7 @@ To install an image to the microSD card:
 
 1. Download your chosen image from [Releases](/documentation/PinePhone/Software/Releases) for the regular **PinePhone** (not compatible with the PinePhone Pro).
 2. Extract the compressed file
-3. Write (_flash_) the image to your microSD card, see the isntructions below
+3. Write (_flash_) the image to your microSD card, see the instructions below
 4. Plug microSD card into phone (make sure to use the top slot, not the bottom slot)
 5. Boot up the phone
 
