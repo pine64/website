@@ -18,10 +18,7 @@ These issues are caused by differences in testing procedures of the shipped Debi
 
 ### Fixing the issue
 
-Fortunately the PineNote ships with a complete set of bootloader files and fixing the issue is a matter of
-a few shell commands:
-
-### flashing a working u-boot to get MASKROM with magnet working on PineNote
+Fortunately the PineNote ships with a complete set of bootloader files and fixing the issue is a matter of a few shell commands:, which are flashing a working U-Boot to get MASKROM with magnet working on PineNote:
 
 1. Login via UART-adapter or ssh, or use the Gnome-Terminal (found in the quick slots of the dashboard - 
   switch to BW+Dithering mode for faster screen responses):
