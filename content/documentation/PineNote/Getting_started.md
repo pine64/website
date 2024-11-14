@@ -9,83 +9,63 @@ menu:
     weight: 2
 ---
 
-{{% docs/construction %}}
+## Important note for buyers after October 2024
+{{< admonition type="note" >}}
 
-This page is a work in progress. Its goals are to help users get their devices up and running while minimizing redundancy with other pages (for example documentation, development), and to synthesize information provided in existing guides. Sections below represent a rough outline and will need to be expanded with details and further instructions.
+Dear new PineNote users, you may have noticed that suspend/resume is not working on your new PineNote! You may also noticed that using rkdeveloptool is not possible because you cannot trigger maskrom mode using the magnet method.
 
-## Who can contribute?
+These issues are caused by differences in testing procedures of the shipped Debian-based image, and factory flashing procedures. Namely, the factory used a Windows-based flashing system, and it turned out that this system does overwrite crucial parts of the u-boot bootloader with same only-partially working data. The effect is that the PineNote will boot, but not suspend.
 
-Anyone! Generally, the PineNote is in a very early state, and at least an intermediate level of linux knowledge is probably necessary to be able to do anything at this moment. That said, there are multiple efforts happening at once, and there are a number of ways a person of any skill level can help:
+### Fixing the issue
 
-1. Join in the ongoing documentation effort
-2. Help mainline the kernel by testing, fixing bugs.
+Fortunately the PineNote ships with a complete set of bootloader files and fixing the issue is a matter of
+a few shell commands:
 
-## Out of the box
+### flashing a working u-boot to get MASKROM with magnet working on PineNote
 
-### Information on software shipped with the Pinenote
-As of July 2022, the Pinenote ships with a modified version of android. Under this OS, users interested only in reading ebooks and possibly leaking data to unknown parties may find the device more than satisfactory (read: use caution when handling ultra personal or sensitive data). All hardware items are functional with this OS, though the ability to tune and tweak may be limited by the proprietary nature of some drivers (e.g., the driver for the e-ink display). Ongoing support for this OS is absent, though further community development is possible and hoped for by more than a few users already.
+1. Login via UART-adapter or ssh, or use the Gnome-Terminal (found in the quick slots of the dashboard - 
+  switch to BW+Dithering mode for faster screen responses):
+    * username: `user`
+    * password: `1234`
+      
+2. Gain root access by executing `sudo su - root` (the password is: `1234`).
+    
+3. Execute the following (two) commands (as root):
 
-Apps preloaded with this OS include:
+```console
+cd /root/uboot
 
-* Xphoto
-* WPS Office Lite
-* Browser from Tencent (would urge users to replace/remove)
-* Core: Notes (stylus-driven note app), Local Storage (file browser), Task List (notes list with text and handwriting input)
-* Application Management
-* More Settings
+bash install_stable_1056mhz_uboot.sh
+```
+    
+4. Turn off the PineNote by executing `init 0`
+    
+5. Done. The pinenote should now have a proper U-Boot installed, with rkdeveloptool-support and suspend.
 
-Additional apps may be added via the included browser; for example, F-droid can be installed and then used to install further android apps.
+---
 
-The main bar drawn along the screen’s top edge features buttons for accessing the following, from left-to-right:
+The output of step 3 should read:
 
-* Home (house icon; opens additional bar along the screen’s left edge for accessing notes and file management apps)
-* Refresh screen
-* Installed Apps (four squares)
-* Active Apps (bulleted list of three lines)
-* Settings (gear icon)
-* Back
-* Wifi Menu
-* Bluetooth Stylus Menu (pairing included stylus allows use of hardware buttons on the stylus)
+```console
+root@pinenote:~/uboot# bash install_stable_1056mhz_uboot.sh
+568+0 records in
+568+0 records out
+290816 bytes (291 kB, 284 KiB) copied, 0.00419942 s, 69.3 MB/s
+8192+0 records in
+8192+0 records out
+4194304 bytes (4.2 MB, 4.0 MiB) copied, 0.447542 s, 9.4 MB/s
+If not errors were reported, then the 1056 MHz u-boot/ram-blob was installed
+Please reboot
+root@pinenote:~/uboot# init 0
+```
+{{< /admonition >}}
 
-When hidden by an open app, this bar can be made to reappear by swiping downward anywhere along the screen’s top edge.
+## What's inside the PineNote package
 
-### Accessories included in the box
+Included in the box are:
 
-As of July 2022, the Pinenote ships with the following items in the box:
-
-* Pinenote (duh)
-* Stylus
-* USB-c to USB-a cable
-* USB-c to micro-b cable (for stylus)
-* UART dongle
-
-## Linux installation pages
-
-### Building the Kernel
-
-[PineNote Development/Building Kernel](/documentation/PineNote/Development/Building_kernel)
-
-### Booting Linux
-
-[PineNote Development/Booting Linux](/documentation/PineNote/Development/Booting_Linux)
-
-Additional useful references:
-
-* https://github.com/DorianRudolph/pinenotes
-* https://musings.martyn.berlin/dual-booting-the-pinenote-with-android-and-debian
-
-### OS installation
-
-See [Releases](/documentation/PineNote/Releases)
-
-### Configuring OS and apps
-
-[PineNote Development/Apps](/documentation/PineNote/Development/Apps)
-
-## Links to dotfiles, configuration examples, etc.
-
-* Sway config, Mesa for hardware-acceleration using GPU, KO reader: https://github.com/0cc4m/pinenote-misc
-* Setting up X: https://musings.martyn.berlin/setting-up-x-on-the-pinenote-in-debian-with-touchscreen-onboard-keyboard-and
-* Gnome extension: https://github.com/m-weigand/mw_pinenote_misc/tree/main/gnome_extension
-* Vim config: https://github.com/m-weigand/mw_pinenote_misc/tree/main/vim
-* Xournal++, nwg and libinput tweaks: https://gitlab.com/hrdl/pinenote-shared/
+* **Pinenote**
+* **Stylus**
+* **USB-C to USB-A cable**
+* **USB-C to Micro-USB cable** - specifically for the stylus
+* **UART Dongle** - for [UART](/documentation/PineNote/Development/UART/) connectivity
