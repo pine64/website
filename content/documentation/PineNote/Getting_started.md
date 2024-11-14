@@ -64,8 +64,25 @@ root@pinenote:~/uboot# init 0
 
 Included in the box are:
 
-* **Pinenote**
+* **PineNote**
 * **Stylus**
 * **USB-C to USB-A cable**
 * **USB-C to Micro-USB cable** - specifically for the stylus
 * **UART Dongle** - for [UART](/documentation/PineNote/Development/UART/) connectivity
+* **Foldable cover**
+
+## Applying the foldable cover
+
+The foldable cover can be applied to the PineNote in these simple steps:
+
+**Step 1:** Remove the protective plastic from the adhesive strip.
+
+![Step 1: Remove the protective plastic from the adhesive strip](/documentation/PineNote/images/step1.png)
+
+**Step 2:** The black adhesive strip should now be exposed.
+
+![Step 2: The black adhesive strip should now be exposed](/documentation/PineNote/images/step2.png)
+
+**Step 3:** Carefully place the PineNote on top of the side with the adhesive strip, ensuring that the corners and edges are properly aligned with the device.
+
+![Step 3: Align the PineNote and then place it on top of the stip.](/documentation/PineNote/images/step3.png)
