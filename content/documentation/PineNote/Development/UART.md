@@ -11,6 +11,12 @@ menu:
 
 {{< figure src="/documentation/PineNote/images/Pinenote-uart-dongle.jpeg" title="Basic non-stock PineNote UART dongle" width="400" >}}
 
+The USB UART dongle delivered with the PineNote allows you to have access to a serial port via USB-C Debug Accessory Mode (_DAM_) without having to open up the device. The factory firmware runs at a baud rate of 1500000bps, 8 data bits 1 stop bit, no parity and no flow control. The USB-C male end should go into the PineNote and the female end can be connected with a standard USB-C cable to your computer.
+
+It is relatively easy to build your own UART interface with a USB-C breakout board (for example https://www.ebay.com/itm/275407037613), two resistors and a 3.3V USB serial adapter. It is basically just two 1K pull up resistors (R3, R4), the data sheet values of 10K isn’t whats on the real hardware, see the [schematic](https://files.pine64.org/doc/PineNote/PineNote_USB-C_Console_UART_breakout_board_schematic_v1.0_20210903.pdf). The pull ups enable the serial output on SBU1 and SBU2 you can use with any 3.3V USB serial adapter.
+
+The UART dongle is not necessary to flash the PineNote, but is essential if something goes wrong to fix it without having to open the case.
+
 This page contains information on creating and using a [UART](https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter) dongle for the PineNote. The PineNote was shipped with a compatible UART dongle, but replacements are not available to order in case of loss or hardware fault. Thankfully it is not difficult to make your own from easily-acquired components and a small bit of soldering.
 
 Fear not if you’ve never soldered anything before! This serves as an excellent first soldering project. Borrow the tools from a friend, local hackerspace, or tool library. Pine64 also makes a nice soldering iron themselves, the Pinecil.

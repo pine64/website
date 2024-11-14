@@ -81,17 +81,3 @@ The following concerns have been brought up as open, unanswered topics:
 * Nitpick: The cold white charging LED bleeds through the gap between the rear case and the device’s face. It does not bleed onto the screen, but it is jarring in low-light conditions or when the screen is amber. Could be resolved in software by turning off the charge LED when the screen is on.
 * Is there any way to indicate when the device is in rockusb mode, such as connecting a certain magic pin to the power LED?
 * The modem/4G connector (J6010) has its I2C and UART pins unconnected. Could those be connected to the SoC?
-
-### UART Dongle
-
-The USB UART dongle delivered with the PineNote allows you to have access to a serial port via USB-C Debug Accessory Mode (_DAM_) without having to open up the device.
-The factory firmware runs at a baud rate of 1500000bps, 8 data bits 1 stop bit, no parity and no flow control. The USB-C male end should go into the PineNote and the female end can be connected with a standard USB-C cable to your computer.
-
-It is relatively easy to build your own UART interface with a USB-C breakout board (for example https://www.ebay.com/itm/275407037613), two resistors and a 3.3V USB serial adapter. It is basically just two 1K pull up resistors (R3, R4), the data sheet values of 10K isn’t whats on the real hardware, see the [schematic](https://files.pine64.org/doc/PineNote/PineNote_USB-C_Console_UART_breakout_board_schematic_v1.0_20210903.pdf). The pull ups enable the serial output on SBU1 and SBU2 you can use with any 3.3V USB serial adapter.
-
-The UART dongle is not necessary to flash the PineNote, but is essential if something goes wrong to fix it without having to open the case.
-
-You can flash premade images with the following links:
-
-* https://github.com/m-weigand/pinenote_uboot_patching_dorians_backup (Note: this creates a U-Boot image to flash, do not worry about idblock.bin on the instructions for the next link)
-* https://github.com/m-weigand/pinenote-debian-recipes/releases/
