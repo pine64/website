@@ -15,8 +15,9 @@ Store page: [pine64.com](https://pine64.com/product/pinephone-pinephone-pro-pind
 
 Uses the pogo pins to interface a Semtech SX1262 LoRa module with the PinePhone (Pro).
 
-**❗ IMPORTANT**\
+{{< admonition type="important" >}}
 Software for receiving and sending LoRa messages with this back cover does exist, however no PinePhone operating system has added support for it yet.
+{{< /admonition >}}
 
 ## Schematics and Datasheet
 

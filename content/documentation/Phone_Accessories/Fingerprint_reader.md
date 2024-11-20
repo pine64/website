@@ -15,8 +15,9 @@ Store page: [pine64.com](https://pine64.com/product/pinephone-pinephone-pro-fing
 
 Uses the pogo pins to interface a high quality fingerprint sensor, which uses open firmware for it’s i2c bridge, and can also be used for gesture navigation thanks to it’s ability to detect directional swipes.
 
-**❗ IMPORTANT**\
+{{< admonition type="important" >}}
 No PinePhone operating system has added support for the fingerprint reader yet.
+{{< /admonition >}}
 
 ## Credits
 
