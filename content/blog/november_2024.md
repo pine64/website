@@ -1,6 +1,6 @@
 ---
 title: "November Update: Something Borrowed Something New"
-date: "2024-11-22"
+date: "2024-11-21"
 authors: [Caffeine]
 categories: 
   - "community"
