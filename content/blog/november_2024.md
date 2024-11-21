@@ -1,6 +1,6 @@
 ---
 title: "November Update: Something Borrowed Something New"
-date: "2024-10-18"
+date: "2024-11-22"
 authors: [Caffeine]
 categories: 
   - "community"
@@ -43,7 +43,7 @@ Specific to the PineCam now, the device includes a 2MP camera module which is th
 
 ![PineCam prototype render](/blog/images/November_2024/pinecam_2.jpg)
 
-The PineCam is currently in early prototyping stages, with the plastic body and final PCB having just arrived in recent weeks. However, the hardware is taking shape quickly and the printed circuit board assembly stage is currently on track for around the end of October. The first batch will be making its way to developers soon and we hope to see that it will make an appearance at FOSDEM 2025. If you're planning to attend FOSDEM next year, be sure to swing by our stall (assuming we get one, since we’re still awaiting confirmation) to check out the PineCam in person.
+The PineCam is currently in early prototyping stages, with the plastic body and final PCB having just arrived in recent weeks. However, the hardware is taking shape quickly and the printed circuit board assembly stage is currently on track for around the end of October. The first batch will be making its way to developers soon.
 
 I can see the PineCam being used in countless scenarios, ranging from a truly private nanny or security camera, to a 3D print or drone camera. I’m sure you can think of your own, better use-case examples for the Pinecam. The PineStore hasn’t zeroed-in on a price point just yet, but the device will cost less than $30 upon release.
 
