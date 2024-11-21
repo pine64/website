@@ -51,7 +51,7 @@ I can see the PineCam being used in countless scenarios, ranging from a truly pr
 
 {{< credits "Author: Caffeine" >}}
 
-![Yuzuki Avaota-A1 board image](/blog/images/November_2024/avaota.jpg)
+![Yuzuki Avaota-A1 board image](/blog/images/November_2024/Avaota.jpg)
 
 The second device we will be announcing this update is a collaboration between PineStore and hardware manufacturer Yuzuki, the Avaota-A1. 
 
