@@ -16,7 +16,8 @@ The current official Pinecil (a.k.a. V2 model) comes in a white box (see [Pictur
 ## Pinecil V2 Authenticity Checker
 
 Pinecil V2 comes with a unique internal ID/Serial number. This allows people to check if the Pinecil V2 is Authentic.
-To be more sure, update to the newest stable Ralim’s IronOS and check again, see [Firmware](/documentation/Pinecil/Firmware)].
+To be more sure, update to the newest stable Ralim’s IronOS and check again, see [Firmware](/documentation/Pinecil/Firmware).
 
-**❗ IMPORTANT**\
-[Authenticity Checker here.](https://pinecil.pine64.org/)
+{{< admonition type="important" >}}
+The Authenticity Checker can be found [here](https://pinecil.pine64.org/).
+{{< /admonition >}}
