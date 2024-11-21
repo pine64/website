@@ -13,7 +13,7 @@ PineTime/InfiniTime needs a companion app to e.g. upload a firmware, get notific
 Here are some companion apps:
 
 * [Gadgetbridge](https://www.gadgetbridge.org) (Android >= 4.4) - Companion mobile app, supports updating firmware/bootloader, send notifications, etc.
-* [Amazfish](https://openrepos.net/content/piggz/amazfish) (SailfishOS and Linux) - Companion mobile and desktop app, supports updating firmware/bootloader, send notifications, etc.
+* [Amazfish](https://github.com/piggz/harbour-amazfish/) ([SailfishOS](https://sailfishos-chum.github.io/apps/harbour-amazfish/), [Ubuntu Touch](https://open-store.io/app/uk.co.piggz.amazfish) and [Linux](https://flathub.org/apps/uk.co.piggz.amazfish)) - Companion mobile and desktop app, supports updating firmware/bootloader, send notifications, etc.
 * [Watchmate](https://github.com/azymohliad/watchmate) (Linux)
 * [Siglo](https://github.com/alexr4535/siglo) (Linux) - Companion desktop app.
 * [PinetimeFlasher](https://github.com/ZephyrLabs/PinetimeFlasher) (Windows) - Companion desktop app, only supports flashing firmware.
