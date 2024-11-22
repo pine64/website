@@ -1,7 +1,7 @@
 ---
 title: "November Update: Something Borrowed Something New"
 date: "2024-11-21"
-authors: [Caffeine]
+authors: ["Caffeine"]
 categories: 
   - "community"
   - "news"
@@ -16,7 +16,7 @@ tags:
 cover: 
   image: "NovemberBanner_2024.png"
 images:
-  - "NovemberBanner_2024.png"
+  - "/blog/images/NovemberBanner_2024.png"
 summary: "This month we are announcing a couple of new products including a SBC and a successor to the PineCube. We have updates to share about the PineNote and the PineDio USB adapter this month along with a talk by one of our community members Dsimic."
 aliases:
   - "/2024/10/18/november_2024/"
