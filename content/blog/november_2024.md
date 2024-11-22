@@ -55,7 +55,7 @@ I can see the PineCam being used in countless scenarios, ranging from a truly pr
 
 The second device we will be announcing this update is a collaboration between PineStore and hardware manufacturer Yuzuki, the Avaota-A1. 
 
-The device includes an Allwinner A527 SOC with 8 cores @ 1.8Ghz, a Mali-G57-MC1 GPU that supports the open source Panfrost driver, supports a 4K 60Hz display via HDMI as well as a 2.5K 60Hz display via DisplayPort, 802.11 B/G/N/AX WiFi (Wifi 6) and BlueTooth 5.4 connectivity. 
+The device includes an Allwinner A527 SOC with 4 cores @ 1.8Ghz and 4 cores @ 1.42Ghz, a Mali-G57-MC1 GPU that supports the open source Panfrost driver, supports a 4K 60Hz display via HDMI as well as a 2.5K 60Hz display via DisplayPort, 802.11 B/G/N/AX WiFi (Wifi 6) and BlueTooth 5.4 connectivity. 
 
 You can purchase it in a 4GB of memory and 32GB of storage configuration or a 2GB of memory and 16GB of storage configuration. 
 
@@ -111,36 +111,25 @@ A few weeks before the talk I reached out to TL Lim, asking if he could donate a
 
 ![Six Ox64 128 Mbit boards received from TL Lim](/blog/images/November_2024/barcamp.jpg)
 
+*Six Ox64 128 Mbit boards received from TL Lim*
+
+---
+
 Unfortunately, the Ox64 boards didn't arrive before the talk, missing it by just a few days, so I was unable to hand them out exactly at the end of the talk, as planned originally. Instead, I intended to collect the contacts of the lucky winners and deliver the boards later. I thought that would make the talk audience a bit impatient, maybe even a bit sad, but as it turned out, I was wrong once again.
 
 The talk itself, whose slides in English are available for [download](/blog/files/November_2024/barcamp-banjaluka-0x06-talk-single-board-computers-slides.pdf), unfortunately went without sparking particularly strong excitement among the audience, despite even being the opening talk, and despite the clearly mentioned handout of free Pine64 hardware.  I didn't want to make some kind of a lottery out of the handout, so I just asked that anyone who wanted a free Ox64 board had to describe briefly what they would use it for.  Thus, someone basically had to produce a couple of meaningful sentences, and a free Ox64 board would've been theirs.  Such an approach seemed fair to me, because the intent was to put the donated Ox64 boards into good use, but to my surprise and despair, when it was the time to hear the use-case proposals, all that was audible were the proverbial crickets.  Believe it or not, nobody proposed anything, while I expected at least a few people out of about 50 BarCamp attendees to be interested in the whole thing, and to come up with some interesting uses or projects.  A couple of people asked for some more details about the Ox64, but that was it.  It was satisfactory to at least see that the talk audience weren't greedy, so they didn't ask for something they wouldn't actually use. 
 
-Obviously, the outcome made me rather disappointed, but as always, there's something to learn even from the things that turn out really bad.  Quite importantly, I was left with the Ox64 boards that I promised to hand out, but surprisingly, nobody wanted.  Thus, I had to "force feed" the boards to a few friends of mine, who actually didn't ask me to receive them.  Luckily, one of them eventually expressed some interest in using his free Ox64 board for some project in robotics, but sadly, his enthusiasm eventually proved not to be strong enough.
-
-To my unpleasant surprise, I've heard back nothing about the handed-out Ox6 boards in the last
+Obviously, the outcome made me rather disappointed, but as always, there's something to learn even from the things that turn out really bad.  Quite importantly, I was left with the Ox64 boards that I promised to hand out, but surprisingly, nobody wanted.  Thus, I had to "force feed" the boards to a few friends of mine, who actually didn't ask me to receive them.  Luckily, one of them eventually expressed some interest in using his free Ox64 board for some project in robotics, but sadly, his enthusiasm eventually proved not to be strong enough. To my unpleasant surprise, I've heard back nothing about the handed-out Ox64 boards in the last
 year or so, which presumably means that the above-mentioned friends of mine haven't done much
 with them, including the one who had some robotics project in mind.  Such an unpleasant and
 truly unexpected outcome may make the whole talk endeavor look muck like a total waste of time,
 effort and money, but I think we should actually try to learn something from this failure, which
 is sometimes the best way to learn.
 
-After thinking a lot about the whole thing, and after talking a bit to one of my friends, who
-received the last of the donated Ox64 boards a few months ago (for the record, I kept one out of
-six boards for myself), my conclusion is that much more "built-in" user-friendliness is required
-to make the Pine64 products understood better and, hopefully, more widely accepted.  To put it
-simply, we need to make blinking the proverbial LED very easy, which hopefully can make some
+After thinking a lot about the whole thing, and after talking a bit to one of my friends, who received the last of the donated Ox64 boards a few months ago (for the record, I kept one out of six boards for myself), my conclusion is that much more "built-in" user-friendliness is required to make the Pine64 products understood better and, hopefully, more widely accepted.  To put it simply, we need to make blinking the proverbial LED very easy, which hopefully can we make some people interested to learn and do more.  Though, we shouldn't fool ourselves by expecting huge numbers of new people to suddenly become low-level software developers, because that's simply not realistic.  Very few people are interested in that, and out of those who show some interest, very
+small percentage is actually willing to put some effort into it.  It's just hard and mentally not rewarding enough to most people who are already software developers of some kind.  Not to mention that most people just want to repeat some "cookie cutter" recipes found in various tutorials, which is absolutely fine, but such an approach unfortunately doesn't bring a lot of new value to the Pine64 community and its members.
 
-people interested to learn and do more.  Though, we shouldn't fool ourselves by expecting huge
-numbers of new people to suddenly become low-level software developers, because that's simply not
-realistic.  Very few people are interested in that, and out of those who show some interest, very
-small percentage is actually willing to put some effort into it.  It's just hard and mentally not
-rewarding enough to most people who are already software developers of some kind.  Not to mention
-that most people just want to repeat some "cookie cutter" recipes found in various tutorials,
-which is absolutely fine, but such an approach unfortunately doesn't bring a lot of new value
-to the Pine64 community and its members.
-
-I've already got some plans about how to make the Pine64 products more user-friendly, and only
-time (and some future community updates) will tell how much I'll actually do about that.
+I've already got some plans about how to make the Pine64 products more user-friendly, and only time (and some future community updates) will tell how much I'll actually do about that.
 
 ## PineDio
 
