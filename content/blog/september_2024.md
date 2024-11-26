@@ -377,4 +377,4 @@ Do you have a cool project that you're working on you'd like to be mentioned? Is
 
 - Camden/CarbonatedCaffeine: 
     - @carbonatedcaffeine (Discord)
-    - @endernightlord (Matrix)
+    - @endernightlord:matrix.org (Matrix)
