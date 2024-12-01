@@ -66,4 +66,4 @@ Sensor:
 
 ## Manuals
 
-* https://wiki.pine64.org/wiki/File:PineTime Quick Start Guide.pdf[PineTime Quick Start Guide]
+* [PineTime Quick Start Guide](https://wiki.pine64.org/wiki/File:PineTime_Quick_Start_Guide.pdf)
