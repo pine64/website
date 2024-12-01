@@ -11,7 +11,7 @@ menu:
 
 {{< figure src="/documentation/PineNote/images/Pinenote-uart-dongle.jpeg" title="Basic non-stock PineNote UART dongle" width="400" >}}
 
-The USB UART dongle delivered with the PineNote allows you to have access to a serial port via USB-C Debug Accessory Mode (_DAM_) without having to open up the device. The factory firmware runs at a baud rate of 1500000bps, 8 data bits 1 stop bit, no parity and no flow control. The USB-C male end should go into the PineNote and the female end can be connected with a standard USB-C cable to your computer.
+The USB UART dongle delivered with the PineNote allows you to have access to its serial console via USB-C Debug Accessory Mode (DAM) without having to disassemble the device.  The factory-installed operating system runs the serial console at the 1,500,000 bps speed, 8 data bits and 1 stop bit, no parity, and no flow control. The USB-C male end should go into the PineNote and the female end can be connected with a standard USB-C cable to your computer.
 
 It is relatively easy to build your own UART interface with a USB-C breakout board (for example https://www.ebay.com/itm/275407037613), two resistors and a 3.3V USB serial adapter. It is basically just two 1K pull up resistors (R3, R4), the data sheet values of 10K isn’t whats on the real hardware, see the [schematic](https://files.pine64.org/doc/PineNote/PineNote_USB-C_Console_UART_breakout_board_schematic_v1.0_20210903.pdf). The pull ups enable the serial output on SBU1 and SBU2 you can use with any 3.3V USB serial adapter.
 

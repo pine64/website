@@ -55,5 +55,6 @@ menu:
 
 ## Accessories
 
-* Optional EMR pen with magnetic attachment (included in the first production batch)
-* Optional Cover (included in the first production batch)
+* December 2021 batch: Optional EMR pen with magnetic attachment (included in the first production batch)
+* October 2024 batch: Optional passive pen
+* Optional Cover (included in the December 2021 and October 2024 batch)

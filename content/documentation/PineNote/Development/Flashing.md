@@ -12,7 +12,7 @@ menu:
 {{% docs/construction %}}
 
 {{< admonition type="note" >}}
- These instructions are directed towards experienced developers only!
+These instructions are directed towards experienced developers only!
 {{< /admonition >}}
 
 This page contains information on flashing software to the PineNote.

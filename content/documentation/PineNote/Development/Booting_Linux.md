@@ -9,6 +9,10 @@ menu:
     weight: 3
 ---
 
+{{< admonition type="warning" >}}
+This page is only relevant for the first batch of PineNotes (December 2001)! The second batch of PineNotes (October 2024) come with Linux pre-installed!
+{{< /admonition >}}
+
 To boot Linux, the stock U-Boot has to be patched.
 
 Here the method from [charasyn](https://gist.github.com/charasyn/206b2537534b6679b0961be64cf9c35f) is used, based of work from Dorian as credited in the script. We’ll use the script to pull the U-Boot environment out of the stock U-Boot partition. We’ll then apply the patch, recreate the image, add a configuration file, and flash the new image to the PineNote.

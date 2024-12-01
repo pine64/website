@@ -9,15 +9,7 @@ menu:
     weight: 4
 ---
 
-This page contains a list of all available operating systems for the [PineNote](/documentation/PineNote) in alphabetical order.
-
-## Alpine
-
-See https://github.com/DorianRudolph/pinenotes#alpine
-
-## Arch Linux
-
-See https://github.com/DorianRudolph/pinenotes#arch-linux
+The following releases are available for the [PineNote](/documentation/PineNote).
 
 ## Debian
 
@@ -28,6 +20,14 @@ See https://github.com/DorianRudolph/pinenotes#arch-linux
 {{< /admonition >}}
 
 * A Debian-based minimalistic rootfs/disc image can be built using `debos` using the work from  [Eugen Răhăian](https://salsa.debian.org/eugenrh). The GNOME image above is building on this work.
+
+## Alpine
+
+See https://github.com/DorianRudolph/pinenotes#alpine
+
+## Arch Linux
+
+See https://github.com/DorianRudolph/pinenotes#arch-linux
 
 ## postmarketOS
 
