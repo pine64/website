@@ -146,6 +146,31 @@ Note that booting can take a while, and does not show anything on the screen. Af
 | -------- | ------- |
 | `pinetab2` | `changeme` |
 
+### Plasma Mobile on Debian
+
+Images of Plasma Mobile on either Debian Bookworm or Debian Trixie created by dieselnutjob
+
+The images include uboot, and are an SDcard installer (modified from the Danctnix OS Factory Tool).  Using the installer wipes the eMMC drive.
+
+#### Download
+
+https://sourceforge.net/projects/pinetab2debianplasmamobile/files/
+
+| Default credentials | |
+| -------- | ------- |
+| `pt2` | `1234` |
+| `root` | `1234` |
+
+#### Notes
+
+The image will not autoexpand to the fill the eMMC, however once booted it is easy to adjust the size of the rootfs using the included KDE Partition Manager.
+
+The PineTab2 may be reluctant to shutdown, with several minutes delay whilst the BES2600 wifi driver unloads.  This can be avoided by turning off the wifi in the menu that can be pulled down from the top of the screen before shutting down or rebooting.
+
+There is a video of the PineTab2 running one of these images here https://www.youtube.com/watch?v=9xpSuG63Rck
+
+The author may be contacted via the pinetab discord channel on the Pine64 discord.
+
 ### postmarketOS
 
 postmarketOS extends [Alpine Linux](https://www.alpinelinux.org/) to run on smartphones and other mobile devices.
@@ -198,28 +223,3 @@ The bootloader (u-boot) comes pre-flashed in the port. Installation just require
 Scroll down to the middle of [the GitLab project page](https://gitlab.com/ook37/pinephone-pro-debos/), or directly here [at the UBports website](https://devices.ubuntu-touch.io/device/pinetab2/release/focal/#deviceOverview) to see which features work.
 
 Contributions and bug reports can be made at the [UBports PineTab2 GitLab page](https://gitlab.com/ook37/pinephone-pro-debos/). See [UBports website](https://ubports.com/foundation/sponsors) for how to donate.
-
-### Plasma Mobile on Debian
-
-Images of Plasma Mobile on either Debian Bookworm or Debian Trixie created by dieselnutjob
-
-The images include uboot, and are an SDcard installer (modified from the Danctnix OS Factory Tool).  Using the installer wipes the eMMC drive.
-
-#### Download
-
-https://sourceforge.net/projects/pinetab2debianplasmamobile/files/
-
-| Default credentials | |
-| -------- | ------- |
-| `pt2` | `1234` |
-| `root` | `1234` |
-
-#### Notes
-
-The image will not autoexpand to the fill the eMMC, however once booted it is easy to adjust the size of the rootfs using the included KDE Partition Manager.
-
-The PineTab2 may be reluctant to shutdown, with several minutes delay whilst the BES2600 wifi driver unloads.  This can be avoided by turning off the wifi in the menu that can be pulled down from the top of the screen before shutting down or rebooting.
-
-There is a video of the PineTab2 running one of these images here https://www.youtube.com/watch?v=9xpSuG63Rck
-
-The author may be contacted via the pinetab discord channel on the Pine64 discord.
