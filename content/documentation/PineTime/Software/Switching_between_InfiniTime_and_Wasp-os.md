@@ -12,6 +12,14 @@ menu:
 {{< figure src="/documentation/images/Flash-reloader-mcuboot.jpg" title="Flashing_`reloader-mcuboot.zip`" width="600" >}}
 {{< figure src="/documentation/images/Flash-micropython.jpg" title="Flashing `micropython.zip`" width="400" >}}
 
+{{< admonition type="warning" >}}>
+<b>DO NOT ATTEMPT TO CHANGE BETWEEN INFINITIME AND WASP-OS ON WATCHES SHIPPED WITH BOOTLOADER v1.0.1
+
+YOUR DEVICE MAY BE BRICKED AND WILL REQUIRE UNSEALING TO REVIVE IT
+
+This issue should be resolved soon, and this warning will be removed when all guides have been updated.</b>
+{{< /admonition >}}
+
 ## Introduction
 
 Both Infinitime and Wasp-os are very cool OS’es for the [PineTime](/documentation/PineTime) and many people will want to try both. This is possible, even with a sealed device!
