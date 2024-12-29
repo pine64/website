@@ -3,7 +3,7 @@ title: "Please refrain from installing WASP-OS on new PineTimes for the moment"
 date: "2024-12-29"
 authors: ["JF002"]
 cover: 
-  image: "pinetime-bootloader-1-0-1.jpg"
+  image: "pinetime-bootloader-1-0-1_cover.jpg"
 images:
   - "/blog/images/pinetime-bootloader-1-0-1.jpg"
 ---
@@ -16,6 +16,8 @@ No change was needed in InfiniTime, but we however added a [new field in the Sys
 
 The [bootloader](https://github.com/InfiniTimeOrg/pinetime-mcuboot-bootloader) does check against those IDs so we released a [new version of the bootloader (v1.0.1) as well](https://github.com/InfiniTimeOrg/pinetime-mcuboot-bootloader/releases/tag/1.0.1).
 
+![](/blog/images/pinetime-bootloader-1-0-1.jpg)
+
 We provided the new software to PineStore so they could test them and use them to flash the new batch of PineTimes at the factory.
 
 Everything went well and PineTimes equipped with the new memory chip and software are being delivered to happy users.
@@ -24,10 +26,10 @@ Everything? Well, not really: a few users reported soft-bricked PineTimes after 
 
 [An issue has already been opened on the WASP-OS GitHub repo](https://github.com/wasp-os/wasp-os/issues/519) and a new reloader tool will hopefully be released soon to tackle this issue. We also added a big red warning on the documentation page that [explains how to switch to and from InfiniTime and WASP-OS](https://pine64.org/documentation/PineTime/Software/Switching_between_InfiniTime_and_Wasp-os/) to ensure that users won't try to switch OS until the issue is fixed and the documentation updated.
 
+{{< admonition type="warning" >}}
 In the meantime, **do not try to install WASP-OS on your PineTime if it's running bootloader v1.0.1 from the factory (unless you know exactly what you are doing), this WILL brick your PineTime!**
+{{< /admonition >}}
 
 Be sure that the community will try to fix this as soon as possible, but please remember that developers, like mostly everyone, are a bit less available during this period of the year. ;-)
 
 We are really sorry for the inconvenience caused by this issue, and we wish everyone a happy holiday season!
-
-![](/blog/images/pinetime-bootloader-1-0-1.jpg)
