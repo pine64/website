@@ -9,15 +9,10 @@ menu:
     weight: 
 ---
 
-{{< figure src="/documentation/images/Flash-reloader-mcuboot.jpg" title="Flashing_`reloader-mcuboot.zip`" width="600" >}}
-{{< figure src="/documentation/images/Flash-micropython.jpg" title="Flashing `micropython.zip`" width="400" >}}
+{{< admonition type="warning" >}}
+**Do not attempt to change between infinitime and wasp-os on watches shipped with bootloader v1.0.1.** Your device may be **bricked** and **will require unsealing** to revive it!
 
-{{< admonition type="warning" >}}>
-<b>DO NOT ATTEMPT TO CHANGE BETWEEN INFINITIME AND WASP-OS ON WATCHES SHIPPED WITH BOOTLOADER v1.0.1
-
-YOUR DEVICE MAY BE BRICKED AND WILL REQUIRE UNSEALING TO REVIVE IT
-
-This issue should be resolved soon, and this warning will be removed when all guides have been updated.</b>
+This issue should be resolved soon, and this warning will be removed when all guides have been updated.
 {{< /admonition >}}
 
 ## Introduction
@@ -40,7 +35,10 @@ Flashing can be done with any of
  We removed mentions to NRFConnect as this app is closed source and recent versions do not work anymore with InfiniTime (the last version known to work is 4.24.3). If you used NRFConnect in the past, we recommend you switch to Gadgetbridge.
 {{< /admonition >}}
 
-This guide has been last updated for Infinitime 1.1.0 and Wasp-os 0.4.1
+This guide has been last updated for Infinitime 1.1.0 and Wasp-os 0.4.1.
+
+{{< figure src="/documentation/images/Flash-reloader-mcuboot.jpg" title="Flashing reloader-mcuboot.zip" width="600" >}}
+{{< figure src="/documentation/images/Flash-micropython.jpg" title="Flashing micropython.zip" width="400" >}}
 
 ## InfiniTime to Wasp-os
 
@@ -55,8 +53,8 @@ All the zips you need can be found from the [wasp-os installation guide](https:/
 
 ## Wasp-os to InfiniTime
 
-{{< figure src="/documentation/images/Flash-reloader-infinitime-recovery.jpg" title="Flashing_`reloader-infinitime-recovery-0.14.1.zip.zip`" width="500" >}}
-{{< figure src="/documentation/images/Flash-infinitime.jpg" title="Flashing `pinetime-mcuboot-app-dfu-1.1.0.zip.zip`" width="600" >}}
+{{< figure src="/documentation/images/Flash-reloader-infinitime-recovery.jpg" title="Flashing reloader-infinitime-recovery-0.14.1.zip" width="500" >}}
+{{< figure src="/documentation/images/Flash-infinitime.jpg" title="Flashing pinetime-mcuboot-app-dfu-1.1.0.zip" width="600" >}}
 
 The `reloader-factory.zip` was broken in the original wasp-os 0.4 but was fixed in wasp-os 0.4.1. However the Infinitime binaries are outdated the 0.4 release and I do not recommend flashing these. Older InfiniTime versions have flaky BLE which makes upgrading from there very unreliable.
 

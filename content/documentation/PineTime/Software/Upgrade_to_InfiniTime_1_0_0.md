@@ -9,12 +9,14 @@ menu:
     weight: 
 ---
 
-**Devices shipped before July 2021 were pre-installed with InfiniTime 0.7.1 and an older bootloader. This features green text 'PINE TIME' on boot, and should be updated to the new bootloader as described below.**
+{{< admonition type="note" >}}
+Devices shipped before July 2021 were pre-installed with InfiniTime 0.7.1 and an older bootloader. This features green text *PINE TIME* on boot, and should be updated to the new bootloader as described below.
 
-**Newer devices already have a \>=1.0.0 bootloader and do not need updating. You can identify these with a green Pinecone image on boot.**
+Newer devices already have a >=1.0.0 bootloader and do not need updating. You can identify these with a green Pinecone image on boot.
+{{< /admonition >}}
 
 {{< admonition type="warning" >}}
-In particular, do not follow these steps on devices which shipped with the 1.0.1 bootloader (or later). You will downgrade the bootloader and brick your watch!
+**Do not follow** these steps on devices which shipped with the **1.0.1 bootloader or later**. You will downgrade the bootloader and (soft-)brick your watch!
 {{< /admonition >}}
 
 Congratulations on receiving your new PineTime!
