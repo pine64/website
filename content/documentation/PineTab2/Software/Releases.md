@@ -16,18 +16,19 @@ This page contains a list of all available releases and tools for the PineTab2 i
 
 The PineTab2 ships with _Danctnix Arch Linux ARM_. The latest factory image can be found here:
 
-* https://echo.danctnix.org:7269/factory_images/pinetab2/20240625/danctnix-factory-image-20240625.img.xz (2.2 GB)
+* https://echo.danctnix.org:7269/factory_images/pinetab2/20250104/danctnix-factory-image-20250104.img.xz (2.2 GB)
 
 {{< admonition type="note" >}}
  The factory image is flashed to a microSD card and it will overwrite the eMMC installation after booting.
 {{< /admonition >}}
 
 {{< admonition type="note" >}}
- Notice that the last two images (20240307 and 20240625) don’t use the keyboard but the volume and power buttons for navigation
+ Notice that the last three images (20240307, 20240625 and 20250104) don’t use the keyboard but the volume and power buttons for navigation
 {{< /admonition >}}
 
 ### Older versions
 
+* https://echo.danctnix.org:7269/factory_images/pinetab2/20240625/danctnix-factory-image-20240625.img.xz (2.2 GB)
 * https://echo.danctnix.org:7269/factory_images/pinetab2/20240307/danctnix-factory-image-20240307.img.xz (2.1 GB)
 * https://echo.danctnix.org:7269/factory_images/pinetab2/20230527/danctnix-factory-image-20230527.img.xz (1.5 GB)
 
@@ -44,7 +45,7 @@ The PineTab2 ships with _Danctnix Arch Linux ARM_. The latest factory image can 
 #### Download
 
 * SD-card boot: https://github.com/dreemurrs-embedded/Pine64-Arch/releases
-* Factory flash image: https://echo.danctnix.org:7269/factory_images/pinetab2/20240625/danctnix-factory-image-20240625.img.xz (2.2 GB)
+* Factory flash image: https://echo.danctnix.org:7269/factory_images/pinetab2/20250104/danctnix-factory-image-20250104.img.xz (2.2 GB)
 
 | Default credentials | |
 | -------- | ------- |
