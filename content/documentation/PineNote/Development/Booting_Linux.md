@@ -10,7 +10,7 @@ menu:
 ---
 
 {{< admonition type="warning" >}}
-This page is only relevant for the first batch of PineNotes (December 2001)! The second batch of PineNotes (October 2024) come with Linux pre-installed!
+This page is only relevant for the first batch of PineNotes (December 2021)! The second batch of PineNotes (October 2024) come with Linux pre-installed!
 {{< /admonition >}}
 
 To boot Linux, the stock U-Boot has to be patched.
