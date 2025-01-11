@@ -16,7 +16,7 @@ cover:
   image: "JanuaryBanner_2025.png"
 images:
   - "/blog/images/JanuaryBanner_2025.png"
-summary: "Happy New Year! This month we discuss the current state of the PineVox, seeing what the community have been up to with their PineNotes, announcing InfiniTime 1.15 and announcing the end of production of the PineBook Pro."
+summary: "Happy New Year! This month we discuss the current state of the PineVox, seeing what the community have been up to with their PineNotes, announcing InfiniTime 1.15 and announcing the end of production of the Pinebook Pro."
 
 ---
 
@@ -34,11 +34,11 @@ Gamiee has also been working with a group of our friends over at Meshtastic on a
 
 --- 
 
-## Fosdem
+## FOSDEM
 
 {{< credits "Author: Caffeine" >}}
 
-Unfortunately, a stand at Fosdem hasn't been allocated for us this year, due to some unknown reason. But that doesn't mean we won't be there to represent PINE64! Gamiee, Ralimtek, JF, TL Lim and Lukasz will be attending in person this year and will be planning a get-together. We will announce on our social-media when we have confirmed the time and place. 
+Unfortunately, a stand at FOSDEM hasn't been allocated for us this year. But that doesn't mean we won't be there to represent PINE64! Gamiee, Ralimtek, JF, TL Lim and Lukasz will be attending in person this year and will be planning a get-together. We will announce on our social-media when we have confirmed the time and place. 
 
 Of course, our PINE64 community members will still be wandering around the event, we love talking to all our friends at other projects and meeting the members of our community! So we hope we'll see you there!
 
@@ -50,9 +50,9 @@ Gamiee has been working on the firmware for the PineVox recently (haha, now the 
 
 Right now, the device can connect to home assistant, detect wake-up and process commands. Wake-up detection is currently done on the Home Assistant side, streaming audio data through Home Assistant. This will change as work is done to get wake-up detection working locally on the PineVox.
 
-As for what’s next, Gamiee wants to implement a protocol for connection via WiFi. This is much better for devices like smartphones which in an ideal situation will provide coverage all throughout the home, rather than the small area that BlueTooth LE covers. 
+As for what’s next, Gamiee wants to implement a protocol for connection via WiFi. This is much better for devices like smartphones which in an ideal situation will provide coverage all throughout the home, rather than the small area that Blueťooth LE covers. 
 
-Regarding the release of PineVox, it depends, currently this will depend on when Gamiee considers the firmware for the device to be usable. Only then will manufacturing for the device begin, which is loosely aimed at the end of January (take this with a grain of salt). 
+Regarding the release of PineVox, it depends, currently this will depend on when Gamiee considers the firmware for the device to be usable. Only then will manufacturing for the device begin, which is loosely aimed at the end of February (take this with a grain of salt). 
 
 ![The PineVox listening to a voice command from Gamiee](/blog/images/January_2025/pinevox.png)
 
@@ -143,13 +143,13 @@ The [list of changes](https://github.com/InfiniTimeOrg/InfiniTime/milestone/15?c
 
 I would like to take the opportunity to thank everyone who contributed to this release of InfiniTime. It contains a lot of features and improvements that greatly improves the experience for many users!
 
-## PineBook Pro
+## Pinebook Pro
 
 {{< credits "Author: Caffeine" >}}
 
-The PineBook Pro is no longer in production and will therefore no longer be stocked on the PineStore. This is due to the switch of focus to the PineTab and the PineNote line of devices. 
+The Pinebook Pro is no longer in production and will therefore no longer be stocked on the PineStore. This is due to the switch of focus to the PineTab and the PineNote line of devices. 
 
-There are plans to continue the PineBook series, and it will return in the future when a suitable SOC is chosen. 
+There are plans to continue the Pinebook series, and it will return in the future when a suitable SOC is chosen. 
 
 ## Community content
 
