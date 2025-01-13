@@ -50,7 +50,7 @@ Gamiee has been working on the firmware for the PineVox recently (haha, now the 
 
 Right now, the device can connect to home assistant, detect wake-up and process commands. Wake-up detection is currently done on the Home Assistant side, streaming audio data through Home Assistant. This will change as work is done to get wake-up detection working locally on the PineVox.
 
-As for what’s next, Gamiee wants to implement a protocol for connection via WiFi. This is much better for devices like smartphones which in an ideal situation will provide coverage all throughout the home, rather than the small area that Blueťooth LE covers. 
+As for what’s next, Gamiee wants to implement a protocol for connection via Wi-Fi. This is much better for devices like smartphones, which in an ideal situation will provide coverage all throughout the home, rather than the small area that Bluetooth LE covers. 
 
 Regarding the release of PineVox, it depends, currently this will depend on when Gamiee considers the firmware for the device to be usable. Only then will manufacturing for the device begin, which is loosely aimed at the end of February (take this with a grain of salt). 
 
@@ -66,9 +66,9 @@ Users have been enjoying their new PineNotes for a few months now and there has 
 
 **"cannot proceed with upgrade" (as of Dec 11, 2024)**
 
-Users running the factory firmware on their PineNote Community Edition will encounter an issue updating their system. This happens because Debian has moved `/lib`, `/lib64`, etc. To `/usr` and because the system still includes a `/lib64` symlink, attempting to update the system results in the `base-files` package failing to install.
+Users running the factory firmware on their PineNote Community Edition will encounter an issue updating their system. This happens because Debian has moved `/lib`, `/lib64`, etc. to `/usr` and because the system still includes a `/lib64` symlink, attempting to update the system results in the `base-files` package failing to install.
 
-You can fix this by removing the symlink by running `sudo rm /lib64` in your terminal (via SSH, UART, etc). 
+You can fix this by removing the symlink by running `sudo rm /lib64` in your terminal (via SSH, UART, etc.). 
 
 ### Development updates
 
@@ -84,7 +84,7 @@ Users wanting audio out (and other USB goodies) using the USB-C port will have t
 
 Inkput is a proof-of-concept software written by [s12wu](https://github.com/s12wu) that allows the user to enter text using handwriting. Inkput uses PellelNitram's handwriting recognition implementation to achieve this.
 
-The program Inkput works by displaying on top of the users desktop, then the user will write something in the box, select a text input and press predict. This will drop the written text into the text input like in the image below. 
+The program Inkput works by displaying on top of the user's desktop, then the user will write something in the box, select a text input and press predict. This will drop the written text into the text input like in the image below. 
 
 ![Image of the inkput demo](/blog/images/January_2025/inkput.png)
 
@@ -92,10 +92,9 @@ Contributions and testing is very much welcome! You can find the Inkput source c
 
 #### Pinescreen
 
-Pinescreen is software whose purpose is to implement the features found in the Gnome extension to configure the e-ink display. Pinescreen is targeted at improving use on KDE Plasma. 
+Pinescreen is a software whose purpose is to implement the features found in the Gnome extension to configure the e-ink display. Pinescreen is targeted at improving use on KDE Plasma. 
 
-It's currently in early development, testing and contributions welcome! 
-You may find the software here: https://gitlab.com/Poundex/pinescreen.
+It's currently in early development, testing and contributions welcome! You may find the software here: https://gitlab.com/Poundex/pinescreen.
 
 ## InfiniTime 1.15
 
@@ -105,21 +104,21 @@ InfiniTime released [InfiniTime 1.15 "Ribes rubrum"](https://github.com/InfiniTi
 
 ![GitHub releases page](/blog/images/January_2025/release.png)
 
-This is the first release in almost a year and one might wonder why it took so much time to finalize this new version of InfiniTime. Remember that InfiniTime is designed built and maintained by "normal" people working on the project with their free time. Maintainers get busy with other projects and changes in their lives. As an example, I became a father a few months ago, and as you can expect, this has had a huge impact on the time I can dedicate to the project.
+This is the first release in almost a year and one might wonder why it took so much time to finalize this new version of InfiniTime. Remember that InfiniTime is designed, built and maintained by "normal" people working on the project with their free time. Maintainers get busy with other projects and changes in their lives. As an example, I became a father a few months ago, and as you can expect, this has had a huge impact on the time I can dedicate to the project.
 
-The team also has a strong focus on reliability and stability : we decided to delay the release by a few weeks to fix a few stability issues and regressions that popped during our testing. This, together with the very limited resources of the PineTime hardware makes the development of the firmware a bit more tedious (but it's still a lot of fun :)).
+The team also has a strong focus on reliability and stability: we decided to delay the release by a few weeks to fix a few stability issues and regressions that popped during our testing. This, together with the very limited resources of the PineTime hardware, makes the development of the firmware a bit more tedious (but it's still a lot of fun :)).
 
-Talking about the team : the core developers are happy to welcome [mark9064](https://github.com/mark9064) in the core developers team. Mark has been contributing to the project for many months now and among other things, made the Always-On feature possible in InfiniTime. 
+Talking about the team: the core developers are happy to welcome [mark9064](https://github.com/mark9064) to the core developers team. Mark has been contributing to the project for many months now and among other things, made the Always-On feature possible in InfiniTime. 
 
-Now, let's take a look at InfiniTime 1.15! A lot of users have been waiting for this feature for a long time now : the Always-On Display (AOD). Implementing this feature on the PineTime was quite a challenge since the hardware is not designed for it. This is mainly because of the LCD display and its power hungry backlight. [@KaffeinatedKat](https://github.com/KaffeinatedKat) and [@mark9064](https://github.com/mark9064) however managed to make this possible by optimizing low-level drivers, fine-tuning some display settings and improving the state machine of the UI. Without going into too much details, the display is configured to use as little power as possible by reducing the number of colors that are displayed, by reducing its refresh rate and by driving the backlight using a PWM (Pulse Width Modulation) to its lowest visible level.
+Now, let's take a look at InfiniTime 1.15! A lot of users have been waiting for this feature for a long time now: the Always-On Display (AOD). Implementing this feature on the PineTime was quite a challenge, since the hardware is not designed for it. This is mainly because of the LCD display and its power hungry backlight. [@KaffeinatedKat](https://github.com/KaffeinatedKat) and [@mark9064](https://github.com/mark9064) however managed to make this possible by optimizing low-level drivers, fine-tuning some display settings and improving the state machine of the UI. Without going into too much details, the display is configured to use as little power as possible by reducing the number of colors that are displayed, by reducing its refresh rate and by driving the backlight using a PWM (Pulse Width Modulation) to its lowest visible level.
 
-This was a complex feature to implement and review, but it was worth it : InfiniTime runs for 2 to 3 days in this mode! I'm honestly impressed by how comfortable the InfiniTime feels when this feature is enabled together with the Raise-to-Wake and Lower-to-Sleep features!
+This was a complex feature to implement and review, but it was worth it: InfiniTime runs for 2 to 3 days in this mode! I'm honestly impressed by how comfortable the InfiniTime feels when this feature is enabled together with the Raise-to-Wake and Lower-to-Sleep features!
 
-You can easily enable this feature in the settings (Settings -> Display -> Always On).
+You can easily enable this feature in the settings (Settings → Display → Always On).
 
 ![Image of the AOD settings](/blog/images/January_2025/aod.png)
 
-A new application was also integrated in InfiniTime 1.15 : the weather forecast app. As you can expect, this app shows the weather forecast for the next 5 days in a nice and colorful way. This feature was contributed by [@vkareh](https://github.com/vkareh).
+A new application was also integrated in InfiniTime 1.15: the weather forecast app. As you can expect, this app shows the weather forecast for the next 5 days in a nice and colorful way. This feature was contributed by [@vkareh](https://github.com/vkareh).
 
 ![Image of the new weather app](/blog/images/January_2025/weather.png)
 
@@ -157,16 +156,16 @@ There are plans to continue the Pinebook series, and it will return in the futur
 
 {{< credits "Author: Caffeine" >}}
 
-I recently received my PineNote at the end of November, it's been really nice to use. This month, I wrote the blog post on the PineNote using my Logitech BlueTooth keyboard. 
+I recently received my PineNote at the end of November, it's been really nice to use. This month, I wrote the blog post on the PineNote using my Logitech Bluetooth keyboard. 
 
 ![Image of my PineNote](/blog/images/January_2025/camdens-pinenote.jpg)
 
-I managed to get everything work well out of the box, the pen responsiveness is very good, I have had no trouble drawing or writing using the included Xournal++ application. The 4GB of included memory is enough to have many applications open, including a web browser, music player and my document opened in LibreOffice. The included software and changes made to the system help the PineNote to be a usable device. There is a Gnome extension for controlling the display and manually refreshing the screen along with a custom shell theme to help with visibility. One thing I also noticed is how good the battery life is. I can have it sleeping for nearly a week and I can easily get around three days of usage out of it while writing and browsing the internet.
+I managed to get everything to work well out of the box, the pen responsiveness is very good, I have had no trouble drawing or writing using the included Xournal++ application. The 4GB of included memory is enough to have many applications open, including a web browser, music player and my document opened in LibreOffice. The included software and changes made to the system help the PineNote to be a usable device. There is a Gnome extension for controlling the display and manually refreshing the screen, along with a custom shell theme to help with visibility. One thing I also noticed is how good the battery life is. I can have it sleeping for nearly a week and I can easily get around three days of usage out of it while writing and browsing the internet.
 
-The big thing for me so far is the fact there is no MicroSD Card slot included with the device. The device has a very specific partition structure right now and I'm afraid to change anything. If I brick my device I feel like I would need a lot of help compared to something with the PinePhone which is easy to flash. The part that makes it difficult is that a user must use the included magnet tool or serial adapter, then flash the device and find the waveform files for your specific PineNote batch. Both devices have different waveform files due to different displays. These are not included in the Debian images if you want to re-flash so you're required to download them. 
+The big thing for me so far is the fact there is no MicroSD Card slot included with the device. The device has a very specific partition structure right now and I'm afraid to change anything. If I brick my device I feel like I would need a lot of help compared to something with the PinePhone which is easy to flash. The part that makes it difficult is that a user must use the included magnet tool or serial adapter, then flash the device and find the waveform files for your specific PineNote batch. Both devices have different waveform files due to different displays. These are not included in the Debian images if you want to re-flash, so you're required to download them. 
 I'm sure things will get better in the future for PineNote recovery, but right now I'm afraid that I'll eventually brick the device. 
 
-Overall I am happy with the experience of my PineNote so far. The performance is good, the screen is nice and I haven't faced any major issues (that haven't already been fixed ;) ). I will likely be back with a more thorough review in 6 months after I have discovered the quirks of the device and using as my primary note taking device for a while. 
+Overall, I am happy with the experience of my PineNote so far. The performance is good, the screen is nice and I haven't faced any major issues (that haven't already been fixed ;) ). I will likely be back with a more thorough review in 6 months after I have discovered the quirks of the device and using as my primary note-taking device for a while. 
 
 ## Want to contribute to the next community update?
 
