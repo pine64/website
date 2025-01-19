@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>PINE64 CMS</title>
+  </head>
+  <body>
+    <!-- Include the script that builds the page and powers Decap CMS -->
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <!--<script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>-->
+    <!-- Decap CMS custom widget (Hugo shortcodes) from https://decapcms.org/docs/hugo/#using-decap-cms-content-in-hugo -->
+    <script>
+// credits
+CMS.registerEditorComponent({
+    id: "credits",
+    label: "Credits",
+    fields: [{
+            name: "authors",
+            label: "Author(s)",
+            widget: "string"
+        }
+    ],
+    pattern: /^{{< credits "(.*?)" >}}/,
+    fromBlock: function(match) {
+        return {
+            authors: match[1]
+        };
+    },
+    toBlock: function(obj) {
+        return `{{< credits ${obj.authors} >}}`;
+    },
+    toPreview: function(obj) {
+        return '<i>obj.authors</i>';
+    },
+});
+// toc
+CMS.registerEditorComponent({
+    id: "toc",
+    label: "Table of Contents",
+    pattern: /^{{< toc >}}/,
+    fromBlock: function(match) {
+        return {
+            authors: match
+        };
+    },
+    toBlock: function(obj) {
+        return `{{< toc >}}`;
+    },
+    toPreview: function(obj) {
+        return '<b>TABLE OF CONTENTS WILL BE HERE</b>';
+    },
+});
+// gist
+CMS.registerEditorComponent({
+    id: "gist",
+    label: "Gist",
+    fields: [{
+            name: "username",
+            label: "GitHub Username",
+            widget: "string"
+        },
+        {
+            name: "gid",
+            label: "Gist ID",
+            widget: "string"
+        },
+    ],
+    pattern: /^{{< gist ([a-zA-Z0-9]+) ([a-zA-Z0-9]+) >}}/,
+    fromBlock: function(match) {
+        return {
+            username: match[1],
+            gid: match[2],
+        };
+    },
+    toBlock: function(obj) {
+        return `{{< gist ${obj.username} ${obj.gid} >}}`;
+    },
+    toPreview: function(obj) {
+        return '<a href="https://gist.github.com/' + obj.username + '/' + obj.id + '">gist</a>';
+    },
+});
+    </script>
+  </body>
+</html>
