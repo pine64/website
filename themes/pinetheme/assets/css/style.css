@@ -690,6 +690,12 @@ button.rounded:hover {
 .blog-tags a:hover {
     border-bottom: 4px solid #013F85;
 }
+p.readingstats {
+    margin-top: 1rem;
+    color: gray;
+    font-weight: 300;
+    font-size: 11pt;
+}
 
 div.credits {
     margin: -8px 0 12px 6px;

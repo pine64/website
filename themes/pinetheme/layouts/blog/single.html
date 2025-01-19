@@ -20,6 +20,12 @@
         
         {{ .Content }}
 
+        <p class="readingstats">
+            <i>
+                {{ printf "Estimated reading time: %d minutes" .ReadingTime }} ({{ .WordCount }} words)
+            </i>
+        </p>
+
         {{ if .Params.tags }}
             <hr class="blog-hr">
 

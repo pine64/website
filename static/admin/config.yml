@@ -1,0 +1,118 @@
+site_url: https://pine64.org
+publish_mode: editorial_workflow
+
+backend:
+  name: github
+  repo: pine64/website
+  branch: main
+  site_domain: pine64.org
+
+media_folder: "static/images/uploads" # Adjust based on your media storage location
+public_folder: "/images/uploads" # URL path for accessing media
+logo_url: "https://pine64.org/img/logo.png"
+
+collections:
+  - name: "blog" # This is the name used in the URL
+    label: "Blog" # This is the singular name of the content type for the UI
+    label_singular: "Blog post"
+    folder: "content/blog" # The folder where your posts markdown files will be saved
+    create: true # Allows users to create new documents in this collection
+    slug: "{{slug}}" # Filename template for new posts
+    preview_path: "{{year}}/{{month}}/{{day}}/{{slug}}/"
+    preview: false
+    fields: # List of fields for the front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Image", name: "images", widget: "image", required: false }
+      #- { label: "Hidden", name: "hidden", widget: "boolean", default: false }
+      #- { label: "Comments", name: "comments", widget: "boolean", default: true }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      #- { label: "Weight", name: "weight", widget: "number" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - name: authors
+        label: Authors
+        label_singular: 'Author'
+        widget: list
+        fields:
+          - { label: 'Name', name: 'name', widget: 'string', hint: 'First and Last' }
+          - { label: 'Description', name: 'description', widget: 'markdown' }
+
+  - name: "community" # This is the name used in the URL
+    label: "Community" # This is the singular name of the content type for the UI
+    label_singular: "Community"
+    folder: "content/community" # The folder where your posts markdown files will be saved
+    create: true # Allows users to create new documents in this collection
+    slug: "{{slug}}" # Filename template for new posts
+    preview: false
+    fields: # List of fields for the front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Image", name: "images", widget: "image", required: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "contests" # This is the name used in the URL
+    label: "Contests" # This is the singular name of the content type for the UI
+    label_singular: "Contest"
+    folder: "content/contests" # The folder where your posts markdown files will be saved
+    create: true # Allows users to create new documents in this collection
+    slug: "{{slug}}" # Filename template for new posts
+    preview: false
+    fields: # List of fields for the front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Image", name: "images", widget: "image", required: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "devices" # This is the name used in the URL
+    label: "Devices" # This is the singular name of the content type for the UI
+    label_singular: "Device"
+    folder: "content/devices" # The folder where your posts markdown files will be saved
+    create: true # Allows users to create new documents in this collection
+    slug: "{{slug}}" # Filename template for new posts
+    preview: false
+    fields: # List of fields for the front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Image", name: "images", widget: "image", required: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  # - name: "documentation" # This is the name used in the URL
+  #   label: "Documentation" # This is the singular name of the content type for the UI
+  #   label_singular: "Documentation"
+  #   folder: "content/documentation/Clusterboard" # The folder where your posts markdown files will be saved
+  #   create: true # Allows users to create new documents in this collection
+  #   slug: "{{slug}}" # Filename template for new posts
+  #   preview: false
+  #   nested:
+  #     depth: 4 # max depth to show in the collection tree
+  #     summary: '{{dirname}}' # optional summary for a tree node, defaults to the inferred title field
+  #   fields: # List of fields for the front matter
+  #     - label: Title
+  #       name: title
+  #       widget: string
+  #     - label: Body
+  #       name: body
+  #       widget: markdown
+  #   meta: { path: { widget: string, label: 'Path', index_file: '_index' } }
+
+  - name: "podcast" # This is the name used in the URL
+    label: "Podcast" # This is the singular name of the content type for the UI
+    label_singular: "Podcast"
+    folder: "content/podcast" # The folder where your posts markdown files will be saved
+    create: true # Allows users to create new documents in this collection
+    slug: "{{slug}}" # Filename template for new posts
+    preview: false
+    fields: # List of fields for the front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Image", name: "images", widget: "image", required: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }

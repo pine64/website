@@ -1,3 +1,4 @@
+
 ---
 title: "Hardware checking"
 draft: false
@@ -11,7 +12,9 @@ menu:
 
 {{< figure src="/documentation/images/PPP_Abdroid_Test_Utility-5.jpg" width="400" >}}
 
-Please note that this Android build solely for PinePhone Pro hardware checking purpose and solely used by the support team. This is NOT a general release build.
+{{< admonition type="note" >}}
+Please note that this Android build solely for PinePhone Pro hardware checking purpose and solely used by the support team. This is not a general release build.
+{{< /admonition >}}
 
 Download:
 
@@ -21,7 +24,7 @@ Instructions:
 
 * Download the build, extract the image and dd it to a 8 GB or larger microSD card, take out the PinePhone Pro Explorer Edition, then insert it into microSD slot (upper slot).
 * Insert battery, press the RE button (bypass SPI and eMMC boot) underneath the back cover while plugging in the USB-C power. After 3 seconds release the RE button.
-* When powering up, a battery icon screen will show up blow, press power key for two seconds, then the Rockchip logo screen shows up.
+* When powering up, a battery icon screen will show up. Press the power key for two seconds, then the Rockchip logo screen shows up.
 
 {{< figure src="/documentation/images/PPP_Abdroid_Test_Utility-1.jpg" width="300" >}}
 

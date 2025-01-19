@@ -11,7 +11,9 @@ menu:
 
 {{< figure src="/documentation/images/PPP_Abdroid_Test_Utility-1.jpg" width="300" >}}
 
+{{< admonition type="note" >}}
 Please note that this Android build solely for PinePhone Pro hardware checking purpose and solely used by support team. This is NOT a general release build.
+{{< /admonition >}}
 
 Download:
 
