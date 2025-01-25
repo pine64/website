@@ -12,21 +12,30 @@ menu:
 ## Important note for buyers after October 2024
 {{< admonition type="note" >}}
 
-Dear new PineNote users, you may have noticed that suspend/resume is not working on your new PineNote! You may also noticed that using rkdeveloptool is not possible because you cannot trigger maskrom mode using the magnet method.
+Dear new PineNote users, you may have noticed that suspend/resume is not
+working on your new PineNote! You may also noticed that using rkdeveloptool is
+not possible because you cannot trigger maskrom mode using the magnet method.
 
-These issues are caused by differences in testing procedures of the shipped Debian-based image, and factory flashing procedures. Namely, the factory used a Windows-based flashing system, and it turned out that this system does overwrite crucial parts of the u-boot bootloader with same only-partially working data. The effect is that the PineNote will boot, but not suspend.
+These issues are caused by differences in testing procedures of the shipped
+Debian-based image, and factory flashing procedures. Namely, the factory used a
+Windows-based flashing system, and it turned out that this system does
+overwrite crucial parts of the u-boot bootloader with same only-partially
+working data. The effect is that the PineNote will boot, but not suspend.
 
 ### Fixing the issue
 
-Fortunately the PineNote ships with a complete set of bootloader files and fixing the issue is a matter of a few shell commands:, which are flashing a working U-Boot to get MASKROM with magnet working on PineNote:
+Fortunately the PineNote ships with a complete set of bootloader files and
+fixing the issue is a matter of a few shell commands:, which are flashing a
+working U-Boot to get MASKROM with magnet working on PineNote:
 
-1. Login via UART-adapter or ssh, or use the Gnome-Terminal (found in the quick slots of the dashboard - 
-  switch to BW+Dithering mode for faster screen responses):
+1. Login via UART-adapter or ssh, or use the Gnome-Terminal (found in the quick
+   slots of the dashboard - switch to BW+Dithering mode for faster screen
+   responses):
     * username: `user`
     * password: `1234`
-      
+
 2. Gain root access by executing `sudo su - root` (the password is: `1234`).
-    
+
 3. Execute the following (two) commands (as root):
 
 ```console
@@ -34,10 +43,11 @@ cd /root/uboot
 
 bash install_stable_1056mhz_uboot.sh
 ```
-    
+
 4. Turn off the PineNote by executing `init 0`
-    
-5. Done. The pinenote should now have a proper U-Boot installed, with rkdeveloptool-support and suspend.
+
+5. Done. The pinenote should now have a proper U-Boot installed, with
+   rkdeveloptool-support and suspend.
 
 ---
 
@@ -64,11 +74,12 @@ Included in the box are:
 * **PineNote**
 * **Stylus**
 * **USB-C to USB-A cable**
-* **USB-C to Micro-USB cable** - specifically for the stylus
+* (only pre 2024 PineNotes) **USB-C to Micro-USB cable** - specifically for the
+  stylus
 * **UART Dongle** - for [UART](/documentation/PineNote/Development/UART/) connectivity
 * **Foldable cover**
 
-## Applying the foldable cover
+## Installing the foldable cover
 
 The foldable cover can be applied to the PineNote in these simple steps:
 
@@ -80,6 +91,8 @@ The foldable cover can be applied to the PineNote in these simple steps:
 
 ![Step 2: The black adhesive strip should now be exposed](/documentation/PineNote/images/step2.png)
 
-**Step 3:** Carefully place the PineNote on top of the side with the adhesive strip, ensuring that the corners and edges are properly aligned with the device.
+**Step 3:** Carefully place the PineNote on top of the side with the adhesive
+strip, ensuring that the corners and edges are properly aligned with the
+device.
 
 ![Step 3: Align the PineNote and then place it on top of the stip.](/documentation/PineNote/images/step3.png)
