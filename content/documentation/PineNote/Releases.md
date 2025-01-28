@@ -11,12 +11,21 @@ menu:
 
 The following releases are available for the [PineNote](/documentation/PineNote).
 
+## Factory-installed Images
+
+### Summary
+
+* Pre-2024 PineNotes were not shipped with a working linux installation.
+* Batch-2 PineNotes that started selling in October 2024 were shipped with the community-maintained, Debian-based, Linux image found here: [https://github.com/PNDeb/pinenote-debian-image](https://github.com/PNDeb/pinenote-debian-image).
+* While the factory-flashed image cannot be freely distributed due to unclear distribution rights of the waveform, OS files without the shipped waveforms can be found in this release and a basically equivalent to the shipped images: https://github.com/PNDeb/pinenote-debian-image/releases/tag/batch-2-factory-image-wo-waveform
+* Parts of the batch-2 PineNotes will be flashed with an updated OS version. Notes regarding differentiating between factory OS versions will be made available here in time.
+
 ## Debian
 
 * A full GNOME-enabled rootfs/disc image is provided under [m-weigand/pinenote-debian-recipes/releases](https://github.com/m-weigand/pinenote-debian-recipes/releases). This image can be flashed using rkdeveloptool.
 
 {{< admonition type="note" >}}
- Check the [dev](https://github.com/m-weigand/pinenote-debian-recipes/tree/dev) branch and github actions artifacts (possibly requires github login) for builds newer than the latest release.
+Check the [trixie](https://github.com/m-weigand/pinenote-debian-recipes/tree/trixie) branch and github actions artifacts (possibly requires github login) for builds newer than the latest release.
 {{< /admonition >}}
 
 * A Debian-based minimalistic rootfs/disc image can be built using `debos` using the work from  [Eugen Răhăian](https://salsa.debian.org/eugenrh). The GNOME image above is building on this work.
@@ -33,7 +42,6 @@ See https://github.com/DorianRudolph/pinenotes#arch-linux
 
 See https://wiki.postmarketos.org/wiki/PINE64_PineNote_(pine64-pinenote)
 
-
 ## Development
 
 {{< admonition type="warning" >}}
@@ -42,6 +50,7 @@ The following releases are targeted towards experienced developers.
 
 ### Linux Kernel
 
+* Batch-2 PineNotes ares shipped with kernels maintained here [https://github.com/m-weigand/linux](https://github.com/m-weigand/linux).
 * [RK3566 EBC Reverse-Engineering](/documentation/General/RK3566_EBC_reverse-engineering) for the EBC (eInk Panel) driver.
 * [PineNote Development/Building Kernel](/documentation/PineNote/Development/Building_kernel)
 * BSP Linux SDK version 4.19 for the PineNote and [Quartz64 Model A](/documentation/Quartz64):
