@@ -83,24 +83,24 @@ collections:
       - { label: "Draft", name: "draft", widget: "boolean", default: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
-  # - name: "documentation" # This is the name used in the URL
-  #   label: "Documentation" # This is the singular name of the content type for the UI
-  #   label_singular: "Documentation"
-  #   folder: "content/documentation/Clusterboard" # The folder where your posts markdown files will be saved
-  #   create: true # Allows users to create new documents in this collection
-  #   slug: "{{slug}}" # Filename template for new posts
-  #   preview: false
-  #   nested:
-  #     depth: 4 # max depth to show in the collection tree
-  #     summary: '{{dirname}}' # optional summary for a tree node, defaults to the inferred title field
-  #   fields: # List of fields for the front matter
-  #     - label: Title
-  #       name: title
-  #       widget: string
-  #     - label: Body
-  #       name: body
-  #       widget: markdown
-  #   meta: { path: { widget: string, label: 'Path', index_file: '_index' } }
+  - name: "documentation" # This is the name used in the URL
+    label: "Documentation" # This is the singular name of the content type for the UI
+    label_singular: "Documentation"
+    folder: "content/documentation/" # The folder where your posts markdown files will be saved
+    create: true # Allows users to create new documents in this collection
+    slug: "{{slug}}" # Filename template for new posts
+    preview: false
+    nested:
+      depth: 5 # max depth to show in the collection tree
+      summary: '{{dirname}}' # optional summary for a tree node, defaults to the inferred title field
+    fields: # List of fields for the front matter
+      - label: Title
+        name: title
+        widget: string
+      - label: Body
+        name: body
+        widget: markdown
+    meta: { path: { widget: string, label: 'Path', index_file: 'index' } }
 
   - name: "podcast" # This is the name used in the URL
     label: "Podcast" # This is the singular name of the content type for the UI

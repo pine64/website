@@ -1,4 +1,3 @@
-
 ---
 title: "Hardware checking"
 draft: false

@@ -20,7 +20,6 @@ images:
 summary: "This month we are announcing a couple of new products including a SBC and a successor to the PineCube. We have updates to share about the PineNote and the PineDio USB adapter this month along with a talk by one of our community members Dsimic."
 aliases:
   - "/2024/10/18/november_2024/"
-
 ---
 
 Welcome back to a new monthly Pine64 community update! This month we are announcing a couple of new products including a SBC and a successor to the PineCube. We have updates to share about the PineNote and the PineDio USB adapter this month along with a talk by one of our community members Dsimic.

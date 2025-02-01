@@ -17,7 +17,6 @@ cover:
 images:
   - "/blog/images/JanuaryBanner_2025.png"
 summary: "Happy New Year! This month we discuss the current state of the PineVox, seeing what the community have been up to with their PineNotes, announcing InfiniTime 1.15 and announcing the end of production of the Pinebook Pro."
-
 ---
 
 This month we report on some news concerning the PineVox, what the community have been up to with their PineNotes and the brand-new 1.15 InfiniTime update. We would like to wish our community a happy New Year and hope you all had a good end of 2024. 
