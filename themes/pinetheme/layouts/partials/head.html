@@ -9,13 +9,13 @@
     <!-- Stylesheets -->
     <!-- General style -->
     {{- $style_style := resources.Get "css/style.css" | minify | fingerprint -}}
-    <link rel="stylesheet" href="{{ $style_style.RelPermalink }}" integrity="{{ $style_style.Data.Integrity }}">
+    <link rel="stylesheet" href="{{ $style_style.RelPermalink }}">
     <!-- Simplified print style -->
     {{- $style_print := resources.Get "css/print.css" | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $style_print.RelPermalink }}" integrity="{{ $style_print.Data.Integrity }}">
+    <link rel="stylesheet" href="{{ $style_print.RelPermalink }}">
     <!-- Slider -->
     {{- $style_slider := resources.Get "css/slider.css" | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $style_slider.RelPermalink }}" integrity="{{ $style_slider.Data.Integrity }}">
+    <link rel="stylesheet" href="{{ $style_slider.RelPermalink }}">
     <!-- Documentation -->
     {{- $style_docs := resources.Get "css/documentation.css" | minify | fingerprint -}}
     <link rel="stylesheet" href="{{ $style_docs.RelPermalink }}">
