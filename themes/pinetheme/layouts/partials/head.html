@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="{{ $style_slider.RelPermalink }}" integrity="{{ $style_slider.Data.Integrity }}">
     <!-- Documentation -->
     {{- $style_docs := resources.Get "css/documentation.css" | minify | fingerprint -}}
-    <link rel="stylesheet" href="{{ $style_docs.RelPermalink }}" integrity="{{ $style_docs.Data.Integrity }}">
+    <link rel="stylesheet" href="{{ $style_docs.RelPermalink }}">
 
     
     {{ $title := print .Title " - " .Site.Title -}}
