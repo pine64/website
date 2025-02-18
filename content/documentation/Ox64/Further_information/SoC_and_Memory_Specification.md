@@ -15,7 +15,7 @@ Based on the [Bouffalo Lab BL808](https://en.bouffalolab.com/product/)
 
 ## CPU Architecture
 
-T-Head C906 480 MHz 64-bit RISC-V CPU:
+XuanTie C906 480 MHz 64-bit RISC-V CPU:
 
 * Supports RISC-V RV64IMAFCV instruction architecture
 * Five-stage single-issue sequentially executed pipeline
@@ -28,9 +28,9 @@ T-Head C906 480 MHz 64-bit RISC-V CPU:
 * Supports BHT (8K) and BTB
 * Compatible with RISC-V PMP, 8 configurable areas
 * Supports hardware performance monitor (HPM) units
-* See [here](https://www.t-head.cn/product/c906?lang=en)
+* See [here](https://www.xrvm.com/product/xuantie/C906)
 
-T-Head E907 320 MHz 32-bit RISC-V CPU:
+XuanTie E907 320 MHz 32-bit RISC-V CPU:
 
 * Supports RISC-V RV32IMAFCP instruction set
 * Supports RISC-V 32-bit/16-bit mixed instruction set
@@ -40,11 +40,11 @@ T-Head E907 320 MHz 32-bit RISC-V CPU:
 * Supports AXI 4.0 main device interface and AHB 5.0 peripheral interface
 * 32K instruction cache, two-way set associative structure
 * 16K data cache, two-way set associative structure
-* See [here](https://www.t-head.cn/product/e907?lang=en)
+* See [here](https://www.xrvm.com/product/xuantie/E907)
 
-T-Head E902 150 MHz 32-bit RISC-V CPU:
+XuanTie E902 150 MHz 32-bit RISC-V CPU:
 
-* See [here](https://www.t-head.cn/product/e902?lang=en)
+* See [here](https://www.xrvm.com/product/xuantie/E902)
 
 ## System Memory
 
