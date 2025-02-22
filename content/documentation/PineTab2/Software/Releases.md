@@ -224,3 +224,25 @@ The bootloader (u-boot) comes pre-flashed in the port. Installation just require
 Scroll down to the middle of [the GitLab project page](https://gitlab.com/ook37/pinephone-pro-debos/), or directly here [at the UBports website](https://devices.ubuntu-touch.io/device/pinetab2/release/focal/#deviceOverview) to see which features work.
 
 Contributions and bug reports can be made at the [UBports PineTab2 GitLab page](https://gitlab.com/ook37/pinephone-pro-debos/). See [UBports website](https://ubports.com/foundation/sponsors) for how to donate.
+
+### Void Linux
+
+Void is a general purpose operating system, based on the monolithic Linux kernel. Its package system allows you to quickly install, update and remove software. The port is currently maintained by Sinisha Stojchevski (sini6a).
+
+The bootloader (u-boot) comes pre-flashed in the port. Installation just requires flashing the `.img.xz` to an SD or the eMMC.
+
+#### Download
+
+[VoidLinux PineTab2](https://github.com/sini6a/voidlinux-pinetab2/releases/download/6.12.13/void-pinetab2-20250215.img.xz)
+
+[Source Files for PineTab2](https://github.com/sini6a/voidlinux-pinetab2)
+
+| User  | Password |
+| -------- | -------- |
+| root | voidlinux |
+
+#### Notes
+
+To enable graphics driver make sure to install `mesa-panfrost-dri`.
+
+Contributions and bug reports can be made at the [GitHub Project Page](https://github.com/sini6a/voidlinux-pinetab2). See [VoidLinux](https://voidlinux.org/) page for more information about the operating system.
