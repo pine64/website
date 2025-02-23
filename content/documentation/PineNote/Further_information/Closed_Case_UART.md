@@ -39,7 +39,7 @@ It should be possible to make the UART connection and breakout cable magically f
 
 {{< figure src="/documentation/images/PineNote_USB-C_DAM_Schematic_Addition.png" title="This proposed circuitry is added to the PineNote v1.1 schematic" >}}
 
-On August 19, 2021, TL posted the results of the hardware team’s efforts. This includes link::File:PineNote USB-C DAM Schematic Addition.png[], shown on this page, as well as the following additional documentation:
+On August 19, 2021, TL posted the results of the hardware team’s efforts. This includes "PineNote USB-C DAM Schematic Addition.png", shown on this page, as well as the following additional documentation:
 
 * [Datasheet for ON Semiconductor NS5S1153 USB-C USB 2.0 and Audio Switch.](https://wiki.pine64.org/wiki/File:NS5S1153-D.PDF)
 

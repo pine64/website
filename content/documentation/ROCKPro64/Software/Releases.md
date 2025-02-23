@@ -338,7 +338,7 @@ Download:
 
 | Default credentials | |
 | -------- | ------- |
-| `root` (root user and SSH login) | `[none]` |
+| `root` (root user and SSH login) | none |
 
 Notes:
 
@@ -379,57 +379,57 @@ Download:
 * Support Sony IMX214 camera module and works on both MiPi-CSI ports
 * This build supports PINE64 7" LCD panel with tablet UI (not Android TV)
 * DD image for 8GB eMMC module
-** [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20200804_stock_android_9.0_emmcboot-8GB.img.gz)
-***** MD5 (GZip file): 7287fd0846616354615c8d3eff6a2a92
-***** File Size: 602MB
+  * [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20200804_stock_android_9.0_emmcboot-8GB.img.gz)
+    * MD5 (GZip file): 7287fd0846616354615c8d3eff6a2a92
+    * File Size: 602MB
 * DD image for 16GB eMMC module
-** [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20200804_stock_android_9.0_emmcboot-16GB.img.gz)
-***** MD5 (GZip file): 78352bbf21198d062af8bab2217ee691
-***** File Size: 611MB
+  * [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20200804_stock_android_9.0_emmcboot-16GB.img.gz)
+    * MD5 (GZip file): 78352bbf21198d062af8bab2217ee691
+    * File Size: 611MB
 * DD image for 32GB eMMC module
-** [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20200804_stock_android_9.0_emmcboot-32GB.img.gz)
-***** MD5 (GZip file): c5c8dce419478f75f85f893ee4808dbd
-***** File Size: 624MB
+  * [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20200804_stock_android_9.0_emmcboot-32GB.img.gz)
+    * MD5 (GZip file): c5c8dce419478f75f85f893ee4808dbd
+    * File Size: 624MB
 * DD image for 64GB eMMC module
-** [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20200804_stock_android_9.0_emmcboot-64GB.img.gz)
-***** MD5 (GZip file): aab1cf4d30c4d16e6ce2672f3ecae935
-***** File Size: 666MB
+  * [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20200804_stock_android_9.0_emmcboot-64GB.img.gz)
+    * MD5 (GZip file): aab1cf4d30c4d16e6ce2672f3ecae935
+    * File Size: 666MB
 
 **Stock for RK Flash tool [eMMC Boot] [20200804]**
 * Please unzip first and then using Android tool to flash in
 * The OTG port located at USB type-C connector, needs USB type A to type C cable.
 * [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_20200708_stock_android_9.0_emmcboot.img.gz)
-** MD5 (GZip file): 9ac830527814521e15b009fa2503c9e3
-** File Size: 589MB
+  * MD5 (GZip file): 9ac830527814521e15b009fa2503c9e3
+  * File Size: 589MB
 
-*Stock for DD method [eMMC Boot] [20200708]
+**Stock for DD method [eMMC Boot] [20200708]**
 * Use 'dd' to write the image to the eMMC module using the USB-to-eMMC adapter module and boot. Using [Etcher](https://www.balena.io/etcher/) or another specialized SD writing tool is preferred.
 * Please allow 3-5 minutes boot up time on first time for initialization
 * Supports new RockPro64 AP6256 Wifi/BT module
 * This build supports PINE64 7" LCD panel with tablet UI (not Android TV)
 * DD image for 8GB eMMC module
-** [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20200708_stock_android_9.0_emmcboot-8GB.img.gz)
-***** MD5 (GZip file): ef5f5a890a9270734e0adee21f006837
-***** File Size: 597MB
+  * [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20200708_stock_android_9.0_emmcboot-8GB.img.gz)
+    * MD5 (GZip file): ef5f5a890a9270734e0adee21f006837
+    * File Size: 597MB
 * DD image for 16GB eMMC module
-** [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20200708_stock_android_9.0_emmcboot-16GB.img.gz)
-***** MD5 (GZip file): 179bd684a468f800a86f7c658a543bef
-***** File Size: 606MB
+  * [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20200708_stock_android_9.0_emmcboot-16GB.img.gz)
+    * MD5 (GZip file): 179bd684a468f800a86f7c658a543bef
+    * File Size: 606MB
 * DD image for 32GB eMMC module
-** [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20200708_stock_android_9.0_emmcboot-32GB.img.gz)
-***** MD5 (GZip file): d930b757c4427be07b83c37a9c8494a1
-***** File Size: 630MB
+  * [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20200708_stock_android_9.0_emmcboot-32GB.img.gz)
+    * MD5 (GZip file): d930b757c4427be07b83c37a9c8494a1
+    * File Size: 630MB
 * DD image for 64GB eMMC module
-** [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20200708_stock_android_9.0_emmcboot-64GB.img.gz)
-***** MD5 (GZip file): 09a970d68a10bdb3d6495d55860940e6
-***** File Size: 660MB
+  * [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20200708_stock_android_9.0_emmcboot-64GB.img.gz)
+    * MD5 (GZip file): 09a970d68a10bdb3d6495d55860940e6
+    * File Size: 660MB
 
 **Stock for RK Flash tool [eMMC Boot] [20200708]**
 * Please unzip first and then using Android tool to flash in
 * The OTG port located at USB type-C connector, needs USB type A to type C cable.
 * [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_20200708_stock_android_9.0_emmcboot.img.gz)
-** MD5 (GZip file): 6d060ddd47ebcfd5cfcdbf90ec042c97
-** File Size: 589MB
+  * MD5 (GZip file): 6d060ddd47ebcfd5cfcdbf90ec042c97
+  * File Size: 589MB
 
 **Stock for DD method [eMMC Boot] [20190427]**
 * Use 'dd' to write the image to the eMMC module using the USB-to-eMMC adapter module and boot. Using [Etcher](https://www.balena.io/etcher/) or another specialized SD writing tool is preferred.
@@ -437,17 +437,17 @@ Download:
 * Please ignore "internal problem with your device" popup message if appear on Android boot-up page.
 * This build supports PINE64 7" LCD panel with tablet UI (not Android TV)
 * DD image for 16GB eMMC module
-** [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20190417_stock_android_9.0_emmcboot-16GB.img.gz)
-***** MD5 (GZip file): 3BA4C72D81BCFC4C21B3B5D2BCB4F9F7
-***** File Size: 609MB
+  * [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20190417_stock_android_9.0_emmcboot-16GB.img.gz)
+    * MD5 (GZip file): 3BA4C72D81BCFC4C21B3B5D2BCB4F9F7
+    * File Size: 609MB
 * DD image for 32GB eMMC module
-** [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20190417_stock_android_9.0_emmcboot-32GB.img.gz)
-***** MD5 (GZip file): 4965CCF50A8F06CEB2E4A6828A21F31C
-***** File Size: 627MB
+  * [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20190417_stock_android_9.0_emmcboot-32GB.img.gz)
+    * MD5 (GZip file): 4965CCF50A8F06CEB2E4A6828A21F31C
+    * File Size: 627MB
 * DD image for 64GB eMMC module
-** [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20190417_stock_android_9.0_emmcboot-64GB.img.gz)
-***** MD5 (GZip file): 748EC28FE5D5395D33E858C913D744BF
-***** File Size: 663MB
+  * [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20190417_stock_android_9.0_emmcboot-64GB.img.gz)
+    * MD5 (GZip file): 748EC28FE5D5395D33E858C913D744BF
+    * File Size: 663MB
 
 **Stock for DD method [microSD Boot] [20190506]**
 * DD image to microSD card and boot.
@@ -456,21 +456,21 @@ Download:
 * Please ignore "internal problem with your device" popup message if appear on Android boot-up page.
 * This build supports PINE64 7" LCD panel with tablet UI (not Android TV)
 * DD image for 8GB microSD card
-** [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20190506_stock_android_9.0_sdboot-8GB.img.gz)
-***** MD5 (GZip file): E1C551E8106E178841E1C3F71432194A
-***** File Size: 599MB
+  * [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20190506_stock_android_9.0_sdboot-8GB.img.gz)
+    * MD5 (GZip file): E1C551E8106E178841E1C3F71432194A
+    * File Size: 599MB
 * DD image for 16GB microSD card
-** [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20190506_stock_android_9.0_sdboot-16GB.img.gz)
-***** MD5 (GZip file): 73592FDD5A2F52F08020F16AD99E8C8C
-***** File Size: 609MB
+  * [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20190506_stock_android_9.0_sdboot-16GB.img.gz)
+    * MD5 (GZip file): 73592FDD5A2F52F08020F16AD99E8C8C
+    * File Size: 609MB
 * DD image for 32GB microSD card
-** [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20190506_stock_android_9.0_sdboot-32GB.img.gz)
-***** MD5 (GZip file): 74DE0FE528F210E4DD483B411A71904B
-***** File Size: 627MB
+  * [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20190506_stock_android_9.0_sdboot-32GB.img.gz)
+    * MD5 (GZip file): 74DE0FE528F210E4DD483B411A71904B
+    * File Size: 627MB
 * DD image for 64GB microSD card
-** [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20190506_stock_android_9.0_sdboot-64GB.img.gz)
-***** MD5 (GZip file): D7626BD50443A88AEB9254C88C575284
-***** File Size: 663MB
+  * [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20190506_stock_android_9.0_sdboot-64GB.img.gz)
+    * MD5 (GZip file): D7626BD50443A88AEB9254C88C575284
+    * File Size: 663MB
 
 **Stock for RK Flash tool [eMMC Boot] [20190427]**
 * Please unzip first and then using Android tool to flash in
@@ -478,8 +478,8 @@ Download:
 * Please allow 3-5 minutes boot up time on first time for initialization
 * This build supports PINE64 7" LCD panel with tablet UI (not Android TV)
 * [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_20190417_stock_android_9.0_emmcboot.img.gz)
-** MD5 (GZip file): 046BA4A07933120809FBE1B9577B7341
-** File Size: 592MB
+  * MD5 (GZip file): 046BA4A07933120809FBE1B9577B7341
+  * File Size: 592MB
 
 ### Android 8.1.0
 
@@ -488,8 +488,8 @@ Download:
 * Please allow 3-5 minutes boot up time on first time for initialization
 * This build supports PINE64 7" LCD panel with tablet UI (not Android TV)
 * [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20180828_stock_android_8.1_emmcboot.img.xz)
-** MD5 (XZ file): 9AEE21BC1B9DE886DCB0E64FA123988A
-** File Size: 414MB
+  * MD5 (XZ file): 9AEE21BC1B9DE886DCB0E64FA123988A
+  * File Size: 414MB
 
 **Stock for DD method [microSD Boot] [20181212]**
 * Use 'dd' to write the image to the eMMC module using the USB-to-eMMC adapter module and boot. Using [Etcher](https://www.balena.io/etcher/) or another specialized SD writing tool is preferred.
@@ -497,8 +497,8 @@ Download:
 * This build supports PINE64 7" LCD panel with tablet UI (not Android TV)
 * DD image (for 8GB microSD card and above)
 * [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20181212_stock_android_8.1_sdboot.img.xz)
-** MD5 (XZ file): 5A6BB7FCD7B3F77FCEE99CE462AE7405
-** File Size: 616MB
+  * MD5 (XZ file): 5A6BB7FCD7B3F77FCEE99CE462AE7405
+  * File Size: 616MB
 
 **Stock for RK Flash tool [eMMC Boot] [20180828]**
 * Please unzip first and then using Android tool to flash in
@@ -506,8 +506,8 @@ Download:
 * Please allow 3-5 minutes boot up time on first time for initialization
 * This build supports PINE64 7" LCD panel with tablet UI (not Android TV)
 * [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_20180828_stock_android_8.1_emmcboot.img.xz)
-** MD5 (XZ file): 4DACFE927BB09EE9C56B5232A7F624EE
-** File Size: 415MB
+  * MD5 (XZ file): 4DACFE927BB09EE9C56B5232A7F624EE
+  * File Size: 415MB
 
 ### Android 7.1.2
 
@@ -516,8 +516,8 @@ Download:
 * Please allow 3-5 minutes boot up time on first time for initialization
 * This build supports PINE64 7" LCD panel with tablet UI (not Android TV)
 * [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_dd_20180518_stock_android_7.1_emmcboot.img.xz)
-** MD5 (XZ file): 33622034ACDBC31A7D7BB01ED634E29B
-** File Size: 345MB
+  * MD5 (XZ file): 33622034ACDBC31A7D7BB01ED634E29B
+  * File Size: 345MB
 
 **Stock for RK Flash tool [eMMC Boot] [20180518]**
 * Please unzip first and then using Android tool to flash in
@@ -525,15 +525,15 @@ Download:
 * Please allow 3-5 minutes boot up time on first time for initialization
 * This build supports PINE64 7" LCD panel with tablet UI (not Android TV)
 * [Direct download from pine64.org](https://files.pine64.org/os/ROCKPro64/android/ROCKPro64_20180518_stock_android_7.1_emmcboot.img.xz)
-** MD5 (XZ file): 90C1991DADAE13ADC94E927F171F8920
-** File Size: 342MB
+  * MD5 (XZ file): 90C1991DADAE13ADC94E927F171F8920
+  * File Size: 342MB
 
 ### Android SDK
 
 **Android P SDK [v9.0]**
 * [Direct Download from pine64.org](https://files.pine64.org/SDK/ROCKPro64/ROCKPro64_SDK_android9.0.tar.gz)
-** MD5 (TAR-GZip file): 3CEBEEFD1A873BEEEC149148A785D92E
-** File Size: 125.16GB
+  * MD5 (TAR-GZip file): 3CEBEEFD1A873BEEEC149148A785D92E
+  * File Size: 125.16GB
 
 ### Slash TV OS
 

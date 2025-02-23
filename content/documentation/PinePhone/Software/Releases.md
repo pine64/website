@@ -250,9 +250,9 @@ This is also a good build for charging depleted battery. Just boot up this build
 For more info on this build, please visit its entry the "News" section of its [web page](https://xnux.eu/p-boot-demo/).
 
 * [Download torrent file from author's website](https://dl.xnux.eu/p-boot-multi-2022-01-26.torrent)
-** *File name:* multi.img.zst
-** *SHA-256:* 39915b9d2aa2f33fd78552ac9a0e665c4aef97dd68a9f9a6c76f9fa2f0ac049e
-** *File Size:* 6.9GiB
+  * *File name:* multi.img.zst
+  * *SHA-256:* 39915b9d2aa2f33fd78552ac9a0e665c4aef97dd68a9f9a6c76f9fa2f0ac049e
+  * *File Size:* 6.9GiB
 
 Due to its size, download though torrent is suggested by the author on its main page.
 

@@ -21,7 +21,7 @@ Do not try to bend the two [internal contacts](https://pine64.com/product/pineci
 
 **1. Install the tip**: The Pinecil comes with a separate heating element, the tip.
 
-1. Remove the screw from the front top-side of handle. Then, gently push the tip all the way back until the wide collar/guard is touching the front of the plastic (see link::File:Pinecilv2-1.jpg[photo]).
+1. Remove the screw from the front top-side of handle. Then, gently push the tip all the way back until the wide collar/guard is touching the front of the plastic (see "File:Pinecilv2-1.jpg" (photo).
 2. Gently tighten or loosen this screw to install or swap the tip. (careful, tiny screws break easy, if tip does not fall out, it’s tight enough)
 3. The bottom front screw should not touch the tip, it only holds the handle together (see [Fasteners](#fasteners/screws)).
 4. Always unplug before swapping tips if you have multiple tips.
