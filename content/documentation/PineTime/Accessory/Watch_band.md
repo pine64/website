@@ -18,3 +18,4 @@ Known working bands:
 * [BISONSTRAP 20mm Quick Release Silicone Watch Band](https://www.bisonstrap.com/products/bisonstrap-waterproof-sport-silicone-watch-bands-black?variant=40103305543773) / [Amazon US](https://www.amazon.com/dp/B08XTNKQSJ)
 * DMVEIMAL 20mm Quick Release Watch Band Metal Strap / [Amazon US](https://www.amazon.com/gp/product/B0BGJC8CXG)
 * Morsey 20mm Quick Release Watch Band / [Amazon US](https://www.amazon.com/dp/B08DD57SHV)
+* BINLUN 20mm Canvas Quick Release Watch Strap / [Amazon US](https://www.amazon.com/dp/B0DFQVZTZ3?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1)
