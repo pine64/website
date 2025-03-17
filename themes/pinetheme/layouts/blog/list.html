@@ -13,7 +13,7 @@
 
 <div class="box themegradient3 full" >
     <div class="box pad gap">
-        {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") }}
+        {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") 9 }}
 
         {{ range $paginator.Pages }}
 
