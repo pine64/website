@@ -9,7 +9,7 @@ menu:
     weight: 6
 ---
 
-This article is about updating/flashing the [Pinecil](/documentation/Pinecil) firmware.
+This document provides a step-by-step guide on how to update the firmware of the Pinecil soldering iron, applicable to both V1 and V2 models. Keeping your firmware up to date ensures that you have the latest features, improvements, and bug fixes.
 
 ## Overview
 
@@ -17,7 +17,7 @@ This article is about updating/flashing the [Pinecil](/documentation/Pinecil) fi
 Pinecil is designed to use **only 1 power port** at any time. Only the USB-C cable should be plugged in during firmware updates. Never attempt to use both rear ports at the same time or the PC and Pinecil will be damaged.
 {{< /admonition >}}
 
-{{< figure src="/documentation/images/Pinecil-V1andV2.png" title="right" width="400" >}}
+{{< figure src="/documentation/images/Pinecil-V1andV2.png" width="400" >}}
 
 The firmware that comes with the Pinecil is [open source Ralim’s IronOS](https://ralim.github.io/IronOS/). It’s a good idea to check for updates regularly as development is very active and there may be enhancements or bug fixes.
 
