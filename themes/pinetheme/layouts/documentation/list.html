@@ -12,7 +12,15 @@
 
             <article>
                 <header>
-                    <h1>{{.Title}}</h1>
+                    <h1>
+                    {{ $ancestors := .Ancestors.Reverse }}
+                    {{ if ge (len $ancestors) 3 }}
+                        {{ range first 3 $ancestors | last 1 }}
+                            <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>:
+                        {{ end }}
+                    {{ end }}
+                    {{.Title}}
+                    </h1>
                 </header>
                 
                 <!-- .TableOfContents -->
