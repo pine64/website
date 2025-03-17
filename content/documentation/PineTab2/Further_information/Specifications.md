@@ -20,7 +20,7 @@ menu:
 * **NPU:** 0.8 TOPS Neural Processing Unit
 * **RAM:** 4GB or 8GB LPDDR4
 * **Storage:**
-  * 64GB or 128GB internal eMMC ([https://www.szyuda88.com/product-77313-276594.html SiliconGo SGM8 100C-S36BCG]; eMMC 5.1, up o 400MB/s)
+  * 64GB or 128GB internal eMMC ([SiliconGo SGM8 100C-S36BCG](https://www.szyuda88.com/product-77313-276594.html); eMMC 5.1, up o 400MB/s)
   * 1x MicroSD slot
 * **Display:** 10.1" IPS LCD Resolution 1280x800
 * **Cameras:**

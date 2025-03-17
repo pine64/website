@@ -34,7 +34,7 @@ Pay attention to the length! Pine Store sells two different lengths of tips.
 
 {{< figure src="/documentation/images/Multimeter_measuring_Short_Tip.png" title=" Short Tip 6.2 Ω" width="200" >}}
 
-1. Remove the screw on top, then remove the cartridge. Clean new cartridges/tips with isopropyl alcohol (IPA) to remove any factory residue before installing (avoid strange behavior). If you have no IPA, use a dry clean towel, especially the white end with the two silver contacts (do not use water; it could get into the seam line on the white end). This often resolves issues with glitchy temperatures or random no-tip symbol from poor or dirty electric contact [https://github.com/Ralim/IronOS/issues/1601 reference].
+1. Remove the screw on top, then remove the cartridge. Clean new cartridges/tips with isopropyl alcohol (IPA) to remove any factory residue before installing (avoid strange behavior). If you have no IPA, use a dry clean towel, especially the white end with the two silver contacts (do not use water; it could get into the seam line on the white end). This often resolves issues with glitchy temperatures or random no-tip symbol from poor or dirty electric contact [reference]https://github.com/Ralim/IronOS/issues/1601).
 
 {{< figure src="/documentation/images/CleanTip-Cartridge-Contacts.jpg" title="Clean contacts with IPA" >}}
 	

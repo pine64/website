@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinecil"
     identifier: "Pinecil/Firmware"
-    weight: 
+    weight: 6
 ---
 
 This article is about updating/flashing the [Pinecil](/documentation/Pinecil) firmware.
@@ -57,8 +57,8 @@ Both V1 and V2 connect to the PC/laptop and enter the Flash mode the same way fo
 
 The PineFlash is a GUI updater it’s an all-in one app that downloads firmware and flashes.
 	
-. Download the easy premade binary installer for Windows [here](https://github.com/Spagett1/PineFlash).
-. If PineFlash doesn’t work try the Blisp terminal app.
+* Download the easy premade binary installer for Windows [here](https://github.com/Spagett1/PineFlash).
+* If PineFlash doesn’t work try the Blisp terminal app.
 
 ### Option 2: Blisp
 
@@ -101,10 +101,10 @@ The PineFlash is a GUI updater it’s an all-in one app that downloads firmware 
 
 ### Option 1: PineFlash
 
-PineFlash is a GUI updater that downloads firmware and flashes. Download the easy premade binary for [https://github.com/Spagett1/PineFlash#desktop_computer-install-options Linux here].
+PineFlash is a GUI updater that downloads firmware and flashes. Download the easy premade binary for [Linux here](https://github.com/Spagett1/PineFlash#desktop_computer-install-options).
 	
-. For MacOS, currently there is a 2-step script that will build PineFlash.
-. If you have issues with Pineflash, then use Blisp below.
+* For MacOS, currently there is a 2-step script that will build PineFlash.
+* If you have issues with Pineflash, then use Blisp below.
 
 ### Option 2: Blisp Flasher
 This is a CLI that runs in a terminal console. Get the latest zip file for Linux or Mac. The main page has background info and there are instructions if you want to [build it from code](https://github.com/pine64/blisp/wiki/Update-Pinecil-V2) instead of using the easier premade executable.
@@ -112,7 +112,7 @@ This is a CLI that runs in a terminal console. Get the latest zip file for Linux
 1. Extract the Blisp zip, and using a terminal, `cd` to the blisp folder.
 2. Download the latest [stable Pinecilv2.zip release](https://github.com/Ralim/IronOS/releases/) (scroll down to the Assets section, get the Pinecilv2.zip).
 3. Extract the zip file and put `Pinecilv2_EN.bin` (for English) into the Blisp folder (same place as the Blisp executable). Other languages are available, substitute the *EN.bin file for the language file desired (use the 2-digit international language code). If you have the Pinecil Zip, the rest could be deleted, only the single BIN file is needed. Select the appropriate two-letter code for your language. If you accidentally flash *.dfu file on your Pinecil, it will not boot or work - be sure to only use the BIN file.
-4. Connect the V2 to the PC and enter Flash mode: hold down the [-] before plugging the cable to the back of Pinecil. See ([[#Flash_Mode| Flash Mode section for details]]). If you are curious on Linux, it will connect as a serial _ttyACM_ USB ACM type device.
+4. Connect the V2 to the PC and enter Flash mode: hold down the [-] before plugging the cable to the back of Pinecil. See (Flash Mode section for details). If you are curious on Linux, it will connect as a serial _ttyACM_ USB ACM type device.
 5. Screen on Pinecil should be black/empty before proceeding or you are not in Flash mode.
 6. **Blisp must have executable permission set.**
 7. `cd` to the Blisp folder and `ls -l` to check permissions of blisp.
@@ -209,8 +209,8 @@ This is a CLI that runs in a terminal console. Get the latest zip file for Linux
 
 ### Install
 	
-* If you have Windows or Mac, you can use this GUI [https://github.com/pine64/pine64_updater/releases/ Pine64 flasher].
-* If you have Linux  or Mac, use this GUI [https://github.com/Spagett1/PineFlash/releases/ Pineflash].
+* If you have Windows or Mac, you can use this GUI [Pine64 flasher](https://github.com/pine64/pine64_updater/releases/).
+* If you have Linux  or Mac, use this GUI [Pineflash](https://github.com/Spagett1/PineFlash/releases/).
 
 {{% admonition type="info" %}}
 For Pinecil V2 model, Ralim has started work on this ([reference](https://github.com/Ralim/IronOS/issues/1373#issuecomment-1414925011)). Please watch this ticket, give Ralim support and encouragement. This is all volunteer work.
