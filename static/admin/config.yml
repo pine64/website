@@ -5,7 +5,6 @@ backend:
   name: github
   repo: pine64/website
   branch: main
-  site_domain: pine64.org
 
 media_folder: "static/images/uploads" # Adjust based on your media storage location
 public_folder: "/images/uploads" # URL path for accessing media
