@@ -8,9 +8,16 @@
 }
 #doc-container h2 {
     border-bottom: 1px solid #ddd;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
     padding: .2em 0;
+    font-size: 18pt;
+    font-weight: 500;
+}
+#doc-container h3 {
+    margin-top: 30px;
+    font-size: 16pt;
+    font-weight: 500;
 }
 #doc-breadcrumbs {
     background-color: rgb(248, 249, 250); 

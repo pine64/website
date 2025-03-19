@@ -227,6 +227,43 @@ The development is work in progress. See [pinephone-support](https://gitlab.com/
 
 In order to connect to the device using SSH/SCP via WiFi, you need to install SSH on the device. You can do this by executing the following in a shell: "sudo apt-get install ssh", afterwards you can connect via SSH/SCP via WiFi using the PinePhone's IP address on port 22.
 
+### Movuan
+
+{{< figure src="/documentation/images/movuan-logo.png" width="100" >}}
+
+Movuan is the incipient stage of a new distribution for the PinePhone. It is derived from Mobian, yet using Devuan instead of Debian. The image attempts to be as short lived as possible, hoping to get merged into mainline Devuan as soon as possible.
+
+#### Download
+
+* [Image](https://gitlab.com/l2385/movuan/movuan-recipes/-/releases)
+
+This is a split zip file. To extract it, the following command can be used:
+
+```shell
+7z e movuan-pinephone-phosh-daedalus-20250224.img-split.zip
+```
+
+{{< admonition type="note" >}}
+Tow-Boot is required to be able to boot, same as for Mobian
+{{< /admonition >}}
+
+| Default credentials | |
+| -------- | ------- |
+| Default user | `movuan/1234` |
+
+#### Notes
+
+* Current image version is based on Devuan Daedalus.
+* [Source Code](https://gitlab.com/l2385/movuan)
+* [Announcement/Discussion/Motivation](https://dev1galaxy.org/viewtopic.php?pid=54759#p54759)
+* Further interest [Customizing Movuan under Host Mounting](https://gitlab.com/l2385/movuan/customizing-movuan-under-host-mounting)
+
+At this time expecting feedback or offers to help with building/packing.
+
+Anybody is welcome to fork this project, or use it in any GPL compliant way. Use a different name though and change the logo, and notify the author of the project to review if it can be incorporated back.
+
+If you want to just mirror the code and provide additional pre-built images on a different server, there is no need to change the logo/name. Just make sure to prominently point to the original location.
+
 ### Multi-distro demo image
 
 {{< admonition type="warning" >}}
