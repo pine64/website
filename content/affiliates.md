@@ -20,6 +20,7 @@ Affiliates of the [Pine Store](https://pine64.com):
 | [KEEBD.com](https://keebd.com/products/pinecil-smart-portable-soldering-iron)                      | Australia (ships worldwide)        |
 | [Keycapsss](https://keycapsss.com/accessories/227/pinecil-v2-smart-mini-portable-soldering-iron)   | Germany (ships to EU/AUS/Global)   |
 | [Laskakit](https://www.laskakit.cz/pine64/)                                                        | Czechia (ships to EU)              |
+| [MOKB Store](https://mokbstore.com/pine64)                                                         | Vietnam                            |
 | [Oomipood](https://www.oomipood.ee/brand_pine_store_pte_ltd)                                       | Estonia (ships to EU)              |
 | [Platima Tinkers Shop](https://shop.plati.ma/collections/all?filter.p.vendor=Pine64)               | Australia (ships worldwide)        |
 | [Testclips](https://testclips.co.uk/product-category/pinecil-pine64/)                              | Great Britain                      |
