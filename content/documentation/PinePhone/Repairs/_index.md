@@ -36,15 +36,15 @@ Note that the earpiece dimensions for both the PinePhone and PinePhone Pro are 1
 
 | Model | PinePhone | PinePhone Pro | Example shop |
 | --- | --- | --- | --- |
-| LG K8 2017 M200N | Kind of ¹ | Broken | [Replace Base](https://www.replacebase.co.uk/for-lg-k8-2017-m200n-replacement-ear-piece-speaker-oem) |
-| Nokia 5 | Works | Works | [Replace Base](https://www.replacebase.co.uk/for-nokia-5-replacement-ear-piece-speaker-with-adhesive-oem) |
+| LG K8 2017 M200N | Kind of ¹ | Broken | |
+| Nokia 5 | Works | Works | |
 | Nokia 7 | Works ² | Works ² | [Replace Base](https://www.replacebase.co.uk/for-nokia-7-replacement-ear-piece-speaker-unit-module-oem) |
-| Nokia X5 | Works | Works | [Replace Base](https://www.replacebase.co.uk/for-nokia-x5-replacement-earpiece-speaker-unit-oem) |
+| Nokia X5 | Works | Works |  |
 | OnePlus One | Works | Works | [iFixit](https://www.ifixit.com/products/oneplus-one-earpiece-speaker), [Replace Base](https://www.replacebase.co.uk/oneplus-one-replacement-earpiece-speaker-original) |
 | OnePlus X | Works | Works | [Replace Base](https://www.replacebase.co.uk/oneplus-x-replacement-earpiece-speaker-original) |
 | PinePhone | Works | Works |  |
 | Xiaomi Mi A1 | Works | Works | [Replace Base](https://www.replacebase.co.uk/for-xiaomi-mi-a1-replacement-ear-piece-speaker-oem) |
-| Xiaomi Redmi Note 4 | Works | Works | [Replace Base](https://www.replacebase.co.uk/for-xiaomi-redmi-note-4-replacement-ear-piece-speaker-oem) |
+| Xiaomi Redmi Note 4 | Works | Works |  |
 
 Notes:
 
