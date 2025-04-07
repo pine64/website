@@ -48,7 +48,7 @@ Gnome on wayland runs nicely on the PineNote. However, a slightly patched versio
 
 * See this repository for .deb packages and patch/compile files: [Patched Debian Mutter for Bookworm](https://github.com/m-weigand/pinenote_debian_mutter)
 * The ready-to-use [Debian image](https://github.com/m-weigand/pinenote-debian-recipes/releases) provides a pre-configured GNOME environment], with specific GNOME configurations found [here](https://github.com/m-weigand/pinenote-debian-recipes/blob/main/overlays/gnome_config/01-pinenote-settings)
-* A GNOME extension is being [developed](https://github.com/m-weigand/mw_pinenote_misc/tree/main/gnome_extension) that provides access to some of the ebc-specific driver options.
+* A GNOME extension is being [developed](https://github.com/PNDeb/pinenote-gnome-extension) that provides access to some of the ebc-specific driver options.
 * [PNEink](https://github.com/MichiMolle/PNEink) is a GNOME Theme for use with the PineNote
 
 #### GTK3
