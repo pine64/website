@@ -98,7 +98,7 @@ Users are able to find the new reloader artifact [here at this actions page](htt
 # Pinecil
 {{< credits "Author: Ralim" >}}
 
-Continuing on the theme from launching the [threaded insert tool](https://pine64.com/product/pinecil-threaded-insert-tips-set-and-adapter/), we are bringing a new set of tips. This time we are bringing out some micro soldering tips.
+Continuing on the theme from launching the [threaded insert tool](https://pine64.com/product/pinecil-threaded-insert-tips-set-and-adapter/), we are bringing a new set of tips. This time we are bringing out some [micro soldering tips](https://pine64.com/product/pinecil-micro-soldering-tip-set/).
 Watching some of the discussions there has been demand for smaller tips that are more focused on smaller component sizes. 
 So after working with the factory, we have made sample test units of the new design. As shown in the picture.
 
@@ -107,8 +107,6 @@ So after working with the factory, we have made sample test units of the new des
 These are really focused more on SMD work. Below is the tips with `0603`(Imperial) / `1608`(Metric) sized resistor for a sense of scale.
 
 ![Image of tip with SMD components for scale](/blog/images/April_2025/smallcomponents.jpg)
-
-We have worked on some improvements with the factory, and these should be available imminently, likely within a few weeks.
 
 The tips are designed to be plug & play with the Pinecilv2. They are the same 6.2 ohms as the short tips already available for sale.
 Due to the significantly smaller thermal mass, the tips heat up faster than the larger tips.
