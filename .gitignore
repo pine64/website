@@ -6,3 +6,5 @@ resources
 
 # Hugo lock
 .hugo_build.lock
+content/.DS_Store
+.DS_Store
