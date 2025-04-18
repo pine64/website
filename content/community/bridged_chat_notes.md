@@ -25,7 +25,7 @@ The bot account relaying the message can have a name such as _Pine64 Protocol Dr
 
 ## Things to consider when using the bridged community chat
 
-In the bridged community chat that spans across Discord, Matrix, Element, and IRC, there are several important considerations to keep in mind. These guidelines help ensure smooth communication and prevent unintended issues. Let’s explore each of these aspects:
+In the bridged community chat that spans across Discord, Matrix, Element, and IRC, there are several important considerations to keep in mind. These guidelines help ensure smooth communication and prevent unintended issues.
 
 ### Avoid editing messages
 
