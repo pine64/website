@@ -102,7 +102,7 @@ collections:
   - name: "documentation" # This is the name used in the URL
     label: "Documentation" # This is the singular name of the content type for the UI
     label_singular: "Documentation"
-    folder: "content/documentation/" # The folder where your posts markdown files will be saved
+    folder: "content/documentation" # The folder where your posts markdown files will be saved
     create: true # Allows users to create new documents in this collection
     slug: "{{slug}}" # Filename template for new posts
     preview: false
