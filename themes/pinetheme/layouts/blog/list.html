@@ -21,7 +21,7 @@
                 <a class="summary" href="{{ .RelPermalink }}">
                     {{if and (isset .Params.cover "image") (ne .Params.cover.image "") }}
                         <div class="box">
-                            <img src="/blog/images/{{ .Params.cover.image }}">
+                            <img src="/blog/images/{{ .Params.cover.image }}" alt="Cover image of the blog post">
                         </div>
                     {{end}}
 
