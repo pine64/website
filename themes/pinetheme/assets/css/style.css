@@ -589,7 +589,7 @@ input#hamburger_cb,
     }
 }
 
-button.rounded {
+div.rounded {
     padding: 0.6rem 2rem;
     background-color: #2868B0;
     border-radius: 20pt;
@@ -597,7 +597,7 @@ button.rounded {
     border: none;
     max-width: 200px;
 }
-button.rounded:hover {
+div.rounded:hover {
     box-shadow: 0 0 15px rgba(92, 123, 182, 0.7);
 }
 
@@ -986,7 +986,7 @@ nav#TableOfContents ol ol {
 }
 
 /* Podcast page */
-button.podcast {
+div.podcast {
     padding: 1.4rem 2rem;
     margin-right: 10pt;
     margin-bottom: 10pt;
@@ -998,12 +998,12 @@ button.podcast {
     color: #333;
     max-width: 200px;
 }
-button.podcast-blue {
+div.podcast-blue {
     background-color: #2868B0;
     border: none;
     color: white;
 }
-button.podcast:hover {
+div.podcast:hover {
     background-color: #333;
     color: white;
 }
@@ -1014,7 +1014,7 @@ button.podcast:hover {
 .podcast_desc {
     padding: 3rem;
 }
-button.podcast:hover {
+div.podcast:hover {
     background-color: #333;
     color: white;
 }
