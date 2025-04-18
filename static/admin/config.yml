@@ -108,7 +108,8 @@ collections:
     preview: false
     nested:
       depth: 5 # max depth to show in the collection tree
-      summary: '{{dirname}}' # optional summary for a tree node, defaults to the inferred title field
+      #summary: '{{dirname}}' # optional summary for a tree node, defaults to the inferred title field
+      summary: '{{title}}'
     fields: # List of fields for the front matter
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
