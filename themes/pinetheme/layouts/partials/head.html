@@ -27,7 +27,7 @@
     <title>{{ $title }}</title>
 
     <!-- Meta_ Description -->
-    <meta name="description" content="{{ if .Params.summary }}{{ .Params.summary }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}{{ end }}"/>
+    <meta name="description" content='{{- with or .Description .Summary site.Params.description | plainify | htmlUnescape }}{{ trim . "\n\r\t " }}{{- end }}'/>
 
     <!-- CSP -->
     <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'">-->
