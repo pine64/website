@@ -1,5 +1,5 @@
 site_url: https://pine64.org
-publish_mode: editorial_workflow
+#publish_mode: editorial_workflow
 
 #backend:
 #  name: github
@@ -63,10 +63,10 @@ collections:
     preview: false
     fields: # List of fields for the front matter
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Description", name: "description", widget: "text", required: false }
       - { label: "Date", name: "date", widget: "datetime", required: false }
       - { label: "Image", name: "images", widget: "image", required: false }
-      - { label: "Draft", name: "draft", widget: "boolean", default: false, required: false}
+      - { label: "Draft", name: "draft", widget: "boolean", default: false, required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "contests" # This is the name used in the URL
@@ -116,7 +116,7 @@ collections:
       - label: Body
         name: body
         widget: markdown
-    meta: { path: { widget: string, label: 'Path', index_file: 'index' } }
+    meta: { path: { widget: string, label: 'Path', index_file: '_index' } }
 
   - name: "podcast" # This is the name used in the URL
     label: "Podcast" # This is the singular name of the content type for the UI
