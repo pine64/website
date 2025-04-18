@@ -1003,6 +1003,12 @@ div.podcast-blue {
     border: none;
     color: white;
 }
+div.podcast-blue a {
+    color: white;
+}
+div.podcast-margin {
+    margin-bottom: 50px;
+}
 div.podcast:hover {
     background-color: #333;
     color: white;
