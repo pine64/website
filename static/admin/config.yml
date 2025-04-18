@@ -16,12 +16,12 @@ backend:
 
   # Quickly see who did what (optional)
   commit_messages:
-    create: Create {{collection}} “{{slug}}” - {{author-name}} <{{author-login}}> via DecapBridge
-    update: Update {{collection}} “{{slug}}” - {{author-name}} <{{author-login}}> via DecapBridge
-    delete: Delete {{collection}} “{{slug}}” - {{author-name}} <{{author-login}}> via DecapBridge
-    uploadMedia: Upload “{{path}}” - {{author-name}} <{{author-login}}> via DecapBridge
-    deleteMedia: Delete “{{path}}” - {{author-name}} <{{author-login}}> via DecapBridge
-    openAuthoring: Message {{message}} - {{author-name}} <{{author-login}}> via DecapBridge
+    create: Create {{collection}} “{{slug}}” - {{author-name}} via DecapBridge
+    update: Update {{collection}} “{{slug}}” - {{author-name}} via DecapBridge
+    delete: Delete {{collection}} “{{slug}}” - {{author-name}} via DecapBridge
+    uploadMedia: Upload “{{path}}” - {{author-name}} via DecapBridge
+    deleteMedia: Delete “{{path}}” - {{author-name}} via DecapBridge
+    openAuthoring: Message {{message}} - {{author-name}} via DecapBridge
 
 media_folder: "static/images/uploads" # Adjust based on your media storage location
 public_folder: "/images/uploads" # URL path for accessing media
@@ -78,10 +78,10 @@ collections:
     preview: false
     fields: # List of fields for the front matter
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "text", required: false  }
+      - { label: "Date", name: "date", widget: "datetime", required: false  }
       - { label: "Image", name: "images", widget: "image", required: false }
-      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false, required: false  }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "devices" # This is the name used in the URL
@@ -93,10 +93,10 @@ collections:
     preview: false
     fields: # List of fields for the front matter
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "text", required: false  }
+      - { label: "Date", name: "date", widget: "datetime", required: false  }
       - { label: "Image", name: "images", widget: "image", required: false }
-      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false, required: false  }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "documentation" # This is the name used in the URL
@@ -110,12 +110,8 @@ collections:
       depth: 5 # max depth to show in the collection tree
       summary: '{{dirname}}' # optional summary for a tree node, defaults to the inferred title field
     fields: # List of fields for the front matter
-      - label: Title
-        name: title
-        widget: string
-      - label: Body
-        name: body
-        widget: markdown
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
     meta: { path: { widget: string, label: 'Path', index_file: '_index' } }
 
   - name: "podcast" # This is the name used in the URL
@@ -127,8 +123,8 @@ collections:
     preview: false
     fields: # List of fields for the front matter
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "text", required: false  }
+      - { label: "Date", name: "date", widget: "datetime", required: false  }
       - { label: "Image", name: "images", widget: "image", required: false }
-      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false, required: false  }
       - { label: "Body", name: "body", widget: "markdown" }
