@@ -16,12 +16,12 @@ backend:
 
   # Quickly see who did what (optional)
   commit_messages:
-    create: Create {{collection}} “{{slug}}” - {{author-name}} via DecapBridge
-    update: Update {{collection}} “{{slug}}” - {{author-name}} via DecapBridge
-    delete: Delete {{collection}} “{{slug}}” - {{author-name}} via DecapBridge
-    uploadMedia: Upload “{{path}}” - {{author-name}} via DecapBridge
-    deleteMedia: Delete “{{path}}” - {{author-name}} via DecapBridge
-    openAuthoring: Message {{message}} - {{author-name}} via DecapBridge
+    create: Create {{collection}} “{{slug}}” - {{author-name}} (via CMS)
+    update: Update {{collection}} “{{slug}}” - {{author-name}} (via CMS)
+    delete: Delete {{collection}} “{{slug}}” - {{author-name}} (via CMS)
+    uploadMedia: Upload “{{path}}” - {{author-name}} (via CMS)
+    deleteMedia: Delete “{{path}}” - {{author-name}} (via CMS)
+    openAuthoring: Message {{message}} - {{author-name}} (via CMS)
 
 media_folder: "static/images/uploads" # Adjust based on your media storage location
 public_folder: "/images/uploads" # URL path for accessing media
@@ -104,16 +104,19 @@ collections:
     label_singular: "Documentation"
     folder: "content/documentation" # The folder where your posts markdown files will be saved
     create: true # Allows users to create new documents in this collection
-    slug: "{{slug}}" # Filename template for new posts
     preview: false
     nested:
+      #subfolders: true # Legacy behavior
+      subfolders: false
       depth: 5 # max depth to show in the collection tree
       summary: '{{dirname}}' # optional summary for a tree node, defaults to the inferred title field
       #summary: '{{title}}'
+      #summary: '{{filename}}'
     fields: # List of fields for the front matter
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
     meta: { path: { widget: string, label: 'Path', index_file: '_index' } }
+    #meta: { path: { label: 'Path', widget: 'string', index_file: '{fields.filename}' }}
 
   - name: "podcast" # This is the name used in the URL
     label: "Podcast" # This is the singular name of the content type for the UI
