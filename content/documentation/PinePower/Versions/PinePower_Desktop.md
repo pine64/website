@@ -1,17 +1,17 @@
 ---
-title: "120W Desktop Power Supply"
+title: "PinePower Desktop"
 draft: false
 menu:
   docs:
     title:
     parent: "PinePower/Versions"
-    identifier: "PinePower/Versions/120W_Desktop_Power_Supply"
+    identifier: "PinePower/Versions/PinePower_Desktop"
     weight: 2
 ---
 
-{{< figure src="/documentation/images/PinePower-Desktop-2.jpg" title="PinePower Desktop 120W render" width="400" >}}
+The **PinePower Desktop** is an 120W desktop power adapter. It features 1 USB-C port and 4 USB-A port. The 120W output is not per port, but total output power. This is calculated by combining the 65W USB-C, 3x15W USB-A and the 18W USB-A QC, making a total of 128W. The only difference between the US and EU edition is the supplied power cable. Every port, with exception of the wireless Q-charger, has a display, portraying the output voltage and amps. The display back light can be turned on and off by capacitive touch button, located on the top left side of the unit.
 
-A 120W desktop power adapter. It features 1 USB-C port and 4 USB-A port. The 120W output is not per port, but total output power. This is calculated by combining the 65W USB-C, 3x15W USB-A and the 18W USB-A QC, making a total of 128W. The only difference between the US and EU edition is the supplied power cable. Every port, with exception of the wireless Q-charger, has a display, portraying the output voltage and amps. The display back light can be turned on and off by capacitive touch button, located on the top left side of the unit.
+{{< figure src="/documentation/PinePower/images/PinePower-Desktop-2.jpg" title="PinePower Desktop 120W" width="400" >}}
 
 ## General specifications
 

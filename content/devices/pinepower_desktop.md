@@ -50,7 +50,7 @@ Individual voltage and status displays for each port
 
 |     |
 | --- |
-| [PinePower](/documentation/PinePower/) |
+| [PinePower](/documentation/PinePower/Versions/PinePower_Desktop/) |
 
 ## Resources
 

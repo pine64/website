@@ -46,4 +46,4 @@ Weighing only 130 grams the PinePower is a sleek and lightweight portable charge
 
 |     |
 | --- |
-| [PinePower](/documentation/PinePower/) |
+| [PinePower](/documentation/PinePower/Versions/PinePower/) |

@@ -1,15 +1,17 @@
 ---
-title: "65W GaN Charger"
+title: "PinePower"
 draft: false
 menu:
   docs:
     title:
     parent: "PinePower/Versions"
-    identifier: "PinePower/Versions/65W_GaN_Charger"
+    identifier: "PinePower/Versions/PinePower"
     weight: 1
 ---
 
 The PinePower is a small and compact palm size 65W wall socket power adapter. It features 2 USB-C ports and 1 USB-A port charger. [Gallium Nitride](https://en.wikipedia.org/wiki/Gallium_nitride) technology ensures a small and light charger with high charging efficiency. It has a retractable US plug.
+
+{{< figure src="/documentation/PinePower/images/PinePower_Charger_65W.jpeg" title="" width="400" >}}
 
 ## General specifications
 

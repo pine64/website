@@ -954,7 +954,9 @@ tbody {
 
 
 /* Table of contents */
-
+nav#TableOfContents a {
+    color: var(--blue);
+}
 nav#TableOfContents ul, 
 nav#TableOfContents li {
     padding-bottom: 0 !important;

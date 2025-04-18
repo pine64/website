@@ -10,6 +10,7 @@ description: "PINE64 has a variety of different devices. Find out more!"
     {{< devices/device_box link="/devices/ox64/" img="/img/start/ox64.png" title="Ox64" text="" >}}
     {{< devices/device_box link="/devices/oz64/" img="/devices/images/oz64.jpg" title="Oz64" text="" >}}
     {{< devices/device_box link="/devices/star64" img="/devices/images/star64.png" title="STAR64" text="" >}}
+    {{< devices/device_box link="/devices/starpro64" img="/devices/images/starpro64.jpg" title="StarPro64" text="" >}}
     {{< devices/device_box link="/devices/pine_a64" img="/devices/images/pine_a64.jpg" title="PINE A64 (+)" text="" >}}
     {{< devices/device_box link="/devices/pine_a64-lts" img="/devices/images/pine_a64-lts.jpg" title="PINE A64-LTS" text="" >}}
     {{< devices/device_box link="/devices/rock64" img="/devices/images/rock64.jpg" title="ROCK64" text="" >}}
@@ -82,6 +83,7 @@ description: "PINE64 has a variety of different devices. Find out more!"
 {{< flexbox >}}
     {{< devices/device_box link="/devices/pinepower" img="/devices/images/pinepower.jpg" title="PinePower" text="" >}}
     {{< devices/device_box link="/devices/pinepower_desktop" img="/devices/images/pinepower_desktop.jpg" title="PinePower Desktop" text="" >}}
+    {{< devices/device_box link="/devices/pinepower_desktop_v2" img="/devices/images/pinepower_desktop_v2.jpg" title="PinePower Desktop V2" text="" >}}
 {{</ flexbox >}}
 
 ## IoT
@@ -93,4 +95,5 @@ description: "PINE64 has a variety of different devices. Find out more!"
 ## Smart home
 {{< flexbox >}}
     {{< devices/device_box link="/devices/pinevox" img="/documentation/PineVox/images/pinevox.jpg" title="PineVox" text="" >}}
+    {{< devices/device_box link="/devices/pinecam" img="images/pinecam.jpg" title="PineCam" text="" >}}
 {{</ flexbox >}}

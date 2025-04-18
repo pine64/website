@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PinePower"
     identifier: "PinePower/Versions"
-    weight: 
+    weight: 1
 ---
 
 {{< children >}}

@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PinePower"
     identifier: "PinePower/External_links"
-    weight: 3
+    weight: 99
 ---
 
 * [Pine blog, containing news about the PinePower products](https://www.pine64.org/2020/12/15/december-update-the-longest-one-yet/)
