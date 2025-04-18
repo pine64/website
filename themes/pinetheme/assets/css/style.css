@@ -801,7 +801,10 @@ div.credits {
 .deviceshr {
     background-color: #021d3b;
     width: 100px;
-    height: 24px;
+    height: 6px;
+}
+.devices thead {
+    background-color: unset;
 }
 .flexbox {
     display: flex;
@@ -845,7 +848,6 @@ div.credits {
 }
 .device_box h2 {
     padding: 22px 10px 32px 10px;
-    font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
 }
