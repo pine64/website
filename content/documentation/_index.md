@@ -6,7 +6,7 @@ toc: true
 menu:
   docs:
     title:
-    parent: ""
+    parent:
     identifier: "_index"
     weight:
 images:

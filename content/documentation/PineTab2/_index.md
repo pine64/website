@@ -4,7 +4,7 @@ draft: false
 menu:
   docs:
     title:
-    parent: ""
+    parent:
     identifier: "PineTab2"
     weight: 
 ---
