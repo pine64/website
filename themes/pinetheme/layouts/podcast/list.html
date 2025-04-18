@@ -1,21 +1,21 @@
 {{ define "main" }}
 
-<!-- Get the RSS feed URL -->
-{{ with .OutputFormats.Get "rss" -}}
-{{ $rss := .RelPermalink | safeHTML }}
-
 <div class="box full themelightblue">
     <div class="box pad">
         <h1>PineTalk</h1>
 
         <p>We discuss PINE64 hardware, software development and open source in general. Send in your questions! A community ran podcast for the community.</p><br>
 
-        <a href="#podcast_newest_anchor"><div class="podcast podcast-blue">▶&nbsp;&nbsp; Play the newest episode</div></a> <a href="{{ $rss }}"><div class="podcast">Get the RSS feed</div></a>
+        <!-- Get the RSS feed URL -->
+        {{ with .OutputFormats.Get "rss" -}}
+        {{ $rss := .RelPermalink | safeHTML }}
+
+        <a href="#podcast_newest_anchor"><div class="hugebutton podcast-blue">▶&nbsp;&nbsp; Play the newest episode</div></a> <a href="{{ $rss }}"><div class="hugebutton">Get the RSS feed</div></a>
+
+        {{ end -}}
 
     </div>
 </div>
-
-{{ end -}}
 
 <div class="box rows pad">
 
@@ -34,11 +34,11 @@
         .Content
         -->
 
-        <div class="podcast podcast-blue podcast-margin"><a href="{{ .RelPermalink }}">Open the full episode page</a></div>
+        <div class="hugebutton podcast-blue podcast-margin"><a href="{{ .RelPermalink }}">Open the full episode page</a></div>
     {{end}}
 
     <!-- Section: All episodes -->
-    <h1>All episodes</h1>
+    <h2>All episodes</h2>
 
     {{ $paginator := .Paginate (where .Data.Pages "Type" "podcast") 4 }}
 

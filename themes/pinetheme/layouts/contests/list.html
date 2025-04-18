@@ -1,22 +1,23 @@
 {{ define "main" }}
 
-
 <div class="box themecontest full">
     <div class="box rows pad">
         <h1>Contests</h1>
 
         <p>Contests of the PINE64 community</p>
 
-        <p>
+        <!-- Get the RSS feed URL -->
         {{ with .OutputFormats.Get "rss" -}}
-        <a href="{{ .RelPermalink | safeHTML }}">RSS feed</a>
+        {{ $rss := .RelPermalink | safeHTML }}
+        <a href="{{ $rss }}">
+            <div class="hugebutton">Get the RSS feed</div>
+        </a>
         {{ end -}}
-        </p>
     </div>
 </div>
 
 <div class="box rows pad">
-    <div class="blog-list-title"><h1>{{ .Title }}</h1></div>
+    <div class="blog-list-title"><h2>{{ .Title }}</h2></div>
 
     {{ $paginator := .Paginate (where .Data.Pages "Type" "contests") 4 }}
 

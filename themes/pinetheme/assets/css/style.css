@@ -35,7 +35,6 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--blue);
     padding: 12px 0 12px 0;
     font-weight: 400;
 }
@@ -156,7 +155,7 @@ time {
     border-top-right-radius: 10px;
 }
 .eff1:hover h3 {
-    color: #e40046;
+    color: #0069B5;
 }
 .eff1:hover img {
     transform: scale(1.05);
@@ -233,7 +232,6 @@ div.themecontest {
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    text-shadow: 2px 2px 8px black;
     font-weight: 500;
 }
 div.themelightblue {
@@ -297,7 +295,7 @@ div.themedarkgrey {
 }
 
 /* Pagination */
-ul.pagination{
+ul.pagination {
     list-style-type: none;
     display: flex;
     padding-bottom: 2rem;
@@ -306,7 +304,7 @@ ul.pagination{
     width: 100%;
     justify-content: center;
 }
-ul.pagination li{
+ul.pagination li {
     color: #333;
     margin: 2px;
     padding: 2px 6px;
@@ -315,17 +313,18 @@ ul.pagination li{
     font-weight: 600;
     margin-bottom: 3rem;
     background-color: #f5f5f5;
+    border-radius: 2px;
 }
-ul.pagination li.disabled{
+ul.pagination li.disabled {
     display: none;
 }
-ul.pagination li a{
+ul.pagination li a {
     /*padding: 4px 8px;*/
     line-height: 2rem;
     color: #333;
 
 }
-ul.pagination li.active a, ul.pagination li a:hover{
+ul.pagination li.active a, ul.pagination li a:hover {
     color: #0069B5;
 }
 
@@ -359,7 +358,7 @@ h1 {
     padding-bottom: 20px;
 }
 h2 {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
 }
 #header {
     display: flex;
@@ -986,7 +985,7 @@ nav#TableOfContents ol ol {
 }
 
 /* Podcast page */
-div.podcast {
+div.hugebutton {
     padding: 1.4rem 2rem;
     margin-right: 10pt;
     margin-bottom: 10pt;
@@ -1024,7 +1023,9 @@ div.podcast:hover {
     background-color: #333;
     color: white;
 }
-.podcast_preview:hover p,
+.podcast_preview p {
+    color: #333;
+}
 .podcast_preview:hover h3{
     color: #0069B5;
 }
