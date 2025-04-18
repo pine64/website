@@ -41,6 +41,9 @@
     width: 300px;
     max-width: 400px;
 }
+#doc-nav li {
+    list-style-type: none
+}
 #doc-nav ul {
     list-style-type: none
 }
