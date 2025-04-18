@@ -599,7 +599,20 @@ div.roundedbutton {
 div.roundedbutton:hover {
     box-shadow: 0 0 15px rgba(92, 123, 182, 0.7);
 }
-
+.editpage {
+    border-bottom: 2px solid #1a76da;
+    border-image: linear-gradient(to right, #1a76da 85%, #fd1818 85%) 1;
+    padding: 2px;
+    font-weight: 400;
+}
+.editpage a {
+    color: #003f9e;
+}
+@media screen and (max-width: 750px){
+    .editpage {
+        visibility: hidden;
+    }
+}
 
 /* Index page */
 .index_news a {
