@@ -693,7 +693,21 @@ hr.toc_hr {
     border-bottom: 4px solid #013F85;
     margin-bottom: -2px;
 }
-
+.blog p a,
+.blog ol a,
+.blog ul a
+{
+    color: #053a63;
+}
+.blog h1 a,
+.blog h2 a,
+.blog h3 a,
+.blog h4 a,
+.blog h5 a,
+.blog h6 a
+{
+    color: inherit;
+}
 .blog h1 {
     font-weight: 700;
     font-size: 1.8rem;
@@ -707,9 +721,6 @@ hr.toc_hr {
 .blog h3 {
     font-weight: 600;
     font-size: 1.3rem;
-}
-.blog p a {
-    color: #06497d;
 }
 .blog code {
     background-color: #fafafa;
