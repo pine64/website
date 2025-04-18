@@ -455,6 +455,7 @@ input#hamburger_cb,
         order: 3;
     }
 }
+
 #header-notice {
     background-color: white;
     width: 100%;
@@ -964,6 +965,12 @@ tbody {
     margin-bottom: 0;
 }
 
+#search-resuls {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    max-width: 100%;
+}
 
 /* Table of contents */
 nav#TableOfContents a {
