@@ -31,8 +31,6 @@ Gamiee has also been working with a group of our friends over at Meshtastic on a
 
 {{< toc >}}
 
---- 
-
 ## FOSDEM
 
 {{< credits "Author: Caffeine" >}}

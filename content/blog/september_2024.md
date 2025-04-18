@@ -37,8 +37,6 @@ Thanks!
 
 {{< toc >}}
 
-----
-
 ## Updates
 
 ### New products announcements

@@ -31,8 +31,6 @@ We'd also like to apologize as we had most of this written up around late Februa
 
 {{< toc >}}
 
---- 
-
 ## FOSDEM 2025
 {{< credits "Author: Caffeine" >}}
 

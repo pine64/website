@@ -28,8 +28,6 @@ Welcome back to a new monthly Pine64 community update! This month we are announc
 
 {{< toc >}}
 
----
-
 ## PineCam
 
 {{< credits "Authors: Lukasz, Caffeine" >}}
