@@ -8,7 +8,9 @@
         {{ end }}
         
         <div class="device_box_image">
+            {{ if .Get "img" }} 
             <img src='{{ .Get "img" }}' alt="Image of the device.">
+            {{ end }}
         </div>
     </a>
 </div>
