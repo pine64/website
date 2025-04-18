@@ -970,6 +970,7 @@ tbody {
     overflow-wrap: break-word;
     white-space: normal;
     max-width: 100%;
+    word-break: break-all;
 }
 
 /* Table of contents */
