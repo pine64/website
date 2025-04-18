@@ -64,9 +64,9 @@ collections:
     fields: # List of fields for the front matter
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
-      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Date", name: "date", widget: "datetime", required: false }
       - { label: "Image", name: "images", widget: "image", required: false }
-      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false, required: false}
       - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "contests" # This is the name used in the URL
