@@ -1,11 +1,11 @@
 ---
-title: "Development efforts"
+title: "Development"
 draft: false
 menu:
   docs:
     title:
-    parent: "PineCone/Further_information"
-    identifier: "PineCone/Further_information/Development_efforts"
+    parent: "PineCone"
+    identifier: "PineCone/Development"
     weight: 
 ---
 

@@ -30,7 +30,7 @@ The following PINE64 devices are available in the documentation
 | IP camera | [PineCube](PineCube) |
 | Power adapter | [PinePower](PinePower/Versions/PinePower)<br>[PinePower Desktop](PinePower/Versions/PinePower_Desktop)<br>[PinePower Desktop V2](PinePower/Versions/PinePower_Desktop_V2) |
 | Soldering iron | [Pinecil](Pinecil) |
-| Makerspace | [PineCone](PineCone)<br> [Pinedio](Pinedio) |
+| Makerspace | [PineCone](PineCone)<br> [Pinedio](Pinedio)<br>[Pinenut](Pinenut) |
 | Smart home | [PineVox](PineVox)<br> [PineCam](PineCam) |
 
 ## Helpful information

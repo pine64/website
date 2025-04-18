@@ -25,3 +25,18 @@ The MaskROM download mode that the BL602 enters when you tie GPIO8 high does *no
 
 Note that, just as software can remap the default JTAG pins to be something else, it can also remap other pins to be JTAG. Control over this is quite granular, with 5-6 candidate pins for each individual JTAG signal that can be mapped independently of one another. LEE Lup Yuen has written some [sample code](https://lupyuen.github.io/articles/openocd#free-the-led-from-jtag-port) showing how to remap the JTAG pins so that your software can use the LED without giving up support for debugging.
 
+## USB JTAG Adapter
+
+The **USB JTAG Adapter** is an adapter with openOCD for Pinecone and Pinenut development.
+
+### Features
+
+* Using FTDI FT232H chipset
+* Aluminum housing
+* Dimension: 56.8 x 20.2 x 8.6 mm
+* Include 20cm length 5 wires female-to-female DuPont cable
+
+### Information and schematics
+
+* [PINE64 USB JTAG Adapter Schematic-20201215.pdf (pine64_ft232hl_board-2020-12-14)](https://files.pine64.org/doc/Pinenut/PINE64%20USB%20JTAG%20Adapter%20Schematic-20201215.pdf)
+* [PINE64 USB JTAG Adapter schematic 20210109 1.0a](https://wiki.pine64.org/wiki/File:PINE64_USB_JTAG_Adapter_Schematic_ver_1.0a-20210109.pdf)

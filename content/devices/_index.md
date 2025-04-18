@@ -89,7 +89,9 @@ description: "PINE64 has a variety of different devices. Find out more!"
 ## IoT
 
 {{< flexbox >}}
-    {{< devices/device_box link="/devices/pinenut" img="/devices/images/pinenut.jpg" title="PineNut" text="" >}}
+    {{< devices/device_box link="/devices/pinenut-01s" img="/devices/images/pinenut-01s.jpg" title="PineNut-01S" text="" >}}
+    {{< devices/device_box link="/devices/pinenut-01m" img="/devices/images/pinenut-01m.jpg" title="PineNut-01M" text="" >}}
+    {{< devices/device_box link="/devices/pinenut-12s" img="/devices/images/pinenut-12s.jpg" title="PineNut-12S" text="" >}}
 {{</ flexbox >}}
 
 ## Smart home
