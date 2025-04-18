@@ -38,12 +38,12 @@ collections:
     preview: false
     fields: # List of fields for the front matter
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Description", name: "description", widget: "text", optional: true}
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Image", name: "images", widget: "image", required: false }
       #- { label: "Hidden", name: "hidden", widget: "boolean", default: false }
       #- { label: "Comments", name: "comments", widget: "boolean", default: true }
-      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false, optional: true}
       #- { label: "Weight", name: "weight", widget: "number" }
       - { label: "Body", name: "body", widget: "markdown" }
       - name: authors
