@@ -4,7 +4,7 @@
     <div class="box rows pad">
         <h1>{{ .Title }}</h1>
 
-        <p>{{ .Content | safeHTML}}</p>
+        <p>{{ .Content | plainify}}</p>
 
         <p>Get the <a href="{{.RelPermalink }}index.xml">RSS feed</a></p>
     </div>
