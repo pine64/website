@@ -10,7 +10,7 @@ images:
 
 ## A Small Form-Factor Single Board Computer Capable of 4K playback
 
-ROCK64 is a credit card sized Single Board Computer powered by Rockchip RK3328 quad-core ARM Cortex A53 64-Bit Processor and support up to 4GB 1600MHz LPDDR3 memory. It provides an eMMC module socket, MicroSD Card slot, Pi-2 bus, Pi-P5+ bus, USB 3.0 and many others peripheral devices interface for makers to integrate with sensors and devices.
+The **ROCK64** is a credit card sized Single Board Computer powered by Rockchip RK3328 quad-core ARM Cortex A53 64-Bit Processor and support up to 4GB 1600MHz LPDDR3 memory. It provides an eMMC module socket, MicroSD Card slot, Pi-2 bus, Pi-P5+ bus, USB 3.0 and many others peripheral devices interface for makers to integrate with sensors and devices.
 
 Various operating systems are made available by open source community and partner projects including numerous Linux Distributions, Android, *BSD and more.
 
@@ -38,6 +38,14 @@ With an optional HAT module you can power the ROCK64 using POE
 
 ### 4GB LPDDR3 RAM
 Up to 4GB of LPDDR3 RAM
+
+## Stores
+
+|     |
+| --- |
+| [Global](https://pine64.com/product-category/rock64/) |
+| [Global: Accessories](https://pine64.com/product-category/rock64-accessories/) |
+| [Affiliates](/affiliates/) |
 
 ## Documentation
 

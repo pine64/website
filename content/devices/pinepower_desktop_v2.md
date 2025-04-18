@@ -12,6 +12,13 @@ images:
 
 The **PinePower Desktop V2** power supply features two sets of 65W PD, two sets of 22.5W QC3.0 and 15W Wireless Charging simultaneous output capability.
 
+## Stores
+
+|     |
+| --- |
+| [Global](https://pine64.com/product-category/pinepower/) |
+| [Affiliates](/affiliates/) |
+
 ## Documentation
 
 |     |

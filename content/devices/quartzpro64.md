@@ -12,6 +12,13 @@ images:
 
 It’s more likely than you think!
 
+## Stores
+
+|     |
+| --- |
+| [Global](https://pine64.com/product/quartzpro64-16gb-developer-board/) |
+| [Affiliates](/affiliates/) |
+
 ## Documentation
 
 |     |

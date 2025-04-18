@@ -10,7 +10,7 @@ images:
 
 ## One of the most powerful Linux-based Eink tablets
 
-Introducing the PineNote – A new early adopter Linux Eink tablet. The 1404 x 1872 resolution Eink panel with a fast refresh rate has 16 levels of grayscale and is not only contained by a hardened scratch-resistant glass with an anti-glare coating and a wacom EMR layer, but it also contains a frontlight with white or amber illumination settings. Powered by a powerful and efficient RK3566 SoC with four A55 cores, and backed by 4GBs of RAM and 128GBs of eMMC storage this will be a powerful portable device capable of taking notes, writing and reading documents, reading books, terminal usage, and more.
+Introducing the **PineNote** – A new early adopter Linux Eink tablet. The 1404 x 1872 resolution Eink panel with a fast refresh rate has 16 levels of grayscale and is not only contained by a hardened scratch-resistant glass with an anti-glare coating and a wacom EMR layer, but it also contains a frontlight with white or amber illumination settings. Powered by a powerful and efficient RK3566 SoC with four A55 cores, and backed by 4GBs of RAM and 128GBs of eMMC storage this will be a powerful portable device capable of taking notes, writing and reading documents, reading books, terminal usage, and more.
 
 The first batch of the PineNote will be great to write software for, but not great to write notes on. Wait for a later batch with better preinstalled software if you just want to use the device as an e-reader, e-note, or your everyday computing device.
 
@@ -42,6 +42,16 @@ A premium-feeling 7mm thick Magnesium Alloy casing with a magnetic cover
 ### Wireless Connectivity
 
 Expand what you can do with the device thanks to onboard WiFi and Bluetooth
+
+## Stores
+
+|     |
+| --- |
+| [Global](https://pine64.com/product-category/tablets/pinenote/) |
+| [Global: Accessories](https://pine64.com/product-category/pinenote-accessories/) |
+| [Global: Spare parts](https://pine64.com/product-category/pinenote-spare-parts/) |
+| [EU](https://pine64eu.com/product/pinenote-community-edition/) |
+| [Affiliates](/affiliates/) |
 
 ## Documentation
 

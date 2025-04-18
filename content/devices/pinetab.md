@@ -10,7 +10,7 @@ images:
 
 ## PineTab: The Open Source ARM 64-bit Tablet
 
-The PineTab is similar in both form, function and underlying ARM64 architecture to the original 11.6″ Pinebook. It is powered by the same quad-core ARM Cortex A53 64-Bit Processor used in our popular PINE A64 Single Board Computer. The optional keyboard and trackpad – which doubles-up as a screen cover – effectively converts the PineTab into a petite on-the-go laptop with a touch screen functionality. It runs numerous mainline Linux distributions as well as *BSD and Android. 
+The **PineTab** is similar in both form, function and underlying ARM64 architecture to the original 11.6″ Pinebook. It is powered by the same quad-core ARM Cortex A53 64-Bit Processor used in our popular PINE A64 Single Board Computer. The optional keyboard and trackpad – which doubles-up as a screen cover – effectively converts the PineTab into a petite on-the-go laptop with a touch screen functionality. It runs numerous mainline Linux distributions as well as *BSD and Android. 
 
 As a new open source platform, the PineTab development is an ongoing process and represents a great opportunity to get involved with computing on a different level, to customise and personalise the portable computer experience, to understand what is going on beneath the surface.
 

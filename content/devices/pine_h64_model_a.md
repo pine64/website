@@ -10,7 +10,7 @@ images:
 
 ## The PINE H64 Model A
 
-The PINE H64 Model A is Single Board Computer by PINE64. It is powered by an Allwinner “H6” Quad-Core ARM Cortex A53 64-Bit Processor with a MALI T-722 GPU.
+The **PINE H64 Model A** is Single Board Computer by PINE64. It is powered by an Allwinner “H6” Quad-Core ARM Cortex A53 64-Bit Processor with a MALI T-722 GPU.
 
 ## Documentation
 

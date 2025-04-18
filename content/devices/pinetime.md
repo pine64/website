@@ -12,7 +12,7 @@ aliases:
 
 ## An Open Source Smartwatch For Your Favorite Devices. Low Cost, High Fidelity.
 
-The PineTime is a free and open source smartwatch capable of running custom-built open operating systems. Some of the notable features include a heart rate monitor, a week-long battery, and a capacitive touch IPS display that is legible in direct sunlight. It is a fully community driven side-project which anyone can contribute to, allowing you to keep control of your device.
+The **PineTime** is a free and open source smartwatch capable of running custom-built open operating systems. Some of the notable features include a heart rate monitor, a week-long battery, and a capacitive touch IPS display that is legible in direct sunlight. It is a fully community driven side-project which anyone can contribute to, allowing you to keep control of your device.
 
 We envision the PineTime as a companion for not only your PinePhone but also for your favorite devices — any phone, tablet, or even PC. In its current state the PineTime ships with a community firmware called Infinitime, which works with Linux computers and phones, Windows machines, and Android devices. IOS support is currently being looked into for Infinitime.
 
@@ -45,6 +45,15 @@ With Bluetooth 5 and Bluetooth Low Energy, the PineTime can pair to other device
 ### Heartrate And Step Counting
 
 With a built-in accelerometer and heart-rate sensor, the PineTime can help you keep track of your health
+
+## Stores
+
+|     |
+| --- |
+| [Global](https://pine64.com/product-category/pinetime-smartwatch/) |
+| [Global: Accessories](https://pine64.com/product-category/smartwatch-accessories/) |
+| [EU](https://pine64eu.com/product/pinetime-smartwatch-sealed/) |
+| [Affiliates](/affiliates/) |
 
 ## Documentation
 

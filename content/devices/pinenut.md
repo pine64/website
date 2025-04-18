@@ -10,7 +10,7 @@ images:
 
 ## PineNut, an Attempt to Open Source WiFi and BLE module for PINE64 devices
 
-The Pinenut-01S module offers a complete and self-contained Wi-Fi and BLE networking solution, allowing it to either host the application or to offload all Wi-Fi and Bluetooth networking functions to another application processor. We are actively working together with the PINE64 community to open source as much as possible of the WiFi and BLE stack of the PineNut. In time, we hope to use the PineNut as base for open Wifi implementations in our flagship devices.
+The **Pinenut-01S** module offers a complete and self-contained Wi-Fi and BLE networking solution, allowing it to either host the application or to offload all Wi-Fi and Bluetooth networking functions to another application processor. We are actively working together with the PINE64 community to open source as much as possible of the WiFi and BLE stack of the PineNut. In time, we hope to use the PineNut as base for open Wifi implementations in our flagship devices.
 
 ## Features and Specifications
 
@@ -42,6 +42,13 @@ Input power tolerance range of 3.3V-3.6V
 ### GPIO Interface
 
 Plenty of I/O to allow for greater functionality in your project
+
+## Stores
+
+|     |
+| --- |
+| [Global](https://pine64.com/product-category/internet-of-things/iot-wifi-ble/) |
+| [Affiliates](/affiliates/) |
 
 ## Documentation
 

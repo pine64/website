@@ -10,7 +10,7 @@ images:
 
 ## RISC-V Soldering Iron Running an Open Firmware
 
-The Pinecil is a smart mini portable soldering iron with a 32-bit RISC-V SoC featuring a sleek design, auto standby and it heats up to an operating temperature in just 12 seconds when paired with a sufficiently powerful power supply unit – such as the PinePower. It runs a community built firmware that is simple to update and altered to your use-case need. We offer a wide selection of tips for the Pinecil in the Pine Store, so the soldering iron is ready to aid you in whatever projects you’re about to undertake.
+The **Pinecil** is a smart mini portable soldering iron with a 32-bit RISC-V SoC featuring a sleek design, auto standby and it heats up to an operating temperature in just 12 seconds when paired with a sufficiently powerful power supply unit – such as the PinePower. It runs a community built firmware that is simple to update and altered to your use-case need. We offer a wide selection of tips for the Pinecil in the Pine Store, so the soldering iron is ready to aid you in whatever projects you’re about to undertake.
 
 ## Features and Specifications
 
@@ -48,6 +48,14 @@ Optional GPIO breakout for development purposes
 ### 32 Bit RISC-V Processor
 
 32-bit RV32IMAC RISC-V processor running open firmware
+
+## Stores
+
+|     |
+| --- |
+| [Global](https://pine64.com/product-category/pinecil/) |
+| [EU](https://pine64eu.com/product-category/devices/solderingirons/) |
+| [Affiliates](/affiliates/) |
 
 ## Documentation
 

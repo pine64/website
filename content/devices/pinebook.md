@@ -12,7 +12,7 @@ aliases:
 
 ## A Thin and Light Open Source ARM 64-bit Notebook for Tinkering
 
-The PINEBOOK is an 11.6″ notebook powered by the same quad-core ARM Cortex A53 64-Bit Processor used in our popular PINE A64 Single Board Computer. It is very lightweight, hackable and comes equipped with a full-sized keyboard and large multi-touch trackpad. It runs numerous mainline Linux distributions as well as *BSD and Android. The most recent iteration has received an upgrade in the form of a 1080p IPS panel. 
+The **Pinebook** is an 11.6″ notebook powered by the same quad-core ARM Cortex A53 64-Bit Processor used in our popular PINE A64 Single Board Computer. It is very lightweight, hackable and comes equipped with a full-sized keyboard and large multi-touch trackpad. It runs numerous mainline Linux distributions as well as *BSD and Android. The most recent iteration has received an upgrade in the form of a 1080p IPS panel. 
 
 As a new open source platform, Pinebook development is an ongoing process and represents a great opportunity to get involved with computing on a different level, to customize and personalize the portable computer experience, to understand what is going on beneath the surface. If you are looking for a device in a convenient laptop form-factor that you wish to tinker with, then it is safe to say the Pinebook is the right device for you. We do no wish to discourage anyone from getting the Pinebook, but it is not a daily driver, so if you are looking to replace your current work or school laptop it may be wise to look elsewhere. 
 

@@ -10,7 +10,14 @@ images:
 
 ## The PineCone: A board to blob-Free WiFi & BLE
 
-The PineCone is a BL602 evaluation board, which was developed with the goal to challenge the open source community to achieve blob-free and free and open source WiFi and Bluetooth, see the [Nutcracker Challenge](https://www.pine64.org/2020/10/28/nutcracker-challenge-blob-free-wifi-ble/).
+The **PineCone** is a BL602 evaluation board, which was developed with the goal to challenge the open source community to achieve blob-free and free and open source WiFi and Bluetooth, see the [Nutcracker Challenge](https://www.pine64.org/2020/10/28/nutcracker-challenge-blob-free-wifi-ble/).
+
+## Stores
+
+|     |
+| --- |
+| [Global](https://pine64.com/product/pinecone-bl602-evaluation-board/) |
+| [Affiliates](/affiliates/) |
 
 ## Documentation
 

@@ -8,11 +8,11 @@ images:
   - "/devices/images/pinecube.jpg"
 ---
 
-## Who is Looking at You? The CUBE is an Open Source IP Cam Under Your Control
+## Who is Looking at You? The PineCube is an Open Source IP Cam Under Your Control
 
-The CUBE is a small, low-powered, open source IP camera. Whether you’re a parent looking for a FOSS baby-camera, a privacy oriented shop keeper, home owner looking for a security camera, or perhaps a tinkerer needing a camera for your drone – the CUBE can be the device for you. Featuring an 5MPx Omnivision sensor and IR LEDs for night vision, as well as Power Over Ethernet, and a microphone, the use-cases for this little camera are limitless.
+The **PineCube** is a small, low-powered, open source IP camera. Whether you’re a parent looking for a FOSS baby-camera, a privacy oriented shop keeper, home owner looking for a security camera, or perhaps a tinkerer needing a camera for your drone – the PineCube can be the device for you. Featuring an 5MPx Omnivision sensor and IR LEDs for night vision, as well as Power Over Ethernet, and a microphone, the use-cases for this little camera are limitless.
 
-Being a FOSS device means that the CUBE remains under your, and only your, control at all times. This is a rather important factor for a device that has a camera and a microphone installed, wouldn’t you say?
+Being a FOSS device means that the PineCube remains under your, and only your, control at all times. This is a rather important factor for a device that has a camera and a microphone installed, wouldn’t you say?
 
 ## Features and Specifications
 
@@ -50,6 +50,13 @@ Built-in Bluetooth and 802.11 b/g/n WiFi
 ### 26 GPIO Pins
 
 GPIO pins to allow further functionality in your project
+
+## Stores
+
+|     |
+| --- |
+| [Global](https://pine64.com/product-category/internet-of-things/pinecube/) |
+| [Affiliates](/affiliates/) |
 
 ## Documentation
 

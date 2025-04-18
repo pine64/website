@@ -10,7 +10,7 @@ images:
 
 ## SOPINE Baseboard
 
-The SOPINE Baseboard Model A is a hosts the SOPINE A64 Compute Module and turns it into a full single board computer. Makers can use this baseboard as reference to develop their own PCBs and for software development during early stages for custom hardware or PCB development.
+The **SOPINE Baseboard** Model A is a hosts the SOPINE A64 Compute Module and turns it into a full single board computer. Makers can use this baseboard as reference to develop their own PCBs and for software development during early stages for custom hardware or PCB development.
 
 ## Features and Specifications
 
@@ -35,6 +35,14 @@ Lithium battery port allows for running the board without being tethered to a ou
 ### PI-2 GPIO
 
 The SOPINE baseboard comes with a 2x20 pin PI-2 GPIO heade
+
+## Stores
+
+|     |
+| --- |
+| [Global](https://pine64.com/product-category/sopine/) |
+| [Global: Accessories](https://pine64.com/product-category/pine-a64-lts-accessories/) |
+| [Affiliates](/affiliates/) |
 
 ## Documentation
 

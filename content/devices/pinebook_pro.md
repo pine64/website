@@ -12,7 +12,7 @@ aliases:
 
 ## A Powerful, Metal and Open Source ARM 64-Bit Laptop for Work, School or Fun
 
-The Pinebook Pro is meant to deliver solid day-to-day Linux or \*BSD experience and to be a compelling alternative to mid-ranged Chromebooks that people convert into Linux laptops. In contrast to most mid-ranged Chromebooks however, the Pinebook Pro comes with an IPS 1080p 14″ LCD panel, a premium magnesium alloy shell, 64/128GB of eMMC storage* (more on this later – see asterisk below), a 10,000 mAh capacity battery and the modularity / hackability that only an open source project can deliver – such as the unpopulated PCIe m.2 NVMe slot (an optional feature which requires an optional adapter). The USB-C port on the Pinebook Pro, apart from being able to transmit data and charge the unit, is also capable of digital video output up-to 4K at 60hz.
+The **Pinebook Pro** is meant to deliver solid day-to-day Linux or \*BSD experience and to be a compelling alternative to mid-ranged Chromebooks that people convert into Linux laptops. In contrast to most mid-ranged Chromebooks however, the Pinebook Pro comes with an IPS 1080p 14″ LCD panel, a premium magnesium alloy shell, 64/128GB of eMMC storage* (more on this later – see asterisk below), a 10,000 mAh capacity battery and the modularity / hackability that only an open source project can deliver – such as the unpopulated PCIe m.2 NVMe slot (an optional feature which requires an optional adapter). The USB-C port on the Pinebook Pro, apart from being able to transmit data and charge the unit, is also capable of digital video output up-to 4K at 60hz.
 
 ## Features and Specifications
 
@@ -37,6 +37,17 @@ You can find parts for the Pinebook Pro on the store to fully repair the device
 
 ### Privacy
 The Pinebook Pro’s keyboard firmware includes key combinations to disable the Camera, Microphones, and Bluetooth and WiFi
+
+## Stores
+
+|     |
+| --- |
+| [Global](https://pine64.com/product-category/pinebook-pro/) |
+| [Global: Laptop accessories](https://pine64.com/product-category/laptop-accessories/) |
+| [Global: Accessories](https://pine64.com/product-category/pinebook-pro-accessories/) |
+| [Global: Spare parts](https://pine64.com/product-category/pinebook-pro-spare-parts/) |
+| [EU](https://pine64eu.com/product-category/devices/laptops/) |
+| [Affiliates](/affiliates/) |
 
 ## Documentation
 

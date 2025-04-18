@@ -10,7 +10,7 @@ images:
 
 ## PinePower: A 120W Desktop Power Supply
 
-The desktop PinePower is a 120W switching power supply capable of powering all your PINE64 devices. The desktop PinePower can charge the Pinebook Pro, PinePhone, PineTab and the PineTime simultaneously with plenty of headroom to spare.
+The **PinePower Desktop** is a 120W switching power supply capable of powering all your PINE64 devices. The desktop PinePower can charge the Pinebook Pro, PinePhone, PineTab and the PineTime simultaneously with plenty of headroom to spare.
 
 ## Features and Specifications
 
@@ -45,6 +45,14 @@ The PinePower comes with built-in wireless charging pad on top
 ### Status Display
 
 Individual voltage and status displays for each port
+
+## Stores
+
+|     |
+| --- |
+| [Global](https://pine64.com/product-category/pinepower/) |
+| [EU](https://pine64eu.com/product/pinepower-destkop/) |
+| [Affiliates](/affiliates/) |
 
 ## Documentation
 

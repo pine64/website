@@ -10,7 +10,7 @@ images:
 
 ## Like the PINEA64-LTS, just much smaller
 
-The SOPINE is a compute module powered by the same Quad-Core ARM Cortex A53 64-Bit Processor used in the PINE A64 with 2G LPDDR3 RAM memory, Power Management Unit, SPI Flash and integrated MicroSD Slot (for bootable OS images microSD card). The SOPINE module has a 5 years LTS (Long Term Supply) status, which means that it will be supplied to 2022 at the very least. There is a one year warranty period for the SOPINE module.
+The **SOPINE** is a compute module powered by the same Quad-Core ARM Cortex A53 64-Bit Processor used in the PINE A64 with 2G LPDDR3 RAM memory, Power Management Unit, SPI Flash and integrated MicroSD Slot (for bootable OS images microSD card). The SOPINE module has a 5 years LTS (Long Term Supply) status, which means that it will be supplied to 2022 at the very least. There is a one year warranty period for the SOPINE module.
 
 This tiny compute module uses SODIMM-DDR3 form-factor and can be paired with either the Clusterboard, the Baseboard or a custom host PCB for industrial or other embedded applications. It is fully compatible with the PINE A64-LTS in terms of software support
 
@@ -40,6 +40,14 @@ Each module comes with 128Mbit of SPI Flash memory
 ### SODIMM Form-Factor
 
 With the small SODIMM form-factor the SOPINE is perfect for use as a compute module or in a embedded project
+
+## Stores
+
+|     |
+| --- |
+| [Global](https://pine64.com/product-category/sopine/) |
+| [Global: Accessories](https://pine64.com/product-category/pine-a64-lts-accessories/) |
+| [Affiliates](/affiliates/) |
 
 ## Documentation
 
