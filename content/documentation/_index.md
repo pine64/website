@@ -28,7 +28,7 @@ The following PINE64 devices are available in the documentation
 | Set-top box | [RockBox](RockBox) |
 | Clusters and modules | [Clusterboard](Clusterboard)<br> [SOPINE](SOPINE)<br> [SOPINE Baseboard](SOPINE_Baseboard)<br> [SOEDGE](SOEDGE)<br> [SOEDGE Baseboard](SOEDGE_Baseboard)<br> [SOQuartz](SOQuartz) |
 | IP camera | [PineCube](PineCube) |
-| Power adapter | [PinePower](PinePower) |
+| Power adapter | [PinePower](PinePower/Versions/PinePower)<br>[PinePower Desktop](PinePower/Versions/PinePower_Desktop)<br>[PinePower Desktop V2](PinePower/Versions/PinePower_Desktop_V2) |
 | Soldering iron | [Pinecil](Pinecil) |
 | Makerspace | [PineCone](PineCone)<br> [Pinedio](Pinedio) |
 | Smart home | [PineVox](PineVox)<br> [PineCam](PineCam) |
