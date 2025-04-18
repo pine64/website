@@ -589,7 +589,7 @@ input#hamburger_cb,
     }
 }
 
-div.rounded {
+div.roundedbutton {
     padding: 0.6rem 2rem;
     background-color: #2868B0;
     border-radius: 20pt;
@@ -597,7 +597,7 @@ div.rounded {
     border: none;
     max-width: 200px;
 }
-div.rounded:hover {
+div.roundedbutton:hover {
     box-shadow: 0 0 15px rgba(92, 123, 182, 0.7);
 }
 
