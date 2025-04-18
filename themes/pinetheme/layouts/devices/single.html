@@ -6,7 +6,7 @@
     </div>
     <div class="imagebox">
         {{if and (isset .Params.cover "image") (ne .Params.cover.image "") }}
-            <img src="{{ .Params.cover.image }}"/>
+            <img src="{{ .Params.cover.image }}" alt="Image of the device.">
         {{end}}
     </div>
 </div>
