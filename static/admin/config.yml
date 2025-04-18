@@ -116,7 +116,7 @@ collections:
       - label: Body
         name: body
         widget: markdown
-    meta: { path: { widget: string, label: 'Path', index_file: 'index' } }
+    meta: { path: { widget: string, label: 'Path', index_file: '_index' } }
 
   - name: "podcast" # This is the name used in the URL
     label: "Podcast" # This is the singular name of the content type for the UI
