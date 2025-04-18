@@ -5,9 +5,11 @@ toc: true
 menu:
   docs:
     title:
-    parent: "PinePhone/Software"
-    identifier: "PinePhone/Software/Releases"
-    weight: 1
+    parent: "PinePhone"
+    identifier: "PinePhone/Software"
+    weight: 4
+aliases:
+  - "/documentation/PinePhone/Software/Releases"
 ---
 
 This page contains a list of all available releases and tools for the [PinePhone](/documentation/PinePhone) in alphabetical order.
