@@ -694,6 +694,11 @@ hr.toc_hr {
     margin-bottom: -2px;
 }
 
+.blog h1 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-top: 16px;
+}
 .blog h2 {
     font-weight: 700;
     font-size: 1.6rem;
@@ -962,7 +967,7 @@ nav#TableOfContents {
 }
 nav#TableOfContents ul ul, 
 nav#TableOfContents ol ol {
-    padding-left: 1.4em;
+    padding-left: 1.0em;
 }
 
 /* Podcast page */

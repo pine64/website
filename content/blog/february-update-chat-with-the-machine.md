@@ -89,7 +89,7 @@ Let us end this month’s housekeeping section on a positive note. As some of yo
 
 **Do you like the PINE64 EU logo?**
 
-# PinePhone (Pro) 
+## PinePhone (Pro) 
 
   
 The PinePhone Explorer Edition (EE) launch has probably been the smoothest device roll-out we’ve had in years. We announced the PinePhone Pro in October, laid the roadmap for delivering _Explorer Edition_ by January 2022 and made good on the promises. All phones ordered prior to January 18th have been dispatched on time and most, if not all, are now in the hands of their rightful owners. The sales and logistics teams did a mammoth job to make this happen and I’d like to publicly thank them for pulling off this feat so close to the start of the Chinese New Year. Good job, you’ve made a lot of people happy.
@@ -146,7 +146,7 @@ See [Updating Pine64 PinePhone modem firmware with fwupd](https://tube.tchncs.de
 
 **Demo of the modem's firmware being flashed**
 
-# PineNote 
+## PineNote 
 
 The PineNote has seen a handful of important developments since last month. The initial successful e-paper enablement on mainline-based Linux, thanks to work by [smaeul](https://github.com/smaeul) and [pgwipeout](https://github.com/pgwipeout), now allows partner project developers to start work on porting their OSes to the PineNote and adapting user interfaces for the grayscale display. Last month we got a handful of units into the hands of our friends at KDE and they’ve started work on adapting Plasma Mobile to work on the PineNote. I spoke to [Aleix](https://twitter.com/aleixpol), KDE e.V. president, last week: he told me that aside from working on a proof of concept UI in grayscale, KDE has also started adding support for apps - “(...) work to support the first apps on the device has started. At this time developers are working on getting Pikasso, a simple drawing app, to properly support the integrated drawing tablet on the device”. Plasma desktop already runs on the PineNote and, when using a modified high-contrast theme, the full desktop environment seems surprisingly viable on e-paper. If you want to join the conversation, help and contribute to the development of Plasma on e-paper or have an application you’d like supported on e-paper then please join [Plasma-Ink Matrix channel](https://matrix.to/#/#plasma-ink:kde.org). 
 
@@ -172,7 +172,7 @@ The good news is that significant progress is being made on this front too. As S
 
 Displaying an image isn’t everything however and there are multiple other issues that still need addressing. For instance, due to a bug, u-boot currently doesn’t detect the root filesystem automatically, and requires the user's input over UART. Needless to say, this isn’t exactly a viable manner of booting the device into an OS, especially not for regular end-users (but surely it is also an annoying step even if you’re an enthusiast). So, while there is clearly a way to go before we can all enjoy reading and writing content on the PineNote running a traditional Linux desktop environment, let us appreciate how much progress has been made in just a few short months. With the amount of work being done on this particular device, and on the RK3566 platform in general, I am confident that early adopters will get a chance to get their hands on the PineNote late this year. 
 
-# Pinecil \[by William Starkey\]
+## Pinecil \[by William Starkey\]
 
 [IronOS](https://github.com/Ralim/IronOS) 2.17/2.16 changes: the two most recent IronOS updates, 2.16 and 2.17, bring some great new features to the Pinecil, as well as significantly improve some of the existing ones! The major improvements made in 2.16 are upgrades to the temperature regulation, so the Pinecil heats up faster and holds the temperature more precisely, and refactoring & bug-fixes of the USB Power Delivery (PD) stack that fix compatibility issues with some Type-C power supplies, and a myriad of other small quality-of-life improvements.
 
@@ -194,7 +194,7 @@ When you have confirmed that the mod was successful, you will be able to use you
 
 **Mod illustration before (left) and after (right)**
 
-# PineTime \[by JF\]
+## PineTime \[by JF\]
 
 InfiniTime 1.8 was released last month (see the [January community update](https://www.pine64.org/2022/01/15/january-update-more-news/) for more details). According to the feedback we received, BLE connectivity seems to work much better than before thanks to the addition of the secure pairing functionality. If you haven't done so yet, I strongly recommend you update your PineTime to this latest version. The next release is not ready yet, but many contributors and developers are working to add new functionalities and fix bugs. Infinitime keeps getting valuable feedback, interesting feature requests and many many pull requests - thanks to everyone who is contributing to the project!
 
@@ -218,7 +218,7 @@ As you can see in the following picture, the integration of weather information 
 
 Stay tuned for the next release and, until then, enjoy your PineTime.
 
-# PineDio \[by JF\]
+## PineDio \[by JF\]
 
 Remember the PineDio STACK? This is a development kit based on the Bouffalo BL604 RISC-V MCU which embeds many devices like a LoRa radio, a motion sensor, a display and a touch panel. We have already talked about it in previous updates, and [Lup](https://lupyuen.github.io/) has already written extensively about it [LoRaWAN on the STACK](https://lupyuen.github.io/articles/lorawan3), [Rust on Apache NuttX](https://lupyuen.github.io/articles/rust2) [BL602 EFlash Loader: Reverse Engineered with Ghidra](https://lupyuen.github.io/articles/loader) and related topics.
 

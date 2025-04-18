@@ -63,7 +63,7 @@ I’d like to thank [JF](https://twitter.com/codingfield), [Alex](https://twitte
     - Restructuring of the InfiniTime project, creating a Github organization and taking on contributors to help with issue triage, PR reviews and merging
     - A word on donations to the InfiniTime project (and to other PineTime efforts)  
 
-# Housekeeping  
+## Housekeeping  
 
 Before we get into the exciting news there are a few housekeeping items on our itinerary. The first of which concerns Wiki contributions. Let me start by thanking everyone who has contributed to our Wiki - I’ve seen quite a few Wikis and I think that ours is among the best out there. That said, there are a few sections that are either incomplete, neglected or simply haven’t received an update in a long time. There is a list of [orphaned pages](https://wiki.pine64.org/index.php?title=Special:LonelyPages&limit=50&offset=0) that need to be integrated into main articles, reworked or completely removed. More importantly, however, the [_getting started_](https://wiki.pine64.org/wiki/NOOB) section - meant as a technical tutorial for complete novices - has not been maintained in over a year. While each device page usually offers a segment explaining how to get up and running, the global _getting started_ section remains relevant because it contains information for less technically capable users. If someone is willing to volunteer their time to restructure this section, update it with information and give it an overhaul, then please reach out to me or one of the mods in our chats.
 
@@ -75,7 +75,7 @@ Yesterday our friends at KDE celebrated their 25th birthday. As many of you sure
 
 Finally, I want to say thank you to our team for doing a great job on the PinePhone Pro launch. And I don’t mean the people who made the hardware possible, although they deserve a special round of applause for pulling it off under current manufacturing circumstances. To those who put together the trailer and the renders, created the website, put together and tested the pre-order system, and to all those who helped ensure we’re on track to have everything ready on October 15th - I am very grateful for your effort and help. Well done.  
 
-# PinePhone Pro
+## PinePhone Pro
 
 This month I have the pleasure to introduce the newest member of the PINE64 family - the PinePhone Pro. It is a fast smartphone with premium features, built from the ground up to run mainline Linux operating systems. In anticipation of great interest in the nitty-gritty hardware details, we published a dedicated webpage complete with specifications, availability information, device renders and an extensive FAQ. I strongly suggest you go and read that prior to continuing with this section. Seriously, go read it first.
 
@@ -129,7 +129,7 @@ That’s it, I think I’ve covered everything. If you have any further question
 
 Before I jump into the PineNote section - I know many of you are waiting for news about the PinePhone/PinePhone Pro keyboard and add-on cases. Due to the PinePhone Pro’s launch, and all the preparations which lead up to today, I’ve had very little time to keep track of hardware and software developments. All I know is that the keyboard has finally entered production. I’ll take the next week or so to catch up on everything and write a concise follow-up blog post that will hopefully answer all your questions. I'll also make sure to query developers about any major developments that have taken place in the past month. Keep an eye out for the post around October 30th.
 
-# PineNote
+## PineNote
 
 It has been three months since we announced the [PineNote](https://www.pine64.org/pinenote/) - an open e-paper device, based on our range of [Quartz64 single board computers](https://www.pine64.org/quartz64a/). It features a fast quad-core SoC (RK3566), 4GB of LPDDR4 RAM, 128GB of eMMC flash storage and comes equipped with an EMR pen-capable fast refresh e-paper panel. In case you missed it, I suggest you read the [August community update](https://www.pine64.org/2021/08/15/introducing-the-pinenote/) which I dedicated to introducing the new hardware. In time, the PineNote will run Linux (and who knows, maybe even \*BSD) with an open software stack, allowing you to do a range of things that are impossible on traditional e-paper tablets. Sky's the limit. But the path to achieving such functionality is a long one, and it will require skilled developers to get PineNote’s core functionality off the ground. Existing desktop and mobile environments, such as KDE Plasma, will also need to be altered to make a viable user experience on the unorthodox grayscale display. The bring-up process has already started and a select number of developers have received pre-production PineNotes in the past weeks - but many more contributors are needed to accelerate the development process.
 
@@ -147,7 +147,7 @@ Speaking of the hardware - I am happy to let you know that the initial PineNote 
 
 As for early adopter units, their availability will largely depend on software development progress. Ultimately, the schedule will be dictated by when the e-paper panel gets enabled on Linux. As I already mentioned, developers have some ideas on how this can be achieved (click [here](https://www.pine64.org/2021/09/15/september-update-hurdles-and-successes/) to see what Caleb had to say about it), so it may be a matter of a few weeks before we reach this milestone. However, admittedly it is also perfectly conceivable that enabling the e-paper panel will prove more of a challenge, and consequently take a longer time. In a sense, the ball is now in the developers’ court and the rest of us (including the production team) have to wait for a green light to proceed. As always, I’ll keep you updated on how things are progressing in future blog posts and updates.  
 
-# PineTime (and InfiniTime) \[by JF\]
+## PineTime (and InfiniTime) \[by JF\]
 
 In last [month’s update](https://www.pine64.org/2021/09/15/september-update-hurdles-and-successes/), we announced the release of [InfiniTime 1.4](https://github.com/InfiniTimeOrg/InfiniTime/releases/tag/1.4.0), which greatly improved the reliability and responsiveness of the touch panel and added a nice color picker for the PineTimeStyle watch face. Less than a month later, we published not one but two releases of InfiniTime! These 2 releases have allowed the project to reach a new milestone in terms of \*daily driver readiness\*. Let's take a closer look at what these releases bring to the table.
 
