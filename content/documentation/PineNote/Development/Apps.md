@@ -76,8 +76,15 @@ Xournal++ uses anti-aliasing and interpolation, which do not work well for the A
 Pre-compiled Debian packages with some of the PineNote-related modifications and support for triggering global refreshes after scrolling using the dbus service (see above) can be found [here](https://github.com/m-weigand/xournalpp_pn/releases)
 
 #### Obsidian
-
 Works well, EInk-Theme can be found [here](https://github.com/MichiMolle/obsidian-eink).
+
+### Reading
+
+#### Foliate
+[Foliate](https://johnfactotum.github.io/foliate/) is an ebook reader written in GTK4. It works well with the default Debian Gnome experience. You can bookmark pages and annotate selections of words/sentences. Foliate supports "Open EPUB, Mobipocket, Kindle, FB2, CBZ, and PDF files".
+
+#### KOReader
+[KOReader](https://koreader.rocks/) is a document viewer made for eink devices. It is a feature packed application, a user can highlight text, bookmark pages, use gesture navigation and change font and page size/margins/spacing among many things. KOReader can also be used as a full screen UI with battery information reporting while reading books. KOReader supports "EPUB, PDF, DjVu, XPS, CBT, CBZ, FB2, PDB, TXT, HTML, RTF, CHM, DOC, MOBI and ZIP files".
 
 ### Web Browsing
 

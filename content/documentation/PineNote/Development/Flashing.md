@@ -55,9 +55,24 @@ There are three possible methods of entering Maskrom/Rockusb mode:
 
 #### Hardware magnet switch
 
+##### Developer Edition
 1. Connect the PineNote to your computer via USB and boot the PineNote into Android
 2. Locate & identify the small circular marking on the back of the PineNote, in the top right quadrant; have the PineNote pen close at hand, or any other small magnet
 3. Hold the PineNote power button to bring up the reboot/shutdown menu; select reboot, then place the PineNote face down with the "eraser" end of the pen (or your magnet) resting on the small circular marking
+
+##### Community Edition
+The community edition is shipped with Debian and a passive pen without a magnet, therefore you will need to source your own magnet. 
+
+1. Make sure you have flashed the new U-Boot image after receiving your community edition PineNote. You can do this if you haven't already by running:
+
+    ```console
+    $ cd /root/uboot
+    ...
+    $ bash install_stable_1056mhz_uboot.sh
+    ```
+2. Power off the PineNote from the Gnome quick settings menu in the top right.
+3. Place the PineNote display side facing down and place the magnet on the small circle in the top right quadrant of the device. 
+4. Plug the PineNote into your computer (you do not need to press the power button).
 
 #### U-Boot terminal
 
@@ -113,6 +128,7 @@ This process was developed by Dorian Rudolph, originally described [here](https:
 
 ### List partitions
 
+#### Developer Edition
 First, run `rkdeveloptool list-partitions` to print out your PineNote’s partitions to get an idea of what you’re dealing with.
 The stock PineNote has a fairly standard [Android partition setup](https://source.android.com/docs/core/architecture/partitions):
 
@@ -134,6 +150,17 @@ The stock PineNote has a fairly standard [Android partition setup](https://sourc
 | 13 |  logo |  17 MB |  Splash image displayed during boot |
 | 14 |  device |  67 MB |   |
 | 15 |  userdata |  119 GB |  The big one; user-installed Android apps and files live here |
+
+#### Community Edition
+| Number | Name | Size | Purpose |
+| --- | --- | --- | --- |
+| 0 |  uboot |  64 MB |  The [U-Boot](https://en.wikipedia.org/wiki/Das_U-Boot) embedded systems bootloader |
+| 1 |  waveform |  2 MB |  Important files controlling the e-ink screen’s state changes |
+| 2 |  uboot_env |  1 MB |  U-Boot environment partition |
+| 3 |  logo |  64 MB |  Splash image displayed during boot |
+| 4 |  os1 |  14.65 MB | Default OS slot where Debian is stored |
+| 5 |  os2 |  14.65 GB |  An alternative operating system can be flashed here such as PostmarketOS or Arch Linux |
+| 6 |  data |  85.82 GB | /home partition for user files |
 
 ### Patch U-Boot
 
