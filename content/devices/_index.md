@@ -10,6 +10,7 @@ description: "PINE64 has a variety of different devices. Find out more!"
     {{< devices/device_box link="/devices/ox64/" img="/img/start/ox64.png" title="Ox64" text="" >}}
     {{< devices/device_box link="/devices/oz64/" img="/devices/images/oz64.jpg" title="Oz64" text="" >}}
     {{< devices/device_box link="/devices/star64" img="/devices/images/star64.png" title="STAR64" text="" >}}
+    {{< devices/device_box link="/devices/starpro64" img="/devices/images/starpro64.jpg" title="StarPro64" text="" >}}
     {{< devices/device_box link="/devices/pine_a64" img="/devices/images/pine_a64.jpg" title="PINE A64 (+)" text="" >}}
     {{< devices/device_box link="/devices/pine_a64-lts" img="/devices/images/pine_a64-lts.jpg" title="PINE A64-LTS" text="" >}}
     {{< devices/device_box link="/devices/rock64" img="/devices/images/rock64.jpg" title="ROCK64" text="" >}}
@@ -18,7 +19,7 @@ description: "PINE64 has a variety of different devices. Find out more!"
     {{< devices/device_box link="/devices/pine_h64_model_b" img="/devices/images/pine_h64_ver_b.jpg" title="PINE H64 Model B" text="" >}}
     {{< devices/device_box link="/devices/quartz64_model_a" img="/devices/images/quartz64_model_a.jpg" title="Quartz64 Model A" text="" >}}
     {{< devices/device_box link="/devices/quartz64_model_b" img="/devices/images/quartz64_model_b.png" title="Quartz64 Model B" text="" >}}
-    {{< devices/device_box link="/devices/quartz64_zero" img="/devices/images/Quartz64-Zero.jpg" title="Quartz64 Zero" text="" >}}
+    {{< devices/device_box link="/devices/quartz64-zero" img="/devices/images/Quartz64-Zero.jpg" title="Quartz64-Zero" text="" >}}
     {{< devices/device_box link="/devices/quartzpro64" img="/documentation/images/Quartzpro64_whole_board_top_resized.jpeg" title="QuartzPro64" text="" >}}
 {{</ flexbox >}}
 
@@ -82,15 +83,19 @@ description: "PINE64 has a variety of different devices. Find out more!"
 {{< flexbox >}}
     {{< devices/device_box link="/devices/pinepower" img="/devices/images/pinepower.jpg" title="PinePower" text="" >}}
     {{< devices/device_box link="/devices/pinepower_desktop" img="/devices/images/pinepower_desktop.jpg" title="PinePower Desktop" text="" >}}
+    {{< devices/device_box link="/devices/pinepower_desktop_v2" img="/devices/images/pinepower_desktop_v2.jpg" title="PinePower Desktop V2" text="" >}}
 {{</ flexbox >}}
 
 ## IoT
 
 {{< flexbox >}}
-    {{< devices/device_box link="/devices/pinenut" img="/devices/images/pinenut.jpg" title="PineNut" text="" >}}
+    {{< devices/device_box link="/devices/pinenut-01s" img="/devices/images/pinenut-01s.jpg" title="PineNut-01S" text="" >}}
+    {{< devices/device_box link="/devices/pinenut-01m" img="/devices/images/pinenut-01m.jpg" title="PineNut-01M" text="" >}}
+    {{< devices/device_box link="/devices/pinenut-12s" img="/devices/images/pinenut-12s.jpg" title="PineNut-12S" text="" >}}
 {{</ flexbox >}}
 
 ## Smart home
 {{< flexbox >}}
     {{< devices/device_box link="/devices/pinevox" img="/documentation/PineVox/images/pinevox.jpg" title="PineVox" text="" >}}
+    {{< devices/device_box link="/devices/pinecam" img="images/pinecam.jpg" title="PineCam" text="" >}}
 {{</ flexbox >}}

@@ -12,7 +12,7 @@ aliases:
 
 ## ROCKPro64: A 64-bit Hexa-Core SBC with PCIe, USB 3.0, USB-C and Gigabit Ethernet Featuring up-to 4GB of LDDDR4 RAM
 
-The ROCKPro64 is the most powerful single board computer on offer from PINE64, featuring a Rockchip RK3399 hexa-core SoC as well as a quad-core Mali-T860 MP4 GPU and up-to 4GB of dual-channel LPDDR4 system memory. Moreover, the board comes packed with features, including an USB 3.0 and USB type C with DP1.2 port, a full PCIe x4 as well as eMMC module socket. You also get a 40pin header with I2C, SPI, UARTs and GPIOs. The board is backwards compatible with many of the existing PINE64 peripherals, including the Wifi/BT module, camera module and LCD panel but an array of new peripherals specific for the board is also available. All this in the exact same model “A” dimension as the original PINE A64.
+The **ROCKPro64** is the most powerful single board computer on offer from PINE64, featuring a Rockchip RK3399 hexa-core SoC as well as a quad-core Mali-T860 MP4 GPU and up-to 4GB of dual-channel LPDDR4 system memory. Moreover, the board comes packed with features, including an USB 3.0 and USB type C with DP1.2 port, a full PCIe x4 as well as eMMC module socket. You also get a 40pin header with I2C, SPI, UARTs and GPIOs. The board is backwards compatible with many of the existing PINE64 peripherals, including the Wifi/BT module, camera module and LCD panel but an array of new peripherals specific for the board is also available. All this in the exact same model “A” dimension as the original PINE A64.
 
 The ROCKPro64 4GB board is designated as LTS (long Term Supply) which means that PINE64 is committed to supply it for at least 5 years – until year 2023 and beyond.
 
@@ -38,6 +38,14 @@ PCIe 4x open-ended slot for attaching devices and extra storage
 
 ### Powerful Rockchip SoC
 The power RK3399 hexa-core SoC can handle most tasks you throw at it
+
+## Stores
+
+|     |
+| --- |
+| [Global](https://pine64.com/product-category/rockpro64/) |
+| [Global: Accessories](https://pine64.com/product-category/rockpro64-accessories/) |
+| [Affiliates](/affiliates/) |
 
 ## Documentation
 

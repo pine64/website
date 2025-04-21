@@ -18,23 +18,15 @@ To become connected and involved with the community, please see the channel list
   {{</ box >}}
 {{</ box >}}
 
-{{< box style="themewhite pad" >}}
-  {{< box style="pad f50 rows" title="" content="markdown" >}}
-_PINE64_ is a community-driven company focused on creating high-quality, low-cost ARM devices and, more recently, RISC-V devices for individuals and businesses around the globe. PINE64 made its debut with the [PINE A64](/documentation/Pine_A64) single-board computer, which successfully launched on Kickstarter in 2015. PINE64 has since released a multitude of other devices, including both development boards and end-user devices.
-
-For information about PINE64 branding, including the usage of the PINE64 logo in non-commercial and other applications, please read the [article about our brand and logo](Brand_and_logo).
-
-The most important asset we have at our disposal is our community. We foster an active, friendly and large community of developers, contributors and end-users like yourself. Across our various community-ran chats and forums there are tens of thousands of people willing to help with any issues you may encounter. There are a wide range of communication protocols to choose from.
-  {{</ box >}}
-
-    {{< box style="pad_s blueshadow" type="image" link="/img/philosophy.png" width="200" >}}{{</ box >}}
-{{</ box >}}
-
 ## Chat platforms
 
 PINE64 has a large and very active community. Community discussion takes place on a variety of chat platforms, which are all bridged together so the messages sent via one platform are sent to all other platforms automatically. The other networks and their users are represented by P64ProtocolBot.
 
+{{< admonition type="note" >}}
+
 Please read [PINE64 Community Rules and Code of Conduct](/community/Rules/).
+
+{{< /admonition >}}
 
 The community chat platforms are the following:
 
@@ -68,7 +60,7 @@ The community chat platforms are the following:
 
 There is also an unofficial Matrix Space at [#pine64-space:matrix.org](https://matrix.to/#/#pine64-space:matrix.org) for supported clients that organizes all of the above matrix channels into one place.
 
-### Notes regarding the chat
+{{< admonition type="info" >}}
 
 PINE64 community is not some always responding, restless commercial customer service, or some sort of almighty existence that can resolve all your problems. When participating in community discussions, please be patient and do not expect questions to be answered immediately, certainly, or currently.
 
@@ -78,6 +70,22 @@ PINE64 community is not some always responding, restless commercial customer ser
 * PINE64 uses a bridge bot (_[matterbridge](https://github.com/42wim/matterbridge)_ with some modifications), which allows Discord, IRC, Matrix, and Telegram users to see and participate in the community chat.
 * The bot name is "Pine64 Protocol Droid" and if you see this, look in the message to see the actual author of the message.
 * When the bot relays messages it will show the platform the user is using: _[D]_ for _Discord_, _[I]_ for _IRC_, _[M]_ for _Matrix_ and _[T]_ for _Telegram_.
+
+{{< /admonition >}}
+
+## Vision
+
+{{< box style="themewhite pad" >}}
+  {{< box style="pad f50 rows" title="" content="markdown" >}}
+_PINE64_ is a community-driven company focused on creating high-quality, low-cost ARM devices and, more recently, RISC-V devices for individuals and businesses around the globe. PINE64 made its debut with the [PINE A64](/documentation/Pine_A64) single-board computer, which successfully launched on Kickstarter in 2015. PINE64 has since released a multitude of other devices, including both development boards and end-user devices.
+
+For information about PINE64 branding, including the usage of the PINE64 logo in non-commercial and other applications, please read the [article about our brand and logo](Brand_and_logo).
+
+The most important asset we have at our disposal is our community. We foster an active, friendly and large community of developers, contributors and end-users like yourself. Across our various community-ran chats and forums there are tens of thousands of people willing to help with any issues you may encounter. There are a wide range of communication protocols to choose from.
+  {{</ box >}}
+
+    {{< box style="pad_s blueshadow" type="image" link="/img/philosophy.png" width="200" >}}{{</ box >}}
+{{</ box >}}
 
 ## Forums
 

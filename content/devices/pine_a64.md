@@ -8,9 +8,9 @@ images:
   - "/devices/images/pine_a64.jpg"
 ---
 
-## Our First 64-bit Single Board Computer
+## PINE64's First 64-bit Single Board Computer
 
-This is where our journey began. The PINE A64 (\+) is our first Single Board Computer powered by Allwinner’s A64 quad-core ARM Cortex A53 64-Bit SoC. There are many Operating Systems available for the PINE A64 (+) created by the open source community and various partner projects. Currently the majority of Linux distributions for the PINE A64 are using mainline Linux but there are a number of BSP-based distribution and / or legacy systems that you can download too.
+This is where the journey began. The **PINE A64** and **PINE A64+** are PINE64's first Single Board Computer powered by Allwinner’s A64 quad-core ARM Cortex A53 64-Bit SoC. There are many Operating Systems available for the PINE A64 (+) created by the open source community and various partner projects. Currently the majority of Linux distributions for the PINE A64 are using mainline Linux but there are a number of BSP-based distribution and / or legacy systems that you can download too.
 
 Apart from Linux, you also have a choice of a selection of *BSD, Android, Remix OS and Windows IoT.
 

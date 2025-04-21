@@ -142,14 +142,15 @@ div.cr-right {
     float: right;
 }
 div.cr-right span {
-    font-size: 1.5rem;
+    font-size: 20px;
 }
-div.cr-right h1 {
+div.cr-right h2 {
     padding-bottom: 0.6rem;
-    font-size: 2.25rem;
+    font-size: 36px;
+    font-weight: 600;
 }
-div.cr-right h1 span {
-    font-size: 2.25rem;
+div.cr-right h2 span {
+    font-size: inherit;
     font-weight: 300;
 }
 div.cr-right a {
@@ -184,8 +185,11 @@ div.cr-right a:hover {
     div.cr-item {
         min-height: 700px;
     }
+    div.cr-right h2 {
+        font-size: 24px;
+    }
     div.cr-right span {
-        font-size: 1.4rem;
+        font-size: 18px;
     }
     .cr-control {
         bottom: 0px !important;

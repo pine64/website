@@ -1,6 +1,6 @@
 <div class='box {{ if .Get "style" }}{{ .Get "style" }}{{ end }}'>
     <div class="box">
-        <h1>{{ .Get "title" }}</h1>
+        <h2>{{ .Get "title" }}</h2>
     </div>
 
     <div class="box gap cols">
@@ -15,11 +15,11 @@
 
                     <div class="pad_s">
                         <h2>{{ .Title }}</h2>
-                        <p>{{ .Summary }}</p>
+                        <p>{{ .Summary | plainify }}</p>
                         
                         <br>
                         <div>
-                          <a href="{{ .RelPermalink }}" aria-label="Read more">Read the full news</a>
+                          <strong>Read the full news</strong>
                         </div>
                     </div>
                 </a>
@@ -28,7 +28,7 @@
     </div>
 
     <div class="box pad">
-        <a href="/{{$type}}/"><button class="rounded center">View all</button></a>
+        <a href="/{{$type}}/"><div class="roundedbutton center">View all</div></a>
     </div>
 
 </div>

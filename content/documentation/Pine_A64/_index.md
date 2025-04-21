@@ -4,7 +4,7 @@ draft: false
 menu:
   docs:
     title:
-    parent: ""
+    parent:
     identifier: "Pine_A64"
     weight: 
 ---

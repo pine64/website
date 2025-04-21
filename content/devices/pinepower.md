@@ -10,7 +10,7 @@ images:
 
 ## PinePower, A 65W GaN Power Supply
 
-The portable PinePower packs plenty of power in a very compact design. It is capable of powering or charging multiple PINE64 devices; such as the Pinebook Pro, PinePhone and the PineTime simultaneously. If you’re interested in getting the Pinecil, our soldering iron, then we highly recommend the PinePower to ensure optimal power delivery.
+The portable **PinePower** packs plenty of power in a very compact design. It is capable of powering or charging multiple PINE64 devices; such as the Pinebook Pro, PinePhone and the PineTime simultaneously. If you’re interested in getting the Pinecil, our soldering iron, then we highly recommend the PinePower to ensure optimal power delivery.
 
 ## Features and Specifications
 
@@ -42,8 +42,16 @@ Default US style plug with adapters for the EU, UK, AU
 
 Weighing only 130 grams the PinePower is a sleek and lightweight portable charger
 
+## Stores
+
+|     |
+| --- |
+| [Global](https://pine64.com/product-category/pinepower/) |
+| [EU](https://pine64eu.com/product/pinepower-65w-gan-portable-power-supply/) |
+| [Affiliates](/affiliates/) |
+
 ## Documentation
 
 |     |
 | --- |
-| [PinePower](/documentation/PinePower/) |
+| [PinePower](/documentation/PinePower/Versions/PinePower/) |

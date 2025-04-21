@@ -5,8 +5,8 @@ hidden: true
 menu:
   docs:
     title:
-    parent: "PinePhone/Software"
-    identifier: "PinePhone/Software/Crust"
+    parent: "PinePhone/Software_tricks"
+    identifier: "PinePhone/Software_tricks/Crust"
     weight: 4
 ---
 

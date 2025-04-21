@@ -1,7 +1,7 @@
 <div class="person_box">
     {{ with .Get "img" }} 
     <div class="person_box_image">
-        <img src='{{ . }}'>
+        <img src='{{ . }}' alt="Image of the person.">
     </div>
     {{ end }}
     <h3>{{ with .Get "name" }} {{ . }} {{ end }}</h3>

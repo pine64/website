@@ -1,11 +1,11 @@
 ---
-title: "PineCone BL602 EVB information and schematics"
+title: "Information and schematics"
 draft: false
 menu:
   docs:
     title:
     parent: "PineCone/Further_information"
-    identifier: "PineCone/Further_information/PineCone_BL602_EVB_information_and_schematics"
+    identifier: "PineCone/Further_information/Information_and_schematics"
     weight: 
 ---
 

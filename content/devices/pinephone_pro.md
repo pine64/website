@@ -10,7 +10,7 @@ aliases:
   - /pinephonepro # Used in the trailer
 ---
 
-Meet the PinePhone Pro, our flagship smartphone and the best way to experience mainline Linux on a mobile device.
+Meet the **PinePhone Pro**, our flagship smartphone and the best way to experience mainline Linux on a mobile device.
 
 ## Features and Specifications
 
@@ -34,6 +34,17 @@ Meet the PinePhone Pro, our flagship smartphone and the best way to experience m
 | Charging | 5V 3A (15W) Quick Charge – USB Power Delivery specification |
 | Dimensions | 160.8 x 76.6 x 11.1mm |
 | Weight | Approx. 215g |
+
+## Stores
+
+|     |
+| --- |
+| [Global](https://pine64.com/product-category/smartphones/pinephone-pro/) |
+| [Global: Accessories](https://pine64.com/product-category/smartphone-accessories/) |
+| [Global: Spare parts](https://pine64.com/product-category/pinephonepro-spare-parts/) |
+| [EU](https://pine64eu.com/product/pinephone-beta-edition-with-convergence-package/) |
+| [EU: Accessories](https://pine64eu.com/product-category/device-accessories/) |
+| [Affiliates](/affiliates/) |
 
 ## Documentation
 

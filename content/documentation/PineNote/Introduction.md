@@ -21,4 +21,4 @@ An early version of a GNOME-based Debian image is available for [testing](/docum
 
 Still have any questions regarding software, shipping, or ordering after reading the documentation? Please don’t hesitate to contact the community in the bridged community channels for detailed answers or simply to chat with friendly people in the community! See [the community page](/community/).
 
-Please keep in mind that PINE64 is not like a regular company (see the [PINE64 philosophy](https://www.pine64.org/philosophy/)) and that support resources are limited - the best way to get support quickly is to ask in the community chat. Please only contact the PINE64 support directly if questions couldn’t be solved via the community chat or the documentation.
+Please keep in mind that PINE64 is not like a regular company (see the [PINE64 philosophy](https://www.pine64.org/community/philosophy/)) and that support resources are limited - the best way to get support quickly is to ask in the community chat. Please only contact the PINE64 support directly if questions couldn’t be solved via the community chat or the documentation.

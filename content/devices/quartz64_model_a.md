@@ -12,7 +12,7 @@ aliases:
 
 ## Quartz64 Model A: A 64-bit Quad Core SBC with USB 3.0, Gigabit Ethernet, PCIe x4, and up to 8GBs of LPDD4 RAM
 
-The Quartz64 Model A is powered by a Rockchip RK3566 quad-core ARM Cortex A55 64-Bit Processor with a Mali G-52 GPU. It comes equipped with 2GB, 4GB or 8GB LPDDR4 system memory, and a 128Mb SPI boot flash. There is also an optional eMMC module (up to 128GB) and a microSD slot for booting. The board is also equipped with 1x USB 3.0 type A Host, 3x USB 2.0 Host, Gigabit Ethernet, Sata, PCIe, an E-ink interface, touch panel interface, a 40 pin GPIO bus, MiPi DSI interface, MiPi CSI interface, optional 802.11 b/g/n/ac Wifi and Bluetooth 5.0, eDP interface, and other interfaces such as UART, SPI, and I2C are also available for makers to integrate sensors and other peripherals. Many different operating systems are freely available from the open source community, such as Linux (Ubuntu, Debian, Arch, etc), *BSD, and Android.
+The **Quartz64 Model A** is powered by a Rockchip RK3566 quad-core ARM Cortex A55 64-Bit Processor with a Mali G-52 GPU. It comes equipped with 2GB, 4GB or 8GB LPDDR4 system memory, and a 128Mb SPI boot flash. There is also an optional eMMC module (up to 128GB) and a microSD slot for booting. The board is also equipped with 1x USB 3.0 type A Host, 3x USB 2.0 Host, Gigabit Ethernet, Sata, PCIe, an E-ink interface, touch panel interface, a 40 pin GPIO bus, MiPi DSI interface, MiPi CSI interface, optional 802.11 b/g/n/ac Wifi and Bluetooth 5.0, eDP interface, and other interfaces such as UART, SPI, and I2C are also available for makers to integrate sensors and other peripherals. Many different operating systems are freely available from the open source community, such as Linux (Ubuntu, Debian, Arch, etc), *BSD, and Android.
 
 ## Features and Specifications
 
@@ -36,6 +36,15 @@ The Quartz64 A comes with a built-in E-ink interface
 
 ### Plenty of RAM
 The Quartz64 A comes with up to 8GB of LPDDR4 RAM
+
+## Stores
+
+|     |
+| --- |
+| [Global: 4GB](https://pine64.com/product/quartz64-model-a-4gb-single-board-computer/) |
+| [Global: 8GB](https://pine64.com/product/quartz64-model-a-8gb-single-board-computer/) |
+| [Global: Accessories](https://pine64.com/product-category/quartz64-modela-accessories/) |
+| [Affiliates](/affiliates/) |
 
 ## Documentation
 

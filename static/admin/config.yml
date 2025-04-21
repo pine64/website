@@ -1,10 +1,27 @@
 site_url: https://pine64.org
-publish_mode: editorial_workflow
+#publish_mode: editorial_workflow
 
+#backend:
+#  name: github
+#  repo: pine64/website
+#  branch: main
+
+# Use DecapBridge auth (required)
 backend:
-  name: github
+  name: git-gateway
   repo: pine64/website
   branch: main
+  identity_url: https://auth.decapbridge.com/sites/724d1e08-c073-4673-93ef-1d9bc541bbda
+  gateway_url: https://gateway.decapbridge.com
+
+  # Quickly see who did what (optional)
+  commit_messages:
+    create: Create {{collection}} “{{slug}}” - {{author-name}} (via CMS)
+    update: Update {{collection}} “{{slug}}” - {{author-name}} (via CMS)
+    delete: Delete {{collection}} “{{slug}}” - {{author-name}} (via CMS)
+    uploadMedia: Upload “{{path}}” - {{author-name}} (via CMS)
+    deleteMedia: Delete “{{path}}” - {{author-name}} (via CMS)
+    openAuthoring: Message {{message}} - {{author-name}} (via CMS)
 
 media_folder: "static/images/uploads" # Adjust based on your media storage location
 public_folder: "/images/uploads" # URL path for accessing media
@@ -21,12 +38,12 @@ collections:
     preview: false
     fields: # List of fields for the front matter
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Description", name: "description", widget: "text", required: false}
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Image", name: "images", widget: "image", required: false }
       #- { label: "Hidden", name: "hidden", widget: "boolean", default: false }
       #- { label: "Comments", name: "comments", widget: "boolean", default: true }
-      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false, required: false}
       #- { label: "Weight", name: "weight", widget: "number" }
       - { label: "Body", name: "body", widget: "markdown" }
       - name: authors
@@ -46,10 +63,10 @@ collections:
     preview: false
     fields: # List of fields for the front matter
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "text", required: false }
+      - { label: "Date", name: "date", widget: "datetime", required: false }
       - { label: "Image", name: "images", widget: "image", required: false }
-      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false, required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "contests" # This is the name used in the URL
@@ -61,10 +78,10 @@ collections:
     preview: false
     fields: # List of fields for the front matter
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "text", required: false  }
+      - { label: "Date", name: "date", widget: "datetime", required: false  }
       - { label: "Image", name: "images", widget: "image", required: false }
-      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false, required: false  }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "devices" # This is the name used in the URL
@@ -76,30 +93,30 @@ collections:
     preview: false
     fields: # List of fields for the front matter
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "text", required: false  }
+      - { label: "Date", name: "date", widget: "datetime", required: false  }
       - { label: "Image", name: "images", widget: "image", required: false }
-      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false, required: false  }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "documentation" # This is the name used in the URL
     label: "Documentation" # This is the singular name of the content type for the UI
     label_singular: "Documentation"
-    folder: "content/documentation/" # The folder where your posts markdown files will be saved
+    folder: "content/documentation" # The folder where your posts markdown files will be saved
     create: true # Allows users to create new documents in this collection
-    slug: "{{slug}}" # Filename template for new posts
     preview: false
     nested:
+      #subfolders: true # Legacy behavior
+      subfolders: false
       depth: 5 # max depth to show in the collection tree
       summary: '{{dirname}}' # optional summary for a tree node, defaults to the inferred title field
+      #summary: '{{title}}'
+      #summary: '{{filename}}'
     fields: # List of fields for the front matter
-      - label: Title
-        name: title
-        widget: string
-      - label: Body
-        name: body
-        widget: markdown
-    meta: { path: { widget: string, label: 'Path', index_file: 'index' } }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+    meta: { path: { widget: string, label: 'Path', index_file: '_index' } }
+    #meta: { path: { label: 'Path', widget: 'string', index_file: '{fields.filename}' }}
 
   - name: "podcast" # This is the name used in the URL
     label: "Podcast" # This is the singular name of the content type for the UI
@@ -110,8 +127,8 @@ collections:
     preview: false
     fields: # List of fields for the front matter
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "text", required: false  }
+      - { label: "Date", name: "date", widget: "datetime", required: false  }
       - { label: "Image", name: "images", widget: "image", required: false }
-      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false, required: false  }
       - { label: "Body", name: "body", widget: "markdown" }

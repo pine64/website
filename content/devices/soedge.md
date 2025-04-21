@@ -10,7 +10,7 @@ images:
 
 ## A Powerful AI Compute Module
 
-The SOEDGE is a 3TOPS compute module that can be paired with a dedicated baseboard or the SOEDGE Baseboard for development. It can also be connected to a SBC, such as the ROCKPro64, or a regular X86 PC using PCIe or USB 3.0 using special adapters. The SOEDGE is, at the time of writing, in early stages of development; if you are a developer interested in Neural Networks and open hardware, please contact us directly for a development unit. 
+The **SOEDGE** is a 3TOPS compute module that can be paired with a dedicated baseboard or the SOEDGE Baseboard for development. It can also be connected to a SBC, such as the ROCKPro64, or a regular X86 PC using PCIe or USB 3.0 using special adapters. The SOEDGE is, at the time of writing, in early stages of development; if you are a developer interested in Neural Networks and open hardware, please contact us directly for a development unit. 
 
 ## Features and Specifications
 
@@ -36,6 +36,14 @@ The RK1808 uses a power efficient Armv8-A archeitecture with dual ARM Cortex A35
 ### NPU
 
 The RK1808 SoC has a Verisilicon Vivante NPU
+
+## Stores
+
+|     |
+| --- |
+| [Global](https://pine64.com/product-category/soedge/) |
+| [Global: Accessories](https://pine64.com/product-category/soedge-accessories/) |
+| [Affiliates](/affiliates/) |
 
 ## Documentation
 

@@ -1,11 +1,11 @@
 ---
-title: "Best practices for navigating the bridged community chat"
+title: Best practices for navigating the bridged community chat
 draft: false
 ---
 
 The PINE64 community chat is connected across multiple platforms: **IRC**, **Telegram**, **Discord**, and **Matrix**. Each platform has its own unique user base and interface, however they interact with each other through the bot account bridging all platforms.
 
-The software to bring all platforms together is called [**Matterbridge**](https://github.com/42wim/matterbridge). It acts as the bridge that connects these platforms. It facilitates seamless communication by relaying messages between them. When a user sends a message on any platform (such as IRC), the bot account picks it up. The bot then relays the message to all other connected platforms (such as Telegram, Discord, Matrix). This ensures that users on different platforms can communicate with each other. 
+The software to bring all platforms together is called [**Matterbridge**](https://github.com/42wim/matterbridge). It acts as the bridge that connects these platforms. It facilitates seamless communication by relaying messages between them. When a user sends a message on any platform (such as IRC), the bot account picks it up. The bot then relays the message to all other connected platforms (such as Telegram, Discord, Matrix). This ensures that users on different platforms can communicate with each other.
 
 Users can choose their preferred platform while staying connected to the community.
 
@@ -25,7 +25,7 @@ The bot account relaying the message can have a name such as _Pine64 Protocol Dr
 
 ## Things to consider when using the bridged community chat
 
-In the bridged community chat that spans across Discord, Matrix, Element, and IRC, there are several important considerations to keep in mind. These guidelines help ensure smooth communication and prevent unintended issues. Let’s explore each of these aspects:
+In the bridged community chat that spans across Discord, Matrix, Element, and IRC, there are several important considerations to keep in mind. These guidelines help ensure smooth communication and prevent unintended issues.
 
 ### Avoid editing messages
 

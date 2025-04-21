@@ -1,6 +1,6 @@
 ---
 title: "PINE64 Community"
-description: "PINE64 is a large, vibrant and diverse community and creates software, documentation and projects."
+description: "PINE64 is a large, vibrant and diverse community and creates software, documentation and projects. Founded in 2015, it is known for affordable devices that promote user freedom."
 outputs:
 - html
 - rss
@@ -21,7 +21,7 @@ images:
   {{< slide src="/img/start/pinetime.png" title="PineTime" text="The <b>PineTime</b> is a free and open source smartwatch capable of running custom-built open operating systems." link="/documentation/PineTime" num="9">}}
 {{</ slider >}}
 
-{{< box title="The <b>PINE64</b> community" content="markdown" style="pad rows">}}
+{{< box title_main="The <b>PINE64</b> community" content="markdown" style="pad rows">}}
 Our goal is to push the envelope and deliver ARM and RISC-V devices that you want to use and develop for. To this end, we actively work with the development community and champion end-user initiatives. Rather than applying business to a FOSS setting, we allow FOSS principles to guide our business.
 
 We are available on Discord, IRC, Matrix and Telegram, in the Forum and on Reddit.

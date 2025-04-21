@@ -2,7 +2,8 @@
     {{- if eq (.Get "type") "image" -}}
         <img src='{{ .Get "link" }}' {{ if isset .Params "height" }} height='{{ .Get "height" }}'{{ end }}{{ if isset .Params "width" }} width='{{ .Get "width" }}'{{ end }} alt="An image in a box">
     {{- else -}}
-        {{ if .Get "title" }}<h1>{{ .Get "title" | safeHTML }}</h1>{{- end -}}
+        {{ if .Get "title_main" }}<h1>{{ .Get "title_main" | safeHTML }}</h1>{{- end -}}
+        {{ if .Get "title" }}<h2>{{ .Get "title" | safeHTML }}</h2>{{- end -}}
 
         {{- if .Get "content" -}}
             {{- if eq (.Get "content") "adoc" -}}

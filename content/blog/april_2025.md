@@ -31,8 +31,6 @@ We'd also like to apologize as we had most of this written up around late Februa
 
 {{< toc >}}
 
---- 
-
 ## FOSDEM 2025
 {{< credits "Author: Caffeine" >}}
 
@@ -88,14 +86,14 @@ If users are interested in trying the Arch based operating system (which is able
 * [Website scrolling demo](https://files.hrdl.eu/pn_2025-03-23-qutebrowser.mp4)
 * [Multitasking responsiveness and obligatory bad apple playback demo](https://files.hrdl.eu/pn_2025-03-20_sway_hints.mp4)
 
-# PineTime
+## PineTime
 {{< credits "Author: Caffeine" >}}
 
 There has been a new update to the WaspOS reloader to add support for the BY25Q32 SPINOR flash chip found in recent batches of the PineTime. This means that the watch will no longer soft-brick. This happened when users tried to switch from Infinitime to WaspOS and back again. This is now fixed. See [our previous blog post about the topic here for more information](https://github.com/wasp-os/wasp-os/actions/runs/13102413879).
 
 Users are able to find the new reloader artifact [here at this actions page](https://github.com/wasp-os/wasp-os/actions/runs/13102413879).
 
-# Pinecil
+## Pinecil
 {{< credits "Author: Ralim" >}}
 
 Continuing on the theme from launching the [threaded insert tool](https://pine64.com/product/pinecil-threaded-insert-tips-set-and-adapter/), we are bringing a new set of tips. This time we are bringing out some [micro soldering tips](https://pine64.com/product/pinecil-micro-soldering-tip-set/).

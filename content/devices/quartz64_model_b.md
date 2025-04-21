@@ -12,7 +12,7 @@ aliases:
 
 ## Quartz64 Model B: A 64-bit Quad Core SBC with M.2, USB 3.0, Gigabit Ethernet, Integrated Wi-Fi/BT, and up to 8GB of LPDDR4 RAM
 
-The Quartz64 Model B is the most recent Single Board Computer offering from PINE64. It is powered by a Rockchip RK3566 quad-core ARM Cortex A55 64-Bit Processor with a Mali G-52 GPU. It comes equipped with 2GB, 4GB or 8GB LPDDR4 system memory, and a 128Mb SPI boot flash. There is also an optional eMMC module (up to 128GB) and a microSD slot for booting. The board is equipped with 1x USB 3.0 type A Host, 2x USB 2.0 Host, Gigabit Ethernet, a 40 pin GPIO bus, MiPi DSI interface, MiPi CSI interface, integrated 802.11 b/g/n/ac Wi-Fi and Bluetooth 5.0, as well as a single lane M.2 PCIe Gen2 slot. Many different operating systems are freely available from the open source community, such as Linux (Ubuntu, Debian, Arch, etc), *BSD, and Android.
+The **Quartz64 Model B** is the most recent Single Board Computer offering from PINE64. It is powered by a Rockchip RK3566 quad-core ARM Cortex A55 64-Bit Processor with a Mali G-52 GPU. It comes equipped with 2GB, 4GB or 8GB LPDDR4 system memory, and a 128Mb SPI boot flash. There is also an optional eMMC module (up to 128GB) and a microSD slot for booting. The board is equipped with 1x USB 3.0 type A Host, 2x USB 2.0 Host, Gigabit Ethernet, a 40 pin GPIO bus, MiPi DSI interface, MiPi CSI interface, integrated 802.11 b/g/n/ac Wi-Fi and Bluetooth 5.0, as well as a single lane M.2 PCIe Gen2 slot. Many different operating systems are freely available from the open source community, such as Linux (Ubuntu, Debian, Arch, etc), *BSD, and Android.
 
 ## Features and Specifications
 
@@ -36,6 +36,14 @@ Built-in 802.11ac Wi-Fi and Bluetooth 5
 
 ### Plenty Of RAM
 The Quartz64 B comes with up to 8GB of LPDDR4 RAM
+
+## Stores
+
+|     |
+| --- |
+| [Global](https://pine64.com/product/quartz64-model-b-4gb-single-board-computer/) |
+| [Global: Accessories](https://pine64.com/product-category/quartz64-modelb-accessories/) |
+| [Affiliates](/affiliates/) |
 
 ## Documentation
 

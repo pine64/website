@@ -13,7 +13,7 @@ aliases:
 
 ## Clusterboard
 
-The Clusterboard is a gateway into the world of clusters in a tidy and compact package. The SOPINE Custerboard can host up-to 7 SOPINE modules. The Clusterboard can be powered either using a +5V 15A power supply with 6.3mm OD/3.0mm ID barrel type DC Jack or an ATX power supply*. Each of the SOPINE cluster nodes is able to interface with the entire system via the onboard Ethernet switch. Each node has a USB 2.0 host port and  20 GPIO pins exposed.
+The **Clusterboard** is a gateway into the world of clusters in a tidy and compact package. The SOPINE Custerboard can host up-to 7 SOPINE modules. The Clusterboard can be powered either using a +5V 15A power supply with 6.3mm OD/3.0mm ID barrel type DC Jack or an ATX power supply*. Each of the SOPINE cluster nodes is able to interface with the entire system via the onboard Ethernet switch. Each node has a USB 2.0 host port and  20 GPIO pins exposed.
 
 *please note that some ATX power supplies may required load to power up the board
 
@@ -46,6 +46,14 @@ ATX power supply header
 ### GPIO Pins
 
 GPIO pins are exposed for each module including UART
+
+## Stores
+
+|     |
+| --- |
+| [Global](https://pine64.com/product-category/sopine/) |
+| [Global: Accessories](https://pine64.com/product-category/pine-a64-lts-accessories/) |
+| [Affiliates](/affiliates/) |
 
 ## Documentation
 

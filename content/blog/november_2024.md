@@ -28,8 +28,6 @@ Welcome back to a new monthly Pine64 community update! This month we are announc
 
 {{< toc >}}
 
----
-
 ## PineCam
 
 {{< credits "Authors: Lukasz, Caffeine" >}}
@@ -66,13 +64,13 @@ You can find more information about this device on [Yuzuki's website](https://do
 
 {{< credits "Author: Caffeine, Lukasz" >}}
 
-# Attention to all users who have ordered/received a PineNote
+### Attention to all users who have ordered/received a PineNote
 The version of Debian-based Linux distribution shipped with the second PineNote batch contains some issues that prevent suspend-to-RAM from working correctly and make entering MaskROM mode using a magnet not possible. This was caused by the unfortunate timing, so the factory ended up installing version of the operating system image that contains these issues. The required fixes are already available in the shipped Linux distribution, but they need to be [installed manually](https://gist.github.com/m-weigand/efb1bef6097611d327533ab67b76903b) by the users.
 
-## For general users wanting to purchase a PineNote
+### For general users wanting to purchase a PineNote
 We would like to affirm that the PineNote Community Edition is still aimed at Linux developers with an extensive knowledge of embedded systems and/or experience with mobile Linux. Although the software has improved, we still want more testing done with this new batch to make sure we can start to aim this at general users. Now back to the blog post.
 
-## PineNote News
+### PineNote News
 
 The PineNote is one of the more ambitious projects undertaken by PINE64 and the PineStore since the original PinePhone. The main goal behind developing the PineNote was to create an open-source alternative to popular e-paper readers and note-taking devices, with nearly infinite software customization, free from advertisements and subscriptions. It runs standard Linux, adapted for a grayscale display, with preinstalled tools and extensions included to help make use of the device easier. From the outset, we understood that software would be key to building a true alternative for the FOSS community, and that achieving this goal would take time. This was a project we chose not to rush. 
 

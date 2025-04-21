@@ -10,7 +10,7 @@ images:
 
 ## SOEDGE Baseboard
 
-The SOEDGE Baseboard is a baseboard that hosts the SOEDGE compute module and turns it into a full single board computer. Makers can use this baseboard as reference to develop their own PCBs and for software development during early stages for custom hardware or PCB development.
+The **SOEDGE Baseboard** is a baseboard that hosts the SOEDGE compute module and turns it into a full single board computer. Makers can use this baseboard as reference to develop their own PCBs and for software development during early stages for custom hardware or PCB development.
 
 ## Features and Specifications
 
@@ -32,6 +32,14 @@ The SOEDGE Baseboard is a baseboard that hosts the SOEDGE compute module and tur
 | Optional AC WiFi  + BT 5.0 module expansion module |
 | Headphone Jack |
 | 5.5″ Barrel Power (12V 3A/5A) Port |
+
+## Stores
+
+|     |
+| --- |
+| [Global](https://pine64.com/product-category/soedge/) |
+| [Global: Accessories](https://pine64.com/product-category/soedge-accessories/) |
+| [Affiliates](/affiliates/) |
 
 ## Documentation
 
