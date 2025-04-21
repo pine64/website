@@ -158,7 +158,7 @@ The stock PineNote has a fairly standard [Android partition setup](https://sourc
 | 1 |  waveform |  2 MB |  Important files controlling the e-ink screen’s state changes |
 | 2 |  uboot_env |  1 MB |  U-Boot environment partition |
 | 3 |  logo |  64 MB |  Splash image displayed during boot |
-| 4 |  os1 |  14.65 MB | Default OS slot where Debian is stored |
+| 4 |  os1 |  14.65 GB | Default OS slot where Debian is stored |
 | 5 |  os2 |  14.65 GB |  An alternative operating system can be flashed here such as PostmarketOS or Arch Linux |
 | 6 |  data |  85.82 GB | /home partition for user files |
 
