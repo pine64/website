@@ -164,6 +164,10 @@ The stock PineNote has a fairly standard [Android partition setup](https://sourc
 
 ### Patch U-Boot
 
+{{< admonition type="note" >}}
+This applies only to Developer Edition. Community Edition devices are shipped with fixed U-Boot. Do not flash the `uboot_patched.img` if the output of `rkdeveloptool list-partitions` doesn't match Developer Edition above.
+{{< /admonition >}}
+
 Before we can back up our partitions, we have a problem to solve. The version of U-Boot installed on the stock PineNote contains a bug where it can’t dump partitions beyond 32 MB (above that limit all bytes in the dump are just `0xCC`), meaning the PineNote must be flashed with a fixed version of U-Boot before it is possible to take a backup of the larger partitions. It is possible to extract and modify the U-Boot image from your PineNote if you’re interested in some light reverse-engineering (following Dorian’s notes), or you can simply download a patched U-Boot image directly [here](https://github.com/DorianRudolph/pinenotes/blob/main/static/uboot_patched.img).
 
 Once you’ve acquired a patched U-Boot image, run:
