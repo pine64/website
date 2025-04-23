@@ -7,6 +7,9 @@ menu:
     parent: "Accessories/Cases"
     identifier: "Accessories/Cases/Model_A_Acrylic_Open_Enclosure"
     weight:
+aliases:
+  - /wiki/"Model_A"_Acrylic_Open_Enclosure
+  - /wiki/Model_A_Acrylic_Open_Enclosure
 ---
 
 The **"Model A" Acrylic Open Enclosure** is a case for "Model A" sized single-board computers (Pine A64, ROCKPro64, Quartz64 Model A) sold by PINE64, available from [the official store](https://pine64.com/product/pine-a64-rockpro64-acrylic-open-enclosure/).

@@ -7,6 +7,8 @@ menu:
     parent: "Unsorted"
     identifier: "Unsorted/POT"
     weight:
+aliases:
+  - /wiki/POT
 ---
 
 Peripheral On Top (POT)

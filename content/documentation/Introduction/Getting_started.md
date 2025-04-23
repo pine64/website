@@ -9,6 +9,7 @@ menu:
     weight:
 aliases:
   - /wiki/Getting_started
+  - /wiki/NOOB
 ---
 
 This guide is for the PINE64 devices. For device-specific information please see the corresponding device pages listed on the [main page](/documentation#Devices).

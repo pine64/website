@@ -9,6 +9,7 @@ menu:
     weight: 7
 aliases:
   - /wiki/PineTime_Development
+  - /wiki/PineTime_RTOS_Comparison
 ---
 
 {{< children >}}

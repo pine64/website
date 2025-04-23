@@ -9,6 +9,7 @@ menu:
     weight:
 aliases:
   - /wiki/Supported_Displays
+  - /wiki/MIPI-DSI_Displays
 ---
 
 {{< admonition type="important" >}}

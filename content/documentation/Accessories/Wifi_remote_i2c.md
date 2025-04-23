@@ -7,6 +7,9 @@ menu:
     parent: "Accessories"
     identifier: "Accessories/Wifi_remote_i2c"
     weight:
+aliases:
+  - /wiki/Wifi_Remote_I2c
+  - /wiki/DSI_Displays
 ---
 
 {{< figure src="/documentation/images/PMWF01A_Description.jpg" title="PMWF01A: Wifi Remote I2c Module" >}}

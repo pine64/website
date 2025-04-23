@@ -14,6 +14,7 @@ images:
 aliases:
   - /wiki/Main_Page
   - /wiki/PINE64:About
+  - /wiki/Project
 ---
 
 ## Devices

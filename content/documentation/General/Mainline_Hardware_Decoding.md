@@ -9,6 +9,7 @@ menu:
     weight:
 aliases:
   - /wiki/Mainline_Hardware_Decoding
+  - /wiki/Hardware_acceleration
 ---
 
 {{< admonition type="note" >}}
