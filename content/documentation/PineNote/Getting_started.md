@@ -8,7 +8,7 @@ menu:
     identifier: "PineNote/Getting_started"
     weight: 2
 aliases:
-  - "/wiki/PineNote\:_Getting_Started"
+  - '/wiki/PineNote\:_Getting_Started'
 ---
 
 ## Important note for buyers after October 2024
