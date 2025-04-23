@@ -7,6 +7,8 @@ menu:
     parent:
     identifier: "PinePhone"
     weight: 
+aliases:
+  - /wiki/PinePhone
 ---
 
 The **PinePhone** is a smartphone created by PINE64. It is capable of running mainline Linux and is supported by many partner projects.
