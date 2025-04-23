@@ -22,20 +22,26 @@ The following releases are available for the [PineNote](/documentation/PineNote)
 
 ## Debian
 
-* A full GNOME-enabled rootfs/disc image is provided under [m-weigand/pinenote-debian-recipes/releases](https://github.com/m-weigand/pinenote-debian-recipes/releases). This image can be flashed using rkdeveloptool.
+* A full GNOME-enabled rootfs/disc image is provided under [PNDeb/pinenote-debian-image/releases](https://github.com/PNDeb/pinenote-debian-image/releases). This image can be flashed using rkdeveloptool.
 
 {{< admonition type="note" >}}
-Check the [trixie](https://github.com/m-weigand/pinenote-debian-recipes/tree/trixie) branch and github actions artifacts (possibly requires github login) for builds newer than the latest release.
+Check the [trixie](https://github.com/PNDeb/pinenote-debian-image/tree/trixie) branch and github actions artifacts (possibly requires github login) for builds newer than the latest release.
 {{< /admonition >}}
 
-* A Debian-based minimalistic rootfs/disc image can be built using `debos` using the work from  [Eugen Răhăian](https://salsa.debian.org/eugenrh). The GNOME image above is building on this work.
+* A Debian-based minimalistic rootfs/disc image can be built using `debos` using the work from [Eugen Răhăian](https://salsa.debian.org/eugenrh). The GNOME image above is building on this work.
 
 ## Alpine
 
 See https://github.com/DorianRudolph/pinenotes#alpine
 
 ## Arch Linux
+### hrdl
+hrdl is maintaining a sway setup on Arch Linux alongside their kernel tree.
+* [Kernel source, patches, helpers](https://git.sr.ht/~hrdl/)
+* [Installation process](https://github.com/hrdl-github/pinenote-arch)
+* [Extra tools to make things work](https://github.com/Ph4ntomas/pinenote-arch-stuff)
 
+### DorianRudolph
 See https://github.com/DorianRudolph/pinenotes#arch-linux
 
 ## postmarketOS
