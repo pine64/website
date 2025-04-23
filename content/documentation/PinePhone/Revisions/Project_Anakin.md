@@ -7,7 +7,9 @@ menu:
     title:
     parent: "PinePhone/Revisions"
     identifier: "PinePhone/Revisions/Project_Anakin"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Project_Anakin
 ---
 
 ## The Project "Anakin" - Phase 1 of PINE64 Smartphone "PinePhone" Development Kit

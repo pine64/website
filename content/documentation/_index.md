@@ -11,6 +11,8 @@ menu:
     weight:
 images:
   - "/img/opengraph_documentation.png"
+aliases:
+- /wiki/Main_Page
 ---
 
 ## Devices

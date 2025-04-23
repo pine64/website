@@ -8,6 +8,8 @@ menu:
     parent: "PinePhone/Revisions"
     identifier: "PinePhone/Revisions/PinePhone_v1.1_-_Braveheart"
     weight: 
+aliases:
+  - /wiki/PinePhone_v1.1_-_Braveheart
 ---
 
 The PinePhone v1.1 "Braveheart" is a hardware revision of the [PinePhone](/documentation/PinePhone) that shipped in January 2020.

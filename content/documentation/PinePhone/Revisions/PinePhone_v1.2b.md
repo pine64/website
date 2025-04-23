@@ -7,7 +7,9 @@ menu:
     title:
     parent: "PinePhone/Revisions"
     identifier: "PinePhone/Revisions/PinePhone_v1.2b"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PinePhone_v1.2b
 ---
 
 The PinePhone v1.2b is a hardware revision of the [PinePhone](/documentation/PinePhone) that started shipping in Q4 2020.

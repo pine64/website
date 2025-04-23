@@ -7,7 +7,9 @@ menu:
     title:
     parent: "PinePhone/Revisions"
     identifier: "PinePhone/Revisions/PinePhone_v1.2"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PinePhone_v1.2
 ---
 
 The PinePhone v1.2 is a hardware revision of the [PinePhone](/documentation/PinePhone) that was shipped in 2020 as UBports Community Edition.

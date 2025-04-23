@@ -7,7 +7,9 @@ menu:
     title:
     parent: "PinePhone/Revisions"
     identifier: "PinePhone/Revisions/PinePhone_v1.0_-Dev"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PinePhone_v1.0_-_Dev
 ---
 
 The PinePhone v1.0 is the developer hardware revision of the [PinePhone](/documentation/PinePhone).
