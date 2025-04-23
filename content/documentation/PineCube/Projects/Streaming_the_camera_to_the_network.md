@@ -8,7 +8,7 @@ menu:
     identifier: "PineCube/Projects/Streaming_the_camera_to_the_network"
     weight:
 aliases:
-  - /wiki/PineCube\:_Streaming_the_camera_to_the_network
+  - "/wiki/PineCube\:_Streaming_the_camera_to_the_network"
 ---
 
 In this section we document a variety of ways to stream video to the network from the PineCube. Unless specified otherwise, all of these examples have been tested on Ubuntu groovy (20.10). See [this small project for the PineCube](https://github.com/ioerror/pinecube) for easy to use programs tuned for the PineCube.

@@ -8,8 +8,8 @@ menu:
     identifier: "Pinecil/How_to_repair"
     weight:
 aliases:
-  - /wiki/Pinecil\:_Test,_Repair,_Issues
-  - /wiki/Pinecil\:_How_to_Repair
+  - "/wiki/Pinecil\:_Test,_Repair,_Issues"
+  - "/wiki/Pinecil\:_How_to_Repair"
 ---
 
 This article explains how dismantle, test, and repair the [Pinecil](/documentation/Pinecil).
