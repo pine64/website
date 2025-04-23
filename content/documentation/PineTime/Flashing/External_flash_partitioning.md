@@ -6,7 +6,9 @@ menu:
     title:
     parent: "PineTime/Flashing"
     identifier: "PineTime/Flashing/External_flash_partitioning"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PineTime_external_flash_partitioning
 ---
 
 ## The partition table

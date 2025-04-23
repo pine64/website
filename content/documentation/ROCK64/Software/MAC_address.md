@@ -6,7 +6,9 @@ menu:
     title:
     parent: "ROCK64/Software"
     identifier: "ROCK64/Software/MAC_address"
-    weight: 
+    weight:
+aliases:
+  - /wiki/ROCK64_MAC_Address
 ---
 
 To set the MAC address on ROCK64 with the "Android eMMC" image:

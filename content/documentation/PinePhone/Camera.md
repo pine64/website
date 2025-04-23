@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PinePhone"
     identifier: "PinePhone/Camera"
-    weight: 
+    weight:
 ---
 
 The PinePhone has two cameras, OmniVision OV5640 with 5MP (up to 2592 x 1944 pixels) as rear camera and GalaxyCore GC2145 with 2MP (up to 1600 x 1200 pixels) as front camera.

@@ -6,7 +6,9 @@ menu:
     title:
     parent: "Pinebook_Pro/Features"
     identifier: "Pinebook_Pro/Features/SPI"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Pinebook_Pro_SPI
 ---
 
 The Pinebook Pro comes equipped with two non-volatile storage components, the eMMC and the SPI. The capacity of the SPI is 128Mbit (16MiB) and it may be used in the boot process.

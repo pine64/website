@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinebook_Pro/Features"
     identifier: "Pinebook_Pro/Features/Microphones"
-    weight: 
+    weight:
 ---
 
 While it has been said that some Pinebook Pro units contain only one microphone despite having two labeled microphone holes on the outer casing, other units do indeed contain two microphones. It is presently unclear which batches have either configuration. Units from the initial community batch of 1000 units (following the initial 100) are believed to contain two, populating both labeled holes.

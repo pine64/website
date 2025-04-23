@@ -8,7 +8,9 @@ menu:
     title:
     parent: "PineTab/Revisions"
     identifier: "PineTab/Revisions/Early_adopter_edition"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PineTab/Early-Adopter
 ---
 
 The _Early Adopter Edition_ was the first hardware revision of the PineTab which shipped to customers. Shipping began on September 6, 2020.

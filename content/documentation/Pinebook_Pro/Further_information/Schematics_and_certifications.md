@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinebook_Pro/Further_information"
     identifier: "Pinebook_Pro/Further_information/Schematics_and_certifications"
-    weight: 
+    weight:
 ---
 
 Pinebook Pro Main Board Schematic And Silkscreen:

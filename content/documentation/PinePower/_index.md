@@ -6,7 +6,9 @@ menu:
     title:
     parent:
     identifier: "PinePower"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PinePower
 ---
 
 The **PinePower** devices (the _PinePower_ and the _PinePower Desktop_) are power supplies, which pack plenty of power. They capable of powering or charging multiple PINE64 devices, such as the Pinebook Pro, PinePhone and the PineTime simultaneously.

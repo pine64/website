@@ -7,6 +7,8 @@ menu:
     parent: "PineTab2/Software"
     identifier: "PineTab2/Software/Tutorials_and_FAQ"
     weight: 3
+aliases:
+  - /wiki/PineTab2_FAQ
 ---
 
 This is a collection of tutorials and frequently asked questions for the PineTab2.

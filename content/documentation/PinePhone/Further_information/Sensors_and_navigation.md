@@ -6,7 +6,9 @@ menu:
     title:
     parent: "PinePhone/Further_information"
     identifier: "PinePhone/Further_information/Sensors_and_navigation"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PinePhone_Sensors_and_Navigation
 ---
 
 {{% docs/construction %}}

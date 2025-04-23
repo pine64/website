@@ -6,7 +6,10 @@ menu:
     title:
     parent: "Pinebook_Pro/Software"
     identifier: "Pinebook_Pro/Software/Installing_Void_Linux_ARM"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Pinebook_Pro_Installing_Void_Linux_ARM
+  - /wiki/Installing_Void_Linux_ARM_On_The_Pinebook_Pro
 ---
 
 {{< admonition type="warning" >}}

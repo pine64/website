@@ -6,7 +6,9 @@ menu:
     title:
     parent: "PineTime/Software"
     identifier: "PineTime/Software/Bluetooth"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PineTime_Bluetooth
 ---
 
 This page is under construction, but aims to get you more familiar with Bluetooth and how the PineTime utilizes it

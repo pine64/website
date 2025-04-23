@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinebook_Pro"
     identifier: "Pinebook_Pro/Accessory"
-    weight: 
+    weight:
 ---
 
 {{< children >}}

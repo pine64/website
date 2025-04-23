@@ -10,6 +10,7 @@ menu:
     weight:
 aliases:
   - /documentation/PinePhone/Hardware_fixes_and_mods/PinePhone_1.1_VBUS_power_usage_Hardware_Fix/
+  - /wiki/PinePhone_1.1_VBUS_power_usage_Hardware_Fix
 ---
 
 This page details a hardware fix for an issue that affects some early [v1.1 Braveheart](/documentation/PinePhone/Revisions) units (fixed since [1.2 community edition](/documentation/PinePhone/Revisions/PinePhone_v1.2) included).

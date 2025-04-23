@@ -8,6 +8,8 @@ menu:
     parent: "PineTab2/Software"
     identifier: "PineTab2/Software/Releases"
     weight: 2
+aliases:
+  - /wiki/PineTab2_Releases
 ---
 
 This page contains a list of all available releases and tools for the PineTab2 in alphabetical order. 

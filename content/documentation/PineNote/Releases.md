@@ -7,6 +7,8 @@ menu:
     parent: "PineNote"
     identifier: "PineNote/Releases"
     weight: 4
+aliases:
+  - /wiki/PineNote_Software_Releases
 ---
 
 The following releases are available for the [PineNote](/documentation/PineNote).

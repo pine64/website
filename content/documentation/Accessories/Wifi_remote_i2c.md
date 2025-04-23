@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Accessories"
     identifier: "Accessories/Wifi_remote_i2c"
-    weight: 
+    weight:
 ---
 
 {{< figure src="/documentation/images/PMWF01A_Description.jpg" title="PMWF01A: Wifi Remote I2c Module" >}}

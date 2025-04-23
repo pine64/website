@@ -7,6 +7,8 @@ menu:
     parent: "PineTab-V/Software"
     identifier: "PineTab-V/Software/Releases"
     weight: 2
+aliases:
+  - /wiki/PineTab-V_Releases
 ---
 
 This page contains a list of all available releases and tools for the PineTab-V in alphabetical order. 

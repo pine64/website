@@ -6,7 +6,9 @@ menu:
     title:
     parent:
     identifier: "Quartz64"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Quartz64
 ---
 
 {{< figure src="/documentation/images/Quartz64modelb.png" title="The Quartz64 Model B" width="400" >}}

@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PinePhone_Pro/Further_information"
     identifier: "PinePhone_Pro/Further_information/Datasheets,_schematics_and_certifications"
-    weight: 
+    weight:
 ---
 
 PinePhone Pro mainboard schematic:

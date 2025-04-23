@@ -7,7 +7,9 @@ menu:
     title:
     parent: "PinePhone/Software_tricks"
     identifier: "PinePhone/Software_tricks/Power_management"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PinePhone_Power_Management
 ---
 
 The data on this page is based on the the [PinePhone v1.1 - Braveheart](/documentation/PinePhone/Revisions/PinePhone_v1.1_-_Braveheart).

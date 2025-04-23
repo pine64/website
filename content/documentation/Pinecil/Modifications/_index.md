@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinecil"
     identifier: "Pinecil/Modifications"
-    weight: 
+    weight:
 ---
 
 {{< children >}}

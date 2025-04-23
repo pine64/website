@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinecil/Further_information"
     identifier: "Pinecil/Further_information/History_of_hardware_changes"
-    weight: 
+    weight:
 ---
 
 **Pinecil V2**

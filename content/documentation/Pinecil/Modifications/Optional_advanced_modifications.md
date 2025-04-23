@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinecil/Modifications"
     identifier: "Pinecil/Modifications/Optional_advanced_modifications"
-    weight: 
+    weight:
 ---
 
 1. [[Pinecil_Hall_Effect_Sensor| Hall Effect Sensor]]: add a sensor that activates with a magnet to put the Pinecil to sleep when it enters a holder or stand.

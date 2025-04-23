@@ -7,6 +7,8 @@ menu:
     parent: "ROCKPro64/Hardware"
     identifier: "ROCKPro64/Hardware/Powering_from_an_ATX_supply"
     weight:
+aliases:
+  - /wiki/ROCKPro64_Powering_From_An_ATX_Supply
 ---
 
 Powering the [ROCKPro64](/documentation/ROCKPro64) single-board computer from an ATX power supply allows the board to be powered with more than just two disks, and is a reliable and safe way to power it from your household mains.

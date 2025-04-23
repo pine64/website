@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pine_A64"
     identifier: "Pine_A64/Further_information"
-    weight: 
+    weight:
 ---
 
 {{< children >}}

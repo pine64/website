@@ -6,7 +6,9 @@ menu:
     title:
     parent: "PineBuds_Pro/Community_projects"
     identifier: "PineBuds_Pro/Community_projects/Wireless_charging"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PineBuds_Pro/Wireless_charging
 ---
 
 This page is about the community project to bring wireless charging to the [PineBuds Pro](/documentation/PineBuds_Pro).

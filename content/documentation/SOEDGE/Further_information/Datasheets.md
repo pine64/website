@@ -6,7 +6,7 @@ menu:
     title:
     parent: "SOEDGE/Further_information"
     identifier: "SOEDGE/Further_information/Datasheets"
-    weight: 
+    weight:
 ---
 
 Rockchip RK1808 SoC information:

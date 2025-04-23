@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineTab"
     identifier: "PineTab/Revisions"
-    weight: 
+    weight:
 ---
 
 * Developer Edition - development version sent to roughly 100 developers. Close to the Early Adopter Edition, but with a different display panel

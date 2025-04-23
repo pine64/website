@@ -6,7 +6,7 @@ menu:
     title:
     parent: "ROCKPro64/Board"
     identifier: "ROCKPro64/Board/GPIOs"
-    weight: 
+    weight:
 ---
 
 ## GPIO Pins

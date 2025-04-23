@@ -6,7 +6,9 @@ menu:
     title:
     parent:
     identifier: "RockBox"
-    weight: 
+    weight:
+aliases:
+  - /wiki/RockBox
 ---
 
 {{< figure src="images/rockbox.png" title="Rendering of the RockBox" width="400" >}}

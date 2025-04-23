@@ -6,7 +6,9 @@ menu:
     title:
     parent: "PineBuds_Pro/Community_projects"
     identifier: "PineBuds_Pro/Community_projects/Silicone_case"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PineBuds_Pro/Silicone_case
 ---
 
 This page is about the community project to bring a silicone case to the [PineBuds Pro](/documentation/PineBuds_Pro).

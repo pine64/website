@@ -6,7 +6,7 @@ menu:
     title:
     parent: "General"
     identifier: "General"
-    weight: 
+    weight:
 ---
 
 {{< children >}}

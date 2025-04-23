@@ -6,7 +6,9 @@ menu:
     title:
     parent: "ROCKPro64/Hardware"
     identifier: "ROCKPro64/Hardware/Serial_buffer_circuit"
-    weight: 
+    weight:
+aliases:
+  - /wiki/ROCKPro64_Serial_Buffer_Circuit
 ---
 
 Connecting to the ROCKPro64 single-board computer serial interface can sometimes be tricky, as the lack of buffering can cause the Uboot-SPL to stop functioning due to  transient voltage spikes during startup. This simple circuit allows a user to hot-plug their serial connection at any time, or can be left attached full time.

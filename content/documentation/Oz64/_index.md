@@ -6,7 +6,9 @@ menu:
     title:
     parent:
     identifier: "Oz64"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Oz64
 ---
 
 The **Oz64** is a low cost single-board computer based on the Sophgo SG2000 SoC with dual T-Head C906 64-bit RISC-V cores, an ARM Cortex A53 64-bit RISC CPU core and an 8051 8-bit core supported by 512 MB of embedded DRAM memory, with WiFi and Bluetooth radio interfaces. 

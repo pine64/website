@@ -6,7 +6,7 @@ menu:
     title:
     parent: "ROCK64/Further_information"
     identifier: "ROCK64/Further_information/Specifications"
-    weight: 
+    weight:
 ---
 
 Based on [Rockchip RK3328](https://www.rock-chips.com/a/en/products/RK33_Series/2017/0118/829.html)

@@ -7,6 +7,8 @@ menu:
     parent: "Pinecil"
     identifier: "Pinecil/Firmware"
     weight: 6
+aliases:
+  - /wiki/Pinecil_Firmware
 ---
 
 This document provides a step-by-step guide on how to update the firmware of the Pinecil soldering iron, applicable to both V1 and V2 models. Keeping your firmware up to date ensures that you have the latest features, improvements, and bug fixes.

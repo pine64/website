@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineCube/Tuning"
     identifier: "PineCube/Tuning/Camera"
-    weight: 
+    weight:
 ---
 
 ## Focus

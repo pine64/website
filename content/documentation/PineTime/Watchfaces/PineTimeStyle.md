@@ -6,7 +6,9 @@ menu:
     title:
     parent: "PineTime/Watchfaces"
     identifier: "PineTime/Watchfaces/PineTimeStyle"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PineTimeStyle
 ---
 
 PineTimeStyle is a watchface created for Infinitime and has been included since version 1.3 of Infinitime.

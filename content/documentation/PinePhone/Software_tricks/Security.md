@@ -8,6 +8,8 @@ menu:
     parent: "PinePhone/Software_tricks"
     identifier: "PinePhone/Software_tricks/Security"
     weight: 1
+aliases:
+  - /wiki/PinePhone_Security
 ---
 
 {{% docs/construction %}}

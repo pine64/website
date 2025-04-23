@@ -7,6 +7,8 @@ menu:
     parent: "Quartz64"
     identifier: "Quartz64/Development"
     weight: 3
+aliases:
+  - /wiki/Quartz64_Development
 ---
 
 This page documents the current status of software support for the link:/documentation/Quartz64[Quartz64] single-board computer, and provides links to resources to help prospective contributors get started. Information is kept current on a best-effort basis as various patches get accepted into the kernel.

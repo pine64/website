@@ -6,7 +6,9 @@ menu:
     title: "Switching InfiniTime and Wasp-os"
     parent: "PineTime/Software"
     identifier: "PineTime/Software/Switching_between_InfiniTime_and_Wasp-os"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Switching_your_PineTime_between_InfiniTime_and_Wasp-os
 ---
 
 {{< admonition type="warning" >}}

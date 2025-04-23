@@ -7,6 +7,10 @@ menu:
     parent: "Pine_A64"
     identifier: "Pine_A64/Software"
     weight: 2
+aliases:
+  - /wiki/Pine_A64_Software_Release
+  - /wiki/Pine_A64_Software_Releases
+  - /wiki/PINE_A64_Software_Releases
 ---
 
 This page contains a list of all available software releases and other resources for the PINE A64 and PINE A64+.

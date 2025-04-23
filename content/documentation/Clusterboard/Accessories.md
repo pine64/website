@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Clusterboard"
     identifier: "Clusterboard/Accessories"
-    weight: 
+    weight:
 ---
 
 * To operate this board you will need a power supply, Pine advises a "5V 15A power supply with 6.3mm OD/3.0mm ID barrel type DC Jack" which is also available in the store ([EU](https://pine64.com/product/clusterboard-eu-power-supply/) / [US](https://pine64.com/product/clusterboard-us-power-supply/) versions). There are other ways to power this board, but they are not described here yet.

@@ -6,7 +6,10 @@ menu:
     title:
     parent: "PineTime/Discussions"
     identifier: "PineTime/Discussions/Bootloader_improvements"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PineTime_bootloader_improvements
+  - /wiki/Bootloader_improvements
 ---
 
 Discussion by the user JF:

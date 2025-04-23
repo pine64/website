@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinebook_Pro/Guides"
     identifier: "Pinebook_Pro/Guides/Using the optional NVMe adapter"
-    weight: 
+    weight:
 ---
 	
 The optional NVMe adapter allows the use of M.2 SSDs that support the NVMe standard (SATA is not supported).  The adapter supports **M** and **M**+**B** keyed devices, in both 2242 and 2280 physical sizes, which are the most commonly available. In addition, 2230 and 2260 sizes are also supported, though NVMe devices that use those sizes are rare.

@@ -6,7 +6,12 @@ menu:
     title:
     parent:
     identifier: "Pine_A64"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PINE_A64
+  - /wiki/PINE_A64_Main_Page
+  - /wiki/Pine_A64
+  - /wiki/Pine64
 ---
 
 {{< figure src="/documentation/images/PINEA64_sideimg.jpg" title="The PINE A64" width="400" >}}

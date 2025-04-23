@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Ox64/Further_information"
     identifier: "Ox64/Further_information/Schematics_and_certifications"
-    weight: 
+    weight:
 ---
 
 {{< figure src="/documentation/Ox64/images/ox64_ethphy.png" title="Pinout for wiring ethernet PHY to EMAC" width="300">}}

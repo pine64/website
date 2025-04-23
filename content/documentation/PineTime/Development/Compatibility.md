@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineTime/Development"
     identifier: "PineTime/Development/Compatibility"
-    weight: 
+    weight:
 ---
 
 ## Compatibility with other projects

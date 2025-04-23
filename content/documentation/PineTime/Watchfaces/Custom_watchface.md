@@ -6,7 +6,9 @@ menu:
     title:
     parent: "PineTime/Watchfaces"
     identifier: "PineTime/Watchfaces/Custom_watchface"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PineTime_Custom_Watchface_Tutorial
 ---
 
 This is a tutorial to help new users create custom watchfaces based on the InfiniTime Firmware for PineTime made by user JF002, thanks to him for its development.

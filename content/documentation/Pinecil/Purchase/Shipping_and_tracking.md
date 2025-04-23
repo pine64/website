@@ -6,7 +6,9 @@ menu:
     title:
     parent: "Pinecil/Purchase"
     identifier: "Pinecil/Purchase/Shipping_and_tracking"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Pinecil_Shipping_and_Tracking
 ---
 
 This article applies only to the main Pine Store, [pine64.com](https://pine64.com) items that ship from their Shenzhen, China facility, such as the Pinecil soldering iron and PinePower chargers.

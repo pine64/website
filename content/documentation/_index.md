@@ -12,7 +12,8 @@ menu:
 images:
   - "/img/opengraph_documentation.png"
 aliases:
-- /wiki/Main_Page
+  - /wiki/Main_Page
+  - /wiki/PINE64:About
 ---
 
 ## Devices

@@ -8,6 +8,8 @@ menu:
     parent: "Quartz64/Software"
     identifier: "Quartz64/Software/Releases"
     weight: 1
+aliases:
+  - /wiki/Quartz64_Software_Releases
 ---
 
 This page contains a list of all available operating systems for the [Quartz64](/documentation/Quartz64) in alphabetical order, as well as links to other resources.

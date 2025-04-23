@@ -6,7 +6,9 @@ menu:
     title:
     parent: "PineCube/Projects"
     identifier: "PineCube/Projects/Recorder_for_loud_noises"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PineCube_as_a_recorder_for_loud_noises
 ---
 
 The PineCube can be used as a recorder for loud noises. If you have a kernel that has the sound support (see the Sound Control section) then you can use it to make recordings when there is a noise above a certain threshold. The following script is a very simple example that uses the _alsa-utils_ and the _sox_ command to do this. You can use the **noise-stats.txt** file and some noise testing to figure out a good threshold for your camera.

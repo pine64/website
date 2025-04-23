@@ -6,7 +6,11 @@ menu:
     title:
     parent:
     identifier: "SOPINE"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PINE_A64-LTS/SOPine
+  - /wiki/SOPINE
+  - /wiki/SOPine
 ---
 
 {{< figure src="/documentation/images/SOPINE_front.jpg" width="400" >}}

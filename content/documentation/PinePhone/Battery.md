@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PinePhone"
     identifier: "PinePhone/Battery"
-    weight: 
+    weight:
 ---
 
 The phone ships with a protective plastic sticker between the battery and the phone to protect the device from turning on during shipping. You need to gently open the back cover, then remove the battery and finally remove the sticker and check that the pins aren’t bent. Note: If the battery is stuck inside the phone, the mid screw in the lower part of the midframe needs to be slightly loosened, see [here](/documentation/PinePhone/FAQ#the_battery_is_stuck_inside_the_phone).

@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinebook_Pro/Guides"
     identifier: "Pinebook_Pro/Guides/Disassembly_and_Reassembly"
-    weight: 
+    weight:
 ---
 
 {{< figure src="/documentation/images/Standoffs.png" title="Pinebook Screw stand-offs correct placement and location" width="400" >}}

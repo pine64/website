@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinebook_Pro/Further_information"
     identifier: "Pinebook_Pro/Further_information/Case_dimensions_and_data"
-    weight: 
+    weight:
 ---
 
 * Dimensions: 329&nbsp;mm&nbsp;x 220&nbsp;mm&nbsp;x 12&nbsp;mm (W&nbsp;x D&nbsp;x H)

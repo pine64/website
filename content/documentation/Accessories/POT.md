@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Unsorted"
     identifier: "Unsorted/POT"
-    weight: 
+    weight:
 ---
 
 Peripheral On Top (POT)

@@ -6,7 +6,9 @@ menu:
     title:
     parent: "Pinecil/Power_supplies"
     identifier: "Pinecil/Power_supplies/Power_supplies"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Pinecil_Power_Supplies
 ---
 
 This article is about compatible power supplies for the [Pinecil](/documentation/Pinecil/).

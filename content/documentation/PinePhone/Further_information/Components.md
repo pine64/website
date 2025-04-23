@@ -6,7 +6,9 @@ menu:
     title:
     parent: "PinePhone/Further_information"
     identifier: "PinePhone/Further_information/Components"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PinePhone_component_list
 ---
 
 | Component | Model |

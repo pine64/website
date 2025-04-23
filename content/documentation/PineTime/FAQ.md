@@ -7,6 +7,8 @@ menu:
     parent: "PineTime"
     identifier: "PineTime/FAQ"
     weight: 6
+aliases:
+  - /wiki/PineTime_FAQ
 ---
 
 ## Does PineTime run Linux?

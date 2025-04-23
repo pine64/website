@@ -6,7 +6,9 @@ menu:
     title:
     parent: "General"
     identifier: "General/Mainline_Hardware_Decoding"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Mainline_Hardware_Decoding
 ---
 
 {{< admonition type="note" >}}

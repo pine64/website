@@ -6,7 +6,9 @@ menu:
     title:
     parent:
     identifier: "STAR64"
-    weight: 
+    weight:
+aliases:
+  - /wiki/STAR64
 ---
 
 {{< figure src="images/Star64.jpg" title="The STAR64" width="400" >}}

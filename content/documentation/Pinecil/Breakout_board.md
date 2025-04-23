@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinecil"
     identifier: "Pinecil/Breakout_board"
-    weight: 
+    weight:
 ---
 
 The Pinecil Break out board has these features:

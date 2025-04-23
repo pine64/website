@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinebook_Pro/Features"
     identifier: "Pinebook_Pro/Features/LCD_panel"
-    weight: 
+    weight:
 ---
 
 * Model: BOE NV140FHM-N49

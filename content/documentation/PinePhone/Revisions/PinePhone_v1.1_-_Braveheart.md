@@ -7,7 +7,7 @@ menu:
     title:
     parent: "PinePhone/Revisions"
     identifier: "PinePhone/Revisions/PinePhone_v1.1_-_Braveheart"
-    weight: 
+    weight:
 aliases:
   - /wiki/PinePhone_v1.1_-_Braveheart
 ---

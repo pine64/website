@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinebook_Pro/Features"
     identifier: "Pinebook_Pro/Features/Audio"
-    weight: 
+    weight:
 ---
 
 ## ALSA configuration

@@ -7,6 +7,8 @@ menu:
     parent: "PineNote/Development"
     identifier: "PineNote/Development/Flashing"
     weight: 2
+aliases:
+  - /wiki/PineNote_Development/Flashing
 ---
 
 {{% docs/construction %}}

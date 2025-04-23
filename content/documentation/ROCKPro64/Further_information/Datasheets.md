@@ -6,7 +6,7 @@ menu:
     title:
     parent: "ROCKPro64/Further_information"
     identifier: "ROCKPro64/Further_information/Datasheets"
-    weight: 
+    weight:
 ---
 
 Rockchip RK3399 SoC information:

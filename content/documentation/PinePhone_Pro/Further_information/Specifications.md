@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PinePhone_Pro/Further_information"
     identifier: "PinePhone_Pro/Further_information/Specifications"
-    weight: 
+    weight:
 ---
 
 * **Dimensions:** 160.8 x 76.6 x 11.1mm

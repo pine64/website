@@ -6,7 +6,9 @@ menu:
     title:
     parent: "General"
     identifier: "General/Cross-compiling"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Cross-compiling
 ---
 
 The Pinephone’s triple for cross-compiling is `aarch64-unknown-linux-gnu`.

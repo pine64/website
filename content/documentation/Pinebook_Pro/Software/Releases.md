@@ -7,6 +7,9 @@ menu:
     parent: "Pinebook_Pro/Software"
     identifier: "Pinebook_Pro/Software/Releases"
     weight: 1
+aliases:
+  - /wiki/Pinebook_Pro_Software_Release
+  - /wiki/Pinebook_Pro_Software_Releases
 ---
 
 This page contains a list of all available releases and tools for the [Pinebook Pro](/documentation/Pinebook_Pro).

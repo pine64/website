@@ -6,7 +6,7 @@ menu:
     title:
     parent: "ROCK64/Further_information"
     identifier: "ROCK64/Further_information/Datasheets"
-    weight: 
+    weight:
 ---
 
 Rockchip RK3328 SoC information:

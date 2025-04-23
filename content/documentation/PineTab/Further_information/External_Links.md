@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineTab/Further_information"
     identifier: "PineTab/Further_information/External_Links"
-    weight: 
+    weight:
 ---
 
 * [The PineTab on the Pine64 store](https://pine64.com/product/pinetab-10-1-linux-tablet/)

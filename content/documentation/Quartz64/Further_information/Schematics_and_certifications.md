@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Quartz64/Further_information"
     identifier: "Quartz64/Further_information/Schematics_and_certifications"
-    weight: 
+    weight:
 ---
 
 ## Model "A"

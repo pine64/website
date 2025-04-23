@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinebook_Pro/Software"
     identifier: "Pinebook_Pro/Software/Notes"
-    weight: 
+    weight:
 ---
 
 ## Linux, the kernel, downstream source

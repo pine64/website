@@ -6,7 +6,9 @@ menu:
     title:
     parent: "General"
     identifier: "General/RK3399_boot_sequence"
-    weight: 
+    weight:
+aliases:
+  - /wiki/RK3399_boot_sequence
 ---
 
 This article describes the boot sequence of the RK3399, the SoC on which the [ROCKPro64](/documentation/ROCKPro64) single board computer, [Pinebook Pro](/documentation/Pinebook_Pro) laptop and the [PinePhone Pro](/documentation/PinePhone_Pro) are based.

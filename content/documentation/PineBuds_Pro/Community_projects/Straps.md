@@ -6,7 +6,9 @@ menu:
     title:
     parent: "PineBuds_Pro/Community_projects"
     identifier: "PineBuds_Pro/Community_projects/Straps"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PineBuds_Pro/Straps
 ---
 
 This page is about the community project to add straps to the [PineBuds Pro](/documentation/PineBuds_Pro).

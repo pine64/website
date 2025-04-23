@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinecil/Further_information"
     identifier: "Pinecil/Further_information/Schematics_and_datasheets"
-    weight: 
+    weight:
 ---
 
 ## Schematics and Board Data

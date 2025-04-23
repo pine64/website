@@ -7,6 +7,8 @@ menu:
     parent:
     identifier: "PineBuds_Pro"
     weight: 1
+aliases:
+  - /wiki/PineBuds_Pro
 ---
 
 {{< figure src="images/pinebudspro.jpg" title="The PineBuds Pro" width="400" >}}

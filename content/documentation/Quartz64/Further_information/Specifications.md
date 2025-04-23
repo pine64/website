@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Quartz64/Further_information"
     identifier: "Quartz64/Further_information/Specifications"
-    weight: 
+    weight:
 ---
 
 * Based on [Rockchip RK3566](https://www.rock-chips.com/a/en/products/RK35_Series/2021/0113/1274.html)

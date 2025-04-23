@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineCone/Further_information"
     identifier: "PineCone/Further_information/BL602_specifications"
-    weight: 
+    weight:
 ---
 
 {{< figure src="/documentation/images/BL602_Block_Diagram.jpg" >}}

@@ -14,6 +14,9 @@ aliases:
   - /documentation/PinePhone/Hardware_fixes_and_mods/Modifications_and_repairs/
   - /documentation/PinePhone/Hardware_fixes_and_mods/Mods/
   - /documentation/PinePhone/Hardware_fixes_and_mods/Replacement_earpieces/
+  - /wiki/PinePhone_(Pro)_replacement_earpieces
+  - /wiki/PinePhone_Hardware_Issues
+  - /wiki/PinePhone_Modding
 ---
 
 ## Spare parts not available in the Pine Store

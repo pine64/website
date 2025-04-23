@@ -6,7 +6,7 @@ menu:
     title:
     parent:
     identifier: "Pinenut"
-    weight: 
+    weight:
 ---
 
 The **PineNut** is an attempt for an open source Wi-Fi and BLE module for PINE64 devices.

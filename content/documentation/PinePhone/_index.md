@@ -6,7 +6,7 @@ menu:
     title:
     parent:
     identifier: "PinePhone"
-    weight: 
+    weight:
 aliases:
   - /wiki/PinePhone
 ---

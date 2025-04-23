@@ -7,6 +7,8 @@ menu:
     parent: "PineNote/Development"
     identifier: "PineNote/Development/Apps"
     weight: 6
+aliases:
+  - /wiki/PineNote_Development/Apps
 ---
 
 This page lists applications and tweaks for the [PineNote](/documentation/PineNote).

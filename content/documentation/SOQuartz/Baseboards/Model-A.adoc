@@ -6,7 +6,7 @@ menu:
     title:
     parent: "SOQuartz/Baseboards"
     identifier: "SOQuartz/Baseboards/Model-A"
-    weight: 
+    weight:
 ---
 
 {{< figure src="/documentation/SOQuartz/images/SOQuartz_model-A_baseboard.jpg" title="SOQuartz Model-A Baseboard" width="400" >}}

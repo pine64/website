@@ -6,7 +6,9 @@ menu:
     title:
     parent: "PineTime/Further_information"
     identifier: "PineTime/Further_information/Equivalents"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PineTime_Equivalents
 ---
 
 This page contains a list of PineTime hardware equivalents or very close clones. Primarily to keep track of which devices could possibly be "jailbroken" and run PineTime firmware.

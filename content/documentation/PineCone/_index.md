@@ -6,7 +6,10 @@ menu:
     title:
     parent:
     identifier: "PineCone"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Nutcracker
+  - /wiki/PineCone
 ---
 
 {{< figure src="/documentation/images/Pine64_BL602_EVB_photo-3-small.jpg" width="602" >}}

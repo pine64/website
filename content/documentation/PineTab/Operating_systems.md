@@ -7,6 +7,8 @@ menu:
     parent: "PineTab"
     identifier: "PineTab/Operating_systems"
     weight: 1
+aliases:
+  - /wiki/PineTab_Releases
 ---
 
 The PineTab will automatically boot from microSD if a bootable card is inserted. Although it is technically possible to use any ARM distro (because the PineTab uses the mainline kernel), only few of them will actually be usable on Early Adopters PineTab, due to specifics of working with LCD panel. Among those listed all except for postmarketOS have working builds.

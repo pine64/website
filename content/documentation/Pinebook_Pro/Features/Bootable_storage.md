@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinebook_Pro/Features"
     identifier: "Pinebook_Pro/Features/Bootable_storage"
-    weight: 
+    weight:
 ---
 
 {{< figure src="/documentation/images/Pbp_emmc_disable_sw.jpg" title="The PineBook Pro eMMC module and switch, shown in 'enabled' position" width="480" >}}

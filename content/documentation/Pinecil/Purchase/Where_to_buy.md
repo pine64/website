@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinecil/Purchase"
     identifier: "Pinecil/Purchase/Where_to_buy"
-    weight: 
+    weight:
 ---
 
 **PINE64 Official Stores**

@@ -6,7 +6,9 @@ menu:
     title:
     parent: "Pinecil"
     identifier: "Pinecil/Cases,_stands_and_supplies"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Pinecil_Cases,_Stands,_Supplies
 ---
 
 The article contains information about cases, holders/stands, 3D-models, and supplies for the [Pinecil](/documentation/Pinecil) soldering iron. This is a small set of examples based on the many questions asked every week in the live Pinecil chat channel. There may be better althernatives depending on your part of the world, but this gives an idea of some possible options.

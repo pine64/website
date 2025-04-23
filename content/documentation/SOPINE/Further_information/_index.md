@@ -6,7 +6,7 @@ menu:
     title:
     parent: "SOPINE"
     identifier: "SOPINE/Further_information"
-    weight: 
+    weight:
 ---
 
 {{< children >}}

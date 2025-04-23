@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineCone"
     identifier: "PineCone/Development"
-    weight: 
+    weight:
 ---
 
 * [PineCone BL602 GitHub Page (PINE64 fork)](https://github.com/pine64/bl_iot_sdk) has compilers, linkers, and all the code to build on Windows, Linux (x86_64), and MacOS.

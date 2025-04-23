@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineTime/Development"
     identifier: "PineTime/Development/Available_firmware_and_projects"
-    weight: 
+    weight:
 ---
 
 |  | Project Homepage | Project Source | PineTime Implementations |

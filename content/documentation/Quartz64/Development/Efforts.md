@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Quartz64/Development"
     identifier: "Quartz64/Development/Efforts"
-    weight: 
+    weight:
 ---
 
 See [Quartz64 Development](/documentation/Quartz64/Development/)

@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pine_A64-LTS"
     identifier: "Pine_A64-LTS/Software"
-    weight: 
+    weight:
 ---
 
 The SOPINE operating system images are compatible with PINE A64-LTS. Under [Software](/documentation/SOPINE/Software) you will find a complete list of currently supported operating system images, which work with the PINE A64-LTS, as well as other related software.

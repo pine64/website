@@ -6,7 +6,7 @@ menu:
     title:
     parent:
     identifier: "PineCam"
-    weight: 
+    weight:
 ---
 
 The **PineCam** is a successor to the PineCube IP camera, featuring a refined design and improved specifications. Based on the oz64 single-board computer, it utilizes the SG2000 SoC with dual RISC-V cores and one ARM core, and includes 512MB of RAM to support a full Linux-based OS like MotionEyeOS. 

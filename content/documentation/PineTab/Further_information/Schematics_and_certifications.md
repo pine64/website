@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineTab/Further_information"
     identifier: "PineTab/Further_information/Schematics_and_certifications"
-    weight: 
+    weight:
 ---
 
 PineTab mainboard schematic:

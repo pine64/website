@@ -6,7 +6,9 @@ menu:
     title:
     parent: "PineTime/Software"
     identifier: "PineTime/Software/Upgrade_to_InfiniTime_1_0_0"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Upgrade_PineTime_to_InfiniTime_1.0.0
 ---
 
 {{< admonition type="note" >}}

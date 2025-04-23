@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineCone"
     identifier: "PineCone/Further_information"
-    weight: 
+    weight:
 ---
 
 {{< children >}}

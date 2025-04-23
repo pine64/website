@@ -6,7 +6,9 @@ menu:
     title:
     parent: "Introduction"
     identifier: "Introduction/Getting_started"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Getting_started
 ---
 
 This guide is for the PINE64 devices. For device-specific information please see the corresponding device pages listed on the [main page](/documentation#Devices).

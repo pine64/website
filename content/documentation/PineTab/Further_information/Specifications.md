@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineTab/Further_information"
     identifier: "PineTab/Further_information/Specifications"
-    weight: 
+    weight:
 ---
 
 * **Dimensions:** 11mm x 175mm x 260mm (Thickness, Width, Height)

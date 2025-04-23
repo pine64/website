@@ -6,7 +6,7 @@ menu:
     title:
     parent: "ROCK64/Further_information"
     identifier: "ROCK64/Further_information/Schematics"
-    weight: 
+    weight:
 ---
 
 Board Dimensions: 85mm x 56mm x 18.8mm, see the [ROCK64 board dimension drawing](https://files.pine64.org/doc/rock64/rock64%20board%20dimension.pdf)

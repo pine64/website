@@ -6,7 +6,9 @@ menu:
     title:
     parent: "Quartz64/How-Tos"
     identifier: "Quartz64/How-Tos/Connecting_a_MIPI-DSI_display"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Quartz64_connecting_a_MIPI-DSI_display
 ---
 
 The [Quartz64](/documentation/Quartz64) single-board computers (both Model A and Model B) come with MIPI-DSI ports for connecting a MIPI-DSI compatible display.

@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineTab2/Further_information"
     identifier: "PineTab2/Further_information/Certifications"
-    weight: 
+    weight:
 ---
 
 PineTab2 certifications:

@@ -7,6 +7,8 @@ menu:
     parent: "SOQuartz/Software"
     identifier: "SOQuartz/Software/Releases"
     weight: 1
+aliases:
+  - /wiki/SOQuartz_Software_Releases
 ---
 
 {{< admonition type="note" >}}

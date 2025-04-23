@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Clusterboard"
     identifier: "Clusterboard/Further_information"
-    weight: 
+    weight:
 ---
 
 {{< children >}}

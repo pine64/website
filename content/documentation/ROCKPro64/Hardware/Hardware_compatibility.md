@@ -7,6 +7,9 @@ menu:
     parent: "ROCKPro64/Hardware"
     identifier: "ROCKPro64/Hardware/Hardware_compatibility"
     weight: 2
+aliases:
+  - /wiki/ROCKPro64_Hardware_compatibility
+  - /wiki/ROCKPro64_Hardware_Accessory_Compatibility
 ---
 
 Please contribute to the hardware compatibility page, which lists hardware which has been tested with the rockpro64, whether successful or not.

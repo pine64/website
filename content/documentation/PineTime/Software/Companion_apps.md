@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineTime/Software"
     identifier: "PineTime/Software/Companion_apps"
-    weight: 
+    weight:
 ---
 
 PineTime/InfiniTime needs a companion app to e.g. upload a firmware, get notifications from a phone, or just get the date/time.

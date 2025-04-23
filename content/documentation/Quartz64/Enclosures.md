@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Quartz64"
     identifier: "Quartz64/Enclosures"
-    weight: 
+    weight:
 ---
 
 Note: Please expand this section with more cases known to work.

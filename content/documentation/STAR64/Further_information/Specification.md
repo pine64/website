@@ -6,7 +6,7 @@ menu:
     title:
     parent: "STAR64/Further_information"
     identifier: "STAR64/Further_information/Specification"
-    weight: 
+    weight:
 ---
 
 * Based on [StarFive JH7110](https://www.starfivetech.com/en/site/soc)

@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinebook_Pro/Features"
     identifier: "Pinebook_Pro/Features/Power_supply"
-    weight: 
+    weight:
 ---
 
 * Input Power: 5V DC, 15W (current limit 3A)

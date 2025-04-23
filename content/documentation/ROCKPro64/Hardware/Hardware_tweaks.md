@@ -7,6 +7,8 @@ menu:
     parent: "ROCKPro64/Hardware"
     identifier: "ROCKPro64/Hardware/Hardware_tweaks"
     weight: 1
+aliases:
+  - /wiki/ROCKPro64_Hardware_Tweaks
 ---
 
 ## Enabling PCIe 2.0

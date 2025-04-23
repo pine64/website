@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineTab2/Further_information"
     identifier: "PineTab2/Further_information/Disassembly_guide"
-    weight: 
+    weight:
 ---
 
 PineTab2 disassembly guide:

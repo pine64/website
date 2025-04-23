@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinecil/Power_supplies"
     identifier: "Pinecil/Power_supplies/Watts"
-    weight: 
+    weight:
 ---
 
 Generally, a higher power charger is better; a 20V power supply will give better performance than a 15V charger. The Pinecil needs a minimum of 3 amps and will work with higher amps charger. However, do not exceed the volts rating for V1 and V2 models or damage to components could occur (see the side of the Pinecil handle for the maximum volts).

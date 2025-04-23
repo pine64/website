@@ -7,6 +7,9 @@ menu:
     parent: "PineNote"
     identifier: "PineNote/Development"
     weight: 5
+aliases:
+  - /wiki/PineNote_Development
+  - /wiki/PineNote_Development/TODOs
 ---
 
 ## Sub pages

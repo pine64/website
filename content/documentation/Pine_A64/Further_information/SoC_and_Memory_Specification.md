@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pine_A64/Further_information"
     identifier: "Pine_A64/Further_information/SoC_and_Memory_Specification"
-    weight: 
+    weight:
 ---
 
 The Pine A64 is based on the _Allwinner A64_.

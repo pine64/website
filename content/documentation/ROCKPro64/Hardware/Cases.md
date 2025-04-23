@@ -6,7 +6,7 @@ menu:
     title:
     parent: "ROCKPro64/Hardware"
     identifier: "ROCKPro64/Hardware/Cases"
-    weight: 
+    weight:
 ---
 
 ## Acrylic Open Enclosure

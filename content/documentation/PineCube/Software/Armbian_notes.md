@@ -6,7 +6,9 @@ menu:
     title:
     parent: "PineCube/Software"
     identifier: "PineCube/Software/Armbian_notes"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PineCube_Armbian_Notes
 ---
 
 This article contains notes regarding Armbian on the [PineCube](/documentation/PineCube).

@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PinePhone_Pro/Factory_tests"
     identifier: "PinePhone_Pro/Factory_tests/Factory_test_hardware_checking"
-    weight: 
+    weight:
 ---
 
 {{< figure src="/documentation/images/PPP_Abdroid_Test_Utility-5.jpg" width="400" >}}

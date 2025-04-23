@@ -4,9 +4,9 @@ draft: false
 menu:
   docs:
     title:
-    parent: 
+    parent:
     identifier: "Introduction"
-    weight: 
+    weight:
 ---
 
 {{< children >}}

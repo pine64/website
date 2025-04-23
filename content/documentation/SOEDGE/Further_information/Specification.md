@@ -6,7 +6,7 @@ menu:
     title:
     parent: "SOEDGE/Further_information"
     identifier: "SOEDGE/Further_information/Specification"
-    weight: 
+    weight:
 ---
 
 Based on the [Rockchip RK1808](https://www.rock-chips.com/a/en/products/RK18_Series/2019/0529/989.html).

@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pine_A64-LTS/Further_information"
     identifier: "Pine_A64-LTS/Further_information/Other_resources"
-    weight: 
+    weight:
 ---
 
 * [Good documentation about PINE A64, A64+, and A64-LTS GPIO pins article](http://web.archive.org/web/20230501084346/https://synfare.com/599N105E/hwdocs/pine64/index.html)

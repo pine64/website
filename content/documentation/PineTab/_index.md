@@ -6,7 +6,9 @@ menu:
     title:
     parent:
     identifier: "PineTab"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PineTab
 ---
 
 {{< figure src="/documentation/images/Pinetab.jpg" title="The PineTab" width="400" >}}

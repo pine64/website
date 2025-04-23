@@ -6,7 +6,9 @@ menu:
     title:
     parent: "PineTime/Development"
     identifier: "PineTime/Development/Reprogramming"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Reprogramming_the_PineTime
 ---
 
 [Wire it up](/documentation/PineTime/Further_information/Devkit_wiring) and then flash something.

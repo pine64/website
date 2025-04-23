@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PinePhone"
     identifier: "PinePhone/Further_information"
-    weight: 
+    weight:
 ---
 
 {{< children >}}

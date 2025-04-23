@@ -6,7 +6,9 @@ menu:
     title:
     parent: "PineCube/Projects"
     identifier: "PineCube/Projects/Security_camera_with_Motion"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PineCube_as_a_security_camera_with_Motion
 ---
 
 It’s possible to use the PineCube as an inside or outside security camera using [motion](https://motion-project.github.io/index.html). For outside, you’ll need an enclosure with a transparent dome to protect from the weather. One suggestion is to mount the camera with the lens as close as possible to the dome to avoid reflection.

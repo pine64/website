@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinebook_Pro/Further_information"
     identifier: "Pinebook_Pro/Further_information/Specifications"
-    weight: 
+    weight:
 ---
 
 Based on Rockchip RK3399

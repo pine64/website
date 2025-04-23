@@ -7,6 +7,8 @@ menu:
     parent: "PineNote/Development"
     identifier: "PineNote/Development/Software_tweaks"
     weight: 99
+aliases:
+  - /wiki/PineNote_Development/Software_Tweaks
 ---
 
 ## Fixing Bluetooth

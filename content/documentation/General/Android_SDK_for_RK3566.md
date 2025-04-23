@@ -6,7 +6,9 @@ menu:
     title:
     parent: "General"
     identifier: "General/Android_SDK_for_RK3566"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Android_SDK_for_RK3566
 ---
 
 Two Android SDKs are available from Pine64 for RK3566 devices:
