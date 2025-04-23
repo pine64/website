@@ -7,8 +7,6 @@ menu:
     parent: "PinePhone_Pro"
     identifier: "PinePhone_Pro/Software"
     weight: 4
-aliases:
-  - /wiki/PinePhone_Pro_Software_Releases
 ---
 
 {{< children >}}
