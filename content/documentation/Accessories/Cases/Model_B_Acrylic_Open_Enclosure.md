@@ -8,7 +8,6 @@ menu:
     identifier: "Accessories/Cases/Model_B_Acrylic_Open_Enclosure"
     weight:
 aliases:
-  - /wiki/"Model_B"_Acrylic_Open_Enclosure
   - /wiki/Model_B_Acrylic_Open_Enclosure
 ---
 
