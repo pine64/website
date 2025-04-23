@@ -13,11 +13,10 @@ This page contains information on how to build a linux kernel for the PineNote.
 
 ## Available Kernel Repositories
 
-The following (incomplete?) PineNote-specific kernel repositories are available:
+The following PineNote-specific kernel repositories are available:
 
 * https://github.com/m-weigand/linux/ (based mainly on the repository from smaeul, with additional patches pulled in from other sources, Debian packages available)
-* https://gitlab.com/pgwipeout/linux-next/
-* https://github.com/smaeul/linux/tree/rk35/pinenote-next
+* https://git.sr.ht/~hrdl/linux (based on Maximilian's kernel tree, which improves display responsiveness with per pixel scheduling and the automatic redraw of pixels among other improvements)
 
 ## Building the kernel
 
