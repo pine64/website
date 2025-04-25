@@ -16,7 +16,7 @@ The following releases are available for the [PineNote](/documentation/PineNote)
 ### Summary
 
 * Pre-2024 PineNotes were not shipped with a working linux installation.
-* Batch-2 PineNotes that started selling in October 2024 were shipped with the community-maintained, Debian-based, Linux image found here: [https://github.com/PNDeb/pinenote-debian-image](https://github.com/PNDeb/pinenote-debian-image).
+* Batch-2 (Community Edition) PineNotes that started selling in October 2024 were shipped with the community-maintained, Debian-based, Linux image found here: [https://github.com/PNDeb/pinenote-debian-image](https://github.com/PNDeb/pinenote-debian-image).
 * While the factory-flashed image cannot be freely distributed due to unclear distribution rights of the waveform, OS files without the shipped waveforms can be found in this release and a basically equivalent to the shipped images: https://github.com/PNDeb/pinenote-debian-image/releases/tag/batch-2-factory-image-wo-waveform
 * Parts of the batch-2 PineNotes will be flashed with an updated OS version. Notes regarding differentiating between factory OS versions will be made available here in time.
 
@@ -56,7 +56,7 @@ The following releases are targeted towards experienced developers.
 
 ### Linux Kernel
 
-* Batch-2 PineNotes ares shipped with kernels maintained here [https://github.com/m-weigand/linux](https://github.com/m-weigand/linux).
+* Batch-2 PineNotes (Community Edition) ares shipped with kernels maintained here [https://github.com/m-weigand/linux](https://github.com/m-weigand/linux).
 * [RK3566 EBC Reverse-Engineering](/documentation/General/RK3566_EBC_reverse-engineering) for the EBC (eInk Panel) driver.
 * [PineNote Development/Building Kernel](/documentation/PineNote/Development/Building_kernel)
 * BSP Linux SDK version 4.19 for the PineNote and [Quartz64 Model A](/documentation/Quartz64):
