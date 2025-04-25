@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinebook_Pro/Guides"
     identifier: "Pinebook_Pro/Guides/Skinning_and_case_customization"
-    weight: 
+    weight:
 ---
 
 Template files for creating custom skins. Each includes template layers for art placement, and CUT lines:

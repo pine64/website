@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Clusterboard"
     identifier: "Clusterboard/Schematics"
-    weight: 
+    weight:
 ---
 
 * [Clusterboard version 2.2 Schematic Capture source file](https://files.pine64.org/doc/clusterboard/PINE64%20CLUSTER%20BOARD_2_2.DSN)

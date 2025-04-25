@@ -6,7 +6,7 @@ menu:
     title:
     parent: "ROCKPro64/Board"
     identifier: "ROCKPro64/Board/Features"
-    weight: 
+    weight:
 ---
 
 This section outlines the most important characteristics of the board and its components.

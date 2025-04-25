@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinecil/Further_information"
     identifier: "Pinecil/Further_information/Certifications"
-    weight: 
+    weight:
 ---
 
 Pinecil V2 Certifications:

@@ -6,7 +6,7 @@ menu:
     title:
     parent: "ROCKPro64/Hardware"
     identifier: "ROCKPro64/Hardware/3D_printable_ITX_mounting_brackets"
-    weight: 
+    weight:
 ---
 
 {{< figure src="/documentation/images/ITX-Bracket-Mounted.jpg" title="A Quartz64-A mounted in an ITX case using 3D printed brackets" width="300" >}}

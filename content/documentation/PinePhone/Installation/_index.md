@@ -10,6 +10,8 @@ menu:
     weight: 3
 aliases:
   - /documentation/PinePhone/Installation_instructions
+  - /wiki/PinePhone_Installation_Instructions
+  - /wiki/PinePhone_Updating_Instructions
 ---
 
 To learn more about the pboot priority on the PinePhone, click on [boot priority](/documentation/PinePhone/Installation/Boot_priority).
@@ -19,4 +21,4 @@ The installation instructions can be found here:
 * [Installation to the microSD card](/documentation/PinePhone/Installation/Installation_to_the_microSD_card)
 * [Installation to the eMMC](/documentation/PinePhone/Installation/Installation_to_the_eMMC)
 
-The releases for the PinePhone can be found under [Releases](/documentation/PinePhone/Software/Releases).
+The releases for the PinePhone can be found under [Releases](/documentation/PinePhone/Software/).

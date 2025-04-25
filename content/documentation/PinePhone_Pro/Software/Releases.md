@@ -8,6 +8,8 @@ menu:
     parent: "PinePhone_Pro/Software"
     identifier: "PinePhone_Pro/Software/Releases"
     weight: 3
+aliases:
+  - /wiki/PinePhone_Pro_Software_Releases
 ---
 
 This page contains a list of all available releases and tools for the [PinePhone Pro](/documentation/PinePhone_Pro).

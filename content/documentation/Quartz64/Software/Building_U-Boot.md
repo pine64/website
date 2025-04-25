@@ -6,7 +6,9 @@ menu:
     title:
     parent: "Quartz64/Software"
     identifier: "Quartz64/Software/Building_U-Boot"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Quartz64_Building_U-Boot
 ---
 
 This article guides you through compiling U-Boot for a ***Quartz64*** and ***SOQuartz*** device.

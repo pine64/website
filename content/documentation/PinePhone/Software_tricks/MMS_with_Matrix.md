@@ -7,7 +7,9 @@ menu:
     title:
     parent: "PinePhone/Software_tricks"
     identifier: "PinePhone/Software_tricks/MMS_with_Matrix"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PinePhone_MMS_with_Matrix
 ---
 
 {{< figure src="/documentation/images/Pinephonematrixfractalmmsscreenshot.jpg" title="Screenshot of fractal displaying an MMS conversation" >}}

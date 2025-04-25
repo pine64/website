@@ -7,6 +7,8 @@ menu:
     parent: "PineCube"
     identifier: "PineCube/GPIO"
     weight: 4
+aliases:
+  - /wiki/PineCube_GPIO_and_Test_Points
 ---
 
 GPIO header pin table:

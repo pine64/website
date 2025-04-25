@@ -6,7 +6,10 @@ menu:
     title:
     parent: "ROCK64/Cases"
     identifier: "ROCK64/Cases/Premium_aluminum_casing"
-    weight: 
+    weight:
+aliases:
+  - /wiki/ROCK64_Aluminum_Case
+  - /wiki/ROCK64_Premium_Aluminum_Casing
 ---
 
 {{< figure src="/documentation/ROCK64/images/Rock64-Al-Case1-1.jpg" title="The case, fully assembled with a ROCK64 inside of it" >}}

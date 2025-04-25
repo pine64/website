@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Ox64/Further_information"
     identifier: "Ox64/Further_information/SoC_and_Memory_Specification"
-    weight: 
+    weight:
 ---
 
 Based on the [Bouffalo Lab BL808](https://en.bouffalolab.com/product/)

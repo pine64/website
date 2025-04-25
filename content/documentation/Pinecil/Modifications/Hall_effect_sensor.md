@@ -6,7 +6,9 @@ menu:
     title:
     parent: "Pinecil/Modifications"
     identifier: "Pinecil/Modifications/Hall_effect_sensor"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Pinecil_Hall_Effect_Sensor
 ---
 
 Instructions to install a hall effect sensor (HES) on the [Pinecil](/documentation/Pinecil) V1 and V2.

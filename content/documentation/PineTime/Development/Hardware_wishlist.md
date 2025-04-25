@@ -6,7 +6,9 @@ menu:
     title:
     parent: "PineTime/Development"
     identifier: "PineTime/Development/Hardware_wishlist"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PineTime_Hardware_Wishlist
 ---
 
 This page contains a list of things people wish PineTime did differently

@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Unsorted"
     identifier: "Unsorted"
-    weight: 
+    weight:
 ---
 
 {{< children >}}

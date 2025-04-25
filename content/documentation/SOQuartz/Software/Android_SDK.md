@@ -6,7 +6,7 @@ menu:
     title:
     parent: "SOQuartz/Software"
     identifier: "SOQuartz/Software/Android_SDK"
-    weight: 
+    weight:
 ---
 
 ## Android 11 SDK for Quartz64 model A SBC

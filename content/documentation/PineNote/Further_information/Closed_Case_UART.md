@@ -7,6 +7,8 @@ menu:
     parent: "PineNote/Further_information"
     identifier: "PineNote/Further_information/Closed_Case_UART"
     weight: 5
+aliases:
+  - /wiki/PineNote/Hardware_Changes/Closed_Case_UART
 ---
 
 Closed case debugging was brought up during a week of community schematic review of the PineNote. This page documents the discussion of this proposed issue and its resolution.

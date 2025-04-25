@@ -6,7 +6,9 @@ menu:
     title:
     parent: "Quartz64/Accessories"
     identifier: "Quartz64/Accessories/Premium_aluminium_case"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Quartz64_Premium_Aluminium_Case
 ---
 
 A nice aluminum case is available for the [Quartz64](/documentation/Quartz64) on the PINE64 store listed as "ROCKPro64 PREMIUM ALUMINUM CASING".

@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pine_A64-LTS/Further_information"
     identifier: "Pine_A64-LTS/Further_information/SoC_and_Memory_Specification"
-    weight: 
+    weight:
 ---
 
 The PINE A64-LTS is based on the Allwinner A64/R18. The R18 and A64 are identical SoCs but the is R18 committed for a 10 years supply by the vendor.

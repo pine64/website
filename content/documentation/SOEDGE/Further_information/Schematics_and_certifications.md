@@ -6,7 +6,7 @@ menu:
     title:
     parent: "SOEDGE/Further_information"
     identifier: "SOEDGE/Further_information/Schematics_and_certifications"
-    weight: 
+    weight:
 ---
 
 SOEDGE module schematics:

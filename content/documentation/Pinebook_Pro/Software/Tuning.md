@@ -6,7 +6,9 @@ menu:
     title:
     parent: "Pinebook_Pro/Software"
     identifier: "Pinebook_Pro/Software/Tuning"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Pinebook_Pro_Software_Tuning_Guide
 ---
 
 Details on how to get the most out of a [Pinebook Pro](/documentation/Pinebook_Pro).

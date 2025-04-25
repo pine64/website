@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinebook_Pro/Features"
     identifier: "Pinebook_Pro/Features/Bluetooth_and_WiFi"
-    weight: 
+    weight:
 ---
 
 {{< figure src="/documentation/images/PinebookPro_WirelessIC_Location.jpg" title="The Pinebook Pro’s AP6256 wireless module" width="400" >}}

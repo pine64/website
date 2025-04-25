@@ -6,7 +6,9 @@ menu:
     title:
     parent: "Accessories/Cases"
     identifier: "Accessories/Cases/Model_B_Acrylic_Open_Enclosure"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Model_B_Acrylic_Open_Enclosure
 ---
 
 The **"Model B" Acrylic Open Enclosure** is a case for "Model B" sized single-board computers sold by PINE64, available from [the official store](https://pine64.com/product/model-b-acrylic-open-enclosure/).

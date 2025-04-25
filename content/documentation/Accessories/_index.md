@@ -6,7 +6,7 @@ menu:
     title:
     parent:
     identifier: "Accessories"
-    weight: 
+    weight:
 ---
 
 {{< children >}}

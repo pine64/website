@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pine_A64/Further_information"
     identifier: "Pine_A64/Further_information/Schematics_and_certifications"
-    weight: 
+    weight:
 ---
 
 Schematics and general files:

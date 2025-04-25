@@ -6,7 +6,9 @@ menu:
     title:
     parent: "PinePhone/Modem"
     identifier: "PinePhone/Modem/APN_settings"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PinePhone_APN_Settings
 ---
 
 The [APN](https://en.wikipedia.org/wiki/Access_Point_Name) setting is the gateway between your carrier’s cellular network and the **public Internet**. The APN setting - if not set automatically by the user’s OS - has to be set by the user to enable the use of the mobile Internet on the phone.

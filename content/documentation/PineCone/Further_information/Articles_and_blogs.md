@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineCone/Further_information"
     identifier: "PineCone/Further_information/Articles_and_blogs"
-    weight: 
+    weight:
 ---
 
 * [Quick Peek of PineCone BL602 RISC-V Evaluation Board by Lup Yuen](https://lupyuen.github.io/articles/pinecone)

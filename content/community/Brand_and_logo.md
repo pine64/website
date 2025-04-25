@@ -6,7 +6,9 @@ menu:
     title:
     parent: "General"
     identifier: "General/Brand_and_logo"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PINE64_brand_and_logo
 ---
 
 PINE64 and the PINE64 pinecone logo are trademarked by Pine Store Limited. The trademark extends to the PINE64 brand name in writing, the PINE64 pinecone logo (referred to as logo in the document) and in some instances also to logo derivatives (see section 4).

@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinecil"
     identifier: "Pinecil/Development_projects"
-    weight: 
+    weight:
 ---
 
 | Author | Project Homepage | Description | Supported |

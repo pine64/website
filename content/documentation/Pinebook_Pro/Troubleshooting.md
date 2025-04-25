@@ -7,6 +7,8 @@ menu:
     parent: "Pinebook_Pro"
     identifier: "Pinebook_Pro/Troubleshooting"
     weight: 5
+aliases:
+  - /wiki/Pinebook_Pro_Troubleshooting_Guide
 ---
 
 ## Tips, tricks and other information for troubleshooting your Pinebook Pro

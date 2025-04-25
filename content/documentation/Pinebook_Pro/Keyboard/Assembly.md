@@ -6,7 +6,9 @@ menu:
     title:
     parent: "Pinebook_Pro/Keyboard/"
     identifier: "Pinebook_Pro/Keyboard/Assembly"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Pinebook_Pro_Keyboard_Assembly
 ---
 
 {{% docs/construction %}}

@@ -7,7 +7,9 @@ menu:
     title:
     parent: "PinePhone/Revisions"
     identifier: "PinePhone/Revisions/PinePhone_v1.2a"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PinePhone_v1.2a
 ---
 
 The PinePhone v1.2a is a hardware revision of the [PinePhone](/documentation/PinePhone) that started shipping in Q3 2020.

@@ -6,7 +6,9 @@ menu:
     title:
     parent: "Quartz64/How-Tos"
     identifier: "Quartz64/How-Tos/Using_a_battery"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Quartz64_Model_A_Using_a_battery
 ---
 
 The [Quartz64 Model A](/documentation/Quartz64) allows for it to be powered from a single-cell 3.7V lithium-polymer battery. Because of [unfortunate incidents](https://en.wikipedia.org/wiki/UPS_Airlines_Flight_6), batteries are not easy to ship internationally, so PINE Store does not sell a matching battery for the board.

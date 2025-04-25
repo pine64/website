@@ -6,7 +6,9 @@ menu:
     title:
     parent: "Pinebook_Pro/Accessory"
     identifier: "Pinebook_Pro/Accessory/Compatibility"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Pinebook_Pro_Hardware_Accessory_Compatibility
 ---
 
 Please test as many things as you can find with your Pinebook Pro and share the results here. Some devices which should work don’t!

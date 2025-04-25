@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineCone/Further_information"
     identifier: "PineCone/Further_information/Datasheets"
-    weight: 
+    weight:
 ---
 
 Bouffalo BL-602 SoC information:

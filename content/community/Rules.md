@@ -6,7 +6,9 @@ menu:
     title:
     parent: "General"
     identifier: "General/Rules"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PINE64_Community_Rules_and_Code_of_Conduct
 ---
 
 These rules apply to all official PINE64 platforms and protocols facilitating social interactions, and will be enforced by moderators at all times. Failure to comply with these rules may result in a temporary or permanent ban from all PINE64 community platforms. If deemed necessary, a permanent ban can be issued without a prior notice. In extreme circumstances - such as those involving threats or hate speech - the Pine Store reserves the right to deny service to the offending party and notify local or regional authorities.

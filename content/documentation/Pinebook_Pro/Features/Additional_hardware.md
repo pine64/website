@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinebook_Pro/Features"
     identifier: "Pinebook_Pro/Features/Additional_hardware"
-    weight: 
+    weight:
 ---
 
 Hardware that is not part of the SoC.

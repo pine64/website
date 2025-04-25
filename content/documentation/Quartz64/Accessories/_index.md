@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Quartz64"
     identifier: "Quartz64/Accessories"
-    weight: 
+    weight:
 ---
 
 {{< children >}}

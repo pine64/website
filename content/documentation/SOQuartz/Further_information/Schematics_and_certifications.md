@@ -6,7 +6,7 @@ menu:
     title:
     parent: "SOQuartz/Further_information"
     identifier: "SOQuartz/Further_information/Schematics_and_certifications"
-    weight: 
+    weight:
 ---
 
 SOQuartz Module Schematic:

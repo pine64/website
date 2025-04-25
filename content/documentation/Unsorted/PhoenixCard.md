@@ -6,7 +6,9 @@ menu:
     title:
     parent: "Unsorted"
     identifier: "Unsorted/PhoenixCard"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PhoenixCard
 ---
 
 ## How to Create MicroSD Card Android Image for Pine A64

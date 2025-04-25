@@ -6,7 +6,7 @@ menu:
     title:
     parent: "SOQuartz/Software"
     identifier: "SOQuartz/Software/Making_your_own"
-    weight: 
+    weight:
 ---
 
 Making your own image/installation of Linux for SOQuartz is relatively easy, as all major components are mainlined. You will need:

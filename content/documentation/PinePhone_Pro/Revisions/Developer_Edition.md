@@ -7,7 +7,9 @@ menu:
     title:
     parent: "PinePhone_Pro/Revisions"
     identifier: "PinePhone_Pro/Revisions/Developer_Edition"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PinePhone_Pro_Developer_Edition
 ---
 
 The Developer Edition was the first edition of the [PinePhone Pro](/documentation/PinePhone_Pro), shipped to developers in December 2021. The aim of the the Developer Edition was to give development community access to the hardware prior to end-users, boost development efforts and allow for porting of existing mobile Linux operating systems to the new hardware. It featured a factory test installation of AOSP as pre-installed operating system and was shipped with the packaging and manual of the succeeding Explorer Edition.

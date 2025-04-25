@@ -6,7 +6,7 @@ menu:
     title:
     parent: "ROCK64/Software"
     identifier: "ROCK64/Software/Upstreaming_status"
-    weight: 
+    weight:
 ---
 
 {{< admonition type="warning" >}}

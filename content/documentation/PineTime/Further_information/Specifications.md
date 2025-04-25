@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineTime/Further_information"
     identifier: "PineTime/Further_information/Specifications"
-    weight: 
+    weight:
 ---
 
 * **Dimensions:** 37.5 x 40 x 11mm

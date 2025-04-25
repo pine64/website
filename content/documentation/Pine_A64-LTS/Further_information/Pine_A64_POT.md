@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pine_A64-LTS/Further_information"
     identifier: "Pine_A64-LTS/Further_information/Pine_A64_POT"
-    weight: 
+    weight:
 ---
 
 * [PINE A64 Peripheral On Top (POT) and Related Devices](/documentation/Accessories/POT)

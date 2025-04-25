@@ -6,7 +6,10 @@ menu:
     title:
     parent:
     identifier: "Clusterboard"
-    weight: 
+    weight:
+aliases:
+  - /wiki/SOPine_Clusterboard
+  - /wiki/Clusterboard
 ---
 
 {{< figure src="/documentation/Clusterboard/images/Clusterboard_rev_2.2.jpg" title="Front view of the Clusterboard (revision 2.2)" width="400" >}}

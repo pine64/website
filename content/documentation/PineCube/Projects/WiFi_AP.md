@@ -6,7 +6,9 @@ menu:
     title:
     parent: "PineCube/Projects"
     identifier: "PineCube/Projects/WiFi_AP"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PineCube_as_a_WiFi_AP
 ---
 
 If the PineCube will have a wired Ethernet connection to the main network it is possible to use it as a WiFi access point, possibly extending your existing network to further outside. Here are some steps you can take to do this starting from an Armbian system as a starting point. Note that you may need to upgrade your kernel to 5.13.x for this to work well.

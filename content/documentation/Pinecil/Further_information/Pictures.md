@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinecil/Further_information"
     identifier: "Pinecil/Further_information/Pictures"
-    weight: 
+    weight:
 ---
 
 Pre-release:

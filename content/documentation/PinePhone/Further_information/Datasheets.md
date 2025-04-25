@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PinePhone/Further_information"
     identifier: "PinePhone/Further_information/Datasheets"
-    weight: 
+    weight:
 ---
 
 Allwinner A64 SoC information:

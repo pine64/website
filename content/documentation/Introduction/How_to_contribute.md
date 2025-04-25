@@ -6,7 +6,9 @@ menu:
     title:
     parent: "Introduction"
     identifier: "Introduction/How_to_contribute"
-    weight: 
+    weight:
+aliases:
+  - /wiki/How_to_Contribute
 ---
 
 The following article contains a selection of common ways to contribute to the community projects.

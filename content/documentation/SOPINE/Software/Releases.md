@@ -7,6 +7,9 @@ menu:
     parent: "SOPINE/Software"
     identifier: "SOPINE/Software/Releases"
     weight: 1
+aliases:
+  - /wiki/SOPINE_Software_Release
+  - /wiki/SOPINE_Software_Releases
 ---
 
 Note that SOPINE images are also compatible with the PINE A64-LTS.

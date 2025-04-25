@@ -6,7 +6,9 @@ menu:
     title:
     parent: "ROCKPro64/Software"
     identifier: "ROCKPro64/Software/Installing_Arch_Linux_ARM"
-    weight: 
+    weight:
+aliases:
+  - /wiki/ROCKPro64_Installing_Arch_Linux_ARM
 ---
 
 {{< admonition type="warning" >}}

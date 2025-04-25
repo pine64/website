@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Ox64/Further_information"
     identifier: "Ox64/Further_information/Compatible_UARTs"
-    weight: 
+    weight:
 ---
 
 When the Ox64 is in bootloader mode, some UARTs are unable to communicate with it. When this is the case, utilities such as BLDevCube are unable to actually program the device. If you see "Shake hand fail" and an empty ack, and your device is in bootloader mode, then it is likely an incompatible UART.

@@ -6,7 +6,7 @@ menu:
     title:
     parent: "SOEDGE_Baseboard/Features"
     identifier: "SOEDGE_Baseboard/Features/Expansion_ports"
-    weight: 
+    weight:
 ---
 
 * DSI - Display Serial Interface, 4 lanes MiPi, up to 1080P

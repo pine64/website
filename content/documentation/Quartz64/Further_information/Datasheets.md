@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Quartz64/Further_information"
     identifier: "Quartz64/Further_information/Datasheets"
-    weight: 
+    weight:
 ---
 
 Rockchip RK3566 SoC information:

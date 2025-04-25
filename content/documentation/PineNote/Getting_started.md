@@ -7,6 +7,8 @@ menu:
     parent: "PineNote"
     identifier: "PineNote/Getting_started"
     weight: 2
+#aliases:
+#  - '/wiki/PineNote\:_Getting_Started'
 ---
 
 ## Important note for buyers after October 2024

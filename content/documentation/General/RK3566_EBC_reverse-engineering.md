@@ -6,7 +6,9 @@ menu:
     title:
     parent: "General"
     identifier: "General/RK3566_EBC_reverse-engineering"
-    weight: 
+    weight:
+aliases:
+  - /wiki/RK3566_EBC_Reverse-Engineering
 ---
 
 The RK3566 SoC, used in the [Quartz64](/documentation/Quartz64) SBC by PINE64, contains an eInk interface. This is referred to as `ebc` by Rockchip apparently.

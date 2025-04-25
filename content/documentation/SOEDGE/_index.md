@@ -6,7 +6,10 @@ menu:
     title:
     parent:
     identifier: "SOEDGE"
-    weight: 
+    weight:
+aliases:
+  - /wiki/SOEDGE
+  - /wiki/SOEdge
 ---
 
 {{< figure src="images/SOEdge.png" title="The SOEDGE" width="400" >}}

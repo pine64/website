@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinenut"
     identifier: "Pinenut-01S USB Programmer"
-    weight: 
+    weight:
 ---
 
 The **Pinenut-01S USB Programmer** is a companion utility for Pinenut-01S: an USB-to-serial adapter that converts the USB interface to a serial port suitable for Pinenut-01S module. The programmer allows the Pinenut-01S module to be plugged into a power bank for potable power application. It has a duplicate GPIO extension port.

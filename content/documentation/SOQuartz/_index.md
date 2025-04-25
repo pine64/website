@@ -4,9 +4,11 @@ draft: false
 menu:
   docs:
     title:
-    parent: 
+    parent:
     identifier: "SOQuartz"
-    weight: 
+    weight:
+aliases:
+  - /wiki/SOQuartz
 ---
 
 {{< figure src="/documentation/SOQuartz/images/SOQuartz_module-1s.jpg" title="The SOQuartz" width="400" >}}

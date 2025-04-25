@@ -6,7 +6,9 @@ menu:
     title:
     parent: "General"
     identifier: "General/Mainline_Hardware_Encoding"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Mainline_Hardware_Encoding
 ---
 
 **Mainline Hardware Encoding** of video can be achieved through the V4L2 user-space API, for which currently only GStreamer implements the required code.

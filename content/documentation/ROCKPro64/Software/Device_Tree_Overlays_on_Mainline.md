@@ -6,7 +6,10 @@ menu:
     title:
     parent: "ROCKPro64/Software"
     identifier: "ROCKPro64/Software/Device_Tree_Overlays_on_Mainline"
-    weight: 
+    weight:
+aliases:
+  - /wiki/ROCKPro64_Device_Tree_Overlays_on_Mainline
+  - /wiki/ROCKPro64_Device_Tree_Overlays_on_Manjaro
 ---
 
 If your U-Boot has been compiled with `CONFIG_OF_LIBFDT_OVERLAY` (which Manjaro’s is), adding device tree overlays the mainline way is very simple and easy.

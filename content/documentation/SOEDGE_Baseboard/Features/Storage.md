@@ -6,7 +6,7 @@ menu:
     title:
     parent: "SOEDGE_Baseboard/Features"
     identifier: "SOEDGE_Baseboard/Features/Storage"
-    weight: 
+    weight:
 ---
 
 * microSD - bootable, support SDHC and SDXC, storage up to 256GB

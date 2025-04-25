@@ -8,6 +8,9 @@ menu:
     parent: "ROCKPro64/Software"
     identifier: "ROCKPro64/Software/Releases"
     weight: 1
+aliases:
+  - /wiki/ROCKPro64_Software_Release
+  - /wiki/ROCKPro64_Software_Releases
 ---
 
 This page contains a list of all available releases and tools for the [ROCKPro64](/documentation/ROCKPro64) in alphabetical order.

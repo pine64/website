@@ -6,7 +6,9 @@ menu:
     title:
     parent: "Unsorted"
     identifier: "Accessories/Accessories_Step_by_Step_Guides"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Accessories_Step_by_Step_Guides
 ---
 
 Accessories Step by Step Guides

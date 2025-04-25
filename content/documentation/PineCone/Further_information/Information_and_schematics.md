@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineCone/Further_information"
     identifier: "PineCone/Further_information/Information_and_schematics"
-    weight: 
+    weight:
 ---
 
 ![width=120](/documentation/images/PADI-II_EVB.png)

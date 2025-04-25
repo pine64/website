@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Ox64/Further_information"
     identifier: "Ox64/Further_information/Resources"
-    weight: 
+    weight:
 ---
 
 * [Ox64 SBC - Connecting, Flashing and Booting Linux! ($8 from Pine64)](https://www.youtube.com/watch?v=czRtF-UNiEY): A short video on how to connect to the Ox64, flash and boot

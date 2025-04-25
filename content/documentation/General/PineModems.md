@@ -6,7 +6,9 @@ menu:
     title:
     parent: "General"
     identifier: "General/PineModems"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PineModems
 ---
 
 ## PINE64 position on alternative firmware

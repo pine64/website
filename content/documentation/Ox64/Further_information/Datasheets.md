@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Ox64/Further_information"
     identifier: "Ox64/Further_information/Datasheets"
-    weight: 
+    weight:
 ---
 
 Bouffalo BL808 SoC information:

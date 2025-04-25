@@ -8,6 +8,8 @@ menu:
     parent: "PinePhone/Software_tricks"
     identifier: "PinePhone/Software_tricks/Crust"
     weight: 4
+aliases:
+  - /wiki/Crust
 ---
 
 As per the README.md on [the crust github](https://github.com/crust-firmware/crust):

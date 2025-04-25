@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineTime/Further_information"
     identifier: "PineTime/Further_information/Datasheets,_schematics_and_certifications"
-    weight: 
+    weight:
 ---
 
 ## Schematics

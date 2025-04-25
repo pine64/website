@@ -6,7 +6,9 @@ menu:
     title:
     parent: "PinePhone/Further_information"
     identifier: "PinePhone/Further_information/Ubuntu_Touch_design"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PinePhone_UBports_OS_Design_Discussion
 ---
 
 ## Why this page

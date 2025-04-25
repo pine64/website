@@ -6,7 +6,9 @@ menu:
     title:
     parent: "PinePhone"
     identifier: "PinePhone/FAQ"
-    weight: 
+    weight:
+aliases:
+  - /PinePhone_FAQ
 ---
 
 A list of frequently asked question.
@@ -129,10 +131,6 @@ Currently, due to the magnetometer not being hooked up in software at this time,
 #### How can I install an operating system on the SD card / eMMC?
 
 See [Installation instructions](/documentation/PinePhone/Installation_instructions).
-
-### Updating
-
-Read the [Update instructions](/documentation/PinePhone/Software/Updating_instructions).
 
 ### Booting
 

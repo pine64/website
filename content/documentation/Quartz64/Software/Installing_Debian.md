@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Quartz64/Software"
     identifier: "Quartz64/Software/Installing_Debian"
-    weight: 
+    weight:
 ---
 
 It is possible to install Debian onto eMMC of the [Quartz64](/documentation/Quartz64) from the pgewipout quartz64_ci imaged to a Micro SDcard, or vice versa.

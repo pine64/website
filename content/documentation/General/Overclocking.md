@@ -6,7 +6,9 @@ menu:
     title:
     parent: "General"
     identifier: "General/Overclocking"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Overclocking
 ---
 
 {{< admonition type="warning" >}}

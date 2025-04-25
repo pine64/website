@@ -6,7 +6,9 @@ menu:
     title:
     parent: "Pinebook_Pro/Software"
     identifier: "Pinebook_Pro/Software/Debian_installer"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Pinebook_Pro_Debian_Installer
 ---
 
 * This is an image creator and Debian installer that runs from an existing Linux OS and installs Debian Bullseye

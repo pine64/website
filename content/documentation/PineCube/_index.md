@@ -6,7 +6,9 @@ menu:
     title:
     parent:
     identifier: "PineCube"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PineCube
 ---
 
 {{< figure src="/documentation/PineCube/images/PineCube.jpg" title="The PineCube" width="400" >}}

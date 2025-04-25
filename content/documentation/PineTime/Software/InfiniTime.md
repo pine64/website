@@ -6,7 +6,9 @@ menu:
     title:
     parent: "PineTime/Software"
     identifier: "PineTime/Software/InfiniTime"
-    weight: 
+    weight:
+aliases:
+  - /wiki/InfiniTime
 ---
 
 ## InfiniTime

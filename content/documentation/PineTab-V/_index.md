@@ -7,6 +7,8 @@ menu:
     parent:
     identifier: "PineTab-V"
     weight:
+aliases:
+  - /wiki/PineTab-V
 ---
 
 {{< figure src="/documentation/PineTab-V/images/Pinetabv_1.jpg" title="The PineTab-V with the detachable keyboard attached" width="250" >}}

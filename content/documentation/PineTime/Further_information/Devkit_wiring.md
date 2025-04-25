@@ -6,7 +6,10 @@ menu:
     title:
     parent: "PineTime/Further_information"
     identifier: "PineTime/Further_information/Devkit_wiring"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PineTime_Devkit_Wiring
+  - /wiki/PineTime_devkit_wiring
 ---
 
 This article will help you get up to scratch about how to connect your PineTime to your hardware debugger and what to keep in mind.

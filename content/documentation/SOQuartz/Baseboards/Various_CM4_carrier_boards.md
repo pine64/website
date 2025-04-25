@@ -6,7 +6,7 @@ menu:
     title:
     parent: "SOQuartz/Baseboards"
     identifier: "SOQuartz/Baseboards/Various_CM4_carrier_boards"
-    weight: 
+    weight:
 ---
 
 * For CM4 carrier board comprehensive list, please visit [Jeff Geerling collection](https://pipci.jeffgeerling.com/boards_cm)

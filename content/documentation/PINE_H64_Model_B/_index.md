@@ -6,7 +6,10 @@ menu:
     title:
     parent:
     identifier: "PINE_H64_Model_B"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PINE_H64
+  - /wiki/PINE_H64_Main_Page
 ---
 
 {{< figure src="images/pineh64modelb.png" title="The PINE H64 Model B" width="400" >}}

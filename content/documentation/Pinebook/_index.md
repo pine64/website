@@ -6,7 +6,10 @@ menu:
     title:
     parent:
     identifier: "Pinebook"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Pinebook
+  - /wiki/1080P_Pinebook
 ---
 
 {{< figure src="images/pinebook.jpg" title="The Pinebook" width="400" >}}

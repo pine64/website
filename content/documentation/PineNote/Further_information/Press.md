@@ -7,6 +7,8 @@ menu:
     parent: "PineNote/Further_information"
     identifier: "PineNote/Further_information/Press"
     weight: 99
+aliases:
+  - /wiki/PineNote_Press
 ---
 
 Vector images and pictures for the PineNote you can freely use for projects and press inquiries. Attribute the author if attribution is required via the license (such as CC BY and CC0).

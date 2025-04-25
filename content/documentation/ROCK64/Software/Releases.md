@@ -7,6 +7,9 @@ menu:
     parent: "ROCK64/Software"
     identifier: "ROCK64/Software/Releases"
     weight: 1
+aliases:
+  - /wiki/ROCK64_Software_Release
+  - /wiki/ROCK64_Software_Releases
 ---
 
 This page contains a list of all available releases for the [ROCK64](/documentation/ROCK64), as well as links to other resources.

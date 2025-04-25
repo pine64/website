@@ -6,7 +6,10 @@ menu:
     title:
     parent: "General"
     identifier: "General/U-Boot"
-    weight: 
+    weight:
+aliases:
+  - /wiki/U-Boot
+  - /wiki/Uboot
 ---
 
 {{< admonition type="tip" >}}

@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinebook_Pro/Features"
     identifier: "Pinebook_Pro/Features/LEDs"
-    weight: 
+    weight:
 ---
 
 In total, there are four LEDs on the Pinebook Pro, three of which are placed in the top-left side of the keyboard, and one near the barrel port:

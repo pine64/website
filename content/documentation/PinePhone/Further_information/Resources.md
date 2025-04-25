@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PinePhone/Further_information"
     identifier: "PinePhone/Further_information/Resources"
-    weight: 
+    weight:
 ---
 
 The following resources have been made available by Ondřej Jirman, a developer for the Pinephone:

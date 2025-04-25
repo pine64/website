@@ -6,7 +6,9 @@ menu:
     title:
     parent: "PineTime/Software"
     identifier: "PineTime/Software/Firmware_versioning_for_companion_apps"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Firmware_versioning_for_companion_apps
 ---
 
 BLE defines a standard service (Device Information Service, DIS) that allows BLE devices to expose information about them: hardware version, software version.

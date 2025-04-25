@@ -6,7 +6,9 @@ menu:
     title:
     parent: "PinePhone/Modem"
     identifier: "PinePhone/Modem/Carrier_support"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PinePhone_Carrier_Support
 ---
 
 {{% docs/construction %}}

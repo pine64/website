@@ -4,9 +4,9 @@ draft: false
 menu:
   docs:
     title:
-    parent: 
+    parent:
     identifier: "PineVox"
-    weight: 
+    weight:
 ---
 
 {{< figure src="/documentation/PineVox/images/pinevox.jpg" title="The PineVox" width="600" >}}

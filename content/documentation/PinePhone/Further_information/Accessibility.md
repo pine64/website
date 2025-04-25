@@ -6,7 +6,9 @@ menu:
     title:
     parent: "PinePhone/Further_information"
     identifier: "PinePhone/Further_information/Accessibility"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PinePhone_Accessibility
 ---
 
 Although most accessibility support for the [PinePhone](/documentation/PinePhone) and [PinePhone Pro](/documentation/PinePhone_Pro) is implemented in software, the underlying hardware is still relevant. This page discusses some issues and options.

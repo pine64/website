@@ -6,7 +6,9 @@ menu:
     title:
     parent: "PineTime/Flashing"
     identifier: "PineTime/Flashing/SD_MCUBoot"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PineTime_SD_MCUBoot
 ---
 
 ## The Problem

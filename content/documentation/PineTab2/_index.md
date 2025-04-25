@@ -6,7 +6,9 @@ menu:
     title:
     parent:
     identifier: "PineTab2"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PineTab2
 ---
 
 {{< figure src="/documentation/PineTab2/images/PineTab2_Front.jpg" title="The PineTab2 with the detachable keyboard attached" width="250" >}}

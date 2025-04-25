@@ -7,6 +7,8 @@ menu:
     parent: "Pinebook_Pro"
     identifier: "Pinebook_Pro/Dock"
     weight: 3
+aliases:
+  - /wiki/Pinebook_Pro_Dock
 ---
 
 The **Pinebook Pro USB-C Docking Deck** can be used to extend the [Pinebook Pro](/documentation/Pinebook_Pro) with additional functionality. It is custom designed for both, physical dimensions and ports, to compliment the Pinebook Pro laptop. It has been tested on several disparate platforms and seems to be fully compatible with Android, Windows, ChromeOS, and GNU/Linux. It may be compatible with Apple systems, but this has yet to be documented.

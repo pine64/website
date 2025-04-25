@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinecil"
     identifier: "Pinecil/Checklist"
-    weight: 
+    weight:
 ---
 
 Prep tasks:

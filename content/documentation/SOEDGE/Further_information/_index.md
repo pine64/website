@@ -6,7 +6,7 @@ menu:
     title:
     parent: "SOEDGE"
     identifier: "SOEDGE/Further_information"
-    weight: 
+    weight:
 ---
 
 {{< children >}}

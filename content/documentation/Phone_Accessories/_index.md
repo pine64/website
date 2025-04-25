@@ -6,7 +6,10 @@ menu:
     title:
     parent:
     identifier: "Phone_Accessories"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PinePhone_(Pro)_Add-ons
+  - /wiki/PinePhone_Hardware_Accessory_Compatibility
 ---
 
 The following add-ons are available:

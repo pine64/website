@@ -6,7 +6,10 @@ menu:
     title:
     parent: "Quartz64/Software"
     identifier: "Quartz64/Software/Installing_Arch_Linux_ARM"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Quartz64_Installing_Arch_Linux_ARM
+  - /wiki/Installing_Arch_Linux_ARM_On_The_Quartz64
 ---
 
 The articles explains the installation of Arch Linux ARM on the [Quartz64](/documentation/Quartz64).

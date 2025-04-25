@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinebook_Pro/Features"
     identifier: "Pinebook_Pro/Features/External_ports_list"
-    weight: 
+    weight:
 ---
 
 Here are a list of the external ports. See [Technical Reference - Expansion Ports](/documentation/Pinebook_Pro/Further_information/Specifications/#expansion_ports) for port specifications.

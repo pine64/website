@@ -6,7 +6,7 @@ menu:
     title:
     parent: "SOQuartz/Baseboards"
     identifier: "SOQuartz/Baseboards/BLADE"
-    weight: 
+    weight:
 ---
 
 {{< figure src="/documentation/SOQuartz/images/SOQuartz_BLADE_Dimension.jpg" title="SOQuartz BLADE Baseboard" width="400" >}}

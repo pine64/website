@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineTime/Accessory"
     identifier: "PineTime/Accessory/Watch_band"
-    weight: 
+    weight:
 ---
 
 The PineTime uses a standard 20mm watch band / strap. There is a [thread](https://forum.pine64.org/showthread.php?tid=9392&pid=81902) in the forum discussing this.

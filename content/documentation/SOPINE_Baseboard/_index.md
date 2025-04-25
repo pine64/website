@@ -6,7 +6,10 @@ menu:
     title:
     parent:
     identifier: "SOPINE_Baseboard"
-    weight: 
+    weight:
+aliases:
+  - /wiki/SOPINE_Baseboard
+  - /wiki/SOPine_Baseboard
 ---
 
 {{< figure src="/documentation/images/SOPINE_Baseboard_front.jpg" width="400" >}}

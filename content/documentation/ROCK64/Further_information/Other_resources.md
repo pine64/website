@@ -6,7 +6,7 @@ menu:
     title:
     parent: "ROCK64/Further_information"
     identifier: "ROCK64/Further_information/Other_resources"
-    weight: 
+    weight:
 ---
 
 * [ROCK64 Forum](https://forum.pine64.org/forumdisplay.php?fid=85)

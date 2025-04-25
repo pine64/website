@@ -6,7 +6,10 @@ menu:
     title:
     parent:
     identifier: "ROCKPro64"
-    weight: 
+    weight:
+aliases:
+  - /wiki/ROCKPro64
+  - /wiki/ROCKPro64_Main_Page
 ---
 
 {{< figure src="/documentation/images/rockpro64.svg" title="The ROCKPro64" width="400" >}}

@@ -6,7 +6,7 @@ menu:
     title:
     parent: "ROCKPro64/Further_information"
     identifier: "ROCKPro64/Further_information/Schematics_and_certifications"
-    weight: 
+    weight:
 ---
 
 * Board dimensions: 133&nbsp;mm&nbsp;x 80&nbsp;mm&nbsp;x 19&nbsp;mm

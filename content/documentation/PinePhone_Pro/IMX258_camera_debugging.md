@@ -6,7 +6,9 @@ menu:
     title:
     parent: "PinePhone_Pro"
     identifier: "PinePhone_Pro/IMX258_camera_debugging"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PinePhone_Pro/IMX258_Camera_Debugging
 ---
 
 {{% docs/construction %}}

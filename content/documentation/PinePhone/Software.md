@@ -9,7 +9,8 @@ menu:
     identifier: "PinePhone/Software"
     weight: 4
 aliases:
-  - "/documentation/PinePhone/Software/Releases"
+  - /documentation/PinePhone/Software/Releases
+  - /wiki/PinePhone_Software_Releases
 ---
 
 This page contains a list of all available releases and tools for the [PinePhone](/documentation/PinePhone) in alphabetical order.
@@ -18,7 +19,7 @@ This page contains a list of all available releases and tools for the [PinePhone
  Some releases may not have a good setup for the backlight at low brightness. If configured too low, the backlight shuts down completely, but the screen is still displayed and usable in bright front-light.
 {{< /admonition >}}
 
-See [Installation instructions](/documentation/PinePhone/Installation/) on how to install the operating systems. Please see [Update instructions](/documentation/PinePhone/Software/Updating_instructions) for how to update the phone.
+See [Installation instructions](/documentation/PinePhone/Installation/) on how to install the operating systems.
 
 ## Software Releases
 

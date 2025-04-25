@@ -6,7 +6,9 @@ menu:
     title:
     parent:
     identifier: "SOEDGE_Baseboard"
-    weight: 
+    weight:
+aliases:
+  - /wiki/SOEDGE_Baseboard
 ---
 
 {{< figure src="/documentation/images/SOEDGE_Baseboard.png" title="The SOEDGE Baseboard" width="400" >}}

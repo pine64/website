@@ -6,7 +6,9 @@ menu:
     title:
     parent:
     identifier: "Pine_A64-LTS"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PINE_A64-LTS
 ---
 
 {{< figure src="/documentation/images/PINEA64_LTS_sideimg.jpg" title="The PINE A64-LTS" width="400" >}}

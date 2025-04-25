@@ -6,7 +6,10 @@ menu:
     title:
     parent: "Pinebook_Pro/Software"
     identifier: "Pinebook_Pro/Software/Installing_Arch_Linux_ARM"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Pinebook_Pro_Installing_Arch_Linux_ARM
+  - /wiki/Installing_Arch_Linux_ARM_On_The_Pinebook_Pro
 ---
 
 These instructions can be followed to install Arch Linux ARM on an SD Card, USB Flash Drive, eMMC, or even NVMe if your U-Boot supports it (example Tow-Boot on SPI).

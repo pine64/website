@@ -6,7 +6,7 @@ menu:
     title:
     parent: "SOQuartz/Software"
     identifier: "SOQuartz/Software/BSP_Linux_SDK"
-    weight: 
+    weight:
 ---
 
 ## BSP Linux SDK ver 4.19 for Quartz64 model A SBC

@@ -6,7 +6,9 @@ menu:
     title:
     parent: "PinePhone/Further_information"
     identifier: "PinePhone/Further_information/Press"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PinePhone_Press
 ---
 
 Vector images and pictures of the [PinePhone](/documentation/PinePhone) and [PinePhone Pro](/documentation/PinePhone_Pro) you can freely use for projects and press inquiries. Attribute the author if attribution is required via the license (such as CC BY).

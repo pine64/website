@@ -6,7 +6,9 @@ menu:
     title:
     parent:
     identifier: "PineTime"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PineTime
 ---
 
 {{< figure src="/documentation/images/Pinetime.png" title="The PineTime" width="400" >}}

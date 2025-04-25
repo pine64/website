@@ -7,6 +7,8 @@ menu:
     parent: "SOPINE/Software"
     identifier: "SOPINE/Software/Armbian_LCD_and_camera"
     weight: 99
+aliases:
+  - /wiki/SOPINE_Armbian_LCD_and_Camera
 ---
 
 Guide on how to get the camera and the LCD working on the [SOPINE](/documentation/SOPINE) on Armbian.

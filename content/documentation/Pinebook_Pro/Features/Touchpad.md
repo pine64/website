@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinebook_Pro/Features"
     identifier: "Pinebook_Pro/Features/Touchpad"
-    weight: 
+    weight:
 ---
 
 Documentation for the touchpad can be found in [Datasheets for Components and Peripherals](/documentation/Pinebook_Pro/Further_information/Datasheets/). It is the only component of the Pinebook Pro held in place with strong adhesive tape. Here are some of its features:

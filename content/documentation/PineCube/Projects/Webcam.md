@@ -6,7 +6,9 @@ menu:
     title:
     parent: "PineCube/Projects"
     identifier: "PineCube/Projects/Webcam"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PineCube_as_a_webcam
 ---
 
 The PineCube can be powered by the host and communicate as a peripheral. First, you’ll need to a dual USB-A (male) cable to plug it into your computer. Note that the Micro-USB port can be used only for power because the data lines are not connected.

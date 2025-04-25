@@ -6,7 +6,9 @@ menu:
     title:
     parent: "Pinecil"
     identifier: "Pinecil/Guides_to_soldering"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Pinecil_Guides_to_Soldering
 ---
 
 This article is a list of convenient links to guides on soldering. Although it’s not directly related to [Pinecil](/documentation/Pinecil) hardware, many PINE64 members ask for this kind of information in daily live chat. If you don’t find something here, then try an Internet search as this is just a starting point for convenience.

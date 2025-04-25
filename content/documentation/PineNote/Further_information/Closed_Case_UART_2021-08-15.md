@@ -1,12 +1,14 @@
 ---
 title: "Closed case UART/2021-08-15"
-draft: true # Page is not releasd
+draft: true # Page is not released
 menu:
   docs:
     title:
     parent: "PineNote/Further_information"
     identifier: "PineNote/Further_information/Closed_Case_UART_2021-08-15"
     weight: 6
+aliases:
+  - /wiki/PineNote/Hardware_Changes/Closed_Case_UART/2021-08-15
 ---
 
 Times are in UTC-5

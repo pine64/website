@@ -6,7 +6,9 @@ menu:
     title:
     parent: "Introduction"
     identifier: "Introduction/Where_to_report_bugs"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Where_to_Report_Bugs
 ---
 
 Reporting bugs is a great way to contribute and to help bringing order at managing and solving issues.

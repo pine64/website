@@ -6,7 +6,9 @@ menu:
     title:
     parent: "General"
     identifier: "General/Mali_driver"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Mali_Driver
 ---
 
 Here is the good DRM powerpoint presentation by Free Electron: https://free-electrons.com/pub/conferences/2017/kr/ripard-drm/ripard-drm.pdf

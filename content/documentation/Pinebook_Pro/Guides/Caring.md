@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinebook_Pro/Guides"
     identifier: "Pinebook_Pro/Guides/Caring"
-    weight: 
+    weight:
 ---
 
 ## Bypass Cables

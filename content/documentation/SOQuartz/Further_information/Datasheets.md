@@ -6,7 +6,7 @@ menu:
     title:
     parent: "SOQuartz/Further_information"
     identifier: "SOQuartz/Further_information/Datasheets"
-    weight: 
+    weight:
 ---
 
 Rockchip RK3566 SoC information:

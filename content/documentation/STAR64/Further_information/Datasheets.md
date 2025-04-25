@@ -6,7 +6,7 @@ menu:
     title:
     parent: "STAR64/Further_information"
     identifier: "STAR64/Further_information/Datasheets"
-    weight: 
+    weight:
 ---
 
 Star64 JH7110 SoC information:

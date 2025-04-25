@@ -7,6 +7,11 @@ menu:
     parent: "Pinebook"
     identifier: "Pinebook/Software"
     weight: 3
+aliases:
+  - /wiki/Pinebook_Software_Release
+  - /wiki/Pinebook_Software_Releases
+  - /wiki/1080P_Pinebook_Software_Release
+  - /wiki/1080P_Pinebook_Software_Releases
 ---
 
 This page contains a list of all available releases and tools for the [Pinebook](/documentation/Pinebook).

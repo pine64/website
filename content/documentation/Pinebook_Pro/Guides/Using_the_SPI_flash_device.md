@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinebook_Pro/Guides"
     identifier: "Pinebook_Pro/Guides/Using_the_SPI_flash_device"
-    weight: 
+    weight:
 ---
 
 {{< admonition type="warning" >}}

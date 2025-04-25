@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pinebook_Pro/Further_information"
     identifier: "Pinebook_Pro/Further_information/Datasheets"
-    weight: 
+    weight:
 ---
 
 Rockchip RK3399 SoC information:

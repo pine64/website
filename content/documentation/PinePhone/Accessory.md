@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PinePhone"
     identifier: "PinePhone/Accessory"
-    weight: 
+    weight:
 ---
 
 ## Add-ons

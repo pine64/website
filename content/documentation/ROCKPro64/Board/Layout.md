@@ -6,7 +6,7 @@ menu:
     title:
     parent: "ROCKPro64/Board"
     identifier: "ROCKPro64/Board/Layout"
-    weight: 
+    weight:
 ---
 
 {{< figure src="/documentation/images/ROCKPro64v21REAR.jpg" width="400" >}}

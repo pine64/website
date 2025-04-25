@@ -7,6 +7,8 @@ menu:
     parent: "Phone_Accessories"
     identifier: "Phone_Accessories/Keyboard"
     weight: 3
+aliases:
+  - /wiki/PinePhone_(Pro)_Keyboard
 ---
 
 {{< figure src="/documentation/images/PP_KB_Front-1024x576.jpg" title="Picture of the PinePhone (Pro) Keyboard" width="400" >}}

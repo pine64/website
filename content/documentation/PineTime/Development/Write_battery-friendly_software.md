@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineTime/Development"
     identifier: "PineTime/Development/Write_battery-friendly_software"
-    weight: 
+    weight:
 ---
 
 The key to save battery is to enable only what you need when you need it. nRF52832 has a lot of functionalities allowing you to draw as little current as possible. Here are some tips and tricks:

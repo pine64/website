@@ -6,7 +6,7 @@ menu:
     title:
     parent: "STAR64/Further_information"
     identifier: "STAR64/Further_information/Schematics_and_certifications"
-    weight: 
+    weight:
 ---
 
 Model "A" Baseboard Dimensions: 133mm&times;80mm&times;19mm

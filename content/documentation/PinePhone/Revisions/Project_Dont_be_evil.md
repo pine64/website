@@ -7,7 +7,9 @@ menu:
     title:
     parent: "PinePhone/Revisions"
     identifier: "PinePhone/Revisions/Project_Dont_be_evil"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Project_Don't_be_evil
 ---
 
 {{< figure src="/documentation/images/Qee3ovj.jpg" >}}

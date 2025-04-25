@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineTab"
     identifier: "PineTab/Further_information"
-    weight: 
+    weight:
 ---
 
 {{< children >}}

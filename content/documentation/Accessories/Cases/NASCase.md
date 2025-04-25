@@ -6,7 +6,11 @@ menu:
     title:
     parent: "Accessories/Cases"
     identifier: "Accessories/Cases/NASCase"
-    weight: 
+    weight:
+aliases:
+  - /wiki/NASCase
+  - /wiki/NASCase-STAR64
+  - /wiki/NAS_Case
 ---
 
 The PINE64 NAS Case is intended for either a Network Attached Storage (NAS) or Desktop application, but it can also be used in a number of other server capacities. It is built from precision-cut and powder-coated aluminum. The physical dimensions are 232.4mm (Width) x 105.0mm (Height) x 145.2mm (Depth).

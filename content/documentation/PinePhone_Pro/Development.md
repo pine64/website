@@ -9,6 +9,7 @@ menu:
     weight: 98
 aliases:
   - /documentation/PinePhone_Pro/Various/Development/
+  - /wiki/PinePhone_Pro_Development
 ---
 
 This page documents development processes and provides links to resources to help prospective contributors get started. For an overview of the current software state see [software state](/documentation/PinePhone_Pro/Software/Software_state/).

@@ -6,7 +6,9 @@ menu:
     title:
     parent: "Quartz64/How-Tos"
     identifier: "Quartz64/How-Tos/Using_a_PCF8574"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Quartz64_Model_A_using_a_PCF8574
 ---
 
 In this article, we’ll go over how to hook up a PCF8574 I^2^C I/O extender to a [Quartz64](/documentation/Quartz64) Model A single-board computer, including what device tree changes to make and how to control it.

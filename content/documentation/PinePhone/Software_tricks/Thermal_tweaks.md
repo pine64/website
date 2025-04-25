@@ -7,7 +7,9 @@ menu:
     title:
     parent: "PinePhone/Software_tricks"
     identifier: "PinePhone/Software_tricks/Thermal_tweaks"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PinePhone_Thermal_Tweaks
 ---
 
 This page explains how to read the thermal sensor data, and how to read and change the default settings.

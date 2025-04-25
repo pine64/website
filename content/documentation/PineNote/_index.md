@@ -6,7 +6,9 @@ menu:
     title:
     parent:
     identifier: "PineNote"
-    weight: 
+    weight:
+aliases:
+  - /wiki/PineNote
 ---
 
 {{< figure src="/documentation/images/PineNote-1.jpg" title="The PineNote" width="400" >}}

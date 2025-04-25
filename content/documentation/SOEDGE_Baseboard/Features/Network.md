@@ -6,7 +6,7 @@ menu:
     title:
     parent: "SOEDGE_Baseboard/Features"
     identifier: "SOEDGE_Baseboard/Features/Network"
-    weight: 
+    weight:
 ---
 
 * 10/100/1000Mbps Ethernet

@@ -7,6 +7,8 @@ menu:
     parent: "ROCKPro64"
     identifier: "ROCKPro64/Getting_started"
     weight: 1
+aliases:
+  - /wiki/ROCKPro64_Getting_Started
 ---
 
 This section gives important information to get the board up and running.

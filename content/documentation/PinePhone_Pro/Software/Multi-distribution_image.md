@@ -7,6 +7,8 @@ menu:
     parent: "PinePhone_Pro/Software"
     identifier: "PinePhone_Pro/Software/Multi-distribution_image"
     weight: 99
+aliases:
+  - /wiki/PinePhone_Pro/Create_a_multi-distribution_image_using_rk2aw
 ---
 
 This article explains how to install a multiple linux distribution environment on your PinePhone Pro. You can choose to install this environment to the phone’s internal eMMC memory or to a microSD card. These instructions also integrate with the [multi-distribution image](/documentation/PinePhone_Pro/Software/Releases/#multi_distribution_image) releases page section.

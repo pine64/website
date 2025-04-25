@@ -7,6 +7,9 @@ menu:
     parent: "SOPINE"
     identifier: "SOPINE/Pins_and_GPIOs"
     weight: 2
+aliases:
+  - /wiki/SOPine_GPIO_Alternate_Functions_Table
+  - /wiki/SOPine_Pin_Assignment_Table
 ---
 
 ## GPIO Alternate Functions Table

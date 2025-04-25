@@ -6,7 +6,9 @@ menu:
     title:
     parent: "Pinecil"
     identifier: "Pinecil/Tips"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Pinecil_Tips
 ---
 
 This article is about the available tips for the [Pinecil](/documentation/Pinecil) and how they work.

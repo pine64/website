@@ -7,6 +7,9 @@ menu:
     parent: "SOEDGE"
     identifier: "SOEDGE/Releases"
     weight: 1
+aliases:
+  - /wiki/SOEDGE_Software_Releases
+  - /wiki/SOEdge_Software_Releases
 ---
 
 Releases for the SOEDGE.

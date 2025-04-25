@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineCube/Software"
     identifier: "PineCube/Software/Buildroot"
-    weight: 
+    weight:
 ---
 
 	

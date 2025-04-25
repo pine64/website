@@ -6,7 +6,9 @@ menu:
     title:
     parent:
     identifier: "Pinebook_Pro"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Pinebook_Pro
 ---
 
 {{< figure src="/documentation/images/PBP.jpg" title="Pinebook Pro running Debian with MATE" width="400" >}}

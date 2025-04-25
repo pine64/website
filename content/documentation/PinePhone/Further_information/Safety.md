@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PinePhone/Further_information"
     identifier: "PinePhone/Further_information/Safety"
-    weight: 
+    weight:
 ---
 
 ## General recommendations

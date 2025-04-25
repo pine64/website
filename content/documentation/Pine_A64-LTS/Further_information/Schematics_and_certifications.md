@@ -6,7 +6,7 @@ menu:
     title:
     parent: "Pine_A64-LTS/Further_information"
     identifier: "Pine_A64-LTS/Further_information/Schematics_and_certifications"
-    weight: 
+    weight:
 ---
 
 * Model "A" Baseboard Dimensions: 133mm x 80mm x 19mm

@@ -7,6 +7,8 @@ menu:
     parent: "PineNote/Development"
     identifier: "PineNote/Development/Booting_Linux"
     weight: 3
+aliases:
+  - /wiki/PineNote_Development/Booting_Linux
 ---
 
 {{< admonition type="warning" >}}

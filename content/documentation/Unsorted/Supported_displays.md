@@ -6,7 +6,10 @@ menu:
     title:
     parent: "Unsorted"
     identifier: "Unsorted/Supported_displays"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Supported_Displays
+  - /wiki/MIPI-DSI_Displays
 ---
 
 {{< admonition type="important" >}}

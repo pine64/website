@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineTime/Accessory"
     identifier: "PineTime/Accessory/Cases"
-    weight: 
+    weight:
 ---
 
 There are no cases for PineTime yet, but some cases for Fitbit are suitable for it. Cases for Fitbit have one microphone hole, which is unnecessary for the PineTime, but otherwise they fit perfectly (such as the _Soft TPU case for Fitbit Versa 2/Versa Lite_).

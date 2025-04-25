@@ -10,6 +10,7 @@ menu:
     weight:
 aliases:
   - /documentation/PinePhone/Hardware_fixes_and_mods/PinePhone_1.2b_R1318_backlight_Hardware_Fix/
+  - /wiki/PinePhone_1.2b_R1318_backlight_Hardware_Fix
 ---
 
 This page details a hardware fix for an issue that was found on early [PinePhone](/documentation/PinePhone) hardware revisions (see [PinePhone](/documentation/PinePhone/Revisions/) for an overview of the different revisions) and has been fixed since the 1.2b hardware revision.

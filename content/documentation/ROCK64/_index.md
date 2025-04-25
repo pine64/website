@@ -6,7 +6,11 @@ menu:
     title:
     parent:
     identifier: "ROCK64"
-    weight: 
+    weight:
+aliases:
+  - /wiki/Rock64
+  - /wiki/ROCK64
+  - /wiki/ROCK64_Main_Page
 ---
 
 {{< figure src="/documentation/ROCK64/images/Rock64.jpg" title="The ROCK64" width="400" >}}

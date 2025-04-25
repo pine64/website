@@ -6,7 +6,7 @@ menu:
     title:
     parent: "SOQuartz/Further_information"
     identifier: "SOQuartz/Further_information/Specifications"
-    weight: 
+    weight:
 ---
 
 The SOQuartz is based on the [Rockchip RK3566](https://www.rock-chips.com/a/en/products/RK35_Series/2021/0113/1274.html).

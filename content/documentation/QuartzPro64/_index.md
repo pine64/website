@@ -7,6 +7,9 @@ menu:
     parent:
     identifier: "QuartzPro64"
     weight: 1
+aliases:
+  - /wiki/QuartzPro64
+  - /wiki/QuartzPro64_Development
 ---
 
 {{< figure src="/documentation/images/Quartzpro64_whole_board_top_resized.jpeg" title="The QuartzPro64 development board, front side" height="250" >}}
