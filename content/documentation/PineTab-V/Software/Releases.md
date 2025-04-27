@@ -14,7 +14,15 @@ aliases:
 This page contains a list of all available releases and tools for the PineTab-V in alphabetical order. 
 
 ## Factory releases
+### Batch 2 (2025)
+The 2nd batch of PineTab-V devices ship with a Debian Bookworm image from StarFive. This can also be flashed to a batch 1 PineTab-V. 
 
+* [github.com/starfive-tech/Debian/releases/tag/PineTab-V-v1.3.0](https://github.com/starfive-tech/Debian/releases/tag/PineTab-V-v1.3.0)
+
+The instructions for flashing this image can be found in the [StarFive PineTab-V release notes document](/blog/files/April_2025/PineTab-V_StarFive_Build_Debian_Release_Notes_v1.0.0.pdf). 
+
+
+### Batch 1 (2023)
 The PineTab-V ships with _Factory Test Code_. The factory test reference source code can be found here:
 
 * [PineTab-V_factorytestcode_SDK-20230725.tar.gz](https://files.pine64.org/SDK/PineTab-V/PineTab-V_factorytestcode_SDK-20230725.tar.gz) from _pine64.org_ (8.36GB, MD5 of the TAR-GZip file: _3e35e2760d82155b024f7601ac2b1275_)
