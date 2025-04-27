@@ -13,9 +13,9 @@ menu:
 
 The PineNote is based on the in 2021 released Rockchip RK3566 SoC. The upstreaming status of the SoC functionality can be found on the [Quartz64 development](/documentation/Quartz64/Development#upstreaming_status) documentation page of the Quartz64 single-board computer using the same SoC. In the [PineNote development](/documentation/PineNote/Development/#mainline_development) documentation page you’ll find the items specific for the PineNote.
 
-The early adopter’s batch of the PineNote is aimed solely at early adopters - more specifically, the units are solely intended to find their way into the hands of users with extensive Linux experience. If you’re looking to buy a PineNote in the first batch, you must expect to write software for it, not to write notes on it. The software shipping from the factory for the first batch will not be suitable for taking notes, reading e-books, or writing your dissertation. It may not even boot to a graphical environment.
+The community edition batch of the PineNote is aimed solely at users with extensive Linux experience. The software while it has improved is still prone to software breaking issues, so users must be prepared to get their hands dirty. This batch is suitable for taking notes, reading ebooks and documents, and general tasks such as web browsing.
 
-An early version of a GNOME-based Debian image is available for [testing](/documentation/PineNote/Releases), but should not be expected to meet general-user readiness.
+The current default Debian firmware is available for users to download [here](https://github.com/PNDeb/pinenote-debian-image/releases). All core features works well out of the box (taking notes, reading ebooks and documents) but there are still some issues that arise due to updates from Debian (Trixie) testing.
 
 ## Help and support
 
