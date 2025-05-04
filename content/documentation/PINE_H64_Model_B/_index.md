@@ -1,6 +1,7 @@
 ---
 title: "PINE H64 Model B"
 draft: false
+fullnote: true
 menu:
   docs:
     title:

@@ -3,38 +3,47 @@
 {{ $currentPage := .Page }}
 {{ $section := .Site.GetPage "section" (printf "/documentation/%s/" $parameter) }}
 
+{{ $namespace := printf "/documentation/%s/" $parameter }}
+
+<!-- URL rewriter -->
+{{ define "urlrewrite" }}
+  {{ $content := .content }}
+  {{ $namespace := .namespace }}
+
+  {{ $results := findRESubmatch `<a href="(.*?)">` $content }}
+  {{ range $results }}
+      {{ $outer := index . 0 }}
+      {{ $inner := index . 1 }}
+  
+      <!-- Change NAMESPACE/ABC#XYZ to #xyz -->
+      {{ $reformat1 := replaceRE (printf `^%s.*?#` $namespace) (printf `#`) $inner }}
+      {{ $reformat1_res := replace $outer $inner $reformat1}}
+      {{ $content = replace $content $outer $reformat1_res}}
+
+      <!-- Change NAMESPACE/ABC/XYZ/ to #xyz -->
+      {{ $subres := findRESubmatch (printf `^%s.*?/(.*?)/$` $namespace) $inner }}
+      {{ if $subres }}
+          {{ range $subres }}
+              {{ $interim2 := index . 1 | anchorize }}
+              {{ $reformat2 := printf "#%s" $interim2}}
+              {{ $reformat2_res := replace $outer $inner $reformat2}}
+              {{ $content = replace $content $outer $reformat2_res}}
+          {{ end }}
+      {{ end }}
+
+      <!-- Remove fullnote -->
+      {{ $content = replaceRE `div .*?class='fullnote ` `div style='display: none;' class='fullnote ` $content }}
+  
+  {{ end }}
+  {{ print $content | safeHTML }}
+
+{{ end }}
+
 <hr>
 
 <br>
 
-
-{{ $main := printf "/documentation/%s/" $parameter }}
-
-{{ $content := $section.Content }}
-
-<!-- URL rewriter -->
-{{ $results := findRESubmatch `<a href="(.*?)">` $content }}
-{{ range $results }}
-    {{ $outer := index . 0 }}
-    {{ $inner := index . 1 }}
-
-    {{ $reformat1 := replaceRE (printf `^%s.*?#` $main) (printf `#`) $inner }}
-    {{ $reformat1_res := replace $outer $inner $reformat1}}
-    {{ $content = replace $content $outer $reformat1_res}}
-
-    {{ $subres := findRESubmatch (printf `^%s.*?/(.*?)/$` $main) $inner }}
-    {{ if $subres }}
-        {{ range $subres }}
-            {{ $interim2 := index . 1 | anchorize }}
-            {{ $reformat2 := printf "#%s" $interim2}}
-            {{ $reformat2_res := replace $outer $inner $reformat2}}
-            {{ $content = replace $content $outer $reformat2_res}}
-        {{ end }}
-    {{ end }}
-
-{{ end }}
-
-{{ $content | safeHTML}}
+{{ template "urlrewrite" (dict "content" $section.Content "namespace" $namespace) }}
 
 {{ range $section.Pages.ByParam "menu.docs.weight"}}
     {{ if (ne . $currentPage) }}
@@ -55,32 +64,7 @@
             ">{{ .Title }}</a>
         </h1>
 
-        {{ $content := .Content }}
-
-        <!-- URL rewriter -->
-        {{ $results := findRESubmatch `<a href="(.*?)">` $content }}
-        {{ range $results }}
-            {{ $outer := index . 0 }}
-            {{ $inner := index . 1 }}
-        
-            {{ $reformat1 := replaceRE (printf `^%s.*?#` $main) (printf `#`) $inner }}
-            {{ $reformat1_res := replace $outer $inner $reformat1}}
-            {{ $content = replace $content $outer $reformat1_res}}
-        
-            {{ $subres := findRESubmatch (printf `^%s.*?/(.*?)/$` $main) $inner }}
-            {{ if $subres }}
-                {{ range $subres }}
-                    {{ $interim2 := index . 1 | anchorize }}
-                    {{ $reformat2 := printf "#%s" $interim2}}
-                    {{ $reformat2_res := replace $outer $inner $reformat2}}
-                    {{ $content = replace $content $outer $reformat2_res}}
-                {{ end }}
-            {{ end }}
-            
-        {{ end }}
-        
-        {{ $content | safeHTML}}
-
+        {{ template "urlrewrite" (dict "content" .Content "namespace" $namespace) }}
 
         {{ $currentPage := .Page }}
         {{ range $currentPage.Pages.ByParam "menu.docs.weight" }}
@@ -100,30 +84,7 @@
                 ">{{ .Title }}</a>
             </h2>
 
-            {{ $content := .Content }}
-
-            <!-- URL rewriter -->
-            {{ $results := findRESubmatch `<a href="(.*?)">` $content }}
-            {{ range $results }}
-                {{ $outer := index . 0 }}
-                {{ $inner := index . 1 }}
-            
-                {{ $reformat1 := replaceRE (printf `^%s.*?#` $main) (printf `#`) $inner }}
-                {{ $reformat1_res := replace $outer $inner $reformat1}}
-                {{ $content = replace $content $outer $reformat1_res}}
-            
-                {{ $subres := findRESubmatch (printf `^%s.*?/(.*?)/$` $main) $inner }}
-                {{ if $subres }}
-                    {{ range $subres }}
-                        {{ $interim2 := index . 1 | anchorize }}
-                        {{ $reformat2 := printf "#%s" $interim2}}
-                        {{ $reformat2_res := replace $outer $inner $reformat2}}
-                        {{ $content = replace $content $outer $reformat2_res}}
-                    {{ end }}
-                {{ end }}
-                
-            {{ end }}
-            {{ $content | safeHTML}}
+            {{ template "urlrewrite" (dict "content" .Content "namespace" $namespace) }}
 
                 {{ $currentPage := .Page }}
                 {{ range $currentPage.Pages.ByParam "menu.docs.weight" }}
@@ -143,30 +104,7 @@
                         ">{{ .Title }}</a>
                     </h2>
 
-                    {{ $content := .Content }}
-                    <!-- URL rewriter -->
-                    {{ $results := findRESubmatch `<a href="(.*?)">` $content }}
-                    {{ range $results }}
-                        {{ $outer := index . 0 }}
-                        {{ $inner := index . 1 }}
-                    
-                        {{ $reformat1 := replaceRE (printf `^%s.*?#` $main) (printf `#`) $inner }}
-                        {{ $reformat1_res := replace $outer $inner $reformat1}}
-                        {{ $content = replace $content $outer $reformat1_res}}
-                    
-                        {{ $subres := findRESubmatch (printf `^%s.*?/(.*?)/$` $main) $inner }}
-                        {{ if $subres }}
-                            {{ range $subres }}
-                                {{ $interim2 := index . 1 | anchorize }}
-                                {{ $reformat2 := printf "#%s" $interim2}}
-                                {{ $reformat2_res := replace $outer $inner $reformat2}}
-                                {{ $content = replace $content $outer $reformat2_res}}
-                            {{ end }}
-                        {{ end }}
-                        
-                    {{ end }}
-                    
-                    {{ $content | safeHTML}}
+                    {{ template "urlrewrite" (dict "content" .Content "namespace" $namespace) }}
 
                 {{ end }}
         

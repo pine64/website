@@ -1,6 +1,7 @@
 ---
 title: "ROCKPro64"
 draft: false
+fullnote: true
 menu:
   docs:
     title:

@@ -1,6 +1,7 @@
 ---
 title: "PineTab-V"
 draft: false
+fullnote: true
 menu:
   docs:
     title:

@@ -1,6 +1,7 @@
 ---
 title: "PinePhone Accessories"
 draft: false
+fullnote: true
 menu:
   docs:
     title:

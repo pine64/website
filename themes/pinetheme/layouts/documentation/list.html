@@ -28,6 +28,10 @@
 
                 <!-- ".Content" pulls from the markdown content of the corresponding _index.md -->
                 {{.Content}}
+
+                {{ if .Params.fullnote }}
+                    {{ partial "fullnote.html" . }}
+                {{ end }}
             </article>
 
             <!-- partial "doc_previousnext.html" . -->

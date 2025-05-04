@@ -1,6 +1,7 @@
 ---
 title: "PINE A64-LTS"
 draft: false
+fullnote: true
 menu:
   docs:
     title:

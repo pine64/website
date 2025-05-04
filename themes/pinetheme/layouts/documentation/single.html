@@ -28,6 +28,10 @@
 
                 <!-- Content -->
                 {{.Content}}
+
+                {{ if .Params.fullnote }}
+                    {{ partial "fullnote.html" . }}
+                {{ end }}
             </article>
 
             <!-- partial "doc_previousnext.html" . -->

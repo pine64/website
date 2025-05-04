@@ -1,6 +1,7 @@
 ---
 title: "SOPINE Baseboard"
 draft: false
+fullnote: true
 menu:
   docs:
     title:
