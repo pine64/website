@@ -980,7 +980,7 @@ tbody {
 
 /* Table of contents */
 nav#TableOfContents a {
-    color: var(--blue);
+    font-weight: 300 !important;
 }
 nav#TableOfContents ul, 
 nav#TableOfContents li {

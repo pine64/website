@@ -14,7 +14,7 @@
                 <header>
                     <h1>
                     {{ $ancestors := .Ancestors.Reverse }}
-                    {{ if ge (len $ancestors) 3 }}
+                    {{ if and (ge (len $ancestors) 3) (ne .File.BaseFileName "_full") }}
                         {{ range first 3 $ancestors | last 1 }}
                             <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>:
                         {{ end }}
