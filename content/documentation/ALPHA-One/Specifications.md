@@ -14,7 +14,7 @@ menu:
 * Based on [StarPro64 Single Board Computer wiki page](https://wiki.pine64.org/wiki/STARPro64)
 * Based on [ESWIN EIC7700X SoC](https://www.eswincomputing.com/en/products/index/36/10.html)
 
-{{< figure src="images/EIC7700X_Block_Diagram.png" title="EIC7700X block diagram" width="800" >}}
+{{< figure src="/documentation/ALPHA-One/images/EIC7700X_Block_Diagram.png" title="EIC7700X block diagram" width="800" >}}
 
 ## Features
 
