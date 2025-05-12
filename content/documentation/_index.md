@@ -30,6 +30,7 @@ The following PINE64 devices are available in the documentation
 | Single-board computers | [Ox64](Ox64)<br> [Oz64](Oz64)<br> [STAR64](STAR64)<br> [StarPro64](StarPro64)<br> [Quartz64](Quartz64)<br> [QuartzPro64](QuartzPro64)<br> [ROCKPro64](ROCKPro64)<br> [ROCK64](ROCK64)<br> [Pine A64](Pine_A64)<br> [Pine A64-LTS](Pine_A64-LTS)<br> [PINE H64 Model A](PINE_H64_Model_A)<br> [PINE H64 Model B](PINE_H64_Model_B) |
 | Set-top box | [RockBox](RockBox) |
 | Clusters and modules | [Clusterboard](Clusterboard)<br> [SOPINE](SOPINE)<br> [SOPINE Baseboard](SOPINE_Baseboard)<br> [SOEDGE](SOEDGE)<br> [SOEDGE Baseboard](SOEDGE_Baseboard)<br> [SOQuartz](SOQuartz) |
+| Generative AI Agent | [ALPHA-One](ALPHA-One) |
 | IP camera | [PineCube](PineCube) |
 | Power adapter | [PinePower](PinePower/Versions/PinePower)<br>[PinePower Desktop](PinePower/Versions/PinePower_Desktop)<br>[PinePower Desktop V2](PinePower/Versions/PinePower_Desktop_V2) |
 | Soldering iron | [Pinecil](Pinecil) |

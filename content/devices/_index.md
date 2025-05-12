@@ -59,6 +59,12 @@ description: "PINE64 has a variety of different devices. Find out more!"
     {{< devices/device_box link="/devices/soquartz" img="/documentation/SOQuartz/images/SOQuartz_module-1s.jpg" title="SOQuartz" text="" >}}
 {{</ flexbox >}}
 
+## Generative AI Agent
+
+{{< flexbox >}}
+    {{< devices/device_box link="/devices/alpha-one" img="/devices/images/alpha-one.jpg" title="ALPHA-One" text="" >}}
+{{</ flexbox >}}
+
 ## IP Cameras
 
 {{< flexbox >}}
