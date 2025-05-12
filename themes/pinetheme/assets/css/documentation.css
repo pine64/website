@@ -153,7 +153,7 @@ div#doc-page h1 {
 div#doc-page code {
     font-family: source code pro, lucida console, monospace;
     display: inline-block;
-    overflow-x: scroll;
+    overflow-x: auto;
     font-weight: 400;
     max-width: 98%;
     vertical-align: top;
@@ -166,7 +166,7 @@ div#doc-page p code {
 }
 div#doc-page pre {
     background-color: #f8f9fa;
-    overflow-x: scroll;
+    overflow-x: auto;
     outline: 1px solid #eaecf0;
 }
 div#doc-page td pre {
