@@ -32,8 +32,104 @@ CMS.registerEditorComponent({
         return `{{< credits ${obj.authors} >}}`;
     },
     toPreview: function(obj) {
-        return '<i>obj.authors</i>';
+        return '<i>'+obj.authors+'</i>';
     },
+});
+// fulldocs
+CMS.registerEditorComponent({
+    id: "fulldocs",
+    label: "Full documentation",
+    fields: [{
+            name: "section",
+            label: "Section",
+            widget: "string"
+        }
+    ],
+    pattern: /^{{< docs\/onepage section="(.*?)" >}}/,
+    fromBlock: function(match) {
+        return {
+            section: match[1]
+        };
+    },
+    toBlock: function(obj) {
+        return `{{< docs/onepage section="${obj.section}" >}}`;
+    },
+    toPreview: function(obj) {
+        return 'Full documentation for: <i>'+obj.section+'</i>';
+    },
+});
+// figure
+CMS.registerEditorComponent({
+  id: 'figure', // Unique identifier for the component
+  label: 'Figure', // Display name in the editor
+  fields: [
+    {
+      name: 'src',
+      label: 'Image Source',
+      widget: 'string',
+      required: true, // src is required
+    },
+    {
+      name: 'alt',
+      label: 'Alt Text',
+      widget: 'string',
+      required: false, // alt is optional
+    },
+    {
+      name: 'link',
+      label: 'Link URL',
+      widget: 'string',
+      required: false, // link is optional
+    },
+    {
+      name: 'caption',
+      label: 'Caption',
+      widget: 'string',
+      required: false, // caption is optional
+    },
+    {
+      name: 'class',
+      label: 'CSS Class',
+      widget: 'string',
+      required: false, // class is optional
+    },
+    {
+      name: 'title',
+      label: 'Title',
+      widget: 'string',
+      required: false, // title is optional
+    },
+    {
+      name: 'width',
+      label: 'Width',
+      widget: 'string',
+      required: false, // width is optional
+    },
+  ],
+  pattern: /^{{<\s*figure\s+src="([^"]+)"\s*(alt="([^"]+)")?\s*(link="([^"]+)")?\s*(caption="([^"]+)")?\s*(class="([^"]+)")?\s*(title="([^"]+)")?\s*(width="([^"]+)")?\s*>\s*}}$/,
+  fromBlock: function (match) {
+    return {
+      src: match[1],
+      alt: match[3] || '',
+      link: match[5] || '',
+      caption: match[7] || '',
+      class: match[9] || '',
+      title: match[11] || '',
+      width: match[13] || '',
+    };
+  },
+  toBlock: function (obj) {
+    return `{{< figure src="${obj.src}" alt="${obj.alt}" link="${obj.link}" caption="${obj.caption}" class="${obj.class}" title="${obj.title}" width="${obj.width}" >}}`;
+  },
+  toPreview: function (obj) {
+    return `
+      <figure class="${obj.class}">
+        <img src="${obj.src}" alt="${obj.alt}" title="${obj.title}" style="${obj.width ? `width: ${obj.width};` : ''}" />
+        ${obj.caption ? `<figcaption>${obj.caption}</figcaption>` : ''}
+        ${obj.link ? `<a href="${obj.link}">Read more</a>` : ''}
+      </figure>
+    `;
+  },
 });
 // toc
 CMS.registerEditorComponent({
