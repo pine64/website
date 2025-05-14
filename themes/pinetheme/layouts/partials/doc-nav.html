@@ -50,7 +50,7 @@
             
             {{ if and .HasChildren (or ($currentPage.IsMenuCurrent "docs" .) ($currentPage.HasMenuCurrent "docs" .)) }}
     
-                <li><ul>
+            <ul><li>
 
                 <!-- Children -->
                 {{ range .Children }}
@@ -60,7 +60,7 @@
                     {{ end }}
 
                     {{ if .HasChildren }}
-                        <li><ul>
+                    <ul><li>
 
                         <!-- Children-Children -->
                         {{ range .Children }}
@@ -70,11 +70,11 @@
                         {{ end }}
 
 
-                        </ul></li>
+                        </li></ul>
                     {{ end }}
                 {{ end }}
 
-                </ul></li>
+                </li></ul>
             {{ end }}
         {{ end }}
     {{ end }}

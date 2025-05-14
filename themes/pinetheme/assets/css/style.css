@@ -9,7 +9,7 @@ body {
 }
 
 :root {
-    --blue: #4496da;
+    --blue: rgb(0, 75, 160);
     --white: #ffffff;
 }
 /* Text styles */
@@ -1099,17 +1099,17 @@ div.podcast:hover {
     border-left: 1.5px solid;
     background-color: #fcfcfc;
     margin: 1.5rem 0;
-    color: #333333;
+    color: #1b1b1b;
 }
 .admonition .title {
     font-weight: 400;
 }
 .admonition-note {
-    background-color: #dfe7f8;
+    background-color: #f4f8ff;
     border-color: #3165cc;
 }
 .admonition-note .title {
-    color: #3165cc;
+    color: #1148b8;
 }
 .admonition-warning {
     background-color: #f8dfdf;

@@ -52,10 +52,10 @@
     font-size: .875rem;
 }
 #doc-nav a:hover {
-    color: #2F82C6;
+    color: var(--blue);
 }
 #doc-nav a.active {
-    color: #2F82C6;
+    color: var(--blue);
 }
 #doc-nav nav.sidebar-nav {
     position:-webkit-sticky; 
@@ -78,7 +78,7 @@
 #doc-nav .sidebar-nav-item {
     font-weight: 500;
     padding: 6px 4px;
-    color: #2F82C6;
+    color: var(--blue);
     font-size: 18px;
 }
 #doc-nav .sidebar-nav-subitem {
