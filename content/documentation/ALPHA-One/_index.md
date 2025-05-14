@@ -12,4 +12,4 @@ menu:
 
 The **ALPHA-One** is a Generative 7b LLM AI Agent based on StarPro64 board RISC-V based Single Board Computer with 20TOPS(int 8) NPU capability, and preinstalled 64G eMMC module contains 7b Deepseek/Owen LLM build in docker form.
 
-{{< figure src="/documentation/ALPHA-One/images/Alpha-One.jpg" title="The ALPHA-One" width="400" >}}
+{{< figure src="/documentation/ALPHA-One/images/Alpha-One.jpg" caption="The ALPHA-One" width="400" >}}

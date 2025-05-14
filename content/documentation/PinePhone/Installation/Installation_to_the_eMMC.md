@@ -27,7 +27,7 @@ The internal memory of the PinePhone (eMMC) can be flashed using multiple differ
  This only applies to the regular **PinePhone**, not the **PinePhone Pro**.
 {{< /admonition >}}
 
-{{< figure src="/documentation/images/jumpdrive.jpg" title="Jumpdrive running on the PinePhone" width="400" >}}
+{{< figure src="/documentation/images/jumpdrive.jpg" caption="Jumpdrive running on the PinePhone" width="400" >}}
 
 The internal eMMC flash storage can be flashed using the Jumpdrive utility by Danct12 and Martijn from postmarketOS. This utility boots from micro SD and exposes the internal eMMC flash storage when the PinePhone is connected to a computer. The process of flashing an OS to the exposed and mounted eMMC is identical to that of any other storage medium - e.g. a microSD card. You can use the _dd_ command or a utility such as Etcher or Gnome Disks, etc.
 

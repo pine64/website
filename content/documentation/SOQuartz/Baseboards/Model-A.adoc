@@ -9,7 +9,7 @@ menu:
     weight:
 ---
 
-{{< figure src="/documentation/SOQuartz/images/SOQuartz_model-A_baseboard.jpg" title="SOQuartz Model-A Baseboard" width="400" >}}
+{{< figure src="/documentation/SOQuartz/images/SOQuartz_model-A_baseboard.jpg" caption="SOQuartz Model-A Baseboard" width="400" >}}
 
 * Model "A" Baseboard Dimensions: 133mm x 80mm x 19mm
 * Input Power: DC 12V @ 3A 5.5OD/2.1ID (IEC 60130-10 Type A) Barrel DC Jack connector

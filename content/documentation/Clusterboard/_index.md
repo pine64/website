@@ -13,7 +13,7 @@ aliases:
   - /wiki/Clusterboard
 ---
 
-{{< figure src="/documentation/Clusterboard/images/Clusterboard_rev_2.2.jpg" title="Front view of the Clusterboard (revision 2.2)" width="400" >}}
+{{< figure src="/documentation/Clusterboard/images/Clusterboard_rev_2.2.jpg" caption="Front view of the Clusterboard (revision 2.2)" width="400" >}}
 
 The **Clusterboard** is a PINE64 board that makes it possible to set up a compact cluster of headless ARM-based single-board computers. It can hold up to a total of seven [SOPINE](/documentation/SOPINE) or [SOEDGE](/documentation/SOEDGE) modules. The Clusterboard is an open-hardware project, but please note that it does not mean this project is "OSH" compliant.
 

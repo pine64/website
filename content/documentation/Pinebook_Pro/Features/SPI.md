@@ -58,7 +58,7 @@ In case this approach fails, please see the section below for a more reliable me
 7. Disconnect all boot devices, i.e. eMMC, microSD card and USB.
 8. Locate SPI flash (component number 29 on [this photo of the Pinebook Pro internals](https://wiki.pine64.org/images/4/45/PBPL_S.jpg)).
 9. Connect your Pinebook Pro with USB-C to USB-A cable to second machine (Pinebook Pro on the USB-C side)
-10. Short pins CLK and VSS (see chip diagram to the right for the names of pins). This can be done with a pair of tweezers when short on tools. {{< figure src="/documentation/images/Spi.png" title="right" >}}
+10. Short pins CLK and VSS (see chip diagram to the right for the names of pins). This can be done with a pair of tweezers when short on tools. {{< figure src="/documentation/images/Spi.png" caption="right" >}}
 11. Power on the Pinebook Pro.
 12. Press the reset button (component number 28).
 13. Check if there is new output from `journalctl` program.

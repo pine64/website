@@ -9,7 +9,7 @@ menu:
     weight: 2
 ---
 
-{{< figure src="/documentation/images/Pine64-lora-usb-adapter.jpg" title="The PINE64 USB LoRa adapter" >}}
+{{< figure src="/documentation/images/Pine64-lora-usb-adapter.jpg" caption="The PINE64 USB LoRa adapter" >}}
 
 The PINE64 USB LoRa adapter is based on the Semtech SX1262 LoRa module and the CH341 USB bus converter chip. The **CH341** chip can be configured in multiple mode to convert USB to various serial and parallel ports. In this case, it’s configured in **synchronous serial mode**, which allows this chip to convert from USB to the SPI bus needed to talk to the SX1262 LoRa module:
 
@@ -23,7 +23,7 @@ The PINE64 USB LoRa adapter is based on the Semtech SX1262 LoRa module and the C
 
 ## Pins
 
-{{< figure src="/documentation/images/Lora-usb-pins.jpg" title="Pinout" >}}
+{{< figure src="/documentation/images/Lora-usb-pins.jpg" caption="Pinout" >}}
 
 | SX1262 Pin | Name | Description |
 | --- | --- | --- |

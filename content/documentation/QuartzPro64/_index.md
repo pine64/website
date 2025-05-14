@@ -13,8 +13,8 @@ aliases:
   - /wiki/QuartzPro64_Development
 ---
 
-{{< figure src="/documentation/images/Quartzpro64_whole_board_top_resized.jpeg" title="The QuartzPro64 development board, front side" height="250" >}}
-{{< figure src="/documentation/images/BoardBackSide.jpg" title="Back side of the board" height="250" >}}
+{{< figure src="/documentation/images/Quartzpro64_whole_board_top_resized.jpeg" caption="The QuartzPro64 development board, front side" height="250" >}}
+{{< figure src="/documentation/images/BoardBackSide.jpg" caption="Back side of the board" height="250" >}}
 
 A **QuartzPro64** page before a **QuartzPro64** release? It’s more likely than you think!
 

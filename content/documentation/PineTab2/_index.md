@@ -12,7 +12,7 @@ aliases:
   - /wiki/PineTab2
 ---
 
-{{< figure src="/documentation/PineTab2/images/PineTab2_Front.jpg" title="The PineTab2 with the detachable keyboard attached" width="250" >}}
+{{< figure src="/documentation/PineTab2/images/PineTab2_Front.jpg" caption="The PineTab2 with the detachable keyboard attached" width="250" >}}
 
 The **PineTab2** is PINE64’s successor to the original [PineTab](/documentation/PineTab) Linux tablet computer, featuring a faster processor and better availability. The tablet is available in two configurations, 4GB of RAM and 64GB of internal storage or 8GB of RAM and 128GB of internal storage. The tablet ships with a detachable keyboard that doubles as a protective cover.
 

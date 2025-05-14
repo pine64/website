@@ -9,7 +9,7 @@ menu:
     weight:
 ---
 
-{{< figure src="/documentation/Ox64/images/ox64_ethphy.png" title="Pinout for wiring ethernet PHY to EMAC" width="300">}}
+{{< figure src="/documentation/Ox64/images/ox64_ethphy.png" caption="Pinout for wiring ethernet PHY to EMAC" width="300">}}
 
 * Baseboard dimensions: 51 mm x 21 mm x 19 mm x 3.5 mm (breadboard-friendly)
 * Input power: 5 V, 0.5 A through the microUSB or USB-C ports

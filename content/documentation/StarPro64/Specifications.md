@@ -9,15 +9,15 @@ menu:
     weight: 2
 ---
 
-{{< figure src="/documentation/StarPro64/images/starpro64_front.jpg" title="The StarPro64" width="400" >}}
+{{< figure src="/documentation/StarPro64/images/starpro64_front.jpg" caption="The StarPro64" width="400" >}}
 
-{{< figure src="/documentation/StarPro64/images/starpro64_back.jpg" title="The StarPro64 backside" width="400" >}}
+{{< figure src="/documentation/StarPro64/images/starpro64_back.jpg" caption="The StarPro64 backside" width="400" >}}
 
 ## SoC and Memory Specification
 
 * Based on [ESWIN EIC7700X](https://www.eswincomputing.com/en/products/index/36/10.html)
 
-{{< figure src="/documentation/StarPro64/images/EIC7700X_Block_Diagram.png" title="EIC7700X block diagram" width="800" >}}
+{{< figure src="/documentation/StarPro64/images/EIC7700X_Block_Diagram.png" caption="EIC7700X block diagram" width="800" >}}
 
 ### CPU Architecture
 

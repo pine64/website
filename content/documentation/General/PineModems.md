@@ -68,7 +68,7 @@ Quectel EG25-G is an LTE Cat 4 module optimized specially for M2M and IoT applic
 
 The System partition is mounted as read-only mode, but the data partition is writable. It might be possible, if there’s an unexpected reset or power is lost while running, that the data partition gets corrupt and thus unable to boot.
 
-{{< figure src="/documentation/images/Pinephone-EG25-Recovery.jpg" title="PinePhone USB_BOOT test points" >}}
+{{< figure src="/documentation/images/Pinephone-EG25-Recovery.jpg" caption="PinePhone USB_BOOT test points" >}}
 
 The modem has 4 different boot modes:
 

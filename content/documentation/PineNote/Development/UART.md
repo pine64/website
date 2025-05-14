@@ -11,7 +11,7 @@ aliases:
   - /wiki/PineNote_Development/UART
 ---
 
-{{< figure src="/documentation/PineNote/images/Pinenote-uart-dongle.jpeg" title="Basic non-stock PineNote UART dongle" width="400" >}}
+{{< figure src="/documentation/PineNote/images/Pinenote-uart-dongle.jpeg" caption="Basic non-stock PineNote UART dongle" width="400" >}}
 
 The USB UART dongle delivered with the PineNote allows you to have access to its serial console via USB-C Debug Accessory Mode (DAM) without having to disassemble the device.  The factory-installed operating system runs the serial console at the 1,500,000 bps speed, 8 data bits and 1 stop bit, no parity, and no flow control. The USB-C male end should go into the PineNote and the female end can be connected with a standard USB-C cable to your computer.
 
@@ -37,8 +37,8 @@ The PineNote factory firmware runs UART at a baud rate of 1500000 bps, 8 data bi
 
 The stock UART dongle included with the PineNote was a simple device plugging directly into the PineNote’s USB-C port. The dongle exposed a female USB-C port, which the user plugged into to get UART access. This design unfortunately ruled out passthrough USB connections, where the user connects to the PineNote via UART and USB simultaneously. The dongle is not currently available for purchase.
 
-{{< figure src="/documentation/PineNote/images/Pinenote-stock-uart-dongle-front.jpg" title="Front" width="200" >}}
-{{< figure src="/documentation/PineNote/images/Pinenote-stock-uart-dongle-back.jpg" title="Back" width="200" >}}
+{{< figure src="/documentation/PineNote/images/Pinenote-stock-uart-dongle-front.jpg" caption="Front" width="200" >}}
+{{< figure src="/documentation/PineNote/images/Pinenote-stock-uart-dongle-back.jpg" caption="Back" width="200" >}}
 
 ## Creating a dongle
 
@@ -75,7 +75,7 @@ All other necessary components of our UART dongle are readily & cheaply availabl
 
 ### Splicing resistors
 
-{{< figure src="/documentation/PineNote/images/PineNote-UART-Y-pull-up-resistor-cable.jpg" title="The desired end result; wrap removed from resistors for illustration purposes." width="400" >}}
+{{< figure src="/documentation/PineNote/images/PineNote-UART-Y-pull-up-resistor-cable.jpg" caption="The desired end result; wrap removed from resistors for illustration purposes." width="400" >}}
 
 This is the only difficult part of the whole process. Your goal is to create a Y-shaped jump wire with 1,000 Ohm through-hole resistors spliced into each of the twin arms. The solitary leg will connect to a 3.3V source on your USB-UART adapter. The twin arms will connect to the configuration channel pins on your USB-C breakout board. Per the USB-C standard, when these pins are pulled high this indicates the device should enter [Debug Accessory Mode](https://en.wikipedia.org/wiki/USB-C#Debug_Accessory_Mode); connecting them to a voltage source & limiting the current with [pull-up resistors](https://www.electronics-tutorials.ws/logic/pull-up-resistor.html) accomplishes this.
 

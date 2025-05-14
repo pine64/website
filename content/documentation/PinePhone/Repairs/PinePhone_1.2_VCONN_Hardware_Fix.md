@@ -30,9 +30,9 @@ This fix requires desoldering tiny (1 mm per 1 mm, from the datasheet) BGA compo
 
 ## Issue description
 
-{{< figure src="/documentation/images/Martjin_VCONN_switches_1.1.jpg" title="Close-up picture of the two identical switches the issue originates from, with the ANX USB controller in the frame" >}}
+{{< figure src="/documentation/images/Martjin_VCONN_switches_1.1.jpg" caption="Close-up picture of the two identical switches the issue originates from, with the ANX USB controller in the frame" >}}
 
-{{< figure src="/documentation/images/Schematic_VCONN_switches.png" title="Excerpt from the PinePhone schematic showing the two components." >}}
+{{< figure src="/documentation/images/Schematic_VCONN_switches.png" caption="Excerpt from the PinePhone schematic showing the two components." >}}
 
 The USB standard [specifies](https://microchipdeveloper.com/usb:tc-pins) that both halves (top and bottom) of the USB-C port contains one "CC" pin (CC1 and CC2, respectively). A regular cable will connect a CC pin from one end to the other end. This allows detecting which way the cable is plugged. Some active USB-C cables exist (both "e-marked" and "managed active cables"); they contain a chip, which needs to be powered. This is done by having one of the cable end connect its CC pins to 5V and VCONN, and requires switches to plug the right CC pin to the right voltage.
 

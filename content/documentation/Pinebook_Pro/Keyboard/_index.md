@@ -96,7 +96,7 @@ There are several ribbon cables. To remove, flip up the tab and gentle pull the 
 
 _Step 5_: Detach microphone, speakers, and antenna.
 
-{{< figure src="/documentation/images/Pinebook_Pro_microphone_removed.jpg" title="One of the Pinebook Pro microphones after removal" width="300" >}}
+{{< figure src="/documentation/images/Pinebook_Pro_microphone_removed.jpg" caption="One of the Pinebook Pro microphones after removal" width="300" >}}
 
 The speakers, microphone, and antenna don’t have to be detached from the mainboard, but they need to be detached from the keyboard shell. The microphones are held in place by tape, and the speakers have sticky sides. The speakers are found obviously, but the microphones (two of) can be found between the battery and the hinge area. Each microphone can be carefully pulled/wedged out of its position by a small screwdriver or pick. The antenna, similar to the microphones, is found near the hinge area and to the top left of the battery.
 

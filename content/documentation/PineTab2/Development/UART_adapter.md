@@ -9,7 +9,7 @@ menu:
     weight:
 ---
 
-{{< figure src="/documentation/PineTab2/images/PineTab2_USB_UARTv2.jpg" title="The UART adapter" width="450" >}}
+{{< figure src="/documentation/PineTab2/images/PineTab2_USB_UARTv2.jpg" caption="The UART adapter" width="450" >}}
 
 The USB-C UART adapter can be connected to the PineTab2 to debug boot issues at the early boot:
 

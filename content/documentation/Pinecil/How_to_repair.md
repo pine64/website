@@ -156,12 +156,12 @@ Reference the article on [[Pinecil_Power_Supplies#DC_Barrel_Power| DC barrel cha
 
 ## Images
 
-{{< figure src="/documentation/images/PCP-Top-side-screen.jpg" title="Screen side: V2 on top, V1 below" >}}
-{{< figure src="/documentation/images/PCP-Bottom-Side.jpg" title="Pinecone side: V2 on top, V1 below" >}}
-{{< figure src="/documentation/images/Pinecil_v2_MOSFET.JPG" title="MOSFET V2" >}}
+{{< figure src="/documentation/images/PCP-Top-side-screen.jpg" caption="Screen side: V2 on top, V1 below" >}}
+{{< figure src="/documentation/images/PCP-Bottom-Side.jpg" caption="Pinecone side: V2 on top, V1 below" >}}
+{{< figure src="/documentation/images/Pinecil_v2_MOSFET.JPG" caption="MOSFET V2" >}}
 {{< figure src="/documentation/images/FUSB302-V2-02.JPG" width="302" >}}
-{{< figure src="/documentation/images/Pinecil_LDOandOP-Amp.png" title="_LDO_and_OP-Amp" >}}
-{{< figure src="/documentation/images/Under_OLED_screen01.png" title=" Under the OLED screen, V2" >}}
+{{< figure src="/documentation/images/Pinecil_LDOandOP-Amp.png" caption="_LDO_and_OP-Amp" >}}
+{{< figure src="/documentation/images/Under_OLED_screen01.png" caption=" Under the OLED screen, V2" >}}
 
 ## Pinecil V1, 24V Mod
 
@@ -169,7 +169,7 @@ Reference the article on [[Pinecil_Power_Supplies#DC_Barrel_Power| DC barrel cha
  Do this at your own risk, read everything in this section and related/linked articles, and go to the Pinecil community chat if you desire advice. An incorrect cut of the trace could render the Pinecil non-working.
 {{< /admonition >}}
 
-{{< figure src="/documentation/images/Pinecil-V1andV2.png" title="Pinecil V1 has blue rubber. Newer Pinecil V2 has green rubber & Bluetooth LE chip" >}}
+{{< figure src="/documentation/images/Pinecil-V1andV2.png" caption="Pinecil V1 has blue rubber. Newer Pinecil V2 has green rubber & Bluetooth LE chip" >}}
 
 1. This modification is not for the V2 (sold after Aug 1, 2022 with green thumb grip) as the V2 already has 24V DC barrel charger capability.
 2. If you have an older V1 model, then first upgrade to the newest [firmware here](/documentation/Pinecil/Firmware/) before starting this modification. The PD debug menu was added to the firmware in 2.17 and other important fixes came later. Access to the hidden PD debug menu is necessary to assist with this mod.

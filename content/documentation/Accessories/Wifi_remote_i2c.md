@@ -12,12 +12,12 @@ aliases:
   - /wiki/DSI_Displays
 ---
 
-{{< figure src="/documentation/images/PMWF01A_Description.jpg" title="PMWF01A: Wifi Remote I2c Module" >}}
+{{< figure src="/documentation/images/PMWF01A_Description.jpg" caption="PMWF01A: Wifi Remote I2c Module" >}}
 
 ## Quick Start Guide
 
 ### Hardware Setup
-{{< figure src="/documentation/images/PMWF01A_Wifi_Remote_IO_Rev3-1.jpg" title="Hardware Setup" >}}
+{{< figure src="/documentation/images/PMWF01A_Wifi_Remote_IO_Rev3-1.jpg" caption="Hardware Setup" >}}
 
 * Make sure that the driver for USB/UART Programming/Console Adapter (PMPROG01) is properly install and the PC is detected it as Comm Port.
 * The USB/UART Bridge is base on [Silicon Lab CP2012 chipset](http://www.silabs.com/products/interface/usb-bridges/classic-usb-bridges/Pages/usb-to-uart-bridge.aspx).
@@ -31,8 +31,8 @@ Place the jumper J2 on USB/UART Programming/Console Adapter (PMPROG01) to 5V out
 
 ### Setting Configuration
 
-{{< figure src="/documentation/images/Wr_Termite2.JPG" title="Termite Setup Screen" >}}
-{{< figure src="/documentation/images/Wr_cfghelp_scr.JPG" title="Help Command" >}}
+{{< figure src="/documentation/images/Wr_Termite2.JPG" caption="Termite Setup Screen" >}}
+{{< figure src="/documentation/images/Wr_cfghelp_scr.JPG" caption="Help Command" >}}
 
 * For windows system, you can use terminal emulator program _Termite_ to configure the device.
 * Make sure the 'Port' setting is refer to the USB/UART Programming/Console Adapter (PMPROG01)'s Virtual Comm Port.
@@ -69,7 +69,7 @@ Press Config Mode button to go into configuration mode
 * To login into the server, telnet into localhost port 10000
   telnet localhost 10000
 
-{{< figure src="/documentation/images/Wr_putty_login.JPG" title="PineWifiServer Login Screen" >}}
+{{< figure src="/documentation/images/Wr_putty_login.JPG" caption="PineWifiServer Login Screen" >}}
 
 * To show current connect Wifi Remote I2c type 'list' in small capital letter.
 * To see all available command, type 'help'.
@@ -101,7 +101,7 @@ Example of screen shot with WifiAppDemo polling multiple Wifi Remote I2c with Am
 
 Short Jumper S2 on the WiFI Remote I2c module (before power up the board) to allow the board to go in to firmware programming mode.
 
-{{< figure src="/documentation/images/PMWF01A_Wifi_Remote_IO_Rev3-1.jpg" title="Hardware Setup" >}}
+{{< figure src="/documentation/images/PMWF01A_Wifi_Remote_IO_Rev3-1.jpg" caption="Hardware Setup" >}}
 
 * Make sure that the driver for USB/UART Programming/Console Adapter (PMPROG01) is properly install and the PC is detected it as Comm Port.
 * The USB/UART Bridge is base on [Silicon Lab CP2012 chipset](http://www.silabs.com/products/interface/usb-bridges/classic-usb-bridges/Pages/usb-to-uart-bridge.aspx).

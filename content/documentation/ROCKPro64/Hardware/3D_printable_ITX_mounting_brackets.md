@@ -9,7 +9,7 @@ menu:
     weight:
 ---
 
-{{< figure src="/documentation/images/ITX-Bracket-Mounted.jpg" title="A Quartz64-A mounted in an ITX case using 3D printed brackets" width="300" >}}
+{{< figure src="/documentation/images/ITX-Bracket-Mounted.jpg" caption="A Quartz64-A mounted in an ITX case using 3D printed brackets" width="300" >}}
 
 Allows mounting a ROCKPro64-A or Quartz64-A board inside a regular PC case that conforms to the ITX standard, using 3D printed brackets:
 

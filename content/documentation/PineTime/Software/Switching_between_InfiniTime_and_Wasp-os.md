@@ -39,8 +39,8 @@ Flashing can be done with any of
 
 This guide has been last updated for Infinitime 1.1.0 and Wasp-os 0.4.1.
 
-{{< figure src="/documentation/images/Flash-reloader-mcuboot.jpg" title="Flashing reloader-mcuboot.zip" width="600" >}}
-{{< figure src="/documentation/images/Flash-micropython.jpg" title="Flashing micropython.zip" width="400" >}}
+{{< figure src="/documentation/images/Flash-reloader-mcuboot.jpg" caption="Flashing reloader-mcuboot.zip" width="600" >}}
+{{< figure src="/documentation/images/Flash-micropython.jpg" caption="Flashing micropython.zip" width="400" >}}
 
 ## InfiniTime to Wasp-os
 
@@ -55,8 +55,8 @@ All the zips you need can be found from the [wasp-os installation guide](https:/
 
 ## Wasp-os to InfiniTime
 
-{{< figure src="/documentation/images/Flash-reloader-infinitime-recovery.jpg" title="Flashing reloader-infinitime-recovery-0.14.1.zip" width="500" >}}
-{{< figure src="/documentation/images/Flash-infinitime.jpg" title="Flashing pinetime-mcuboot-app-dfu-1.1.0.zip" width="600" >}}
+{{< figure src="/documentation/images/Flash-reloader-infinitime-recovery.jpg" caption="Flashing reloader-infinitime-recovery-0.14.1.zip" width="500" >}}
+{{< figure src="/documentation/images/Flash-infinitime.jpg" caption="Flashing pinetime-mcuboot-app-dfu-1.1.0.zip" width="600" >}}
 
 The `reloader-factory.zip` was broken in the original wasp-os 0.4 but was fixed in wasp-os 0.4.1. However the Infinitime binaries are outdated the 0.4 release and I do not recommend flashing these. Older InfiniTime versions have flaky BLE which makes upgrading from there very unreliable.
 

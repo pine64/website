@@ -13,7 +13,7 @@ The UART serves as a console for early boot and kernel messages, and also offers
 
 ## Connecting the UART adapter
 
-{{< figure src="/documentation/PineTab-V/images/PineTab2_USB_UARTv2.jpg" title="UART Adapter" width="450" >}}
+{{< figure src="/documentation/PineTab-V/images/PineTab2_USB_UARTv2.jpg" caption="UART Adapter" width="450" >}}
 
 The UART adapter allows access to the UART through the USB 2.0 Type-C port:
 

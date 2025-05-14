@@ -12,7 +12,7 @@ aliases:
   - /wiki/Quartz64
 ---
 
-{{< figure src="/documentation/images/Quartz64modelb.png" title="The Quartz64 Model B" width="400" >}}
+{{< figure src="/documentation/images/Quartz64modelb.png" caption="The Quartz64 Model B" width="400" >}}
 
 The **Quartz64** is the most recent Single Board Computer offering from PINE64, with Model A initially released in June of 2021 and Model B in May of 2022. It is powered by a Rockchip RK3566 Quad-Core ARM Cortex A55 64-Bit Processor with a MALI G-52 GPU.
 

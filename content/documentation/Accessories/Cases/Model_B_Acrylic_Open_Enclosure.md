@@ -13,7 +13,7 @@ aliases:
 
 The **"Model B" Acrylic Open Enclosure** is a case for "Model B" sized single-board computers sold by PINE64, available from [the official store](https://pine64.com/product/model-b-acrylic-open-enclosure/).
 
-{{< figure src="/documentation/ROCK64/images/ROCK64_acrylic_open_enclosure.jpg" title="A_ROCK64_mounted_in_the_case,_the_correct_way." >}}
+{{< figure src="/documentation/ROCK64/images/ROCK64_acrylic_open_enclosure.jpg" caption="A_ROCK64_mounted_in_the_case,_the_correct_way." >}}
 
 ## Installation
 
@@ -23,8 +23,8 @@ To install the SBC inside the case, stick the long screws into the SBC mounting 
 
 ### 3D-Printable Top With Fan Cutout
 
-{{< figure src="/documentation/images/Model_b_open_enclosure_top_cad.png" title="Top_view_of_the_plate" >}}
-{{< figure src="/documentation/images/Model_B_Open_Enclosure_Top_Fan_Mount.jpeg" title="The assembled modified case with a Noctua NF-A4x10 5V PWM mounted to it. The SBC is mounted in the enclosure upside-down." >}}
+{{< figure src="/documentation/images/Model_b_open_enclosure_top_cad.png" caption="Top_view_of_the_plate" >}}
+{{< figure src="/documentation/images/Model_B_Open_Enclosure_Top_Fan_Mount.jpeg" caption="The assembled modified case with a Noctua NF-A4x10 5V PWM mounted to it. The SBC is mounted in the enclosure upside-down." >}}
 
 User:CounterPillow has created an alternate 3D-printable top plate which allows for the mounting of a 40mmx40mmx10mm fan. The STL and STEP files are available free of charge under [https://wiki.pine64.org/wiki/File:Model_B_acrylic_case_top_plate_with_fan_cutout.zip](https://wiki.pine64.org/wiki/File:Model_B_acrylic_case_top_plate_with_fan_cutout.zip), licensed as CC-BY 4.0.
 
@@ -36,7 +36,7 @@ The print will take approximately 7.8 metres of filament, and take in the order 
 
 The cooling performance with a Noctua NF-A4x10 5V PWM is enough to no longer throttle after a few minutes of cpuburn, but comfortably sitting at below 75°C instead. The memory has no temperature sensor, but will likely be cooled quite a bit as well.
 
-{{< figure src="/documentation/images/Arduino_pwm_thing.png" title="Rough wiring diagram of how to PWM control the fan from a ROCK64 with a helper Arduino" >}}
+{{< figure src="/documentation/images/Arduino_pwm_thing.png" caption="Rough wiring diagram of how to PWM control the fan from a ROCK64 with a helper Arduino" >}}
 
 Since the [ROCK64](/documentation/ROCK64) has no PWM pins available to control the fan, a slight workaround can be done; with the `gpio-fan` device tree binding, an Arduino can be controlled to soft-PWM a suitable 25 kHz signal for the fan. The ROCK64 uses 3.3V on the GPIO pins, so you’ll need to logic level convert it to 5V if you’re using a 5V Arduino, and if you’re using a 3.3V microcontroller, you’ll need to logic level shift the output PWM signal as the 5V fan will be expecting 5V PWM on the PWM pin.
 

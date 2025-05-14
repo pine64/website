@@ -15,7 +15,7 @@ PineTimeStyle is a watchface created for Infinitime and has been included since 
 
 It is based on [TimeStyle for Pebble by Dan Tilden](https://www.dantilden.com/projects/timestyle/) with permission.
 
-{{< figure src="/documentation/PineTime/images/InfiniSim_Watchface.png" title="PineTimeStyle Watchface" >}}
+{{< figure src="/documentation/PineTime/images/InfiniSim_Watchface.png" caption="PineTimeStyle Watchface" >}}
 
 ## Layout
 
@@ -29,11 +29,11 @@ The current date is displayed in the middle, and at the bottom there is a small 
 
 Since version 1.4 of Infinitime, a color picker is available for PineTimeStyle. As of version 1.11, an addition page of customisation has been added which allows the user to customise the sidebar. These settings can be accessed by long pressing on the watchface which will display two buttons, one with a palette icon to access the color settings, one with a cog icon for the sidebar options.
 
-{{< figure src="/documentation/PineTime/images/InfiniSim_Settings.png" title="PineTimeStyle Settings Button" >}}
+{{< figure src="/documentation/PineTime/images/InfiniSim_Settings.png" caption="PineTimeStyle Settings Button" >}}
 
 ### The color picker
 
-{{< figure src="/documentation/PineTime/images/InfiniSim_Color.png" title="PineTimeStyle Color Settings Interface" >}}
+{{< figure src="/documentation/PineTime/images/InfiniSim_Color.png" caption="PineTimeStyle Color Settings Interface" >}}
 
 There are 3 pairs of buttons with left and right arrows which scroll through 17 standard colors. The top pair changes the time text color, middle for the sidebar color and bottom for the time background color.
 
@@ -41,7 +41,7 @@ There is also a 'Rnd' button which randomises all colors, a 'Rst' button which r
 
 ### The sidebar settings
 
-{{< figure src="/documentation/PineTime/images/InfiniSim_SidebarSettings.png" title="PineTimeStyle Sidebar Settings" >}}
+{{< figure src="/documentation/PineTime/images/InfiniSim_SidebarSettings.png" caption="PineTimeStyle Sidebar Settings" >}}
 
 As of Infinitime version 1.13, there are 2 options available in the sidebar settings page - Steps style and Weather.
 

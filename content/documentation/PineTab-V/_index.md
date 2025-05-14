@@ -12,7 +12,7 @@ aliases:
   - /wiki/PineTab-V
 ---
 
-{{< figure src="/documentation/PineTab-V/images/Pinetabv_1.jpg" title="The PineTab-V with the detachable keyboard attached" width="250" >}}
+{{< figure src="/documentation/PineTab-V/images/Pinetabv_1.jpg" caption="The PineTab-V with the detachable keyboard attached" width="250" >}}
 
 The _PineTab-V_ is _PINE64’s_ first RISC-V tablet. It is based on the JH7110 64-bit RISC-V SoC.
 

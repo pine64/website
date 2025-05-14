@@ -15,7 +15,7 @@ The [Quartz64 Model A](/documentation/Quartz64) allows for it to be powered from
 
 ## Pin-out
 
-{{< figure src="/documentation/images/Quartz64_Model_A_VBAT_Connector_Pinout.png" title="right" >}}
+{{< figure src="/documentation/images/Quartz64_Model_A_VBAT_Connector_Pinout.png" caption="right" >}}
 
 The pins on the board are a JST PH-3 compatible header labelled _+VBAT-_. As one might guess, the positive wire should be towards the +, and the ground wire towards -. The center pin of the connector is for a temperature probe.
 

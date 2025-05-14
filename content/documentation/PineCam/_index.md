@@ -15,6 +15,6 @@ The **PineCam** is a successor to the PineCube IP camera, featuring a refined de
 The device is equipped with a 2MP camera module (GalaxyCore GC02M2) connected via MIPI CSI, and can function as a USB-C wired camera. It features GPIO, a microphone, speaker, and a USB-C power input, with a removable flap for GPIO access.
 
 
-{{< figure src="images/pinecam_1.jpg" title="The PineCam" width="400" >}}
+{{< figure src="images/pinecam_1.jpg" caption="The PineCam" width="400" >}}
 
-{{< figure src="images/pinecam_2.jpg" title="The PineCam" width="400" >}}
+{{< figure src="images/pinecam_2.jpg" caption="The PineCam" width="400" >}}

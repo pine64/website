@@ -9,7 +9,7 @@ menu:
     weight:
 ---
 
-{{< figure src="/documentation/images/Pbp_emmc_disable_sw.jpg" title="The PineBook Pro eMMC module and switch, shown in 'enabled' position" width="480" >}}
+{{< figure src="/documentation/images/Pbp_emmc_disable_sw.jpg" caption="The PineBook Pro eMMC module and switch, shown in 'enabled' position" width="480" >}}
 
 ## Boot sequence details
 

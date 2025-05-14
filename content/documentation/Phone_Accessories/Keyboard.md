@@ -11,7 +11,7 @@ aliases:
   - /wiki/PinePhone_(Pro)_Keyboard
 ---
 
-{{< figure src="/documentation/images/PP_KB_Front-1024x576.jpg" title="Picture of the PinePhone (Pro) Keyboard" width="400" >}}
+{{< figure src="/documentation/images/PP_KB_Front-1024x576.jpg" caption="Picture of the PinePhone (Pro) Keyboard" width="400" >}}
 
 The **PinePhone (Pro) Keyboard Case** is a case compatible with the [PinePhone](/documentation/PinePhone) and [PinePhone Pro](/documentation/PinePhone_Pro), adding a keyboard functionality to the phone. It features a clam-shell design and uses the pogo pins located on the smartphone’s midsection and attaches by replacing the default back cover. This add-on effectively turns the PinePhone (Pro) into a PDA with an in-built LTE modem.
 
@@ -109,7 +109,7 @@ In **Sxmo** disabling the keyboard is not required, as the keyboard will only sh
 
 The keyboard features a default layout (pictured below) created and agreed upon by the community. The keyboard layout can be altered using software as well as by physically repositioning keycaps. All keycaps, with the _exception_ of space and return keys, can be easily and safely relocated for alternative layouts corresponding to software settings.
 
-{{< figure src="/documentation/images/Ppkb_layout2.png" title="The keyboard layout how the keys were originally intended" >}}
+{{< figure src="/documentation/images/Ppkb_layout2.png" caption="The keyboard layout how the keys were originally intended" >}}
 
 ## Keyboard firmware
 

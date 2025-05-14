@@ -255,9 +255,9 @@ For the Mali driver see [Mali Driver](/documentation/General/Mali_driver).
 
 Images:
 
-{{< figure src="/documentation/images/GPIO_PB3_location.jpg" title="GPIO_PB3_location" >}}
+{{< figure src="/documentation/images/GPIO_PB3_location.jpg" caption="GPIO_PB3_location" >}}
 {{< figure src="/documentation/images/U54_SGM3140_FLASH_EN_pin_location.jpg" width="314" >}}
-{{< figure src="/documentation/images/Flash_GPIO_Reassigned.jpg" title="Flash GPIOs Reassigned wiring" >}}
+{{< figure src="/documentation/images/Flash_GPIO_Reassigned.jpg" caption="Flash GPIOs Reassigned wiring" >}}
 
 ## Other Resources
 

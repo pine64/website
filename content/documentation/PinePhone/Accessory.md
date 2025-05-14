@@ -22,7 +22,7 @@ The USB-C can be used to power the device, and offers USB2 host and OTG capabili
 
 ## Pogo pins
 
-{{< figure src="/documentation/images/Pinephone_pogo.png" title="The pogo pins, as visible under the back cover." width="400" >}}
+{{< figure src="/documentation/images/Pinephone_pogo.png" caption="The pogo pins, as visible under the back cover." width="400" >}}
 
 The PinePhone has six pogo pins on the back allowing for custom hardware extensions such as wireless charging, an IR blaster, a keyboard extension or extended battery case. The pogo pins provide access to an interrupt line, power inputs/outputs and an I2C interface.
 
@@ -49,7 +49,7 @@ A step file for the back cover for creating custom cases is freely available [he
 
 ## Serial console
 
-{{< figure src="/documentation/images/PinePhone_Serial_Cable.png" title="Pinout of the serial adapter." width="400" >}}
+{{< figure src="/documentation/images/PinePhone_Serial_Cable.png" caption="Pinout of the serial adapter." width="400" >}}
 
 The PinePhone has a serial port in the headphone connector, it’s activated by the 6th contact on the dipswitch. If the switch is set to "on", the headphone connector is in audio mode, if it is set to "off" it’s in UART mode. The UART serial connection can also be used for communication with other devices from the PinePhone.
 

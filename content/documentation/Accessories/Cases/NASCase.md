@@ -17,11 +17,11 @@ The PINE64 NAS Case is intended for either a Network Attached Storage (NAS) or D
 
 An exploded view of the NAS Case, illustrating how all the components come together, can be found [here](https://files.pine64.org/doc/rockpro64/ROCKPro64%20NAS%20Case%20Exploded%20View%20Diagram.pdf). Please refer back to this PDF document during assembly to verify correct orientation of individual components.
 
-{{< figure src="/documentation/images/NASCaseMain.png" title="Front View of the PINE64 NAS Case for the ROCKPro64" width="400" >}}
+{{< figure src="/documentation/images/NASCaseMain.png" caption="Front View of the PINE64 NAS Case for the ROCKPro64" width="400" >}}
 
 ## What does the NAS Case house?
 
-{{< figure src="/documentation/images/NAS_Case_internals.jpg" title="Internal Layout of the NAS Case" width="200" >}}
+{{< figure src="/documentation/images/NAS_Case_internals.jpg" caption="Internal Layout of the NAS Case" width="200" >}}
 
 The NAS Case can house the following components:
 
@@ -71,7 +71,7 @@ There are a few other things which you may wish to consider purchasing for your 
 
 ## Which software should I use?
 
-{{< figure src="/documentation/images/OMVGUI.png" title="The OMV WebGUI is easy to understand but also very robust. It offers easy installation of plugins, system administration and overview of available services" width="200" >}}
+{{< figure src="/documentation/images/OMVGUI.png" caption="The OMV WebGUI is easy to understand but also very robust. It offers easy installation of plugins, system administration and overview of available services" width="200" >}}
 
 If you are intending to build a home or small company NAS, then we strongly recommend you use [Open Media Vault (OMV)](/documentation/ROCKPro64/Software#openmediavault). OMV is an open source NAS solution that makes setting up user accounts, network shares and services a breeze. It also simplifies installing additional features (called plugins), such as: PLEX media server; Remote Desktop; Encryption; RSync; etc.
 
@@ -96,9 +96,9 @@ You should now be left with a bare case ready for installation of the necessary 
 
 ### Step 2. Installing the ROCKPro64 into the NAS Case
 
-{{< figure src="/documentation/images/ROCKPro64inNASCase.jpg" title="Correct Placement of the ROCKPro64 in the empty case, with Ethernet; Power; and HDMI at the back of the NAS Case" width="300" >}}
+{{< figure src="/documentation/images/ROCKPro64inNASCase.jpg" caption="Correct Placement of the ROCKPro64 in the empty case, with Ethernet; Power; and HDMI at the back of the NAS Case" width="300" >}}
 
-{{< figure src="/documentation/images/FrontIO.png" title="Front IO with IR and LED relay installed" width="300" >}}
+{{< figure src="/documentation/images/FrontIO.png" caption="Front IO with IR and LED relay installed" width="300" >}}
 
 Make sure nothing is plugged into your ROCKPro64 - including a micro SD card.
 If you intend to use a heatsink with your board then please install it now before proceeding. If you bought the heatsink from the Pine64 store it comes with thermal paste and/or a thermal pad. You can use one or the other (not both!). The thermal pad is easier to apply but the thermal paste should be better at cooling if properly applied.
@@ -113,9 +113,9 @@ If you wish to install an IRx receiver into your case then you should also place
 
 ### Step 3 PCIe to SATA adapter and Cabling
 
-{{< figure src="/documentation/images/DC_Location.jpg" title="DC header on the ROCKPro64 for the power cable" width="200" >}}
+{{< figure src="/documentation/images/DC_Location.jpg" caption="DC header on the ROCKPro64 for the power cable" width="200" >}}
 
-{{< figure src="/documentation/images/PCIeFittedSATAsockets.png" title="PCIe to SATA installed. Note the SATA connection orientation" width="200" >}}
+{{< figure src="/documentation/images/PCIeFittedSATAsockets.png" caption="PCIe to SATA installed. Note the SATA connection orientation" width="200" >}}
 
 With the board in place it’s time to set up the PCIe to SATA adapter and do the cabling necessary to attach HDDs / SSDs.
 
@@ -130,7 +130,7 @@ Have the cables hang outside the case or to the side for now so that they do not
 
 ### Step 4. Installing HDDs / SSDs into the Holding Bracket
 
-{{< figure src="/documentation/images/Bracket_Orientation.png" title="Bracket Orientation in the NAS Case" width="300" >}}
+{{< figure src="/documentation/images/Bracket_Orientation.png" caption="Bracket Orientation in the NAS Case" width="300" >}}
 
 The next step is to install HDDs/ SSDs into their holding bracket; 2.5 inches drives need to be installed at the very bottom of the bracket whi inchese 3.5 inches drives are at the top of the the bracket.
 
@@ -144,7 +144,7 @@ Once the holding bracket is assembled and you have your drives mounted, please s
 
 ### Step 5. Installing Extras (eMMC; WiFi BT module + SMA Antennas; 80mm Fan)
 
-{{< figure src="/documentation/images/80mmfan.png" title="The 80mm fan is a worthwhile addition to the NAS Case build" width="200" >}}
+{{< figure src="/documentation/images/80mmfan.png" caption="The 80mm fan is a worthwhile addition to the NAS Case build" width="200" >}}
 
 If you have additional peripherals, such as an eMMC or WiFi/BT module as well as the 80mm fan, then now is the right time to install them. If you have **none of the above**, please **proceed to step 6** of this guide.
 
@@ -158,9 +158,9 @@ Plug in the fan at this stage of the installation and route the cable at the bot
 
 ### Step 6. Installing the HDD / SSD Bracket and Routing Cables
 
-{{< figure src="/documentation/images/NASCAsewithdrives.jpg" title="Complete assembly of the NAS Case" width="300" >}}
+{{< figure src="/documentation/images/NASCAsewithdrives.jpg" caption="Complete assembly of the NAS Case" width="300" >}}
 
-{{< figure src="/documentation/images/TopViewAssembly.png" title="Top view of a complete NAS Case Assembly" width="300" >}}
+{{< figure src="/documentation/images/TopViewAssembly.png" caption="Top view of a complete NAS Case Assembly" width="300" >}}
 
 Installing the HDD/SSD bracket into the case and wiring it up is the last step before closing up the case.
 

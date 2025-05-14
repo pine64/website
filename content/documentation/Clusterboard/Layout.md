@@ -9,7 +9,7 @@ menu:
     weight: 1
 ---
 
-{{< figure src="/documentation/Clusterboard/images/clusterboard_labels.png" title="The Clusterboard with labels" width="400" >}}
+{{< figure src="/documentation/Clusterboard/images/clusterboard_labels.png" caption="The Clusterboard with labels" width="400" >}}
 
 | Label | Description |
 | --- | --- |
@@ -39,9 +39,9 @@ The 20-pin expansion connector is the part 10 decribed in the section above, ava
 
 ## SOPINE Module
 
-{{< figure src="/documentation/SOPINE/images/sopine_front_labels.png" title="Front view of the SOPINE module with labels" width="400" >}}
+{{< figure src="/documentation/SOPINE/images/sopine_front_labels.png" caption="Front view of the SOPINE module with labels" width="400" >}}
 
-{{< figure src="/documentation/SOPINE/images/sopine_back_labels.png" title="Rear view of the SOPINE module with labels" width="400" >}}
+{{< figure src="/documentation/SOPINE/images/sopine_back_labels.png" caption="Rear view of the SOPINE module with labels" width="400" >}}
 
 | Label | Description |
 | --- | --- |

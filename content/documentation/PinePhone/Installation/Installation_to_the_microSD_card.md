@@ -20,7 +20,7 @@ To install an image to the microSD card:
 4. Plug microSD card into phone (make sure to use the top slot, not the bottom slot)
 5. Boot up the phone
 
-{{< figure src="/documentation/images/Pinephone_slots.png" title="The microSD belongs in the upper slot, the micro-SIM in the lower slot." width="600" >}}
+{{< figure src="/documentation/images/Pinephone_slots.png" caption="The microSD belongs in the upper slot, the micro-SIM in the lower slot." width="600" >}}
 
 ## Using Balena Etcher
 

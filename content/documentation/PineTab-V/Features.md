@@ -9,8 +9,8 @@ menu:
     weight: 1
 ---
 
-{{< figure src="/documentation/PineTab-V/images/Pinetabv_2.jpg" title="Front- and backside of the PineTab-V" width="250" >}}
-{{< figure src="/documentation/PineTab-V/images/Pinetabv_3.jpg" title="Backside of the PineTab-V" width="250" >}}
+{{< figure src="/documentation/PineTab-V/images/Pinetabv_2.jpg" caption="Front- and backside of the PineTab-V" width="250" >}}
+{{< figure src="/documentation/PineTab-V/images/Pinetabv_3.jpg" caption="Backside of the PineTab-V" width="250" >}}
 
 Chassis:
 

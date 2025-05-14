@@ -13,7 +13,7 @@ menu:
 
 Board Dimensions: 85mm x 56mm x 18.8mm, see the [model-B board dimension drawing](https://files.pine64.org/doc/rock64/rock64%20board%20dimension.pdf)
 
-{{< figure src="/documentation/Oz64/images/Oz64_3D_model.png" title="The Oz64 3D model" width="300" >}}
+{{< figure src="/documentation/Oz64/images/Oz64_3D_model.png" caption="The Oz64 3D model" width="300" >}}
 
 ## Network
 
@@ -41,7 +41,7 @@ Input Power: +5V @2A with 3.5mm/1.35mm Type H Barrel type DC connector (@1.5A wi
 
 Based on the [Sophgo SG-200x](https://en.sophgo.com/sophon-u/product/introduce/sg200x.html)
 
-{{< figure src="/documentation/Oz64/images/SG2000_Block_Diagram.png" title="SG2000 block diagram" width="300" >}}
+{{< figure src="/documentation/Oz64/images/SG2000_Block_Diagram.png" caption="SG2000 block diagram" width="300" >}}
 
 ### CPU Architecture
 

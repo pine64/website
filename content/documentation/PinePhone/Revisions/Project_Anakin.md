@@ -170,7 +170,7 @@ Connector information:
 * [2.0mm PH Type connector specification use in Lithium Battery (VBAT) port and RTC Battery port](https://files.pine64.org/doc/datasheet/pine64/ePH.pdf)
 * [0.5mm Pitch cover type FPC connector specification use in DSI port, TP port and CSI port](https://files.pine64.org/doc/datasheet/pine64/0.5FPC%20Front%20Open%20Connector%20H=1.5.pdf)
 
-{{< figure src="/documentation/images/QUECTEL_EC20_Dongle-small.jpg" title="right" >}}
+{{< figure src="/documentation/images/QUECTEL_EC20_Dongle-small.jpg" caption="right" >}}
 
 LTE module information:
 

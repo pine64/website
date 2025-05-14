@@ -193,7 +193,7 @@ Expected result:
 
 ### Option 3: Generic UART adapter
 
-{{< figure src="/documentation/Ox64/images/ox64_pinout.png" title="Ox64 pinout" >}}
+{{< figure src="/documentation/Ox64/images/ox64_pinout.png" caption="Ox64 pinout" >}}
 
 Check that your serial adapter is on the [Compatible UARTs](/documentation/Ox64/Further_information/Compatible_UARTs/) list. You will (most likely) only have one serial interface available to you; unlike the previous options you will be using this same serial interface for both flashing and testing the system.
 

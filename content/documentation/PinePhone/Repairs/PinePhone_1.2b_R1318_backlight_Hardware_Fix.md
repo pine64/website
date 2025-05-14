@@ -34,7 +34,7 @@ The fix of the issue is to remove the R1318 resistor.
 
 A detailed instruction will follow here.
 
-{{< figure src="/documentation/images/Pinephone-pcb-r1318.png" title="R1318 location on the board" width="400" >}}
+{{< figure src="/documentation/images/Pinephone-pcb-r1318.png" caption="R1318 location on the board" width="400" >}}
 
 ## Sources and tutorials
 

@@ -12,7 +12,7 @@ aliases:
   - /wiki/PinePhone_MMS_with_Matrix
 ---
 
-{{< figure src="/documentation/images/Pinephonematrixfractalmmsscreenshot.jpg" title="Screenshot of fractal displaying an MMS conversation" >}}
+{{< figure src="/documentation/images/Pinephonematrixfractalmmsscreenshot.jpg" caption="Screenshot of fractal displaying an MMS conversation" >}}
 
 The one known way to get MMS fully (meaning pictures and group messages) working is by relaying all SMS and MMS to a matrix server and using a matrix client to interact with them. https://gitlab.com/untidylamp/mmmpuppet is the bridge used here
 

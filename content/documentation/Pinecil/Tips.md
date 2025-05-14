@@ -34,11 +34,11 @@ Pay attention to the length! Pine Store sells two different lengths of tips.
 
 ### How to check new tips?
 
-{{< figure src="/documentation/images/Multimeter_measuring_Short_Tip.png" title=" Short Tip 6.2 Ω" width="200" >}}
+{{< figure src="/documentation/images/Multimeter_measuring_Short_Tip.png" caption=" Short Tip 6.2 Ω" width="200" >}}
 
 1. Remove the screw on top, then remove the cartridge. Clean new cartridges/tips with isopropyl alcohol (IPA) to remove any factory residue before installing (avoid strange behavior). If you have no IPA, use a dry clean towel, especially the white end with the two silver contacts (do not use water; it could get into the seam line on the white end). This often resolves issues with glitchy temperatures or random no-tip symbol from poor or dirty electric contact [reference]https://github.com/Ralim/IronOS/issues/1601).
 
-{{< figure src="/documentation/images/CleanTip-Cartridge-Contacts.jpg" title="Clean contacts with IPA" >}}
+{{< figure src="/documentation/images/CleanTip-Cartridge-Contacts.jpg" caption="Clean contacts with IPA" >}}
 	
 . Then install the cartridge/tip, re-install the screw on top, and heat the tip a few times to 350 °C for a couple minutes.
 . If you don’t have a multimeter, then after you initially heat the tips a few times to 350 °C. Then change the temperature to the [correct range](/documentation/Pinecil/Guides_to_soldering#what_temperature_should_i_use?) for the solder you purchased and check if it melts solder (add a little solder to the tip end also before storing it).
@@ -80,9 +80,9 @@ Pay attention to the length! Pine Store sells two different lengths of tips.
  Older Pinecil V1 can not use the short tips until firmware code is written to enable manual selection of 6.2 Ω or 8.0 Ω tip. **Only the V2 model** has the hardware to auto-detect the two kinds of tips short 6.2 Ω or regular length 8.0 Ω. If you would like to help with the code, see [GitHub/IronOS](https://github.com/Ralim/IronOS).
 {{< /admonition >}}
 
-{{< figure src="/documentation/images/Pinecil-Short-Tip-SetGross-1.jpeg" title="Short gross set, white box" >}}
-{{< figure src="/documentation/images/Pinecil-Short-Tip-SetFine-1.jpeg" title="Short fine set, white box" >}}
-{{< figure src="/documentation/images/Pinecil-ST-B2.jpg" title="ST-B2 conical short tip included with the V2 Pinecil" width="250" >}}
+{{< figure src="/documentation/images/Pinecil-Short-Tip-SetGross-1.jpeg" caption="Short gross set, white box" >}}
+{{< figure src="/documentation/images/Pinecil-Short-Tip-SetFine-1.jpeg" caption="Short fine set, white box" >}}
+{{< figure src="/documentation/images/Pinecil-ST-B2.jpg" caption="ST-B2 conical short tip included with the V2 Pinecil" width="250" >}}
 
 * The shorter tip is designed for higher performance and requires more power than longer traditional TS100 tips
 * Recommend using minimum of usb-C PD65W-3.25A-20V or higher voltage charger when using Short tips (short tip draws more power than longer tips because of the lower ohms).
@@ -101,11 +101,11 @@ Pay attention to the length! Pine Store sells two different lengths of tips.
 * Normal Length [Gross Set here](https://pine64.com/product/pinecil-soldering-tip-set-gross/) (~8.0 Ω)
 * Normal Length [Fine Set here](https://pine64.com/product/pinecil-soldering-tip-set-fine/) (~8.0 Ω)
 
-{{< figure src="/documentation/images/Pinecil-Tip-SetFine-1.jpg" title=" Fine Set, Normal length" width="250" >}}
+{{< figure src="/documentation/images/Pinecil-Tip-SetFine-1.jpg" caption=" Fine Set, Normal length" width="250" >}}
 
-{{< figure src="/documentation/images/Pinecil-Tip-SetGross-1.jpg" title=" Gross Set, Normal length" width="250" >}}
+{{< figure src="/documentation/images/Pinecil-Tip-SetGross-1.jpg" caption=" Gross Set, Normal length" width="250" >}}
 
-{{< figure src="/documentation/images/PinecilTipSets.jpg" title=" Regular Length TS Tips: Left= Fine set, Right = Gross set. Both TS sets have ~8.0 ohm tips and are the standard length similar to other TS100 style tips." width="500" >}}
+{{< figure src="/documentation/images/PinecilTipSets.jpg" caption=" Regular Length TS Tips: Left= Fine set, Right = Gross set. Both TS sets have ~8.0 ohm tips and are the standard length similar to other TS100 style tips." width="500" >}}
 
 {{< admonition type="important" >}}
  Currently, Pinecil V1 original uses the normal length ts100 style tips and not the newer Short tips designed for V2. Ralim is working on adding a feature to the firmware to allow people with the older V1 Pinecil to manually switch a profile setting which allows toggling between Normal Tip and Short tip profiles (adequate power supply must also be used min. PD65w 3.25A, 20V recommended). Check Github Ralim’s IronOS for progress information. Always unplug when swapping tips.
@@ -113,7 +113,7 @@ Pay attention to the length! Pine Store sells two different lengths of tips.
 
 ### Other compatible tips
 
-{{< figure src="/documentation/images/TS100-Tip-Styles.png" title=" BC3 and JL02 are not sold by Pine Store, ~8.0 Ω" width="300" >}}
+{{< figure src="/documentation/images/TS100-Tip-Styles.png" caption=" BC3 and JL02 are not sold by Pine Store, ~8.0 Ω" width="300" >}}
 
 **Common resistances for tips:**
 

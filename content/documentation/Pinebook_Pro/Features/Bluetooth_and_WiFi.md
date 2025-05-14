@@ -9,7 +9,7 @@ menu:
     weight:
 ---
 
-{{< figure src="/documentation/images/PinebookPro_WirelessIC_Location.jpg" title="The Pinebook Pro’s AP6256 wireless module" width="400" >}}
+{{< figure src="/documentation/images/PinebookPro_WirelessIC_Location.jpg" caption="The Pinebook Pro’s AP6256 wireless module" width="400" >}}
 
 ## Hardware Overview
 

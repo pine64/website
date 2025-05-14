@@ -17,7 +17,7 @@ Vector images and pictures for the PineNote you can freely use for projects and 
 
 Background ideas:
 
-{{< figure src="/documentation/images/Pinenotebg1.png" title="Author: Funeral, License: CC0" width="400" >}}
-{{< figure src="/documentation/images/Pinenotebg2.png" title="Author: Funeral, License: CC0" width="400" >}}
-{{< figure src="/documentation/images/Pinenotebg3.png" title="Author: Funeral, License: CC0" width="400" >}}
-{{< figure src="/documentation/images/Pinenotebg4.png" title="Author: Funeral, License: CC0" width="400" >}}
+{{< figure src="/documentation/images/Pinenotebg1.png" caption="Author: Funeral, License: CC0" width="400" >}}
+{{< figure src="/documentation/images/Pinenotebg2.png" caption="Author: Funeral, License: CC0" width="400" >}}
+{{< figure src="/documentation/images/Pinenotebg3.png" caption="Author: Funeral, License: CC0" width="400" >}}
+{{< figure src="/documentation/images/Pinenotebg4.png" caption="Author: Funeral, License: CC0" width="400" >}}

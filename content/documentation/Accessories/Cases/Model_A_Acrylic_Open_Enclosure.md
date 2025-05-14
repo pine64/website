@@ -13,7 +13,7 @@ aliases:
 
 The **"Model A" Acrylic Open Enclosure** is a case for "Model A" sized single-board computers (Pine A64, ROCKPro64, Quartz64 Model A) sold by PINE64, available from [the official store](https://pine64.com/product/pine-a64-rockpro64-acrylic-open-enclosure/).
 
-{{< figure src="/documentation/images/Model_a_acrylic_case_with_pine_a64.jpg" title="A Pine A64 mounted in the &quot;Model A&quot; Acrylic Open Enclosure. The text on the top is &quot;PINE64&quot; nowadays." >}}
+{{< figure src="/documentation/images/Model_a_acrylic_case_with_pine_a64.jpg" caption="A Pine A64 mounted in the &quot;Model A&quot; Acrylic Open Enclosure. The text on the top is &quot;PINE64&quot; nowadays." >}}
 
 ## Installation
 
@@ -25,7 +25,7 @@ For the Quartz64 Model A, you may need to file down the inner corner of one of t
 
 ### 3D-Printable Top With Fan and PCIe Cutout
 
-{{< figure src="/documentation/images/Model_a_top_render.png" title="Non-artist’s impression of the replacement top plate" >}}
+{{< figure src="/documentation/images/Model_a_top_render.png" caption="Non-artist’s impression of the replacement top plate" >}}
 
 User:CounterPillow has created an alternate 3D-printable top plate which allows for the mounting of a 40mmx40mmx10mm fan, as well as allowing for PCIe cards to be mounted while the case is assembled. The STL and STEP files are available under [https://wiki.pine64.org/wiki/File:Model_A_acrylic_case_top_plate_with_fan_cutout.zip](https://wiki.pine64.org/wiki/File:Model_A_acrylic_case_top_plate_with_fan_cutout.zip) free of charge, licensed as CC-BY 4.0.
 

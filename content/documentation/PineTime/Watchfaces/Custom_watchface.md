@@ -235,7 +235,7 @@ Here is a fun idea you can try: you can even replace the days with whatever thin
 
 The locational placement in LVGL is done on a Cartesian plane, where each object can have dynamic origin placement, and the Y-axis is inverted. So going down is done with a positive Y-axis value and not negative as it is by default.
 
-{{< figure src="/documentation/images/LVGL_coord_system.png" title="LVGL coord system" width="200" >}}
+{{< figure src="/documentation/images/LVGL_coord_system.png" caption="LVGL coord system" width="200" >}}
 
 The position of the various objects in WatchFaceDigital.cpp are set by the line,
 

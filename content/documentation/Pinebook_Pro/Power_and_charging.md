@@ -46,7 +46,7 @@ With the external chargers disconnected the system is powered by the battery, so
 
 ### Overview
 
-{{< figure src="/documentation/Pinebook_Pro/images/Pbp-charging-simplified.png" title="Pinebook Pro simplified charging schematics" width="300" >}}
+{{< figure src="/documentation/Pinebook_Pro/images/Pbp-charging-simplified.png" caption="Pinebook Pro simplified charging schematics" width="300" >}}
 
 When an external charger is connected, the battery charging process is automatically activated, it doesn’t depend on any software interactions and works all the same even with the main SoC powered down. The system automatically chooses between the barrel socket (limiting current draw to 3&nbsp;A) and Type-C source (limited to 2.5&nbsp;A), with the former preferred when both are connected at the same time (but the current limit is enforced as if Type-C was used).
 

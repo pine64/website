@@ -9,7 +9,7 @@ menu:
     weight: 3
 ---
 
-{{< figure src="/documentation/images/Quartzpro64_soc_and_ram_resized.jpeg" title="The SoC and RAM packages" width="200" >}}
+{{< figure src="/documentation/images/Quartzpro64_soc_and_ram_resized.jpeg" caption="The SoC and RAM packages" width="200" >}}
 
 ## General
 
@@ -108,7 +108,7 @@ The height from the bottom of the PCB to the top of the USB ports as the tallest
 
 ## Storage
 
-{{< figure src="/documentation/images/Quartzpro64_emmc_resized.jpeg" title="The eMMC on the dev board" width="200" >}}
+{{< figure src="/documentation/images/Quartzpro64_emmc_resized.jpeg" caption="The eMMC on the dev board" width="200" >}}
 
 * Soldered 64&nbsp;GB FORESEE eMMC chip, which comes pre-flashed with some Android build
 * One microSD card slot
@@ -116,7 +116,7 @@ The height from the bottom of the PCB to the top of the USB ports as the tallest
 
 ## Power
 
-{{< figure src="/documentation/images/Power_and_switch.jpg" title="Power switch & barrel connector" width="100" >}}
+{{< figure src="/documentation/images/Power_and_switch.jpg" caption="Power switch & barrel connector" width="100" >}}
 
 You can provide power to the board via the 12V barrel connector, it’s 5.5mm OD/2.1mm ID barrel 'coaxial' type "M" centre-positive, the ROCKPro64 5A power supply from the PINE64 store will work. (TODO: add alternative ways).
 
@@ -124,7 +124,7 @@ There is a hardware flip switch to power up / down the board.
 
 ## PMU
 
-{{< figure src="/documentation/images/Quartzpro64_pmu.jpeg" title="The PMU" width="100" >}}
+{{< figure src="/documentation/images/Quartzpro64_pmu.jpeg" caption="The PMU" width="100" >}}
 
 2x RK806-2, not RK808 compatible. It’s a dual PMU configuration where one PMU is a subordinate of the other.
 

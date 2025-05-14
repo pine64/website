@@ -17,7 +17,7 @@ The software releases can be installed (the process is being referred to as _fla
 
 The images can be installed to an microSD card and be booted from it. 
 
-{{< figure src="/documentation/PinePhone_Pro/images/pinephone_slots.png" title="The microSD belongs in the upper slot, the SIM in the lower slot." width="600" >}}
+{{< figure src="/documentation/PinePhone_Pro/images/pinephone_slots.png" caption="The microSD belongs in the upper slot, the SIM in the lower slot." width="600" >}}
 
 {{< admonition type="note" >}}
  Compared to installations to the eMMC, running operating systems from the microSD card is slower than to the eMMC due to the microSD card’s slower reading and writing speeds.

@@ -154,7 +154,7 @@ This is a CLI that runs in a terminal console. Get the latest zip file for Linux
 
 ## Update V1
 
-{{< figure src="/documentation/images/Pinecil-V1andV2.png" title="right" width="400" >}}
+{{< figure src="/documentation/images/Pinecil-V1andV2.png" caption="right" width="400" >}}
 
 1. Pinecil V1 uses a *.dfu file type for firmware. The newer Pinecil V2 only uses *.bin firmware type files.
 2. Pinecil V1 models were sold until July 2022 and then discontinued.
@@ -195,7 +195,7 @@ This is a CLI that runs in a terminal console. Get the latest zip file for Linux
 
 ## Boot Logo Art
 
-{{< figure src="/documentation/images/Boot-logo-dogbone.jpg" title="Dog bone by River M." >}}
+{{< figure src="/documentation/images/Boot-logo-dogbone.jpg" caption="Dog bone by River M." >}}
 
 ### Get Art
 

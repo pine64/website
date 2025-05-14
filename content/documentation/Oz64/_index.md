@@ -16,4 +16,4 @@ The **Oz64** is a low cost single-board computer based on the Sophgo SG2000 SoC 
 
 The Oz64 SBC comes in a model-B form-factor, has a microSD card slot, an eMMC plugin connector, an USB 2.0 Type-A host port, and many other peripheral interfaces for makers to integrate with sensors and other devices. 
 
-{{< figure src="/devices/images/oz64.jpg" title="The Oz64" width="300" >}}
+{{< figure src="/devices/images/oz64.jpg" caption="The Oz64" width="300" >}}

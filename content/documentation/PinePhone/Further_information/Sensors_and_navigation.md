@@ -21,7 +21,7 @@ The PinePhone contains various components that enable or aid orientation and nav
 * IMU (Inertial Measurement Unit), combined Accelerometer and Gyroscope sensor (MPU6050)
 * Magnetometer (LIS3MDL or AF8133J)
 
-{{< figure src="/documentation/images/Pp_sensors_block.png" title="PinePhone navigation sensors" width="500" >}}
+{{< figure src="/documentation/images/Pp_sensors_block.png" caption="PinePhone navigation sensors" width="500" >}}
 
 ## Hardware
 
@@ -55,7 +55,7 @@ Key features:
 
 The sensors are mounted on the PinePhone’s mainboard in different positions and orientations. For the purpose of orientation and navigation it is important to know the relationship between the sensor coordinate frames and the body frame of the phone.
 
-{{< figure src="/documentation/images/pp_coordinates.png" title="PinePhone sensor coordinates systems (red) and body coordinate system (cyan)" width="500" >}}
+{{< figure src="/documentation/images/pp_coordinates.png" caption="PinePhone sensor coordinates systems (red) and body coordinate system (cyan)" width="500" >}}
 
 As a basis for software development, a common body coordinate system has to be established along with it’s relation to a world coordinate system. "iio-sensor-proxy expects the (sensor) readings to match those defined in the Linux IIO documentation, the Windows Integrating Motion and Orientation Sensors whitepaper, and the Android sensor documentation"[ref]. To transform the sensor coordinate systems into body coordinates, 'mount matrices' have to be defined.
 

@@ -177,8 +177,8 @@ If you removed the battery isolator and the battery contacts are intact, the bat
 
 If nothing works please don’t hesitate to contact the community, they are eager to help and booting issues are usually very easy to solve (as they are typically either battery or installation related). The phones itself are all tested individually at the factory. Do not contact PINE64’s support for booting issues.
 
-{{< figure src="/documentation/images/Pinephone_warning.png" title="A protection foil isolates the battery for the shipping." >}}
-{{< figure src="/documentation/images/Pinephone_backside.png" title="The microSD belongs in the upper slot, the micro SIM in the lower slot." >}}
+{{< figure src="/documentation/images/Pinephone_warning.png" caption="A protection foil isolates the battery for the shipping." >}}
+{{< figure src="/documentation/images/Pinephone_backside.png" caption="The microSD belongs in the upper slot, the micro SIM in the lower slot." >}}
 
 #### Can I install a different OS on my Community Edition?
 

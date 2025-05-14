@@ -19,16 +19,16 @@ The **PinePower** devices (the _PinePower_ and the _PinePower Desktop_) are powe
 
 [PinePower](Versions/Pinepower)
 
-{{< figure src="/documentation/PinePower/images/PinePower_Charger_65W.jpeg" title="" width="400" >}}
+{{< figure src="/documentation/PinePower/images/PinePower_Charger_65W.jpeg" caption="" width="400" >}}
 
 ## PinePower Desktop
 
 [PinePower 65W](Versions/Pinepower_Desktop)
 
-{{< figure src="/documentation/PinePower/images/PinePower-Desktop-2.jpg" title="" width="400" >}}
+{{< figure src="/documentation/PinePower/images/PinePower-Desktop-2.jpg" caption="" width="400" >}}
 
 ## PinePower Desktop V2
 
 [PinePower Desktop V2](Versions/Pinepower_Desktop_V2)
 
-{{< figure src="/documentation/PinePower/images/pinepower_desktop_v2.jpg" title="" width="400" >}}
+{{< figure src="/documentation/PinePower/images/pinepower_desktop_v2.jpg" caption="" width="400" >}}
