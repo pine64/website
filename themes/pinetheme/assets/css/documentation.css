@@ -27,17 +27,14 @@
     justify-content: space-between;
     display: flex;
 }
-#doc-breadcrumbs-contents {
-    display: flex;
-}
-#doc-breadcrumbs ul {
-    padding-left: 0 !important;
-    margin: 1px 0 0 4px;
-}
-#doc-breadcrumbs-icon{
+#doc-breadcrumbs-icon {
     position: relative;
-    top: 2pt;
-    padding-right: 2pt;
+    top: 1pt;
+    padding-right: 4pt;
+    min-width: 16px;
+    min-height: 16px;
+    width: 16px;
+    height: 16px;
 }
 #doc-nav {
     text-overflow: ellipsis;
