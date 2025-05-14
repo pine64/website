@@ -1,22 +1,22 @@
 <div id="doc-breadcrumbs">
     <div id="doc-breadcrumbs-contents">
-           
-            <ul class="breadcrumbs">
-                <span id="doc-breadcrumbs-icon"><img src="/img/tree.svg" alt="Tree symbol for the breadcrumbs"></span>
-                {{ range .Ancestors.Reverse }}
+        <span id="doc-breadcrumbs-icon"><img src="/img/tree.svg" alt="Tree symbol for the breadcrumbs"></span>
+        <ul class="breadcrumbs">
+            
+            {{ range .Ancestors.Reverse }}
 
-                    <!-- Filter top level -->
-                    {{ if ne .Kind "home" }}
+                <!-- Filter top level -->
+                {{ if ne .Kind "home" }}
 
-                    <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a> /
+                <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a> /
 
-                    {{ end }}
                 {{ end }}
+            {{ end }}
 
-                <!-- Current -->
-                {{ .Title }}
-              
-            </ul>
+            <!-- Current -->
+            {{ .Title }}
+            
+        </ul>
 
     </div>
     <div>
