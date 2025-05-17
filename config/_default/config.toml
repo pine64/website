@@ -50,7 +50,7 @@ enableRobotsTXT = true
     tabWidth = 4
 
 [permalinks]
-  blog = '/:year/:month/:day/:filename/'
+  blog = '/:year/:month/:day/:contentbasename/'
 
 [cover]
   hidden = false # hide everywhere but not in structured data
