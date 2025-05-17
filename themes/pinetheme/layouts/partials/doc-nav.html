@@ -41,8 +41,7 @@
                 <!-- Hide "Main Page"-->
                 {{if ne .URL "/documentation/" }}
                     <a class='sidebar-nav-item' href="{{ .URL }}">{{ .Name }}</a>
-                    <br> 
-                    <hr>
+                    <hr class='sidebar-hr'>
                 {{end}}
 
             {{end}}

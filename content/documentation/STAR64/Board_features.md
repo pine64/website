@@ -9,6 +9,8 @@ menu:
     weight: 2
 ---
 
+{{< figure src="/documentation/STAR64/images/star64.png" caption="The STAR64 board" width="400" >}}
+
 ## Video
 
 * Digital Video output up to 4K@30Hz

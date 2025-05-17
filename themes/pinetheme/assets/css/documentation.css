@@ -79,8 +79,12 @@
 #doc-nav .sidebar-nav-item {
     font-weight: 500;
     padding: 6px 4px;
+    margin-bottom: 4px;
     color: var(--blue);
     font-size: 18px;
+}
+#doc-nav .sidebar-hr {
+    margin: 4px 0 2px 0;
 }
 #doc-nav .sidebar-nav-subitem {
     font-weight: 500;
