@@ -99,18 +99,20 @@ In particular, USB 3.0 and the SATA connector on the board are mutually exclusiv
 
 Attention! GPIOs are 3.3V!
 
-| Assigned To |
+
+
+| Assigned To | Pin no. | Pin no. | Assigned To | 
 | --- | --- | --- | --- |
-| Pin no. | Pin no. | Assigned To | 3.3 V |
-| 1 | 2 | 5 V | I2C3_SDA_M0 ^a,b^ |
-| 3 | 4 | 5 V | I2C3_SCL_M0 ^a,b^ |
-| 5 | 6 | GND | CPU_REFCLK_OUT |
-| 7 | 8 | UART2_TX_M0_DEBUG | GND |
-| 9 | 10 | UART2_RX_M0_DEBUG | SPI1_MOSI_M1 |
-| 11 | 12 | UART0_TX ^a^ | SPI1_MISO_M1 |
-| 13 | 14 | UART0_RX ^a^ | SPI1_CLK_M1 |
-| 15 | 16 | GND | SPI1_CS0_M1 |
-| 17 | 18 | SPDIF_OUT ^c^ | GND |
+| 3.3 V | 1 | 2 | 5 V | 
+| I2C3_SDA_M0 <sup>a,b</sup> | 3 | 4 | 5 V |
+| I2C3_SCL_M0 <sup>a,b</sup> | 5 | 6 | GND |
+| CPU_REFCLK_OUT | 7 | 8 | UART2_TX_M0_DEBUG | 
+| GND | 9 | 10 | UART2_RX_M0_DEBUG |
+| SPI1_MOSI_M1 | 11 | 12 | UART0_TX <sup>a</sup> | 
+| SPI1_MISO_M1 | 13 | 14 | UART0_RX <sup>a</sup> |
+| SPI1_CLK_M1 | 15 | 16 | GND | 
+| SPI1_CS0_M1 | 17 | 18 | SPDIF_OUT <sup>c</sup> |
+| GND | 19 | 20 | 3.3V | 
 
 ### Notes
 
@@ -128,27 +130,27 @@ Attention! GPIOs are 3.3V!
 
 Interesting alternate pin configurations are listed in [brackets].
 
-| Assigned To |
+| Assigned To | Pin no. | Pin no. | Assigned To 
 | --- | --- | --- | --- |
-| Pin no. | Pin no. | Assigned To | 3.3 V |
-| 1 | 2 | 5 V | _[I2C3_SDA_M0]_ GPIO1_A0_3V3 |
-| 3 | 4 | 5 V | _[I2C3_SCL_M0]_ GPIO1_A1_3V3 |
-| 5 | 6 | GND | GPIO3_C4_3V3 |
-| 7 | 8 | UART2_TX | GND |
-| 9 | 10 | UART2_RX | _[SPI1_CS0_M1]_ GPIO3_A1_3V3 |
-| 11 | 12 | GPIO3_A3_3V3 _[I2S3_SCLK_M0]_ | _[I2S3_MCLK_M0]_ GPIO3_A2_3V3 |
-| 13 | 14 | GND | GPIO3_B0_3V3 |
-| 15 | 16 | GPIO3_B1_3V3 | 3.3V |
-| 17 | 18 | GPIO3_B2_3V3 | GPIO4_C3_3V3 |
-| 19 | 20 | GND | GPIO4_C5_3V3 |
-| 21 | 22 | GPIO3_C1_3V3 _[SPI1_MOSI_M1]_ | GPIO4_C2_3V3 |
-| 23 | 24 | GPIO4_C6_3V3 | GND |
-| 25 | 26 | GPIO4_D1_3V3 | I2C4_SDA_M0 |
-| 27 | 28 | I2C4_SCL_M0 | GPIO3_B3_3V3 |
-| 29 | 30 | GND | GPIO3_B4_3V3 |
-| 31 | 32 | GPIO3_C2_3V3 _[SPI1_MISO_M1]_ | _[SPI1_CLK_M1]_ GPIO3_C3_3V3 |
-| 33 | 34 | GND | _[I2S3_LRCK_M0]_ GPIO3_A4_3V3 |
-| 35 | 36 | GPIO3_A7_3V3 | _[SPDIF_TX_M0]_ GPIO1_A4_3V3 |
-| 37 | 38 | GPIO3_A6_3V3 _[I2S3_SDI_M0]_ | GND |
+| 3.3 V | 1 | 2 | 5 V 
+| _[I2C3_SDA_M0]_ GPIO1_A0_3V3 | 3 | 4 | 5 V |
+| _[I2C3_SCL_M0]_ GPIO1_A1_3V3 | 5 | 6 | GND |
+| GPIO3_C4_3V3 | 7 | 8 | UART2_TX |
+| GND | 9 | 10 | UART2_RX |
+| _[SPI1_CS0_M1]_ GPIO3_A1_3V3 | 11 | 12 | GPIO3_A3_3V3 _[I2S3_SCLK_M0]_ |
+| _[I2S3_MCLK_M0]_ GPIO3_A2_3V3 | 13 | 14 | GND |
+| GPIO3_B0_3V3 | 15 | 16 | GPIO3_B1_3V3 |
+| 3.3V | 17 | 18 | GPIO3_B2_3V3 |
+| GPIO4_C3_3V3 | 19 | 20 | GND |
+| GPIO4_C5_3V3 | 21 | 22 | GPIO3_C1_3V3 _[SPI1_MOSI_M1]_ |
+| GPIO4_C2_3V3 | 23 | 24 | GPIO4_C6_3V3 |
+| GND | 25 | 26 | GPIO4_D1_3V3 |
+| I2C4_SDA_M0 | 27 | 28 | I2C4_SCL_M0 |
+| GPIO3_B3_3V3 | 29 | 30 | GND |
+| GPIO3_B4_3V3 | 31 | 32 | GPIO3_C2_3V3 _[SPI1_MISO_M1]_ |
+| _[SPI1_CLK_M1]_ GPIO3_C3_3V3 | 33 | 34 | GND |
+| _[I2S3_LRCK_M0]_ GPIO3_A4_3V3 | 35 | 36 | GPIO3_A7_3V3 |
+| _[SPDIF_TX_M0]_ GPIO1_A4_3V3 | 37 | 38 | GPIO3_A6_3V3 _[I2S3_SDI_M0]_ |
+| GND | 39 | 40 | GPIO3_A5_3V3 _[I2S3_SDO_M0]_ |
 
 Source: Page 24 of [the board schematics](https://files.pine64.org/doc/quartz64/Quartz64_model-B_Schematic-V1.3_20220124.pdf).
