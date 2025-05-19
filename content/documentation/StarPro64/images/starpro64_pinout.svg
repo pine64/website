@@ -1143,15 +1143,16 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
-     inkscape:zoom="4.2782932"
-     inkscape:cx="150.41045"
-     inkscape:cy="24.425628"
+     inkscape:zoom="6.0504203"
+     inkscape:cx="310.4743"
+     inkscape:cy="734.57707"
      inkscape:window-width="1920"
      inkscape:window-height="1058"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer7">
+     inkscape:current-layer="g3170-8-0-6-2"
+     showgrid="false">
     <inkscape:page
        x="0"
        y="0"
@@ -1861,12 +1862,12 @@
          d="m 472.35385,244.59871 h 17.83972 l 0.009,-3.24727 h 4.81157 l 0.025,3.24727 h 43.59085 l 2.05052,-2.36787 1.12294,0.78115 -1.58672,3.05141 v 48.76107 l 1.15952,1.28159 -0.6713,0.61025 -1.34262,-1.0985 h -44.24518 v 1.95289 h -4.33297 v -1.95289 H 472.354 Z"
          sodipodi:nodetypes="ccccccccccccccccccc" />
       <path
-         style="fill:#000000;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         style="fill:#0044aa;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 536.40873,258.10843 c 0,-4.10022 -1.22055,-4.39398 -5.00426,-5.00426 -7.36616,-1.18809 -19.77295,-2.68522 -19.77295,-0.48822 0,2.19699 21.48172,0.24411 21.35967,5.49248 -0.12206,5.24838 -21.35967,2.80728 -21.35967,5.7366 0,2.16565 13.98215,-0.86915 21.72613,-1.46392 2.14102,-0.16444 3.05108,-0.79014 3.05108,-4.27268 z"
          id="path1627-0-9-2-9-7"
          sodipodi:nodetypes="sssssss" />
       <path
-         style="fill:#000000;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         style="fill:#0044aa;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 536.46975,281.13208 c 0,4.10022 -1.22055,4.39398 -5.00426,5.00426 -7.36616,1.18809 -19.77295,2.68522 -19.77295,0.48822 0,-2.19699 21.48172,-0.24411 21.35967,-5.49248 -0.12206,-5.24838 -21.35967,-2.80728 -21.35967,-5.7366 0,-2.16565 13.98215,0.86915 21.72613,1.46392 2.14102,0.16444 3.05108,0.79014 3.05108,4.27268 z"
          id="path1627-7-9-2-6-1-5"
          sodipodi:nodetypes="sssssss" />
@@ -2035,7 +2036,7 @@
        transform="matrix(1.0648556,0,0,1.0648556,-65.446977,-109.03229)"><tspan
          x="388.73242"
          y="624.13126"
-         id="tspan1">EIC7700X</tspan></text>
+         id="tspan79">EIC7700X</tspan></text>
     <g
        id="g2"
        transform="matrix(0,0.94433898,-0.96723441,0,681.72581,300.73723)">
@@ -2811,7 +2812,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,161.57,190.06287)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan2">2</tspan></text>
+         id="tspan80">2</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#c19a00;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-0"
@@ -2825,7 +2826,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,117.83411,190.06287)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan3">1</tspan></text>
+         id="tspan81">1</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#800000;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-06"
@@ -2839,7 +2840,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,161.57004,227.2258)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan4">4</tspan></text>
+         id="tspan82">4</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#00aa49;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-0-0"
@@ -2853,7 +2854,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,117.83415,227.2258)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan5">3</tspan></text>
+         id="tspan83">3</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#1a1a1a;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-5"
@@ -2867,7 +2868,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,161.57002,264.38877)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan6">6</tspan></text>
+         id="tspan84">6</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#00aa49;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-0-9"
@@ -2881,7 +2882,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,117.56969,264.23493)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan7">5</tspan></text>
+         id="tspan85">5</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#00aa49;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-06-7"
@@ -2895,7 +2896,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,161.57006,301.55169)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan8">8</tspan></text>
+         id="tspan86">8</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#00aa49;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-0-0-5"
@@ -2909,7 +2910,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,117.9736,301.16712)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan9">7</tspan></text>
+         id="tspan87">7</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#1a1a1a;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-59"
@@ -2923,7 +2924,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,156.42505,783.53731)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan10">34</tspan></text>
+         id="tspan88">34</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#00aa49;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-0-1"
@@ -2937,7 +2938,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,112.56901,783.53728)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan11">33</tspan></text>
+         id="tspan89">33</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#00aa49;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-06-04"
@@ -2951,7 +2952,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,156.42509,820.70024)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan12">36</tspan></text>
+         id="tspan90">36</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#00aa49;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-0-0-7"
@@ -2965,7 +2966,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,112.31901,820.70033)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan13">35</tspan></text>
+         id="tspan91">35</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#00aa49;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-5-1"
@@ -2979,7 +2980,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,156.42508,857.86321)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan14">38</tspan></text>
+         id="tspan92">38</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#00aa49;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-0-9-9"
@@ -2993,7 +2994,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,112.35748,857.86325)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan15">37</tspan></text>
+         id="tspan93">37</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#00aa49;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-06-7-1"
@@ -3007,7 +3008,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,156.42512,895.02613)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan16">40</tspan></text>
+         id="tspan94">40</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#1a1a1a;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-0-0-5-7"
@@ -3021,7 +3022,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,112.57867,895.02613)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan17">39</tspan></text>
+         id="tspan95">39</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#00aa49;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-6"
@@ -3035,7 +3036,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,155.85747,338.52232)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan18">10</tspan></text>
+         id="tspan96">10</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#1a1a1a;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-0-8"
@@ -3049,7 +3050,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,118.08901,338.67621)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan19">9</tspan></text>
+         id="tspan97">9</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#00aa49;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-06-3"
@@ -3063,7 +3064,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,155.66513,375.68529)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan20">12</tspan></text>
+         id="tspan98">12</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#00aa49;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-0-0-4"
@@ -3077,7 +3078,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,113.59303,375.76227)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan21">11</tspan></text>
+         id="tspan99">11</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#1a1a1a;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-5-2"
@@ -3091,7 +3092,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,156.42488,412.94439)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan22">14</tspan></text>
+         id="tspan100">14</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#00aa49;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-0-9-6"
@@ -3105,7 +3106,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,112.45341,413.05981)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan23">13</tspan></text>
+         id="tspan101">13</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#00aa49;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-06-7-9"
@@ -3119,7 +3120,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,156.42492,450.10732)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan24">16</tspan></text>
+         id="tspan102">16</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#00aa49;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-0-0-5-6"
@@ -3133,7 +3134,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,111.95331,450.04962)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan25">15</tspan></text>
+         id="tspan103">15</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#00aa49;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-1"
@@ -3147,7 +3148,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,156.42492,486.23386)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan26">18</tspan></text>
+         id="tspan104">18</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#d4aa00;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-0-94"
@@ -3161,7 +3162,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,111.99187,486.27234)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan27">17</tspan></text>
+         id="tspan105">17</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#1a1a1a;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-06-0"
@@ -3175,7 +3176,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,156.42496,523.39678)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan28">20</tspan></text>
+         id="tspan106">20</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#00aa49;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-0-0-1"
@@ -3189,7 +3190,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,112.21307,523.43528)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan29">19</tspan></text>
+         id="tspan107">19</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#00aa49;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-5-7"
@@ -3203,7 +3204,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,156.42494,560.55976)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan30">22</tspan></text>
+         id="tspan108">22</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#00aa49;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-0-9-1"
@@ -3217,7 +3218,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,113.96336,560.65591)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan31">21</tspan></text>
+         id="tspan109">21</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#00aa49;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-06-7-97"
@@ -3231,7 +3232,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,156.42499,597.72268)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan32">24</tspan></text>
+         id="tspan110">24</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#00aa49;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-0-0-5-67"
@@ -3245,7 +3246,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,112.5737,597.7227)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan33">23</tspan></text>
+         id="tspan111">23</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#00aa49;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-6-6"
@@ -3259,7 +3260,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,156.42497,634.88563)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan34">26</tspan></text>
+         id="tspan112">26</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#1a1a1a;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-0-8-6"
@@ -3273,7 +3274,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,112.32365,634.88566)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan35">25</tspan></text>
+         id="tspan113">25</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#2c5aa0;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-06-3-9"
@@ -3287,7 +3288,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,156.42501,672.04856)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan36">28</tspan></text>
+         id="tspan114">28</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#2c5aa0;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-0-0-4-8"
@@ -3301,7 +3302,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,112.36213,672.14475)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan37">27</tspan></text>
+         id="tspan115">27</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#1a1a1a;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-5-2-2"
@@ -3315,7 +3316,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,156.425,709.21153)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan38">30</tspan></text>
+         id="tspan116">30</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#00aa49;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-0-9-6-3"
@@ -3329,7 +3330,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,112.58332,709.29805)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan39">29</tspan></text>
+         id="tspan117">29</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#00aa49;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-06-7-9-0"
@@ -3343,7 +3344,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,156.42504,746.37445)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan40">32</tspan></text>
+         id="tspan118">32</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#00aa49;stroke-width:2.68577;stroke-miterlimit:20;stroke-opacity:1"
        id="path2-0-0-5-6-8"
@@ -3357,7 +3358,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,113.95856,746.3744)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan41">31</tspan></text>
+         id="tspan119">31</tspan></text>
     <rect
        style="fill:#c19a00;fill-opacity:1;stroke:none;stroke-width:4.53295;stroke-miterlimit:20;stroke-opacity:1"
        id="rect4"
@@ -3685,7 +3686,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,39.321351,190.0244)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan42">3.3V</tspan></text>
+         id="tspan120">3.3V</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-0"
@@ -3693,7 +3694,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,39.321351,487.63551)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan43">3.3V</tspan></text>
+         id="tspan121">3.3V</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-08"
@@ -3701,7 +3702,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,215.87769,189.87057)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan44">5V</tspan></text>
+         id="tspan122">5V</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-08-6"
@@ -3709,7 +3710,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,215.87769,227.07197)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan45">5V</tspan></text>
+         id="tspan123">5V</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-08-8"
@@ -3717,7 +3718,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,216.07003,264.4657)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan46">GND</tspan></text>
+         id="tspan124">GND</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-08-8-8"
@@ -3725,7 +3726,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,40.494631,338.82994)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan47">GND</tspan></text>
+         id="tspan125">GND</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-08-8-2"
@@ -3733,7 +3734,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,216.07003,413.07884)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan48">GND</tspan></text>
+         id="tspan126">GND</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-08-8-29"
@@ -3741,7 +3742,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,216.07003,524.87538)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan49">GND</tspan></text>
+         id="tspan127">GND</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-08-8-81"
@@ -3749,7 +3750,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,40.494631,636.44108)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan50">GND</tspan></text>
+         id="tspan128">GND</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-08-8-1"
@@ -3757,7 +3758,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,216.07003,710.78617)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan51">GND</tspan></text>
+         id="tspan129">GND</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-08-8-4"
@@ -3765,7 +3766,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,216.07003,785.18898)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan52">GND</tspan></text>
+         id="tspan130">GND</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-08-8-19"
@@ -3773,7 +3774,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,40.494631,896.8508)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan53">GND</tspan></text>
+         id="tspan131">GND</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-0-3"
@@ -3781,7 +3782,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,-33.172089,376.03133)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan54">GPIO104_CN</tspan></text>
+         id="tspan132">GPIO104_CN</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-0-3-0"
@@ -3789,7 +3790,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,-33.172089,413.23271)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan55">GPIO105_CN</tspan></text>
+         id="tspan133">GPIO105_CN</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-0-3-2"
@@ -3797,7 +3798,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,-33.172089,450.43412)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan56">GPIO005_CN</tspan></text>
+         id="tspan134">GPIO005_CN</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-0-3-6"
@@ -3805,7 +3806,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,215.51224,376.06982)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan57">I2S2_BCLK_CN</tspan></text>
+         id="tspan135">I2S2_BCLK_CN</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-0-3-28"
@@ -3813,7 +3814,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,216.07003,452.43937)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan58">GPIO001_CN</tspan></text>
+         id="tspan136">GPIO001_CN</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-0-3-60"
@@ -3821,7 +3822,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,216.07003,487.67409)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan59">GPIO002_CN</tspan></text>
+         id="tspan137">GPIO002_CN</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-0-3-3"
@@ -3829,7 +3830,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,-143.78756,301.62856)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan60">GPIO087/MIPI_MCLK_CN</tspan></text>
+         id="tspan138">GPIO087/MIPI_MCLK_CN</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-0-3-9"
@@ -3837,7 +3838,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,215.86807,304.7252)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan61">UART0DBG_TX_CN</tspan></text>
+         id="tspan139">UART0DBG_TX_CN</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-0-3-1"
@@ -3845,7 +3846,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,215.86807,338.48374)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan62">UART0DBG_RX_CN</tspan></text>
+         id="tspan140">UART0DBG_RX_CN</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-0-3-7"
@@ -3853,7 +3854,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,-41.740889,227.2258)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan63">I2C8_SDA_CN</tspan></text>
+         id="tspan141">I2C8_SDA_CN</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-0-3-4"
@@ -3861,7 +3862,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,-39.519349,264.42719)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan64">I2C8_SCL_CN</tspan></text>
+         id="tspan142">I2C8_SCL_CN</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-0-3-04"
@@ -3869,7 +3870,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,-30.642799,524.83691)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan65">SPI_TXD_CN</tspan></text>
+         id="tspan143">SPI_TXD_CN</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-0-3-05"
@@ -3877,7 +3878,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,-31.037089,562.03832)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan66">SPI_RXD_CN</tspan></text>
+         id="tspan144">SPI_RXD_CN</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-0-3-283"
@@ -3885,7 +3886,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,-29.286799,599.23967)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan67">SPI_CLK_CN</tspan></text>
+         id="tspan145">SPI_CLK_CN</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-0-3-91"
@@ -3893,7 +3894,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,216.07003,561.8844)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan68">GPIO003_CN</tspan></text>
+         id="tspan146">GPIO003_CN</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-0-3-44"
@@ -3901,7 +3902,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,216.37778,599.08592)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan69">SPI_CSN0_CN</tspan></text>
+         id="tspan147">SPI_CSN0_CN</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-0-3-605"
@@ -3909,7 +3910,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,216.07003,636.47962)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan70">GPIO004_CN</tspan></text>
+         id="tspan148">GPIO004_CN</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-0-3-35"
@@ -3917,7 +3918,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,215.51224,673.6809)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan71">I2C5_SCL_CN</tspan></text>
+         id="tspan149">I2C5_SCL_CN</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-0-3-14"
@@ -3925,7 +3926,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,-41.740889,673.64243)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan72">I2C5_SDA_CN</tspan></text>
+         id="tspan150">I2C5_SDA_CN</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-0-3-64"
@@ -3933,7 +3934,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,-33.172089,710.84384)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan73">GPIO080_CN</tspan></text>
+         id="tspan151">GPIO080_CN</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-0-3-8"
@@ -3941,7 +3942,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,-33.172089,748.04523)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan74">GPIO079_CN</tspan></text>
+         id="tspan152">GPIO079_CN</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-0-3-33"
@@ -3949,7 +3950,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,-56.445379,822.44804)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan75">I2S2_WCLK_CN</tspan></text>
+         id="tspan153">I2S2_WCLK_CN</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-0-3-32"
@@ -3957,7 +3958,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,215.51224,859.59177)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan76">I2S2_SDI_CN</tspan></text>
+         id="tspan154">I2S2_SDI_CN</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-0-3-5"
@@ -3965,7 +3966,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,215.51224,896.79321)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan77">I2S2_SDO_CN</tspan></text>
+         id="tspan155">I2S2_SDO_CN</tspan></text>
     <text
        xml:space="preserve"
        id="text2-3-68-0-3-041"
@@ -3973,7 +3974,7 @@
        transform="matrix(1.3428889,0,0,1.3428889,216.07003,747.98757)"><tspan
          x="510.53125"
          y="-118.34921"
-         id="tspan78">GPIO.26</tspan></text>
+         id="tspan156">GPIO.26</tspan></text>
     <path
        style="fill:#ffffff;fill-opacity:1;stroke:#ffcc00;stroke-width:2.65022;stroke-miterlimit:20;stroke-opacity:1"
        d="M 510.73652,7.921015 V 747.09209"

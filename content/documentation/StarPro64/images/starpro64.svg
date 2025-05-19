@@ -1143,15 +1143,15 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
-     inkscape:zoom="0.75630254"
-     inkscape:cx="237.33888"
-     inkscape:cy="172.55"
+     inkscape:zoom="1.0695733"
+     inkscape:cx="263.65654"
+     inkscape:cy="190.26279"
      inkscape:window-width="1920"
      inkscape:window-height="1058"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer6">
+     inkscape:current-layer="g3170-8-0-6-2">
     <inkscape:page
        x="0"
        y="0"
@@ -1869,12 +1869,12 @@
          d="m 472.35385,244.59871 h 17.83972 l 0.009,-3.24727 h 4.81157 l 0.025,3.24727 h 43.59085 l 2.05052,-2.36787 1.12294,0.78115 -1.58672,3.05141 v 48.76107 l 1.15952,1.28159 -0.6713,0.61025 -1.34262,-1.0985 h -44.24518 v 1.95289 h -4.33297 v -1.95289 H 472.354 Z"
          sodipodi:nodetypes="ccccccccccccccccccc" />
       <path
-         style="fill:#000000;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         style="fill:#0044aa;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 536.40873,258.10843 c 0,-4.10022 -1.22055,-4.39398 -5.00426,-5.00426 -7.36616,-1.18809 -19.77295,-2.68522 -19.77295,-0.48822 0,2.19699 21.48172,0.24411 21.35967,5.49248 -0.12206,5.24838 -21.35967,2.80728 -21.35967,5.7366 0,2.16565 13.98215,-0.86915 21.72613,-1.46392 2.14102,-0.16444 3.05108,-0.79014 3.05108,-4.27268 z"
          id="path1627-0-9-2-9-7"
          sodipodi:nodetypes="sssssss" />
       <path
-         style="fill:#000000;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         style="fill:#0044aa;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 536.46975,281.13208 c 0,4.10022 -1.22055,4.39398 -5.00426,5.00426 -7.36616,1.18809 -19.77295,2.68522 -19.77295,0.48822 0,-2.19699 21.48172,-0.24411 21.35967,-5.49248 -0.12206,-5.24838 -21.35967,-2.80728 -21.35967,-5.7366 0,-2.16565 13.98215,0.86915 21.72613,1.46392 2.14102,0.16444 3.05108,0.79014 3.05108,4.27268 z"
          id="path1627-7-9-2-6-1-5"
          sodipodi:nodetypes="sssssss" />
@@ -2043,7 +2043,7 @@
        transform="matrix(1.0648556,0,0,1.0648556,-65.446977,-109.03229)"><tspan
          x="388.73242"
          y="624.13126"
-         id="tspan1">EIC7700X</tspan></text>
+         id="tspan2">EIC7700X</tspan></text>
     <g
        id="g2"
        transform="matrix(0,0.94433898,-0.96723441,0,681.72581,300.73723)">
