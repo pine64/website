@@ -5,7 +5,7 @@ description = ""
 homepage = "https://pine64.org/"
 tags = []
 features = []
-min_version = "0.59.1"
+min_version = "0.144.0"
 
 [author]
   name = ""

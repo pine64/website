@@ -28,12 +28,12 @@ enableRobotsTXT = true
 
 # https://gohugo.io/getting-started/configuration-markup/
 [markup]
-  [markup.asciidocExt]
-    [markup.asciidocExt.attributes]
-      sectlinks = true
-      idprefix = ''
-      allow-uri-read = ""
-      icons = "font"
+  #[markup.asciidocExt]
+  #  [markup.asciidocExt.attributes]
+  #    sectlinks = true
+  #    idprefix = ''
+  #    allow-uri-read = ""
+  #    icons = "font"
   [markup.highlight]
     anchorLineNos = false
     codeFences = true
@@ -50,7 +50,7 @@ enableRobotsTXT = true
     tabWidth = 4
 
 [permalinks]
-  blog = '/:year/:month/:day/:filename/'
+  blog = '/:year/:month/:day/:contentbasename/'
 
 [cover]
   hidden = false # hide everywhere but not in structured data
@@ -62,8 +62,8 @@ enableRobotsTXT = true
   [params.social]
     twitter = 'thepine64'
 
-[security.exec]
-  allow = ["^asciidoctor$"]
+#[security.exec]
+#  allow = ["^asciidoctor$"]
 
 # Allow HTML inside markdown (e. g. for br in tables)
 [markup.goldmark]

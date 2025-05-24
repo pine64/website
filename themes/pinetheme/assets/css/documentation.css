@@ -198,44 +198,6 @@ div#doc-page code strong {
 div#doc-page .line-through {
     text-decoration:line-through
 }
-
-div#doc-page .doc_device_box {
-    width: 24em;
-    height: 18em;
-    text-align: center;
-    border-radius: 8pt;
-    margin: 10pt; 
-    border: 1pt solid rgb(228, 228, 228);
-    float: left;
-    font-weight: 400;
-    color: rgb(74, 74, 74);
-}
-div#doc-page .doc_device_box a{
-    color: rgb(74, 74, 74);
-}
-div#doc-page .doc_device_box_img_container{
-    height: 140px;
-    width: 140px;
-    padding-top: 2em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-}
-div#doc-page .doc_device_box img{
-    max-width: 140px;
-    max-height: 140px;
-}
-div#doc-page .doc_device_box h1{
-    color: black;
-    font-size: 16pt;
-}
-div#doc-page .doc_device_box p{
-    padding: 0 1em 0 1em;
-}
-div#doc-page .doc_device_box:hover{
-    border-color: #a9cfec;
-}
 /* To clear the float for the text */
 div#doc-page p{
     clear: left;
