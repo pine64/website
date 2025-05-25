@@ -132,7 +132,7 @@ article {
     margin: 10px 0;
     background-color: #ddd;
 }
-#doc-container img {
+#doc-container img, #doc-container object {
     max-width: 100%;
 }
 /* Documentation text style */
