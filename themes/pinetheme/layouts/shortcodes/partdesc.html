@@ -1,0 +1,4 @@
+{{- $id := .Get "id" -}}
+{{- $title := .Get "title" -}}
+{{- $desc := .Get "desc" -}}
+{{ $id }}: `<h3>{{ $title | safeHTML }}</h3><br>{{ $desc | safeHTML }}`,

@@ -1,0 +1,50 @@
+<div>
+
+{{ $src := .Get "src" }}
+<object type="image/svg+xml" id="svgObject" data="{{ $src }}" width="680">
+    <!-- Your fall back here -->
+    <img src="{{ $src }}">
+</object>
+
+<script>
+const descriptions = {
+  {{ .Inner | safe.JS }}
+};
+</script>
+
+  <div id="info" style="white-space: pre-line;">
+    <p></p>
+  </div>
+
+
+
+
+<script>
+  const infoDiv = document.getElementById('info');
+  const svgObject = document.getElementById('svgObject');
+
+  svgObject.addEventListener('load', () => {
+    const svgDoc = svgObject.contentDocument; // Get SVG document inside object
+    const svg = svgDoc.documentElement; // the <svg> element inside the object
+
+    svg.addEventListener('mouseover', (event) => {
+      const el = event.target;
+      if (el === svg) {
+        infoDiv.textContent = '';
+        return;
+      }
+      // Get all descendants with id inside the hovered element
+      const descendantsWithId = el.querySelectorAll ? el.querySelectorAll('[id]') : [];
+
+      let ids = Array.from(descendantsWithId).map(e => e.id);
+
+      // If no descendants with id, try the element itself
+      if (ids.length === 0 && el.id && descriptions[el.id]) {
+        //infoDiv.textContent = 'ID inside hovered element: ' + el.id;
+        infoDiv.innerHTML = descriptions[el.id]
+      }
+    });
+  });
+</script>
+
+</div>
