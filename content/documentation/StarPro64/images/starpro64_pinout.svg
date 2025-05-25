@@ -1144,14 +1144,14 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
      inkscape:zoom="1.5126051"
-     inkscape:cx="159.98889"
-     inkscape:cy="383.11388"
+     inkscape:cx="935.4722"
+     inkscape:cy="518.64165"
      inkscape:window-width="1920"
      inkscape:window-height="1058"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer7"
      showgrid="false">
     <inkscape:page
        x="0"
@@ -3972,14 +3972,6 @@
          x="510.53125"
          y="-118.34921"
          id="tspan77">I2S2_SDO_CN</tspan></text>
-    <text
-       xml:space="preserve"
-       id="text2-3-68-0-3-041"
-       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:14.6667px;line-height:1.4;font-family:Roboto;-inkscape-font-specification:'Roboto, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect3-5-93-1-3-96);display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:20;stroke-opacity:1"
-       transform="matrix(1.3428889,0,0,1.3428889,216.07003,747.98757)"><tspan
-         x="510.53125"
-         y="-118.34921"
-         id="tspan78">GPIO.26</tspan></text>
     <path
        style="fill:#ffffff;fill-opacity:1;stroke:#ffcc00;stroke-width:2.65022;stroke-miterlimit:20;stroke-opacity:1"
        d="M 510.73652,7.921015 V 747.09209"
