@@ -32,7 +32,9 @@ With GStreamer, in general, any V4L2 control can be set using the `extra-control
 
 This example converts an input MP4 file to an output MJPEG-inside-MKV file at JPEG quality 95, without any audio.
 
-    gst-launch-1.0 filesrc location=input.mp4 ! qtdemux name=demux demux.video_0 ! decodebin ! videoconvert ! v4l2jpegenc extra-controls=s,compression_quality=95 ! matroskamux ! filesink location=output.mkv
+```
+gst-launch-1.0 filesrc location=input.mp4 ! qtdemux name=demux demux.video_0 ! decodebin ! videoconvert ! v4l2jpegenc extra-controls=s,compression_quality=95 ! matroskamux ! filesink location=output.mkv
+```
 
 ### VP8 Encoding
 
@@ -42,8 +44,12 @@ This requires a draft [GStreamer merge request](https://gitlab.freedesktop.org/g
 
 This example converts an input MP4 file to an output VP8-inside-MKV file with a quantiser between 12 and 28, without any audio. The quantiser value goes from 0 (best quality, biggest filesize) to 63 (worst quality, smallest filesize).
 
-    gst-launch-1.0 filesrc location=input.mp4 ! qtdemux name=demux demux.video_0 ! decodebin ! videoconvert ! v4l2slvp8enc min-quality=12 max-quality=28 ! queue ! matroskamux ! filesink location=output.mkv
+```
+gst-launch-1.0 filesrc location=input.mp4 ! qtdemux name=demux demux.video_0 ! decodebin ! videoconvert ! v4l2slvp8enc min-quality=12 max-quality=28 ! queue ! matroskamux ! filesink location=output.mkv
+```
 
 Alternatively, you can encode in variable bitrate mode with a target bitrate given in bits per second. Do note that Hantro doesn’t seem to do target bitrates below 2 mbit/s. In this example, the file is transcoded at a target bitrate of 3 megabits per second.
 
-    gst-launch-1.0 filesrc location=input.mp4 ! qtdemux name=demux demux.video_0 ! decodebin ! videoconvert ! v4l2slvp8enc bitrate=3000000 ! queue ! matroskamux ! filesink location=output.mkv
+```
+gst-launch-1.0 filesrc location=input.mp4 ! qtdemux name=demux demux.video_0 ! decodebin ! videoconvert ! v4l2slvp8enc bitrate=3000000 ! queue ! matroskamux ! filesink location=output.mkv
+```

@@ -14,7 +14,7 @@ To install a cluster it is important to know the IP addresses of each module, so
 Each module may be plugged into the Clusterboard individually or consecutively, which makes it easy to assign a hostname to each module separately. It is also possible to manually edit the hostname in the OS image of each module before the first boot.
 
 {{< admonition type="tip" >}}
-The board has no hotplug functionality, so make sure you only plug/unplug the modules while the power is disconnected from the clusterboard.
+The board has no hotplug functionality, so make sure you only plug/unplug the modules while the power is disconnected from the Clusterboard.
 {{< /admonition >}}
 
 {{< admonition type="tip" >}}

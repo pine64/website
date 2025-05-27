@@ -49,14 +49,20 @@ The Bluetooth transceiver supports all 79 channel allocations, spanning frequenc
 
 To disable Bluetooth under Linux once:
 
-    sudo rfkill block bluetooth
+```
+sudo rfkill block bluetooth
+```
 
 To confirm if Bluetooth under Linux is disabled:
 
-    rfkill
+```
+rfkill
+```
 
 To disable Bluetooth on boot (NOTE: for distributions such as Manjaro XFCE see the step below):
 
-    sudo systemctl enable rfkill-block@bluetooth
+```
+sudo systemctl enable rfkill-block@bluetooth
+```
 
 To disable Bluetooth on certain distributions, such as Manjaro XFCE, right click on the Bluetooth panel icon, select _plugins_, then _PowerManager_, then _configuration_ and then deselect the _auto power on_ option

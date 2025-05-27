@@ -73,11 +73,11 @@ See [the official meson documentation](https://mesonbuild.com/Cross-compilation.
 
 ## Rust
 
-In order to cross-compile Rust applications for the Pinephone, you need to have a gcc cross-compiler installed and the Rust dependencies, usually the std crate, cross compiled for the target system. A more extensive explanation can be found on https://github.com/japaric/rust-cross. This instruction is based on it’s description.
+In order to cross-compile Rust applications for the PinePhone, you need to have a gcc cross-compiler installed and the Rust dependencies, usually the std crate, cross compiled for the target system. A more extensive explanation can be found on https://github.com/japaric/rust-cross. This instruction is based on it’s description.
 
 ### Installing a GCC Cross-Compiler
 
-The cross-compiler might have a different name depending on the operating system. Further along this instruction the name for the gcc cross-compiler will be used. Replace all occurences of `$gcc_name` with the name on your distribution.
+The cross-compiler might have a different name depending on the operating system. Further along this instruction the name for the gcc cross-compiler will be used. Replace all occurrences of `$gcc_name` with the name on your distribution.
 
 For how to install the gcc cross-compilation toolchain on your distribution, please see [Cross-compiling](/documentation/General/Cross-compiling#installing_the_toolchain)
 
@@ -105,7 +105,7 @@ When using rustc just add the two flags --target=aarch64-unknown-linux-gnu and -
 $ rustc --target=aarch64-unknown-linux-gnu -C linker=aarch64-linux-gnu-gcc main.rs
 ```
 
-To test it, run the program on your Pinephone
+To test it, run the program on your PinePhone
 
 ```Shell
 $ scp main user@ipadress:/home/user/Downloads
@@ -131,7 +131,7 @@ Then you can compile it with
 $ cargo build --target=aarch64-unknown-linux-gnu
 ```
 
-To test it, copy the file on your Pinephone
+To test it, copy the file on your PinePhone
 
 ```Shell
 $ scp target/aarch64-unknown-linux-gnu/debug/main user@ipadress:/home/user/Downloads

@@ -52,7 +52,7 @@ Within `menuconfig`, configure the following:
 * Select `Target ABI`, set it to `lp64d` and `press Exit`
 * Select `Toolchain`, enable `Fortran support`, enable `OpenMP support`, and Save & Exit
 
-Initiate the build process, but first make sure that your `PATH` variable contains no spaces. For Arch Linux distrubution you may also need to install extra-packages with `sudo pacman -S cpio rsync bc`.
+Initiate the build process, but first make sure that your `PATH` variable contains no spaces. For Arch Linux distribution you may also need to install extra-packages with `sudo pacman -S cpio rsync bc`.
 
 ```console
 $ make

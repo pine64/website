@@ -137,11 +137,11 @@ The LCD panel should slot back into the keyboard frame, the same way it came out
 
 _Step 11_: Tape it out.
 
-Move any tape from the old keyboard shell to the new one. These items protect the mainboard and daughterboard, and keep various wires in their right place. Some are grey and some are black. For tape that holds the speakers, microhones, or their cables in place, do not reattach yet.
+Move any tape from the old keyboard shell to the new one. These items protect the mainboard and daughterboard, and keep various wires in their right place. Some are grey and some are black. For tape that holds the speakers, microphones, or their cables in place, do not reattach yet.
 
 _Step 12_: Board install.
 
-Install the mainboard, the daughtboard, and their connecting ribbon cable. Be sure to put the boards in place, 2 large flat screws for the daughterboard, 3 large flat screws and one small screw for the mainboard, before attempting to place the ribbon.
+Install the mainboard, the daughterboard, and their connecting ribbon cable. Be sure to put the boards in place, 2 large flat screws for the daughterboard, 3 large flat screws and one small screw for the mainboard, before attempting to place the ribbon.
 
 _Step 13_: Microphone, speaker, and antenna install.
 

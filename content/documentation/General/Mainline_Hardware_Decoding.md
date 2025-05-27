@@ -18,7 +18,7 @@ This page is incomplete, you're welcome to improve it.
 
 *Mainline Hardware Decoding* refers to video decoding done using hardware accelerators on the mainline Linux kernel (i.e. what sits in Linus' tree).
 
-On most consumer-oriented SoCs, there is what is referred to as a VPU (Video Processing Unit). The VPU is responsible for power-efficient encoding and decoding of videos. Hardware-accelerated video decoding can be useful to get smoother video playback on your devices, lower power consumption, and lower CPU utilisation. Below is information regarding various hardware PINE64 uses and software that works with it.
+On most consumer-oriented SoCs, there is what is referred to as a VPU (Video Processing Unit). The VPU is responsible for power-efficient encoding and decoding of videos. Hardware-accelerated video decoding can be useful to get smoother video playback on your devices, lower power consumption, and lower CPU utilization. Below is information regarding various hardware PINE64 uses and software that works with it.
 
 ## Hardware
 
@@ -68,9 +68,9 @@ H.264 video decoding is possible when using GStreamer built from source, or an a
 
 ### FFmpeg
 
-Mainline FFmpeg currently lacks the necessary patches to use the v4l2-requests based API, but [a fork that can utilise it exists](https://github.com/jernejsk/FFmpeg).
+Mainline FFmpeg currently lacks the necessary patches to use the v4l2-requests based API, but [a fork that can utilize it exists](https://github.com/jernejsk/FFmpeg).
 
-With the patched ffmpeg, you can utilise hardware decoding using the `-hwaccel drm` parameter, e.g.:
+With the patched ffmpeg, you can utilize hardware decoding using the `-hwaccel drm` parameter, e.g.:
 
 `ffmpeg -hwaccel drm -i input.mp4 -f null - -benchmark`
 
@@ -78,7 +78,7 @@ to measure how fast it decodes.
 
 ### mpv
 
-mpv v0.35 or later, built against the aforementioned FFmpeg fork, can be used to play back videos with hardware accelerated decoding. The hardware decoder path features interop with the GPU output, saving an expensive copyback operation. You can utilise the hardware decoding with e.g.:
+mpv v0.35 or later, built against the aforementioned FFmpeg fork, can be used to play back videos with hardware accelerated decoding. The hardware decoder path features interop with the GPU output, saving an expensive copyback operation. You can utilize the hardware decoding with e.g.:
 
 `mpv --hwdec=drm [FILE]`
 

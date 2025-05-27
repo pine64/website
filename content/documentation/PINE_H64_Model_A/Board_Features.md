@@ -27,7 +27,7 @@ Input power: DC 5V @ 3A, 3.5mm OD/ 1.35mm ID DC jack connector, Euler connector
 
 ## Network
 
-* 10/100/1000Mbps Ethernet
+* 10/100/1000 Mbps Ethernet
 * WiFi 802.11 b/g/n/ac with Bluetooth 4.0/4.1 (optional)
 
 ## Storage
@@ -53,7 +53,7 @@ The PINE H64 Model A is based on the ***Allwinner H6***.
 * 64 and 32bit execution states for scalable high performance
 * Trustzone technology supported
 * Support NEON Advanced SIMD (Single Instruction Multiple Data) instruction for acceleration of media and signal processing function
-* Support Large Physical Address Extensions(LPAE)
+* Support Large Physical Address Extensions (LPAE)
 * VFPv4 Floating Point Unit
 * 32KB L1 Instruction cache and 32KB L1 Data cache
 * 512KB L2 cache
@@ -63,7 +63,7 @@ The PINE H64 Model A is based on the ***Allwinner H6***.
 * ARM Mali T-720MP2 Dual-core GPU footnote:[see [Mali-T720 on arm.com](https://developer.arm.com/products/graphics-and-multimedia/mali-gpus/mali-t720-gpu)]
 * Supports OpenGL ES 3.1/3.0/2.0/1.1, OpenCL 1.2/1.1
 * Supports ATSC (Adaptive Scalable Texture Compression)
-* Supports FAST(4x)FSAA, IO Coherency
+* Supports FAST (4x) FSAA, IO Coherency
 * Floating point operation greater than 70 GFLOPS
 
 ### System Memory

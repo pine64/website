@@ -51,12 +51,12 @@ Cortex-M0 (control processors):
 * [ARM Mali-T860MP4 Quad-core GPU](https://developer.arm.com/products/graphics-and-multimedia/mali-gpus/mali-t860-and-mali-t880-gpus)
 * The highest performance GPUs built on Arm Mali’s famous Midgard architecture, the Mali-T860 GPU is designed for complex graphics use cases and provide stunning visuals for UHD content.
 * Frequency 650MHz
-* Throughput 1300Mtri/s, 10.4Gpix/s
+* Throughput 1300 Mtri/s, 10.4 Gpix/s
 
 Graphic interface standards:
 
-* OpenGL® ES 1.1, 1.2, 2.0, 3.0, 3.1, 3.2. (Panfrost has initial support of 3.0 beginning 2020/02/27)
-* Vulkan 1.0, using the Mali binary blob. (Panfrost does not support Vulkan as of 2020/06/24)
+* OpenGL® ES 1.1, 1.2, 2.0, 3.0, 3.1, 3.2 (Panfrost has initial support of 3.0 beginning 2020/02/27)
+* Vulkan 1.0, using the Mali binary blob (Panfrost does not support Vulkan as of 2020/06/24)
 * OpenCL™ 1.1, 1.2
 * DirectX® 11 FL11_1
 * RenderScript™
@@ -66,10 +66,10 @@ Graphic interface standards:
 RAM Memory:
 
 * LPDDR4
-* 800MHz, (limited by RK3399)
+* 800 MHz (limited by RK3399)
 * Dual memory channels on the CPU, each 32 bits wide
 * Quad memory channels on the RAM chip, each 16 bits wide, 2 bonded together for each CPU channel
-* 4GB as a single 366 pin mobile RAM chip
+* 4 GB as a single 366 pin mobile RAM chip
 
 Storage Memory:
 
@@ -80,7 +80,7 @@ Storage Memory:
 SPI flash:
 
 * [SPI](/documentation/Pinebook_Pro/Features/SPI)
-* 128Mbit / 16MByte
+* 128 Mbit / 16MByte
 * 1 bit interface
 * Bootable, (first boot device, ahead of eMMC & SD card)
 * U-Boot images can be made to work, but as of 2020/06/24 there is no standardized image available.
@@ -96,14 +96,14 @@ MicroSD card:
 
 * Bootable
 * Supports SD, SDHC and SDXC cards, up to 512GB tested. SDXC standard says 2TB is the maximum.
-* Version SD3.0, (MMC 4.5), up to 50MB/s
+* Version SD3.0, (MMC 4.5), up to 50 MB/s
 * SD card Application Performance Class 1 (A1), (or better), recommended by some users, for better IOPS
 
 USB ports:
 
 * 1 x USB 2.0 Type-A Host Port, bootable
-* 1 x USB 3.0 Type-A Host Port, 5Gbps, is not bootable
-* 1 x USB 3.0 Type-C OTG Port, 5Gbps, (includes laptop charging function), is not bootable
+* 1 x USB 3.0 Type-A Host Port, 5 Gbps, is not bootable
+* 1 x USB 3.0 Type-C OTG Port, 5 Gbps, (includes laptop charging function), is not bootable
 * Note that high power USB devices may not work reliably on a PBP. Or they may draw enough power to drain the battery even when the PBP is plugged into A.C. One alternative is externally powered USB devices.
 
 Headphone jack switchable to UART serial console mux circuit

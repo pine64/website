@@ -27,7 +27,7 @@ All images boot from both SD card and the internal eMMC module.
 
 Download:
 
-* [Direct download from Manjaro](https://manjaro.org/download/): You have to navigate to the Manjaro ARM section and select "Generic" as the device in the drop-down list (the Pinebook Pro image has been removed and it’s now included in the generic one since version 22.08. Then you can choose Gnome, KDE Plasma, Mate, Minimal, Sway or Xfce.
+* [Direct download from Manjaro](https://manjaro.org/download/): You have to navigate to the Manjaro ARM section and select "Generic" as the device in the drop-down list (the Pinebook Pro image has been removed and it’s now included in the generic one since version 22.08). Then you can choose Gnome, KDE Plasma, Mate, Minimal, Sway or Xfce.
 * Old factory release: [Manjaro/Plasma 22.06 factory loaded build](https://files.pine64.org/os/PinebookPro/manjaro/Manjaro-ARM-kde-plasma-pbpro-bsp-22.06%20(2).img.xz) (June 2022) from _pine64.org_ (1.04GB, MD5 of the XZ file _d78031a4bed3eeb4f2001f3c89b9ed5a_)
 
 ### Armbian
@@ -89,7 +89,7 @@ See [Installing Arch Linux ARM](/documentation/Pinebook_Pro/Software/Installing_
 
 #### Customized Premade Root Filesystem
 
-An Arch Linux ARM root filesystem customized for the Pinebook Pro using Manjaro’s kernel is available. Instructions are included for installation on microSD card, eMMC module and NVME SSD.
+An Arch Linux ARM root filesystem customized for the Pinebook Pro using Manjaro’s kernel is available. Instructions are included for installation on microSD card, eMMC module and NVMe SSD.
 
 **Download location**
 
@@ -215,7 +215,7 @@ Works: display, WiFi
 Not tested: bluetooth
 Doesn’t work: audio
 
-You may build rpms and see if it fix issues from this repository: https://github.com/bengtfredh/pinebook-pro-copr
+You may build RPMs and see if it fix issues from this repository: https://github.com/bengtfredh/pinebook-pro-copr
 
 Default password for root is "linux"
 
@@ -341,7 +341,7 @@ There is a script that prepares a Gentoo arm64 stage 3 tarball for the Pinebook 
 
 **Word to the wise**
 
-Currently, following the instructions on the Pinebook pro gentoo github page will **not** result in a functional system. Therefore it is neccesary to follow the instructions given here. Please bear in mind that the Pinebook pro’s six arm cores and 4gb of ram are extremely anemic. For example, emerging the package net-libs/webkit-gtk in order to build the minimalist web-browser "surf", a process which takes eighty minutes on an intel core i5-8250U with 8gb of ram, required eight hours of compile time, Basic installation alone can take 24 hours of compillation, dozens of reboots, and hours of troubleshooting. After that, even installing firefox would take 17 hours. Now that that’s out of the way, we may begin the installation.
+Currently, following the instructions on the Pinebook pro gentoo github page will **not** result in a functional system. Therefore it is necessary to follow the instructions given here. Please bear in mind that the Pinebook pro’s six arm cores and 4gb of ram are extremely anemic. For example, emerging the package net-libs/webkit-gtk in order to build the minimalist web-browser "surf", a process which takes eighty minutes on an intel core i5-8250U with 8gb of ram, required eight hours of compile time, Basic installation alone can take 24 hours of compilation, dozens of reboots, and hours of troubleshooting. After that, even installing firefox would take 17 hours. Now that that’s out of the way, we may begin the installation.
 
 **Preparing the bootloader**
 
@@ -351,7 +351,7 @@ https://manjaro.org/downloads/arm/pinebook-pro/arm8-pinebook-pro-minimal/
 
 No-matter where you intend to install gentoo, the bootloader should always be installed on the eMMC flash, although technically the SD card slot could also be used. Either way, install any of the official Manjaro arm disk images to the internal eMMC (there’s no reason not to use the minimal image, as you will not be using this OS for anything). You may use a second operating system installed on an SD-card, or the official Pine64 eMMC USB adapter. Boot into this operating system to ensure that the bootloader functions, but after that you have no further need of it.
 
-Next, if you already have an OS on an SD card, you can use that for installing gentoo. If you don’t, you may be pleasantly suprised to find that tow-boot is cabable of booting from a USB drive. Therefore, you may install the same Manjaro image to your USB drive or SD card, and select it from the boot menu. You should now have an unused but bootable OS on the eMMC, and another bootable, usable OS on your external storage.
+Next, if you already have an OS on an SD card, you can use that for installing gentoo. If you don’t, you may be pleasantly surprised to find that tow-boot is capable of booting from a USB drive. Therefore, you may install the same Manjaro image to your USB drive or SD card, and select it from the boot menu. You should now have an unused but bootable OS on the eMMC, and another bootable, usable OS on your external storage.
 
 **Preparing the Disks**
 
@@ -361,7 +361,7 @@ Log into your host device as root with the following command:
 
 Enter your password.
 
-Let the device on which you intend to install gentoo be refered to hereafter as /dev/<gentoo>. Use the following command to prepare this disk for installation:
+Let the device on which you intend to install gentoo be referred to hereafter as /dev/<gentoo>. Use the following command to prepare this disk for installation:
 
 `fdisk -B /dev/<gentoo>`
 
@@ -369,7 +369,7 @@ Let the device on which you intend to install gentoo be refered to hereafter as 
 Don’t just copy these commands! You should substitute <gentoo> for mmcblk2 for the internal eMMC flash storage.
 {{< /admonition >}}
 
-Note that the first block of the boot partition is block 62500. Delete all partitions, but **do not** re-format the disk. Create a new boot partition starting at 62500, and as it’s size select "+1GB". Create a new swap partition. fdisk will try to start it at the beginning of the volume (before the boot partition) Instead, when it prompts you for the starting position, enter in the end sector of the boot partition. It should then tell you that this is within an existing partition, and recommend a slightly higher value. Press enter, and give for the size of the partition any value greater than "+4gb". You need this much ram to be able to suspend your system, and emerge large packages. Don’t be stingey - you still have SD cards. I reccomend "+8gb".
+Note that the first block of the boot partition is block 62500. Delete all partitions, but **do not** re-format the disk. Create a new boot partition starting at 62500, and as it’s size select "+1GB". Create a new swap partition. fdisk will try to start it at the beginning of the volume (before the boot partition) Instead, when it prompts you for the starting position, enter in the end sector of the boot partition. It should then tell you that this is within an existing partition, and recommend a slightly higher value. Press enter, and give for the size of the partition any value greater than "+4gb". You need this much ram to be able to suspend your system, and emerge large packages. Don’t be stingy - you still have SD cards. I recommend "+8gb".
 
 Finally, add a root partition starting at the end sector of the swap partition, and use the rest of the disk for it. That should be 50-60 GB depending on the size of your swap and boot partitions.
 
@@ -426,11 +426,11 @@ USE="X gtk bluetooth pulseaudio"
 
 You can use your own options instead of these if you know what you’re doing. It’s not super difficult.
 
-Continue installing the operating system, but stop just before emerging the @world set. I don’t know if this is necessary, but I haven’t had the time to try without doing this. Clone Janikk2099’s github repo. It doesn’t matter where, and run the script. If it fails run it a couple more times.
+Continue installing the operating system, but stop just before emerging the @world set. I don’t know if this is necessary, but I haven’t had the time to try without doing this. Clone Jannik2099’s github repo. It doesn’t matter where, and run the script. If it fails run it a couple more times.
 
 `git clone https://github.com/Jannik2099/gentoo-pinebookpro
 
-Don’t follow any of Janikk’s other instructions. They appear to be out of date (no offense bro). Let me be clear: DO NOT INSTALL U-BOOT. I don’t know what will happen, but it won’t be an improvement over the existing boot-loader so don’t worry about it.
+Don’t follow any of Jannik’s other instructions. They appear to be out of date (no offense bro). Let me be clear: DO NOT INSTALL U-BOOT. I don’t know what will happen, but it won’t be an improvement over the existing boot-loader so don’t worry about it.
 
 Finish installing your system until you come to the kernel.
 
@@ -452,7 +452,7 @@ Begin the kernel configuration
 
 `make menuconfig`
 
-At this point, you’re almost on your own. I don’t know a strict cause-and-effect relationship between my kernel config and the behavior of my system. For starters, just go into platform selection and deselect everything except rockchip platforms. Once you’re done save your configuration and exit. Make sure boot is mounted, and your fstab is set up with your swap mounted. Make sure dracut is installed.
+At this point, you’re almost on your own. I don’t know a strict cause-and-effect relationship between my kernel config and the behavior of my system. For starters, just go into platform selection and deselect everything except Rockchip platforms. Once you’re done save your configuration and exit. Make sure boot is mounted, and your fstab is set up with your swap mounted. Make sure dracut is installed.
 
 ```
 make

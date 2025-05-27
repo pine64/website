@@ -11,7 +11,7 @@ aliases:
   - /wiki/Pinebook_Pro_power_and_charging
 ---
 
-The Pinebook Pro external power and charging circuity is quite rudimentary, and hence quirky. This article aims to explain all the fine points so that the behaviour could be understood and dealt with.
+The Pinebook Pro external power and charging circuity is quite rudimentary, and hence quirky. This article aims to explain all the fine points so that the behavior could be understood and dealt with.
 
 ## Monitoring and control
 ### Overview

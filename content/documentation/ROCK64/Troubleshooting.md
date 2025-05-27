@@ -11,7 +11,7 @@ menu:
 
 ## HDMI output disconnects as soon as it connects
 
-Some older monitors seemingly can get into a weird state wherein the ROCK64 is unable to establish a proper connection with them. User:CounterPillow has seen this happen on an iiyama ProLite G2773HS connected over HDMI, and an Acer P225HQL connected over an HDMI to DVI adapter. The symptoms usually are that you see the monitor briefly turn on its backlight without displaying a picture, but then immediately either shutting off again or showing a "No Signal" message.
+Some older monitors seemingly can get into a weird state wherein the ROCK64 is unable to establish a proper connection with them. User CounterPillow has seen this happen on an iiyama ProLite G2773HS connected over HDMI, and an Acer P225HQL connected over an HDMI to DVI adapter. The symptoms usually are that you see the monitor briefly turn on its backlight without displaying a picture, but then immediately either shutting off again or showing a "No Signal" message.
 
 The solution is to completely power down your ROCK64, also removing its power source. Then plug in the monitor, and start up the ROCK64 afterwards. You should now be getting a picture again.
 

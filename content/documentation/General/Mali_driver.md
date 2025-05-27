@@ -40,5 +40,6 @@ Using drm driver not able to coexist with display driver，due to utilize displa
 
 Known issue：
 
-Due to rotate hardware not support crop, and majority exa accelerators operate using crop，sunxi_arm_video is reference code (features already verified)，this allow familiar with xorg hardware accelation，
+Due to rotate hardware not support crop, and majority exa accelerators operate using crop，sunxi_arm_video is reference code (features already verified)，this allow familiar with X.Org hardware acceleratio.
+
 If using web page and character appear vertical strip, this may not related to cache problem and may due to character library. This issue still need to further verified.

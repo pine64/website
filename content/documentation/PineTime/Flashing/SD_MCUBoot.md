@@ -46,7 +46,7 @@ To switch from SoftDevice Mode to MCUBoot Mode:
 
 ### Custom MBR
 
-It’s possible to customise (SoftDevice’s) MBR so that it can coexist with MCUBoot.
+It’s possible to customize (SoftDevice’s) MBR so that it can coexist with MCUBoot.
 
 **Pros:**
 
@@ -70,4 +70,4 @@ wasp-reloader is a simple bare-metal C program that, in a fairly brutal fashion,
 
 Currently it has linker scripts for SD132 V6.1.1 and can flash any payload smaller than SD132.
 
-To be used to install SoftDevice from mcuboot it would need linker scripts for mcuboot (to ensure the reloader sits high enough in flash to avoid a self-overwrite). To install mcuboot we need an Intel HEX file of the mcuboot payload **and** InfiniTime (we have to write it in one shot to keep BLE updates working after switching bootloaders). This may need custom linker scripts depending on how big the Infinitime binaries are.
+To be used to install SoftDevice from mcuboot it would need linker scripts for mcuboot (to ensure the reloader sits high enough in flash to avoid a self-overwrite). To install mcuboot we need an Intel HEX file of the mcuboot payload **and** InfiniTime (we have to write it in one shot to keep BLE updates working after switching bootloaders). This may need custom linker scripts depending on how big the InfiniTime binaries are.

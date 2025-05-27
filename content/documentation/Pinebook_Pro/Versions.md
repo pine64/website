@@ -9,4 +9,4 @@ menu:
     weight: 1
 ---
 
-Pinebook Pro v1 and v2 were prototype models that did not make it to the public. The "first batch" (First 100 forum preorders) onward are v2.1. [https://forum.pine64.org/showthread.php?tid=8111]
+Pinebook Pro v1 and v2 were prototype models that did not make it to the public. The "first batch" (first 100 forum pre-orders) onward are v2.1. [https://forum.pine64.org/showthread.php?tid=8111]

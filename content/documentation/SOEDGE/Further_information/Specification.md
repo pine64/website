@@ -17,7 +17,7 @@ Based on the [Rockchip RK1808](https://www.rock-chips.com/a/en/products/RK18_Ser
 * A power-efficient ARM 64-Bit Armv8-A architecture
 * AArch32 for full backward compatibility with Armv7
 * Support NEON Advanced SIMD (Single Instruction Multiple Data) instruction for acceleration of media and signal processing function
-* Support Large Physical Address Extensions(LPAE)
+* Support Large Physical Address Extensions (LPAE)
 * VFPv4 Floating Point Unit
 * 32KB L1 Instruction cache and 32KB L1 Data cache
 * AArch64 for 64-bit support and new architectural features

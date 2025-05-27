@@ -61,7 +61,7 @@ Expected files:
 
 ## Set up your UART adapter
 
-In this section we will configure and wire up a UART adapter in order to flash the Ox64. Choose one of the options below based on the hardware available to you; the first two are the most convenient since they minimise the number of times you will need to swap electrical connections.
+In this section we will configure and wire up a UART adapter in order to flash the Ox64. Choose one of the options below based on the hardware available to you; the first two are the most convenient since they minimize the number of times you will need to swap electrical connections.
 
 ### Option 1: Raspberry Pi Pico
 

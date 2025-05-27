@@ -29,13 +29,13 @@ menu:
 | 14 | 24-pin ATX Power Connector |
 | 15 | Two-pin connector for a switch/button that turns on connected ATX power supply |
 | 16 | 5&nbsp;V power output for hard disk drives (optional) |
-| 17 | Places for soldering two resistors (optional, for use with an ATX power suppply that requires dummy load on 3.3&nbsp;V and 12&nbsp;V rails) |
+| 17 | Places for soldering two resistors (optional, for use with an ATX power supply that requires dummy load on 3.3&nbsp;V and 12&nbsp;V rails) |
 
 For the part 4, please see the important note in the [specifications](/documentation/Clusterboard/Further_information/Specifications) page. For the part 11, please see the notes in the [hardware revisions](/documentation/Clusterboard/Further_information/Revisions) page. Parts 6 to 12 exist separately for each of all seven SOPINE or SOEDGE modules.
 
 ## 20-pin Expansion Connector
 
-The 20-pin expansion connector is the part 10 decribed in the section above, available for each SOPINE or SOEDGE module. There is an unofficial description of the pinout in [this forum thread](https://forum.pine64.org/showthread.php?tid=5713). The unofficial pinout is also visible directly in [this picture](https://forum.pine64.org/attachment.php?aid=1111).
+The 20-pin expansion connector is the part 10 described in the section above, available for each SOPINE or SOEDGE module. There is an unofficial description of the pinout in [this forum thread](https://forum.pine64.org/showthread.php?tid=5713). The unofficial pinout is also visible directly in [this picture](https://forum.pine64.org/attachment.php?aid=1111).
 
 ## SOPINE Module
 

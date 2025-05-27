@@ -195,7 +195,7 @@ See [instructions on this artifact](https://github.com/m-weigand/pinenote-debian
 
 A Linux installed to the cache partition should be able to easily backup everything over WiFi or to a USB stick/disk using _dd_.
 
-However the user would need to backup the cache partition themself (if they want that).
+However the user would need to backup the cache partition (if they want that).
 
 And more importantly they would only be getting the backup _after_ they started playing with the content of the eMMC.
 

@@ -17,7 +17,7 @@ The Pine A64 is based on the _Allwinner A64_.
 * A power-efficient ARM v8 architecture
 * 64 and 32bit execution states for scalable high performance
 * Support NEON Advanced SIMD (Single Instruction Multiple Data) instruction for acceleration of media and signal processing function
-* Support Large Physical Address Extensions(LPAE)
+* Support Large Physical Address Extensions (LPAE)
 * VFPv4 Floating Point Unit
 * 32KB L1 Instruction cache and 32KB L1 Data cache
 * 512KB L2 cache

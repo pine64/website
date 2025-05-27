@@ -45,7 +45,7 @@ The SOQuartz is based on the [Rockchip RK3566](https://www.rock-chips.com/a/en/p
 
 ## Network
 
-* 10/100/1000Mbps Ethernet
+* 10/100/1000 Mbps Ethernet
 * WiFi 802.11 b/g/n/ac with Bluetooth 5.0
 
 ## Displays / Cameras
@@ -58,7 +58,7 @@ The SOQuartz is based on the [Rockchip RK3566](https://www.rock-chips.com/a/en/p
 
 ## Connectivity
 
-* 1x Ethernet (1Gbit)
+* 1x Ethernet (1 Gbit)
 * 1x USB 2.0 OTG
 * 1x SD Card (SD)
 * 1x PCIe 1-Line

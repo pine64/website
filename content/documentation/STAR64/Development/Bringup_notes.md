@@ -9,7 +9,7 @@ menu:
     weight: 1
 ---
 
-* The USB over-current protection is not wired up correctly to the USB ports on Star64. The default Starfive Kernel will disable USB on boot as it belives the ports are overcurrent. This ugly hack works around it: https://github.com/Fishwaldo/Star64_linux/commit/2634a13ecfa1fa5c232ec2b9f6a6b6b0d9d66898
+* The USB over-current protection is not wired up correctly to the USB ports on Star64. The default Starfive Kernel will disable USB on boot as it believes the ports are overcurrent. This ugly hack works around it: https://github.com/Fishwaldo/Star64_linux/commit/2634a13ecfa1fa5c232ec2b9f6a6b6b0d9d66898
 * The Wifi Chip (RTL8852BU) is not supported in the kernel. There is a Vendor Driver that is imported in the kernel at https://github.com/Fishwaldo/Star64_linux/tree/Star64_devel/drivers/staging/rtl8852bu but it really needs a cleanup. It does BUG_ON at boot, but wifi is confirmed working. 
 * HDMI can be finicky. 4K Monitors are known to have a issue. This is also relevant for VisionFive2
 * Some kernels/distributions do not detect the total memory correctly. This is due to the way u-boot is configured. Currently, u-boot reads the memory from the eeprom on the Star64, and updates the dtb file before booting the kernel. Distributions that boot differently may not get the updated dtb file with the correct memory entry. You can work around this by recompiling the DTB with the correct memory for your board

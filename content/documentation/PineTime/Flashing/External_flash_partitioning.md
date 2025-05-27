@@ -23,7 +23,7 @@ What is the basic info to know about a storage partitions?
 
 ### Where to store the partition entries
 
-To put that index of partitions hardcoded with the firmware is a bad idea. How to know if those partitions are initializaded with the expected data type? What if the user decides to try another OS and it initializates the the partitions just like the developer has decided to do so? Installed OS has to check the rightness of the storage on every boot? Definitely, the index of partitions must be out of the own OS code in order to keep organized the data on the flash memory.
+To put that index of partitions hardcoded with the firmware is a bad idea. How to know if those partitions are initialized with the expected data type? What if the user decides to try another OS and it initializes the the partitions just like the developer has decided to do so? Installed OS has to check the rightness of the storage on every boot? Definitely, the index of partitions must be out of the own OS code in order to keep organized the data on the flash memory.
 
 #### PC
 
@@ -37,7 +37,7 @@ Single board computers and embedded systems with the [U-Boot bootloader](https:/
 
 [ESP32](https://en.wikipedia.org/wiki/ESP32) is a MCU managing partitions without hardcoded information and it is a good example to examine. It defines a [partition table](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/partition-tables.html) of 3Kb length at a fixed position with capacity to define 95 partitions. Maybe some excessive but the interesting thing is that partition table follow the pattern "offset-size-type" as basic information.
 
-The summing-up is that every system using partion index and not hardcoded stores the partition entries in some storage space and, this partition table, can be considered a little partition too. It is located in a well-know offset address of the flash storage.
+The summing-up is that every system using partition index and not hardcoded stores the partition entries in some storage space and, this partition table, can be considered a little partition too. It is located in a well-know offset address of the flash storage.
 
 ### Paper
 
@@ -45,7 +45,7 @@ PineTime is a device under open development and it offers undreamed possibilitie
 
 For example, it is possible to organize the flash to save a logo shown by the bootloader. And it doesn’t mean a mandatory requirement at the moment but bootloader or application can be changed and they will be able to found the logo to show or save a customized one.
 
-What is the cost of managing a partition table? In this case, community (developers) should be discuss and publish a paper with a proposal for the partition table structures and implement in their firmware for the Pinetime. It must be simple and suitable in order to organize the flash storage in partitions without more overhead than read the partition table, look for the partitions those are interested in and use them.
+What is the cost of managing a partition table? In this case, community (developers) should be discuss and publish a paper with a proposal for the partition table structures and implement in their firmware for the PineTime. It must be simple and suitable in order to organize the flash storage in partitions without more overhead than read the partition table, look for the partitions those are interested in and use them.
 
 ## Partition table draft-#0
 

@@ -11,7 +11,7 @@ aliases:
   - /wiki/Pinecil_Cases,_Stands,_Supplies
 ---
 
-The article contains information about cases, holders/stands, 3D-models, and supplies for the [Pinecil](/documentation/Pinecil) soldering iron. This is a small set of examples based on the many questions asked every week in the live Pinecil chat channel. There may be better althernatives depending on your part of the world, but this gives an idea of some possible options.
+The article contains information about cases, holders/stands, 3D-models, and supplies for the [Pinecil](/documentation/Pinecil) soldering iron. This is a small set of examples based on the many questions asked every week in the live Pinecil chat channel. There may be better alternatives depending on your part of the world, but this gives an idea of some possible options.
 
 ## Cases and bags
 
@@ -33,11 +33,11 @@ The article contains information about cases, holders/stands, 3D-models, and sup
 * [Pinecil V2 + Short Tips](https://www.printables.com/model/410086-pinecil-v2-short-tips-case) by Enrico Pulvirenti
 * [Collapsible stand](https://www.printables.com/model/441414-soldering-iron-stand-really-compact) by Kj_temmes
 * [Pinecil handle shell](https://www.printables.com/model/400459-pinecil-shell) by JeKo1987
-* [Pinecil compact case](https://www.thingiverse.com/thing:4727212)  by operator7g
-* [Pinecil flip case](https://www.thingiverse.com/thing:5551739)  by ithan
+* [Pinecil compact case](https://www.thingiverse.com/thing:4727212) by operator7g
+* [Pinecil flip case](https://www.thingiverse.com/thing:5551739) by ithan
 * [Multipart Pinecil Case](https://www.thingiverse.com/thing:5186002) by Pjotrke
 * [Thingiverse search for 'Pinecil'](https://www.thingiverse.com/search?q=pinecil)
 * [Reuse the clear plastic box](https://www.thingiverse.com/thing:4981053) that comes with the clear handle.
 * [T12 tip adapter for outside tip holding](https://www.thingiverse.com/thing:4734830)
 * [T12 tip adaptor](https://www.printables.com/model/97073-pinecil-mosfet-saver-for-t12-tips) to protect the internal Mosfet in Pinecil.
-* [3D models of Pinecil](https://github.com/kohkohwastaken/3D-Models/tree/main/Pine64)  by kohkoh
+* [3D models of Pinecil](https://github.com/kohkohwastaken/3D-Models/tree/main/Pine64) by kohkoh

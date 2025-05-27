@@ -120,7 +120,7 @@ Your Pinebook Pro should now sleep properly when the lid is closed.
 
 Many Pinebook Pro users have reported issues with M.2 NVMe SSD drives, including random Linux lockups and crashes. Some of these issues are related to the [RK3399’s errata](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=712fa1777207) that disables Gen2 (5&nbsp;GT/s) speed for the PCI Express link used by the NVMe SSD, reducing it down to Gen1 speed (2.5&nbsp;GT/s). However, Linux distributions that use Linux kernels older than version 5.12 still configure the PCI Express link to run at Gen2 speed, which requires [manual reconfiguration](https://forum.pine64.org/showthread.php?tid=11683) to Gen1 speed in case system instability is experienced. See also this [related discussion](https://patchwork.kernel.org/project/linux-rockchip/patch/20200423150510.6216-1-pgwipeout@gmail.com/). This issue does not affect distributions with recent (newer than May 2021) kernels such as Manjaro ARM which seem to work with no modifications.
 
-Some Pinebook Pro users have reported issues with the default settings for the APST (Autonomous Powe State Transition) power saving, which cause an NVMe drive to disappear from the system or lock up after a certain period of time. Please see [this forum thread](https://forum.pine64.org/showthread.php?tid=11337&pid=87711#pid87711) for further information.
+Some Pinebook Pro users have reported issues with the default settings for the APST (Autonomous Power State Transition) power saving, which cause an NVMe drive to disappear from the system or lock up after a certain period of time. Please see [this forum thread](https://forum.pine64.org/showthread.php?tid=11337&pid=87711#pid87711) for further information.
 
 The output of the 3.3&nbsp;V regulator inside the Pinebook Pro, which powers the M.2 SSD, becomes very noisy when the battery voltage drops below 3.9&nbsp;V or so. This is a hardware issue of the Pinebook Pro that cannot be corrected without extensive hardware modifications, and it causes many M.2 SSDs to lock up under load and cause operating system crashes. The real trouble is that for some M.2 SSDs it takes a couple of hours of heavy I/O to lock up under these conditions, which may make them appear to be working reliably, while they eventually fail.
 
@@ -156,7 +156,7 @@ A [firmware update](/documentation/Pinebook_Pro/Further_information/Datasheets/)
 
 This refers to the firmware update shown here: https://github.com/dragan-simic/pinebook-pro-keyboard-updater#update-all-firmware-images
 
-* If the system is not responding after the 1st reboot, it might be easiest to do a system restore or boot an sdcard-only OS, and follow up by running the second step of the trackpad firmware update with a USB keyboard and mouse plugged in
+* If the system is not responding after the 1st reboot, it might be easiest to do a system restore or boot an SD-card-only OS, and follow up by running the second step of the trackpad firmware update with a USB keyboard and mouse plugged in
 * System restore https://forum.pine64.org/showthread.php?tid=8229
 * Firmware update https://github.com/dragan-simic/pinebook-pro-keyboard-updater#update-all-firmware-images
 
@@ -174,7 +174,7 @@ The Pinebook Pro uses the RK3399 SoC (System on a Chip). It supports a video pas
 Here are some selection criteria for successfully using the USB C alternate mode for video:
 
 * The device must use USB C alternate mode DisplayPort. Not USB C alternate mode HDMI, or other.
-* The device can have a HDMI, DVI, or VGA connector, if it uses an active translater.
+* The device can have a HDMI, DVI, or VGA connector, if it uses an active translator.
 * If USB 3 is also desired from a USB dock, the maximum resolution, frame rate and pixel depth is reduced to half the bandwidth. For example, 4K @ 30hz instead of 60hz.
 * USB docks that also use USB C alternate mode DisplayPort will always have USB 2 available, (480Mbps, half-duplex).
 
@@ -202,7 +202,7 @@ If the above fix did not work, you can try this:
 * If there is more than one monitor configuration listed, edit that one too. Be careful to make no other changes. If needed, exit without saving and re-edit.
 * Save the file and exit.
 * Login using the GUI and test
-* If you are still loggied in via the GUI, you will have to reboot using `sudo shutdown -r now`. After the reboot, you should be able to login to the GUI login and have the resolution back to normal.
+* If you are still logged in via the GUI, you will have to reboot using `sudo shutdown -r now`. After the reboot, you should be able to login to the GUI login and have the resolution back to normal.
 
 After restoring the usability of your Pinebook Pro’s graphical screen, also see [this section](/documentation/Pinebook_Pro/Software/Tuning/#improving_readability) on improving readability and usability.
 

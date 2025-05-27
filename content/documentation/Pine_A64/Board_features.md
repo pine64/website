@@ -46,7 +46,7 @@ Board Dimensions: 133mm x 80mm x 19mm
 
 ## Network
 
-* 10/100/1000Mbps Ethernet (PINE A64+ version), 10/100Mbps Ethernet (PINE A64 version)
+* 10/100/1000 Mbps Ethernet (PINE A64+ version), 10/100 Mbps Ethernet (PINE A64 version)
 * WiFi 802.11 b/g/n with Bluetooth 4.0 (optional)
 
 ## Storage

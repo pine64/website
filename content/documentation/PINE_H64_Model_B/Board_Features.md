@@ -27,7 +27,7 @@ Input power: DC 5V @ 3A, 3.5mm OD/ 1.35mm ID DC jack connector
 
 ## Network
 
-* 10/100/1000Mbps Ethernet
+* 10/100/1000 Mbps Ethernet
 * WiFi 802.11 b/g/n/ac with Bluetooth 4.0/4.1
 * MHF1 RF coaxial connector for external BT/wifi antenna
 
@@ -59,7 +59,7 @@ The PINE H64 Model B is based on the ***Allwinner H6***.
 * 64 and 32bit execution states for scalable high performance
 * Trustzone technology supported
 * Support NEON Advanced SIMD (Single Instruction Multiple Data) instruction for acceleration of media and signal processing function
-* Support Large Physical Address Extensions(LPAE)
+* Support Large Physical Address Extensions (LPAE)
 * VFPv4 Floating Point Unit
 * 32KB L1 Instruction cache and 32KB L1 Data cache
 * 512KB L2 cache

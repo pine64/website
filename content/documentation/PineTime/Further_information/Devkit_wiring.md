@@ -14,7 +14,7 @@ aliases:
 
 This article will help you get up to scratch about how to connect your PineTime to your hardware debugger and what to keep in mind.
 
-The devkit comes with a set of wires you can use for connecting your programmer to the SWD pins. Most people use friction to make contact with the programming cable. Soldering the wires to the pinetime is not recommended, especially if you don’t have a temperature-controlled iron and good confidence that you can do it - the thin PCB is fragile and easy to break.
+The devkit comes with a set of wires you can use for connecting your programmer to the SWD pins. Most people use friction to make contact with the programming cable. Soldering the wires to the PineTime is not recommended, especially if you don’t have a temperature-controlled iron and good confidence that you can do it - the thin PCB is fragile and easy to break.
 
 Current amount of **dead PineTimes** (or ruined bundled programming connectors) due to attempted soldering is **5** (update this number when suitable).
 

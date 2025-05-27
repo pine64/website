@@ -28,7 +28,7 @@ Actual installation instructions are a work in progress. Unofficial instructions
 
 ## Post NVMe install power limiting
 
-Some NVMe SSDs allow reducing the maximum amount of power. Doing so may reduce the speed, but it may be needed in the Pinebook Pro to both improve reliability on battery: Some NVME may be stable with default settings when runnning on AC power but cause frequent kernel panics (system freeze with power LED blinking red/green) when running on battery. Reducing NVME power drain solves this in some cases. And reducing power used gives better battery life.
+Some NVMe SSDs allow reducing the maximum amount of power. Doing so may reduce the speed, but it may be needed in the Pinebook Pro to both improve reliability on battery: Some NVME may be stable with default settings when running on AC power but cause frequent kernel panics (system freeze with power LED blinking red/green) when running on battery. Reducing NVME power drain solves this in some cases. And reducing power used gives better battery life.
 Here are the commands to obtain and change the power settings. The package 'nvme-cli' is required to run these commands. The example shows how to find the available power states, and then sets it to the lowest, non-standby setting, (which is 3.8 watts for the device shown):
 
 ```console
@@ -54,7 +54,7 @@ $ sudo nvme set-feature /dev/nvme0 -f 2 -v 2 -s
 set-feature:02 (Power Management), value:0x000002
 ```
 
-Some NVMe SSDs don’t appear to allow saving the setting with "-s" option. In those cases, leave off the "-s" and use a startup script to set the non-default power state at boot. If you want to test performance without saving the new power setting semi-permanantly, then leave off the "-s" option.
+Some NVMe SSDs don’t appear to allow saving the setting with "-s" option. In those cases, leave off the "-s" and use a startup script to set the non-default power state at boot. If you want to test performance without saving the new power setting semi-permanently, then leave off the "-s" option.
 
 On systemd based distributions like Manjaro, a non-default power state for an NVME can be set using a systemd service. This is useful in cases where the NVME drive does not save the power state and/or uses APST. An example systemd service, nvme-throttle.service, is shown below:
 
@@ -83,7 +83,7 @@ $ sudo nvme get-feature -f 0x0c -H /dev/nvme0
 ```
 
 Information for this feature, (on a Pinebook Pro), is a work in progress. It is enabled by default in latest Manjaro kernels and reported to work.
-On some NVME SSDS (WD), APST is compatible with limiting NVME maximum power: APST will work and not exceed maximum power state defined using
+On some NVME SSDs (WD), APST is compatible with limiting NVMe maximum power: APST will work and not exceed maximum power state defined using
 previous method.
 
 ## Using as data drive

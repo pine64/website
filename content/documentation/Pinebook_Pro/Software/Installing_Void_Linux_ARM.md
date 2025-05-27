@@ -86,8 +86,10 @@ $ sudo cp arch/arm64/boot/Image "/mnt/boot/Image-${KVER}"
 
 #### Configuring a login agent on the serial console
 
-    cp -R /mnt/etc/sv/agetty-ttyS0 /mnt/etc/sv/agetty-ttyS2
-    ln -sf /etc/sv/agetty-ttyS2 /mnt/etc/runit/runsvdir/default
+```console
+cp -R /mnt/etc/sv/agetty-ttyS0 /mnt/etc/sv/agetty-ttyS2
+ln -sf /etc/sv/agetty-ttyS2 /mnt/etc/runit/runsvdir/default
+```
 
 #### Creating extlinux.conf
 
@@ -99,19 +101,21 @@ The following borrows from [postmarketOS u-boot configuration for the kernel com
 
 We force the serial console to 115200 bauds (from the default 1.5M bauds), so that it is the same as tow-boot’s.
 
-    # mkdir -p /mnt/boot/extlinux
-    # cat <<EOF > /mnt/boot/extlinux/extlinux.conf
-    default l0
-    menu title Pinebook Pro Boot Menu
-    prompt 0
-    timeout 50
+```
+# mkdir -p /mnt/boot/extlinux
+# cat <<EOF > /mnt/boot/extlinux/extlinux.conf
+default l0
+menu title Pinebook Pro Boot Menu
+prompt 0
+timeout 50
 
-    label l0
-    menu label Boot Kernel on SD
-    linux /Image-${KVER}
-    fdt /dtbs/rockchip/rk3399-pinebook-pro.dtb
-    append console=tty0 console=ttyS2,115200n8 coherent_pool=1M pcie_aspm.policy=performance video=HDMI-A-1:1920x1080@60 video=eDP-1:1920x1080@60 rw rootwait root=/dev/mmcblk1p3
-    EOF
+label l0
+menu label Boot Kernel on SD
+linux /Image-${KVER}
+fdt /dtbs/rockchip/rk3399-pinebook-pro.dtb
+append console=tty0 console=ttyS2,115200n8 coherent_pool=1M pcie_aspm.policy=performance video=HDMI-A-1:1920x1080@60 video=eDP-1:1920x1080@60 rw rootwait root=/dev/mmcblk1p3
+EOF
+```
 
 ### Finalizing
 

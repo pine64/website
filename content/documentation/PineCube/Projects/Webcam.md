@@ -19,22 +19,23 @@ Goal: To achieve fast (low latency) wired network connection via USB-A port of P
 
 1. Additional patch to PineCube device tree disable ehci0 and ohci0, enabling usb_otg device instead and setting **dr_mode** to **otg**. If otg is not working for you, try setting **dr_mode** to **peripheral**. On Armbian there is no need for disabling ehci0 and ohci0. Device tree can be edited via armbian-config tool on Armbian OS (armbian-config -> System -> DTC). Example DTC on Armbian:
 
-   ```
-                   usb@1c19000 {
-                           compatible = "allwinner,sun8i-h3-musb";
-                           reg = <0x1c19000 0x400>;
-                           clocks = <0x03 0x1d>;
-                           resets = <0x03 0x11>;
-                           interrupts = <0x00 0x47 0x04>;
-                           interrupt-names = "mc";
-                           phys = <0x0e 0x00>;
-                           phy-names = "usb";
-                           extcon = <0x0e 0x00>;
-                           status = "okay";
-                           dr_mode = "otg";
-                           phandle = <0x2c>;
-                   };
-   ```
+```
+                  usb@1c19000 {
+                        compatible = "allwinner,sun8i-h3-musb";
+                        reg = <0x1c19000 0x400>;
+                        clocks = <0x03 0x1d>;
+                        resets = <0x03 0x11>;
+                        interrupts = <0x00 0x47 0x04>;
+                        interrupt-names = "mc";
+                        phys = <0x0e 0x00>;
+                        phy-names = "usb";
+                        extcon = <0x0e 0x00>;
+                        status = "okay";
+                        dr_mode = "otg";
+                        phandle = <0x2c>;
+                  };
+```
+
 2. Load necessary kernel modules. _You can skip this step if you use Armbian OS because necessary modules are already loaded by default_ (Detailed instructions for sunxi and Ethernet gadget: https://linux-sunxi.org/USB_Gadget/Ethernet)
 
        modprobe sunxi
@@ -42,13 +43,16 @@ Goal: To achieve fast (low latency) wired network connection via USB-A port of P
        modprobe libcomposite
        modprobe u_ether
        modprobe usb_f_rndis
+
 3. Add sunxi and g_ether to /etc/modules to get them to load on startup. /etc/modules:
 
        sunxi
        g_ether
+
 4. Configure the g_ether device to start with a stable MAC address. /etc/modprobe.d/g_ether.conf:
 
        options g_ether host_addr=f6:11:fd:ed:ec:6e
+
 5. Set a static IP address for usb0 on startup with network manager
 
        /etc/network/interfaces:
@@ -56,6 +60,7 @@ Goal: To achieve fast (low latency) wired network connection via USB-A port of P
          iface usb0 inet static
              address 192.168.10.2
              netmask 255.255.255.0
+
 6. Boot the PineCube plugging it into a computer
 7. Configure the USB Ethernet device on the computer to be in the same subnet as the PineCube. Example setting:
 
@@ -63,6 +68,7 @@ Goal: To achieve fast (low latency) wired network connection via USB-A port of P
        address: 192.168.10.5
        netmask: 255.255.255.0
        gateway: 192.168.10.2
+
 8. Done. You can use above methods to stream video through this USB Ethernet connection. Bandwidth and response time is much faster compared to usual network methods.
 
 ## USB as a Webcam (UVC) gadget
@@ -85,43 +91,56 @@ Configfs method is going to be used to control OTG port.
 * Additional patch to PineCube device tree disable ehci0 and ohci0, enabling usb_otg device instead and setting **dr_mode** to **otg**. If otg is not working for you, try setting **dr_mode** to **peripheral**. On Armbian there is no need for disabling ehci0 and ohci0. Device tree can be edited via armbian-config tool on Armbian OS. (armbian-config -> System -> DTC). Example DTC on Armbian:
 
   ```
-                  usb@1c19000 {
-                          compatible = "allwinner,sun8i-h3-musb";
-                          reg = <0x1c19000 0x400>;
-                          clocks = <0x03 0x1d>;
-                          resets = <0x03 0x11>;
-                          interrupts = <0x00 0x47 0x04>;
-                          interrupt-names = "mc";
-                          phys = <0x0e 0x00>;
-                          phy-names = "usb";
-                          extcon = <0x0e 0x00>;
-                          status = "okay";
-                          dr_mode = "otg";
-                          phandle = <0x2c>;
-                  };
+  usb@1c19000 {
+              compatible = "allwinner,sun8i-h3-musb";
+              reg = <0x1c19000 0x400>;
+              clocks = <0x03 0x1d>;
+              resets = <0x03 0x11>;
+              interrupts = <0x00 0x47 0x04>;
+              interrupt-names = "mc";
+              phys = <0x0e 0x00>;
+              phy-names = "usb";
+              extcon = <0x0e 0x00>;
+              status = "okay";
+              dr_mode = "otg";
+              phandle = <0x2c>;
+  };
   ```
-* Load necessary kernel modules:
 
-      modprobe sunxi
-      modprobe configfs
-      modprobe libcomposite
+* Load necessary kernel modules:
+  ```
+  modprobe sunxi
+  modprobe configfs
+  modprobe libcomposite
+  ```
 * Set up camera so that it would capture images in YUYV format (Currently only supported format in UVC gadget). You can adjust resolutions but have to adjust Configfs set up step as well.
 
-      media-ctl --set-v4l2 '"ov5640 1-003c":0[fmt:YUYV8_2X8/640x480@1/30]'
+  ```
+  media-ctl --set-v4l2 '"ov5640 1-003c":0[fmt:YUYV8_2X8/640x480@1/30]'
+  ```
+
 * Clone UVC gadget repo for raspberry pi to your PineCube
 
-      git clone https://github.com/peterbay/uvc-gadget.git
-      cd uvc_gadget
+  ```
+  git clone https://github.com/peterbay/uvc-gadget.git
+  cd uvc_gadget
+  ```
+
 * Comment out 1182~1185 lines of `uvc-gadget.c` file:
 
-      //    if (! uvc_shutdown_requested && ((uvc_dev.dqbuf_count + 1) >= uvc_dev.qbuf_count)) {
-      //        return;
-      //    }
+  ```
+  //    if (! uvc_shutdown_requested && ((uvc_dev.dqbuf_count + 1) >= uvc_dev.qbuf_count)) {
+  //        return;
+  //    }
+  ```
 * Build the source code inside PineCube using make command. It takes only few seconds to build the code.
 
-      make
-      gcc -W -Wall -g   -c -o uvc-gadget.o uvc-gadget.c
-      gcc -g -o uvc-gadget uvc-gadget.o
+  ```
+  make
+  gcc -W -Wall -g   -c -o uvc-gadget.o uvc-gadget.c
+  gcc -g -o uvc-gadget uvc-gadget.o
+  ```
+
 * Set up configfs (multi-gadget). You can have the following script as a bash script as well.
 
   ```
@@ -232,7 +251,10 @@ If above script goes without issues you should be able to see one more additiona
 
 * run uvc-gadget. UVC Gadget software links camera of PineCube and UVC gadget (OTG port). "-v" is for video input device - PineCube Camera, "-u" is for output video device UVC device or OTG port, -x shows FPS.
 
-      ./uvc-gadget -u /dev/video1 -v /dev/video0 -x
+  ```
+  ./uvc-gadget -u /dev/video1 -v /dev/video0 -x
+  ```
+
 * Plug the PineCube to your laptop or pc and check if you can see PineCube Webcam.
 
 ### Known issues

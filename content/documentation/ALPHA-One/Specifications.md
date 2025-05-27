@@ -21,7 +21,7 @@ menu:
 ### System Memory
 
 * 32GB 64bits LPDDR5@6400MHz RAM Memory.
-* 64GB eMMC preintsalled with 7b Deepseek/Qwen LLM
+* 64GB eMMC preinstalled with 7b Deepseek/Qwen LLM
 
 ### Case
 
@@ -30,7 +30,7 @@ menu:
 
 ### Network
 
-* Dual 10/100/1000Mbps Ethernet 
+* Dual 10/100/1000 Mbps Ethernet 
 * 2.4GHz/5GHz MIMO WiFi 802.11 b/g/n/ac/ax with Bluetooth 5.3
 
 ### Expansion Ports
@@ -46,6 +46,6 @@ menu:
 
 ## Potential Improvement
 
-* Current 7bLLM throughput is around 3.5 tokens/second using docker form, potential improve upto 10 tokens/second  when operates LLM in native mode.
+* Current 7bLLM throughput is around 3.5 tokens/second using docker form, potential improve up to 10 tokens/second  when operates LLM in native mode.
 * Potential increase LLM capability from 7b to 15b with system software optimization
 * If ALPHA-One proven its potential, consider release ALPHA-Two which can host up to 30b LLM

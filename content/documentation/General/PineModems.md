@@ -46,7 +46,7 @@ Quectel EG25-G is an LTE Cat 4 module optimized specially for M2M and IoT applic
 | MTD1 | `mibib` | NAND Partition table |
 | MTD2 | `EFS2` | IMEI and settings used by the ADSP are stored here |
 | MTD3 | `sys_rev` | Unexplored |
-| MTD4 | `rawdata` | This is where FOTA update data exists before being commited to system or recoveryfs partitions |
+| MTD4 | `rawdata` | This is where FOTA update data exists before being committed to system or recoveryfs partitions |
 | MTD5 | `tz` | TrustZone kernel |
 | MTD6 | `rpm` | Resource / Power Manager |
 | MTD7 | `cust_info` | Unexplored |

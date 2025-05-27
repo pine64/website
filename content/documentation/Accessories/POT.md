@@ -142,7 +142,7 @@ https:/ / [MAX11609 10bit I2C ADC](https://www.maximintegrated.com/en/products/a
 ### Feature
 
 ```
-Base on Silicon Labs Si7021 I2C Humidity and Temperature Sensor
+Based on Silicon Labs Si7021 I2C Humidity and Temperature Sensor
 High Accuracy Temperature Sensor ±0.4 °C (max), –10 to 85 °C
 0 to 100% RH operating range
 Up to –40 to +125 °C operating range
@@ -163,7 +163,7 @@ On board 3.3V regulator
 ### Feature
 
 ```
-Base on TAOS/AMS TSL2561T I2C Light Sensor
+Based on TAOS/AMS TSL2561T I2C Light Sensor
 Approximates Human Eye Response
 Programmable Interrupt Function allow user defined upper/lower limit trigger threshold
 Automatically rejects 50/60Hz lighting ripple
@@ -188,7 +188,7 @@ On board 3.3V regulator
 ### Feature
 
 ```
-Base on ESP8266 Wifi Chipset
+Based on ESP8266 Wifi chipset
 Connect to Wifi AP
 On board chip antenna or U-FL connector for external antenna
 On board relay contact (TE PCJ-105D3M with 3A 275Vac Contact) with screw type terminal contact to support AC Line On/Off

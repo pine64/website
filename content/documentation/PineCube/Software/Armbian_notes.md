@@ -19,7 +19,7 @@ This article contains notes regarding Armbian on the [PineCube](/documentation/P
 
 A serial console can be established with 1152008N1 (no hardware flow control). Login credentials are as usual in Armbian (login: root, password: 1234).
 
-Motion daemon can be enabled using systemctl (With root) `systemctl enable motion`. Set the video settings in /etc/motion/motion.conf to 640x480 15fps YU12. Then just reboot. Note that motion currently takes considerable resources on the pinecube, so you’ll want to stop it when doing things like apt upgrade and apt update with `systemctl stop motion` and then `systemctl start motion`
+Motion daemon can be enabled using systemctl (With root) `systemctl enable motion`. Set the video settings in /etc/motion/motion.conf to 640x480 15fps YU12. Then just reboot. Note that motion currently takes considerable resources on the PineCube, so you’ll want to stop it when doing things like apt upgrade and apt update with `systemctl stop motion` and then `systemctl start motion`
 
 ## Serial connection using screen and the Woodpecker USB serial device
 
@@ -43,26 +43,30 @@ After this you can either use the Arduino IDE and it’s Serial monitor after se
 
 ## Serial connection using pinephone/pinebook pro serial debugging cable
 
-You can use the serial console USB cable for PinePhones and Pinebook Pros at the [store](https://pine64.com/product/pinebook-pinephone-pinetab-serial-console/). With a [female terminal block](https://www.amazon.com/3-5mm-Stereo-Female-terminal-connector/dp/B077XPSKQD) wire using breadboard wire into the GPIO block at the following locations in a "null modem" configuration with transmit and receive crossed between your computer and the pinecube:
+You can use the serial console USB cable for PinePhones and Pinebook Pros at the [store](https://pine64.com/product/pinebook-pinephone-pinetab-serial-console/). With a [female terminal block](https://www.amazon.com/3-5mm-Stereo-Female-terminal-connector/dp/B077XPSKQD) wire using breadboard wire into the GPIO block at the following locations in a "null modem" configuration with transmit and receive crossed between your computer and the PineCube:
 
     S - Ground (to pin 9)
     R - Transmit (to pin 8)
     T - Receive (to pin 10)
 
-From Linux you can access the console of the pinecube using the screen command:
+From Linux you can access the console of the PineCube using the screen command:
 
 `screen /dev/ttyUSB0 115200`
 
 ## Basic bandwidth tests with iperf3
 
 Install armbian-config:
+
 `apt install armbian-config`
 
 Enable iperf3 through the menu in armbian-config:
+
 `armbian-config`
 
 On a test computer on the same network segment run iperf3 as a client:
+
 `iperf3 -c pinecube -t 60`
 
 The same test computer, run iperf3 in the reverse direction:
+
 `iperf3 -c pinecube -t 60 -R`

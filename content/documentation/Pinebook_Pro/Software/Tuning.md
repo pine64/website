@@ -186,7 +186,7 @@ $ sudo chmod 644 /usr/share/backgrounds/splash.fb
 
 ### Watching Amazon Prime videos with Chromium
 
-When you create a new user, it will be necessary to launch the Chromium browswer with a specific user agent like below:
+When you create a new user, it will be necessary to launch the Chromium browser with a specific user agent like below:
 
 ```console
 chromium-browser --user-agent="Mozilla/5.0 (X11; CrOS armv7l 6946.63.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
@@ -288,7 +288,7 @@ Note that in some cases, this may also decrease performance substantially, as ob
 ## gVim has performance issue
 
 It appears that using GTK3 can cause very slow scrolling, while Vim in a terminal window works fine.
-Simply revert back to using GTK2, (how to do so is somewhat Linux distro-specific).
+Simply revert back to using GTK2 (how to do so is somewhat Linux distriobution-specific).
 
 Another solution may be to run gVim with
 

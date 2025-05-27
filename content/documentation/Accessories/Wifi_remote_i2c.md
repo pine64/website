@@ -131,7 +131,7 @@ Place the jumper J2 on USB/UART Programming/Console Adapter (PMPROG01) to 5V out
 * Max. Input Current: 200mA
 * Operating Frequency: 2412MHz-2484MHz
 * Output power of PA for 802.11b: 19.5dBm-21.5dBm
-* Recieived Sensitivity at DSSS, 1Mbps: -98dBm
+* Receiver Sensitivity at DSSS, 1Mbps: -98dBm
 
 ## I/O Pin Out
 

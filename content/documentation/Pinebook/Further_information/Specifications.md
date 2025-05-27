@@ -60,7 +60,7 @@ Audio:
 Network:
 
 * WiFi 802.11 b/g/n with Bluetooth 4.0
-* 10/100Mbps USB Ethernet Dongle (Optional)
+* 10/100 Mbps USB Ethernet Dongle (Optional)
 
 Storage:
 

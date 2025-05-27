@@ -35,7 +35,7 @@ A human-readable C reimplementation of the LUT and pixel data path [is available
 
 ### In-Development Driver
 
-[rk356x-ebc-dev](https://github.com/smaeul/linux/commits/rk356x-ebc-dev) is the branch used for developing an upstreamable DRM driver based on mainline kernel sources. The driver currently functions well enough to get a virtual console and Xorg running, but it does not support features like multiple waveforms.
+[rk356x-ebc-dev](https://github.com/smaeul/linux/commits/rk356x-ebc-dev) is the branch used for developing an upstreamable DRM driver based on mainline kernel sources. The driver currently functions well enough to get a virtual console and X.Org running, but it does not support features like multiple waveforms.
 
 ## Documentation
 
@@ -75,7 +75,7 @@ At the very least, you should read up on the registers and calling convention us
 
 The driver isn’t really something that can be mainlined as-is once reversed, as it makes a number of questionable design decisions.
 
-* It’s technically a DRM subsystem driver, but doesn’t really utilise what DRM provides at all.
+* It’s technically a DRM subsystem driver, but doesn’t really utilize what DRM provides at all.
 * It seems to register a new ioctl to set buffer attributes like width and height, despite DRM more than likely having a way for clients to tell a driver what size the framebuffer should be.
 * It directly interacts with the PMIC instead of going through regulators/hwmon.
 

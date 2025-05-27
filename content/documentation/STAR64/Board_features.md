@@ -24,7 +24,7 @@ menu:
 
 ## Network
 
-* Single or Dual 10/100/1000Mbps Ethernet
+* Single or Dual 10/100/1000 bps Ethernet
 * 2.4GHz/5Ghz MIMO WiFi 802.11 b/g/n/ac with Bluetooth 5.2
 
 ## Storage

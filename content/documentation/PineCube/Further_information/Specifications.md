@@ -15,10 +15,10 @@ menu:
   * MicroSD slot, bootable
   * 128Mb SPI Nor Flash, bootable
 * **Cameras:** OV5640, 5Mpx
-* **CPU:** Allwinner(Sochip) ARM Cortex-A7 MPCore, 800MHz
+* **CPU:** Allwinner (Sochip) ARM Cortex-A7 MPCore, 800MHz
 * **RAM:** 128MB DDR3
 * **I/O:**
-  * 10/100Mbps Ethernet with passive PoE (_4-18V!_)
+  * 10/100 Mbps Ethernet with passive PoE (_4-18V!_)
   * USB 2.0 A host
   * 26 pins GPIO port
     * 2x 3.3V Ouptut

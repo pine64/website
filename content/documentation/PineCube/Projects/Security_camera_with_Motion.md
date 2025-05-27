@@ -17,10 +17,12 @@ The Motion package can be installed in a variety of Linux flavors. There’s a p
 
 To get things working quickly with motion you can set the following in the /etc/motion/motion.conf and start it with "sudo /etc/init.d/motion start"
 
-    v4l2_palette 14 # UYVY8
-    width 640
-    height 480
-    framerate 15
+```
+v4l2_palette 14 # UYVY8
+width 640
+height 480
+framerate 15
+```
 
 This mode and resolution works fine with Motion and works well with video motion capture (Motion version >= 4.2.2). However, if you want different modes and resolutions you’ll need to set the camera to those modes with the media-ctl tool that comes with the v4l-utils package. That will need to be set before the motion service starts. A simple method to ensure that it gets set before motion starts every time, even across reboots, is to make a small modification to the /lib/systemd/system/motion.service
 

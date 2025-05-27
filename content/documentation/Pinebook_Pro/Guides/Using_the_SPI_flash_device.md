@@ -15,7 +15,7 @@ menu:
 
 See [SPI](/documentation/Pinebook_Pro/Features/SPI) for details.
 
-The Pinebook Pro comes with a 128Mbit, (16MByte), flash device suitable for initial boot target, to store the bootloader. The SoC used on the Pinebook Pro boots from this SPI flash device first, before eMMC or SD card. At present, April 19, 2020, the Pinebook Pros ship without anything programmed in the SPI flash device. So the SoC moves on to the next potential boot device, the eMMC. ARM/ARM64 computers do not have a standardized BIOS, yet.
+The Pinebook Pro comes with a 128 Mbit, (16MByte), flash device suitable for initial boot target, to store the bootloader. The SoC used on the Pinebook Pro boots from this SPI flash device first, before eMMC or SD card. At present, April 19, 2020, the Pinebook Pros ship without anything programmed in the SPI flash device. So the SoC moves on to the next potential boot device, the eMMC. ARM/ARM64 computers do not have a standardized BIOS, yet.
 
 Here is some information on using the SPI flash device:
 

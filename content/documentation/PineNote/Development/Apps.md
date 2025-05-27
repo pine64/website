@@ -24,7 +24,7 @@ Here are some resources you may find helpful in learning to develop on embedded 
 
 Emulator recommendation for developing and testing PineNote apps: https://github.com/michaelshiel/picom-epaper
 
-The PineNote is a specialized device, mainly due to the eink display having unique display and refresh characteristics.
+The PineNote is a specialized device, mainly due to the e-ink display having unique display and refresh characteristics.
 Finding and configuring apps that work well sometimes requires a lot of tweaking and a lot exploring, especially for
 applications containing fast screen updates and animations, as well as depend on a lot of colors.
 
@@ -55,11 +55,11 @@ Gnome on wayland runs nicely on the PineNote. However, a slightly patched versio
 
 #### GTK3
 
-High contrast style for eink-devices can be found [here](https://github.com/MichiMolle/gtk3-eink).
+High contrast style for e-ink-devices can be found [here](https://github.com/MichiMolle/gtk3-eink).
 
 #### GTK4
 
-High contrast style for eink-devices can be found [here](https://github.com/MichiMolle/gtk4-eink).
+High contrast style for e-ink-devices can be found [here](https://github.com/MichiMolle/gtk4-eink).
 
 ## Application support on the PineNote
 
@@ -71,7 +71,7 @@ A rust-based dbus service is being [developed](https://github.com/m-weigand/pine
 
 #### Xournal++
 
-Works well. Version 1.2 version offers repainting-related optimisations and supports PDF highlighting as well as links. To remove artefacts from the eraser set the eraser cursor’s visibility to Never via Preferences -> Stylus -> Eraser Visibility. Also, disable GTK3 intertial scroll via Preferences -> Touchscreen -> Touch Scrolling -> Disable GTK’s built-in intertial scroll, as this interferes with Xournal++'s internal touch event handling.
+Works well. Version 1.2 version offers repainting-related optimizations and supports PDF highlighting as well as links. To remove artifacts from the eraser set the eraser cursor’s visibility to Never via Preferences -> Stylus -> Eraser Visibility. Also, disable GTK3 intertial scroll via Preferences -> Touchscreen -> Touch Scrolling -> Disable GTK’s built-in intertial scroll, as this interferes with Xournal++'s internal touch event handling.
 
 Xournal++ uses anti-aliasing and interpolation, which do not work well for the A1 waveform. Mitigations include using either dithering or black-and-white mode in the ebc driver. https://gitlab.com/hrdl/pinenote-shared/-/blob/main/patches/xournalpp/0001-Disable-anti-aliasing-and-use-NEAREST-interpolation-.patch is an outdated patch that used to work well without changing the bw mode.
 
@@ -86,7 +86,7 @@ Works well, EInk-Theme can be found [here](https://github.com/MichiMolle/obsidia
 [Foliate](https://johnfactotum.github.io/foliate/) is an ebook reader written in GTK4. It works well with the default Debian Gnome experience. You can bookmark pages and annotate selections of words/sentences. Foliate supports "Open EPUB, Mobipocket, Kindle, FB2, CBZ, and PDF files".
 
 #### KOReader
-[KOReader](https://koreader.rocks/) is a document viewer made for eink devices. It is a feature packed application, a user can highlight text, bookmark pages, use gesture navigation and change font and page size/margins/spacing among many things. KOReader can also be used as a full screen UI with battery information reporting while reading books. KOReader supports "EPUB, PDF, DjVu, XPS, CBT, CBZ, FB2, PDB, TXT, HTML, RTF, CHM, DOC, MOBI and ZIP files".
+[KOReader](https://koreader.rocks/) is a document viewer made for e-ink devices. It is a feature packed application, a user can highlight text, bookmark pages, use gesture navigation and change font and page size/margins/spacing among many things. KOReader can also be used as a full screen UI with battery information reporting while reading books. KOReader supports "EPUB, PDF, DjVu, XPS, CBT, CBZ, FB2, PDB, TXT, HTML, RTF, CHM, DOC, MOBI and ZIP files".
 
 ### Web Browsing
 
