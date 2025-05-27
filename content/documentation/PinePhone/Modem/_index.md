@@ -153,7 +153,7 @@ See [PineModems](/documentation/General/PineModems) for more information regardi
 
 The GPS engine in the modem supports mutli-GNSS reception from GPS, GLONASS, BeiDou, Galileo and QZSS independent of a cellular connection. The operation of the GNSS subsystem can be controlled via a separate set of AT commands, or via qmi. The A-GPS data upload uses the file management AT commands, which also have their own manual. These are linked in the [documentation section](/documentation/PinePhone/Further_information/Datasheets/) below.
 
-As with most smartphones, the PinePhone has a small antenna and has difficulty getting a first fix without assistance data, a cold start can take 15 minutes under good conditions. The _eg25-mananger_ is configured to upload A-GPS data by default (see [here](https://gitlab.com/mobian1/eg25-manager/-/merge_requests/15)).
+As with most smartphones, the PinePhone has a small antenna and has difficulty getting a first fix without assistance data, a cold start can take 15 minutes under good conditions. The _eg25-manager_ is configured to upload A-GPS data by default (see [here](https://gitlab.com/mobian1/eg25-manager/-/merge_requests/15)).
 
 Basic testing of GNSS reception can be done by using the AT command interface (_/dev/ttyUSB2_) from a terminal program like _minicom_ and the data output interface (_/dev/ttyUSB1_) to feed NMEA data into gpsmon or some other program that can parse standard NMEA sentences.
 
