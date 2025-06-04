@@ -1,7 +1,6 @@
 ---
 title: "Thermal tweaks"
 draft: false
-hidden: true
 menu:
   docs:
     title:

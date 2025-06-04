@@ -1,7 +1,6 @@
 ---
 title: "Project Don’t be evil"
 draft: false
-hidden: true
 menu:
   docs:
     title:

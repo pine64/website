@@ -1,7 +1,6 @@
 ---
 title: "PinePhone 1.1 VBUS power usage Hardware Fix"
 draft: false
-hidden: true
 menu:
   docs:
     title:

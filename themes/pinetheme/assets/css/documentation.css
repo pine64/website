@@ -1,27 +1,20 @@
 /* Documentation */
+body {
+    overflow-y: scroll;
+}
+#header {
+    box-shadow: 0 1px 2px #ddd;
+}
+#content {
+    display: block;
+}
 #doc-container {
     display: flex;
-    flex-direction: row;
-    font-weight: 300;
-    width: 95%;
-    flex-wrap: nowrap;
-}
-#doc-container h2 {
-    border-bottom: 1px solid #ddd;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    padding: .2em 0;
-    font-size: 18pt;
-    font-weight: 500;
-}
-#doc-container h3 {
-    margin-top: 30px;
-    font-size: 16pt;
-    font-weight: 500;
+    justify-content: center;
+    padding-top: 50px;
 }
 #doc-breadcrumbs {
-    background-color: rgb(248, 249, 250); 
-    padding: .5rem 1rem;
+    padding: .5rem 0.5rem;
     border-radius: .15rem;
     margin-bottom: 1.5rem;
     justify-content: space-between;
@@ -36,21 +29,49 @@
     width: 16px;
     height: 16px;
 }
+.breadcrumb_divider {
+    margin: 0 10px;
+    font-size: 12px;
+    color: #b4b4b4;
+}
+#doc-toc {
+    right: 0;
+    padding: 6px 4px;
+    border-left: 1px solid #bbdcff;
+}
+#doc-toc a {
+    color: #363636;
+    font-size: 15px;
+    font-weight: unset !important;
+}
+#doc-toc li {
+    padding-top: 10px !important;
+}
+#doc-toc .toc-head {
+    font-weight: 500;
+}
+#doc-toc, #doc-nav {
+    width: 250px;
+    min-width: 250px;
+    padding: 0 20px 0 20px;
+    margin-bottom: 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+    align-self: flex-start;
+    overflow-y: auto;
+}
+#doc-nav li, #doc-nav ul, #doc-toc li, #doc-toc ul {
+    list-style-type: none;
+}
 #doc-nav {
-    text-overflow: ellipsis;
-    padding: 1rem 2rem 1rem 0;
-    width: 300px;
-    max-width: 400px;
-}
-#doc-nav li {
-    list-style-type: none
-}
-#doc-nav ul {
-    list-style-type: none
+    font-size: 15px;
+    list-style-type: none;
+    left: 0;
+    border-right: 1px solid #ddd
 }
 #doc-nav a {
-    color: #333;
-    font-size: .875rem;
+    color: #363636;
 }
 #doc-nav a:hover {
     color: var(--blue);
@@ -58,45 +79,36 @@
 #doc-nav a.active {
     color: var(--blue);
 }
-#doc-nav nav.sidebar-nav {
-    position:-webkit-sticky; 
-    position:sticky; 
-    top:0;
-    max-height: 100vh;
-    overflow-x: auto;
-}
 #doc-nav .sidebar-nav ul {
     padding-left: 0 !important;
 }
 #doc-nav .sidebar-nav ul ul {
-    border-left: 1px solid #e2e2e2;
     margin-left: 10px;
 }
-#doc-nav .sidebar-nav-backlink {
-    font-weight: 500;
-    padding: 6px 4px;
+#doc-nav .doc-nav-head {
+    color: black;
+    font-weight: 500 !important;
 }
-#doc-nav .sidebar-nav-item {
-    font-weight: 500;
-    padding: 6px 4px;
-    margin-bottom: 4px;
-    color: var(--blue);
-    font-size: 18px;
-}
-#doc-nav .sidebar-hr {
-    margin: 4px 0 2px 0;
-}
-#doc-nav .sidebar-nav-subitem {
-    font-weight: 500;
+#doc-nav .doc-nav-item {
     box-decoration-break: clone;
     padding: 6px 4px;
-    line-height: 2;
 }
-#doc-nav .sidebar-nav-subsubitem {
-    font-weight: 300 !important;
-    padding-left: 5px;
-    margin-left: 5px;
-    box-decoration-break: clone;
+#doc-nav li {
+    padding-top: 10px;
+}
+.button_collapse {
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
+    float: right;
+    cursor: pointer;
+}
+.button_collapse:hover, .button_collapse:active {
+    background-color: #f1f1f1;
+}
+#doc-nav .c_active > ul {display: block;}
+.active > ul {
+    display: block;
 }
 @media screen and (max-width: 1000px){
     #doc-container {
@@ -115,43 +127,27 @@
         max-width: unset;
     }  
 }
-
 #doc-page {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 0;
-
-
-    width: 70%;
-    max-width: 900px;
-}
-article {
-    min-height: 400px;
-}
-.toc_hr {
-    margin: 10px 0;
-    background-color: #ddd;
+    padding: 0 30px 30px 30px;
+    flex-grow: 1;
+    max-width: 800px;
 }
 #doc-container img, #doc-container object {
     max-width: 100%;
 }
-/* Documentation text style */
-div#doc-page h1 {
-    color: var(--blue);
-}
 /* Margin for markdown lists */
-#doc-page article > ol, 
-#doc-page article > ul {
+#doc-page > ol, 
+#doc-page > ul {
     margin-bottom: 10px;
     line-height: 1.5;
 }
-#doc-page article > ol li, 
-#doc-page article > ul li {
+#doc-page > ol li, 
+#doc-page > ul li {
     padding-bottom: 4px;
 }
 /* Margin for adoc lists */
-#doc-page article .ulist:not(.ulist .ulist):not(.olist .ulist),
-#doc-page article .olist:not(.olist .olist):not(.ulist .olist) {
+#doc-page .ulist:not(.ulist .ulist):not(.olist .ulist),
+#doc-page .olist:not(.olist .olist):not(.ulist .olist) {
     margin-bottom: 10px;
     line-height: 1.5;
 }
@@ -162,20 +158,27 @@ div#doc-page code {
     font-weight: 400;
     max-width: 98%;
     vertical-align: top;
-    padding: 0 4px;
-}
-div#doc-page p code {
     background-color: #f8f9fa;
     border: 1px solid #eaecf0;
     line-height: 1.3;
+    border-radius: 2px;
+    padding: 0 6px;
 }
 div#doc-page pre {
-    background-color: #f8f9fa;
-    overflow-x: auto;
-    outline: 1px solid #eaecf0;
+    margin: unset;
+    margin-bottom: 10px;
+}
+div#doc-page > pre, div#doc-page > code, div#doc-page > pre > code, div#doc-page > .highlight > pre > code {
+    width: 100%;
 }
 div#doc-page td pre {
     outline: none;
+}
+#doc-page .highlight {
+    margin-bottom: 10px;
+}
+div#doc-page > p > code {
+    width: unset;
 }
 .linenotable {
     border: none;
@@ -212,58 +215,11 @@ div#doc-page article > blockquote {
     padding-left: 8px;
     border-left: 3px solid #ccc;
 }
-
-/* Admonition */
-#doc-page .admonitionblock {
-    margin: 1.4rem 1rem 1rem 1rem;
-}
-#doc-page .admonitionblock>table {
-    table-layout: fixed;
-    position: relative;
-    width: 100%;
-}
-#doc-page .admonitionblock .paragraph:not(:last-child) {
-    padding-bottom: 1em;
-}
-#doc-page .admonitionblock td.content {
-    padding: 1rem 1rem .75rem;
-    background-color:#fafafa;
-    width: 100%;
-}
-#doc-page .admonitionblock td.icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 12pt;
-    line-height: 1;
-    transform: translate(-.5rem,-50%);
-    border-radius: 0.5em;
-    padding: 0.3em 0.5em;
-}
-#doc-page .admonitionblock.caution td.icon {
-    background-color: #802392;
-    color: white;
-}
-#doc-page .admonitionblock.important td.icon {
-    background-color: #e40046;
-    color: white;
-}
-#doc-page .admonitionblock.note td.icon {
-    background-color: #2d7dd2;
-    color: white;
-}
-#doc-page .admonitionblock.tip td.icon {
-    background-color: #43b929;
-    color: white;
-}
-#doc-page .admonitionblock.warning td.icon {
-    background-color: #f70;
-    color: white;
-}
-
-
 #doc-page figcaption h4 {
     color: #585858;
     font-weight: 300;
     font-style: italic;
+}
+#doc-page .box {
+    margin: 40px 10px;
 }

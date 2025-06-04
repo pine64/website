@@ -1,7 +1,6 @@
 ---
 title: "Power Management"
 draft: false
-hidden: true
 menu:
   docs:
     title:

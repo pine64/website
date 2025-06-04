@@ -3,48 +3,22 @@
 <nav class="sidebar-nav">
     {{ $currentPage := . }}
 
-    <!-- If on the main page -->
-    {{ if eq .RelPermalink "/documentation/" }}
-        <h3>Table of contents</h3>
-        {{ .TableOfContents }}
-
     <!-- If on a full page -->
-    {{ else if isset .Params "full_section" }}
-
-        {{ $section := .Site.GetPage "section" (printf "/documentation/%s/" .Params.full_section) }}
-        
-        <h3>Table of contents</h3>
-        <ul>
-        {{ range $section.Pages.ByParam "menu.docs.weight"}}
-
-            <li>
-                <strong>
-                    <a class="sidebar-nav-subitem" href="#{{ .Title | anchorize }}">{{ .Title }}</a>
-                </strong> 
-                {{ .TableOfContents }}
-            </li>
-            
-        {{ end }}
-    
-        </ul>
+    {{ if isset .Params "full_section" }}
 
     {{ else }}
-
-        <!-- Backlink -->
-        <a class='sidebar-nav-backlink' href="/documentation/">← Back to the device selection</a><br><br>
 
         <!-- Categories -->
         {{ range .Site.Menus.docs }}
 
             <!-- Displays only current category -->
-            {{if or ($currentPage.IsMenuCurrent "docs" .) ($currentPage.HasMenuCurrent "docs" .) }} 
+            {{ if or ($currentPage.IsMenuCurrent "docs" .) ($currentPage.HasMenuCurrent "docs" .) }} 
                 <!-- Hide "Main Page"-->
-                {{if ne .URL "/documentation/" }}
-                    <a class='sidebar-nav-item' href="{{ .URL }}">{{ .Name }}</a>
-                    <hr class='sidebar-hr'>
-                {{end}}
+                {{ if ne .URL "/documentation/" }}
+                    <a class='doc-nav-head doc-nav-item' href="{{ .URL }}">{{ .Name }}</a>
+                {{ end }}
 
-            {{end}}
+            {{ end }}
 
             
             {{ if and .HasChildren (or ($currentPage.IsMenuCurrent "docs" .) ($currentPage.HasMenuCurrent "docs" .)) }}
@@ -54,23 +28,23 @@
                 <!-- Children -->
                 {{ range .Children }}
                 
-                    {{ if not .Page.Params.hidden }}
-                        <li><a class='sidebar-nav-subitem {{if $currentPage.IsMenuCurrent "docs" .}}active{{end}}' href='{{.URL}}'>{{ .Title }}</a></li>
+                    {{ if .HasChildren }}
+                        <li class='collapsible {{if $currentPage.IsMenuCurrent "docs" .}}c_active{{end}}'><a class='doc-nav-item {{if $currentPage.IsMenuCurrent "docs" .}}active{{end}}' href='{{.URL}}'>{{ .Title }}</a><span class="button_collapse" onclick="toggleChildren(event)">⌄</span>
+                    {{ else  }}
+                        <li><a class='doc-nav-item {{if $currentPage.IsMenuCurrent "docs" .}}active{{end}}' href='{{.URL}}'>{{ .Title }}</a>
                     {{ end }}
 
                     {{ if .HasChildren }}
-                    <ul><li>
+                        <ul>
 
                         <!-- Children-Children -->
                         {{ range .Children }}
-                            {{ if not .Page.Params.hidden }}
-                                <li class="doc_subitem"><a class='sidebar-nav-subsubitem {{if $currentPage.IsMenuCurrent "docs" .}}active{{end}}' href='{{.URL}}'>{{ .Title }}</a></li>
-                            {{ end }}
+                            <li><a class='doc-nav-item {{if $currentPage.IsMenuCurrent "docs" .}}active{{end}}' href='{{.URL}}'>{{ .Title }}</a></li>
                         {{ end }}
 
-
-                        </li></ul>
+                        </ul>
                     {{ end }}
+                    </li>
                 {{ end }}
 
                 </li></ul>
@@ -78,3 +52,36 @@
         {{ end }}
     {{ end }}
 </nav>
+
+<script>
+// Hide all ULs by default (if JS is activated)
+document.querySelectorAll('#doc-nav .collapsible > ul').forEach(ul => {
+  ul.style.display = 'none';
+});
+
+// Collapse toggle function
+function toggleChildren(event) {
+    const li = event.target.closest('li'); // Get the closest li element
+    const children = li.querySelector('ul'); // Get the children ul
+
+    if (children) {
+        // Toggle the display of children
+        if (window.getComputedStyle(children).display !== 'none') {
+            children.style.display = 'none';
+        } else {
+            children.style.display = 'block';
+        }
+    }
+}
+</script>
+
+<script>
+// Inflate all parents of an active item
+document.querySelectorAll('.collapsible').forEach(collapsible => {
+  if (collapsible.querySelector('a.active')) {
+    collapsible.querySelectorAll('ul').forEach(ul => {
+      ul.style.display = 'block';
+    });
+  }
+});
+</script>

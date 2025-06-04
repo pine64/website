@@ -1,4 +1,8 @@
 {{ define "main" }}
+
+    {{- $style_docs := resources.Get "css/documentation.css" | minify | fingerprint -}}
+    <link rel="stylesheet" href="{{ $style_docs.RelPermalink }}">
+
     <div id="doc-container">
         
         <div id="doc-nav">
@@ -8,36 +12,58 @@
         <div id="doc-page">
             {{ partial "breadcrumb.html" . }}
 
-            <!-- partial "doc_beta_warning.html" . -->
-
-            <article>
-                <header>
-                    <h1>
-                    {{ $ancestors := .Ancestors.Reverse }}
-                    {{ if and (ge (len $ancestors) 3) (ne .File.BaseFileName "_full") }}
-                        {{ $thirdItem := index $ancestors 2}}
-                        {{ if $thirdItem }}
-                            <a href="{{ $thirdItem.RelPermalink }}">{{ $thirdItem.LinkTitle }}</a>:
-                        {{ else }}
-                        {{ end }}
+            <header>
+                <h1>
+                {{ $ancestors := .Ancestors.Reverse }}
+                {{ if and (ge (len $ancestors) 3) (ne .File.BaseFileName "_full") }}
+                    {{ $thirdItem := index $ancestors 2}}
+                    {{ if $thirdItem }}
+                        <a href="{{ $thirdItem.RelPermalink }}">{{ $thirdItem.LinkTitle }}</a>:
+                    {{ else }}
                     {{ end }}
-                    {{.Title}}
-                    </h1>
-                </header>
-                
-                <!-- .TableOfContents -->
-                {{ partial "toc.html" . }}
-
-                <!-- Content -->
-                {{.Content}}
-
-                {{ if .Params.fullnote }}
-                    {{ partial "fullnote.html" . }}
                 {{ end }}
-            </article>
+                {{.Title}}
+                </h1>
+            </header>
+            
+            <!-- Content -->
+            {{.Content}}
 
+            {{ if .Params.fullnote }}
+                {{ partial "fullnote.html" . }}
+            {{ end }}
+        
             <!-- partial "doc_previousnext.html" . -->
             {{ partial "doc_previousnext_custom.html" .}}
+
+        </div>
+
+        <div id="doc-toc">
+            <!-- If on a full page -->
+            {{ if isset .Params "full_section" }}
+                <nav id="TableOfContents">
+
+                {{ $section := .Site.GetPage "section" (printf "/documentation/%s/" .Params.full_section) }}
+            
+                <div class="toc-head">Table of contents</div>
+                <ul>
+                {{ range $section.Pages.ByParam "menu.docs.weight"}}
+
+                    <li>
+                        <a class="sidebar-nav-subitem" href="#{{ .Title | anchorize }}">{{ .Title }}</a>
+                        {{ .TableOfContents }}
+                    </li>
+                    
+                {{ end }}
+                </ul>
+
+                </nav>
+            {{ else }}
+                {{ if ge (len (.TableOfContents)) 33 -}}
+                    <div class="toc-head">Table of contents</div>
+                    {{ .TableOfContents }}
+                {{ end }}
+            {{ end }}
 
         </div>
         

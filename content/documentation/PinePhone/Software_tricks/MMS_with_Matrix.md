@@ -1,7 +1,6 @@
 ---
 title: "MMS with Matrix"
 draft: false
-hidden: true
 menu:
   docs:
     title:

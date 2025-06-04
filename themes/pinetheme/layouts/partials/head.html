@@ -16,10 +16,6 @@
     <!-- Slider -->
     {{- $style_slider := resources.Get "css/slider.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style_slider.RelPermalink }}">
-    <!-- Documentation -->
-    {{- $style_docs := resources.Get "css/documentation.css" | minify | fingerprint -}}
-    <link rel="stylesheet" href="{{ $style_docs.RelPermalink }}">
-
     
     {{ $title := print .Title " - " .Site.Title -}}
     {{- if .IsHome -}}{{- $title = .Site.Title -}}{{- end -}}

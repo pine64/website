@@ -1,7 +1,6 @@
 ---
 title: "PinePhone v1.0 - Dev"
 draft: false
-hidden: true
 menu:
   docs:
     title:

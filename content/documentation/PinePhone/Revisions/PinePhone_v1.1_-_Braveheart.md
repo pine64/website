@@ -1,7 +1,6 @@
 ---
 title: "PinePhone v1.1 - Braveheart"
 draft: false
-hidden: true
 menu:
   docs:
     title:

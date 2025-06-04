@@ -268,7 +268,7 @@ If you want to just mirror the code and provide additional pre-built images on a
 ### Multi-distro demo image
 
 {{< admonition type="warning" >}}
- This is a demo image for testing different operating systems before installing a regular image. Attempting to use this image productively is highly discouraged. The kernel is shared across the different operating systems and is not updated.
+This is a demo image for testing different operating systems before installing a regular image. Attempting to use this image productively is highly discouraged. The kernel is shared across the different operating systems and is not updated.
 {{< /admonition >}}
 
 This image allow users to try many Linux distributions easily, without having to figure out how to flash them individually and juggle with many microSD cards. Also called megi's 15-in-1 multi boot image.
@@ -302,15 +302,13 @@ Due to its size, download though torrent is suggested by the author on its main 
 
 #### Notes
 
-[NOTE]
-
-#### 
-
- Note about zstd) archive file (`.zst`):
+{{< admonition type="note" >}}
+Note about zstd archive file (`.zst`):
 
 On Linux, you may install or compile `zstd`, then write the image to SD card by piping `zstdcat` and `dd`. See the "Installation" section of its [web page](https://xnux.eu/p-boot-demo/) for command examples.
 
 On Windows, instead of the offical [zstd](https://github.com/facebook/zstd) command line program, you may use [7-zip-zstd](https://github.com/mcmilk/7-Zip-zstd). Different installation method is provided in their README. Install 7-Zip-zstd / zstd, extract the disk image file (`.img`) from the zstd archive, and flash with tools like [Win32 Disk Imager](https://sourceforge.net/projects/win32diskimager/).
+{{< /admonition >}}
 
 #### 
 
