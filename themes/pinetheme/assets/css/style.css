@@ -814,16 +814,6 @@ div.credits {
     border-top: 1px solid #aaa;
     padding: 16px 12px 16px 12px;
 }
-.devices h2, 
-.devices h2 a {
-    font-size: 1.88rem;
-    font-weight: 700;
-}
-.devices h3, 
-.devices h3 a {
-    font-size: 1.5rem;
-    font-weight: 400;
-}
 .deviceshr {
     background-color: #021d3b;
     width: 100px;
