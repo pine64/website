@@ -759,17 +759,17 @@ div.credits {
 
 /* Devices */
 .headerbox {
-    width: 100%;
     display: flex;
     flex-wrap: wrap-reverse;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    justify-content: space-between;
+    justify-content: space-between !important;
     align-items: center;
+    flex-grow: 1;
+    flex-direction: row;
 }
 .namebox {
     max-width: 500px;
-
     margin-right: 1rem;
     font-size: 2.31rem;
     line-height: 1.1;
@@ -927,6 +927,8 @@ table {
     margin-top: 1rem;
     margin-bottom: 1rem;
     border: 1px solid #dee2e6;
+    table-layout: fixed;
+    width: 100%;
 }
 
 table td,
