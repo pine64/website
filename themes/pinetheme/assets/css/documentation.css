@@ -110,23 +110,6 @@ body {
 .active > ul {
     display: block;
 }
-@media screen and (max-width: 1000px){
-    #doc-container {
-        flex-direction: column;
-    }
-    #doc-nav nav.sidebar-nav {
-        max-height: 250px;
-    }
-    #doc-page {
-        min-width: none;
-        width: 100% !important;
-    }
-    #doc-nav {
-        padding: 1rem 0;
-        width: 100%;
-        max-width: unset;
-    }  
-}
 #doc-page {
     padding: 0 30px 30px 30px;
     flex-grow: 1;
@@ -152,7 +135,7 @@ body {
     line-height: 1.5;
 }
 div#doc-page code {
-    font-family: source code pro, lucida console, monospace;
+    font-family: lucida console, monospace;
     display: inline-block;
     overflow-x: auto;
     font-weight: 400;
@@ -201,10 +184,6 @@ div#doc-page code strong {
 div#doc-page .line-through {
     text-decoration:line-through
 }
-/* To clear the float for the text */
-div#doc-page p{
-    clear: left;
-}
 div#doc-page article {
     margin-bottom: 2em;
 }
@@ -222,4 +201,25 @@ div#doc-page article > blockquote {
 }
 #doc-page .box {
     margin: 40px 10px;
+}
+
+/* Mobile */
+@media screen and (max-width: 1000px){
+    #doc-container {
+        flex-direction: column;
+    }
+    #doc-nav nav.sidebar-nav {
+        max-height: 250px;
+    }
+    #doc-page {
+        padding: 0 10px 10px;
+    }
+    #doc-nav {
+        width: 100%;
+        padding: unset;
+        border: unset;
+    }
+    #doc-toc, #doc-nav {
+        position: unset;
+    }
 }
