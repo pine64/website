@@ -38,6 +38,8 @@ body {
     right: 0;
     padding: 6px 4px;
     border-left: 1px solid #bbdcff;
+    overflow-y: auto;
+    max-height: 80vh;
 }
 #doc-toc a {
     color: #363636;
