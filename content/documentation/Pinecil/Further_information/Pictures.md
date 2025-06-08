@@ -17,7 +17,7 @@ Pre-release:
 Production:
 
 {{< figure src="/documentation/images/Pinecil-V2-box-1024x1024.jpg" width="202" >}}
-{{< figure src="/documentation/images/Pinecilv2-2.jpg" caption="Pinecil V2, side view">}}
+{{< figure src="/documentation/images/Pinecilv2-2.jpg" caption="Pinecil V2, side view" >}}
 {{< figure src="/documentation/images/Pinecil-V2-dissasebled.jpg" caption="Pinecil_V2_disassembled,_newly_designed_shorter_6.2_ohm_tip" >}}
 {{< figure src="/documentation/images/Pinecil-Clear-Case1.png" caption="Transparent_handle" >}}
 {{< figure src="/documentation/images/Pinecil-Contact2.png" caption="Replacement internal contacts" >}}

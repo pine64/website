@@ -41,7 +41,7 @@ menu:
 * 1 USB3.0 Dedicated Host port
 * 2 USB2.0 Dedicated Host port (top one is USB-OTG)
 
-{{< figure src="/documentation/ROCK64/images/Rock64-emmc-disable-jumper.png" caption="Position of the two-pin header for disabling the optionally installed eMMC module (highlighted in red)" width="400">}} 
+{{< figure src="/documentation/ROCK64/images/Rock64-emmc-disable-jumper.png" caption="Position of the two-pin header for disabling the optionally installed eMMC module (highlighted in red)" width="400" >}} 
 
 Position of the two-pin header for disabling the optionally installed eMMC module (highlighted in red)
 

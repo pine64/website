@@ -11,7 +11,7 @@ menu:
 
 Based on the [Bouffalo Lab BL808](https://en.bouffalolab.com/product/)
 
-{{< figure src="/documentation/Ox64/images/BL808_Block_Diagram.jpg" width="500">}}
+{{< figure src="/documentation/Ox64/images/BL808_Block_Diagram.jpg" width="500" >}}
 
 ## CPU Architecture
 

@@ -59,7 +59,7 @@ The Pinebook Pro’s keyboard firmware includes key combinations to disable the 
 ## Accessories
 {{< flexbox >}}
 
-    {{< devices/device_box link="https://pine64.com/product/pinebook-pinephone-pinetab-serial-console/" img="/devices/images/serial_cable.png" title="Serial Cable" text="Serial console powered by CH340 chipset enables USB-to-Serial-communication through the earphone jack for development.">}}
+    {{< devices/device_box link="https://pine64.com/product/pinebook-pinephone-pinetab-serial-console/" img="/devices/images/serial_cable.png" title="Serial Cable" text="Serial console powered by CH340 chipset enables USB-to-Serial-communication through the earphone jack for development." >}}
 
 {{</ flexbox >}}
 

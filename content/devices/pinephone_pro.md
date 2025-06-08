@@ -92,25 +92,25 @@ More information about the PinePhone Pro will be available in the days and weeks
 ## Accessories
 {{< flexbox >}}
 
-    {{< devices/device_box link="/documentation/Phone_Accessories/Keyboard/" img="/documentation/images/PP_KB_Front-1024x576.jpg" title="PinePhone (Pro) Keyboard" text="The keyboard add-on for the PinePhone and PinePhone Pro adds a physical keyboard and a large battery.">}}
+    {{< devices/device_box link="/documentation/Phone_Accessories/Keyboard/" img="/documentation/images/PP_KB_Front-1024x576.jpg" title="PinePhone (Pro) Keyboard" text="The keyboard add-on for the PinePhone and PinePhone Pro adds a physical keyboard and a large battery." >}}
 
-    {{< devices/device_box link="/documentation/Phone_Accessories/#_lora_add_on" img="/documentation/images/PP_LoRa.jpg" title="LoRa Add-on" text="A LoRa add-on which uses the pogo pins to interface a Semtech SX1262 LoRa module">}}
+    {{< devices/device_box link="/documentation/Phone_Accessories/#_lora_add_on" img="/documentation/images/PP_LoRa.jpg" title="LoRa Add-on" text="A LoRa add-on which uses the pogo pins to interface a Semtech SX1262 LoRa module" >}}
 
-    {{< devices/device_box link="/documentation/Phone_Accessories/#_qi_wireless_charging_add_on" img="/documentation/images/PinePhone-Wireless-charger.jpg" title="Qi Wireless Charging Add-on" text="A Qi wireless charging add-on which ses the pogo pins to supply Qi Wireless and Wireless Power Consortium compatible charging. No software required.">}}
+    {{< devices/device_box link="/documentation/Phone_Accessories/#_qi_wireless_charging_add_on" img="/documentation/images/PinePhone-Wireless-charger.jpg" title="Qi Wireless Charging Add-on" text="A Qi wireless charging add-on which ses the pogo pins to supply Qi Wireless and Wireless Power Consortium compatible charging. No software required." >}}
 
-    {{< devices/device_box link="/documentation/Phone_Accessories/#_fingerprint_reader_add_on" img="/documentation/images/PinePhone-FP-Addon.jpg" title="Fingerprint Reader Add-on" text="A fingerprint reader add-on which uses the pogo pins to interface a high quality fingerprint sensor, uses open firmware for it’s i2c bridge, and can also be used for gesture navigation.">}}
+    {{< devices/device_box link="/documentation/Phone_Accessories/#_fingerprint_reader_add_on" img="/documentation/images/PinePhone-FP-Addon.jpg" title="Fingerprint Reader Add-on" text="A fingerprint reader add-on which uses the pogo pins to interface a high quality fingerprint sensor, uses open firmware for it’s i2c bridge, and can also be used for gesture navigation." >}}
 
-    {{< devices/device_box link="https://pine64.com/product/pinephone-pro-usb-c-docking-bar/" img="/devices/images/pinephone_dock.jpg" title="USB-C Docking Bar" text="An USB-C docking bar adding an ethernet port, two USB ports, an HDMI port and a power input.">}}
+    {{< devices/device_box link="https://pine64.com/product/pinephone-pro-usb-c-docking-bar/" img="/devices/images/pinephone_dock.jpg" title="USB-C Docking Bar" text="An USB-C docking bar adding an ethernet port, two USB ports, an HDMI port and a power input." >}}
 
-    {{< devices/device_box link="https://pine64.com/product/pinephone-soft-tpu-protective-case/" img="/devices/images/pinephone_case_tpu.png" title="TPU Protective Case" text="A soft TPU protective case.">}}
+    {{< devices/device_box link="https://pine64.com/product/pinephone-soft-tpu-protective-case/" img="/devices/images/pinephone_case_tpu.png" title="TPU Protective Case" text="A soft TPU protective case." >}}
 
-    {{< devices/device_box link="https://pine64.com/product/pinebook-pinephone-pinetab-serial-console/" img="/devices/images/serial_cable.png" title="Serial Cable" text="Serial console powered by CH340 chipset enables USB-to-Serial-communication through the earphone jack for development.">}}
+    {{< devices/device_box link="https://pine64.com/product/pinebook-pinephone-pinetab-serial-console/" img="/devices/images/serial_cable.png" title="Serial Cable" text="Serial console powered by CH340 chipset enables USB-to-Serial-communication through the earphone jack for development." >}}
 
-    {{< devices/device_box link="https://pine64.com/product/pinephone-battery-charger/" img="/devices/images/pinephone_charger.jpg" title="Battery Charger" text="An external charger for the battery.">}}
+    {{< devices/device_box link="https://pine64.com/product/pinephone-battery-charger/" img="/devices/images/pinephone_charger.jpg" title="Battery Charger" text="An external charger for the battery." >}}
 
-    {{< devices/device_box link="https://pine64.com/product/pinephone-flex-break-out-board/" img="/devices/images/pinephone_breakout_flex.jpg" title="Flex Break-out Board" text="A flexible break-out PCB for i2c IO expansion.">}}
+    {{< devices/device_box link="https://pine64.com/product/pinephone-flex-break-out-board/" img="/devices/images/pinephone_breakout_flex.jpg" title="Flex Break-out Board" text="A flexible break-out PCB for i2c IO expansion." >}}
 
-    {{< devices/device_box link="https://pine64.com/product/pinephone-tempered-glass-screen-protector/" img="/devices/images/pinephone_glass.jpg" title="Tempered Glass Screen Protector" text="9H hardness tempered glass screen protector specially designed for the Pinephone and PinePhone Pro..">}}
+    {{< devices/device_box link="https://pine64.com/product/pinephone-tempered-glass-screen-protector/" img="/devices/images/pinephone_glass.jpg" title="Tempered Glass Screen Protector" text="9H hardness tempered glass screen protector specially designed for the Pinephone and PinePhone Pro.." >}}
 
 {{</ flexbox >}}
 

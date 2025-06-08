@@ -1056,7 +1056,7 @@ div.podcast:hover {
 }
 .contests-entry h3 {
     font-size: 1.88rem;
-    padding: 0;
+    margin: 0;
 }
 .contests_img_container {
     width: 200px;

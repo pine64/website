@@ -17,7 +17,7 @@ The brand and logo were first trademarked in 2015 by then Pine Microsystems Inc.
 
 We are highly protective of our trademark and copyrights, and will seek any and all legal measures to enforce guidelines contained in this document.
 
-{{<figure src="/documentation/images/Pine64logowriting.jpg" alt="PINE64 pinecone logo with brand name" width="500">}}
+{{<figure src="/documentation/images/Pine64logowriting.jpg" alt="PINE64 pinecone logo with brand name" width="500" >}}
 
 ## 1. Presentation and typography
 

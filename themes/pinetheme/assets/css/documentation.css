@@ -38,8 +38,6 @@ body {
     right: 0;
     padding: 6px 4px;
     border-left: 1px solid #bbdcff;
-    overflow-y: auto;
-    max-height: 80vh;
 }
 #doc-toc a {
     color: #363636;
@@ -62,6 +60,7 @@ body {
     top: 10px;
     align-self: flex-start;
     overflow-y: auto;
+    max-height: 80vh;
 }
 #doc-nav li, #doc-nav ul, #doc-toc li, #doc-toc ul {
     list-style-type: none;

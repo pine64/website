@@ -11,7 +11,7 @@ menu:
 
 <!--{{< figure src="/documentation/StarPro64/images/starpro64_pinout.png" caption="The StarPro64 board pinout" width="800" >}}-->
 
-{{< part src="/documentation/StarPro64/images/starpro64_pinout.svg">}}
+{{< part src="/documentation/StarPro64/images/starpro64_pinout.svg" >}}
 
   {{< partdesc id="network" title="Network" desc=`Dual 10/100/1000Mbps Ethernet`>}}
 
