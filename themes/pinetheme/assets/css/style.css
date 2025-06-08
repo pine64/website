@@ -45,8 +45,19 @@ h3,
 h4,
 h5,
 h6 {
-    padding: 12px 0 12px 0;
+    /*padding: 12px 0 12px 0;*/
     font-weight: 300;
+}
+h2 {
+    margin: 40px 0 16px 0;
+}
+h3 {
+    margin: 32px 0 16px 0;
+}
+h4,
+h5,
+h6 {
+    margin: 20px 0 16px 0;
 }
 h1 a,
 h2 a,
