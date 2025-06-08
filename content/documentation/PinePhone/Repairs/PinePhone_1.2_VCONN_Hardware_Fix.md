@@ -1,7 +1,6 @@
 ---
 title: "PinePhone 1.2 VCONN Hardware Fix"
 draft: false
-hidden: true
 menu:
   docs:
     title:

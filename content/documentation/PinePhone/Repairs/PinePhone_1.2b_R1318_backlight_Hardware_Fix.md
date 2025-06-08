@@ -1,7 +1,6 @@
 ---
 title: "PinePhone 1.2b R1318 backlight Hardware Fix"
 draft: false
-hidden: true
 menu:
   docs:
     title:

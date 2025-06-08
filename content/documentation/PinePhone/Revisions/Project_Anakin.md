@@ -1,7 +1,6 @@
 ---
 title: "Project Anakin"
 draft: false
-hidden: true
 menu:
   docs:
     title:

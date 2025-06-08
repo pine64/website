@@ -1,4 +1,8 @@
 {{ define "main" }}
+
+    {{- $style_docs := resources.Get "css/documentation.css" | minify | fingerprint -}}
+    <link rel="stylesheet" href="{{ $style_docs.RelPermalink }}">
+
     <div id="doc-container">
 
         <div id="doc-nav">
@@ -8,36 +12,36 @@
         <div id="doc-page">
             {{ partial "breadcrumb.html" . }}
 
-            <!-- partial "doc_beta_warning.html" . -->
-
-            <article>
-                <header>
-                    <h1>
-                    {{ $ancestors := .Ancestors.Reverse }}
-                    {{ if ge (len $ancestors) 3 }}
-                        {{ range first 3 $ancestors | last 1 }}
-                            <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>:
-                        {{ end }}
+            <header>
+                <h1>
+                {{ $ancestors := .Ancestors.Reverse }}
+                {{ if ge (len $ancestors) 3 }}
+                    {{ range first 3 $ancestors | last 1 }}
+                        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>:
                     {{ end }}
-                    {{.Title}}
-                    </h1>
-                </header>
-                
-                <!-- .TableOfContents -->
-                {{ partial "toc.html" . }}
-
-                <!-- ".Content" pulls from the markdown content of the corresponding _index.md -->
-                {{.Content}}
-
-                {{ if .Params.fullnote }}
-                    {{ partial "fullnote.html" . }}
                 {{ end }}
-            </article>
+                {{.Title}}
+                </h1>
+            </header>
+
+            <!-- ".Content" pulls from the markdown content of the corresponding _index.md -->
+            {{.Content}}
+
+            {{ if .Params.fullnote }}
+                {{ partial "fullnote.html" . }}
+            {{ end }}
 
             <!-- partial "doc_previousnext.html" . -->
             {{ partial "doc_previousnext_custom.html" .}}
 
         </div>
-        
+
+        <div id="doc-toc">
+            {{ if ge (len (.TableOfContents)) 33 -}}
+                <div class="toc-head">Table of contents</div>
+                {{ .TableOfContents }}
+            {{ end }}
+        </div>
+
     </div>
 {{ end }}

@@ -6,6 +6,7 @@
 body {
     background-color: #fff;
     font-family: Roboto, sans-serif;
+    color: rgb(34, 34, 34);
 }
 
 :root {
@@ -30,20 +31,41 @@ th p {
 td p {
     margin-bottom: 0;
 }
+h1 {
+    font-size: 40px;
+    font-weight: 300;
+    padding-bottom: 20px;
+    color: rgb(34, 34, 34);
+}
+h2 {
+    font-size: 1.6rem;
+}
 h2,
 h3,
 h4,
 h5,
 h6 {
-    padding: 12px 0 12px 0;
-    font-weight: 400;
+    /*padding: 12px 0 12px 0;*/
+    font-weight: 300;
 }
+h2 {
+    margin: 40px 0 16px 0;
+}
+h3 {
+    margin: 32px 0 16px 0;
+}
+h4,
+h5,
+h6 {
+    margin: 20px 0 16px 0;
+}
+h1 a,
 h2 a,
 h3 a,
 h4 a,
 h5 a,
 h6 a {
-    color: var(--blue);
+    color: rgb(34, 34, 34);
 }
 .imageblock {
     margin-bottom: 1.6rem;
@@ -61,12 +83,17 @@ ul,
 ol {
     padding-left: 1rem;
 }
- 
 
 hr {
     height: 1px;
     border: none;
     background-color: #ddd;
+}
+
+figcaption {
+    color: rgb(43, 43, 43);
+    font-style: italic;
+    margin-left: 6px;
 }
 
 /* Content */
@@ -76,10 +103,6 @@ hr {
     flex-direction: row;
     justify-content: center;
     min-height: calc(100vh - 140px);
-}
-/* Default: 1200px content */
-#content > div {
-    max-width: 1200px;
 }
 
 /* Full width content */
@@ -203,6 +226,7 @@ div.themecommunity h1 {
     font-size: 48pt;
     font-weight: 400;
     width: 600px;
+    color: white;
 }
 div.themecommunity .box {
     display: flex;
@@ -234,6 +258,9 @@ div.themecontest {
     color: white;
     font-weight: 500;
 }
+div.themecontest h1 {
+    color: white;
+}
 div.themelightblue {
     background-color: #e4f0ff;
 }
@@ -250,6 +277,9 @@ div.themeblog {
     background-image: url("/img/bg2.svg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+div.themeblog h1 {
+    color: white;
 }
 div.themeblogpreview {
     background-color: white;
@@ -292,6 +322,9 @@ div.themedarkgrey {
     color: white;
     font-weight: 400;
     background-color: #222;
+}
+div.themedarkgrey h1 {
+    color: white;
 }
 
 /* Pagination */
@@ -350,15 +383,6 @@ pre {
 .gp, 
 .w {
     user-select: none;
-}
-
-/* Headlines */
-h1 {
-    font-size: 2rem;
-    padding-bottom: 20px;
-}
-h2 {
-    font-size: 1.6rem;
 }
 #header {
     display: flex;
@@ -532,16 +556,15 @@ input#hamburger_cb,
     #main_menu { 
         margin-left: 0;
         width: 100%;
-        height: 100%;
         background: white;
-        background: linear-gradient(90deg, white 54%, rgba(25,25,25,0.4) 54%);
-        backdrop-filter: blur(4px);
         position: absolute;
         top: 140px;
         z-index: 999;
         border-top: 2px solid #eee;
         border-bottom: 2px solid #eee;
         padding-bottom: 20px;
+        box-shadow: 3px 25px 20px 0px rgba(87, 87, 87, 0.75);
+
     }
     #main_menu .nav-link {
         box-sizing: border-box;
@@ -559,7 +582,7 @@ input#hamburger_cb,
     /* Hamburger icon */
     #hamburger {
         display: block;
-        padding: 0 10px;
+        padding: 4px 10px;
         background-color: #2969B1;
         border-radius: 5px;
     }
@@ -712,28 +735,8 @@ hr.toc_hr {
 {
     color: #053a63;
 }
-.blog h1 a,
-.blog h2 a,
-.blog h3 a,
-.blog h4 a,
-.blog h5 a,
-.blog h6 a
-{
-    color: inherit;
-}
-.blog h1 {
-    font-weight: 700;
-    font-size: 1.8rem;
-    margin-top: 16px;
-}
 .blog h2 {
-    font-weight: 700;
-    font-size: 1.6rem;
     margin-top: 16px;
-}
-.blog h3 {
-    font-weight: 600;
-    font-size: 1.3rem;
 }
 .blog code {
     background-color: #fafafa;
@@ -978,9 +981,6 @@ tbody {
 }
 
 /* Table of contents */
-nav#TableOfContents a {
-    font-weight: 300 !important;
-}
 nav#TableOfContents ul, 
 nav#TableOfContents li {
     padding-bottom: 0 !important;
@@ -989,11 +989,6 @@ nav#TableOfContents > ul,
 nav#TableOfContents > li {
     padding-left: 0 !important;
 }
-nav#TableOfContents ul > li {
-    padding-left: 5px !important;
-    margin-left: 5px;
-}
-
 nav#TableOfContents ol {
     list-style: inside decimal;
 }
@@ -1094,14 +1089,22 @@ div.podcast:hover {
 
 /* Admonitions */
 .admonition {
-    padding: 1rem;
-    border-left: 1.5px solid;
+    border-left: 4px solid;
+    border-radius: 3px;
     background-color: #fcfcfc;
-    margin: 1.5rem 0;
+    margin: 12px 0 18px 0;
     color: #1b1b1b;
+    box-shadow: 2px 2px 4px #ddddddcc;
 }
-.admonition .title {
-    font-weight: 400;
+.admonition-header {
+    padding: 12px 20px 8px 20px;
+    font-weight: 500;
+}
+.admonition-text {
+    padding: 8px 20px 8px 20px;
+    background-color: white;
+    line-height: 2;
+    font-size: 14px;
 }
 .admonition-note {
     background-color: #f4f8ff;
@@ -1234,6 +1237,9 @@ div.podcast:hover {
     background-color: #999;
     height: 1px;
     flex-grow: 1;
+}
+#footer img {
+    max-width: 200px;
 }
 @media screen and (max-width: 1000px){
     #footer {

@@ -12,10 +12,10 @@ menu:
 Start the building process cloning both the upstream Buildroot repository and the Buildroot Bouffalo overlay repository:
 
 ```console
- $ mkdir -p ~/ox64
- $ cd ~/ox64
- $ git clone https://github.com/buildroot/buildroot
- $ git clone https://github.com/openbouffalo/buildroot_bouffalo
+$ mkdir -p ~/ox64
+$ cd ~/ox64
+$ git clone https://github.com/buildroot/buildroot
+$ git clone https://github.com/openbouffalo/buildroot_bouffalo
 ```
 
 Define an environment variable for the Buildroot Bouffalo overlay path:

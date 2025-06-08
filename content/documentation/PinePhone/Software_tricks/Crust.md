@@ -1,7 +1,6 @@
 ---
 title: "Crust"
 draft: false
-hidden: true
 menu:
   docs:
     title:

@@ -1,7 +1,6 @@
 ---
 title: "Developer Edition"
 draft: false
-hidden: true
 menu:
   docs:
     title:
