@@ -1,7 +1,7 @@
 {{ $type := .Get "type" }}
 
 <div class="admonition admonition-{{$type}}">
-    <div class="admonition-header">{{$type}}</div>
+    <div class="admonition-header">{{title $type}}</div>
     <div class="admonition-text">
         {{ .Inner | markdownify }}
     </div>
