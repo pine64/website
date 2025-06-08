@@ -16,7 +16,7 @@ body {
 #doc-breadcrumbs {
     padding: .5rem 0.5rem;
     border-radius: .15rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
     justify-content: space-between;
     display: flex;
 }
@@ -208,19 +208,24 @@ div#doc-page article > blockquote {
 @media screen and (max-width: 1000px){
     #doc-container {
         flex-direction: column;
+        padding-top: 20px;
     }
     #doc-nav nav.sidebar-nav {
         max-height: 250px;
     }
     #doc-page {
-        padding: 0 10px 10px;
+        padding: 0 10px 0 10px;
     }
     #doc-nav {
-        width: 100%;
-        padding: unset;
+        max-width: 100%;
+        width: calc(100% - 20px);
+        padding: 0 10px 0 10px;
         border: unset;
     }
     #doc-toc, #doc-nav {
         position: unset;
+    }
+    #doc-breadcrumbs {
+        margin-bottom: 14px;
     }
 }
