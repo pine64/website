@@ -92,7 +92,6 @@ body {
 }
 #doc-nav .doc-nav-item {
     box-decoration-break: clone;
-    padding: 6px 4px;
 }
 #doc-nav li {
     padding-top: 10px;
