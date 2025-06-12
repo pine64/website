@@ -90,9 +90,6 @@ body {
     color: black;
     font-weight: 500 !important;
 }
-#doc-nav .doc-nav-item {
-    box-decoration-break: clone;
-}
 #doc-nav li {
     padding-top: 10px;
 }
