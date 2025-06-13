@@ -41,8 +41,10 @@ applications containing fast screen updates and animations, as well as depend on
 
 If you notice that touching the screen works, but when you use the pen the mouse coordinates are inverted, don’t worry! We can fix it! Set `rockchip_ebc.panel_reflection=0` on boot (see [this page](/documentation/PineNote/Development/Building_kernel#configuring_the_driver) for more info). Add the following line to your sway config:
 
-    # This line rotates the mouse input by 180 degrees. See https://wayland.freedesktop.org/libinput/doc/1.11.3/absolute_axes.html
-    input "type:table_tool" calibration_matrix -1 0 1 0 -1 1
+```
+# This line rotates the mouse input by 180 degrees. See https://wayland.freedesktop.org/libinput/doc/1.11.3/absolute_axes.html
+input "type:table_tool" calibration_matrix -1 0 1 0 -1 1
+```
 
 ### Gnome
 

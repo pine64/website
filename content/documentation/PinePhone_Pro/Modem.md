@@ -110,7 +110,9 @@ The following instructions are directed towards professional users. It is highly
 
 The stock modem firmware can be updated to a newer version if it is outdated. The firmware version can be checked using the following AT command (at the example of `atinout`, alternatively `minicom` can be used to communicate with the modem too):
 
-    echo 'AT+QGMR' | sudo atinout - /dev/ttyUSB2 -
+```shell
+echo 'AT+QGMR' | sudo atinout - /dev/ttyUSB2 -
+```
 
 **Pre-update checklist:**
 
@@ -124,15 +126,21 @@ Please make sure all requirements of the checklist are fulfilled. If the update 
 
 To get the latest firmware, clone the repository of user Biktorgj on the phone:
 
-    git clone https://github.com/Biktorgj/quectel_eg25_recovery
+```shell
+git clone https://github.com/Biktorgj/quectel_eg25_recovery
+```
 
 After cloning the directory, open it with cd:
 
-    cd quectel_eg25_recovery
+```shell
+cd quectel_eg25_recovery
+```
 
 Then run qfirehose, which starts the flashing process:
 
-    sudo ./qfirehose -f ./
+```shell
+sudo ./qfirehose -f ./
+```
 
 The modem will automatically reboot after the update process is done. The boot process takes around 30 to 60 seconds. After that it is highly recommended to reboot the device.
 
@@ -152,13 +160,17 @@ Basic testing of GNSS reception can be done by using the AT command interface (_
 
 To check if GNSS data output is enabled, you can
 
-    cat /dev/ttyUSB1
+```shell
+cat /dev/ttyUSB1
+```
 
 this should display a stream of NMEA sentences
 
-    $GPVTG,,T,,M,,N,,K,N*2C
-    $GPGSA,A,1,,,,,,,,,,,,,,,,*32
-    $GPGGA,,,,,,0,,,,,,,,*66
+```
+$GPVTG,,T,,M,,N,,K,N*2C
+$GPGSA,A,1,,,,,,,,,,,,,,,,*32
+$GPGGA,,,,,,0,,,,,,,,*66
+```
 
 Further details can be found under [Sensors and navigation](/documentation/PinePhone/Further_information/Sensors_and_navigation).
 

@@ -31,21 +31,23 @@ On images/distributions which support device tree overlays in their build of u-b
 
 Your overlay will look something like this:
 
-    /dts-v1/;
-    /plugin/;
+```
+/dts-v1/;
+/plugin/;
 
-    &i2c3 {
-    	#address-cells = <1>;
-    	#size-cells = <0>;
-    	status = "okay";
+&i2c3 {
+    #address-cells = <1>;
+    #size-cells = <0>;
+    status = "okay";
 
-    pcf8574: pcf8574@20 {
-    	compatible = "nxp,pcf8574";
-    	reg = <0x20>;
-    	gpio-controller;
-    	#gpio-cells = <2>;
-    };
-    ;
+pcf8574: pcf8574@20 {
+    compatible = "nxp,pcf8574";
+    reg = <0x20>;
+    gpio-controller;
+    #gpio-cells = <2>;
+};
+;
+```
 
 You can compile it with ***dtc -O dtb -o pcf8574.dtbo -@ pcf8574.dts***, assuming your input file is called _pcf8574.dts_.
 
@@ -65,16 +67,18 @@ Once you have the kernel source, you can use your local configuration: run `zcat
 
 In ***arch/arm64/boot/dts/rockchip/rk3566-quartz64-a.dts***, add the following section:
 
-    &i2c3 {
-    	status = "okay";
+```
+&i2c3 {
+    status = "okay";
 
-    pcf8574: pcf8574@20 {
-    	compatible = "nxp,pcf8574";
-    	reg = <0x20>;
-    	gpio-controller;
-    	#gpio-cells = <2>;
-    };
-    ;
+pcf8574: pcf8574@20 {
+    compatible = "nxp,pcf8574";
+    reg = <0x20>;
+    gpio-controller;
+    #gpio-cells = <2>;
+};
+;
+```
 
 This lets the kernel know that there’s a PCF8574 hanging off the third I^2^C controller, and is listening on slave address `0x20` (decimal: 32). Be sure to use tabs of size 8 for the indentation, this is the style the kernel uses.
 
@@ -84,23 +88,25 @@ Now run `make dtbs` to compile the device tree. This should give you a ***arch/a
 
 As previously stated, you can hook up multiple of these modules onto the same bus. Here’s how the device tree changes for this will look like:
 
-    &i2c3 {
-    	status = "okay";
+```
+&i2c3 {
+    status = "okay";
 
-    pcf8574_1: pcf8574@20 {
-    	compatible = "nxp,pcf8574";
-    	reg = <0x20>;
-    	gpio-controller;
-    	#gpio-cells = <2>;
-    };
+pcf8574_1: pcf8574@20 {
+    compatible = "nxp,pcf8574";
+    reg = <0x20>;
+    gpio-controller;
+    #gpio-cells = <2>;
+};
 
-    pcf8574_2: pcf8574@21 {
-    	compatible = "nxp,pcf8574";
-    	reg = <0x21>;
-    	gpio-controller;
-    	#gpio-cells = <2>;
-    };
-    ;
+pcf8574_2: pcf8574@21 {
+    compatible = "nxp,pcf8574";
+    reg = <0x21>;
+    gpio-controller;
+    #gpio-cells = <2>;
+};
+;
+```
 
 Notice how the labels (the part before the colon) have been differentiated, and the address (number after the @ and number in the reg field) has changed for the second module.
 
@@ -112,20 +118,22 @@ Notice how the labels (the part before the colon) have been differentiated, and 
 
 The PCF8574 will pull its ***INT*** pin low when one of its inputs changed. We can use this to generate an interrupt:
 
-    &i2c3 {
-    	status = "okay";
+```
+&i2c3 {
+    status = "okay";
 
-    pcf8574: pcf8574@20 {
-    	compatible = "nxp,pcf8574";
-    	reg = <0x20>;
-    	gpio-controller;
-    	#gpio-cells = <2>;
-    	interrupt-parent = <&gpio0>;
-    	interrupts = <RK_PC1 IRQ_TYPE_EDGE_FALLING>;
-    	interrupt-controller;
-    	#interrupt-cells = <2>;
-    };
-    ;
+pcf8574: pcf8574@20 {
+    compatible = "nxp,pcf8574";
+    reg = <0x20>;
+    gpio-controller;
+    #gpio-cells = <2>;
+    interrupt-parent = <&gpio0>;
+    interrupts = <RK_PC1 IRQ_TYPE_EDGE_FALLING>;
+    interrupt-controller;
+    #interrupt-cells = <2>;
+};
+;
+```
 
 In this case, we use GPIO0 Pin C1 (***RK_PC1*** with ***interrupt-parent*** gpio0), a.k.a. UART0_TX, a.k.a. pin 12, as the interrupt pin. (**Note:** You cannot use pin 7 here, as it’s pulled high.)
 
@@ -141,15 +149,17 @@ Hook up SDA to pin number 3 of your board, and SCL to pin number 5. Connect GND 
 
 Upon booting your board with your modified device tree blob, you should have an additional ***/dev/gpiochip_<n>_*** device, most likely ***/dev/gpiochip5***. You can verify this by running libgpiod’s `gpioinfo` utility, which should now show you an additional GPIO chip with only 8 lines.
 
-    gpiochip5 - 8 lines:
-            line   0:      unnamed       unused   input  active-high
-            line   1:      unnamed       unused   input  active-high
-            line   2:      unnamed       unused   input  active-high
-            line   3:      unnamed       unused   input  active-high
-            line   4:      unnamed       unused   input  active-high
-            line   5:      unnamed       unused   input  active-high
-            line   6:      unnamed       unused   input  active-high
-            line   7:      unnamed       unused   input  active-high
+```
+gpiochip5 - 8 lines:
+        line   0:      unnamed       unused   input  active-high
+        line   1:      unnamed       unused   input  active-high
+        line   2:      unnamed       unused   input  active-high
+        line   3:      unnamed       unused   input  active-high
+        line   4:      unnamed       unused   input  active-high
+        line   5:      unnamed       unused   input  active-high
+        line   6:      unnamed       unused   input  active-high
+        line   7:      unnamed       unused   input  active-high
+```
 
 If you are daisy-chaining the modules, you’ll see an additional gpiochip with 8 lines for each additional module.
 
@@ -165,21 +175,23 @@ To test whether this is working, you can connect an LED between a pin (in this e
 
 In this example, we’re adding a button that’s hooked between the input pin 0 and ground, and making it type W whenever it’s pressed.
 
-    / {
-    	...
-
-    *keyboard {*
-    	*compatible = "gpio-keys";*
-
-    *w_key {*
-    	*gpios = <&pcf8574 0 GPIO_ACTIVE_LOW>;*
-    	*linux,code = <17>;*
-    	*label = "W_KEY";*
-    *};*
-    };*
-
+```
+/ {
     ...
-    ;
+
+*keyboard {*
+    *compatible = "gpio-keys";*
+
+*w_key {*
+    *gpios = <&pcf8574 0 GPIO_ACTIVE_LOW>;*
+    *linux,code = <17>;*
+    *label = "W_KEY";*
+*};*
+};*
+
+...
+;
+```
 
 The label here isn’t the defining bit but the [input event code](https://github.com/torvalds/linux/blob/master/include/uapi/linux/input-event-codes.h) is. 17 is for W. You can also include the header file on top and use the symbol name ***KEY_W***
 

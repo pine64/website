@@ -23,8 +23,10 @@ $ rkdeveloptool list
 
 should now show you the device somewhat like this:
 
-    *$ rkdeveloptool list*
-    DevNo=1 Vid=0x2207,Pid=0x350b,LocationID=204    Loader
+```console
+$ rkdeveloptool list
+DevNo=1 Vid=0x2207,Pid=0x350b,LocationID=204    Loader
+```
 
 {{< admonition type="important" >}}
  **Note:** If you receive an error about being unable to create the comms object in the following steps, make sure you have the udev rules installed with [CounterPillow’s RK3588 device id patch](https://gitlab.com/pine64-org/quartz-bsp/rkdeveloptool/-/merge_requests/19), install them to `/etc/udev/rules.d/` and `udevadm control --reload`
@@ -32,22 +34,24 @@ should now show you the device somewhat like this:
 
 Now, we can e.g. show the partitions on the eMMC:
 
-    *$ rkdeveloptool list-partitions*
-    #   LBA start (sectors)  LBA end (sectors)  Size (bytes)       Name             
-    00                 8192              16383       4194304       security
-    01                16384              24575       4194304       uboot
-    02                24576              32767       4194304       trust
-    03                32768              40959       4194304       misc
-    04                40960              49151       4194304       dtbo
-    05                49152              51199       1048576       vbmeta
-    06                51200             133119      41943040       boot
-    07               133120             329727     100663296       recovery
-    08               329728            1116159     402653184       backup
-    09              1116160            1902591     402653184       cache
-    10              1902592            1935359      16777216       metadata
-    11              1935360            1937407       1048576       baseparameter
-    12              1937408            8310783    3263168512       super
-    13              8310784          120831935   57610829824       userdata
+```console
+$ rkdeveloptool list-partitions
+#   LBA start (sectors)  LBA end (sectors)  Size (bytes)       Name             
+00                 8192              16383       4194304       security
+01                16384              24575       4194304       uboot
+02                24576              32767       4194304       trust
+03                32768              40959       4194304       misc
+04                40960              49151       4194304       dtbo
+05                49152              51199       1048576       vbmeta
+06                51200             133119      41943040       boot
+07               133120             329727     100663296       recovery
+08               329728            1116159     402653184       backup
+09              1116160            1902591     402653184       cache
+10              1902592            1935359      16777216       metadata
+11              1935360            1937407       1048576       baseparameter
+12              1937408            8310783    3263168512       super
+13              8310784          120831935   57610829824       userdata
+```
 
 You can now use `rkdeveloptool write-partition partitionname yourfile` to overwrite one of the eMMC partitions.
 
@@ -59,38 +63,48 @@ This is the setup User:CounterPillow currently uses. In short, you’ll need a v
 
 Assuming your SD card is ***/dev/sdX***, partition as e.g. follows:
 
-    # parted -s /dev/sdX mklabel gpt
-    # parted -s /dev/sdX mkpart loader 64s 8MiB
-    # parted -s /dev/sdX mkpart uboot 8MiB 16MiB
-    # parted -s /dev/sdX mkpart env 16MiB 32MiB
-    # parted -s /dev/sdX mkpart efi fat32 32MiB 544MiB    # increase size as you wish
-    # parted -s /dev/sdX set 4 boot on
+```console
+# parted -s /dev/sdX mklabel gpt
+# parted -s /dev/sdX mkpart loader 64s 8MiB
+# parted -s /dev/sdX mkpart uboot 8MiB 16MiB
+# parted -s /dev/sdX mkpart env 16MiB 32MiB
+# parted -s /dev/sdX mkpart efi fat32 32MiB 544MiB    # increase size as you wish
+# parted -s /dev/sdX set 4 boot on
+```
 
 Flash SPL and u-boot:
 
-    # dd if=rk3588_spl_loader_v1.06.109.bin of=/dev/sdX1
-    # dd if=uboot.img of=/dev/sdX2
+```console
+# dd if=rk3588_spl_loader_v1.06.109.bin of=/dev/sdX1
+# dd if=uboot.img of=/dev/sdX2
+```
 
 Then make the filesystem:
 
-    # mkfs.vfat -n "efi" /dev/sdX4
+```console
+# mkfs.vfat -n "efi" /dev/sdX4
+```
 
 Mount it to e.g. ***/mnt/sdcardboot***:
 
-    # mount /dev/sda4 /mnt/sdcardboot
+```console
+# mount /dev/sda4 /mnt/sdcardboot
+```
 
 Put the following in ***/mnt/sdcardboot/extlinux/extlinux.conf***:
 
-    default l0
-    menu title QuartzPro64 Boot Menu
-    prompt 0
-    timeout 50
+```
+default l0
+menu title QuartzPro64 Boot Menu
+prompt 0
+timeout 50
 
-    label l0
-    menu label Boot Jank Kernel SDMMC
-    linux /jank
-    fdt /dtbs/rockchip/rk3588-evb1-v10.dtb
-    append earlycon=uart8250,mmio32,0xfeb50000 console=ttyS2,1500000n8 root=/dev/mmcblk0p14 rw rootwait
+label l0
+menu label Boot Jank Kernel SDMMC
+linux /jank
+fdt /dtbs/rockchip/rk3588-evb1-v10.dtb
+append earlycon=uart8250,mmio32,0xfeb50000 console=ttyS2,1500000n8 root=/dev/mmcblk0p14 rw rootwait
+```
 
 Copy your kernel to ***/mnt/sdcardboot/jank*** and your DTB to ***/mnt/sdcardboot/dtbs/rockchip/rk3588-evb1-v10.dtb***.
 

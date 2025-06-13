@@ -38,19 +38,23 @@ Note by default these instructions utilize all of your computers cores to compil
 
 First, You need to compile the ATF (Arm Trusted Firmware):
 
-    git clone https://github.com/crust-firmware/arm-trusted-firmware/
-    cd arm-trusted-firmware
-    export CROSS_COMPILE=aarch64-linux-gnu-
-    export ARCH=arm64
-    make PLAT=sun50i_a64 -j$(nproc) bl31
-    cd ..
+```shell
+git clone https://github.com/crust-firmware/arm-trusted-firmware/
+cd arm-trusted-firmware
+export CROSS_COMPILE=aarch64-linux-gnu-
+export ARCH=arm64
+make PLAT=sun50i_a64 -j$(nproc) bl31
+cd ..
+```
 
 After the ATF is compiled clone u-boot and copy the bl31.bin file into the u-boot directory.
 
-    git clone https://gitlab.com/pine64-org/u-boot.git
-    cd arm-trusted-firmware
-    cp build/sun50i_a64/release/bl31.bin ../u-boot/
-    cd ..
+```shell
+git clone https://gitlab.com/pine64-org/u-boot.git
+cd arm-trusted-firmware
+cp build/sun50i_a64/release/bl31.bin ../u-boot/
+cd ..
+```
 
 {{< admonition type="tip" >}}
 You cannot build [Crust](/documentation/PinePhone/Software/Crust) if you do not have the or1k musl toolchain installed. This toolchain is not usually available in distribution repositories and will have to be manually installed to the system. The following text will show a simple way to install the toolchain.
@@ -64,32 +68,38 @@ Move the extracted archive to wherever you would like to install the toolchain t
 
 The final step is to edit your `.bashrc` and add the following to the end:
 
-    # Path for or1k toolchain
-    export PATH="$PATH:/home/USER/Documents/or1k-linux-musl-cross/bin/"
+```shell
+# Path for or1k toolchain
+export PATH="$PATH:/home/USER/Documents/or1k-linux-musl-cross/bin/"
+```
 
 After you’ve completed that you can close out the terminal and reopen it and proceed to the following instructions.
 
-    git clone https://github.com/crust-firmware/crust
-    cd crust
-    export CROSS_COMPILE=or1k-linux-musl-
-    make pinephone_defconfig
-    make -j$(nproc) scp
-    cp build/scp/scp.bin ../u-boot/
-    cd ..
+```shell
+git clone https://github.com/crust-firmware/crust
+cd crust
+export CROSS_COMPILE=or1k-linux-musl-
+make pinephone_defconfig
+make -j$(nproc) scp
+cp build/scp/scp.bin ../u-boot/
+cd ..
+```
 
 {{< admonition type="tip" >}}
 If you do not wish to have [Crust](/documentation/PinePhone/Software/Crust) in your U-Boot build, then you can skip exporting SCP
 {{< /admonition >}}
 
-    cd u-boot/
-    git checkout crust
-    export CROSS_COMPILE=aarch64-linux-gnu-
-    export BL3bl31.bin
-    export ARCH=arm64
-    export SCP=scp.bin
-    make distclean
-    make pinephone_defconfig
-    make all -j$(nproc)
+```shell
+cd u-boot/
+git checkout crust
+export CROSS_COMPILE=aarch64-linux-gnu-
+export BL3bl31.bin
+export ARCH=arm64
+export SCP=scp.bin
+make distclean
+make pinephone_defconfig
+make all -j$(nproc)
+```
 
 ### U-Boot installation
 
@@ -98,7 +108,8 @@ Once successfully compiled you can proceed to flash the device
 {{< admonition type="warning" >}}
  Replace [CHANGE THIS] with the location of your SD card and make sure you are using the proper location. Failure to do so can result in data loss.
 {{< /admonition >}}
-```
+
+```shell
 sudo dd if=u-boot-sunxi-with-spl.bin of=/dev/[CHANGE THIS] bs=1024 seek=8
 ```
 

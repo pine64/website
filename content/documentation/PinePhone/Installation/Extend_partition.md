@@ -23,8 +23,12 @@ For microSD cards, insert the microSD card and resize the partitions through the
 ### Using Growpart
 
 Install _growpart_ and run:
- growpart /dev/**mmcblkX** **Y**
- resize2fs /dev/**mmcblkXpY**
+
+```shell
+growpart /dev/**mmcblkX** **Y**
+resize2fs /dev/**mmcblkXpY**
+```
+
 where _X_ is the storage device and _Y_ is the partition number (viewable from `lsblk`).
 
 If you get any errors about missing or unknown commands, use `apt-cache search` to find and install the needed software. Also don’t forget to use `sudo`.
@@ -33,10 +37,12 @@ If you get any errors about missing or unknown commands, use `apt-cache search` 
 
 Parted’s interactive mode and resize work well together. Do this before you put your microSD card into the PinePhone for the first time for best results.
 
-    sudo parted /dev/*<your_sd_card_device>*
-    (parted) resizepart 2 100%
-    (parted) quit
-    sudo resize2fs /dev/*<the_second_sd_card_PARTITION>*
+```shell
+sudo parted /dev/*<your_sd_card_device>*
+(parted) resizepart 2 100%
+(parted) quit
+sudo resize2fs /dev/*<the_second_sd_card_PARTITION>*
+```
 
 ## Resize from within the PinePhone
 

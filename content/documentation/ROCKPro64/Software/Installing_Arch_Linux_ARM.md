@@ -61,39 +61,53 @@ Here we assume your block device is ***/dev/sdX***, adjust as needed.
 
 Create a new partition table:
 
-    # parted -s /dev/sdX mklabel gpt
+```console
+# parted -s /dev/sdX mklabel gpt
+```
 
 Create the partitions for loader and u-boot:
 
-    # parted -s /dev/sdX mkpart loader 64s 8MiB
-    # parted -s /dev/sdX mkpart uboot 8MiB 16MiB
+```console
+# parted -s /dev/sdX mkpart loader 64s 8MiB
+# parted -s /dev/sdX mkpart uboot 8MiB 16MiB
+```
 
 Create the partition for u-boot’s environment (optional, but you’ll have to adjust the following offsets if you don’t do it):
 
-    # parted -s /dev/sdX mkpart env 16MiB 32MiB
+```console
+# parted -s /dev/sdX mkpart env 16MiB 32MiB
+```
 
 Create the "efi" boot partition and mark it as bootable:
 
-    # parted -s /dev/sdX mkpart efi fat32 32MiB 544MiB
-    # parted -s /dev/sdX set 4 boot on
+```console
+# parted -s /dev/sdX mkpart efi fat32 32MiB 544MiB
+# parted -s /dev/sdX set 4 boot on
+```
 
 Create the root partition:
 
-    # parted -s /dev/sdX mkpart root ext4 544MiB 100%
+```console
+# parted -s /dev/sdX mkpart root ext4 544MiB 100%
+```
 
 ### Creating The File Systems
 
 Now create the file systems for boot and root:
 
-    # mkfs.vfat -n "efi" /dev/sdX4
-    # mkfs.ext4 -L "rootfs" /dev/sdX5
+```console
+# mkfs.vfat -n "efi" /dev/sdX4
+# mkfs.ext4 -L "rootfs" /dev/sdX5
+```
 
 ### Flashing U-Boot
 
 Flash idbloader.img and uboot.img:
 
-    # dd if=idbloader.img of=/dev/sdX1
-    # dd if=u-boot.itb of=/dev/sdX2
+```console
+# dd if=idbloader.img of=/dev/sdX1
+# dd if=u-boot.itb of=/dev/sdX2
+```
 
 ## Fetching The Root File System Tarball
 
@@ -123,10 +137,12 @@ $ gpg --verify ArchLinuxARM-aarch64-latest.tar.gz.sig
 
 ## Installing The Root File System
 
-    # mount /dev/sdX5 /mnt/alarm-root
-    # mkdir /mnt/alarm-root/boot
-    # mount /dev/sdX4 /mnt/alarm-root/boot
-    # bsdtar -xpf ArchLinuxARM-aarch64-latest.tar.gz -C /mnt/alarm-root
+```console
+# mount /dev/sdX5 /mnt/alarm-root
+# mkdir /mnt/alarm-root/boot
+# mount /dev/sdX4 /mnt/alarm-root/boot
+# bsdtar -xpf ArchLinuxARM-aarch64-latest.tar.gz -C /mnt/alarm-root
+```
 
 ### Editing fstab
 
@@ -138,8 +154,10 @@ $ lsblk -o NAME,SIZE,MOUNTPOINTS,PARTUUID
 
 In ***/mnt/alarm-root/etc/fstab***, put the lines
 
-    PARTUUID=_root-uuid-here_  /       ext4    defaults        0       1
-    PARTUUID=_boot-uuid-here_  /boot   vfat    defaults        0       2
+```
+PARTUUID=_root-uuid-here_  /       ext4    defaults        0       1
+PARTUUID=_boot-uuid-here_  /boot   vfat    defaults        0       2
+```
 
 with your UUIDs in place of the placeholder.
 
@@ -147,25 +165,31 @@ with your UUIDs in place of the placeholder.
 
 Create a ***/mnt/alarm-root/boot/extlinux/extlinux.conf*** with these contents:
 
-    default l0
-    menu title ROCKPro64 Boot Menu
-    prompt 0
-    timeout 50
+```
+default l0
+menu title ROCKPro64 Boot Menu
+prompt 0
+timeout 50
 
-    label l0
-    menu label Boot Arch Kernel
-    linux /Image
-    fdt /dtbs/rockchip/rk3399-rockpro64.dtb
-    append initrd=/initramfs-linux.img earlycon=uart8250,mmio32,0xff1a0000 console=ttyS2,1500000n8 root=LABEL=rootfs rw rootwait
+label l0
+menu label Boot Arch Kernel
+linux /Image
+fdt /dtbs/rockchip/rk3399-rockpro64.dtb
+append initrd=/initramfs-linux.img earlycon=uart8250,mmio32,0xff1a0000 console=ttyS2,1500000n8 root=LABEL=rootfs rw rootwait
+```
 
 Once done, unmount the partitions:
-	
- # umount /mnt/alarm-root/boot
- # umount /mnt/alarm-root
+
+```console
+# umount /mnt/alarm-root/boot
+# umount /mnt/alarm-root
+```
 
 ## Finishing Setup
 
 SSH in as ***root*** with password ***root*** and run
 
-    # pacman-key --init
-    # pacman-key --populate archlinuxarm
+```console
+# pacman-key --init
+# pacman-key --populate archlinuxarm
+```

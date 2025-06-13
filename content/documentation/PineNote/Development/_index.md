@@ -125,7 +125,9 @@ As you don’t have WiFi yet you need to get the _firmware-brcm80211*.deb_ and _
 
 Once you have WiFi working you can get BCM4345C0.hcd by installing the _bluez-firmware_:
 
-    sudo apt install bluez-firmware
+```shell
+sudo apt install bluez-firmware
+```
 
 ### Configuring the E-ink refresh mode
 
@@ -136,17 +138,19 @@ Once you have WiFi working you can get BCM4345C0.hcd by installing the _bluez-fi
 
 By default the pen config is flipped 180° (which makes it unusable) and the touchscreen doesn’t work. Placing the following config in `/etc/X11/xorg.conf.d/50-touchscreen.conf` will fix both problems:
 
-    Section "InputClass"
-        Identifier "evdev touchscreen"
-        MatchProduct "tt21000"
-        MatchIsTouchscreen "on"
-        Driver        "evdev"
-    EndSection
-    Section "InputClass"
-        Identifier    "RotateTouch"
-        MatchProduct    "w9013"
-        Option    "TransformationMatrix" "-1 0 1 0 -1 1 0 0 1"
-    EndSection
+```xorg.conf
+Section "InputClass"
+    Identifier "evdev touchscreen"
+    MatchProduct "tt21000"
+    MatchIsTouchscreen "on"
+    Driver        "evdev"
+EndSection
+Section "InputClass"
+    Identifier    "RotateTouch"
+    MatchProduct    "w9013"
+    Option    "TransformationMatrix" "-1 0 1 0 -1 1 0 0 1"
+EndSection
+```
 
 ## Further information
 

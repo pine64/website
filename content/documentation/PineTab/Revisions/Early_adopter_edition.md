@@ -83,7 +83,9 @@ Reason: the service urfkill is not running
 
 Fix:
 
-    sudo service urfkill restart
+```shell
+sudo service urfkill restart
+```
 
 ### Wifi radio reception is very weak
 

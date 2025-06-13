@@ -45,10 +45,14 @@ On Manjaro firmware files for both Bluetooth and Wi-Fi on CYW43456 on are provid
 
 However for CYW43455 wi-fi firmware is in the `linux-firmware` package and bluetooth is in the `firmware-raspberrypi` (`pacman -S linux-firmware firmware-raspberrypi`). `linux-firmware` package is missing device specific symlinks for quartz64-a. To create them execute:
 
-    # ln -s brcmfmac43455-sdio.bin /lib/firmware/brcm/brcmfmac43455-sdio.pine64,quartz64-a.bin
-    # ln -s brcmfmac43455-sdio.AW-CM256SM.txt /lib/firmware/brcm/brcmfmac43455-sdio.pine64,quartz64-a.txt
+```console
+# ln -s brcmfmac43455-sdio.bin /lib/firmware/brcm/brcmfmac43455-sdio.pine64,quartz64-a.bin
+# ln -s brcmfmac43455-sdio.AW-CM256SM.txt /lib/firmware/brcm/brcmfmac43455-sdio.pine64,quartz64-a.txt
+```
 
 As of 2022-10-19 device tree in mainline kernel for Quartz64 model A has wrong configuration for the Bluetooth driver. [Patch](https://patchwork.kernel.org/project/linux-rockchip/patch/20220926125350.64783-1-leo@nabam.net/) is submitted to the LKML and accepted and included upstream in 6.1-rc7. It’s possible to modify dtb file provided by the current kernel using device tree compiler to enable Bluetooth or perform `make dtbs` in the patched kernel tree to get updated dtb file (`arch/arm64/boot/dts/rockchip/rk3566-quartz64-a.dtb`). Issue manifests itself with following errors in `dmesg`:
 
-    command 0x0c03 tx timeout
-    Bluetooth: hci0: BCM: Reset failed (-110)
+```
+command 0x0c03 tx timeout
+Bluetooth: hci0: BCM: Reset failed (-110)
+```

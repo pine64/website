@@ -37,14 +37,14 @@ gst-launch-1.0 v4l2src ! video/x-raw,width=320,height=240,format=UYVY,framerate=
 
 Alternatively it is possible to capture at a higher resolution:
 
-```
+```shell
 media-ctl --set-v4l2 '"ov5640 1-003c":0[fmt:UYVY8_2X8/1920x1080@1/15]'
 cd /dev/shm/hls/ && gst-launch-1.0 v4l2src ! video/x-raw,width=1920,height=1080,format=UYVY,framerate=15/1 ! decodebin ! videoconvert ! video/x-raw,format=I420 ! clockoverlay ! timeoverlay valignment=bottom ! x264enc speed-preset=ultrafast tune=zerolatency ! mpegtsmux ! hlssink target-duration=1 playlist-length=2 max-files=3
 ```
 
 In another, run a simple single threaded webserver which will serve html, javascript, and HLS to web clients:
 
-```
+```shell
 cd /dev/shm/hls/ && python3 -m http.server
 ```
 
@@ -64,30 +64,38 @@ It is worth noting here that the `hlssink` element in GStreamer is not widely us
 
 Install dependencies:
 
-    apt install -y cmake gstreamer1.0-plugins-bad gstreamer1.0-tools \
-    gstreamer1.0-plugins-good v4l-utils gstreamer1.0-alsa alsa-utils libpango1.0-0 \
-    libpango1.0-dev gstreamer1.0-plugins-base gstreamer1.0-x x264 \
-    gstreamer1.0-plugins-{good,bad,ugly} liblivemedia-dev liblog4cpp5-dev \
-    libasound2-dev vlc libssl-dev iotop libasound2-dev  liblog4cpp5-dev \
-    liblivemedia-dev autoconf automake libtool v4l2loopback-dkms liblog4cpp5-dev \
-    libvpx-dev libx264-dev libjpeg-dev libx265-dev linux-headers-dev-sunxi;
+```shell
+apt install -y cmake gstreamer1.0-plugins-bad gstreamer1.0-tools \
+gstreamer1.0-plugins-good v4l-utils gstreamer1.0-alsa alsa-utils libpango1.0-0 \
+libpango1.0-dev gstreamer1.0-plugins-base gstreamer1.0-x x264 \
+gstreamer1.0-plugins-{good,bad,ugly} liblivemedia-dev liblog4cpp5-dev \
+libasound2-dev vlc libssl-dev iotop libasound2-dev  liblog4cpp5-dev \
+liblivemedia-dev autoconf automake libtool v4l2loopback-dkms liblog4cpp5-dev \
+libvpx-dev libx264-dev libjpeg-dev libx265-dev linux-headers-dev-sunxi;
+```
 
 Install kernel source and build v4l2loopback module:
 
-    apt install linux-source-5.11.3-dev-sunxi64  #Adjust kernel version number to match current installation with "uname -r"
-    cd /usr/src/v4l2loopback-0.12.3; make && make install && depmod -a
+```shell
+apt install linux-source-5.11.3-dev-sunxi64  #Adjust kernel version number to match current installation with "uname -r"
+cd /usr/src/v4l2loopback-0.12.3; make && make install && depmod -a
+```
 
 Build required v4l2 software:
 
-    git clone --recursive https://github.com/mpromonet/v4l2tools && cd v4l2tools && make && make install;
-    git clone --recursive https://github.com/mpromonet/v4l2rtspserver && cd v4l2rtspserver && cmake -D LIVE555URL=https://download.videolan.org/pub/contrib/live555/live.2020.08.19.tar.gz . && make && make install;
+```shell
+git clone --recursive https://github.com/mpromonet/v4l2tools && cd v4l2tools && make && make install;
+git clone --recursive https://github.com/mpromonet/v4l2rtspserver && cd v4l2rtspserver && cmake -D LIVE555URL=https://download.videolan.org/pub/contrib/live555/live.2020.08.19.tar.gz . && make && make install;
+```
 
 Running the camera:
 
-    media-ctl --set-v4l2 '"ov5640 1-003c":0[fmt:UYVY8_2X8/640x480@1/30]';
-    modprobe v4l2loopback video_nr=10 debug=2;
-    v4l2compress -fH264  -w -vv /dev/video0 /dev/video10 &
-    v4l2rtspserver -v -S -W 640 -H 480 -F 10 -b /usr/local/share/v4l2rtspserver/ /dev/video10
+```shell
+media-ctl --set-v4l2 '"ov5640 1-003c":0[fmt:UYVY8_2X8/640x480@1/30]';
+modprobe v4l2loopback video_nr=10 debug=2;
+v4l2compress -fH264  -w -vv /dev/video0 /dev/video10 &
+v4l2rtspserver -v -S -W 640 -H 480 -F 10 -b /usr/local/share/v4l2rtspserver/ /dev/video10
+```
 
 Note that you might get an error when running media-ctl indicating that the resource is busy. This could be because of the motion program that runs on the stock OS installation. Check and terminate any running /usr/bin/motion processes before running the above steps.
 
@@ -135,11 +143,13 @@ Gstreamer can almost do this by itself, as it has a multipartmux element which p
 
 Create a file called `mjpeg-response.sh`:
 
-    #! /bin/bash
-    media-ctl --set-v4l2 '"ov5640 1-003c":0[fmt:JPEG_1X8/1920x1080]'
-    b="--duct_tape_boundary"
-    echo -en "HTTP/1.1 200 OK\r\nContent-type: multipart/x-mixed-replace;boundary=$b\r\n\r\n"
-    gst-launch-1.0 v4l2src ! image/jpeg,width=1920,height=1080 ! multipartmux boundary=$b ! fdsink fd=2 2>&1 >/dev/null
+```shell
+#! /bin/bash
+media-ctl --set-v4l2 '"ov5640 1-003c":0[fmt:JPEG_1X8/1920x1080]'
+b="--duct_tape_boundary"
+echo -en "HTTP/1.1 200 OK\r\nContent-type: multipart/x-mixed-replace;boundary=$b\r\n\r\n"
+gst-launch-1.0 v4l2src ! image/jpeg,width=1920,height=1080 ! multipartmux boundary=$b ! fdsink fd=2 2>&1 >/dev/null
+```
 
 Make it executable: `chmod +x mjpeg-response.sh`
 
@@ -153,22 +163,30 @@ It’s possible to set up the PineCube as a virtual camera video device (Video 4
 
 First, you will need to set up the pinecube with gstreamer much like the above gstreamer, but in 1280x720 resolution. Also, you will be streaming to the desktop machine using UDP, with IP address represented by $desktop below at UDP port 8000.
 
-    media-ctl --set-v4l2 '"ov5640 1-003c":0[fmt:JPEG_1X8/1280x720]'
-    gst-launch-1.0 v4l2src device=/dev/video0 ! image/jpeg,width=1280,height=720,framerate=30/1 ! rtpjpegpay name=pay0 ! udpsink host=$desktop port=8000
+```shell
+media-ctl --set-v4l2 '"ov5640 1-003c":0[fmt:JPEG_1X8/1280x720]'
+gst-launch-1.0 v4l2src device=/dev/video0 ! image/jpeg,width=1280,height=720,framerate=30/1 ! rtpjpegpay name=pay0 ! udpsink host=$desktop port=8000
+```
 
 On your desktop machine, you will need to install the gstreamer suite and the special v4l2loopback kernel module to bring the mjpeg stream to the Video 4 Linux device /dev/video10.
 
-    sudo apt install gstreamer1.0-tools gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly v4l2loopback-dkms
-    sudo modprobe v4l2loopback video_nr=10 max_buffers=32 exclusive_caps=1 # Creates /dev/video10 as a virtual v4l2 device, allocates increased buffers and exposes exclusive capabilities for chromium to find the video device
-    gst-launch-1.0 udpsrc port=8000 ! application/x-rtp, encoding-name=JPEG,payload=26,framerate=30/1 ! rtpjpegdepay ! jpegdec ! video/x-raw, format=I420, width=1280, height=720 ! autovideoconvert ! v4l2sink device=/dev/video10
+```shell
+sudo apt install gstreamer1.0-tools gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly v4l2loopback-dkms
+sudo modprobe v4l2loopback video_nr=10 max_buffers=32 exclusive_caps=1 # Creates /dev/video10 as a virtual v4l2 device, allocates increased buffers and exposes exclusive capabilities for chromium to find the video device
+gst-launch-1.0 udpsrc port=8000 ! application/x-rtp, encoding-name=JPEG,payload=26,framerate=30/1 ! rtpjpegdepay ! jpegdec ! video/x-raw, format=I420, width=1280, height=720 ! autovideoconvert ! v4l2sink device=/dev/video10
+```
 
 The most common error found when launching the gstreamer pipeline above is the following error message, which seems to happen when the [max_buffers aren’t set](https://github.com/umlaeute/v4l2loopback/issues/174) on the v4l2loopback module (see above), or if there is a v4l client (vlc, chromium) already connected to /dev/video10 when starting the pipeline. There does seem to be a small level of instability in this stack that could be improved.
 
-    gstbasesrc.c(3055): gst_base_src_loop (): /GstPipeline:pipeline0/GstUDPSrc:udpsrc0:
-    streaming stopped, reason not-negotiated (-4)
+```
+gstbasesrc.c(3055): gst_base_src_loop (): /GstPipeline:pipeline0/GstUDPSrc:udpsrc0:
+streaming stopped, reason not-negotiated (-4)
+```
 
 Now that you have /dev/video10 hooked into the gstreamer pipeline you can then connect to it using VLC. VLC is a good local test that things are working. You can view the stream like this. Note that you could do the same thing with mpv/ffmpeg, but there are [problems](https://www.raspberrypi.org/forums/viewtopic.php?t=270023) currently.
 
-    vlc v4l2:///dev/video10
+```shell
+vlc v4l2:///dev/video10
+```
 
 Be sure to disconnect VLC before trying to use the virtual web camera with chromium. Launch chromium and go to a web conference like [jitsi](https://meet.jit.si). When it prompts you for the camera pick the "Dummy Video Device..." and it should be much like what you see in VLC. Note that Firefox isn’t really working at this moment and the symptoms appear very similar to the problem with mpv/ffmpeg mentioned above, ie. when they connect to the camera they show only the first frame and then drop. It’s unclear whether the bug is in gstreamer, v4l, or ffmpeg (or somewhere in these instructions).

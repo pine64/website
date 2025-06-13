@@ -24,20 +24,24 @@ This method works with a local-to-the-pinephone matrix server but you could inst
 ### Arch
 Start with a nice and up-to-date Danctnix' Arch ARM PinePhone installation, mine is from April 20 2021. SSH into the PinePhone and then run this to install all the needed packages
 
-```
+```shell
 sudo pacman -Sy matrix-synapse fractal python-matrix_client python-gobject git meson ninja base-devel python-matrix-nio python-dbus
 ```
 
 Start the service
 
-    sudo systemctl enable synapse
-    sudo systemctl start synapse
+```shell
+sudo systemctl enable synapse
+sudo systemctl start synapse
+```
 
 ### Mobian
 
 Flash a fresh mobian nightly (Tested September 28 2021) and install the following:
 
-`sudo apt install matrix-synapse fractal mmsd-tng python3-matrix-nio python3-vobject python3-aiofiles git`
+```shell
+sudo apt install matrix-synapse fractal mmsd-tng python3-matrix-nio python3-vobject python3-aiofiles git
+```
 
 ## Set up Matrix Synapse on localhost
 
@@ -45,10 +49,12 @@ Skip this if you will be using a remote homeserver. Make a new config with the s
 
 ### Arch
 
-    cd /etc/synapse/
-    sudo python -m synapse.app.homeserver --server-name localhost --config-path homeserver.yaml --generate-config --report-stats=no
+```shell
+cd /etc/synapse/
+sudo python -m synapse.app.homeserver --server-name localhost --config-path homeserver.yaml --generate-config --report-stats=no
 
-    sudo vi /usr/lib/systemd/user/matrix-synapse.service
+sudo vi /usr/lib/systemd/user/matrix-synapse.service
+```
 
 ```
 Description=Multimedia Messaging Service Daemon
@@ -64,22 +70,28 @@ WantedBy=default.target
 
 Start the service
 
-    systemctl enable matrix-synapse --user
-    systemctl start matrix-synapse --user
+```shell
+systemctl enable matrix-synapse --user
+systemctl start matrix-synapse --user
+```
 
 ### Mobian
 
-    cd /etc/matrix-synapse/
-    sudo rm homeserver.*
-    sudo python3 -m synapse.app.homeserver --server-name localhost --config-path homeserver.yaml --generate-config --report-stats=no
-    sudo service matrix-synapse start
+```shell
+cd /etc/matrix-synapse/
+sudo rm homeserver.*
+sudo python3 -m synapse.app.homeserver --server-name localhost --config-path homeserver.yaml --generate-config --report-stats=no
+sudo service matrix-synapse start
+```
 
 ### Add new matrix users
 
 in /etc/synapse/ (arch) or /etc/matrix-synapse/ (mobian)
 
-    register_new_matrix_user -c homeserver.yaml http://localhost:8008 # New user name and pw will both be pp
-    register_new_matrix_user -c homeserver.yaml http://localhost:8008 # New user name and pw will both be mm
+```
+register_new_matrix_user -c homeserver.yaml http://localhost:8008 # New user name and pw will both be pp
+register_new_matrix_user -c homeserver.yaml http://localhost:8008 # New user name and pw will both be mm
+```
 
 Open fractal and log into the homeserver at http://localhost:8008 with username pp and password pp
 
@@ -91,7 +103,7 @@ Note: historical, no longer needed, mmsdtng commonly packaged
 
 Grab the git repository and install it:
 
-```
+```shell
 cd ~
 git clone https://source.puri.sm/kop316/mmsd.git
 cd mmsd
@@ -101,9 +113,11 @@ meson test -C _build
 sudo meson install -C _build
 ```
 
-```
+```shell
 sudo vi /usr/lib/systemd/user/mmsd-mm.service
+```
 
+```sytemd
 Description=Multimedia Messaging Service Daemon
 After=ModemManager.service
 
@@ -115,7 +129,7 @@ RestartSec=10s
 WantedBy=default.target
 ```
 
-```
+```shell
 sudo chmod 644 /usr/lib/systemd/user/mmsd-mm.service
 systemctl enable mmsd-mm.service --user
 systemctl start mmsd-mm --user
@@ -126,9 +140,12 @@ systemctl start mmsd-mm --user
 This config works for me
 
 After starting mmsdtng the first time it should generate a config. Edit the following 3 options:
-```
-vi ~/.mms/modemmanager/ModemManagerSettings
 
+```shell
+vi ~/.mms/modemmanager/ModemManagerSettings
+```
+
+```
 CarrierMMSC=http://mms.msg.eng.t-mobile.com/mms/wapenc
 MMS_APN=fast.t-mobile.com
 AutoProcessSMSWAP=true
@@ -136,13 +153,15 @@ AutoProcessSMSWAP=true
 
 ### Restart MMSD ModemManager service
 
-    systemctl restart mmsdtng
+```shell
+systemctl restart mmsdtng
+```
 
 ## Install MMS bridge
 
 Grab it from git and put things in places
 
-```
+```shell
 cd ~
 git clone https://gitlab.com/untidylamp/mmmpuppet.git
 cd mmmpuppet
@@ -156,7 +175,7 @@ cp conf.json.sample $HOME/.config/mmm/conf.json
 
 This will mostly take care of editing the config for you if you are running a local matrix server.
 
-```
+```shell
 sed -i 's^"https://matrix-client.matrix.org"^"http://localhost:8008"^' $HOME/.config/mmm/conf.json
 sed -i 's^"@bot_account:matrix.org"^"@mm:localhost"^' $HOME/.config/mmm/conf.json
 sed -i 's^"Change_me"^"mm"^' $HOME/.config/mmm/conf.json
@@ -165,36 +184,48 @@ sed -i 's^"@your_accounts:matrix.org"^"@pp:localhost"^' $HOME/.config/mmm/conf.j
 
 You actually have to fill these two out yourself. I put "US" and my +1 and rest of 10 digit number.
 
-```
+```shell
 vi  $HOME/.config/mmm/conf.json
+```
 
+```
 "cell_number":      "+15554441234",
 "cell_country":     "CA",
 ```
 
 Now we need to run it once to process the config file and remove secrets (It will say it has done this and exit on first run)
 
-    /usr/local/bin/mmmpuppet.py
+```shell
+/usr/local/bin/mmmpuppet.py
+```
 
 check it out now
 
-    cat $HOME/.config/mmm/conf.json
+```shell
+cat $HOME/.config/mmm/conf.json
+```
 
 If it doesn’t change the file to remove all the linebreaks then it didn’t like it. Figure out why by looking at the log file.
 
-    cat ~/.config/mmm/mmmpuppet.log
+```shell
+cat ~/.config/mmm/mmmpuppet.log
+```
 
 Go fix whatever went wrong. Which should be nothing. You should have seen a message like this as output before it returns you to a prompt:
 
-    Login successful. Config updated with token. Run again to start bridge.
+```
+Login successful. Config updated with token. Run again to start bridge.
+```
 
 ### Set up MMS bridge service
 
 Make systemd unit
 
-```
+```shell
 sudo vi /usr/lib/systemd/user/mmmpuppet.service
+```
 
+```systemd
 Description=Starts mmmpuppet interface
 After=mmsd-mm.service
 
@@ -207,7 +238,7 @@ WantedBy=default.target
 
 and start it
 
-```
+```shell
 sudo chmod 644 /usr/lib/systemd/user/mmmpuppet.service
 systemctl enable mmmpuppet.service --user
 systemctl start mmmpuppet.service --user
@@ -219,7 +250,7 @@ See if services are running:
 
 It should show something like this even after reboot
 
-```
+```shell
 alarm       6374  0.0  0.3 235364  7752 ?        Ssl  22:44   0:00 /usr/local/bin/mmsd -n -d
 alarm       6825  9.8  2.7 224976 54188 ?        Ssl  22:52   0:05 /usr/bin/python3 /usr/local/bin/mmmpuppet.py
 ```
@@ -230,7 +261,9 @@ For Arch use Pacman to remove Chatty.
 
 Mobian:
 
-    apt remove chatty
+```shell
+apt remove chatty
+```
 
 ## Don't forget to enable data
 
@@ -238,11 +271,7 @@ You can get SMS but not MMS with mobile data off
 
 ## Launch fractal
 
-Log in with this homeserver
-
-    http://localhost:8008
-
-username `pp` and password `pp`
+Log in with this homeserver: http://localhost:8008. Username is `pp` and password is `pp`.
 
 Logins are not saved. You need to add a new item named login to the gnome keyring manually to fix it. See: https://wiki.mobian.org/doku.php?id=fractal
 

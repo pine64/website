@@ -22,32 +22,44 @@ Here we assume your block device is ***/dev/sdX***, adjust as needed.
 
 Create a new partition table:
 
-    # parted -s /dev/sdX mklabel gpt
+```console
+# parted -s /dev/sdX mklabel gpt
+```
 
 Create the partitions for loader and u-boot:
 
-    # parted -s /dev/sdX mkpart loader 64s 8MiB
-    # parted -s /dev/sdX mkpart uboot 8MiB 16MiB
+```console
+# parted -s /dev/sdX mkpart loader 64s 8MiB
+# parted -s /dev/sdX mkpart uboot 8MiB 16MiB
+```
 
 Create the partition for u-boot’s environment:
 
-    # parted -s /dev/sdX mkpart env 16MiB 32MiB
+```console
+# parted -s /dev/sdX mkpart env 16MiB 32MiB
+```
 
 Create the "efi" boot partition and mark it as bootable:
 
-    # parted -s /dev/sdX mkpart efi fat32 32MiB 544MiB
-    # parted -s /dev/sdX set 4 boot on
+```console
+# parted -s /dev/sdX mkpart efi fat32 32MiB 544MiB
+# parted -s /dev/sdX set 4 boot on
+```
 
 Create the root partition:
 
-    # parted -s /dev/sdX mkpart root ext4 544MiB 100%
+```console
+# parted -s /dev/sdX mkpart root ext4 544MiB 100%
+```
 
 ### Creating The File Systems
 
 Now create the file systems for boot and root:
 
-    # mkfs.vfat -n "efi" /dev/sdX4
-    # mkfs.ext4 -L "rootfs" /dev/sdX5
+```console
+# mkfs.vfat -n "efi" /dev/sdX4
+# mkfs.ext4 -L "rootfs" /dev/sdX5
+```
 
 ## Fetching and Flashing U-Boot
 
@@ -63,8 +75,10 @@ $ unzip artifacts.zip
 
 Flash idblock.bin and uboot.img:
 
-    # dd if=artifacts/idblock.bin of=/dev/sdX1
-    # dd if=artifacts/uboot.img of=/dev/sdX2
+```console
+# dd if=artifacts/idblock.bin of=/dev/sdX1
+# dd if=artifacts/uboot.img of=/dev/sdX2
+```
 
 ## Fetching The Root File System Tarball
 
@@ -94,10 +108,12 @@ $ gpg --verify ArchLinuxARM-aarch64-latest.tar.gz.sig
 
 ## Installing The Root File System
 
-    # mount /dev/sdX5 /mnt/alarm-root
-    # mkdir /mnt/alarm-root/boot
-    # mount /dev/sdX4 /mnt/alarm-root/boot
-    # bsdtar -xpf ArchLinuxARM-aarch64-latest.tar.gz -C /mnt/alarm-root
+```console
+# mount /dev/sdX5 /mnt/alarm-root
+# mkdir /mnt/alarm-root/boot
+# mount /dev/sdX4 /mnt/alarm-root/boot
+# bsdtar -xpf ArchLinuxARM-aarch64-latest.tar.gz -C /mnt/alarm-root
+```
 
 ### Editing fstab
 
@@ -109,8 +125,10 @@ $ lsblk -o NAME,SIZE,MOUNTPOINTS,PARTUUID
 
 In ***/mnt/alarm-root/etc/fstab***, put the lines
 
-    PARTUUID=_root-uuid-here_  /       ext4    defaults        0       1
-    PARTUUID=_boot-uuid-here_  /boot   vfat    defaults        0       2
+```
+PARTUUID=_root-uuid-here_  /       ext4    defaults        0       1
+PARTUUID=_boot-uuid-here_  /boot   vfat    defaults        0       2
+```
 
 with your UUIDs in place of the placeholder.
 
@@ -118,16 +136,17 @@ with your UUIDs in place of the placeholder.
 
 Create a ***/mnt/alarm-root/boot/extlinux/extlinux.conf*** with these contents:
 
-    default l0
-    menu title Quartz64 Boot Menu
-    prompt 0
-    timeout 50
-
-    label l0
-    menu label Boot Arch Kernel
-    linux /Image
-    fdt /dtbs/rockchip/rk3566-quartz64-a.dtb
-    append initrd=/initramfs-linux.img earlycon=uart8250,mmio32,0xfe660000 console=ttyS2,1500000n8 root=LABEL=rootfs rw rootwait
+```
+default l0
+menu title Quartz64 Boot Menu
+prompt 0
+timeout 50
+ label l0
+menu label Boot Arch Kernel
+linux /Image
+fdt /dtbs/rockchip/rk3566-quartz64-a.dtb
+append initrd=/initramfs-linux.img earlycon=uart8250,mmio32,0xfe660000 console=ttyS2,1500000n8 root=LABEL=rootfs rw rootwait
+```
 
 #### For Model B
 
@@ -139,14 +158,18 @@ Copy it to ***/mnt/alarm-root/boot/dtbs/rockchip/rk3566-quartz64-b.dtb***
 
 Then adjust your ***/mnt/alarm-root/boot/extlinux/extlinux.conf****'s **fdt*** line as follows:
 
-    fdt /dtbs/rockchip/rk3566-quartz64-*b*.dtb
+```
+fdt /dtbs/rockchip/rk3566-quartz64-*b*.dtb
+```
 
 ### Finishing Up
 
 Once done, unmount the partitions:
-	
- # umount /mnt/alarm-root/boot
- # umount /mnt/alarm-root
+
+```console
+# umount /mnt/alarm-root/boot
+# umount /mnt/alarm-root
+```
 
 ## Booting And Finishing Setup
 
@@ -154,7 +177,9 @@ Hook up your UART dongle to your Quartz64, open a serial terminal at 1.5mbauds. 
 
 Once you hit a login shell, log in as `root` with password `root` and run:
 
-    # pacman-key --init
-    # pacman-key --populate archlinuxarm
+```console
+# pacman-key --init
+# pacman-key --populate archlinuxarm
+```
 
 You are now ready to use Arch Linux ARM! Either delete or rename (and move the homedir of) the `alarm` user, and you’re all set. Don’t forget to install things like `sudo` and setting up sudo groups and such.

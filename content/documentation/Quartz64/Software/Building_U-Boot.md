@@ -21,33 +21,43 @@ You will need either an x86 machine with an aarch64 cross-compiler installed, or
 
 On an x86_64 Arch Linux system, you can install the required dependencies with:
 
-    pacman -S --needed base-devel aarch64-linux-gnu-gcc aarch64-linux-gnu-binutils git dtc python-setuptools swig python-pyelftools
+```shell
+pacman -S --needed base-devel aarch64-linux-gnu-gcc aarch64-linux-gnu-binutils git dtc python-setuptools swig python-pyelftools
+```
 
 ### Debian
 
 On an x86_64 Debian (or derivates such as Ubuntu) system, you can install the required dependencies with:
 
-    apt install device-tree-compiler build-essential gcc-aarch64-linux-gnu binutils-aarch64-linux-gnu make python3 python3-dev libssl-dev python3-pyelftools python3-setuptools swig git
+```shell
+apt install device-tree-compiler build-essential gcc-aarch64-linux-gnu binutils-aarch64-linux-gnu make python3 python3-dev libssl-dev python3-pyelftools python3-setuptools swig git
+```
 
 ## Fetching the repositories
 
 Use git to clone the mainline U-Boot repository into the directory _u-boot_:
 
-    git clone https://source.denx.de/u-boot/u-boot.git
+```shell
+git clone https://source.denx.de/u-boot/u-boot.git
+```
 
 You can use `git checkout _tagname_` inside the _u-boot_ directory to check out a specific git tag (release), you can list all of them with `git tag -l` (but do keep in mind we only have device support since v2023.10).
 
 Then, also use git to clone the rockchip firmware binaries repository into the directory _rkbin_:
 
-    git clone https://github.com/rockchip-linux/rkbin.git
+```shell
+git clone https://github.com/rockchip-linux/rkbin.git
+```
 
 ## Setting up your environment
 
 Next, we need to set two environment variables: `ROCKCHIP_TPL` for the DRAM init binary, and `BL31` for the ARM Trusted Firmware binary.
 
-    cd u-boot
-    export ROCKCHIP_TPL="$(ls ../rkbin/bin/rk35/rk3566_ddr_1056MHz_v*.bin | sort | tail -n1)"
-    export BL31="$(ls ../rkbin/bin/rk35/rk3568_bl31_v*.elf | sort | tail -n1)"
+```shell
+cd u-boot
+export ROCKCHIP_TPL="$(ls ../rkbin/bin/rk35/rk3566_ddr_1056MHz_v*.bin | sort | tail -n1)"
+export BL31="$(ls ../rkbin/bin/rk35/rk3568_bl31_v*.elf | sort | tail -n1)"
+```
 
 ## Configuring U-Boot
 
@@ -63,16 +73,18 @@ First, we need to use the right default config for our device. Please choose _de
 
 In the _u-boot_ directory with your environment variables set, run:
 
-```
-make CROSS_COMPILE=aarch64-linux-gnu- _defconfig_
+```shell
+make CROSS_COMPILE=aarch64-linux-gnu- [defconfig]
 ```
 
-with _defconfig_ being the value from the previous table.
+with _[defconfig]_ being the value from the previous table.
 
 ## Building U-Boot
 
 In the _u-boot_ directory, after configuring, and with your environment variables set, run:
 
-    make CROSS_COMPILE=aarch64-linux-gnu- -j$(nproc)
+```shell
+make CROSS_COMPILE=aarch64-linux-gnu- -j$(nproc)
+```
 
 This will output a _u-boot-rockchip.bin_, which is your freshly built SPL+U-Boot combined image.

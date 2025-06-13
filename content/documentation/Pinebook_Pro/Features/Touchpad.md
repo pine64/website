@@ -66,31 +66,39 @@ From the terminal command line:
 
 Debian-based distributions:
 
-    git clone https://github.com/dragan-simic/pinebook-pro-keyboard-updater
-    cd pinebook-pro-keyboard-updater
-    sudo apt-get install build-essential libusb-1.0-0-dev xxd
-    make
+```shell
+git clone https://github.com/dragan-simic/pinebook-pro-keyboard-updater
+cd pinebook-pro-keyboard-updater
+sudo apt-get install build-essential libusb-1.0-0-dev xxd
+make
+```
 
 Arch-based distributions (note: [build-essential](https://www.garron.me/en/bits/build-essential-arch-linux.html), [xxd](https://aur.archlinux.org/packages/xxd-standalone) are named differently. Arch linux [does not split its packages](https://bbs.archlinux.org/viewtopic.php?id=44950) as foo and foo-dev):
 
-    git clone https://github.com/dragan-simic/pinebook-pro-keyboard-updater
-    cd pinebook-pro-keyboard-updater
-    sudo pacman -Syu base-devel xxd-standalone libusb
-    make
+```shell
+git clone https://github.com/dragan-simic/pinebook-pro-keyboard-updater
+cd pinebook-pro-keyboard-updater
+sudo pacman -Syu base-devel xxd-standalone libusb
+make
+```
 
 The next steps are identical for both Debian and Arch distros.
 
 Step 1
 
-    cd pinebook-pro-keyboard-updater
-    sudo ./updater step-1
-    sudo poweroff # do not use 'reboot'
+```shell
+cd pinebook-pro-keyboard-updater
+sudo ./updater step-1
+sudo poweroff # do not use 'reboot'
+```
 
 Step 2 (after booting)
 
-    cd pinebook-pro-keyboard-updater
-    sudo ./updater step-2 iso
-    sudo poweroff # do not use 'reboot'
+```shell
+cd pinebook-pro-keyboard-updater
+sudo ./updater step-2 iso
+sudo poweroff # do not use 'reboot'
+```
 
 ### ANSI Model
 
@@ -102,31 +110,39 @@ From the terminal command line:
 
 Debian-based distributions:
 
-    git clone https://github.com/dragan-simic/pinebook-pro-keyboard-updater
-    cd pinebook-pro-keyboard-updater
-    sudo apt-get install build-essential libusb-1.0-0-dev xxd
-    make
+```shell
+git clone https://github.com/dragan-simic/pinebook-pro-keyboard-updater
+cd pinebook-pro-keyboard-updater
+sudo apt-get install build-essential libusb-1.0-0-dev xxd
+make
+```
 
 Arch-based distributions (note: [build-essential](https://www.garron.me/en/bits/build-essential-arch-linux.html), [xxd](https://aur.archlinux.org/packages/xxd-standalone) are named differently. Arch linux [does not split its packages](https://bbs.archlinux.org/viewtopic.php?id=44950) as foo and foo-dev):
 
-    git clone https://github.com/dragan-simic/pinebook-pro-keyboard-updater
-    cd pinebook-pro-keyboard-updater
-    sudo pacman -Syu base-devel xxd-standalone libusb
-    make
-	
+```shell
+git clone https://github.com/dragan-simic/pinebook-pro-keyboard-updater
+cd pinebook-pro-keyboard-updater
+sudo pacman -Syu base-devel xxd-standalone libusb
+make
+```
+
 The next steps are identical for both Debian and Arch distros.
 
 Step 1
 
-    cd pinebook-pro-keyboard-updater
-    sudo ./updater step-1
-    sudo poweroff # do not use 'reboot'
+```shell
+cd pinebook-pro-keyboard-updater
+sudo ./updater step-1
+sudo poweroff # do not use 'reboot'
+```
 
 Step 2 (after booting)
 
-    cd pinebook-pro-keyboard-updater
-    sudo ./updater step-2 ansi
-    sudo poweroff # do not use 'reboot'
+```shell
+cd pinebook-pro-keyboard-updater
+sudo ./updater step-2 ansi
+sudo poweroff # do not use 'reboot'
+```
 
 When done, if some of the keys produce incorrect characters, please check your OS’s language settings. For ANSI users, the default OS may have shipped with English UK as the default language. You can change it to English US if desired.
 
@@ -136,11 +152,15 @@ In addition, you might consider using revised firmware data. This is one final s
 
 Step 3: **ISO** (after booting)
 
-    sudo ./updater flash-kb firmware/default_iso.hex
+```shell
+sudo ./updater flash-kb firmware/default_iso.hex
+```
 
 Step 3: **ANSI** (after booting)
 
-    sudo ./updater flash-kb firmware/default_ansi.hex
+```shell
+sudo ./updater flash-kb firmware/default_ansi.hex
+```
 
 ## X Window System Configuration
 
@@ -152,32 +172,38 @@ When using X.Org display server the touchpad can be handled either by _libinput_
 
 Some forum members have found that an adjustment to X11 will allow finer motion in the touchpad. If you use the _synaptic_ mouse/touchpad driver, use this command to make the change live:
 
-    synclient MinSpeed=0.2
+```xorg.conf
+synclient MinSpeed=0.2
+```
 
 You may experiment with different settings, but 0.25 was tested as helping noticeably.
 
 To make the change persist across reboots, change the file **/etc/X11/xorg.conf** similar to below:
 
-    Section "InputClass"
-           Identifier "touchpad catchall"
-           Driver "synaptics"
-           MatchIsTouchpad "on"
-           MatchDevicePath "/dev/input/event*"
-           *Option "MinSpeed" "0.25"*
-    EndSection
+```xorg.conf
+Section "InputClass"
+        Identifier "touchpad catchall"
+        Driver "synaptics"
+        MatchIsTouchpad "on"
+        MatchDevicePath "/dev/input/event*"
+        *Option "MinSpeed" "0.25"*
+EndSection
+```
 
 The line "Option "MinSpeed" "0.25"" is changed here.
 
 Another forum user built on the above settings a little, and have found these to be very good:
 
-    synclient MinSpeed=0.25
-    synclient TapButton1
-    synclient TapButton2=3
-    synclient TapButton3=2
-    synclient FingerLow=30
-    synclient PalmDetect=1
-    synclient VertScrollDelta=64
-    synclient HorizScrollDelta=64
+```xorg.conf
+synclient MinSpeed=0.25
+synclient TapButton1
+synclient TapButton2=3
+synclient TapButton3=2
+synclient FingerLow=30
+synclient PalmDetect=1
+synclient VertScrollDelta=64
+synclient HorizScrollDelta=64
+```
 
 _FingerLow_ has the same value as 'FingerHigh' in one config (30). It is believed to help reduce mouse movement as you lift your finger, but it’s unknown whether synaptic works like this.
 You may find this config to be comfortable for daily use.
@@ -186,11 +212,15 @@ _TabButton_ allows to just tab the touchpad instead of physically pressing it do
 
 The right mouse click is emulated by tapping with two fingers on the touchpad. If you feel that this is not very responsive you can try this value:
 
-    synclient MaxTapTime=250
+```xorg.conf
+synclient MaxTapTime=250
+```
 
 Some users may encounter an issue with the mouse jumping when typing when using libinput driver due to their hand hitting the touchpad which can be fixed by updating the X.Org settings to disable it while typing. One can disable the touchpad while typing by setting the below option in the X.Org config simliar to the previous example.
 
-    Option "DisableWhileTyping" "on"
+```xorg.conf
+Option "DisableWhileTyping" "on"
+```
 
 The setting can be verified by using the xinput command to first list the devices and then listing the properties for the touchpad device. Exact commands to check this have been omitted for save of brevity. If DisableWhileTyping is shown enabled but does not appear to be working the issue may be due to the fact that the keyboard is connected to a USB bus which causes it to be seen as a external keyboard. Make sure you have libinput version 1.19.0 or later installed as it includes the necessary quirk.
 

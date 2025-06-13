@@ -243,12 +243,16 @@ The dimich-dmb fork of spi-ch341-usb works with 5.15+ kernels, but as you can se
 
 Since linux-5.15 binding to spidev driver is required to make slave devices available via /dev/, e.g. for slave 1 on bus 0 as real root (not with sudo):
 
-    # echo spidev > /sys/class/spi_master/spi0/spi0.1/driver_override
-    # echo spi0.1 > /sys/bus/spi/drivers/spidev/bind
+```console
+# echo spidev > /sys/class/spi_master/spi0/spi0.1/driver_override
+# echo spi0.1 > /sys/bus/spi/drivers/spidev/bind
+```
 
 For all devices handled by spi_ch341_usb driver (again, only as real root):
 
-    # for i in /sys/bus/usb/drivers/spi-ch341-usb/*/spi_master/spi*/spi*.*; do echo spidev > $i/driver_override; echo $(basename $i) > /sys/bus/spi/drivers/spidev/bind; done
+```console
+# for i in /sys/bus/usb/drivers/spi-ch341-usb/*/spi_master/spi*/spi*.*; do echo spidev > $i/driver_override; echo $(basename $i) > /sys/bus/spi/drivers/spidev/bind; done
+```
 
 The documentation found at https://github.com/dimich-dmb/spi-ch341-usb/blob/master/README.md has more information.
 

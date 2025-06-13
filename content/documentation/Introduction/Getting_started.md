@@ -144,8 +144,10 @@ The disk number should match the size of your SD card, and will likely be using 
 Having identified the disk number execute the following commands
 (substitute diskX for your disk and name of image for pine64-image-name.img):
 
-    diskutil unmountDisk /dev/diskX
-    sudo dd if=pine64-image-name.img of=/dev/disk2 bs=1M
+```shell
+diskutil unmountDisk /dev/diskX
+sudo dd if=pine64-image-name.img of=/dev/disk2 bs=1M
+```
 
 Wait patiently for the process to complete, then eject/remove your SD card from your Mac.
 
@@ -193,6 +195,7 @@ Having downloaded the required OS image proceed to use 7zip to unarchive it by d
 
       sudo umount /dev/mmcblkX
       sudo dd if=pine.img of=/dev/mmcblkX bs=1M status=progress conv=fsync
+
 * Wait patiently for the process to complete.
 * use the command `sync` to ensure everything is written to the microSD card.
 * The card is ready to boot
@@ -254,11 +257,15 @@ For the latter of the two methods here is a summary of the process:
 * Once the PINE64 device boots from micro SD, you cannot flash the contents of the micro SD card to the eMMC while you are running from the micro SD so you will actually use this session to download an OS image to flash to the eMMC. Depending on the distribution this may be the same image you just flashed to the micro SD card and booted from.
 * Once the OS image downloads check in terminal or in Disks utility the eMMC’s mounting location and unmount all but "/". Example command to show disks and mounts:
 
-`$ lsblk`
+```console
+$ lsblk
+```
 
 * Use the DD command or Disks utility to flash the downloaded image to the eMMC module. Note your output device may be mmcblk1 or mmcblk2, use the command above to verify the correct one. Example DD command:
 
-`$ xzcat imagename.img.xz | sudo dd of=/dev/mmcblk1 bs=1M status=progress conv=fsync`
+```console
+$ xzcat imagename.img.xz | sudo dd of=/dev/mmcblk1 bs=1M status=progress conv=fsync
+```
 
 * Once the flashing process is completed power down your device and remove the micro SD card. You should now be able to power your device back up and it will boot the image flashed to the eMMC module.
 
@@ -282,15 +289,17 @@ You can check if your device entered FEL mode using _lsusb_ command in terminal.
 
 The next step is to mount your device so that your computer recognizes the eMMC as mass storage (UMS). A script called boot-tools streamlining this process is available **thanks to ayufan** on [his github](https://github.com/ayufan-pine64/boot-tools). Follow his instructions and in terminal perform the following steps:
 
-`git clone https://github.com/ayufan-pine64/boot-tools.git`
-
-`cd boot-tools`
-
-`make pinebook_ums`
+```shell
+git clone https://github.com/ayufan-pine64/boot-tools.git
+cd boot-tools
+make pinebook_ums
+```
 
 or
 
-`make pine64_ums`
+```shell
+make pine64_ums
+```
 
 Once your device mounts as UMS it will appear in your file manager. In CLI you can check if the storage is listed using _fdisk -l_.
 

@@ -101,19 +101,23 @@ Install first arm-none-eabi-gcc and aarch64-linux-gnu-gcc compiler, then run the
 
 Prerequisite packages (Debian/Ubuntu): `device-tree-compiler python gcc-arm-non-eabi flex bison gcc-aarch64-linux-gnu gcc make`
 
-    git clone https://github.com/ARM-software/arm-trusted-firmware.git atf
-    make -C atf CROSS_COMPILE=aarch64-linux-gnu- PLAT=rk3399 bl31
-    git clone https://gitlab.denx.de/u-boot/u-boot.git u-boot
-    cd u-boot/
-    git checkout v2020.01-rc5
-    make rockpro64-rk3399_defconfig
-    BL31=../atf/build/rk3399/release/bl31/bl31.elf make ARCH=arm CROSS_COMPILE=aarch64-linux-gnu-
+```shell
+git clone https://github.com/ARM-software/arm-trusted-firmware.git atf
+make -C atf CROSS_COMPILE=aarch64-linux-gnu- PLAT=rk3399 bl31
+git clone https://gitlab.denx.de/u-boot/u-boot.git u-boot
+cd u-boot/
+git checkout v2020.01-rc5
+make rockpro64-rk3399_defconfig
+BL31=../atf/build/rk3399/release/bl31/bl31.elf make ARCH=arm CROSS_COMPILE=aarch64-linux-gnu-
+```
 
 Which gives you idbloader.img and u-boot.itb. Copy them to the rockpro64, and run the following: (Or put your SD card into your PC)
 
-    sudo dd if=idbloader.img of=/dev/mmcblk0 seek=64
-    sudo dd if=u-boot.itb of=/dev/mmcblk0 seek=16384
-    sync
+```shell
+sudo dd if=idbloader.img of=/dev/mmcblk0 seek=64
+sudo dd if=u-boot.itb of=/dev/mmcblk0 seek=16384
+sync
+```
 
 ### PCIe Controller Hardware Error Handling Bug
 

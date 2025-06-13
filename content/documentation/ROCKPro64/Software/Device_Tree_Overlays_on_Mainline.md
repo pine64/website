@@ -18,21 +18,23 @@ If your U-Boot has been compiled with `CONFIG_OF_LIBFDT_OVERLAY` (which Manjaro�
 
 First off, you’ll have to write a device tree overlay. In this example, we’ll enable the ROCKPro64’s I2C bus that’s exposed to the pin headers, and declare that a PCF8574 GPIO extender is hanging off it.
 
-    /dts-v1/;
-    /plugin/;
+```
+/dts-v1/;
+/plugin/;
 
-    &i2c8 {
-    	status = "okay";
-    	#address-cells = <1>;
-    	#size-cells = <0>;
+&i2c8 {
+    status = "okay";
+    #address-cells = <1>;
+    #size-cells = <0>;
 
-    pcf8574: pcf8574@20 {
-    	compatible = "nxp,pcf8574";
-    	reg = <0x20>;
-    	gpio-controller;
-    	#gpio-cells = <2>;
-    };
-    ;
+pcf8574: pcf8574@20 {
+    compatible = "nxp,pcf8574";
+    reg = <0x20>;
+    gpio-controller;
+    #gpio-cells = <2>;
+};
+;
+```
 
 We’ll go through this file line by line.
 
@@ -60,17 +62,21 @@ Next, copy your compiled device tree overlay file&mdash;in the previous example 
 
 Then we modify ***/boot/extlinux/extlinux.conf*** and add the line emphasised in bold to it:
 
-    LABEL Manjaro ARM
-    KERNEL /Image
-    FDT /dtbs/rockchip/rk3399-rockpro64.dtb
-    *FDTOVERLAYS /dtbs/overlays/pcf8574.dtbo*
-    APPEND initrd=/initramfs-linux.img console=ttyS2,1500000 root=LABEL=ROOT_MNJRO rw rootwait quiet splash plymouth.ignore-serial-consoles
+```
+LABEL Manjaro ARM
+KERNEL /Image
+FDT /dtbs/rockchip/rk3399-rockpro64.dtb
+*FDTOVERLAYS /dtbs/overlays/pcf8574.dtbo*
+APPEND initrd=/initramfs-linux.img console=ttyS2,1500000 root=LABEL=ROOT_MNJRO rw rootwait quiet splash plymouth.ignore-serial-consoles
+```
 
 To specify multiple overlays, simply separate them with space on the same line.
 
 Now after a reboot, the device tree overlay file should be applied, and your kernel will see the new device. You can confirm this by dumping the device tree the kernel uses, and grepping it for whatever you added:
 
-    dtc -I fs /sys/firmware/devicetree/base | grep -A4 'pcf8574'
+```shell
+dtc -I fs /sys/firmware/devicetree/base | grep -A4 'pcf8574'
+```
 
 ## Further Reading
 

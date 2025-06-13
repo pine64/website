@@ -18,17 +18,23 @@ Details on how to get the most out of a [Pinebook Pro](/documentation/Pinebook_P
 ### Watching DRM content (Netflix, etc.)
 Most paid online streaming services use Widevine DRM to make their content more difficult to pirate. Widevine is not directly supported on Manjaro KDE, however it is still possible to watch DRM content via the "chromium-docker" package which downloads a 32-bit ARM container and installs Chromium with Widevine inside of that. While not space-efficient, or efficient in general, it’s the recommended solution for watching this content on your Pinebook Pro. You can install this package with:
 
-    sudo pacman -Sy chromium-docker
+```shell
+sudo pacman -Sy chromium-docker
+```
 
 ### Checking GPU capabilities
 
 To see what versions of OpenGL and OpenGL ES are supported by the Pinebook Pro, what driver is in use, and what version of the driver is loaded, install the "mesa-demos" package with:
 
-    sudo pacman -Sy mesa-demos
+```shell
+sudo pacman -Sy mesa-demos
+```
 
 And then run:
 
-    glxinfo | grep OpenGL
+```shell
+glxinfo | grep OpenGL
+```
 
 This will give detailed information about your graphics card and driver, useful for debugging.
 
@@ -36,7 +42,9 @@ This will give detailed information about your graphics card and driver, useful 
 
 For better graphics performance, you may install the "mesa-git" package, built and supplied in the Manjaro ARM repos. This lets you bring in the latest features, optimizations, and bugfixes for the graphics driver used by the Pinebook Pro. Installation is as simple as:
 
-    pacman -Sy mesa-git
+```shell
+pacman -Sy mesa-git
+```
 
 Then you may reboot to load the newer driver.
 
@@ -48,11 +56,15 @@ With Mesa 20.2 there is no longer much reason to use this over the standard mesa
 
 By default, with the current state of the Panfrost GPU driver, the Pinebook Pro supports OpenGL 2.1 and OpenGL ES 3.0. If you want to use OpenGL 3.3, you need to set the system-wide environment variable, open the **/etc/environment** file with:
 
-    kate /etc/environment
+```shell
+kate /etc/environment
+```
 
 And then at the bottom of the file, on a new line, add:
 
-    PAN_MESA_DEBUG="gl3"
+```
+PAN_MESA_DEBUG="gl3"
+```
 
 Then save the file, entering your password when prompted, and reboot the system. When you check your GPU capabilities, it should report OpenGL 3.3 and applications that rely on it should function properly. Note that GL 3.3 support is incomplete and some rendering features do not work yet, notably geometry shaders.
 
@@ -202,7 +214,7 @@ By default, most Linux distributions have a boot screen with a picture. To see a
 
 * Backup and edit the U-Boot configuration file:
 
-```console
+```shell
 cp -p /etc/default/u-boot /etc/default/u-boot.`date +%Y%m%d`
 chmod a-w /etc/default/u-boot.`date +%Y%m%d`
 vi /etc/default/u-boot
@@ -212,7 +224,7 @@ Remove the _quiet_ and _splash_ parameters. Leave everything else alone.
 
 * Update the U-Boot configuration:
 
-```console
+```shell
 u-boot-update
 ```
 
@@ -222,7 +234,7 @@ u-boot-update
 
 * Backup and edit the U-Boot configuration file:
 
-```console
+```shell
 cp -p /boot/extlinux/extlinux.conf /boot/extlinux/extlinux.conf.`date +%Y%m%d`
 chmod a-w /boot/extlinux/extlinux.conf.`date +%Y%m%d`
 vi /boot/extlinux/extlinux.conf
@@ -292,7 +304,7 @@ Simply revert back to using GTK2 (how to do so is somewhat Linux distriobution-s
 
 Another solution may be to run gVim with
 
-```console
+```
 GDK_RENDERING=image
 ```
 
