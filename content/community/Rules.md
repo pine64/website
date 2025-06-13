@@ -1,12 +1,6 @@
 ---
 title: "PINE64 Community Rules and Code of Conduct"
 draft: false
-menu:
-  docs:
-    title:
-    parent: "General"
-    identifier: "General/Rules"
-    weight:
 aliases:
   - /wiki/PINE64_Community_Rules_and_Code_of_Conduct
 ---

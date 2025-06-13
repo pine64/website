@@ -93,7 +93,8 @@ Thank you to everyone who contributed to the projects in 2021. I particularly wa
 
 This month’s [PineTalk](/podcast/) will be recorded live on December 15th. Brian ([33YN2](https://mastodon.online/web/accounts/61817)) and Justin (Porky) will be using the ‘stage’ feature on [Discord](https://discord.gg/pine64), found at the bottom of the server’s channel list. I encourage you all to join in, ask questions and stick around afterwards for a chat with the hosts and other community members. In case you miss it, the episode will be available in an edited format a few days later on the podcast streaming platform of your choice, as per usual.
 
-![](/blog/images/Malware-notification-Telegram.png) ![](/blog/images/Malware-notification-discord-1024x94.png)
+![](/blog/images/Malware-notification-Telegram.png)
+![](/blog/images/Malware-notification-discord-1024x94.png)
 
 **Notification about the malware was issued in the News channels and in the chat platform - top: Telegram // bottom: Discord**
 
@@ -130,9 +131,6 @@ This year we also announced our [plan for a LoRa-based](https://www.pine64.org/2
 **Lup Yuen Lee documents in detail PineDio development on [his blog](https://lupyuen.github.io/) - picture via [Lup's Twitter](https://twitter.com/MisterTechBlog/status/1469709861210320901/photo/1)**
 
 Last, but certainly not least, we [announced the PinePhone Pro](https://www.pine64.org/2021/10/15/october-update-introducing-the-pinephone-pro/) in October this year. This is certainly one of the most anticipated devices we’ve created. We worked on the PinePhone Pro for over a year prior to making the announcement, and the process of bringing it to the market was no simple feat. We tried at least three different hardware configurations before settling on the final device design. Hardware development proved particularly difficult due to various components drifting in-and-out of availability - making it hard to determine production viability in 9 month’s time. Uncertainty was high throughout the process and the decision to proceed with production was made just a month prior to the announcement. Only once all components and factory floor-time were secured did we feel like it was safe to launch the PinePhone Pro. One benefit of these circumstances is that it has only been 2 months since the announcement, and we have already shipped units to developers, and will be shipping the Explorer Edition in just a few short weeks. 
-
-  
-  
 
 ![](/blog/images/PinePhonePro-in-the-wild.png)
 

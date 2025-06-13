@@ -38,21 +38,21 @@ collections:
     preview: false
     fields: # List of fields for the front matter
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text", required: false}
+      #- { label: "Description", name: "description", widget: "text", required: false}
       - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Image", name: "images", widget: "image", required: false }
-      #- { label: "Hidden", name: "hidden", widget: "boolean", default: false }
-      #- { label: "Comments", name: "comments", widget: "boolean", default: true }
-      - { label: "Draft", name: "draft", widget: "boolean", default: false, required: false}
-      #- { label: "Weight", name: "weight", widget: "number" }
-      - { label: "Body", name: "body", widget: "markdown" }
       - name: authors
         label: Authors
         label_singular: 'Author'
         widget: list
         fields:
-          - { label: 'Name', name: 'name', widget: 'string', hint: 'First and Last' }
-          - { label: 'Description', name: 'description', widget: 'markdown' }
+          - { label: 'Name', name: 'name', widget: 'string', hint: 'Name of the author' }
+          #- { label: 'Description', name: 'description', widget: 'markdown' }
+      - { label: "Image", name: "images", widget: "image", required: false }
+      #- { label: "Hidden", name: "hidden", widget: "boolean", default: false }
+      #- { label: "Comments", name: "comments", widget: "boolean", default: true }
+      #- { label: "Draft", name: "draft", widget: "boolean", default: false, required: false}
+      #- { label: "Weight", name: "weight", widget: "number" }
+      - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "community" # This is the name used in the URL
     label: "Community" # This is the singular name of the content type for the UI
@@ -63,9 +63,9 @@ collections:
     preview: false
     fields: # List of fields for the front matter
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text", required: false }
-      - { label: "Date", name: "date", widget: "datetime", required: false }
-      - { label: "Image", name: "images", widget: "image", required: false }
+      #- { label: "Description", name: "description", widget: "text", required: false }
+      #- { label: "Date", name: "date", widget: "datetime", required: false }
+      #- { label: "Image", name: "images", widget: "image", required: false }
       - { label: "Draft", name: "draft", widget: "boolean", default: false, required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
@@ -109,11 +109,21 @@ collections:
       #subfolders: true # Legacy behavior
       subfolders: false
       depth: 5 # max depth to show in the collection tree
-      summary: '{{dirname}}' # optional summary for a tree node, defaults to the inferred title field
+      #summary: '{{dirname}}' # optional summary for a tree node, defaults to the inferred title field
       #summary: '{{title}}'
-      #summary: '{{filename}}'
+      summary: '{{filename}}'
     fields: # List of fields for the front matter
       - { label: "Title", name: "title", widget: "string" }
+      - name: menu
+        label: menu
+        fields:
+        - name: docs
+          label: docs
+          fields:
+            - { label: "title", name: "title", widget: "string", required: false }
+            - { label: "parent", name: "parent", widget: "string", required: true }
+            - { label: "identifier", name: "identifier", widget: "string", required: true }
+            - { label: "weight", name: "weight", widget: "integer", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
     meta: { path: { widget: string, label: 'Path', index_file: '_index' } }
     #meta: { path: { label: 'Path', widget: 'string', index_file: '{fields.filename}' }}

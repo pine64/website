@@ -1,12 +1,6 @@
 ---
 title: "PINE64 brand and logo"
 draft: false
-menu:
-  docs:
-    title:
-    parent: "General"
-    identifier: "General/Brand_and_logo"
-    weight:
 aliases:
   - /wiki/PINE64_brand_and_logo
 ---
