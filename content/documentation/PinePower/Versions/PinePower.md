@@ -46,8 +46,20 @@ Connections:
 | USB-C1 & USB-C2 + USB-A combined | *45W *15W | *5V3A, 9V3A, 12V3A, 15V3A *5V3A | - | - |
 
 ## Internals
+### Teardown
 
-_TBA_
+To open your Charger, you just have to Cut away the backplate with the USB-Ports, then you can pull out the PCB.
+
+## Images
+{{< figure src="/documentation/PinePower/images/PinePower_Charger_65W_teardown/PCB-Backside.jpg" caption="PCB Back" width="400" >}}
+
+{{< figure src="/documentation/PinePower/images/PinePower_Charger_65W_teardown/PCB-top.jpg" caption="PCB Top" width="400" >}}
+
+{{< figure src="/documentation/PinePower/images/PinePower_Charger_65W_teardown/Top-view-case.jpg" caption="Top view in case" width="400" >}}
+
+{{< figure src="/documentation/PinePower/images/PinePower_Charger_65W_teardown/PCB-unsoldered.jpg" caption="PCB with unsoldered USB-C ports" width="400" >}}
+
+{{< figure src="/documentation/PinePower/images/PinePower_Charger_65W_teardown/PCB-side.jpg.jpg" caption="PCB side view" width="400" >}}
 
 ## Certifications
 
