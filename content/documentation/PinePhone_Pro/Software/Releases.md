@@ -164,7 +164,7 @@ Nemo Mobile is the open source build of Sailfish OS with a open source UI called
 
 ### Download
 
-[Image](https://img.nemomobile.net/2022.05/Manjaro-ARM-nemomobile-pinephonepro-0.9.img.xz)
+[Image](https://img.nemomobile.net/2024.10/Manjaro-ARM-nemomobile-pinephonepro-24.10.img.xz)
 
 | Default credentials | |
 | -------- | ------- |
