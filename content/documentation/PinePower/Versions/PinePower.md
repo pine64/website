@@ -36,21 +36,26 @@ Connections:
 
 ## Power specifications
 
-|     |     |     |     |     |
-| --- | --- | --- | --- | --- |
 | Output | Max output power | Power ranges PD | Power ranges QC | Power ranges PPS |
+| --- | --- | --- | --- | --- |
 | Single USB-C1 or C2 | 65W | 5V3A, 9V3A, 12V3A, 15V3A, 20V3.5A | - | 3.3-11V5A |
 | Single USB-A | 65W | - | QC3.0 4.5V5A, 5V4.5A, 9V3A, 12V3A, 20V3A | - |
-| USB-C1 & USB-C2 combined | *45W *18W | *5V3A, 9V3A, 12V3A, 15V3A *5V3A, 9V2A, 12V1.5A | - | - |
-| USB-C1 & USB-A combined | *45W *18W | *5V3A, 9V3A, 12V3A, 15V3A *- | *- *5V3A, 9V2A, 12V1.5A | - |
-| USB-C1 & USB-C2 + USB-A combined | *45W *15W | *5V3A, 9V3A, 12V3A, 15V3A *5V3A | - | - |
+| <ul><li>USB-C1 &</li><li>USB-C2 combined</li></ul> | <ul><li>45W</li><li>18W</li></ul> | <ul><li>5V3A, 9V3A, 12V3A, 15V3A</li><li>5V3A, 9V2A, 12V1.5A</li></ul> | - | - |
+| <ul><li>USB-C1 &</li><li>USB-A combined</li></ul> | <ul><li>45W</li><li>18W</li></ul> | <ul></li>5V3A, 9V3A, 12V3A, 15V3A</li><li>-</li></ul> | <ul><li>-</li><li>5V3A, 9V2A, 12V1.5A</li></ul> | - |
+| <ul><li>USB-C1 &</li><li>USB-C2 + USB-A combined</li></ul> | <ul><li>45W</li><li>15W</li></ul> | <ul><li>5V3A, 9V3A, 12V3A, 15V3A</li><li>5V3A</li></ul> | - | - |
 
 ## Internals
+
 ### Teardown
+
+{{< admonition type="warning" >}}
+Opening this device may expose you to high voltage components that can cause serious injury or death. **Do not attempt to open, repair or modify the device.** For safety, always consult a qualified technician for any issues.
+{{< /admonition >}}
 
 To open your Charger, you just have to Cut away the backplate with the USB-Ports, then you can pull out the PCB.
 
-## Images
+### Images
+
 {{< figure src="/documentation/PinePower/images/PinePower_Charger_65W_teardown/PCB-Backside.jpg" caption="PCB Back" width="400" >}}
 
 {{< figure src="/documentation/PinePower/images/PinePower_Charger_65W_teardown/PCB-top.jpg" caption="PCB Top" width="400" >}}
@@ -59,7 +64,7 @@ To open your Charger, you just have to Cut away the backplate with the USB-Ports
 
 {{< figure src="/documentation/PinePower/images/PinePower_Charger_65W_teardown/PCB-unsoldered.jpg" caption="PCB with unsoldered USB-C ports" width="400" >}}
 
-{{< figure src="/documentation/PinePower/images/PinePower_Charger_65W_teardown/PCB-side.jpg.jpg" caption="PCB side view" width="400" >}}
+{{< figure src="/documentation/PinePower/images/PinePower_Charger_65W_teardown/PCB-side.jpg" caption="PCB side view" width="400" >}}
 
 ## Certifications
 
