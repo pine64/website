@@ -39,7 +39,7 @@ $ NameUrl[uboot]=https://xff.cz/kernels/bootloaders-2024.04/ppp.tar.gz
 $ #NameUrl[uboot]=https://megous.com/dl/tmp/ppp.tar.gz # test build
 $ NameUrl[arch]=https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20240326/archlinux-pinephone-pro-phosh-20240326.img.xz
 $ NameUrl[manjaro]=https://github.com/manjaro-pinephone/phosh/releases/download/beta37/Manjaro-ARM-phosh-pinephonepro-beta37.img.xz
-$ NameUrl[mobian]=https://images.mobian.org/pinephonepro/weekly/mobian-rockchip-phosh-20240324.img.xz
+$ NameUrl[mobian]=https://images.mobian.org/pinephonepro/weekly/mobian-rockchip-phosh-20250706.img.xz
 $ NameUrl[pmos]=https://images.postmarketos.org/bpo/v23.12/pine64-pinephonepro/phosh/20240501-0425/20240501-0425-postmarketOS-v23.12-phosh-22.3-pine64-pinephonepro.img.xz
 $ NameUrl[sailfish]=https://gitlab.com/sailfishos-porters-ci/dont_be_evil-ci/-/jobs/artifacts/master/download?job=pinephonepro-rootfs
 $ NameUrl[ut]=https://ci.ubports.com/job/focal-hybris-rootfs-arm64/job/master/lastSuccessfulBuild/artifact/ubuntu-touch-pinephone-pro-img-arm64.raw.xz
@@ -315,9 +315,9 @@ menu label $NAME
 #kernel /boot/Image
 
 ## uncomment next 3 lines for MOBIAN
-#fdtdir /boot/dtb-6.6-rockchip/
-#initrd /boot/initrd.img-6.6-rockchip
-#linux  /boot/vmlinuz-6.6-rockchip
+#fdtdir /boot/dtbs/6.12-rockchip/
+#initrd /boot/initrd.img-6.12-rockchip
+#linux  /boot/vmlinuz-6.12-rockchip
 
 ## uncomment next 3 lines for PMOS
 #fdtdir /boot/dtbs-pine64-pinephonepro/
