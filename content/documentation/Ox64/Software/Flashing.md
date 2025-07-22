@@ -225,10 +225,11 @@ Then, follow the instructions in [booting_for_the_first_time](#booting_for_the_f
 
 You have a choice of flashing software:
 
-* DevCube: GUI-based closed source flashing tool
-* CLI (`bflb-iot-tool`): command line open source flashing tool
+* DevCube: Bouffalo's GUI-based closed source flashing tool
+* `bflb-iot-tool`: Bouffalo's command line open source flashing tool
+* [Blisp](https://github.com/pine64/blisp): Third party command line open source flashing tool
 
-### DevCube installation
+### Installation: DevCube
 
 Download the latest DevCube flashing tool from BouffaloLab’s website:
 
@@ -251,7 +252,7 @@ Verify that your copy of `BouffaloLabDevCube-v1.8.3.zip` matches the hashes belo
 * SHA1: `0f2619e87d946f936f63ae97b0efd674357b1166`
 * SHA256: `e6e6db316359da40d29971a1889d41c9e97d5b1ff1a8636e9e6960b6ff960913`
 
-### CLI packages installation
+### Installation: bflb-iot-tool
 
 Install `bflb-iot-tool` using your preferred method of managing PIP packages. One option is to set up a Python virtual environment as follows:
 
@@ -271,6 +272,32 @@ $ # bflb-iot-tool --help # return info about the tool
  Each time you open a new terminal window you will need to `cd ~/ox64/` and re-run `pipenv shell` to reactivate the virtual environment.
 {{< /admonition >}}
 
+### Installation: Blisp
+
+At the time of writing, only the development version of Blisp supports flashing the Ox64. You can compile it from source as follows:
+
+```console
+$ sudo apt install cmake # for Debian-based systems
+ # or
+$ sudo pacman -S cmake # for Arch Linux systems
+
+$ cd ~/ox64
+$ git clone --recursive https://github.com/pine64/blisp.git
+$ cd blisp
+$ git submodule update --init --recursive
+
+$ mkdir build && cd build
+$ cmake -DBLISP_BUILD_CLI=ON ..
+$ cmake --build .
+
+$ export PATH=$HOME/ox64/blisp/build/tools/blisp:$PATH
+```
+{{< admonition type="note" >}}
+ Each time you open a new terminal window you will need to re-run the `export PATH=...` command above to ensure that the `blisp` executable remains in your `PATH`.
+{{< /admonition >}}
+
+Full instructions are available in Blisp's [README](https://github.com/pine64/blisp).
+
 ## Flashing the Ox64
 
 Put the Ox64 into programming mode:
@@ -279,20 +306,24 @@ Put the Ox64 into programming mode:
 * Apply power or re-plug the USB cable
 * Release the BOOT button
 
-### CLI flashing method
+If you are using **any** of the command line flashing utilities (i.e. `blisp` or `bflb-iot-tool`), set up the following environment variables:
 
-Set up some environment variables to save typing them out later:
+```console
+$ PORT=/dev/ttyACM1
+$ BAUD=230400  # safe value for macOS, set to 2000000 for faster flashing on Linux
+```
+
+And change directory to the location of your firmware images:
 
 ```console
 $ cd ~/ox64/openbouffalo/firmware # if you downloaded pre-built images
  # or
 $ cd ~/ox64/buildroot/output/images # if you built your own images
-
-$ PORT=/dev/ttyACM1
-$ BAUD=230400  # safe value for macOS, set to 2000000 for faster flashing on Linux
 ```
 
-Finally, flash the Ox64. If you created a [combined image](#optional_create_a_combined_soc_image) then run the command below:
+### Flashing method: bflb-iot-tool
+
+Flash the Ox64. If you created a [combined image](#optional_create_a_combined_soc_image) then run the command below:
 
 ```console
 $ bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD \
@@ -314,7 +345,29 @@ $ bflb-iot-tool --chipname bl808 --interface uart --port $PORT --baudrate $BAUD 
 
 If you get permission errors when running any of the commands above, run `ls -l /dev/tty[DEVICE]`, to find out which group is allowed to talk to serial ports and add your user to that group, with `sudo usermod -a -G [GROUP] $USER` (i.e. `dialout` for Debian or `uucp` for Arch Linux). Make sure you re-login. Running the commands as `root` is not recommended since this will make `bflb-iot-tool` create root-owned files in your home directory. You can now run `exit` from virtual environment.
 
-### BLDevCube flashing method
+### Flashing method: Blisp
+
+Flash the Ox64. If you created a [combined image](#optional_create_a_combined_soc_image) then run the command below:
+
+```console
+$ blisp iot --chip=bl808 --port=$PORT --baudrate=$BAUD \
+>           --single-down-loc 0x0 --single-down bl808-combined.bin
+```
+
+Otherwise, run the following commands:
+
+```console
+$ blisp iot --chip=bl808 --port=$PORT --baudrate=$BAUD \
+>           --single-down-loc 0x0 --single-down m0_lowload_bl808_m0.bin
+
+$ blisp iot --chip=bl808 --port=$PORT --baudrate=$BAUD \
+>           --single-down-loc 0x100000 --single-down d0_lowload_bl808_d0.bin
+
+$ blisp iot --chip=bl808 --port=$PORT --baudrate=$BAUD \
+>           --single-down-loc 0x800000 --single-down bl808-firmware.bin
+```
+
+### Flashing method: DevCube
 
 Open a new terminal window to run the DevCube flasher:
 
