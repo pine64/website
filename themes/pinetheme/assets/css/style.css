@@ -982,7 +982,7 @@ nav#TableOfContents li {
 }
 nav#TableOfContents > ul, 
 nav#TableOfContents > li {
-    padding-left: 0 !important;
+    padding-left: 0;
 }
 nav#TableOfContents ol {
     list-style: inside decimal;
@@ -992,11 +992,16 @@ nav#TableOfContents ol li {
     padding: 4px 4px;
 }
 nav#TableOfContents {
-    font-weight: 400 !important;
+    font-weight: 400;
 }
 nav#TableOfContents ul ul, 
 nav#TableOfContents ol ol {
     padding-left: 1.0em;
+}
+
+#TableOfContents > ul > li > ul {
+    padding-left: 1em !important;
+    /* padding-bottom: 0 !important; */
 }
 
 /* Podcast page */
