@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineTime"
     identifier: "PineTime/Flashing"
-    weight: 3
+    weight: 4
 ---
 
 {{< children >}}

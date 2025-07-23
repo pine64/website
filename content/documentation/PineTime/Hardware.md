@@ -4,9 +4,11 @@ draft: false
 menu:
   docs:
     title:
-    parent: "PineTime/Further_information"
-    identifier: "PineTime/Further_information/Hardware"
-    weight:
+    parent: "PineTime"
+    identifier: "PineTime/Hardware"
+    weight: 2
+aliases:
+  - /documentation/PineTime/Further_information/Hardware/
 ---
 
 ## Display

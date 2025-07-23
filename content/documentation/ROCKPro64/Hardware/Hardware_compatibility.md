@@ -25,7 +25,7 @@ Please contribute to the hardware compatibility page, which lists hardware which
 | NIC | Intel X550-T2 Dual Port | 8086:1563 | 5.15.0-trunk-arm64 (Debian) | good | netperf throughput in FW mode, 20 streams: between 4136-6613mb/s across use cases. |  |
 | NIC | Intel 82571EB Dual Port (HP NC360T) |  | Mainline-5.6 | crash | kernel crash on boot |  |
 | NIC | Intel 82575EB Dual Port (AOC-SG-I2) |  | Mainline-5.10 | crash | kernel crash on boot |  |
-| NIC | Intel 82575/82576 | 8086:1521 | OpenWrt 21.02-rc1 ; 5.4.111-1 | good  | opkg: kmod-igb; [OpenWrt 21.02-rc1](https://wiki.pine64.org/wiki/ROCKPro64_Software_Release#OpenWrt_21.02) 5.4.111-1; ~92.8 KB; Kernel modules for Intel(R) 82575/82576 PCI-Express Gigabit Ethernet adapters. |  |
+| NIC | Intel 82575/82576 | 8086:1521 | OpenWrt 21.02-rc1 ; 5.4.111-1 | good  | opkg: kmod-igb; [OpenWrt 21.02-rc1](/documentation/ROCKPro64/Software/Releases/#openwrt) 5.4.111-1; ~92.8 KB; Kernel modules for Intel(R) 82575/82576 PCI-Express Gigabit Ethernet adapters. |  |
 | NIC | Aquantia 10GBps AQC107 | 1d6a:07b1 | Mainline 5.16 | good | Works perfectly out of the box. |  |
 | GPU | nVidia GTX-645 |  | Mainline-5.4 | crash | BAR size too small, triggers PCIe error handling bug |  |
 | PCIe Switch | PCIE-EUX1-04 Ver.002 |  | Mainline-5.4 | good |  |  |

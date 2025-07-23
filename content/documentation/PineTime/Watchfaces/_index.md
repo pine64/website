@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineTime"
     identifier: "PineTime/Watchfaces"
-    weight: 4
+    weight: 5
 ---
 
 {{< children >}}

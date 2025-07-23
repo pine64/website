@@ -83,7 +83,7 @@ _
 
 ### InfiniTime is only one of your options
 
-As any true open source project, the PineTime does not rely solely on one community or a single firmware. There are [many other projects](https://wiki.pine64.org/wiki/PineTime_Development) available that are currently under development and all of them deserve attention from the user base.
+As any true open source project, the PineTime does not rely solely on one community or a single firmware. There are [many other projects](/documentation/PineTime/Development/) available that are currently under development and all of them deserve attention from the user base.
 
 The most advanced firmware among those on the list is probably [Wasp-OS](https://github.com/daniel-thompson/wasp-os) - the Micropython firmware. It provides many functionalities and is really easy to use and program for thanks to the Python language.
 

@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PineTime"
     identifier: "PineTime/Software"
-    weight: 2
+    weight: 3
 ---
 
 {{< children >}}
