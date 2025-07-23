@@ -285,7 +285,7 @@ The package is available on [Flathub](https://flathub.org/apps/uk.co.piggz.amazf
 
 What is open source? Why does it matter? Those are easy questions, but I honestly have a hard time answering them, especially in English which is not my first language.
 
-Julian (the author of one of the blog post mentioned above) sent the following message in the [PineTime chat room](/community/#chat_platforms) which provides a very simple yet accurate answer to them by describing the *super power* of open source:
+Julian (the author of one of the blog post mentioned above) sent the following message in the [PineTime chat room](/community/#chat-platforms) which provides a very simple yet accurate answer to them by describing the *super power* of open source:
 
   _"Having the power to customize is the super-power of open source and I want to be able to demonstrate that to everyone who sees the watch. (And I think we should work on making customization easier, so everyone can do it.) Awesome to be standing on the shoulders of those who made this possible. Thank you!"_
 

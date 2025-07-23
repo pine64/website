@@ -20,7 +20,7 @@ This article explains how dismantle, test, and repair the [Pinecil](/documentati
  while opening your Pinecil will not necessarily void your warranty, all self-repairs are **done at your own risk**. Read everything in this section and related or linked articles to get a good idea of the procedure, and go to the Pinecil community chat if you desire advice/support from experienced volunteers. Self-repairs or modifications might void your warranty so proceed if this is not a concern. This information is for educational purposes only.
 {{< /admonition >}}
 
-Pinecil V1 and V2 have slightly different schematics and have different MCU chips. Doing repairs often requires referencing the correct schematics or photos. The datasheets are also important to get information about the chips, and to order replacement parts. The schematics and known datasheets are all at the bottom of this article and linked in the contents table at the top. Chatting with other owners of Pinecil is encouraged as they have experience - already broke things so you don’t have to (see Pinecil volunteer [chat link here](/documentation/#_chat_platforms)).
+Pinecil V1 and V2 have slightly different schematics and have different MCU chips. Doing repairs often requires referencing the correct schematics or photos. The datasheets are also important to get information about the chips, and to order replacement parts. The schematics and known datasheets are all at the bottom of this article and linked in the contents table at the top. Chatting with other owners of Pinecil is encouraged as they have experience - already broke things so you don’t have to (see Pinecil volunteer [chat link here](/community/#chat-platforms)).
 
 {{< admonition type="note" >}}
  This is a new work in progress (WIP) started Feb. 18, 2023 which may be updated over time as volunteers have time to write up information. For sections that are missing, try asking in the live chat as a volunteer may have some clues to get you headed in the right path.
@@ -34,7 +34,7 @@ Pinecil V1 and V2 have slightly different schematics and have different MCU chip
    * Refer to the correct section for V1 or V2 parts.
    * Which model do I have? The older V1 model has an all black handle with a blue silicone grip and was discontinued in July 2022. The new V2 model has a black handle with a green thumb grip and is the only model PINE64 and authorized resellers started selling after August 1, 2022.
 4. Magnifying lamp or jeweler’s glasses with led light and good room light.
-5. Photos/videos will help to chat with volunteers in the [live Pinecil chat channel](/documentation/#_chat_platforms) if getting clarification or troubleshooting.
+5. Photos/videos will help to chat with volunteers in the [live Pinecil chat channel](/community/#chat-platforms) if getting clarification or troubleshooting.
 6. Optional: mobile phone to take macro photos or video. A macro lens to take phone photos is helpful; there are cheap ones that simply clip on.
 7. Possibly another soldering iron to do the repair, some flux, solder, and isopropyl alcohol (IPA) for cleaning the PCB. See [[Pinecil_Cases,_Stands,_Supplies#Soldering_supplies| this guide]] for some basic supply options.
 8. Optional: better needle size probe leads for DMM makes things easier and are nice for electronic work.
@@ -90,7 +90,7 @@ Pinecil V1 and V2 have slightly different schematics and have different MCU chip
 1. Sometimes, just updating to the newest firmware fixes issues as Ralim and team are very active in adding features and enhancements (see [Firmware](/documentation/Pinecil/Firmware/)).
 2. Some [Troubleshooting information](https://ralim.github.io/IronOS/Troubleshooting/) is also on GitHub Ralim’s IronOS (which is the firmware that is on the Pinecil). There are several hidden Debug tools in the firmware that also help with diagnosis.
 3. Clean all new Tips (Cartridges) with 90%-99% IPA (Isopropyl Alcohol) especially the white end with the 2 silver contacts.
-4. If you can’t find the information here or it hasn’t been written yet; simply join the volunteer run [live Pinecil chat channel](/documentation/#_chat_platforms). Sometimes you can get a clue to the right path.
+4. If you can’t find the information here or it hasn’t been written yet; simply join the volunteer run [live Pinecil chat channel](/community/#chat-platforms). Sometimes you can get a clue to the right path.
 
 ### Common Questions
 
@@ -183,4 +183,4 @@ Reference the article on [[Pinecil_Power_Supplies#DC_Barrel_Power| DC barrel cha
     PCB 1 style (left photo) is easier to cut the trace. Cut all the way across the trace and deep enough to cut the copper contact. PCB 2 style (right photo) is harder because the trace has to be cut without damaging the 2 via holes.
 7. Don’t plug in 24V until you first check with a USB-C PD charger that PD debug says **No VBUS** which means the mod is complete. If it still says **W. Vbus**, then the connection still exist. Cut a little deeper and clean the cut with some IPA (isopropyl alcohol) to remove any copper dust, dry it and check again. Taking a macro photo with a phone helps to examine the cut.
 If a USB-C charger is not available, often a phone with a USB-C port is a PD type, and can be used like a charger to plug in and check the PD debug messages (unfortunately, a PC port is not normally "PD" and won’t give proper PD Debug).
-8. If you want another set of eyes on it before you cut, post a photo of your PCB (near the Pinecone) on the Pine64 > [[live Pinecil chat channel](/documentation/#_chat_platforms). Ask for a volunteer who has _completed_ the 24V mod on a Pinecil V1 to assist. Not all chat people own a Pinecil even if they are in the Pinecil channel.
+8. If you want another set of eyes on it before you cut, post a photo of your PCB (near the Pinecone) on the [Pinecil chat channel](/community/#chat-platforms). Ask for a volunteer who has _completed_ the 24V mod on a Pinecil V1 to assist. Not all chat people own a Pinecil even if they are in the Pinecil channel.

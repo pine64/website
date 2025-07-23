@@ -22,7 +22,7 @@ In this project, I'll turn my Pinebook Pro into a portable multi-monitor Linux l
 
 ## Introduction
 
-In this post, I'll share how I turned my [Pinebook Pro](https://www.pine64.org/pinebook-pro/) into a dual-screen Linux laptop. It's a rather inexpensive upgrade, and what parts I didn't personally have on hand I was able to manufacture myself.
+In this post, I'll share how I turned my [Pinebook Pro](/devices/pinebook_pro/) into a dual-screen Linux laptop. It's a rather inexpensive upgrade, and what parts I didn't personally have on hand I was able to manufacture myself.
 
 This post is not meant to be an exhaustive guide. I simply want to put the bug in your ear and show you how I did it, confirming that a dual-screen setup for the Pinebook Pro is not only possible, but entirely functional (and looks slick too).
 
@@ -30,7 +30,7 @@ It'd be nice to have a portable multi-monitor workstation. And that's where this
 
 ## A Quick Disclaimer
 
-I can't promise this will work as well on every Linux distro, nor can I assure you every USB-C screen will work. So I'll say this: The [Pinebook Pro](https://www.pine64.org/pinebook-pro/) is a laptop for makers. Projects like this may or may not work, and may take troubleshooting and time to figure out. There are so many variables. But to me, the process is all part of the fun, and the risk is thrilling.
+I can't promise this will work as well on every Linux distro, nor can I assure you every USB-C screen will work. So I'll say this: The [Pinebook Pro](/devices/pinebook_pro/) is a laptop for makers. Projects like this may or may not work, and may take troubleshooting and time to figure out. There are so many variables. But to me, the process is all part of the fun, and the risk is thrilling.
 
 Keep in mind as you dive into this project that drawing too much power from your Pinebook Pro could cause problems, or even damage. While I'll cover my power requirements below, it's important to note that you do this at your own risk. If in doubt, speak with someone who is confident about this stuff, or post your questions in [the forum](https://forum.pine64.org/forumdisplay.php?fid=111) to request help from the community.
 
@@ -122,7 +122,7 @@ In my case, I already have the 5V 5A DC power supply on hand (a spare for LED li
 
 ![](/blog/images/Pinecil-1-1024x512.jpg)
 
-**Soldering A Custom Adapter:** Using my [Pinecil](https://www.pine64.org/pinecil/) for the first time to create my own 3D-printed Barrel to USB adapter.
+**Soldering A Custom Adapter:** Using my [Pinecil](/devices/pinecil/) for the first time to create my own 3D-printed Barrel to USB adapter.
   
 After this simple project, I officially LOVE the Pinecil!
 
