@@ -98,4 +98,4 @@ InfiniSim was also extended to support all the features related to the external 
 
 ## Wrap up
 
-That’s it! Enjoy InfiniTime 1.11 on your PineTime! Feel free to join us in the [community chat rooms](https://wiki.pine64.org/wiki/Main_Page#Chat_Platforms) if you have questions, need help or just want to talk about your favorite smart watch ever!
+That’s it! Enjoy InfiniTime 1.11 on your PineTime! Feel free to join us in the [community chat rooms](/community/#chat-platforms) if you have questions, need help or just want to talk about your favorite smart watch ever!

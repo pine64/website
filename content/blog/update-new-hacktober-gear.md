@@ -133,7 +133,7 @@ In the event you’ve missed it, the PineCube is [now available](https://pine64.
 
 **The PineCube**
 
-By the time this post goes live the PineCube chat and forum infrastructure should be available, and I highly encourage you to engage with others at this early stage of bringing the PineCube up. I’d also like to point out that the [PineCube Wiki page](https://wiki.pine64.org/index.php?title=PineCube) is now up with some very rudimentary information to get you started. Anyone can create a Wiki account and contribute to any of the existing device subsections; as per usual, it will take a community effort to get this project up and running.
+By the time this post goes live the PineCube chat and forum infrastructure should be available, and I highly encourage you to engage with others at this early stage of bringing the PineCube up. I’d also like to point out that the [PineCube Wiki page](/documentation/PineCube/) is now up with some very rudimentary information to get you started. Anyone can create a Wiki account and contribute to any of the existing device subsections; as per usual, it will take a community effort to get this project up and running.
 
 ![](/blog/images/PineCubeLenses.jpg)
 

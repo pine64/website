@@ -25,9 +25,9 @@ Stay tuned for more PinePhone Pro news in this month’s Community Update. 
 
 Learn more:
 
-- [PinePhone Pro website](https://www.pine64.org/pinephonepro/)
+- [PinePhone Pro website](/devices/pinephone_pro/)
 - [Pine Store product page](https://pine64.com/product-category/smartphones/pinephone-pro/)
-- [Wiki page](https://wiki.pine64.org/wiki/PinePhone_Pro)
-- [Currently available operating systems](https://wiki.pine64.org/wiki/PinePhone_Pro_Software_Releases) 
+- [Documentation](/documentation/PinePhone_Pro/)
+- [Currently available operating systems](/documentation/PinePhone_Pro/Software/Releases/) 
 
 [order now](https://pine64.com/product-category/smartphones/pinephone-pro/)

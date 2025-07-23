@@ -32,7 +32,7 @@ If your PinePhone ships via [_Asendia_](https://trackandtrace.asendia.com/) then
 
 #### The Pinebook Pro With Manjaro KDE Plasma
 
-A quick **PSA** first**:** the factory left the **WiFi privacy switch** (as well as potentially also other privacy switches) **turned ON** during testing on some Pinebook Pro laptops, so you may have to [disable the switch](https://wiki.pine64.org/index.php/Pinebook_Pro#Privacy_Switches) to re-enable WiFi**.** We apologize for the inconvenience this may cause. The Pinebook Pro ships with [Manjaro](https://manjaro.org/) which features the KDE [Plasma](https://kde.org/plasma-desktop) desktop. Manjaro is a phenomenal Linux distribution with an equally great and thriving community. The developers are our friends and colleagues, and they can be reached on their and our forums as well as in our chats.  
+A quick **PSA** first**:** the factory left the **WiFi privacy switch** (as well as potentially also other privacy switches) **turned ON** during testing on some Pinebook Pro laptops, so you may have to [disable the switch](/documentation/Pinebook_Pro/Keyboard/#privacy-switches) to re-enable WiFi**.** We apologize for the inconvenience this may cause. The Pinebook Pro ships with [Manjaro](https://manjaro.org/) which features the KDE [Plasma](https://kde.org/plasma-desktop) desktop. Manjaro is a phenomenal Linux distribution with an equally great and thriving community. The developers are our friends and colleagues, and they can be reached on their and our forums as well as in our chats.  
 
 To learn more about the Manjaro build which ships with your Pinebook Pro please see the following: 
 
@@ -47,15 +47,14 @@ For more general information about Manjaro Linux distribution please see: 
 
 Manjaro is just one of many options at your disposal. The Pinebook Pro is able to run a vast number of other Linux and BSD operating systems, which can be booted from a SD card or installed to internal flash storage instead of Manjaro. For instance, you can boot Recalbox from SD (or USB) for recreation and retro gaming while keeping your full operating system on the Pinebook Pro’s internal flash storage. 
 
-You can find an [up-to-date list of available operating systems](https://wiki.pine64.org/index.php/Pinebook_Pro_Software_Release) on [PINE64 Wiki](https://wiki.pine64.org).  
+You can find an [up-to-date list of available operating systems](/documentation/Pinebook_Pro/Software/Releases/) on [PINE64 Docs](/documentation/).  
 
-The [Pinebook Pro sub-section](https://wiki.pine64.org/index.php/Pinebook_Pro) of the [PINE64 Wiki](https://wiki.pine64.org/index.php/Main_Page) also contains a wide variety of information concerning the laptop’s hardware, including: 
+The [Pinebook Pro sub-section](/documentation/Pinebook_Pro/) of the [PINE64 Docs](/documentation/) also contains a wide variety of information concerning the laptop’s hardware, including: 
 
-- [Schematics & certifications](https://wiki.pine64.org/index.php/Pinebook_Pro#Pinebook_Pro_Schematics_and_Certifications)
-- [Datasheets of components](https://wiki.pine64.org/index.php/Pinebook_Pro#Datasheets_for_Components_and_Peripherals)
-- [Software and Operating System directory](https://wiki.pine64.org/index.php/Pinebook_Pro_Software_Release) 
-- [Technical reference](https://wiki.pine64.org/index.php/Pinebook_Pro#Technical_Reference)
-- [Troubleshooting procedures](https://wiki.pine64.org/index.php/Pinebook_Pro#Troubleshooting_guide) 
+- [Schematics & certifications](/documentation/Pinebook_Pro/Further_information/Schematics_and_certifications/s)
+- [Datasheets of components](/documentation/Pinebook_Pro/Further_information/Datasheets/)
+- [Software and Operating System directory](/documentation/Pinebook_Pro/Software/Releases/) 
+- [Troubleshooting procedures](/documentation/Pinebook_Pro/Troubleshooting/) 
 
 The greatest resource we have to offer, however, is our community. There are literally thousands of community members willing to help you out with getting started at any given time. Regardless of if you’re just interested in asking a quick question or wish to engage in testing and development on a daily basis, there are numerous ways to get in touch. 
 
@@ -86,14 +85,14 @@ For general news and to follow ongoing development:
 
 Although this Community Edition ships with Ubuntu Touch, you can use many different mobile OSes on your device. Most if not all well established Linux-based systems are represented on the PinePhone so there are plenty of options to choose from. You can give any - or all - of them a risk-free spin by booting from a SD card. 
 
-You can find an [up-to-date list of operating systems](https://wiki.pine64.org/index.php/PinePhone_Software_Releases) on [PINE64 Wiki](https://wiki.pine64.org)
+You can find an [up-to-date list of operating systems](/documentation/PinePhone/Software/) on [PINE64 Wiki](https://wiki.pine64.org)
 
-The [PinePhone sub-section](https://wiki.pine64.org/index.php/PinePhone) of the Wiki is a valuable community maintained information hub which, amongst others, includes:
+The [PinePhone sub-section](/documentation/PinePhone/) of the Wiki is a valuable community maintained information hub which, amongst others, includes:
 
-- [Hardware Specifications](https://wiki.pine64.org/index.php/PinePhone#Specifications) 
-- [Certifications and Schematics](https://wiki.pine64.org/index.php/PinePhone#PinePhone_Board_Information.2C_Schematics_and_Certifications)
-- [OS flashing instructions](https://wiki.pine64.org/index.php/PinePhone#Flashing_eMMC_using_Jumpdrive)
-- [Components and peripherals datasheets](https://wiki.pine64.org/index.php/PinePhone#Datasheets_for_Components_and_Peripherals) 
+- [Hardware Specifications](/documentation/PinePhone/Further_information/Specifications/) 
+- [Certifications and Schematics](/documentation/PinePhone/Further_information/Schematics_and_certifications/)
+- [OS flashing instructions](/documentation/PinePhone/Installation/)
+- [Components and peripherals datasheets](/documentation/PinePhone/Further_information/Datasheets/) 
 
 The most important resource at your disposal, however, is the PinePhone community. We have fostered a sizable social platform that spans across multiple mobile Linux projects and is composed of developers, enthusiasts and end-users. Everyone is welcome to join in, be it to ask a quick support question or to actively engage with the project. 
 

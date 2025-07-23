@@ -99,7 +99,7 @@ Of PINE64's devices, rk2aw supports the PinePhone Pro, Pinebook Pro, PineTab2, Q
 
 Since the PineTab2 and PineTab-V tablets have been shipped, the community has been tirelessly at work, propelling the software landscape forward and unveiling an array of new software and bootable images for both tablet models.
 
-The [software releases section of the PineTab2](https://wiki.pine64.org/wiki/PineTab2_Releases) already lists Arch Linux ARM, Mobian, NixOS, postmarketOS, Rhino Linux, Ubuntu Touch and others, with more to come. The [software releases section of the PineTab-V](https://wiki.pine64.org/wiki/PineTab-V_Releases) lists a Gentoo overlay, as well as a KDE Plasma Yocto build from the community member Fishwaldo, with even more in the pipeline.
+The [software releases section of the PineTab2](/documentation/PineTab2/Software/Releases/) already lists Arch Linux ARM, Mobian, NixOS, postmarketOS, Rhino Linux, Ubuntu Touch and others, with more to come. The [software releases section of the PineTab-V](/documentation/PineTab-V/Software/Releases/) lists a Gentoo overlay, as well as a KDE Plasma Yocto build from the community member Fishwaldo, with even more in the pipeline.
 
 There is also progress on the WiFi driver of the PineTab2. Some releases already ship with an initial support for the on-board WiFi chip. It is however important to note that the work on the driver is ongoing and has not reached a software maturity yet. 
 
@@ -169,7 +169,7 @@ Did you know that InfiniTime implements a BLE weather service since [InfiniTime 
 
 ![PTS settings](/blog/images/pts-weather-settings.jpg)![PTS weather](/blog/images/pts-weather.jpg)
 
-This integration currently works with [Gadgetbridge](https://codeberg.org/Freeyourgadget/Gadgetbridge/) and [ITD](https://gitea.elara.ws/Elara6331/itd). You'll find documentation about the PTS watchface [here](https://wiki.pine64.org/wiki/PineTimeStyle) and about the weather integration [here](https://wiki.pine64.org/wiki/Infinitime-Weather).
+This integration currently works with [Gadgetbridge](https://codeberg.org/Freeyourgadget/Gadgetbridge/) and [ITD](https://gitea.elara.ws/Elara6331/itd). You'll find documentation about the PTS watchface [here](/documentation/PineTime/Watchfaces/PineTimeStyle/) and about the weather integration [here](/documentation/PineTime/Software/InfiniTime_weather/).
 
 *However, since the release, several users reported that the new weather feature might cause some instabilities in InfinITime: crash, unexpected reboot and font corruption. You can read more about this issue [here](https://github.com/InfiniTimeOrg/InfiniTime/issues/1788). If you are impacted, I would suggest you disable the weather feature from your companion app until we implement a fix.*
 

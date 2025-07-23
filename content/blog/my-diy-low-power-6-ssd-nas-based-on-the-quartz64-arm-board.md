@@ -121,7 +121,7 @@ As the PCIe controller is not supported yet in the default kernel (`linux-rc`, c
 ## PCIe and DTS
 
 The proof that the support for the board is still pretty new is that at first, the filesystem on the SSD would corrupt as soon as I copied big files (> 4GB) on the disk. 
-This was apparently caused by an issue with the memory allocation for the SATA driver. With the help of the folks in [the chat room dedicated to the Quartz64](https://wiki.pine64.org/wiki/Main_Page?title=Main_Page#Chat_Platforms), we were able to patch the DTS/DTB files to work around this issue. 
+This was apparently caused by an issue with the memory allocation for the SATA driver. With the help of the folks in [the chat room dedicated to the Quartz64](/community/#chat-platforms), we were able to patch the DTS/DTB files to work around this issue. 
 Those patches are not applied yet in newer manjaro images so I'll provide these patches here. Use them at your own risks, of course! Neither I or the original author of those patches will be responsible for any issue that could occur when using those files!
 
 - [0001-arm64-dts-rockchip-enable-rk356x-proper-msi-support-1.patch](https://gist.github.com/JF002/c0167cfe8cb90126e78fc064c346659e#file-0001-arm64-dts-rockchip-enable-rk356x-proper-msi-support-1-patch)

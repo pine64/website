@@ -38,7 +38,7 @@ Most scenes in the trailer went through multiple different versions, some of the
 
 For scenes such as the privacy switches scene new techniques had to be learned to achieve visuals like floating text on top of a scene using depth of field using compositing to combine multiple scenes. All scenes also use three-point lighting. The small details make up the nice appeal of the overall trailer.
 
-During the creative process quite a lot of scenes which were not used in the final trailer were created and some of these unused scenes were reused to create nice visuals for press images at the time of the release (see [_https://wiki.pine64.org/wiki/PinePhone\_Pro\_Press_](https://wiki.pine64.org/wiki/PinePhone_Pro_Press) for some examples) or interactive 360 degree views of the phone.
+During the creative process quite a lot of scenes which were not used in the final trailer were created and some of these unused scenes were reused to create nice visuals for press images at the time of the release (see [PinePhone Pro Press](/documentation/PinePhone_Pro/Further_information/Press/) for some examples) or interactive 360 degree views of the phone.
 
 ## The voice
 

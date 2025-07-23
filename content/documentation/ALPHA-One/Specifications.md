@@ -11,7 +11,7 @@ menu:
 
 ## Main Board and SoC Specification
 
-* Based on [StarPro64 Single Board Computer wiki page](https://wiki.pine64.org/wiki/STARPro64)
+* Based on [StarPro64 Single Board Computer wiki page](/documentation/StarPro64/)
 * Based on [ESWIN EIC7700X SoC](https://www.eswincomputing.com/en/products/index/36/10.html)
 
 {{< figure src="/documentation/ALPHA-One/images/EIC7700X_Block_Diagram.png" caption="EIC7700X block diagram" width="800" >}}

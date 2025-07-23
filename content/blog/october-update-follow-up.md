@@ -33,7 +33,7 @@ Earlier this week we had a guest post about the creation of the [_Meet the PineP
 
 Logistics issues in China and the USA have caused a significant increase in parcel delivery times. The USA is particularly affected by the situation. There is nothing we can do about it, but the reason I am bringing it up is due to the increase in support tickets requesting help in tracking down packages (and sporadic claims of packages being lost). All I can do is ask you for patience - it may take a long time, but in 99.9% of cases the parcel will eventually arrive at your doorstep. 
 
-Lastly, our Discord is about to reach (or already reached) 9000 members, making it the biggest chat platform out of all protocols used by our community. I think this is quite the milestone and I am very happy to see many new faces actively engaging in discussions. I know Discord is frowned upon by some in the FOSS community, so before anyone complains - there are corresponding and bridged channels in Telegram, IRC, and Matrix available for those who wish to use a different platform. Full chat list [here](https://wiki.pine64.org/wiki/Main_Page#Chat_Platforms).  
+Lastly, our Discord is about to reach (or already reached) 9000 members, making it the biggest chat platform out of all protocols used by our community. I think this is quite the milestone and I am very happy to see many new faces actively engaging in discussions. I know Discord is frowned upon by some in the FOSS community, so before anyone complains - there are corresponding and bridged channels in Telegram, IRC, and Matrix available for those who wish to use a different platform. Full chat list [here](/community/#chat-platforms).  
 
 ## SOQuartz
 
