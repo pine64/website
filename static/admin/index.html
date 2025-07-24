@@ -206,6 +206,143 @@ CMS.registerEditorComponent({
         return '<b>[Youtube player:]&nbsp;</b><a href="https://www.youtube.com/watch?v='+obj.id+'"><img src="/blog/images/yt_preview/'+obj.id+'.png" width="200"></a>';
     },
 });
+
+// Device boxes
+CMS.registerEditorComponent({
+  id: 'flexbox',
+  label: 'Flexbox',
+  pattern: /{{<\s*flexbox\s*>}}([\s\S]*?){{<\s*\/\s*flexbox\s*>}}/m,
+
+  fromBlock: function(match) {
+    const inner = match[1].trim();
+    const boxRE = /{{<\s*devices\/device_box\s+([^>]+)\s*>}}/g;
+    let m, boxes = [];
+
+    while ((m = boxRE.exec(inner)) !== null) {
+      const attrs = {};
+      m[1].match(/(\w+)="([^"]*)"/g).forEach(pair => {
+        const [key, val] = pair.split('=');
+        attrs[key] = val.replace(/^"|"$/g, '');
+      });
+      boxes.push({
+        link: attrs.link,
+        img: attrs.img,
+        title: attrs.title,
+        text: attrs.text || ''
+      });
+    }
+
+    return { boxes };
+  },
+
+  toBlock: function(data) {
+    let out = '{{< flexbox >}}\n';
+    data.boxes.forEach(b => {
+      const txt = (b.text || '').replace(/\n/g, '\\n');
+      out += `  {{< devices/device_box link="${b.link}" img="${b.img}" title="${b.title}" text="${txt}" >}}\n`;
+    });
+    out += '{{< /flexbox >}}';
+    return out;
+  },
+
+  toPreview: function(data) {
+    const wrapperStyle = 
+      'display:flex;flex-wrap:wrap;gap:10px;border:1px dashed #ddd;padding:10px;';
+    const itemStyle = 
+      'flex:1 1 200px;box-sizing:border-box;border:1px solid #ccc;padding:8px;';
+    const html = data.boxes.map(b => {
+      return `
+        <div style="${itemStyle}">
+          <a href="${b.link}" style="text-decoration:none;color:inherit;">
+            <img 
+              src="${b.img}" 
+              alt="${b.title}" 
+              style="max-width:100%;height:auto;display:block;margin-bottom:8px;"
+            />
+            <h4 style="margin:0 0 4px;font-size:1em;">${b.title}</h4>
+            <p style="margin:0;font-size:0.9em;color:#555;">
+              ${b.text || ''}
+            </p>
+          </a>
+        </div>`;
+    }).join('');
+    return `<div style="${wrapperStyle}">${html}</div>`;
+  },
+
+  fields: [
+    {
+      label: 'Device Boxes',
+      name: 'boxes',
+      widget: 'list',
+      summary: '{{title}} ({{link}})',
+      fields: [
+        { label: 'Link',  name: 'link',  widget: 'string' },
+        { label: 'Image', name: 'img',   widget: 'image'  },
+        { label: 'Title', name: 'title', widget: 'string' },
+        { label: 'Text',  name: 'text',  widget: 'text',   default: '' }
+      ]
+    }
+  ]
+});
+
+// Figure
+CMS.registerEditorComponent({
+  id: 'figure',
+  label: 'Figure',
+  pattern: /{{<\s*figure\s+([^>]+?)\s*>}}/,
+
+  fromBlock: function(match) {
+    const attrs = {};
+    match[1].match(/(\w+)="([^"]*?)"/g).forEach(pair => {
+      const [key, val] = pair.split('=');
+      attrs[key] = val.replace(/^"|"$/g, '');
+    });
+    return {
+      src: attrs.src || '',
+      caption: attrs.caption || '',
+      width: attrs.width || ''
+    };
+  },
+
+  toBlock: function(data) {
+    const src     = data.src     || '';
+    const caption = data.caption || '';
+    const width   = data.width   || '';
+    return `{{< figure src="${src}" caption="${caption}" width="${width}" >}}`;
+  },
+
+  toPreview: function(data) {
+    const w = data.width ? `width:${data.width}px;` : '';
+    return `
+      <figure style="margin:0;${w}">
+        <img src="${data.src}" style="max-width:100%;height:auto;display:block;" />
+        <figcaption style="font-size:0.9em;color:#666;margin-top:4px;">
+          ${data.caption}
+        </figcaption>
+      </figure>
+    `;
+  },
+
+  fields: [
+    {
+      label: 'Image',
+      name: 'src',
+      widget: 'image'
+    },
+    {
+      label: 'Caption',
+      name: 'caption',
+      widget: 'string'
+    },
+    {
+      label: 'Width (px)',
+      name: 'width',
+      widget: 'number',
+      default: 400
+    }
+  ]
+});
+
     </script>
   </body>
 </html>

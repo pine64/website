@@ -94,7 +94,7 @@ collections:
     fields: # List of fields for the front matter
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text", required: false  }
-      - { label: "Date", name: "date", widget: "datetime", required: false  }
+      #- { label: "Date", name: "date", widget: "datetime", required: false  }
       - { label: "Image", name: "images", widget: "image", required: false }
       - { label: "Draft", name: "draft", widget: "boolean", default: false, required: false  }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -105,25 +105,40 @@ collections:
     folder: "content/documentation" # The folder where your posts markdown files will be saved
     create: true # Allows users to create new documents in this collection
     preview: false
+    i18n: false
+    extension: "md"
     nested:
       #subfolders: true # Legacy behavior
       subfolders: false
-      depth: 5 # max depth to show in the collection tree
-      #summary: '{{dirname}}' # optional summary for a tree node, defaults to the inferred title field
+      depth: 15 # max depth to show in the collection tree
+      summary: '{{dirname}}' # optional summary for a tree node, defaults to the inferred title field
       #summary: '{{title}}'
-      summary: '{{filename}}'
+      #summary: '{{filename}}'
     fields: # List of fields for the front matter
       - { label: "Title", name: "title", widget: "string" }
-      - name: menu
-        label: menu
-        fields:
-        - name: docs
-          label: docs
-          fields:
-            - { label: "title", name: "title", widget: "string", required: false }
-            - { label: "parent", name: "parent", widget: "string", required: true }
-            - { label: "identifier", name: "identifier", widget: "string", required: true }
-            - { label: "weight", name: "weight", widget: "integer", required: false }
+      - {
+          label: 'Menu', name: 'menu', widget: 'object', required: false, collapsed: true,
+          fields: [
+            {
+              label: 'docs', name: 'docs', widget: 'object', required: false, collapsed: true,
+              fields: [
+                { label: 'Title', name: 'title', widget: 'string' },
+                { label: 'Parent', name: 'parent', widget: 'string' },
+                { label: 'Identifier', name: 'identifier', widget: 'string' },
+                { label: 'Weight', name: 'weight', widget: 'string' }
+              ]
+            }
+          ]
+        }
+      #- {
+      #    name: "aliases",
+      #    label: "Aliases",
+      #    required: false,
+      #    widget: "list",
+      #    allow_add: true,
+      #    collapsed: true,
+      #    minimize_collapsed: true
+      #}
       - { label: "Body", name: "body", widget: "markdown" }
     meta: { path: { widget: string, label: 'Path', index_file: '_index' } }
     #meta: { path: { label: 'Path', widget: 'string', index_file: '{fields.filename}' }}
