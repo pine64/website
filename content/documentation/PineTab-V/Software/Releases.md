@@ -24,6 +24,7 @@ The instructions for flashing this image can be found in the [StarFive PineTab-V
 | Username | Password |
 | -------- | ------- |
 | `user` | `starfive` |
+| `root` | `starfive` |
 
 ### Batch 1 (2023)
 The PineTab-V ships with _Factory Test Code_. The factory test reference source code can be found here:
