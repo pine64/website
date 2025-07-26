@@ -19,8 +19,11 @@ The 2nd batch of PineTab-V devices ship with a Debian Bookworm image from StarFi
 
 * [github.com/starfive-tech/Debian/releases/tag/PineTab-V-v1.3.0](https://github.com/starfive-tech/Debian/releases/tag/PineTab-V-v1.3.0)
 
-The instructions for flashing this image can be found in the [StarFive PineTab-V release notes document](/blog/files/April_2025/PineTab-V_StarFive_Build_Debian_Release_Notes_v1.0.0.pdf). 
+The instructions for flashing this image can be found in the [StarFive PineTab-V release notes document](/blog/files/April_2025/PineTab-V_StarFive_Build_Debian_Release_Notes_v1.0.0.pdf).
 
+| Username | Password |
+| -------- | ------- |
+| `user` | `starfive` |
 
 ### Batch 1 (2023)
 The PineTab-V ships with _Factory Test Code_. The factory test reference source code can be found here:
