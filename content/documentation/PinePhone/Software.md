@@ -21,6 +21,8 @@ The following page provides a comprehensive and alphabetically organized list of
 
 ## Software Releases
 
+
+
 ### Arch Linux ARM
 
 {{< figure src="/documentation/images/Archlinux-logo.png" width="100" >}}
@@ -42,6 +44,8 @@ Get both stable and test builds at [GitHub releases](https://github.com/dreemurr
 
 * There are _archmobile_ chat rooms on Matrix ([#archmobile:kde.org](https://matrix.to/#/#archmobile:kde.org)) and Telegram ([@archmobile](https://t.me/archmobile)).
 * Feel free to send us [pull requests](https://github.com/dreemurrs-embedded/Pine64-Arch/pulls) and reports [issues](https://github.com/dreemurrs-embedded/Pine64-Arch/issues) on [GitHub](https://github.com/dreemurrs-embedded/Pine64-Arch).
+
+
 
 ### Fedora
 
@@ -70,6 +74,8 @@ WiFi, Bluetooth, SMS, Data, Calls all work|There are still a few bugs though, an
 
 Please send your bug reports to [the project's issue tracker](https://github.com/nikhiljha/pp-fedora-sdsetup/issues). Be sure to include logs if applicable|Send us pull requests on [GitLab](https://gitlab.com/groups/fedora/sigs/mobility/-/issues).
 
+
+
 ### Gentoo
 
 {{< figure src="/documentation/images/GentooLogo.png" width="100" >}}
@@ -96,6 +102,8 @@ The documentation can be found here:
  Please consider cross-compiling the software on the computer. Long compilation times and heat production can lead to a reduced lifespan of the phone.
 {{< /admonition >}}
 
+
+
 ### GloDroid
 
 A fully open-source port of Android and LineageOS to the PinePhone.
@@ -113,6 +121,8 @@ Feature overview:
 * Works: WiFi, screen dimming, sound, touchscreen, charging and telephony(partially) works.
 * Doesn't work: Bluetooth and GPS
 * See more at [project status page](https://github.com/GloDroidCommunity/pine64-pinephone/issues/2)
+
+
 
 ### Kali Linux
 
@@ -154,6 +164,8 @@ LuneOS is one of the original multi-tasking OS-es that runs on Linux. Based on H
 
 In order to connect to the device using SSH/SCP via WiFi: You can simply connect via SSH/SCP via WiFi using the PinePhone's IP address on port 22.
 
+
+
 ### Maemo Leste
 
 {{< figure src="/documentation/images/Maemoleste-logo.png" width="100" >}}
@@ -182,6 +194,8 @@ All other contact information is listed on the [main page](https://leste.maemo.o
 
 Submit [bug reports](https://github.com/maemo-leste/bugtracker/issues) on GitHub. To track known issues, you may use these search terms: [pinephone](https://github.com/maemo-leste/bugtracker/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+pinephone) and [pine64](https://github.com/maemo-leste/bugtracker/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+pine64).
 
+
+
 ### Manjaro ARM
 
 {{< figure src="/documentation/images/Manjaro-logo.svg" width="100" >}}
@@ -202,6 +216,8 @@ Manjaro is a user-friendly Linux distribution based on the independently develop
 #### Notes
 
 The installation of the stable images is strongly suggested. The dev images might break frequently.
+
+
 
 ### Mobian
 
@@ -227,6 +243,8 @@ The current version of the base Debian system is Debian Bookworm. Only the GUI a
 The development is work in progress. See [pinephone-support](https://gitlab.com/mobian1/devices/pinephone-support) for further information. The Mobian wiki can be found [here](https://wiki.mobian-project.org/).
 
 In order to connect to the device using SSH/SCP via WiFi, you need to install SSH on the device. You can do this by executing the following in a shell: "sudo apt-get install ssh", afterwards you can connect via SSH/SCP via WiFi using the PinePhone's IP address on port 22.
+
+
 
 ### Movuan
 
@@ -264,6 +282,8 @@ At this time expecting feedback or offers to help with building/packing.
 Anybody is welcome to fork this project, or use it in any GPL compliant way. Use a different name though and change the logo, and notify the author of the project to review if it can be incorporated back.
 
 If you want to just mirror the code and provide additional pre-built images on a different server, there is no need to change the logo/name. Just make sure to prominently point to the original location.
+
+
 
 ### Multi-distro demo image
 
@@ -308,30 +328,36 @@ Note about zstd archive file (`.zst`):
 On Linux, you may install or compile `zstd`, then write the image to SD card by piping `zstdcat` and `dd`. See the "Installation" section of its [web page](https://xnux.eu/p-boot-demo/) for command examples.
 
 On Windows, instead of the offical [zstd](https://github.com/facebook/zstd) command line program, you may use [7-zip-zstd](https://github.com/mcmilk/7-Zip-zstd). Different installation method is provided in their README. Install 7-Zip-zstd / zstd, extract the disk image file (`.img`) from the zstd archive, and flash with tools like [Win32 Disk Imager](https://sourceforge.net/projects/win32diskimager/).
-{{< /admonition >}}
-
-#### 
 
 Also see [Installation instructions](/documentation/PinePhone/Installation_instructions).
+{{< /admonition >}}
+
+
 
 ### Nemo Mobile
 
 {{< figure src="/documentation/images/nemo_mobile.png" width="100" >}}
 
-Nemo Mobile is the open source build of Sailfish OS with a open source UI called [Glacier](https://nemomobile.net/glacier-home/), [based on Manjaro](https://nemomobile.net/pages/Hello_manjaro/).
+[Nemo Mobile](https://nemomobile.net/) is an open source build of Sailfish OS with a open source UI called [Glacier](https://nemomobile.net/glacier-home/), [based on Manjaro](https://nemomobile.net/pages/Hello_manjaro/).
+
+* [NemoMobile Website](https://nemomobile.net/)
+* [Installation Guide](https://nemomobile.net/installation/) for both real devices and Virtualbox
 
 #### Download
 
-[Image](https://img.nemomobile.net/2022.05/Manjaro-ARM-nemomobile-pinephone-0.9.img.xz)
+* [Latest release](https://github.com/nemomobile-ux/nemo-images/releases), not every device are built every time.
+* Older release: `yyyy.mm/` dirs under <https://img.nemomobile.net/>. Has every supported device's image. The `manjaro/` dir only contains the software packages instead of installation images.
 
 | Default credentials | |
-| -------- | ------- |
+| ------------ | ---------------- |
 | Default user | `manjaro/123456` |
-| root | `root/root` |
+| root         | `root/root`      |
 
 #### Notes
 
-The website of the Nemo Mobile UX Team can be found [here](https://nemomobile.net/). Please report bugs regarding the Nemo Mobile UI as [GitHub issue](https://github.com/nemomobile-ux/main/issues).
+Please report bugs regarding the Nemo Mobile UI as [GitHub issue](https://github.com/nemomobile-ux/main/issues). Checkout the [troubleshooting](https://nemomobile.net/troubleshooting/) and [contributing](https://nemomobile.net/contributing/) guide to learn more.
+
+
 
 ### NixOS
 
@@ -350,6 +376,8 @@ and [Project's device page](https://mobile.nixos.org/devices/pine64-pinephone.ht
 
 Project home page: [Mobile NixOS](https://mobile.nixos.org/)
 
+
+
 ### OpenMandriva Lx
 
 {{< figure src="/documentation/images/Oma-logo-22042013_300pp.png" width="100" >}}
@@ -366,6 +394,8 @@ See [here](https://www.openmandriva.org/en/news/article/openmandriva-lx-4-3-rc-a
 {{< admonition type="note" >}}
  This image is solely for testing purposes.
 {{< /admonition >}}
+
+
 
 ### openSUSE
 
@@ -399,6 +429,8 @@ You can find all information about the releases of the project [here](https://gi
 Detailed information, tips and troubleshooting suggestions are also provided at [the openSUSE Wiki](https://en.opensuse.org/HCL:PinePhone).
 You will also find information in our wiki on how to report issues (Contributing section).
 
+
+
 ### postmarketOS
 
 {{< figure src="/documentation/images/PostmarketOS_logo.png" width="100" >}}
@@ -428,7 +460,8 @@ Power users may also create their own image with the distribution's install and 
 
 See the [pine64-pinephone](https://wiki.postmarketos.org/wiki/PINE64_PinePhone_(pine64-pinephone)) page of the postmarketOS wiki for details.
 
-	
+
+
 ### Rhino Linux
 
 Rhino Linux is an Ubuntu-based distribution that uses the rolling-release model by tracking the devel` branch of repositories. The port is currently maintained by Oren Klopfer (oklopfer).
@@ -448,6 +481,8 @@ Tow-Boot is required for installing Rhino Linux. Instructions for installing Tow
 Foundational to the distribution is [Pacstall](https://pacstall.dev), a Debian-based user repository inspired by the AUR. Additionally, RL comes with [Unicorn](https://rhinolinux.org/unicorn/), a custom modified version of XFCE with various modernizations and improvements, including auto-rotation for mobile devices.
 	
 [Discord](https://discord.gg/reSvc8Ztk3) - [Matrix](https://matrix.to/#/#rolling-rhino-remix:matrix.org) - [GitHub](https://github.com/rhino-linux) - [Wiki](https://rhinolinux.org/wiki.html)
+
+
 
 ### Sailfish OS
 
@@ -517,6 +552,8 @@ See the [Sailfish OS wiki](https://sailfishos.org/wiki/Collaborative_Development
 
 OTA is supported: `zypper refresh && zypper update` as root (`devel-su` to get root access). Things that need reflash are bootloader specific at the moment. If improvements like [Crust](/documentation/PinePhone/Software/Crust) or changes of partition layout are added, then you need to reflash.
 
+
+
 ### SkiffOS
 
 {{< figure src="/documentation/images/SkiffOS-Icon-1.png" width="100" >}}
@@ -547,6 +584,8 @@ Use configuration packages to configure distro:
 
 The boot-up OS is upgraded independently from the containers.
 
+
+
 ### Slackware
 
 [Slackware](https://arm.slackware.com/) is the world's oldest actively developed Linux distribution, providing a modern user land (applications) and Linux Kernel, within a more classic Unix Operating System environment.
@@ -558,6 +597,8 @@ The boot-up OS is upgraded independently from the containers.
 #### Notes
 
 Discussion: [Thread](https://forum.pine64.org/showthread.php?tid=12181&highlight=slackware+pinephone)
+
+
 
 ### Ubuntu Touch
 
@@ -650,7 +691,7 @@ software releases section instead.
 
 ### Apache NuttX RTOS
 
-[Apache NuttX RTOS](https://nuttx.apache.org/docs/latest) is a Real-Time Operating System that supports PinePhone
+[Apache NuttX RTOS](https://nuttx.apache.org/docs/latest) is a Real-Time Operating System that supports PinePhone.
 
 * [Apache NuttX RTOS on PINE64 PinePhone](https://nuttx.apache.org/docs/latest/platforms/arm/a64/boards/pinephone/index.html)
 
@@ -697,4 +738,3 @@ Other
 * [Martijn Braam Librem 5 comparison, especially covering openness/blobs](https://tuxphones.com/yet-another-librem-5-and-pinephone-linux-smartphone-comparison/)
 * [Bart Ribbers blog on Linux distributions and desktop environments on mobile devices](https://fam-ribbers.com/2019/12/28/State-of-Linux-on-mobile-and-common-misconceptions.html)
 * [Jeff Geerling on testing microSD cards](https://www.jeffgeerling.com/blog/2019/a2-class-microsd-cards-offer-no-better-performance-raspberry-pi)
-
