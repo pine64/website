@@ -149,12 +149,15 @@ The official Kali Nethunter images for PinePhone and PinePhone Pro have been rel
 LuneOS is one of the original multi-tasking OS-es that runs on Linux. Based on HP/Palm's webOS, merged with latest technology stack from LG called webOS OSE (a derivative of what LG uses on their Smart TV's), software such as Qt5 and makes use of the Yocto build system.
 
 * [WebOS Ports Wiki](https://www.webos-ports.org/wiki/Main_Page)
-* [WebOS-Ports Wiki's Pinephone page](https://webos-ports.org/wiki/Pinephone_Info)
+  * [WebOS-Ports Wiki's Pinephone page](https://webos-ports.org/wiki/PinePhone_Info)
+  * [How to Build LuneOS for PinePhone](https://webos-ports.org/wiki/Build_for_PinePhone)
+  * [Install LuneOS for PinePhone](https://webos-ports.org/wiki/Install_LuneOS_for_PinePhone)
 * GitHub: [WebOS Ports](https://github.com/webOS-ports)
 
 #### Download
 
-* LuneOS Preview images: [Downloads](https://github.com/webOS-ports/meta-pine64-luneos/releases)
+* Release images: [Releases](https://github.com/webOS-ports/luneos-releases/releases)
+* Testing images: Open the testing [releases](https://github.com/webOS-ports/luneos-testing/releases) page, then use Ctrl + F to search release that built image for PinePhone
 
 | Default credentials | |
 | -------- | ------- |
