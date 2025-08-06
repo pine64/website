@@ -21,6 +21,8 @@ The following page provides a comprehensive and alphabetically organized list of
 
 ## Software Releases
 
+
+
 ### Arch Linux ARM
 
 {{< figure src="/documentation/images/Archlinux-logo.png" width="100" >}}
@@ -42,6 +44,8 @@ Get both stable and test builds at [GitHub releases](https://github.com/dreemurr
 
 * There are _archmobile_ chat rooms on Matrix ([#archmobile:kde.org](https://matrix.to/#/#archmobile:kde.org)) and Telegram ([@archmobile](https://t.me/archmobile)).
 * Feel free to send us [pull requests](https://github.com/dreemurrs-embedded/Pine64-Arch/pulls) and reports [issues](https://github.com/dreemurrs-embedded/Pine64-Arch/issues) on [GitHub](https://github.com/dreemurrs-embedded/Pine64-Arch).
+
+
 
 ### Fedora
 
@@ -70,6 +74,8 @@ WiFi, Bluetooth, SMS, Data, Calls all work|There are still a few bugs though, an
 
 Please send your bug reports to [the project's issue tracker](https://github.com/nikhiljha/pp-fedora-sdsetup/issues). Be sure to include logs if applicable|Send us pull requests on [GitLab](https://gitlab.com/groups/fedora/sigs/mobility/-/issues).
 
+
+
 ### Gentoo
 
 {{< figure src="/documentation/images/GentooLogo.png" width="100" >}}
@@ -96,6 +102,8 @@ The documentation can be found here:
  Please consider cross-compiling the software on the computer. Long compilation times and heat production can lead to a reduced lifespan of the phone.
 {{< /admonition >}}
 
+
+
 ### GloDroid
 
 A fully open-source port of Android and LineageOS to the PinePhone.
@@ -113,6 +121,8 @@ Feature overview:
 * Works: WiFi, screen dimming, sound, touchscreen, charging and telephony(partially) works.
 * Doesn't work: Bluetooth and GPS
 * See more at [project status page](https://github.com/GloDroidCommunity/pine64-pinephone/issues/2)
+
+
 
 ### Kali Linux
 
@@ -139,12 +149,15 @@ The official Kali Nethunter images for PinePhone and PinePhone Pro have been rel
 LuneOS is one of the original multi-tasking OS-es that runs on Linux. Based on HP/Palm's webOS, merged with latest technology stack from LG called webOS OSE (a derivative of what LG uses on their Smart TV's), software such as Qt5 and makes use of the Yocto build system.
 
 * [WebOS Ports Wiki](https://www.webos-ports.org/wiki/Main_Page)
-* [WebOS-Ports Wiki's Pinephone page](https://webos-ports.org/wiki/Pinephone_Info)
+  * [WebOS-Ports Wiki's Pinephone page](https://webos-ports.org/wiki/PinePhone_Info)
+  * [How to Build LuneOS for PinePhone](https://webos-ports.org/wiki/Build_for_PinePhone)
+  * [Install LuneOS for PinePhone](https://webos-ports.org/wiki/Install_LuneOS_for_PinePhone)
 * GitHub: [WebOS Ports](https://github.com/webOS-ports)
 
 #### Download
 
-* LuneOS Preview images: [Downloads](https://github.com/webOS-ports/meta-pine64-luneos/releases)
+* Release images: [Releases](https://github.com/webOS-ports/luneos-releases/releases)
+* Testing images: Open the testing [releases](https://github.com/webOS-ports/luneos-testing/releases) page, then use Ctrl + F to search release that built image for PinePhone
 
 | Default credentials | |
 | -------- | ------- |
@@ -153,6 +166,8 @@ LuneOS is one of the original multi-tasking OS-es that runs on Linux. Based on H
 #### Notes
 
 In order to connect to the device using SSH/SCP via WiFi: You can simply connect via SSH/SCP via WiFi using the PinePhone's IP address on port 22.
+
+
 
 ### Maemo Leste
 
@@ -182,6 +197,8 @@ All other contact information is listed on the [main page](https://leste.maemo.o
 
 Submit [bug reports](https://github.com/maemo-leste/bugtracker/issues) on GitHub. To track known issues, you may use these search terms: [pinephone](https://github.com/maemo-leste/bugtracker/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+pinephone) and [pine64](https://github.com/maemo-leste/bugtracker/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+pine64).
 
+
+
 ### Manjaro ARM
 
 {{< figure src="/documentation/images/Manjaro-logo.svg" width="100" >}}
@@ -202,6 +219,8 @@ Manjaro is a user-friendly Linux distribution based on the independently develop
 #### Notes
 
 The installation of the stable images is strongly suggested. The dev images might break frequently.
+
+
 
 ### Mobian
 
@@ -227,6 +246,8 @@ The current version of the base Debian system is Debian Bookworm. Only the GUI a
 The development is work in progress. See [pinephone-support](https://gitlab.com/mobian1/devices/pinephone-support) for further information. The Mobian wiki can be found [here](https://wiki.mobian-project.org/).
 
 In order to connect to the device using SSH/SCP via WiFi, you need to install SSH on the device. You can do this by executing the following in a shell: "sudo apt-get install ssh", afterwards you can connect via SSH/SCP via WiFi using the PinePhone's IP address on port 22.
+
+
 
 ### Movuan
 
@@ -264,6 +285,8 @@ At this time expecting feedback or offers to help with building/packing.
 Anybody is welcome to fork this project, or use it in any GPL compliant way. Use a different name though and change the logo, and notify the author of the project to review if it can be incorporated back.
 
 If you want to just mirror the code and provide additional pre-built images on a different server, there is no need to change the logo/name. Just make sure to prominently point to the original location.
+
+
 
 ### Multi-distro demo image
 
@@ -308,30 +331,36 @@ Note about zstd archive file (`.zst`):
 On Linux, you may install or compile `zstd`, then write the image to SD card by piping `zstdcat` and `dd`. See the "Installation" section of its [web page](https://xnux.eu/p-boot-demo/) for command examples.
 
 On Windows, instead of the offical [zstd](https://github.com/facebook/zstd) command line program, you may use [7-zip-zstd](https://github.com/mcmilk/7-Zip-zstd). Different installation method is provided in their README. Install 7-Zip-zstd / zstd, extract the disk image file (`.img`) from the zstd archive, and flash with tools like [Win32 Disk Imager](https://sourceforge.net/projects/win32diskimager/).
-{{< /admonition >}}
-
-#### 
 
 Also see [Installation instructions](/documentation/PinePhone/Installation_instructions).
+{{< /admonition >}}
+
+
 
 ### Nemo Mobile
 
 {{< figure src="/documentation/images/nemo_mobile.png" width="100" >}}
 
-Nemo Mobile is the open source build of Sailfish OS with a open source UI called [Glacier](https://nemomobile.net/glacier-home/), [based on Manjaro](https://nemomobile.net/pages/Hello_manjaro/).
+[Nemo Mobile](https://nemomobile.net/) is an open source build of Sailfish OS with a open source UI called [Glacier](https://nemomobile.net/glacier-home/), [based on Manjaro](https://nemomobile.net/pages/Hello_manjaro/).
+
+* [NemoMobile Website](https://nemomobile.net/)
+* [Installation Guide](https://nemomobile.net/installation/) for both real devices and Virtualbox
 
 #### Download
 
-[Image](https://img.nemomobile.net/2022.05/Manjaro-ARM-nemomobile-pinephone-0.9.img.xz)
+* [Latest release](https://github.com/nemomobile-ux/nemo-images/releases), not every device are built every time.
+* Older release: `yyyy.mm/` dirs under <https://img.nemomobile.net/>. Has every supported device's image. The `manjaro/` dir only contains the software packages instead of installation images.
 
 | Default credentials | |
-| -------- | ------- |
+| ------------ | ---------------- |
 | Default user | `manjaro/123456` |
-| root | `root/root` |
+| root         | `root/root`      |
 
 #### Notes
 
-The website of the Nemo Mobile UX Team can be found [here](https://nemomobile.net/). Please report bugs regarding the Nemo Mobile UI as [GitHub issue](https://github.com/nemomobile-ux/main/issues).
+Please report bugs regarding the Nemo Mobile UI as [GitHub issue](https://github.com/nemomobile-ux/main/issues). Checkout the [troubleshooting](https://nemomobile.net/troubleshooting/) and [contributing](https://nemomobile.net/contributing/) guide to learn more.
+
+
 
 ### NixOS
 
@@ -350,15 +379,17 @@ and [Project's device page](https://mobile.nixos.org/devices/pine64-pinephone.ht
 
 Project home page: [Mobile NixOS](https://mobile.nixos.org/)
 
-### OpenMandriva Lx
+
+
+### OpenMandriva Lx 4.2 RC
 
 {{< figure src="/documentation/images/Oma-logo-22042013_300pp.png" width="100" >}}
 
-OpenMandriva Lx with Plasma Mobile as UI.
+OpenMandriva Lx 4.2 RC with Plasma Mobile as UI. The development ceases before a newer release is out.
 
 #### Download
 
-The official image can be found [at sourceforge.net](https://sourceforge.net/projects/openmandriva/files/release/4.2/RC/Pinephone/).
+The official image can be found [at sourceforge.net](https://sourceforge.net/projects/openmandriva/files/release/EOL/4.2-RC/Pinephone/).
 See [here](https://www.openmandriva.org/en/news/article/openmandriva-lx-4-3-rc-available-for-testing) for the offical announcement.
 
 #### Notes
@@ -366,6 +397,8 @@ See [here](https://www.openmandriva.org/en/news/article/openmandriva-lx-4-3-rc-a
 {{< admonition type="note" >}}
  This image is solely for testing purposes.
 {{< /admonition >}}
+
+
 
 ### openSUSE
 
@@ -399,6 +432,8 @@ You can find all information about the releases of the project [here](https://gi
 Detailed information, tips and troubleshooting suggestions are also provided at [the openSUSE Wiki](https://en.opensuse.org/HCL:PinePhone).
 You will also find information in our wiki on how to report issues (Contributing section).
 
+
+
 ### postmarketOS
 
 {{< figure src="/documentation/images/PostmarketOS_logo.png" width="100" >}}
@@ -428,11 +463,12 @@ Power users may also create their own image with the distribution's install and 
 
 See the [pine64-pinephone](https://wiki.postmarketos.org/wiki/PINE64_PinePhone_(pine64-pinephone)) page of the postmarketOS wiki for details.
 
-	
+
+
 ### Rhino Linux
 
 Rhino Linux is an Ubuntu-based distribution that uses the rolling-release model by tracking the devel` branch of repositories. The port is currently maintained by Oren Klopfer (oklopfer).
-	
+
 Tow-Boot is required for installing Rhino Linux. Instructions for installing Tow-Boot to the PinePhone can be found [here](https://tow-boot.org/devices/pine64-pinephoneA64.html). After Tow-Boot has been installed to your device, Rhino Linux installation just requires flashing the `.img.xz` to an SD or the eMMC.
 
 #### Download
@@ -440,14 +476,16 @@ Tow-Boot is required for installing Rhino Linux. Instructions for installing Tow
 [Rhino Linux Downloads](https://rhinolinux.org/download.html) (select Pine64 on the dropdown)
 
 | Default credentials | |
-| -------- | ------- |	
+| -------- | ------- |
 | Default user | `rhino`/`1234` |
-	
+
 #### Notes
-	
+
 Foundational to the distribution is [Pacstall](https://pacstall.dev), a Debian-based user repository inspired by the AUR. Additionally, RL comes with [Unicorn](https://rhinolinux.org/unicorn/), a custom modified version of XFCE with various modernizations and improvements, including auto-rotation for mobile devices.
-	
+
 [Discord](https://discord.gg/reSvc8Ztk3) - [Matrix](https://matrix.to/#/#rolling-rhino-remix:matrix.org) - [GitHub](https://github.com/rhino-linux) - [Wiki](https://rhinolinux.org/wiki.html)
+
+
 
 ### Sailfish OS
 
@@ -517,6 +555,8 @@ See the [Sailfish OS wiki](https://sailfishos.org/wiki/Collaborative_Development
 
 OTA is supported: `zypper refresh && zypper update` as root (`devel-su` to get root access). Things that need reflash are bootloader specific at the moment. If improvements like [Crust](/documentation/PinePhone/Software/Crust) or changes of partition layout are added, then you need to reflash.
 
+
+
 ### SkiffOS
 
 {{< figure src="/documentation/images/SkiffOS-Icon-1.png" width="100" >}}
@@ -547,28 +587,32 @@ Use configuration packages to configure distro:
 
 The boot-up OS is upgraded independently from the containers.
 
+
+
 ### Slackware
 
 [Slackware](https://arm.slackware.com/) is the world's oldest actively developed Linux distribution, providing a modern user land (applications) and Linux Kernel, within a more classic Unix Operating System environment.
 
 #### Download
 
-* https://dl.irradium.org//slackware/images/pinephone/
+* https://dl.irradium.org/slackware/images/pinephone/
 
 #### Notes
 
 Discussion: [Thread](https://forum.pine64.org/showthread.php?tid=12181&highlight=slackware+pinephone)
+
+
 
 ### Ubuntu Touch
 
 {{< figure src="/documentation/images/Ubports-logo.png" width="100" >}}
 
 A Mobile Version of the Ubuntu Operating System made and maintained by the UBports Community. The port is currently maintained by Oren Klopfer (oklopfer).
-	
+
 {{< admonition type="note" >}}
  Tow-Boot is required for installing the latest version of Ubuntu Touch (20.04) on the PinePhone. Instructions for installing Tow-Boot to the PinePhone can be found [here](https://tow-boot.org/devices/pine64-pinephoneA64.html). 
 {{< /admonition >}}
-	
+
 Installation instructions can be found at [this UBports post](https://ubports.com/en/blog/ubports-news-1/post/pinephone-and-pinephone-pro-3889). After Tow-Boot has been installed to your device, Ubuntu Touch installation just requires flashing the _.img.xz_ to an SD or the eMMC.
 
 #### Download
@@ -578,13 +622,13 @@ Installation instructions can be found at [this UBports post](https://ubports.co
 
 | Default credentials | |
 | -------- | ------- |
-| Default user | Set during boot
+| Default user | Set during boot |
 | root | `phablet`/`1234` |
 
 #### Notes
 
 Scroll down to the middle of [the GitLab project page](https://gitlab.com/ook37/pinephone-pro-debos/), or directly here [at the UBports website](https://devices.ubuntu-touch.io/device/pinephone/release/focal/#deviceOverview) to see which features work.
-	
+
 Contributions and bug reports can be made at the [UBports PinePhone GitLab page](https://gitlab.com/ook37/pinephone-pro-debos/). See [UBports website](https://ubports.com/foundation/sponsors) for how to donate.
 
 ## Tools
@@ -600,10 +644,14 @@ Make sure to download the "PinePhone" image and to unpack the archive before fla
 
 ### Tow-Boot
 
-Tow-Boot is a more user-friendly distribution of U-Boot. Can also mount internal storage as USB Mass Storage by holding the volume up button at startup before and during the second vibration and the LED will turn blue if done successfully.
+Tow-Boot is a more user-friendly distribution of U-Boot. It can mount internal storage as USB Mass Storage by holding the volume up button at startup before and during the second vibration. The LED will turn blue if done successfully.
 
 See https://github.com/Tow-Boot/Tow-Boot/releases for the latest image.
-Make sure to download the image with pinephoneA64 in the name.
+Make sure to download the image with `pinephoneA64` in the name.
+
+{{< admonition type="note" >}}
+ The USB Mass Storage mode might not be recognized by your computer for some cable + PC USB port + PC OS combos, see [this reddit thread](https://www.reddit.com/r/PINE64official/comments/unjguw/towboot_doesnt_actually_do_mass_storage_mode/) and [this GitHub issue](https://github.com/Tow-Boot/Tow-Boot/issues/127). If you encounter any problem like this, try use any Linux distro for your PC, or switch USB cables or ports. A patch has been posted on the GitHub issue, try that if you can patch and compile the Tow-Boot yourself, and tell them if that works.
+{{< /admonition >}}
 
 ## Hardware test build
 
@@ -633,16 +681,15 @@ After power up or reboot, you may perform and complete the test routine, or appl
 All the download links below are direct download from pine64.org.
 
 {{< admonition type="warning" >}}
- These images are for testing purposes only. If you are looking for an up-to-date image please select one from the
+ These images are for testing purposes only. If you are looking for an up-to-date image please select one from the software releases section instead.
 {{< /admonition >}}
-software releases section instead.
 
 | Distribution | Download Link | File Size | MD5 |
-| -------- | ------- | ------- | ------- |
+| ------------ | ------- | ------- | ------- |
 | Beta Edition | [pine64-pinephone-plamo-beta-factorytest.img.xz](https://files.pine64.org/os/PinePhone/BetaEdition/pine64-pinephone-plamo-beta-factorytest.img.xz) | 1.78GB | `f16bce93504a52217540ac886863a418` |
-| Mobian | [pine64-pinephone-20201207-factorytest-mobian.img.xz](https://files.pine64.org/os/PinePhone/Mobian/pine64-pinephone-20201207-factorytest-mobian.img.xz) | 1.41GB | `015be381ff4e650a7fca6d4eaa90d63d` |
-| KDE | [pine64-pinephone-20201208-factorytest-kde.img.xz](https://files.pine64.org/os/PinePhone/KDE/pine64-pinephone-20201208-factorytest-kde.img.xz) | 2.28GB | `32979ff17b5ec4d358ce99f1aff0c77c` |
-| Manjaro | [pine64-pinephone-20201013-manjaro-stable-20201018-factory56.img.xz](https://files.pine64.org/os/PinePhone/Manjaro/pine64-pinephone-20201013-manjaro-stable-20201018-factory56.img.xz) | 1.04GB | `4edfd4dceaefdd32a3417c1727161c29` |
+| Mobian       | [pine64-pinephone-20201207-factorytest-mobian.img.xz](https://files.pine64.org/os/PinePhone/Mobian/pine64-pinephone-20201207-factorytest-mobian.img.xz) | 1.41GB | `015be381ff4e650a7fca6d4eaa90d63d` |
+| KDE          | [pine64-pinephone-20201208-factorytest-kde.img.xz](https://files.pine64.org/os/PinePhone/KDE/pine64-pinephone-20201208-factorytest-kde.img.xz) | 2.28GB | `32979ff17b5ec4d358ce99f1aff0c77c` |
+| Manjaro      | [pine64-pinephone-20201013-manjaro-stable-20201018-factory56.img.xz](https://files.pine64.org/os/PinePhone/Manjaro/pine64-pinephone-20201013-manjaro-stable-20201018-factory56.img.xz) | 1.04GB | `4edfd4dceaefdd32a3417c1727161c29` |
 | postmarketOS | [pine64-pinephone-20200726-phosh-v20.05-factory.img.xz](https://files.pine64.org/os/PinePhone/PostMarketOS/pine64-pinephone-20200726-phosh-v20.05-factory.img.xz) | 517MB | `244093be2f6d728fcbd1d29114607727` |
 | Ubuntu Touch | [PinePhone-flasher-ubuntu-7b.img.gz](https://files.pine64.org/os/PinePhone/UBPorts/PinePhone-flasher-ubuntu-7b.img.gz) | 1.05GB | `2d7f5271e7a281db8f1b1219bedbe131` |
 
@@ -650,7 +697,7 @@ software releases section instead.
 
 ### Apache NuttX RTOS
 
-[Apache NuttX RTOS](https://nuttx.apache.org/docs/latest) is a Real-Time Operating System that supports PinePhone
+[Apache NuttX RTOS](https://nuttx.apache.org/docs/latest) is a Real-Time Operating System that supports PinePhone.
 
 * [Apache NuttX RTOS on PINE64 PinePhone](https://nuttx.apache.org/docs/latest/platforms/arm/a64/boards/pinephone/index.html)
 
@@ -697,4 +744,3 @@ Other
 * [Martijn Braam Librem 5 comparison, especially covering openness/blobs](https://tuxphones.com/yet-another-librem-5-and-pinephone-linux-smartphone-comparison/)
 * [Bart Ribbers blog on Linux distributions and desktop environments on mobile devices](https://fam-ribbers.com/2019/12/28/State-of-Linux-on-mobile-and-common-misconceptions.html)
 * [Jeff Geerling on testing microSD cards](https://www.jeffgeerling.com/blog/2019/a2-class-microsd-cards-offer-no-better-performance-raspberry-pi)
-
