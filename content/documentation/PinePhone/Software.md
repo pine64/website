@@ -592,7 +592,7 @@ The boot-up OS is upgraded independently from the containers.
 
 #### Download
 
-* https://dl.irradium.org//slackware/images/pinephone/
+* https://dl.irradium.org/slackware/images/pinephone/
 
 #### Notes
 
