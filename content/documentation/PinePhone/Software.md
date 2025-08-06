@@ -378,15 +378,15 @@ Project home page: [Mobile NixOS](https://mobile.nixos.org/)
 
 
 
-### OpenMandriva Lx
+### OpenMandriva Lx 4.2 RC
 
 {{< figure src="/documentation/images/Oma-logo-22042013_300pp.png" width="100" >}}
 
-OpenMandriva Lx with Plasma Mobile as UI.
+OpenMandriva Lx 4.2 RC with Plasma Mobile as UI. The development ceases before a newer release is out.
 
 #### Download
 
-The official image can be found [at sourceforge.net](https://sourceforge.net/projects/openmandriva/files/release/4.2/RC/Pinephone/).
+The official image can be found [at sourceforge.net](https://sourceforge.net/projects/openmandriva/files/release/EOL/4.2-RC/Pinephone/).
 See [here](https://www.openmandriva.org/en/news/article/openmandriva-lx-4-3-rc-available-for-testing) for the offical announcement.
 
 #### Notes
@@ -465,7 +465,7 @@ See the [pine64-pinephone](https://wiki.postmarketos.org/wiki/PINE64_PinePhone_(
 ### Rhino Linux
 
 Rhino Linux is an Ubuntu-based distribution that uses the rolling-release model by tracking the devel` branch of repositories. The port is currently maintained by Oren Klopfer (oklopfer).
-	
+
 Tow-Boot is required for installing Rhino Linux. Instructions for installing Tow-Boot to the PinePhone can be found [here](https://tow-boot.org/devices/pine64-pinephoneA64.html). After Tow-Boot has been installed to your device, Rhino Linux installation just requires flashing the `.img.xz` to an SD or the eMMC.
 
 #### Download
@@ -473,13 +473,13 @@ Tow-Boot is required for installing Rhino Linux. Instructions for installing Tow
 [Rhino Linux Downloads](https://rhinolinux.org/download.html) (select Pine64 on the dropdown)
 
 | Default credentials | |
-| -------- | ------- |	
+| -------- | ------- |
 | Default user | `rhino`/`1234` |
-	
+
 #### Notes
-	
+
 Foundational to the distribution is [Pacstall](https://pacstall.dev), a Debian-based user repository inspired by the AUR. Additionally, RL comes with [Unicorn](https://rhinolinux.org/unicorn/), a custom modified version of XFCE with various modernizations and improvements, including auto-rotation for mobile devices.
-	
+
 [Discord](https://discord.gg/reSvc8Ztk3) - [Matrix](https://matrix.to/#/#rolling-rhino-remix:matrix.org) - [GitHub](https://github.com/rhino-linux) - [Wiki](https://rhinolinux.org/wiki.html)
 
 
@@ -605,11 +605,11 @@ Discussion: [Thread](https://forum.pine64.org/showthread.php?tid=12181&highlight
 {{< figure src="/documentation/images/Ubports-logo.png" width="100" >}}
 
 A Mobile Version of the Ubuntu Operating System made and maintained by the UBports Community. The port is currently maintained by Oren Klopfer (oklopfer).
-	
+
 {{< admonition type="note" >}}
  Tow-Boot is required for installing the latest version of Ubuntu Touch (20.04) on the PinePhone. Instructions for installing Tow-Boot to the PinePhone can be found [here](https://tow-boot.org/devices/pine64-pinephoneA64.html). 
 {{< /admonition >}}
-	
+
 Installation instructions can be found at [this UBports post](https://ubports.com/en/blog/ubports-news-1/post/pinephone-and-pinephone-pro-3889). After Tow-Boot has been installed to your device, Ubuntu Touch installation just requires flashing the _.img.xz_ to an SD or the eMMC.
 
 #### Download
@@ -619,13 +619,13 @@ Installation instructions can be found at [this UBports post](https://ubports.co
 
 | Default credentials | |
 | -------- | ------- |
-| Default user | Set during boot
+| Default user | Set during boot |
 | root | `phablet`/`1234` |
 
 #### Notes
 
 Scroll down to the middle of [the GitLab project page](https://gitlab.com/ook37/pinephone-pro-debos/), or directly here [at the UBports website](https://devices.ubuntu-touch.io/device/pinephone/release/focal/#deviceOverview) to see which features work.
-	
+
 Contributions and bug reports can be made at the [UBports PinePhone GitLab page](https://gitlab.com/ook37/pinephone-pro-debos/). See [UBports website](https://ubports.com/foundation/sponsors) for how to donate.
 
 ## Tools
@@ -641,10 +641,14 @@ Make sure to download the "PinePhone" image and to unpack the archive before fla
 
 ### Tow-Boot
 
-Tow-Boot is a more user-friendly distribution of U-Boot. Can also mount internal storage as USB Mass Storage by holding the volume up button at startup before and during the second vibration and the LED will turn blue if done successfully.
+Tow-Boot is a more user-friendly distribution of U-Boot. It can mount internal storage as USB Mass Storage by holding the volume up button at startup before and during the second vibration. The LED will turn blue if done successfully.
 
 See https://github.com/Tow-Boot/Tow-Boot/releases for the latest image.
-Make sure to download the image with pinephoneA64 in the name.
+Make sure to download the image with `pinephoneA64` in the name.
+
+{{< admonition type="note" >}}
+ The USB Mass Storage mode might not be recognized by your computer for some cable + PC USB port + PC OS combos, see [this reddit thread](https://www.reddit.com/r/PINE64official/comments/unjguw/towboot_doesnt_actually_do_mass_storage_mode/) and [this GitHub issue](https://github.com/Tow-Boot/Tow-Boot/issues/127). If you encounter any problem like this, try use any Linux distro for your PC, or switch USB cables or ports. A patch has been posted on the GitHub issue, try that if you can patch and compile the Tow-Boot yourself, and tell them if that works.
+{{< /admonition >}}
 
 ## Hardware test build
 
@@ -674,16 +678,15 @@ After power up or reboot, you may perform and complete the test routine, or appl
 All the download links below are direct download from pine64.org.
 
 {{< admonition type="warning" >}}
- These images are for testing purposes only. If you are looking for an up-to-date image please select one from the
+ These images are for testing purposes only. If you are looking for an up-to-date image please select one from the software releases section instead.
 {{< /admonition >}}
-software releases section instead.
 
 | Distribution | Download Link | File Size | MD5 |
-| -------- | ------- | ------- | ------- |
+| ------------ | ------- | ------- | ------- |
 | Beta Edition | [pine64-pinephone-plamo-beta-factorytest.img.xz](https://files.pine64.org/os/PinePhone/BetaEdition/pine64-pinephone-plamo-beta-factorytest.img.xz) | 1.78GB | `f16bce93504a52217540ac886863a418` |
-| Mobian | [pine64-pinephone-20201207-factorytest-mobian.img.xz](https://files.pine64.org/os/PinePhone/Mobian/pine64-pinephone-20201207-factorytest-mobian.img.xz) | 1.41GB | `015be381ff4e650a7fca6d4eaa90d63d` |
-| KDE | [pine64-pinephone-20201208-factorytest-kde.img.xz](https://files.pine64.org/os/PinePhone/KDE/pine64-pinephone-20201208-factorytest-kde.img.xz) | 2.28GB | `32979ff17b5ec4d358ce99f1aff0c77c` |
-| Manjaro | [pine64-pinephone-20201013-manjaro-stable-20201018-factory56.img.xz](https://files.pine64.org/os/PinePhone/Manjaro/pine64-pinephone-20201013-manjaro-stable-20201018-factory56.img.xz) | 1.04GB | `4edfd4dceaefdd32a3417c1727161c29` |
+| Mobian       | [pine64-pinephone-20201207-factorytest-mobian.img.xz](https://files.pine64.org/os/PinePhone/Mobian/pine64-pinephone-20201207-factorytest-mobian.img.xz) | 1.41GB | `015be381ff4e650a7fca6d4eaa90d63d` |
+| KDE          | [pine64-pinephone-20201208-factorytest-kde.img.xz](https://files.pine64.org/os/PinePhone/KDE/pine64-pinephone-20201208-factorytest-kde.img.xz) | 2.28GB | `32979ff17b5ec4d358ce99f1aff0c77c` |
+| Manjaro      | [pine64-pinephone-20201013-manjaro-stable-20201018-factory56.img.xz](https://files.pine64.org/os/PinePhone/Manjaro/pine64-pinephone-20201013-manjaro-stable-20201018-factory56.img.xz) | 1.04GB | `4edfd4dceaefdd32a3417c1727161c29` |
 | postmarketOS | [pine64-pinephone-20200726-phosh-v20.05-factory.img.xz](https://files.pine64.org/os/PinePhone/PostMarketOS/pine64-pinephone-20200726-phosh-v20.05-factory.img.xz) | 517MB | `244093be2f6d728fcbd1d29114607727` |
 | Ubuntu Touch | [PinePhone-flasher-ubuntu-7b.img.gz](https://files.pine64.org/os/PinePhone/UBPorts/PinePhone-flasher-ubuntu-7b.img.gz) | 1.05GB | `2d7f5271e7a281db8f1b1219bedbe131` |
 
