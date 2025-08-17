@@ -64,7 +64,7 @@ Phantomas has been improving the [rust-based PineNote dbus service](https://git.
 
 hrdl has fixed an outstanding issue with multi-touch inputs. Ten finger touch support has been added by modifying the touch controllers configuration which is [achieved by running a script from userspace](https://git.sr.ht/~hrdl/pinenote-dist/tree/main/item/bin/cyttsp5_update_config.py). This issue occurs because the display controller is flashed at the factory with firmware that only supports two touch inputs at most. A single byte change to this firmware allows a maximum of ten touch inputs to be recognized. The fix will allow the support for 3-4 finger gestures on desktops to switch workspaces or bring up Gnome overview. 
 
-Diederik made some [minor contributions to the mainline kernel](https://git.kernel.org/pub/scm/linux/kernel/git/mmind/linux-rockchip.git/log/?h=for-next). They mostly remove some warnings, and unlike my work these were submitted to and accepted by upstream. He has planned some more work, so he suggested that it might make more sense to wait with mentioning his work until the next community update. dsimic has also upstreamed several patches.
+Diederik made some [minor contributions to the mainline kernel](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/log/?qt=grep&q=Diederik+de+Haas). They mostly remove some warnings, and unlike my work these were submitted to and accepted by upstream. He has planned some more work, so he suggested that it might make more sense to wait with mentioning his work until the next community update. dsimic has also upstreamed several patches.
 
 ### Operating Systems
 There are four new operating system options to choose from, just in case you need some variety. 
