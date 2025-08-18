@@ -76,8 +76,9 @@ As seen in the header image for the PineNote section, hrdl has made a complete A
 * Signature: https://files.hrdl.eu/arch.tar.zst.sig 
 
 #### PostmarketOS
-[Ayaekael](https://gitlab.postmarketos.org/ayakael) has made a functional PostmarketOS port based on hrdl's kernel and sway setup. 
-  * https://gitlab.postmarketos.org/postmarketOS/pmaports/-/merge_requests/6711
+[Ayakael](https://gitlab.postmarketos.org/ayakael) has made a functional PostmarketOS port based on hrdl's kernel and sway setup. 
+  * Merge request: https://gitlab.postmarketos.org/postmarketOS/pmaports/-/merge_requests/6711
+  * Installation instructions: https://wiki.postmarketos.org/wiki/PINE64_PineNote_(pine64-pinenote)
 
 #### Nix
 Two NixOS setups by werapi (https://github.com/WeraPea/pinenote-nixos) and jzbor (https://github.com/jzbor/nixos-pinenote/blob/main/packages/fs-image/default.nix)
