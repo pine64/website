@@ -41,4 +41,5 @@ The following PINE64 devices are available in the documentation
 
 * [Getting started](Introduction/Getting_started): Basic information on setting up and handling PINE64 devices, such as how to write (flash) OS images to microSD cards and eMMC modules
 * [How to contribute](Introduction/How_to_contribute): Information about how to contribute to different partner projects
+* [Write a blog post](Introduction/Writing_a_blog_post): Information on how to write blog posts as a project maintainer. 
 * [Where to report bugs](Introduction/Where_to_report_bugs): Information about how to report bugs

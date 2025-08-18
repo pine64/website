@@ -1,0 +1,29 @@
+---
+title: "PROJECT update: TAGLINE"
+date: "yyyy-mm-dd"
+authors: ["YOUR NAME HERE"]
+categories: 
+  - "community"
+  - "news"
+  - "pine64-community"
+tags: 
+  - "project update" 
+cover: 
+  image: "pine64_banners/pine64_blue.png"
+images:
+  - "/blog/images/pine64_banners/pine64_blue.png"
+summary: "ADD A SUMMARY ABOUT THE CONTENTS OF THE UPDATE HERE"
+
+---
+
+![Blog post banner artwork](/blog/images/pine64_banners/pine64_blue.png)
+
+{{< toc >}}
+
+## HEADING TITLE
+
+
+## Do you have something to share?
+Do you have news to share with the community? You can have your news posted on this blog by heading over to [this tutorial and following the template](https://pine64.org/documentation/Introduction/Writing_a_blog_post/). All community updates are written in markdown which you can learn how to write [here](https://www.markdownguide.org/basic-syntax/).
+
+If you get stuck, feel free to ask the folks in chat by finding your respective chat platform at https://pine64.org/community/.

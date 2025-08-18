@@ -1,0 +1,63 @@
+---
+title: "DanctNix: New PineTab2 Factory Firmware Update"
+date: "2025-08-17"
+authors: ["Danct12"]
+categories: 
+  - "community"
+  - "news"
+  - "pine64-community"
+tags: 
+  - "project update"
+  - "pinetab2"  
+cover: 
+  image: "pine64_banners/festival_lights.png"
+images:
+  - "/blog/images/pine64_banners/festival_lights.png"
+summary: "A new factory firmware release for the PineTab2 has just arrived."
+
+---
+
+![Blog post banner artwork](/blog/images/pine64_banners/festival_lights.png)
+
+{{< toc >}}
+
+## PineTab2 Factory Firmware Update
+{{< credits "Authors: Danct12" >}}
+
+There is nothing much with the PineTab 2, but there has been more work on the BES2600 driver.
+
+### Kernel
+Suspend and resume bug with the BES2600 Wi-Fi driver has been mostly fixed in v6.15.2-danctnix2. There are still some bugs with the SDIO driver, but they're considered "minor" for now.
+
+On that note, a new driver for Bluetooth is currently being worked on. It is mostly working, I tried pairing a phone, a Bluetooth keyboard, I even tried BLE GATT and they're all working. I haven't tried out BLE audio as I don't have any Bluetooth earbuds that uses it.
+
+Host wakeup is currently not supported, so Bluetooth devices cannot wake the PineTab 2 from sleep mode yet. I'm looking into how that works and I'll implement that to the driver some day.
+
+Unfortunately, sometimes when the BES2600 SDIO driver does a read/write while Bluetooth is turned on, there's a chance that it'll timeout and bring down the WLAN driver altogether while Bluetooth (UART) is still working flawlessly. Because of that, it'll take a while before the Bluetooth driver is ready for public testing.
+
+![PineTab2 Buildroot build](/blog/images/August_2025/pinetab2buildroot.png)
+
+### OS (DanctNIX's Arch Linux ARM port)
+A new factory image for the PineTab2 (20250731) has been released: https://echo.danctnix.org:7269/factory_images/pinetab2/20250731/
+
+Flash the image to your SD card using dd or Win32DiskImager, boot with the SPI/eMMC disable switch (optional if the bootloader is working) and follow the instructions using the volume and power key. You may only use this if you need to reset the PineTab2 to factory defaults.
+
+If you're getting an error regarding the linux-firmware package such as:
+
+```
+linux-firmware-nvidia: /usr/lib/firmware/nvidia/ad103 exists in filesystem
+linux-firmware-nvidia: /usr/lib/firmware/nvidia/ad104 exists in filesystem
+linux-firmware-nvidia: /usr/lib/firmware/nvidia/ad106 exists in filesystem
+linux-firmware-nvidia: /usr/lib/firmware/nvidia/ad107 exists in filesystem
+```
+
+Please read [linux-firmware >= 20250613.12fe085f-5 upgrade requires manual intervention](https://archlinux.org/news/linux-firmware-2025061312fe085f-5-upgrade-requires-manual-intervention/) from Arch Linux news. 
+
+### Mesa (GPU)
+[Luigi311 (Luis Garcia) has tested a patch](https://mastodon.social/@Luigi311/114742172122480704) which rearranged texture format to BGRA meaning the GPU driver doesn't have to do format conversion and thus, massively improved performance for certain applications. The patch has merged to upstream mesa and will be available in the next mesa release. You can check out the patch [here](https://gitlab.freedesktop.org/mesa/mesa/-/merge_requests/35678)
+
+## Do you have something to share?
+Do you have news to share with the community? You can have your news posted on this blog by heading over to [this tutorial and following the template](https://pine64.org/documentation/Introduction/Writing_a_blog_post/). All community updates are written in markdown which you can learn how to write [here](https://www.markdownguide.org/basic-syntax/).
+
+If you get stuck, feel free to ask the folks in chat by finding your respective chat platform at https://pine64.org/community/.
+
