@@ -29,7 +29,7 @@ Once the template is copied you can start editing the blog post details. Below i
 {{< figure src="/documentation/images/blog_tutorial/layout_explanation.png" width="600" >}}
 
 * The title should be formatted like "Project Update: PineTab2 Arch Linux Update" or "Project Update: PinePhone Pro FreeBSD port"
-* The date entry follows the yyyy-mm-dd format. Make sure to test that the blog post appears in the [hugo preview](), depending on your timezone you may have to set it a day back.  
+* The date entry follows the yyyy-mm-dd format. Make sure to test that the blog post appears in the hugo preview, depending on your timezone you may have to set it a day back.  
 * Categories are already correct in the template, so leave these alone. 
 * Tags are used to recommend similar blog posts with the same tags. For example: `pinetab2`, `pinetab-v` and `pinenote`.
 
