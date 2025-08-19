@@ -15,6 +15,7 @@ The USB-C UART adapter can be connected to the PineTab2 to debug boot issues at 
 
 * Plug the adapter face-up in the USB-C port furthest away from the power button. If all the lights are lit, you have the wrong port: only the green light should be lit when you first plug it in.
 * Plug USB-C cable into the port on the adapter marked "DEBUG" (the other port can be used as a power delivery passthrough so you can charge and debug at the same time)
+* Set the 'SD BOOT MASKROM' switch to OFF if no SD card is inserted and you do not plan to boot from an SD card. If the switch is set to ON without an SD card present, the tablet may fail to boot.
 * Open a terminal window
 * Install _minicom_ or _screen_ via your distribution’s package manager, if you don’t have it installed already
 * Connect via minicom using `sudo minicom -D /dev/ttyUSB0 -b 1500000` or via screen using `sudo screen /dev/ttyUSB0 1500000`
