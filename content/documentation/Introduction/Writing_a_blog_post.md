@@ -96,3 +96,6 @@ For those who are interested in making their own, the source files for the follo
 
 **forest.png**
 {{< figure src="/blog/images/pine64_banners/forest.png" width="400" >}}
+
+## Bring your own cover art
+If you'd like to bring your own cover art for your blog post, you can drop it into the `/content/blog/images/pine64_banners/community` folder. Make sure to edit the path for the cover art at the top of the blog post document to reflect this.
