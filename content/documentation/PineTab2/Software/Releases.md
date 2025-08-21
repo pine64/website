@@ -47,7 +47,7 @@ The PineTab2 ships with _Danctnix Arch Linux ARM_. The latest factory image can 
 #### Download
 
 * SD-card boot: https://github.com/dreemurrs-embedded/Pine64-Arch/releases
-* Factory flash image: https://echo.danctnix.org:7269/factory_images/pinetab2/20250104/danctnix-factory-image-20250104.img.xz (2.2 GB)
+* Factory flash image: https://echo.danctnix.org:7269/factory_images/pinetab2/20250731/pt2-factory-20250731.img.xz (2.3 GB)
 
 | Default credentials | |
 | -------- | ------- |
