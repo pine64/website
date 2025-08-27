@@ -61,3 +61,15 @@ Do you have news to share with the community? You can have your news posted on t
 
 If you get stuck, feel free to ask the folks in chat by finding your respective chat platform at https://pine64.org/community/.
 
+## Contact 
+### Community
+Feel free to contact me if you have any concerns about community related topics. This can be about getting project support, sharing project updates, prolonged wait times for support from PineStore (anything after 1-2 weeks) and any general feedback that could help improve the community. 
+
+Community manager: camden.b@pine64.org
+
+### PineStore
+**If you have quality control issues with your device once you receive it, don't wait, contact PineStore support.**
+
+* For general queries and information from the Pine Store: info@pine64.org
+* For queries regarding support from the Pine Store: support@pine64.org
+* For sales/wholesale related questions: sales@pine64.org
