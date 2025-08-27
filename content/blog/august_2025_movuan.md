@@ -1,6 +1,6 @@
 ---
 title: "Project Showcase: Movuan"
-date: "2025-08-26"
+date: "2025-08-27"
 authors: ["Caffeine"]
 categories: 
   - "community"
@@ -21,9 +21,9 @@ summary: "A showcase of the Devuan based operating system for the PinePhone call
 {{< toc >}}
 
 ## The Movuan project
-The Movuan project was started by community member [lxb](https://gitlab.com/l2385) as an alternative to mobile distributions using the systemd init system. Thanks to being forked from Mobian, the project uses modified Mobian debos to build it's images. 
+The Movuan project was started by community member [lxb](https://gitlab.com/l2385) and announced in a [forum post](https://dev1galaxy.org/viewtopic.php?id=7094) as an alternative to mobile distributions using the systemd init system. Thanks to being forked from Mobian, the project makes use of modified Mobian debos to build it's images. 
 
-There is an [optional script](https://gitlab.com/l2385/movuan/customizing-movuan-under-host-mounting) which can customize a Movuan image to install extra software like AndroidImpEx for importing contacts and sms messages from an Android phone, Ungoogled Chromium, local caching DNS (bind) tunnelled through TLS (stubby) to privacy minded servers and an inbuilt adblocker through a caching proxy (squid).
+One of the modifications that lxb makes is an [optional script](https://gitlab.com/l2385/movuan/customizing-movuan-under-host-mounting) which can customize a Movuan image to install extra software like AndroidImpEx for importing contacts and sms messages from an Android phone, Ungoogled Chromium, local caching DNS (bind) tunnelled through TLS (stubby) to privacy minded servers and an inbuilt adblocker through a caching proxy (squid). These modifications are a personal preference of lxb's but anyone is free to use them to help improve their privacy.
 
 ![Movuan Terminal](/blog/images/August_2025/movuan_1.png)
 
@@ -50,7 +50,7 @@ The benefit of using a different init system depends on the features it offers o
 Users can learn more about the Devuan project [here](https://www.devuan.org).
 
 ### Future goals and contributing
-The goal of the Movuan project is to merge into Devuan as an official version, but it still requires some polishing to do before this can happen. Specifically help with packaging and testing would be appreciated! If anyone is interested in helping with this project can contact lxb1@yahoo.com.
+The goal of the Movuan project is to merge into Devuan as an official version, but it still requires some polishing to do before this can happen. Specifically help with packaging and testing would be appreciated! Anyone who is interested in helping with this project can contact lxb1@yahoo.com.
 
 ## Do you have something to share?
 Do you have news to share with the community? You can have your news posted on this blog by heading over to [this tutorial and following the template](https://pine64.org/documentation/Introduction/Writing_a_blog_post/). All community updates are written in markdown which you can learn how to write [here](https://www.markdownguide.org/basic-syntax/).
@@ -59,7 +59,7 @@ If you get stuck, feel free to ask the folks in chat by finding your respective 
 
 ## Contact 
 ### Community
-Feel free to contact me if you have any concerns about community related topics. This can be about getting project support, sharing project updates, prolonged wait times for support from PineStore (anything after 1-2 weeks) and any general feedback that could help improve the community. 
+Feel free to contact me if you have any concerns about community related topics. This can be about getting project support, sharing project updates, concern about prolonged wait times for support from PineStore (anything after 1-2 weeks) and any general feedback that could help improve the community. 
 
 Community manager: camden.b@pine64.org
 
