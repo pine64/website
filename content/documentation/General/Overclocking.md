@@ -187,7 +187,7 @@ DTB is in `/boot/dtbs/rockchip/rk3328-rock64.dtb`. CPU clock rates are inside `o
 
 Check the achieved clock speed with `sudo cat /sys/kernel/debug/clk/clk_summary | grep armclk`.
 
-Thanks to [Ayufan](https://github.com/ayufan-rock64)'s work (with their [overclocking recipe](https://github.com/ayufan-rock64/linux-build/blob/master/recipes/overclocking.md)), we know we can add a <strong>1.392GHz</strong> operating point, and a <strong>1.512GHz</strong> operating point (you should ensure you have a large heatsink for this last one). You can do so by adding the following in the `opp_table0` object, after the `opp-1296000000` operating point:
+Thanks to [Ayufan](https://github.com/ayufan-rock64)'s work (with their [overclocking recipe](https://github.com/ayufan-rock64/linux-build/blob/master/recipes/overclocking.md)), we know we can add a **1.392GHz** operating point, and a **1.512GHz** operating point (you should ensure you have a large heatsink for this last one). You can do so by adding the following in the `opp_table0` object, after the `opp-1296000000` operating point:
 
     opp-1392000000 {
             opp-hz = <0x00 0x52f83c00>;

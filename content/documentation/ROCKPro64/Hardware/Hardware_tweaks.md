@@ -263,12 +263,12 @@ The patch above only pulls in lines from the following firmware file: https://gi
 This code comes with the following license - which is not replicated here because it will fill this wiki with text - see the link here for the license: https://github.com/reMarkable/brcmfmac-firmware/blob/master/LICENCE.
 
 ## Stabilizing the system (underclocking the RAM)
-<dl><dt><strong>⚠️ WARNING</strong></dt><dd>
 
+{{< admonition type="warning" >}}
 As pointed out by CrystalGamma, "normal accesses should simply work, though with higher access latency than necessary (since it uses the same number of cycles as would be necessary for a higher frequency), but I’d be slightly worried about refresh, since it also issues refresh based on number of cycles as would be used for a higher frequency, instead of actual time elapsed". In other words, "the risk is refreshes coming to late, though it’s probably within tolerance with this little of a frequency diff".
 
 To put it simply, the suggested changes to DRAM configuration may actually cause system instability or data corruption under certain circumstances.
-</dd></dl>
+{{< /admonition >}}
 
 By default, it seems that the some RockPro64 devices are not stable. This seems to manifest as gcc segfaulting randomly. Usually, this can be "fixed" by starting the build again and hoping gcc doesn’t crash. If the build finishes or crashes at a different point, this is a good indicator that the system is not stable. The issue seems to be that the RAM is running a little too fast and some bits are getting randomly flipped. Other frequencies are possible, but the highest officially supported frequency below 800MHz is 666MHz, which is still a big step down from the default frequency of 800MHz provided by ManjaroARM. It is also possible to set arbitrary frequencies in u-boot. Frequencies that have been tested with this method are 702MHz and 752MHz. It seems that there is only a slight performance decrease at 752MHz compared to 800MHz.
 

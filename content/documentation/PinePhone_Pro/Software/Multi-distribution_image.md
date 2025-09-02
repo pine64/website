@@ -17,14 +17,13 @@ This article explains how to install a multiple linux distribution environment o
 
 During the processes of [partitioning](#partitioning) the target device, [building](#building) the image or installing the [bootloader](#u_boot), make sure the variables are properly defined. Each time you open a new terminal window, the values of the variables must be re-set.
 
-<dl><dt><strong>💡 TIP</strong></dt><dd>
-
+{{< admonition type="info" >}}
 _BASE_ is the base directory path on your computer\
 _DEV_ is the device name from the lsblk command\
 _ATTR_ are the attributes of each partition/distribution\
 _SIZE_ is the GiB capacity of each partition/distribution\
 _NameUrl_ is the Key:Value of distribution name and relative URL download address
-</dd></dl>
+{{< /admonition >}}
 
 This guide has been tested with 6 Linux distributions on a 128 GiB microSD card, and following variables:
 
@@ -59,8 +58,7 @@ $ cd ppp
 $ sudo ./spinor-flash-initial-setup.sh
 ```
 
-<dl><dt><strong>💡 TIP</strong></dt><dd>
-
+{{< admonition type="info" >}}
 The multi-boot image _can_ function without rk2aw, but you will need to make sure the correct [bootloader](#uboot) is started by your phone’s SoC.
 
 If you are installing to a microSD card, then either:
@@ -69,7 +67,7 @@ If you are installing to a microSD card, then either:
 2. Hold down the _RE_ button during boot to force the phone to boot from the microSD card by disabling the SPI flash and the eMMC.
 
 If you are installing to the eMMC, make sure the SPI flash is empty.
-</dd></dl>
+{{< /admonition >}}
 
 Further instructions can be found on the [author’s website](https://xff.cz/kernels/bootloaders-2024.04/ppp/rk2aw/INSTALL).
 
@@ -180,12 +178,11 @@ Then, use the following command to install the U-Boot image to the correct locat
 $ sudo dd if=ppp/foss/u-boot-rockchip.bin of=/dev/$DEV bs=512 seek=64 status=progress conv=fsync
 ```
 
-<dl><dt><strong>💡 TIP</strong></dt><dd>
-
+{{< admonition type="info" >}}
 If you are interested in building this U-Boot image yourself, you can download the source code from [xff.cz](https://xff.cz/git/u-boot/tree/?h=ppp-2023.07). However, you will still need a copy of _ppp.tar.gz_ since it contains the U-Boot build configuration file (`ppp/foss/.config`).
 
 Copy this file to the root of your U-Boot source directory, keeping the name `.config`. You can then use `make` to initiate the build process.
-</dd></dl>
+{{< /admonition >}}
 
 ## Build the partitions
 
