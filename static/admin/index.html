@@ -142,16 +142,11 @@ CMS.registerEditorComponent({
     id: "toc",
     label: "Table of Contents",
     pattern: /^{{<\s*toc\s*>}}/,
-    fromBlock: function(match) {
-        return {
-            authors: match
-        };
-    },
     toBlock: function(obj) {
         return `{{< toc >}}`;
     },
     toPreview: function(obj) {
-        return '<b>TABLE OF CONTENTS WILL BE HERE</b>';
+        return '<hr><b>TABLE OF CONTENTS WILL BE HERE</b><hr>';
     },
 });
 // podcast_player
@@ -186,6 +181,7 @@ CMS.registerEditorComponent({
         return '<audio controls src="/podcast/episodes/'+obj.direct+'"></audio>';
     },
 });
+
 // Youtube
 CMS.registerEditorComponent({
     id: "youtube",
@@ -207,6 +203,19 @@ CMS.registerEditorComponent({
     },
     toPreview: function(obj) {
         return '<b>[Youtube player:]&nbsp;</b><a href="https://www.youtube.com/watch?v='+obj.id+'"><img src="/blog/images/yt_preview/'+obj.id+'.png" width="200"></a>';
+    },
+});
+
+// Children
+CMS.registerEditorComponent({
+    id: "children",
+    label: "Children",
+    pattern: /^{{<\s*children\s*>}}/,
+    toBlock: function() {
+        return `{{< children >}}`;
+    },
+    toPreview: function() {
+        return '<hr><b>Child pages are displayed here</b><hr>';
     },
 });
 
@@ -367,7 +376,7 @@ CMS.registerEditorComponent({
     {
       name: "body",
       label: "Content",
-      widget: "text",
+      widget: "markdown",
       default: "",
     },
   ],
