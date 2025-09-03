@@ -21,11 +21,11 @@ The PineTab2 ships with _Danctnix Arch Linux ARM_. The latest factory image can 
 * https://echo.danctnix.org:7269/factory_images/pinetab2/ (choose the latest)
 
 {{< admonition type="note" >}}
- The factory image is flashed to a microSD card and it will overwrite the eMMC installation after booting.
+The factory image is flashed to a microSD card and it will overwrite the eMMC installation after booting.
 {{< /admonition >}}
 
 {{< admonition type="info" >}}
-Some images use the **volume and power button for selection** at boot instead of the keyboard, such as the images 20240307, 20240625 and 20250104.
+Newer images use the **volume and power button for selection** at boot instead of the keyboard.
 {{< /admonition >}}
 
 ## Linux
