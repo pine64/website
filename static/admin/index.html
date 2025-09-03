@@ -343,6 +343,58 @@ CMS.registerEditorComponent({
   ]
 });
 
+// Admonitions
+CMS.registerEditorComponent({
+  id: "admonition",
+  label: "Admonition",
+  fields: [
+    {
+      name: "type",
+      label: "Admonition Type",
+      widget: "select",
+      options: [
+        { label: "Note", value: "note" },
+        { label: "Info", value: "info" },
+        { label: "Warning", value: "warning" },
+        { label: "Caution", value: "caution" },
+        { label: "Construction", value: "construction" }
+      ],
+      default: "note"
+    },
+    {
+      name: "body",
+      label: "Content",
+      widget: "text",
+      default: ""
+    }
+  ],
+  pattern: /^{{<\s*admonition\s+type="(.*?)"\s*>}}([\s\S]*?){{<\s*\/admonition\s*>}}$/,
+
+  fromBlock: function(match) {
+    return {
+      type: match[1],
+      body: match[2].trim()
+    };
+  },
+
+  toBlock: function(obj) {
+    return [
+      `{{< admonition type="${obj.type}" >}}`,
+      obj.body,
+      `{{< /admonition >}}`
+    ].join("\n");
+  },
+  
+  preview: function(obj) {
+    const title = obj.type.charAt(0).toUpperCase() + obj.type.slice(1);
+    return `
+      <div class="admonition ${obj.type}">
+        <strong>${title}:</strong> ${CMS.previewFieldFormatter(obj.body)}
+      </div>
+    `;
+  }
+});
+
     </script>
   </body>
 </html>
