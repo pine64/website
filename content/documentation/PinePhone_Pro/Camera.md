@@ -55,7 +55,7 @@ You will be prompted to some options
 * Required runtime for me.gapixels.Megapixels/aarch64/master (runtime/org.gnome.Platform/aarch64/47) found in remote flathub. Do you want to install it? [Y/n]: y
 
 
-To launch camera app you can both click on Megapixels icon on your desktop or enter into terminal this command:
+To launch camera app you can both click on Megapixels icon on your desktop or enter into terminal following command
 
 ```console
 $ flatpak run me.gapixels.Megapixels
