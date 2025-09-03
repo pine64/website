@@ -15,11 +15,11 @@ aliases:
 Devices shipped before July 2021 were pre-installed with InfiniTime 0.7.1 and an older bootloader. This features green text *PINE TIME* on boot, and should be updated to the new bootloader as described below.
 
 Newer devices already have a >=1.0.0 bootloader and do not need updating. You can identify these with a green Pinecone image on boot.
-{{< /admonition >}}
+{{</ admonition >}}
 
 {{< admonition type="warning" >}}
 **Do not follow** these steps on devices which shipped with the **1.0.1 bootloader or later**. You will downgrade the bootloader and (soft-)brick your watch!
-{{< /admonition >}}
+{{</ admonition >}}
 
 Congratulations on receiving your new PineTime!
 
@@ -27,7 +27,7 @@ So now you’re probably wondering exactly how on earth do you go about upgradin
 
 {{< admonition type="warning" >}}
  Some people ran into issues during the update process that would temporarily make their watch unusable (display frozen or blank). The only know workaround consists of waiting for the battery to drain completely and try again. With the display off, and battery fully charged, you can expect a wait of 5-7 days so it is best to not fully charge it. If it freezes with the display on, it will likely be flat by the end of the day. We’ve never heard of any PineTimes that were permanently bricked (were not recoverable), though. 
-{{< /admonition >}}
+{{</ admonition >}}
 
 In a nutshell, you need to:
 
@@ -130,7 +130,7 @@ You may need to re-pair with your device by selecting "InfiniTime" (since you’
 
 {{< admonition type="warning" >}}
  Don’t do this before updating the bootloader, otherwise your PineTime will freeze at the end of the process, and you will need to wait for the battery to go flat 
-{{< /admonition >}}
+{{</ admonition >}}
 
 To install the recovery firmware, you want to flash [pinetime-mcuboot-recovery-loader-dfu-0.14.1.zip](https://github.com/JF002/InfiniTime/releases/download/0.14.1/pinetime-mcuboot-recovery-loader-dfu-0.14.1.zip). You will know when this is running when it shows an InfiniTime logo with a progress bar running across the bottom whilst it is installing the recovery firmware.
 

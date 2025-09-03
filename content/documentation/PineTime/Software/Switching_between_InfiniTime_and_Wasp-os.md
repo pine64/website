@@ -15,7 +15,7 @@ aliases:
 **Do not attempt to change between infinitime and wasp-os on watches shipped with bootloader v1.0.1.** Your device may be **bricked** and **will require unsealing** to revive it!
 
 This issue should be resolved soon, and this warning will be removed when all guides have been updated.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## Introduction
 
@@ -35,7 +35,7 @@ Flashing can be done with any of
 
 {{< admonition type="note" >}}
  We removed mentions to NRFConnect as this app is closed source and recent versions do not work anymore with InfiniTime (the last version known to work is 4.24.3). If you used NRFConnect in the past, we recommend you switch to Gadgetbridge.
-{{< /admonition >}}
+{{</ admonition >}}
 
 This guide has been last updated for Infinitime 1.1.0 and Wasp-os 0.4.1.
 

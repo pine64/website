@@ -13,15 +13,15 @@ aliases:
 
 {{< admonition type="warning" >}}
  There is the possibility of damaging your equipment by overclocking. Do so at your own risk!
-{{< /admonition >}}
+{{</ admonition >}}
 
 {{< admonition type="note" >}}
 This page is incomplete, you’re welcome to improve it.
-{{< /admonition >}}
+{{</ admonition >}}
 
 {{< admonition type="note" >}}
 All information regarding clock speeds, voltages and more are stored in the DTB (Device Tree Blob). You can learn more about it [here](https://elinux.org/Device_Tree_Reference).
-{{< /admonition >}}
+{{</ admonition >}}
 
 Overclocking is a way to get more performance out of the system by running it at higher clock speeds than the factory default, usually while putting out more heat and using more power (You can also downclock to possibly reduce power consumption and thermals at the cost of performance). It is highly recommended that you avoid overvolting the device, as that has a high risk of damaging the hardware, hence the warning at the beginning of this page. However, just some slight overclocks without the added voltage can not only improve performance, but not carry as much risk (Still: Do at your own risk!). It should be noted however that overclocking can cause instability, so you will need to test and see what values work best with your device (There is a silicon lottery for the PinePhone’s hardware).
 
@@ -29,7 +29,7 @@ Overclocking is a way to get more performance out of the system by running it at
 
 {{< admonition type="important" >}}
  These instructions are targeting the PinePhone to simplify the explanation, however they can be used to also overclock other devices such as the Pinetab if you modify the proper DTB files.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ### Editing the PinePhone DTS
 
@@ -49,7 +49,7 @@ Afterwards you can simply reboot and check with `sudo cat /sys/kernel/debug/clk/
 
 {{< admonition type="important" >}}
  In the future it is possible that someone may make a driver to adjust clockspeeds of the A64 from userspace (using a config file) without the need to recompile. However, currently the only way to overclock is to either compile your own kernel, or modify just the DTB (instructions above).
-{{< /admonition >}}
+{{</ admonition >}}
 
 ### GPU
 
@@ -63,15 +63,15 @@ Save the DTS file, and recompile the DTB. In order to check if the overclock was
 
 {{< admonition type="important" >}}
  The file may be slightly different and you may need to enter the values as hexadecimals
-{{< /admonition >}}
+{{</ admonition >}}
 
 {{< admonition type="note" >}}
 The GPU appears to run stable overclocked to 540 Mhz, however more testing with a wider group of devices is needed.
-{{< /admonition >}}
+{{</ admonition >}}
 
 {{< admonition type="note" >}}
 Remember to run a benchmark tool (such as glmark2-es2) to help check stability.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ### CPU
 
@@ -100,25 +100,25 @@ The table above shows the valid voltages provided by the AXP803 PMIC on DCDC2 (u
 
 {{< admonition type="important" >}}
  The user _somefoo_ was able to undervolt the PinePhone at each frequency operation point by at least -100mv. The A64 set to 1.152Ghz runs at 1.18v instead of the standard 1.3v, dropping the power usage by ~0.7w under full single threaded load|The silicon lottery will dictate how well you can undervolt.
-{{< /admonition >}}
+{{</ admonition >}}
 
 {{< admonition type="note" >}}
 The exact voltages and frequencies that you can achieve will depend on your device. Make sure to run stress tests (such as _stress-ng_) to ensure stability.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ### DRAM
 
 {{< admonition type="warning" >}}
  It is not recommended to exceed 667 MHz clockspeed on the DRAM. 648MHz is likely the upper limit.
-{{< /admonition >}}
+{{</ admonition >}}
 
 {{< admonition type="note" >}}
 Make sure to set your DRAM to a multiple of 24.
-{{< /admonition >}}
+{{</ admonition >}}
 
 {{< admonition type="note" >}}
 The current frequency your DRAM is running at can be found using this command: `cat /proc/device-tree/memory/ram_freq`
-{{< /admonition >}}
+{{</ admonition >}}
 
 When overclocking the GPU, it is a good idea to also overclock the DRAM, as the main bottleneck of the A64 SOC is the memory. The A64’s maximum ram clockspeed falls just short of 667MHz. This may be unstable on your device however.
 
@@ -138,7 +138,7 @@ In order to compile boot.scr you can run `mkimage -C none -A arm64 -T script -d 
 
 {{< admonition type="important" >}}
  You may not have a boot.cmd file in your boot directory and instead you may instead have a boot.txt
-{{< /admonition >}}
+{{</ admonition >}}
 
 ### Cedrus
 
@@ -146,7 +146,7 @@ Overclocking cedrus is achieved by modifying the kernel source code: https://eli
 
 {{< admonition type="important" >}}
  User _33yn2_ is not particularly sure if this makes any difference, or if it might in fact have a negative impact. Probably not worth messing with.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## RK3399-based devices
 

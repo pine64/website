@@ -104,7 +104,7 @@ $ gpg --verify ArchLinuxARM-aarch64-latest.tar.gz.sig
 
 {{< admonition type="important" >}}
  Do not skip verifying the authenticity. This is important. It also protects you from prematurely aborted transfers giving you a corrupt archive.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## Installing The Root File System
 

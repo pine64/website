@@ -28,7 +28,7 @@ The following releases are available for the [PineNote](/documentation/PineNote)
 
 {{< admonition type="note" >}}
 Check the [trixie](https://github.com/PNDeb/pinenote-debian-image/tree/trixie) branch and github actions artifacts (possibly requires github login) for builds newer than the latest release.
-{{< /admonition >}}
+{{</ admonition >}}
 
 * A Debian-based minimalistic rootfs/disc image can be built using `debos` using the work from [Eugen Răhăian](https://salsa.debian.org/eugenrh). The GNOME image above is building on this work.
 
@@ -54,7 +54,7 @@ See https://wiki.postmarketos.org/wiki/PINE64_PineNote_(pine64-pinenote)
 
 {{< admonition type="warning" >}}
 The following releases are targeted towards experienced developers.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ### Linux Kernel
 

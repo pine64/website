@@ -11,7 +11,7 @@ menu:
 
 {{< admonition type="warning" >}}
  When removing the large RF shield found on the mainboard, to be able to short the pins on the SPI chip, make absolutely sure to align it correctly while putting it back. Failing to do so can result in shorting the battery to the ground, due to the close proximity of the solder pads for the bypass cables, which would prevent the normal operation and effectively cause a fire hazard. It is highly recommended to disconnect the battery before removing the RF shield, and before putting it back.
-{{< /admonition >}}
+{{</ admonition >}}
 
 See [SPI](/documentation/Pinebook_Pro/Features/SPI) for details.
 

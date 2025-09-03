@@ -59,7 +59,7 @@ If you want to use constants and includes in your device tree overlay, you’ll 
 
 {{< admonition type="important" >}}
  You will need to install ***dtc*** for this.
-{{< /admonition >}}
+{{</ admonition >}}
 
 The easiest way to go about this is to get a copy of the Linux kernel source code from https://kernel.org that matches your kernel version (`uname -a`), as the device tree definitions live in the Linux kernel repository. Technically, device trees should be compatible across kernel versions, but I wouldn’t gamble on it.
 
@@ -112,7 +112,7 @@ Notice how the labels (the part before the colon) have been differentiated, and 
 
 {{< admonition type="note" >}}
  be sure to change the A0, A1 and A2 pins accordingly to set the addresses of the daisy chained modules! For example, for the second module, pull A0 high and leave A1 and A2 low. The address pins work like a binary counter, so 000 -> 001 -> 010 -> 011 -> 100 -> ...
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## Interrupts
 

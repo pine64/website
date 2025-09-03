@@ -33,7 +33,7 @@ There are two ways to reach `maskrom mode`, but the first tends to be less relia
 
 {{< admonition type="note" >}}
  The recovery button relies entirely on the software support in the boot loader, which makes it unreliable.
-{{< /admonition >}}
+{{</ admonition >}}
 
 According to Rockchip documentation, these steps should work; unfortunately, many users have reported them to be unsuccessful. You may need to repeat these steps several times for them to work.
 
@@ -47,7 +47,7 @@ In case this approach fails, please see the section below for a more reliable me
 
 {{< admonition type="warning" >}}
  ***When removing the large RF shield found on the mainboard, to be able to short the pins on the SPI chip, make absolutely sure to align it correctly while putting it back.***  Failing to do so can result in shorting the battery to the ground, due to the close proximity of the solder pads for the bypass cables, which would prevent the normal operation and effectively cause a fire hazard.  It is highly recommended to disconnect the battery before removing the RF shield, and before putting it back.
-{{< /admonition >}}
+{{</ admonition >}}
 
 1. Build and install `rkdeveloptool` (see [project repository](https://github.com/rockchip-linux/rkdeveloptool) for instructions)
 2. Verify successful installation. Running `rkdeveloptool --version` should output: `rkdeveloptool ver 1.3`

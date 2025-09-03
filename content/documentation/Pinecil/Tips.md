@@ -17,7 +17,7 @@ This article is about the available tips for the [Pinecil](/documentation/Pineci
 
 {{< admonition type="tip" >}}
 Pay attention to the length! Pine Store sells two different lengths of tips.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ### What kind of tips work?
 
@@ -67,7 +67,7 @@ Pay attention to the length! Pine Store sells two different lengths of tips.
 
 {{< admonition type="important" >}}
  **Pay attention to the length in your cart!** Pine Store sells two different lengths.
-{{< /admonition >}}
+{{</ admonition >}}
 
 1. All new Pinecil V2 soldering irons include a single Pine64 newly designed Short tip (ST-B2 conical).
 2. The discontinued V1 came with a longer normal length TS-B2 conical tip.
@@ -78,7 +78,7 @@ Pay attention to the length! Pine Store sells two different lengths of tips.
 
 {{< admonition type="note" >}}
  Older Pinecil V1 can not use the short tips until firmware code is written to enable manual selection of 6.2 Ω or 8.0 Ω tip. **Only the V2 model** has the hardware to auto-detect the two kinds of tips short 6.2 Ω or regular length 8.0 Ω. If you would like to help with the code, see [GitHub/IronOS](https://github.com/Ralim/IronOS).
-{{< /admonition >}}
+{{</ admonition >}}
 
 {{< figure src="/documentation/images/Pinecil-Short-Tip-SetGross-1.jpeg" caption="Short gross set, white box" >}}
 {{< figure src="/documentation/images/Pinecil-Short-Tip-SetFine-1.jpeg" caption="Short fine set, white box" >}}
@@ -96,7 +96,7 @@ Pay attention to the length! Pine Store sells two different lengths of tips.
 
 {{< admonition type="important" >}}
  **Pay attention to the length!** Pine Store sells two different lengths.
-{{< /admonition >}}
+{{</ admonition >}}
 
 * Normal Length [Gross Set here](https://pine64.com/product/pinecil-soldering-tip-set-gross/) (~8.0 Ω)
 * Normal Length [Fine Set here](https://pine64.com/product/pinecil-soldering-tip-set-fine/) (~8.0 Ω)
@@ -109,7 +109,7 @@ Pay attention to the length! Pine Store sells two different lengths of tips.
 
 {{< admonition type="important" >}}
  Currently, Pinecil V1 original uses the normal length ts100 style tips and not the newer Short tips designed for V2. Ralim is working on adding a feature to the firmware to allow people with the older V1 Pinecil to manually switch a profile setting which allows toggling between Normal Tip and Short tip profiles (adequate power supply must also be used min. PD65w 3.25A, 20V recommended). Check Github Ralim’s IronOS for progress information. Always unplug when swapping tips.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ### Other compatible tips
 

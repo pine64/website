@@ -18,13 +18,13 @@ This article explains how dismantle, test, and repair the [Pinecil](/documentati
 
 {{< admonition type="warning" >}}
  while opening your Pinecil will not necessarily void your warranty, all self-repairs are **done at your own risk**. Read everything in this section and related or linked articles to get a good idea of the procedure, and go to the Pinecil community chat if you desire advice/support from experienced volunteers. Self-repairs or modifications might void your warranty so proceed if this is not a concern. This information is for educational purposes only.
-{{< /admonition >}}
+{{</ admonition >}}
 
 Pinecil V1 and V2 have slightly different schematics and have different MCU chips. Doing repairs often requires referencing the correct schematics or photos. The datasheets are also important to get information about the chips, and to order replacement parts. The schematics and known datasheets are all at the bottom of this article and linked in the contents table at the top. Chatting with other owners of Pinecil is encouraged as they have experience - already broke things so you don’t have to (see Pinecil volunteer [chat link here](/community/#chat-platforms)).
 
 {{< admonition type="note" >}}
  This is a new work in progress (WIP) started Feb. 18, 2023 which may be updated over time as volunteers have time to write up information. For sections that are missing, try asking in the live chat as a volunteer may have some clues to get you headed in the right path.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## Tools needed
 
@@ -81,7 +81,7 @@ Pinecil V1 and V2 have slightly different schematics and have different MCU chip
 
 {{< admonition type="note" >}}
  For normal operation of the iron, omission of the copper ring in step #2 does not impact operation. If you are working with ESD components, you need it in order to ground the iron tip via the earth screw at the back of the iron. It is recommended to keep this installed.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## FAQ
 
@@ -146,7 +146,7 @@ Pinecil requires a center-positive DC power supply which most are, but some are 
 
 {{< admonition type="important" >}}
  **Check the polarity** of the DC barrel plug before plugging in a random charger. Incorrect polarity will break the Pinecil. The [video here](https://www.youtube.com/watch?v=5DBTNplNTfA) shows how to check.
-{{< /admonition >}}
+{{</ admonition >}}
 
 {{< figure src="/documentation/images/AC_adaptor_polarity.png" width="400" >}}
 
@@ -167,7 +167,7 @@ Reference the article on [[Pinecil_Power_Supplies#DC_Barrel_Power| DC barrel cha
 
 {{< admonition type="warning" >}}
  Do this at your own risk, read everything in this section and related/linked articles, and go to the Pinecil community chat if you desire advice. An incorrect cut of the trace could render the Pinecil non-working.
-{{< /admonition >}}
+{{</ admonition >}}
 
 {{< figure src="/documentation/images/Pinecil-V1andV2.png" caption="Pinecil V1 has blue rubber. Newer Pinecil V2 has green rubber & Bluetooth LE chip" >}}
 

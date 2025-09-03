@@ -14,7 +14,7 @@ aliases:
 
 {{< admonition type="note" >}}
 This page is incomplete, you're welcome to improve it.
-{{< /admonition >}}
+{{</ admonition >}}
 
 *Mainline Hardware Decoding* refers to video decoding done using hardware accelerators on the mainline Linux kernel (i.e. what sits in Linus' tree).
 

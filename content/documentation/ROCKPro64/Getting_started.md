@@ -31,7 +31,7 @@ Forum member Bullet64 has documented [how to move rootfs to an NVMe disk.](https
 
 {{< admonition type="warning" >}}
  RockPro64 is designed to use 3VDC3A (3 Volts Direct Current 3 Ampere) for the connection, using 5VDC and more might damage the board!
-{{< /admonition >}}
+{{</ admonition >}}
 
 To use Serial Console you will a need operating system that supports it on your RockPro64, by default the serial console is provided for baud 9 600 which is far too slow for rockpro64 so consider using 1 500 000 (1.5Mbps) instead **IF** your serial console device supports it (many doesn’t which results in their inability to use the console).
 
@@ -39,7 +39,7 @@ To use Serial Console you will a need operating system that supports it on your 
 Do not connect RxD (pin 10) until the U-Boot SPL is running (see [RK3399 boot sequence](/documentation/General/RK3399_boot_sequence)) or the SPL will not start.
 
 To avoid this issue, a simple [Serial Buffer Circuit](/documentation/ROCKPro64/Hardware/Serial_buffer_circuit) can be installed between the RockPro64 and the serial adapter.
-{{< /admonition >}}
+{{</ admonition >}}
 
 In terms of connections you need to perform the following from your serial console-capable device e.g. Pine64’s Woodpecker available in store:
 
@@ -59,7 +59,7 @@ $ minicom -D /dev/ttyUSB0 -b 1500000
 
 {{< admonition type="note" >}}
  You might need a root permission if your user is not in the appropriate user-group e.g. `dialup` on GNU/Linux
-{{< /admonition >}}
+{{</ admonition >}}
 
 Alternatively there is a detailed guide on forums: https://forum.pine64.org/showthread.php?tid=6387
 
@@ -80,7 +80,7 @@ Background info and historic details of this usage [can be found here.](https://
 
 {{< admonition type="warning" >}}
  idbloader is not open-source
-{{< /admonition >}}
+{{</ admonition >}}
 
 Always be prepared to recover from a broken SPI boot BEFORE flashing or you will end up with a broken boot.
 
@@ -127,7 +127,7 @@ Instructions for connecting the [LCD touch screen](https://pine64.com/?product=7
 
 {{< admonition type="warning" >}}
  When using the touchscreen ensure the cables are properly connected and tightened down and that you do not let the metal backplate touch the SBC
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## RTC Battery Backup
 

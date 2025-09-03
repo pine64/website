@@ -64,7 +64,7 @@ While enabled, the button in pin (P0.13) will be high when the button is pressed
 
 {{< admonition type="note" >}}
  the button consumes around 34µA when P0.15 is left high. To reduce current consumption, set it to low most of the time and only set it to high shortly before reading it. The button needs a short time to give good outputs though, setting P0.15 high at least four times in a row seems to result in enough delay that P0.13 has a stable output.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## Touch panel
 
@@ -89,11 +89,11 @@ Reset
 
 {{< admonition type="note" >}}
  The controller goes to sleep when no event is detected. In sleep mode, the controller does not communicate on the I²C bus (it appears disconnected). So, for the communication to work, you need to tap on the screen so that the chip wakes-up.
-{{< /admonition >}}
+{{</ admonition >}}
 
 {{< admonition type="note" >}}
  The I²C bus, also known as TWI bus has known issues, make sure to write your TWI driver with timeouts.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ### Touch events
 

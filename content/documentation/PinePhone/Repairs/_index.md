@@ -78,7 +78,7 @@ The mainboard can be replaced if it is faulty. The replacement board does not ha
 
 {{< admonition type="tip" >}}
 Replacement boards come with an empty eMMC, which means that trying to boot from them looks like the board is faulty (no LEDs, no screen, no reaction of the phone). Please boot an operating System from a microSD card.
-{{< /admonition >}}
+{{</ admonition >}}
 
 Prior to replacing your PinePhone’s mainboard please read the steps outlined in bullet points below and watch the attached video.
 
@@ -190,7 +190,7 @@ https://github.com/jnavarro7/pinephone_flex_breakout_board_grove
 
 {{< admonition type="warning" >}}
  These are fixes for hardware bugs for old revisions of the PinePhone (from 2019 and early 2020). They do not apply to current revisions.
-{{< /admonition >}}
+{{</ admonition >}}
 
 * PMIC mod - Stops the battery drain from a shutdown phone, draining the battery to 0V.
 * VCONN mod - Unblocks the USB-C power negotiation rail, so convergence functions are unlocked.
@@ -209,7 +209,7 @@ See below.
 
 {{< admonition type="warning" >}}
  These are fixes for hardware bugs for old revisions of the PinePhone (from 2019 and early 2020). They do not apply to current revisions.
-{{< /admonition >}}
+{{</ admonition >}}
 
 * VCONN mod - Unblocks the USB-C power negotiation rail, so convergence functions are unlocked.
 

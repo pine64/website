@@ -36,7 +36,7 @@ Command-line tools:
 
 {{< admonition type="note" >}}
  Make sure to replace **IMAGE.img** and **[DEVICE]** with the filename of the image (double check if it is decompressed and has the file extension _.img_) and the device name. You can use the command `lsblk` to find the device name. Make sure to flash to the whole device instead of partition 1 and that you’re NOT selecting _/dev/sda1_ or _/dev/mmcblk0p1_ as target. Be very careful to select the correct device, as the tools can overwrite your data when the wrong device is selected.
-{{< /admonition >}}
+{{</ admonition >}}
 
 Then insert the microSD card into the PineTab2. 
 
@@ -44,13 +44,13 @@ Then insert the microSD card into the PineTab2.
 {{< figure src="/documentation/PineTab2/images/PineTab2_USB_UARTv2.jpg" caption="The UART adapter" width="450" >}}
 
 Using the USB UART adapter can be required in some cases as explained in the info box about the boot order. The adapter is shipped with the PineTab2 in the box which is also containing the charging cable. The switch to disable the eMMC and SPI is located on the top right of the image.
-{{< /admonition >}}
+{{</ admonition >}}
 
 {{< admonition type="note" >}}
 **Note regarding the boot order:** The SPI and the internal memory (eMMC) have a higher boot priority than the microSD card. The pre-installed bootloader on the internal memory (eMMC) tries to boot from the microSD card first. **In some cases** it can be required to bypass the bootloader, for example if the bootloader is corrupted or was overwritten by a bootloader with varying settings.
 
 To force the device to boot from the microSD card, the eMMC and the SPI can be disabled by using the debug UART adapter shipped with the device in the box also containing the charging cable. Set the _SD BOOT MASKROM_ switch on the adapter to the position _ON_ and plug it into the USB/PD charging port. Then power on the tablet and **unplug the debug board or set the switch to the position _OFF_ again** when the factory image is started, otherwise the factory image won’t find the eMMC.
-{{< /admonition >}}
+{{</ admonition >}}
 
 Power on the device with the microSD card inserted (and optionally with the USB UART adapter inserted and the bypass switch set to _ON_ depending on the software situation, see the info box above). It should now boot the new operating system from the microSD card.
 

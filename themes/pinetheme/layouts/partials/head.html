@@ -16,6 +16,10 @@
     <!-- Slider -->
     {{- $style_slider := resources.Get "css/slider.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style_slider.RelPermalink }}">
+
+    <!-- Static paths for the CMS-->
+    {{- $cms_1 := (resources.Get "css/style.css" | minify).RelPermalink -}}
+    {{- $cms_2 := (resources.Get "css/documentation.css" | minify).RelPermalink -}}
     
     {{ $title := print .Title " - " .Site.Title -}}
     {{- if .IsHome -}}{{- $title = .Site.Title -}}{{- end -}}
@@ -25,7 +29,7 @@
         {{ if and (ge (len $ancestors) 3) (ne .File.BaseFileName "_full") }}
             {{ $thirdItem := index $ancestors 2}}
             {{ if $thirdItem }}
-                {{- $title = print $thirdItem.LinkTitle ": " .Title -}}
+                {{- $title = print $thirdItem.LinkTitle ": " .Title " - " .Site.Title -}}
             {{ end }}
         {{ end }}
     {{ end }}

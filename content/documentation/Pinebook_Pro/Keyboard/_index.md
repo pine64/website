@@ -15,7 +15,7 @@ The keyboard firmware binary can be flashed from userspace using the provided op
 
 {{< admonition type="warning" >}}
  DO NOT update the keyboard firmware before checking which keyboard IC your Pinebook Pro has. Some Pinebook Pro were delivered with a _SH61F83_ instead of a _SH68F83_. The SH61F83 can only be written 8 times, this will render the keyboard and touchpad unusable if this limit is reached when step 1 is flashed, see the [Reddit SH61F83 thread](https://reddit.com/r/PINE64official/comments/loq4db/very_disappointed/). The keyboard IC corresponds to _U23_ on the [top layer silkscreen of the main board](/documentation/Pinebook_Pro/Further_information/Schematics_and_certifications/). It is located under the keyboard flat flexible cable.
-{{< /admonition >}}
+{{</ admonition >}}
 
 Documentation for the keyboard can be found in [Datasheets for Components and Peripherals](/documentation/Pinebook_Pro/Further_information/Datasheets/) and details regarding the assembly can be found under [Keyboard assembly](/documentation/Pinebook_Pro/Keyboard/Assembly).
 
@@ -47,7 +47,7 @@ There are three privacy switches mapped to the F10, F11 and F12 keys on the Pine
 
 {{< admonition type="note" >}}
  Press the PINE64 logo key plus F10/F11/F12 for 3 seconds
-{{< /admonition >}}
+{{</ admonition >}}
 
 The keyboard operates on firmware independent of the operating system. It detects if one of the F10, F11 or F12 keys is pressed in combination with the Pine key for 3 seconds. Doing so disables power to the appropriate peripheral, thereby disabling it. This has the same effect as cutting off the power to each peripheral with a physical switch. This implementation is very secure, since the firmware that determines whether a peripheral gets power is not part of the Pinebook Pro’s operating system. So the power state value for each peripheral cannot be overridden or accessed from the operating system. The power state setting for each peripheral is stored across reboots inside the keyboard’s firmware flash memory.
 
@@ -85,7 +85,7 @@ _Step 4_: Unplug the ribbon cables.
 
 {{< admonition type="note" >}}
  you should remove the M.2 adapter board now if you have one installed. See elsewhere in the documentation for instructions on how to install/remove that piece.
-{{< /admonition >}}
+{{</ admonition >}}
 
 There are several ribbon cables. To remove, flip up the tab and gentle pull the ribbon out.
 
@@ -151,7 +151,7 @@ _Step 14_: Reattach other ribbon cables.
 
 {{< admonition type="note" >}}
  this would be a good time to attach/install the M.2 adapter board if that is desired. See elsewhere in the documentation for those instructions.
-{{< /admonition >}}
+{{</ admonition >}}
 
 The LCD panel, keyboard and touchpad ribbon cables should be reattached. Make sure the flap is open, insert the ribbon into the slot (a portion of the cable will disappear), and push the flap down. The cable should not be easy to pull out.
 

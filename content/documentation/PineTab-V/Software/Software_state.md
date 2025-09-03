@@ -15,4 +15,4 @@ The second batch released in 2025 includes a Debian "Bookworm/Sid" operating sys
 
 {{< admonition type="warning" >}}
  Do not buy the device unless you intend to use it for operating system development purposes.
-{{< /admonition >}}
+{{</ admonition >}}

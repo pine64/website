@@ -17,7 +17,7 @@ This page contains a list of all available software releases and other resources
 
 {{< admonition type="note" >}}
  The images for the PINE A64 and PINE A64+ are *not compatible with the PINE A64-LTS* due to LPDDR3 memory configuration. For PINE A64-LTS releases, please see the [Software](/documentation/SOPINE/Software).
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## Linux
 
@@ -159,7 +159,7 @@ Notes:
 
 {{< admonition type="warning" >}}
  Outdated release
-{{< /admonition >}}
+{{</ admonition >}}
 
 Download:
 

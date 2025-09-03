@@ -31,7 +31,7 @@ You do not lose access to the PinePhone (Pro)’s USB-C port, speaker, microphon
 
 {{< admonition type="warning" >}}
  Do not plug in a charger into the keyboard and the phone at the same time. Using the USB-C port of the PinePhone (Pro) while a charger to is connected to the USB-C port of the keyboard is also discouraged for the same reason. Technical details regarding the issue can be found in the blog post of the developer _megi_ [here](https://xnux.eu/log/072.html), in [this](https://www.pine64.org/2022/05/31/may-update-worth-the-wait/) blog post and the safety section.
-{{< /admonition >}}
+{{</ admonition >}}
 
 Please keep in mind that the keyboard case transforms the PinePhone (Pro) into a PDA, which means that taking calls will likely prove awkward without a wired or wireless headset connected (try speakerphone button if available).
 

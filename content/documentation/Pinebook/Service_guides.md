@@ -13,7 +13,7 @@ These are instruction guides for the disassembly:
 
 {{< admonition type="note" >}}
  The installation process is the reverse order of removal guide
-{{< /admonition >}}
+{{</ admonition >}}
 
 11.6″ Pinebook:
 

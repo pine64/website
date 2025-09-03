@@ -24,7 +24,7 @@ The following table lists the feature functionality status of the unaltered pre-
 
 {{< admonition type="note" >}}
 The software is *written by the community*, any contributions towards the community projects are greatly appreciated! Please see "[How to Contribute](/documentation/Introduction/How_to_contribute)" to learn about how to contribute to the software projects and "[Where to Report Bugs](/documentation/Introduction/Where_to_report_bugs)" to learn about where to report bugs.
-{{< /admonition >}}
+{{</ admonition >}}
 
 
 Bootloader:

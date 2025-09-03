@@ -18,11 +18,11 @@ This page contains a list of all available operating systems for the [Quartz64](
 
 {{< admonition type="warning" >}}
  You are strongly encouraged to procure a 3.3V UART serial adapter capable of running at 1.5 mbauds, such as [the Woodpecker](https://pine64.com/product/serial-console-woodpecker-edition/) if you want to use a Quartz64, as some images' U-Boot may have no video output on this chip.
-{{< /admonition >}}
+{{</ admonition >}}
 
 {{< admonition type="important" >}}
  **Note:** The images are provided by the community, not by PINE64. Most community projects currently aim at getting mainline Linux running on the board, not some vendor provided kernel that will never be receiving updates. A mainline-first approach allows for the boards to continue receiving important updates, such as security updates, for years to come, as well as have higher quality code in the kernel as it underwent independent review, but does mean that not all aspects of the hardware work right out of the gate.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ### Armbian
 
@@ -38,7 +38,7 @@ Download:
 
 {{< admonition type="note" >}}
  This image appears to have issues detecting more than 2GB of RAM. It is strongly recommended to use a different distribution.
-{{< /admonition >}}
+{{</ admonition >}}
 
 * [latest, as fresh as possible, upon code change, images](https://github.com/armbian/build/releases/)
 

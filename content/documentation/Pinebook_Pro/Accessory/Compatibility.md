@@ -27,7 +27,7 @@ To test an M.2 SSD properly in a Pinebook Pro, it needs to be put under heavy I/
 To sum it up, an M.2 SSD that qualifies to work reliably in the Pinebook Pro must both consume low amounts of power, 2.5&nbsp;W or less, and be tolerant of the noisy 3.3&nbsp;V power supply. The PINE64 community usually recommends [Intel 660p](https://www.intel.com/content/dam/www/public/us/en/documents/product-briefs/660p-series-brief.pdf) M.2 SSDs, 512&nbsp;GB or 1&nbsp;TB variants, which reportedly work well and satisfy both criteria. The 2&nbsp;TB variant of the Intel 660p may be slightly more power hungry.
 
 Additionally, it’s recommended to use an M.2 SSD that supports four PCI Express lanes, which the aforementioned Intel 660p models support. The PCI Express interface of the RK3399 [is limited](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=712fa1777207) to the Gen1 speed, which may cause degraded performance of M.2 SSDs that support fewer than four PCI Express lanes.
-{{< /admonition >}}
+{{</ admonition >}}
 
 Only PCI Express M.2 drives can work, due to the available connectivity of the Pinebook Pro. Consequently, SATA or USB M.2 cards will not work.
 

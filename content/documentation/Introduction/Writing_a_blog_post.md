@@ -20,7 +20,7 @@ Once the repository is cloned, you can open up the template folder at `/content/
 
 {{< admonition type="important" >}}
  **Heads up**, try to keep the naming of blog post files consistent. Put the month and year and a brief description of the contents. For example:  `august_2025_pt2_factory_image.md` and `december_2020_pinephone_release.md`. 
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## Blog post details
 
@@ -35,7 +35,7 @@ Once the template is copied, you can start editing the blog post details. Below 
 
 {{< admonition type="important" >}}
 **A useful tip**, if you find yourself stuck with what what to put in the details at the top of the file, there is a completed example in the templates folder.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## Cover image details
 

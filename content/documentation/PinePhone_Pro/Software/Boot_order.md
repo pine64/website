@@ -28,7 +28,7 @@ The RE button disables the SPI and the eMMC at the hardware level while the butt
 
 {{< admonition type="note" >}}
  The bootloader uses its own boot order for loading the kernel and other core operating system components at boot, which for example may result in the boot loader residing on the eMMC loading and booting the kernel from a microSD card.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## Boot from microSD card permanently
 

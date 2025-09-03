@@ -56,7 +56,7 @@ If not errors were reported, then the 1056 MHz u-boot/ram-blob was installed
 Please reboot
 root@pinenote:~/uboot# init 0
 ```
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## What's inside the PineNote package
 

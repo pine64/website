@@ -26,7 +26,7 @@ PINE64 has a large and very active community. Community discussion takes place o
 
 Please read [PINE64 Community Rules and Code of Conduct](/community/Rules/).
 
-{{< /admonition >}}
+{{</ admonition >}}
 
 The community chat platforms are the following:
 
@@ -71,7 +71,7 @@ PINE64 community is not some always responding, restless commercial customer ser
 * The bot name is "Pine64 Protocol Droid" and if you see this, look in the message to see the actual author of the message.
 * When the bot relays messages it will show the platform the user is using: _[D]_ for _Discord_, _[I]_ for _IRC_, _[M]_ for _Matrix_ and _[T]_ for _Telegram_.
 
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## Vision
 

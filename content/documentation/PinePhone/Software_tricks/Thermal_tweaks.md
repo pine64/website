@@ -17,7 +17,7 @@ This page explains how to read the thermal sensor data, and how to read and chan
 
 {{< admonition type="warning" >}}
  Setting wrong values for the thermal trip points poses a risk. These instructions are directed towards expert-level users and developers.
-{{< /admonition >}}
+{{</ admonition >}}
 
 Thermal management of the PinePhone CPU is handled by the thermal framework of the Linux kernel. Depending on the Linux distribution used on a PinePhone, the default settings may differ. It may be advised to lower the settings (i.e. the thermal trip point temperatures) to prevent the phone components from being damaged by excessive heat.
 

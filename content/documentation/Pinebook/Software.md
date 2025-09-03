@@ -164,7 +164,7 @@ OpenBSD 6.6-snapshot, Community Build Image (FVWM2 WM). To learn more about Open
 
 {{< admonition type="warning" >}}
  Outdated release
-{{< /admonition >}}
+{{</ admonition >}}
 
 Download:
 
@@ -186,7 +186,7 @@ Android 7.1 Community Build Image [microSD Boot] by ayufan. It only works on the
 
 {{< admonition type="warning" >}}
  Outdated release
-{{< /admonition >}}
+{{</ admonition >}}
 
 Download:
 
@@ -209,7 +209,7 @@ Rootable build, online update (OTA) only works when the build is not rooted. The
 
 {{< admonition type="warning" >}}
  Outdated release
-{{< /admonition >}}
+{{</ admonition >}}
 
 Download:
 
@@ -230,7 +230,7 @@ Rootable build. The LCD resolution is 1920 x 1080.
 
 {{< admonition type="warning" >}}
  Outdated release
-{{< /admonition >}}
+{{</ admonition >}}
 
 Download:
 
@@ -251,7 +251,7 @@ Rootable build. The LCD resolution is 1920 x 1080. Please use an high performanc
 
 {{< admonition type="warning" >}}
  Outdated release
-{{< /admonition >}}
+{{</ admonition >}}
 
 Download:
 
@@ -277,7 +277,7 @@ Notes:
 
 {{< admonition type="warning" >}}
  Outdated release
-{{< /admonition >}}
+{{</ admonition >}}
 
 Download:
 

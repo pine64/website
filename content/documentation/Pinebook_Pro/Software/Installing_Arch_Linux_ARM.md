@@ -23,7 +23,7 @@ The target device is assumed to be **/dev/sdb**, adjust accordingly.
 
 {{< admonition type="important" >}}
  While any build of U-Boot for the Pinebook Pro can be used, this tutorial uses [Tow-Boot](https://tow-boot.org). The process of installing Tow-Boot is different from any other U-Boot build, so large parts of the partitioning section will need to be changed if you want to use something else. If you already have Tow-Boot installed via SPI, you can skip this step. Use fdisk to create a blank GPT partition table. **/boot** will be partition 1, and **/** will be partition 2.
-{{< /admonition >}}
+{{</ admonition >}}
 
 Download and extract the latest release of Tow-Boot for the Pinebook Pro from https://github.com/Tow-Boot/Tow-Boot/releases.
 

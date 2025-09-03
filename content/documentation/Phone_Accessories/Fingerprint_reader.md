@@ -17,7 +17,7 @@ Uses the pogo pins to interface a high quality fingerprint sensor, which uses op
 
 {{< admonition type="important" >}}
 No PinePhone operating system has added support for the fingerprint reader yet.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## Credits
 

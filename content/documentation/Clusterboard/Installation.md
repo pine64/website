@@ -15,11 +15,11 @@ Each module may be plugged into the Clusterboard individually or consecutively, 
 
 {{< admonition type="tip" >}}
 The board has no hotplug functionality, so make sure you only plug/unplug the modules while the power is disconnected from the Clusterboard.
-{{< /admonition >}}
+{{</ admonition >}}
 
 {{< admonition type="tip" >}}
 No management features are available on the switch ship, so there is no VLAN support.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## Serial console
 
@@ -33,4 +33,4 @@ The pinouts are available in [this forum thread](https://forum.pine64.org/showth
 
 {{< admonition type="tip" >}}
 Do not connect the GND connector until the power is on as it can provide power and prevent the board from booting.
-{{< /admonition >}}
+{{</ admonition >}}

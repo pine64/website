@@ -81,7 +81,7 @@ Put the Raspberry Pi Pico board into programming mode:
 
 {{< admonition type="note" >}}
 As an alternative to pressing the BootSel button, you can also connect the probe point `TP6` (located on the bottom of the Pico board) to any ground point (e. g. pin 28).
-{{< /admonition >}}
+{{</ admonition >}}
 
 The Pico will now appear as a USB mass storage device. Copy the `UF2` file to program it:
 
@@ -121,11 +121,11 @@ The Bluepill is an affordable STM32 development board, based on the STM32F103C8T
 The one catch is that you already need a serial adapter in order to program your Bluepill board. The good news is that you serial adapter does ***not*** have to be one from from the [Compatible UARTs](/documentation/Ox64/Further_information/Compatible_UARTs/) list. These programming instructions have been tested with a FT232RL adapter (which, notably, is listed as _not_ supported on that list).
 
 If you own an SWD-capable debugger (ST-Link, J-link, etc.) you can use that for programming the Bluepill as well, although instead of `stm32flash` console command you would be using [openocd](https://openocd.org/) or other suitable software.
-{{< /admonition >}}
+{{</ admonition >}}
 
 {{< admonition type="warning" >}}
  Your serial adapter must use 3.3V logic levels.
-{{< /admonition >}}
+{{</ admonition >}}
 
 Install software to flash Bluepill. For Debian-based systems just install package from repository:
 
@@ -203,7 +203,7 @@ You will also need a way of powering your Ox64. If your serial adapter has a 5V 
 
 {{< admonition type="warning" >}}
  Your serial adapter must use 3.3V logic levels.
-{{< /admonition >}}
+{{</ admonition >}}
 
 Refer to the pinout image below. Connect your UART adapter as follows:
 
@@ -270,7 +270,7 @@ $ # bflb-iot-tool --help # return info about the tool
 
 {{< admonition type="note" >}}
  Each time you open a new terminal window you will need to `cd ~/ox64/` and re-run `pipenv shell` to reactivate the virtual environment.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ### Installation: Blisp
 
@@ -294,7 +294,7 @@ $ export PATH=$HOME/ox64/blisp/build/tools/blisp:$PATH
 ```
 {{< admonition type="note" >}}
  Each time you open a new terminal window you will need to re-run the `export PATH=...` command above to ensure that the `blisp` executable remains in your `PATH`.
-{{< /admonition >}}
+{{</ admonition >}}
 
 Full instructions are available in Blisp's [README](https://github.com/pine64/blisp).
 

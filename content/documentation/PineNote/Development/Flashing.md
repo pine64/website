@@ -15,7 +15,7 @@ aliases:
 
 {{< admonition type="note" >}}
 These instructions are directed towards experienced developers only!
-{{< /admonition >}}
+{{</ admonition >}}
 
 This page contains information on flashing software to the PineNote.
 
@@ -174,7 +174,7 @@ The stock **Developer Edition** has a fairly standard [Android partition setup](
 
 {{< admonition type="note" >}}
 This applies only to Developer Edition. Community Edition devices are shipped with fixed U-Boot. Do not flash the `uboot_patched.img` if the output of `rkdeveloptool list-partitions` doesn't match Developer Edition above.
-{{< /admonition >}}
+{{</ admonition >}}
 
 Before we can back up our partitions, we have a problem to solve. The version of U-Boot installed on the stock PineNote contains a bug where it can’t dump partitions beyond 32 MB (above that limit all bytes in the dump are just `0xCC`), meaning the PineNote must be flashed with a fixed version of U-Boot before it is possible to take a backup of the larger partitions. It is possible to extract and modify the U-Boot image from your PineNote if you’re interested in some light reverse-engineering (following Dorian’s notes), or you can simply download a patched U-Boot image directly [here](https://github.com/DorianRudolph/pinenotes/blob/main/static/uboot_patched.img).
 
@@ -237,7 +237,7 @@ You also need to install Python and pyelftools.
 
 {{< admonition type="note" >}}
  The rkbin is a >5GB download! This will take some time to clone and process the deltas.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ```
 git clone -b quartz64 https://gitlab.com/pgwipeout/u-boot-rockchip.git
@@ -297,7 +297,7 @@ We can now verify that this worked using e.g. the "read flash info" command:
 
 {{< admonition type="note" >}}
  Section needs to be finished
-{{< /admonition >}}
+{{</ admonition >}}
 
 ### Creating a mainline boot image
 

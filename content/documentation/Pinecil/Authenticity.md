@@ -20,4 +20,4 @@ To be more sure, update to the newest stable Ralim’s IronOS and check again, s
 
 {{< admonition type="important" >}}
 The Authenticity Checker can be found [here](https://pinecil.pine64.org/).
-{{< /admonition >}}
+{{</ admonition >}}

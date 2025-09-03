@@ -27,7 +27,7 @@ InfiniTime (also known as JF’s project, FreeRTOS firmware or Pinetime-JF) is a
 
 {{< admonition type="warning" >}}
  Please read this section carefully before upgrading the firmware on your PineTime, especially if you are using a sealed device!
-{{< /admonition >}}
+{{</ admonition >}}
 
 ### Black screen after a reset in sleep mode
 

@@ -41,7 +41,7 @@ Next, you will be prompted to enter a passphrase. It is recommended that you use
 
 {{< admonition type="note" >}}
  Do not share your private key with anyone, nor change its file permissions
-{{< /admonition >}}
+{{</ admonition >}}
 
 Now, you must start SSHD on your distribution of choice, as this process varies depending on init system, please consult the documentation of your distribution.
 

@@ -13,7 +13,7 @@ aliases:
 
 {{< admonition type="warning" >}}
  This page is a work in progress, use at your own risk
-{{< /admonition >}}
+{{</ admonition >}}
 
 Commands to be run as a normal user are prefixed with `$`, commands to be run as root are prefixed with `#`. We assume your target device is ***/dev/sdX***, adjust accordingly.
 
@@ -133,7 +133,7 @@ $ gpg --verify ArchLinuxARM-aarch64-latest.tar.gz.sig
 
 {{< admonition type="important" >}}
  Do not skip verifying the authenticity. This is important. It also protects you from prematurely aborted transfers giving you a corrupt archive.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## Installing The Root File System
 

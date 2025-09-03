@@ -13,7 +13,7 @@ aliases:
 
 {{< admonition type="warning" >}}
 This page is only relevant for the first batch of PineNotes (December 2021)! The second batch of PineNotes (October 2024) come with Linux pre-installed!
-{{< /admonition >}}
+{{</ admonition >}}
 
 To boot Linux, the stock U-Boot has to be patched.
 
@@ -39,7 +39,7 @@ Here the method from [charasyn](https://gist.github.com/charasyn/206b2537534b667
 
 {{< admonition type="note" >}}
  Note: Might fail with the following error: "_patch: \****** unexpected end of file in patch at line 27_". In that case applying the patch manually is the solution.
-{{< /admonition >}}
+{{</ admonition >}}
 
 * Rewrite the new environment to the image: `./pinenote-uboot-envtool.py insert uboot.img uboot.env uboot-patched.img`
 * Write the image to the boot partition from the PineNote: `dd if=~/uboot-patched.img of=/dev/mmcblk0p1`

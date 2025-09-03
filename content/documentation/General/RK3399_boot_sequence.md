@@ -116,7 +116,7 @@ For mainline-based U-Boots, these stages usually come in 2 images:
 
 {{< admonition type="important" >}}
 This section applies to BSP U-Boot. Mainline-based U-Boots pack TF-A into **u-boot.itb**.
-{{< /admonition >}}
+{{</ admonition >}}
 
 There are 3 sections for the boot loader. They are in order, without gap, though their is no need to use all the space in each section.
 

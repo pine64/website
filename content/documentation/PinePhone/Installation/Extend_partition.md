@@ -14,7 +14,7 @@ Once you’ve flashed the OS to your microSD card or eMMC storage, you may also 
 
 {{< admonition type="note" >}}
  Many operating systems already include a script, which is resizing the partition on first boot, where this step is not required.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## Resize SD card's partition using computer
 

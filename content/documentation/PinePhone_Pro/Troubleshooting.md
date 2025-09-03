@@ -22,7 +22,7 @@ If the battery is drained then the board can reset during boot causing a boot lo
 
 {{< admonition type="note" >}}
  Confirm that the label of the button says _RE_ and not _RESET_! If the button label says _RESET_ instead you probably have a regular PinePhone and you’re reading the wrong page.
-{{< /admonition >}}
+{{</ admonition >}}
 
 * Connect the phone to an USB port of a computer, while still holding the button for some time
 * Confirm if the phone was booted in Maskrom mode:
@@ -33,7 +33,7 @@ If the battery is drained then the board can reset during boot causing a boot lo
 
 {{< admonition type="note" >}}
  If the device doesn’t appear under _lsusb_ please try again with a different known good USB-C cable and make sure that there is no microSD card in the phone inserted.
-{{< /admonition >}}
+{{</ admonition >}}
 
 The device should now be able to boot from the boot medium again. If that is not the case the installation got corrupted, as explained below.
 

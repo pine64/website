@@ -21,7 +21,7 @@ The images can be installed to an microSD card and be booted from it.
 
 {{< admonition type="note" >}}
  Compared to installations to the eMMC, running operating systems from the microSD card is slower than to the eMMC due to the microSD card’s slower reading and writing speeds.
-{{< /admonition >}}
+{{</ admonition >}}
 
 To install an image to the microSD card:
 
@@ -44,7 +44,7 @@ Installing an operating system to the eMMC (the internal memory of the PinePhone
 
 {{< admonition type="warning" >}}
  Many images don’t include a bootloader. If the SPI only contains _rk2aw_ (like phones ordered after November 2023) or is empty (like phones ordered between January and July 2022), the installation on the eMMC won’t boot. In these cases, it is required to install a bootloader (such as [Tow-Boot](/documentation/PinePhone_Pro/Software/Bootloaders/#tow-boot)) in order to get the phone to boot.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ### By booting a microSD card
 

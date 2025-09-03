@@ -44,7 +44,7 @@ Naturally, forks have begun to appear:
 
 {{< admonition type="warning" >}}
  DO NOT update the touchpad firmware before checking which keyboard IC your Pinebook Pro has. Some Pinebook Pro were delivered with a _SH61F83_ instead of a _SH68F83_. The SH61F83 can only be written 8 times, this will render the keyboard and touchpad unusable if this limit is reached when step 1 (see below) is flashed. See [Reddit SH61F83 thread](https://reddit.com/r/PINE64official/comments/loq4db/very_disappointed/). The keyboard IC corresponds to _U23_ on the [top layer silkscreen of the main board](/documentation/Pinebook_Pro/Further_information/Schematics_and_certifications/). It is located under the keyboard flat flexible cable. All the PBPs from the post-pandemic batches have _SH61F83_ but TL Lim claimed they can be flashed just the same. No updated datasheet or a statement from the MCU vendor was provided though, so proceed at your own risk. Experience shows flashing those works for at least one time.
-{{< /admonition >}}
+{{</ admonition >}}
 
 Before updating _any_ firmware, your Pinebook Pro should be either fully charged or, preferably, running from mains. This utility will be writing data to chips on the keyboard and touchpad, so a loss of power during any stage of the update can result in irrecoverable damage to your touchpad or keyboard.
 
@@ -104,7 +104,7 @@ sudo poweroff # do not use 'reboot'
 
 {{< admonition type="note" >}}
  Running step 1 on the ANSI keyboard model will make the keyboard and touchpad inaccessible until step 2 is run, so an external keyboard must be connected to complete the update on this model!
-{{< /admonition >}}
+{{</ admonition >}}
 
 From the terminal command line:
 
@@ -166,7 +166,7 @@ sudo ./updater flash-kb firmware/default_ansi.hex
 
 {{< admonition type="note" >}}
  Before making adjustments, consider updating the firmware. Reset your adjustments before updating the firmware, so that your adjustments do not interfere with new functionality.
-{{< /admonition >}}
+{{</ admonition >}}
 
 When using X.Org display server the touchpad can be handled either by _libinput_ or _synaptic_ input drivers. The former allows to have shared configuration for both X.Org and Wayland but the latter provides more tunables (e.g. configurable edge scrolling, circular scrolling, mapping of multi-touch events to mouse buttons etc.).
 

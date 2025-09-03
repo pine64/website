@@ -88,7 +88,7 @@ Some pre-made operating systems using megi’s kernel limit the maximum amount o
 
 {{< admonition type="warning" >}}
  The following instructions are directed towards expert-level users and developers!
-{{< /admonition >}}
+{{</ admonition >}}
 
 `echo 4350000 > /sys/class/power_supply/axp20x-battery/voltage_max_design`
 

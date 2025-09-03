@@ -30,7 +30,7 @@ DevNo=1 Vid=0x2207,Pid=0x350b,LocationID=204    Loader
 
 {{< admonition type="important" >}}
  **Note:** If you receive an error about being unable to create the comms object in the following steps, make sure you have the udev rules installed with [CounterPillow’s RK3588 device id patch](https://gitlab.com/pine64-org/quartz-bsp/rkdeveloptool/-/merge_requests/19), install them to `/etc/udev/rules.d/` and `udevadm control --reload`
-{{< /admonition >}}
+{{</ admonition >}}
 
 Now, we can e.g. show the partitions on the eMMC:
 
@@ -155,7 +155,7 @@ Unmount ***/mnt/emmc-root***, we’re done with it.
 
 {{< admonition type="warning" >}}
  This **will** destroy whatever data is on that userdata partition. But you’re here to run Linux, not Android, right?
-{{< /admonition >}}
+{{</ admonition >}}
 
 Plug one USB-C cable into the debug UART port, the other into the download port. Yes you will need two USB-C cables (or A-to-C cables) for this, get over it.
 

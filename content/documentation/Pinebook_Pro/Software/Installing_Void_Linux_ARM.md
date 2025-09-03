@@ -14,7 +14,7 @@ aliases:
 
 {{< admonition type="warning" >}}
  This guide is a Work In Progress; no warranty is implied. This installation method is not officially recommended (or discouraged) by the Void Linux project. This guide is for experienced Linux users.
-{{< /admonition >}}
+{{</ admonition >}}
 
 This will not be a complete guide, as it borrows heavily on [Installing Arch Linux ARM](/documentation/Pinebook_Pro/Software/Installing_Arch_Linux_ARM), so read it first then come back here.
 
@@ -51,7 +51,7 @@ The Void Linux rootfs tarball does not contain a kernel, however  the **pinebook
 
 {{< admonition type="warning" >}}
  If you choose the manually built kernel route, you’ll have to keep it updated yourself, the same way: manually (cross-)building and installing.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ##### Manually cross-compiling a mainline kernel suitable for the Pinebook Pro
 
@@ -95,7 +95,7 @@ ln -sf /etc/sv/agetty-ttyS2 /mnt/etc/runit/runsvdir/default
 
 {{< admonition type="note" >}}
 If using the official PBP kernel package, it is also recommended to use the **u-boot-menu** package, which automatically regenerates the extlinux.conf file on kernel upgrades. In that case, you will not need to follow the below instructions.
-{{< /admonition >}}
+{{</ admonition >}}
 
 The following borrows from [postmarketOS u-boot configuration for the kernel command-line parameters](https://gitlab.com/postmarketOS/pmaports/-/blob/master/device/community/device-pine64-pinebookpro/extlinux.conf).
 

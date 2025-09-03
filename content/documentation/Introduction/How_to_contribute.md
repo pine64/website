@@ -33,7 +33,7 @@ Many community projects and developers are working on the software on their free
 
 {{< admonition type="tip" >}}
 The following list is not a comprehensive list and solely a selection of different community projects and developers, which can be supported. Any FOSS development effort is valuable and should be rewarded, please support your favorite developer(s) or project(s) even if not mentioned on the list Your name or project not on the list?
-{{< /admonition >}}
+{{</ admonition >}}
 
 ### Community projects
 

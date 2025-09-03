@@ -15,7 +15,7 @@ If there is no battery plugged into the board, the jumper labelled "ON/OFF_BATT"
 
 {{< admonition type="note" >}}
  This affects only Model A
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## No Ethernet Connectivity
 

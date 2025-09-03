@@ -26,7 +26,7 @@ The PineTab2 can be started by pressing and holding the power button for two sec
 
 {{< admonition type="info" >}}
 If the initialization process is interrupted it might lead to a corrupted operating system installation. In that case reinstall the operating system as explained below.
-{{< /admonition >}}
+{{</ admonition >}}
 
 The PineTab2 ships with _DanctNix Arch Linux_ and comes with a pre-set user and the default password `123456`. 
 

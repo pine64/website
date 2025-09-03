@@ -21,7 +21,7 @@ Choose the alternative international US keyboard layout and variant. The name wi
 
 {{< admonition type="note" >}}
  keyboard variants with similar names as the ones above change the upper left key for ` and ~. You have to press that key twice to get the desired char. This happens with the alt-intl variant. Choose the altgr-intl variant (or however it is called in your desktop environment) and it should work as expected.
-{{< /admonition >}}
+{{</ admonition >}}
 
 To set the keyboard layout and variant in the terminal for X-Windows use:
 
@@ -155,7 +155,7 @@ $ cd /sys/class/power_supply/axp20x-battery
 
 {{< admonition type="note" >}}
  The voltage_max_design is writable by root, values are in microvolts. The factory value is 4200000 or 4.2V on my device. This charges to 100% capacity.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ```console
 $ cat voltage_max_design 

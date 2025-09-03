@@ -25,7 +25,7 @@ The internal memory of the PinePhone (eMMC) can be flashed using multiple differ
 
 {{< admonition type="note" >}}
  This only applies to the regular **PinePhone**, not the **PinePhone Pro**.
-{{< /admonition >}}
+{{</ admonition >}}
 
 {{< figure src="/documentation/images/jumpdrive.jpg" caption="Jumpdrive running on the PinePhone" width="400" >}}
 

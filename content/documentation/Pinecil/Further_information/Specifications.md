@@ -60,4 +60,4 @@ menu:
 
 {{< admonition type="note" >}}
 If the screw is too long (for example with a length of 5mm) a metal file can be used lightly to shorten it a small amount. Stainless steel is recommended as the softer aluminum screws could mushroom as you tighten down the tip screw too much or over time.
-{{< /admonition >}}
+{{</ admonition >}}

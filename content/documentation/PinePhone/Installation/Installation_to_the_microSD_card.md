@@ -36,7 +36,7 @@ Select the downloaded image and make sure that you downloaded the correct one. I
 
 {{< admonition type="note" >}}
  At this the image file does not have to be extracted from the archive format. Balena Etcher handles the extracting automatically.
-{{< /admonition >}}
+{{</ admonition >}}
 
 Then click on _Select target_:
 
@@ -44,7 +44,7 @@ Then click on _Select target_:
 
 {{< admonition type="note" >}}
  Make sure to select the correct target by comparing the name and the disk capacity with the label on the microSD card.
-{{< /admonition >}}
+{{</ admonition >}}
 
 Then click on _Flash!_:
 
@@ -62,7 +62,7 @@ Make sure to select the correct device using `lsblk`. Then run _dd_ with the sel
 
 {{< admonition type="note" >}}
  The image needs to be written to the whole device, not to partition 1. Make sure you’re NOT selecting _/dev/sda1_ or _/dev/mmcblk0p1_ as target.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## Using bmaptool
 

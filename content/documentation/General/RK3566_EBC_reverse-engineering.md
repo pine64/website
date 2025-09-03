@@ -199,7 +199,7 @@ See https://gitlab.com/smaeul/ebc-dev/-/blob/main/auto_image.h#L200, which is ba
 
 {{< admonition type="note" >}}
  all known waveform data files are the "PVI" variant, not the "RKF" variant.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ```C
 struct rkf_waveform {

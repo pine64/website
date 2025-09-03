@@ -17,7 +17,7 @@ The following page provides a comprehensive and alphabetically organized list of
 
 {{< admonition type="note" >}}
  Some releases may not have a good setup for the backlight at low brightness. If configured too low, the backlight shuts down completely, but the screen is still displayed and usable in bright front-light.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## Software Releases
 
@@ -100,7 +100,7 @@ The documentation can be found here:
 
 {{< admonition type="note" >}}
  Please consider cross-compiling the software on the computer. Long compilation times and heat production can lead to a reduced lifespan of the phone.
-{{< /admonition >}}
+{{</ admonition >}}
 
 
 
@@ -235,7 +235,7 @@ The current version of the base Debian system is Debian Bookworm. Only the GUI a
 
 {{< admonition type="note" >}}
  Tow-Boot is required to be able to boot the images, see [here](https://wiki.mobian-project.org/doku.php?id&#61;install-linux)!
-{{< /admonition >}}
+{{</ admonition >}}
 
 | Default credentials | |
 | -------- | ------- |
@@ -267,7 +267,7 @@ This is a split zip file. To extract it, the following command can be used:
 
 {{< admonition type="note" >}}
 Tow-Boot is required to be able to boot, same as for Mobian
-{{< /admonition >}}
+{{</ admonition >}}
 
 | Default credentials | |
 | -------- | ------- |
@@ -292,7 +292,7 @@ If you want to just mirror the code and provide additional pre-built images on a
 
 {{< admonition type="warning" >}}
 This is a demo image for testing different operating systems before installing a regular image. Attempting to use this image productively is highly discouraged. The kernel is shared across the different operating systems and is not updated.
-{{< /admonition >}}
+{{</ admonition >}}
 
 This image allow users to try many Linux distributions easily, without having to figure out how to flash them individually and juggle with many microSD cards. Also called megi's 15-in-1 multi boot image.
 
@@ -333,7 +333,7 @@ On Linux, you may install or compile `zstd`, then write the image to SD card by 
 On Windows, instead of the offical [zstd](https://github.com/facebook/zstd) command line program, you may use [7-zip-zstd](https://github.com/mcmilk/7-Zip-zstd). Different installation method is provided in their README. Install 7-Zip-zstd / zstd, extract the disk image file (`.img`) from the zstd archive, and flash with tools like [Win32 Disk Imager](https://sourceforge.net/projects/win32diskimager/).
 
 Also see [Installation instructions](/documentation/PinePhone/Installation_instructions).
-{{< /admonition >}}
+{{</ admonition >}}
 
 
 
@@ -396,7 +396,7 @@ See [here](https://www.openmandriva.org/en/news/article/openmandriva-lx-4-3-rc-a
 
 {{< admonition type="note" >}}
  This image is solely for testing purposes.
-{{< /admonition >}}
+{{</ admonition >}}
 
 
 
@@ -507,7 +507,7 @@ The script downloads the image and bootloader from the CI, extracts everything a
 
 {{< admonition type="note" >}}
  The script will format and erase the SD card!
-{{< /admonition >}}
+{{</ admonition >}}
 
 Instructions:
 
@@ -611,7 +611,7 @@ A Mobile Version of the Ubuntu Operating System made and maintained by the UBpor
 
 {{< admonition type="note" >}}
  Tow-Boot is required for installing the latest version of Ubuntu Touch (20.04) on the PinePhone. Instructions for installing Tow-Boot to the PinePhone can be found [here](https://tow-boot.org/devices/pine64-pinephoneA64.html). 
-{{< /admonition >}}
+{{</ admonition >}}
 
 Installation instructions can be found at [this UBports post](https://ubports.com/en/blog/ubports-news-1/post/pinephone-and-pinephone-pro-3889). After Tow-Boot has been installed to your device, Ubuntu Touch installation just requires flashing the _.img.xz_ to an SD or the eMMC.
 
@@ -651,19 +651,19 @@ Make sure to download the image with `pinephoneA64` in the name.
 
 {{< admonition type="note" >}}
  The USB Mass Storage mode might not be recognized by your computer for some cable + PC USB port + PC OS combos, see [this reddit thread](https://www.reddit.com/r/PINE64official/comments/unjguw/towboot_doesnt_actually_do_mass_storage_mode/) and [this GitHub issue](https://github.com/Tow-Boot/Tow-Boot/issues/127). If you encounter any problem like this, try use any Linux distro for your PC, or switch USB cables or ports. A patch has been posted on the GitHub issue, try that if you can patch and compile the Tow-Boot yourself, and tell them if that works.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## Hardware test build
 
 {{< admonition type="warning" >}}
  The factorytest image for hardware testing appears to be no longer maintained.
-{{< /admonition >}}
+{{</ admonition >}}
 
 On the Braveheart model, there was a postmarketOS based basic Factory Test OS pre-installed on the eMMC. The developer Martijn Braam from postmarketOS has improved the functionality of the image considerably later. Since the 20200501 version, it is able to test all the hardware. It also includes functionality to install a new OS to the eMMC when using with an test image that includes that OS image. The downloadable image just does the hardware tests. Do not flash eMMC to test your device, just flash it to microSD and test from there. New versions are distributed as part of the postmarketOS distribution.
 
 {{< admonition type="note" >}}
  The magnetometer test will fail on the new Beta Edition, as the factory image wasn't updated for it yet.
-{{< /admonition >}}
+{{</ admonition >}}
 
 Links:
 
@@ -682,7 +682,7 @@ All the download links below are direct download from pine64.org.
 
 {{< admonition type="warning" >}}
  These images are for testing purposes only. If you are looking for an up-to-date image please select one from the software releases section instead.
-{{< /admonition >}}
+{{</ admonition >}}
 
 | Distribution | Download Link | File Size | MD5 |
 | ------------ | ------- | ------- | ------- |
@@ -714,7 +714,7 @@ Other ARM64 distributions might be installed as well, however this requires some
 {{< admonition type="note" >}}
 Distributions not on this page may not even boot after you follow this section. In the best case, they will be barely usable.
 This is more for fun, or if you would like to port a new distribution to the PinePhone.
-{{< /admonition >}}
+{{</ admonition >}}
 
 General steps:
 

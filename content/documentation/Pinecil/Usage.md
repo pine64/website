@@ -20,7 +20,7 @@ menu:
 
 {{< admonition type="tip" >}}
 Clean new cartridges/tips with isopropyl alcohol (IPA) to remove factory residue before installing (even if it looks clean). If you have no IPA, at least try a paper towel, especially clean the white end with the two silver electric contacts (do not use water; it could get into the seam line on the white end). This resolves issues with jumping temperatures or random no-tip symbol from poor electric contact.
-{{< /admonition >}}
+{{</ admonition >}}
 
 Do not try to bend the two [internal contacts](https://pine64.com/product/pinecil-copper-clips/), they are made of a thin stiff spring metal and could break (not soft copper), but you could wipe them with IPA (including the small PCB pad below the contacts).
 

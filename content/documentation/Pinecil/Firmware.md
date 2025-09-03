@@ -17,7 +17,7 @@ This document provides a step-by-step guide on how to update the firmware of the
 
 {{< admonition type="tip" >}}
 Pinecil is designed to use **only 1 power port** at any time. Only the USB-C cable should be plugged in during firmware updates. Never attempt to use both rear ports at the same time or the PC and Pinecil will be damaged.
-{{< /admonition >}}
+{{</ admonition >}}
 
 {{< figure src="/documentation/images/Pinecil-V1andV2.png" width="400" >}}
 
@@ -33,13 +33,13 @@ Depending on whether you have a Pinecil V1 or V2, they are updated using differe
 
 {{< admonition type="note" >}}
  Loading boot logo art onto the V2 (BL706 MCU chip) is not yet possible. Volunteers are looking into this on both GitHub Blisp and GitHub IronOS. If you would like to see the progress or help with the code see [Boot Logo Art ticket](https://github.com/Ralim/IronOS/issues/1373#issuecomment-1414925011)
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## Flash Mode
 
 {{< admonition type="important" >}}
  Do not use the DC barrel jack while updating firmware or you may destroy your PC and Pinecil.
-{{< /admonition >}}
+{{</ admonition >}}
 
 Both V1 and V2 connect to the PC/laptop and enter the Flash mode the same way for updating purposes:
 
@@ -53,7 +53,7 @@ Both V1 and V2 connect to the PC/laptop and enter the Flash mode the same way fo
 
 {{< admonition type="important" >}}
  Do not use the DC barrel jack while updating firmware or you may destroy your PC and Pinecil.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ### Option 1: PineFlash
 
@@ -99,7 +99,7 @@ The PineFlash is a GUI updater it’s an all-in one app that downloads firmware 
 
 {{< admonition type="important" >}}
  Do not use the DC barrel jack while updating firmware or you may destroy your PC and Pinecil.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ### Option 1: PineFlash
 
@@ -162,7 +162,7 @@ This is a CLI that runs in a terminal console. Get the latest zip file for Linux
 
 {{< admonition type="important" >}}
  Do not use the DC barrel jack while updating firmware or you may destroy your PC and Pinecil.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ### V1 Windows or Mac
 

@@ -15,7 +15,7 @@ Connecting to the ROCKPro64 single-board computer serial interface can sometimes
 
 {{< admonition type="warning" >}}
  Please note that following these instructions comes at your own risk. While best efforts have been made to write reliable, safe instructions, the author cannot be held liable for the quality of procured components or the assembly job of the person following the instructions, and the damages caused by either of these not being up to par.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## Shopping List
 

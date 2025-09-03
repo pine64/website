@@ -64,7 +64,7 @@ Quectel EG25-G is an LTE Cat 4 module optimized specially for M2M and IoT applic
 
 {{< admonition type="warning" >}}
  The following instructions are directed towards expert-level users and developers!
-{{< /admonition >}}
+{{</ admonition >}}
 
 The System partition is mounted as read-only mode, but the data partition is writable. It might be possible, if there’s an unexpected reset or power is lost while running, that the data partition gets corrupt and thus unable to boot.
 
@@ -116,7 +116,7 @@ It will reboot the modem after finished. After about 30 seconds, it will get bac
 
 {{< admonition type="warning" >}}
  The following instructions are directed towards expert-level users and developers!
-{{< /admonition >}}
+{{</ admonition >}}
 
 The Modem has a locked bootloader. It won’t allow to boot unsigned Kernel images, but will allow to flash them, making it easy to brick the modem. To fix this, you can flash an unlocked bootloader, which will then allow you to do as you please with the hardware.
 
@@ -129,7 +129,7 @@ Unlocked bootloader:
 
 {{< admonition type="warning" >}}
  The following instructions are directed towards expert-level users and developers!
-{{< /admonition >}}
+{{</ admonition >}}
 
 Custom kernel builds and system images can be created for the modem, though they require a couple of things to be correctly built and be bootable.
 

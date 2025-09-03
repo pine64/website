@@ -280,7 +280,7 @@ The driver uses the following GPIO configuration.
 
 {{< admonition type="warning" >}}
  It is not sure if these are the correct pins to use|
-{{< /admonition >}}
+{{</ admonition >}}
 
 | CH341 Pin | CH341A Name | Function | GPIO Name | GPIO Configuration | SX1262 connection |
 | --- | --- | --- | --- | --- | --- |

@@ -15,7 +15,7 @@ A serial console can be connected to the RockBox to retrieve the UART boot logs.
 
 {{< admonition type="note" >}}
  Unlike the ROCKPro64, connecting TXD does not prevent the device from booting up.
-{{< /admonition >}}
+{{</ admonition >}}
 
 Connect the USB device to the PC and use a tool such as `screen` to display the serial output:
 

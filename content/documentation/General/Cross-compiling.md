@@ -19,7 +19,7 @@ The Pinephone’s triple for cross-compiling is `aarch64-unknown-linux-gnu`.
 
 {{< admonition type="important" >}}
  Please add instructions for other distributions to this section if you know them!
-{{< /admonition >}}
+{{</ admonition >}}
 
 First, you’ll need to install the gcc cross-compilation toolchain.
 
@@ -45,7 +45,7 @@ $ sudo xbps-install cross-aarch64-linux-gnu
 
 {{< admonition type="note" >}}
 If you are trying to build an Arch Linux package with `makepkg`, also make sure to `export CARCH=aarch64`.
-{{< /admonition >}}
+{{</ admonition >}}
 
 #### GNU Make
 

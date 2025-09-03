@@ -18,7 +18,7 @@ There is a number of things that can prevent the board from booting up properly.
 
 {{< admonition type="note" >}}
  Make sure to have the newest version of the operating system and the bootloader installed.
-{{< /admonition >}}
+{{</ admonition >}}
 
 To find out more, visit the [PINE64 forum thread](https://forum.pine64.org/showthread.php?tid=514).
 

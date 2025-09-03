@@ -40,7 +40,7 @@ gst-launch-1.0 filesrc location=input.mp4 ! qtdemux name=demux demux.video_0 ! d
 
 {{< admonition type="tip" >}}
 This requires a draft [GStreamer merge request](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/3736) and the RFC kernel patchset applied.
-{{< /admonition >}}
+{{</ admonition >}}
 
 This example converts an input MP4 file to an output VP8-inside-MKV file with a quantiser between 12 and 28, without any audio. The quantiser value goes from 0 (best quality, biggest filesize) to 63 (worst quality, smallest filesize).
 

@@ -28,7 +28,7 @@ Everything? Well, not really: a few users reported soft-bricked PineTimes after 
 
 {{< admonition type="warning" >}}
 In the meantime, **do not try to install WASP-OS on your PineTime if it's running bootloader v1.0.1 from the factory (unless you know exactly what you are doing), this WILL brick your PineTime!**
-{{< /admonition >}}
+{{</ admonition >}}
 
 Be sure that the community will try to fix this as soon as possible, but please remember that developers, like mostly everyone, are a bit less available during this period of the year. ;-)
 

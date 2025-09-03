@@ -22,11 +22,11 @@ The PineTab2 ships with _Danctnix Arch Linux ARM_. The latest factory image can 
 
 {{< admonition type="note" >}}
 The factory image is flashed to a microSD card and it will overwrite the eMMC installation after booting.
-{{< /admonition >}}
+{{</ admonition >}}
 
 {{< admonition type="info" >}}
 Newer images use the **volume and power button for selection** at boot instead of the keyboard.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## Linux
 
@@ -70,7 +70,7 @@ Testing: https://github.com/webOS-ports/luneos-testing/releases/
 
 {{< admonition type="note" >}}
  U-Boot is required to boot the images. If you have the factory image installed and updated to the latest version, you can boot Mobian from an SD card without installing U-Boot.
-{{< /admonition >}}
+{{</ admonition >}}
 
 | Default credentials | |
 | -------- | ------- |
@@ -91,7 +91,7 @@ An unofficial [Debian](https://www.debian.org) build for ARM64 running with Phos
 
 {{< admonition type="note" >}}
  U-Boot is required to boot the images. If you have the factory image installed and updated to the latest version, you can boot Mobian from an SD card without installing U-Boot.
-{{< /admonition >}}
+{{</ admonition >}}
 
 | Default credentials | |
 | -------- | ------- |

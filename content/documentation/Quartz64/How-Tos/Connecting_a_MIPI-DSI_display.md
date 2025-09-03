@@ -33,7 +33,7 @@ For the touch cable, connect the other end to the small green PCB attached to th
 
 {{< admonition type="important" >}}
  **Note:** There’s no port for the touch panel input on Model B.
-{{< /admonition >}}
+{{</ admonition >}}
 
 **TODO:** Write this section. Adapter cable is needed.
 
@@ -47,7 +47,7 @@ The kernel needs to be built with `CONFIG_DRM_PANEL_FEIYANG_FY07024DI26A30D` tur
 
 {{< admonition type="important" >}}
  **Note:** Currently Debian’s kernel doesn’t have the panel driver built as part of its configuration. We’ll get that sorted soon.
-{{< /admonition >}}
+{{</ admonition >}}
 
 Use `git clone` to clone the [overlay-examples](https://github.com/CounterPillow/overlay-examples) repository by CounterPillow. Then, grab a copy of the Linux kernel source from [kernel.org](https://kernel.org) if you don’t already have one. To build the device tree overlays, run `make INCLUDE_DIR=path/to/linux/include` in the overlay-examples directory, substituting _path/to/linux/include_ with your path of course.
 

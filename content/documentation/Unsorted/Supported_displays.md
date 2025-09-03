@@ -14,7 +14,7 @@ aliases:
 
 {{< admonition type="important" >}}
  Contribute to it by looking for MIPI-DSI panels in `drivers/gpu/drm/panel/` and filling out the table from their data sheets
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## MIPI-DSI Displays
 

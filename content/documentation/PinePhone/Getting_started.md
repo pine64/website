@@ -16,13 +16,13 @@ When shipped the battery is isolated from the device using a protective plastic 
 
 {{< admonition type="note" >}}
  To remove the sticker after unboxing the phone: Carefully remove the back panel using the notch in the corner of the back cover without overbending it. Then remove the battery. Peel off the clear plastic sticker below it, which isolates the charging contacts and reinsert the battery.
-{{< /admonition >}}
+{{</ admonition >}}
 
 The PinePhone’s SIM slot only accepts a micro-SIM, please do not insert a nano-SIM without an adapter and make sure that the nano-SIM does not get released from its adapter. The SIM card has to be placed in the lower slot, while the microSD has to be placed in the upper slot.
 
 {{< admonition type="note" >}}
  Do not insert an empty micro-SIM adapter into the phone and do not release the nano-SIM inside the adapter, as it will get stuck on the contact pins. If the nano-SIM got released inside the adapter inside the phone, carefully reinsert the nano-SIM card without moving the adapter. In that case do not pull on the empty adapter as it will get stuck on the contact pins and damage them!
-{{< /admonition >}}
+{{</ admonition >}}
 
 {{< figure src="/documentation/images/Pinephone_slots.png" caption="The microSD belongs in the upper slot, the micro-SIM in the lower slot." width="600" >}}
 

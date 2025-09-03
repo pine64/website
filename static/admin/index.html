@@ -11,10 +11,12 @@
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
     <script>
       CMS.registerPreviewStyle("custom.css");
+      CMS.registerPreviewStyle("/css/style.min.css");
+      CMS.registerPreviewStyle("/css/documentation.min.css");
     </script>
-    <!--<script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>-->
-    <!-- Decap CMS custom widget (Hugo shortcodes) from https://decapcms.org/docs/hugo/#using-decap-cms-content-in-hugo -->
+
     <script>
+
 // credits
 CMS.registerEditorComponent({
     id: "credits",
@@ -38,7 +40,8 @@ CMS.registerEditorComponent({
         return '<i>'+obj.authors+'</i>';
     },
 });
-// fulldocs
+
+// Full docs
 CMS.registerEditorComponent({
     id: "fulldocs",
     label: "Full documentation",
@@ -241,7 +244,7 @@ CMS.registerEditorComponent({
       const txt = (b.text || '').replace(/\n/g, '\\n');
       out += `  {{< devices/device_box link="${b.link}" img="${b.img}" title="${b.title}" text="${txt}" >}}\n`;
     });
-    out += '{{< /flexbox >}}';
+    out += '{{</ flexbox >}}';
     return out;
   },
 
@@ -354,10 +357,10 @@ CMS.registerEditorComponent({
       widget: "select",
       options: [
         { label: "Note", value: "note" },
-        { label: "Info", value: "info" },
+        { label: "Tip", value: "tip" },
         { label: "Warning", value: "warning" },
         { label: "Caution", value: "caution" },
-        { label: "Construction", value: "construction" }
+        { label: "Important", value: "important" }
       ],
       default: "note"
     },
@@ -365,34 +368,36 @@ CMS.registerEditorComponent({
       name: "body",
       label: "Content",
       widget: "text",
-      default: ""
-    }
+      default: "",
+    },
   ],
-  pattern: /^{{<\s*admonition\s+type="(.*?)"\s*>}}([\s\S]*?){{<\s*\/admonition\s*>}}$/,
 
-  fromBlock: function(match) {
-    return {
-      type: match[1],
-      body: match[2].trim()
-    };
+  pattern:
+    /^{{<\s*admonition\s+type="([^"]+)"\s*>}}\s*([\s\S]*?)\s*{{<\s*\/\s*admonition\s*>}}$/m,
+
+  fromBlock(match) {
+    return { type: match[1], body: match[2].trim() };
   },
 
-  toBlock: function(obj) {
+  toBlock(obj) {
     return [
       `{{< admonition type="${obj.type}" >}}`,
       obj.body,
-      `{{< /admonition >}}`
+      `{{< /admonition >}}`,
     ].join("\n");
   },
-  
-  preview: function(obj) {
+
+  toPreview: function(obj) {
     const title = obj.type.charAt(0).toUpperCase() + obj.type.slice(1);
     return `
-      <div class="admonition ${obj.type}">
-        <strong>${title}:</strong> ${CMS.previewFieldFormatter(obj.body)}
-      </div>
+<div class="admonition admonition-${obj.type}">
+    <div class="admonition-header">${title}</div>
+    <div class="admonition-text">
+        ${obj.body}
+    </div>
+</div>
     `;
-  }
+  },
 });
 
     </script>

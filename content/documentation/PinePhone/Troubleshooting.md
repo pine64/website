@@ -19,7 +19,7 @@ JumpDrive can be downloaded from [here](https://github.com/dreemurrs-embedded/Ju
 
 {{< admonition type="note" >}}
  If JumpDrive boots and other releases do not boot, the battery is likely drained. In that case let it charge while running JumpDrive with a compatible charger for multiple hours and make sure to not fully drain the battery in the future anymore, as that significantly reduces the battery lifetime.
-{{< /admonition >}}
+{{</ admonition >}}
 
 Alternatively to testing JumpDrive, the issue can also be diagnosed by checking the battery charge. Simply remove the battery from the device and measure the voltage on the (+) and (-) contacts on the battery. Make sure to not shorten the contacts as shorting battery pins is a severe life and safety danger.
 

@@ -11,7 +11,7 @@ menu:
 
 {{< admonition type="warning" >}}
  The data presented in this section requires updating.
-{{< /admonition >}}
+{{</ admonition >}}
 
 | Function  | Status  |     | Component | Notes |
 | ---       | ---     | --- | ---       | ---

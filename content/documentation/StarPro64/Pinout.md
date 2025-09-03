@@ -43,4 +43,4 @@ menu:
 
   {{< partdesc id="emmc" title="eMMC" desc=`16GB Foresee or 32GB/64GB/128GB SanDisk eMMC`>}}
 
-{{< /part >}}
+{{</ part >}}

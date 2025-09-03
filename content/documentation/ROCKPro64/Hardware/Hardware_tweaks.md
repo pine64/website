@@ -14,7 +14,7 @@ aliases:
 ## Enabling PCIe 2.0
 {{< admonition type="warning" >}}
  The downgrade to Gen1 speed came [straight from Rockchip](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=712fa1777207), as a result of an undisclosed RK3399 hardware errata. Thus, enabling Gen2 back may cause system instability or data corruption under certain circumstances. Also, the limitations of the RK3399’s internal interconnects prevent the enabling of Gen2 speed from producing some measurable performance gains, unless using specific PCI Express hardware.
-{{< /admonition >}}
+{{</ admonition >}}
 
 By default, the RockPro64 runs the PCIe slot at gen 1 speeds because there might be stability issues with gen 2 speeds. The port can be switched back to gen 2 speeds by adding the following device tree overlay.
 
@@ -62,7 +62,7 @@ APPEND initrd=/initramfs-linux.img console=ttyS2,1500000 zfs=zroot rw rootwait a
 
 {{< admonition type="warning" >}}
  Please note that changing the maximum operating frequency or the supply voltage may cause system instability or data corruption under certain circumstances. There is even the possibility of damaging your equipment permanently.
-{{< /admonition >}}
+{{</ admonition >}}
 
 The RK3399 can be overclocked. See here for details: [Overclocking/RK3399-based devices](/documentation/General/Overclocking/#rk3399_based_devices).
 By overclocking, you do risk damaging your hardware, however, it is possible to achieve small, but measurable improvements in performance with an overclock. The overclock can be applied with a device tree overlay file.
@@ -188,7 +188,7 @@ APPEND initrd=/initramfs-linux.img console=ttyS2,1500000 zfs=zroot rw rootwait a
 ## Getting WiFi working (new WiFi module)
 {{< admonition type="warning" >}}
  The information presented in this section may be obsolete because of [this commit](https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/commit/?id=d11ae98478d52548172918511f949aa92193f2c6) in the linux-firmware upstream repository  Moreover, the suggested modifications to the configuration file should be resolved in the upstream repository, to fix any identified issues, instead of suggesting local changes to be performed.
-{{< /admonition >}}
+{{</ admonition >}}
 
 Manjaro ARM and Arch Linux ARM (and probably others) provide the NVRAM file needed to initialize the Wi-Fi module in the linux-firmware package, but it is listed under the generic name `brcmfmac43455-sdio.AW-CM256SM.txt`.
 You can copy this file to the new name (that the driver looks for) with the following commands:
@@ -268,7 +268,7 @@ This code comes with the following license - which is not replicated here becaus
 As pointed out by CrystalGamma, "normal accesses should simply work, though with higher access latency than necessary (since it uses the same number of cycles as would be necessary for a higher frequency), but I’d be slightly worried about refresh, since it also issues refresh based on number of cycles as would be used for a higher frequency, instead of actual time elapsed". In other words, "the risk is refreshes coming to late, though it’s probably within tolerance with this little of a frequency diff".
 
 To put it simply, the suggested changes to DRAM configuration may actually cause system instability or data corruption under certain circumstances.
-{{< /admonition >}}
+{{</ admonition >}}
 
 By default, it seems that the some RockPro64 devices are not stable. This seems to manifest as gcc segfaulting randomly. Usually, this can be "fixed" by starting the build again and hoping gcc doesn’t crash. If the build finishes or crashes at a different point, this is a good indicator that the system is not stable. The issue seems to be that the RAM is running a little too fast and some bits are getting randomly flipped. Other frequencies are possible, but the highest officially supported frequency below 800MHz is 666MHz, which is still a big step down from the default frequency of 800MHz provided by ManjaroARM. It is also possible to set arbitrary frequencies in u-boot. Frequencies that have been tested with this method are 702MHz and 752MHz. It seems that there is only a slight performance decrease at 752MHz compared to 800MHz.
 

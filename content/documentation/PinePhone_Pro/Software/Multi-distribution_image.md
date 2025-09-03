@@ -23,7 +23,7 @@ _DEV_ is the device name from the lsblk command\
 _ATTR_ are the attributes of each partition/distribution\
 _SIZE_ is the GiB capacity of each partition/distribution\
 _NameUrl_ is the Key:Value of distribution name and relative URL download address
-{{< /admonition >}}
+{{</ admonition >}}
 
 This guide has been tested with 6 Linux distributions on a 128 GiB microSD card, and following variables:
 
@@ -67,7 +67,7 @@ If you are installing to a microSD card, then either:
 2. Hold down the _RE_ button during boot to force the phone to boot from the microSD card by disabling the SPI flash and the eMMC.
 
 If you are installing to the eMMC, make sure the SPI flash is empty.
-{{< /admonition >}}
+{{</ admonition >}}
 
 Further instructions can be found on the [author’s website](https://xff.cz/kernels/bootloaders-2024.04/ppp/rk2aw/INSTALL).
 
@@ -182,7 +182,7 @@ $ sudo dd if=ppp/foss/u-boot-rockchip.bin of=/dev/$DEV bs=512 seek=64 status=pro
 If you are interested in building this U-Boot image yourself, you can download the source code from [xff.cz](https://xff.cz/git/u-boot/tree/?h=ppp-2023.07). However, you will still need a copy of _ppp.tar.gz_ since it contains the U-Boot build configuration file (`ppp/foss/.config`).
 
 Copy this file to the root of your U-Boot source directory, keeping the name `.config`. You can then use `make` to initiate the build process.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## Build the partitions
 
@@ -397,7 +397,7 @@ $ sudo resize2fs /dev/disk/by-partlabel/$BASE-$NAME
 
 <a name="building_repeat"></a>{{< admonition type="important" >}}
  Repeat the [building process](#building) for the next distribution, adapting [needed variables](#variables).
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## Follow-up notes
 

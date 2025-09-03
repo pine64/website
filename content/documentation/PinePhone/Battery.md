@@ -13,13 +13,13 @@ The phone ships with a protective plastic sticker between the battery and the ph
 
 {{< admonition type="note" >}}
  The EG25-G modem and the RTL8723CS WiFi and Bluetooth do not work without a battery and with a drained battery, even when enough power is supplied to the PinePhone via the USB Type-C port. Most operating systems won’t boot without a battery or with a drained battery.
-{{< /admonition >}}
+{{</ admonition >}}
 
 The [supplied battery](https://files.pine64.org/doc/datasheet/pinephone/PinePhone%20QZ01%20Battery%20Specification.pdf) is meant to be compatible with Samsung part number EB-BJ700BBC / BBE / CBE from the 2015 J7 phone. The extended life aftermarket BBU does fit, although it is a tight fit.
 
 {{< admonition type="warning" >}}
  Using an aftermarket battery with a higher capacity is done at own risk. Batteries with a higher capacity especially in combination with an external charger can lead to overvoltage, which fries the modem and/or the Bluetooth and WiFi chip.
-{{< /admonition >}}
+{{</ admonition >}}
 
 The battery terminals, from the nearest to the battery edge to the nearest to the middle of battery, are as follows:
 

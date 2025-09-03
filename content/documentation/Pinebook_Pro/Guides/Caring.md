@@ -13,7 +13,7 @@ menu:
 	
 {{< admonition type="warning" >}}
  Do not connect the bypass cables with the battery connected. Using the bypass cables with the battery connected can permanently damage your Pinebook Pro. After you’re done with using the bypass cables and want to return to the default setup, make sure to affix the bypass cables to the main body of the laptop using adhesive tape, in the same way as it was done in the factory. This ensures that the exposed leads in the connectors on the bypass cables don’t touch any conductive surface inside the laptop, which may cause a short.
-{{< /admonition >}}
+{{</ admonition >}}
 
 The mainboard features two bypass cables that are to be used only with the battery disconnected. The two bypass cables are disconnected by default. The female (10) male (6) ends of the bypass cables can be connected to provide power to the mainboard if you need to run your Pinebook Pro with no battery. Please refer to this [engineering notice](https://files.pine64.org/doc/PinebookPro/PinebookPro_Engineering_Notice.pdf) for more details.
 

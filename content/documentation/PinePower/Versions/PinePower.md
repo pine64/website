@@ -50,7 +50,7 @@ Connections:
 
 {{< admonition type="warning" >}}
 Opening this device may expose you to high voltage components that can cause serious injury or death. **Do not attempt to open, repair or modify the device.** For safety, always consult a qualified technician for any issues.
-{{< /admonition >}}
+{{</ admonition >}}
 
 To open your Charger, you just have to Cut away the backplate with the USB-Ports, then you can pull out the PCB.
 

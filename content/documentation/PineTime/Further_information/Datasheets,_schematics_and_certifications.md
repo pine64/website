@@ -16,7 +16,7 @@ menu:
 
 {{< admonition type="note" >}}
 The part number for the SPI FLASH in the schematic diagram is not correct, the PineTime features a larger external FLASH device, see below.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## Chip Datasheets
 

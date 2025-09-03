@@ -254,7 +254,7 @@ Some notes about the images:
 
 {{< admonition type="warning" >}}
  This is not an official, nor supported way of using Void Linux on the Pinebook Pro.
-{{< /admonition >}}
+{{</ admonition >}}
 
 You can also manually install Void from a rootfs tarball: [see instructions here](/documentation/Pinebook_Pro/Software/Installing_Void_Linux_ARM).
 
@@ -367,7 +367,7 @@ Let the device on which you intend to install gentoo be referred to hereafter as
 
 {{< admonition type="note" >}}
 Don’t just copy these commands! You should substitute <gentoo> for mmcblk2 for the internal eMMC flash storage.
-{{< /admonition >}}
+{{</ admonition >}}
 
 Note that the first block of the boot partition is block 62500. Delete all partitions, but **do not** re-format the disk. Create a new boot partition starting at 62500, and as it’s size select "+1GB". Create a new swap partition. fdisk will try to start it at the beginning of the volume (before the boot partition) Instead, when it prompts you for the starting position, enter in the end sector of the boot partition. It should then tell you that this is within an existing partition, and recommend a slightly higher value. Press enter, and give for the size of the partition any value greater than "+4gb". You need this much ram to be able to suspend your system, and emerge large packages. Don’t be stingy - you still have SD cards. I recommend "+8gb".
 

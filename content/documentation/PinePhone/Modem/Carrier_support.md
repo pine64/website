@@ -26,7 +26,7 @@ It is likely that there will be a few frequencies that your carrier uses which a
 
 {{< admonition type="note" >}}
  Some providers may allow only certain known devices identified by their [Type Allocation Code](https://en.wikipedia.org/wiki/Type_Allocation_Code).
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## MMS workarounds
 

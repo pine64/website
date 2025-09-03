@@ -22,7 +22,7 @@ menu:
 
 {{< admonition type="note" >}}
  This section is relevant to the original prototype (v1.0) that a few developers received. 
-{{< /admonition >}}
+{{</ admonition >}}
 
 * The [schematic](https://files.pine64.org/doc/star64/Star64_Schematic_V1.0_20220721.pdf) has several discrepancies with actual board labels.
 * The serial console can be found with TXD on pin 8 and RXD on pin 10; a convention common to Pi-style boards. Use the 40pin header pinouts in color on page one and not the schematic prose.

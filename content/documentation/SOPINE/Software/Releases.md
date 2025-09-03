@@ -45,7 +45,7 @@ FreedomBox is a private server for non-experts: it lets you install and configur
 
 {{< admonition type="warning" >}}
  Outdated release
-{{< /admonition >}}
+{{</ admonition >}}
 
 Download:
 
@@ -77,7 +77,7 @@ NEMS stands for "Nagios Enterprise Monitoring Server" and it is a modern pre-con
 
 {{< admonition type="warning" >}}
  Outdated release
-{{< /admonition >}}
+{{</ admonition >}}
 
 Download:
 
@@ -86,7 +86,7 @@ Download:
 
 {{< admonition type="info" >}}
 The installation guide can be found [here](https://docs.nemslinux.com/installation).
-{{< /admonition >}}
+{{</ admonition >}}
 
 | Default credentials | |
 | -------- | ------- |

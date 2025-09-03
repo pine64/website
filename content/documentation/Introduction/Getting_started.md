@@ -33,7 +33,7 @@ You will need the following to get started with using your [PINE A64(+)](/docume
 
 {{< admonition type="important" >}}
  **Caution!** Handle the Pine64 Single Board Computers' PCBs with care. Always hold bare boards by the edges and make sure to wear an anti-static wrist strap. Touching components on the front and back of the boards can result in an ESD discharge that may cause damage to the electronics. Avoid placing bare boards on materials such as carpets, plastics or other surfaces prone to electrostatic build-up
-{{< /admonition >}}
+{{</ admonition >}}
 
 **Begin by imaging the OS of your choice**
 
@@ -99,7 +99,7 @@ You will need the following utilities to get started with imaging the OS of your
 
 {{< admonition type="tip" >}}
 Phoenix Card utility and images are NOT available on macOS.
-{{< /admonition >}}
+{{</ admonition >}}
 
 **Downloading and extracting OS image(s), insert the SD card**
 
@@ -123,7 +123,7 @@ Then select the microSD card you want to write into.
 
 {{< admonition type="warning" >}}
  Pay close attention to the selected device, make sure it is the right SD card – the imaging process will permanently erase and format the selected storage device. If you choose the wrong device, all the data in it will be lost.
-{{< /admonition >}}
+{{</ admonition >}}
 
 Having chosen the desired OS image and the correct device, press ‘Restore Backup’ or ‘Flash’.
 Once the image has been written to your microSD card, you will receive a pop-up notification.
@@ -133,7 +133,7 @@ Close the application, then eject/remove your SD card from your Mac.
 
 {{< admonition type="important" >}}
  If you are not comfortable using the terminal, please use the GUI method outlined above instead.
-{{< /admonition >}}
+{{</ admonition >}}
 
 Open up your terminal and navigate to the directory where you unarchived your OS image.
 
@@ -160,7 +160,7 @@ You will need the following utilities to get started with imaging the OS of your
 
 {{< admonition type="tip" >}}
 Phoenix Card utility and images are NOT available on Linux.
-{{< /admonition >}}
+{{</ admonition >}}
 
 **Downloading and extracting OS image(s)**
 
@@ -180,7 +180,7 @@ Having downloaded the required OS image proceed to use 7zip to unarchive it by d
 
 {{< admonition type="important" >}}
  If you are not comfortable using the terminal, please use the GUI method outlined above instead.
-{{< /admonition >}}
+{{</ admonition >}}
 
 * Insert your microSD card into your Linux laptop/USB card reader. Once the microSD card is plugged into your computer it should appear in Finder / on your desktop.
 * Open up your terminal and navigate to the directory where you unarchived your OS image. e.g. `cd Download`
@@ -189,7 +189,7 @@ Having downloaded the required OS image proceed to use 7zip to unarchive it by d
 
 {{< admonition type="important" >}}
  **Hint**: the drive you currently have booted from has the `/` at the end of the line. This is the wrong drive. Look at the drive that matches your microSD card’s size.
-{{< /admonition >}}
+{{</ admonition >}}
 
 * Now you are ready to write the image to the microSD card using this command: (replace the pine.img file with your image and mmcblkX with the correct device for the microSD card)
 

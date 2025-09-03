@@ -90,7 +90,7 @@ With the battery disconnected the charger isn’t going to turn on, and the syst
 
 {{< admonition type="warning" >}}
  The 0.5&nbsp;A difference described in this section is there to carve out some power for a USB-C dock connected to the Pinebook Pro’s USB-C port.  This is actually against the USB Power Delivery specification, but it leaves some power to the USB-C dock, which it requires to power itself and any devices connected to it.  Thus, the procedure described in this section will most probably make using USB-C docks unreliable or even impossible, leaving the USB-C port usable for connecting only USB-C chargers or bus-powered USB-C devices.
-{{< /admonition >}}
+{{</ admonition >}}
 
 Since there’s no software control over the input current limit unmodified PBP always tries to draw up to 2.5&nbsp;A from a Type-C charger.
 
@@ -104,7 +104,7 @@ The easiest way is to use a soldering iron tip big enough to hold a 1&nbsp;mm dr
 
 {{< admonition type="warning" >}}
  The procedure described in this section alters the operating parameters of the lithium battery built into the Pinebokk Pro, which may be unsafe, and in extreme conditions may even introduce a fire hazard.  Use the described procedure at your own risk.  Additional verfication of the described procedure is currently pending.
-{{< /admonition >}}
+{{</ admonition >}}
 
 To ensure safe operation the charger IC is constantly monitoring the battery temperature with the sensor integrated inside the pack. The thermistor used is a 103AT NTC but the corresponding circuity on PBP mainboard was calculated for some other type. This results in the charger IC detecting 45&nbsp;°C when the battery is in fact at just 35&nbsp;°C, and 60&nbsp;°C when the battery is at 46&nbsp;°C. It’s easy to hit this threshold with heavy CPU or GPU loads as the metal back cover heats up from the SoC and slightly warms up the battery. Under these conditions the charging is suspended (with charging LED signalling a hardware issue), and the intensive tasks are continued on battery power alone, heating it up even more.
 

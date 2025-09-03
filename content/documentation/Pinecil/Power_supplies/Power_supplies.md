@@ -74,7 +74,7 @@ Silicone USB-C cables are recommended if possible, they are more flexible and he
 
 {{< admonition type="note" >}}
  a PD3.1 240W cable needs to be purchased if you want the full 28V performance. EPR PD3.1 chargers are backwards compatible and work for all USB-C devices. They do up to 28V on PD3.1 devices,e.g, Pinecil V2, and will do 20V and less for older USB-C devices that don’t need as much power. Lower cables will also work but then the charger will only deliver a max of 20V.
-{{< /admonition >}}
+{{</ admonition >}}
 
 #### PD3.0 65w 20V Chargers
 
@@ -107,7 +107,7 @@ Silicone USB-C cables are recommended if possible, they are more flexible and he
 
 {{< admonition type="important" >}}
  **Check the polarity** of the DC Barrel plug before plugging in a random charger or it could break the Pinecil.
-{{< /admonition >}}
+{{</ admonition >}}
 
 {{< figure src="/documentation/images/AC_adaptor_polarity.png" width="350" >}}
 

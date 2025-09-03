@@ -74,4 +74,4 @@ You can see which flags can be changed and which ones cannot by looking at the f
 
 {{< admonition type="note" >}}
  At the current time the auto_exposure flag is inverted, so a value of "0" means on, while "1" means off. Maybe the auto_exposure flag will get changed someday. You’ll need to turn off auto_exposure (value=1) if you want to manually set the exposure flag.
-{{< /admonition >}}
+{{</ admonition >}}

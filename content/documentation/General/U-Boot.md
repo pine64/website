@@ -14,7 +14,7 @@ aliases:
 
 {{< admonition type="tip" >}}
 It is helpful to have a debugging serial cable for this.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## Building U-Boot manually
 
@@ -32,7 +32,7 @@ If you are using a different system such as Ubuntu, there are plenty of cross co
 
 {{< admonition type="tip" >}}
 This guide is written with the PinePhone in mind. On other devices you will need to set a different platform variable and likely use a different U-Boot source with patches oriented towards your device.
-{{< /admonition >}}
+{{</ admonition >}}
 
 Note by default these instructions utilize all of your computers cores to compile thanks to the `-j` and `$(nproc)` parameters. If you wish to only use one core to compile, or change the number of cores used for example to only two cores, then you can either completely remove the `-j$(nproc)` parameter from the make commands, or just take off `$(nproc)` and add the number of threads you want used in it’s place: `-j4`
 
@@ -58,7 +58,7 @@ cd ..
 
 {{< admonition type="tip" >}}
 You cannot build [Crust](/documentation/PinePhone/Software/Crust) if you do not have the or1k musl toolchain installed. This toolchain is not usually available in distribution repositories and will have to be manually installed to the system. The following text will show a simple way to install the toolchain.
-{{< /admonition >}}
+{{</ admonition >}}
 
 Download the toolchain’s archive: https://musl.cc/or1k-linux-musl-cross.tgz
 
@@ -87,7 +87,7 @@ cd ..
 
 {{< admonition type="tip" >}}
 If you do not wish to have [Crust](/documentation/PinePhone/Software/Crust) in your U-Boot build, then you can skip exporting SCP
-{{< /admonition >}}
+{{</ admonition >}}
 
 ```shell
 cd u-boot/
@@ -107,7 +107,7 @@ Once successfully compiled you can proceed to flash the device
 
 {{< admonition type="warning" >}}
  Replace [CHANGE THIS] with the location of your SD card and make sure you are using the proper location. Failure to do so can result in data loss.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ```shell
 sudo dd if=u-boot-sunxi-with-spl.bin of=/dev/[CHANGE THIS] bs=1024 seek=8
@@ -115,7 +115,7 @@ sudo dd if=u-boot-sunxi-with-spl.bin of=/dev/[CHANGE THIS] bs=1024 seek=8
 
 {{< admonition type="tip" >}}
 If you are compiling U-Boot in order to overclock your DRAM you can check if it was successful by reading the values of /sys/kernel/debug/clk/clk_summary
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## p-boot multi-bootloader
 

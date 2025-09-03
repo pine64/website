@@ -106,14 +106,11 @@ collections:
     create: true # Allows users to create new documents in this collection
     preview: false
     i18n: false
-    extension: "md"
     nested:
       #subfolders: true # Legacy behavior
       subfolders: false
       depth: 15 # max depth to show in the collection tree
       summary: '{{dirname}}' # optional summary for a tree node, defaults to the inferred title field
-      #summary: '{{title}}'
-      #summary: '{{filename}}'
     fields: # List of fields for the front matter
       - { label: "Title", name: "title", widget: "string" }
       - {
@@ -140,8 +137,8 @@ collections:
       #    minimize_collapsed: true
       #}
       - { label: "Body", name: "body", widget: "markdown" }
+
     meta: { path: { widget: string, label: 'Path', index_file: '_index' } }
-    #meta: { path: { label: 'Path', widget: 'string', index_file: '{fields.filename}' }}
 
   - name: "podcast" # This is the name used in the URL
     label: "Podcast" # This is the singular name of the content type for the UI

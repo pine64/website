@@ -75,7 +75,7 @@ Goal: To achieve fast (low latency) wired network connection via USB-A port of P
 
 {{< admonition type="note" >}}
  This is work in progress.
-{{< /admonition >}}
+{{</ admonition >}}
 
 Goal: Make PineCube behave almost as same as like normal Webcam. When you connect PineCube to a computer it will be shown as a webcam device. No need for an additional set up you can use it straight after plugging the PineCube to a computer. USB-A port is for data transfer between PineCube and computer/phone. Micro-USB port is for power.
 

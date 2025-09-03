@@ -229,7 +229,7 @@ Here is a fun idea you can try: you can even replace the days with whatever thin
 
 {{< admonition type="note" >}}
  When making the custom array, don’t forget to leave an empty "" as the first element of the array, This is because the date is given by the system in a natural numbers format (1,2,3, and so on) rather than a zero-starting format (0,1,2,3, and so on), which the C array uses to index. So the C array indexes the days as ""-0, "Monday"-1, "Tuesday"-2 etc. and the months as ""-0, "January"-1, "February"-2 and so on.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ### Label positioning
 
@@ -345,7 +345,7 @@ To bring images into Clock.cpp you will need to do the following,
 
 {{< admonition type="note" >}}
  for example we shall use <name> = bitmap, but any simple word can be used, as long as it does not cause problems with system variables
-{{< /admonition >}}
+{{</ admonition >}}
 
 ### Image size considerations
 
@@ -421,7 +421,7 @@ And another small bit of info we will need for later that looks like,
 
 {{< admonition type="note" >}}
  There are some header files at the top, which we can ignore.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ### RGB565 image format
 
@@ -463,7 +463,7 @@ is set to "1" as seen.
 
 {{< admonition type="note" >}}
  If you haven’t modified it or tampered with it with your GitHub fork, you shouldn’t have a problem as it is correct by default, and you can skip these steps
-{{< /admonition >}}
+{{</ admonition >}}
 
 ### Creating an Object from the Array
 
@@ -543,7 +543,7 @@ const uint8_t <name>_map[] = {0x00,0x00,0x00...
 
 {{< admonition type="note" >}}
  Declaring variables outside a function like we did above is known as global scope declaration, this means the variable can be used by not just one function but the Entire code.
-{{< /admonition >}}
+{{</ admonition >}}
 
 Then inside the
 

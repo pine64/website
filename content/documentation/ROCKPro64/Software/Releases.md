@@ -104,7 +104,7 @@ Download:
 
 {{< admonition type="note" >}}
  Unzip and flash the image to a microSD card or eMMC module, for example using _dd_.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ### Manjaro ARM
 
@@ -156,7 +156,7 @@ Download:
 Download:
 {{< admonition type="warning" >}}
  Outdated release
-{{< /admonition >}}
+{{</ admonition >}}
 * Stretch 32bit (armhf): [Direct download from ayufan’s github](https://github.com/ayufan-rock64/linux-build/releases/download/0.8.3/stretch-openmediavault-rockpro64-0.8.3-1141-armhf.img.xz)
 * Stretch 64bit (aarch64): [Direct download from ayufan’s github](https://github.com/ayufan-rock64/linux-build/releases/download/0.8.3/stretch-openmediavault-rockpro64-0.8.3-1141-arm64.img.xz)
 
@@ -283,7 +283,7 @@ Download:
 
 {{< admonition type="note" >}}
  After flashing image with Etcher, edit /boot/armbianEnv.txt, replace the dtb name with rk3399-rockpro64.dtb.
-{{< /admonition >}}
+{{</ admonition >}}
 
 | Default credentials | |
 | -------- | ------- |
@@ -362,12 +362,12 @@ The **Chromium OS** community build image for microSD card and eMMC module, vers
 Download:
 {{< admonition type="warning" >}}
  Outdated release
-{{< /admonition >}}
+{{</ admonition >}}
 * https://github.com/ayufan-rock64/chromiumos-build/releases/
 
 {{< admonition type="note" >}}
  Flash the image to a microSD card or an eMMC module, for example using _dd_.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## Android
 

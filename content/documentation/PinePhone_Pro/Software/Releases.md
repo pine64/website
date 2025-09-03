@@ -63,7 +63,7 @@ See https://stealthgun.tweakblogs.net/blog/19830/gentoo-on-a-pinephone-pro for t
 
 {{< admonition type="note" >}}
  Please consider cross-compiling the software on the computer. Long compilation times and heat production can lead to a reduced lifespan of the phone.
-{{< /admonition >}}
+{{</ admonition >}}
 
 ## GloDroid
 
@@ -125,7 +125,7 @@ A [Mobian](https://www.mobian.org) build for ARM64 running with Phosh. The curre
 
 {{< admonition type="note" >}}
  Tow-Boot required to be able to boot the images, see [here](https://tow-boot.org/devices/pine64-pinephonePro.html)!
-{{< /admonition >}}
+{{</ admonition >}}
 
 | Default credentials | |
 | -------- | ------- |
@@ -260,7 +260,7 @@ Contributions and bug reports can be made at the [UBports PinePhone Pro GitLab p
 
 {{< admonition type="warning" >}}
  Work in progress; updating the distributions via their respective package managers may break the system.
-{{< /admonition >}}
+{{</ admonition >}}
 
 A PinePhone Pro analogue of the [PinePhone multi-distro demo image](/documentation/PinePhone/Software/Releases/#multi_distro_demo_image). This image allows the user to switch between multiple Linux distributions without having to swap microSD cards.
 
