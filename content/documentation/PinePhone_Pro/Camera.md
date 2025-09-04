@@ -68,4 +68,30 @@ $ flatpak uninstall --unused
 $ flatpak repair
 ```
 
+### Green Tint Issue
+
+To fix the green tint issue during post processing of your pictures, add "-a" and "-f" to dcraw line (about #82) into postprocess.sh file
+
+First look for postprocess.sh file
+
+```console
+$ cd ../..
+$ sudo find / -type f -name postprocess.sh
+```
+
+On my installation the file is located on /var/lib/flatpak/app/me.gapixels.Megapixels/aarch64/master/279d482e6a5012196a25b464174f2bbaf790b40fd3f1f8bc70b3e9c8c14696d9/files/share/megapixels/postprocess.sh
+
+Goto the postprocess.sh directory
+
+```console
+$ cd /var/lib/flatpak/app/me.gapixels.Megapixels/aarch64/master/279d482e6a5012196a25b464174f2bbaf790b40fd3f1f8bc70b3e9c8c14696d9/files/share/megapixels
+```
+
+Backup original file and add "-a" and "-f" to dcraw line, using replace command
+
+```console
+$ sudo cp postprocess.sh postprocess.sh.bk
+$ sudo sed -i 's/$DCRAW +M -H 4 -o 1 -q 3 -T "$@" "$MAIN_PICTURE.dng"/$DCRAW +M -H 4 -o 1 -q 3 -T -a -f "$@" "$MAIN_PICTURE.dng"/' postprocess.sh
+```
+
 Further details regarding the camera and the Megapixels camera app can be found on [Martijn’s blog](https://blog.brixit.nl/tag/phones/).
