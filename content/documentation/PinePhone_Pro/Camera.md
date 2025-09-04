@@ -14,8 +14,7 @@ The PinePhone Pro has two cameras, Sony IMX258 with 13MP as rear camera and Omni
 {{< figure src="/documentation/images/Rose.jpg" caption="Example picture taken on the PinePhone’s rear camera by Martijn Braam using his app _Megapixels_." width="400" >}}
 
 
-As mentioned in [Software State](/documentation/PinePhone_Pro/Software/Software_state/) cameras work-in-progress with DTS fix[Citation]; userspace still needs to do some catching up; Green image tint[Citation]. This article explains how to fix camera sofware on your PinePhone Pro. The work is on progress and will be available soon for different distributions. Make sure your PinePhone Pro is connected to the web to download needed software.
-
+As mentioned in [Software State](/documentation/PinePhone_Pro/Software/Software_state/) cameras work-in-progress with DTS fix <sup>[Citation]</sup>; userspace still needs to do some catching up; Green image tint<sup>[Citation]</sup>. This article explains how to fix camera sofware on your PinePhone Pro. The work is on progress and will be available soon for different distributions. Make sure your PinePhone Pro is connected to the web to download needed software.
 
 ### Arch Linux ARM + Phosh Installation
 
