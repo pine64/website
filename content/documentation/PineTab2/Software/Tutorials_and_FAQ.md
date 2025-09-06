@@ -19,6 +19,86 @@ This is a collection of tutorials and frequently asked questions for the PineTab
 
 To recover from a bad eMMC/SPI flash, plug the included debug adapter into the charging USB-C port and switch the white switch to its "ON" position to bypass eMMC/SPI boot. This tries to boot from SD, and if no SD is inserted, enters Maskrom mode.
 
+### Recovery from non-booting device
+{{< admonition type="warning" >}}
+You cannot use a virtual machine for this tutorial as rkdeveloptool does not function correctly in a virtual machine.
+{{</ admonition >}}
+
+{{< admonition type="note" >}}
+Before trying this, try the Maskrom instructions above by changing the debug adapter switch to "ON" to bypass the EMMC to boot the factory image off an SD Card. If this doesn't work you may proceed with this tutorial. 
+{{</ admonition >}}
+
+There may be situations where the device refuses to turn on and you cannot see anything coming up through UART. This may indicate that your device is bricked. The PineTab2 includes a debug adapter which allows the user to access Maskrom mode. On it's own this mode is useless as the user requires a miniloader from Rockchip to access any rkdeveloptool commands. 
+
+**Install rkdeveloptool**
+
+First you must install rkdeveloptool if you haven't already. You can find instructions on the [Rockchip wiki](https://opensource.rock-chips.com/wiki_Rkdeveloptool).
+
+**Clone**
+
+`git clone https://github.com/rockchip-linux/rkdeveloptool.git`
+
+**Install dependencies**
+
+`sudo apt-get install libudev-dev libusb-1.0-0-dev dh-autoreconf pkg-config libusb-1.0`
+
+**Compile**
+```
+autoreconf -i
+./configure
+make
+make install
+```
+
+**Put device into Maskrom mode**
+
+{{< figure src="/documentation/PineTab2/images/PineTab2_USB_UARTv2.jpg" caption="The debug adapter, bottom port is for UART and the top one is for maskrom" width="450" >}}
+
+Turn off your PineTab2 by holding the power button for around five seconds. Then grab your debug adapter, make sure the Maskrom switch is in the "ON" position, plug it into your PineTab2 and plug a USB-C cable into the top port and into your computer.  
+
+Check that your PineTab2 is in Maskrom mode by typing `lsusb` into a terminal. If it displays `Fuzhou Rockchip Electronics Company Device` then it has successfully entered Maskrom mode. 
+
+**Troubleshooting**
+* If you only see `QinHeng Electronics USB Serial` (UART) either try switching USB-C ports on the adapter or plugging in both adapter ports into your computer. 
+
+**Boot miniloader using Maskrom**
+
+To issue any commands using `rkdeveloptool` you must first load a Rockchip miniloader through Maskrom.
+
+{{< admonition type="note" >}}
+This file is hosted directly on this website.
+{{</ admonition >}}
+
+**[Download MiniLoaderAll.bin.zip](/documentation/PineTab2/files/MiniLoaderAll.bin.zip)** 
+
+Once you download and unzip the miniloader, issue this command to `rkdeveloptool`.
+
+`rkdeveloptool db MiniLoaderAll.bin`
+
+Once the command completes, wait for the device to reappear in `lsusb`. Make sure it has a different name than before. **Be patient as it can take ~20 seconds**.
+
+`Fuzhou Rockchip Electronics Company Device USB-MSC`
+
+**Recovery to factory firmware**
+
+To make sure the only choice for the SOC to boot is via SD Card erase the internal storage. 
+
+`rkdeveloptool ef`
+
+You will have to wait for a while until it has finished. Once the command has completed you can turn force off the device and place an SD Card with the DanctNix factory firmware into the card slot.
+
+**Download factory image**
+
+https://echo.danctnix.org:7269/factory_images/pinetab2/
+
+{{< admonition type="note" >}}
+The factory image is flashed to a microSD card and it will overwrite the eMMC installation after booting.
+{{</ admonition >}}
+
+{{< admonition type="info" >}}
+Newer images use the **volume and power button for selection** at boot instead of the keyboard.
+{{</ admonition >}}
+
 ### Networking using USB
 
 Until the internal BES2600 WIFI has a stable driver, the community suggests that you connect using USB. This section summarizes the more detailed information in [File:PineTab2_USB_Guide.pdf](https://wiki.pine64.org/wiki/File:PineTab2_USB_Guide.pdf), which covers connecting via a tethered Android phone, a suitable USB WIFI adapter, a wired USB Ethernet adapter, and a tethered iOS device.
