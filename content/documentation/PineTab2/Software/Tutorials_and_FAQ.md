@@ -21,11 +21,11 @@ To recover from a bad eMMC/SPI flash, plug the included debug adapter into the c
 
 ### Recovery from non-booting device
 {{< admonition type="warning" >}}
-You cannot use a virtual machine for this tutorial as rkdeveloptool does not function correctly in a virtual machine.
+You cannot use a virtual machine for this tutorial as rkdeveloptool does not function as intended.
 {{</ admonition >}}
 
 {{< admonition type="note" >}}
-Before trying this, try the Maskrom instructions above by changing the debug adapter switch to "ON" to bypass the EMMC to boot the factory image off an SD Card. If this doesn't work you may proceed with this tutorial. 
+Before trying this, try the Maskrom instructions above by changing the debug adapter switch to "ON" to bypass the internal storage to boot the factory image off an SD Card. If this doesn't work you may proceed with this tutorial. 
 {{</ admonition >}}
 
 There may be situations where the device refuses to turn on and you cannot see anything coming up through UART. This may indicate that your device is bricked. The PineTab2 includes a debug adapter which allows the user to access Maskrom mode. On it's own this mode is useless as the user requires a miniloader from Rockchip to access any rkdeveloptool commands. 
@@ -56,7 +56,7 @@ make install
 
 Turn off your PineTab2 by holding the power button for around five seconds. Then grab your debug adapter, make sure the Maskrom switch is in the "ON" position, plug it into your PineTab2 and plug a USB-C cable into the top port and into your computer.  
 
-Check that your PineTab2 is in Maskrom mode by typing `lsusb` into a terminal. If it displays `Fuzhou Rockchip Electronics Company Device` then it has successfully entered Maskrom mode. 
+Check that your device is in Maskrom mode by typing `lsusb` into a terminal. If it displays `Fuzhou Rockchip Electronics Company Device` then it has successfully entered Maskrom mode. 
 
 **Troubleshooting**
 * If you only see `QinHeng Electronics USB Serial` (UART) either try switching USB-C ports on the adapter or plugging in both adapter ports into your computer. 
@@ -66,14 +66,18 @@ Check that your PineTab2 is in Maskrom mode by typing `lsusb` into a terminal. I
 To issue any commands using `rkdeveloptool` you must first load a Rockchip miniloader through Maskrom.
 
 {{< admonition type="note" >}}
-This file is hosted directly on this website.
+The zip is hosted directly on this website.
 {{</ admonition >}}
 
 **[Download MiniLoaderAll.bin.zip](/documentation/PineTab2/files/MiniLoaderAll.bin.zip)** 
 
-Once you download and unzip the miniloader, issue this command to `rkdeveloptool`.
+Once you download and unzip the miniloader, issue this command using `rkdeveloptool`.
 
 `rkdeveloptool db MiniLoaderAll.bin`
+
+{{< admonition type="note" >}}
+This command downloads the loader to the device temporarily. If you powered off the device and wish to enter Maskrom and issue `rkdeveloptool` commands you must follow the above instructions again. 
+{{</ admonition >}}  
 
 Once the command completes, wait for the device to reappear in `lsusb`. Make sure it has a different name than before. **Be patient as it can take ~20 seconds**.
 
@@ -81,11 +85,11 @@ Once the command completes, wait for the device to reappear in `lsusb`. Make sur
 
 **Recovery to factory firmware**
 
-To make sure the only choice for the SOC to boot is via SD Card erase the internal storage. 
+To make sure the only boot option for the device is via SD Card, erase the internal storage. 
 
 `rkdeveloptool ef`
 
-You will have to wait for a while until it has finished. Once the command has completed you can turn force off the device and place an SD Card with the DanctNix factory firmware into the card slot.
+You will have to wait for a while until it has finished. Once the command has completed, force power off the device and place an SD Card with the DanctNix factory firmware into the card slot.
 
 **Download factory image**
 
