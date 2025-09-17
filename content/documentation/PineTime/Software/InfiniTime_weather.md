@@ -11,7 +11,7 @@ aliases:
   - /wiki/Infinitime-Weather
 ---
 
-Infinitime features a weather subsystem which stores weather data on the watch in a timeline which can be queried by apps or watchfaces. It can store many different types of data (see [here](https://github.com/InfiniTimeOrg/InfiniTime/blob/main/src/components/ble/weather/WeatherData.h)) and each entry includes a timestamp and an expiry time. When entries expire they are removed from the timeline automatically.
+Infinitime features a weather subsystem which stores weather data on the watch in a timeline which can be queried by apps or watchfaces. It can store many different types of data (see [here](https://github.com/InfiniTimeOrg/InfiniTime/blob/main/src/components/ble/SimpleWeatherService.h) and each entry includes a timestamp and an expiry time. When entries expire they are removed from the timeline automatically.
 
 ## Sending weather data to the watch
 
