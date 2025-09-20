@@ -12,6 +12,7 @@ Affiliates of the [Pine Store](https://pine64.com):
 | [Blinky Parts](https://shop.blinkyparts.com/en/Soldering-Iron/)                                    | Germany (ships worldwide)          |
 | [Botland.store](https://botland.store/762-pine64-rock64)                                           | Poland (ships to EU)               |
 | [Breadstick Innovations](https://shop.breadstick.ca/products/pinecil-solder-iron)                  | Canada (ships worldwide)           |
+| [Copacetic Design (Pty) Ltd](https://copaceticdesignsa.com/product-category/pine64/pinecil/)       | Southern-Africa                    |
 | [Droneit](https://droneit.se/shop/?filtering=1&filter_brand=pine64)                                | Sweden                             |
 | [Eleshop.de](https://eleshop.de/pinecil-smart-mini-tragbarer-lotkolben.html)                       | Germany / Austria                  |
 | [Eleshop.nl](https://www.eleshop.nl/pinecil-smart-mini-draagbare-soldeerbout.html)                 | Netherlands / Belgium              |
