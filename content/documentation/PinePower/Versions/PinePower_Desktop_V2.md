@@ -17,7 +17,7 @@ The **PinePower Desktop V2** power supply features two sets of 65W PD, two sets 
 
 Body:
 
-* Dimensions: 123mm x 99mm x 37mm
+* Dimensions: 123mm x 114mm x 48mm
 * Weight: 448 grams
 * Build: Plastic
 * Color: Black
