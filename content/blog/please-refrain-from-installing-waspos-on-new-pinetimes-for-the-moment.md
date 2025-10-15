@@ -24,7 +24,7 @@ Everything went well and PineTimes equipped with the new memory chip and softwar
 
 Everything? Well, not really: a few users reported soft-bricked PineTimes after switching to WASP-OS and then reverting to InfiniTime again. This is a bummer: **the "reloader" tool that reinstalls the InfiniTime bootloader also needed to be upgraded to support the new memory chip!**
 
-[An issue has already been opened on the WASP-OS GitHub repo](https://github.com/wasp-os/wasp-os/issues/519) and a new reloader tool will hopefully be released soon to tackle this issue. We also added a big red warning on the documentation page that [explains how to switch to and from InfiniTime and WASP-OS](https://pine64.org/documentation/PineTime/Software/Switching_between_InfiniTime_and_Wasp-os/) to ensure that users won't try to switch OS until the issue is fixed and the documentation updated.
+[An issue has already been opened on the WASP-OS GitHub repo](https://github.com/wasp-os/wasp-os/issues/519) and a new reloader tool will hopefully be released soon to tackle this issue. We also added a big red warning on the documentation page that explains how to switch to and from InfiniTime and WASP-OS to ensure that users won't try to switch OS until the issue is fixed and the documentation updated.
 
 {{< admonition type="warning" >}}
 In the meantime, **do not try to install WASP-OS on your PineTime if it's running bootloader v1.0.1 from the factory (unless you know exactly what you are doing), this WILL brick your PineTime!**

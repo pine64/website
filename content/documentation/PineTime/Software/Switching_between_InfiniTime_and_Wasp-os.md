@@ -1,6 +1,6 @@
 ---
 title: "Switching your PineTime between InfiniTime and Wasp-os"
-draft: false
+draft: true # Unreleased
 menu:
   docs:
     title: "Switching InfiniTime and Wasp-os"
