@@ -127,3 +127,5 @@ WiFi/BT module info:
 ## Bringup Notes
 
 * [Lup Yuen's StarPro64 bring up article section 1-7](https://lupyuen.org/articles/starpro64.html)
+* Boot DIP switches' labeling is the same as STAR64: "ON" means "0".
+* Boot DIP switch 1 represents the least significant bit in the table at page 14 of the schematic.

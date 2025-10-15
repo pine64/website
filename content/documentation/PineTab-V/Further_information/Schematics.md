@@ -13,6 +13,9 @@ menu:
 
 PineTab-V mainboard schematic:
 
+* [PineTab-V mainboard Released Schematic-20240730 ver 2.0](https://files.pine64.org/doc/PineTab/PineTab-V_Schematic_Ver2-20240730.pdf)
+* [PineTab-V PCB Component Reference location v2.0 (top layer)](https://files.pine64.org/doc/PineTab/PineTab-V_comp_ref_top-20240730.pdf)
+* [PineTab-V PCB Component Reference location v2.0 (bottom layer)](https://files.pine64.org/doc/PineTab/PineTab-V_comp_ref_bottom-20240730.pdf)
 * [PineTab-V mainboard Released Schematic-20230614 ver 1.0](https://files.pine64.org/doc/PineTab/PineTab-V_Schematic_Ver1-20230614.pdf)
 * [PineTab-V PCB Component Reference location v1.0 (top layer)](https://files.pine64.org/doc/PineTab/PineTab-V_comp_ref_top-20230614.pdf)
 * [PineTab-V PCB Component Reference location v1.0 (bottom layer)](https://files.pine64.org/doc/PineTab/PineTab-V_comp_ref_bottom-20230614.pdf)
