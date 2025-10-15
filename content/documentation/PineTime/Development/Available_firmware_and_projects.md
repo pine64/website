@@ -22,6 +22,7 @@ menu:
 | Bare Metal |  | https://github.com/xriss/timecake<br> https://github.com/Arc13/Pyrus | [xriss/timecake](https://github.com/xriss/timecake)<br> [Arc13/Pyrus](https://github.com/Arc13/Pyrus) |
 | AdaFruit bootloader |  | https://github.com/adafruit/Adafruit_nRF52_Bootloader | [daniel-thompson/wasp-bootloader](https://github.com/daniel-thompson/wasp-bootloader) |
 | Useful drivers |  | https://github.com/sethitow/mbed-pinetime | [https://github.com/sethitow/mbed-pinetime](https://github.com/sethitow/mbed-pinetime/tree/master/drivers) |
+| watchful (rust) | | https://github.com/lulf/watchful | [https://github.com/lulf/watchful](https://github.com/lulf/watchful) |
 
 |  | Project Homepage | Project Source | PineTime Implementations |
 | --- | --- | --- | --- |
