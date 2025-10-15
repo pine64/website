@@ -6,6 +6,8 @@ cover:
   image: "pinetime-bootloader-1-0-1_cover.jpg"
 images:
   - "/blog/images/pinetime-bootloader-1-0-1.jpg"
+aliases:
+  - /documentation/PineTime/Software/Switching_between_InfiniTime_and_Wasp-os/
 ---
 
 In July 2024, PineStore [notified the community](https://github.com/InfiniTimeOrg/InfiniTime/issues/2096) that a small hardware change was needed on the PineTime: the current flash chip was end of life (EoL) and needed to be replaced by a new one. From the software point of view, the new chip behaves exactly like the old on so very few code changes were required to support it.

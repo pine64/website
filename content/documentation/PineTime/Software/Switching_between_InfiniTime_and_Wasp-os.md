@@ -1,6 +1,6 @@
 ---
 title: "Switching your PineTime between InfiniTime and Wasp-os"
-draft: true # Unreleased
+draft: true # Unreleased. Remove alias from /blog/please-refrain-from-installing-waspos-on-new-pinetimes-for-the-moment.md before releasing
 menu:
   docs:
     title: "Switching InfiniTime and Wasp-os"
