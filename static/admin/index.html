@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
     <title>PINE64 CMS</title>
+    <link rel="stylesheet" href="custom.css">
   </head>
   <body>
     <!-- Include the script that builds the page and powers Decap CMS -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
     <script>
-      CMS.registerPreviewStyle("custom.css");
+      CMS.registerPreviewStyle("custom_preview.css");
       CMS.registerPreviewStyle("/css/style.min.css");
       CMS.registerPreviewStyle("/css/documentation.min.css");
     </script>
@@ -146,7 +147,7 @@ CMS.registerEditorComponent({
         return `{{< toc >}}`;
     },
     toPreview: function(obj) {
-        return '<hr><b>TABLE OF CONTENTS WILL BE HERE</b><hr>';
+        return '<hr><b>TABLE OF CONTENTS</b><br>Hidden in preview<hr>';
     },
 });
 // podcast_player
@@ -407,6 +408,17 @@ CMS.registerEditorComponent({
 </div>
     `;
   },
+});
+
+// HR
+CMS.registerEditorComponent({
+  id: "horizontal-rule",
+  label: "Horizontal Rule",
+  fields: [],
+  pattern: /^---$/m,
+  fromBlock: () => ({}),
+  toBlock: () => '---',
+  toPreview: () => '<hr />'
 });
 
     </script>

@@ -1,48 +1,29 @@
-html,
-body {
-    padding: 20px;
-    font-family: system-ui, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 15px;
-    line-height: 1.5;
+input {
+    padding: 4px 6px !important;
 }
-h2 {
-    font-weight: 700;
-    line-height: 1;
-    font-size: 24px;
-    margin-top: 12px;
+input[name="email"], input[name="password"] {
+    padding: 10px !important;
 }
-img {
-    max-width: 100%;
+input[class*=SearchInput] {
+    padding: 10px 6px 10px 34px !important;
 }
-
-.frame-content div {
-    padding-bottom: 10px;
+[class*=TopBarContainer], [class*=ToolbarContainer] {
+    padding: 4px 6px !important;
+    min-height: unset !important;
 }
-
-ul {
-    margin-bottom: 16px;
-    margin-top: 8px;
-    padding-left: 30px;
+[class*=ControlContainer]:first-of-type {
+    margin-top: 16px !important;
 }
-li {
-    margin: 8px 0;
+[class*=ListCardLink]:first-of-type {
+    padding: 6px 8px !important;
 }
-
-table {
-    border: 1px solid #444;
-    border-collapse: collapse;
-    width: 100%;
+[class*=CreditIcon] {
+    display: none !important;
 }
-thead {
-    border: 1px solid #444;
-    background-color: #f8f8f8;
-    text-align: left;
+[class*=CustomIconWrapper] img {
+    margin-bottom: 40px !important;
 }
-tr, td, th {
-    border: 1px solid #444;
+[class*=AppHeaderLogo] img {
+    padding: 12px 4px 6px 4px !important;
 }
 
-pre {
-    padding: 4px;
-    background-color: #f8f8f8;
-}

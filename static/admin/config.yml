@@ -25,7 +25,14 @@ backend:
 
 media_folder: "static/images/uploads" # Adjust based on your media storage location
 public_folder: "/images/uploads" # URL path for accessing media
-logo_url: "https://pine64.org/img/logo.png"
+logo: 
+  src: https://pine64.org/img/logo.png
+  show_in_header: true
+search: false
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "_"
 
 collections:
   - name: "blog" # This is the name used in the URL
@@ -36,6 +43,7 @@ collections:
     slug: "{{slug}}" # Filename template for new posts
     preview_path: "{{year}}/{{month}}/{{day}}/{{slug}}/"
     preview: false
+    delete: false
     fields: # List of fields for the front matter
       - { label: "Title", name: "title", widget: "string" }
       #- { label: "Description", name: "description", widget: "text", required: false}
@@ -61,6 +69,7 @@ collections:
     create: true # Allows users to create new documents in this collection
     slug: "{{slug}}" # Filename template for new posts
     preview: false
+    delete: false
     fields: # List of fields for the front matter
       - { label: "Title", name: "title", widget: "string" }
       #- { label: "Description", name: "description", widget: "text", required: false }
@@ -91,6 +100,7 @@ collections:
     create: true # Allows users to create new documents in this collection
     slug: "{{slug}}" # Filename template for new posts
     preview: false
+    delete: false
     fields: # List of fields for the front matter
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text", required: false  }
@@ -105,7 +115,7 @@ collections:
     folder: "content/documentation" # The folder where your posts markdown files will be saved
     create: true # Allows users to create new documents in this collection
     preview: false
-    i18n: false
+    delete: false
     nested:
       #subfolders: true # Legacy behavior
       subfolders: false
@@ -147,6 +157,7 @@ collections:
     create: true # Allows users to create new documents in this collection
     slug: "{{slug}}" # Filename template for new posts
     preview: false
+    delete: false
     fields: # List of fields for the front matter
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text", required: false  }
