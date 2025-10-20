@@ -56,28 +56,27 @@ Location of partition table: first page of external flash (256 bytes).
 C code:
 
 ```
-	#define OFFSET_T uint32_t
-	#define SIZE_T   uint32_t
+#define OFFSET_T uint32_t
+#define SIZE_T   uint32_t
 
-	/* bits 0-7 is type, bits 8-15 is subtype, bits 16-31 are flags */
-	#define TYPE_T   uint32_t
+/* bits 0-7 is type, bits 8-15 is subtype, bits 16-31 are flags */
+#define TYPE_T   uint32_t
 
-	struct partition_entry_t {
-	    OFFSET_T offset;
-	    SIZE_T size;
-	    TYPE_T type;   
-	};
+struct partition_entry_t {
+	OFFSET_T offset;
+	SIZE_T size;
+	TYPE_T type;   
+};
 
-	struct partition_table_t {
-	    uint32_t magic_bytes;           /* always 0x50494e45 ("PINE") */
-	    uint32_t reserved[2];           /* reserved, do not use */
-	    partition_entry_t entries[20];  /* 20*sizeof(partition_entry_t) == 240 */
-	    uint32_t checksum;              /* CRC-32 MPEG2 variant (used by MCU bootloader) */
-	};
+struct partition_table_t {
+	uint32_t magic_bytes;           /* always 0x50494e45 ("PINE") */
+	uint32_t reserved[2];           /* reserved, do not use */
+	partition_entry_t entries[20];  /* 20*sizeof(partition_entry_t) == 240 */
+	uint32_t checksum;              /* CRC-32 MPEG2 variant (used by MCU bootloader) */
+};
 
-	#define PARTITION_TYPE_NOT_USED		0x00
-	#define PARTITION_TYPE_BOOT_LOGO 	0x01
-	#define PARTITION_TYPE_FACTORY_IMG 	0x02
-	#define PARTITION_TYPE_LITTLE_FS 	0x03
-
+#define PARTITION_TYPE_NOT_USED		0x00
+#define PARTITION_TYPE_BOOT_LOGO 	0x01
+#define PARTITION_TYPE_FACTORY_IMG 	0x02
+#define PARTITION_TYPE_LITTLE_FS 	0x03
 ```

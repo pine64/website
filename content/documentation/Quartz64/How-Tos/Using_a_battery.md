@@ -76,33 +76,33 @@ Not all parts of the board can be supplied from the battery. When you use batter
 For the battery to be correctly detected, you will need to edit the device tree to add the charger and battery nodes, like this:
 
 ```
-	// add this to root node (you may need to modify the values to fit your chosen battery)
-	battery: battery {
-		compatible = "simple-battery";
-		charge-full-design-microamp-hours = <6400000>;
-		charge-term-current-microamp = <200000>;
-		constant-charge-current-max-microamp = <2000000>;
-		constant-charge-voltage-max-microvolt = <4200000>;
-		factory-internal-resistance-micro-ohms = <117000>;
-		voltage-max-design-microvolt = <4200000>;
-		voltage-min-design-microvolt = <3200000>;
+// add this to root node (you may need to modify the values to fit your chosen battery)
+battery: battery {
+	compatible = "simple-battery";
+	charge-full-design-microamp-hours = <6400000>;
+	charge-term-current-microamp = <200000>;
+	constant-charge-current-max-microamp = <2000000>;
+	constant-charge-voltage-max-microvolt = <4200000>;
+	factory-internal-resistance-micro-ohms = <117000>;
+	voltage-max-design-microvolt = <4200000>;
+	voltage-min-design-microvolt = <3200000>;
 
-		ocv-capacity-celsius = <20>;
-		ocv-capacity-table-0 =  <4200000 100>, <4054000 95>, <3984000 90>, <3926000 85>,
-					<3874000 80>, <3826000 75>, <3783000 70>, <3746000 65>,
-					<3714000 60>, <3683000 55>, <3650000 50>, <3628000 45>,
-					<3612000 40>, <3600000 35>, <3587000 30>, <3571000 25>,
-					<3552000 20>, <3525000 15>, <3492000 10>, <3446000 5>,
-					<3400000 0>;
-	};
+	ocv-capacity-celsius = <20>;
+	ocv-capacity-table-0 =  <4200000 100>, <4054000 95>, <3984000 90>, <3926000 85>,
+				<3874000 80>, <3826000 75>, <3783000 70>, <3746000 65>,
+				<3714000 60>, <3683000 55>, <3650000 50>, <3628000 45>,
+				<3612000 40>, <3600000 35>, <3587000 30>, <3571000 25>,
+				<3552000 20>, <3525000 15>, <3492000 10>, <3446000 5>,
+				<3400000 0>;
+};
 
-	// add this to &rk817 node
-	rk817_charger: charger {
-		monitored-battery = <&battery>;
-		rockchip,resistor-sense-micro-ohms = <10000>;
-		rockchip,sleep-enter-current-microamp = <300000>;
-		rockchip,sleep-filter-current-microamp = <100000>;
-	};
+// add this to &rk817 node
+rk817_charger: charger {
+	monitored-battery = <&battery>;
+	rockchip,resistor-sense-micro-ohms = <10000>;
+	rockchip,sleep-enter-current-microamp = <300000>;
+	rockchip,sleep-filter-current-microamp = <100000>;
+};
 ```
 
 You will also need to make sure that CONFIG_CHARGER_RK817 is enabled in your kernel.

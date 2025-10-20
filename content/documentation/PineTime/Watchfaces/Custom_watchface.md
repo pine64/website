@@ -554,14 +554,14 @@ Clock::Clock(DisplayApp* app,...){...
 region (the watchface function), you need to place a particular set of lines which LVGL uses to define the object to declare the array as an Icon/Image, You can place this set of lines above _label_time_.
 
 ```CPP
- <name>.header.always_zero = 0; //Initialization
- <name>.header.w = <picture_X>;                     // Setting the Width (or) Horizontal length of the image (number of px)
- <name>.header.h = <picture_Y>;                     // Setting the Height (or) vertical length of the image (number of px)
- <name>.data_size = <Hr_length> * <Vr_length> * LV_COLOR_SIZE / 8; //Allocation of memory for the image
- <name>.header.cf = LV_IMG_CF_TRUE_COLOR; // Sets the color scheme for the image
- <name>.data = <name>_map;                // Maps the Image data to the Array
- lv_obj_t *img_src = lv_img_create(lv_scr_act(), NULL);  // Create an image object
- lv_img_set_src(img_src, &<name>);        // Set the created file as image (<name>)
+<name>.header.always_zero = 0; //Initialization
+<name>.header.w = <picture_X>;                     // Setting the Width (or) Horizontal length of the image (number of px)
+<name>.header.h = <picture_Y>;                     // Setting the Height (or) vertical length of the image (number of px)
+<name>.data_size = <Hr_length> * <Vr_length> * LV_COLOR_SIZE / 8; //Allocation of memory for the image
+<name>.header.cf = LV_IMG_CF_TRUE_COLOR; // Sets the color scheme for the image
+<name>.data = <name>_map;                // Maps the Image data to the Array
+lv_obj_t *img_src = lv_img_create(lv_scr_act(), NULL);  // Create an image object
+lv_img_set_src(img_src, &<name>);        // Set the created file as image (<name>)
 ```
 
 again, make sure to replace <name> with the name you gave it during conversion!
