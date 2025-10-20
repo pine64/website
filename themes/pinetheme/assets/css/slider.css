@@ -1,7 +1,7 @@
 /* Carousel */
 .cr {
     position: relative;
-    background-color: #F3F6F9;
+    background-color: var(--lightblue);
 }
 .cr-inner {
     position: relative;

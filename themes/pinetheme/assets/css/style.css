@@ -3,16 +3,50 @@
     margin: 0;
 }
 
+:root {
+    --blue: rgb(0, 75, 160);
+    --lightblue: #f3f6f9;
+    --medblue: #e4f0ff;
+    --palecyan: #eff7f9;
+    --white: #ffffff;
+    --grey: #e6e6e6;
+    --fg: #222222;
+    --fg-main-menu: #000000;
+    --bg: #ffffff;
+    --bg-table: #f8f8f8;
+    --bg-table-hl: #ececec;
+    --bg-table-border: #dee2e6;
+}
+
 body {
-    background-color: #fff;
+    background-color: var(--bg);
     font-family: Roboto, sans-serif;
-    color: rgb(34, 34, 34);
+    color: var(--fg);
 }
 
 :root {
-    --blue: rgb(0, 75, 160);
-    --white: #ffffff;
+  color-scheme: light dark;
 }
+
+/***
+TBD: <meta name="color-scheme" content="light dark">
+***/
+/***
+@media (prefers-color-scheme: dark) {
+
+    :root {
+        --blue: rgb(0, 90, 194);
+        --grey: #111111;
+        --fg: #ddd;
+        --fg-main-menu: #d8d8d8;
+        --bg: #181818;
+        --bg-table: #2c2c2c;
+        --bg-table-hl: #404040;
+        --bg-table-border: #6c757d;
+    }
+}
+***/
+
 /* Text styles */
 a {
     color: var(--blue);
@@ -35,7 +69,7 @@ h1 {
     font-size: 40px;
     font-weight: 300;
     padding-bottom: 20px;
-    color: rgb(34, 34, 34);
+    color: var(--fg);
 }
 h2 {
     font-size: 26px;
@@ -48,7 +82,6 @@ h3,
 h4,
 h5,
 h6 {
-    /*padding: 12px 0 12px 0;*/
     font-weight: 300;
 }
 h2 {
@@ -68,7 +101,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-    color: rgb(34, 34, 34);
+    color: var(--fg);
 }
 .imageblock {
     margin-bottom: 1.6rem;
@@ -198,22 +231,15 @@ div.themeblue {
     background: linear-gradient(90deg, #2868B0 0%, #2F82C6 100%);
     color: white;
 }
-div.themegrey {
-    background-color: #F3F6F9;
-    color: black;
-}
-div.themegrey p { 
-    color: #777;
-}
 div.themewhite {
-    background-color: #FFF;
-    color: black;
+    background-color: var(--bg);
+    color: var(--fg);
 }
 div.themewhite h3 { 
-    color: #333;
+    color: var(--fg);
 }
 div.themewhite p { 
-    color: #222222;
+    color: var(--fg);
 }
 div.themecommunity {
     background-color: #003380;
@@ -254,24 +280,14 @@ div.community_round {
     border-bottom-right-radius: 50%;
 }
 div.themecontest {
-    background-color: rgb(211, 211, 211);
+    background-color: #d3d3d3;
     background-image: url("/img/tria2_i.svg");
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    font-weight: 500;
 }
 div.themecontest h1 {
     color: white;
-}
-div.themelightblue {
-    background-color: #e4f0ff;
-}
-div.themelightgrey {
-    background-color: #e6e6e6;
-}
-div.themevlblue {
-    background-color: #eff7f9;
 }
 div.themeblog {
     color: white;
@@ -329,6 +345,18 @@ div.themedarkgrey {
 div.themedarkgrey h1 {
     color: white;
 }
+div.bg_grey {
+    background-color: var(--grey);
+}
+div.bg_lightblue {
+    background-color: var(--lightblue);
+}
+div.bg_medblue {
+    background-color: var(--medblue);
+}
+div.bg_palecyan {
+    background-color: var(--palecyan);
+}
 
 /* Pagination */
 ul.pagination {
@@ -341,15 +369,17 @@ ul.pagination {
     justify-content: center;
 }
 ul.pagination li {
-    color: #333;
+    color: var(--fg);
     margin: 2px;
     padding: 2px 6px;
     text-align: center;
     font-size: 1.31rem;
     font-weight: 600;
     margin-bottom: 3rem;
-    background-color: #f5f5f5;
+    background-color: var(--bg);
     border-radius: 2px;
+    min-width: 26px;
+    border-radius: 4px;
 }
 ul.pagination li.disabled {
     display: none;
@@ -357,7 +387,7 @@ ul.pagination li.disabled {
 ul.pagination li a {
     /*padding: 4px 8px;*/
     line-height: 2rem;
-    color: #333;
+    color: var(--fg);
 
 }
 ul.pagination li.active a, ul.pagination li a:hover {
@@ -393,7 +423,6 @@ pre {
     width: 100%;
 }
 #header-container {
-    background-color: white;
     /*border-bottom: 1px solid #ddd;*/
     max-width: 1200px;
     /*margin: auto;*/
@@ -434,7 +463,7 @@ input#hamburger_cb,
     padding: 0 10px;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
-    background-color: #F3F6F9;
+    background-color: var(--lightblue);
     border: none;
     color: #333;
     height: 38px;
@@ -509,7 +538,7 @@ input#hamburger_cb,
 }
 #main_menu .nav-link {
     padding: 15px;
-    color: black;
+    color: var(--fg-main-menu);
     text-decoration: none;
     font-size: 1.13rem;
     white-space: nowrap;
@@ -631,9 +660,6 @@ div.roundedbutton:hover {
     border-image: linear-gradient(to right, #1a76da 85%, #fd1818 85%) 1;
     padding: 2px;
     font-weight: 400;
-}
-.editpage a {
-    color: #003f9e;
 }
 @media screen and (max-width: 750px){
     .editpage {
@@ -811,7 +837,7 @@ div.credits {
     line-height: 2;
 }
 .devices tbody {
-    background-color: white;
+    background-color: var(--bg);
 }
 .devices td {
     border-top: 1px solid #aaa;
@@ -836,6 +862,7 @@ div.credits {
 }
 /* Device box */
 .device_box {
+    background-color: var(--bg);
     flex: 0 0 100%;
     min-width: 200px;
     width: 280px;
@@ -872,7 +899,7 @@ div.credits {
 }
 .device_box p {
     padding: 0 10px 0 10px !important;
-    color: #555;
+    color: var(--fg);
     font-size: 0.94rem;
     font-weight: 400;
     margin-bottom: 0;
@@ -919,7 +946,7 @@ table {
     max-width: 100%;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    border: 1px solid #dee2e6;
+    border: 1px solid var(--bg-table-border);
     table-layout: fixed;
     width: 100%;
 }
@@ -953,12 +980,12 @@ table th.halign-center {
     text-align: center;
 }
 thead {
-    background-color: #ececec;
+    background-color: var(--bg-table-hl);
     margin-bottom: 0;
 }
 
 tbody {
-    background-color: #f8f8f8;
+    background-color: var(--bg-table);
     margin-bottom: 0;
 }
 
@@ -1206,12 +1233,12 @@ div.podcast:hover {
 
 /* Footer */
 #footer {
-    color: #555;
+    color: var(--fg);
 }
 #footer a {
     text-decoration: none;
     font-weight: 300;
-    color: #555;
+    color: var(--fg);
 }
 #footer ul {
     list-style-type: none;

@@ -7,7 +7,7 @@ aliases:
   - /web-irc/ # from pine64.com
 ---
 
-{{< box style="themewhite pad" >}}
+{{< box style="pad" >}}
   {{< box style="pad_s blueshadow" type="image" link="/img/slider_index_1.jpg" width="380" >}}{{</ box >}}
   {{< box style="pad f50 rows" title="" content="markdown" >}}
 ***Welcome to the PINE64 community!***
@@ -75,7 +75,7 @@ PINE64 community is not some always responding, restless commercial customer ser
 
 ## Vision
 
-{{< box style="themewhite pad" >}}
+{{< box style="pad" >}}
   {{< box style="pad f50 rows" title="" content="markdown" >}}
 _PINE64_ is a community-driven company focused on creating high-quality, low-cost ARM devices and, more recently, RISC-V devices for individuals and businesses around the globe. PINE64 made its debut with the [PINE A64](/documentation/Pine_A64) single-board computer, which successfully launched on Kickstarter in 2015. PINE64 has since released a multitude of other devices, including both development boards and end-user devices.
 

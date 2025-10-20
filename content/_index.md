@@ -31,7 +31,7 @@ We are available on Discord, IRC, Matrix and Telegram, in the Forum and on Reddi
 ![Multiple PinePhones with different operating systems.](/img/Pinephone_revisions.jpg)
 {{</ box >}}
 
-{{< box style="full themevlblue pad" >}}
+{{< box style="full bg_palecyan pad" >}}
   {{< box_news title="News" type="blog" amount="2" style="rows" >}}
 {{</ box >}}
 
@@ -50,7 +50,7 @@ To achieve this, we actively work with the development community and champion en
   {{</ box >}}
 {{</ box >}}
 
-{{< box style="themewhite pad" >}}
+{{< box style="pad" >}}
   {{< box style="f50 rows" title="Innovation meets collaboration" content="markdown" >}}
 The PINE64 community is large, vibrant and diverse. Independent and partner-project developers, hackers and hardware enthusiasts, privacy advocates and FOSS geeks - you name it, we’ve got 'em all. 
 
@@ -66,7 +66,7 @@ They all contribute to the project thereby shaping it and determining its course
     {{< box style="pad" type="image" link="/img/pinenotebg1.png" width="400" >}}{{</ box >}}
 {{</ box >}}
 
-{{< box style="themegrey full" >}}
+{{< box style="bg_lightblue full" >}}
 {{< box style="pad" >}}
   {{< box_news title="Latest contest" type="contests" amount="1" style="rows" >}}
 {{</ box >}}

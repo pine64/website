@@ -3,7 +3,7 @@ body {
     overflow-y: scroll;
 }
 #header {
-    box-shadow: 0 1px 2px #ddd;
+    box-shadow: 0 1px 2px var(--grey);
 }
 #content {
     display: block;
@@ -40,7 +40,7 @@ body {
     border-left: 1px solid #bbdcff;
 }
 #doc-toc a {
-    color: #363636;
+    color: var(--fg);
     font-size: 15px;
     font-weight: unset !important;
 }
