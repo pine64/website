@@ -45,9 +45,8 @@ Connections:
 
 ## Power specifications
 
-|     |     |     |     |     |
-| --- | --- | --- | --- | --- |
 | Output | Protocol | Version | Max output power | Power ranges |
+| --- | --- | --- | --- | --- |
 | USB-C | [PD](https://en.wikipedia.org/wiki/USB_hardware#USB_Power_Delivery_(USB_PD)) | ? | 65W | 5V3A, 9V3A, 12V3A, 15V3A, 20V3.25A |
 | USB-A | [QC](https://en.wikipedia.org/wiki/Quick_Charge) | 3.1 | 18W | 5V3A, 9V2A, 12V1.5A |
 | USB-A | USB | ? | 15W | 5V3A |

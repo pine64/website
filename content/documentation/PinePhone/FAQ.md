@@ -96,9 +96,8 @@ Some pre-made operating systems using megi’s kernel limit the maximum amount o
 
 #### What are the privacy switches doing?
 
-|     |     |     |     |
-| --- | --- | --- | --- |
 | Number | Name | Explanation | Description |
+| --- | --- | --- | --- |
 | 1 | Modem | Pulls Q1501 gate up (FET disabling modem power) | "On" enables cellular communication and GNSS hardware, "off" disables it. |
 | 2 | Wi-Fi / Bluetooth | Pulls up CHIP_EN | "On" enables Wi-Fi and Bluetooth communication hardware, "off" disables it. |
 | 3 | Microphone | Breaks microphone bias voltage from the SoC | "On" enables audio input from on-board microphones (not 3.5mm jack), "off" disables it. |

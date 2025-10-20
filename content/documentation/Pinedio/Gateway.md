@@ -17,9 +17,8 @@ The indoor unit consists of a PINE A64-LTS, fitted with a purpose built hat (ada
 * GPS is connected to UART2 on the A64 board
 * SX1303 on SPI0
 
-|     |     |     |
-| --- | --- | --- |
 | RAK5146 module | PI-2 connector | PINE A64-LTS |
+| --- | --- | --- |
 | SX1303 SPI | Pin 19 = MOSI / PC0<br> Pin 21 = MISO/PC1<br> Pin23 = CLK/PC2<br> Pin24 = CS/PC3 | SPI0 (/dev/spidev0.0) |
 | SX1303 RESET | Pin 11 = GPIO17/PC7 | GPIO71 (/sys/class/gpio/gpio71) |
 | GPS UART | Pin 8 = TX/<br> Pin 10 = RX | UART2 (/dev/ttyS2) |

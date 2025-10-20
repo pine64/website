@@ -20,9 +20,9 @@ Companion apps will use these information to detect which firmware (or fork of a
 We’ve briefly talked about this on the community chat and this proposal is the result of this discussion. This is a request for comments.
 
 Fields from the Device Information Service:
-|     |     |     |
-| --- | --- | --- |
+
 | Field | Description | Example value |
+| --- | --- | --- |
 | Manufacturer name | Manufacturer | PINE64 |
 | Model number | Name of the device | "PineTime", "P8" |
 | Serial number | Not needed by companion apps as they can use the BLE MAC address | ? |

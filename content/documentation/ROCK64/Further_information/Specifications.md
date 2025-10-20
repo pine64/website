@@ -29,14 +29,13 @@ Based on [Rockchip RK3328](https://www.rock-chips.com/a/en/products/RK33_Series/
 
 ### Frequencies & Voltages
 
-|     |     |
+| Frequency | Voltage |
 | --- | --- |
-| Frequency | Voltage   |
-| 408 MHz | 0.950 V   |
-| 600 MHz | 0.950 V   |
-| 816 MHz | 1.000 V   |
-| 1008 MHz | 1.100 V   |
-| 1200 MHz | 1.225 V   |
+| 408 MHz | 0.950 V |
+| 600 MHz | 0.950 V |
+| 816 MHz | 1.000 V |
+| 1008 MHz | 1.100 V |
+| 1200 MHz | 1.225 V |
 | 1296 MHz | 1.300 V |
 
 ### Power Draw
@@ -47,15 +46,14 @@ Please keep in mind that under real world usage, many other factors come into pl
 
 Helpful refresher on the formula for power (W) on DC: power = current &times; voltage, because the power factor is 1. The ROCK64 runs on 5V, so use that to calculate current if you need to.
 
-|     |     |     |
-| --- | --- | --- |
 | Frequency | Power cpu | Power vm   |
-| 1296 MHz | 2.64 W | 2.95 W   |
-| 1200 MHz | 2.32 W | 2.69 W   |
-| 1008 MHz | 1.90 W | 2.31 W   |
-| 816 MHz | 1.62 W | 2.05 W   |
-| 600 MHz | 1.45 W | 1.85 W   |
-| 408 MHz | 1.33 W | 1.72 W   |
+| --- | --- | --- |
+| 1296 MHz | 2.64 W | 2.95 W |
+| 1200 MHz | 2.32 W | 2.69 W |
+| 1008 MHz | 1.90 W | 2.31 W |
+| 816 MHz | 1.62 W | 2.05 W |
+| 600 MHz | 1.45 W | 1.85 W |
+| 408 MHz | 1.33 W | 1.72 W |
 
 It appears a good upper bound for a headless setup is in the neighbourhood of 3 W, or the energy contained in 0.025 bananas per hour.
 
