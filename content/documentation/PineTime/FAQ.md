@@ -1,6 +1,7 @@
 ---
 title: "FAQ"
 draft: false
+toc: false
 menu:
   docs:
     title:

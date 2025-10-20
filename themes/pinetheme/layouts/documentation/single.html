@@ -39,7 +39,7 @@
         </div>
 
         <div id="doc-toc">
-            <!-- If on a full page -->
+            <!-- Full pages -->
             {{ if isset .Params "full_section" }}
                 <nav id="TableOfContents">
 
@@ -51,13 +51,20 @@
 
                     <li>
                         <a class="sidebar-nav-subitem" href="#{{ .Title | anchorize }}">{{ .Title }}</a>
-                        {{ .TableOfContents }}
+                        <!-- not if "toc: false" is set-->
+                        {{ if not (eq .Params.toc false) }}
+                            <!-- Length limit -->
+                            {{ if lt (.TableOfContents | len ) 800 }}
+                                {{ .TableOfContents }}
+                            {{ end }}
+                        {{ end }}
                     </li>
                     
                 {{ end }}
                 </ul>
 
                 </nav>
+            <!-- Regular doc pages -->
             {{ else }}
                 {{ if ge (len (.TableOfContents)) 33 -}}
                     <div class="toc-head">Table of contents</div>
