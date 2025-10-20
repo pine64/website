@@ -1,6 +1,7 @@
 ---
 title: "Operating systems"
 draft: false
+toc_depth: 1
 menu:
   docs:
     title:

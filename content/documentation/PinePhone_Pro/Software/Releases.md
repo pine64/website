@@ -2,6 +2,7 @@
 title: "Releases"
 draft: false
 toc: true
+toc_depth: 1
 menu:
   docs:
     title:

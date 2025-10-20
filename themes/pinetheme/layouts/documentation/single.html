@@ -44,22 +44,27 @@
                 <nav id="TableOfContents">
 
                 {{ $section := .Site.GetPage "section" (printf "/documentation/%s/" .Params.full_section) }}
+
+                <!-- Set the filename variable -->
+                {{ $filename := .File.Filename }}
             
                 <div class="toc-head">Table of contents</div>
+
                 <ul>
                 {{ range $section.Pages.ByParam "menu.docs.weight"}}
-
-                    <li>
-                        <a class="sidebar-nav-subitem" href="#{{ .Title | anchorize }}">{{ .Title }}</a>
-                        <!-- not if "toc: false" is set-->
-                        {{ if not (eq .Params.toc false) }}
-                            <!-- Length limit -->
-                            {{ if lt (.TableOfContents | len ) 800 }}
-                                {{ .TableOfContents }}
+                    <!-- Exclude self -->
+                    {{ if not (eq .File.Filename $filename) }}
+                        <li>
+                            <a class="sidebar-nav-subitem" href="#{{ .Title | anchorize }}">{{ .Title }}</a>
+                            <!-- not if "toc: false" is set-->
+                            {{ if not (eq .Params.toc false) }}
+                                <!-- Length limit -->
+                                {{ if lt (.TableOfContents | len ) 800 }}
+                                    {{ .TableOfContents }}
+                                {{ end }}
                             {{ end }}
-                        {{ end }}
-                    </li>
-                    
+                        </li>
+                   {{ end }}
                 {{ end }}
                 </ul>
 
@@ -68,7 +73,11 @@
             {{ else }}
                 {{ if ge (len (.TableOfContents)) 33 -}}
                     <div class="toc-head">Table of contents</div>
-                    {{ .TableOfContents }}
+                    {{ $tocStartLevel := 2 }}
+                    {{ $tocDepth := default 2 .Params.toc_depth }}
+                    {{ $tocEndLevel := add $tocStartLevel (sub $tocDepth 1) }}
+                    {{ $tocOrdered := false  }}
+                    {{ .Fragments.ToHTML $tocStartLevel $tocEndLevel $tocOrdered | safeHTML }}
                 {{ end }}
             {{ end }}
 
