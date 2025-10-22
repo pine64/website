@@ -1,8 +1,6 @@
 ---
 title: "Early Adopter Edition"
 draft: false
-aliases:
-  - Early_adopters
 menu:
   docs:
     title:
@@ -10,6 +8,7 @@ menu:
     identifier: "PineTab/Revisions/Early_adopter_edition"
     weight:
 aliases:
+  - Early_adopters
   - /wiki/PineTab/Early-Adopter
 ---
 
