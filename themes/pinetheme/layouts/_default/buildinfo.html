@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div style="display: block">
+
+<br>
+<h1>{{ .Title }}</h1>
+
+<br>
+
+<p><strong>Hugo Version:</strong> {{ hugo.Version }}</p>
+<p><strong>Build Date:</strong> {{ now.Format "2006-01-02 15:04:05" }}</p>
+
+</div>
+{{ end }}
