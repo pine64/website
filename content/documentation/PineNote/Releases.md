@@ -80,3 +80,7 @@ Download:
 Notes:
 
 * View [Android SDK for RK3566](/documentation/General/Android_SDK_for_RK3566) for more information how to compile an image for the PineNote using this SDK
+
+## Chimera Linux
+
+See https://www.1a-insec.net/stuff/pinenote/
