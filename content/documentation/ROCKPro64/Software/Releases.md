@@ -91,7 +91,7 @@ Download:
 
 | Default credentials | |
 | -------- | ------- |
-| `root` | `dietpie` |
+| `root` | `dietpi` |
 
 ### LibreELEC
 
