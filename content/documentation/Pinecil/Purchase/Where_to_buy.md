@@ -21,6 +21,7 @@ menu:
 **Affiliates**
 
 * [AmeriDroid](https://ameridroid.com/collections/pine) (offers pre-order, ships to USA/Global/Brazil)
+* [blinkyparts GmbH](https://shop.blinkyparts.com/de/Loetkolben/) (ships from Germany, shipping worldwide, full sortiment 2-years warranty included, offers full range of Pinecil accessories)
 * [Eleshop.eu](https://eleshop.eu/catalogsearch/result/?q=pine64) (ships from EU, offers pre-order, 2-year warranty included per EU laws). In Netherlands, [use this NL link](https://www.eleshop.nl/catalogsearch/result/?q=pine64).
 * [Droneit](https://droneit.se/shop/?filtering=1&filter_brand=pine64) (ships from Sweden, sells all Pine tips/accessories).
 * [Handheld Legend](https://handheldlegend.com/collections/soldering-essentials) (ships from USA to worldwide).
