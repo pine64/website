@@ -58,6 +58,25 @@ An external tree for the PINE64 PineTab2 is developed and maintained by _Danct12
 
 * The repository and build instructions can be found [here](https://github.com/Danct12/buildroot_pinetab2).
 
+### Fedora Workstation
+
+Fedora Workstation is a polished, user-friendly Linux distribution maintained by the Fedora community.
+
+#### Download
+
+The Fedora Workstation aarch64 raw.xz image boots normally without requiring additional configuration after being written to an SD card.
+
+* https://fedoraproject.org/de/workstation/download
+
+{{< admonition type="note" >}}
+ U-Boot is required to boot the images. If you have the factory image installed and updated to the latest version, you can boot Fedora from an SD card without installing U-Boot.
+{{</ admonition >}}
+
+#### Notes
+
+* Currently ships without Bluetooth driver.
+* Wifi driver would need manual compilation.
+
 ### LuneOS
 
 LuneOS is one of the original multi-tasking OS-es that runs on Linux. Based on HP/Palm’s webOS, merged with latest technology stack from LG called webOS OSE (a derivative of what LG uses on their Smart TV’s), software such as Qt6, Maliit, PulseAudio, Wayland and makes use of the Yocto build system.
