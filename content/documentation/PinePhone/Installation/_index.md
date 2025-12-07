@@ -14,7 +14,7 @@ aliases:
   - /wiki/PinePhone_Updating_Instructions
 ---
 
-To learn more about the pboot priority on the PinePhone, click on [boot priority](/documentation/PinePhone/Installation/Boot_priority).
+To learn more about the boot priority on the PinePhone, click on [boot priority](/documentation/PinePhone/Installation/Boot_priority).
 
 The installation instructions can be found here:
 
