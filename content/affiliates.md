@@ -20,7 +20,7 @@ Affiliates of the [Pine Store](https://pine64.com):
 | [Eleshop.de](https://eleshop.de/pinecil-smart-mini-tragbarer-lotkolben.html)                       | Germany / Austria                  |
 | [Eleshop.nl](https://www.eleshop.nl/pinecil-smart-mini-draagbare-soldeerbout.html)                 | Netherlands / Belgium              |
 | [Handheld Legend](https://handheldlegend.com/collections/soldering-essentials)                     | USA (ships worldwide)              |
-| [Keeb Supply](https://keeb.supply/search?q=Pine)                                                   | Germany (ships to EU)              |
+| [KeebSupply](https://keeb.supply/search?q=Pine)                                                    | Germany (ships worldwide)          |
 | [KEEBD.com](https://keebd.com/products/pinecil-smart-portable-soldering-iron)                      | Australia (ships worldwide)        |
 | [Keycapsss](https://keycapsss.com/accessories/227/pinecil-v2-smart-mini-portable-soldering-iron)   | Germany (ships to EU/AUS/Global)   |
 | [Laskakit](https://www.laskakit.cz/pine64/)                                                        | Czechia (ships to EU)              |
