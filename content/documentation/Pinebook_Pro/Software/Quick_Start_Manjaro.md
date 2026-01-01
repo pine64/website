@@ -9,7 +9,7 @@ menu:
     weight: 2
 ---
 
-When you first get your Pinebook Pro and boot it up for the first time, it’ll come with Manjaro using the KDE desktop. The Pinebook Pro is officially supported by the Manjaro ARM project, and support can be found on the [Manjaro ARM forums.](https://forum.manjaro.org/c/manjaro-arm/78)
+When you first get your Pinebook Pro and boot it up for the first time, it’ll come with Manjaro using the KDE desktop. The Pinebook Pro is officially supported by the Manjaro ARM project, and support can be found on the [Manjaro ARM forums.](https://forum.manjaro.org/c/manjaro-arm/100)
 
 On first boot, it will ask for certain information such as your timezone location, keyboard layout, username, password, and hostname. Most of these should be self-explanatory. Note that the hostname it asks for should be thought of as the "codename" of your machine, and if you don’t know what it’s about, you can make something up (use a single word, all lower case, no punctuation, e.g. "pbpro").
 
