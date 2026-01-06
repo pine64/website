@@ -181,7 +181,7 @@ If nothing works please don’t hesitate to contact the community, they are eage
 
 #### Can I install a different OS on my Community Edition?
 
-Yes. While all the Community Edition PinePhones come with an OS preinstalled, you are free to use any OS on the integrated storage (the eMMC) or an SD card, see [Installation instructions](/documentation/PinePhone/Installation_instructions) and [Operating systems](/documentation/PinePhone/Software/Releases) on how to install them.
+Yes. While all the Community Edition PinePhones come with an OS preinstalled, you are free to use any OS on the integrated storage (the eMMC) or an SD card, see [Installation instructions](/documentation/PinePhone/Installation_instructions) and [Operating systems](/documentation/PinePhone/Software/) on how to install them.
 
 ### Other
 

@@ -263,7 +263,7 @@ Contributions and bug reports can be made at the [UBports PinePhone Pro GitLab p
  Work in progress; updating the distributions via their respective package managers may break the system.
 {{</ admonition >}}
 
-A PinePhone Pro analogue of the [PinePhone multi-distro demo image](/documentation/PinePhone/Software/Releases/#multi_distro_demo_image). This image allows the user to switch between multiple Linux distributions without having to swap microSD cards.
+A PinePhone Pro analogue of the [PinePhone multi-distro demo image](/documentation/PinePhone/Software/#multi_distro_demo_image). This image allows the user to switch between multiple Linux distributions without having to swap microSD cards.
 
 ### Download
 
