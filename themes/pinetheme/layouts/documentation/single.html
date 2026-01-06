@@ -13,17 +13,7 @@
             {{ partial "breadcrumb.html" . }}
 
             <header>
-                <h1>
-                {{ $ancestors := .Ancestors.Reverse }}
-                {{ if and (ge (len $ancestors) 3) (ne .File.BaseFileName "_full") }}
-                    {{ $thirdItem := index $ancestors 2}}
-                    {{ if $thirdItem }}
-                        <a href="{{ $thirdItem.RelPermalink }}">{{ $thirdItem.LinkTitle }}</a>:
-                    {{ else }}
-                    {{ end }}
-                {{ end }}
-                {{.Title}}
-                </h1>
+                <h1>{{.Title}}</h1>
             </header>
             
             <!-- Content -->
