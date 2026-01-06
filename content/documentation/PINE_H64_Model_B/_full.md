@@ -1,5 +1,5 @@
 ---
-title: "PINE H64 Model B full documentation"
+title: "PINE H64 Model B (Single Page)"
 draft: false
 full_section: "PINE_H64_Model_B"
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Pinebook full documentation"
+title: "Pinebook (Single Page)"
 draft: false
 full_section: "Pinebook"
 ---

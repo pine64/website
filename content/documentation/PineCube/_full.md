@@ -1,5 +1,5 @@
 ---
-title: "PineCube full documentation"
+title: "PineCube (Single Page)"
 draft: false
 full_section: "PineCube"
 ---

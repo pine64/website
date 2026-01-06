@@ -1,5 +1,5 @@
 ---
-title: "ALPHA-One full documentation"
+title: "ALPHA-One (Single Page)"
 draft: false
 full_section: "ALPHA-One"
 ---

@@ -1,5 +1,5 @@
 ---
-title: "SOEDGE Baseboard full documentation"
+title: "SOEDGE Baseboard (Single Page)"
 draft: false
 full_section: "SOEDGE_Baseboard"
 ---

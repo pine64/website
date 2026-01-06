@@ -1,5 +1,5 @@
 ---
-title: "PineBuds Pro full documentation"
+title: "PineBuds Pro (Single Page)"
 draft: false
 full_section: "PineBuds_Pro"
 ---

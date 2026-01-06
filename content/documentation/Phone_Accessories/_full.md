@@ -1,5 +1,5 @@
 ---
-title: "Phone Accessories full documentation"
+title: "Phone Accessories (Single Page)"
 draft: false
 full_section: "Phone_Accessories"
 ---

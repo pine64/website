@@ -1,5 +1,5 @@
 ---
-title: "Pinedio full documentation"
+title: "Pinedio (Single Page)"
 draft: false
 full_section: "Pinedio"
 ---

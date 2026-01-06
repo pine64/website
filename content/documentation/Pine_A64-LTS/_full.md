@@ -1,5 +1,5 @@
 ---
-title: "Pine A64-LTS full documentation"
+title: "Pine A64-LTS (Single Page)"
 draft: false
 full_section: "Pine_A64-LTS"
 ---

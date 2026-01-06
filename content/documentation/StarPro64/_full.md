@@ -1,5 +1,5 @@
 ---
-title: "StarPro64 full documentation"
+title: "StarPro64 (Single Page)"
 draft: false
 full_section: "StarPro64"
 ---

@@ -1,5 +1,5 @@
 ---
-title: "PineVox full documentation"
+title: "PineVox (Single Page)"
 draft: false
 full_section: "PineVox"
 ---

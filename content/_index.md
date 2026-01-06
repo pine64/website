@@ -1,5 +1,4 @@
 ---
-title: "PINE64 Community"
 description: "PINE64 is a large, vibrant and diverse community and creates software, documentation and projects. Founded in 2015, it is known for affordable devices that promote user freedom."
 outputs:
 - html

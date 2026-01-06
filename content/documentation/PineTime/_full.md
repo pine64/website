@@ -1,5 +1,5 @@
 ---
-title: "PineTime full documentation"
+title: "PineTime (Single Page)"
 draft: false
 full_section: "PineTime"
 ---

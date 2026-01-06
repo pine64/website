@@ -1,5 +1,5 @@
 ---
-title: "Unsorted full documentation"
+title: "Unsorted (Single Page)"
 draft: false
 full_section: "Unsorted"
 ---

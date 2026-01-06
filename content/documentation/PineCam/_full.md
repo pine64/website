@@ -1,5 +1,5 @@
 ---
-title: "PineCam full documentation"
+title: "PineCam (Single Page)"
 draft: false
 full_section: "PineCam"
 ---

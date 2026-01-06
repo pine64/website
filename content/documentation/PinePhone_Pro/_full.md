@@ -1,5 +1,5 @@
 ---
-title: "PinePhone Pro full documentation"
+title: "PinePhone Pro (Single Page)"
 draft: false
 full_section: "PinePhone_Pro"
 ---

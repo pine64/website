@@ -1,5 +1,5 @@
 ---
-title: "Clusterboard full documentation"
+title: "Clusterboard (Single Page)"
 draft: false
 full_section: "Clusterboard"
 ---

@@ -1,5 +1,5 @@
 ---
-title: "ROCKPro64 full documentation"
+title: "ROCKPro64 (Single Page)"
 draft: false
 full_section: "ROCKPro64"
 ---

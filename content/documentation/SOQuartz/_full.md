@@ -1,5 +1,5 @@
 ---
-title: "SOQuartz full documentation"
+title: "SOQuartz (Single Page)"
 draft: false
 full_section: "SOQuartz"
 ---

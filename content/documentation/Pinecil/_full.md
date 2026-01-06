@@ -1,5 +1,5 @@
 ---
-title: "Pinecil full documentation"
+title: "Pinecil (Single Page)"
 draft: false
 full_section: "Pinecil"
 ---

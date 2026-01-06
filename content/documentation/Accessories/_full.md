@@ -1,5 +1,5 @@
 ---
-title: "Accessories full documentation"
+title: "Accessories (Single Page)"
 draft: false
 full_section: "Accessories"
 ---

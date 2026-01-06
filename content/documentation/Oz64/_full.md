@@ -1,5 +1,5 @@
 ---
-title: "Oz64 full documentation"
+title: "Oz64 (Single Page)"
 draft: false
 full_section: "Oz64"
 ---

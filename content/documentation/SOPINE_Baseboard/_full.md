@@ -1,5 +1,5 @@
 ---
-title: "SOPINE Baseboard full documentation"
+title: "SOPINE Baseboard (Single Page)"
 draft: false
 full_section: "SOPINE_Baseboard"
 ---

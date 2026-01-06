@@ -1,5 +1,5 @@
 ---
-title: "PineTab2 full documentation"
+title: "PineTab2 (Single Page)"
 draft: false
 full_section: "PineTab2"
 ---

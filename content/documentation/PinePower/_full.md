@@ -1,5 +1,5 @@
 ---
-title: "PinePower full documentation"
+title: "PinePower (Single Page)"
 draft: false
 full_section: "PinePower"
 ---

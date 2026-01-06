@@ -1,5 +1,5 @@
 ---
-title: "Quartz64 full documentation"
+title: "Quartz64 (Single Page)"
 draft: false
 full_section: "Quartz64"
 ---

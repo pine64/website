@@ -1,5 +1,5 @@
 ---
-title: "PineNote full documentation"
+title: "PineNote (Single Page)"
 draft: false
 full_section: "PineNote"
 ---

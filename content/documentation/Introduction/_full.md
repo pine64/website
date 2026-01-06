@@ -1,5 +1,5 @@
 ---
-title: "Introduction full documentation"
+title: "Introduction (Single Page)"
 draft: false
 full_section: "Introduction"
 ---
