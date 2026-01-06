@@ -4,7 +4,7 @@
 {{- with .Params.cover.image }}{{ $img = . }}{{ end -}}
 
 {{- /* Optional: set a fallback placeholder image URL */ -}}
-{{- $fallback := "https://example.com/placeholder.png" -}}
+{{- $fallback := "" -}}
 {{- if not $img }}{{ $img = $fallback }}{{ end -}}
 
 {{- $data := dict
