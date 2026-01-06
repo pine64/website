@@ -1,10 +1,20 @@
 {{- $desc := (or .Description .Summary site.Params.description) | plainify | htmlUnescape }}
+
+{{- $img := "" -}}
+{{- with .Params.cover.image }}{{ $img = . }}{{ end -}}
+{{- $fallback := "" -}}
+{{- if not $img }}{{ $img = $fallback }}{{ end -}}
+
 {{- $data := dict
     "@context" "https://schema.org"
-    "@type"    "Event"
-    "name"        .Title
+    "@type"    "BlogPosting"
+    "headline"    .Title
+    "url"     .Permalink
+    "image" $img
+    "wordcount" .WordCount
+    "datePublished" .Date
     "description" $desc
-    "url"         .Permalink
+    "inLanguage" .Lang
 -}}
 <script type="application/ld+json">
 {{ $data | jsonify | safeJS }}
