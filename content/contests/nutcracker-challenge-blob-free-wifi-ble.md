@@ -3,10 +3,10 @@ title: "Nutcracker Challenge: Blob-Free WiFi & BLE"
 date: "2020-10-28"
 categories: 
   - "community"
-cover: 
-  image: "Nutcracker.png"
+cover:
+  image: "/contests/images/Nutcracker.png"
 images:
-  - "Nutcracker.png"
+  - "/contests/images/Nutcracker.png"
 aliases:
   - "/2020/10/28/nutcracker-challenge-blob-free-wifi-ble/"
 ---

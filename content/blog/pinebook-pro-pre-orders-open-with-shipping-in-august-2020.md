@@ -7,8 +7,8 @@ categories:
   - "pinebook-pro"
 tags: 
   - "pinebook-pro"
-cover: 
-  image: "pbp1.png"
+cover:
+  image: "/blog/images/pbp1.png"
 images:
   - "/blog/images/pbp1.png"
 ---

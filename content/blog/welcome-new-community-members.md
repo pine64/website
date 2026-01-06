@@ -10,8 +10,8 @@ tags:
   - "community"
   - "pinebook-pro"
   - "pinephone"
-cover: 
-  image: "Welcome.jpg"
+cover:
+  image: "/blog/images/Welcome.jpg"
 images:
   - "/blog/images/Welcome.jpg"
 ---

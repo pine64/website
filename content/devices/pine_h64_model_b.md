@@ -2,7 +2,7 @@
 title: "PINE H64 Model B"
 categories: 
   - "SBCs"
-cover: 
+cover:
   image: "/devices/images/pine_h64_ver_b.jpg"
 images:
   - "/devices/images/pine_h64_ver_b.jpg"

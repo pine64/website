@@ -2,7 +2,7 @@
 title: "Quartz64-Zero"
 categories: 
   - "SBCs"
-cover: 
+cover:
   image: "/devices/images/Quartz64-Zero.jpg"
 images:
   - "/devices/images/Quartz64-Zero.jpg"

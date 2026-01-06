@@ -17,8 +17,8 @@ tags:
   - "pinephone"
   - "quartz64"
   - "soedge"
-cover: 
-  image: "MayUpdate.jpg"
+cover:
+  image: "/blog/images/MayUpdate.jpg"
 images:
   - "/blog/images/MayUpdate.jpg"
 ---

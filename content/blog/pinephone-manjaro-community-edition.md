@@ -11,8 +11,8 @@ tags:
   - "manjaro"
   - "pinephone"
   - "smartphone"
-cover: 
-  image: "manjaroCE-header.jpg"
+cover:
+  image: "/blog/images/manjaroCE-header.jpg"
 images:
   - "/blog/images/manjaroCE-header.jpg"
 ---

@@ -20,8 +20,8 @@ tags:
   - "pinetime"
   - "rk3566"
   - "soedge"
-cover: 
-  image: "KDECommunityEdition.png"
+cover:
+  image: "/blog/images/KDECommunityEdition.png"
 images:
   - "/blog/images/KDECommunityEdition.png"
 ---

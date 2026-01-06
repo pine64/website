@@ -14,8 +14,8 @@ tags:
   - "pinephone"
   - "pinetab"
   - "pinetime"
-cover: 
-  image: "PineTab-Header.jpg"
+cover:
+  image: "/blog/images/PineTab-Header.jpg"
 images:
   - "/blog/images/PineTab-Header.jpg"
 ---

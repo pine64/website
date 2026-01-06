@@ -8,8 +8,8 @@ categories:
 tags: 
   - "nas"
   - "quartz64"
-cover: 
-  image: "Q64-Nas-build-JF-1230x692.jpg"
+cover:
+  image: "/blog/images/Q64-Nas-build-JF-1230x692.jpg"
 images:
   - "/blog/images/Q64-Nas-build-JF-1230x692.jpg"
 ---

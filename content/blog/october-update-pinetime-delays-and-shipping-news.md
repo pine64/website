@@ -10,8 +10,8 @@ tags:
   - "pinebook-pro"
   - "pinephone"
   - "pinetime"
-cover: 
-  image: "PMOS-main1.jpeg"
+cover:
+  image: "/blog/images/PMOS-main1.jpeg"
 images:
   - "/blog/images/PMOS-main1.jpeg"
 ---

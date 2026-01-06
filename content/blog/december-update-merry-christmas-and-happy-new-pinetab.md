@@ -21,8 +21,8 @@ tags:
   - "pinetab"
   - "quartz64"
   - "quartzpro64"
-cover: 
-  image: "DecemberUpdate.jpg"
+cover:
+  image: "/blog/images/DecemberUpdate.jpg"
 images:
   - "/blog/images/DecemberUpdate.jpg"
 ---

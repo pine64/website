@@ -11,8 +11,8 @@ tags:
   - "pinebook-pro"
   - "pinephone"
   - "pinetab"
-cover: 
-  image: "PinePhoneID.jpg"
+cover:
+  image: "/blog/images/PinePhoneID.jpg"
 images:
   - "/blog/images/PinePhoneID.jpg"
 ---

@@ -2,7 +2,7 @@
 title: "PineBuds Pro"
 categories: 
   - "Wearables"
-cover: 
+cover:
   image: "/devices/images/pinebudspro.jpg"
 images:
   - "/devices/images/pinebudspro.jpg"

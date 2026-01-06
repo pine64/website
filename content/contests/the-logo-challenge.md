@@ -3,10 +3,10 @@ title: "The Logo Challenge"
 date: "2023-04-09"
 categories: 
   - "community"
-cover: 
-  image: "logochallenge.png"
+cover:
+  image: "/contests/images/logochallenge.png"
 images:
-  - "logochallenge.png"
+  - "/contests/images/logochallenge.png"
 ---
 
 As everyone might have noticed, the beta website received a preliminary logo as part of the rebrand. In this challenge, everyone is invited to improve the current PINE64 community logo and to provide their ideas. The draft logo is intended to act as an inspiration for ideas in which present design can be improved. <!--more-->

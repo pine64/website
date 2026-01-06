@@ -28,7 +28,7 @@
             <div class="box f25">
                 <div class="contests_img_container">
                     {{if and (isset .Params.cover "image") (ne .Params.cover.image "") }}
-                        <img class="contests-preview" src="/contests/images/{{ .Params.cover.image }}" alt="Preview image of the contest."/>
+                        <img class="contests-preview" src="{{ .Params.cover.image }}" alt="Preview image of the contest."/>
                     {{end}}
                 </div>
             </div>

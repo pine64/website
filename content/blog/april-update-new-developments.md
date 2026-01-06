@@ -18,8 +18,8 @@ tags:
   - "pinephone"
   - "pinetab"
   - "pinetime"
-cover: 
-  image: "AprilUpdate-1024x594.jpg"
+cover:
+  image: "/blog/images/AprilUpdate-1024x594.jpg"
 images:
   - "/blog/images/AprilUpdate-1024x594.jpg"
 ---

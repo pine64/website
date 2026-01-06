@@ -23,8 +23,8 @@ tags:
   - "quartz64"
   - "soquartz"
   - "star64"
-cover: 
-  image: "Feb-update-header.jpg"
+cover:
+  image: "/blog/images/Feb-update-header.jpg"
 images:
   - "/blog/images/Feb-update-header.jpg"
 ---

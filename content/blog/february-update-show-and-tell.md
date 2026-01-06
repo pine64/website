@@ -14,8 +14,8 @@ tags:
   - "pinephone"
   - "quartz64"
   - "risc-v"
-cover: 
-  image: "FebruaryUpdateBanner2.jpg"
+cover:
+  image: "/blog/images/FebruaryUpdateBanner2.jpg"
 images:
   - "/blog/images/FebruaryUpdateBanner2.jpg"
 ---

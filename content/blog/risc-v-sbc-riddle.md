@@ -9,8 +9,8 @@ tags:
   - "riddle"
   - "risc-v"
   - "single-board-computer"
-cover: 
-  image: "RISC-V-SBC-riddle-1024x594.jpg"
+cover:
+  image: "/blog/images/RISC-V-SBC-riddle-1024x594.jpg"
 images:
   - "/blog/images/RISC-V-SBC-riddle-1024x594.jpg"
 ---

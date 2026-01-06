@@ -7,8 +7,8 @@ categories:
 tags: 
   - "pine64"
   - "pinephone"
-cover: 
-  image: "PinePhonekeyboard2.jpg"
+cover:
+  image: "/blog/images/PinePhonekeyboard2.jpg"
 images:
   - "/blog/images/PinePhonekeyboard2.jpg"
 ---

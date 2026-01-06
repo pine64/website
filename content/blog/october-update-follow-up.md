@@ -15,8 +15,8 @@ tags:
   - "pinephone-pro"
   - "quartz64"
   - "soquartz"
-cover: 
-  image: "updatefollowup-fix.jpg"
+cover:
+  image: "/blog/images/updatefollowup-fix.jpg"
 images:
   - "/blog/images/updatefollowup-fix.jpg"
 ---

@@ -2,7 +2,7 @@
 title: "STAR64"
 categories: 
   - ""
-cover: 
+cover:
   image: "/devices/images/star64.png"
 images:
   - "/devices/images/star64.png"

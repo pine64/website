@@ -7,8 +7,8 @@ categories:
 tags: 
   - "news"
   - "pinephone-pro"
-cover: 
-  image: "PPP-EE-pre-orders-1024x576.png"
+cover:
+  image: "/blog/images/PPP-EE-pre-orders-1024x576.png"
 images:
   - "/blog/images/PPP-EE-pre-orders-1024x576.png"
 ---

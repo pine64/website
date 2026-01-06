@@ -11,10 +11,10 @@ tags:
   - "gaming"
   - "rockpro64"
   - "rock64"
-cover: 
+cover:
   image: ""
 images:
-  - "/blog/images/"
+  - ""
 ---
 
 Retro Emulation is all the rage these days. What's old is now new again. Game Emulation has been around for awhile, but the recent resurgance into making mini consoles spearheaded by the release of the NES Classic has opened up new possibilities for making our own NES or SNES classic's.

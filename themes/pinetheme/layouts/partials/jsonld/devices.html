@@ -2,8 +2,6 @@
 
 {{- $img := "" -}}
 {{- with .Params.cover.image }}{{ $img = . }}{{ end -}}
-
-{{- /* Optional: set a fallback placeholder image URL */ -}}
 {{- $fallback := "" -}}
 {{- if not $img }}{{ $img = $fallback }}{{ end -}}
 

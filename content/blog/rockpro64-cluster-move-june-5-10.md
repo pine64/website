@@ -9,8 +9,8 @@ tags:
   - "cluster"
   - "community"
   - "pine64"
-cover: 
-  image: "RockPro64-Cluster-Large.jpg"
+cover:
+  image: "/blog/images/RockPro64-Cluster-Large.jpg"
 images:
   - "/blog/images/RockPro64-Cluster-Large.jpg"
 ---

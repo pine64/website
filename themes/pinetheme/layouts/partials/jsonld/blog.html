@@ -1,11 +1,18 @@
 {{- $desc := (or .Description .Summary site.Params.description) | plainify | htmlUnescape }}
+
+{{- $img := "" -}}
+{{- with .Params.cover.image }}{{ $img = . }}{{ end -}}
+{{- $fallback := "" -}}
+{{- if not $img }}{{ $img = $fallback }}{{ end -}}
+
 {{- $data := dict
     "@context" "https://schema.org"
-    "@type"    "Blog"
-    "name"    .Site.Title
+    "@type"    "BlogPosting"
+    "headline"    .Title
     "url"     .Permalink
     "datePublished" .Date
     "description" $desc
+    "inLanguage" .Lang
 -}}
 <script type="application/ld+json">
 {{ $data | jsonify | safeJS }}

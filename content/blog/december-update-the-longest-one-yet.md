@@ -18,8 +18,8 @@ tags:
   - "pinecil"
   - "pinephone"
   - "pinetime"
-cover: 
-  image: "DecemberHeader.jpg"
+cover:
+  image: "/blog/images/DecemberHeader.jpg"
 images:
   - "/blog/images/DecemberHeader.jpg"
 ---

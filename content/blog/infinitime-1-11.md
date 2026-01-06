@@ -6,8 +6,8 @@ categories:
   - "pinetime"
 tags: 
   - "pinetime"
-cover: 
-  image: "infinitime11-1230x692.jpg"
+cover:
+  image: "/blog/images/infinitime11-1230x692.jpg"
 images:
   - "/blog/images/infinitime11-1230x692.jpg"
 ---

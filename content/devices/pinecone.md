@@ -2,7 +2,7 @@
 title: "PineCone"
 categories: 
   - ""
-cover: 
+cover:
   image: "/devices/images/Pine64_BL602_EVB_photo-3-small.jpg"
 images:
   - "/devices/images/Pine64_BL602_EVB_photo-3-small.jpg"

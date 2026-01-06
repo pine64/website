@@ -2,7 +2,7 @@
 title: "Pinecil"
 categories: 
   - "Soldering irons"
-cover: 
+cover:
   image: "/devices/images/pinecil.png"
 images:
   - "/devices/images/pinecil.png"

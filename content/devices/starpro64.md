@@ -2,7 +2,7 @@
 title: "StarPro64"
 categories: 
   - "SBCs"
-cover: 
+cover:
   image: "/devices/images/starpro64.jpg"
 images:
   - "/devices/images/starpro64.jpg"

@@ -2,7 +2,7 @@
 title: "SOPINE"
 categories: 
   - "Computer modules"
-cover: 
+cover:
   image: "/devices/images/sopine.jpg"
 images:
   - "/devices/images/sopine.jpg"

@@ -16,8 +16,8 @@ tags:
   - "pinephone"
   - "pinetab"
   - "pinetime"
-cover: 
-  image: "AugustHeader-elementary.jpg"
+cover:
+  image: "/blog/images/AugustHeader-elementary.jpg"
 images:
   - "/blog/images/AugustHeader-elementary.jpg"
 ---

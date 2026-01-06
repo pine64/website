@@ -2,7 +2,7 @@
 title: "PinePhone"
 categories: 
   - "Phones"
-cover: 
+cover:
   image: "/devices/images/pinephone.png"
 images:
   - "/devices/images/pinephone.png"

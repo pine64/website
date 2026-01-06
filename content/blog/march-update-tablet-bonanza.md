@@ -16,8 +16,8 @@ tags:
   - "pinetab2"
   - "quartz64"
   - "unicorn"
-cover: 
-  image: "Verygood.jpg"
+cover:
+  image: "/blog/images/Verygood.jpg"
 images:
   - "/blog/images/Verygood.jpg"
 ---

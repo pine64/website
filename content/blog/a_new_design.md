@@ -8,8 +8,8 @@ categories:
   - "pine64-community"
 tags: 
   - "community"
-cover: 
-  image: "rebrand_large.png"
+cover:
+  image: "/blog/images/rebrand_large.png"
 images:
   - "/blog/images/rebrand_large.png"
 ---

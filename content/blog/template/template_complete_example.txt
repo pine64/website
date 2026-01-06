@@ -9,8 +9,8 @@ categories:
 tags: 
   - "project update"
   - "pinetab2"  
-cover: 
-  image: "pine64_banners/festival_lights.png"
+cover:
+  image: "/blog/images/pine64_banners/festival_lights.png"
 images:
   - "/blog/images/pine64_banners/festival_lights.png"
 summary: "A new factory firmware release for the PineTab2 has just arrived."

@@ -13,8 +13,8 @@ tags:
   - "pinephone"
   - "pinephone-pro"
   - "pinetime"
-cover: 
-  image: "January_update.jpg"
+cover:
+  image: "/blog/images/January_update.jpg"
 images:
   - "/blog/images/January_update.jpg"
 ---

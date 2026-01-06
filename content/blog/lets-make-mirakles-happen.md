@@ -10,8 +10,8 @@ tags:
   - "lora"
   - "pine64"
   - "rakwireless"
-cover: 
-  image: "RAK_PINE64.jpg"
+cover:
+  image: "/blog/images/RAK_PINE64.jpg"
 images:
   - "/blog/images/RAK_PINE64.jpg"
 ---

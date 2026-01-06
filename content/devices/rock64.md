@@ -2,7 +2,7 @@
 title: "ROCK64"
 categories: 
   - "SBCs"
-cover: 
+cover:
   image: "/devices/images/rock64.jpg"
 images:
   - "/devices/images/rock64.jpg"

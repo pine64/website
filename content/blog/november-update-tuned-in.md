@@ -14,8 +14,8 @@ tags:
   - "pinebuds"
   - "pinetime"
   - "star64"
-cover: 
-  image: "November-Update-final-1024x576.jpg"
+cover:
+  image: "/blog/images/November-Update-final-1024x576.jpg"
 images:
   - "/blog/images/November-Update-final-1024x576.jpg"
 ---

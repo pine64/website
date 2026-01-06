@@ -13,8 +13,8 @@ tags:
   - "pinephone"
   - "pinephone-pro"
   - "risc-v"
-cover: 
-  image: "JuneUpdate-1024x576.jpg"
+cover:
+  image: "/blog/images/JuneUpdate-1024x576.jpg"
 images:
   - "/blog/images/JuneUpdate-1024x576.jpg"
 ---

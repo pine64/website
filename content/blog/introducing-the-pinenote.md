@@ -16,8 +16,8 @@ tags:
   - "pinephone"
   - "pinetime"
   - "quartz64"
-cover: 
-  image: "Introducing-thePineNote.jpg"
+cover:
+  image: "/blog/images/Introducing-thePineNote.jpg"
 images:
   - "/blog/images/Introducing-thePineNote.jpg"
 ---

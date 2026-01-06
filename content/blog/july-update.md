@@ -15,8 +15,8 @@ tags:
   - "pinedio"
   - "pinephone"
   - "quartz64"
-cover: 
-  image: "JulyHeader.jpg"
+cover:
+  image: "/blog/images/JulyHeader.jpg"
 images:
   - "/blog/images/JulyHeader.jpg"
 ---

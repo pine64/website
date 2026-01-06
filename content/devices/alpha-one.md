@@ -2,7 +2,7 @@
 title: "ALPHA-One"
 categories: 
   - "AI"
-cover: 
+cover:
   image: "/devices/images/alpha-one.jpg"
 images:
   - "/devices/images/alpha-one.jpg"

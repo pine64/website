@@ -12,8 +12,8 @@ tags:
   - "laptop"
   - "linux"
   - "pinebook-pro"
-cover: 
-  image: "cropped-dual-screen-Pinebook-Pro-1024x538.jpg"
+cover:
+  image: "/blog/images/cropped-dual-screen-Pinebook-Pro-1024x538.jpg"
 images:
   - "/blog/images/cropped-dual-screen-Pinebook-Pro-1024x538.jpg"
 ---

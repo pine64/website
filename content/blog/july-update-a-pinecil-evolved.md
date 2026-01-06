@@ -17,8 +17,8 @@ tags:
   - "quartz64"
   - "quartzpro64"
   - "star64"
-cover: 
-  image: "July-Update.jpg"
+cover:
+  image: "/blog/images/July-Update.jpg"
 images:
   - "/blog/images/July-Update.jpg"
 ---

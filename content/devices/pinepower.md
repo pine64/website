@@ -2,7 +2,7 @@
 title: "PinePower"
 categories: 
   - "Power supplies"
-cover: 
+cover:
   image: "/devices/images/pinepower.jpg"
 images:
   - "/devices/images/pinepower.jpg"

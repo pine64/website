@@ -7,8 +7,8 @@ categories:
 tags: 
   - "community"
   - "pinetime"
-cover: 
-  image: "Infinitime.jpg"
+cover:
+  image: "/blog/images/Infinitime.jpg"
 images:
   - "/blog/images/Infinitime.jpg"
 ---

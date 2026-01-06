@@ -8,8 +8,8 @@ categories:
   - "pine64-community"
 tags: 
   - "community"
-cover: 
-  image: "cover-wider.jpeg"
+cover:
+  image: "/blog/images/cover-wider.jpeg"
 images:
   - "/blog/images/cover-wider.jpeg"
 ---

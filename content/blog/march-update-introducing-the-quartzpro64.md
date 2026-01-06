@@ -15,8 +15,8 @@ tags:
   - "pinetime"
   - "quartz64"
   - "quartzpro64"
-cover: 
-  image: "March-update-header.jpg"
+cover:
+  image: "/blog/images/March-update-header.jpg"
 images:
   - "/blog/images/March-update-header.jpg"
 ---

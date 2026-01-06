@@ -9,8 +9,8 @@ tags:
   - "community-edition"
   - "kde"
   - "pinephone"
-cover: 
-  image: "HeadingNovember15.jpg"
+cover:
+  image: "/blog/images/HeadingNovember15.jpg"
 images:
   - "/blog/images/HeadingNovember15.jpg"
 ---

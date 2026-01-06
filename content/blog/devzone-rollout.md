@@ -9,8 +9,8 @@ tags:
   - "devzone"
   - "pine64"
   - "pinenote"
-cover: 
-  image: "DevZone-Post-Header.jpg"
+cover:
+  image: "/blog/images/DevZone-Post-Header.jpg"
 images:
   - "/blog/images/DevZone-Post-Header.jpg"
 ---

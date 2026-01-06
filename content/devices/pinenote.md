@@ -2,7 +2,7 @@
 title: "PineNote"
 categories: 
   - "Tablets"
-cover: 
+cover:
   image: "/devices/images/pinenote.jpg"
 images:
   - "/devices/images/pinenote.jpg"

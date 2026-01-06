@@ -6,8 +6,8 @@ categories:
   - "pinephone"
 tags: 
   - "pinephone"
-cover: 
-  image: "PinePhoneMobianCEinStore-1024x559.jpg"
+cover:
+  image: "/blog/images/PinePhoneMobianCEinStore-1024x559.jpg"
 images:
   - "/blog/images/PinePhoneMobianCEinStore-1024x559.jpg"
 ---

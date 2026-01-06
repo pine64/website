@@ -2,7 +2,7 @@
 title: "PinePhone Pro"
 categories: 
   - "Phones"
-cover: 
+cover:
   image: "/devices/images/pinephone_pro.png"
 images:
   - "/devices/images/pinephone_pro.png"

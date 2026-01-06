@@ -16,8 +16,8 @@ tags:
   - "pinephone-pro"
   - "pinetime"
   - "risc-v"
-cover: 
-  image: "December-Update-Header.jpg"
+cover:
+  image: "/blog/images/December-Update-Header.jpg"
 images:
   - "/blog/images/December-Update-Header.jpg"
 ---

@@ -2,7 +2,7 @@
 title: "Pinebook"
 categories: 
   - "Laptops"
-cover: 
+cover:
   image: "/devices/images/pinebook.jpg"
 images:
   - "/devices/images/pinebook.jpg"

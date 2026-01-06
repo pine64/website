@@ -7,8 +7,8 @@ categories:
 tags: 
   - "pine-store"
   - "pine64"
-cover: 
-  image: "Store.jpg"
+cover:
+  image: "/blog/images/Store.jpg"
 images:
   - "/blog/images/Store.jpg"
 ---

@@ -12,8 +12,8 @@ tags:
   - "pinebook-pro"
   - "pinephone"
   - "pinetime"
-cover: 
-  image: "maincorrected.png"
+cover:
+  image: "/blog/images/maincorrected.png"
 images:
   - "/blog/images/maincorrected.png"
 ---

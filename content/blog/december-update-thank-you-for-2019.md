@@ -15,8 +15,8 @@ tags:
   - "pinephone"
   - "pinetab"
   - "pinetime"
-cover: 
-  image: "PINE64_family.jpg"
+cover:
+  image: "/blog/images/PINE64_family.jpg"
 images:
   - "/blog/images/PINE64_family.jpg"
 ---

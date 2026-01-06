@@ -15,8 +15,8 @@ tags:
   - "pinephone-pro"
   - "quartzpro64"
   - "star64"
-cover: 
-  image: "october-update-no-bull.jpg"
+cover:
+  image: "/blog/images/october-update-no-bull.jpg"
 images:
   - "/blog/images/october-update-no-bull.jpg"
 ---

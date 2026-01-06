@@ -16,8 +16,8 @@ tags:
   - "pinecube"
   - "pinephone"
   - "pinetime"
-cover: 
-  image: "JanuaryHeader-1024x594.jpg"
+cover:
+  image: "/blog/images/JanuaryHeader-1024x594.jpg"
 images:
   - "/blog/images/JanuaryHeader-1024x594.jpg"
 ---

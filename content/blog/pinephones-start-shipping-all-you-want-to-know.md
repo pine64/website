@@ -12,8 +12,8 @@ tags:
   - "pinephone"
   - "pinetab"
   - "pinetime"
-cover: 
-  image: "PinePhonesoldout.png"
+cover:
+  image: "/blog/images/PinePhonesoldout.png"
 images:
   - "/blog/images/PinePhonesoldout.png"
 ---

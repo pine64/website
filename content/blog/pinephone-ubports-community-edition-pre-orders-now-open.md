@@ -11,8 +11,8 @@ tags:
   - "pine64"
   - "pinephone"
   - "ubports"
-cover: 
-  image: "CommunityEditionUBports.png"
+cover:
+  image: "/blog/images/CommunityEditionUBports.png"
 images:
   - "/blog/images/CommunityEditionUBports.png"
 ---
