@@ -2,8 +2,6 @@
 title: "QuartzPro64"
 categories: 
   - "SBCs"
-cover:
-  image: "/devices/images/Quartzpro64_whole_board_top_resized.jpeg"
 images:
   - "/devices/images/Quartzpro64_whole_board_top_resized.jpeg"
 ---

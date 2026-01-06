@@ -8,8 +8,6 @@ categories:
 tags: 
   - "news"
   - "pinebook-pro"
-cover:
-  image: "/blog/images/Pinebook_July.png"
 images:
   - "/blog/images/Pinebook_July.png"
 ---

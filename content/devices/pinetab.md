@@ -2,8 +2,6 @@
 title: "PineTab"
 categories: 
   - "Tablets"
-cover:
-  image: "/devices/images/pinetab.jpg"
 images:
   - "/devices/images/pinetab.jpg"
 ---

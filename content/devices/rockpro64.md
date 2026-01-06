@@ -2,8 +2,6 @@
 title: "ROCKPro64"
 categories: 
   - "SBCs"
-cover:
-  image: "/devices/images/rockpro64.jpg"
 images:
   - "/devices/images/rockpro64.jpg"
 aliases:

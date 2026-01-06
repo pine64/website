@@ -7,8 +7,6 @@ categories:
   - "pinephone"
 tags: 
   - "pinephone"
-cover:
-  image: "/blog/images/endofCEs-1024x594.jpg"
 images:
   - "/blog/images/endofCEs-1024x594.jpg"
 ---

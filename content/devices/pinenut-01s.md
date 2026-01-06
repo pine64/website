@@ -2,8 +2,6 @@
 title: "PineNut-01S"
 categories: 
   - "IoT"
-cover:
-  image: "/devices/images/pinenut-01s.jpg"
 images:
   - "/devices/images/pinenut-01s.jpg"
 ---

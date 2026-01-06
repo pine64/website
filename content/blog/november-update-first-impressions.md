@@ -16,8 +16,6 @@ tags:
   - "pinephone"
   - "pinephone-pro"
   - "soquartz"
-cover:
-  image: "/blog/images/NovUpdateHeader.jpg"
 images:
   - "/blog/images/NovUpdateHeader.jpg"
 ---

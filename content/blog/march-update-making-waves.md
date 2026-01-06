@@ -14,8 +14,6 @@ tags:
   - "pinevox"
   - "cluster"
   - "pinetime"
-cover:
-  image: "/blog/images/march-update-making-waves.png"
 images:
   - "/blog/images/march-update-making-waves.png"
 summary: "Long awaited community update is here! Introducing PineVox and bone conduction headset (help us find a name!), IronOS progress, PineNote insights, and PineTime news! We also cover cluster failure, state of services, and the future of the community updates. See you in the upcoming Q&A!"

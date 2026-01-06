@@ -2,8 +2,6 @@
 title: "PINE A64 and PINE A64+"
 categories: 
   - "SBCs"
-cover:
-  image: "/devices/images/pine_a64.jpg"
 images:
   - "/devices/images/pine_a64.jpg"
 ---

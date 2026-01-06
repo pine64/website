@@ -2,8 +2,6 @@
 title: "PinePhone Pro"
 categories: 
   - "Phones"
-cover:
-  image: "/devices/images/pinephone_pro.png"
 images:
   - "/devices/images/pinephone_pro.png"
 aliases:

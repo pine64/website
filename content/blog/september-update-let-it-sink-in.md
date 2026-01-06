@@ -15,8 +15,6 @@ tags:
   - "pinephone"
   - "pinetab"
   - "pinetime"
-cover:
-  image: "/blog/images/Septbanner2.jpg"
 images:
   - "/blog/images/Septbanner2.jpg"
 ---

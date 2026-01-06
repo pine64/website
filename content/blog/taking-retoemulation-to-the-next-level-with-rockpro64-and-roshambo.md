@@ -11,8 +11,6 @@ tags:
   - "gaming"
   - "rockpro64"
   - "rock64"
-cover:
-  image: ""
 images:
   - ""
 ---

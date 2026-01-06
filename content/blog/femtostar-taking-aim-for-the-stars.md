@@ -4,8 +4,6 @@ date: "2021-05-19"
 authors: ["Lukasz Erecinski"]
 categories:
   - "community"
-cover:
-  image: "/blog/images/TakingAimForTheStars.jpg"
 images:
   - "/blog/images/TakingAimForTheStars.jpg"
 ---

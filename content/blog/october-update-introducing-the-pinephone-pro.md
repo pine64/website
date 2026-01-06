@@ -13,8 +13,6 @@ tags:
   - "pinephone"
   - "pinephone-pro"
   - "pinetime"
-cover:
-  image: "/blog/images/ppp-text.png"
 images:
   - "/blog/images/ppp-text.png"
 ---

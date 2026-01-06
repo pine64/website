@@ -11,8 +11,6 @@ tags:
   - "cube"
   - "hardrock64"
   - "soedge"
-cover:
-  image: "/blog/images/dinnerfosdem20.jpg"
 images:
   - "/blog/images/dinnerfosdem20.jpg"
 ---

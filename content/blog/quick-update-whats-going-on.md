@@ -7,8 +7,6 @@ categories:
   - "pine64-community"
 tags: 
   - "community"
-cover:
-  image: "/blog/images/whats_going_on.png"
 images:
   - "/blog/images/whats_going_on.png"
 ---

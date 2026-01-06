@@ -2,8 +2,6 @@
 title: "Pinedio"
 categories: 
   - ""
-cover:
-  image: ""
 images:
   - ""
 ---

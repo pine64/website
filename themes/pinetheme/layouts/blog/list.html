@@ -19,9 +19,9 @@
 
             <div class="box cols f33 themewhite rounded eff1">
                 <a class="summary" href="{{ .RelPermalink }}">
-                    {{if and (isset .Params.cover "image") (ne .Params.cover.image "") }}
+                    {{ with index .Params.images 0 }}
                         <div class="box">
-                            <img src="{{ .Params.cover.image }}" alt="Cover image of the blog post">
+                            <img src="{{ . }}" alt="Cover image of the blog post">
                         </div>
                     {{end}}
 

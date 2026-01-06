@@ -2,8 +2,6 @@
 title: "PineVox"
 categories: 
   - ""
-cover:
-  image: "/documentation/PineVox/images/pinevox.jpg"
 images:
   - "/documentation/PineVox/images/pinevox.jpg"
 ---

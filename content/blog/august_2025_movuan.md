@@ -8,8 +8,6 @@ categories:
   - "pine64-community"
 tags: 
   - "project showcase" 
-cover:
-  image: "/blog/images/pine64_banners/community/pine64_red_movuan.png"
 images:
   - "/blog/images/pine64_banners/community/pine64_red_movuan.png"
 summary: "A showcase of the Devuan based operating system for the PinePhone called Movuan."

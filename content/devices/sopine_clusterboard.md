@@ -2,8 +2,6 @@
 title: "Clusterboard"
 categories: 
   - "Clusters"
-cover:
-  image: "/devices/images/sopine_clusterboard.jpg"
 images:
   - "/devices/images/sopine_clusterboard.jpg"
 aliases:

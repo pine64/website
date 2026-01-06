@@ -2,8 +2,6 @@
 title: "PineTime"
 categories: 
   - "Smartwatches"
-cover:
-  image: "/devices/images/pinetime.png"
 images:
   - "/devices/images/pinetime.png"
 aliases:

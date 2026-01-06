@@ -6,8 +6,6 @@ categories:
   - "pinephone"
 tags: 
   - "pinephone"
-cover:
-  image: "/blog/images/betaedition-1-1024x594.jpg"
 images:
   - "/blog/images/betaedition-1-1024x594.jpg"
 ---

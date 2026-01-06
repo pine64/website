@@ -8,8 +8,6 @@ categories:
 tags: 
   - "community"
   - "pinephone-pro"
-cover:
-  image: "/blog/images/pttitle.png"
 images:
   - "/blog/images/pttitle.png"
 ---

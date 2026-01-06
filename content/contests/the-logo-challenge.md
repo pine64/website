@@ -3,8 +3,6 @@ title: "The Logo Challenge"
 date: "2023-04-09"
 categories: 
   - "community"
-cover:
-  image: "/contests/images/logochallenge.png"
 images:
   - "/contests/images/logochallenge.png"
 ---

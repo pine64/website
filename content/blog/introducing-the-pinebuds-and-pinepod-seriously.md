@@ -9,8 +9,6 @@ categories:
 tags: 
   - "pinebuds"
   - "pinepod"
-cover:
-  image: "/blog/images/seriously.jpg"
 images:
   - "/blog/images/seriously.jpg"
 ---

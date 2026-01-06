@@ -14,8 +14,6 @@ tags:
   - "pinecube"
   - "pinephone"
   - "postmarketos"
-cover:
-  image: "/blog/images/PostBanner.jpg"
 images:
   - "/blog/images/PostBanner.jpg"
 ---

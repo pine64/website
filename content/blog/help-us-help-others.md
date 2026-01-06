@@ -8,8 +8,6 @@ tags:
   - "digital-gap"
   - "nonprofit"
   - "pinebook"
-cover:
-  image: "/blog/images/Givingbacktothesociety-1024x596.jpg"
 images:
   - "/blog/images/Givingbacktothesociety-1024x596.jpg"
 ---

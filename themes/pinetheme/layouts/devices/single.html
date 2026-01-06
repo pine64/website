@@ -5,9 +5,9 @@
         <h1>{{ .Title }}<br><span>BY&nbsp;PINE64</span></h1>
     </div>
     <div class="imagebox">
-        {{if and (isset .Params.cover "image") (ne .Params.cover.image "") }}
-            <img src="{{ .Params.cover.image }}" alt="Image of the device.">
-        {{end}}
+        {{ with index .Params.images 0 }}
+            <img src="{{ . }}" alt="Image of the device.">
+        {{ end }}
     </div>
 </div>
 

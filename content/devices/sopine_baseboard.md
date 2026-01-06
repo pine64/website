@@ -2,8 +2,6 @@
 title: "SOPINE Baseboard"
 categories: 
   - "Computer modules"
-cover:
-  image: "/devices/images/sopine_baseboard.jpg"
 images:
   - "/devices/images/sopine_baseboard.jpg"
 ---

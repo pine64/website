@@ -9,8 +9,6 @@ tags:
   - "audioplayer"
   - "motivo"
   - "volumio"
-cover:
-  image: "/blog/images/Volumio-Motivo-Front-web.png"
 images:
   - "/blog/images/Volumio-Motivo-Front-web.png"
 ---

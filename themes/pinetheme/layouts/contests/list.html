@@ -27,9 +27,9 @@
         <div class="box cols  contests-entry eff1">
             <div class="box f25">
                 <div class="contests_img_container">
-                    {{if and (isset .Params.cover "image") (ne .Params.cover.image "") }}
-                        <img class="contests-preview" src="{{ .Params.cover.image }}" alt="Preview image of the contest."/>
-                    {{end}}
+                    {{ with index .Params.images 0 }}
+                        <img class="contests-preview" src="{{ . }}" alt="Preview image of the contest."/>
+                    {{ end }}
                 </div>
             </div>
             <div class="box rows f75 contests-entry">

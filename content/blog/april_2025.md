@@ -13,8 +13,6 @@ tags:
   - "fosdem"
   - "pinetime"
   - "pinecil"
-cover:
-  image: "/blog/images/AprilBanner_2025.jpg"
 images:
   - "/blog/images/AprilBanner_2025.jpg"
 summary: "This month, the PineTab-V returns, PineNote, PineTab2 and PineTime software improvements and a new Pinecil micro soldering tip set. Does anyone even read these descriptions?"

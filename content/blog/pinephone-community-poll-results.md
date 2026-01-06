@@ -11,8 +11,6 @@ tags:
   - "keyboard"
   - "pinephone"
   - "pinephone-pro"
-cover:
-  image: "/blog/images/Community-poll-results-1.jpg"
 images:
   - "/blog/images/Community-poll-results-1.jpg"
 ---

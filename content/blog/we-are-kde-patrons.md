@@ -8,8 +8,6 @@ categories:
 tags: 
   - "community"
   - "kde"
-cover:
-  image: "/blog/images/KDEpatron-1024x594.jpg"
 images:
   - "/blog/images/KDEpatron-1024x594.jpg"
 ---

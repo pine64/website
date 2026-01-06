@@ -2,8 +2,6 @@
 title: "PineCam"
 categories: 
   - ""
-cover:
-  image: "/devices/images/pinecam.jpg"
 images:
   - "/devices/images/pinecam.jpg"
 ---

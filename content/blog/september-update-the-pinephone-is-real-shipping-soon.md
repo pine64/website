@@ -10,8 +10,6 @@ tags:
   - "pinebook-pro"
   - "pinephone"
   - "release"
-cover:
-  image: "/blog/images/acutal-pinephone.jpg"
 images:
   - "/blog/images/acutal-pinephone.jpg"
 ---

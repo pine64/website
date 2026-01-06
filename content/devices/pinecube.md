@@ -2,8 +2,6 @@
 title: "PineCube"
 categories: 
   - "IP cameras"
-cover:
-  image: "/devices/images/pinecube.jpg"
 images:
   - "/devices/images/pinecube.jpg"
 ---

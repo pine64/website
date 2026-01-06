@@ -11,8 +11,6 @@ tags:
   - "ai"
   - "pinephone"
   - "pinetab"
-cover:
-  image: "/blog/images/PineTabMain.jpeg"
 images:
   - "/blog/images/PineTabMain.jpeg"
 ---

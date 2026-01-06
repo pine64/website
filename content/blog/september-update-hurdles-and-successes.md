@@ -15,8 +15,6 @@ tags:
   - "pinenote"
   - "pinephone"
   - "pinetime"
-cover:
-  image: "/blog/images/september-update-banner.jpg"
 images:
   - "/blog/images/september-update-banner.jpg"
 ---

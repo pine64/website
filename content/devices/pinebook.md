@@ -2,8 +2,6 @@
 title: "Pinebook"
 categories: 
   - "Laptops"
-cover:
-  image: "/devices/images/pinebook.jpg"
 images:
   - "/devices/images/pinebook.jpg"
 aliases:

@@ -9,8 +9,6 @@ tags:
   - "community"
   - "pine64"
   - "website"
-cover:
-  image: ""
 images:
   - ""
 ---

@@ -20,8 +20,6 @@ tags:
   - "starpro64"
   - "quartz64-zero"
   - "pinedio"
-cover:
-  image: "/blog/images/September_Update_Check_Your_Notes.png"
 images:
   - "/blog/images/September_Update_Check_Your_Notes.png"
 summary: "A new community update! New hardware to announced and previous hardware to return!"

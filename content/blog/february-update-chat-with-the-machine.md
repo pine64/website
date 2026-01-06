@@ -10,8 +10,6 @@ tags:
   - "pinephone-keyboard"
   - "pinephone-pro"
   - "pinetime"
-cover:
-  image: "/blog/images/Feb_update_chat_with_the_machine_3.jpg"
 images:
   - "/blog/images/Feb_update_chat_with_the_machine_3.jpg"
 ---

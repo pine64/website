@@ -10,8 +10,6 @@ tags:
   - "pine64"
   - "pinetab"
   - "ubports"
-cover:
-  image: "/blog/images/photo_2020-07-24_18-34-20.jpg"
 images:
   - "/blog/images/photo_2020-07-24_18-34-20.jpg"
 ---

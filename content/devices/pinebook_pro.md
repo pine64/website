@@ -2,8 +2,6 @@
 title: "Pinebook Pro"
 categories: 
   - "Laptops"
-cover:
-  image: "/devices/images/pinebook_pro.png"
 images:
   - "/devices/images/pinebook_pro.png"
 aliases:

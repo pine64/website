@@ -2,8 +2,6 @@
 title: "Please refrain from installing WASP-OS on new PineTimes for the moment"
 date: "2024-12-29"
 authors: ["JF002"]
-cover:
-  image: "/blog/images/pinetime-bootloader-1-0-1_cover.jpg"
 images:
   - "/blog/images/pinetime-bootloader-1-0-1.jpg"
 aliases:

@@ -2,8 +2,6 @@
 title: "SOEDGE"
 categories: 
   - "Computer modules"
-cover:
-  image: "/devices/images/soedge.png"
 images:
   - "/devices/images/soedge.png"
 ---

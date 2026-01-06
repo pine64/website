@@ -16,8 +16,6 @@ tags:
   - "pinebook-pro"
   - "pinephone"
   - "pinetime"
-cover:
-  image: "/blog/images/Brave-Heart.png"
 images:
   - "/blog/images/Brave-Heart.png"
 ---

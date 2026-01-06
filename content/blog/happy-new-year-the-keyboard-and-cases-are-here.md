@@ -9,8 +9,6 @@ tags:
   - "keyboard"
   - "pinephone"
   - "pinephone-pro"
-cover:
-  image: "/blog/images/PPP_KB_ITSHERE.jpg"
 images:
   - "/blog/images/PPP_KB_ITSHERE.jpg"
 ---

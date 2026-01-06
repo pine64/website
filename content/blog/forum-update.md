@@ -10,8 +10,6 @@ tags:
   - "forum"
   - "pine64"
   - "update"
-cover:
-  image: "/blog/images/NewLayout.png"
 images:
   - "/blog/images/NewLayout.png"
 ---

@@ -13,8 +13,6 @@ tags:
   - "pinephone"
   - "pinetab"
   - "pinetime"
-cover:
-  image: "/blog/images/pmosedition1.jpg"
 images:
   - "/blog/images/pmosedition1.jpg"
 ---

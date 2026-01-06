@@ -4,8 +4,6 @@ date: "2020-12-18"
 authors: ["Lukasz Erecinski"]
 categories:
   - "community"
-cover:
-  image: "/blog/images/RK3566-RIDDLE.png"
 images:
   - "/blog/images/RK3566-RIDDLE.png"
 ---

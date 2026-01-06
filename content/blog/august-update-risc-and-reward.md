@@ -22,8 +22,6 @@ tags:
   - "risc-v"
   - "soquartz"
   - "star64"
-cover:
-  image: "/blog/images/August-update.jpg"
 images:
   - "/blog/images/August-update.jpg"
 ---

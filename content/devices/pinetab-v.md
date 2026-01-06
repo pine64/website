@@ -2,8 +2,6 @@
 title: "PineTab-V"
 categories: 
   - "Tablets"
-cover:
-  image: "/devices/images/Pinetabv_1.jpg"
 images:
   - "/devices/images/Pinetabv_1.jpg"
 ---

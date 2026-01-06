@@ -16,8 +16,6 @@ tags:
   - "pinecil"
   - "pinephone"
   - "quartz64"
-cover:
-  image: "/blog/images/JuneUpdateBanner.jpg"
 images:
   - "/blog/images/JuneUpdateBanner.jpg"
 ---

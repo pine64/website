@@ -52,11 +52,6 @@ enableRobotsTXT = true
 [permalinks]
   blog = '/:year/:month/:day/:contentbasename/'
 
-[cover]
-  hidden = false # hide everywhere but not in structured data
-  hiddenInList = false # hide on list pages and home
-  hiddenInSingle = false # hide on single page
-
 [params]
   images = ['/img/opengraph_main.png']
   [params.social]

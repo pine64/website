@@ -16,8 +16,6 @@ tags:
   - "pinetab"
   - "pinetime"
   - "rockpro64-2"
-cover:
-  image: "/blog/images/header.jpg"
 images:
   - "/blog/images/header_with_pinephone_and_pinebookpro.jpg"
 ---

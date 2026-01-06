@@ -2,8 +2,6 @@
 title: "PINE A64-LTS"
 categories: 
   - "SBCs"
-cover:
-  image: "/devices/images/pine_a64-lts.jpg"
 images:
   - "/devices/images/pine_a64-lts.jpg"
 ---

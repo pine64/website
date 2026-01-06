@@ -10,8 +10,6 @@ tags:
   - "community"
   - "digital-gap"
   - "sustainable-foss"
-cover:
-  image: "/blog/images/Hyde-park-neetup.jpg"
 images:
   - "/blog/images/Hyde-park-neetup.jpg"
 ---

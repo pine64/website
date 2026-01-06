@@ -8,8 +8,6 @@ categories:
   - "pine64-community"
 tags: 
   - "project update" 
-cover:
-  image: "/blog/images/pine64_banners/pine64_blue.png"
 images:
   - "/blog/images/pine64_banners/pine64_blue.png"
 summary: "ADD A SUMMARY ABOUT THE CONTENTS OF THE UPDATE HERE"

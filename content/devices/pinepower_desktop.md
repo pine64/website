@@ -2,8 +2,6 @@
 title: "PinePower Desktop"
 categories: 
   - "Power supplies"
-cover:
-  image: "/devices/images/pinepower_desktop.jpg"
 images:
   - "/devices/images/pinepower_desktop.jpg"
 ---

@@ -16,8 +16,6 @@ tags:
   - "pinetime"
   - "quartz64"
   - "soquartz"
-cover:
-  image: "/blog/images/May-Update.jpg"
 images:
   - "/blog/images/May-Update.jpg"
 ---

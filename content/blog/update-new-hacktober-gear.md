@@ -16,8 +16,6 @@ tags:
   - "pinephone"
   - "pinetime"
   - "soedge"
-cover:
-  image: "/blog/images/OctoberCommunityUpdate.jpg"
 images:
   - "/blog/images/OctoberCommunityUpdate.jpg"
 ---

@@ -2,8 +2,6 @@
 title: "SOQuartz"
 categories: 
   - "SBCs"
-cover:
-  image: "/devices/images/SOQuartz_module-1s.jpg"
 images:
   - "/devices/images/SOQuartz_module-1s.jpg"
 ---

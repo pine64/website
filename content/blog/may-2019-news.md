@@ -12,8 +12,6 @@ tags:
   - "pinebook"
   - "pinebook-pro"
   - "pinephone"
-cover:
-  image: "/blog/images/PinebookProandPinePhone1.jpg"
 images:
   - "/blog/images/PinebookProandPinePhone1.jpg"
 ---

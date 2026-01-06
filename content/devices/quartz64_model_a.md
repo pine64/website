@@ -2,8 +2,6 @@
 title: "Quartz64 Model A"
 categories: 
   - "SBCs"
-cover:
-  image: "/devices/images/quartz64_model_a.jpg"
 images:
   - "/devices/images/quartz64_model_a.jpg"
 aliases:

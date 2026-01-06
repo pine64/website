@@ -8,8 +8,6 @@ categories:
   - "pine64-community"
 tags: 
   - "community"
-cover:
-  image: "/blog/images/community-update-8-2023-thumbnail.jpg"
 images:
   - "/blog/images/community-update-8-2023-thumbnail.jpg"
 ---

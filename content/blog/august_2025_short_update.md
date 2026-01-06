@@ -9,8 +9,6 @@ categories:
 tags: 
   - "PinePhone Pro"
   - "Risc-V"
-cover:
-  image: "/blog/images/august_2025_short.png"
 images:
   - "/blog/images/august_2025_short.png"
 ---

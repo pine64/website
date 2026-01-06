@@ -13,8 +13,6 @@ tags:
   - "pinephone"
   - "quartz64"
   - "soedge"
-cover:
-  image: "/blog/images/marchupdate-1024x594.jpg"
 images:
   - "/blog/images/marchupdate-1024x594.jpg"
 ---

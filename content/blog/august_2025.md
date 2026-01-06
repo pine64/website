@@ -11,8 +11,6 @@ tags:
   - "pinetab2"
   - "pinephone-pro"
   - 
-cover:
-  image: "/blog/images/AugustBanner_2025.jpg"
 images:
   - "/blog/images/AugustBanner_2025.jpg"
 summary: "Hello RSS users! In this update we announce a new community manager, updates to the PineTab2 and PineNote, FreeBSD on the PinePhone Pro, a guide on upstreaming PinePhone Pro patches and a small bit for you Pinecil users."

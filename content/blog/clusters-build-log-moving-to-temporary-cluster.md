@@ -10,8 +10,6 @@ tags:
   - "cluster"
   - "community"
   - "rockpro64-2"
-cover:
-  image: "/blog/images/cluster-maintenance-p1-1230x692.jpg"
 images:
   - "/blog/images/cluster-maintenance-p1-1230x692.jpg"
 ---

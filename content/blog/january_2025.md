@@ -12,8 +12,6 @@ tags:
   - "fosdem"
   - "pinenote"
   - "pinetime"
-cover:
-  image: "/blog/images/JanuaryBanner_2025.png"
 images:
   - "/blog/images/JanuaryBanner_2025.png"
 summary: "Happy New Year! This month we discuss the current state of the PineVox, seeing what the community have been up to with their PineNotes, announcing InfiniTime 1.15 and announcing the end of production of the Pinebook Pro."

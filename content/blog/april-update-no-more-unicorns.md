@@ -15,8 +15,6 @@ tags:
   - "pinepower"
   - "pinesound"
   - "quartzpro64"
-cover:
-  image: "/blog/images/April-Update-No-More-Unicorns.jpg"
 images:
   - "/blog/images/April-Update-No-More-Unicorns.jpg"
 ---
