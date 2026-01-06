@@ -83,11 +83,11 @@ Five hardware switches allow you to disable the cameras, microphone, WiFi and Bl
 
     {{< devices/device_box link="/documentation/Phone_Accessories/Keyboard/" img="/documentation/images/PP_KB_Front-1024x576.jpg" title="PinePhone (Pro) Keyboard" text="The keyboard add-on for the PinePhone and PinePhone Pro adds a physical keyboard and a large battery." >}}
 
-    {{< devices/device_box link="/documentation/Phone_Accessories/#_lora_add_on" img="/documentation/images/PP_LoRa.jpg" title="LoRa Add-on" text="A LoRa add-on which uses the pogo pins to interface a Semtech SX1262 LoRa module" >}}
+    {{< devices/device_box link="/documentation/Phone_Accessories/LoRa/" img="/documentation/images/PP_LoRa.jpg" title="LoRa Add-on" text="A LoRa add-on which uses the pogo pins to interface a Semtech SX1262 LoRa module" >}}
 
-    {{< devices/device_box link="/documentation/Phone_Accessories/#_qi_wireless_charging_add_on" img="/documentation/images/PinePhone-Wireless-charger.jpg" title="Qi Wireless Charging Add-on" text="A Qi wireless charging add-on which ses the pogo pins to supply Qi Wireless and Wireless Power Consortium compatible charging. No software required." >}}
+    {{< devices/device_box link="/documentation/Phone_Accessories/Qi_wireless_charging/" img="/documentation/images/PinePhone-Wireless-charger.jpg" title="Qi Wireless Charging Add-on" text="A Qi wireless charging add-on which ses the pogo pins to supply Qi Wireless and Wireless Power Consortium compatible charging. No software required." >}}
 
-    {{< devices/device_box link="/documentation/Phone_Accessories/#_fingerprint_reader_add_on" img="/documentation/images/PinePhone-FP-Addon.jpg" title="Fingerprint Reader Add-on" text="A fingerprint reader add-on which uses the pogo pins to interface a high quality fingerprint sensor, uses open firmware for it’s i2c bridge, and can also be used for gesture navigation." >}}
+    {{< devices/device_box link="/documentation/Phone_Accessories/Fingerprint_reader/" img="/documentation/images/PinePhone-FP-Addon.jpg" title="Fingerprint Reader Add-on" text="A fingerprint reader add-on which uses the pogo pins to interface a high quality fingerprint sensor, uses open firmware for it’s i2c bridge, and can also be used for gesture navigation." >}}
 
     {{< devices/device_box link="https://pine64.com/product/pinephone-pro-usb-c-docking-bar/" img="/devices/images/pinephone_dock.jpg" title="USB-C Docking Bar" text="An USB-C docking bar adding an ethernet port, two USB ports, an HDMI port and a power input." >}}
 

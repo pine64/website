@@ -1,5 +1,7 @@
-<h{{ .Level }} id="{{ .Anchor | safeURL }}">
-    <a class="link" href="#{{ .Anchor | safeURL }}">
-        {{ .Text | safeHTML }}
-    </a>
+{{ $text := .Text }}
+{{ $id := .Anchor }}
+{{ $id_underscore := replace $id "-" "_" }}
+<h{{ .Level }} id="{{ $id }}">
+  {{ $text | safeHTML }}
+  <a id="{{ $id_underscore }}" class="extra-anchor"></a>
 </h{{ .Level }}>

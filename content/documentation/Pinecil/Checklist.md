@@ -20,7 +20,7 @@ Upon receipt, or buying a used Pinecil, one may want to check the following:
 
 1. The display turns on when 5-21V is supplied (V2 models can do 24V).
    * Use a USB type C cable or a DC 5525 _center positive_ barrel [(how to check polarity)](https://www.youtube.com/watch?v=5DBTNplNTfA)
-   * Use the video linked to make sure the DC barrel charger is _Center Positive_ before plugging it into Pinecil. Several users have accidentally plugged incorrect center-negative chargers into Pinecil which immediately breaks it because it is the wrong type of charger (this is sometimes repairable, see [live community chat](/documentation/#_community_and_support)).
+   * Use the video linked to make sure the DC barrel charger is _Center Positive_ before plugging it into Pinecil. Several users have accidentally plugged incorrect center-negative chargers into Pinecil which immediately breaks it because it is the wrong type of charger (this is sometimes repairable, see [live community chat](/documentation/#chat-platforms)).
    * Note that 5v shows _DC low_ and is not high enough to run Pinecil. 5V is only enough for firmware update and to see the menu.
 2. It gets full power.
    * 20V from a 20V capable USB-C PD charger or power from DC barrel charger that is the appropriate specifications. The screen displays the voltage from the charger.
@@ -46,7 +46,7 @@ Upon receipt, or buying a used Pinecil, one may want to check the following:
    * Re-tin the tip before storing is advised to prevent oxidation.
 8. Check that it heats up with an installed tip, and stops increasing when it reaches the set point.
    * This may draw up to ~3A, make sure the [power supply](/documentation/Pinecil/Power_supplies/Power_supplies) can provide a minimum of 3amps or more.
-   * Minor overshoot may occur, but, disconnect power if the temperature keeps going up higher without user input and check with the [live volunteer Pinecil channel](/documentation/#_community_and_support).
+   * Minor overshoot may occur, but, disconnect power if the temperature keeps going up higher without user input and check with the [live volunteer Pinecil channel](/documentation/#chat-platforms).
 9. Do a simple test is to see if the iron will melt solder at approximately the expected temperature for the alloy of solder being tested.
    * If no direct measurement is possible, set it to ~230°C and see if it just about melts SAC (lead-free) solder (~190°C for leaded). This may be more if the room is cold.
 10. If there are multiple tips, wipe all of them with isopropyl alcohol (IPA) or a dry clean towel and check that they all heat up.

@@ -141,7 +141,7 @@ This is a CLI that runs in a terminal console. Get the latest zip file for Linux
 5. Follow the Flash mode instructions and make sure the [-] button is held down BEFORE plugging in the cable to the back of the Pinecil. And don’t release for ~10 seconds.
 6. If that doesn’t work try holding down the `[-]` the whole time (don’t let go of the button).
 7. Blisp flashers are from Gamiee’s open source [Blisp code here](https://github.com/pine64/blisp). It is only an updater for the BL706 MCU on the Pinecil V2. It is separate from the firmware files needed which are in located in GitHub Ralim’s IronOS. The firmware contains all the menus, functions, and languages, and the flasher is the tool to push the firmware onto the MCU chip (the brain). Different MCU’s need different flasher tools.
-8. If you have issues completing the update, try joining the live [Pinecil community chat](/documentation/#_community_and_support) to get tips from volunteers.
+8. If you have issues completing the update, try joining the live [Pinecil community chat](/documentation/#chat-platforms) to get tips from volunteers.
 9. If there was any special work-around you had to do to get the Blisp Flasher to work, or could not get it to work at all, post an [Issue in Github Blisp](https://github.com/pine64/blisp/issues).
 10. If you are running Windows in a virtual machine and the process fails, make sure you have _Microsoft Visual C++ 2015-2022_ installed.
 11. All firmware releases and betas are located in the GitHub [Ralim’s IronOS here](https://github.com/Ralim/IronOS). If you would like to add enhancements/features to the IronOS (firmware that runs the Pinecil) or have an issue, please look at the GitHub documents or submit an issue ticket. It is recommended to read through all the GitHub [IronOS documents](https://ralim.github.io/IronOS/) first as they may have the answers. Screen menus and troubleshooting is documented as well on IronOS and maintained by volunteers.
@@ -191,7 +191,7 @@ This is a CLI that runs in a terminal console. Get the latest zip file for Linux
 * Ben (ralimtek) supports IronOS out of love for the IronOS creative open community. He volunteers countless hours coding, debugging, and enhancing IronOS with all the feature requests submitted.
   * To give some love back, donate to IronOS; [buy Ralim a coffee/kofi](https://ko-fi.com/ralim) or [donate here](https://www.paypal.com/paypalme/RalimTek).
 * One advantage of Pinecil (V1/V2) over other irons (i.e., Miniware) is you can not really brick them since Pinecil’s bootloader is in ROM. If there is a problem, just flash the firmware again or a different version. This empowers people to experiment and do forks of the main IronOS firmware without as much risk.
-* Problems with IronOS firmware? - read [documents here](https://ralim.github.io/IronOS/). If the answer is not found, open a [ticket here](https://github.com/Ralim/IronOS/issues) or join the [live Pinecil community chat](/documentation/#_community_and_support).
+* Problems with IronOS firmware? - read [documents here](https://ralim.github.io/IronOS/). If the answer is not found, open a [ticket here](https://github.com/Ralim/IronOS/issues) or join the [live Pinecil community chat](/documentation/#chat-platforms).
 
 ## Boot Logo Art
 
