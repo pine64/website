@@ -7,11 +7,14 @@
 
 {{- $data := dict
     "@context" "https://schema.org"
-    "@type"    "Product"
-    "name"    .Title
-    "description" $desc
+    "@type"    "BlogPosting"
+    "headline"    .Title
+    "url"     .Permalink
     "image" $img
-    "brand"   "PINE64"
+    "wordcount" .WordCount
+    "datePublished" .Date
+    "description" $desc
+    "inLanguage" .Lang
 -}}
 <script type="application/ld+json">
 {{ $data | jsonify | safeJS }}
