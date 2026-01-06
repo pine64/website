@@ -1,0 +1,12 @@
+{{- $desc := (or .Description .Summary site.Params.description) | plainify | htmlUnescape }}
+{{- $data := dict
+    "@context" "https://schema.org"
+    "@type"    "WebPage"
+    "name"    .Title
+    "url"     .Permalink
+    "description" $desc
+    "about"   $desc
+-}}
+<script type="application/ld+json">
+{{ $data | jsonify | safeJS }}
+</script>

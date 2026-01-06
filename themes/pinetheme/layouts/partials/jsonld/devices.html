@@ -1,0 +1,20 @@
+{{- $desc := (or .Description .Summary site.Params.description) | plainify | htmlUnescape }}
+
+{{- $img := "" -}}
+{{- with .Params.cover.image }}{{ $img = . }}{{ end -}}
+
+{{- /* Optional: set a fallback placeholder image URL */ -}}
+{{- $fallback := "https://example.com/placeholder.png" -}}
+{{- if not $img }}{{ $img = $fallback }}{{ end -}}
+
+{{- $data := dict
+    "@context" "https://schema.org"
+    "@type"    "Product"
+    "name"    .Title
+    "description" $desc
+    "image" $img
+    "brand"   "PINE64"
+-}}
+<script type="application/ld+json">
+{{ $data | jsonify | safeJS }}
+</script>

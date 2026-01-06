@@ -1,0 +1,16 @@
+{{/* Generic JSON‑LD selector */}}
+{{ if eq .Section "blog" }}
+  {{ partial "jsonld/blog.html" . }}
+{{ else if eq .Section "devices" }}
+  {{ partial "jsonld/devices.html" . }}
+{{ else if eq .Section "documentation" }}
+  {{ partial "jsonld/documentation.html" . }}
+{{ else if eq .Section "podcast" }}
+  {{ partial "jsonld/podcast.html" . }}
+{{ else if eq .Section "community" }}
+  {{ partial "jsonld/community.html" . }}
+{{ else if eq .Section "contests" }}
+  {{ partial "jsonld/contests.html" . }}
+{{ else }}
+  {{ partial "jsonld/default.html" . }}
+{{ end }}

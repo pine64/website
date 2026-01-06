@@ -61,6 +61,9 @@
     <!-- Schema / microdata -->
     {{- template "_internal/schema.html" . -}}
 
+    <!-- JSON-LD -->
+    {{- partial "jsonld/head.html" . -}}
+
     <!-- Generator -->
     {{ hugo.Generator }}
 

@@ -11,7 +11,7 @@
     {{ if ge (len $ancestors) 3 }}
         {{ $thirdItem := index $ancestors 2}}
         {{ if $thirdItem }}
-            {{- $title = print $thirdItem.LinkTitle ": " .Title -}}
+            {{- $title = print .Title " — " $thirdItem.LinkTitle -}}
         {{ end }}
     {{ end }}
 {{ end }}
