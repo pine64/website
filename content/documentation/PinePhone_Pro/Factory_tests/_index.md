@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PinePhone_Pro"
     identifier: "PinePhone_Pro/Factory_tests"
-    weight: 96
+    weight: 95
 ---
 
 {{< children >}}

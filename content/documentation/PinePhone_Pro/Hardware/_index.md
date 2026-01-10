@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PinePhone_Pro"
     identifier: "PinePhone_Pro/Hardware"
-    weight: 97
+    weight: 7
 aliases:
   - /documentation/PinePhone_Pro/Hardware/Replacement_earpieces
   - /documentation/PinePhone_Pro/Further_information/Components

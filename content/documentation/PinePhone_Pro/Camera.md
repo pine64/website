@@ -6,7 +6,7 @@ menu:
     title:
     parent: "PinePhone_Pro"
     identifier: "PinePhone_Pro/Camera"
-    weight:
+    weight: 8
 ---
 
 The PinePhone Pro has two cameras, Sony IMX258 with 13MP as rear camera and OmniVision OV8858 with 8MP as front-facing camera.
