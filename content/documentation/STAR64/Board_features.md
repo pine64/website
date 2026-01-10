@@ -9,25 +9,33 @@ menu:
     weight: 2
 ---
 
+## Board layout
+
+Board map of connectors with schematic v1.1 identifiers:
+
+{{< figure src="/documentation/STAR64/images/star64_layout.png" caption="STAR64 board layout" width="700" >}}
+
+## Features
+
 {{< figure src="/documentation/STAR64/images/star64.png" caption="The STAR64 board" width="400" >}}
 
-## Video
+### Video
 
 * Digital Video output up to 4K@30Hz
 * 4K HDR @ 60fps
 * H.264/AVC Base/Main/High/High10 profile @ level 5.1; up to 4K&times;2K @ 60fps
 * H.265/HEVC Main/Main10 profile @ level 5.1 High-tier; up to 4K&times;2K @ 60fps
 
-## Audio
+### Audio
 
 * 3.5mm audio Jack
 
-## Network
+### Network
 
 * Single or Dual 10/100/1000 bps Ethernet
 * 2.4GHz/5Ghz MIMO WiFi 802.11 b/g/n/ac with Bluetooth 5.2
 
-## Storage
+### Storage
 
 * on-board 128Mbit (16MByte) XSPI NOR flash memory - bootable
 * microSD - bootable, supports SDHC and SDXC and storage up to 256GB
@@ -35,7 +43,7 @@ menu:
 * 1&times; USB3.0 Dedicated Host port
 * 3&times; USB2.0 Host port
 
-## Expansion Ports
+### Expansion Ports
 
 * PCIe 2.0 &times;1 lane
 * 2&times;20 pins "Pi2" GPIO Header

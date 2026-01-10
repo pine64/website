@@ -15,6 +15,7 @@ Input Power: DC 12V @ 3A 5.5mmOD/2.1mm ID center-positive Barrel DC Jack connect
 
 Schematic:
 
+* [STAR64 Schematic 20230504 v1.1 (Production Released version)](https://files.pine64.org/doc/star64/Star64_Schematic_V1.1_20230504.pdf)
 * [STAR64 Schematic 20220721 v1.0 (Prototype Board)](https://files.pine64.org/doc/star64/Star64_Schematic_V1.0_20220721.pdf)
 
 Certifications:
