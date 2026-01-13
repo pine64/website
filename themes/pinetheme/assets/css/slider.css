@@ -27,7 +27,7 @@
 .cr-item img {
     height: auto;
     max-width: 100%;
-    filter: drop-shadow(5px 5px 8px #aaa);
+    filter: drop-shadow(5px 5px 8px #4e4e4e62);
 }
 
 .cr-control {
