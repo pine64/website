@@ -3,7 +3,7 @@ body {
     overflow-y: scroll;
 }
 #header {
-    box-shadow: 0 1px 2px var(--grey);
+    box-shadow: 0 1px 2px #6b6b6b66;
 }
 #content {
     display: block;
@@ -37,7 +37,7 @@ body {
 #doc-toc {
     right: 0;
     padding: 6px 4px;
-    border-left: 1px solid #bbdcff;
+    border-left: 1px solid var(--blue);
 }
 #doc-toc a {
     color: var(--fg);
@@ -72,7 +72,7 @@ body {
     border-right: 1px solid #ddd
 }
 #doc-nav a {
-    color: #363636;
+    color: var(--fg);
 }
 #doc-nav a:hover {
     color: var(--blue);
@@ -87,7 +87,7 @@ body {
     margin-left: 10px;
 }
 #doc-nav .doc-nav-head {
-    color: black;
+    color: var(--fg);
     font-weight: 500 !important;
 }
 #doc-nav li {
@@ -139,8 +139,9 @@ div#doc-page code {
     font-weight: 400;
     max-width: 98%;
     vertical-align: top;
-    background-color: #f8f9fa;
-    border: 1px solid #eaecf0;
+    background-color: var(--bg-code);
+    color: var(--fg-code);
+    border: 1px solid #79797928;
     line-height: 1.3;
     border-radius: 4px;
     padding: 0 4px;

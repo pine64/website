@@ -1,6 +1,6 @@
 <script src="/podlove/embed.js"></script>
 
-<div class="app" id="app" style="width: 100%;"></div>
+<div id="player"></div>
 
 <noscript>
     <audio controls src='/podcast/episodes/{{ .Get "direct" }}'></audio>
@@ -8,7 +8,7 @@
 </noscript>
 
 <script>
-    podlovePlayer("#app", '/podcast/episodes/{{ .Get "episode" }}.json', "/podlove/pine64theme.json")
-</script> 
+    podlovePlayer("#player", '/podcast/episodes/{{ .Get "episode" }}.json', "/podlove/pine64theme.json")
+</script>
 
 <a href='/podcast/episodes/{{ .Get "direct" }}'>Download audio</a><br>

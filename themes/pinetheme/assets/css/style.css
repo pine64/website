@@ -3,19 +3,33 @@
     margin: 0;
 }
 
+/* Light theme */
 :root {
     --blue: rgb(0, 75, 160);
     --lightblue: #f3f6f9;
-    --medblue: #e4f0ff;
-    --palecyan: #eff7f9;
-    --white: #ffffff;
-    --grey: #e6e6e6;
-    --fg: #222222;
-    --fg-main-menu: #000000;
+    --medblue: #5495e738;
+    --palecyan: #8bc8d724;
+    --fg: #181818;
     --bg: #ffffff;
-    --bg-table: #f8f8f8;
-    --bg-table-hl: #ececec;
-    --bg-table-border: #dee2e6;
+    --bg-code: #f5f5f5;
+    --fg-code: #191919;
+    --bg-table: #8888880e;
+    --bg-table-hl: #8d8d8d24;
+    --bg-table-border: #9c9c9c2a;
+    --bg-search: #5d5d5d1f;
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --blue: #4288e3;
+        --lightblue: #5d5d5d1f;
+        --footer: #171717;
+        --fg: #e9e9e9;
+        --bg: #151515;
+        --bg-code: #202020;
+        --fg-code: #dbdbdb;
+    }
 }
 
 body {
@@ -28,25 +42,6 @@ body {
   color-scheme: light dark;
 }
 
-/***
-TBD: <meta name="color-scheme" content="light dark">
-***/
-/***
-@media (prefers-color-scheme: dark) {
-
-    :root {
-        --blue: rgb(0, 90, 194);
-        --grey: #111111;
-        --fg: #ddd;
-        --fg-main-menu: #d8d8d8;
-        --bg: #181818;
-        --bg-table: #2c2c2c;
-        --bg-table-hl: #404040;
-        --bg-table-border: #6c757d;
-    }
-}
-***/
-
 /* Text styles */
 a {
     color: var(--blue);
@@ -55,6 +50,7 @@ a {
 p {
     margin-bottom: 0.6rem;
     line-height: 1.5;
+    color: var(--fg)
 }
 li p {
     margin-bottom: 0;
@@ -214,7 +210,7 @@ time {
     border-top-right-radius: 10px;
 }
 .eff1:hover h3 {
-    color: #0069B5;
+    color: var(--blue);
 }
 .eff1:hover img {
     transform: scale(1.05);
@@ -301,13 +297,14 @@ div.themeblog h1 {
     color: white;
 }
 div.themeblogpreview {
-    background-color: white;
+    background-color: var(--bg);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 div.themeblogpreview:hover {
     /*box-shadow: rgba(0, 105, 181, 0.4) 0px 8px 24px;*/
     transform: scale(1.02); 
     box-shadow: 0 0 0 3px rgba(0, 123, 255, .5);
+    transition: 0.4s;
 }
 div.themegradient1 {
     background: rgb(131,58,180);
@@ -337,16 +334,13 @@ div.themegradient5 {
 div.themedarkblue {
     background-color: #436592;
 }
-div.themedarkgrey {
+div.devices_list_header {
     color: white;
     font-weight: 400;
-    background-color: #222;
+    background-color: #7e7e7e1f;
 }
-div.themedarkgrey h1 {
-    color: white;
-}
-div.bg_grey {
-    background-color: var(--grey);
+div.devices_list_header h1 {
+    color: var(--fg);
 }
 div.bg_lightblue {
     background-color: var(--lightblue);
@@ -391,7 +385,7 @@ ul.pagination li a {
 
 }
 ul.pagination li.active a, ul.pagination li a:hover {
-    color: #0069B5;
+    color: var(--blue);
 }
 
 /* Paragraph and section margins */
@@ -405,11 +399,11 @@ ul.pagination li.active a, ul.pagination li a:hover {
 }
 pre {
     margin: 0.6rem;
-    color: #444;
+    color: var(--fg-code);
     font-family: source code pro, lucida console, monospace;
     font-size: 16px;
     font-weight: 400;
-    background-color: none;
+    background-color: unset !important;
 }
 
 /* Prevent the "$ " part in rouge: console from being selected */
@@ -463,14 +457,14 @@ input#hamburger_cb,
     padding: 0 10px;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
-    background-color: var(--lightblue);
+    background-color: var(--bg-search);
     border: none;
     color: #333;
     height: 38px;
     width: 70%;
 }
 #header-container #search input:focus {
-    border: 1px solid #0069B5;
+    border: 1px solid var(--blue);
     outline: 0;
     width: calc(100% - 38px);
     transition: all 0.1s ease-in-out;
@@ -538,7 +532,7 @@ input#hamburger_cb,
 }
 #main_menu .nav-link {
     padding: 15px;
-    color: var(--fg-main-menu);
+    color: var(--fg);
     text-decoration: none;
     font-size: 1.13rem;
     white-space: nowrap;
@@ -546,30 +540,30 @@ input#hamburger_cb,
     border: solid 2px transparent;
 }
 #main_menu .nav-link:hover { 
-    color: #0069B5;
-    border-bottom: 2px solid #0069B5;
+    color: var(--blue);
+    border-bottom: 2px solid var(--blue);
 }
 #main_menu .nav-link.active { 
-    color: #0069B5;
-    border-bottom: 2px solid #0069B5;
+    color: var(--blue);
+    border-bottom: 2px solid var(--blue);
 }
 .dropdown-items {
     display: none;
     position: absolute;
     margin-top: 28px;
     z-index: 1;
-    background-color: white;
-    border: 1px solid #ddd;
+    background-color: var(--bg);
+    border: 1px solid #7f7f7f6e;
     border-bottom-right-radius: 10px;
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
     overflow: visible;
     flex-direction: column;
 }
 .dropdown-item:hover {
-    color: #0069B5;
+    background-color: var(--medblue);
 }
 .dropdown-items .dropdown-item {
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #7f7f7f6e;
     padding: 10px;
 }
 .dropdown-items .dropdown-item:first-of-type {
@@ -669,7 +663,7 @@ div.roundedbutton:hover {
 
 /* Index page */
 .index_news a {
-    color: #333;
+    color: var(--fg);
 }
 
 /* Blog posts */
@@ -689,10 +683,6 @@ div.roundedbutton:hover {
     word-wrap: break-word;
     overflow-wrap: break-word;
     word-break: break-word;
-}
-
-.blog pre {
-    white-space: pre-wrap;
 }
 
 .blog p img {
@@ -744,44 +734,50 @@ hr.toc_hr {
 }
 .blog-tags:before{
     content: '#';
-    color: #555;
+    color: var(--fg);
+    opacity: 0.7;
     font-weight: 900;
     position: relative;
-    top: -5px;
+    top: -2px;
+    left: 4px;
     padding-right: 5px;
 }
 .blog-tags a {
-    color: #555;
+    color: var(--fg);
+    opacity: 0.7;
     margin: 0.2rem;
 }
 .blog-tags a:hover {
     border-bottom: 4px solid #013F85;
     margin-bottom: -2px;
 }
-.blog p a,
-.blog ol a,
-.blog ul a
-{
-    color: #053a63;
-}
 .blog h2 {
     margin-top: 16px;
 }
 .blog code {
-    background-color: #fafafa;
+    background-color: var(--bg-code);
     padding: 2px 6px;
     font-size: 1.0rem;
+    color: var(--fg-code);
+}
+.blog pre {
+    white-space: pre-wrap;
+    padding: 5px;
+    background-color: var(--bg-code) !important;
+    color: var(--fg-code);
+    border-radius: 5px;
 }
 p.readingstats {
     margin: 1rem 0;
-    color: gray;
-    font-weight: 300;
+    color: var(--fg);
+    opacity: 0.8;
     font-size: 11pt;
 }
 
 div.credits {
     margin: -8px 0 12px 6px;
-    color: #555;
+    color: var(--fg);
+    opacity: 0.8;
     font-weight: 400;
     font-size: 14px;
 }
@@ -800,11 +796,14 @@ div.credits {
 .namebox {
     max-width: 500px;
     margin-right: 1rem;
-    font-size: 2.31rem;
+    font-size: 40px;
+    font-weight: 400;
     line-height: 1.1;
 }
 .namebox span {
-    color: #013F85;
+    color: var(--blue);
+    font-size: 30px;
+    font-weight: 300;
 }
 .imagebox {
     max-width: 500px;
@@ -844,7 +843,7 @@ div.credits {
     padding: 16px 12px 16px 12px;
 }
 .deviceshr {
-    background-color: #021d3b;
+    background-color: var(--blue);
     width: 100px;
     height: 6px;
 }
@@ -908,7 +907,7 @@ div.credits {
 /* Community people boxes */
 .person_box {
     border: 2px solid #f4f6f8;
-    border-bottom: 4px solid #0069B5;
+    border-bottom: 4px solid var(--blue);
     background-color: white;
     margin: 16px;
     width: 200px;
@@ -1031,19 +1030,19 @@ nav#TableOfContents ol ol {
     /* padding-bottom: 0 !important; */
 }
 
-/* Podcast page */
 div.hugebutton {
     padding: 1.4rem 2rem;
     margin-right: 10pt;
     margin-bottom: 10pt;
-    background-color: rgba(255, 255, 255, 0);
     border: 1px solid #333;
     border-radius: 12pt;
     font-weight: 600;
     font-size: 1rem;
-    color: #111;
-    max-width: 200px;
+    color: var(--fg);
+    align-self: flex-start;
 }
+
+/* Podcast page */
 div.podcast-blue {
     background-color: #2868B0;
     border: none;
@@ -1059,30 +1058,9 @@ div.podcast:hover {
     background-color: #333;
     color: white;
 }
-.podcast_row a:hover > .podcast_desc h3,
-.podcast_row a:hover > .podcast_desc {
-    color: #0069B5;
-}
-.podcast_desc {
-    padding: 3rem;
-}
-div.podcast:hover {
-    background-color: #333;
-    color: white;
-}
-.podcast_preview p {
-    color: #333;
-}
-.podcast_preview:hover h3{
-    color: #0069B5;
-}
-@media screen and (max-width: 1000px){
-    .podcast_row .coverimg {
-        height: 100px;
-    }
-    .podcast_desc {
-        padding: 0;
-    }
+#player {
+    background-color: var(--bg);
+    max-width: 950px;
 }
 
 /* Contests */
@@ -1099,11 +1077,8 @@ div.podcast:hover {
     display: flex;
     justify-content: center;
 }
-.contests-entry p {
-    color: #555;
-}
 .contests-entry span {
-    color: #0069B5;
+    color: var(--blue);
 }
 @media screen and (max-width: 1000px){
     .contests-entry {
@@ -1118,10 +1093,10 @@ div.podcast:hover {
 .admonition {
     border-left: 4px solid;
     border-radius: 3px;
-    background-color: #fcfcfc;
+    background-color: #a7a7a70f;
+    color: var(--fg);
     margin: 12px 0 18px 0;
-    color: #1b1b1b;
-    box-shadow: 2px 2px 4px #ddddddcc;
+    box-shadow: 2px 2px 6px #87878729;
 }
 .admonition-header {
     padding: 12px 20px 8px 20px;
@@ -1129,44 +1104,29 @@ div.podcast:hover {
 }
 .admonition-text {
     padding: 8px 20px 8px 20px;
-    background-color: white;
+    background-color: var(--bg);
     line-height: 2;
     font-size: 14px;
 }
 .admonition-note {
-    background-color: #f4f8ff;
+    background-color: #3462b125;
     border-color: #3165cc;
 }
-.admonition-note .title {
-    color: #1148b8;
-}
 .admonition-warning {
-    background-color: #f8dfdf;
+    background-color: #ff00000f;
     border-color: #cc3131;
 }
-.admonition-warning .title {
-    color: #cc3131;
-}
 .admonition-info {
-    background-color: #f8ecdf;
+    background-color: #ff84000f;
     border-color: #e09f12;
-}
-.admonition-info .title {
-    color: #e09f12;
 }
 .admonition-important {
-    background-color: #f8ecdf;
+    background-color: #ff84000f;
     border-color: #e09f12;
 }
-.admonition-important .title {
-    color: #e09f12;
-}
 .admonition-construction {
-    background-color: #ffe685;
+    background-color: #ffcc000f;
     border-color: #9f7f00;
-}
-.admonition-construction .title {
-    color: #9f7f00;
 }
 
 /* Youtube partial */
@@ -1234,6 +1194,7 @@ div.podcast:hover {
 /* Footer */
 #footer {
     color: var(--fg);
+    background: var(--footer)
 }
 #footer a {
     text-decoration: none;

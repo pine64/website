@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <div class="box themecontest full">
-    <div class="box rows pad">
+    <div class="box rows pad" style="align-items: flex-start;">
         <h1>Contests</h1>
 
         <p>Contests of the PINE64 community</p>
@@ -9,6 +9,7 @@
         <!-- Get the RSS feed URL -->
         {{ with .OutputFormats.Get "rss" -}}
         {{ $rss := .RelPermalink | safeHTML }}
+        
         <a href="{{ $rss }}">
             <div class="hugebutton">Get the RSS feed</div>
         </a>
