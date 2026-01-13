@@ -582,12 +582,12 @@ input#hamburger_cb,
     #main_menu { 
         margin-left: 0;
         width: 100%;
-        background: white;
+        background: var(--bg);
         position: absolute;
         top: 140px;
         z-index: 999;
-        border-top: 2px solid #eee;
-        border-bottom: 2px solid #eee;
+        border-top: 2px solid #8383831a;
+        border-bottom: 2px solid #8383831a;
         padding-bottom: 20px;
         box-shadow: 3px 25px 20px 0px rgba(87, 87, 87, 0.75);
 
@@ -611,6 +611,8 @@ input#hamburger_cb,
         padding: 4px 10px;
         background-color: #2969B1;
         border-radius: 5px;
+        box-shadow: none;
+        border: none;
     }
     #hamburger:hover{
         box-shadow: 0 0 15px rgba(92, 123, 182, 0.7);
@@ -632,6 +634,9 @@ input#hamburger_cb,
     }
     input#hamburger_cb:checked ~ #main_menu {
         display: block;
+    }
+    input#hamburger_cb:checked + #hamburger {
+        border: 1px solid var(--fg) !important;
     }
     .dropdown label {
         display: flex; justify-content: flex-end
