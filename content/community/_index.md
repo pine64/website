@@ -40,7 +40,7 @@ The community chat platforms are the following:
 | News | [#pine64-announcements:matrix.org](https://matrix.to/#/#pine64-announcements:matrix.org) | [@PINE64_News](https://t.me/PINE64_News) | Unavailable |
 | PINE A64(+), A64-LTS & SOPine | [#pine64sopine:matrix.org](https://matrix.to/#/#pine64sopine:matrix.org) | [@pine64sopine](https://t.me/pine64sopine) | #lts-sopine |
 | ROCK64 / ROCKPro64 | [#rock64:matrix.org](https://matrix.to/#/#rock64:matrix.org) | [@mtrx_rock64](https://t.me/mtrx_rock64) | #rock64 |
-| Quartz64 | [#quartz64:matrix.org](https://matrix.to/#/#quartz64:matrix.org) | [Quartz64](https://t.me/joinchat/Vq50DXkH31e0_i-f) | #quartz64 |
+| Quartz64 | [#quartz64:matrix.org](https://matrix.to/#/#quartz64:matrix.org) | [Quartz64](https://t.me/p64quartz64) | #quartz64 |
 | Quartz64 Development | [#quartz64-dev:matrix.org](https://matrix.to/#/#quartz64-dev:matrix.org) | [@q64dev](https://t.me/q64dev) | #quartz-dev |
 | Star64 | [#star64:matrix.org](https://matrix.to/#/#star64:matrix.org) | [@star64-sbc](https://t.me/star64_sbc) | Unavailable |
 | Pinebook and Pinebook Pro | [#pinebook:matrix.org](https://matrix.to/#/#pinebook:matrix.org) | [@mtx_pinebook](https://t.me/mtx_pinebook) | #pinebook |
