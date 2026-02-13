@@ -1,6 +1,7 @@
 ---
 title: "Installation instructions"
 draft: false
+description: "Step‑by‑step flashing and installation instructions for the PinePhone Pro covering installations to the eMMC and microSD card."
 menu:
   docs:
     title:

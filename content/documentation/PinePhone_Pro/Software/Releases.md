@@ -3,6 +3,7 @@ title: "Releases"
 draft: false
 toc: true
 toc_depth: 1
+description: "Official PinePhone Pro software releases page: find release notes, download links, and installation instructions for builds. Includes releases such as Manjaro ARM, Mobian, postmarketOS, Ubuntu Touch, Arch Linux ARM, Gentoo, NixOS, Kali Linux, Nemo Mobile, Rhino Linux, GloDroid, and LuneOS."
 menu:
   docs:
     title:
@@ -13,7 +14,7 @@ aliases:
   - /wiki/PinePhone_Pro_Software_Releases
 ---
 
-This page contains a list of all available releases and tools for the [PinePhone Pro](/documentation/PinePhone_Pro).
+This page contains a list of all available software releases and tools for the [PinePhone Pro](/documentation/PinePhone_Pro).
 
 ## Factory builds
 

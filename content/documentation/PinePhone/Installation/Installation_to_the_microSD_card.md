@@ -1,6 +1,7 @@
 ---
 title: "Installation to the microSD card"
 draft: false
+description: "Instructions to boot and run OS images from microSD on the PinePhone: choosing images and the correct tool and writing the image to microSD cards."
 weight: 
 menu:
   docs:

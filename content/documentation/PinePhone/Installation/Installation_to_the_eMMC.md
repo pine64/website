@@ -1,6 +1,7 @@
 ---
 title: "Installation to the eMMC"
 draft: false
+description: "Step-by-step guide to install an OS image to the PinePhone eMMC: preparing the device, flashing images safely, and troubleshooting tips for a successful internal install."
 weight: 
 menu:
   docs:

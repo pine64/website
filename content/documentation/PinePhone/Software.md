@@ -2,6 +2,7 @@
 title: "Releases"
 draft: false
 toc: true
+description: "An up-to-date overview of PinePhone software releases, including release notes, download links and installation instructions. Releases on the list include Arch, Ubuntu Touch, Fedora, openSUSE, Manjaro ARM, and postmarketOS."
 menu:
   docs:
     title:
@@ -13,7 +14,7 @@ aliases:
   - /wiki/PinePhone_Software_Releases
 ---
 
-The following page provides a comprehensive and alphabetically organized list of available releases and tools for the [PinePhone](/documentation/PinePhone). For guidance on installing the operating systems, please refer to the [Installation instructions](/documentation/PinePhone/Installation/).
+This page provides a comprehensive and alphabetically organized list of available software releases and tools for the [PinePhone](/documentation/PinePhone). For guidance on installing the operating systems, please refer to the [Installation instructions](/documentation/PinePhone/Installation/).
 
 {{< admonition type="note" >}}
  Some releases may not have a good setup for the backlight at low brightness. If configured too low, the backlight shuts down completely, but the screen is still displayed and usable in bright front-light.
