@@ -124,35 +124,15 @@ An unofficial [Debian](https://www.debian.org) build for ARM64 running with Phos
 
 ### NixOS
 
-NixOS is an immutable Linux distribution built around the Nix configuration language. The NixOS image for PineTab2 uses some downstream modifications to packages, such as an U-Boot package based on 2023.07-rc4 and a kernel also used by the Arch Linux Arm image.
-
-This image is extremely basic and currently boots to a console. A NixOS configuration can be applied after booting to gain a full graphical system.
+NixOS is an immutable Linux distribution built around the Nix configuration language. The NixOS image for PineTab2 uses some downstream modifications to packages, such as an U-Boot package based on 2024.04 and the kernel also used by the Arch Linux Arm image.
 
 #### Download
 
-* https://github.com/nabam/nixos-rockchip/releases
+* https://codeberg.org/raboof/pinetab2-nixos
 
 #### Notes
 
-After booting, enable networking (with _wpa_supplicant_, see https://nixos.org/manual/nixos/unstable/#sec-installation-manual-networking) and download (for example by entering `nix-shell wget` to get access to wget) this flake to the pinetab and place it at /etc/nixos/flake.nix:
-
-* https://git.asonix.dog/asonix/pinetab2-nixos/raw/branch/main/flake.nix
-
-Run the following commands:
-
-```console
-$ sudo su
-> cd
-> nixos-rebuild switch
-> nixos-rebuild switch # yes, do it two times
-> reboot
-```
-
-After the first `nixos-rebuild`, you may need to reconnect to the network using `nmtui`.
-
-After rebooting, there will be a new user account.
-
-Note that booting can take a while, and does not show anything on the screen. After about 18 seconds the keyboard backlight turns on, then it’s about 30 seconds until the first text appears on the screen, and another 10 seconds before the session manager shows up.
+Note that booting can take a while, and does not show anything on the screen. After about 18 seconds the keyboard backlight turns on, then it's about 30 seconds until the first text appears on the screen, and another 10 seconds before the session manager shows up.
 
 | Default credentials | |
 | -------- | ------- |
