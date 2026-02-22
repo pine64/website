@@ -78,6 +78,17 @@ The community edition is shipped with Debian and a passive pen without a magnet,
 
 #### U-Boot terminal
 
+##### Stock UART dongle
+
+The [stock UART dongle](/documentation/PineNote/Development/UART#stock_dongle) does not support regular USB functions while plugged in. It must be removed after entering maskrom so the host can communicate with the device in maskrom mode.
+
+1. Connect to the PineNote via UART and USB simultaneously
+2. Interrupt the U-Boot startup using `ctrl+c` sent over UART
+3. In the U-Boot terminal over UART, run `rockusb 0 mmc 0`. The UART terminal should print `RKUSB` and display a spinner.
+4. Remove the UART dongle and connect directly to the PineNote. `rkdeveloptool list` should now list the PineNote.
+
+##### Non-stock UART dongle with passthrough
+
 This method requires a [UART dongle with passthrough](/documentation/PineNote/Development/UART#usb_passthrough) allowing simultaneous UART & USB connections.
 
 It is nice because you can easily switch back & forth between U-Boot and Rockusb without having to physically manipulate the PineNote or its connectors; this is especially helpful when trying to develop U-Boot.
