@@ -136,24 +136,7 @@ Please make sure all requirements of the checklist are fulfilled. If the update 
 * It is recommended to close all other running applications
 * Use common sense while doing the update, don’t do the update while being impaired in any way
 
-To get the latest firmware, clone the repository of user Biktorgj on the phone:
-
-```shell
-git clone https://github.com/Biktorgj/quectel_eg25_recovery
-```
-
-After cloning the directory, open it with cd:
-
-```shell
-cd quectel_eg25_recovery
-```
-
-Then run qfirehose, which starts the flashing process:
-
-```shell
-sudo ./qfirehose -f ./
-```
-
+To get the latest firmware, follow the instructions on https://github.com/Biktorgj/quectel_eg25_recovery (fastboot or qfirehose method).
 The modem will automatically reboot after the update process is done. The boot process takes around 30 to 60 seconds. After that it is highly recommended to reboot the device.
 
 ## Firmware modifications
