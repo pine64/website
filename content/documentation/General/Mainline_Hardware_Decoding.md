@@ -30,8 +30,8 @@ Here's a table of the current support for different hardware. "In review" means 
 | MPEG-2 | Yes | Yes | Yes | No  |
 | MPEG-4 Part 2/H.263 | No | No | No | No |
 | VP8 | Yes | Yes | Yes | No |
-| H.264/AVC | Yes | Yes | Yes¹| No |
-| H.265/HEVC | In review | In review | No | No |
+| H.264/AVC | Yes | Yes | Yes¹| Yes |
+| H.265/HEVC | In review | In review | No | Yes |
 | VP9 | Yes | Yes | No | No |
 | AVS2 | N/A | N/A | N/A | No |
 | AV1 | N/A | N/A | N/A | No |
