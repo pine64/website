@@ -39,9 +39,11 @@ See https://github.com/DorianRudolph/pinenotes#alpine
 ## Arch Linux
 ### hrdl
 hrdl is maintaining a sway setup on Arch Linux alongside their kernel tree.
-* [Kernel source, patches, helpers](https://git.sr.ht/~hrdl/)
-* [Installation process](https://github.com/hrdl-github/pinenote-arch)
-* [Extra tools to make things work](https://github.com/Ph4ntomas/pinenote-arch-stuff)
+* [Kernel source](https://git.sr.ht/~hrdl/linux)
+* [Packages, helpers, distribution image](https://git.sr.ht/~hrdl/pinenote-dist)
+* [Installation process](https://git.sr.ht/~hrdl/pinenote-dist#distribution-image)
+* [dbus service](https://git.sr.ht/~phantomas/pinenote-service)
+* [sway configuration](https://git.sr.ht/~phantomas/pinenote-config-sway)
 
 ### DorianRudolph
 See https://github.com/DorianRudolph/pinenotes#arch-linux
