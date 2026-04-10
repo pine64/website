@@ -30,7 +30,7 @@ pacman -S --needed base-devel aarch64-linux-gnu-gcc aarch64-linux-gnu-binutils g
 On an x86_64 Debian (or derivates such as Ubuntu) system, you can install the required dependencies with:
 
 ```shell
-apt install device-tree-compiler build-essential gcc-aarch64-linux-gnu binutils-aarch64-linux-gnu make python3 python3-dev libssl-dev python3-pyelftools python3-setuptools swig git
+apt install device-tree-compiler build-essential gcc-aarch64-linux-gnu binutils-aarch64-linux-gnu make python3 python3-dev libssl-dev python3-pyelftools python3-setuptools swig git bison libgnutls28-dev
 ```
 
 ## Fetching the repositories
@@ -88,3 +88,13 @@ make CROSS_COMPILE=aarch64-linux-gnu- -j$(nproc)
 ```
 
 This will output a _u-boot-rockchip.bin_, which is your freshly built SPL+U-Boot combined image.
+
+## Flashing the U-boot
+
+Run as root or using sudo:
+
+```shell
+dd if=u-boot-rockchip.bin of=/dev/<device, eg:mmcblk0> bs=32k seek=1 conv=fsync
+```
+
+
