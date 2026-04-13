@@ -92,4 +92,22 @@ $ sudo cp postprocess.sh postprocess.sh.bk
 $ sudo sed -i 's/$DCRAW +M -H 4 -o 1 -q 3 -T "$@" "$MAIN_PICTURE.dng"/$DCRAW +M -H 4 -o 1 -q 3 -T -a -f "$@" "$MAIN_PICTURE.dng"/' postprocess.sh
 ```
 
+If you want to patch automatically the file, just copy and paste following code into CLI:
+
+```console
+$ BASE="/home/alarm/.local/share/flatpak/app/me.gapixels.Megapixels/aarch64/master"
+$ find "$BASE" -type f -path "*/files/share/megapixels/postprocess.sh" | while read -r f; do
+$   [ -z "$f" ] && continue
+$   cp "$f" "$f.bk"
+$   if grep -Fq '$DCRAW +M -H 4 -o 1 -q 3 -T -a -f "$@" "$MAIN_PICTURE.dng"' "$f"; then
+$     echo "string already patched"
+$   elif grep -Fq '$DCRAW +M -H 4 -o 1 -q 3 -T "$@" "$MAIN_PICTURE.dng"' "$f"; then
+$     sed -i 's#\$DCRAW +M -H 4 -o 1 -q 3 -T "\$@" "\$MAIN_PICTURE\.dng"#\$DCRAW +M -H 4 -o 1 -q 3 -T -a -f "\$@" "\$MAIN_PICTURE.dng"#g' "$f"
+$     echo "patch done"
+$   else
+$     echo "string not found"
+$   fi
+$ done
+```
+
 Further details regarding the camera and the Megapixels camera app can be found on [Martijn’s blog](https://blog.brixit.nl/tag/phones/).
