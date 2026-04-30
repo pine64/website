@@ -342,7 +342,7 @@ Also see [Installation instructions](/documentation/PinePhone/Installation_instr
 
 {{< figure src="/documentation/images/nemo_mobile.png" width="100" >}}
 
-[Nemo Mobile](https://nemomobile.net/) is an open source build of Sailfish OS with a open source UI called [Glacier](https://nemomobile.net/glacier-home/), [based on Manjaro](https://nemomobile.net/pages/Hello_manjaro/).
+[Nemo Mobile](https://nemomobile.net/) is an open source build of Sailfish OS with a open source UI called [Glacier](https://nemomobile.net/glacier-home/), [based on openSUSE](https://nemomobile.net/pages/nemomobile-2025-june-to-december/).
 
 * [NemoMobile Website](https://nemomobile.net/)
 * [Installation Guide](https://nemomobile.net/installation/) for both real devices and Virtualbox
@@ -354,8 +354,8 @@ Also see [Installation instructions](/documentation/PinePhone/Installation_instr
 
 | Default credentials | |
 | ------------ | ---------------- |
-| Default user | `manjaro/123456` |
-| root         | `root/root`      |
+| Default user | `nemo/1234` |
+| root         | `root/linux`      |
 
 #### Notes
 
