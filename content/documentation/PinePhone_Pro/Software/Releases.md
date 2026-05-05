@@ -123,7 +123,7 @@ A [Mobian](https://www.mobian.org) build for ARM64 running with Phosh. The curre
 
 ### Download
 
-[Images](https://images.mobian.org/pinephonepro/)
+[Images](https://images.mobian.org/rockchip/)
 
 {{< admonition type="note" >}}
  Tow-Boot required to be able to boot the images, see [here](https://tow-boot.org/devices/pine64-pinephonePro.html)!
