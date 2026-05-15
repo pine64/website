@@ -47,6 +47,11 @@ LCD Panel:
 * [1.3" 240x240 IPS LCD Panel Specification for PineTime](https://files.pine64.org/doc/datasheet/pinetime/PineTime%20LCD%20Panel.jpg)
 * [11.6" Sitronix LCD Driver/Controller Datasheet](https://wiki.pine64.org/images/5/54/ST7789V_v1.6.pdf)
 
+Display controller:
+
+* [ST7789V2](https://files.pine64.org/doc/datasheet/pinetime/ST7789V2.pdf) (used in PineTimes produced before May 2026)
+* [ST7789P3](https://files.pine64.org/doc/datasheet/pinetime/ST7789P3.pdf) (used in PineTimes produced from May 2026) 
+
 Touchpad information:
 
 * [Touchpad Specification for PineTimel](https://files.pine64.org/doc/datasheet/pinetime/PineTime%20Touch%20Panel.jpg)
