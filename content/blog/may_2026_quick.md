@@ -7,7 +7,10 @@ categories:
   - "news"
   - "pine64-community"
 tags: 
-  - "project update" 
+  - "pinetime"
+  - "pinedio"
+  - "pinevoice"
+  - "pinephone" 
 images:
   - "/blog/images/pine64_banners/festival_lights_notext.png"
 summary: "The PineVoice HA speaker is in the final stages as production begins, new PineTime revision to replace EOL display part, new PineTime Pro samples have been received by community developers, LoRa hardware development kicks up again along with other important community related updates."
