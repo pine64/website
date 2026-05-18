@@ -38,3 +38,4 @@ Community manager: camden.b@pine64.org
 * For general queries and information from the Pine Store: info@pine64.org
 * For queries regarding support from the Pine Store: support@pine64.org
 * For sales/wholesale related questions: sales@pine64.org
+* If you have hardware defects or any other hardware issues to go: https://pine64.zohodesk.com/portal/en/home
