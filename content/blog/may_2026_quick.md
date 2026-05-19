@@ -1,6 +1,6 @@
 ---
 title: "Quick update: May 2026"
-date: "2026-05-17"
+date: "2026-05-18"
 authors: ["Caffeine"]
 categories: 
   - "community"
@@ -11,6 +11,7 @@ tags:
   - "pinedio"
   - "pinevoice"
   - "pinephone" 
+
 images:
   - "/blog/images/pine64_banners/festival_lights_notext.png"
 summary: "The PineVoice HA speaker is in the final stages as production begins, new PineTime revision to replace EOL display part, new PineTime Pro samples have been received by community developers, LoRa hardware development kicks up again along with other important community related updates."
