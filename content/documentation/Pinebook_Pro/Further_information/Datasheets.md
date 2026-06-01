@@ -12,7 +12,7 @@ menu:
 Rockchip RK3399 SoC information:
 
 * [Rockchip RK3399 SoC Brief](https://www.rock-chips.com/a/en/products/RK33_Series/2016/0419/758.html)
-* [Rockchip RK3399 Datasheet v2.1](https://opensource.rock-chips.com/images/d/d7/Rockchip_RK3399_Datasheet_V2.1-20200323.pdf)
+* [Rockchip RK3399 Datasheet v2.1](https://rockchip.fr/RK3399%20datasheet%20V2.1.pdf)
 * [Rockchip RK3399 Technical Reference Manual v1.4, part 1](https://www.rockchip.fr/Rockchip%20RK3399%20TRM%20V1.4%20Part1.pdf)
 * [Rockchip RK3399 Technical Reference Manual v1.3, part 1](https://www.rockchip.fr/Rockchip%20RK3399%20TRM%20V1.3%20Part1.pdf) and [part 2](https://www.rockchip.fr/Rockchip%20RK3399%20TRM%20V1.3%20Part2.pdf)
 * [Rockchip RK808 Datasheet v0.8](https://files.pine64.org/doc/datasheet/rockpro64/RK808%20datasheet%20V0.8.pdf)
