@@ -10,7 +10,7 @@ tags:
   - "pinepower"
 images:
   - "/blog/images/shocking_disclosure.jpg"
-summary: "The current Desktop PinePower V2 batch has an hardware issue where in some situations the USB-C ports will report 0V despite a device being attached."
+summary: "The current Desktop PinePower V2 batch has a bug where in some situations the USB-C ports will report 0V despite a device being attached."
 ---
 
 ![](/blog/images/shocking_disclosure.jpg) 
