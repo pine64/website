@@ -102,6 +102,6 @@ description: "PINE64 has a variety of different devices. Find out more!"
 
 ## Smart home
 {{< flexbox >}}
-    {{< devices/device_box link="/devices/pinevox" img="/documentation/PineVox/images/pinevox.jpg" title="PineVox" text="" >}}
+    {{< devices/device_box link="/devices/pinevoice" img="/documentation/PineVoice/images/pinevoice.jpg" title="PineVoice" text="" >}}
     {{< devices/device_box link="/devices/pinecam" img="images/pinecam.jpg" title="PineCam" text="" >}}
 {{</ flexbox >}}
