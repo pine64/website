@@ -1,14 +1,13 @@
 ---
-title: "Software"
+title: Software
 draft: false
 menu:
   docs:
-    title:
-    parent: "ALPHA-One"
-    identifier: "ALPHA-One/Software"
+    title: null
+    parent: ALPHA-One
+    identifier: ALPHA-One/Software
     weight: 1
 ---
-
 ## Releases
 
 ### Production release build 20250627
@@ -26,13 +25,13 @@ File information:
 * MD5 (GZip file): `d62eeb1645c7b496a0815c4590f798c7`
 * File Size: 18.10 GB
 
-| User | Password |
-| ------- | ------- |
-| `eswin` | `eswin` |
+| User    | Password |
+| ------- | -------- |
+| `eswin` | `eswin`  |
 
 #### Image for 32GB eMMC module and above
 
-This is the early test build that contains both 7b Deepseek and QWen2 LLM build, OS based on ROCKOS. For larger than 32GB eMMC, please use gpart to extend the file partition.
+This is the early test build that contains both 7b Deepseek and QWen2 LLM build, OS is based on ROCKOS. For larger than 32GB eMMC, please use gpart to extend the file partition.
 
 Download:
 
@@ -43,9 +42,9 @@ File information:
 * MD5 (GZip file): `6669a436104e97e2ad90679e06f62d78`
 * File Size: 18.21 GB
 
-| User | Password |
-| ------- | ------- |
-| `eswin` | `eswin` |
+| User    | Password |
+| ------- | -------- |
+| `eswin` | `eswin`  |
 
 #### Usage
 
@@ -58,11 +57,13 @@ $ sudo /opt/eswin/sample-code/npu_sample/qwen_sample/bin/es_qwen2 /opt/eswin/sam
 ```
 
 Qwen2 7bLLM command:
+
 ```Shell
 $ sudo /opt/eswin/sample-code/npu_sample/qwen_sample/bin/es_qwen2 /opt/eswin/sample-code/npu_sample/qwen_sample/src/qwen2_7b/config.json
 ```
 
 Qwen2 0.5bLLM command:
+
 ```Shell
 $ sudo /opt/eswin/sample-code/npu_sample/qwen_sample/bin/es_qwen2 /opt/eswin/sample-code/npu_sample/qwen_sample/src/qwen2_0_5b/config.json
 ```
