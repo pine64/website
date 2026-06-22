@@ -120,7 +120,7 @@ collections:
       #subfolders: true # Legacy behavior
       subfolders: false
       depth: 15 # max depth to show in the collection tree
-      summary: '{{dirname}}' # optional summary for a tree node, defaults to the inferred title field
+      summary: '{{title}}' # optional summary for a tree node, defaults to the inferred title field
     fields: # List of fields for the front matter
       - { label: "Title", name: "title", widget: "string" }
       - {
@@ -129,10 +129,10 @@ collections:
             {
               label: 'docs', name: 'docs', widget: 'object', required: false, collapsed: true,
               fields: [
-                { label: 'Title', name: 'title', widget: 'string' },
-                { label: 'Parent', name: 'parent', widget: 'string' },
-                { label: 'Identifier', name: 'identifier', widget: 'string' },
-                { label: 'Weight', name: 'weight', widget: 'string' }
+                { label: 'Title', name: 'title', widget: 'string', required: false },
+                { label: 'Parent', name: 'parent', widget: 'string', required: false },
+                { label: 'Identifier', name: 'identifier', widget: 'string', required: false },
+                { label: 'Weight', name: 'weight', widget: 'string', required: false }
               ]
             }
           ]
