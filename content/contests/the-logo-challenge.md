@@ -1,12 +1,11 @@
 ---
-title: "The Logo Challenge"
-date: "2023-04-09"
-categories: 
-  - "community"
+title: The Logo Challenge
+date: 2023-04-09
+categories:
+  - community
 images:
-  - "/contests/images/logochallenge.png"
+  - /contests/images/logochallenge.png
 ---
-
 As everyone might have noticed, the beta website received a preliminary logo as part of the rebrand. In this challenge, everyone is invited to improve the current PINE64 community logo and to provide their ideas. The draft logo is intended to act as an inspiration for ideas in which present design can be improved. <!--more-->
 
 The current logo of the PINE64 community is less than optimal. Here it is: 
@@ -17,7 +16,7 @@ The current logo of the PINE64 community is less than optimal. Here it is:
 
 Concerns with the currently design include multiple points:
 
-The heavy pinecone logo and the thin text are in a strong contrast due to the width of the different elements. Black elements are generally considered as “heavy”, which creates a tension with how thinly the text is written. The pinecone logo uses lighter colors on the top and heavier  on the bottom, while the text is equally heavy throughout the text and on a fixed base-line.
+The heavy pinecone logo and the thin text are in a strong contrast due to the width of the different elements. Black elements are generally considered as “heavy”, which creates a tension with how thinly the text is written. The pinecone logo uses lighter colors on the top and heavier  on the bottom, while the text is equally heavy throughout the text and on a fixed baseline.
 
 There is also a contrast created with the coloring. On the left side there are four different blue colors used on the logo, while on the right side black is introduced. A general rule of thumb is to avoid using more than 3 colors.
 
