@@ -42,7 +42,7 @@ The community chat platforms are the following:
 | ROCK64 / ROCKPro64 | [#rock64:matrix.org](https://matrix.to/#/#rock64:matrix.org) | [@mtrx_rock64](https://t.me/mtrx_rock64) | #rock64 |
 | Quartz64 | [#quartz64:matrix.org](https://matrix.to/#/#quartz64:matrix.org) | [Quartz64](https://t.me/p64quartz64) | #quartz64 |
 | Quartz64 Development | [#quartz64-dev:matrix.org](https://matrix.to/#/#quartz64-dev:matrix.org) | [@q64dev](https://t.me/q64dev) | #quartz-dev |
-| Star64 | [#star64:matrix.org](https://matrix.to/#/#star64:matrix.org) | [@star64-sbc](https://t.me/star64_sbc) | Unavailable |
+| Star64 | [#star64:matrix.org](https://matrix.to/#/#star64:matrix.org) | [@star64-sbc](https://t.me/star64_sbc) | #star64 |
 | Pinebook and Pinebook Pro | [#pinebook:matrix.org](https://matrix.to/#/#pinebook:matrix.org) | [@mtx_pinebook](https://t.me/mtx_pinebook) | #pinebook |
 | PinePhone | [#pinephone:matrix.org](https://matrix.to/#/#pinephone:matrix.org) | [@pinephone](https://t.me/pinephone) | #pinephone |
 | PineNote | [#pinenote:matrix.org](https://matrix.to/#/#pinenote:matrix.org) | [@PineNote](https://t.me/pinenote) | #pinenote |
@@ -54,6 +54,7 @@ The community chat platforms are the following:
 | Pinecil Development | [#pinecil-dev:matrix.org](https://matrix.to/#/#pinecil-dev:matrix.org) | [Pinecil-dev](https://t.me/+8_pdKqXrVuQ4OTk1) | Unavailable |
 | Pinetalk Podcast | Unavailable | Unavailable | Unavailable |
 | PineCube | [#cube64:matrix.org](https://matrix.to/#/#cube64:matrix.org) | [@pinecube](https://t.me/pinecube) | #cube |
+| PineVoice | Unavailable | [@pinevoice](https://t.me/pinevoice) | #pinevoice |
 | Nutcracker, Ox64, Oz64 | [#pine64-nutcracker:matrix.org](https://matrix.to/#/#pine64-nutcracker:matrix.org) | [Nutcracker](https://t.me/joinchat/Kmi2S0nOsT240emHk-aO6g) | #nutcracker |
 | LoRa | [#pinelora:matrix.org](https://matrix.to/#/#pinelora:matrix.org) | [@pine64lora](https://t.me/pine64lora) | #lora |
 | Off-topic | [#offtopic64:matrix.org](https://matrix.to/#/#offtopic64:matrix.org) | [@pine64offtopic](https://t.me/pine64offtopic) | Unavailable |
