@@ -39,15 +39,15 @@ The center LED ring is used to show the current state of PineVoice. For most act
 | Green fade-in/fade-out, once     | Identification signal during provisioning, used to identify the paired PineVoice.               |
 | Dim orange breath, loop          | PineVoice is trying to connect to Wi-Fi.                                                        |
 | Dim magenta breath, loop         | PineVoice is waiting for a Wyoming client to connect.                                           |
+
 ### Assistant states
 
-| Light show                       | Meaning                                                                                         |
-|----------------------------------|-------------------------------------------------------------------------------------------------|
-| Dim white fade-in/fade-out, once | Boot-up lightshow. PineVoice has started.                                                       |
-| Yellow breath, loop              | PineVoice is in provisioning mode and is ready to connect to Wi-Fi through the Improv protocol. |
-| Green fade-in/fade-out, once     | Identification signal during provisioning, used to identify the paired PineVoice.               |
-| Dim orange breath, loop          | PineVoice is trying to connect to Wi-Fi.                                                        |
-| Dim magenta breath, loop         | PineVoice is waiting for a Wyoming client to connect.                                           |
+| Light show                  | Meaning                                                                                                   |
+|-----------------------------|-----------------------------------------------------------------------------------------------------------|
+| Dim cyan, still             | PineVoice is active and in standby, waiting for the user to press the center button or say the wake word. |
+| Blue-cyan-blue breath, loop | PineVoice is listening to the user's voice input.                                                         |
+| Dim purple, still           | PineVoice is processing the user's input.                                                                 |
+| Slow green breath, loop     | PineVoice is answering.                                                                                   |
 
 ### Action feedback
 
