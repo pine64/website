@@ -49,7 +49,6 @@ Individual voltage and status displays for each port
 |     |
 | --- |
 | [Global](https://pine64.com/product-category/pinepower/) |
-| [EU](https://pine64eu.com/product/pinepower-destkop/) |
 | [Affiliates](/affiliates/) |
 
 ## Documentation

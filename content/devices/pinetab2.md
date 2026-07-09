@@ -18,7 +18,6 @@ The tablet is designed around the Rockchip RK3566 processor, which features 4 en
 | --- |
 | [Global: 4GB/64GB](https://pine64.com/product/pinetab2-10-1-4gb-64gb-linux-tablet-with-detached-backlit-keyboard/) |
 | [Global: 8GB/128GB](https://pine64.com/product/pinetab2-10-1-8gb-128gb-linux-tablet-with-detached-backlit-keyboard/) |
-| [EU](https://pine64eu.com/product/pinetab2-10-1-8gb-128gb-arm-based-linux-tablet-with-detachable-backlit-keyboard/) |
 | [Affiliates](/affiliates/) |
 
 ## Documentation

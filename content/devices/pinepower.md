@@ -45,7 +45,6 @@ Weighing only 130 grams the PinePower is a sleek and lightweight portable charge
 |     |
 | --- |
 | [Global](https://pine64.com/product-category/pinepower/) |
-| [EU](https://pine64eu.com/product/pinepower-65w-gan-portable-power-supply/) |
 | [Affiliates](/affiliates/) |
 
 ## Documentation

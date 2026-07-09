@@ -14,10 +14,6 @@ menu:
 * [Main global PINE64 store](https://pine64.com/product-category/pinecil/) (ships from China, exports only, Global, VAT not included).
 * [Amazon-USA official pine64 store](https://www.amazon.com/dp/B096X6SG13/) (ships from USA, has Pinecil V2 - no tips/accessories)
 
-**PINE64 EU**
-
-* [PINE64 EU store](https://pine64eu.com/about/) (ships from EU, VAT+ 2-year warranty included per EU laws)
-
 **Affiliates**
 
 * [AmeriDroid](https://ameridroid.com/collections/pine) (offers pre-order, ships to USA/Global/Brazil)

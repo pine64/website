@@ -40,8 +40,6 @@ Meet the **PinePhone Pro**, our flagship smartphone and the best way to experien
 | [Global](https://pine64.com/product-category/smartphones/pinephone-pro/) |
 | [Global: Accessories](https://pine64.com/product-category/smartphone-accessories/) |
 | [Global: Spare parts](https://pine64.com/product-category/pinephonepro-spare-parts/) |
-| [EU](https://pine64eu.com/product/pinephone-beta-edition-with-convergence-package/) |
-| [EU: Accessories](https://pine64eu.com/product-category/device-accessories/) |
 | [Affiliates](/affiliates/) |
 
 ## Documentation

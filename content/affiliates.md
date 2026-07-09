@@ -6,7 +6,6 @@ Affiliates of the [Pine Store](https://pine64.com):
 
 | Name of shop                                                                                       | Country                            |
 |----------------------------------------------------------------------------------------------------|------------------------------------|
-| [PINE64 EU Store](https://pine64eu.com/)                                                           | Poland (ships to EU)               |
 | [AFK Teknik](https://afkteknik.se/product/pinecil-portable-soldering-iron-v2-lodkolv/)             | Sweden (ships worldwide)           |
 | [AmeriDroid](https://ameridroid.com/collections/pine)                                              | Ships to USA/Global/Brazil         |
 | [bitcompact](https://bitcompact.com/products/pinecil-v2)                                           | Canada                             |

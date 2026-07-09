@@ -48,7 +48,6 @@ Expand what you can do with the device thanks to onboard WiFi and Bluetooth
 | [Global](https://pine64.com/product-category/tablets/pinenote/) |
 | [Global: Accessories](https://pine64.com/product-category/pinenote-accessories/) |
 | [Global: Spare parts](https://pine64.com/product-category/pinenote-spare-parts/) |
-| [EU](https://pine64eu.com/product/pinenote-community-edition/) |
 | [Affiliates](/affiliates/) |
 
 ## Documentation

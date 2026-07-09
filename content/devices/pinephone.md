@@ -65,8 +65,6 @@ Five hardware switches allow you to disable the cameras, microphone, WiFi and Bl
 | [Global](https://pine64.com/product-category/pinephone/) |
 | [Global: Accessories](https://pine64.com/product-category/smartphone-accessories/) |
 | [Global: Spare parts](https://pine64.com/product-category/pinephone-spare-parts/) |
-| [EU](https://pine64eu.com/product/pinephone-pro-explorer-edition/) |
-| [EU: Accessories](https://pine64eu.com/product-category/device-accessories/) |
 | [Affiliates](/affiliates/) |
 
 ## Documentation

@@ -50,7 +50,6 @@ With a built-in accelerometer and heart-rate sensor, the PineTime can help you k
 | --- |
 | [Global](https://pine64.com/product-category/pinetime-smartwatch/) |
 | [Global: Accessories](https://pine64.com/product-category/smartwatch-accessories/) |
-| [EU](https://pine64eu.com/product/pinetime-smartwatch-sealed/) |
 | [Affiliates](/affiliates/) |
 
 ## Documentation

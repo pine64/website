@@ -44,7 +44,6 @@ The Pinebook Pro’s keyboard firmware includes key combinations to disable the 
 | [Global: Laptop accessories](https://pine64.com/product-category/laptop-accessories/) |
 | [Global: Accessories](https://pine64.com/product-category/pinebook-pro-accessories/) |
 | [Global: Spare parts](https://pine64.com/product-category/pinebook-pro-spare-parts/) |
-| [EU](https://pine64eu.com/product-category/devices/laptops/) |
 | [Affiliates](/affiliates/) |
 
 ## Documentation

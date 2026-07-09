@@ -52,7 +52,6 @@ Optional GPIO breakout for development purposes
 |     |
 | --- |
 | [Global](https://pine64.com/product-category/pinecil/) |
-| [EU](https://pine64eu.com/product-category/devices/solderingirons/) |
 | [Affiliates](/affiliates/) |
 
 ## Documentation

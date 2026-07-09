@@ -109,14 +109,6 @@ enableRobotsTXT = true
     [menu.additional.params]
       external = true
   [[menu.additional]]
-    name = "🇪🇺 EU"
-    url = "https://www.pine64eu.com/"
-    parent = "store"
-    weight = 2
-    identifier = ""
-    [menu.additional.params]
-      external = true
-  [[menu.additional]]
     name = "Affiliates"
     pageRef = "/affiliates"
     parent = "store"
