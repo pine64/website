@@ -16,6 +16,7 @@ Affiliates of the [Pine Store](https://pine64.com):
 | [Datakonsulten](https://datakonsulten.se/produkt/pinecil-smart-barbar-mini-lodkolv-ny-version-2/)  | Sweden (ships to DK/NO/FI)         |
 | [DREMC](https://store.dremc.com.au/collections/pine64)                                             | Australia (ships AUS/NZ)           |
 | [Droneit](https://droneit.se/shop/?filtering=1&filter_brand=pine64)                                | Sweden                             |
+| [Eleshop.eu](https://eleshop.eu/pinecil-smart-mini-portable-soldering-iron.html)                   | Netherlands (Ships to EU)          |
 | [Eleshop.de](https://eleshop.de/pinecil-smart-mini-tragbarer-lotkolben.html)                       | Germany / Austria                  |
 | [Eleshop.nl](https://www.eleshop.nl/pinecil-smart-mini-draagbare-soldeerbout.html)                 | Netherlands / Belgium              |
 | [Handheld Legend](https://handheldlegend.com/collections/soldering-essentials)                     | USA (ships worldwide)              |
