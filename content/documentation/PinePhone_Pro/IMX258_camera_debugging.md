@@ -139,7 +139,7 @@ A quick grep shows that `imx258_start_streaming` is indeed called, so **i2c is w
 
 ### If i2c works, what doesn't?
 
-Our program that asks for a video frame is still hung|We ask the camera to start streaming frames, it presumably does, but the v4l2 stack never tells us a frame has finished. Doing some digging in the v4l2 stack (and the rkisp1 driver), we find out that rkisp1 is notified about frame status via interrupts. We figure this out by manually backtracking through the code to see when `vb2_buffer_done`, the function in the vb2 API to call when a frame is finished, would be called. In the rkisp1 code, `vb2_buffer_done` is only called from `rkisp1_handle_buffer` which is only called from `rkisp1_capture_isr`, which (for the PPP’s rk3399 SoC) is only called from `rkisp1_isr`, which is an interrupt handler. We know that it’s an interrupt handler from the name (`_isr`), but also because it gets passed (indirectly) to `devm_request_irq` by way of being the `.isr` field of `rk3399_isp_isrs`.
+Our program that asks for a video frame is still hung. We ask the camera to start streaming frames, it presumably does, but the v4l2 stack never tells us a frame has finished. Doing some digging in the v4l2 stack (and the rkisp1 driver), we find out that rkisp1 is notified about frame status via interrupts. We figure this out by manually backtracking through the code to see when `vb2_buffer_done`, the function in the vb2 API to call when a frame is finished, would be called. In the rkisp1 code, `vb2_buffer_done` is only called from `rkisp1_handle_buffer` which is only called from `rkisp1_capture_isr`, which (for the PPP’s rk3399 SoC) is only called from `rkisp1_isr`, which is an interrupt handler. We know that it’s an interrupt handler from the name (`_isr`), but also because it gets passed (indirectly) to `devm_request_irq` by way of being the `.isr` field of `rk3399_isp_isrs`.
 
 Perhaps the hardware is never actually emitting the interrupt that signals a frame being finished. Indeed, grepping our FTrace log shows that `rkisp1_isr` is never called. A quick look at `/proc/interrupts` shows that **the only interrupt associated with the isp has never triggered** (0 count on every CPU):
 
@@ -157,7 +157,7 @@ Sadly, the only one of these that comes up nonzero is `sp_stop_timeout` ("upon s
 
 ## Next steps
 
-Where do we go from here? I don’t know--something may be wrong with the way the .dts specifies interrupts, some kind of firmware/GIC (the rk3399’s interrupt controller) configuration issue, or something else. It would be good to try to determine:
+Where do we go from here? Something may be wrong with the way the .dts specifies interrupts, some kind of firmware/GIC (the rk3399’s interrupt controller) configuration issue, or something else. It would be good to try to determine:
 
 * Whether the MIPI lines actually show traffic, if someone has a logic analyzer and a dissected PPP.
 * Whether the DMA of frames to memory actually happens, regardless of (lack of) emission of the interrupt that tells us when said DMA finishes a frame.
