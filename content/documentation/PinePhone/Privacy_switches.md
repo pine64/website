@@ -14,7 +14,7 @@ menu:
 The PinePhone features six switches that can be used to configure its hardware. They are numbered 1-6, with switch 1 located nearest to the modem. Their "on" position is toward the top of the phone.
 
 {{< admonition type="warning" >}}
-It is not recommended to change the PinePhone’s privacy switch positions while the device is powered on. In particular, toggling the **modem privacy switch** while the phone is running can lead to **modem firmware corruption**.
+It is not recommended to change the PinePhone’s privacy switch positions while the device is powered on. In particular, toggling the **modem privacy switch** while the phone is running can lead to **modem firmware corruption**. Additionally, the phone is not notified of the loss of power to the disabled part, so it may continue to assume the component is operating normally; if you switch the dip switches back on during operation, it may not automatically regain functionality.
 {{</ admonition >}}
 
 | Number | Name | Explanation | Description |
