@@ -13,6 +13,10 @@ menu:
 
 The PinePhone features six switches that can be used to configure its hardware. They are numbered 1-6, with switch 1 located nearest to the modem. Their "on" position is toward the top of the phone.
 
+{{< admonition type="warning" >}}
+It is not recommended to change the PinePhone’s privacy switch positions while the device is powered on. In particular, toggling the **modem privacy switch** while the phone is running can lead to **firmware corruption**.
+{{</ admonition >}}
+
 | Number | Name | Description |
 | --- | --- | --- |
 | 1 | Modem | "On" enables 2G/3G/4G communication and GNSS hardware, "off" disables it. |
