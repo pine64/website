@@ -18,18 +18,6 @@ This page contains a list of all available releases and tools for the [Pinebook 
 
 For information on how to install these images onto your device, please see the [Getting started](/documentation/Introduction/Getting_started) Page, which includes information on writing images to the device eMMC or an SD card
 
-### Manjaro ARM
-
-{{< figure src="/documentation/images/Manjaro-logo.svg" width="100" >}}
-
-The Manjaro project offers a mainline kernel with patches and modules to support the Pinebook Pro hardware. To learn more about Manjaro please visit [Manjaro Forum](https://forum.manjaro.org/c/arm/). You can follow the ongoing discussion about Manjaro on the [PINE64 forum](https://forum.pine64.org/showthread.php?tid=8207).
-All images boot from both SD card and the internal eMMC module.
-
-Download:
-
-* [Direct download from Manjaro](https://manjaro.org/download/): You have to navigate to the Manjaro ARM section and select "Generic" as the device in the drop-down list (the Pinebook Pro image has been removed and it’s now included in the generic one since version 22.08). Then you can choose Gnome, KDE Plasma, Mate, Minimal, Sway or Xfce.
-* Old factory release: [Manjaro/Plasma 22.06 factory loaded build](https://files.pine64.org/os/PinebookPro/manjaro/Manjaro-ARM-kde-plasma-pbpro-bsp-22.06%20(2).img.xz) (June 2022) from _pine64.org_ (1.04GB, MD5 of the XZ file _d78031a4bed3eeb4f2001f3c89b9ed5a_)
-
 ### Armbian
 
 {{< figure src="/documentation/images/armbian.png" width="100" >}}
@@ -44,26 +32,6 @@ Notes:
 
 * If you have any difficulties please visit our [forum](https://forum.armbian.com) or come chat with us on [IRC / Discord](https://docs.armbian.com/Community_IRC/)
 * As of April 2023, Armbian only has Ubuntu images pre-made. However, using their tools to create a Debian image from scratch takes little expertise and results in an image that can be burned onto a USB stick or SD card. Their installer can then install it onto internal eMMC, including a working bootloader.
-
-### Twister OS
-
-{{< figure src="/documentation/images/Twister_OS.png" width="100" >}}
-
-Twister OS Armbian-Reforged with Xfce. It boots from microSD card and from eMMC. For more information on Twister OS, please visit this [official site](https://twisteros.com/). You can follow the ongoing discussion about Twister OS on the [PINE64 forum](https://forum.pine64.org/showthread.php?tid=12192).
-
-**Installation**
-
-* After flashing image, edit /boot/armbianEnv.txt, replace the dtb name with `rk3399-pinebook-pro.dtb`
-
-**Download location**
-
-Get the latest image here: [Direct download latest images from Twister OS’s website](https://twisteros.com/twisterarmbian.html) (size: 2.8GB)
-
-**Password**
-
-| Default credentials | |
-| --- | --- |
-| `root` | `asdasd` |
 
 ### Fedora
 
@@ -86,27 +54,6 @@ Notes:
 #### Official Installation
 
 See [Installing Arch Linux ARM](/documentation/Pinebook_Pro/Software/Installing_Arch_Linux_ARM) for instructions on how to install the official Arch Linux ARM.
-
-#### Customized Premade Root Filesystem
-
-An Arch Linux ARM root filesystem customized for the Pinebook Pro using Manjaro’s kernel is available. Instructions are included for installation on microSD card, eMMC module and NVMe SSD.
-
-**Download location**
-
-[Get the latest root filesystem from GitHub](https://github.com/SvenKiljan/archlinuxarm-pbp/releases/latest) (size: 500-600 MB).
-
-**Installation**
-
-Make sure to thoroughly read the [readme](https://github.com/SvenKiljan/archlinuxarm-pbp/blob/main/README.md), [installation instructions](https://github.com/SvenKiljan/archlinuxarm-pbp/blob/main/INSTALL.md) and [FAQ](https://github.com/SvenKiljan/archlinuxarm-pbp/blob/main/FAQ.md).
-
-**Username and password**
-
-The default Arch Linux ARM user credentials.
-
-| Default credentials | |
-| --- | --- |
-| `alarm` | `alarm` |
-| `root` | `root` |
 
 ### postmarketOS
 
@@ -142,7 +89,7 @@ Official pre-built OS images of Kali Linux for the Pinebook Pro featuring all to
 
 **Download location**
 
-Get the latest image here: [Direct download latest images from Offensive Security’s website](https://www.offensive-security.com/kali-linux-arm-images/) (size: 2.0 GB)
+Get the latest image here: [Direct download latest images from Offensive Security’s website](https://www.kali.org/get-kali/#kali-arm/) (size: 3.1 GB)
 
 **Username and password**
 
@@ -167,20 +114,6 @@ Retro Center’s R-Cade [USB / microSD / eMMC Boot]
 | --- | --- |
 | `root` | `retro` |
 
-### Q4OS
-
-{{< figure src="/documentation/images/q4os.png" width="100" >}}
-
-Q4OS is advertised as a 'fast and powerful operating system based on the latest technologies while offering highly productive desktop environment'. It boots from microSD card and from eMMC. To learn more please visit the [PINE64 forum](https://forum.pine64.org/showthread.php?tid=8385) or official [Q4OS website](https://q4os.org/index.html).
-
-**Download location**
-
-Get the latest image here: [Direct download latest release build from SourceForge](https://sourceforge.net/projects/q4os/files/stable/)
-
-**Username and password**
-
-User account and password are created on first run.
-
 ### DietPi
 
 {{< figure src="/documentation/images/dietpi.png" width="100" >}}
@@ -189,7 +122,7 @@ DietPi is a lightweight, yet easy to setup and feature-rich Linux distribution, 
 
 Download:
 
-* [Direct download from dietpi.com](https://dietpi.com/downloads/images/DietPi_PinebookPro-ARMv8-Bookworm.img.xz)
+* [Direct download of Trixie from dietpi.com](https://dietpi.com/downloads/images/DietPi_PinebookPro-ARMv8-Trixie.img.xz)
 
 | Default credentials | |
 | --- | --- |
@@ -218,12 +151,6 @@ Doesn’t work: audio
 You may build RPMs and see if it fix issues from this repository: https://github.com/bengtfredh/pinebook-pro-copr
 
 Default password for root is "linux"
-
-### FydeOS
-
-An operating system based on the Chromium Project
-
-https://fydeos.io/download/device/pinebook-pro
 
 ### Void Linux
 
@@ -268,7 +195,7 @@ The image boots from microSD card and from eMMC. To learn more about NetBSD plea
 
 **Download location**
 
-Get the latest image here: [Direct download from NetBSD](http://www.armbsd.org/arm/)
+Get the latest image here: [Direct download from NetBSD](https://nycdn.netbsd.org/pub/arm/)
 
 **Installation**
 
@@ -290,14 +217,6 @@ The image boots from microSD card and from eMMC. To learn more about OpenBSD, pl
 ARM64 images, (including support for Pinebook Pro), can be found here [OpenBSD arm64](https://www.openbsd.org/arm64.html)
 
 ## Linux Installer Releases
-
-### Manjaro ARM
-
-{{< figure src="/documentation/images/Manjaro-logo.svg" width="100" >}}
-
-The [manjaro-arm-installer](https://gitlab.manjaro.org/manjaro-arm/applications/manjaro-arm-installer) script is intended to install Manjaro ARM directly to SD/eMMC cards without the need for images (including LXQT, Mate & CuboCore editions, as well as full disk encryption).
-
-Running on a Linux x86 computer, it can install Manjaro ARM directly to an empty eMMC using an eMMC to USB adapter. The script can also be run from SD to install an image to the eMMC.
 
 ### Armbian
 
@@ -540,7 +459,7 @@ More information can be found about Slackware in this [20 minute video](https://
 
 ### Ubuntu
 
-If you install Tow-Boot to the SPI, you may then be able to use generic arm64 install disks, such as those for Ubuntu. This is because Tow-Boot can use UEFI boot partitions. The arm64 builds of the Ubuntu installer "ISOs" can be [found here](http://cdimage.ubuntu.com/ubuntu/releases/22.04/release/). These can then be converted to UEFI bootable USB drives using a tool such as unetbootin or the Ubuntu "Startup Disk Creator".
+If you install Tow-Boot to the SPI, you may then be able to use generic arm64 install disks, such as those for Ubuntu. This is because Tow-Boot can use UEFI boot partitions. The arm64 builds of the Ubuntu installer "ISOs" can be [found here](http://cdimage.ubuntu.com/ubuntu/releases/26.04/release/). These can then be converted to UEFI bootable USB drives using a tool such as unetbootin or the Ubuntu "Startup Disk Creator".
 
 Ubuntu 22.04 does install and boot on a Pinebook Pro, however the speakers and wifi are non-functional. A USB wifi adapter can get you online.
 
