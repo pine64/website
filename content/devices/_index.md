@@ -21,6 +21,8 @@ description: "PINE64 has a variety of different devices. Find out more!"
     {{< devices/device_box link="/devices/quartz64_model_b" img="/devices/images/quartz64_model_b.png" title="Quartz64 Model B" text="" >}}
     {{< devices/device_box link="/devices/quartz64-zero" img="/devices/images/Quartz64-Zero.jpg" title="Quartz64-Zero" text="" >}}
     {{< devices/device_box link="/devices/quartzpro64" img="/documentation/images/Quartzpro64_whole_board_top_resized.jpeg" title="QuartzPro64" text="" >}}
+    {{< devices/device_box link="/devices/yuzuki_avaota-a1" img="/devices/images/Yuzuki_Avaota-A1-2.jpg" title="Yuzuki Avaota-A1" text="" >}}
+
 {{</ flexbox >}}
 
 ## Laptops
