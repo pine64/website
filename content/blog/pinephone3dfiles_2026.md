@@ -26,6 +26,10 @@ This opens up the possibility of self repairing some PinePhone components using 
 
 This may be considered as a final hurrah for this generation of the PinePhone from PineStore. Though this does not however mark the end of the devices themselves. They are still going, still supported by many mobile Linux projects and still one of the most open mobile Linux hardware platforms you can find. Let's keep them going for many years to come!
 
+The 3D file can be found on the PineStore server and the "PinePhone board information, schematics and certifications" section of the wiki. 
+* https://files.pine64.org/doc/PinePhone/PinePhone_and_Pro_case_asm.stp (direct link)
+* https://wiki.pine64.org/wiki/PinePhone
+
 ## PinePhone2?
 This has been said previously in another blog post but many continue to inquire about a successor to the first PinePhone line. 
 
