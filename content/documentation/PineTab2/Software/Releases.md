@@ -106,7 +106,7 @@ An unofficial [Debian](https://www.debian.org) build for ARM64 running with Phos
 
 #### Download
 
-* [Images](https://images.mobian.org/pinetab2/)
+* [Images](https://images.mobian.org/rockchip/)
 
 {{< admonition type="note" >}}
  U-Boot is required to boot the images. If you have the factory image installed and updated to the latest version, you can boot Mobian from an SD card without installing U-Boot.
@@ -224,7 +224,7 @@ The bootloader (u-boot) comes pre-flashed in the port. Installation just require
 
 #### Download
 
-[VoidLinux PineTab2](https://github.com/sini6a/voidlinux-pinetab2/releases/download/6.12.13/void-pinetab2-20250215.img.xz)
+[VoidLinux PineTab2](https://github.com/sini6a/voidlinux-pinetab2/releases)
 
 [Source Files for PineTab2](https://github.com/sini6a/voidlinux-pinetab2)
 

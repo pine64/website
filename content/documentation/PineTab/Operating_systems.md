@@ -24,19 +24,6 @@ Download:
 
 * The latest image can be downloaded [here](https://github.com/dreemurrs-embedded/Pine64-Arch/releases)
 
-## Manjaro ARM
-
-{{< figure src="/documentation/images/Manjaro-logo.svg" width="100" >}}
-
-**Manjaro** is a Linux based alternative operating system with no adverts or licensing fees, it respects user privacy and gives them full control over their hardware. The PineTab "Early Adopter" edition is currently the only device supported by Manjaro ARM.
-
-Download:
-
-* Images with several different environments, including Phosh and Plasma, are available for the "Dev" pre-release can be downloaded [here](https://osdn.net/projects/manjaro-arm/storage/pinetab/)
-* Images for the Early Adopter version can be downloaded [here](https://github.com/manjaro-arm/pinetab-images/releases).
-
-Both Beta releases and weekly unstable builds for Phosh and Plasma Mobile can be found there.
-
 ## Mobian
 
 {{< figure src="/documentation/images/Mobian-logo.png" width="100" >}}
@@ -45,7 +32,7 @@ A [Mobian](https://www.mobian.org) build for ARM64 running with Phosh. The curre
 
 Download:
 
-* PineTab images can be downloaded [here](https://images.mobian.org/pinetab/). The password is **1234**
+* PineTab images can be downloaded [here](https://images.mobian.org/sunxi/). The password is **1234**
 
 | Default credentials | |
 | -------- | ------- |
