@@ -34,7 +34,7 @@ It is maintained by the [DanctNIX](https://danctnix.org/) community (GitHub: [da
 
 #### Download
 
-Get both stable and test builds at [GitHub releases](https://github.com/dreemurrs-embedded/Pine64-Arch/releases).
+Get both stable and test builds at [GitHub releases](https://github.com/dreemurrs-embedded/Pine64-Arch/releases) or [directly from the DanctNIX server](https://echo.danctnix.org:7269/danctnix_images/).
 
 | Default credentials | |
 | -------- | ------- |
@@ -200,29 +200,6 @@ Submit [bug reports](https://github.com/maemo-leste/bugtracker/issues) on GitHub
 
 
 
-### Manjaro ARM
-
-{{< figure src="/documentation/images/Manjaro-logo.svg" width="100" >}}
-
-Manjaro is a user-friendly Linux distribution based on the independently developed Arch operating system with the Plasma Mobile and Phosh desktop environment.
-
-#### Download
-
-* Phosh: [Dev](https://github.com/manjaro-pinephone/phosh-dev/releases) and [Stable](https://github.com/manjaro-pinephone/phosh/releases)
-* Plasma Mobile: [Dev](https://github.com/manjaro-pinephone/plasma-mobile-dev/releases) and [Stable](https://github.com/manjaro-pinephone/plasma-mobile/releases)
-* Lomiri: [Dev](https://github.com/manjaro-pinephone/lomiri-dev) (unmaintained)
-
-| Default credentials (Only Phosh) | |
-| -------- | ------- |
-| Default user | `manjaro/123456` |
-| root | `root/root` |
-
-#### Notes
-
-The installation of the stable images is strongly suggested. The dev images might break frequently.
-
-
-
 ### Mobian
 
 {{< figure src="/documentation/images/Mobian-logo.png" width="100" >}}
@@ -379,25 +356,6 @@ and [Project's device page](https://mobile.nixos.org/devices/pine64-pinephone.ht
 #### Notes
 
 Project home page: [Mobile NixOS](https://mobile.nixos.org/)
-
-
-
-### OpenMandriva Lx 4.2 RC
-
-{{< figure src="/documentation/images/Oma-logo-22042013_300pp.png" width="100" >}}
-
-OpenMandriva Lx 4.2 RC with Plasma Mobile as UI. The development ceases before a newer release is out.
-
-#### Download
-
-The official image can be found [at sourceforge.net](https://sourceforge.net/projects/openmandriva/files/release/EOL/4.2-RC/Pinephone/).
-See [here](https://www.openmandriva.org/en/news/article/openmandriva-lx-4-3-rc-available-for-testing) for the offical announcement.
-
-#### Notes
-
-{{< admonition type="note" >}}
- This image is solely for testing purposes.
-{{</ admonition >}}
 
 
 
