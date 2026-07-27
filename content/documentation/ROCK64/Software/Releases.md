@@ -48,7 +48,6 @@ Installation:
 Download:
 
 * [ROCK64's Armbian site](https://www.armbian.com/rock64/) (supports the microSD card and eMMC, 8GB or more)
-* [Download archive](https://armbian.tnahosting.net/archive/rock64/archive/) (supports the microSD card and eMMC, 8GB or more)
 
 ### ayufan's Linux releases
 
@@ -76,7 +75,7 @@ Download:
 
 Download:
 
-* [Debian 11 Bullseye](https://deb.debian.org/debian/dists/bullseye/main/installer-arm64/current/images/netboot/SD-card-images/) (recommended)
+* [Debian 13 Trixie](https://deb.debian.org/debian/dists/Trixie/main/installer-arm64/current/images/netboot/SD-card-images/) (recommended)
 * [Debian 12 Bookworm](https://deb.debian.org/debian/dists/bookworm/main/installer-arm64/current/images/netboot/SD-card-images/)
 * [Daily netboot images](https://d-i.debian.org/daily-images/arm64/)
 
@@ -103,20 +102,6 @@ Notes:
 
 * See [README.concatenateable_images here](https://d-i.debian.org/daily-images/arm64/daily/netboot/SD-card-images/README.concatenateable_images) or [README.concatenateable_images here](https://deb.debian.org/debian/dists/bullseye/main/installer-arm64/current/images/netboot/SD-card-images/README.concatenateable_images) for details regarding the concatenateable images and their installation from non-Linux systems.
 
-### Debian by mrfixit2001
-
-{{< figure src="/documentation/images/Debian-logo.png" width="100" >}}
-
-Mrfixit2001's minimal *Debian* build. Version 190514 onward support Rock64-v3 board
-
-Download:
-
-* [Direct download from mrfixit2001's github](https://github.com/mrfixit2001/debian_builds/releases) (supports the microSD card and eMMC)
-
-| Default credentials | |
-| -------- | ------- |
-| `rock` | `rock` |
-
 ### DietPi
 
 {{< figure src="/documentation/images/dietpi.png" width="100" >}}
@@ -125,7 +110,7 @@ Download:
 
 Download:
 
-* [Debian 11 Bullseye](https://dietpi.com/downloads/images/DietPi_ROCK64-ARMv8-Bullseye.img.xz) (supports the microSD card and eMMC, 4GB or more)
+* [Debian 13 Trixie](https://dietpi.com/downloads/images/DietPi_ROCK64-ARMv8-Trixie.img.xz) (supports the microSD card and eMMC, 4GB or more)
 * [Debian 12 Bookworm](https://dietpi.com/downloads/images/DietPi_ROCK64-ARMv8-Bookworm.img.xz) (supports the microSD card and eMMC, 4GB or more)
 
 | Default credentials | |
@@ -140,7 +125,7 @@ Download:
 
 Download:
 
-* https://le.builds.lakka.tv/RK3328.aarch64/ (supports the microSD card and eMMC)
+* https://nightly.builds.lakka.tv/latest/RK3328.aarch64/ (supports the microSD card and eMMC)
 
 ### LibreELEC
 
@@ -152,20 +137,6 @@ Download:
 
 * [Official build image](https://libreelec.tv/downloads/rockchip/) (supports the microSD card and eMMC, 8GB or more)
 * [Daily builds](https://test.libreelec.tv/) (supports the microSD card and eMMC, 8GB or more)
-
-### Manjaro ARM
-
-{{< figure src="/documentation/images/Manjaro-logo.svg" width="100" >}}
-
-*Manjaro* is a user-friendly Linux distribution based on the independently developed Arch operating system. Manjaro editions for Rock64 are available directly from Manjaro. To learn more about Manjaro please visit the [Manjaro Forum](https://forum.manjaro.org/tags/manjaroarm).
-
-{{< admonition type="note" >}}
- Only supports ROCK64 version 2 SBC!
-{{</ admonition >}}
-
-Download:
-
-* [Manjaro ARM ROCK64 GitHub](https://github.com/manjaro-arm/rock64-images/releases) (supports the microSD card and eMMC)
 
 ### NEMS Linux
 

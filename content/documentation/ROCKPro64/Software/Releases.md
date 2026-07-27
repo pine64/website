@@ -38,7 +38,7 @@ Download:
 
 Download:
 
-* https://dl.armbian.com/rockpro64/archive/
+* https://armbian.com/boards/rockpro64
 
 ### Batocera Linux
 
@@ -58,8 +58,8 @@ Download:
 
 Download:
 
-* [Debian 11 Bullseye](https://deb.debian.org/debian/dists/bullseye/main/installer-arm64/current/images/netboot/SD-card-images/)
-* [Debian 12 Bookworm](https://deb.debian.org/debian/dists/bookworm/main/installer-arm64/current/images/netboot/SD-card-images/) (recommended)
+* [Debian 13 Trixie](https://deb.debian.org/debian/dists/trixie/main/installer-arm64/current/images/netboot/SD-card-images/)
+* [Debian 12 Bookworm](https://deb.debian.org/debian/dists/bookworm/main/installer-arm64/current/images/netboot/SD-card-images/)
 * [Daily netboot images](https://d-i.debian.org/daily-images/arm64/)
 
 Instructions:
@@ -87,7 +87,7 @@ Notes:
 
 Download:
 
-* [Direct download from dietpi.com](https://dietpi.com/downloads/images/DietPi_ROCKPro64-ARMv8-Bookworm.img.xz)
+* [Direct download from dietpi.com](https://dietpi.com/downloads/images/DietPi_ROCKPro64-ARMv8-Trixie.img.xz)
 
 | Default credentials | |
 | -------- | ------- |
@@ -105,23 +105,6 @@ Download:
 {{< admonition type="note" >}}
  Unzip and flash the image to a microSD card or eMMC module, for example using _dd_.
 {{</ admonition >}}
-
-### Manjaro ARM
-
-{{< figure src="/documentation/images/Manjaro-logo.svg" width="100" >}}
-
-**Manjaro** is a user-friendly Linux distribution based on the independently developed Arch operating system. To learn more about Manjaro please visit [Manjaro forum](https://forum.manjaro.org/c/arm/releases/102).
-
-Download:
-
-* [from Github](https://github.com/manjaro-arm/rockpro64-images/releases)
-
-Notes:
-
-* Decompress the image (***unxz****) before flashing, or decompress on the fly while flashing (****xzcat*** in a root shell, Etcher, or others)
-* A display and keyboard will be required for first boot.
-* Initial setup includes: keyboard layout, locale, username, user password, and root password.
-* The installer will expand the root partition to use the remaining space on the storage device you’ve flashed.
 
 ### Nems Linux
 
@@ -179,7 +162,7 @@ Notes:
 
 Download:
 
-* https://openwrt.org/toh/pine64/rockpro64_v2.1
+* https://toh.openwrt.org/?view=normal&brand=pine64
 
 ### postmarketOS
 
@@ -271,24 +254,6 @@ Flashing the distribution to the eMMC:
   * `sed -i 's:mmcblk0p1:mmcblk1p1:' /media/etc/fstab`
 * After that, power off the board and remove the microSD card. Then boot with only the eMMC module.
 
-### Twister OS
-
-{{< figure src="/documentation/images/Twister_OS.png" width="100" >}}
-
-**Twister OS** brings a desktop computing experience for SBCs, right out-of-the-box. Including themes, applications, tools, and optimizations to get the most out of your SBC. For more information on Twister OS, please visit the [official site](https://twisteros.com/). You can follow the ongoing discussion about Twister OS on the PINE64 forum (https://forum.pine64.org/showthread.php?tid=12192).
-
-Download:
-
-* [Twister OS Armbian-Reforged XFCE Desktop image](https://twisteros.com/twisterarmbian.html) (2.8GB, supports the microSD card and eMMC modules with 16GB and more)
-
-{{< admonition type="note" >}}
- After flashing image with Etcher, edit /boot/armbianEnv.txt, replace the dtb name with rk3399-rockpro64.dtb.
-{{</ admonition >}}
-
-| Default credentials | |
-| -------- | ------- |
-| `pi` | `raspberry` |
-
 ### Void Linux
 
 **Void Linux** is a general purpose operating system, based on the monolithic Linux kernel. The official guide can be found at [Guide](https://docs.voidlinux.org/installation/guides/arm-devices/index.html). At this time there are no RockPro64 images available.
@@ -352,22 +317,6 @@ Notes:
 {{< figure src="/documentation/images/Puffy_mascot_openbsd.png" width="100" >}}
 
 **OpenBSD** is a security-focused, free and open-source, Unix-like operating system based on the Berkeley Software Distribution. Official instruction to get OpenBSD on ROCKPro64 is [here](https://www.openbsd.org/arm64.html), and blogs on installation [is here](https://github.com/jasperla/openbsd-rockpro64) and [here](https://bsandro.tech/posts/openbsd-7.1-on-pine64-rockpro64/). Forum discussion is [here](https://forum.pine64.org/forumdisplay.php?fid=109).
-
-## Chromium OS
-
-{{< figure src="/documentation/images/chromium.jpg" width="100" >}}
-
-The **Chromium OS** community build image for microSD card and eMMC module, version beta (R76). To learn more please visit the [forum](https://forum.pine64.org/showthread.php?tid=7659).
-
-Download:
-{{< admonition type="warning" >}}
- Outdated release
-{{</ admonition >}}
-* https://github.com/ayufan-rock64/chromiumos-build/releases/
-
-{{< admonition type="note" >}}
- Flash the image to a microSD card or an eMMC module, for example using _dd_.
-{{</ admonition >}}
 
 ## Android
 

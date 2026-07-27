@@ -54,37 +54,13 @@ Notes:
 
 Download:
 
-* Quartz64 Model A: [Direct download from dietpi.com](https://dietpi.com/downloads/images/DietPi_Quartz64A-ARMv8-Bookworm.img.xz)
-* Quartz64 Model B: [Direct download from dietpi.com](https://dietpi.com/downloads/images/DietPi_Quartz64B-ARMv8-Bookworm.img.xz)
-* SOQuartz: [Direct download from dietpi.com](https://dietpi.com/downloads/images/DietPi_SOQuartz-ARMv8-Bookworm.img.xz)
+* Quartz64 Model A: [Direct download from dietpi.com](https://dietpi.com/downloads/images/DietPi_Quartz64A-ARMv8-Trixie.img.xz)
+* Quartz64 Model B: [Direct download from dietpi.com](https://dietpi.com/downloads/images/DietPi_Quartz64B-ARMv8-Trixie.img.xz)
+* SOQuartz: [Direct download from dietpi.com](https://dietpi.com/downloads/images/DietPi_SOQuartz-ARMv8-Trixie.img.xz)
 
 | Default credentials | |
 | -------- | ------- |
 | `root` | `dietpi` |
-
-### Manjaro ARM
-
-{{< figure src="/documentation/images/Manjaro-logo.svg" width="100" >}}
-
-**Manjaro ARM** is a user friendly rolling release distribution, based on Arch Linux ARM.
-
-Download:
-
-* Quartz64 Model A: [Image on GitHub](https://github.com/manjaro-arm/quartz64-a-images/releases)
-* Quartz64 Model B: [Image on GitHub](https://github.com/manjaro-arm/quartz64-b-images/releases)
-
-Notes:
-
-Most of the hardware support is already available in the mainline kernel. If some devices doesn’t work it is possible to swap to the linux-quartz64 kernel `pacman -S linux-quartz64`.
-
-Following desktop options available:
-
-* Gnome
-* KDE Plasma
-* Mate
-* Sway
-* XFCE
-as well as minimal image without desktop.
 
 ### NetBSD
 
@@ -98,27 +74,6 @@ Notes:
 
 * This image can be written to a supported device, such as the eMMC interface, any USB storage device, NVMe, and PCIe AHCI SATA are all supported with builds after 2022-01-15.
 * Currently this can not be shared with the EDK2 port, ie, microSD for EDK2 and some other media for NetBSD.
-
-### Plebian
-
-Plebian stands for **P*INE64 *L*ive D*ebian** and aims to be a fairly vanilla live Debian image for Quartz64 and SOQuartz devices, based on Debian Bookworm.
-
-* [Download Release Images](https://github.com/Plebian-Linux/quartz64-images/releases)
-* [Read The Instructions](https://github.com/Plebian-Linux/quartz64-images/blob/main/RUNNING.md)
-* [Visit plebian.org to learn more](https://plebian.org/)
-
-To flash, run (replace _/dev/sdX_ with your target block device):
-
-```console
-$ xzcat imagename.img.xz | sudo dd of=/dev/sdX bs=4M oflag=dsync status=progress
-```
-
-Some quick notes:
-
-* You will be asked to change your password on first login (for what the default login is, read the instructions)
-* Root file system is grown to take up the entire space of your boot device
-* NetworkManager is used instead of Debian’s interfaces config to be more flexible with what adapters are plugged in and working
-* An sshd is started on port 22 with freshly generated keys
 
 ### Tianocore EDK II port by jmcneill
 
