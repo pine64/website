@@ -21,6 +21,19 @@ Download:
 | -------- | ------- |
 | `root` | `1234` |
 
+### DietPi
+
+{{< figure src="/documentation/images/dietpi.png" width="100" >}}
+
+**DietPi** is a lightweight yet easy to setup and feature-rich Linux distribution, based on Debian. To find out more about DietPi, please visit the [official documentation](https://dietpi.com/docs/). Discuss the PINE H64 build on the [PINE64 forum thread](https://forum.pine64.org/showthread.php?tid=12531).
+
+Download:
+
+* [Trixie image](https://dietpi.com/downloads/images/DietPi_PINEH64-ARMv8-Trixie.img.xz)
+
+| Default credentials | |
+| -------- | ------- |
+| `root` | `dietpi` |
 
 ## Linux BSP SDK
 

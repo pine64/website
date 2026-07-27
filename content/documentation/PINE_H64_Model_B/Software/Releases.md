@@ -23,15 +23,6 @@ Download:
 
 * https://www.armbian.com/pine-h64-b/
 
-### Manjaro ARM
-
-{{< figure src="/documentation/images/Manjaro-logo.svg" width="100" >}}
-
-**Manjaro** is a user-friendly Linux distribution based on the independently developed Arch operating system. To learn more about Manjaro please visit the [Manjaro Forum](https://forum.manjaro.org/tags/manjaroarm).
-Download:
-
-* [Manjaro ARM PINE H64 GitHub](https://github.com/manjaro-arm/pine-h64-images/releases)
-
 ### DietPi
 
 {{< figure src="/documentation/images/dietpi.png" width="100" >}}
@@ -40,8 +31,7 @@ Download:
 
 Download:
 
-* [Debian 11 Bullseye](https://dietpi.com/downloads/images/DietPi_PINEH64-ARMv8-Bullseye.img.xz) (supports the microSD card and eMMC, 4GB or more)
-* [Debian 12 Bookworm](https://dietpi.com/downloads/images/DietPi_PINEH64-ARMv8-Bookworm.img.xz) (supports the microSD card and eMMC, 4GB or more)
+* [Trixie image](https://dietpi.com/downloads/images/DietPi_PINEH64-ARMv8-Trixie.img.xz)
 
 | Default credentials | |
 | -------- | ------- |
@@ -55,7 +45,7 @@ Download:
 
 Download:
 
-* [Daily builds](https://test.libreelec.tv/) (look for look for _LibreELEC-H6.arm-xxx-nightly-xxxxxxxx-xxxxxxx-pine-h64-model-b.img.gz_]
+* [Stable builds](https://libreelec.tv/downloads/allwinner/) (Look for LibreELEC-H6.arm-xx.x.x-pine-h64.img.gz)
 
 Notes:
 
