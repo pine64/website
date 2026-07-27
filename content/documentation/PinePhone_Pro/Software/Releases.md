@@ -3,7 +3,7 @@ title: "Releases"
 draft: false
 toc: true
 toc_depth: 1
-description: "Official PinePhone Pro software releases page: find release notes, download links, and installation instructions for builds. Includes releases such as Manjaro ARM, Mobian, postmarketOS, Ubuntu Touch, Arch Linux ARM, Gentoo, NixOS, Kali Linux, Nemo Mobile, Rhino Linux, GloDroid, and LuneOS."
+description: "Official PinePhone Pro software releases page: find release notes, download links, and installation instructions for builds. Includes releases such as Mobian, postmarketOS, Ubuntu Touch, Arch Linux ARM, Gentoo, NixOS, Kali Linux, Nemo Mobile, Rhino Linux, GloDroid, and LuneOS."
 menu:
   docs:
     title:
@@ -36,7 +36,7 @@ Currently being maintained by the [DanctNIX](https://danctnix.org/) community (G
 
 ### Download
 
-Get both stable and test builds at [GitHub releases](https://github.com/dreemurrs-embedded/Pine64-Arch/releases).
+Get both stable and test builds at [GitHub releases](https://github.com/dreemurrs-embedded/Pine64-Arch/releases) or [directly from the DanctNIX server](https://echo.danctnix.org:7269/danctnix_images/).
 
 | Default credentials | |
 | -------- | ------- |
@@ -53,15 +53,11 @@ A re-image of the above Arch image providing a Btrfs root partitioning has been 
 
 {{< figure src="/documentation/images/GentooLogo.png" width="100" >}}
 
-There are unofficial Gentoo overlays with ebuilds for the PinePhone Pro. There are no images - the image must be built manually, including picking the kernel, bootloader and the desired desktop environment. The ARM64 version of Gentoo has to be selected. The PinePhone Pro will not boot with P-Boot but will boot with U-Boot, there is an ebuild for it.
+The image must be built manually, including picking the kernel, bootloader and the desired desktop environment. The ARM64 version of Gentoo has to be selected. The PinePhone Pro will not boot with P-Boot but will boot with U-Boot.
 
-### Download
-
-The overlay can be found under https://github.com/stealthgun/gjdwebserver-overlay
+https://wiki.gentoo.org/wiki/PINE64_PinePhone_Pro
 
 ### Notes
-
-See https://stealthgun.tweakblogs.net/blog/19830/gentoo-on-a-pinephone-pro for the documentation.
 
 {{< admonition type="note" >}}
  Please consider cross-compiling the software on the computer. Long compilation times and heat production can lead to a reduced lifespan of the phone.
@@ -99,27 +95,11 @@ LuneOS is one of the original multi-tasking OS-es that runs on Linux. Based on H
 
 In order to connect to the device using SSH/SCP via WiFi: You can simply connect via SSH/SCP via WiFi using the PinePhonePro’s IP address on port 22.
 
-## Manjaro ARM
-
-{{< figure src="/documentation/images/Manjaro-logo.svg" width="100" >}}
-
-Manjaro is a user-friendly Linux distribution based on the independently developed Arch operating system with the Plasma Mobile and Phosh desktop environment.
-
-### Download
-
-* Phosh: [Dev](https://github.com/manjaro-pinephone/phosh-dev/releases) and [Stable](https://github.com/manjaro-pinephone/phosh/releases) (recommended)
-* Plasma Mobile: [Dev](https://github.com/manjaro-pinephone/plasma-mobile-dev/releases) and [Stable](https://github.com/manjaro-pinephone/plasma-mobile/releases) (recommended)
-
-| Default credentials | |
-| -------- | ------- |
-| `manjaro` | `123456` |
-| `root` | `root` |
-
 ## Mobian
 
 {{< figure src="/documentation/images/Mobian-logo.png" width="100" >}}
 
-A [Mobian](https://www.mobian.org) build for ARM64 running with Phosh. The current version of the base Debian system is Debian Bookworm. See the installation instructions [here](https://wiki.debian.org/InstallingDebianOn/PINE64/PinePhonePro). If you have questions about Mobian, please ask them in the [Mobian Matrix room](https://matrix.to/#/#mobian:matrix.org).
+A [Mobian](https://www.mobian.org) build for ARM64 running with Phosh. The current version of the base Debian system is Debian Trixie. See the installation instructions [here](https://wiki.debian.org/InstallingDebianOn/PINE64/PinePhonePro). If you have questions about Mobian, please ask them in the [Mobian Matrix room](https://matrix.to/#/#mobian:matrix.org).
 
 ### Download
 
@@ -162,11 +142,11 @@ The official Kali Nethunter images for PinePhone and PinePhone Pro have been rel
 
 {{< figure src="/documentation/images/nemo_mobile.png" width="100" >}}
 
-Nemo Mobile is the open source build of Sailfish OS with a open source UI called [Glacier](http://nemomobile.net/glacier-home/), [based on Manjaro](http://nemomobile.net/pages/Hello_manjaro/).
+Nemo Mobile is the open source build of Sailfish OS with a open source UI called [Glacier](http://nemomobile.net/glacier-home/), [based on OpenSUSE](https://nemomobile.net/pages/nemomobile-2025-june-to-december/).
 
 ### Download
 
-[Image](https://img.nemomobile.net/2024.10/Manjaro-ARM-nemomobile-pinephonepro-24.10.img.xz)
+[OpenSUSE based images](https://download.opensuse.org/repositories/devel:/NemoMobile/images/)
 
 | Default credentials | |
 | -------- | ------- |
@@ -189,8 +169,7 @@ Not available yet.
 
 ### Notes
 
-WIP. See https://github.com/NixOS/mobile-nixos/issues/440
-
+[Device page on the mobile NixOS website](https://mobile-nixos.github.io/mobile-nixos/devices/pine64-pinephonepro.html)
 ## postmarketOS
 
 {{< figure src="/documentation/images/PostmarketOS_logo.png" width="100" >}}
