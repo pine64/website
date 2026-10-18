@@ -48,3 +48,14 @@ The PinePhone Pro won’t be able to boot if the installation on the SPI flash, 
 * Power on the device (bypassing the SPI and eMMC might be required, see [Boot order](/documentation/PinePhone_Pro/Software/Boot_order))
 
 The device should now boot from the microSD card. If the phone does not boot from the microSD card the microSD card was flashed with an incompatible image or the battery got drained as explained above.
+
+## Calls, SMS or call audio not working reliably
+
+If the phone boots but does not work reliably as a phone (no audio on the first call after a reboot, calls ending stuck without hang-up tone, mute speaker after resume, modem disappearing after suspend, no notification for incoming SMS), see the community project [pinephone-pro-fixes](https://codeberg.org/giorez/pinephone-pro-fixes). It lists, for the DanctNIX image with stock modem firmware, the cause of each problem, the fix and the test used to verify it.
+
+{{< admonition type="note" >}}
+The project was written with the help of an AI assistant and verified on a PinePhone Pro with repeatable tests; it is not an official PINE64 or DanctNIX project.
+{{</ admonition >}}
+
+The same project collects battery measurements from different users (capacity, voltage under load, suspend autonomy), to help tell worn-out batteries from normal behaviour.
+
