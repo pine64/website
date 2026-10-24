@@ -9,8 +9,6 @@ menu:
     weight: 5
 ---
 
-If the PinePhone Pro is not booting (either booting incompletely into a boot splash or tty or if the PinePhone Pro is showing no signs of life) this will typically have the following two reasons:
-
 ## The battery is fully drained
 
 If the battery is drained then the board can reset during boot causing a boot loop because of undervoltage condition. It can happen on all stages of the boot including _U-Boot_ bootloader, display initialization and USB (re-)configuration. In that case it is not possible to charge the phone. The battery can be charged by interrupting the boot loop by booting the PinePhone Pro into _Maskrom mode_ or by charging the battery externally. It is possible to follow these instructions without a computer by using a wall charger, however it would not be possible to determine if Maskrom mode was started successfully. To boot the PinePhone Pro into _Maskrom mode_:
@@ -48,3 +46,14 @@ The PinePhone Pro won’t be able to boot if the installation on the SPI flash, 
 * Power on the device (bypassing the SPI and eMMC might be required, see [Boot order](/documentation/PinePhone_Pro/Software/Boot_order))
 
 The device should now boot from the microSD card. If the phone does not boot from the microSD card the microSD card was flashed with an incompatible image or the battery got drained as explained above.
+
+## Calls, SMS or call audio not working reliably
+
+If the phone boots but does not work reliably as a phone (no audio on the first call after a reboot, calls ending stuck without hang-up tone, mute speaker after resume, modem disappearing after suspend, no notification for incoming SMS), see the community project [pinephone-pro-fixes](https://codeberg.org/giorez/pinephone-pro-fixes). It lists, for the DanctNIX image with stock modem firmware, the cause of each problem, the fix and the test used to verify it.
+
+{{< admonition type="note" >}}
+The project was written with the help of an AI assistant and verified on a PinePhone Pro with repeatable tests; it is not an official PINE64 or DanctNIX project.
+{{</ admonition >}}
+
+The same project collects battery measurements from different users (capacity, voltage under load, suspend autonomy), to help tell worn-out batteries from normal behaviour.
+
