@@ -9,8 +9,6 @@ menu:
     weight: 5
 ---
 
-If the PinePhone Pro is not booting (either booting incompletely into a boot splash or tty or if the PinePhone Pro is showing no signs of life) this will typically have the following two reasons:
-
 ## The battery is fully drained
 
 If the battery is drained then the board can reset during boot causing a boot loop because of undervoltage condition. It can happen on all stages of the boot including _U-Boot_ bootloader, display initialization and USB (re-)configuration. In that case it is not possible to charge the phone. The battery can be charged by interrupting the boot loop by booting the PinePhone Pro into _Maskrom mode_ or by charging the battery externally. It is possible to follow these instructions without a computer by using a wall charger, however it would not be possible to determine if Maskrom mode was started successfully. To boot the PinePhone Pro into _Maskrom mode_:
