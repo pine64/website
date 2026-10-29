@@ -193,6 +193,44 @@ Foundational to the distribution is [Pacstall](https://pacstall.dev), a Debian-b
 
 [Discord](https://discord.gg/reSvc8Ztk3) - [Matrix](https://matrix.to/#/#rolling-rhino-remix:matrix.org) - [GitHub](https://github.com/rhino-linux) - [Wiki](https://rhinolinux.org/wiki.html)
 
+### Sailfish OS
+Sailfish OS is a Linux-based operating system based on open source projects such as Mer, and a closed source UI based on Lipstick. PineTab2 mainline Sailfish OS port maintained by Sailfish community member Piggz. Currently running on Danct12's kernel tree and Sailfish 5.X. 
+
+#### PINE64 Sailfish wiki
+All the information required for setting up and maintaining your PINE64 device running Sailfish OS can be found here: https://github.com/sailfish-on-dontbeevil/documentation/wiki
+
+* [Installation](https://github.com/sailfish-on-dontbeevil/documentation/wiki/Installation)
+* [First boot](https://github.com/sailfish-on-dontbeevil/documentation/wiki/FirstBoot)
+* [Known issues](https://github.com/sailfish-on-dontbeevil/documentation/wiki/KnownIssues)
+* [New user tips](https://github.com/sailfish-on-dontbeevil/documentation/wiki/NewUserTips)
+* [Telegram group for support](https://t.me/+E0A4d4tjx703MGFk)
+
+#### Installation
+Installation is done through the `flashit` script found here: https://github.com/sailfish-on-dontbeevil/flash-it/blob/master/flash-it.sh
+
+Running the script (`./flash-it.sh`) will first check that all required programs are available, and if not it is up to the user to install them. The rest of the installation will operate as:
+
+1. Menu is displayed asking for user to choose the appropriate device
+2. Rootfs installation files are downloaded
+3. A list of block devices is displayed and the user is asked to enter the installation device. This will typically be /dev/sdX for the EMMC or /dev/mmcblkX for an SD card
+4. The chosen device is wiped, partitions are created and filesystems created
+5. Installation files are written to the new partitions
+6. Some questions are asked about the installation, answer these questions with y/n
+
+#### Installing to EMMC
+To install to the internal EMMC of the Pinetab2, do the following:
+
+1. Follow the instructions above to flash the Pinetab2 image to an SD card and boot the tablet from this.
+2. After initial setup, ensure the 'chum' repository is up to date
+3. Set a developer password and open the terminal
+4. Enter root with devel-su
+5. Install the following packages zypper in git sudo wget gnu-bash unzip jq parted
+6. Clone flash-it git clone https://github.com/sailfish-on-dontbeevil/flash-it cd flash-it
+7. Run the flash command and select option 6 sh flash-it
+8. Select the device node to install to as /dev/mmcblk0
+9. Answer the final questions: Install uboot? Y Flashing to SD card: N Clear root password?: N
+10. Shutdown, remove the SD card and boot
+
 ### Ubuntu Touch
 
 A Mobile Version of the Ubuntu Operating System made and maintained by the UBports Community. The port is currently maintained by Oren Klopfer (oklopfer).
