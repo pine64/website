@@ -214,7 +214,7 @@ Notes:
 
 Download:
 
-* [Direct download](https://www.invisible.ca/arm/) (345MB, select _PINE A64 / PINE A64+_)
+* [Direct download](https://nycdn.netbsd.org/pub/arm/) (345MB, select _PINE A64 / PINE A64+_)
 
 Notes:
 
