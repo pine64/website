@@ -81,6 +81,7 @@ Instructions:
 Notes:
 
 * An Ethernet connection is required for the above installer
+* See [DebianOn PINEA64](https://wiki.debian.org/InstallingDebianOn/PINE64/PINEA64) for troubleshooting
 
 ### DietPi
 
