@@ -97,6 +97,21 @@ Download:
 | -------- | ------- |
 | `root` | `dietpi` |
 
+### Devuan
+
+{{< figure src="/documentation/images/Devuan-emblem.png" width="100" >}}
+
+*Devuan* is a non-systemd fork of Debain that gives the user init freedom (i.e. the choice of init system at installation time).
+
+Download:
+
+* [Excalibur 6](https://pkgmaster.devuan.org/devuan/dists/excalibur/main/installer-arm64/current/images/netboot/SD-card-images/)
+* [Daedalus 5](https://pkgmaster.devuan.org/devuan/dists/daedalus/main/installer-arm64/current/images/netboot/SD-card-images/)
+
+Instructions:
+
+See [Debian](#debian)
+
 ### FreedomBox
 
 {{< figure src="/documentation/images/FreedomBox.jpg" width="100" >}}
